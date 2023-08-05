@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: designer
+Version: 0.1.5
+Summary: Student-friendly and evidence-based visual graphics library.
+Home-page: https://github.com/krishols/designer
+Author: krishols, acbart
+Author-email: kris@udel.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: alabaster (==0.7.12)
+Requires-Dist: appnope (==0.1.2)
+Requires-Dist: Babel (==2.9.1)
+Requires-Dist: backcall (==0.2.0)
+Requires-Dist: bleach (==3.3.0)
+Requires-Dist: build (==0.5.0)
+Requires-Dist: certifi (==2021.5.30)
+Requires-Dist: cffi (==1.14.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: commonmark (==0.9.1)
+Requires-Dist: decorator (==5.0.9)
+Requires-Dist: docutils (==0.16)
+Requires-Dist: idna (==2.10)
+Requires-Dist: imagesize (==1.2.0)
+Requires-Dist: importlib-metadata (==4.5.0)
+Requires-Dist: ipykernel (==5.5.5)
+Requires-Dist: ipython (==7.24.1)
+Requires-Dist: ipython-genutils (==0.2.0)
+Requires-Dist: jedi (==0.18.0)
+Requires-Dist: Jinja2 (==3.0.1)
+Requires-Dist: jupyter-client (==6.1.12)
+Requires-Dist: jupyter-core (==4.7.1)
+Requires-Dist: keyring (==23.0.1)
+Requires-Dist: MarkupSafe (==2.0.1)
+Requires-Dist: matplotlib-inline (==0.1.2)
+Requires-Dist: packaging (==20.9)
+Requires-Dist: parso (==0.8.2)
+Requires-Dist: pep517 (==0.10.0)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: pickleshare (==0.7.5)
+Requires-Dist: Pillow (==8.3.1)
+Requires-Dist: pkginfo (==1.7.0)
+Requires-Dist: prompt-toolkit (==3.0.18)
+Requires-Dist: ptyprocess (==0.7.0)
+Requires-Dist: pycparser (==2.20)
+Requires-Dist: pygame (==2.0.1)
+Requires-Dist: Pygments (==2.9.0)
+Requires-Dist: pymunk (==6.0.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: pyzmq (==22.1.0)
+Requires-Dist: readme-renderer (==29.0)
+Requires-Dist: recommonmark (==0.7.1)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rfc3986 (==1.5.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: snowballstemmer (==2.1.0)
+Requires-Dist: Sphinx (==4.1.1)
+Requires-Dist: sphinx-rtd-theme (==0.5.2)
+Requires-Dist: sphinxcontrib-applehelp (==1.0.2)
+Requires-Dist: sphinxcontrib-devhelp (==1.0.2)
+Requires-Dist: sphinxcontrib-htmlhelp (==2.0.0)
+Requires-Dist: sphinxcontrib-jsmath (==1.0.1)
+Requires-Dist: sphinxcontrib-qthelp (==1.0.3)
+Requires-Dist: sphinxcontrib-serializinghtml (==1.1.5)
+Requires-Dist: sphinxjp.themes.basicstrap (==0.5.0)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: tornado (==6.1)
+Requires-Dist: tqdm (==4.61.1)
+Requires-Dist: traitlets (==5.0.5)
+Requires-Dist: twine (==3.4.1)
+Requires-Dist: urllib3 (==1.26.5)
+Requires-Dist: wcwidth (==0.2.5)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: zipp (==3.4.1)
+
+![Documentation](https://github.com/krishols/designer/actions/workflows/docs.yml/badge.svg)
+# Designer
+An interactive graphics library designed with student data to learn Python.
+
+# Installation
+Install from the command line: 
+
+ ```
+ pip install designer
+ ```
+  
+Or install from [this repository](https://github.com/krishols/designer).
+
+# Documentation
+Find the documentation for Designer [here](https://krishols.github.io/designer/).
+
+
