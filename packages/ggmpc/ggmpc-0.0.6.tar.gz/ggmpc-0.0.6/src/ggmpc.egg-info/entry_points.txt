@@ -1,0 +1,3 @@
+[console_scripts]
+ggmpc = ggmpc:__main__.main
+
