@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/automatic_actions.egg-info/PKG-INFO
+src/automatic_actions.egg-info/SOURCES.txt
+src/automatic_actions.egg-info/dependency_links.txt
+src/automatic_actions.egg-info/top_level.txt
+src/test_package/__init__.py
+src/test_package/example.py
