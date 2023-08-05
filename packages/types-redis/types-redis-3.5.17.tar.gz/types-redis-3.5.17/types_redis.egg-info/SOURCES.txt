@@ -1,0 +1,15 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+redis-stubs/METADATA.toml
+redis-stubs/__init__.pyi
+redis-stubs/client.pyi
+redis-stubs/connection.pyi
+redis-stubs/exceptions.pyi
+redis-stubs/lock.pyi
+redis-stubs/sentinel.pyi
+redis-stubs/utils.pyi
+types_redis.egg-info/PKG-INFO
+types_redis.egg-info/SOURCES.txt
+types_redis.egg-info/dependency_links.txt
+types_redis.egg-info/top_level.txt
