@@ -1,0 +1,7 @@
+setup.py
+Automation3270Library/__init__.py
+Automation3270Library.egg-info/PKG-INFO
+Automation3270Library.egg-info/SOURCES.txt
+Automation3270Library.egg-info/dependency_links.txt
+Automation3270Library.egg-info/requires.txt
+Automation3270Library.egg-info/top_level.txt
