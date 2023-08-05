@@ -1,0 +1,25 @@
+{
+ "notes": "",
+ "support": {
+  "Android Browser": "n 94",
+  "Baidu Browser": "u 7.12",
+  "Blackberry Browser": "u 10",
+  "Chrome": "n 98",
+  "Chrome for Android": "u 94",
+  "Edge": "n 95",
+  "Firefox": "y 48",
+  "Firefox for Android": "y 92",
+  "IE": "n 11",
+  "IE Mobile": "u 11",
+  "KaiOS Browser": "y 2.5",
+  "Opera": "n 80",
+  "Opera Mini": "n all",
+  "Opera Mobile": "n 64",
+  "QQ Browser": "n 10.4",
+  "Safari": "n TP",
+  "Safari on iOS": "u 15",
+  "Samsung Internet": "u 15.0",
+  "UC Browser for Android": "u 12.12"
+ },
+ "url": "https://drafts.csswg.org/css-color-adjust-1/#propdef-color-adjust"
+}

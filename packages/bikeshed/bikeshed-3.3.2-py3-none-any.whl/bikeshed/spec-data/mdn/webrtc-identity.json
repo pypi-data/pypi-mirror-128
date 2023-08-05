@@ -1,0 +1,219 @@
+{
+    "rtcidentityassertion-interface": [
+        {
+            "engines": [],
+            "partial": [
+                "gecko"
+            ],
+            "filename": "api/RTCIdentityAssertion.json",
+            "name": "RTCIdentityAssertion",
+            "slug": "API/RTCIdentityAssertion",
+            "summary": "The RTCIdentityAssertion interface of the WebRTC API represents the identity of the a remote peer of the current connection. If no peer has yet been set and verified this interface returns null. Once set it can't be changed.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "40",
+                    "partial_implementation": true,
+                    "notes": "The <code>RTCIdentityAssertion</code> interface itself is not present, but an object with the same properties is used"
+                },
+                "firefox_android": {
+                    "version_added": "40",
+                    "partial_implementation": true,
+                    "notes": "The <code>RTCIdentityAssertion</code> interface itself is not present, but an object with the same properties is used"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": null
+                },
+                "opera_android": {
+                    "version_added": null
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "RTCIdentityAssertion"
+        }
+    ],
+    "dom-rtcpeerconnection-getidentityassertion": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/RTCPeerConnection.json",
+            "name": "getIdentityAssertion",
+            "slug": "API/RTCPeerConnection/getIdentityAssertion",
+            "summary": "The RTCPeerConnection.getIdentityAssertion() method initiates the gathering of an identity assertion. This has an effect only if the signalingState is not \"closed\".",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "40"
+                },
+                "firefox_android": {
+                    "version_added": "40"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "RTCPeerConnection.getIdentityAssertion()"
+        }
+    ],
+    "dom-rtcpeerconnection-peeridentity": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/RTCPeerConnection.json",
+            "name": "peerIdentity",
+            "slug": "API/RTCPeerConnection/peerIdentity",
+            "summary": "The read-only RTCPeerConnection property peerIdentity returns a JavaScript Promise that resolves to an RTCIdentityAssertion which contains a DOMString identifying the remote peer. Once this promise resolves successfully, the resulting identity is the target peer identity and cannot change for the duration of the connection.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "40"
+                },
+                "firefox_android": {
+                    "version_added": "40"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "RTCPeerConnection.peerIdentity"
+        }
+    ],
+    "dom-rtcpeerconnection-setidentityprovider": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "api/RTCPeerConnection.json",
+            "name": "setIdentityProvider",
+            "slug": "API/RTCPeerConnection/setIdentityProvider",
+            "summary": "The RTCPeerConnection.setIdentityProvider() method sets the Identity Provider (IdP) to the triplet given in parameter: its name, the protocol used to communicate with it (optional) and an optional username. The IdP will be used only when an assertion is needed.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "40"
+                },
+                "firefox_android": {
+                    "version_added": "40"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "RTCPeerConnection.setIdentityProvider()"
+        }
+    ]
+}
