@@ -1,0 +1,3 @@
+[console_scripts]
+stac-client = pystac_client.cli:cli
+
