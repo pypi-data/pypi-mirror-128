@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "pyprobables"
+version = "0.5.1"
+description = "Probabilistic data structures in Python"
+authors = ["Tyler Barrus <barrust@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/barrust/pyprobables"
+repository = "https://github.com/barrust/pyprobables/issues"
+documentation = "https://pyprobables.readthedocs.io/"
+classifiers = [
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Information Technology",
+        "Intended Audience :: Science/Research",
+        "Topic :: Software Development :: Libraries",
+        "Topic :: Utilities",
+]
+packages = [
+        {include = "probables"},
+]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.5"
+
+[tool.poetry.dev-dependencies]
+pre-commit = {python = "^3.6.1"}
+black = {version = "^20.8b1", python = "^3.6"}
+isort = {version = "^5.6.4", python = "^3.6"}
+pytest = {version = "^6.1.1", python = "^3.5"}
+flake8 = {version = "^3.6.0", python = "^3.5"}
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 120
+target-version = ['py35']
+include = '\.pyi?$'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
