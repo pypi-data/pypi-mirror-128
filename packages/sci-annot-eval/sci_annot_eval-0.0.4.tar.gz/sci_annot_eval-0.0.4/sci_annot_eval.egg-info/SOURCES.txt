@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+sci_annot_eval/__init__.py
+sci_annot_eval/evaluation.py
+sci_annot_eval.egg-info/PKG-INFO
+sci_annot_eval.egg-info/SOURCES.txt
+sci_annot_eval.egg-info/dependency_links.txt
+sci_annot_eval.egg-info/requires.txt
+sci_annot_eval.egg-info/top_level.txt
+sci_annot_eval/helpers/__init__.py
+sci_annot_eval/helpers/helpers.py
+sci_annot_eval/parsers/__init__.py
+sci_annot_eval/parsers/bounding_box.py
+sci_annot_eval/parsers/parserInterface.py
+sci_annot_eval/parsers/sci_annot_parser.py

@@ -1,0 +1,2 @@
+numpy>=1.21
+lapsolver>=1.1
