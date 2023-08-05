@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: flunt
+Version: 0.1.0
+Summary: Python implementation of Domain Notification Pattern based in Flunt (.NET) developed by @andrebaltieri
+Author: Emerson Delatorre
+Author-email: 38289677+Delatorrea@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
