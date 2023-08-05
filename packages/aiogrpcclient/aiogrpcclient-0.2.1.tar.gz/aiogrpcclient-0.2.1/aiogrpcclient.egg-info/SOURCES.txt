@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+aiogrpcclient/__init__.py
+aiogrpcclient/base.py
+aiogrpcclient.egg-info/PKG-INFO
+aiogrpcclient.egg-info/SOURCES.txt
+aiogrpcclient.egg-info/dependency_links.txt
+aiogrpcclient.egg-info/requires.txt
+aiogrpcclient.egg-info/top_level.txt
