@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: sylpy
+Version: 0.4
+Summary: sylviorus API wrapper
+Home-page: https://github.com/NksamaX/Syl-Py
+Author: Nksamax
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# How to use
+
+
+```
+from sylpy import SYL
+
+fk = SYL()
+
+x = fk.get_info(2022120134)
+print(x)
+print(x.reason)
+
+```
+
+
