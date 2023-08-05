@@ -1,0 +1,12 @@
+vollseg/Augmentation2D.py,sha256=38dLCRSoZ0dVIWDGVS8vhIQSoza1HLAQ_gruhtuynUU,10479
+vollseg/Augmentation3D.py,sha256=NNhzLapGMOkaqLm704qbhm50SqHOGGbWcdIdYecqZlg,10971
+vollseg/OptimizeThreshold.py,sha256=ozdtMSJsmqEwXprLV3juIXl6azQcTUuKUnsT3Eki-ws,4871
+vollseg/SmartSeeds2D.py,sha256=DCBABMkJ5UOBpSwYyobNjryUf5OaI6fqv4nD2Hup2ZA,23574
+vollseg/SmartSeeds3D.py,sha256=v3-RLVZ7wn2kWl2ZDBLcrAYKeum_Gw2S8Zouk1ZxwJA,21909
+vollseg/__init__.py,sha256=8Z7pEn4sOnfIiL0Oh7fPeIzv4qk-K2NXqsB-9FHPt4E,268
+vollseg/helpers.py,sha256=FTA7oZGyUpPK5ft_URBIRGq-EWL2YvfDmlMkjQf6c1w,59399
+vollseg-2.0.6.dist-info/LICENSE,sha256=EyR_ikpQYTDN96J7EVkGmy6biXSBu9Nv45wKDpcraqQ,1514
+vollseg-2.0.6.dist-info/METADATA,sha256=S3yWPI0LYt0tsBipecsa5MHxbHidU6nwdKDzKBij9og,4416
+vollseg-2.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+vollseg-2.0.6.dist-info/top_level.txt,sha256=tCHlPBSzAO5j1mfjFhK3xyKf-ksqlFT8A5jCcmPk_xo,8
+vollseg-2.0.6.dist-info/RECORD,,
