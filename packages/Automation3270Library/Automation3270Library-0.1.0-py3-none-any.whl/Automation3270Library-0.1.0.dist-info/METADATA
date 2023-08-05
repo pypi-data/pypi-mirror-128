@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Automation3270Library
+Version: 0.1.0
+Summary: Python library to communicate with IBM hosts, based on the 3270 protocol.
+Home-page: UNKNOWN
+Author: Daniel Beck
+License: UNKNOWN
+Keywords: IBM x3270 s3270 Mainframe
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Requires-Dist: py3270 (>=0.3.5)
+
+
+A Python library that provides an interface to communicate with IBM host.
+
+
