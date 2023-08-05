@@ -1,0 +1,5 @@
+rpyc==5.0.1
+
+[:platform_system == "Windows"]
+pywin32>=2.2.7
+pythonnet>=2.5.2
