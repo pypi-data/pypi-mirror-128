@@ -1,0 +1,8 @@
+Pillow<9,>=8.1.1
+pixsaw<0.4,>=0.3
+beautifulsoup4
+future
+lxml
+svgwrite>=1.4.1
+glue<1.0,>=0.13
+Rtree
