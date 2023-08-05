@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+./src/text2ipa/text2ipa.cpp
+src/text2ipa/__init__.pyi
+src/text2ipa/text2ipa.cpp
+text2ipa.egg-info/PKG-INFO
+text2ipa.egg-info/SOURCES.txt
+text2ipa.egg-info/dependency_links.txt
+text2ipa.egg-info/not-zip-safe
+text2ipa.egg-info/requires.txt
+text2ipa.egg-info/top_level.txt
