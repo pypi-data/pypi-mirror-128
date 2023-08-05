@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: fkeycapture
+Version: 1.0.5
+Summary: A way to capture keystrokes
+Home-page: https://github.com/Alexander-Maples/fkeycapture
+Author: Firepup650
+Author-email: firepyp650@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Alexander-Maples/fkeycapture/issues
+Project-URL: replit, https://replit.com/@ALEXANDERMAPLES/fkeycapture
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# fkeycapture
+This is a simple and easy to use package that allows you to capture individual keystrokes from the user.
+#### Forms:
+1. (Default) Recive key as a string
+2. Recive key as bytes
+#### How to Use:
+1. from fkeycapture import get
+2. Use it like this 
+: get([number of keys to capture],[if you want bytes output, make this 'True'])
+###### v.1.0.5:
+Repaired an issue in 1.0.4 which caused the module to cause a recusion error.
+
