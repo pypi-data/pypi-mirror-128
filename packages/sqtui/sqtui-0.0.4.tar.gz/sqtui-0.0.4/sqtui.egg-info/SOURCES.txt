@@ -1,0 +1,7 @@
+README.md
+setup.py
+sqtui/__init__.py
+sqtui.egg-info/PKG-INFO
+sqtui.egg-info/SOURCES.txt
+sqtui.egg-info/dependency_links.txt
+sqtui.egg-info/top_level.txt
