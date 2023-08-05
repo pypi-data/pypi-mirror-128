@@ -1,0 +1,8 @@
+setup.py
+hasura_client/__init__.py
+hasura_client/hasura_client.py
+hasura_client.egg-info/PKG-INFO
+hasura_client.egg-info/SOURCES.txt
+hasura_client.egg-info/dependency_links.txt
+hasura_client.egg-info/requires.txt
+hasura_client.egg-info/top_level.txt
