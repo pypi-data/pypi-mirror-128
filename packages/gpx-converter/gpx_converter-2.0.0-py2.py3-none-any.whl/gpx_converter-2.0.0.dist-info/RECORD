@@ -1,0 +1,10 @@
+gpx_converter/__init__.py,sha256=nTMq2sd2rpkrcJkBg3dlipn2zjaisEdRXYHDRP-cxfU,144
+gpx_converter/base.py,sha256=yYtr42YvLZoehK1dtw87rhUJThvl-3Y1wTfie0VtmEc,14177
+gpx_converter/cli.py,sha256=5LMB0cMfkM45nVFaQm3YUwtSVuVVCuDlNpJfBppwacg,1771
+gpx_converter-2.0.0.dist-info/AUTHORS.rst,sha256=071ps4AaRPYiMxjqG-sd3nD0il5cs6voEpzGC_6Gw9g,161
+gpx_converter-2.0.0.dist-info/LICENSE,sha256=kMbc3iFAtRwil-cFCHKHUkHuvbV-zCuLMTGYFV2O5WA,1074
+gpx_converter-2.0.0.dist-info/METADATA,sha256=cL5MLGSRs5PS8zwRE86CC8HopUaxt2kaqRGgd-6X5i4,7621
+gpx_converter-2.0.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+gpx_converter-2.0.0.dist-info/entry_points.txt,sha256=X9lnRxiKkeWmyD9SlCJg5okXfMcCpw8g_7W1FV2OEgk,58
+gpx_converter-2.0.0.dist-info/top_level.txt,sha256=YhP7TBgHNQ09B4GjSS6AN9UljDQ90d94y-5K8_kKGrY,14
+gpx_converter-2.0.0.dist-info/RECORD,,
