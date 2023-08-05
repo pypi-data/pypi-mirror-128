@@ -1,0 +1,7 @@
+crfs-0.2.0.dist-info/METADATA,sha256=RR0j9sLs6oJvghx_a3k42Z5ErPxaWLbGXSnSqzUC__8,865
+crfs-0.2.0.dist-info/WHEEL,sha256=nNFOrs-eqaV3yjWRxJiygmypsxmCsFEBxDK2Vj0EHf0,95
+crfs/__init__.py,sha256=dmgopRVW_BMbHSpbEGc5beXAwvR1EhjZRqgRSVwLV8g,44
+crfs/__init__.pyi,sha256=Uy8PoMkwsF3ZKuz9TxIIF4HBGlN75sewSaTwS8-lXCM,591
+crfs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crfs/crfs.pyd,sha256=xdsLNBYFU2J50p-ILgjHAE6AQ6OamoKAkekehk0JjQk,328704
+crfs-0.2.0.dist-info/RECORD,,
