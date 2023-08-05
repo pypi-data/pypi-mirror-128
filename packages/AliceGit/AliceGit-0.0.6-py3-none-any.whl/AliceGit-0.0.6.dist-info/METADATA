@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: AliceGit
+Version: 0.0.6
+Summary: Project Alice Python to Git utilities
+Home-page: https://github.com/project-alice-assistant/AliceGit
+Author: ProjectAlice
+Maintainer: Psychokiller1888
+Maintainer-email: laurentchervet@bluewin.ch
+License: GPL-3.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pytest (~=5.2.2)
+Requires-Dist: coverage (~=4.5.4)
+Requires-Dist: pytest-cov (~=2.8.1)
+Requires-Dist: coveralls (~=1.8.2)
+
+# AliceGit
+A Python Git bridge for our needs
+
+
