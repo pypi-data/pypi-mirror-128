@@ -1,0 +1,6 @@
+class TopClassOfTheDrug(ValueSet):
+    VALUE_SET_NAME = 'Top class of the drug'
+    EXPANSION_VERSION = 'ClassPath Update 2018-10-13'
+    FDB = {
+        '1', '4', '56', '89', '632',
+    }

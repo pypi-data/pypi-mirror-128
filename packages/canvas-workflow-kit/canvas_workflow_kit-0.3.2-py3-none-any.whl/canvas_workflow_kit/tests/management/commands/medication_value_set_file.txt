@@ -1,0 +1,33 @@
+from protocols.value_set.value_set import ValueSet
+
+
+class Penicillin(ValueSet):
+    VALUE_SET_NAME = 'Penicillin'
+    EXPANSION_VERSION = 'ClassPath Update 18-10-13'
+    FDB = {
+        '150020', '150100', '150106', '150113',
+    }
+
+
+class PenicillinAntibiotics(ValueSet):
+    VALUE_SET_NAME = 'Penicillin Antibiotics'
+    EXPANSION_VERSION = 'ClassPath Update 18-10-13'
+    FDB = {
+        '150100', '150106', '150113',
+    }
+
+
+class PenicillinAntibioticNatural(ValueSet):
+    VALUE_SET_NAME = 'Penicillin Antibiotic - Natural'
+    EXPANSION_VERSION = 'ClassPath Update 18-10-13'
+    FDB = {
+        '150100', '150106',
+    }
+
+
+class AminopenicillinAntibiotic(ValueSet):
+    VALUE_SET_NAME = 'Aminopenicillin Antibiotic'
+    EXPANSION_VERSION = 'ClassPath Update 18-10-13'
+    FDB = {
+        '150113',
+    }
