@@ -1,0 +1,11 @@
+demix_lib/__init__.py,sha256=4zr0ZhfSyDP9m1cpJVvUVgOzJoL05nlcSZf50XQ3Vc8,162
+demix_lib/demix_lib_configuration.py,sha256=iAMuGkzsI-HUFpgOyw6yQBxBVRmALuBiBf3ZuA_gcVk,918
+demix_lib/demix_pixels.py,sha256=pyEjbVMCX86rV8NsrCbvtdywsOKbvAE6knzfTqprq5s,1358
+demix_lib/demix_score.py,sha256=UFTMRDEOVdpL0znybh8pJss2y_i8iXG-m4QukHtmgbg,1983
+demix_lib/demix_url_handler.py,sha256=0uy4nLPsOktd5CGY2mgLjbyDHBu5OVFfauQ6h96Okjs,3507
+demix_lib/demix_utility.py,sha256=SGDo64g2rBm2DSTIEHCh2EBkFZCkzX9jRDtbNNkgYb4,5098
+demix_lib-0.3.1.dist-info/LICENCE.txt,sha256=_byn4i5elEl5I7DuBV1AZBnrJl_lVoWoP--pJ0O-yuA,1078
+demix_lib-0.3.1.dist-info/METADATA,sha256=SFWmEfhhREmutrpbhqu0XvtNEutQ6PuIYCuKpWp7MTM,6496
+demix_lib-0.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+demix_lib-0.3.1.dist-info/top_level.txt,sha256=OPnYqyRc9zdaS4sJds60K8ToanBhTuK9yMeUgY1-_Uc,10
+demix_lib-0.3.1.dist-info/RECORD,,
