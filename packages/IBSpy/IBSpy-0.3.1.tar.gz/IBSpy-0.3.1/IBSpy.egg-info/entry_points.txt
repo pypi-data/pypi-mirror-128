@@ -1,0 +1,5 @@
+[console_scripts]
+IBSplot = IBSpy.IBSpy_plot_window_results:main
+IBSpy = IBSpy:main
+IBSpy_wcount = IBSpy.IBSpy_window_count:main
+
