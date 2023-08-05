@@ -1,0 +1,10 @@
+aiogram
+attrs
+
+[build]
+build
+twine
+
+[testing]
+mypy
+pytest
