@@ -1,0 +1,6 @@
+[console_scripts]
+credentials = scripts.credentials:main
+scp_service = scripts.scp_service:main
+slurm_test = scripts.slurm_test:main
+ssh_command = scripts.ssh_command:main
+

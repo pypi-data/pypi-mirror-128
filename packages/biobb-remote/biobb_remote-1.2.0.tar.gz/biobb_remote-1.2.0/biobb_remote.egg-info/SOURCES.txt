@@ -1,0 +1,12 @@
+README.md
+setup.py
+biobb_remote/__init__.py
+biobb_remote/slurm.py
+biobb_remote/ssh_credentials.py
+biobb_remote/ssh_session.py
+biobb_remote/task.py
+biobb_remote.egg-info/PKG-INFO
+biobb_remote.egg-info/SOURCES.txt
+biobb_remote.egg-info/dependency_links.txt
+biobb_remote.egg-info/entry_points.txt
+biobb_remote.egg-info/top_level.txt
