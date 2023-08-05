@@ -1,0 +1,3 @@
+setuptools
+hop-client
+safe-netrc
