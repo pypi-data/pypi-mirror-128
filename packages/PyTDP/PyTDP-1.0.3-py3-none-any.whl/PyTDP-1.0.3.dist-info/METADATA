@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: PyTDP
+Version: 1.0.3
+Summary: Makes troublesome data preprocessing comfortable
+Home-page: https://github.com/TorDataScientist/PyTDP
+Author: TorDataScientist
+License: MIT License
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: googletrans (==4.0.0-rc1)
+Requires-Dist: pandas (==1.1.5)
+Requires-Dist: scikit-learn (==0.22.2)
+Requires-Dist: joblib (==1.0.1)
+
+![python version](https://img.shields.io/badge/python-3.7%2C3.8-blue?logo=python)
+![PyPI](https://img.shields.io/pypi/v/PyTDP?color=important)
+![GitHub repo size](https://img.shields.io/github/repo-size/TOTO-DataScientist/PyTDP?color=informational)
+![GitHub](https://img.shields.io/github/license/TOTO-DataScientist/PyTDP)
+![GitHub followers](https://img.shields.io/github/followers/TOTO-DataScientist?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/TOTO-DataScientist/PyTDP?style=social)
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/45032597/137422816-ba51269e-497d-476a-ae39-c8f8b7bacde2.png" height="400" align="center">
+</div>
+<h1 align="center"><b>PyTDP : Python Troublesome Data Processing</b></h1>
+
+
+
+
+
+<div align="center"><b>It provides a useful library around cleansing the pre-processed part of the data.</b></div>
+
+# **OutLine**
+To all the data analysts out there.  
+If you are analyzing data pre-processing and analysis in separate working files, doesn't it become difficult to load the data each time?  
+
+You have to declare variables, read excel and csv data using pandas, and write the same process in a new working file every time.  
+
+Do you have to write the same process every time in a new working file, declaring variables, loading excel or csv data using pandas, etc. In addition, do you have to name variables randomly so that you don't understand anything when you restart the analysis?  
+
+**PyTDP** is the perfect solution for you.  
+
+It reads in several data sets at once and automatically creates variable names according to the file names. What's more, the data frame is saved as a dictionary type, so you don't have to go back to the top to find it!  
+
+# **Installation**
+
+```bash
+pip install PyTDP
+```
+
+# **Use library**
+
+```bash
+import pytdp
+```
+
+# 1. Make TroublesomeData class
+```bash
+td = TroublesomeData(data_list)
+```
+
+Click here for a simple study file to get used to it.燥
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TorDataScientist/PyTDP/blob/main/PyTDP_Starter.ipynb)
+
+
+

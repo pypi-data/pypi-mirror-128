@@ -1,0 +1,6 @@
+pytdp
+pytdp/TD
+pytdp/analyzer
+pytdp/bases
+pytdp/preprocessor
+pytdp/reader

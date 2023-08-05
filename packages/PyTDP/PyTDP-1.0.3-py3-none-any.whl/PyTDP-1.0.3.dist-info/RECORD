@@ -1,0 +1,16 @@
+pytdp/__init__.py,sha256=OTmZSKNZtycmFzixs5JX-kEjJwhRqiZNWJSEaugp2Kc,271
+pytdp/TD/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytdp/TD/troublesomedata.py,sha256=7N0Q6F7etM--u7KNcCcL58zZV8CJ2JWyt94tH2mJXt8,2513
+pytdp/analyzer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytdp/analyzer/api.py,sha256=PAOPmYpSFJPICZnmK8iWiG1wzPduV6avqOKYacg71XA,2473
+pytdp/bases/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytdp/bases/api.py,sha256=bxjn1sCsDmWIdHKUPoDL0r8E-IqxjSUqRM2IkY3ZiY8,2993
+pytdp/preprocessor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytdp/preprocessor/api.py,sha256=craTBxGWb5slkWV5WK-hfaTyuSsmfrhBEIOBc-IPkRk,3167
+pytdp/reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytdp/reader/api.py,sha256=LMCLAFmKQBrwlIBKh0GY4xMoaR9Hg2RW4aVvb-wtnok,5992
+PyTDP-1.0.3.dist-info/LICENSE,sha256=5lsPiQlB7gkjG8RMEm7WBUamn9TuPS62YHahZuLisec,1094
+PyTDP-1.0.3.dist-info/METADATA,sha256=QpaDEpd63VHvsflgIpT6Qi1onzIv2dSvgkUlP6yGsFI,2574
+PyTDP-1.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+PyTDP-1.0.3.dist-info/top_level.txt,sha256=m5NFVi6NYQOf_lP7D7Nl2jXCvGT6BOKdI8Z1OJO0izI,74
+PyTDP-1.0.3.dist-info/RECORD,,
