@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cogroo4py
+Version: 0.4.1
+Summary: Interface for accessing CoGrOO from Python scripts using jpype
+Home-page: https://github.com/kevencarneiro/cogroo4py
+Author: Guilherme Passero
+Author-email: guilherme.passero0@gmail.com
+License: UNKNOWN
+Keywords: cogroo
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing
+Requires-Dist: JPype1 (==1.3.0)
+Requires-Dist: Deprecated (==1.2.13)
+Provides-Extra: dev
+Requires-Dist: stubgenj (==0.2.5) ; extra == 'dev'
+
+UNKNOWN
+
