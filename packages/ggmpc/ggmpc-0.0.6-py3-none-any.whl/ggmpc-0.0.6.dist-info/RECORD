@@ -1,0 +1,13 @@
+ggmpc/__init__.py,sha256=cwd8pAskcqTGmTGYogWGI_06Qccnk3oq2FXl60FI89Y,17368
+ggmpc/__main__.py,sha256=j6-sGz_D5yp3Xr79SWKz1eFLECYl48mWpUXk3Fmne3o,21993
+ggmpc/curves.py,sha256=Jbt7mx2my4TBAv9urk93WTOn-atRiKKBllM34EkGleg,4637
+ggmpc/shamir.py,sha256=9er4Zm6VYpJ2eYj4SNGo3Z_tmAIQ6eNTYEH_C3GasbA,1737
+ggmpc/serialization/__init__.py,sha256=FreWnfFCumqPeyT9tSaKWCos8MVhDmKzB2lyk0rtppE,711
+ggmpc/serialization/ecdsa.py,sha256=jpYXKvlEthSD9qv6L6nhP2Oo05JWehjBS3_HjRJavnI,16262
+ggmpc/serialization/eddsa.py,sha256=ZGekLPC79-Fmvk08VtfS3_rbVaKe5Ch2UAWMKfyXZGs,7027
+ggmpc-0.0.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ggmpc-0.0.6.dist-info/METADATA,sha256=G4lXNYSFQUaB0IzVWPsr9cpjSi0bVpUy3zTgrwbPB_8,2030
+ggmpc-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ggmpc-0.0.6.dist-info/entry_points.txt,sha256=gVnYzOhxKiKmgZ-KXbLxnLR8X5cVDVf6k9tF0dxIvek,47
+ggmpc-0.0.6.dist-info/top_level.txt,sha256=5gRlz7Qql6rE_drlb43KIcHyESeNfawi9KAt-RinG0Q,6
+ggmpc-0.0.6.dist-info/RECORD,,
