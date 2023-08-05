@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+nonpure_dummy.egg-info/PKG-INFO
+nonpure_dummy.egg-info/SOURCES.txt
+nonpure_dummy.egg-info/dependency_links.txt
+nonpure_dummy.egg-info/not-zip-safe
+nonpure_dummy.egg-info/requires.txt
+nonpure_dummy.egg-info/top_level.txt
