@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: pyAFQ
+Version: 0.9.3
+Summary: pyAFQ: Automated Fiber Quantification ... in Python
+Home-page: https://yeatmanlab.github.io/pyAFQ
+Author: pyAFQ developers
+Author-email: arokem@gmail.com
+Maintainer: Ariel Rokem
+Maintainer-email: arokem@gmail.com
+License: BSD License
+Download-URL: https://github.com/yeatmanlab/pyAFQ
+Platform: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scikit-image (>=0.14.2)
+Requires-Dist: dipy (<1.5.0,>=1.4.0)
+Requires-Dist: pandas
+Requires-Dist: pybids (<0.14.0,>=0.9.3)
+Requires-Dist: templateflow (==0.6.2)
+Requires-Dist: pimms
+Requires-Dist: joblib (>=0.16.0)
+Requires-Dist: dask (>=1.1)
+Requires-Dist: boto3 (>=1.14.0)
+Requires-Dist: s3fs (~=0.4.2)
+Requires-Dist: toml (>=0.10.0)
+Requires-Dist: setuptools-scm[toml] (<5.1.0,>=3.4.0)
+Requires-Dist: funcargparse (>=0.2.0)
+Requires-Dist: popylar (==0.2.*)
+Requires-Dist: plotly (==5.3.0)
+Requires-Dist: kaleido (==0.2.1)
+Requires-Dist: imageio (>=2.0.0)
+Provides-Extra: afqbrowser
+Requires-Dist: AFQ-Browser (>=0.3) ; extra == 'afqbrowser'
+Provides-Extra: dev
+Requires-Dist: docutils (==0.15.2) ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: pytest (==6.0.1) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.10.0) ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: sphinx-gallery ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: numpydoc (==0.9.2) ; extra == 'dev'
+Requires-Dist: sphinx-autoapi ; extra == 'dev'
+Requires-Dist: rapidfuzz ; extra == 'dev'
+Requires-Dist: xvfbwrapper (==0.2.9) ; extra == 'dev'
+Requires-Dist: moto (~=2.2.9) ; extra == 'dev'
+Requires-Dist: pip-conflict-checker (>=0.6.0) ; extra == 'dev'
+Requires-Dist: pydata-sphinx-theme ; extra == 'dev'
+Provides-Extra: fsl
+Requires-Dist: fslpy ; extra == 'fsl'
+Provides-Extra: fury
+Requires-Dist: vtk (==9.0.1) ; extra == 'fury'
+Requires-Dist: fury (==0.6.0) ; extra == 'fury'
+Requires-Dist: xvfbwrapper (==0.2.9) ; extra == 'fury'
+Requires-Dist: ipython (<=7.20.0,>=7.13.0) ; extra == 'fury'
+Provides-Extra: itk
+Requires-Dist: h5py ; extra == 'itk'
+Provides-Extra: msmt
+Requires-Dist: cvxpy (<1.1.12,>=1.1.10) ; extra == 'msmt'
+Provides-Extra: plot
+Requires-Dist: pingouin (>=0.3) ; extra == 'plot'
+Requires-Dist: seaborn (>=0.11.0) ; extra == 'plot'
+Requires-Dist: ipython (<=7.20.0,>=7.13.0) ; extra == 'plot'
+
+# pyAFQ
+Automated Fiber Quantification ... in Python.
+
+
+For details, see [Documentation](https://yeatmanlab.github.io/pyAFQ)
+
+
