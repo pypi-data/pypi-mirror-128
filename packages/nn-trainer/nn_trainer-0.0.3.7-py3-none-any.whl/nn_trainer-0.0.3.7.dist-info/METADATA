@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: nn-trainer
+Version: 0.0.3.7
+Summary: Neural Network Trainer
+Home-page: https://github.com/nabrooks/NnTrainer
+Author: Nick Brooks
+Author-email: nick.brooks@outlook.com
+License: UNKNOWN
+Download-URL: https://github.com/nabrooks/NnTrainer/tags
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib (==3.4.3)
+Requires-Dist: numpy (==1.21.4)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: scikit-learn (==1.0.1)
+Requires-Dist: scipy (==1.7.2)
+Requires-Dist: sklearn (==0.0)
+Requires-Dist: torch (==1.10.0+cu102)
+Requires-Dist: torchaudio (==0.10.0+cu102)
+Requires-Dist: torchmetrics (==0.6.0)
+Requires-Dist: torchvision (==0.11.1+cu102)
+Requires-Dist: typing-extensions (==3.10.0.2)
+
+# NnTrainer
+A framework library for training neural networks with pytorch support
+
+
