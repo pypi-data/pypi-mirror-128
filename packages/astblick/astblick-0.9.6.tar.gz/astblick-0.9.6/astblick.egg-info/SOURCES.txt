@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+astblick-repo
+astblickd
+pyproject.toml
+setup.cfg
+setup.py
+astblick/README.md
+astblick/__init__.py
+astblick/favicon.ico
+astblick/style.css
+astblick.egg-info/PKG-INFO
+astblick.egg-info/SOURCES.txt
+astblick.egg-info/dependency_links.txt
+astblick.egg-info/requires.txt
+astblick.egg-info/top_level.txt

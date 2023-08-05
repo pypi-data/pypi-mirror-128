@@ -1,0 +1,240 @@
+#!/usr/bin/python3
+""" CherryPy application for browsing git repos"""
+
+# Copyright (C) 2021 Gwyn Ciesla
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+import sqlite3
+import os
+import sys
+import getpass
+import html
+import tempfile
+import glob
+import shutil
+import time
+import cherrypy
+import sqlalchemy
+from sqlalchemy.pool import StaticPool
+import git
+
+import astblick
+
+VERSION = "0.9.6"
+HEADER = "<html><title>ASTBLICK</title><h4 align=center>ASTBLICK</h4>"
+HEADER = HEADER + "<head><link href='/style.css' rel='stylesheet'></head>"
+FOOTER = "<h6 align=center>Astblick " + VERSION + " © Gwyn Ciesla 2021</h6></html>"
+
+CACHEDIR = os.path.join(os.path.expanduser('~' +  getpass.getuser()), '.astblickrepos')
+if not os.path.isdir(CACHEDIR):
+    os.mkdir(CACHEDIR)
+
+for DIR in glob.glob(tempfile.gettempdir() + '/astblick*'):
+    shutil.rmtree(DIR)
+CLONEDIR = tempfile.mkdtemp(prefix='astblick')
+
+CONFIGFILENAME = os.path.join(os.path.expanduser('~' +  getpass.getuser()), '.astblick.conf')
+
+CONFIG = astblick.config_handler(CONFIGFILENAME)
+
+FAVICON = os.path.dirname(astblick.__file__) + '/favicon.ico'
+
+CSSFILE = os.path.dirname(astblick.__file__) + '/style.css'
+
+READMEFILE = os.path.dirname(astblick.__file__) + '/README.md'
+
+REFSTATFILE = os.path.join(os.path.expanduser('~' + getpass.getuser()), \
+    '.astblickrepos/.astblickrefstat')
+
+if not os.path.isfile(REFSTATFILE):
+    with open(REFSTATFILE, 'a', encoding='utf-8'):
+        os.utime(REFSTATFILE)
+else:
+    with open(REFSTATFILE, 'w', encoding='utf-8') as REFSTAT:
+        REFSTAT.truncate()
+
+DATABASE = astblick.homesub(str(CONFIG.get("Options", "database")))
+IPADDR = str(CONFIG.get("Options", "ip"))
+PORT = int(CONFIG.get("Options", "port"))
+REFRESH = str(CONFIG.get("Options", "refresh"))
+KEY = astblick.homesub(str(CONFIG.get("Options", "key")))
+CERT = astblick.homesub(str(CONFIG.get("Options", "cert")))
+TEMPDIR = str(CONFIG.get("Options", "tempdir"))
+
+if astblick.create_certs(KEY, CERT) != 0:
+    sys.exit(1)
+
+if TEMPDIR == '0':
+    shutil.rmtree(CLONEDIR)
+    CLONEDIR = CACHEDIR
+
+if not os.path.islink(CLONEDIR + '/README.md'):
+    os.symlink(READMEFILE, CLONEDIR + '/README.md')
+
+TEXTTYPES = ['text', 'None', 'x-sh', 'x-troff-man', 'x-perl', 'rls-services+xml']
+XMLTYPES = ['xcf', 'odt', 'ods', 'odp', 'odg', 'odf']
+
+if not os.path.isfile(DATABASE):
+    with sqlite3.connect(DATABASE) as dbc:
+        dbc.execute("CREATE TABLE repo(repoid INTEGER PRIMARY KEY, reponame TEXT, updated INTEGER, url TEXT, key TEXT);") # pylint: disable=line-too-long
+
+PID = str(os.getpid())
+
+cherrypy.config.update({'server.socket_host': IPADDR,
+                        'server.socket_port': PORT,
+                        'server.max_request_body_size': 0,
+                        'server.socket_timeout': 60,
+                        'server.ssl_private_key': KEY,
+                        'server.ssl_certificate': CERT,
+                        'log.screen': False,
+                        'log.access_file': '',
+                        'log.error_file': '',
+                        'response.timeout': 3600})
+
+#connect to DB with shared connection for all threads.
+ENGINE = sqlalchemy.create_engine('sqlite:///' + DATABASE, \
+    connect_args={'check_same_thread':False}, poolclass=StaticPool)
+
+print("Attempting git repo refresh...")
+START_TIME = time.time()
+REFRESH_STATUS = astblick.refresh_repos('now', ENGINE, CACHEDIR, CLONEDIR, REFRESH, REFSTATFILE)
+ELAPSED = time.time() - START_TIME
+if REFRESH_STATUS == '0':
+    print(f"Successful in {ELAPSED:.2f} seconds!")
+else:
+    print(f"Error after {ELAPSED:.2f} seconds!")
+
+WD = cherrypy.process.plugins.BackgroundTask(int(REFRESH), \
+    astblick.refresh_repos, args=['now', ENGINE, CACHEDIR, CLONEDIR, REFRESH, REFSTATFILE])
+WD.start()
+
+class Astblick(): # pylint: disable=too-few-public-methods
+    """ Main class """
+
+    @cherrypy.expose
+    def refresh(self): # pylint: disable=no-self-use, too-many-branches
+        """ Allow cli to refresh repos now. """
+        status = astblick.refresh_repos('now', ENGINE, CACHEDIR, CLONEDIR, REFRESH, REFSTATFILE)
+        return status
+
+    @cherrypy.expose
+    def arbdiff(self, **params): # pylint: disable=no-self-use, too-many-branches
+        """ Render arbitrary diffs """
+        c_from = ''
+        c_to = ''
+        target = ''
+        parlen = len(params)
+        payload = ''
+        if parlen > 0:
+            if 'From' in params:
+                parclen = len(params['From'])
+                if parclen > 0:
+                    c_from = params['From']
+            if 'To' in params:
+                parclen = len(params['To'])
+                if parclen > 0:
+                    c_to = params['To']
+            if 'target' in params:
+                parclen = len(params['target'])
+                if parclen > 0:
+                    target = params['target']
+                    target = target.replace('..', '')
+
+            for parm in [c_from, c_to, target]:
+                parlen = len(parm)
+                if parlen == 0:
+                    return "<html><h2>Invalid parameters</h2></html>"
+
+            if c_from == c_to:
+                return "<html><h2>No change</h2></html>"
+
+            try:
+                os.chdir(CLONEDIR + '/' + target)
+                gdir = git.Repo('.')
+            except git.NoSuchPathError:
+                return "<html><h2>Invalid path</h2></html>"
+
+            payload = "<html>"
+            title_string = target + ": " + c_from[:7] + " >>> " + c_to[:7]
+            payload = payload + "<title>" + title_string  + "</title>"
+            payload = payload + "<h2 align=center>" + title_string + " - " \
+                + str(gdir.commit(c_to).author) + " - " \
+                     + astblick.formdate(gdir.commit(c_to)) + "</h2>"
+            payload = payload + "<table bgcolor=lightgray align=center>"
+            for line in html.escape(gdir.git.diff(c_from, c_to)).split('\n'):
+                payload = payload + astblick.format_diff_line(line)
+            payload = payload + "</table>"
+            payload = "<pre>" + payload + "</pre></html>"
+        return payload
+
+    @cherrypy.expose
+    def index(self, **params): # pylint: disable=no-self-use
+        """ Index """
+        cwd = ''
+        display = ''
+        parlen = len(params)
+        if parlen > 0:
+            if 'cwd' in params:
+                parclen = len(params['cwd'])
+                if parclen > 0:
+                    cwd = params['cwd']
+            if 'display' in params:
+                parclen = len(params['display'])
+                if parclen > 0:
+                    display = params['display']
+            if 'branch' in params:
+                parclen = len(params['branch'])
+                if parclen > 0:
+                    newbranch = params['branch']
+                    gdir = git.Repo(CLONEDIR + '/' + cwd)
+                    for branch in gdir.branches:
+                        if branch.name == newbranch:
+                            branch.checkout()
+
+        payload = HEADER
+        payload = payload + astblick.pull_status(ENGINE, CLONEDIR, REFRESH, REFSTATFILE)
+        payload = payload + "<table width=100%><tr>"
+        if cwd != '':
+            payload = payload + astblick.list_cwd(cwd, CLONEDIR, TEXTTYPES, XMLTYPES)
+        else:
+            payload = payload + astblick.list_cwd('/', CLONEDIR, TEXTTYPES, XMLTYPES)
+        if display != '':
+            payload = payload + astblick.display_file(display, CLONEDIR)
+
+        payload = payload + astblick.show_history(cwd, display, CLONEDIR)
+        payload = payload + "</tr></table>"
+        payload = payload + \
+            "<table align=center><tr><th style='font-size:60%'>Disk free: " \
+                + str(astblick.humansize(astblick.dfree(CLONEDIR)))
+        payload = payload + \
+            " | SSL Certificate expires: " + str(astblick.cert_expiry(CERT)) + "</th></tr></table>"
+        payload = payload + FOOTER
+
+        return payload
+
+
+if __name__ == '__main__':
+    CONF = {
+        '/favicon.ico': {
+            'tools.staticfile.on': True,
+            'tools.staticfile.filename': FAVICON
+        },
+        '/style.css': {
+            'tools.staticfile.on': True,
+            'tools.staticfile.filename': CSSFILE
+        }
+    }
+
+    cherrypy.quickstart(Astblick(), '/', CONF)

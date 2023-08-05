@@ -1,0 +1,143 @@
+#!/usr/bin/python3
+""" Create, modify and remove astblick repos"""
+
+# pylint: disable=invalid-name
+
+# Copyright (C) 2021 Gwyn Ciesla
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+import os
+import sys
+import getpass
+import configparser
+import datetime
+import shutil
+import requests
+from urllib3.exceptions import InsecureRequestWarning
+import sqlalchemy
+from sqlalchemy.pool import StaticPool
+
+import astblick
+
+CONFIGFILENAME = os.path.join(os.path.expanduser('~' +  getpass.getuser()), '.astblick.conf')
+
+CONFIG = astblick.config_handler(CONFIGFILENAME)
+
+DATABASE = astblick.homesub(str(CONFIG.get("Options", "database")))
+
+#connect to DB with shared connection for all threads.
+ENGINE = sqlalchemy.create_engine('sqlite:///' + DATABASE, \
+    connect_args={'check_same_thread':False}, poolclass=StaticPool)
+
+with ENGINE.connect() as dbconn:
+    print("------")
+    print("ID | Repository Name | Gitolite URL | RSA key path | Last refresh")
+    print("------")
+    for repoid, reponame, updated, url, key in \
+        dbconn.execute("SELECT repoid, reponame, updated, url, key from repo;").fetchall():
+        formdate = datetime.datetime.fromtimestamp(updated).strftime('%I:%M %p, %Y-%m-%d')
+        print(str(repoid) + ' | ' + reponame + ' | ' + url + ' | ' + key + ' | ' + formdate)
+    print("------\n")
+
+RESPONSE = input('(a)dd, (e)dit, (d)elete, (r)efresh, (q)uit: ')
+if RESPONSE == 'a':
+    nextid = ''
+    defaultkey = '~/.ssh/astblick'
+    REPONAME = input('Repository Name: ')
+    if os.path.exists(os.path.join(os.path.expanduser('~' +  getpass.getuser()), \
+            '.astblickrepos/' + REPONAME)):
+        print("Repo " + REPONAME + " already exists.")
+        sys.exit(0)
+    URL = input('Gitolite URL: ')
+    KEY = input('Path to RSA key (' + defaultkey + '): ')
+    if KEY != '':
+        newkey = KEY
+    else:
+        newkey = defaultkey
+    with ENGINE.connect() as dbconn:
+        for repoid in \
+            dbconn.execute("SELECT repoid FROM repo ORDER BY repoid DESC LIMIT 1;").fetchall():
+            nextid = str(int(repoid[0]) + 1)
+        if nextid == '':
+            nextid = '1'
+        dbconn.execute("INSERT into repo VALUES(" + nextid + ", ?, 0, ?, ?);", \
+                REPONAME, URL, newkey)
+    sys.exit(0)
+
+if RESPONSE == 'e':
+    UPDATE = 0
+    REPO = input('Enter repo ID: ')
+    with ENGINE.connect() as dbconn:
+        for reponame, url, key in \
+            dbconn.execute("SELECT reponame, url, key FROM repo WHERE repoid = ?;", REPO).fetchall(): # pylint: disable=line-too-long
+            NEWNAME = input('Repository Name (' + reponame + '): ')
+            if os.path.exists(os.path.join(os.path.expanduser('~' +  getpass.getuser()), \
+                    '.astblickrepos/' + NEWNAME)):
+                print("Repo " + NEWNAME + " already exists.")
+                sys.exit(0)
+            NEWURL = input('Gitolite URL (' + url + '): ')
+            NEWKEY = input('Path to RSA key (' + key + '): ')
+            if NEWNAME not in [reponame, '']:
+                reponame = NEWNAME
+                UPDATE = 1
+            if NEWURL not in [url, '']:
+                url = NEWURL
+                UPDATE = 1
+            if NEWKEY not in [key, '']:
+                key = NEWKEY
+                UPDATE = 1
+    if UPDATE == 1:
+        with ENGINE.connect() as dbconn:
+            dbconn.execute("UPDATE repo SET reponame=?, url=?, key=? WHERE repoid=?;", \
+                reponame, url, key, REPO)
+    sys.exit(0)
+
+if RESPONSE == 'd':
+    REPO = input('Enter repo ID: ')
+    CONFIRM = input('Confirm deletion of ' + REPO + ' (y/N)')
+    if CONFIRM == 'y':
+        with ENGINE.connect() as dbconn:
+            for reponame in \
+                dbconn.execute("SELECT reponame FROM repo WHERE repoid = ? LIMIT 1;", \
+                    REPO).fetchall():
+                TARGET = str(reponame[0])
+            dbconn.execute("DELETE FROM repo WHERE repoid = ?;", REPO)
+        if os.path.exists(os.path.join(os.path.expanduser('~' +  getpass.getuser()), \
+            '.astblickrepos/' + TARGET)):
+            shutil.rmtree(os.path.join(os.path.expanduser('~' +  getpass.getuser()), \
+            '.astblickrepos/' + TARGET))
+    sys.exit(0)
+
+if RESPONSE == 'r':
+    requests.urllib3.disable_warnings(InsecureRequestWarning)
+    CONFIGFILENAME = os.path.join(os.path.expanduser('~' +  getpass.getuser()), '.astblick.conf')
+    CONFIG = configparser.ConfigParser()
+    CONFIG.read(CONFIGFILENAME)
+    IPADDR = str(CONFIG.get("Options", "ip"))
+    PORT = str(CONFIG.get("Options", "port"))
+    URL = 'https://' + IPADDR + ':' + PORT + '/'
+    try:
+        OUTPUT = requests.get(URL + 'refresh', verify=False)
+    except OSError:
+        print("Unable to connect")
+        sys.exit(1)
+
+    if OUTPUT.text == '0':
+        print("Git repos refreshed.")
+    else:
+        print("Git repos not refreshed.")
+
+if RESPONSE == 'q':
+    sys.exit(0)

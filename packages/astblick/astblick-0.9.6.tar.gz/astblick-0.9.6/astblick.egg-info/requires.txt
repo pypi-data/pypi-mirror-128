@@ -1,0 +1,6 @@
+requests
+cherrypy
+pyOpenSSL
+sqlalchemy
+markdown
+GitPython
