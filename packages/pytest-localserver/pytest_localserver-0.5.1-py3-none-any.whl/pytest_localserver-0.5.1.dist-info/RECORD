@@ -1,0 +1,13 @@
+pytest_localserver/__init__.py,sha256=fjfXO3SaLkalxkQLqlYKmuHCcVLe0WjqKI4O3kbJUOk,18
+pytest_localserver/http.py,sha256=iKxnC91Oda-xySy1__TrbOuFegIvkn2vfDFEPIsOIFo,3844
+pytest_localserver/https.py,sha256=v2rdU1WkJvpdydaq3Hacn391iquT9LJucUsFP8eqz_w,5027
+pytest_localserver/plugin.py,sha256=_cMkeJfd09-at385sk2axqT-lQ8MXTuSECtxrieRusI,2489
+pytest_localserver/server.pem,sha256=JGL5aKpQWkyL5RE97JfnLWKaGs1-IuOWocbzydh7cOs,5252
+pytest_localserver/smtp.py,sha256=0op5FybewFAqqWuc2yfTXZz_greMHeTREGn8j311_ZU,3302
+pytest_localserver-0.5.1.dist-info/AUTHORS,sha256=TN_5y_WQMjx3HnprZf4iGhCG1Pe769qL6J2XqkxTu1M,283
+pytest_localserver-0.5.1.dist-info/LICENSE,sha256=TrJB5nvWZ5ERFLqtflQqsAtUl4HPVQ7WBQY5Hzkf32g,1082
+pytest_localserver-0.5.1.dist-info/METADATA,sha256=sdjsjJVCYvDVcqFO5r9rL4SdzLBT0pTKI43iZWO2dNk,8660
+pytest_localserver-0.5.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pytest_localserver-0.5.1.dist-info/entry_points.txt,sha256=1WtOmUx8B35c9yyoHVo4tt04h5pY0pK3bwyN4GSe9Ls,52
+pytest_localserver-0.5.1.dist-info/top_level.txt,sha256=MQGeUDXtaVTLF_bv_bbgpDUuvq8Xr5LjHt5XxReKJWA,19
+pytest_localserver-0.5.1.dist-info/RECORD,,
