@@ -1,0 +1,23 @@
+name: omnisci-dev
+channels:
+- conda-forge
+- defaults
+dependencies:
+- pandas
+- pyarrow==3.0.0
+- thrift<=0.14.0
+- pandas
+- python >=3.7.0
+- geopandas
+- shapely
+- sqlalchemy
+- numpy
+- numpydoc
+- coverage
+- flake8
+- pre-commit
+- pytest-cov
+- pytest-mock
+- requests
+- sphinx
+- sphinx_rtd_theme

@@ -1,0 +1,25 @@
+name: omnisci-gpu-dev
+channels:
+- rapidsai
+- nvidia
+- conda-forge
+- defaults
+dependencies:
+- cudf>=0.16
+- cudatoolkit=11.0
+- python >=3.7.0
+- pyarrow<=3.0.0
+- pandas
+- geopandas
+- shapely
+- sqlalchemy
+- numpy
+- numpydoc
+- coverage
+- flake8
+- pre-commit
+- pytest-cov
+- pytest-mock
+- sphinx
+- sphinx_rtd_theme
+- requests
