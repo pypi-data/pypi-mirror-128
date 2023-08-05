@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: sarkas
+Version: 1.0.1
+Summary: Sarkas - A Fast pure-python Molecular Dynamics suite for plasmas
+Home-page: https://murillogroup.github.io/sarkas
+Author: Murillo Group
+Author-email: sarkasdev@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (==1.20)
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: numba (>=0.50)
+Requires-Dist: pyfftw
+Requires-Dist: fdint
+Requires-Dist: pyyaml
+Requires-Dist: tables
+Requires-Dist: tqdm
+Requires-Dist: pyfiglet (==0.8.post1)
+Requires-Dist: pickle5
+Requires-Dist: jupyter
+Requires-Dist: jupyterlab
+Requires-Dist: notebook
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+# Sarkas
+A Pure Python Molecular Dynamics package for Non-Ideal Plasmas
+
+Sarkas aims at lowering the entry barrier for computational plasma physics by providing a comprehensive MD suite complete with pre- and post-processing tools commonly found in plasma physics.
+
+Sarkas is entirely written in Python without calls to C/Fortran hence avoiding a two-language problem. It relies on the most common Python scientific packages, e.g. NumPy, Numba, SciPy, and Pandas, which provide a solid foundation built, optimized, and well documented by one of the largest community of developers. Furthermore, Sarkas is developed using an object-oriented approach allowing users to add new features in a straight-forward way.
+
+Sarkas targets a broad user base: from experimentalists to computational physicists, from students approaching plasma physics for the first time to seasoned researchers. Therefore Sarkas’ design revolves around two primary requirements: ease-of-use and extensibility.
+
+## Documentation
+https://murillo-group.github.io/sarkas/
+
+## Installation
+Sarkas can be installed by running the command
+
+    pip install sarkas
+ 
+in a terminal or command prompt window.
+
+
+
+

@@ -1,0 +1,88 @@
+#!python
+
+"""
+                                SARKAS:
+
+An open-source pure-python molecular dynamics code for non-ideal plasmas.
+
+Developed by the research group of:
+Professor Michael S. Murillo
+sarkasdev@gmail.com
+Dept. of Computational Mathematics, Science, and Engineering,
+Michigan State University
+"""
+
+# Python modules
+from optparse import OptionParser
+# Sarkas modules
+from sarkas.processes import Simulation
+from sarkas.tools.observables import Thermodynamics
+
+# Construct the argument parser
+op = OptionParser()
+
+# Add the arguments to the parser
+op.add_option("-t", "--pre_run_testing", action='store_true', dest='test', default=False, help="Test input parameters")
+op.add_option("-v", "--verbose", action='store_true', dest='verbose', default=False, help="Verbose output")
+op.add_option("-p", "--plot_show", action='store_true', dest='plot_show', default=False, help="Show plots")
+op.add_option("-c", "--check_status", type='choice', choices=['equilibration', 'production'],
+              action='store', dest='check_status', help="Check current state of run")
+op.add_option("-d", "--sim_dir", action='store', dest='sim_dir', help="Simulation Directory")
+op.add_option("-j", "--job_dir", action='store', dest='job_dir', help="Job Directory")
+op.add_option("-s", "--seed", action='store', dest='rand_seed', type=int, help="Random Number Seed")
+op.add_option("-i", "--input", action='store', dest='input_file', help="YAML Input file")
+op.add_option("-r", "--restart", type=str, action='store', dest='restart', help="Restart simulation")
+
+options, _ = op.parse_args()
+
+# Input file is a must
+assert options.input_file, 'Input file not defined.'
+
+# Read initial conditions and setup parameters
+if options.test:
+    from sarkas.processes import PreProcess
+    sim = PreProcess(options.input_file)
+else:
+    sim = Simulation(options.input_file)
+
+# Create the dictionary of extra inputs
+args = {}
+if any([options.check_status, options.sim_dir, options.job_dir, options.verbose]):
+    args = {"IO":{}}
+    if options.check_status:
+        args["IO"]["check_status"] = True
+
+    if options.sim_dir:
+        args["IO"]["simulations_dir"] = options.sim_dir
+
+    if options.job_dir:
+        args["IO"]["job_dir"] = options.job_dir
+
+    if options.verbose:
+        args["IO"]["verbose"] = True
+
+if any([options.rand_seed, options.restart]):
+    if not args: #if empty
+        args = {"Parameters": {}}
+    else:
+        args["Parameters"] = {}
+
+    if options.rand_seed:
+        args["Parameters"]["rand_seed"] = options.rand_seed
+
+    if options.restart:
+        phase, step = options.restart.split('_')
+        args["Parameters"]["load_method"] = phase + '_restart'
+        args["Parameters"]["restart_step"] = int(step)
+
+if args:
+    sim.setup(read_yaml=True, other_inputs=args)
+else:
+    sim.setup(read_yaml=True)
+
+if options.check_status:
+    sim.io.read_pickle(sim)
+    energy = Thermodynamics(sim.parameters)
+    energy.temp_energy_plot(sim.parameters, options.check, options.plot_show)
+else:
+   sim.run()
