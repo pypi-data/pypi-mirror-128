@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+package_zax_publish_demo/__init__.py
+package_zax_publish_demo.egg-info/PKG-INFO
+package_zax_publish_demo.egg-info/SOURCES.txt
+package_zax_publish_demo.egg-info/dependency_links.txt
+package_zax_publish_demo.egg-info/requires.txt
+package_zax_publish_demo.egg-info/top_level.txt
