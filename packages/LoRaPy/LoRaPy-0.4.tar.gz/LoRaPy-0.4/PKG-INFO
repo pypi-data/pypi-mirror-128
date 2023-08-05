@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: LoRaPy
+Version: 0.4
+Summary: Implementation of the LoRaWAN intended to connect to the Things Network Stack (V2-V3)
+Home-page: https://github.com/ColbySawyer7/LoRaPy
+Author: Colby Sawyer
+Author-email: sawyerco21@ecu.edu
+License: MIT
+Download-URL: https://github.com/ColbySawyer7/LoRaPy/archive/refs/tags/v_0.4.tar.gz
+Description: UNKNOWN
+Keywords: LoRaWAN,Lora,Things Network,TTN,v3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
