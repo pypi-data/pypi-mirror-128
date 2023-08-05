@@ -1,0 +1,11 @@
+jipdate/__init__.py,sha256=F_m9LRcJZ9jedZ983Yj5mz9KyV-LizqBJk4NTDq5BV8,57
+jipdate/cfg.py,sha256=H5vmFhePKlp8q4-nrVKuwKMWXh4HeLC15v4v2OCGnOM,3410
+jipdate/jipdate.py,sha256=yBB-1ddGS1Z3APIPy5YDiHkZ9ZnKNjq5mgd3A3jmQgg,19026
+jipdate/jipfp.py,sha256=EX86kF0q-jfHhigAiLVYewVoeGatyK0eaK0tDFVsCd4,19865
+jipdate/jipstatus.py,sha256=pCYEkyGp6Vo5LNi2JYZ4fWjWD5HdE51SZjHbCcDGWFM,9694
+jipdate/jiralogin.py,sha256=m8nkocDPwDySavp4EzAoVv6ZY05XloLwVsWrWSc9zzE,3610
+jipdate-0.0.1.dist-info/entry_points.txt,sha256=MO4qYEMXB9KzLtpg6aFs2_vxJBt8gTa70r96qBQu2TY,106
+jipdate-0.0.1.dist-info/LICENSE,sha256=cmgaPr53De9858flDu-C25_V9s0wr7av85c23-SugwE,1063
+jipdate-0.0.1.dist-info/WHEEL,sha256=pVNS5wRGlMB8qzi0M1coslDk7i694hS7VxZqRXRntY4,81
+jipdate-0.0.1.dist-info/METADATA,sha256=ns3dwOo0sNYBuZ5vfUuB-gyBMcs-B6pXldocqXQDdF4,848
+jipdate-0.0.1.dist-info/RECORD,,

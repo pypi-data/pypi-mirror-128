@@ -1,0 +1,5 @@
+[console_scripts]
+jipdate=jipdate.jipdate:main
+jipfp=jipdate.jipfp:main
+jipstatus=jipdate.jipstatus:main
+
