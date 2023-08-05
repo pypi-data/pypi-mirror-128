@@ -1,0 +1,8 @@
+confer.py
+setup.py
+confer.egg-info/PKG-INFO
+confer.egg-info/SOURCES.txt
+confer.egg-info/dependency_links.txt
+confer.egg-info/entry_points.txt
+confer.egg-info/requires.txt
+confer.egg-info/top_level.txt
