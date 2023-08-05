@@ -1,0 +1,17 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/defining_orbits.py,sha256=LBzmUex1ui4M-GmGqLvQY_1JeG9_jP5aOn8nzn_MNfU,1979
+examples/maneuvers.py,sha256=T-5zWrIuRm2aewl8mqxUrCUc5ADI9xaonXLU-gcG01A,1304
+examples/misfire.py,sha256=bPGj89BAluzGhHCTYFYyb-LcNNy650G8HMwZ-dzQBU0,3312
+examples/plotting.py,sha256=fnFVP3Wz72b2itxYZQV1D3FDodEdHGwYt-oBw35nvOc,1243
+orbites/__init__.py,sha256=vi3Z0hPqYAwk-q9DyvyY10ZK3bGBgMpW7zWbD68zDqg,468
+orbites/bodies.py,sha256=_2ANi8jhdhXbfsjzWisjirTMqgr4bdhemrxpSjgSVd8,3341
+orbites/constants.py,sha256=sXngkVLxxJLyh5T_iRsgg4PI1Kykbayr9rEHVBa-tLI,2398
+orbites/elements.py,sha256=EGbsbejiXgWy0-R7uj7ASvGiNnEml3IOifzOtz5QtJk,16729
+orbites/maneuver.py,sha256=F7mWBoVj8E95cBqCFFPb0Y_hmxUfp48CkBQ0nA2dIa0,27684
+orbites/plotting.py,sha256=ZP2Wi_-TQSXz4nqft28oteOb1__Wqvh9aZ6vhltqQQ0,10685
+orbites/utilities.py,sha256=J08Pd7Av89FqkyeWiFRxdiHTKU73DcUx6f9EKxRTZ3g,13696
+orbit_pkg_SERGEI_DOLIN-0.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+orbit_pkg_SERGEI_DOLIN-0.0.dist-info/METADATA,sha256=ouYsczij-4shs5RmmweF6P--SU5l9_P15Vb3kLeAcCs,1043
+orbit_pkg_SERGEI_DOLIN-0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+orbit_pkg_SERGEI_DOLIN-0.0.dist-info/top_level.txt,sha256=0fYjaP0x7d52NWZVQBhlfxRPPWCcQl9xmADgLZbR9yM,17
+orbit_pkg_SERGEI_DOLIN-0.0.dist-info/RECORD,,

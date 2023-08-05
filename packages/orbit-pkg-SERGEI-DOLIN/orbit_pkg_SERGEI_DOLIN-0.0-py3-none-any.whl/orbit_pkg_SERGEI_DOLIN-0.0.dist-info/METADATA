@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: orbit-pkg-SERGEI-DOLIN
+Version: 0.0
+Summary: lib for edu
+Home-page: https://github.com/SergeyDolin/Orbit
+Author: Frazer McLean
+Author-email: frazer@frazermclean.co.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Orbital
+
+This is package for education. You can use original git
+[RazerM Orbital](https://github.com/RazerM/orbital)
+
+### Example
+
+```python
+from orbital import earth, KeplerianElements, Maneuver, plot
+
+from scipy.constants import kilo
+import matplotlib.pyplot as plt
+
+orbit = KeplerianElements.with_altitude(1000 * kilo, body=earth)
+man = Maneuver.hohmann_transfer_to_altitude(10000 * kilo)
+plot(orbit, title='Maneuver 1', maneuver=man)
+plt.show()
+```
+
+### Documentation
+
+For more information, view the [documentation online][doc].
+
+  [doc]: http://pythonhosted.org/OrbitalPy/
+
