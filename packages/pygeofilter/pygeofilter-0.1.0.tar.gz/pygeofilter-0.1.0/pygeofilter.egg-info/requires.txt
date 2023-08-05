@@ -1,0 +1,19 @@
+dateparser
+lark<1.0
+pygeoif
+
+[:python_version < "3.7"]
+dataclasses
+
+[backend-django]
+django
+
+[backend-native]
+shapely
+
+[backend-sqlalchemy]
+geoalchemy2
+sqlalchemy
+
+[fes]
+pygml>=0.2
