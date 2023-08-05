@@ -1,0 +1,3 @@
+[console_scripts]
+vast-threatbus = vast_threatbus.vast_threatbus:main
+
