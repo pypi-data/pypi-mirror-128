@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+somtimes/SelfOrganizingMap.py
+somtimes/__init__.py
+somtimes/demo.py
+somtimes.egg-info/PKG-INFO
+somtimes.egg-info/SOURCES.txt
+somtimes.egg-info/dependency_links.txt
+somtimes.egg-info/requires.txt
+somtimes.egg-info/top_level.txt
+somtimes.egg-info/zip-safe

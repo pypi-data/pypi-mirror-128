@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: somtimes
+Version: 1.0.2
+Summary: Python implementation of SOMTimeS: Self Organizing Map for Time Series
+Home-page: https://github.com/ali-javed/somtimes
+Author: A. Javed
+Author-email: alijaved@live.com
+License: UNKNOWN
+Download-URL: https://github.com/ali-javed/somtimes/archive/refs/tags/1.0.2.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
