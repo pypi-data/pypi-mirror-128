@@ -1,0 +1,3 @@
+[console_scripts]
+nmrquant = nmrquant.ui.cli:start_cli
+
