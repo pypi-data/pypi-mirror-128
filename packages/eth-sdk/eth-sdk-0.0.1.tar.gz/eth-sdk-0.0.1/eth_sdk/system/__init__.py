@@ -1,0 +1,1 @@
+SDK_PATHS = ['eth-sdk/', '../eth-sdk/']
