@@ -1,0 +1,7 @@
+torch<2.0.0,>=1.7.0
+fastai>=2.4
+transformers>=4.6
+datasets
+sentencepiece
+seqeval
+rouge-score
