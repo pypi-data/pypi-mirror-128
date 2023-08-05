@@ -1,0 +1,91 @@
+{
+    "type": [
+      "null",
+      "object"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "callStartDate": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "date-time"
+      },
+      "callEndDate": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "date-time"
+      },
+      "businessUnitId": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "businessUnitName": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "agentId": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "stateIndex": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "startDate": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "date-time"
+      },
+      "agentStateId": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "agentSessionId": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "skillId": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "outStateId": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "outStateDescription": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "duration": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      }
+    }
+  }
+  

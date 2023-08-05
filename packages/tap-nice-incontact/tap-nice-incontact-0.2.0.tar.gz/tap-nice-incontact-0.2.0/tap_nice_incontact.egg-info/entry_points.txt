@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    tap-nice-incontact=tap_nice_incontact:main
+    

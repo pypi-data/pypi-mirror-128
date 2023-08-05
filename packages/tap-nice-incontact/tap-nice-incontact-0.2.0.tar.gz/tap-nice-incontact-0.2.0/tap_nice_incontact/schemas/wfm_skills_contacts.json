@@ -1,0 +1,119 @@
+{
+    "type": [
+      "null",
+      "object"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "startDate": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "date-time"
+      },
+      "endDate": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "date-time"
+      },
+      "businessUnitId": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "businessUnitName": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "intervalStartDate": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "date-time"
+      },
+      "skillId": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "skillName": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "serviceLevel": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "singer.decimal"
+      },
+      "mediaTypeId": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "mediaTypeName": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "totalContacts": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "totalHandled": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "averageHandleTime": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "singer.decimal"
+      },
+      "abandonCount": {
+        "type": [
+          "null",
+          "integer"
+        ]
+      },
+      "averageSpeedOfAnswer": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "singer.decimal"
+      },
+      "totalContactTime": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "format": "singer.decimal"
+      },
+      "isOutbound": {
+        "type": [
+          "null",
+          "boolean"
+        ]
+      }
+    }
+  }
+  
