@@ -1,0 +1,184 @@
+Metadata-Version: 2.1
+Name: etna
+Version: 1.3.2
+Summary: ETNA is the first python open source framework of Tinkoff.ru AI Center. It is designed to make working with time series simple, productive, and fun.
+Home-page: https://github.com/tinkoff-ai/etna
+License: Apache 2.0
+Author: Andrey Alekseev
+Author-email: an.alekseev@tinkoff.ru
+Requires-Python: >=3.6.2,<3.9.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: all
+Provides-Extra: all-dev
+Provides-Extra: docs
+Provides-Extra: jupyter
+Provides-Extra: prophet
+Provides-Extra: release
+Provides-Extra: style
+Provides-Extra: tests
+Provides-Extra: torch
+Provides-Extra: wandb
+Requires-Dist: GitPython (>=3.1.20,<4.0.0); extra == "docs" or extra == "all-dev"
+Requires-Dist: Sphinx (>=3.5.1,<4.0.0); extra == "docs" or extra == "all-dev"
+Requires-Dist: black (==21.9b0); extra == "style" or extra == "all-dev"
+Requires-Dist: catboost (>=0.25,<0.26)
+Requires-Dist: click (>=8.0.1,<9.0.0); extra == "release" or extra == "all-dev" or extra == "all-dev"
+Requires-Dist: coverage (>=5.4,<6.0); extra == "tests" or extra == "all-dev"
+Requires-Dist: dill (>=0.3.4,<0.4.0)
+Requires-Dist: flake8 (>=3.9.2,<4.0.0); extra == "style" or extra == "all-dev"
+Requires-Dist: flake8-docstrings (>=1.6.0,<2.0.0); extra == "style" or extra == "all-dev"
+Requires-Dist: hydra-slayer (>=0.2.0,<0.3.0)
+Requires-Dist: ipywidgets (>=7.6.5,<8.0.0)
+Requires-Dist: isort (>=5.8.0,<6.0.0); extra == "style" or extra == "all-dev"
+Requires-Dist: jupyter; extra == "jupyter" or extra == "all-dev"
+Requires-Dist: loguru (>=0.5.3,<0.6.0)
+Requires-Dist: mypy (>=0.910,<0.911); extra == "style" or extra == "all-dev"
+Requires-Dist: myst-parser (>=0.14.0,<0.15.0); extra == "docs" or extra == "all-dev"
+Requires-Dist: nbconvert; extra == "jupyter" or extra == "all-dev"
+Requires-Dist: nbsphinx (>=0.8.2,<0.9.0); extra == "docs" or extra == "all-dev"
+Requires-Dist: numba (>=0.53.1,<0.54.0)
+Requires-Dist: numpydoc (>=1.1.0,<2.0.0); extra == "docs" or extra == "all-dev"
+Requires-Dist: omegaconf (>=2.1.1,<3.0.0)
+Requires-Dist: pandas (>=1,<2)
+Requires-Dist: pep8-naming (>=0.12.1,<0.13.0); extra == "style" or extra == "all-dev"
+Requires-Dist: prophet (>=1.0,<2.0); extra == "prophet" or extra == "all" or extra == "all-dev"
+Requires-Dist: pytest (>=6.2,<7.0); extra == "tests" or extra == "all-dev"
+Requires-Dist: pytest-cov (>=2.11.1,<3.0.0); extra == "tests" or extra == "all-dev"
+Requires-Dist: pytorch-forecasting (==0.8.5); extra == "torch" or extra == "all" or extra == "all-dev"
+Requires-Dist: ruptures (==1.1.5)
+Requires-Dist: saxpy (>=1.0.1-dev167,<2.0.0)
+Requires-Dist: scikit-learn (>=0.24.1,<0.25.0)
+Requires-Dist: seaborn (>=0.11.1,<0.12.0)
+Requires-Dist: semver (>=2.13.0,<3.0.0); extra == "release" or extra == "all-dev" or extra == "all-dev"
+Requires-Dist: sphinx-mathjax-offline (>=0.0.1,<0.0.2); extra == "docs" or extra == "all-dev"
+Requires-Dist: sphinx-rtd-theme (>=0.5.1,<0.6.0); extra == "docs" or extra == "all-dev"
+Requires-Dist: statsmodels (>=0.12.2,<0.13.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: torch (>=1.8.0,<1.9.0); extra == "torch" or extra == "all" or extra == "all-dev"
+Requires-Dist: typer (>=0.4.0,<0.5.0)
+Requires-Dist: types-PyYAML (>=6.0.0,<7.0.0); extra == "style" or extra == "all-dev"
+Requires-Dist: wandb (>=0.12.2,<0.13.0); extra == "wandb" or extra == "all" or extra == "all-dev"
+Project-URL: Repository, https://github.com/tinkoff-ai/etna
+Description-Content-Type: text/markdown
+
+# ETNA Time Series Library
+
+[![Pipi version](https://img.shields.io/pypi/v/etna.svg)](https://pypi.org/project/etna/)
+[![PyPI Status](https://static.pepy.tech/personalized-badge/etna?period=total&units=international_system&left_color=grey&right_color=green&left_text=Downloads)](https://pepy.tech/project/etna)
+[![Coverage](https://img.shields.io/codecov/c/github/tinkoff-ai/etna)](https://codecov.io/gh/tinkoff-ai/etna)
+
+[![Telegram](https://img.shields.io/badge/channel-telegram-blue)](https://t.me/etna_support)
+
+[Homepage](https://etna.tinkoff.ru) |
+[Documentation](https://etna-docs.netlify.app/) |
+[Tutorials](https://github.com/tinkoff-ai/etna/tree/master/examples) | 
+[Contribution Guide](https://github.com/tinkoff-ai/etna/blob/master/CONTRIBUTING.md) |
+[Release Notes](https://github.com/tinkoff-ai/etna/releases)
+
+ETNA is an easy-to-use time series forecasting framework. 
+It includes built in toolkits for time series preprocessing, feature generation, 
+a variety of predictive models with unified interface - from classic machine learning
+to SOTA neural networks, models combination methods and smart backtesting.
+ETNA is designed to make working with time series simple, productive, and fun. 
+
+ETNA is the first python open source framework of 
+[Tinkoff.ru](https://www.tinkoff.ru/eng/)
+Artificial Intelligence Center. 
+The library started as an internal product in our company - 
+we use it in over 10+ projects now, so we often release updates. 
+Contributions are welcome - check our [Contribution Guide](https://github.com/tinkoff-ai/etna/blob/master/CONTRIBUTING.md).
+
+
+
+## Installation 
+
+ETNA is on [PyPI](https://pypi.org/project/etna), so you can use `pip` to install it.
+
+```bash
+pip install --upgrade pip
+pip install etna
+```
+
+
+## Get started 
+Here's some example code for a quick start.
+```python
+import pandas as pd
+from etna.datasets.tsdataset import TSDataset
+from etna.models import ProphetModel
+
+# Read the data
+df = pd.read_csv("examples/data/example_dataset.csv")
+
+# Create a TSDataset
+df = TSDataset.to_dataset(df)
+ts = TSDataset(df, freq="D")
+
+# Choose a horizon
+HORIZON = 8
+
+# Fit the model
+model = ProphetModel()
+model.fit(ts)
+
+# Make the forecast
+future_ts = ts.make_future(HORIZON)
+forecast_ts = model.forecast(future_ts)
+```
+
+## Tutorials
+We have also prepared a set of tutorials for an easy introduction:
+
+| Notebook     | Interactive launch  |
+|:----------|------:|
+| [Get started](https://github.com/tinkoff-ai/etna/tree/master/examples/get_started.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tinkoff-ai/etna/master?filepath=examples/get_started.ipynb) |
+| [Backtest](https://github.com/tinkoff-ai/etna/tree/master/examples/backtest.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tinkoff-ai/etna/master?filepath=examples/backtest.ipynb) |
+| [EDA](https://github.com/tinkoff-ai/etna/tree/master/examples/EDA.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tinkoff-ai/etna/master?filepath=examples/EDA.ipynb) |
+| [Outliers](https://github.com/tinkoff-ai/etna/tree/master/examples/outliers.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tinkoff-ai/etna/master?filepath=examples/outliers.ipynb) |
+| [Clustering](https://github.com/tinkoff-ai/etna/tree/master/examples/clustering.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tinkoff-ai/etna/master?filepath=examples/clustering.ipynb) |
+| [Deep learning models](https://github.com/tinkoff-ai/etna/tree/master/examples/NN_examples.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tinkoff-ai/etna/master?filepath=examples/NN_examples.ipynb) |
+| [Ensembles](https://github.com/tinkoff-ai/etna/tree/master/examples/ensembles.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tinkoff-ai/etna/master?filepath=examples/ensembles.ipynb) |
+
+## Documentation
+ETNA documentation is available [here](https://etna-docs.netlify.app/).
+
+## Acknowledgments
+
+### ETNA.Team
+[Alekseev Andrey](https://github.com/iKintosh), 
+[Shenshina Julia](https://github.com/julia-shenshina),
+[Gabdushev Martin](https://github.com/martins0n),
+[Kolesnikov Sergey](https://github.com/Scitator),
+[Bunin Dmitriy](https://github.com/Mr-Geekman),
+[Chikov Aleksandr](https://github.com/alex-hse-repository),
+[Barinov Nikita](https://github.com/diadorer),
+[Romantsov Nikolay](https://github.com/WinstonDovlatov),
+[Makhin Artem](https://github.com/Ama16),
+[Denisov Vladislav](https://github.com/v-v-denisov),
+[Mitskovets Ivan](https://github.com/imitskovets),
+[Munirova Albina](https://github.com/albinamunirova)
+
+
+### ETNA.Contributors
+[Levashov Artem](https://github.com/soft1q),
+[Podkidyshev Aleksey](https://github.com/alekseyen)
+
+## License
+
+Feel free to use our library in your commercial and private applications.
+
+ETNA is covered by [Apache 2.0](/LICENSE). 
+Read more about this license [here](https://choosealicense.com/licenses/apache-2.0/)
+
