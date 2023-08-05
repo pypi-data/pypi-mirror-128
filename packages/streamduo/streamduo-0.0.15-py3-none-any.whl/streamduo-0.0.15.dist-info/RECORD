@@ -1,0 +1,16 @@
+streamduo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+streamduo/client.py,sha256=0-SudrCATa5GRu5uImVDVkWIHC36DI49OOqmNq0cGHE,4006
+streamduo/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+streamduo/api/actor.py,sha256=yxLSmrR3R-KA5HnPEe2eW6Xmb3WR7-KdNUkvxJvllv0,2339
+streamduo/api/health.py,sha256=idgC6bhICvcUxzF5KT4Uons6YAf0kWmf54wPo8-RtDs,346
+streamduo/api/record.py,sha256=S1MU3I5oqzOu-ynlb2lBDHOOQwe69LtcJpxh6XmcSec,8086
+streamduo/api/stream.py,sha256=SQo0l6TDhn9x1IqE294JgyLer6l2m4coR1JzPMvq4Co,4719
+streamduo/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+streamduo/tests/test_actor.py,sha256=Q6ilIAd4CVWrMARxsJ95_cHb25JhAoXyFNW6Fk9CWuQ,3868
+streamduo/tests/test_health.py,sha256=QGgQ2-er9zhlmwmat4XprimH9-TGfTR2Z_XnHy2N1qQ,369
+streamduo/tests/test_record.py,sha256=V-867oiko2GkqlCzpmYr9hOSwTX5DZXEqO3eqUvyYU8,12397
+streamduo/tests/test_stream.py,sha256=MW52nMze5jqfEOMRtEaMaS3ITKBCj0c2FgaY7EBPfO8,5466
+streamduo-0.0.15.dist-info/METADATA,sha256=5YiOVeseVXZHgbvaftKAcJAS8xP0Vfdy9NyIfDSXT2M,254
+streamduo-0.0.15.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+streamduo-0.0.15.dist-info/top_level.txt,sha256=kyds2-oOAukMlAoNiSagIy6RIKyGgonRv9cI1fgZaBo,10
+streamduo-0.0.15.dist-info/RECORD,,
