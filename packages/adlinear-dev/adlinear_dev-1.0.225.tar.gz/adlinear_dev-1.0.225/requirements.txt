@@ -1,0 +1,12 @@
+pandas
+numpy
+seaborn~=0.11.0
+matplotlib~=3.3.2
+scipy
+sklearn~=0.0
+bokeh~=2.2.2
+setuptools~=52.0.0
+scikit-learn
+python-dotenv
+nptyping
+nmtf
