@@ -1,0 +1,3 @@
+[console_scripts]
+beni = beniutils.cmd:main
+
