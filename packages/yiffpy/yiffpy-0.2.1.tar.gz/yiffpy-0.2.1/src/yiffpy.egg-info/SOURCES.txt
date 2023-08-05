@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/yiff/__init__.py
+src/yiff/yiff.py
+src/yiffpy.egg-info/PKG-INFO
+src/yiffpy.egg-info/SOURCES.txt
+src/yiffpy.egg-info/dependency_links.txt
+src/yiffpy.egg-info/requires.txt
+src/yiffpy.egg-info/top_level.txt
