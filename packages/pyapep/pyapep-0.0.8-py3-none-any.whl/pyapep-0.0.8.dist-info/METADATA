@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyapep
+Version: 0.0.8
+Summary: Python package for adsorption simulations
+Home-page: https://github.com/sebyga/pyAPEP
+Author: Seongbin Ga
+Author-email: sebyga@gmail.com
+License: PNU_Seongbin_Ga
+Keywords: adsorption,PSA,process simulation,breakthrough curve
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
+
