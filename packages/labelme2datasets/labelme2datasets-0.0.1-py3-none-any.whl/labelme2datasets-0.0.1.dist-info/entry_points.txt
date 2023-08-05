@@ -1,0 +1,4 @@
+[console_scripts]
+labelme_bbox_json2voc = labelme2datasets.labelme_bbox_json2voc:main
+labelme_json2dataset = labelme2datasets.labelme_json2dataset:main
+
