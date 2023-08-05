@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+demodemo/__init__.py
+demodemo.egg-info/PKG-INFO
+demodemo.egg-info/SOURCES.txt
+demodemo.egg-info/dependency_links.txt
+demodemo.egg-info/top_level.txt
