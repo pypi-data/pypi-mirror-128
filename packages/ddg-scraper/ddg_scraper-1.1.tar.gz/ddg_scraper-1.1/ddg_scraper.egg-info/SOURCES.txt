@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ddg_scraper/__init__.py
+ddg_scraper/_dataclasses.py
+ddg_scraper/scraper.py
+ddg_scraper.egg-info/PKG-INFO
+ddg_scraper.egg-info/SOURCES.txt
+ddg_scraper.egg-info/dependency_links.txt
+ddg_scraper.egg-info/requires.txt
+ddg_scraper.egg-info/top_level.txt
