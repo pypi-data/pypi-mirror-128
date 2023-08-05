@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: libdev
+Version: 0.6
+Summary: Set of standard functions for development
+Home-page: https://github.com/kosyachniy/lib
+Author: Alexey Poloz
+Author-email: polozhev@mail.ru
+License: MIT
+Project-URL: Source, https://github.com/kosyachniy/lib
+Description: # Dev lib [Libdev]
+        Set of standard functions for development
+        
+        ## Submodules
+        Submodule | Description
+        ---|----
+        ` libdev.cfg ` | Configuration getting
+        ` libdev.time ` | Time processing
+        ` libdev.gen ` | Code & token generators
+        ` libdev.codes ` | Database ciphers
+        ` libdev.check ` | Checking functions
+        
+        [PyPI](https://pypi.org/project/libdev/)
+        
+Keywords: standard,lib,dev,development,cfg,config,generate,codes,tokens,ids,passwords,generator,ciphers,time
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
