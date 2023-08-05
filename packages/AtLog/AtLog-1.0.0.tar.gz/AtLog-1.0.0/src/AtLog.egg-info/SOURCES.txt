@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/AtLog/__init__.py
+src/AtLog/atlog.py
+src/AtLog/main.py
+src/AtLog.egg-info/PKG-INFO
+src/AtLog.egg-info/SOURCES.txt
+src/AtLog.egg-info/dependency_links.txt
+src/AtLog.egg-info/top_level.txt
