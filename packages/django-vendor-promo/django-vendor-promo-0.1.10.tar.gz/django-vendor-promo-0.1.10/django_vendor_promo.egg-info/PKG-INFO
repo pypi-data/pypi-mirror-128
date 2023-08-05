@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: django-vendor-promo
+Version: 0.1.10
+Summary: Extension to Django Vendor to add Promo Code capabilities
+Home-page: https://github.com/renderbox/django-vendor-promo/
+Author: Grant Viklund
+Author-email: renderbox@gmail.com
+License: MIT license
+Description: 
+        
+        .. image:: https://github.com/renderbox/django-vendor-promo/workflows/Django%20Vendor%20Promo%20CI/badge.svg
+           :target: https://github.com/renderbox/django-vendor-promo/workflows/Django%20Vendor%20Promo%20CI/badge.svg
+           :alt: Django Vendor Promo CI
+        
+        
+        
+        .. image:: https://github.com/renderbox/django-vendor-promo/workflows/Django%20Vendor%20Promo%20Develop/badge.svg
+           :target: https://github.com/renderbox/django-vendor-promo/workflows/Django%20Vendor%20Promo%20Develop/badge.svg
+           :alt: Django Vendor Promo CI
+        
+        
+        Django Vendor Promo
+        ===================
+        
+        Extension to Django Vendor to add Promo Code capabilities
+        
+Keywords: django,app
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: prod
+Provides-Extra: build
+Provides-Extra: docs
