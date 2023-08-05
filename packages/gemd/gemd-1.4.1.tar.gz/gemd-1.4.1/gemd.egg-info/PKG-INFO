@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gemd
+Version: 1.4.1
+Summary: Python binding for Citrine's GEMD data model
+Home-page: http://github.com/CitrineInformatics/gemd-python
+Author: Citrine Informatics
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: tests
+License-File: LICENSE
+
+UNKNOWN
+
