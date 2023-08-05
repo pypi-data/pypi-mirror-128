@@ -1,0 +1,9 @@
+sys_prctl/__init__.py,sha256=Ps_a_iIqRWBl9Fv29_NwWSyMzkk3OKl4KE8WJljNt9w,100
+sys_prctl/sys_prctl.so,sha256=mJZLXdpIVjX_yLsmfBsDV9-mS2NgjD_1ajZIjfDhhNE,156920
+sys_prctl/t.py,sha256=ixcEEn4viQim2AohQEna6GRzpnSkYfyN7ENfYHHyzoI,456
+sys_prctl/test_prctl.py,sha256=TVpdQH16qG1_0Ul4PQ_ZHxRoPTOqVriI0-fItOGRxE8,1383
+sys_prctl/version_config.py,sha256=FZCAKj_HxwR_Yg2iFrvfZsHfpt4EVo6jiQyZUxk-E8Y,69
+sys_prctl-0.0.4.dist-info/METADATA,sha256=jj6khizV3qS8kOCP3EG_NZ5hkSmCj1LVG8DGfTFmFCs,2763
+sys_prctl-0.0.4.dist-info/WHEEL,sha256=lZtnO0mZxqr35T145kHCmb-YnzMXkVWJhJ6jnbb7-XE,103
+sys_prctl-0.0.4.dist-info/top_level.txt,sha256=_puDaUHNzPH2fzp5yTTgQpgTqIkVQKX9xoWRA_4qRi0,10
+sys_prctl-0.0.4.dist-info/RECORD,,
