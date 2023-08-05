@@ -1,0 +1,3 @@
+[console_scripts]
+mb_ray_tracing = mb_ray_tracing.cli:main
+

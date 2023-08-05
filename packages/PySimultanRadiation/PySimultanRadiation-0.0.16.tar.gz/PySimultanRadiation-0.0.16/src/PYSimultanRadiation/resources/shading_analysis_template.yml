@@ -1,0 +1,88 @@
+- !Template
+  template_name: ShadingAnalysis
+  template_id: '1'
+  inherits_from:
+  content: [geometry, location, results, run_configuration, simulation_setup, Active]
+  documentation:
+  units: {}
+  types: {}
+  slots: {geometry: Element_01, location: Element_02, results: Element_03, run_configuration: Element_04,
+    simulation_setup: Element_05}
+  synonyms: {}
+- !Template
+  template_name: SAGeometry
+  template_id: '2'
+  inherits_from:
+  content: [additional_geometry, excluded_face_list, faces_of_interest, geometry,
+    AddTerrain, TerrainHeight]
+  documentation:
+  units: {}
+  types: {}
+  slots: {additional_geometry: Element_01, excluded_face_list: Element_02, faces_of_interest: Element_03,
+    geometry: Element_04}
+  synonyms: {}
+- !Template
+  template_name: SALocation
+  template_id: '3'
+  inherits_from:
+  content: [Altitude, FromWeatherFile, Latitude, Longitude, NorthAngle, Timezone,
+    Name, Weather]
+  documentation:
+  units: {}
+  types: {Name: str}
+  slots: {Weather: Element_00}
+  synonyms: {}
+- !Template
+  template_name: SARunConfiguration
+  template_id: '4'
+  inherits_from:
+  content: [ExportDirectory, LogLevel, NumWorkers, PersistDB, RunMeshing, RunShadingFactorCalculation,
+    RunViewFactorCalculation, WriteViewFactors, WriteVTK, WriteWeather, WriteXLSX]
+  documentation:
+  units: {}
+  types: {ExportDirectory: str, LogLevel: str}
+  slots: {}
+  synonyms: {}
+- !Template
+  template_name: SASimulationSetup
+  template_id: '5'
+  inherits_from:
+  content: [ShadingSetup, ViewFactorSetup]
+  documentation:
+  units: {}
+  types: {}
+  slots: {ShadingSetup: Element_01, ViewFactorSetup: Element_02}
+  synonyms: {}
+- !Template
+  template_name: SAShadingSetup
+  template_id: '6'
+  inherits_from:
+  content: [MeshSize, NumTimesteps, RayResolution, StartDate, TimestepSize, TimestepUnit,
+    ResultExport]
+  documentation:
+  units: {}
+  types: {StartDate: str, TimestepUnit: str}
+  slots: {ResultExport: Element_01}
+  synonyms: {}
+- !Template
+  template_name: SAShadingExportSetup
+  template_id: '7'
+  inherits_from:
+  content: [WriteAbsoluteIrradiation, WriteAngleOfIncidence, WriteIrradiatedAmountOfHeat,
+    WriteIrradiationVectors, WriteMeanShadingFactors, WriteShadingFactors, WriteSpecificIrradiation,
+    WriteSummary, WriteZeroRes]
+  documentation:
+  units: {}
+  types: {}
+  slots: {}
+  synonyms: {}
+- !Template
+  template_name: SAViewFactorSetup
+  template_id: '8'
+  inherits_from:
+  content: [NRay, OnlyInsideZone, SampleDistance]
+  documentation:
+  units: {}
+  types: {}
+  slots: {}
+  synonyms: {}
