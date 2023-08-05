@@ -1,0 +1,6 @@
+uvloop
+asyncpg
+httpx
+bs4
+aiofiles
+aiocsv

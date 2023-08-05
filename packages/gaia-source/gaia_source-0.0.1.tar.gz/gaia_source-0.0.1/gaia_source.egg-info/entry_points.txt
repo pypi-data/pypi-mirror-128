@@ -1,0 +1,3 @@
+[console_scripts]
+gaia-source = gaia_source.factory:run_from_cli
+
