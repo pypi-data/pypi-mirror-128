@@ -1,0 +1,17 @@
+odoo/addons/l10n_es_ticketbai_batuz/README.rst,sha256=N0CRp4HbGoI0SJKfZaD0E9YZJfEHogGr3Kuo_WsmY0s,1928
+odoo/addons/l10n_es_ticketbai_batuz/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/l10n_es_ticketbai_batuz/__manifest__.py,sha256=HXt7jCzv0TfrvBKku0lQRaIIjAvBk3w9lXyJ7QQMNpU,879
+odoo/addons/l10n_es_ticketbai_batuz/i18n/l10n_es_ticketbai_batuz.pot,sha256=dXrvtBxgeUSdzngXV0e78MkS5Gfcp4MdMBHnfBfvN08,968
+odoo/addons/l10n_es_ticketbai_batuz/models/__init__.py,sha256=JgTHNY_2nNoDkij3Th5SpVVkXKwMJO3cZ4ZGHxUva9I,62
+odoo/addons/l10n_es_ticketbai_batuz/models/account_invoice.py,sha256=X5GD0QhTnhO3zidX5iPhffblDEeGqHCwaRAEcSO_XbI,1077
+odoo/addons/l10n_es_ticketbai_batuz/models/ticketbai_invoice.py,sha256=8q3chYk3g0YTDUREle_DtiRlBHO_8LHknUzldB4Dbjs,1553
+odoo/addons/l10n_es_ticketbai_batuz/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/l10n_es_ticketbai_batuz/static/src/description/icon.png,sha256=S4uJP20_QN9TNhnWgNh-9CPV2WGX-86uCn31lUwv1Pk,9485
+odoo/addons/l10n_es_ticketbai_batuz/static/src/img/binovo_logo.jpg,sha256=MDGhdLAVEMtzHmCpj8cJhwK0KZvyNLt_3tv9Q5Kdhz0,58266
+odoo/addons/l10n_es_ticketbai_batuz/static/src/img/binovo_logo_peque.jpg,sha256=x6LXfe9_IW7tiQjeloGi9qr9gasi6hxCXXnJGaaJ33Y,8426
+odoo/addons/l10n_es_ticketbai_batuz/views/account_invoice_views.xml,sha256=5WhmzesblZYFh5JRrdEq1vGCImj3et41bMR1IGx9ruY,2020
+odoo/addons/l10n_es_ticketbai_batuz/views/lroe_operation_views.xml,sha256=tXhz1mLi_wJZnMw4CDowIknW80dOwc7uTrNtWqaZaaY,453
+odoo11_addon_l10n_es_ticketbai_batuz-11.0.1.0.0.99.dev2.dist-info/METADATA,sha256=_K6jRb2KeR9a-1pTZK5nHnn48-Btu33CyxBcdKFcyfI,2786
+odoo11_addon_l10n_es_ticketbai_batuz-11.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+odoo11_addon_l10n_es_ticketbai_batuz-11.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo11_addon_l10n_es_ticketbai_batuz-11.0.1.0.0.99.dev2.dist-info/RECORD,,
