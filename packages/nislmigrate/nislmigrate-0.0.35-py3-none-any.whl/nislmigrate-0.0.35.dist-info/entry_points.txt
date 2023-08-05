@@ -1,0 +1,3 @@
+[console_scripts]
+nislmigrate=nislmigrate.migration_tool:main
+
