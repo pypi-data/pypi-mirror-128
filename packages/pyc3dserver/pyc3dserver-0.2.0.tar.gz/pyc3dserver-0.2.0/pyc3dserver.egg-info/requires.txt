@@ -1,0 +1,3 @@
+numpy
+scipy
+pywin32>=223
