@@ -1,0 +1,3 @@
+paho-mqtt==1.5.1
+protobuf==3.13.0
+networkx==2.5
