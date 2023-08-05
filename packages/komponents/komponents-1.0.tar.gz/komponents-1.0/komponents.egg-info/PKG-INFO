@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: komponents
+Version: 1.0
+Summary: Generates kubeflow components from kubernetes crd specs.
+Home-page: UNKNOWN
+Author: David Farr
+Author-email: david_farr@intuit.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+UNKNOWN
+
