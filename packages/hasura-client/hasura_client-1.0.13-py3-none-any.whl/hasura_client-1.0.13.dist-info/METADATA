@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hasura-client
+Version: 1.0.13
+Summary: A client library for hasura
+Home-page: https://gitlab.hidora.com/softozor/packages
+Author: Laurent Michel
+Author-email: softozor@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Requires-Dist: sh
+Provides-Extra: test
+
+UNKNOWN
+
