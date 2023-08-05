@@ -1,0 +1,3 @@
+[console_scripts]
+proxy_machine=proxy_machine.__main__:cli
+
