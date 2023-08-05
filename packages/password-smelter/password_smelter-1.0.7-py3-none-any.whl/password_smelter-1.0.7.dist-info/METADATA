@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: password-smelter
+Version: 1.0.7
+Summary: A password analyzer with pretty graphs and a dark mode
+Home-page: https://github.com/TheTechromancer/password-smelter
+License: GPL-3.0
+Author: TheTechromancer
+Requires-Python: >=3.7.1,<4.0.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: XlsxWriter (>=1.4.0,<2.0.0)
+Requires-Dist: dash (>=1.20.0,<2.0.0)
+Requires-Dist: dash-bootstrap-components (>=0.12.0,<0.13.0)
+Requires-Dist: numpy (>=1.20.2,<2.0.0)
+Requires-Dist: pandas (>=1.2.4,<2.0.0)
+Requires-Dist: password-stretcher (>=1.0.4,<2.0.0)
+Requires-Dist: plotly (>=4.14.3,<5.0.0)
+Requires-Dist: psutil (>=5.8.0,<6.0.0)
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Project-URL: Repository, https://github.com/TheTechromancer/password-smelter

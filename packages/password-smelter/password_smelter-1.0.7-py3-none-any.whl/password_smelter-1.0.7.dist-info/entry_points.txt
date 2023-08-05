@@ -1,0 +1,3 @@
+[console_scripts]
+password-smelter=password_smelter.smelter:main
+
