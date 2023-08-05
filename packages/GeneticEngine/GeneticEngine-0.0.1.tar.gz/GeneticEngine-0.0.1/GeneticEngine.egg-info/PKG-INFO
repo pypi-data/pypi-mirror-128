@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: GeneticEngine
+Version: 0.0.1
+Summary: Genetic Programming with an hybrid of Grammar-based and Strongly-type restrictions on the tree.
+Home-page: http://github.com/alcides/GeneticEngine/
+Author: Alcides Fonseca
+Author-email: me@alcidesfonseca.com
+License: UNKNOWN
+Project-URL: Bug Tracker, http://github.com/alcides/GeneticEngine/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
