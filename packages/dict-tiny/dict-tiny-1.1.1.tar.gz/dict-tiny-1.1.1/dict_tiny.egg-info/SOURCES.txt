@@ -1,0 +1,17 @@
+README.md
+setup.py
+dict_tiny/__init__.py
+dict_tiny/main.py
+dict_tiny/setting.py
+dict_tiny/util.py
+dict_tiny/version.py
+dict_tiny.egg-info/PKG-INFO
+dict_tiny.egg-info/SOURCES.txt
+dict_tiny.egg-info/dependency_links.txt
+dict_tiny.egg-info/entry_points.txt
+dict_tiny.egg-info/requires.txt
+dict_tiny.egg-info/top_level.txt
+dict_tiny/sources/__init__.py
+dict_tiny/sources/deepl_trans.py
+dict_tiny/sources/google_trans.py
+dict_tiny/sources/youdao.py
