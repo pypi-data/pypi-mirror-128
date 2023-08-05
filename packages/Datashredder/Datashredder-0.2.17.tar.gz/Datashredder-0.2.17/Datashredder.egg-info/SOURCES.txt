@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Datashredder.egg-info/PKG-INFO
+Datashredder.egg-info/SOURCES.txt
+Datashredder.egg-info/dependency_links.txt
+Datashredder.egg-info/top_level.txt
+datashredder/__init__.py
+datashredder/corrupt.py
+datashredder/random_corrupt.py
+datashredder/swap_corrupt.py
