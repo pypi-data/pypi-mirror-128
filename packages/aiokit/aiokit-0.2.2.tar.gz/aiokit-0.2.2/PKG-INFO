@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aiokit
+Version: 0.2.2
+Summary: UNKNOWN
+Home-page: https://github.com/izihawa/aiokit
+Author: Pasha Podolsky
+License: MIT
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AioKIT
+
+Routines for asynchronous programming 
+
+
