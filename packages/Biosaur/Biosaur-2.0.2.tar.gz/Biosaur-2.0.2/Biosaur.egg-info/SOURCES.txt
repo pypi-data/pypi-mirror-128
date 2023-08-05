@@ -1,0 +1,14 @@
+README.md
+setup.py
+Biosaur.egg-info/PKG-INFO
+Biosaur.egg-info/SOURCES.txt
+Biosaur.egg-info/dependency_links.txt
+Biosaur.egg-info/entry_points.txt
+Biosaur.egg-info/requires.txt
+Biosaur.egg-info/top_level.txt
+biosaur_src/__init__.py
+biosaur_src/bio.py
+biosaur_src/biosaur.py
+biosaur_src/classes.py
+biosaur_src/funcs.py
+biosaur_src/utills.py
