@@ -1,0 +1,10 @@
+fw_gear_dicom_qc/__init__.py,sha256=-0wDnLgqBvl2saUPnw-g2-PQt_dHhgGA3Ok2fs2Iuxw,313
+fw_gear_dicom_qc/main.py,sha256=hO3HwpieGTRVS9zYFneoqXXvyP4EzsltCSQ0RqSAFbk,2982
+fw_gear_dicom_qc/parser.py,sha256=nvE9zPY1HOwrSnSuv40Qbr2lDPfG1n3WLQAQeZ_JZ9I,926
+fw_gear_dicom_qc/rules.py,sha256=ppjl1Opr4Lu6kBlSjOwl5mzEKHVy2kZu-C9xkDNLj9Q,7931
+fw_gear_dicom_qc/utils.py,sha256=9mI0Vu7RmHrakpaBxrgxk1fU_qqhglkGjmmRd8T6p48,719
+fw_gear_dicom_qc/validation.py,sha256=UZBkxnyc3lHRgEK_wb2oqJ_ijgyrYg7kR8JlMowQLXc,3456
+fw_gear_dicom_qc-0.3.0.dist-info/LICENSE,sha256=NNC8xrLtqnhvmkJdOB71ctPp2jBi_2V5u9RzRVEpBcs,1092
+fw_gear_dicom_qc-0.3.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+fw_gear_dicom_qc-0.3.0.dist-info/METADATA,sha256=NMAHC8YiaUFoU7pAN120tPRdgdHBs0JnK-QaWRsXm54,4348
+fw_gear_dicom_qc-0.3.0.dist-info/RECORD,,
