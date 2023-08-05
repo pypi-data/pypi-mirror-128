@@ -1,0 +1,3 @@
+[console_scripts]
+jupylint = jupylint.jupylint:main
+
