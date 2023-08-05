@@ -1,0 +1,3 @@
+[threatbus.app]
+zmq = threatbus_zmq.plugin
+
