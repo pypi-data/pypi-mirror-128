@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/workflowy_assistant.py
+src/workflowy_assistant.egg-info/PKG-INFO
+src/workflowy_assistant.egg-info/SOURCES.txt
+src/workflowy_assistant.egg-info/dependency_links.txt
+src/workflowy_assistant.egg-info/requires.txt
+src/workflowy_assistant.egg-info/top_level.txt
