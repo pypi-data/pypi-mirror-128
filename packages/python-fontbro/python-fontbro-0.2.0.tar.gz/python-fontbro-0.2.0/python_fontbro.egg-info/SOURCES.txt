@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+fontbro/__init__.py
+fontbro/features.py
+fontbro/flags.py
+fontbro/font.py
+fontbro/metadata.py
+python_fontbro.egg-info/PKG-INFO
+python_fontbro.egg-info/SOURCES.txt
+python_fontbro.egg-info/dependency_links.txt
+python_fontbro.egg-info/requires.txt
+python_fontbro.egg-info/top_level.txt
