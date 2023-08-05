@@ -1,0 +1,11 @@
+README.md
+setup.py
+./scripts/check_docstring
+src/check_docstring/__init__.py
+src/check_docstring/__main__.py
+src/check_docstring/utils.py
+src/check_docstring.egg-info/PKG-INFO
+src/check_docstring.egg-info/SOURCES.txt
+src/check_docstring.egg-info/dependency_links.txt
+src/check_docstring.egg-info/requires.txt
+src/check_docstring.egg-info/top_level.txt
