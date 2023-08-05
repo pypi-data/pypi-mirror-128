@@ -1,0 +1,8 @@
+Licence.txt
+setup.py
+Infequevalence/inf_evln.py
+Infequevalence.egg-info/PKG-INFO
+Infequevalence.egg-info/SOURCES.txt
+Infequevalence.egg-info/dependency_links.txt
+Infequevalence.egg-info/requires.txt
+Infequevalence.egg-info/top_level.txt
