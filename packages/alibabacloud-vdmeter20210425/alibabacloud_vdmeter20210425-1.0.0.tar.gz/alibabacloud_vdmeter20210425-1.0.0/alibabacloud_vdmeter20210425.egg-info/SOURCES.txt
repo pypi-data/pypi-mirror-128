@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_vdmeter20210425/__init__.py
+alibabacloud_vdmeter20210425/client.py
+alibabacloud_vdmeter20210425/models.py
+alibabacloud_vdmeter20210425.egg-info/PKG-INFO
+alibabacloud_vdmeter20210425.egg-info/SOURCES.txt
+alibabacloud_vdmeter20210425.egg-info/dependency_links.txt
+alibabacloud_vdmeter20210425.egg-info/requires.txt
+alibabacloud_vdmeter20210425.egg-info/top_level.txt
