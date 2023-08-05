@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: markcrowe
+Version: 0.0.2
+Summary: Data analytic functions for population planning project.
+Home-page: https://github.com/markcrowe-com/population-planning-data-analytics/
+Author: Mark Crowe
+Author-email: 66536097+markcrowe-com@users.noreply.github.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/markcrowe-com/population-planning-data-analytics/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: license
+
+# [Population Planning: Data Analytics](https://github.com/markcrowe-com/population-planning-data-analytics)
+
+A group assessment to study population trends in the Republic of Ireland based on Central Statistics Office (CSO) data.  
+
+&nbsp; | Date
+-|-
+Issue Date: | Monday, October 25th, 2021
+Submission Date: | Saturday, November 27th, 2021
+
+## Requirements
+
+- [Python >= 3.8.0](https://www.python.org/downloads/)
+
+### Python packages (pip)
+
+- [nbautoexport](https://github.com/drivendataorg/nbautoexport)
+
+## Recommended IDEs
+
+- [VS Code](https://code.visualstudio.com/): [`Python`](https://code.visualstudio.com/docs/languages/python)
+- [JupyterLab](https://jupyter.org/install.html)
+
+# Assessment Task
+
+Students are advised to review and adhere to the submission requirements documented after the assessment task c.f. [College Documentation](./docs/readme.md#college-documentation).
+
+## Scenario
+
+The "Committee for forward planning", a sub-committee of the Dept of Finance, wishes to gain insight into the population of Ireland, as an **Aid to Government Planning for the next 3 years.** (choose at least 3 areas) Your Group has been tasked with providing an analysis of the population using the 3 datasets provided:
+
+- Births, Deaths and Marriages 1960-2021:- [births-deaths-marriages-ireland-1960-2021.csv](./assets/births-deaths-marriages-ireland-1960-2021.csv)
+- Births By County 1985-2020:- [births-by-county-1985-2020.csv](./assets/births-by-county-1985-2020.csv)
+- Deaths By Region/County 2007-2020:- [deaths-region-2007-2020.csv](./assets/deaths-region-2007-2020.csv)
+
+This data has been provided by the Central Statistics Office (CSO) and is released under the open access and freedom of information legislation at [cso.ie](https://www.cso.ie/en/freedomofinformation/csofoimodelpublicationscheme/).  
+
+---
+Copyright (c) 2021 Mark Crowe <https://github.com/markcrowe-com>. All rights reserved.
+

@@ -1,0 +1,14 @@
+license
+pyproject.toml
+setup.cfg
+src/data_analytics/__init__.py
+src/data_analytics/exploratory_data_analysis.py
+src/data_analytics/exploratory_data_analysis_reports.py
+src/data_analytics/github.py
+src/data_analytics/graphs.py
+src/data_analytics/project_manager.py
+src/markcrowe.egg-info/PKG-INFO
+src/markcrowe.egg-info/SOURCES.txt
+src/markcrowe.egg-info/dependency_links.txt
+src/markcrowe.egg-info/requires.txt
+src/markcrowe.egg-info/top_level.txt
