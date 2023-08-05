@@ -1,0 +1,11 @@
+pygsound/pygsound.cpython-39-darwin.so,sha256=fGgnsxYgSV9sHvFO0WN5mcqqq7qtYS1FaFqeXfeVCoM,1346608
+pygsound/__init__.py,sha256=JdWRzYxluzuNFXS199lz2sZCtK_A1_tYAjEHrSVI4qo,24
+pygsound/.dylibs/libfftw3f.3.dylib,sha256=z0iawI5MieCot_4530D4BXcpS4BgPs4riKEMUReKSr4,3004656
+pygsound/.dylibs/libfftw3_threads.3.dylib,sha256=zy2D63kD4TJeLpF2vZdrfTbUYUguZcvijJRgLO6YJn4,91264
+pygsound/.dylibs/libfftw3.3.dylib,sha256=PRv51a4wj4gjWhMjI4LQHCm3jSlbVHGoCqcIftVpz_U,2852432
+pygsound/.dylibs/libgcc_s.1.dylib,sha256=YyZ3sb9jXIA8BPTckPlzyOsT7ib4Qcn6E3OA304acOo,188816
+pygsound-0.1.dist-info/RECORD,,
+pygsound-0.1.dist-info/WHEEL,sha256=JIE30nfOWUuazI4Vcfiuv_cYm-SkZCh6YOqQQjhm90A,109
+pygsound-0.1.dist-info/top_level.txt,sha256=yarcey_OZv8c7aJKFv_rQo7Cz1mJPBBDen-1b5ODdYg,27
+pygsound-0.1.dist-info/LICENSE.txt,sha256=vPMMrEm3S2Rswty49j8r5ZFIeL_IEBys6q_PaEQGd9w,1835
+pygsound-0.1.dist-info/METADATA,sha256=RkcTzdf6oHKunxgFT_6MnDLDVTFu7m1h4JZgyGJe_os,370
