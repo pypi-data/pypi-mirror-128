@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: simulaqron
+Version: 4.0.0
+Summary: A simulator for developing Quantum Internet software
+Home-page: https://github.com/SoftwareQuTech/SimulaQron
+Author: Axel Dahlberg
+Author-email: e.a.dahlberg@tudelft.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+SimulaQron - simple quantum network simulator (4.0.0)
+=====================================================
+
+The purpose of this simulator of quantum network nodes is to allow you to develop new applications for
+a future quantum internet, while we do not yet have real quantum network nodes available for testing. 
+
+Since version 4.0, SimulaQron is compatible with [NetQASM](https://github.com/QuTech-Delft/netqasm).
+See its documentation for how to use SimulaQron as a backend for running NetQASM applications.
+
+Installation:
+```
+pip3 install simulaqron
+```
+
+Documentation and examples are explained in the html documentation 
+https://softwarequtech.github.io/SimulaQron/html/index.html
+
+For upcoming and previous changes see the file [CHANGELOG.md](CHANGELOG.md)
+
+More info at
+http://www.simulaqron.org
+
+
