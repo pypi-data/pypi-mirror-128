@@ -1,0 +1,11 @@
+htmlhexviewer/__init__.py,sha256=RYnaY4nQ0UMno5lqiZfzZmtQRpHED-A5fDWF8PXoDR8,3414
+htmlhexviewer/__main__.py,sha256=hOucaGxcWET5xEh5m-oMdKHHnlIRFm7BkQSTYIWHhHg,33
+htmlhexviewer/templates/base.html,sha256=tgBfnSnXpNgmM8D0dAgjswvLHcJjmjy8SSpSz5uWuYI,1386
+htmlhexviewer/templates/script.js,sha256=_bcE6jQsxVSBht5JyS2obALfVA7zYScetBi8jYnUGJw,2798
+htmlhexviewer/templates/style.css,sha256=0pSfrIu7DFpj-Pis_kBViikPxqFSY2OPbeIXgICxSa4,1537
+HTMLHexViewer-0.1.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+HTMLHexViewer-0.1.1.dist-info/METADATA,sha256=NbyLbiZAbXi0oZ3adazs33l3iOt5TOd1hCpQ4xlOVXQ,331
+HTMLHexViewer-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+HTMLHexViewer-0.1.1.dist-info/entry_points.txt,sha256=5RFxAjY4boRfG9_aG0AESFdFUXnJRFfm4tzhDhjQIvw,54
+HTMLHexViewer-0.1.1.dist-info/top_level.txt,sha256=4-zvSmLPHYwk5uol6AGXwLvg0izx_0JtH5-bnAOGsm0,14
+HTMLHexViewer-0.1.1.dist-info/RECORD,,

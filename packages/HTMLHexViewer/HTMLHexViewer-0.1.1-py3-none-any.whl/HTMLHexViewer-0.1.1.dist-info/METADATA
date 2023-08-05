@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: HTMLHexViewer
+Version: 0.1.1
+Summary: Create simple hexdumps from any file
+Home-page: https://github.com/Vepnar/HTMLHexViewer
+Author: Arjan de Haan
+Author-email: agdehaan@gmail.com
+License: GPL-3
+Platform: UNKNOWN
+Requires-Python: >=3.6.2
+License-File: LICENSE
+Requires-Dist: Jinja2 (>=3.0.3)
+
+UNKNOWN
+
