@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+labelme2datasets/__init__.py
+labelme2datasets/labelme_bbox_json2voc.py
+labelme2datasets/labelme_json2dataset.py
+labelme2datasets/utils.py
+labelme2datasets.egg-info/PKG-INFO
+labelme2datasets.egg-info/SOURCES.txt
+labelme2datasets.egg-info/dependency_links.txt
+labelme2datasets.egg-info/entry_points.txt
+labelme2datasets.egg-info/requires.txt
+labelme2datasets.egg-info/top_level.txt
