@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: oking
+Version: 0.5.10
+Summary: Pacote de integração de produtos, preço, estoque e pedidos com o sistema OkVendas da Openk
+Home-page: UNKNOWN
+Author: Openk Tecnologia
+Author-email: <suporte.b2c@openk.com.br>
+License: UNKNOWN
+Description: # OKING
+        
+        OKING - OKVendas Integrador GenÃ©rico - Para conexÃ£o com vÃ¡rias ERP's
+Keywords: python,oking,openk,okvendas,ok
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

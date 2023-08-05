@@ -1,0 +1,7 @@
+mysql-connector-python
+schedule
+requests
+configparser
+logger
+cx-Oracle
+jsonpickle
