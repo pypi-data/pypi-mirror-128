@@ -1,0 +1,3 @@
+[console_scripts]
+famcy = Famcy.main:command_line_interface
+
