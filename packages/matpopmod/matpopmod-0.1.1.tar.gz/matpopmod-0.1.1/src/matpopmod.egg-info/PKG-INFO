@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: matpopmod
+Version: 0.1.1
+Summary: Matrix population models library with an interface to the COMPADRE / COMADRE databases.
+Home-page: https://gitlab.com/bienvenu/matpopmod
+Author: François Bienvenu et al.
+Author-email: matpopmod@framalistes.org
+License: LGPLv3+
+Keywords: ecology demography populations compadre comadre
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Matpopmod - Matrix Population Models in Python
+
+Matpopmod is a Python library for the study of matrix
+population models. It can be used to:
+- compute a wide variety of demographic descriptors;
+- study and plot deterministic and stochastic trajectories;
+- access the COMPADRE/COMADRE databases.
+
+See the [project homepage](https://bienvenu.gitlab.io/matpopmod/) for more information.
+
+## Installation
+
+Matpopmod requires Python ≥3.6 with NumPy ≥1.10 and Matplotlib. You
+can install the latest stable version from PyPI with:
+
+```
+python3 -m pip install matpopmod
+```
+
+## Usage
+
+Matpopmod can be used interactively or as a library in Python scripts.
+See the [quickstart guide](https://bienvenu.gitlab.io/matpopmod/quickstart.html)
+and the [documentation](https://bienvenu.gitlab.io/matpopmod/api/modules.html) for details.
+
+## Development
+
+Contributions are welcome on the [Git lab repository](https://gitlab.com/bienvenu/matpopmod/).
+
+### Installing the development version
+
+You can install the current development version using:
+
+```
+python3 -m pip install https://gitlab.com/bienvenu/matpopmod/-/archive/master/matpopmod-dev.tar.gz
+```
+
+However, if you want to be able to run the tests, build the
+documentation and contribute, we recommend fetching the source and
+setting up a [development environment](https://docs.python.org/3/library/venv.html) with:
+
+```
+git clone https://gitlab.com/bienvenu/matpopmod.git
+python3 -m venv env
+source env/bin/activate
+python3 -m pip install -e matpopmod/
+```
+
+### Running tests
+
+```
+python3 -m pip install pytest
+pytest matpopmod
+```
+
+Show test coverage:
+
+```
+python3 -m pip install pytest-cov
+pytest --cov=matpopmod --cov-report html
+python3 -m http.server 8002 # serve
+```
+
+### Building the documentation
+
+```
+# HTML documentation in /public
+python3 -m pip install sphinx
+cd matpopmod
+sphinx-build -b html doc/ public
+```
+
+```
+# PDF documentation in /public
+python3 -m pip install sphinx
+cd matpopmod
+sphinx-build -b latex doc/ public
+cd public
+pdflatex matpopmod.tex
+```
+
+### Building the package
+
+The version number is maintained in `src/matpopmod/VERSION`.
+
+```
+python3 -m build .
+# To upload the package on PyPI
+python3 -m twine upload dist/*
+```
+
+## License
+
+This project is licensed under the GNU Lesser General Public License v3.0
+or later.
+
+
+
