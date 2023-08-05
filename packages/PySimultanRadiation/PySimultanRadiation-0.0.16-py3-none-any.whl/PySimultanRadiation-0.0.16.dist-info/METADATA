@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: PySimultanRadiation
+Version: 0.0.16
+Summary: Package for SIMULTAN shading analyses
+Home-page: UNKNOWN
+Author: Max Buehler
+License: MIT
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: cython
+Requires-Dist: meshio
+Requires-Dist: trimesh
+Requires-Dist: PySimultan
+Requires-Dist: vg
+Requires-Dist: gmsh
+Requires-Dist: pygmsh
+Requires-Dist: pyntcloud
+Requires-Dist: appdirs
+Requires-Dist: sqlalchemy
+Requires-Dist: Psycopg2
+Requires-Dist: openpyxl
+Requires-Dist: pvlib
+Requires-Dist: zmq
+Requires-Dist: service-tools
+Requires-Dist: networkx
+Requires-Dist: shapely
+Requires-Dist: opencv-python
+Requires-Dist: docker
+Requires-Dist: guid
+Requires-Dist: dill
+
+UNKNOWN
+
