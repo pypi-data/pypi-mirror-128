@@ -1,0 +1,13 @@
+sci_annot_eval/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sci_annot_eval/evaluation.py,sha256=wvCcmXcQVhbD_vmqpdcxiz8agB-gxZpoMX62TM4tMwA,9241
+sci_annot_eval/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sci_annot_eval/helpers/helpers.py,sha256=tebYdZdqgIiRVe57_iCscov1WD5qcislbKn78m_Ftow,148
+sci_annot_eval/parsers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sci_annot_eval/parsers/bounding_box.py,sha256=aXvLCFOejn8RgL2NVz-8kj6D5fWZvtPJz4OpgPCfX50,561
+sci_annot_eval/parsers/parserInterface.py,sha256=XGWcQsKUUrpu8TYwGnSmYBr4_wxZIoCDTgj72bjUdFc,295
+sci_annot_eval/parsers/sci_annot_parser.py,sha256=r6gD5y1ZLGqZxH0UH_DOm9oWclaUbSR75AR7NpljPqI,2236
+sci_annot_eval-0.0.4.dist-info/LICENSE,sha256=iJzkDn7m-trIDJE7tQKWWq--8kjRyyKLZK5pYrM8ZIE,1451
+sci_annot_eval-0.0.4.dist-info/METADATA,sha256=G3-4QnrT5n9GM6G-GHpDCxlVvIgFl-lZeEPci_GfsD0,501
+sci_annot_eval-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sci_annot_eval-0.0.4.dist-info/top_level.txt,sha256=ISiUyym_C-jAKk5LX3hG9USnAci8RkVCkmdmjy7EJ_0,15
+sci_annot_eval-0.0.4.dist-info/RECORD,,
