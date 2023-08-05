@@ -1,0 +1,14 @@
+dagster_fivetran/__init__.py,sha256=bO2ki5wernkjw--5dINEtZNU9WNFDvspQz_kcqLZVxw,325
+dagster_fivetran/ops.py,sha256=V8kA2gYwFkgiWr8uWLEG-vKagNFaKIandbBs2VlxnVI,2853
+dagster_fivetran/resources.py,sha256=g8bEcWxYZaqz5dR6zcNoaPComgFezhONCnGLJLqFKzE,15254
+dagster_fivetran/version.py,sha256=lRMYz_2QQ-kMx5lTTrV28m-cEHIgcIzHl1mcABXNeQA,26
+dagster_fivetran_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dagster_fivetran_tests/test_ops.py,sha256=kqO2_NH2NpHgaIaqx-zoBfBDJxQRe7SPcOF3S_kLH1M,1900
+dagster_fivetran_tests/test_resources.py,sha256=4dUheXml9rBXTo6l_ri9FyZYC_4ybsoSLGycddv1tvw,7756
+dagster_fivetran_tests/test_version.py,sha256=qtPcp_xkRzAoQN5vE4XYnOlVNUX9oLgY879axdVV6m8,94
+dagster_fivetran_tests/utils.py,sha256=7Ld6Bp_eAGNFgdSy1EPso8zknVP6RrEttNFdK_2OBno,1698
+dagster_fivetran-0.13.8rc0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+dagster_fivetran-0.13.8rc0.dist-info/METADATA,sha256=a7UhBpGxG8XD5HR5Ckz-AeNiJMQKKSgcpDHoEqYbNPk,619
+dagster_fivetran-0.13.8rc0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dagster_fivetran-0.13.8rc0.dist-info/top_level.txt,sha256=JsilrMJxrB8jRqmxD6pwei2MVAHUGeQVe1N9l7igU08,40
+dagster_fivetran-0.13.8rc0.dist-info/RECORD,,
