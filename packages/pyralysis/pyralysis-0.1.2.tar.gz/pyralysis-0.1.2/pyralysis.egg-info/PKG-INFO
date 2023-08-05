@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyralysis
+Version: 0.1.2
+Summary: PYthon Radio Astronomy anaLYSis and Image Synthesis
+Home-page: https://gitlab.com/miguelcarcamov/pyralysis
+Author: Miguel Cárcamo
+Author-email: miguel.carcamo@manchester.ac.uk
+License: GNU
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<p align="center"> 
+    <img src="https://gitlab.com/miguelcarcamov/pyralysis/-/wikis/uploads/fd40975ce0601b5c52a3cf8b92f385a5/Pyralisis-25.png" height="500">
+</p>
+

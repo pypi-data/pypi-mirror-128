@@ -1,0 +1,8 @@
+numpy
+astropy
+joblib
+cupy
+python-casacore
+numba
+dask
+dask-ms[xarray]
