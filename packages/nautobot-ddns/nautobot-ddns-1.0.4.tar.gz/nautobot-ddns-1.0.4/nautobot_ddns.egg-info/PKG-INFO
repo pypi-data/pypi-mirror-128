@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: nautobot-ddns
+Version: 1.0.4
+Summary: Dynamic DNS Connector for nautobot
+Home-page: https://github.com/jakubjastrabik/nautobotDDNS
+Author: Jakub Jastrabik && Sander Steffann
+Author-email: jastrabik.kubko@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# nautobotDDNS
+
+[![Upload Python Package](https://github.com/jakubjastrabik/nautobotDDNS/actions/workflows/main.yml/badge.svg)](https://github.com/jakubjastrabik/nautobotDDNS/actions/workflows/main.yml)
+
+
