@@ -1,0 +1,17 @@
+strip_whitespace/middlewares/HtmlStripWhiteSpaceMiddleware.py,sha256=vO6131h-hYgxWDw-r0fwl0-AHJzYc7-edDYECEGm40E,1342
+strip_whitespace/middlewares/libs/__init__.py,sha256=ZgdyWhECJ936r5c5ORgNvRvMxOmC3Ug3jI4Ny7ZRlDA,44
+strip_whitespace/middlewares/libs/_guess_content_type.py,sha256=MBoQ6l8ZYv74bFHp542fj05kIeknQi4ZQ-tNU6DJWKA,402
+strip_whitespace/middlewares/libs/compress.py,sha256=ssUg2uMWMbM89BeUFETSMu51gvwivX_AsAS_Gy3ct6M,1244
+strip_whitespace/middlewares/libs/compressors/__init__.py,sha256=7NE4GIhwEOEEtyu9_AIcUSe6w52nl6bTB-sV5oion0Y,86
+strip_whitespace/middlewares/libs/compressors/brotli.py,sha256=QCwU7eX4xZZusSejpQYpsMtHU441mdbS0ed_BGoJpTc,143
+strip_whitespace/middlewares/libs/compressors/gzip.py,sha256=b61jjB_QrILsTz1lB_Dj9_corb9_Rvh9C1-jWqGWbpc,139
+strip_whitespace/middlewares/libs/decompressors/__init__.py,sha256=eco8UnP9u_qs9SvmJJejcD76i_PKns4pyVBo9156JfQ,94
+strip_whitespace/middlewares/libs/decompressors/brotli.py,sha256=VITrUMzDYQOUJu_yldaMSxfIerLNjoMFmGUt3z6LpGo,147
+strip_whitespace/middlewares/libs/decompressors/gzip.py,sha256=p1gCGLQwA8TthwHQkzOj0tvP5pce8O7xf9UdNhDcMAM,142
+strip_whitespace/middlewares/libs/html/__init__.py,sha256=w3ju0dpSPenL2hxGXj4a4gs3kX_l_ygEca1Bdcxb6t8,33
+strip_whitespace/middlewares/libs/html/minifier.py,sha256=u0hOdSk3f5xnRqVDv79kGsfR5O6NYRRhnzmFC9ZskG4,5912
+django_strip_whitespace-0.0.12.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+django_strip_whitespace-0.0.12.dist-info/METADATA,sha256=-5PwSza5-kjAUOtkfrNbpG1tTE4xANtpzgrcLE__Ik4,4761
+django_strip_whitespace-0.0.12.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_strip_whitespace-0.0.12.dist-info/top_level.txt,sha256=bZ1y1di0JeYYTFNlNXAI5pAQ8GLa-3xkolYalTohEfI,17
+django_strip_whitespace-0.0.12.dist-info/RECORD,,
