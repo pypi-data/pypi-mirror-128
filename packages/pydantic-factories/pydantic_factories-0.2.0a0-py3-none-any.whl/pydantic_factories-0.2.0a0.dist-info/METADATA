@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pydantic-factories
+Version: 0.2.0a0
+Summary: Easy data mocking and fixture generation for pydantic based models
+Home-page: https://github.com/Goldziher/pydantic-factories
+License: MIT
+Keywords: pydantic,pytest,factory,model factory,fastapi,beanie,ormar,sqlmodel,factory boy
+Author: Na'aman Hirschfeld
+Author-email: Naaman.Hirschfeld@sprylab.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Unit
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: exrex
+Requires-Dist: faker
+Requires-Dist: pydantic
+Requires-Dist: typing-extensions
+Project-URL: Documentation, https://github.com/Goldziher/pydantic-factories
+Project-URL: Repository, https://github.com/Goldziher/pydantic-factories
+Description-Content-Type: text/markdown
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Goldziher_pydantic-factories&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Goldziher_pydantic-factories)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Goldziher_pydantic-factories&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Goldziher_pydantic-factories)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Goldziher_pydantic-factories&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=Goldziher_pydantic-factories)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Goldziher_pydantic-factories&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Goldziher_pydantic-factories)
+
+# Pydantic Factories
+
+Coming soon to a pypi near you
+
