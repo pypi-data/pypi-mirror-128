@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fal
+Version: 0.1.29
+Summary: fal allows you to run python scripts directly from your dbt project.
+Author: Meder Kamalov
+Author-email: meder@fal.ai
+Requires-Python: >=3.7.1,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=2.11.3,<3.0.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: agate-sql (>=0.5.8,<0.6.0)
+Requires-Dist: arrow (>=1.2.0,<2.0.0)
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: dbt (>=0.21.0,<0.22.0)
+Requires-Dist: google-cloud-bigquery (>=2.28.1,<3.0.0)
+Requires-Dist: google-cloud-bigquery-storage (>=2.9.1,<3.0.0)
+Requires-Dist: ninja (>=1.10.2,<2.0.0)
+Requires-Dist: pandas (>=1.3.4,<2.0.0)
+Requires-Dist: pyarrow (>=5.0.0,<6.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
