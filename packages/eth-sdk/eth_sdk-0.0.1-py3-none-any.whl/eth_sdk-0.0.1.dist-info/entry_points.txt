@@ -1,0 +1,3 @@
+[console_scripts]
+eth-sdk=eth_sdk.shell:cli
+
