@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: aug_sfutils
+Version: 0.6.5
+Summary: A utility to read AUG shotfiles
+Home-page: https://gitlab.mpcdf.mpg.de/git/sfutils
+Author: Giovanni Tardini
+Author-email: giovanni.tardini@ipp.mpg.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+What you need: python2.7 with numpy, matplotlib, Tkinter, tkFileDialog, tkMessageBox, netCDF4
+Special need: GSL library installed, add to LD_LIBRARY_PATH
+Make sure everything is in place (PYTHONPATH).
+
+Visual tool to collect TRANSP input (u-files). Recursive cubic-spline for the input profiles.
+
+python trgui.py
+More documentation at http://www.ipp.mpg.de/~git/transp/trgui.html
+
+
