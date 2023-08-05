@@ -1,0 +1,14 @@
+matplotlib
+numpy
+pygifsicle
+tqdm
+imageio
+sklearn
+
+[test]
+pytest
+pytest-cov
+coveralls
+validate_version_code
+codacy-coverage
+environments_utils
