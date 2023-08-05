@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: FamcyTools
+Version: 0.0.16
+Summary: Nexuni Co Ltd. Famcy management console framework
+Home-page: https://github.com/nexuni/FamcyTools.git
+Author: Nexuni Co Ltd. Develop Team
+Author-email: developers@nexuni.com
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries 
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: gadgethiServerUtils
+
+# FAMCY Tools Documentation
+Famcy is an Automatic Management Console for You (FAMCY). It is designed for Nexuni Management Console development. It is based in Flask framework and contains various useful plugins for backend management and user dashboard actions. This repository contains tools to initialize and configure famcy environment. 
+
+
