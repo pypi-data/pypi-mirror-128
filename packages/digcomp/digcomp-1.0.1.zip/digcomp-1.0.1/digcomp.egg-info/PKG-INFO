@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: digcomp
+Version: 1.0.1
+Summary: package for helping with digital control experiments and simulations
+Home-page: https://github.com/ryanGT/digcomp_py
+Author: Ryan Krauss
+Author-email: ryanwkrauss@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
