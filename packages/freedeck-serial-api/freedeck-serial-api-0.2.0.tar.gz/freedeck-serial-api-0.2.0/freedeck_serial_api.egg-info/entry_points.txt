@@ -1,0 +1,3 @@
+[console_scripts]
+fdserialtest = fdserial.__main__:main
+
