@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: torcharc
+Version: 1.1.1
+Summary: Build PyTorch networks by specifying architectures.
+Home-page: https://github.com/kengz/torcharc
+Author: kengz
+Author-email: kengzwl@gmail.com
+License: UNKNOWN
+Keywords: torcharc
+Platform: UNKNOWN
+License-File: LICENSE
+
+https://github.com/kengz/torcharc
+
