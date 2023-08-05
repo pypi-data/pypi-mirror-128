@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: recalibrate
+Version: 0.0.3
+Summary: Because everybody gets probabilities wrong
+Home-page: https://github.com/microprediction/recalibrate
+Author: microprediction
+Author-email: peter.cotton@microprediction.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# recalibrate
+Recalibrate probabilities
+
+
