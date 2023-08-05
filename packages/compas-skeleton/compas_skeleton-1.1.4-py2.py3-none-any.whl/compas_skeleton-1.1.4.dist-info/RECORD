@@ -1,0 +1,17 @@
+compas_skeleton/__init__.py,sha256=XYuAhl6Aa_VIyArsTw71bU-dSIKt1TQ1MR4bsyPaK0E,1633
+compas_skeleton/datastructure/__init__.py,sha256=I1V5D1UBXwE6a1zM3X7kLB8v6kV1weBTjyJwlstq5tY,688
+compas_skeleton/datastructure/skeleton.py,sha256=iAZjDebWpSvqbiDu_Y80r0py9Gge5gqKAhkSj_MPBgs,20286
+compas_skeleton/datastructure/skeleton3d.py,sha256=6JIKJaHlUL0Me2x7HCuryfnOazF6POdC9dAJaNnlEPA,7179
+compas_skeleton/datastructure/skeleton3d_quad.py,sha256=5muHpQMeeSq7clCwmiZLKeamhPzjV8VaU2D_9oIqZx4,9320
+compas_skeleton/rhino/__init__.py,sha256=EeMYIRwNtES8UiG1eVyuMlhnYvPt9g14bqhUEubNrmk,704
+compas_skeleton/rhino/artists/__init__.py,sha256=nTd0-eUDslMuO24cNLs236PVCSX1bWsG1PBWbvNIRbg,401
+compas_skeleton/rhino/artists/skeletonartist.py,sha256=q02B4dipfksyANfTOtzAgzAGTRbE-CRR24QeZ9Ukuw0,6814
+compas_skeleton/rhino/objects/__init__.py,sha256=xEjYKJHiHn97KbJPvsQc__EcIQlSIAWE75INK6xIhs0,401
+compas_skeleton/rhino/objects/skeletonobject.py,sha256=99_PauCaaBUCJOKDgBuIVNWdCefwhj13aKn_GbNmGiQ,25946
+compas_skeleton-1.1.4.dist-info/AUTHORS.md,sha256=EpR2RaBj94WHjlMCBbW0FE7CNo8WJzDXFalVeiq1akM,91
+compas_skeleton-1.1.4.dist-info/LICENSE,sha256=UOvCZ0INppBzzIo8I0fJztmE7tN1P2n8X5M_t9DV9Jw,1092
+compas_skeleton-1.1.4.dist-info/METADATA,sha256=RwZcFqiuSpH0GyfuC0Sw2yZZT_Ryr_AYPtN-M3oiFGA,2217
+compas_skeleton-1.1.4.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+compas_skeleton-1.1.4.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+compas_skeleton-1.1.4.dist-info/top_level.txt,sha256=7Dto-ZrTBvg7mSMvkSm_qk3CmHKuXG2kEm0Lalc5GRM,16
+compas_skeleton-1.1.4.dist-info/RECORD,,
