@@ -1,0 +1,172 @@
+Metadata-Version: 2.1
+Name: api-automation-kit
+Version: 0.2.0
+Summary: api-automation-kit-package (beta version)
+Home-page: https://upload.pypi.org/legacy/
+Author: Automation Team
+Author-email: automation.team@automation.co.il
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: allure-pytest (~=2.9.43)
+Requires-Dist: allure-python-commons (~=2.9.43)
+Requires-Dist: setuptools
+Requires-Dist: genson (~=1.2.2)
+Requires-Dist: artifacts-keyring (~=0.3.1)
+Requires-Dist: twine (~=3.4.2)
+Requires-Dist: wheel (~=0.37.0)
+Requires-Dist: pandas (~=1.3.3)
+Requires-Dist: streamlit (~=1.0.0)
+Requires-Dist: locust (~=2.2.3)
+Requires-Dist: requests (~=2.26.0)
+Requires-Dist: azure-devops (==6.0.0b4)
+Requires-Dist: xmltojson (~=0.2.0)
+Requires-Dist: msrest (~=0.6.21)
+
+# Introduction
+
+**api-automation-kit** is a Python package that (TODO: need to complete)
+
+# Main Features
+Here are just a few of the things that api-automation-kit including:
+
+  - Codeless Automation Framework For Performance and Rest API Tests - based on Streamlit and Locust python packages
+  - API capbabilities - based on Requests python package
+  - Upload Artifact to Pypi and Azure
+  - API Test Plan Capabilities For Azure TFS
+  - Interactive Test Report - based on Allure framework
+
+
+# Environment and Installations
+The source code is currently hosted on GitHub at:
+https://github.com/api-automation-kit
+
+Binary installers for the latest released version are available at the [Python
+Package Index (PyPI)](https://pypi.org/project/api-automation-kit)
+```sh
+# PyPI
+pip install api-automation-kit
+```
+
+## Scoop Installation (for windows)
+See the [full installation instructions for Scoop](https://scoop.sh)
+
+## Allure Installation
+See the [full installation instructions for allure](https://docs.qameta.io/allure)
+
+# Code Examples:
+## ui_app.py
+```sh
+# the code for open the ui app
+import os.path
+import api
+
+path = os.path.dirname(__file__)
+api.ui_app.run_app(main_path=path)
+```
+
+```sh
+# run from command line
+$ streamlit run ui_app.py
+```
+#### After a few seconds, the app will start on the default browser.
+##### Try to write your API test like the example below:
+![Screenshot](api/files/app-image.PNG)
+
+##### Click on Save Result Check-Box for saving the Python syntax result:
+![Screenshot](api/files/save-result.PNG)
+
+##### The Python script moved to project folder:
+![Screenshot](api/files/script-result.PNG)
+
+##### For run the test return to the web app and click on the Run Script.
+##### After a few seconds, the test results will appear in a new tab:
+![Screenshot](api/files/allure-results.PNG)
+
+
+## rest_api.py
+```sh
+# the code for open the ui app
+import allure
+import api
+
+
+@allure.feature("Set Feature For get_en_stable_")
+@allure.description("Set Description For get_en_stable_")        
+def test_get_en_stable_():
+    component_get_en_stable_()
+
+@allure.step("Set Step Description For get_en_stable_")
+def component_get_en_stable_():
+     api_instance = api.rest_api.ApiCapabilities()
+     response = api_instance.get_request(url='http://docs.locust.io:80/en/stable/?', headers={"Content-Type":"application/json"})
+     analyze_response(response, 200)
+
+
+@allure.step("Expected Status Code")
+def analyze_response(res, expected_status_code):
+    if res.status_code != expected_status_code:
+        assert False
+    else:
+        print(f"status code is {res.status_code}")
+```
+
+```sh
+# run the tests from command line 
+$ py.test rest_api.py --alluredir=tmp/allure_results
+```
+```sh
+# generate report from command line 
+$ allure serve tmp\allure_results
+```
+
+
+## upload_artifact.py
+```sh
+# upload python package to azure or pypi by developer selection
+import os
+from api import artifact
+PYPI = True
+pypi_user = '{user}'
+pypi_password = '{password}'
+AZURE = False
+azure_feeds = ['{azure-feed-1}', '{azure-feed-2}']
+dist_dir = os.path.dirname(__file__) + "/dist"
+artifact.run_process(dist_dir=dist_dir, azure_feeds=azure_feeds, azure_artifact=False,
+                     pypi_artifact=True, user=pypi_user, password=pypi_password)
+```
+
+## azure_tp.py
+```sh
+# need to complete
+```
+
+
+# Dependencies
+
+- allure-pytest~=2.9.43
+- allure-python-commons~=2.9.43
+- setuptools~=57.4.0
+- genson~=1.2.2
+- artifacts-keyring~=0.3.1
+- twine~=3.4.2
+- wheel~=0.37.0
+- pandas~=1.3.3
+- streamlit~=1.0.0
+- locust~=2.2.3
+- requests~=2.26.0
+- azure-devops==6.0.0b4
+- xmltojson~=0.2.0
+- msrest~=0.6.21
+
+See the [full installation instructions](https://pandas.pydata.org/pandas-docs/stable/install.html#dependencies) for minimum supported versions of required, recommended and optional dependencies.
+
+
+# License
+[MIT](LICENSE)
+
+
