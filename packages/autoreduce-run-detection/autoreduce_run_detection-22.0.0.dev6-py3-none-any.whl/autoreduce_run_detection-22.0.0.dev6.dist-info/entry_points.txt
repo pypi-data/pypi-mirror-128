@@ -1,0 +1,3 @@
+[console_scripts]
+autoreduce-run-detection = autoreduce_run_detection.run_detection:main
+
