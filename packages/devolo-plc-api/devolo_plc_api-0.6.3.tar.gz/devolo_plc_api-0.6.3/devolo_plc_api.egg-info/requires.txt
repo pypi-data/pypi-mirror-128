@@ -1,0 +1,13 @@
+httpx>=0.18
+protobuf
+zeroconf>=0.32.0
+
+[dev]
+pre-commit
+
+[test]
+pytest
+pytest-asyncio
+pytest-cov
+pytest-httpx>=0.12
+pytest-mock
