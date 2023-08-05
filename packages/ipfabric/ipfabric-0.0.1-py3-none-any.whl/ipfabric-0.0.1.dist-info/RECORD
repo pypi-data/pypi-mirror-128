@@ -1,0 +1,6 @@
+ipfabric/__init__.py,sha256=uyQeAXOIBfe8H9FesRJ7mxIrOen9nhlonQFQRXpJqOk,1161
+ipfabric/client.py,sha256=BbjUJfRwZGKEY5LAKz1TPgEJ5DNU2KzT7afBl4qeWi0,9086
+ipfabric/models.py,sha256=LwK0gV57STN-KZsZ43ZeEexlPSXQ7xFWL-tOlFsZYyE,2111
+ipfabric-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+ipfabric-0.0.1.dist-info/METADATA,sha256=D_mUWAemgve5gYc6tqhK8OK3Ai7BuAihmqRqMqXfy20,1008
+ipfabric-0.0.1.dist-info/RECORD,,
