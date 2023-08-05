@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pydingbot/__init__.py
+pydingbot/main.py
+pydingbot.egg-info/PKG-INFO
+pydingbot.egg-info/SOURCES.txt
+pydingbot.egg-info/dependency_links.txt
+pydingbot.egg-info/requires.txt
+pydingbot.egg-info/top_level.txt
