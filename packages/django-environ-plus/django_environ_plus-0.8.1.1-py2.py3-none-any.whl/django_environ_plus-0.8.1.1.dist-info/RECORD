@@ -1,0 +1,10 @@
+environ/__init__.py,sha256=bIFxH7Obd7bSaewRH79WjP-XrYwY-W7Wf-8U726QzGE,1274
+environ/compat.py,sha256=mWj62U5dzJbGWR2AqC0_iqvY2OZVO37w_zJJnUr4jas,1664
+environ/environ.py,sha256=Aerg0H18EiTLEkFPOBWJVi8fklLlYJkxXO-FbjcscCU,32750
+environ/fileaware_mapping.py,sha256=nRiFmBSm-DMm_Y-bYKIHADzhdbft9HiGj6k3Tjmb25U,2747
+django_environ_plus-0.8.1.1.dist-info/AUTHORS.rst,sha256=NuN_hBzKf0qu8WprSNAw1i0waDtCtFP6PqJXMQ7Dcs4,1027
+django_environ_plus-0.8.1.1.dist-info/LICENSE.txt,sha256=9tJkv1KMKXXY8mVA2SZREkV5mY45aR29nnxo6y9274s,1154
+django_environ_plus-0.8.1.1.dist-info/METADATA,sha256=Zazf0ZvQxexPsiJhhohJ-rfqE0y660AT9SqATR_L5Bg,9310
+django_environ_plus-0.8.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+django_environ_plus-0.8.1.1.dist-info/top_level.txt,sha256=vLrvR0rjlfzn--WLv_InBUvf9Lhd-VZIisjM2eBC9QE,8
+django_environ_plus-0.8.1.1.dist-info/RECORD,,
