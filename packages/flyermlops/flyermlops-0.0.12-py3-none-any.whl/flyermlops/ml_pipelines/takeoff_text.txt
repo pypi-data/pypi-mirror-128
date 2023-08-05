@@ -1,0 +1,13 @@
+    from flyermlops.ml_pipelines import flight_utils
+    from flyermlops.tracking.tracking_objects import FlightTracker
+    
+    
+    config = flight_utils.get_config()
+    flight_tracker = FlightTracker(part_of_flight=True, **config)
+    flight_tracker.set_tracking_connection()
+    STORAGE_BUCKET = config.get('storage_location')
+    FLIGHT_ID = flight_tracker.flight_tracking_id
+    PROJECT_NAME = config.get('project_name')
+    S3_FLIGHT_PATH = f's3://{STORAGE_BUCKET}/projects/{PROJECT_NAME}/{FLIGHT_ID}'
+    data = {'storage_location': S3_FLIGHT_PATH}
+    flight_tracker.log_to_registry(data=data, tracking_id=flight_tracker.flight_tracking_id)

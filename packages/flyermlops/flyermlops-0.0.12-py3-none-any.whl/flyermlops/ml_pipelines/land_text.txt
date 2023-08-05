@@ -1,0 +1,8 @@
+    from flyermlops.ml_pipelines import flight_utils
+    from flyermlops.tracking.tracking_objects import FlightTracker
+    
+    config = flight_utils.get_config()
+    flight_tracker = FlightTracker(part_of_flight=True, **config)
+    flight_tracker.set_tracking_connection()
+    data = {'in_flight': 0}
+    flight_tracker.log_to_registry(data=data, tracking_id=flight_tracker.flight_tracking_id)

@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: flyermlops
+Version: 0.0.12
+Summary: Helper functions for AWS and MLOPs
+Home-page: https://git.delta.com/ods/machine-learning/flyermlops
+Author: Steven Forrester
+Author-email: steven.forrester@delta.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: awswrangler (>=2.10.0)
+Requires-Dist: pandas (>=1.1.5)
+Requires-Dist: psycopg2-binary (>=2.7.7)
+Requires-Dist: SQLAlchemy (>=1.4.23)
+Requires-Dist: teradatasql (>=17.10.0.2)
+Requires-Dist: cookiecutter (>=1.7.3)
+Requires-Dist: PyYAML (>=5.3.1)
+Requires-Dist: boto3 (>=1.18.64)
+Requires-Dist: sagemaker (>=2.63.1)
+
+.. -*- mode: rst -*-
+
+|Black|_ |PythonVersion|_
+
+.. |PythonVersion| image:: https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9-blue
+.. _PythonVersion: https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9-blue
+
+.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+.. _Black: https://github.com/psf/black
+
+.. image:: https://git.delta.com/ods/machine-learning/flyermlops/-/raw/production/flyermlops/docs/logos/flyermlops_logo.png
+   
+
+What is FlyerMLOps
+------------------
+
+**FlyerMLOps** is a multi-purpose Python package with the goal of making machine learning operations (MLOps) easier for everyone.
+The package brings together various ideas and tools within MLOps related to data tracking, model tracking,
+pipeline orchestration, prototying, deployment, and monitoring of production machine learning systems.
+
+Installation
+------------
+
+.. code-block:: language
+
+   pip install flyermlops
+
+
+
