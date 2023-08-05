@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: shortenurl
+Version: 1.3.0
+Summary: Shorten URLs with Python
+Home-page: https://github.com/s4300/shortenurl-python
+Author: s4300
+Author-email: 
+License: NONE
+Description: # shortenurl library
+        
+        Made by s4300
+        
+        [Github](https://github.com/s4300/shortenurl-python)\
+        [PyPI](https://pypi.org/project/shortenurl/)\
+        
+        # Setup
+        
+        Command: pip install shortenurl\
+        Script: Coming soon!\
+        
+        # Example code
+        
+        tinyurl.create("apiToken", "urlToShorten", "alias", "domain")\
+        tinyurl.change("apiToken", "alias", "domain", "newAlias", and "newUrl")\
+        tinyurl.update("apiToken", "alias", "domain", "newAlias", "newDomain")
+        
+        # Supported URL shorteners
+        
+        [TinyURL](https://tinyurl.com/)
+Keywords: shorten urls tinyurl bitly url
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
