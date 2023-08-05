@@ -1,0 +1,1 @@
+from text2number.text2number import text2integer
