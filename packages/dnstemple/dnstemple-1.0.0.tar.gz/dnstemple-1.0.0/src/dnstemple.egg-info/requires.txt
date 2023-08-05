@@ -1,0 +1,4 @@
+setuptools
+importlib_metadata
+dnspython
+PyYAML
