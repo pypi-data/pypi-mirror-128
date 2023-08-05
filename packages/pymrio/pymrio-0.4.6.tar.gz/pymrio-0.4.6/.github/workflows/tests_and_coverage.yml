@@ -1,0 +1,83 @@
+name: build
+
+on: ["push", "pull_request"]
+
+jobs: 
+
+ test_development:
+  # Testing in development environment: functionality and code-format
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+
+    - name: Cache conda
+      uses: actions/cache@v2
+      env:
+        # Increase this value to reset cache if etc/example-environment.yml has not changed
+        CACHE_NUMBER: 0
+      with:
+        path: ~/conda_pkgs_dir
+        key:
+          ${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{
+          hashFiles('environment.yml') }}
+
+    - name: Setup conda and environment
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+          auto-update-conda: true
+          channels: conda-forge,defaults
+          mamba-version: "*"
+          channel-priority: true
+          activate-environment: coco-dev
+          environment-file: environment.yml
+          use-only-tar-bz2: true   # required for caching
+
+    - name: List environment
+      run: |
+        mamba info
+        mamba list
+
+    - name: Run tests
+      run: |
+         isort --project pymrio --profile black --check-only .
+         coverage run --source=pymrio -m pytest --black -vv
+
+    - name: Coveralls analysis
+      run: COVERALLS_REPO_TOKEN=Om5uiItcP8u6aHRGWiWKjmNkZL1LKoHSB coveralls
+
+
+ test_production:
+   # Testing if the package runs on different systems/python versions
+    needs: test_development
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        # removed -l as this breaks in mac-os
+        shell: bash {0}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ["ubuntu-latest", "macos-latest", "windows-latest"]
+        python-version: [3.7, 3.8, 3.9]
+
+    steps:
+       - name: Check out repository code
+         uses: actions/checkout@v2
+
+       - name: Setup Python
+         uses: actions/setup-python@v2
+         with:
+            python-version: ${{matrix.python-version}}
+
+       - name: Run tests
+         run: |
+            pip install . -U
+            pip install pytest
+            python setup.py sdist
+            pytest -vv
+

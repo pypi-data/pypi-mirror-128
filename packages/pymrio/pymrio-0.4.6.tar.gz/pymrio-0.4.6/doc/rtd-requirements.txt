@@ -1,0 +1,5 @@
+docutils < 0.18
+sphinx >= 1.6.4
+sphinx_rtd_theme >= 0.2.4
+ipykernel
+nbsphinx
