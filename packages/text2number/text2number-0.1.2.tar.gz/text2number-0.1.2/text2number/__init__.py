@@ -1,0 +1,2 @@
+from text2number.text2number import text2integer
+from text2number.updates import update_dict

@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: text2number
+Version: 0.1.2
+Summary: The package can convert literal text to numerals
+Home-page: UNKNOWN
+Author: Vikash Kumar Prasad
+Author-email: ubuntukr7@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: text,number
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
