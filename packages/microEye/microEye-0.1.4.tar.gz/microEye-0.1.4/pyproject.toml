@@ -1,0 +1,15 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "scipy",
+    "pyueye",
+    "opencv-python",
+    "tifffile",
+    "PyQt5",
+    "pyqtgraph",
+    "QDarkStyle",
+    "ome-types",
+    "lmfit",
+    "pyqode.python"
+]
+build-backend = "setuptools.build_meta"
