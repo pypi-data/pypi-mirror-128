@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: workflowy-assistant
+Version: 0.0.3
+Summary: Helps you automate your WorkFlowy.
+Home-page: https://github.com/guidoknoop/workflowy-assistant
+Author: Guido Knoop
+Author-email: guidojurgenknoop@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## WorkFlowy Assistant
+
+## Installation
+```python
+pip install workflowy-assistant
+```
+
+## Usage
+
