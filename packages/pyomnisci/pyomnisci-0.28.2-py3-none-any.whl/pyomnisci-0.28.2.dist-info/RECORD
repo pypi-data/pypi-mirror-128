@@ -1,0 +1,14 @@
+pyomnisci/__init__.py,sha256=oQVDPq2wEQs5uKP7XQv3IAytXAxAJDTprNzl_dUNBj8,858
+pyomnisci/_loaders.py,sha256=uikkGcFmK6JtyVnOoZJAzcV-Co1UMVHQKuf79ZIkgW4,544
+pyomnisci/_mutators.py,sha256=FEMV-pDrNs0ZNlnbdFz_UGny2BFjAUUCF9xmOivFsr4,667
+pyomnisci/_pandas_loaders.py,sha256=CsKwKJctlxuqu_4gVV1Rdp9OfsYpTLKVmOiyOSYgLXI,9629
+pyomnisci/_transforms.py,sha256=XDqEbcwZms-kW0zcxzvjlfzcWp_MuMryP3Y18kSyESw,3909
+pyomnisci/_utils.py,sha256=UjQdJN7pCBWJ8CEixH-nEYBUp-CcMNBqpZerBpqGoGE,5934
+pyomnisci/_version.py,sha256=cchvUxoD4IBgM0hMJvvHlTZCWA-c1yrI4BT70ncINGs,144
+pyomnisci/connection.py,sha256=s7fjZ_a8fwjega3-vH9xyYp4k_R2JnEDLynOj5MeKBQ,23587
+pyomnisci/ipc.py,sha256=kwwJVozuJ2KOei9UKGAVyLs5EBABT0gQEHUFP5AFSLE,1876
+pyomnisci-0.28.2.dist-info/LICENSE.md,sha256=5HWxaEPozLoEniUSlOEv4S_2h0fSDaut1CTXrcARgoc,11344
+pyomnisci-0.28.2.dist-info/METADATA,sha256=uXsckR-slJyoSvMkTXFkKwwDw_EhyO20kQ-XlAIJg_A,3339
+pyomnisci-0.28.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyomnisci-0.28.2.dist-info/top_level.txt,sha256=VxOaUy3-lYmvzxRgQN1eefmKhjIWnFg64UUFjIpkYc4,10
+pyomnisci-0.28.2.dist-info/RECORD,,
