@@ -1,0 +1,14 @@
+tensorboard_plugin_3d/__init__.py,sha256=6zOdXFCLu_uUPDXwxN7vaunG9mzI4bJiKXGzWo7cLDo,806
+tensorboard_plugin_3d/demo.py,sha256=kUS5Krec7wBtcUPvlirqTe5JNRO0v7o0wC9y9CHg43A,1225
+tensorboard_plugin_3d/plugin.py,sha256=_SIKRnaXiFpqUQONjlAg7GXP44saTdqV0A0AWT4e9fo,5183
+tensorboard_plugin_3d/client/favicon-32x32.png,sha256=k7YQxaFkWZvDleKr-5HrSa6n--vGw1yIBpmRasgVQvQ,2171
+tensorboard_plugin_3d/client/index.html,sha256=Lrdswy2rAp3x9UA25SVZziPBG1YJZZjDfoEn1IGC8ws,532
+tensorboard_plugin_3d/client/package.json,sha256=vvxKeurTajWT-WZuHUmDeHgVgulk8wBm4Li2rbRpGh4,1002
+tensorboard_plugin_3d/client/update-static.js,sha256=gfvZ0yk1oSs7m7TsFCsfCKM5InhXSGr7pobOTNR_2hI,170
+tensorboard_plugin_3d/client/webpack.config.js,sha256=REoK_nazx_4BHtWc9GUuSvAwT7f9M52k6qlBIcNXEXc,977
+tensorboard_plugin_3d/client/yarn.lock,sha256=7c65sw5EOte2zuo2Mto1QaZAB8lroz1sv3s5iVmyWR8,254695
+tensorboard_plugin_3d-0.0.1.dist-info/METADATA,sha256=vvmGzLTbCygQJ9LSCgNR4-d3KnPIbSdYL_AVsts8d4M,161
+tensorboard_plugin_3d-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tensorboard_plugin_3d-0.0.1.dist-info/entry_points.txt,sha256=83sbUCG43j4A1ufJRMZx0OQv9EmAf-e-mH6NeHXV3Qo,89
+tensorboard_plugin_3d-0.0.1.dist-info/top_level.txt,sha256=TmBX8gr7BlP6uxZDqBnVEMnHpWXzPF_Enz0-n3CMq0U,22
+tensorboard_plugin_3d-0.0.1.dist-info/RECORD,,
