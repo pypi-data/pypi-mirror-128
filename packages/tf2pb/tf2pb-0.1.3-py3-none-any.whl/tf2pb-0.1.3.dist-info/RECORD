@@ -1,0 +1,17 @@
+tf2pb/.__data__.pys,sha256=b9nFwUFdbG3ypDYAiCns-XWAnN3EwVK7scSK-GMrV8I,68532
+tf2pb/.__meta__.pys,sha256=4LlbC5ZO8rZg2CpG696tP-kjdILr62M04p6V4SPVMzE,433
+tf2pb/__init__.py,sha256=undctExuRnM5TWIoy-OttyBbXoK2lL3uiwF7eIGOnA8,1018
+tf2pb/convert_ckpt.py,sha256=Gezp0WMVLKzyMiSx1w_sj6iFAJxiGNsFFZMjiWA-qa0,5058
+tf2pb/convert_ckpt_dtype.py,sha256=WFoRsVSxF-UZU8qylBF7m5zzYIP7003J6Hq04LZs_bE,318
+tf2pb/convert_keras.py,sha256=sQdQcXM43csGa4k2J3Jyar43UJizzXutgjhzaa2K1ok,651
+tf2pb/libtf_fastertransformer10.2.so,sha256=pf9iiTcsLNF2CWpgZUVfNtNHXk3fWGHFHZyduWJr9Fg,8516432
+tf2pb/libtf_fastertransformer11.3.so,sha256=Kr9o23PSpk6T3gHzg-5z7HjtrOw8mrg19wy6cDYEyoA,20364456
+tf2pb/optimization.py,sha256=WwlD8PBoMg8pAuO6EDKJc3OJ5hA95Lwkr-O6puSGJo8,6258
+tf2pb/readme.py,sha256=pK67V89W4QhA3mLh9zfHjkaOhD5WhYjM7tB_puROhiI,1011
+tf2pb/run_classifier.py,sha256=zW_Ub1sbAS3ep0jhlTLPTAxAslJtyxyASc9jNzfmOZc,35368
+tf2pb/tokenization.py,sha256=V2-OcJ6qWcmZqK7T8yxYFIfVmrRwef5ks9P6RXvH-zQ,12257
+tf2pb/module/__init__.py,sha256=xO0Kg6hYb3bKOf0b8FW7HxiZZJBdMnDQXuiBL4-wk8Q,212
+tf2pb-0.1.3.dist-info/METADATA,sha256=g5EFtTyt3IwVRYwyRM_JofM_CryJMAOK1cBqzCt327Y,8484
+tf2pb-0.1.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tf2pb-0.1.3.dist-info/top_level.txt,sha256=Z2Z70twG_QkDr5ZVqb4H1rybbFY1Tt6FhZhljGY1Iao,19
+tf2pb-0.1.3.dist-info/RECORD,,
