@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pipelit/__init__.py
+src/pipelit/_about.py
+src/pipelit.egg-info/PKG-INFO
+src/pipelit.egg-info/SOURCES.txt
+src/pipelit.egg-info/dependency_links.txt
+src/pipelit.egg-info/not-zip-safe
+src/pipelit.egg-info/requires.txt
+src/pipelit.egg-info/top_level.txt
