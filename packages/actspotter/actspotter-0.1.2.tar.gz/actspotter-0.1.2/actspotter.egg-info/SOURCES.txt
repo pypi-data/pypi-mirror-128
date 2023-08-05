@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+actspotter/__init__.py
+actspotter.egg-info/PKG-INFO
+actspotter.egg-info/SOURCES.txt
+actspotter.egg-info/dependency_links.txt
+actspotter.egg-info/not-zip-safe
+actspotter.egg-info/requires.txt
+actspotter.egg-info/top_level.txt
+actspotter/model/keras_metadata.pb
+actspotter/model/meta.json
+actspotter/model/saved_model.pb
+actspotter/model/variables/variables.data-00000-of-00001
+actspotter/model/variables/variables.index
