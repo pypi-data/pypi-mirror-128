@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: autoreduce-run-detection
+Version: 22.0.0.dev4
+Summary: A service to discover and ingest new files produced by the ISIS neutron and muon facility
+Home-page: https://github.com/ISISScientificComputing/autoreduce-run-detection
+Author: ISIS Autoreduction Team
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: autoreduce-utils (>=22.0.0.dev7)
+Requires-Dist: filelock
+Requires-Dist: requests
+
+UNKNOWN
+
+
