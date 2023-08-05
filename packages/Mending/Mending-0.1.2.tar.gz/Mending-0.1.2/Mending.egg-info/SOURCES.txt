@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+Mending/__init__.py
+Mending.egg-info/PKG-INFO
+Mending.egg-info/SOURCES.txt
+Mending.egg-info/dependency_links.txt
+Mending.egg-info/top_level.txt
