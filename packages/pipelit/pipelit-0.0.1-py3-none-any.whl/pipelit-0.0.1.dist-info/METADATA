@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: pipelit
+Version: 0.0.1
+Summary: Tool to automagically build data pipelines.
+Home-page: https://github.com/lukasmasuch/pipelit
+Author: Lukas Masuch
+Author-email: lukas.masuch@gmail.com
+License: MIT
+Project-URL: Changelog, https://github.com/lukasmasuch/pipelit/releases
+Project-URL: Issue Tracker, https://github.com/lukasmasuch/pipelit/issues
+Project-URL: Documentation, https://github.com/lukasmasuch/pipelit#documentation
+Project-URL: Source, https://github.com/lukasmasuch/pipelit
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit (>=1.0.0)
+Requires-Dist: pydantic
+Requires-Dist: streamlit-pydantic
+Provides-Extra: dev
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: lazydocs ; extra == 'dev'
+Requires-Dist: universal-build ; extra == 'dev'
+Requires-Dist: rope ; extra == 'dev'
+
+# PipeLit
+
+
