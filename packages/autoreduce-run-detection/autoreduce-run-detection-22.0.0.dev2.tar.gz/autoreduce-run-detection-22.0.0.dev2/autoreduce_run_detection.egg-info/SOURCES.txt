@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+autoreduce_run_detection.egg-info/PKG-INFO
+autoreduce_run_detection.egg-info/SOURCES.txt
+autoreduce_run_detection.egg-info/dependency_links.txt
+autoreduce_run_detection.egg-info/entry_points.txt
+autoreduce_run_detection.egg-info/requires.txt
+autoreduce_run_detection.egg-info/top_level.txt
