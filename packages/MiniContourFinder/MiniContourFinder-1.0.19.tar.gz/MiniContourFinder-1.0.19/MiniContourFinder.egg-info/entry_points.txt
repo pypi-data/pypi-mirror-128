@@ -1,0 +1,5 @@
+[console_scripts]
+mcf = MCF.mcf:main
+mcf_gui = MCF.mcf_gui:main
+mcf_parallel = MCF.mcf_parallel:main
+

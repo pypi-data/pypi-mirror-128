@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+MCF/MCF.py
+MCF/__init__.py
+MCF/helpers.py
+MCF/imagetools.py
+MCF/mcf.py
+MCF/mcf_gui.py
+MCF/mcf_parallel.py
+MiniContourFinder.egg-info/PKG-INFO
+MiniContourFinder.egg-info/SOURCES.txt
+MiniContourFinder.egg-info/dependency_links.txt
+MiniContourFinder.egg-info/entry_points.txt
+MiniContourFinder.egg-info/requires.txt
+MiniContourFinder.egg-info/top_level.txt
+tests/__init__.py
