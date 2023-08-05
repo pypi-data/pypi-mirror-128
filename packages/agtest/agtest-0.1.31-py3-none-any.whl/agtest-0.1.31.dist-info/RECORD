@@ -1,0 +1,11 @@
+agtest/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+agtest/cli.py,sha256=q3rJZTPM9DacxCvq4AX0hWg6ZTRNsn9gTeBIv3rksS4,77206
+agtest/data/latest_mm.csv,sha256=s8aixIVJde_oG4OwRP42e4Ekz5MwmgvtqSLvl6LwqjQ,8883377
+agtest/errors_enum.py,sha256=oCNfclh4SCJGp0kv7NR4cOrcHHG23o40XqoW7OtKG2w,1919
+agtest/ftcompare.py,sha256=-mjoJTDcVNMJCRwhAXsvAskNq1q9eB9ErdPS0pn9a_I,12972
+agtest/plugin_results.txt,sha256=KoT_DnH4mFSuqRUv25oxeafVEnMvmbpkkH_S7q0TIl4,9501
+agtest/test.csv,sha256=S3Poh0JLzqmprHw_QtgKJPgnICMj2UCFogxETOmYs5s,7624763
+agtest-0.1.31.dist-info/entry_points.txt,sha256=5PtvNlw5D8bxp7KsTPiv8atCaKlOkaAnQB-wvwk_hSg,42
+agtest-0.1.31.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+agtest-0.1.31.dist-info/METADATA,sha256=AO6ms-HUO6Hw-fmbUDqn55oVDXuhrrs4o59yqJ-5oX0,1075
+agtest-0.1.31.dist-info/RECORD,,
