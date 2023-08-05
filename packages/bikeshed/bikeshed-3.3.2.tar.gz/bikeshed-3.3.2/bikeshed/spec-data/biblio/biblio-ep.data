@@ -1,0 +1,1880 @@
+d:epr
+epr
+13 September 2016
+NOTE
+Entry Point Regulation
+https://www.w3.org/TR/epr/
+https://w3c.github.io/webappsec-epr/
+
+
+
+Mike West
+-
+d:epr-20150609
+epr-20150609
+9 June 2015
+WD
+Entry Point Regulation
+https://www.w3.org/TR/2015/WD-epr-20150609/
+https://www.w3.org/TR/2015/WD-epr-20150609/
+
+
+
+David Ross
+Mike West
+-
+d:epr-20160913
+epr-20160913
+13 September 2016
+NOTE
+Entry Point Regulation
+https://www.w3.org/TR/2016/NOTE-epr-20160913/
+https://www.w3.org/TR/2016/NOTE-epr-20160913/
+
+
+
+Mike West
+-
+d:epub-33
+epub-33
+21 October 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/epub-33/
+https://w3c.github.io/epub-specs/epub33/core/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210112
+epub-33-20210112
+12 January 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210112/
+https://www.w3.org/TR/2021/WD-epub-33-20210112/
+
+
+
+Garth Conboy
+Dave Cramer
+Marisa DeMeglio
+Matt Garrish
+Daniel Weck
+-
+d:epub-33-20210223
+epub-33-20210223
+23 February 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210223/
+https://www.w3.org/TR/2021/WD-epub-33-20210223/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210224
+epub-33-20210224
+24 February 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210224/
+https://www.w3.org/TR/2021/WD-epub-33-20210224/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210406
+epub-33-20210406
+6 April 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210406/
+https://www.w3.org/TR/2021/WD-epub-33-20210406/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210525
+epub-33-20210525
+25 May 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210525/
+https://www.w3.org/TR/2021/WD-epub-33-20210525/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210712
+epub-33-20210712
+12 July 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210712/
+https://www.w3.org/TR/2021/WD-epub-33-20210712/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210825
+epub-33-20210825
+25 August 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210825/
+https://www.w3.org/TR/2021/WD-epub-33-20210825/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210831
+epub-33-20210831
+31 August 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210831/
+https://www.w3.org/TR/2021/WD-epub-33-20210831/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210903
+epub-33-20210903
+3 September 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210903/
+https://www.w3.org/TR/2021/WD-epub-33-20210903/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210909
+epub-33-20210909
+9 September 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210909/
+https://www.w3.org/TR/2021/WD-epub-33-20210909/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210914
+epub-33-20210914
+14 September 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210914/
+https://www.w3.org/TR/2021/WD-epub-33-20210914/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210917
+epub-33-20210917
+17 September 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210917/
+https://www.w3.org/TR/2021/WD-epub-33-20210917/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210921
+epub-33-20210921
+21 September 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210921/
+https://www.w3.org/TR/2021/WD-epub-33-20210921/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210928
+epub-33-20210928
+28 September 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210928/
+https://www.w3.org/TR/2021/WD-epub-33-20210928/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20210929
+epub-33-20210929
+29 September 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20210929/
+https://www.w3.org/TR/2021/WD-epub-33-20210929/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20211010
+epub-33-20211010
+10 October 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20211010/
+https://www.w3.org/TR/2021/WD-epub-33-20211010/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20211012
+epub-33-20211012
+12 October 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20211012/
+https://www.w3.org/TR/2021/WD-epub-33-20211012/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20211013
+epub-33-20211013
+13 October 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20211013/
+https://www.w3.org/TR/2021/WD-epub-33-20211013/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20211014
+epub-33-20211014
+14 October 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20211014/
+https://www.w3.org/TR/2021/WD-epub-33-20211014/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20211019
+epub-33-20211019
+19 October 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20211019/
+https://www.w3.org/TR/2021/WD-epub-33-20211019/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-33-20211021
+epub-33-20211021
+21 October 2021
+WD
+EPUB 3.3
+https://www.w3.org/TR/2021/WD-epub-33-20211021/
+https://www.w3.org/TR/2021/WD-epub-33-20211021/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-a11y-11
+epub-a11y-11
+13 October 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/epub-a11y-11/
+https://w3c.github.io/epub-specs/epub33/a11y/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210223
+epub-a11y-11-20210223
+23 February 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210223/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210223/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210406
+epub-a11y-11-20210406
+6 April 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210406/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210406/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210525
+epub-a11y-11-20210525
+25 May 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210525/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210525/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210712
+epub-a11y-11-20210712
+12 July 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210712/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210712/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210825
+epub-a11y-11-20210825
+25 August 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210825/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210825/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210903
+epub-a11y-11-20210903
+3 September 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210903/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210903/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210908
+epub-a11y-11-20210908
+8 September 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210908/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210908/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210909
+epub-a11y-11-20210909
+9 September 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210909/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210909/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210914
+epub-a11y-11-20210914
+14 September 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210914/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210914/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210915
+epub-a11y-11-20210915
+15 September 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210915/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210915/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210917
+epub-a11y-11-20210917
+17 September 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210917/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210917/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210921
+epub-a11y-11-20210921
+21 September 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210921/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210921/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210922
+epub-a11y-11-20210922
+22 September 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210922/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210922/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210927
+epub-a11y-11-20210927
+27 September 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210927/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210927/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210928
+epub-a11y-11-20210928
+28 September 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210928/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210928/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20210929
+epub-a11y-11-20210929
+29 September 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210929/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20210929/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20211001
+epub-a11y-11-20211001
+1 October 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20211001/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20211001/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20211004
+epub-a11y-11-20211004
+4 October 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20211004/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20211004/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20211007
+epub-a11y-11-20211007
+7 October 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20211007/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20211007/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-11-20211013
+epub-a11y-11-20211013
+13 October 2021
+WD
+EPUB Accessibility 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20211013/
+https://www.w3.org/TR/2021/WD-epub-a11y-11-20211013/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-eaa-mapping
+epub-a11y-eaa-mapping
+13 October 2021
+NOTE
+EPUB Accessibility - EU Accessibility Act Mapping
+https://www.w3.org/TR/epub-a11y-eaa-mapping/
+https://w3c.github.io/epub-specs/epub33/epub-a11y-eaa-mapping/
+
+
+
+Cristina Mussinelli
+Luc Audrain
+Gregorio Pellegrino
+-
+d:epub-a11y-eaa-mapping-20210629
+epub-a11y-eaa-mapping-20210629
+29 June 2021
+NOTE
+EPUB Accessibility - EU Accessibility Act Mapping
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20210629/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20210629/
+
+
+
+Cristina Mussinelli
+Luc Audrain
+Gregorio Pellegrino
+-
+d:epub-a11y-eaa-mapping-20210903
+epub-a11y-eaa-mapping-20210903
+3 September 2021
+NOTE
+EPUB Accessibility - EU Accessibility Act Mapping
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20210903/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20210903/
+
+
+
+Cristina Mussinelli
+Luc Audrain
+Gregorio Pellegrino
+-
+d:epub-a11y-eaa-mapping-20210914
+epub-a11y-eaa-mapping-20210914
+14 September 2021
+NOTE
+EPUB Accessibility - EU Accessibility Act Mapping
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20210914/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20210914/
+
+
+
+Cristina Mussinelli
+Luc Audrain
+Gregorio Pellegrino
+-
+d:epub-a11y-eaa-mapping-20210921
+epub-a11y-eaa-mapping-20210921
+21 September 2021
+NOTE
+EPUB Accessibility - EU Accessibility Act Mapping
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20210921/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20210921/
+
+
+
+Cristina Mussinelli
+Luc Audrain
+Gregorio Pellegrino
+-
+d:epub-a11y-eaa-mapping-20210928
+epub-a11y-eaa-mapping-20210928
+28 September 2021
+NOTE
+EPUB Accessibility - EU Accessibility Act Mapping
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20210928/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20210928/
+
+
+
+Cristina Mussinelli
+Luc Audrain
+Gregorio Pellegrino
+-
+d:epub-a11y-eaa-mapping-20210929
+epub-a11y-eaa-mapping-20210929
+29 September 2021
+NOTE
+EPUB Accessibility - EU Accessibility Act Mapping
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20210929/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20210929/
+
+
+
+Cristina Mussinelli
+Luc Audrain
+Gregorio Pellegrino
+-
+d:epub-a11y-eaa-mapping-20211007
+epub-a11y-eaa-mapping-20211007
+7 October 2021
+NOTE
+EPUB Accessibility - EU Accessibility Act Mapping
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20211007/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20211007/
+
+
+
+Cristina Mussinelli
+Luc Audrain
+Gregorio Pellegrino
+-
+d:epub-a11y-eaa-mapping-20211013
+epub-a11y-eaa-mapping-20211013
+13 October 2021
+NOTE
+EPUB Accessibility - EU Accessibility Act Mapping
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20211013/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-eaa-mapping-20211013/
+
+
+
+Cristina Mussinelli
+Luc Audrain
+Gregorio Pellegrino
+-
+d:epub-a11y-tech-11
+epub-a11y-tech-11
+13 October 2021
+NOTE
+EPUB Accessibility Techniques 1.1
+https://www.w3.org/TR/epub-a11y-tech-11/
+https://w3c.github.io/epub-specs/epub33/a11y-tech/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-tech-11-20210223
+epub-a11y-tech-11-20210223
+23 February 2021
+NOTE
+EPUB Accessibility Techniques 1.1
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210223/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210223/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-tech-11-20210525
+epub-a11y-tech-11-20210525
+25 May 2021
+NOTE
+EPUB Accessibility Techniques 1.1
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210525/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210525/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-tech-11-20210712
+epub-a11y-tech-11-20210712
+12 July 2021
+WD
+EPUB Accessibility Techniques 1.1
+https://www.w3.org/TR/2021/WD-epub-a11y-tech-11-20210712/
+https://www.w3.org/TR/2021/WD-epub-a11y-tech-11-20210712/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-tech-11-20210825
+epub-a11y-tech-11-20210825
+25 August 2021
+NOTE
+EPUB Accessibility Techniques 1.1
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210825/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210825/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-tech-11-20210903
+epub-a11y-tech-11-20210903
+3 September 2021
+NOTE
+EPUB Accessibility Techniques 1.1
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210903/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210903/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-tech-11-20210914
+epub-a11y-tech-11-20210914
+14 September 2021
+NOTE
+EPUB Accessibility Techniques 1.1
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210914/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210914/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-tech-11-20210921
+epub-a11y-tech-11-20210921
+21 September 2021
+NOTE
+EPUB Accessibility Techniques 1.1
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210921/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210921/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-tech-11-20210928
+epub-a11y-tech-11-20210928
+28 September 2021
+NOTE
+EPUB Accessibility Techniques 1.1
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210928/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210928/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-tech-11-20210929
+epub-a11y-tech-11-20210929
+29 September 2021
+NOTE
+EPUB Accessibility Techniques 1.1
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210929/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210929/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-tech-11-20210930
+epub-a11y-tech-11-20210930
+30 September 2021
+NOTE
+EPUB Accessibility Techniques 1.1
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210930/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20210930/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-tech-11-20211007
+epub-a11y-tech-11-20211007
+7 October 2021
+NOTE
+EPUB Accessibility Techniques 1.1
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20211007/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20211007/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-a11y-tech-11-20211013
+epub-a11y-tech-11-20211013
+13 October 2021
+NOTE
+EPUB Accessibility Techniques 1.1
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20211013/
+https://www.w3.org/TR/2021/NOTE-epub-a11y-tech-11-20211013/
+
+
+
+Matt Garrish
+George Kerscher
+Charles LaPierre
+Gregorio Pellegrino
+Avneesh Singh
+-
+d:epub-multi-rend-11
+epub-multi-rend-11
+13 October 2021
+NOTE
+EPUB 3 Multiple-Rendition Publications 1.1
+https://www.w3.org/TR/epub-multi-rend-11/
+https://w3c.github.io/epub-specs/epub33/multi-rend/
+
+
+
+Matt Garrish
+-
+d:epub-multi-rend-11-20210112
+epub-multi-rend-11-20210112
+12 January 2021
+NOTE
+EPUB Multiple-Rendition Publications 1.1
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210112/
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210112/
+
+
+
+Matt Garrish
+-
+d:epub-multi-rend-11-20210525
+epub-multi-rend-11-20210525
+25 May 2021
+NOTE
+EPUB Multiple-Rendition Publications 1.1
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210525/
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210525/
+
+
+
+Matt Garrish
+-
+d:epub-multi-rend-11-20210825
+epub-multi-rend-11-20210825
+25 August 2021
+NOTE
+EPUB 3 Multiple-Rendition Publications 1.1
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210825/
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210825/
+
+
+
+Matt Garrish
+-
+d:epub-multi-rend-11-20210903
+epub-multi-rend-11-20210903
+3 September 2021
+NOTE
+EPUB 3 Multiple-Rendition Publications 1.1
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210903/
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210903/
+
+
+
+Matt Garrish
+-
+d:epub-multi-rend-11-20210914
+epub-multi-rend-11-20210914
+14 September 2021
+NOTE
+EPUB 3 Multiple-Rendition Publications 1.1
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210914/
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210914/
+
+
+
+Matt Garrish
+-
+d:epub-multi-rend-11-20210921
+epub-multi-rend-11-20210921
+21 September 2021
+NOTE
+EPUB 3 Multiple-Rendition Publications 1.1
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210921/
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210921/
+
+
+
+Matt Garrish
+-
+d:epub-multi-rend-11-20210928
+epub-multi-rend-11-20210928
+28 September 2021
+NOTE
+EPUB 3 Multiple-Rendition Publications 1.1
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210928/
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210928/
+
+
+
+Matt Garrish
+-
+d:epub-multi-rend-11-20210929
+epub-multi-rend-11-20210929
+29 September 2021
+NOTE
+EPUB 3 Multiple-Rendition Publications 1.1
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210929/
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20210929/
+
+
+
+Matt Garrish
+-
+d:epub-multi-rend-11-20211013
+epub-multi-rend-11-20211013
+13 October 2021
+NOTE
+EPUB 3 Multiple-Rendition Publications 1.1
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20211013/
+https://www.w3.org/TR/2021/NOTE-epub-multi-rend-11-20211013/
+
+
+
+Matt Garrish
+-
+d:epub-overview-33
+epub-overview-33
+13 October 2021
+NOTE
+EPUB 3 Overview
+https://www.w3.org/TR/epub-overview-33/
+https://w3c.github.io/epub-specs/epub33/overview/
+
+
+
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Markus Gylling
+William McCoy
+Makoto Murata
+Daniel Weck
+-
+d:epub-overview-33-20210112
+epub-overview-33-20210112
+12 January 2021
+NOTE
+EPUB 3 Overview
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20210112/
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20210112/
+
+
+
+Garth Conboy
+Matt Garrish
+Daniel Weck
+-
+d:epub-overview-33-20210903
+epub-overview-33-20210903
+3 September 2021
+NOTE
+EPUB 3 Overview
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20210903/
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20210903/
+
+
+
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Markus Gylling
+William McCoy
+Makoto Murata
+Daniel Weck
+-
+d:epub-overview-33-20210914
+epub-overview-33-20210914
+14 September 2021
+NOTE
+EPUB 3 Overview
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20210914/
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20210914/
+
+
+
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Markus Gylling
+William McCoy
+Makoto Murata
+Daniel Weck
+-
+d:epub-overview-33-20210921
+epub-overview-33-20210921
+21 September 2021
+NOTE
+EPUB 3 Overview
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20210921/
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20210921/
+
+
+
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Markus Gylling
+William McCoy
+Makoto Murata
+Daniel Weck
+-
+d:epub-overview-33-20210928
+epub-overview-33-20210928
+28 September 2021
+NOTE
+EPUB 3 Overview
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20210928/
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20210928/
+
+
+
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Markus Gylling
+William McCoy
+Makoto Murata
+Daniel Weck
+-
+d:epub-overview-33-20210929
+epub-overview-33-20210929
+29 September 2021
+NOTE
+EPUB 3 Overview
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20210929/
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20210929/
+
+
+
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Markus Gylling
+William McCoy
+Makoto Murata
+Daniel Weck
+-
+d:epub-overview-33-20211001
+epub-overview-33-20211001
+1 October 2021
+NOTE
+EPUB 3 Overview
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20211001/
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20211001/
+
+
+
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Markus Gylling
+William McCoy
+Makoto Murata
+Daniel Weck
+-
+d:epub-overview-33-20211007
+epub-overview-33-20211007
+7 October 2021
+NOTE
+EPUB 3 Overview
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20211007/
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20211007/
+
+
+
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Markus Gylling
+William McCoy
+Makoto Murata
+Daniel Weck
+-
+d:epub-overview-33-20211013
+epub-overview-33-20211013
+13 October 2021
+NOTE
+EPUB 3 Overview
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20211013/
+https://www.w3.org/TR/2021/NOTE-epub-overview-33-20211013/
+
+
+
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Markus Gylling
+William McCoy
+Makoto Murata
+Daniel Weck
+-
+d:epub-rs-33
+epub-rs-33
+22 October 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/epub-rs-33/
+https://w3c.github.io/epub-specs/epub33/rs/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20210112
+epub-rs-33-20210112
+12 January 2021
+WD
+EPUB 3.3 Reading Systems
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210112/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210112/
+
+
+
+Garth Conboy
+Dave Cramer
+Marisa DeMeglio
+Matt Garrish
+Daniel Weck
+-
+d:epub-rs-33-20210223
+epub-rs-33-20210223
+23 February 2021
+WD
+EPUB 3.3 Reading Systems
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210223/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210223/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20210224
+epub-rs-33-20210224
+24 February 2021
+WD
+EPUB 3.3 Reading Systems
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210224/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210224/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20210406
+epub-rs-33-20210406
+6 April 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210406/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210406/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20210525
+epub-rs-33-20210525
+25 May 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210525/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210525/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20210712
+epub-rs-33-20210712
+12 July 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210712/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210712/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20210825
+epub-rs-33-20210825
+25 August 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210825/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210825/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20210826
+epub-rs-33-20210826
+26 August 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210826/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210826/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20210831
+epub-rs-33-20210831
+31 August 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210831/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210831/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20210903
+epub-rs-33-20210903
+3 September 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210903/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210903/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20210914
+epub-rs-33-20210914
+14 September 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210914/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210914/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20210921
+epub-rs-33-20210921
+21 September 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210921/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210921/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20210928
+epub-rs-33-20210928
+28 September 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210928/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210928/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20210929
+epub-rs-33-20210929
+29 September 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210929/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20210929/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20211007
+epub-rs-33-20211007
+7 October 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211007/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211007/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20211012
+epub-rs-33-20211012
+12 October 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211012/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211012/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20211013
+epub-rs-33-20211013
+13 October 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211013/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211013/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20211014
+epub-rs-33-20211014
+14 October 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211014/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211014/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20211018
+epub-rs-33-20211018
+18 October 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211018/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211018/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20211021
+epub-rs-33-20211021
+21 October 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211021/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211021/
+
+
+
+Dave Cramer
+Matt Garrish
+Ivan Herman
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-rs-33-20211022
+epub-rs-33-20211022
+22 October 2021
+WD
+EPUB Reading Systems 3.3
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211022/
+https://www.w3.org/TR/2021/WD-epub-rs-33-20211022/
+
+
+
+Matt Garrish
+Ivan Herman
+Dave Cramer
+Garth Conboy
+Marisa DeMeglio
+Daniel Weck
+-
+d:epub-ssv
+EPUB-SSV
+
+
+EPUB Structural Semantics Vocabulary
+http://www.idpf.org/epub/vocab/structure/
+
+
+
+
+-
+d:epub-tts-10
+epub-tts-10
+13 October 2021
+NOTE
+EPUB 3 Text-to-Speech Enhancements 1.0
+https://www.w3.org/TR/epub-tts-10/
+https://w3c.github.io/epub-specs/epub33/tts/
+
+
+
+Matt Garrish
+-
+d:epub-tts-10-20210803
+epub-tts-10-20210803
+3 August 2021
+NOTE
+EPUB 3 Text-to-Speech Enhancements 1.0
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210803/
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210803/
+
+
+
+Matt Garrish
+-
+d:epub-tts-10-20210825
+epub-tts-10-20210825
+25 August 2021
+NOTE
+EPUB 3 Text-to-Speech Enhancements 1.0
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210825/
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210825/
+
+
+
+Matt Garrish
+-
+d:epub-tts-10-20210903
+epub-tts-10-20210903
+3 September 2021
+NOTE
+EPUB 3 Text-to-Speech Enhancements 1.0
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210903/
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210903/
+
+
+
+Matt Garrish
+-
+d:epub-tts-10-20210914
+epub-tts-10-20210914
+14 September 2021
+NOTE
+EPUB 3 Text-to-Speech Enhancements 1.0
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210914/
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210914/
+
+
+
+Matt Garrish
+-
+d:epub-tts-10-20210921
+epub-tts-10-20210921
+21 September 2021
+NOTE
+EPUB 3 Text-to-Speech Enhancements 1.0
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210921/
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210921/
+
+
+
+Matt Garrish
+-
+d:epub-tts-10-20210928
+epub-tts-10-20210928
+28 September 2021
+NOTE
+EPUB 3 Text-to-Speech Enhancements 1.0
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210928/
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210928/
+
+
+
+Matt Garrish
+-
+d:epub-tts-10-20210929
+epub-tts-10-20210929
+29 September 2021
+NOTE
+EPUB 3 Text-to-Speech Enhancements 1.0
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210929/
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20210929/
+
+
+
+Matt Garrish
+-
+d:epub-tts-10-20211007
+epub-tts-10-20211007
+7 October 2021
+NOTE
+EPUB 3 Text-to-Speech Enhancements 1.0
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20211007/
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20211007/
+
+
+
+Matt Garrish
+-
+d:epub-tts-10-20211013
+epub-tts-10-20211013
+13 October 2021
+NOTE
+EPUB 3 Text-to-Speech Enhancements 1.0
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20211013/
+https://www.w3.org/TR/2021/NOTE-epub-tts-10-20211013/
+
+
+
+Matt Garrish
+-

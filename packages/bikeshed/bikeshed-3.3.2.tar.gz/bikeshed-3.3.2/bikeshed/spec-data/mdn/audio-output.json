@@ -1,0 +1,242 @@
+{
+    "dom-htmlmediaelement-setsinkid": [
+        {
+            "engines": [
+                "blink",
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "setSinkId",
+            "slug": "API/HTMLMediaElement/setSinkId",
+            "summary": "The HTMLMediaElement.setSinkId() method sets the ID of the audio device to use for output and returns a Promise. This only works when the application is authorized to use the specified device.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": false,
+                    "notes": "Not availabe due to <a href='https://crbug.com/648286'>a limitation in Android</a>."
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": "64",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.setsinkid.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": "64",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.setsinkid.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "opera_android": {
+                    "version_added": "36"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false,
+                    "notes": "Not availabe due to <a href='https://crbug.com/648286'>a limitation in Android</a>."
+                },
+                "webview_android": {
+                    "version_added": false,
+                    "notes": "Not availabe due to <a href='https://crbug.com/648286'>a limitation in Android</a>."
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement.setSinkId()"
+        }
+    ],
+    "dom-htmlmediaelement-sinkid": [
+        {
+            "engines": [
+                "blink"
+            ],
+            "filename": "api/HTMLMediaElement.json",
+            "name": "sinkId",
+            "slug": "API/HTMLMediaElement/sinkId",
+            "summary": "The HTMLMediaElement.sinkId read-only property returns a DOMString that is the unique ID of the audio device delivering output. If it is using the user agent default, it returns an empty string. This ID should be one of the MediaDeviceInfo.deviceId values returned from MediaDevices.enumerateDevices(), id-multimedia, or id-communications.",
+            "support": {
+                "chrome": {
+                    "version_added": "49"
+                },
+                "chrome_android": {
+                    "version_added": "49"
+                },
+                "edge": {
+                    "version_added": "17"
+                },
+                "firefox": {
+                    "version_added": false
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": "36"
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": "5.0"
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": "79"
+                }
+            },
+            "title": "HTMLMediaElement.sinkId"
+        }
+    ],
+    "dom-mediadevices-selectaudiooutput": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "needsflag": [
+                "gecko"
+            ],
+            "filename": "api/MediaDevices.json",
+            "name": "selectAudioOutput",
+            "slug": "API/MediaDevices/selectAudioOutput",
+            "summary": "The MediaDevices method selectAudioOutput() prompts the user to select a specific audio output device, for example a speaker or headset. On success, the returned Promise is resolved with a MediaDeviceInfo describing the selected device.",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "88",
+                    "flags": [
+                        {
+                            "type": "preference",
+                            "name": "media.setsinkid.enabled",
+                            "value_to_set": "true"
+                        }
+                    ]
+                },
+                "firefox_android": {
+                    "version_added": false
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "MediaDevices.selectAudioOutput()"
+        }
+    ],
+    "permissions-policy-integration": [
+        {
+            "engines": [
+                "gecko"
+            ],
+            "filename": "http/headers/feature-policy.json",
+            "name": "speaker-selection",
+            "slug": "HTTP/Headers/Feature-Policy/speaker-selection",
+            "summary": "The HTTP Feature-Policy header speaker-selection directive controls whether the current document is allowed to enumerate and select audio output devices (speakers, headphones, etc.).",
+            "support": {
+                "chrome": {
+                    "version_added": false
+                },
+                "chrome_android": {
+                    "version_added": false
+                },
+                "edge": {
+                    "version_added": false
+                },
+                "firefox": {
+                    "version_added": "92"
+                },
+                "firefox_android": {
+                    "version_added": "92"
+                },
+                "ie": {
+                    "version_added": false
+                },
+                "opera": {
+                    "version_added": false
+                },
+                "opera_android": {
+                    "version_added": false
+                },
+                "safari": {
+                    "version_added": false
+                },
+                "safari_ios": {
+                    "version_added": false
+                },
+                "samsunginternet_android": {
+                    "version_added": false
+                },
+                "webview_android": {
+                    "version_added": false
+                },
+                "edge_blink": {
+                    "version_added": false
+                }
+            },
+            "title": "Feature-Policy: speaker-selection"
+        }
+    ]
+}

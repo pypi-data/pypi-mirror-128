@@ -1,0 +1,277 @@
+{
+    "header.age": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/headers/age.json",
+            "name": "Age",
+            "slug": "HTTP/Headers/Age",
+            "summary": "The Age header contains the time in seconds the object was in a proxy cache.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Age"
+        }
+    ],
+    "header.cache-control": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/headers/cache-control.json",
+            "name": "Cache-Control",
+            "slug": "HTTP/Headers/Cache-Control",
+            "summary": "The Cache-Control HTTP header holds directives (instructions) for caching in both requests and responses. If a given directive is in a request, it does not mean this directive is in the response.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Cache-Control"
+        }
+    ],
+    "header.expires": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/headers/expires.json",
+            "name": "Expires",
+            "slug": "HTTP/Headers/Expires",
+            "summary": "The Expires HTTP header contains the date/time after which the response is considered expired.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Expires"
+        }
+    ],
+    "header.pragma": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/headers/pragma.json",
+            "name": "Pragma",
+            "slug": "HTTP/Headers/Pragma",
+            "summary": "The Pragma HTTP/1.0 general header is an implementation-specific header that may have various effects along the request-response chain. This header serves for backwards compatibility with the HTTP/1.0 caches that do not have a Cache-Control HTTP/1.1 header.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Pragma"
+        }
+    ],
+    "header.warning": [
+        {
+            "engines": [
+                "blink",
+                "gecko",
+                "webkit"
+            ],
+            "filename": "http/headers/warning.json",
+            "name": "Warning",
+            "slug": "HTTP/Headers/Warning",
+            "summary": "The Warning HTTP header contains information about possible problems with the status of the message. More than one Warning header may appear in a response.",
+            "support": {
+                "chrome": {
+                    "version_added": true
+                },
+                "chrome_android": {
+                    "version_added": true
+                },
+                "edge": {
+                    "version_added": "12"
+                },
+                "firefox": {
+                    "version_added": true
+                },
+                "firefox_android": {
+                    "version_added": true
+                },
+                "ie": {
+                    "version_added": true
+                },
+                "opera": {
+                    "version_added": true
+                },
+                "opera_android": {
+                    "version_added": true
+                },
+                "safari": {
+                    "version_added": true
+                },
+                "safari_ios": {
+                    "version_added": true
+                },
+                "samsunginternet_android": {
+                    "version_added": true
+                },
+                "webview_android": {
+                    "version_added": true
+                },
+                "edge_blink": {
+                    "version_added": true
+                }
+            },
+            "title": "Warning"
+        }
+    ]
+}
