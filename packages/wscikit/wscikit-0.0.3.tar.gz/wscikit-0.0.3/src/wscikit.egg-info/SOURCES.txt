@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/wscikit/__init__.py
+src/wscikit/importnp.py
+src/wscikit.egg-info/PKG-INFO
+src/wscikit.egg-info/SOURCES.txt
+src/wscikit.egg-info/dependency_links.txt
+src/wscikit.egg-info/top_level.txt
+src/wscikit/adjust/__init__.py
+src/wscikit/adjust/ref.py
+src/wscikit/compute/__init__.py
+src/wscikit/compute/csd.py
