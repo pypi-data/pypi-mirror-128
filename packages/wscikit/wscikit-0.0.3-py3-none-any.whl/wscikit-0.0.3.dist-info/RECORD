@@ -1,0 +1,11 @@
+wscikit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wscikit/importnp.py,sha256=RdYPoaDj3ZGHbDBxCeuWkW87FyoNaXagyT080kDSyOE,1384
+wscikit/adjust/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wscikit/adjust/ref.py,sha256=wy0MiXJvzGQol1UE8bxMW0Ah2Zrfw55c1jOeERC1SzM,1655
+wscikit/compute/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wscikit/compute/csd.py,sha256=eMs4Y_qiYqU2DyiLf_T3IXTPrDSGfu_xH6TpyArItsc,2534
+wscikit-0.0.3.dist-info/LICENSE,sha256=-LS1-bRbolp4IhcgGo4MEV8fefH9vobSI6oINOW7RK8,1076
+wscikit-0.0.3.dist-info/METADATA,sha256=jr0Zf6aUZkgYrVmYk_Szc-aV1ljS4lfqInX4Nz5UW7s,592
+wscikit-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+wscikit-0.0.3.dist-info/top_level.txt,sha256=fh-o34E4BKow_dEoWIoKnSMtVfANl__i6b-yfktJ3Lc,8
+wscikit-0.0.3.dist-info/RECORD,,
