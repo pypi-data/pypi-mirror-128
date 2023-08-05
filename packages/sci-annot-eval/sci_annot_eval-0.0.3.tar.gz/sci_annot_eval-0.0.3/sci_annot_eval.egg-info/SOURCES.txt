@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+sci_annot_eval.egg-info/PKG-INFO
+sci_annot_eval.egg-info/SOURCES.txt
+sci_annot_eval.egg-info/dependency_links.txt
+sci_annot_eval.egg-info/requires.txt
+sci_annot_eval.egg-info/top_level.txt

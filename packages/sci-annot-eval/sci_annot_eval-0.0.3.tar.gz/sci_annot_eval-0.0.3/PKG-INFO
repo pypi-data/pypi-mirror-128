@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sci_annot_eval
+Version: 0.0.3
+Summary: The evaluation component of the sci-annot framework
+Home-page: UNKNOWN
+Author: Dzeri96
+License: UNKNOWN
+Keywords: sci-annot,object,detection,evaluation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9, <4
+License-File: LICENSE
+
+UNKNOWN
+
