@@ -1,0 +1,14 @@
+SpaGCN/SpaGCN.py,sha256=fqCS_TSUSAakB1XobBqTAGlPEe1o7rsFaEtlvUw_Ats,4612
+SpaGCN/__init__.py,sha256=BeNwIkbdRJtUxZiUQDITvRnWnQbnlB6D22cErxvh4Jw,153
+SpaGCN/calculate_adj.py,sha256=rfFP3vJJIBxjncxVwjPcjWQ6YQ-IEyr5iuGSR_HUlIg,4293
+SpaGCN/calculate_moran_I.py,sha256=LyUW1dRBI8H0v_bSSODxORt_GLf2tQHQlcA8ZEE-Mhg,2240
+SpaGCN/ez_mode.py,sha256=YV19I4Gwpx0eALEglVZ5bRo_bw9ge9wyNEEN-v5ITRU,4683
+SpaGCN/layers.py,sha256=s4R_YanpCNCKeuIyq0vgdWKERZNNfFs4M7sCKaPh050,1295
+SpaGCN/models.py,sha256=PfzB3wlUsSX6kdjlEFLf667gFL7HIpCITeu0CikIGB0,11045
+SpaGCN/util.py,sha256=ozrEa-F6Cl_XGwwkVpKh_HbhFL-gW3QLRLzcesFeBdU,17600
+SpaGCN-1.2.2.dist-info/DESCRIPTION.rst,sha256=E6WfI-pW0vzLITh7MGvNIwz6qT4RJH_iXpbnWmOlssY,1677
+SpaGCN-1.2.2.dist-info/METADATA,sha256=_yuDwiaAgHSYCFPgxXRzqcdvY1FLGTkm7vaWkU0MSYI,2458
+SpaGCN-1.2.2.dist-info/RECORD,,
+SpaGCN-1.2.2.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+SpaGCN-1.2.2.dist-info/metadata.json,sha256=InQavaqgxCsyBY9McPVSK9DHyFOErygMTcdYmqIyCUQ,873
+SpaGCN-1.2.2.dist-info/top_level.txt,sha256=9igoTGYAatTu4WnMUWO_uXmPi76ZJn2Ru9OtGslgTuE,7
