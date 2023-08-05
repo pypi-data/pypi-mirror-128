@@ -1,0 +1,10 @@
+guspy/__init__.py,sha256=eOUZwAe5aIcj1zAhyXfq-TZbriRiObaAYIYtEiIaX8c,14602
+guspy/access.py,sha256=Ur9MEhdCGwRRNi9FYL6GSgscgDFb3TupQu4brhL20vI,2464
+guspy/parsers.py,sha256=I4jiifxsZ67RwACvruFlPrZiwMrWXOmgiaDhk1ik32g,5173
+guspy-1.24.data/data/resources/cli.json,sha256=1NidJMGalPL2fw9gI4_-DA73maKaWzuMNdaoKfZvIek,259
+guspy-1.24.data/data/resources/objects.json,sha256=Y9Aj8eh0ZQw1sahYxA1b7kJC1MC63OczP14-hDPB_zE,1264
+guspy-1.24.dist-info/LICENSE,sha256=VrByHACwXHJC81-bPS4ZGNabo26SKSL5GfTzkJQYHKA,1064
+guspy-1.24.dist-info/METADATA,sha256=uWuoK4fMAErRKZDSx66TT5mMEq6n8IO8Smm4ELNwtrs,4065
+guspy-1.24.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+guspy-1.24.dist-info/top_level.txt,sha256=Fk_xvYPeapfPBcXQdGV9zTPAURu5ntUryjJnjyEKJKQ,6
+guspy-1.24.dist-info/RECORD,,
