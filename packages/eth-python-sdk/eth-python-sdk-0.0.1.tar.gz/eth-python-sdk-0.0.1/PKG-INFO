@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: eth-python-sdk
+Version: 0.0.1
+Summary: SDK to interact with EVM compatible blockchains
+License: MIT
+Author: Arugulo
+Author-email: arugulo@protonmail.com
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (==7.1.1)
+Requires-Dist: dotsi (>=0.0.3,<0.0.4)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: web3 (>=5.24.0,<6.0.0)
