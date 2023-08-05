@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% block title %} | Duplicate{% endblock %}
+
+{% block main %}
+{% include 'duplicate_header.html' %}
+<div class="container">
+<div class="tab-content">
+	<div tole="tabpanel" class="tab-pane active" id="tool">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="header">
+				<span>Duplicate project</span>
+			</h3>
+			<form id="form_project">
+				{% csrf_token %}
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="project" class="control-label">Project Origin</label>
+							<select class="form-control" id="pproject_origin" name="pproject_origin" required>
+								<option value=""></option>
+								{% for project in projects %}
+								<option value="{{ project.id }}">{{ project.name }}</option>
+								{% endfor %}
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="destproject" class="control-label">Project destination name</label>
+							<input type="text" class="form-control" id="pproject_destination_name" name="pproject_destination_name" required>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<label>&nbsp;</label>
+						<div><button type="submit" class="btn btn-success">Duplicate project</button></div>
+					</div>
+					<div class="col-md-12">
+						<div class="alert alert-light" id="statusproject">&nbsp;</div>
+					</div>
+				</div>
+			</form>
+			<h3 class="header">
+				<span>Duplicate category</span>
+			</h3>
+			<form id="form_category">
+				{% csrf_token %}
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="project" class="control-label">Project Origin</label>
+							<select class="form-control" id="project_origin" name="project_origin" required>
+								<option value=""></option>
+								{% for project in projects %}
+								<option value="{{ project.id }}">{{ project.name }}</option>
+								{% endfor %}
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<label for="destproject" class="control-label">Project destination</label>
+						<select class="form-control" id="project_destination" name="project_destination" required>
+							<option value=""></option>
+							{% for project in projects %}
+							<option value="{{ project.id }}">{{ project.name }}</option>
+							{% endfor %}
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<label for="category" class="control-label">Category</label>
+						<select class="form-control" id="category_origin" name="category_origin" required>
+							<option value=""></option>
+						</select>
+					</div>
+					<div class="col-md-4">
+						<label for="destcategory" class="control-label">Category destination name</label>
+						<input type="text" class="form-control" id="destcategoryname" name="destcategoryname" required />
+					</div>
+					<div class="col-md-4">
+						<label>&nbsp;</label>
+						<div><button type="submit" class="btn btn-success">Duplicate Category</button></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="alert alert-light" id="statuscategory">&nbsp;</div>
+					</div>
+				</div>
+			</form>
+			<div>
+				<h3 class="header">
+					<span>Download all contributions</span>
+				</h3>
+				<div id="target"></div>
+				<form id="form_observations">
+				{% csrf_token %}
+					<div class="row">
+						<div class="col-md-4">
+							<label for="project_name_download" class="control-label">Project name</label>
+							<select class="form-control" id="project_name_download" name="project_name_download" required>
+								<option value=""></option>
+								{% for project in projects %}
+								<option value="{{project.id}}">{{project.name}}</option>
+								{% endfor %}
+							</select>
+						</div>
+						<div class="col-md-4">
+							<label>Format</label>
+							<select class="form-control" id="download_format" name="download_format" required>
+								<option value="geojson">json</option>
+								<option value="kml">kml</option>
+								<option value="xlsx">xlsx</option>
+							</select>
+							<div id="options_for_download_xlsx" style="display:none;">
+								<input type="radio" id="contributions_xlsx" name="xlsx_include" checked/>
+								<label for="none_xlsx" class="font-weight-normal" checked>Contributions</label>
+								<input type="radio" id="comments_xlsx" name="xlsx_include" value="comments"/>
+								<label for="comments_xlsx" class="font-weight-normal" >Comments</label>
+								<input type="radio" id="media_xlsx" name="xlsx_include"/>
+								<label for="media_xlsx" class="font-weight-normal" value="media">Media</label>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<label>&nbsp;</label>
+							<div><button type="submit" class="btn btn-success">Download</button></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+                                                <div class="alert alert-light" id="statusdownload">&nbsp;</div>
+                                        	</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="log">
+					<div class="row">
+						<div class="col-md-4">
+					<select class="form-control" id="which_log">
+						<option value="Projects">Projects</option>
+						<option value="Categories">Categories</option>
+					</select>
+						</div>
+					</div>
+					<table class="table table-striped" id="tb_log">
+					</table>
+				</div>
+</div>
+</div>
+{% endblock %}
+
+{% block libraries %}
+<script src="/static/js/admin.ui.duplicate.js"></script>
+{% endblock %}
