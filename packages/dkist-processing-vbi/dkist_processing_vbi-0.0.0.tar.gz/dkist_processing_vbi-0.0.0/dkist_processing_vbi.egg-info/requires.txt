@@ -1,0 +1,16 @@
+dkist-processing-common==0.2.5rc1
+dkist-processing-math==0.1.0
+dkist-header-validator==2.0.11
+dkist-fits-specifications==1.4.5
+astropy==4.2
+numpy==1.20.2
+sunpy==3.0.1
+scipy==1.6.3
+pillow==8.3.2
+moviepy==1.0.3
+
+[test]
+pytest
+pytest-cov
+pytest-mock
+dkist-data-simulator==1.2.4
