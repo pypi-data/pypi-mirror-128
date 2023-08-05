@@ -1,0 +1,2 @@
+compas_slicer
+compas_slicer_ghpython
