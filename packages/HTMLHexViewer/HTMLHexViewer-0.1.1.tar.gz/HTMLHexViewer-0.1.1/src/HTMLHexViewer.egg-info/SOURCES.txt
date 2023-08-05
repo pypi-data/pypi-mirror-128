@@ -1,0 +1,15 @@
+LICENSE
+README
+README.md
+setup.py
+src/HTMLHexViewer.egg-info/PKG-INFO
+src/HTMLHexViewer.egg-info/SOURCES.txt
+src/HTMLHexViewer.egg-info/dependency_links.txt
+src/HTMLHexViewer.egg-info/entry_points.txt
+src/HTMLHexViewer.egg-info/requires.txt
+src/HTMLHexViewer.egg-info/top_level.txt
+src/htmlhexviewer/__init__.py
+src/htmlhexviewer/__main__.py
+src/htmlhexviewer/templates/base.html
+src/htmlhexviewer/templates/script.js
+src/htmlhexviewer/templates/style.css
