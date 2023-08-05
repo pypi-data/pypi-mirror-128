@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: github-acc-test
+Version: 0.0.1
+Summary: Test github actions
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 10.2
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Requires-Dist: nltk
+Requires-Dist: pandas
+Requires-Dist: PyYAML
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+Requires-Dist: torch (==1.8.0)
+Requires-Dist: torchmetrics (==0.3.2)
+Requires-Dist: torchtext (==0.9.0)
+Requires-Dist: pytorch-lightning (==1.3.5)
+Requires-Dist: liblinear-multicore
+Requires-Dist: numba
+Requires-Dist: scipy
+Provides-Extra: linear
+Requires-Dist: liblinear-multicore ; extra == 'linear'
+Requires-Dist: numba ; extra == 'linear'
+Requires-Dist: pandas ; extra == 'linear'
+Requires-Dist: scikit-learn ; extra == 'linear'
+Requires-Dist: scipy ; extra == 'linear'
+
+UNKNOWN
+
