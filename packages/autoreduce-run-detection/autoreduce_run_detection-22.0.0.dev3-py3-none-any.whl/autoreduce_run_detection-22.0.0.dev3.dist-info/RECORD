@@ -1,0 +1,10 @@
+autoreduce_run_detection/__init__.py,sha256=RB38bWz-kXNuE7ILpYChL9ou-yVFht_zY6i3QXvvL_U,336
+autoreduce_run_detection/run_detection.py,sha256=1CXovpyczWIzIrZFlLJdfuCzQ7-UEP3ZRevTTJpxdoY,6550
+autoreduce_run_detection/settings.py,sha256=y2ybmyKBZU9LjvpwsSk3tLgRnZpIOURnVA06TKyo6l4,977
+autoreduce_run_detection/tests/__init__.py,sha256=RB38bWz-kXNuE7ILpYChL9ou-yVFht_zY6i3QXvvL_U,336
+autoreduce_run_detection/tests/test_run_detection.py,sha256=vxQC04w851jJZ9KyQMF1ShO9IEAGlBUO-_UhiLL5s3Q,10592
+autoreduce_run_detection-22.0.0.dev3.dist-info/METADATA,sha256=ggEfSvVT1mRMsCU5g-TwhexODjrS5Em6TkZRU0zR0tE,504
+autoreduce_run_detection-22.0.0.dev3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+autoreduce_run_detection-22.0.0.dev3.dist-info/entry_points.txt,sha256=yd2fjB-CCsHjWATSmiqcXnh7jmzO_ThjYW_EfYL6Jk0,90
+autoreduce_run_detection-22.0.0.dev3.dist-info/top_level.txt,sha256=3USujH23_qt4ym0Tej7sVRYjNxv-s9i4nsc3Wn6d8PQ,25
+autoreduce_run_detection-22.0.0.dev3.dist-info/RECORD,,
