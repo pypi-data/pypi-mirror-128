@@ -1,0 +1,9 @@
+aioredis
+websockets
+hiredis
+
+[geo]
+pyproj<2
+
+[testing]
+pytest
