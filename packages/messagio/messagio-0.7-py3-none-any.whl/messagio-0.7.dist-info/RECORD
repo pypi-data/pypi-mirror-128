@@ -1,0 +1,13 @@
+messagio/__init__.py,sha256=ChRGxv3t5YZ4TfkyF4ZskyYwRn2PM895tpbpgtkUvd0,318
+messagio/abstract_message_center.py,sha256=58j6F1bq3GJEgSMnJuti2W4988tdkiyA3VioVAfvidA,1751
+messagio/autodiscover.py,sha256=pa16mUyEFc1wxuWdudVJcYPBUQ1rk-MDO7uMqVCNyWI,1281
+messagio/const.py,sha256=cYdM5olW3PUAlPBJmqqw4GSVQfdT9_HqsZ8zH9-HzY8,538
+messagio/decorators.py,sha256=tGgNcxBdDhepPjcVrsXlceNoxrlXSPvzBAfEWpyp2NE,1667
+messagio/exceptions.py,sha256=wGhEg-_bLqdCQXIMri7WmVrtGeJWFRLcsnv5NOqNp6M,50
+messagio/message_center.py,sha256=YbVtQZEkK9o0LFT4xxfoGp8xclQtW1Q38rsHubFMaJs,2963
+messagio/tasks.py,sha256=6fC59ZJTpACA5CZ8CBHtbO7c2TjS3wGoWaU48Y4XJPU,134
+messagio-0.7.dist-info/LICENSE,sha256=CX-HlyrEmEn6NOp-rZpwjD_byCSHxoLRlZFF_BfajrY,1074
+messagio-0.7.dist-info/METADATA,sha256=ZPPFQk-vaIRGj09Z-Ap0KZ-K0j1-oVx95PMoLCMjeX8,5885
+messagio-0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+messagio-0.7.dist-info/top_level.txt,sha256=ETEUrOK7UIwQjL8JdmyF3P2Pj9ToF2K17lV1ngBTu3M,9
+messagio-0.7.dist-info/RECORD,,
