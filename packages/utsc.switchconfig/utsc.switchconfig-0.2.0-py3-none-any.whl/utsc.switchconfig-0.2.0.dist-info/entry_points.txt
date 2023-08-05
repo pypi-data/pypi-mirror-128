@@ -1,0 +1,3 @@
+[console_scripts]
+utsc.switchconfig=utsc.switchconfig.__main__:cli
+

@@ -1,0 +1,8 @@
+utsc/switchconfig/__init__.py,sha256=PyeQeDxzjfHD1cMOVvKxYjMS7jLZOWXbsbYOY3zHLF0,3098
+utsc/switchconfig/__main__.py,sha256=vRYpcVQrXWzXuBNl0qHNs3g-b3dBk8BU3o3RzAmZKn0,5181
+utsc/switchconfig/deploy.py,sha256=7btzJ1ufeFLfEUfkDKZ8bvl3lUJkuQxgUonUOqVfH5g,5749
+utsc/switchconfig/generate.py,sha256=NMKS2yg7YQthEw_Trdy0JjWpdj1dIH2Z2xAUtdAP1GQ,8595
+utsc.switchconfig-0.2.0.dist-info/entry_points.txt,sha256=z6GtXullo04yh3SA0U_6C9wEcj7_1PdlZKScXa0waRY,68
+utsc.switchconfig-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+utsc.switchconfig-0.2.0.dist-info/METADATA,sha256=OlVjzKr5MWjLJ465iCI6DhnT32560yToGL-Wwr-Dvzk,760
+utsc.switchconfig-0.2.0.dist-info/RECORD,,
