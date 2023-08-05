@@ -1,0 +1,3 @@
+[console_scripts]
+recalibrate = recalibrate.__main__:main
+
