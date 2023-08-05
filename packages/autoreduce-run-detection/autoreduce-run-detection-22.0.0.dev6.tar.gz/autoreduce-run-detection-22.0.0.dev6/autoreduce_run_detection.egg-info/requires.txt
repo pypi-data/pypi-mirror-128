@@ -1,0 +1,3 @@
+autoreduce_utils>=22.0.0.dev7
+filelock
+requests
