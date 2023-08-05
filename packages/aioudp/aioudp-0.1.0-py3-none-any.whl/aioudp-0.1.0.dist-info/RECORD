@@ -1,0 +1,10 @@
+aioudp/__init__.py,sha256=pprofu5hBNAtiF8rk-6FM45XxSmAq-gJ-db4kQtW1kA,239
+aioudp/client.py,sha256=H4XTEIuNw788jS8K1OXOlNwrr0lLrQJVkSKhv1IRzgo,2023
+aioudp/connection.py,sha256=r8dPZwrWyHqstmc8XQsGDVcpJ3c8kUQk8nnolelHN0M,2816
+aioudp/exceptions.py,sha256=NWcsmxltx67ABGFFFlOjTKYpnd1tnu3Wy7LWnLpSdhg,306
+aioudp/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aioudp/server.py,sha256=zeodquw_H-16sC1fINxEgK1vi3sf-TNZLMFy52KNiqw,3106
+aioudp-0.1.0.dist-info/LICENSE.txt,sha256=VXapH-nuSz68DG5ScURElxHkl1lKk4MOK9cgZCSRDXs,34502
+aioudp-0.1.0.dist-info/WHEEL,sha256=DRf8A_Psd1SF2kVqTQOOFU1Xzl3-A2qljAxBMTOusUs,83
+aioudp-0.1.0.dist-info/METADATA,sha256=s_KBIh7WzV1jCgS7fANq_2P88HkBtjHXAdAmiFKfj70,1903
+aioudp-0.1.0.dist-info/RECORD,,
