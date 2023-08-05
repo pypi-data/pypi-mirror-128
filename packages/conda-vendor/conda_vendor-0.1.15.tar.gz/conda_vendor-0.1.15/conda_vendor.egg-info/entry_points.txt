@@ -1,0 +1,3 @@
+[console_scripts]
+conda-vendor = conda_vendor.__main__:cli
+
