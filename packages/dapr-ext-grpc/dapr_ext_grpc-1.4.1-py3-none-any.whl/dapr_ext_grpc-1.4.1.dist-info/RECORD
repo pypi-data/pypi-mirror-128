@@ -1,0 +1,9 @@
+dapr/ext/grpc/__init__.py,sha256=uH-dmze5gThAzEuHzgpoxOj5oD5SOcnk9I7XWFeeu4Y,434
+dapr/ext/grpc/_servicier.py,sha256=EtFP2wm26NuRvWMhpjfWn082bdThtCdDpwRxeaOiPXk,7975
+dapr/ext/grpc/app.py,sha256=z0jHgBAdOQqCgW5g_YJ-QuVMdAhWugUHooODyxpDGxY,4173
+dapr/ext/grpc/version.py,sha256=38qJjyo05Ft2qn2A4HKxj7RM6fw0qLEz55Sz5T1P_vY,147
+dapr_ext_grpc-1.4.1.dist-info/LICENSE,sha256=iVca8saaTTsb6oZKlEMKt5lqpSBcyM8Oc-9tUn9IE30,1096
+dapr_ext_grpc-1.4.1.dist-info/METADATA,sha256=rILyLxNA_TPso4Y38JpWyFI7BT3oXxTNm3ua5vwMed4,1370
+dapr_ext_grpc-1.4.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dapr_ext_grpc-1.4.1.dist-info/top_level.txt,sha256=iLDu9C_1nUTIsa3H4jMbuHuF-zs0opkitR7p7PCPYz0,5
+dapr_ext_grpc-1.4.1.dist-info/RECORD,,
