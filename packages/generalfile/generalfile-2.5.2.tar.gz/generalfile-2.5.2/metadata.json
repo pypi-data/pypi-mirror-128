@@ -1,0 +1,16 @@
+{
+    "name": "generalfile",
+    "version": "2.5.2",
+    "description": "Easily manage files cross platform.",
+    "install_requires": [
+        "generallibrary",
+        "send2trash",
+        "appdirs",
+        "pandas",
+        "dill"
+    ],
+    "extras_require": {},
+    "topics": [
+        "file-manager"
+    ]
+}
