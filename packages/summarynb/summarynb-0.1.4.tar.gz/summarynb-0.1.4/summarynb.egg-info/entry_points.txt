@@ -1,0 +1,3 @@
+[console_scripts]
+summarynb = summarynb.cli:main
+
