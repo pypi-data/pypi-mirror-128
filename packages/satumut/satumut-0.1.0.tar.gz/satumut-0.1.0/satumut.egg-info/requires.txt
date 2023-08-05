@@ -1,0 +1,8 @@
+pmx@ git+https://github.com/cescgina/pmx.git@develop
+fpdf
+matplotlib
+numpy
+pandas
+seaborn
+biopython
+mdtraj
