@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/sodshock/__init__.py
+src/sodshock/_version.py
+src/sodshock.egg-info/PKG-INFO
+src/sodshock.egg-info/SOURCES.txt
+src/sodshock.egg-info/dependency_links.txt
+src/sodshock.egg-info/requires.txt
+src/sodshock.egg-info/top_level.txt
