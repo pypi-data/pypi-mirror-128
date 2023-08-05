@@ -1,0 +1,60 @@
+site_name: Shrike
+
+# https://www.mkdocs.org/user-guide/configuration/
+repo_url: https://github.com/Azure/shrike
+edit_uri: edit/main/docs
+
+nav:
+- Home: index.md
+- Compliant Logging:
+    Logging examples: compliant_logging/README.md
+    Logging design: compliant_logging/rfc-logging.md
+    Logging metrics in AML: compliant_logging/aml-metrics-logging.md
+    API reference:
+      constants: compliant_logging/constants.md
+      exceptions: compliant_logging/exceptions.md
+      logging: compliant_logging/logging.md
+- Build:
+    Sign & register components: build/build-for-sign-and-register.md
+    Component validation: rfc/strict-component-validation.md
+    API reference:
+      prepare: build/prepare.md
+      register: build/register.md
+- Pipeline:
+    Create an AML pipeline: pipeline/create-aml-pipeline.md
+    Configure your AML pipeline: pipeline/configure-aml-pipeline.md
+    Reuse your AML pipeline: pipeline/reuse-aml-pipeline.md
+    Submission-time override: pipeline/submission-time-override.md
+    Submission-time override (design): rfc/pipeline-image-override.md
+    API reference:
+      pipeline_config: pipeline/pipeline-config.md
+      pipeline_helper: pipeline/pipeline-helper.md
+      module_helper: pipeline/module-helper.md
+      canary_helper: pipeline/canary-helper.md
+      aml_connect: pipeline/aml-connect.md
+      testing.componets: pipeline/testing-components.md
+      testing.importer: pipeline/testing-importer.md
+      testing.module_run_tests: pipeline/testing-module-run-tests.md
+      testing.pipeline_class_test: pipeline/testing-pipeline-class-test.md
+- Spark:
+    Examples: spark/examples.md
+    API reference:
+      spark_net: spark/spark_net.md
+
+theme:
+  name: material
+
+markdown_extensions:
+- pymdownx.highlight:
+    linenums: true
+    linenums_style: pymdownx-inline
+- pymdownx.superfences
+- pymdownx.snippets
+# https://github.com/mkdocs/mkdocs/issues/777
+- markdown_include.include:
+    base_path: .
+
+
+plugins:
+- search
+- mkdocstrings
