@@ -1,0 +1,3 @@
+selectolax
+yarl
+httpx
