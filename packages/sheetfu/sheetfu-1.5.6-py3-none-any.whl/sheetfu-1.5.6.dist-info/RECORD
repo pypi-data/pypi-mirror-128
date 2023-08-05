@@ -1,0 +1,17 @@
+sheetfu/__init__.py,sha256=XP4dtxV1ZZIeJ1CQE2DbOMaHp4lbIcx0nnXo92io73c,560
+sheetfu/client.py,sha256=-W615UUA-VunQbw7uOJCU_Bo0eLSLGej7xBn__SSp0M,3852
+sheetfu/config.py,sha256=S-o6YVkZ7u1AmQNOs_xRomW7N175zpwrezh9PGh8rZ4,295
+sheetfu/exceptions.py,sha256=TUjO1qcx5rjBZuWxrWgtyGqeNcaOT2kjfcQlPBNdTnk,565
+sheetfu/helpers.py,sha256=ji6j4KCeifnKyTlG95g90ZmVUCJPWoY4kCts9cdUoXE,4394
+sheetfu/model.py,sha256=zjU7YkmrsI2Fa9JJc1GCyCIX31MiqIPVcwYsuXoYemg,25943
+sheetfu/parsers.py,sha256=t8TYxAIVyfdOx-uy3CwYW44zIkyirHtmf0gJeX3SfMc,2868
+sheetfu/service.py,sha256=RnbLM-JSMfD6gsrVgP-hUVXViqiBxKedqZ0b2ASUKR8,3649
+sheetfu/modules/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sheetfu/modules/table.py,sha256=AlnGRL7kvrr9XjNnbSrjGj9GUg5TksXS9EncYTmxQYg,13256
+sheetfu/modules/table_selector.py,sha256=9t4yxveEmMg8rA9FqninL5oqYCuhsWi2V59fznW86ZI,2208
+sheetfu-1.5.6.dist-info/AUTHORS,sha256=N1akQCUaZ60NyuWO1iWRB1v0tnsxGok9xv8U7xzcrEo,225
+sheetfu-1.5.6.dist-info/LICENSE,sha256=0XPLv-pwnmyj8ud0EhLEKasTNv_9ftOjGqtj59wHUpc,1068
+sheetfu-1.5.6.dist-info/METADATA,sha256=dva4Ytr9f8Aaqu_83AN-GMdGMoFJ0_85nzLiQiHUqs4,4998
+sheetfu-1.5.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sheetfu-1.5.6.dist-info/top_level.txt,sha256=X28_RtLlIV6qL7x_6iROevmjFBTFup_YoR14jwQnDb0,8
+sheetfu-1.5.6.dist-info/RECORD,,
