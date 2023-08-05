@@ -1,0 +1,3 @@
+[console_scripts]
+spyql = spyql.cli:main
+
