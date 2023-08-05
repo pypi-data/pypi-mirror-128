@@ -1,0 +1,14 @@
+pika
+
+[docs]
+Sphinx
+sphinx-autobuild
+sphinx-rtd-theme
+
+[perf]
+orjson
+
+[test]
+coveralls
+pytest
+pytest-cov
