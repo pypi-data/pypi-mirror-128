@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: flask-raspi-gpio-control
+Version: 0.0.1
+Summary: Control GPIO on Raspberry Pi
+Home-page: https://github.com/GrantGMiller/flask_raspi_gpio_control
+Author: Grant miller
+Author-email: grant@grant-miller.com
+License: PSF
+Project-URL: Source Code, https://github.com/GrantGMiller/flask_raspi_gpio_control
+Keywords: grant miller flask database
+Platform: UNKNOWN
+Requires-Dist: flask
+Requires-Dist: dataset
+
+Flask Raspberry Pi GPIO Control
+===============================
+Work in progress
+
+
+
