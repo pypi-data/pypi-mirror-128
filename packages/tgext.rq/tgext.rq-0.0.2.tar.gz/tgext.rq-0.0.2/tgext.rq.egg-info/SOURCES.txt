@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+tgext/__init__.py
+tgext.rq.egg-info/PKG-INFO
+tgext.rq.egg-info/SOURCES.txt
+tgext.rq.egg-info/dependency_links.txt
+tgext.rq.egg-info/entry_points.txt
+tgext.rq.egg-info/namespace_packages.txt
+tgext.rq.egg-info/not-zip-safe
+tgext.rq.egg-info/requires.txt
+tgext.rq.egg-info/top_level.txt
+tgext/rq/__init__.py
+tgext/rq/commands.py
+tgext/rq/redis_config.py

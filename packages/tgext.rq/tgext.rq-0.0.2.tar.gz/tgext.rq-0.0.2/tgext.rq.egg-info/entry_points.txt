@@ -1,0 +1,3 @@
+[gearbox.commands]
+rq = tgext.rq.commands:RQCommand
+
