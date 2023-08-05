@@ -1,0 +1,8 @@
+setuptools>=8.2.1
+psutil<6,>=5.7
+
+[:python_version < "3"]
+protobuf<3.18,>=3.12
+
+[:python_version >= "3"]
+protobuf<4,>=3.12
