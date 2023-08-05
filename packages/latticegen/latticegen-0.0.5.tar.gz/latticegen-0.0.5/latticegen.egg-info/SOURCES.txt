@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+latticegen/__init__.py
+latticegen/_version.py
+latticegen/latticegeneration.py
+latticegen/singularities.py
+latticegen/transformations.py
+latticegen.egg-info/PKG-INFO
+latticegen.egg-info/SOURCES.txt
+latticegen.egg-info/dependency_links.txt
+latticegen.egg-info/requires.txt
+latticegen.egg-info/top_level.txt
