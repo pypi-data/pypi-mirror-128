@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: multibind
+Version: 0.1.0
+Summary: A package to find optimal state free energies from a thermodynamic graph.
+License: MIT
+Author: Ian Kenney
+Author-email: ikenney@asu.edu
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: MDAnalysis (>=2.0.0,<3.0.0)
+Requires-Dist: matplotlib (>=3.5.0,<4.0.0)
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
+Requires-Dist: pandas (>=1.3.4,<2.0.0)
+Requires-Dist: scipy (>=1.7.2,<2.0.0)
+Requires-Dist: tqdm (>=4.62.3,<5.0.0)
