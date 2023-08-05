@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: BiblioAlly
+Version: 0.0.4
+Summary: A helper for scientific literature reviews
+Home-page: https://github.com/gambit4348/BiblioAlly
+Author: Alex Sebastião Constâncio
+Author-email: gambit4348@gmail.com
+License: MIT
+Download-URL: https://github.com/gambit4348/BiblioAlly/archive/refs/tags/v0.0.3.tar.gz
+Description: UNKNOWN
+Keywords: Science,Literature review,Articles
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
