@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: tunnelis_core
+Version: 1.5.0
+Summary: Python package containing Tunnelis messages andd required utility functions.
+Home-page: UNKNOWN
+Author: Pedro Melo, Rafael Arrais, Sergio Marinho
+Author-email: pedro.m.melo@inesctec.pt, rafael.l.arrais@inesctec.pt, sergio.d.marinho@inesctec.pt
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
