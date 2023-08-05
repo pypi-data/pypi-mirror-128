@@ -1,0 +1,3 @@
+[console_scripts]
+pyrchain = rchain.__main__:cli
+
