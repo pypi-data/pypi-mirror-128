@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dioscuri/__init__.py
+dioscuri/dioscuri.py
+dioscuri/version.py
+dioscuri.egg-info/PKG-INFO
+dioscuri.egg-info/SOURCES.txt
+dioscuri.egg-info/dependency_links.txt
+dioscuri.egg-info/top_level.txt
