@@ -1,0 +1,12 @@
+{
+    "enabled": true,
+    "name": "generalbrowser",
+    "version": "0.0.2",
+    "description": "Missing description.",
+    "install_requires": [
+        "generallibrary"
+    ],
+    "extras_require": {},
+    "topics": [],
+    "manifest": []
+}

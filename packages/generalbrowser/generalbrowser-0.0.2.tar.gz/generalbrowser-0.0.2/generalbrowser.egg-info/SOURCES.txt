@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+metadata.json
+setup.py
+generalbrowser/__init__.py
+generalbrowser.egg-info/PKG-INFO
+generalbrowser.egg-info/SOURCES.txt
+generalbrowser.egg-info/dependency_links.txt
+generalbrowser.egg-info/requires.txt
+generalbrowser.egg-info/top_level.txt
+generalbrowser/test/test_generalbrowser.py
