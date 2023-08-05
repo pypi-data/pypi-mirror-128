@@ -1,0 +1,11 @@
+README.md
+setup.py
+FaceAnalyzer/Face.py
+FaceAnalyzer/FaceAnalyzer.py
+FaceAnalyzer/Helpers.py
+FaceAnalyzer/__init__.py
+FaceAnalyzer.egg-info/PKG-INFO
+FaceAnalyzer.egg-info/SOURCES.txt
+FaceAnalyzer.egg-info/dependency_links.txt
+FaceAnalyzer.egg-info/requires.txt
+FaceAnalyzer.egg-info/top_level.txt
