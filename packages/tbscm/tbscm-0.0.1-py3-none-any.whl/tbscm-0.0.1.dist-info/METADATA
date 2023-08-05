@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tbscm
+Version: 0.0.1
+Summary: Tree-based synthetic control methods
+Home-page: https://github.com/muhlbach/tbscm
+Author: Nicolaj Søndergaard Mühlbach
+Author-email: n.muhlbach@gmail.com
+License: MIT License
+Keywords: synthetic control methods,machine learning,random forests,treatment effects,program evaluation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Tree-based Synthetic Control Methods (tbscm)
+
+Please contact the authors below if you find any bugs or have any suggestions for improvement. Thank you!
+
+Author: Nicolaj Søndergaard Mühlbach (n.muhlbach at gmail dot com, muhlbach at mit dot edu) 
+
