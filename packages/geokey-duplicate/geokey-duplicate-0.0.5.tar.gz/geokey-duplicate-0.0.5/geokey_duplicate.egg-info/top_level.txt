@@ -1,0 +1,2 @@
+geokey_duplicate
+travis_ci
