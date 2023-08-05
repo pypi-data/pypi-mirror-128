@@ -1,0 +1,14 @@
+cython>=0.29.23
+deprecation>=2.0.6
+dill>=0.3.3
+Flask==2.0.1
+google-cloud-datastore>=2.3.0
+gunicorn>=20.1.0
+lxml>=4.6.3
+melts-cython-framework>=0.2.4
+numdifftools>=0.9.20
+numpy>=1.21.2
+openpyxl>=3.0.7
+pytest>=5.3.5
+scipy>=1.7.1
+xmltodict>=0.12.0
