@@ -1,0 +1,3 @@
+[console_scripts]
+arena-video-call-chrome = arenavideocall.scripts.arena_video_call_chrome:main
+

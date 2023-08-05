@@ -1,0 +1,14 @@
+vl53l5cx_py.cpython-37m-x86_64-linux-gnu.so,sha256=lmkqIkXOGNb0Y2d2AAHpJfsvHPIYMsJOFcbSsMYcsxI,749096
+arenavideocall/__init__.py,sha256=NouVwBp4Baj8dzp2WyqEMsybszlROIULa4hnG3gPETY,7765
+arenavideocall/scripts/__init__.py,sha256=uZ1QySGPa1MOClvmJL_B7L0PScRpsDFMUY2IIQiwr7w,292
+arenavideocall/scripts/arena_video_call_chrome.py,sha256=1nRH8fQKcj_AXSKQuwioFxQDEHw8VUugU2i6S_MKmvY,2450
+arenarobot/__init__.py,sha256=lC57Pi4TBjQHUMJ52ku9PGoJq9UcJZnXkRH677iMhpA,704
+arenarobot/_version.py,sha256=uJbG3V9ChN2wYiq4j9FBxRFbEIJE0mU-QTyzOvnz428,259
+arenarobot/occupancy_grid/__init__.py,sha256=Rgnfb0w__eTKQMALZ4vcXnCnuWyCqQN_cn2H8XkHz40,6687
+arenarobot/occupancy_grid/const.py,sha256=9cH7uftvVyu9rX9Meo9eZfGyvcGj0DoNOy_s-blX958,424
+arena_robot-0.1.0rc2.dist-info/LICENSE,sha256=rh3rh0NoxqM_5Nal4UZ5HDiTCEYf-vVjvPEVsH7ALsw,1533
+arena_robot-0.1.0rc2.dist-info/top_level.txt,sha256=rE0QHustv0_pivGoVIFopxr1yOLWNwuDO2Yx9T7oqGA,38
+arena_robot-0.1.0rc2.dist-info/RECORD,,
+arena_robot-0.1.0rc2.dist-info/WHEEL,sha256=kvyGvy5bO3fspZ-7qhg8sVOH8B-z0uw-ppjLYSm8gPI,221
+arena_robot-0.1.0rc2.dist-info/METADATA,sha256=mCHnB2tOfqjEZcM5GZmPaDA1bN1tf4arp0hdvL2ghnw,3282
+arena_robot-0.1.0rc2.dist-info/entry_points.txt,sha256=a2qGNX0-gDjArJ5wpS6jQR3Yrqoygwyg8CZT5cR_u9w,97
