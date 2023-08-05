@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pygsound
+Version: 0.1
+Summary: An room impulse response simulator using for geometric sound propagation
+Home-page: UNKNOWN
+Author: Zhenyu Tang, Carl Schissler, Dinesh Manocha
+Author-email: zhy@cs.umd.edu
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: Cython
+Requires-Dist: numpy
+Requires-Dist: wavefile
+
+UNKNOWN
+
