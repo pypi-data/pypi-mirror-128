@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: MiniContourFinder
+Version: 1.0.19
+Summary: Lightweight image segmentation software for biological images
+Home-page: https://github.com/isgilman/MiniContourFinder
+Author: Ian S Gilman
+Author-email: ian.gilman@yale.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib (>=3.1.1)
+Requires-Dist: numpy (>1.20.3)
+Requires-Dist: opencv-python (>=4.5.2)
+Requires-Dist: pandas (>=0.25.2)
+Requires-Dist: pillow (>=6.2.1)
+Requires-Dist: Pillow
+Requires-Dist: pyperclip (>=1.7.0)
+Requires-Dist: PyQt5 (>=5.12.3)
+Requires-Dist: pytesseract (>=0.3.0)
+Requires-Dist: scipy (>=1.6.3)
+Requires-Dist: tqdm (>=4.36.1)
+
+# MiniContourFinder
+### Lightweight image segmentation software for biological images
+Full documentation can be found on [Read the Docs](https://minicontourfinder.readthedocs.io/en/latest/).
+
+Image segmentation has become a common task throughout biological and biomedical sciences. Despite the growth in image use, much of image analysis is still done manually, which frequently causes a bottleneck in data collection. MiniContourFinder is a lightweight image segmentation tool built in Python with OpenCV. MiniContourFinder was designed to allow users with minimal command line experience or image processing expertise to generate accurate and reproducible segmentations.
+
+**Availability and implementation**
+
+MiniContourFinder is free and open-source software available under the GNU General Public License v3.0. MiniContourFinder can be installed via Python package installer pip, the Conda package management system, or the source code above. 
+
+
