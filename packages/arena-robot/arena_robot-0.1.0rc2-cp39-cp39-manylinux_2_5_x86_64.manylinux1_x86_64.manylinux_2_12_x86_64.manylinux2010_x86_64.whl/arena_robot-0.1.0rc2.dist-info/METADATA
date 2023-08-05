@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: arena-robot
+Version: 0.1.0rc2
+Summary: Robot integration runtime for the ARENA
+Home-page: https://github.com/conix-center/ARENA-robot
+Author: Conix Research Center
+Author-email: info@conix.io
+License: BSD-3-Clause
+Project-URL: Bug Reports, https://github.com/conix-center/ARENA-robot/issues
+Project-URL: Source, https://github.com/conix-center/ARENA-robot
+Keywords: arena robot ar vr robotics drone lidar vl53l5cx stm selenium jitsi video videocall conference
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: Robot Framework
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Hardware
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: arena-py (<1,>=0.1.42)
+Requires-Dist: numpy (<2,>=1)
+Requires-Dist: selenium (<4,>=3)
+Requires-Dist: setuptools-scm (>=6.0)
+Requires-Dist: slam3d (<1,>=0)
+Provides-Extra: dev
+Requires-Dist: bandit (<2,>=1) ; extra == 'dev'
+Requires-Dist: flake8 (<4,>=3) ; extra == 'dev'
+Requires-Dist: flake8-bugbear (<22,>=21) ; extra == 'dev'
+Requires-Dist: isort (<6,>=5) ; extra == 'dev'
+Requires-Dist: pydocstyle (<7,>=6) ; extra == 'dev'
+Requires-Dist: pylint (<3,>=2) ; extra == 'dev'
+
+ARENA-robot
+===========
+Robot integration runtime for the ARENA.
+
+## Installation
+Requires Python3.6+
+```bash
+pip install git+https://github.com/conix-center/ARENA-robot#egg=arena-robot
+```
+
+Or for development, clone the repo and from inside the directory:
+```bash
+pip install -e .
+```
+
+The `vl53l5cx_py` module requires Linux i2c interface (`linux/i2c.h` and `linux/i2c-dev.h`).
+
+## Modules
+
+### arenavideocall
+
+After installing the repo, you should now have the `arena-video-call-chrome` command. You can also run it with `python3 -m arena-video-call-chrome`. It uses the [standard arena-py scene environment variables](https://arena.conix.io/content/python/#running-from-the-command-line).
+
+The first argument sets the surface that the video should be mapped to. For example, to map to an object called `avideobox`:
+```bash
+MQTTH=arenaxr.org NAMESPACE=namespace SCENE=scene arena-video-call-chrome avideobox
+```
+
+### vl53l5cx_py
+
+C shared library
+```bash
+gcc -fPIC -shared -o vl53l5cx.so -Ivl53l5cx_py/include -Ivl53l5cx_py/VL53L5CX_Linux_driver_1.1.2/user/platform -Ivl53l5cx_py/VL53L5CX_Linux_driver_1.1.2/user/uld-driver/inc vl53l5cx_py/src/*.c vl53l5cx_py/VL53L5CX_Linux_driver_1.1.2/user/platform/*.c vl53l5cx_py/VL53L5CX_Linux_driver_1.1.2/user/uld-driver/src/*.c -l
+```
+
+## License
+
+Copyright (c) 2021, The CONIX Research Center
+All rights reserved.
+
+This source code is licensed under the BSD-3-Clause license found in the
+LICENSE file in the root directory of this source tree.
+
+
