@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/bitcoindevkit/__init__.py
+src/bitcoindevkit/bitcoindevkit.py
+src/bitcoindevkit.egg-info/PKG-INFO
+src/bitcoindevkit.egg-info/SOURCES.txt
+src/bitcoindevkit.egg-info/dependency_links.txt
+src/bitcoindevkit.egg-info/top_level.txt

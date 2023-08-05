@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bitcoindevkit
+Version: 0.0.1
+Summary: Python language bindings for the bitcoindevkit
+Home-page: https://github.com/bitcoindevkit/bdk-ffi
+Author: Alekos Filini <alekos.filini@gmail.com>, Steve Myers <steve@notmandatory.org>
+License: MIT or Apache 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Bitcoindevkit
+This is a stand-in for the bitcoindevkit package. It currently only prints a hello world statement.
+
+
