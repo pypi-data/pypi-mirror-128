@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+DogeStringSession.egg-info/PKG-INFO
+DogeStringSession.egg-info/SOURCES.txt
+DogeStringSession.egg-info/dependency_links.txt
+DogeStringSession.egg-info/requires.txt
+DogeStringSession.egg-info/top_level.txt
+dogestringsession/__init__.py
+dogestringsession/__main__.py
+dogestringsession/keys.py
+dogestringsession/language.py
+dogestringsession/session.py
+dogestringsession/languages/__init__.py
+dogestringsession/languages/en.json.py
+dogestringsession/languages/tr.json.py
