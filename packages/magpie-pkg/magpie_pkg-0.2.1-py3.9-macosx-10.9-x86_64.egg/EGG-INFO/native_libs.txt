@@ -1,0 +1,4 @@
+magpie/src/remap_1d_grid2grid.cpython-39-darwin.so
+magpie/src/remap_2d_grid2grid.cpython-39-darwin.so
+magpie/src/remap_3d_grid2grid.cpython-39-darwin.so
+magpie/src/remap_utils.cpython-39-darwin.so
