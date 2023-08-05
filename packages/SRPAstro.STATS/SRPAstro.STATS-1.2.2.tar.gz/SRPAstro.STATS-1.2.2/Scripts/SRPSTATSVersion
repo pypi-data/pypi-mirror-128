@@ -1,0 +1,30 @@
+#! python
+""" Code to show SRP running version.
+
+Context : SRP
+Module  : SRPSTATSVersion.py
+Author  : Stefano Covino
+Date    : 08/04/2020
+E-mail  : stefano.covino@brera.inaf.it
+URL:    : http://www.merate.mi.astro.it/utenti/covino
+Purpose : Show SRP version.
+
+Usage   : SRPVersion [-h] [-v]
+ 
+
+History : (08/04/2020) First version.
+"""
+
+from optparse import OptionParser
+import SRPSTATS
+
+parser = OptionParser(usage="usage: %prog [-h] [-v]", version="%prog 1.0.0")
+parser.add_option("-v", "--verbose", action="store_true", dest="verbose", help="fully describe operations")
+(options, args) = parser.parse_args()
+
+
+if options.verbose:
+    print("SRPSTATS running version is: %s" % SRPSTATS.__version__)
+else:
+    print("%s" % SRPSTATS.__version__)
+    

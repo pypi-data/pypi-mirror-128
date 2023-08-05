@@ -1,0 +1,6 @@
+SRPAstro
+emcee>=3
+ptemcee
+scipy
+numpy
+pandas
