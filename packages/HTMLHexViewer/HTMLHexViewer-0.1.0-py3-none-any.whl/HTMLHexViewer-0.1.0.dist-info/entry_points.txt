@@ -1,0 +1,3 @@
+[console_scripts]
+htmlhexviewer = htmlhexviewer:main
+
