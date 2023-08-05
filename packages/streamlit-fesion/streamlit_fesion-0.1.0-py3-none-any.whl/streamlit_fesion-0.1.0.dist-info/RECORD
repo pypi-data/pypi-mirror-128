@@ -1,0 +1,15 @@
+streamlit_fesion/__init__.py,sha256=QcZLCWkOFSQTrgxYLGpqg3ZTsxKbFhJxVV6ch4pVNRE,1607
+streamlit_fesion/frontend/build/asset-manifest.json,sha256=yW5KnxDq1Z9IYjflwdD2TC9Nw-jsmr4FtIUc8hRT5Vo,691
+streamlit_fesion/frontend/build/index.html,sha256=JF1yKzPhaqE7Pyqp-6zFY7a2BpOczx2n88ii_7SJ_oU,2140
+streamlit_fesion/frontend/build/static/js/2.8f5e1c9f.chunk.js,sha256=IGl1w1ezAPHTiX8bdOrhH1APlxNdNHRy0Or8XR7W1Qw,554506
+streamlit_fesion/frontend/build/static/js/2.8f5e1c9f.chunk.js.LICENSE.txt,sha256=4mpwBEx-XScQJibKvaQzqb3NzWKGBbilPqopQnn7VtY,2308
+streamlit_fesion/frontend/build/static/js/2.8f5e1c9f.chunk.js.map,sha256=ekf-Vi5BDpt5fCj4TiWQKsp9DuXiFt2ZfyN1v5uf2JQ,1992328
+streamlit_fesion/frontend/build/static/js/main.4a209f05.chunk.js,sha256=wRFdpuMGKSaHMjTi4arDv48l_PZxsOoQ6KEvUKZS-x8,6969
+streamlit_fesion/frontend/build/static/js/main.4a209f05.chunk.js.map,sha256=Ty_qmLKokK6Tg5B_LXrhidjczNEfMTpipulbpTJ9LGU,20414
+streamlit_fesion/frontend/build/static/js/runtime-main.c1e779e3.js,sha256=4FpKNjeKlaw6cRhcJlrwhyz-JichdSiPFABFqbctdv4,1580
+streamlit_fesion/frontend/build/static/js/runtime-main.c1e779e3.js.map,sha256=cEMmzKR8pDpswa_lOR5xRoLXQh0PXkgxamsvhTnF0SI,8284
+streamlit_fesion/image_filter.py,sha256=U2qqRD-WFjwZ_tygrpML0NMI7oxgeLHSabk1MijXGAA,478
+streamlit_fesion-0.1.0.dist-info/LICENSE,sha256=J31Ed5H-v_B3Nuosu5rcdzioo5uv0E6FnDOlQwN0mG8,2340
+streamlit_fesion-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+streamlit_fesion-0.1.0.dist-info/METADATA,sha256=gNLXDgzirXxC3DYVJI2yeTkLuOmqRibrbm8fCu64EzM,711
+streamlit_fesion-0.1.0.dist-info/RECORD,,
