@@ -1,0 +1,6 @@
+requests
+colorama
+termcolor
+pyxdg
+pysocks
+cryptography
