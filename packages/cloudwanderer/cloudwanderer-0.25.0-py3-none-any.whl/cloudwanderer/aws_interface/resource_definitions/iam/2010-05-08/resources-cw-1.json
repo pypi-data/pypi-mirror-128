@@ -1,0 +1,199 @@
+{
+  "service": {
+    "globalServiceRegion": "us-east-1",
+    "globalService": true
+  },
+  "resources": {
+    "User": {
+      "type": "resource",
+      "idUniquenessScope": {
+        "requiresAccountId": true,
+        "requiresRegion": false
+      },
+      "regionalResource": false,
+      "relationships": [
+        {
+          "basePath": "ManagedPolicyAttachments[]",
+          "idParts": [
+            {
+              "path": "PolicyArn",
+              "regexPattern": "(?P<id_part_0>[^:]+:[^:]+:[^:]+::(?P<account_id>[^:]*):policy.*)"
+            }
+          ],
+          "service": "iam",
+          "resourceType": "policy",
+          "regionSource": "sameAsResource",
+          "accountIdSource": "unknown",
+          "direction": "outbound"
+        }
+      ]
+    },
+    "UserPolicy": {
+      "type": "dependentResource",
+      "parentResourceType": "user",
+      "regionalResource": false
+    },
+    "UserManagedPolicyAttachments": {
+      "type": "secondaryAttribute",
+      "secondaryAttributeMaps": [
+        {
+          "sourcePath": "AttachedPolicies",
+          "destinationName": "ManagedPolicyAttachments"
+        }
+      ]
+    },
+    "VirtualMfaDevice": {
+      "type": "resource",
+      "regionalResource": false
+    },
+    "MfaDevice": {
+      "type": "dependentResource",
+      "parentResourceType": "user",
+      "regionalResource": false
+    },
+    "Group": {
+      "type": "resource",
+      "idUniquenessScope": {
+        "requiresAccountId": true,
+        "requiresRegion": false
+      },
+      "regionalResource": false,
+      "relationships": [
+        {
+          "basePath": "ManagedPolicyAttachments[]",
+          "idParts": [
+            {
+              "path": "PolicyArn",
+              "regexPattern": "(?P<id_part_0>[^:]+:[^:]+:[^:]+::(?P<account_id>[^:]*):policy.*)"
+            }
+          ],
+          "service": "iam",
+          "resourceType": "policy",
+          "regionSource": "sameAsResource",
+          "accountIdSource": "unknown",
+          "direction": "outbound"
+        }
+      ]
+    },
+    "GroupManagedPolicyAttachments": {
+      "type": "secondaryAttribute",
+      "secondaryAttributeMaps": [
+        {
+          "sourcePath": "AttachedPolicies",
+          "destinationName": "ManagedPolicyAttachments"
+        }
+      ]
+    },
+    "GroupPolicy": {
+      "type": "dependentResource",
+      "parentResourceType": "group",
+      "regionalResource": false
+    },
+    "SamlProvider": {
+      "type": "resource",
+      "idUniquenessScope": {
+        "requiresAccountId": true,
+        "requiresRegion": false
+      },
+      "regionalResource": false
+    },
+    "ServerCertificate": {
+      "type": "resource",
+      "regionalResource": false
+    },
+    "Role": {
+      "type": "resource",
+      "idUniquenessScope": {
+        "requiresAccountId": true,
+        "requiresRegion": false
+      },
+      "regionalResource": false,
+      "relationships": [
+        {
+          "basePath": "ManagedPolicyAttachments[]",
+          "idParts": [
+            {
+              "path": "PolicyArn",
+              "regexPattern": "(?P<id_part_0>[^:]+:[^:]+:[^:]+::(?P<account_id>[^:]*):policy.*)"
+            }
+          ],
+          "service": "iam",
+          "resourceType": "policy",
+          "regionSource": "sameAsResource",
+          "accountIdSource": "unknown",
+          "direction": "outbound"
+        }
+      ]
+    },
+    "RoleManagedPolicyAttachments": {
+      "type": "secondaryAttribute",
+      "secondaryAttributeMaps": [
+        {
+          "sourcePath": "AttachedPolicies",
+          "destinationName": "ManagedPolicyAttachments"
+        }
+      ]
+    },
+    "RolePolicy": {
+      "type": "dependentResource",
+      "parentResourceType": "role",
+      "regionalResource": false
+    },
+    "AccessKey": {
+      "type": "dependentResource",
+      "parentResourceType": "user",
+      "regionalResource": false
+    },
+    "SigningCertificate": {
+      "type": "dependentResource",
+      "parentResourceType": "user",
+      "regionalResource": false
+    },
+    "Policy": {
+      "type": "resource",
+      "idUniquenessScope": {
+        "requiresAccountId": true,
+        "requiresRegion": false
+      },
+      "regionalResource": false,
+      "urnOverrides": [
+        {
+          "path": "Arn",
+          "regexPattern": "(?P<id_part_0>[^:]+:[^:]+:[^:]+::(?P<account_id>[^:]*):policy.*)"
+        }
+      ]
+    },
+    "PolicyVersion": {
+      "type": "dependentResource",
+      "defaultJMESPathFilters": [
+        "[?IsDefaultVersion==`true`]"
+      ],
+      "requiresLoad": true,
+      "regionalResource": false
+    },
+    "InstanceProfile": {
+      "type": "resource",
+      "idUniquenessScope": {
+        "requiresAccountId": true,
+        "requiresRegion": false
+      },
+      "regionalResource": false,
+      "relationships": [
+        {
+          "basePath": "Roles[]",
+          "idParts": [
+            {
+              "path": "Arn",
+              "regexPattern": "[^:]+:[^:]+:[^:]+::(?P<account_id>[^:]+):role.*/(?P<id_part_0>[^:]+)"
+            }
+          ],
+          "service": "iam",
+          "resourceType": "role",
+          "regionSource": "sameAsResource",
+          "accountIdSource": "unknown",
+          "direction": "outbound"
+        }
+      ]
+    }
+  }
+}
