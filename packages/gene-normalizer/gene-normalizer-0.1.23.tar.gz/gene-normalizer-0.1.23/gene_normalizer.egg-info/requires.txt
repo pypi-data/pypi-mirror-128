@@ -1,0 +1,12 @@
+pydantic
+fastapi
+uvicorn
+click
+boto3
+beautifulsoup4
+gffutils
+requests
+biocommons.seqrepo
+ga4gh.vrs[extras]>=0.7.2
+jsonschema<4.0,>=2.3
+ga4gh.vrsatile.pydantic>=0.0.5
