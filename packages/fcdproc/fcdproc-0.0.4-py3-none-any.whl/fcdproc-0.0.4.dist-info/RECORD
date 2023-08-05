@@ -1,0 +1,17 @@
+fcdproc/__init__.py,sha256=3mXnod3vvK7U7q2Uz2XmTU9YOCjYVB-fDeoH7G_UsVc,493
+fcdproc/cli.py,sha256=-lHwdMuVM1-Kv1NoZ9VKYc0IXzV2TrSM2hV2mRriy8A,2071
+fcdproc/interfaces/FCD_preproc.py,sha256=is20d-eeciyrvB8lcFfwL5JtmOrH9q-TJIeHXo6xGgM,21824
+fcdproc/interfaces/FCD_python.py,sha256=wr-L1aOuQD9e49dRIKkDF8BxsPSGGaBqBJ6Z0SvOVx0,40834
+fcdproc/interfaces/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fcdproc/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fcdproc/utils/misc.py,sha256=_FV66DkH05F7Op8z8cnkGnczyHR4nB5wd8-3yUR6K4Y,2886
+fcdproc/workflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fcdproc/workflow/anatomical.py,sha256=hhq-InRXzDsD1cHh-6hl3SZqS5zr3giYBx547raWFyw,17661
+fcdproc/workflow/base.py,sha256=Xc9QDPZyJ5s3VEI3LRdx4NadkqoauRYTgIifVnTQICw,18645
+fcdproc/workflow/modeling.py,sha256=n2FIkOA6foQm5ObBvthZtBwdDH62dC9g8wAdbAMVazg,6646
+fcdproc-0.0.4.dist-info/LICENSE.txt,sha256=Db05i8wSqJImKAZlalvz8_NQdBUnmuGAuZOHn3FnvsM,1759
+fcdproc-0.0.4.dist-info/METADATA,sha256=QjRVb6Yk9H0QnCmyfjcA9oCjr5a8Rdgc3JnhtJ0RsRs,1393
+fcdproc-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fcdproc-0.0.4.dist-info/entry_points.txt,sha256=vWpwEbP7SBvtllfAvY0CU1NJ8713DXFHI1R0vH9A5mM,73
+fcdproc-0.0.4.dist-info/top_level.txt,sha256=_UTz8tjAqeC-uwWtVyrddM8K9J1kfANyKKgRS8E_V2E,8
+fcdproc-0.0.4.dist-info/RECORD,,
