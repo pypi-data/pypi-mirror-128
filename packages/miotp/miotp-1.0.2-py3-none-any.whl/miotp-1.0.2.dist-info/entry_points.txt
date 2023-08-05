@@ -1,0 +1,3 @@
+[console_scripts]
+miotp = miotp.main:main
+
