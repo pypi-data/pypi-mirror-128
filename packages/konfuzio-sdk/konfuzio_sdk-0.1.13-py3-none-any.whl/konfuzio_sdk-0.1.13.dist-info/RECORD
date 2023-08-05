@@ -1,0 +1,15 @@
+konfuzio_sdk/__init__.py,sha256=aizxlrYkarZXZA1-ACX4WgL-5RtOhYyyPD-jJ_6KZ6Y,80
+konfuzio_sdk/api.py,sha256=abM30puhMYyvuUZBGjVDN-3zwCoENk8Id3K4DqnHXt0,18590
+konfuzio_sdk/bboxes_utils.py,sha256=AvnWsxio5gJVfR5Ue-ETOkC8o2GJMOYUO5WG_j0bjco,4424
+konfuzio_sdk/cli.py,sha256=mw7TxO-3oT5iHbXl9qYoK1YuV8parRLn0sjO4ULDSEY,7397
+konfuzio_sdk/data.py,sha256=onCiIv08gnkgFbAknJJcIgy1tRSKAoVJfwJerqRLFyc,56947
+konfuzio_sdk/settings.py,sha256=Mlf7GfbqIE6KgyA5MgQwupVB5jKkNOvNjHiKEmPg2FY,530
+konfuzio_sdk/settings_importer.py,sha256=khhgYHOroAGWRnBwnmLoyY4wvBJNraEeHAgX8cod-1M,785
+konfuzio_sdk/urls.py,sha256=n4m_Nc7Ui6r9UyycM5KVMYYced9iL9SOCv60WaFMQjo,5510
+konfuzio_sdk/utils.py,sha256=JgZxZypuZa_Mr6A915UtdJGdWgxxaBUB0XPi5DkpJBs,15850
+konfuzio_sdk-0.1.13.dist-info/LICENSE.md,sha256=iGWAHWWzSBL5i1gmzPBcjTTv4vEuWjeVR_jkNsr3guk,1074
+konfuzio_sdk-0.1.13.dist-info/METADATA,sha256=6NEM4lUIbAjUC6PXhutRM5azjAPRS32yD49Lz6R1Z8g,3428
+konfuzio_sdk-0.1.13.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+konfuzio_sdk-0.1.13.dist-info/entry_points.txt,sha256=_bVShPapRi03THO70jXthH2GmxWQtbIbdsdkI3RLdvk,56
+konfuzio_sdk-0.1.13.dist-info/top_level.txt,sha256=Og1_UoZP3fC4r1v156zyqQDehAFfcjYPojJ9uE0airI,13
+konfuzio_sdk-0.1.13.dist-info/RECORD,,
