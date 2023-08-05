@@ -1,0 +1,15 @@
+include LICENSE.txt
+include THIRD_PARTY_LICENSES.txt
+include ads/ads_version.json
+include ads/common/*.json
+include ads/feature_engineering/*.json
+include ads/templates/*.jinja2
+include ads/common/function/*.yaml
+include ads/common/artifact/*.*
+include ads/jobs/schema/**
+global-exclude tests/**
+global-exclude notebooks/**
+exclude tests/**
+exclude notebooks/**
+exclude build/lib/tests/**
+exclude build/lib/notebooks/**
