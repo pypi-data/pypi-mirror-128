@@ -1,0 +1,84 @@
+{
+    "service": {
+        "hasMany": {
+            "AutoScalingGroups": {
+                "request": {
+                    "operation": "DescribeAutoScalingGroups"
+                },
+                "resource": {
+                    "type": "AutoScalingGroup",
+                    "identifiers": [
+                        {
+                            "target": "AutoScalingGroupName",
+                            "source": "response",
+                            "path": "AutoScalingGroups[].AutoScalingGroupName"
+                        }
+                    ],
+                    "path": "AutoScalingGroups[]"
+                }
+            },
+            "LaunchConfigurations": {
+                "request": {
+                    "operation": "DescribeLaunchConfigurations"
+                },
+                "resource": {
+                    "type": "LaunchConfiguration",
+                    "identifiers": [
+                        {
+                            "target": "LaunchConfigurationName",
+                            "source": "response",
+                            "path": "LaunchConfigurations[].LaunchConfigurationName"
+                        }
+                    ],
+                    "path": "LaunchConfigurations[]"
+                }
+            }
+        }
+    },
+    "resources": {
+        "AutoScalingGroup": {
+            "identifiers": [
+                {
+                    "name": "AutoScalingGroupName",
+                    "memberName": "AutoScalingGroupName"
+                }
+            ],
+            "shape": "AutoScalingGroup",
+            "load": {
+                "request": {
+                    "operation": "DescribeAutoScalingGroups",
+                    "params": [
+                        {
+                            "target": "AutoScalingGroupNames[0]",
+                            "source": "identifier",
+                            "name": "AutoScalingGroupName"
+                        }
+                    ]
+                },
+                "path": "AutoScalingGroups[0]"
+            }
+        },
+        "LaunchConfiguration": {
+            "identifiers": [
+                {
+                    "name": "LaunchConfigurationName",
+                    "memberName": "LaunchConfigurationName"
+                }
+            ],
+            "shape": "LaunchConfiguration",
+            "load": {
+                "request": {
+                    "operation": "DescribeLaunchConfigurations",
+                    "params": [
+                        {
+                            "target": "LaunchConfigurationNames[0]",
+                            "source": "identifier",
+                            "name": "LaunchConfigurationName"
+                        }
+                    ]
+                },
+                "path": "LaunchConfigurations[0]"
+            }
+        }
+    }
+}
