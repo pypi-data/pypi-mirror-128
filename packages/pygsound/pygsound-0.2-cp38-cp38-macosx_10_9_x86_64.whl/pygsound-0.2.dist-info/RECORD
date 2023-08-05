@@ -1,0 +1,11 @@
+pygsound-0.2.dist-info/RECORD,,
+pygsound-0.2.dist-info/WHEEL,sha256=m4Wk6eOy92yJY87gVAkQnn-qnRb0vl_v2zsmx0hgXfo,109
+pygsound-0.2.dist-info/top_level.txt,sha256=yarcey_OZv8c7aJKFv_rQo7Cz1mJPBBDen-1b5ODdYg,27
+pygsound-0.2.dist-info/LICENSE.txt,sha256=vPMMrEm3S2Rswty49j8r5ZFIeL_IEBys6q_PaEQGd9w,1835
+pygsound-0.2.dist-info/METADATA,sha256=bShDdiAyyWICjr-nKzYyVlrYTo3_WTCLfBNntdtgJCA,5172
+pygsound/pygsound.cpython-38-darwin.so,sha256=a_HwRdcp8wYG9DLb-nKIps3mFRq8ODjUrus5UnPls8A,1346624
+pygsound/__init__.py,sha256=JdWRzYxluzuNFXS199lz2sZCtK_A1_tYAjEHrSVI4qo,24
+pygsound/.dylibs/libfftw3f.3.dylib,sha256=fpf2IVEX-m2nC_zcuOC_0WGu0lkz6qUMTTr_1fvR2Ys,3004656
+pygsound/.dylibs/libfftw3_threads.3.dylib,sha256=IqCEYfhEiVttO7F7c8-RFw8Sxruqpkc6exQs8ZYwY6w,91264
+pygsound/.dylibs/libfftw3.3.dylib,sha256=UsNKPTIFv50E_yd2EktlwTxjj2sMr1oyXUErLZG7d58,2852432
+pygsound/.dylibs/libgcc_s.1.dylib,sha256=zdJ8RocE1Wm8OzvZaF1FCRtmfVIk-QI-owVZv8rMYAs,188816
