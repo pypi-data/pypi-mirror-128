@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: site-scrapers
+Version: 0.0.18
+Summary: Scrape cars from dealerships
+Home-page: https://github.com/dmitrijs-balcers/site-scrapers/
+Author: Dmitrijs Balcers
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+### Installation:
+
+`pip install site-scrapers`
+
+### Usage:
+
+```python
+from returns.methods import unwrap_or_failure
+from scrapers.mollerAuto import parse_moller_auto
+
+if __name__ == '__main__':
+    print(*unwrap_or_failure(parse_moller_auto()), sep="\n")
+```
+
+### Supported Dealerships
+https://lietotiauto.mollerauto.lv  
+https://lv.brcauto.eu
+https://certified.inchcape.lv/auto
+
+
