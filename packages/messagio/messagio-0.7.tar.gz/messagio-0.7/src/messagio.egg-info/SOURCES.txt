@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/messagio/__init__.py
+src/messagio/abstract_message_center.py
+src/messagio/autodiscover.py
+src/messagio/const.py
+src/messagio/decorators.py
+src/messagio/exceptions.py
+src/messagio/message_center.py
+src/messagio/tasks.py
+src/messagio.egg-info/PKG-INFO
+src/messagio.egg-info/SOURCES.txt
+src/messagio.egg-info/dependency_links.txt
+src/messagio.egg-info/top_level.txt
