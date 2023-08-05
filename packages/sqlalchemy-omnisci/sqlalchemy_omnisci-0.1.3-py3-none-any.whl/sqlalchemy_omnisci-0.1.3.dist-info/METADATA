@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-omnisci
+Version: 0.1.3
+Summary: OmniSciDB driver for SQLAlchemy
+Home-page: https://github.com/omnisci/sqlalchemy-omnisci
+Author: OmniSci
+Author-email: community@omnisci.com
+License: Apache 2.0
+Keywords: sqlalchemy_omnisci
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlalchemy (==1.*)
+Requires-Dist: pyomniscidb (>=5.5.2)
+Requires-Dist: pyomnisci (>=0.27.0)
+Provides-Extra: dev
+Requires-Dist: sqlalchemy (==1.*) ; extra == 'dev'
+Requires-Dist: pyomniscidb (>=5.5.2) ; extra == 'dev'
+Requires-Dist: pyomnisci (>=0.27.0) ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: jupyter-book ; extra == 'dev'
+Requires-Dist: sphinx-external-toc ; extra == 'dev'
+Requires-Dist: sphinx-autoapi ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pip ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: jupyterlab ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: jupyter-book ; extra == 'docs'
+Requires-Dist: sphinx-external-toc ; extra == 'docs'
+Requires-Dist: sphinx-autoapi ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: pip ; extra == 'lint'
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: pre-commit ; extra == 'lint'
+Provides-Extra: release
+Requires-Dist: twine ; extra == 'release'
+Requires-Dist: wheel ; extra == 'release'
+Requires-Dist: build ; extra == 'release'
+
+# SQLAlchemy OmniSci
+
+OmniSci SQLAlchemy Driver
+
+The code here was initially developed and published at
+https://community.omnisci.com/t/apache-superset-and-sql-alchemy-usage-with-omniscidb/2633
+
+This SQLAlchemy dialect is still in **beta** version.
+
+
+### Tests
+
+#### With Apache Superset
+
+Start an Apache Superset instance with all customization needed to run the
+examples and to run sqlachemy-omnisci.
+
+More information: https://hub.docker.com/r/apache/superset
+
+# References
+
+References about SQLAlchemy Dialects:
+
+- https://bitbucket.org/zzzeek/sqlalchemy/src/44a9820b4e02f65b3884fa2c016efce9663e4910/README.dialects.rst?at=master
+- https://docs.sqlalchemy.org/en/14/dialects/index.html#production-ready
+
+
+# History
+
+## 0.1.0 (2021-06-24)
+
+* First release on PyPI.
+
+

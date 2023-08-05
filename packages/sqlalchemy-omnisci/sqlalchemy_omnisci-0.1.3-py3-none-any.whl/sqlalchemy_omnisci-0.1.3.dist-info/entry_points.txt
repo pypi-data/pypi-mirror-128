@@ -1,0 +1,4 @@
+[sqlalchemy.dialects]
+omnisci = sqlalchemy_omnisci.pyomnisci:OmniSciDialect_pyomnisci
+omnisci.pyomnisci = sqlalchemy_omnisci.pyomnisci:OmniSciDialect_pyomnisci
+
