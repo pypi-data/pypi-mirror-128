@@ -1,0 +1,14 @@
+bokeh
+fsspec>=0.3.3
+holoviews
+hvplot
+ipython
+jupyter
+matplotlib
+pandas
+scikit-learn
+seaborn
+statsmodels
+wordcloud
+xgboost
+xlrd
