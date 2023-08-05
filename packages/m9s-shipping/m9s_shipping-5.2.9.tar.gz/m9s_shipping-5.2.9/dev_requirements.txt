@@ -1,0 +1,8 @@
+# Install packages from requirements.txt
+-r requirements.txt
+
+coverage
+flake8
+
+#sphinx
+#sphinx_rtd_theme
