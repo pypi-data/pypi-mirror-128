@@ -1,0 +1,11 @@
+biobb_remote/__init__.py,sha256=IEG9w5dRRc5IwoCH6yrBByHNQmhylwYIxD3WscHzsnM,22
+biobb_remote/slurm.py,sha256=k3M4YgFBXk5_hlnVmkbcBwl7KcNWBz8M2xxdMzuw6dk,1590
+biobb_remote/ssh_credentials.py,sha256=cSyWL_oQUKaMGwvR_OBVjh-9dTSiS9HO9RKP7hTq5_8,7279
+biobb_remote/ssh_session.py,sha256=iVOz7tL3BTDxapbRnt5PNsvYHpm3LVjmVrJDNBTAQOA,4744
+biobb_remote/task.py,sha256=c2bAz_Bnd3K2tmKWg61Km-SPY2OSMkOmFCdOt6PtWuU,29799
+biobb_remote-1.2.0.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+biobb_remote-1.2.0.dist-info/METADATA,sha256=6zuq-laigfCOoTxA6b1edkM9rFmOXHuspZsrwiqfoL8,13485
+biobb_remote-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+biobb_remote-1.2.0.dist-info/entry_points.txt,sha256=Y6WJZu1wLJtJZzRha8UeNDPkMmLothD5_4bTpy7kg6c,173
+biobb_remote-1.2.0.dist-info/top_level.txt,sha256=qBfBeTolW90euB5q6adW73FSGGaFOKZzCDUeZzn19yw,13
+biobb_remote-1.2.0.dist-info/RECORD,,
