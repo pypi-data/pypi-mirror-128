@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: async-riot-api
+Version: 0.0.18
+Summary: Async wrapper for the Riot Games API for League of Legends
+Home-page: https://github.com/Princic-1837592/async-riot-api
+Author: Andrea Princic
+Author-email: princic.1837592@studenti.uniroma1.it
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# async-riot-api
+Async wrapper for the Riot Games API for League of Legends
+
+
