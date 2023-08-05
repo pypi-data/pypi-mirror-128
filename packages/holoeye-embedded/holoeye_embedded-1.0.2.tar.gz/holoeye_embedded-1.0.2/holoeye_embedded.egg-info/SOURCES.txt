@@ -1,0 +1,14 @@
+CHANGELOG.rst
+CONTRIBUTING.rst
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+holoeye_embedded/__init__.py
+holoeye_embedded/__meta__.py
+holoeye_embedded.egg-info/PKG-INFO
+holoeye_embedded.egg-info/SOURCES.txt
+holoeye_embedded.egg-info/dependency_links.txt
+holoeye_embedded.egg-info/top_level.txt
+test/test.py
