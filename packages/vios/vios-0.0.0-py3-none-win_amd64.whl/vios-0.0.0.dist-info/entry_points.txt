@@ -1,0 +1,4 @@
+[console_scripts]
+quarkserver = quark.start:quarkserver
+quarkstudio = quark.start:quarkstudio
+

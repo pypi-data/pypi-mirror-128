@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: vios
+Version: 0.0.0
+Summary: control, measure and visualization
+Home-page: https://gitee.com/
+Author: YL Feng
+Author-email: fengyl@baqis.ac.com
+License: MIT
+Project-URL: source, https://gitee.com
+Keywords: Hello,Quantum World!
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.13.3)
+Requires-Dist: srpc (>=3.3.0)
+Requires-Dist: axion (>=1.0.5)
+Provides-Extra: ui
+Requires-Dist: qtconsole ; extra == 'ui'
+Requires-Dist: matplotlib (>=3.5.0) ; extra == 'ui'
+Requires-Dist: pyqtgraph ; extra == 'ui'
+Requires-Dist: pyside2 ; extra == 'ui'
+
+#### 介绍
+
+
+#### 软件架构
+
+
+#### 安装教程
+
+
+#### 使用说明
+
+
+#### 参与贡献
+
+
+#### 特技
+
+
+
+
+
+
+
