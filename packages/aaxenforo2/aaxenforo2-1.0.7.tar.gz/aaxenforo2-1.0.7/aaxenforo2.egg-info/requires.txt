@@ -1,0 +1,10 @@
+django>=3.2
+requests>=2.26.0
+allianceauth>=2.9.0
+
+[testing]
+coverage>=4.3.1
+requests-mock>=1.2.0
+django-nose
+django-webtest
+flake8

@@ -1,0 +1,80 @@
+# AA-XenForo2
+
+XenForo v2.x Service Module for [Alliance Auth](https://gitlab.com/allianceauth/allianceauth)
+
+## Contents
+
+- [Overview](#overview)
+  - [Features](#features)
+- [Installation](#overview)
+  - [Step 1 - Install the package](#step-1---install-the-package)
+  - [Step 2 - Configure Alliance Auth](#step-2---configure-alliance-auth)
+  - [Step 3 - Finalize the installation](#step-3---finalize-the-installation)
+  - [Step 4 - Preload Eve Universe data](#step-4---preload-eve-universe-data)
+  - [Step 5 - Set up permissions](#step-5---set-up-permissions)
+  - [Step 6 - (Optional) Import from built-in SRP module](#step-6---optional-import-from-built-in-srp-module)
+- [Permissions](#permissions)
+- [Settings](#settings)
+
+## Overview
+
+### Features
+
+- Integration with XenForo v2.x Forum Software as a user manager
+
+## Installation
+
+**Important**: Please make sure you meet all preconditions before you proceed:
+
+- AA XenForo2 is a plugin for Alliance Auth. If you don't have Alliance Auth running
+  already, please install it first before proceeding. (see the official
+  [AA installation guide](https://allianceauth.readthedocs.io/en/latest/installation/allianceauth.html) for details)
+
+### Step 1 - Install the package
+
+Make sure you are in the virtual environment (venv) of your Alliance Auth
+installation Then install the latest release directly from PyPi.
+
+```shell
+pip install aaxenforo2
+```
+
+### Step 2 - Configure Alliance Auth
+
+This is fairly simple, just add the following to the `INSTALLED_APPS` of your `local.py`
+
+Configure your AA settings (`local.py`) as follows:
+
+- Add `"aaxenforo2",` to `INSTALLED_APPS`
+
+### Step 3 - Finalize the installation
+
+Run migrations
+
+```shell
+python manage.py migrate
+```
+
+Restart your supervisor services for Auth
+
+### Step 4 - Set up permissions
+
+Now it's time to set up access permissions for your new forum service. You can do so in
+your admin backend in the AA XenForo2 section. Read the [Permissions](#permissions)
+section for more information about the available permissions.
+
+## Permissions
+
+| ID                    | Description                  | Notes                                                                                                       |
+|-----------------------|------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `access_xenforo2`     | Can access the XenForo2  Service Page  | Your line members should have this permission.                                                              |
+
+## Settings
+
+| Key | Description | Type | Default | Example |
+|-----|-------------|------|---------|---------|
+| `AAXENFORO2_ENDPOINT` | The full web address to the xenforo2 install. Must include protocol (`https://`) and trailing slash `/` | string | `None` | `https://forums.mysite.com/` |
+| `AAXENFORO2_APIKEY` | XenForo2 Api Key, Must be a superuser key | string | `None` | `default_api_key_value` |
+| `AAXENFORO2_API_USER_ID` | XenForo User ID of an admin to act with via the API | int | `None` | `1` |
+| `AAXENFORO2_DEFAULT_GROUP` | XenForo Group ID to add users to by default | int | `None` | `5` |
+| `AAXENFORO2_EXTRA_GROUP` | XenForo Group ID to add users to in addition to their main group | string | `None` | `"6"` |
