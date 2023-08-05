@@ -1,0 +1,13 @@
+reddish/__init__.py,sha256=QYrKDR9pkXooAO1L8EP6FkVkeoaBHFkk3wz-UyxzQ8U,138
+reddish/_command.py,sha256=pOlMu1rFHnmwQw6KsuPzi5S0gyZsUW4IGqd3qAocB4s,4317
+reddish/_errors.py,sha256=AvNaDVoeqkOgwmAAvOUMl_I7nlGUEf05Zv_9_wvSkwY,49
+reddish/_parser.py,sha256=VzHcC0oSXYW2xV3VyOuxh3Hdv8Zou4ypVadpNl1rfHg,295
+reddish/_redis.py,sha256=Hj9bSGEYnDIjdAZKSfm-YbF3XDtDFuff5PUqVi3v6FE,2280
+reddish/_templating.py,sha256=QZa-GSDPYPjiwuGuf6wgBwiYUOUmfy-GMqJPgLVg6jc,2920
+reddish/_utils.py,sha256=depu2e8oPzLryQnrPcXg9_lAngliCEaXWWXDx4hFDx8,1015
+reddish/models/__init__.py,sha256=w8UmtOQ6bBF1gp2LH8HlSZkA5IX2vxlbd4w0uFMn80M,91
+reddish/models/_basic.py,sha256=PSBqEI-8_O8IbGGu7TktHlcE-os41OCHj3xsPgm40wk,891
+reddish-0.2.3.dist-info/LICENSE,sha256=noBjYswIUTGobQGXd_9OOcJZNwN4Kds_-gGh34vtNM4,1069
+reddish-0.2.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+reddish-0.2.3.dist-info/METADATA,sha256=30IVTQ69ym6_itzw2H42uPLiXv_MdkIj6bUN8MfdHpE,3345
+reddish-0.2.3.dist-info/RECORD,,
