@@ -1,0 +1,7 @@
+large_image_source_gdal/__init__.py,sha256=jwsCDFQZH8I8d1F7MJ-dFcCm82gZe9yPiI13d9H7fnE,54225
+large_image_source_gdal/girder_source.py,sha256=0kA15Y9Qso1OBaJoZ4GiTUff6IPr2irtOHCgx8HfMhg,2317
+large_image_source_gdal-1.8.7.dev10.dist-info/METADATA,sha256=DgIzb9eqacul0QMZMUARswihSrLOvawAXN3qJucsdsM,950
+large_image_source_gdal-1.8.7.dev10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+large_image_source_gdal-1.8.7.dev10.dist-info/entry_points.txt,sha256=FnhT1cpX2OPZM4zUkp14qlJL7EG7ghhNUZV1D12P4Xk,167
+large_image_source_gdal-1.8.7.dev10.dist-info/top_level.txt,sha256=v7SxWp1zba3Xd5dOkueRxkB_2XtET_Q5ywSUWlf1S04,24
+large_image_source_gdal-1.8.7.dev10.dist-info/RECORD,,
