@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+pymatrices/__init__.py
+pymatrices.egg-info/PKG-INFO
+pymatrices.egg-info/SOURCES.txt
+pymatrices.egg-info/dependency_links.txt
+pymatrices.egg-info/top_level.txt
