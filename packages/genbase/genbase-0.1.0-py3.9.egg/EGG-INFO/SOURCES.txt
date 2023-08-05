@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+genbase/__init__.py
+genbase/data.py
+genbase/mixin.py
+genbase/model.py
+genbase.egg-info/PKG-INFO
+genbase.egg-info/SOURCES.txt
+genbase.egg-info/dependency_links.txt
+genbase.egg-info/requires.txt
+genbase.egg-info/top_level.txt
