@@ -1,0 +1,4 @@
+
+    [trytond.modules]
+    carrier_weight_volume_combined = trytond.modules.carrier_weight_volume_combined
+    
