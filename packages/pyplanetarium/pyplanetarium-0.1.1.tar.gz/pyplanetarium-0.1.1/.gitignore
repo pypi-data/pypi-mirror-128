@@ -1,0 +1,16 @@
+# Rust stuff
+/target
+
+# Python stuff
+/dist
+.tox
+maturin_venv
+__pycache__
+
+# Vim tags
+tags
+
+# GitLab CI stuff
+/.cargo
+/cargo
+/html
