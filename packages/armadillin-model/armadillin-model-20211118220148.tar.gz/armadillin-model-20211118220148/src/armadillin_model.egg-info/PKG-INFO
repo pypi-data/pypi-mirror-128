@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: armadillin-model
+Version: 20211118220148
+Summary: Trained models for Armadillin
+Home-page: https://github.com/theosanderson/armadillin-model
+Author: Theo Sanderson
+Author-email: theo@theo.io
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/theosanderson/armadillin-model/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Model
+
+
