@@ -1,0 +1,3 @@
+[console_scripts]
+GeneGrouper = GeneGrouper.__main__:main
+
