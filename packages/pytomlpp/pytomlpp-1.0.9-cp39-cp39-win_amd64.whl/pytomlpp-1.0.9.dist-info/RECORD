@@ -1,0 +1,9 @@
+pytomlpp/__init__.py,sha256=Enydu5oE7vUPQN-nR4KZmGzOdHgWuP8SNGxNMg9AtBA,256
+pytomlpp/_impl.cp39-win_amd64.pyd,sha256=fRgH_gTFg6-xXEXF77w39cHs0dgZsE3k_8U4wZSDYS4,391168
+pytomlpp/_impl.pyi,sha256=ilc5vxJj_4hlupL0AXAC2vnkHMQ4TeDoEX2XIoRY7Xs,115
+pytomlpp/_io.py,sha256=FKYvsSzu8jFhbknz6zpz7AiK4ZYO9EcsnQRn_y07Tn8,1870
+pytomlpp-1.0.9.dist-info/LICENSE,sha256=Mz-9Qv-4JvNxta8BZ6iAXprOZKTbSGDJ34TqQFE9fdE,1109
+pytomlpp-1.0.9.dist-info/METADATA,sha256=WZwDnuie8pZLOHOR3p05mpYo470nsBUgUM7EZ_XjB68,4394
+pytomlpp-1.0.9.dist-info/WHEEL,sha256=MRZ_p7RU4olp1XL4U2EYLkuYikriaVRqXBoKVLH_OSE,100
+pytomlpp-1.0.9.dist-info/top_level.txt,sha256=RHp4QG1BqUDU3DTLdGItb_rh_WzYDxfkCiZ8h_xj0lc,9
+pytomlpp-1.0.9.dist-info/RECORD,,
