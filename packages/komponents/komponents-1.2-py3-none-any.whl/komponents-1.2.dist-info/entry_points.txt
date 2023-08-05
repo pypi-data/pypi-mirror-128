@@ -1,0 +1,3 @@
+[console_scripts]
+komponents = komponents.cli:main
+

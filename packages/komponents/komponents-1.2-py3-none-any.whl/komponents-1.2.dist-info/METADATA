@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: komponents
+Version: 1.2
+Summary: Generates Kubeflow Components from Kubernetes CRD specifications
+Home-page: UNKNOWN
+Author: David Farr
+Author-email: david_farr@intuit.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: cachetools (==4.2.4)
+Requires-Dist: certifi (==2021.10.8)
+Requires-Dist: charset-normalizer (==2.0.7)
+Requires-Dist: google-auth (==2.3.3)
+Requires-Dist: idna (==3.3)
+Requires-Dist: kubernetes (==19.15.0)
+Requires-Dist: oauthlib (==3.1.1)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pyasn1-modules (==0.2.8)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: requests-oauthlib (==1.3.0)
+Requires-Dist: rsa (==4.7.2)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: urllib3 (==1.26.7)
+Requires-Dist: websocket-client (==1.2.1)
+
+# komponents
+
+[![Build and Publish](https://github.com/dfarr/komponents/actions/workflows/workflow.yaml/badge.svg)](https://github.com/dfarr/komponents/actions/workflows/workflow.yaml)
+
+Generates Kubeflow Components from Kubernetes CRD specifications.
+
+## Installation
+```
+pip install komponents
+```
+
+## Usage
+
+First, generate components. Components are specifications that Kubeflow uses to define steps of a pipeline. To generate a component, pipe a CRD specification to `komponents generate`, you must provide a success and failure condition. By default, component specification are written to the `components` directory.
+```
+kubectl get -o yaml crd/my-crd | komponents generate --success-condition status.state==SUCCESS --failure-condition status.state==FAILURE
+```
+
+Once you have generated your components you can plug them into a Kubeflow pipeline. Each field under `spec` of the crd becomes a parameter to the component function. Nested fields are differentiated with an underscore in the parameter name.
+
+```python
+import kfp
+
+crd_op = kfp.components.load_component('components/my-crd-group/my-crd-v1.yaml')
+
+@kfp.dsl.pipeline()
+def pipeline():
+  crd_op(foo='foo', bar='bar', baz_1='baz-1', baz_2='baz-2')
+```
+
+## Development
+```
+python3 -m venv venv
+source venv/bin/activate
+pip install .
+komponents --help
+```
+
+
