@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/Keqing_Sword.egg-info/PKG-INFO
+src/Keqing_Sword.egg-info/SOURCES.txt
+src/Keqing_Sword.egg-info/dependency_links.txt
+src/Keqing_Sword.egg-info/top_level.txt
