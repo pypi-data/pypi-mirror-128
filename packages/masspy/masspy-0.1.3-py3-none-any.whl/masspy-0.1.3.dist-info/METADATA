@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: masspy
+Version: 0.1.3
+Summary: MASSpy is a package for dynamic modeling of biological processes.
+Home-page: https://github.com/SBRG/MASSpy/
+Author: Zachary B. Haiman
+Author-email: zhaiman@eng.ucsd.edu
+Maintainer: Zachary B. Haiman
+Maintainer-email: zhaiman@eng.ucsd.edu
+License: MIT
+Download-URL: https://pypi.org/project/masspy/
+Project-URL: Source, https://github.com/SBRG/MASSpy/
+Project-URL: Documentation, https://masspy.readthedocs.io/
+Project-URL: DockerHub, https://hub.docker.com/r/sbrg/masspy/
+Project-URL: Tracker, https://github.com/SBRG/MASSpy/issues/
+Keywords: python,metabolism,biology,constraint-based modeling,linear programming,mixed-integer,optimization,flux-balance analysis,reconstruction,dynamic simulation,kinetic modeling,ordinary differential equations
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: ~=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: cobra
+Requires-Dist: libroadrunner
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: optlang
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: sympy
+Requires-Dist: tabulate
+Provides-Extra: all
+Requires-Dist: bumpversion ; extra == 'all'
+Requires-Dist: pre-commit ; extra == 'all'
+Requires-Dist: towncrier ; extra == 'all'
+Requires-Dist: tox ; extra == 'all'
+Requires-Dist: escher ; extra == 'all'
+Requires-Dist: ipykernel ; extra == 'all'
+Requires-Dist: nbsphinx ; extra == 'all'
+Requires-Dist: notebook ; extra == 'all'
+Requires-Dist: pandoc ; extra == 'all'
+Requires-Dist: sphinx ; extra == 'all'
+Requires-Dist: sphinx-autoapi ; extra == 'all'
+Requires-Dist: sphinx-rtd-theme ; extra == 'all'
+Requires-Dist: sphinxcontrib-bibtex (~=2.2) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: bumpversion ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: towncrier ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: escher ; extra == 'docs'
+Requires-Dist: ipykernel ; extra == 'docs'
+Requires-Dist: nbsphinx ; extra == 'docs'
+Requires-Dist: notebook ; extra == 'docs'
+Requires-Dist: pandoc ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-autoapi ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinxcontrib-bibtex (~=2.2) ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: coverage[toml] ; extra == 'tests'
+
+UNKNOWN
+
