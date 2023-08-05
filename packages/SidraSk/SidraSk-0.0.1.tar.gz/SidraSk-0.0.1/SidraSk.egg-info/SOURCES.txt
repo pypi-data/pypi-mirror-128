@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SidraSk/SidraELEzz.py
+SidraSk/__init__.py
+SidraSk.egg-info/PKG-INFO
+SidraSk.egg-info/SOURCES.txt
+SidraSk.egg-info/dependency_links.txt
+SidraSk.egg-info/requires.txt
+SidraSk.egg-info/top_level.txt
