@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: github-acc-test
+Version: 0.0.1
+Summary: Test github actions
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 10.2
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Provides-Extra: linear
+
+UNKNOWN
+
