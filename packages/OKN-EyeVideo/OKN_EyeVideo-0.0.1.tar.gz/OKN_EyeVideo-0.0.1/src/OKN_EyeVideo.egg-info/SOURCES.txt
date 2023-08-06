@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/OKN_EyeVideo/__init__.py
+src/OKN_EyeVideo/main.py
+src/OKN_EyeVideo.egg-info/PKG-INFO
+src/OKN_EyeVideo.egg-info/SOURCES.txt
+src/OKN_EyeVideo.egg-info/dependency_links.txt
+src/OKN_EyeVideo.egg-info/top_level.txt
