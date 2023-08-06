@@ -1,0 +1,3 @@
+[console_scripts]
+chitra=chitra.cli.main:app
+
