@@ -1,0 +1,8 @@
+include MANIFEST.in
+include tests/fixtures/README.txt
+include tests/test_*.py
+include README.textile
+include pytest.ini
+include .coveragerc
+include CHANGELOG.textile
+include CONTRIBUTORS.txt
