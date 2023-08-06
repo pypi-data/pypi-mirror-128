@@ -1,0 +1,7 @@
+numpy
+scikit-image
+scipy
+matplotlib
+pyevtk
+pyvista
+vtk
