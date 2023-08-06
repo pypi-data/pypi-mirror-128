@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dg-util
+Version: 0.0.6
+Summary: Common tools
+Home-page: UNKNOWN
+Author: DataGrid
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: python,Tools for Internal Use Only
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: opencv-python
+Requires-Dist: pillow
+Requires-Dist: dlib
+Requires-Dist: imutils
+
+Some common tools for image and video processing
+
+
