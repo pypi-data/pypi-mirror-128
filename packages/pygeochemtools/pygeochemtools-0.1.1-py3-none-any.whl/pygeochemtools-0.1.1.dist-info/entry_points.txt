@@ -1,0 +1,3 @@
+[console_scripts]
+pygt = pygeochemtools.cli:cli
+
