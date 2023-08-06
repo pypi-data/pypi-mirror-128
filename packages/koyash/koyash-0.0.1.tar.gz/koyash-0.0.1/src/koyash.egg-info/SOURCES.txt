@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/koyash.egg-info/PKG-INFO
+src/koyash.egg-info/SOURCES.txt
+src/koyash.egg-info/dependency_links.txt
+src/koyash.egg-info/top_level.txt
+src/mswg/__init__.py
+src/mswg/builder.py

@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: koyash
+Version: 0.0.1
+Summary: This is a Python app to create your own static websites.
+Home-page: https://github.com/MrGranddy/koyash
+Author: Vahit Buğra Yeşilkaynak
+Author-email: bugrayesilkaynak@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/MrGranddy/koyash/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Koyash: A Static Website Generator
+
+This is a Python app to create your own static websites.
+
+Koyash is inspired by Jekyll. My whole career consists of times where I've found WEB incredibly fascinating yet almost each time I try to get into a framework I find myself lost in the syntax and the rules. Koyash provides a very easy to use static website generation framework to everyone.
+
+## The Basic Structure
+
+There is one main component in Koyash **A Page**. \
+Manually crafting HTML pages is bothersome and rarely practiced nowadays. Instead of killing the creative process by making someone try to center a _div_ for hours, Koyash provides a basic config system for your pages, so you can just select a **Layout**, do some customization and add your content.
+
+
