@@ -1,0 +1,17 @@
+.gitignore
+Makefile
+README.md
+setup.py
+bin/fastsubtrees-construct
+bin/fastsubtrees-query
+fastsubtrees/__init__.py
+fastsubtrees/_scripts_support.py
+fastsubtrees/error.py
+fastsubtrees/tree.py
+fastsubtrees.egg-info/PKG-INFO
+fastsubtrees.egg-info/SOURCES.txt
+fastsubtrees.egg-info/dependency_links.txt
+fastsubtrees.egg-info/not-zip-safe
+fastsubtrees.egg-info/requires.txt
+fastsubtrees.egg-info/top_level.txt
+testdata/small_tree.tsv
