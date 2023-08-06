@@ -1,0 +1,12 @@
+koshka/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koshka/httpls.py,sha256=NqvZRjRgDflCCw6OzlRypx-7fBtLOfvrxDqgaXU8bVM,2136
+koshka/kot.py,sha256=geuuUfKejHCvPEonlSEWdcSbp3kBdro4cG4T3pzhlps,4443
+koshka/kote.py,sha256=VfW1ArtZXvimxuFd2oefJigOzBmjDhbEm3caQ-xirdU,2863
+koshka/s3.py,sha256=_dh4HGtfklwLm1DwpEBwA25vYx-vRHvlXDcyLjVnCmk,4100
+koshka/tests.py,sha256=5L5quO3KIuocnoRpr_FB4jlqd4_8bUh9WiS21Va-kto,1418
+koshka/version.py,sha256=VGGoOt20gxCYwNL2WcRl8VbV7eV_mXCylIQoUrNiOx8,72
+koshka-0.7.dist-info/METADATA,sha256=K7hcJ66wWejPXc2G2Rd2PFtgjI3GklgS5tItdgKh_3k,4952
+koshka-0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+koshka-0.7.dist-info/entry_points.txt,sha256=IcpYKxswD5gh-KNEeecIDhiIY2aIMJZHC2FZGDVYuNI,65
+koshka-0.7.dist-info/top_level.txt,sha256=NYKCkjM9zUE2wVVTUNrKjW7_PV22Bmd12XJ2dTFdz_Y,7
+koshka-0.7.dist-info/RECORD,,
