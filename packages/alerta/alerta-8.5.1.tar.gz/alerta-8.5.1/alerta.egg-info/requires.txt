@@ -1,0 +1,5 @@
+Click
+pytz
+requests
+requests_hawk
+tabulate
