@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pytrombone
+Version: 0.1.0
+Summary: Wrapper for the Trombone project
+License: BSD-3
+Author: Gabriel Couture
+Author-email: gacou54@ulaval.ca
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.26.0,<3.0.0)
