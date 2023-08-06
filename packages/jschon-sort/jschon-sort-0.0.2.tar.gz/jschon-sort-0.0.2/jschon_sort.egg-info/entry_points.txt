@@ -1,0 +1,3 @@
+[console_scripts]
+jschon-sort = jschon_sort.cli:main
+
