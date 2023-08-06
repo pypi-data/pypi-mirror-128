@@ -1,0 +1,36 @@
+{% load i18n %}
+{% load l10n %}
+{% load humanize %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Sell Orders</h3>
+    </div>
+    <div class="panel-body">
+        {% if sell_orders %}
+        <table class="table table-hover" id="table-sell-orders">
+            <thead>
+                <tr>
+                    <th class="text-left">{% translate "Region" %}</th>
+                    <th class="text-left">{% translate "Quantity" %}</th>
+                    <th class="text-left">{% translate "Price" %}</th>
+                    <th class="text-left">{% translate "Location" %}</th>
+                    <th class="text-left">{% translate "Expires" %}</th>
+                    <th class="text-left">{% translate "Received At" %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for sell_order in sell_orders %}
+                    <tr>
+                        <td class="text-left">{{ sell_order.eve_region.name }}</td>
+                        <td class="text-right">{{ sell_order.volume_remain }}</td>
+                        <td class="text-right">{{ sell_order.price }}</td>
+                        <td class="text-left">{{ sell_order.location_resolved }}</td>
+                        <td class="text-right">{{ sell_order.expiry_calculated|date:'Y-m-d H:i' }}</td>
+                        <td class="text-right">{{ sell_order.updated_at|date:'Y-m-d H:i' }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+</div>
