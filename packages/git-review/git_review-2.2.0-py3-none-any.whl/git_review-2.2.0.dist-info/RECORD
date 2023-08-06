@@ -1,0 +1,16 @@
+git_review/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_review/cmd.py,sha256=Kau_1n8HXhOWZSAr0A7jUXBMtoSSThyxXU4us3967Js,63674
+git_review/tests/__init__.py,sha256=1VXdqfhdg2oF0MQteoqQn9kYxLU5GNUg39sY1TIlT-U,18058
+git_review/tests/check_test_id_hashes.py,sha256=UhyhrHpzPcGNp5Dj94L5JTjgPdJvZJ7fBAhItBZtGXI,1655
+git_review/tests/prepare.py,sha256=Vr4DEeOhNnnZrKMUj0-bSh3g3-eHh3zzWZcjXRWzZK0,784
+git_review/tests/test_git_review.py,sha256=8ADyKJTyoG6Pknk96ENQwBqlc2HPNo9Re0VA37Km7KY,27116
+git_review/tests/test_unit.py,sha256=T1Sd2qjlBiRwmbK7uffjuiYZuD_SD0CyVxYtBXK9vHo,17588
+git_review/tests/utils.py,sha256=7-v0LjAy_QmOTvQyFKWUP8EwobStoPlW4Y_YtghUar8,2419
+git_review-2.2.0.data/data/share/man/man1/git-review.1,sha256=ygV-SELdtJfL57UQbVAkPR0N5-sO9y5DXg-G5rEteZI,16419
+git_review-2.2.0.dist-info/AUTHORS,sha256=kXK0MiD8016yj93pMRWTtAMfh1Xaz9L9zvjV3iYPlmc,3682
+git_review-2.2.0.dist-info/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+git_review-2.2.0.dist-info/METADATA,sha256=Uk4BnI2gvR3KU4ue-3VSYV30s-XTu-FFGGOiEVs_5fM,1953
+git_review-2.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+git_review-2.2.0.dist-info/entry_points.txt,sha256=_d59O2mo4xMrsxSSOv7ems83XhKqNueXv5Y9f-GGR1U,52
+git_review-2.2.0.dist-info/top_level.txt,sha256=zR6b84BVnOtpJh7zT-W9ak5dBP-OFlTnmCzGFRA7pH0,11
+git_review-2.2.0.dist-info/RECORD,,
