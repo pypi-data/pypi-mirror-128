@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: bkash-client
+Version: 0.2.4
+Summary: A Client for Bkash API.
+Home-page: https://gitlab.com/codesigntheory/python-bkash-client
+Author: Utsob Roy
+Author-email: roy@co.design
+License: MIT
+Project-URL: Documentation, https://python-bkash-client.readthedocs.io/
+Project-URL: Changelog, https://python-bkash-client.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://gitlab.com/codesigntheory/python-bkash-client/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: pydantic
+Requires-Dist: requests
+
+========
+Overview
+========
+
+A Client for BKash API.
+
+**Free software: Mozilla Public License Version 2.0**
+
+Disclaimer
+===========
+
+Work in progress! DO NOT USE!
+
+
+Why?
+====
+
+A client library should be intuitive to use, rich in coding aid (e.g. typing and validation). We hope to meet that standard.
+
+Features
+=========
+* Pydantic powered dataclasses for every request (in request one can also use :code:`dict` that will be converted to a `dataclass`) and response.
+* Methods for all official endpoints.
+
+Installation
+============
+
+::
+
+    pip install bkash-client
+
+You can also install the in-development version with::
+
+    pip install https://gitlab.com/codesigntheory/python-bkash-client/-/archive/master/python-bkash-client-master.zip
+
+
+Documentation
+=============
+
+
+https://python-bkash-client.readthedocs.io/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+0.2.2 (2021-09-14)
+-------------------
+
+* Fix: Search response.
+
+0.2.1 (2021-09-14)
+-------------------
+
+* Fix: Query response.
+
+0.0.0 (2021-06-23)
+------------------
+
+* First release on PyPI.
+
+
