@@ -1,0 +1,12 @@
+jsonwspclient/__init__.py,sha256=GDUIZEGKlyiWYqqsrDVp0OpIfJqdmo8Bt1eed2PpbrY,472
+jsonwspclient/jsonwspclient.py,sha256=dq10B2kp5NjuY79kZy2gMEG6W_A8jRh1CKv8GQYJY_U,9092
+jsonwspclient/jsonwspexceptions.py,sha256=Mb9WLroX5DWAvTpg1hLj-c9zTGWIaCuN40yOcnAIvTo,1728
+jsonwspclient/jsonwspmultipart.py,sha256=xl0nUESwayQTg78Uti-NPFZnb82k7ue_e9EljqClQvo,15006
+jsonwspclient/jsonwspresponse.py,sha256=IxATnGxVehJAQIKT3gsnqQ-IM7MK-LVNGtX6n-2pz1g,5343
+jsonwspclient/jsonwspservice.py,sha256=SMmS51dfqXEmbIt1ZYoXMF-IIZGkEkAw2G6uABK9n2I,7221
+jsonwspclient/jsonwsputils.py,sha256=jq_fbZqdTBy-c1ld6_9dv5MQ4xT9ZULAP-OhQcLRDkA,6474
+jsonwspclient/requirements.txt,sha256=-GbPkNY0mQKomdkEqMdySwkrY-0W-iUwyFnsF31wxo4,17
+jsonwspclient-2.1.1.dist-info/LICENSE.txt,sha256=qUY9YVOy0AkgZ_AIO9ozWlynfV7vz3RVPu9tzUobhmo,1076
+jsonwspclient-2.1.1.dist-info/WHEEL,sha256=DRf8A_Psd1SF2kVqTQOOFU1Xzl3-A2qljAxBMTOusUs,83
+jsonwspclient-2.1.1.dist-info/METADATA,sha256=f7e71ffexbyYyibg4lKzbX_c6VyZvGd2atKKH9qDmCc,2298
+jsonwspclient-2.1.1.dist-info/RECORD,,
