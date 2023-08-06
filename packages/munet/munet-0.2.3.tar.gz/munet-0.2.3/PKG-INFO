@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: munet
+Version: 0.2.3
+Summary: A package to facilitate network simulations
+Home-page: https://github.com/LabNConsulting/munet
+License: GPL-2.0-or-later
+Author: Christian Hopps
+Author-email: chopps@labn.net
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: ide
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: Pygments (>=2.10.0,<3.0.0); extra == "ide"
+Requires-Dist: autoflake (>=1.4,<2.0); extra == "ide"
+Requires-Dist: flake8 (>=3.9.2,<4.0.0); extra == "ide"
+Requires-Dist: importmagic (>=0.1.7,<0.2.0); extra == "ide"
+Requires-Dist: jedi (>=0.18.0,<0.19.0); extra == "ide"
+Requires-Dist: json-rpc (>=1.13.0,<2.0.0); extra == "ide"
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/LabNConsulting/munet
+Description-Content-Type: text/markdown
+
+# μNET (munet)
+
+A package for creating network topologies and running programs and containers
+within them using linux namepsaces.
+
