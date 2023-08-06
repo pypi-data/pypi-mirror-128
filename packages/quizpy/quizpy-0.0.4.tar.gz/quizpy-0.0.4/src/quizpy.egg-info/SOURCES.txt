@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/quizpy/__init__.py
+src/quizpy/common.py
+src/quizpy/drag.py
+src/quizpy/multipe_choice.py
+src/quizpy/numerical.py
+src/quizpy/text.py
+src/quizpy.egg-info/PKG-INFO
+src/quizpy.egg-info/SOURCES.txt
+src/quizpy.egg-info/dependency_links.txt
+src/quizpy.egg-info/top_level.txt
