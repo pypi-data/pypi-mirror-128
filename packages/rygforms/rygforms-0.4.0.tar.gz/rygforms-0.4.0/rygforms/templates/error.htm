@@ -1,0 +1,14 @@
+{% extends "stampo.html" %}
+
+{% block title %}Errore{% endblock %}
+
+{% block center %}
+    <section class="panel panel-box color-red">
+        <h3>
+            {{e}}
+        </h3>
+        <p>
+            {{text}}
+        </p>
+    </section>
+{% endblock %}
