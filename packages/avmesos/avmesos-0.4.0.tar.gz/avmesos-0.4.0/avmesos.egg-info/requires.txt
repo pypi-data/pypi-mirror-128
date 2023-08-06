@@ -1,0 +1,4 @@
+cryptography
+kazoo
+pyjwt
+requests
