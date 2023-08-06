@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ar-one-qdk-web
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: PunchyArchy
+Author-email: ksmdrmvscthny@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: qodex-dk
+
+QDK для взаимодействия с WServer.
+
