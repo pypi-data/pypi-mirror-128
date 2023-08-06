@@ -1,0 +1,8 @@
+sqlalchemy
+pymysql
+redis
+boto3
+requests
+
+[airflow]
+dag_factory
