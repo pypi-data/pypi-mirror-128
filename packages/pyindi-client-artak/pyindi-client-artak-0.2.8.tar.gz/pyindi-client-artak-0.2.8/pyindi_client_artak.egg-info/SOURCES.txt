@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+indiclientpython.i
+setup.cfg
+setup.py
+pyindi_client_artak.egg-info/PKG-INFO
+pyindi_client_artak.egg-info/SOURCES.txt
+pyindi_client_artak.egg-info/dependency_links.txt
+pyindi_client_artak.egg-info/top_level.txt
