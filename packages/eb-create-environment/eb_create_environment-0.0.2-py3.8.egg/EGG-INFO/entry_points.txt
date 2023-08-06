@@ -1,0 +1,3 @@
+[console_scripts]
+eb-create-environment = eb_create_environment.script:main
+
