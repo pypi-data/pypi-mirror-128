@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: django_http_log
+Version: 0.0.3
+Summary: 记录django, http请求日志，并存到mongodb中
+Home-page: https://gitee.com/zhsjch/django_http_log.git
+Author: JiChaoSong
+Author-email: jichaosong@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
