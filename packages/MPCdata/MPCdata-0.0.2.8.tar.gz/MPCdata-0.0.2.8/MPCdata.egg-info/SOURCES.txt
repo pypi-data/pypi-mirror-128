@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+MPCdata/MPC_parser.py
+MPCdata/__init__.py
+MPCdata.egg-info/PKG-INFO
+MPCdata.egg-info/SOURCES.txt
+MPCdata.egg-info/dependency_links.txt
+MPCdata.egg-info/requires.txt
+MPCdata.egg-info/top_level.txt
