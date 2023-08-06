@@ -1,0 +1,11 @@
+strip_whitespace/middlewares/HtmlStripWhiteSpaceMiddleware.py,sha256=VNHYS5yZOuKKob6vzvPHhaJEFe75-ltbfCfznWEO8Ec,4061
+strip_whitespace/middlewares/variables/__init__.py,sha256=jYUMvCxZquio1E1Z49cWYche4Fhn0ozlpawz-qCMiE0,1028
+strip_whitespace/middlewares/variables/ignored_paths.py,sha256=vf10Z1s_wynNMbVfgHQqPT50xNOlMviu_IGwR-SLqkA,277
+strip_whitespace/middlewares/variables/nbsp_mangle_character.py,sha256=pf-IyTF4MUP4dSmCFIIPWEx6RFv7664GCjVMlWwEAfM,258
+strip_whitespace/middlewares/variables/python.py,sha256=LhglXCdvTXpJDbO7GFcl5SWlgyaThwTJmB1uKwfWDX0,1292
+strip_whitespace/middlewares/variables/rust.py,sha256=HddIhBkbEPtIK_wN41ElyuDweuLxhxiZHshZS9vTJDo,1643
+django_strip_whitespace-0.2.0.dist-info/LICENSE,sha256=oO50YGSwbQnKsHaBFuwmX9DUUmHUCHya0saYoHx6rA4,35803
+django_strip_whitespace-0.2.0.dist-info/METADATA,sha256=XJ_iVKmr_z2tmOxqDFVepyLRFGfyqs5GeVnIWOTCyBI,9883
+django_strip_whitespace-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_strip_whitespace-0.2.0.dist-info/top_level.txt,sha256=bZ1y1di0JeYYTFNlNXAI5pAQ8GLa-3xkolYalTohEfI,17
+django_strip_whitespace-0.2.0.dist-info/RECORD,,
