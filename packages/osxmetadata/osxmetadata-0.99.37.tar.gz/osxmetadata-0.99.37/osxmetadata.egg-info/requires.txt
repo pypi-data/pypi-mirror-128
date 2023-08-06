@@ -1,0 +1,11 @@
+xattr>=0.9.7
+click>=7.0
+bitstring>=3.1.9
+py-applescript==1.0.2
+pyobjc-core<9.0,>=7.3
+pyobjc-framework-AppleScriptKit<9.0,>=7.3
+pyobjc-framework-AppleScriptObjC<9.0,>=7.3
+pyobjc-framework-Cocoa<9.0,>=7.3
+pyobjc-framework-AVFoundation<9.0,>=7.3
+pyobjc-framework-Quartz<9.0,>=7.3
+pyobjc-framework-CoreMedia<9.0,>=7.3
