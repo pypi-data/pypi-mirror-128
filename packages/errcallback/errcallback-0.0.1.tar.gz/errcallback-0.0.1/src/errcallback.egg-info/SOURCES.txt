@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/errcallback/__init__.py
+src/errcallback/errcallback.py
+src/errcallback.egg-info/PKG-INFO
+src/errcallback.egg-info/SOURCES.txt
+src/errcallback.egg-info/dependency_links.txt
+src/errcallback.egg-info/top_level.txt
