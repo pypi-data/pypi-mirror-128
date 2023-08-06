@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "lazyds"
+version = "0.211124.3"
+description = "Useful Data Science libraries wrapped by laziness"
+authors = ["davips <dpsabc@gmail.com>"]
+license = "GPL"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+scikit-learn = "^1.0.1"
+pandas = "^1.3.2"
+idict = "^1.211124.1"
+arff2pandas = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+autoreadme = "^0.2102.20"
+pytest = "^6.2.5"
+pytest-cov = "^2.12.1"
+black = "^21.8b0"
+pypiserver = "^1.4.2"
+passlib = "^1.7.4"
+pylint = "^2.10.2"
+ipython = "^7.27.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+#[[tool.poetry.source]]
+#name = "dvpypi"
+#url = "http://localhost:8080/simple"
+#secondary = true
