@@ -1,0 +1,25 @@
+Release 0.1.0.dev5
+------------------
+
+1. Added module ``dictmarker`` (a unique file ``dictmaker.py``) containining **two new functions**:
+
+``get_dict(file: TypeVar('File', str, io.StringIO), dtype: str, sep: str = ':', isStringIO: bool = False) -> dict:``
+
+and:
+
+``get_dicts_list(filelist: Iterable[str], dtypelist: Iterable[str], isStringIO: Iterable[bool], sep: str = ':') -> dict:``
+
+
+New functions are intended to read files of parameters and convert each data file into a python dictionary.
+
+
+(see description and examples of use in ``pvlab``'s `documentation`_).
+
+2. A new section ``I/O Management`` has been added to documentation.
+
+3. Some parts of Documentation in section **Math operations** have been rewritten, including titles.
+
+4. Some parts of Documentation in section **Create Dataframes** have been rewritten, including titles.
+
+
+.. _documentation: https://pvlab.readthedocs.io/en/latest

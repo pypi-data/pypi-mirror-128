@@ -1,0 +1,4 @@
+Release 0.1.0.dev6
+------------------
+
+1. Added test cases for module ``dictmaker`` (file test_dictmaker.py). Test classes derive from ``unittest.TestCase`` class.

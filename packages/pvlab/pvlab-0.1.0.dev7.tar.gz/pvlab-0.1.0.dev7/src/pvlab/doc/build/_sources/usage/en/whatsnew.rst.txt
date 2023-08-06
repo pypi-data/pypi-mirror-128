@@ -1,0 +1,15 @@
+==========
+What's New
+==========
+
+See what's new in the latest release of ``pvlab`` project.
+
+(check README.rst for a general description of the project and its content).
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Release History
+   :numbered: 0
+
+   /usage/en/releases/v0.1.0

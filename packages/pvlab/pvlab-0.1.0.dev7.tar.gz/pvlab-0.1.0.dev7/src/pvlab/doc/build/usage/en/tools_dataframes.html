@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>5. Sub-package dataframes &#8212; pvlab 0.1.0.dev1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6. Sub-package math" href="tools_math.html" />
+    <link rel="prev" title="4. Installation" href="installation.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-pvlab.dataframes">
+<span id="sub-package-dataframes"></span><h1><span class="section-number">5. </span>Sub-package dataframes<a class="headerlink" href="#module-pvlab.dataframes" title="Permalink to this headline">¶</a></h1>
+<p>Provide tools to manage dataframes in the context of calibration.</p>
+<p>It contains the following python modules:</p>
+<section id="module-pvlab.dataframes.dfdicts">
+<span id="module-dfdicts"></span><h2>Module dfdicts<a class="headerlink" href="#module-pvlab.dataframes.dfdicts" title="Permalink to this headline">¶</a></h2>
+<p>Perform type-conversion and <em>pretty-print</em> operations for dictionaries.</p>
+<p>It contains the following functions:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pvlab.dataframes.dfdicts.dict_to_df">
+<span class="sig-prename descclassname"><span class="pre">pvlab.dataframes.dfdicts.</span></span><span class="sig-name descname"><span class="pre">dict_to_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dictionary</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><span class="pre">dict</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><span class="pre">list</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pandas.core.frame.DataFrame</span></span></span><a class="headerlink" href="#pvlab.dataframes.dfdicts.dict_to_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>Re-arrange a dictionary to become a pandas dataframe.</p>
+<p>It performs a type conversion of a dictionary (e.g. a dictionary that
+represents some kind of valid time intervals),
+returning a <code class="docutils literal notranslate"><span class="pre">pandas</span></code> DataFrame.</p>
+<p><strong>Example 1</strong>: correct functioning.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dates</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;START_1&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">2021</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="s1">&#39;END_1&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">2021</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">52</span><span class="p">,</span><span class="mi">0</span><span class="p">)}</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;%Y&#39;</span><span class="p">,</span> <span class="s1">&#39;%m&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;%H&#39;</span><span class="p">,</span> <span class="s1">&#39;%M&#39;</span><span class="p">,</span> <span class="s1">&#39;%S&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dict_to_df</span><span class="p">(</span><span class="n">dates</span><span class="p">,</span> <span class="n">columns</span><span class="p">)</span>
+<span class="go">           %Y  %m  %d  %H  %M  %S</span>
+<span class="go">START_1  2021   5   5   8   1   0</span>
+<span class="go">END_1    2021   5   6  22  52   0</span>
+</pre></div>
+</div>
+<p><strong>Example 2</strong>: the columns list is too short.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;%Y&#39;</span><span class="p">,</span> <span class="s1">&#39;%m&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;%H&#39;</span><span class="p">,</span> <span class="s1">&#39;%M&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dict_to_df</span><span class="p">(</span><span class="n">dates</span><span class="p">,</span> <span class="n">columns</span><span class="p">)</span>  
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">ValueError</span>: <span class="n">Length of columns list is equal to 5, but has to be equal to 6.</span>
+</pre></div>
+</div>
+<p><strong>Example 3</strong>: the columns list is too long.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;%Y&#39;</span><span class="p">,</span> <span class="s1">&#39;%m&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;%H&#39;</span><span class="p">,</span> <span class="s1">&#39;%M&#39;</span><span class="p">,</span> <span class="s1">&#39;%S&#39;</span><span class="p">,</span> <span class="s1">&#39;%mS&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dict_to_df</span><span class="p">(</span><span class="n">dates</span><span class="p">,</span> <span class="n">columns</span><span class="p">)</span>  
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">ValueError</span>: <span class="n">Length of columns list is equal to 7, but has to be equal to 6.</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pvlab.dataframes.dfdicts.print_dict">
+<span class="sig-prename descclassname"><span class="pre">pvlab.dataframes.dfdicts.</span></span><span class="sig-name descname"><span class="pre">print_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dictionary</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><span class="pre">dict</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><span class="pre">list</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#pvlab.dataframes.dfdicts.print_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prettyprint a dictionary of dates, adding a title.</p>
+<p><strong>Example</strong>: correct functioning.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dates</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;START_1&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">2021</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="s1">&#39;END_1&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">2021</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">52</span><span class="p">,</span><span class="mi">0</span><span class="p">)}</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;%Y&#39;</span><span class="p">,</span> <span class="s1">&#39;%m&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;%H&#39;</span><span class="p">,</span> <span class="s1">&#39;%M&#39;</span><span class="p">,</span> <span class="s1">&#39;%S&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Valid time intervals&#39;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">print_dict</span><span class="p">(</span><span class="n">dates</span><span class="p">,</span> <span class="n">columns</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span>
+<span class="go">Valid time intervals</span>
+<span class="go"> --------------------</span>
+<span class="go">            %Y  %m  %d  %H  %M  %S</span>
+<span class="go">START_1  2021   5   5   8   1   0</span>
+<span class="go">END_1    2021   5   6  22  52   0</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">pvlab</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="LICENSE.html">1. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html">2. The PVLab Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">3. What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">4. Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Sub-package dataframes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-pvlab.dataframes.dfdicts">Module dfdicts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tools_math.html">6. Sub-package math</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="installation.html" title="previous chapter"><span class="section-number">4. </span>Installation</a></li>
+      <li>Next: <a href="tools_math.html" title="next chapter"><span class="section-number">6. </span>Sub-package math</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Silva J.P..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/usage/en/tools_dataframes.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

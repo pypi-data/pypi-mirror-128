@@ -1,0 +1,11 @@
+Release 0.1.0
+-------------
+Wellcome to the first release of ``pvlab`` software package!!
+
+In the present release, this library provides a set of tools in order to facilitate the treatment of data for the outdoor calibration of pyranometers.
+
+It is inspired in the calibration procedure corresponding to the *outdoor calibration* sections in ISO 9847 International Standard.
+
+Mainly, it contains convenient functions and classes that help to facilitate the data treatment. These functions can be grouped together in order to achieve complex tasks like data filtering, determination of responsivities or the calculation of the total uncertainty.
+
+Eventually, ``pvlab`` will try to widen its scope to further calibration procedures of solar sensors and photovoltaic devices.

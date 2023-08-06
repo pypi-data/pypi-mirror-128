@@ -1,0 +1,4 @@
+Release 0.1.0.dev4
+------------------
+
+Minor changes and bug corrections.

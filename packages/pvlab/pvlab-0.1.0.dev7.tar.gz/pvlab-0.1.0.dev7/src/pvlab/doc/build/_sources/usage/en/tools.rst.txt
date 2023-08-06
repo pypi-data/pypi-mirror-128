@@ -1,0 +1,21 @@
+=============
+Package tools
+=============
+
+Sub-package Dataframes
+----------------------
+.. automodule:: pvlab.dataframes
+
+Module dfdicts
+^^^^^^^^^^^^^^
+.. automodule:: pvlab.dataframes.dfdicts
+   :members:
+
+Math tools
+----------
+.. py:module:: pvlab.math
+
+.. automodule:: pvlab.math
+
+.. automodule:: pvlab.math.hypot
+   :members:
