@@ -1,0 +1,3 @@
+[console_scripts]
+sharpshooter = sharpshooter.__main__:run
+
