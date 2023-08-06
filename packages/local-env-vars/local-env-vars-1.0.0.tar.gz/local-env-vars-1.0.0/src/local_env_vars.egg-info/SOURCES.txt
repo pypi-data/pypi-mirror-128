@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/local_env_vars/__init__.py
+src/local_env_vars/env.py
+src/local_env_vars.egg-info/PKG-INFO
+src/local_env_vars.egg-info/SOURCES.txt
+src/local_env_vars.egg-info/dependency_links.txt
+src/local_env_vars.egg-info/top_level.txt
