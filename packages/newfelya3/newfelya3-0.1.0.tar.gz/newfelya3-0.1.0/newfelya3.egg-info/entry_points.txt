@@ -1,0 +1,3 @@
+[console_scripts]
+newfelya3 = newfelya3.core:minus
+
