@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: looker_ingestion
+Version: 0.0.1
+Summary: Extracts adhoc queries from the Looker API to S3
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+UNKNOWN
+
