@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: refill
+Version: 0.1.2
+Summary: Reimagined filling of document templates
+Home-page: https://github.com/trackuity/refill
+License: Apache License, Version 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Provides-Extra: all
+Provides-Extra: pptx
