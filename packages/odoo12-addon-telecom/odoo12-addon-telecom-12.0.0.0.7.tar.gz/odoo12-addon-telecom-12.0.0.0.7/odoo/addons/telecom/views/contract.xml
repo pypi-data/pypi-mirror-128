@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <data>
+    <record id="view_form_contract" model="ir.ui.view">
+      <field name="model">contract.contract</field>
+      <field name="name">contract.form.telecom</field>
+      <field name="inherit_id" ref="contract.contract_contract_customer_form_view"/>
+      <field name="arch" type="xml">
+        <field name="partner_id" position="after">
+          <field name="product_category_id"/>
+          <field name="is_broadband" invisible="1"/>
+          <field name="is_mobile" invisible="1"/>
+          <field name="broadband_isp_info" attrs="{'invisible': [('is_broadband', '=', False)]}"/>
+          <field name="mobile_isp_info" attrs="{'invisible': [('is_mobile', '=', False)]}"/>
+        </field>
+      </field>
+    </record>
+    <record id="view_form_contract" model="ir.ui.view">
+      <field name="model">contract.contract</field>
+      <field name="name">contract.contract.form.telecom</field>
+      <field name="inherit_id" ref="contract.contract_contract_form_view"/>
+      <field name="arch" type="xml">
+        <field name="partner_id" position="after">
+          <field name="current_tariff"/>
+        </field>
+      </field>
+    </record>
+    <record id="view_tree_contract" model="ir.ui.view">
+      <field name="model">contract.contract</field>
+      <field name="name">contract.contract.tree.telecom</field>
+      <field name="inherit_id" ref="contract.contract_contract_tree_view"/>
+      <field name="arch" type="xml">
+        <field name="partner_id" position="after">
+          <field name="current_tariff"/>
+        </field>
+      </field>
+    </record>
+    <act_window id="action_contract_telecom" name="Telecom Contracts"
+      res_model="contract.contract" view_mode="tree,form,pivot"
+      domain="['|','|', ('is_mobile','=',True), ('is_broadband','=',True), ('is_landline','=',True)]"
+      />
+
+    <record id="view_pivot_contract" model="ir.ui.view">
+      <field name="model">contract.contract</field>
+      <field name="name">contract.pivot.telecom</field>
+      <field name="arch" type="xml">
+        <pivot/>
+      </field>
+    </record>
+  </data>
+</odoo>
