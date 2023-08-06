@@ -1,0 +1,9 @@
+cloudcomponents/cdk_codecommit_backup/__init__.py,sha256=Xt8WubB7KgWnS6aJ0DCZS4e9EgBfLT9p9AP2ulWqS8c,50561
+cloudcomponents/cdk_codecommit_backup/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cloudcomponents/cdk_codecommit_backup/_jsii/__init__.py,sha256=suDEpWt3IEi5RR_vd4-jF5ugNrqEVfGe0j1Gx7_htpU,647
+cloudcomponents/cdk_codecommit_backup/_jsii/cdk-codecommit-backup@1.46.0.jsii.tgz,sha256=AdnL17H_sRO_09dsRL6v_4J_dwwneWf8hRbJLtconO4,66000
+cloudcomponents.cdk_codecommit_backup-1.46.0.dist-info/LICENSE,sha256=DC5mwzjdvc14vNIkGbMDFyOOJTkxI2b_1OtpeNA0A0A,1072
+cloudcomponents.cdk_codecommit_backup-1.46.0.dist-info/METADATA,sha256=fE5GpCC6fsNXKy1wci__wHYmmqpnA6pKMbjdVTfOK60,4749
+cloudcomponents.cdk_codecommit_backup-1.46.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cloudcomponents.cdk_codecommit_backup-1.46.0.dist-info/top_level.txt,sha256=B4EWas985OPzDPLZgw2jcOsscXpuQJyowJnB5pl9rpQ,16
+cloudcomponents.cdk_codecommit_backup-1.46.0.dist-info/RECORD,,
