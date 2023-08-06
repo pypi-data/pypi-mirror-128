@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: django-influx-logs
+Version: 0.0.3
+Summary: Django Influx Logs: put your application logs into InfluxDB.
+Home-page: https://github.com/lazybird/django-influx-logs/
+Author: lazybird
+License: MIT License
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: influxdb
+
+# Django Influx Logs
+
+Put your application logs into InfluxDB
+
+
