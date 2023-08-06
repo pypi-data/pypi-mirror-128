@@ -1,0 +1,3 @@
+[console_scripts]
+greport = greport.__main__:main
+

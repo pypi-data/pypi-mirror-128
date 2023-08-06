@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: greport
+Version: 0.1.6
+Summary: Generate html from googletest xml file
+Home-page: https://github.com/niedong/greport
+Author: niedong
+Author-email: niedong0816@126.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# greport
+
+Python tool that generate *html* test report from googletest *xml* file
+
+## Installation
+
+```
+pip install greport
+```
+
+## Usage
+
+```
+greport [-h] -f FILE -o OUTPUT
+```
+
+
