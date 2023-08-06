@@ -1,0 +1,12 @@
+hugedict/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hugedict/cachedict.py,sha256=2aFWB1Pg3YbnTQyfRrDq-wtwqUllLfhwCMc2jALBWDI,1186
+hugedict/misc.py,sha256=5oB0n5ciNx7lOXwEFHJe6Vi6i36h9NOtREQzts5xOpc,274
+hugedict/mrsw_rocksdb.py,sha256=bKjZwYn80vRx5xUez3s7_6uaodS9sRluxPikCeVIslg,4697
+hugedict/parallel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hugedict/parallel/fn_wrapper.py,sha256=GrRW6BM5C0eGp9xK_ahi37Rf7Xm0GKcVGOR_WxB_vmU,1192
+hugedict/parallel/parallel.py,sha256=XToodZ4pCXSNR3ruDdBmsVLy1AY1eT0rXTSdfaRNrmE,5529
+hugedict/rocksdb.py,sha256=swZCn2TGE4WTS5gs2DKgbMFp74FH3BEneUgbsdcLm-Y,3944
+hugedict/types.py,sha256=fFN25IqFmlzSVSqIiHELN2yh830TsEgi0VL_TolKYRU,87
+hugedict-1.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+hugedict-1.0.0.dist-info/METADATA,sha256=wLtNOwzYoC1dXOz5Gxdf2K9Uz4r6tc7Fm6TpRF3Bl8E,638
+hugedict-1.0.0.dist-info/RECORD,,
