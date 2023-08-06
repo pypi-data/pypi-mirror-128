@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: izaber-zerp
+Version: 2.0.20211119
+Summary: Old style izaber.zerp connectivity
+Author: Aki Mimoto
+Author-email: aki@zaber.com
+Requires-Python: >=3.6.0,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: izaber (>=2.20210919)
+Requires-Dist: pytz (>=2014.4)
