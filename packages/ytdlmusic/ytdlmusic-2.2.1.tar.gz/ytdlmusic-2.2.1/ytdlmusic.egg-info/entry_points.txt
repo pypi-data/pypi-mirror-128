@@ -1,0 +1,3 @@
+[console_scripts]
+ytdlmusic = ytdlmusic.__init__:ytdlmusic
+
