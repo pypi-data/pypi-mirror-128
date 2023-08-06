@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+de/setup_project.py
+de_setup_project.egg-info/PKG-INFO
+de_setup_project.egg-info/SOURCES.txt
+de_setup_project.egg-info/dependency_links.txt
+de_setup_project.egg-info/requires.txt
+de_setup_project.egg-info/top_level.txt
+de_setup_project.egg-info/zip-safe
