@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: redmx
+Version: 0.1.0
+Summary: Rate, Errors and Duration Metrics.
+Home-page: https://github.com/locp/redmx
+Author: League of Crafty Programmers Ltd.
+Author-email: info@locp.co.uk
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/locp/redmx/issues
+Keywords: metrics
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# redmx
+Rate, Errors and Duration Metrics
+
+
