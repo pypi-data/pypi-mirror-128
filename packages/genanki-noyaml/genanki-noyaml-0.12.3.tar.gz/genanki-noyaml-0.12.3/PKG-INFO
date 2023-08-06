@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: genanki-noyaml
+Version: 0.12.3
+Summary: Generate Anki decks programmatically (pyodide friendly fork)
+Home-page: http://github.com/brumar/genanki
+Author: Bruno Martin
+Author-email: martin.bruno.mail@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: anki,flashcards,memorization
+Platform: UNKNOWN
+Requires-Python: >=3.6
