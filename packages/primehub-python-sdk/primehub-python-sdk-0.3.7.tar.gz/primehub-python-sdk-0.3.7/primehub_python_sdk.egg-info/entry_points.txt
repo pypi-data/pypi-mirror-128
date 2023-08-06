@@ -1,0 +1,4 @@
+[console_scripts]
+doc-primehub = primehub.extras.doc_generator:main
+primehub = primehub.cli:main
+
