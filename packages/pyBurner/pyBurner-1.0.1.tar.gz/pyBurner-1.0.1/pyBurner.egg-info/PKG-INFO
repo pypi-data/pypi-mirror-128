@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyBurner
+Version: 1.0.1
+Summary: A Python library for interacting with the Afterburner diesel heater controller
+Home-page: https://github.com/ttuffin/pyBurner
+Author: Thomas Tuffin
+License: MIT
+Keywords: afterburner,diesel heater,controller
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+UNKNOWN
+
