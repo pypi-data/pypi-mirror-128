@@ -1,0 +1,8 @@
+numpy
+scipy
+pandas
+
+[tests]
+pytest
+pytest-cov
+codecov
