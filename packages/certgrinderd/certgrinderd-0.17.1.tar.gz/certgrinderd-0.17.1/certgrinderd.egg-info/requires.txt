@@ -1,0 +1,4 @@
+certbot
+PyYAML
+requests
+pid
