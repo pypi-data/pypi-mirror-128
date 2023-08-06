@@ -1,0 +1,9 @@
+LICENCE.txt
+README.md
+setup.py
+fun_with_py/__init__.py
+fun_with_py/convowel.py
+fun_with_py.egg-info/PKG-INFO
+fun_with_py.egg-info/SOURCES.txt
+fun_with_py.egg-info/dependency_links.txt
+fun_with_py.egg-info/top_level.txt
