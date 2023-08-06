@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Sem3Py
+Version: 0.0.6
+Summary: A package of functions used in Sem 3.
+Home-page: https://github.com/orectique/sem3py
+Author: Sreehari Pulickamadhom Sreedhar
+Author-email: cb.sc.i5das20032@cb.students.amrita.edu
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/orectique/sem3py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a package of Python functions that are useful in Optimization and Numerical methods.
+
