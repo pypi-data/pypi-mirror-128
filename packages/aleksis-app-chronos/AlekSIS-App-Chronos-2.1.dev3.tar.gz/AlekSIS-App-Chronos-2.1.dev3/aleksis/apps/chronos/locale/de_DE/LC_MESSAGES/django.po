@@ -1,0 +1,695 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-08 16:49+0200\n"
+"PO-Revision-Date: 2021-09-24 19:24+0000\n"
+"Last-Translator: Jonathan Weth <teckids@jonathanweth.de>\n"
+"Language-Team: German <https://translate.edugit.org/projects/aleksis/"
+"aleksis-app-chronos/de/>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.8\n"
+
+#: aleksis/apps/chronos/forms.py:29
+msgid "Options for timetables"
+msgstr "Einstellungen für Stundenpläne"
+
+#: aleksis/apps/chronos/menus.py:6 aleksis/apps/chronos/preferences.py:8
+msgid "Timetables"
+msgstr "Stundenpläne"
+
+#: aleksis/apps/chronos/menus.py:16
+#: aleksis/apps/chronos/templates/chronos/my_timetable.html:11
+#: aleksis/apps/chronos/templates/chronos/my_timetable.html:18
+msgid "My timetable"
+msgstr "Mein Plan"
+
+#: aleksis/apps/chronos/menus.py:27
+#: aleksis/apps/chronos/templates/chronos/all.html:11
+#: aleksis/apps/chronos/templates/chronos/all.html:12
+msgid "All timetables"
+msgstr "Alle Stundenpläne"
+
+#: aleksis/apps/chronos/menus.py:38
+msgid "Daily lessons"
+msgstr "Tagesstunden"
+
+#: aleksis/apps/chronos/menus.py:49
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:11
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:17
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:12
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:17
+msgid "Substitutions"
+msgstr "Vertretungen"
+
+#: aleksis/apps/chronos/mixins.py:25
+msgid "Linked validity range"
+msgstr "Zugeordneter Gültigkeitsbereich"
+
+#: aleksis/apps/chronos/model_extensions.py:137
+msgid "Show announcement in timetable views?"
+msgstr "Ankündigungen in Stundenplanansichten anzeigen?"
+
+#: aleksis/apps/chronos/model_extensions.py:145
+msgid "Can view group timetable"
+msgstr "Kann Gruppenstundenpläne sehen"
+
+#: aleksis/apps/chronos/model_extensions.py:148
+msgid "Can view person timetable"
+msgstr "Kann Personenstundenpläne sehen"
+
+#: aleksis/apps/chronos/models.py:71
+msgid "School term"
+msgstr "Schuljahr"
+
+#: aleksis/apps/chronos/models.py:74 aleksis/apps/chronos/models.py:627
+msgid "Name"
+msgstr "Name"
+
+#: aleksis/apps/chronos/models.py:76 aleksis/apps/chronos/models.py:682
+#: aleksis/apps/chronos/models.py:754 aleksis/apps/chronos/models.py:966
+msgid "Start date"
+msgstr "Startdatum"
+
+#: aleksis/apps/chronos/models.py:77 aleksis/apps/chronos/models.py:683
+#: aleksis/apps/chronos/models.py:755 aleksis/apps/chronos/models.py:967
+msgid "End date"
+msgstr "Enddatum"
+
+#: aleksis/apps/chronos/models.py:96
+msgid "The start date must be earlier than the end date."
+msgstr "Das Startdatum muss vor dem Enddatum liegen."
+
+#: aleksis/apps/chronos/models.py:103
+msgid "The validity range must be within the school term."
+msgstr "Der Gültigkeitsbereich muss innerhalb des Schuljahres liegen."
+
+#: aleksis/apps/chronos/models.py:110
+msgid "There is already a validity range for this time or a part of this time."
+msgstr "Es gibt bereits einen Gültigkeitsbereich für diesen Zeitraum oder einen Teil diesen Zeitraumes."
+
+#: aleksis/apps/chronos/models.py:117
+msgid "Validity range"
+msgstr "Gültigkeitsbereich"
+
+#: aleksis/apps/chronos/models.py:118
+msgid "Validity ranges"
+msgstr "Gültigkeitsbereiche"
+
+#: aleksis/apps/chronos/models.py:135
+msgid "Week day"
+msgstr "Wochentag"
+
+#: aleksis/apps/chronos/models.py:137
+msgid "Number of period"
+msgstr "Nummer der Stunde"
+
+#: aleksis/apps/chronos/models.py:139
+msgid "Start time"
+msgstr "Startzeit"
+
+#: aleksis/apps/chronos/models.py:140
+msgid "End time"
+msgstr "Endzeit"
+
+#: aleksis/apps/chronos/models.py:323 aleksis/apps/chronos/models.py:484
+#: aleksis/apps/chronos/models.py:1081
+msgid "Time period"
+msgstr "Stunde"
+
+#: aleksis/apps/chronos/models.py:324
+msgid "Time periods"
+msgstr "Stunden"
+
+#: aleksis/apps/chronos/models.py:328 aleksis/apps/chronos/models.py:350
+#: aleksis/apps/chronos/models.py:626 aleksis/apps/chronos/models.py:799
+#: aleksis/apps/chronos/models.py:821
+msgid "Short name"
+msgstr "Kurzname"
+
+#: aleksis/apps/chronos/models.py:329 aleksis/apps/chronos/models.py:351
+#: aleksis/apps/chronos/models.py:800 aleksis/apps/chronos/models.py:822
+msgid "Long name"
+msgstr "Langname"
+
+#: aleksis/apps/chronos/models.py:331
+msgid "Foreground colour"
+msgstr "Vordergrundfarbe"
+
+#: aleksis/apps/chronos/models.py:332
+msgid "Background colour"
+msgstr "Hintergrundfarbe"
+
+#: aleksis/apps/chronos/models.py:339 aleksis/apps/chronos/models.py:373
+#: aleksis/apps/chronos/models.py:424 aleksis/apps/chronos/models.py:1088
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:46
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:29
+msgid "Subject"
+msgstr "Fach"
+
+#: aleksis/apps/chronos/models.py:340
+msgid "Subjects"
+msgstr "Fächer"
+
+#: aleksis/apps/chronos/models.py:360
+msgid "Can view room timetable"
+msgstr "Kann Raumstundenpläne sehen"
+
+#: aleksis/apps/chronos/models.py:362 aleksis/apps/chronos/models.py:429
+#: aleksis/apps/chronos/models.py:488 aleksis/apps/chronos/models.py:679
+#: aleksis/apps/chronos/models.py:1097
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:47
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:30
+msgid "Room"
+msgstr "Raum"
+
+#: aleksis/apps/chronos/models.py:363 aleksis/apps/chronos/models.py:980
+#: aleksis/apps/chronos/templates/chronos/all.html:39
+msgid "Rooms"
+msgstr "Räume"
+
+#: aleksis/apps/chronos/models.py:376 aleksis/apps/chronos/models.py:427
+#: aleksis/apps/chronos/models.py:982 aleksis/apps/chronos/models.py:1094
+#: aleksis/apps/chronos/tables.py:35
+#: aleksis/apps/chronos/templates/chronos/all.html:17
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:28
+msgid "Teachers"
+msgstr "Lehrkräfte"
+
+#: aleksis/apps/chronos/models.py:379
+msgid "Periods"
+msgstr "Stunden"
+
+#: aleksis/apps/chronos/models.py:381 aleksis/apps/chronos/models.py:979
+#: aleksis/apps/chronos/models.py:1091 aleksis/apps/chronos/tables.py:34
+#: aleksis/apps/chronos/templates/chronos/all.html:28
+msgid "Groups"
+msgstr "Gruppen"
+
+#: aleksis/apps/chronos/models.py:404 aleksis/apps/chronos/models.py:481
+#: aleksis/apps/chronos/models.py:720
+msgid "Lesson"
+msgstr "Unterrichtsstunde"
+
+#: aleksis/apps/chronos/models.py:405
+#: aleksis/apps/chronos/templates/chronos/lessons_day.html:9
+#: aleksis/apps/chronos/templates/chronos/lessons_day.html:19
+msgid "Lessons"
+msgstr "Unterrichtsstunden"
+
+#: aleksis/apps/chronos/models.py:411 aleksis/apps/chronos/models.py:1078
+msgid "Week"
+msgstr "KW"
+
+#: aleksis/apps/chronos/models.py:412 aleksis/apps/chronos/models.py:1079
+msgid "Year"
+msgstr "Jahr"
+
+#: aleksis/apps/chronos/models.py:415 aleksis/apps/chronos/models.py:582
+msgid "Lesson period"
+msgstr "Unterrichtsstunde"
+
+#: aleksis/apps/chronos/models.py:431
+msgid "Cancelled?"
+msgstr "Entfällt?"
+
+#: aleksis/apps/chronos/models.py:433
+msgid "Cancelled for teachers?"
+msgstr "Entfällt für Lehrkräfte?"
+
+#: aleksis/apps/chronos/models.py:436 aleksis/apps/chronos/models.py:698
+#: aleksis/apps/chronos/models.py:740 aleksis/apps/chronos/models.py:1100
+msgid "Comment"
+msgstr "Kommentar"
+
+#: aleksis/apps/chronos/models.py:440
+msgid "Lessons can only be either substituted or cancelled."
+msgstr "Unterrichtsstunden können nur entweder vertreten werden oder ausfallen."
+
+#: aleksis/apps/chronos/models.py:471
+msgid "Lesson substitution"
+msgstr "Vertretung"
+
+#: aleksis/apps/chronos/models.py:472
+msgid "Lesson substitutions"
+msgstr "Vertretungen"
+
+#: aleksis/apps/chronos/models.py:583
+msgid "Lesson periods"
+msgstr "Unterrichtsstunden"
+
+#: aleksis/apps/chronos/models.py:621
+msgid "Timetable widget"
+msgstr "Stundenplanwidget"
+
+#: aleksis/apps/chronos/models.py:622
+msgid "Timetable widgets"
+msgstr "Stundenplanwidgets"
+
+#: aleksis/apps/chronos/models.py:636 aleksis/apps/chronos/models.py:654
+msgid "Absence reason"
+msgstr "Absenzgrund"
+
+#: aleksis/apps/chronos/models.py:637
+msgid "Absence reasons"
+msgstr "Absenzgründe"
+
+#: aleksis/apps/chronos/models.py:663 aleksis/apps/chronos/models.py:897
+#: aleksis/apps/chronos/models.py:943
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:45
+msgid "Teacher"
+msgstr "Lehrkraft"
+
+#: aleksis/apps/chronos/models.py:671
+msgid "Group"
+msgstr "Gruppe"
+
+#: aleksis/apps/chronos/models.py:687 aleksis/apps/chronos/models.py:727
+msgid "Start period"
+msgstr "Startstunde"
+
+#: aleksis/apps/chronos/models.py:694 aleksis/apps/chronos/models.py:734
+msgid "End period"
+msgstr "Endstunde"
+
+#: aleksis/apps/chronos/models.py:708
+msgid "Unknown absence"
+msgstr "Unbekannte Absenz"
+
+#: aleksis/apps/chronos/models.py:714
+msgid "Absence"
+msgstr "Absenz"
+
+#: aleksis/apps/chronos/models.py:715
+msgid "Absences"
+msgstr "Fehlstunden"
+
+#: aleksis/apps/chronos/models.py:723
+msgid "Date of exam"
+msgstr "Datum der Klausur"
+
+#: aleksis/apps/chronos/models.py:739 aleksis/apps/chronos/models.py:753
+#: aleksis/apps/chronos/models.py:964
+msgid "Title"
+msgstr "Titel"
+
+#: aleksis/apps/chronos/models.py:746
+msgid "Exam"
+msgstr "Klausur"
+
+#: aleksis/apps/chronos/models.py:747
+msgid "Exams"
+msgstr "Klausuren"
+
+#: aleksis/apps/chronos/models.py:756
+msgid "Comments"
+msgstr "Kommentare"
+
+#: aleksis/apps/chronos/models.py:794
+msgid "Holiday"
+msgstr "Ferien"
+
+#: aleksis/apps/chronos/models.py:795
+msgid "Holidays"
+msgstr "Ferien"
+
+#: aleksis/apps/chronos/models.py:809 aleksis/apps/chronos/models.py:890
+msgid "Supervision area"
+msgstr "Aufsichtsgebiet"
+
+#: aleksis/apps/chronos/models.py:810
+msgid "Supervision areas"
+msgstr "Aufsichtsgebiete"
+
+#: aleksis/apps/chronos/models.py:827
+msgid "Time period after break starts"
+msgstr "Stunde, nach der die Pause startet"
+
+#: aleksis/apps/chronos/models.py:835
+msgid "Time period before break ends"
+msgstr "Stunde nach der Pause"
+
+#: aleksis/apps/chronos/models.py:875 aleksis/apps/chronos/models.py:894
+msgid "Break"
+msgstr "Pause"
+
+#: aleksis/apps/chronos/models.py:876
+msgid "Breaks"
+msgstr "Pausen"
+
+#: aleksis/apps/chronos/models.py:928 aleksis/apps/chronos/models.py:937
+#: aleksis/apps/chronos/templates/chronos/partials/subs/subject.html:23
+#: aleksis/apps/chronos/templates/chronos/partials/supervision.html:15
+msgid "Supervision"
+msgstr "Aufsicht"
+
+#: aleksis/apps/chronos/models.py:929
+msgid "Supervisions"
+msgstr "Aufsichten"
+
+#: aleksis/apps/chronos/models.py:935
+msgid "Date"
+msgstr "Datum"
+
+#: aleksis/apps/chronos/models.py:955
+msgid "Supervision substitution"
+msgstr "Aufsichtsvertretung"
+
+#: aleksis/apps/chronos/models.py:956
+msgid "Supervision substitutions"
+msgstr "Aufsichtsvertretungen"
+
+#: aleksis/apps/chronos/models.py:972
+msgid "Start time period"
+msgstr "Startstunde"
+
+#: aleksis/apps/chronos/models.py:976
+msgid "End time period"
+msgstr "Endstunde"
+
+#: aleksis/apps/chronos/models.py:989
+#, python-brace-format
+msgid "Event {pk}"
+msgstr "Veranstaltung {pk}"
+
+#: aleksis/apps/chronos/models.py:1067
+#: aleksis/apps/chronos/templates/chronos/partials/subs/subject.html:27
+msgid "Event"
+msgstr "Veranstaltung"
+
+#: aleksis/apps/chronos/models.py:1068
+msgid "Events"
+msgstr "Veranstaltungen"
+
+#: aleksis/apps/chronos/models.py:1119
+msgid "Extra lesson"
+msgstr "Sonderstunde"
+
+#: aleksis/apps/chronos/models.py:1120
+msgid "Extra lessons"
+msgstr "Sonderstunden"
+
+#: aleksis/apps/chronos/models.py:1128
+msgid "Can view all room timetables"
+msgstr "Kann alle Raumstundenpläne sehen"
+
+#: aleksis/apps/chronos/models.py:1129
+msgid "Can view all group timetables"
+msgstr "Kann alle Gruppenstundenpläne sehen"
+
+#: aleksis/apps/chronos/models.py:1130
+msgid "Can view all person timetables"
+msgstr "Kann alle Personenstundenpläne sehen"
+
+#: aleksis/apps/chronos/models.py:1131
+msgid "Can view timetable overview"
+msgstr "Kann Stundenplanübersicht sehen"
+
+#: aleksis/apps/chronos/models.py:1132
+msgid "Can view all lessons per day"
+msgstr "Kann alle Tagesstunden sehen"
+
+#: aleksis/apps/chronos/preferences.py:16
+msgid "Use parent groups in timetable views"
+msgstr "Elterngruppen in Stundenplanansichten benutzen"
+
+#: aleksis/apps/chronos/preferences.py:18
+msgid "If an lesson or substitution has only one group and this group has parent groups, show the parent groups instead of the original group."
+msgstr "Wenn eine Stunde oder Vertretung nur eine Gruppe hat und diese Gruppe Elterngruppen hat, zeige die Elterngruppen anstelle der eigentlichen Gruppe."
+
+#: aleksis/apps/chronos/preferences.py:29
+msgid "Shorten groups in timetable views"
+msgstr "Gruppen in Stundenplanansichten kürzen"
+
+#: aleksis/apps/chronos/preferences.py:30
+msgid "If there are more groups than the set limit, they will be collapsed."
+msgstr "Wenn es mehr Gruppen als das gesetzte Limit gibt, werden die Gruppenangaben gekürzt."
+
+#: aleksis/apps/chronos/preferences.py:38
+msgid "Limit of groups for shortening of groups"
+msgstr "Anzahl der Gruppen, ab der gekürzt wird"
+
+#: aleksis/apps/chronos/preferences.py:40
+msgid "If an user activates shortening of groups,they will be collapsed if there are more groups than this limit."
+msgstr "Wenn ein Benutzer die Kürzung von Gruppen aktiviert hat, werden sie ab diesem Limit gekürzt."
+
+#: aleksis/apps/chronos/preferences.py:50
+msgid "Number of days shown on substitutions print view"
+msgstr "Anzahl der Tage, die in der Druckansicht des Vertretungsplanes angezeigt werden soll"
+
+#: aleksis/apps/chronos/preferences.py:58
+msgid "Show header box in substitution views"
+msgstr "Kopfbox in Vertretungsplänen anzeigen"
+
+#: aleksis/apps/chronos/preferences.py:59
+msgid "The header box shows affected teachers/groups."
+msgstr "Die Kopfbox zeigt betroffene Lehrkräfte/Gruppen."
+
+#: aleksis/apps/chronos/preferences.py:68
+msgid "Show parent groups in header box in substitution views instead of original groups"
+msgstr "Elterngruppen in der Kopfbox in Vertretungsplänen an Stelle der eigentlichen Gruppen anzeigen"
+
+#: aleksis/apps/chronos/tables.py:41
+msgid "Substitution"
+msgstr "Vertretung"
+
+#: aleksis/apps/chronos/tables.py:43
+msgid "Manage substitution"
+msgstr "Vertretung verwalten"
+
+#: aleksis/apps/chronos/templates/chronos/edit_substitution.html:6
+msgid "Edit substitution."
+msgstr "Vertretung bearbeiten."
+
+#: aleksis/apps/chronos/templates/chronos/edit_substitution.html:7
+msgid "Edit substitution"
+msgstr "Vertretung bearbeiten"
+
+#: aleksis/apps/chronos/templates/chronos/edit_substitution.html:20
+msgid "Delete"
+msgstr "Löschen"
+
+#: aleksis/apps/chronos/templates/chronos/my_timetable.html:19
+#: aleksis/apps/chronos/templates/chronos/timetable.html:50
+msgid "SMART PLAN"
+msgstr "SMART PLAN"
+
+#: aleksis/apps/chronos/templates/chronos/my_timetable.html:22
+msgid "Show week timetable for"
+msgstr "Wochenplan anzeigen für"
+
+#: aleksis/apps/chronos/templates/chronos/partials/headerbox.html:10
+msgid "Absent teachers"
+msgstr "Abwesende Lehrkräfte"
+
+#: aleksis/apps/chronos/templates/chronos/partials/headerbox.html:22
+msgid "Absent groups"
+msgstr "Abwesende Gruppen"
+
+#: aleksis/apps/chronos/templates/chronos/partials/headerbox.html:34
+msgid "Affected teachers"
+msgstr "Betroffene Lehrkräfte"
+
+#: aleksis/apps/chronos/templates/chronos/partials/headerbox.html:46
+msgid "Affected groups"
+msgstr "Betroffene Gruppen"
+
+#: aleksis/apps/chronos/templates/chronos/partials/subs/badge.html:4
+msgid "Cancelled"
+msgstr "Entfall"
+
+#: aleksis/apps/chronos/templates/chronos/partials/subs/badge.html:6
+msgid "Cancelled for teachers"
+msgstr "Entfall für Lehrkräfte"
+
+#: aleksis/apps/chronos/templates/chronos/partials/today.html:2
+msgid "Today"
+msgstr "Heute"
+
+#: aleksis/apps/chronos/templates/chronos/partials/week_select.html:14
+#: aleksis/apps/chronos/templates/chronos/partials/week_select.html:25
+#: aleksis/apps/chronos/templates/chronos/partials/week_select.html:36
+msgid "CW"
+msgstr "KW"
+
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:48
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:31
+msgid "Notes"
+msgstr "Notizen"
+
+#: aleksis/apps/chronos/templates/chronos/substitutions.html:56
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:41
+msgid "No substitutions available."
+msgstr "Keine Vertretungen vorhanden."
+
+#: aleksis/apps/chronos/templates/chronos/substitutions_print.html:11
+msgid "Print: Substitutions"
+msgstr "Druckansicht: Vertretungen"
+
+#: aleksis/apps/chronos/templates/chronos/timetable.html:11
+#: aleksis/apps/chronos/templates/chronos/timetable.html:24
+#: aleksis/apps/chronos/templates/chronos/timetable_print.html:11
+msgid "Timetable"
+msgstr "Stundenplan"
+
+#: aleksis/apps/chronos/templates/chronos/timetable.html:29
+msgid "Group teachers:"
+msgstr "Gruppenlehrkräfte:"
+
+#: aleksis/apps/chronos/templates/chronos/timetable.html:55
+msgid "Show regular timetable"
+msgstr "Regulären Plan anzeigen"
+
+#: aleksis/apps/chronos/templates/chronos/timetable.html:67
+msgid "Show SMART PLAN"
+msgstr "SMART PLAN anzeigen"
+
+#: aleksis/apps/chronos/templates/chronos/widget.html:8
+#, python-format
+msgid ""
+"\n"
+"        My timetable for %(day)s\n"
+"      "
+msgstr ""
+"\n"
+"        Mein Stundenplan für %(day)s\n"
+"      "
+
+#: aleksis/apps/chronos/templates/chronos/widget.html:18
+msgid ""
+"\n"
+"          There is no timetable linked to your person.\n"
+"          "
+msgstr ""
+"\n"
+"          Es gibt keine Stundenplan, der Ihrer Person zugeordnet ist.\n"
+"          "
+
+#: aleksis/apps/chronos/templates/chronos/widget.html:27
+msgid "Go to smart plan"
+msgstr "SMART PLAN anzeigen"
+
+#: aleksis/apps/chronos/views.py:264
+msgid "The substitution has been saved."
+msgstr "Die Vertretung wurde gespeichert."
+
+#: aleksis/apps/chronos/views.py:285
+msgid "The substitution has been deleted."
+msgstr "Die Vertretung wurde gelöscht."
+
+#~ msgid "Chronos"
+#~ msgstr "Chronos"
+
+#~ msgid "Short name of subject"
+#~ msgstr "Kurzname des Faches"
+
+#~ msgid "Long name of subject"
+#~ msgstr "Name des Faches"
+
+#~ msgid "Short name, e.g. room number"
+#~ msgstr "Kurzer Name, z.B. Raumnummer"
+
+#~ msgid "Effective start date of lesson"
+#~ msgstr "Effektives Startdatum des Unterrichts"
+
+#~ msgid "Effective end date of lesson"
+#~ msgstr "Effektives Enddatum des Unterrichts"
+
+#~ msgid "Effective start date of absence"
+#~ msgstr "Effektives Startdatum der Absenz"
+
+#~ msgid "Effective end date of absence"
+#~ msgstr "Effektives Enddatum der Absenz"
+
+#~ msgid "Effective start period of absence"
+#~ msgstr "Effektive Startstunde der Absenz"
+
+#~ msgid "Effective end period of absence"
+#~ msgstr "Effektive Endstunde der Absenz"
+
+#~ msgid "Effective start period of exam"
+#~ msgstr "Effektive Startstunde der Klausur"
+
+#~ msgid "Effective end period of exam"
+#~ msgstr "Effektive Endstunde der Klausur"
+
+#~ msgid "Title of the holidays"
+#~ msgstr "Titel der Ferien"
+
+#~ msgid "Effective start date of holidays"
+#~ msgstr "Effektives Startdatum der Ferien"
+
+#~ msgid "Effective end date of holidays"
+#~ msgstr "Effektives Enddatum der Ferien"
+
+#~ msgid "Effective start of break"
+#~ msgstr "Effektiver Start der Pause"
+
+#~ msgid "Effective end of break"
+#~ msgstr "Effektives Ende der Pause"
+
+#~ msgid "Effective start date of event"
+#~ msgstr "Effektives Startdatum der Veranstaltung"
+
+#~ msgid "Effective end date of event"
+#~ msgstr "Effektives Enddatum der Veranstaltung"
+
+#~ msgid "Effective start period of event"
+#~ msgstr "Effektive Startstunde der Veranstaltung"
+
+#~ msgid "Effective end period of event"
+#~ msgstr "Effektive Endstunde der Veranstaltung"
+
+#~ msgid "If there are more groups than this limit and CHRONOS_SHORTEN_GROUPS is enabled, add text collapsible."
+#~ msgstr "Wenn es mehr Gruppen als dieses Limit gibt und CHRONOS_SHORTEN_GROUPS aktiviert ist, werden die Gruppenangaben gekürzt."
+
+#~ msgid "Abbreviation of subject in timetable"
+#~ msgstr "Kürzel des Faches im Stundenplan"
+
+#~ msgid "Sunday"
+#~ msgstr "Sonntag"
+
+#~ msgid "Monday"
+#~ msgstr "Montag"
+
+#~ msgid "Tuesday"
+#~ msgstr "Dienstag"
+
+#~ msgid "Wednesday"
+#~ msgstr "Mittwoch"
+
+#~ msgid "Thursday"
+#~ msgstr "Donnerstag"
+
+#~ msgid "Saturday"
+#~ msgstr "Samstag"
+
+#~ msgid "Save"
+#~ msgstr "Speichern"
+
+#~ msgid "Select"
+#~ msgstr "Auswählen"
+
+#~ msgid "Times"
+#~ msgstr "Zeiten"
+
+#~ msgid "Calendar Week"
+#~ msgstr "Kalenderwoche"
+
+#~ msgid "to"
+#~ msgstr "bis"
+
+#~ msgid "Lessons %s"
+#~ msgstr "Unterrichtsstunden %s"
+
+#~ msgid "AlekSIS - Chronos (Timetables)"
+#~ msgstr "AlekSIS - Chronos (Stundenpläne)"
