@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: Mopidy-Hearthis
+Version: 0.2.3
+Summary: A mopidy backend to stream music from hearthis.at
+Home-page: https://github.com/universalappfactory/mopidy-hearthis
+Author: universalappfactory
+Author-email: info@universalappfactory.de
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
+Requires-Python: >=3.7
+Requires-Dist: Mopidy (>=3.0.0)
+Requires-Dist: Pykka (>=2.0.1)
+Requires-Dist: pyhearthis (==0.0.5)
+Requires-Dist: setuptools
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-black ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-isort ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: check-manifest ; extra == 'lint'
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: flake8-black ; extra == 'lint'
+Requires-Dist: flake8-bugbear ; extra == 'lint'
+Requires-Dist: flake8-isort ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+****************************
+Mopidy-Hearthis
+****************************
+
+.. image:: https://img.shields.io/pypi/v/Mopidy-Hearthis
+    :target: https://pypi.org/project/Mopidy-Hearthis/
+    :alt: Latest PyPI version
+
+.. image:: https://img.shields.io/github/workflow/status/universalappfactory/mopidy-hearthis/CI
+    :target: https://github.com/universalappfactory/mopidy-hearthis/actions
+    :alt: CI build status
+
+.. image:: https://img.shields.io/codecov/c/gh/universalappfactory/mopidy-hearthis
+    :target: https://codecov.io/gh/universalappfactory/mopidy-hearthis
+    :alt: Test coverage
+
+A mopidy backend to stream music from hearthis.at.
+
+Still under development but already works.
+Paging when browsing is now supported.
+The searchresult is still limited to one page (20 entries).
+
+
+
+Installation
+============
+
+Install by running::
+
+    python3 -m pip install Mopidy-Hearthis
+
+
+Configuration
+=============
+
+Before starting Mopidy, you must add configuration for
+Mopidy-Hearthis to your Mopidy configuration file::
+
+    [hearthis]
+    enabled: true
+    username: your_hearthis_username
+    password: your_hearthis_password
+
+You can obtain a login here Hearthis_.
+
+At the moment you need to have an email and password as login, the other login methods provided by HearThis_ are not yet supported.
+
+
+Project resources
+=================
+
+- `Source code <https://github.com/universalappfactory/mopidy-hearthis>`_
+- `Issue tracker <https://github.com/universalappfactory/mopidy-hearthis/issues>`_
+- `Changelog <https://github.com/universalappfactory/mopidy-hearthis/blob/master/CHANGELOG.rst>`_
+
+
+Credits
+=======
+
+- Original author: `universalappfactory <https://github.com/universalappfactory>`__
+- Current maintainer: `universalappfactory <https://github.com/universalappfactory>`__
+- `Contributors <https://github.com/universalappfactory/mopidy-hearthis/graphs/contributors>`_
+
+.. _HearThis: https://hearthis.at/
+
