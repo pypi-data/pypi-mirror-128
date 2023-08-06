@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: c5-envelope
+Version: 1.0.17
+Summary: C5-ENVELOPE Repository
+Home-page: https://github.com/mabels/envelope
+Author: Meno Abels
+Author-email: meno.abels@adviser.com
+License: UNKNOWN
+Keywords: data ocean lake
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# envelope
+This is the C5 Envelope of the digital age.
+
+https://en.wikipedia.org/wiki/Envelope
+
+
