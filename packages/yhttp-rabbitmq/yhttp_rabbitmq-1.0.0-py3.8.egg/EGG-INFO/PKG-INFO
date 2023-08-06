@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: yhttp-rabbitmq
+Version: 1.0.0
+Summary: RabbitMQ extension for yhttp.
+Home-page: http://github.com/yhttp/yhttp-rabbitmq
+Author: Vahid Mardani
+Author-email: vahid.mardani@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# yhttp-rabbitmq
+
+[![PyPI](http://img.shields.io/pypi/v/yhttp-rabbitmq.svg)](https://pypi.python.org/pypi/yhttp-rabbitmq)
+[![Build](https://github.com/yhttp/yhttp-rabbitmq/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/yhttp/yhttp-rabbitmq/actions/workflows/build.yml)
+[![Coverage Status](https://coveralls.io/repos/github/yhttp/yhttp-rabbitmq/badge.svg?branch=master)](https://coveralls.io/github/yhttp/yhttp-rabbitmq?branch=master)
+
+
+RabbitMQ extension for [yhttp](https://github.com/yhttp/yhttp).
+
+
+### Install
+
+```bash
+pip install yhttp-pony
+```
+
+
+### Usage
+
+```python
+from yhttp import Application
+from yhttp.ext.rabbitmq import install as rabbitmq_install
+
+
+app = Application()
+rabbitmq_install(app)
+app.settings.merge('''
+rabbitmq:
+  host: localhost
+  port: 5672
+  virtualhost: /
+  user: guest
+  password: guest
+  channel_max: 10
+  connection_attempts: 3
+  
+  ssl:
+    ca_certfile:  <ca_cert>
+    certfile: <client_cert>
+    keyfile: <client_key>
+    commonname: <CN>
+ 
+  pool:
+    maxsize: 10
+    maxoverflow: 10
+    timeout: 10
+    recycle: 3600
+    stale: 45
+''')
+app.ready()
+
+
+@app.route()
+def get(req):
+    with app.rabbitmq.acquire() as cxn:
+        cxn.channel.basic_publish(
+            body='banana',
+            exchange='',
+            routing_key='fruits',
+            properties=pika.BasicProperties(
+                content_type='text/plain',
+                content_encoding='utf-8',
+                delivery_mode=2,
+            )
+        )
+
+app.ready()
+
+

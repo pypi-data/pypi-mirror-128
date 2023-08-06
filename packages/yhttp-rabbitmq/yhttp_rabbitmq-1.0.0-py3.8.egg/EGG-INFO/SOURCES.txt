@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+yhttp/ext/rabbitmq/__init__.py
+yhttp/ext/rabbitmq/connpool.py
+yhttp/ext/rabbitmq/install.py
+yhttp_rabbitmq.egg-info/PKG-INFO
+yhttp_rabbitmq.egg-info/SOURCES.txt
+yhttp_rabbitmq.egg-info/dependency_links.txt
+yhttp_rabbitmq.egg-info/requires.txt
+yhttp_rabbitmq.egg-info/top_level.txt
