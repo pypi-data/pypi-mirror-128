@@ -1,0 +1,913 @@
+# Astersay.
+# Copyright (C) 2021
+# This file is distributed under the same license as the Astersay package.
+# Grigoriy Kramarenko <root@rosix.ru>, 2021.
+#
+# Translators:
+# Grigoriy Kramarenko <root@rosix.ru>, 2021
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: astersay\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-22 12:05+1000\n"
+"PO-Revision-Date: 2021-11-22 12:57+1000\n"
+"Last-Translator: Grigoriy Kramarenko <root@rosix.ru>\n"
+"Language-Team: Russian <support@avantele.com>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: astersay/agi.py:75
+#, python-format
+msgid "В строке %r нарушен параметр."
+msgstr ""
+
+#: astersay/agi.py:85
+msgid "Пропуск пустого параметра."
+msgstr ""
+
+#: astersay/agi.py:113
+msgid "Абонент повесил трубку во время исполнения."
+msgstr ""
+
+#: astersay/agi.py:116
+msgid "Ошибка выполнения в Asterisk или сброс звонка."
+msgstr ""
+
+#: astersay/agi.py:134
+#, python-format
+msgid "Неопределенный код ответа: %d."
+msgstr ""
+
+#: astersay/agi.py:148
+msgid "Ошибка в конвейере (SIGPIPE)."
+msgstr ""
+
+#: astersay/agi.py:149
+#, python-format
+msgid "Отправлена команда %r"
+msgstr ""
+
+#: astersay/agi.py:156
+msgid "Из Asterisk пришёл сигнал SIGHUP."
+msgstr ""
+
+#: astersay/agi.py:159
+msgid "Абонент повесил трубку."
+msgstr ""
+
+#: astersay/agi.py:160
+msgid "Проверка состояния разговора прошла успешно."
+msgstr ""
+
+#: astersay/app.py:25
+msgid "Инициализация приложения начата."
+msgstr ""
+
+#: astersay/app.py:28
+msgid "Включены настройки для каталога по-умолчанию."
+msgstr ""
+
+#: astersay/app.py:32
+#, python-format
+msgid "Создан экземпляр AGI: %s"
+msgstr ""
+
+#: astersay/app.py:36
+#, python-format
+msgid "Установлено имя диалога: %s"
+msgstr ""
+
+#: astersay/app.py:39
+#, python-format
+msgid "Устанавливается рабочий каталог: %s"
+msgstr ""
+
+#: astersay/app.py:42
+#, python-format
+msgid "Включены настройки для каталога %s."
+msgstr ""
+
+#: astersay/app.py:46
+msgid "Инициализация приложения выполнена."
+msgstr ""
+
+#: astersay/backends/base.py:158
+msgid "Время обновления токена ещё не подошло."
+msgstr ""
+
+#: astersay/backends/base.py:160
+#, python-format
+msgid "Старый токен нужно обновить: %s"
+msgstr ""
+
+#: astersay/backends/base.py:165
+msgid "Ошибка во время обновления токена."
+msgstr ""
+
+#: astersay/backends/base.py:167
+msgid "Токен обновлен."
+msgstr ""
+
+#: astersay/backends/base.py:176
+msgid "Файл токена существует."
+msgstr ""
+
+#: astersay/backends/base.py:182
+#, python-format
+msgid "Ошибка в файле токена: %s"
+msgstr ""
+
+#: astersay/backends/base.py:186
+msgid "Файла токена не существует."
+msgstr ""
+
+#: astersay/backends/base.py:188
+#, python-format
+msgid "Загрузка токена завершена: %s"
+msgstr ""
+
+#: astersay/backends/base.py:198
+#, python-format
+msgid "Токен сохранён в файл: %s"
+msgstr ""
+
+#: astersay/backends/base.py:204
+msgid "Токен не установлен."
+msgstr ""
+
+#: astersay/backends/base.py:206
+msgid "Токен устарел."
+msgstr ""
+
+#: astersay/backends/base.py:208
+msgid "Токен недействителен."
+msgstr ""
+
+#: astersay/backends/base.py:209
+msgid "Токен находится в актуальном состоянии."
+msgstr ""
+
+#: astersay/backends/tinkoff/recognizer.py:108
+#: astersay/backends/vosk/recognizer.py:92
+#: astersay/backends/yandex/recognizer.py:123
+msgid "Начинается распознавание речи для диалога."
+msgstr ""
+
+#: astersay/backends/tinkoff/recognizer.py:131
+#: astersay/backends/vosk/recognizer.py:120
+#: astersay/backends/yandex/recognizer.py:145
+#, python-format
+msgid "Работаем с буфером %s"
+msgstr ""
+
+#: astersay/backends/tinkoff/recognizer.py:135
+#, python-format
+msgid "Ответ Тинькова: %s"
+msgstr ""
+
+#: astersay/backends/tinkoff/recognizer.py:138
+#: astersay/backends/vosk/recognizer.py:125
+#: astersay/backends/yandex/recognizer.py:152
+#, python-format
+msgid "Финальный текст в буфер %(buffer)s: %(text)s"
+msgstr ""
+
+#: astersay/backends/tinkoff/recognizer.py:147
+#: astersay/backends/vosk/recognizer.py:135
+#: astersay/backends/yandex/recognizer.py:161
+#, python-format
+msgid "Предварительный текст в буфер %(buffer)s: %(text)s"
+msgstr ""
+
+#: astersay/backends/tinkoff/recognizer.py:155
+#: astersay/backends/vosk/recognizer.py:142
+#: astersay/backends/yandex/recognizer.py:169
+msgid "Диалог прекратился и слушатель тоже."
+msgstr ""
+
+#: astersay/backends/tinkoff/recognizer.py:157
+#: astersay/backends/vosk/recognizer.py:144
+#: astersay/backends/yandex/recognizer.py:171
+msgid "Цикл завершён."
+msgstr ""
+
+#: astersay/backends/tinkoff/synthesizer.py:112
+#: astersay/backends/yandex/synthesizer.py:97
+#, python-format
+msgid "Заголовки синтеза речи: %s"
+msgstr ""
+
+#: astersay/backends/tinkoff/synthesizer.py:113
+#: astersay/backends/yandex/synthesizer.py:98
+#, python-format
+msgid "Параметры синтеза речи: %s"
+msgstr ""
+
+#: astersay/backends/tinkoff/synthesizer.py:123
+#, python-format
+msgid "Ошибка синтеза речи. %s"
+msgstr ""
+
+#: astersay/backends/tinkoff/token.py:43
+msgid "Для Тинькова не установлен service_account_id."
+msgstr ""
+
+#: astersay/backends/tinkoff/token.py:46
+msgid "Для Тинькова не установлен api_key."
+msgstr ""
+
+#: astersay/backends/tinkoff/token.py:52
+msgid "Для Тинькова не установлен private_key."
+msgstr ""
+
+#: astersay/backends/tinkoff/token.py:77
+#, python-format
+msgid "Новый токен успешно создан: %s"
+msgstr ""
+
+#: astersay/backends/vosk/recognizer.py:58
+msgid "Соединение с вэбсокетом было закрыто."
+msgstr ""
+
+#: astersay/backends/vosk/recognizer.py:121
+#, python-format
+msgid "Ответ Vosk: %s"
+msgstr ""
+
+#: astersay/backends/yandex/recognizer.py:149
+#, python-format
+msgid "Ответ Яндекса: %s"
+msgstr ""
+
+#: astersay/backends/yandex/synthesizer.py:101
+msgid "Синтез речи выполнен."
+msgstr ""
+
+#: astersay/backends/yandex/synthesizer.py:105
+#, python-format
+msgid "Ошибка синтеза речи. Сервер вернул код, отличный от 200. %s"
+msgstr ""
+
+#: astersay/backends/yandex/token.py:50
+msgid "Запрашивается новый IAM-токен."
+msgstr ""
+
+#: astersay/backends/yandex/token.py:59
+#, python-format
+msgid ""
+"Ошибка запроса на обновление IAM-токена. Запрос вернул код, отличный от 200. "
+"%s"
+msgstr ""
+
+#: astersay/backends/yandex/token.py:63
+#, python-format
+msgid "Запрос вернул код %s."
+msgstr ""
+
+#: astersay/backends/yandex/token.py:66
+#, python-format
+msgid "Новый IAM-токен успешно создан: %s"
+msgstr ""
+
+#: astersay/backends/yandex/token.py:76
+msgid "Для Яндекс не установлен service_account_id."
+msgstr ""
+
+#: astersay/backends/yandex/token.py:79
+msgid "Для Яндекс не установлен key_id."
+msgstr ""
+
+#: astersay/backends/yandex/token.py:102
+#, python-format
+msgid "Создан новый JWT-токен: %(start)s...%(end)s"
+msgstr ""
+
+#: astersay/conf.py:83
+msgid ""
+"Здравствуйте, с Вами говорит базовая диалоговая модель. Меня разрабатывали "
+"очень весёлые люди. Поэтому я могу быть весьма неожиданной. В принципе обо "
+"мне - всё. Позвольте мне теперь узнать о Вас. |Представьтесь, пожалуйста."
+msgstr ""
+
+#: astersay/conf.py:94
+#, python-format
+msgid "%(caller_name)s| мне очень приятно было распознать Ваше имя."
+msgstr ""
+
+#: astersay/conf.py:99
+msgid "Увы, но мне не удалось распознать Ваше имя."
+msgstr ""
+
+#: astersay/conf.py:110
+msgid "Попробуйте назвать ещё раз своё имя."
+msgstr ""
+
+#: astersay/conf.py:167
+#, python-format
+msgid ""
+"Если Вы, %(caller_name)s, сейчас скажете какое-нибудь положительное или "
+"отрицательное утверждение, то я попробую распознать и это."
+msgstr ""
+
+#: astersay/conf.py:175
+#, python-format
+msgid "Вы ответили %(answered_yes_text)s, благодарю Вас!."
+msgstr ""
+
+#: astersay/conf.py:178
+msgid "Увы, но мне не удалось распознать утверждение."
+msgstr ""
+
+#: astersay/conf.py:189 astersay/conf.py:223
+msgid "Я не поняла Ваш ответ, попробуйте сказать ещё раз."
+msgstr ""
+
+#: astersay/conf.py:202
+msgid ""
+"Пожалуйста, назовите сейчас какой-нибудь известный российский город, а я "
+"попробую распознать его."
+msgstr ""
+
+#: astersay/conf.py:209
+#, python-format
+msgid "Я распознала %(city)s, благодарю Вас!."
+msgstr ""
+
+#: astersay/conf.py:212
+msgid "Увы, но мне не удалось распознать город."
+msgstr ""
+
+#: astersay/conf.py:241
+msgid "Всего хорошего! До свидания."
+msgstr ""
+
+#: astersay/conf.py:270
+#, python-format
+msgid "Диалог \"%s\" не найден, будет использоваться диалог \"default.json\"."
+msgstr ""
+
+#: astersay/conf.py:278
+msgid "Создан диалог \"default.json\"."
+msgstr ""
+
+#: astersay/conf.py:290
+#, python-format
+msgid "Плагин с именем %r не найден."
+msgstr ""
+
+#: astersay/conf.py:558
+#, python-format
+msgid "Используется класс диалога %r."
+msgstr ""
+
+#: astersay/conf.py:621
+#, python-format
+msgid "Модуль %s не установлен."
+msgstr ""
+
+#: astersay/conf.py:721
+#, python-format
+msgid ""
+"Не удалось экспортировать диалог на удалённый сервис. Сервер ответил кодом "
+"%(code)r: %(data)s"
+msgstr ""
+
+#: astersay/conf.py:731
+msgid "Timeout при экспорте диалога на удаленный сервер."
+msgstr ""
+
+#: astersay/conf.py:734
+#, python-format
+msgid "Ошибка при экспорте диалога на удаленный сервер: %s"
+msgstr ""
+
+#: astersay/conf.py:738
+#, python-format
+msgid "Диалог экспортирован на удаленный сервер %(url)s в режиме %(mode)s"
+msgstr ""
+
+#: astersay/conf.py:746
+#, python-format
+msgid "Локальный файл диалога %s не найден."
+msgstr ""
+
+#: astersay/conf.py:749
+#, python-format
+msgid "Локальный файл диалога %s удален"
+msgstr ""
+
+#: astersay/conf.py:769
+msgid "Остановка голоса отключена в настройках."
+msgstr ""
+
+#: astersay/dialog.py:97
+#, python-format
+msgid "Основной поток приостановлен. Пауза %s секунд."
+msgstr ""
+
+#: astersay/dialog.py:99
+msgid "Основной поток продолжен."
+msgstr ""
+
+#: astersay/dialog.py:116
+msgid "Да"
+msgstr ""
+
+#: astersay/dialog.py:117
+msgid "Нет"
+msgstr ""
+
+#: astersay/dialog.py:196
+#, python-format
+msgid "Новый текстовый буфер: %s"
+msgstr ""
+
+#: astersay/dialog.py:308
+#, python-format
+msgid "Текстовый процессор %r сломан."
+msgstr ""
+
+#: astersay/dialog.py:320
+msgid "Текст и файл голоса отсутствуют."
+msgstr ""
+
+#: astersay/dialog.py:326
+#, python-format
+msgid "Голос робота: %s"
+msgstr ""
+
+#: astersay/dialog.py:328
+#, python-format
+msgid "Текст робота: %s"
+msgstr ""
+
+#: astersay/dialog.py:333
+msgid "Ошибка синтеза речи."
+msgstr ""
+
+#: astersay/dialog.py:339
+#, python-format
+msgid "Другой голос %s ещё не завершён."
+msgstr ""
+
+#: astersay/dialog.py:344
+#, python-format
+msgid "Заменяем голос %s на новый."
+msgstr ""
+
+#: astersay/dialog.py:349
+#, python-format
+msgid "Продолжительность голоса %s секунд."
+msgstr ""
+
+#: astersay/dialog.py:353
+msgid "Голос отправляется в неблокирующем режиме."
+msgstr ""
+
+#: astersay/dialog.py:355
+msgid "Голос отправляется в блокирующем режиме."
+msgstr ""
+
+#: astersay/dialog.py:361
+#, python-format
+msgid "Голос %s завершён."
+msgstr ""
+
+#: astersay/dialog.py:380
+msgid "Голос не отправлен. Связь разорвана."
+msgstr ""
+
+#: astersay/dialog.py:394
+#, python-format
+msgid "Останавливаем основной поток на %s секунд."
+msgstr ""
+
+#: astersay/dialog.py:420
+#, python-format
+msgid "Установлен минимальный RMS=250(%d)."
+msgstr ""
+
+#: astersay/dialog.py:424
+#, python-format
+msgid "Установлен минимальный RMS=%d."
+msgstr ""
+
+#: astersay/dialog.py:440
+#, python-format
+msgid "Тишина %d секунду."
+msgid_plural "Тишина %d секунд."
+msgstr[0] "Тишина %d секунду."
+msgstr[1] "Тишина %d секунды."
+msgstr[2] "Тишина %d секунд."
+
+#: astersay/dialog.py:454
+msgid "Включаем передачу голоса на распознавание."
+msgstr ""
+
+#: astersay/dialog.py:462
+msgid "Отключаем передачу голоса на распознавание."
+msgstr ""
+
+#: astersay/dialog.py:474
+msgid "Другой поток распознавания уже запущен."
+msgstr ""
+
+#: astersay/dialog.py:476
+msgid "Начальный текстовый буфер удалён."
+msgstr ""
+
+#: astersay/dialog.py:486
+msgid "Сброс счётчика молчания."
+msgstr ""
+
+#: astersay/dialog.py:493
+#, python-format
+msgid "Завершён поток подсчёта тишины %s."
+msgstr ""
+
+#: astersay/dialog.py:495
+msgid "Запуск отдельного потока подсчёта тишины."
+msgstr ""
+
+#: astersay/dialog.py:498
+#, python-format
+msgid "Запущен поток подсчёта тишины %s."
+msgstr ""
+
+#: astersay/dialog.py:507
+msgid "Запуск recognizer.recognize()"
+msgstr ""
+
+#: astersay/dialog.py:513 astersay/dialog.py:544
+msgid "Слушатель не был подключен."
+msgstr ""
+
+#: astersay/dialog.py:514
+msgid "Остановка recognizer.recognize()"
+msgstr ""
+
+#: astersay/dialog.py:518
+#, python-format
+msgid ""
+"Завершён поток распознавания %(name)s. Считано аудио-данных: %(recieved)d "
+"байт."
+msgstr ""
+
+#: astersay/dialog.py:527
+msgid "Запуск отдельного потока распознавания."
+msgstr ""
+
+#: astersay/dialog.py:530
+#, python-format
+msgid "Запущен поток распознавания %s."
+msgstr ""
+
+#: astersay/dialog.py:535
+msgid "Диалог останавливается."
+msgstr ""
+
+#: astersay/dialog.py:542
+msgid "Слушатель выключен."
+msgstr ""
+
+#: astersay/dialog.py:548
+#, python-format
+msgid "Диалог начат: %(agi_callerid)s (%(agi_calleridname)s)"
+msgstr ""
+
+#: astersay/dialog.py:561
+msgid "Абонент повесил трубку до окончания диалога."
+msgstr ""
+
+#: astersay/dialog.py:564
+msgid "Ошибка в AGI при исполнении диалога."
+msgstr ""
+
+#: astersay/dialog.py:567
+msgid "Ошибка в сценарии диалога."
+msgstr ""
+
+#: astersay/dialog.py:581
+#, python-format
+msgid "Передача в Asterisk %(key)s=%(value)s"
+msgstr ""
+
+#: astersay/dialog.py:586
+msgid "Абонент повесил трубку до окончания передачи переменных."
+msgstr ""
+
+#: astersay/dialog.py:589
+msgid "Ошибка в AGI при передаче переменных."
+msgstr ""
+
+#: astersay/dialog.py:603
+#, python-format
+msgid "Диалог экспортирован в файл %s"
+msgstr ""
+
+#: astersay/dialog.py:607
+#, python-format
+msgid "Текст буфера %(key)s: %(line)s"
+msgstr ""
+
+#: astersay/dialog.py:610
+msgid "Диалог завершён."
+msgstr ""
+
+#: astersay/dialog.py:649
+#, python-format
+msgid "Плагин %r сломан."
+msgstr ""
+
+#: astersay/dialog.py:663
+#, python-format
+msgid "Предварительный синтез для %d текста(ов)."
+msgstr ""
+
+#: astersay/dialog.py:668
+msgid "Предварительный синтез речи завершён."
+msgstr ""
+
+#: astersay/dialog.py:688
+#, python-format
+msgid ""
+"< PLUGIN Параметр %r скоро устареет, используйте один из: \"log_debug\", "
+"\"log_info\", \"log_warning\" или \"log_error\""
+msgstr ""
+
+#: astersay/dialog.py:719
+msgid "Главный скрипт начат."
+msgstr ""
+
+#: astersay/dialog.py:758
+#, python-format
+msgid "Запускаю скрипт %(name)r"
+msgstr ""
+
+#: astersay/dialog.py:795
+msgid "Завершаю диалог."
+msgstr ""
+
+#: astersay/dialog.py:800 astersay/dialog.py:812
+#, python-format
+msgid "Исходная речь. %s."
+msgstr ""
+
+#: astersay/dialog.py:803
+msgid "В результате получена истина."
+msgstr ""
+
+#: astersay/dialog.py:806
+#, python-format
+msgid "Разультат обработки. %s."
+msgstr ""
+
+#: astersay/dialog.py:814
+msgid "Исходная речь пуста."
+msgstr ""
+
+#: astersay/dialog.py:816
+msgid "Результат отсутствует."
+msgstr ""
+
+#: astersay/dialog.py:836
+msgid "Главный скрипт завершён."
+msgstr ""
+
+#: astersay/dialog.py:852
+#, python-format
+msgid "Выполняется команда AGI: %s"
+msgstr ""
+
+#: astersay/dialog.py:854
+msgid "Команда выполнена."
+msgstr ""
+
+#: astersay/dialog.py:860
+#, python-format
+msgid "Нечего опрерывать, saydata=%s"
+msgstr ""
+
+#: astersay/dialog.py:863
+msgid "Нечего прерывать, был задан блокирующий режим."
+msgstr ""
+
+#: astersay/dialog.py:868
+msgid "Стоп-голоса для прерывания нет."
+msgstr ""
+
+#: astersay/dialog.py:871
+msgid "Нечего прерывать, голос уже закончился."
+msgstr ""
+
+#: astersay/dialog.py:881
+msgid "Стоп-голос не отправлен. Связь разорвана."
+msgstr ""
+
+#: astersay/dialog.py:886
+msgid "Прерывание воспроизведения выполнено."
+msgstr ""
+
+#: astersay/dialog.py:925
+#, python-format
+msgid "Ограничение по времени: %s секунд."
+msgstr ""
+
+#: astersay/dialog.py:926
+#, python-format
+msgid "Ограничение по длине: от %s символов."
+msgstr ""
+
+#: astersay/dialog.py:927
+#, python-format
+msgid "Ограничение по тишине: %s секунд."
+msgstr ""
+
+#: astersay/dialog.py:928
+#, python-format
+msgid "Ограничение по тишине в начале: %s секунд."
+msgstr ""
+
+#: astersay/dialog.py:929
+#, python-format
+msgid "Ограничение по стоп-словам: %s."
+msgstr ""
+
+#: astersay/dialog.py:943
+#, python-format
+msgid "Первая попытка успешна. Текст: %s"
+msgstr ""
+
+#: astersay/dialog.py:945
+#, python-format
+msgid "Первая попытка провалилась. Текст: %s"
+msgstr ""
+
+#: astersay/dialog.py:952
+#, python-format
+msgid "Стоп-слова пока нет, ждём %d-ю секунду."
+msgstr ""
+
+#: astersay/dialog.py:965 astersay/dialog.py:1075 astersay/dialog.py:1204
+#: astersay/dialog.py:1331
+msgid "Диалог завершился до приёма данных."
+msgstr ""
+
+#: astersay/dialog.py:972 astersay/dialog.py:1088 astersay/dialog.py:1216
+#: astersay/dialog.py:1343
+#, python-format
+msgid "Ответ: %r"
+msgstr ""
+
+#: astersay/dialog.py:1001 astersay/dialog.py:1121 astersay/dialog.py:1249
+#: astersay/dialog.py:1376
+msgid "Ответа нет."
+msgstr ""
+
+#: astersay/dialog.py:1060
+#, python-format
+msgid "Первая попытка успешна. Имена: %s"
+msgstr ""
+
+#: astersay/dialog.py:1062
+#, python-format
+msgid "Первая попытка провалилась. Имена: %s"
+msgstr ""
+
+#: astersay/dialog.py:1070 astersay/dialog.py:1199 astersay/dialog.py:1326
+#, python-format
+msgid "Ответа пока нет, ждём %d-ю секунду."
+msgstr ""
+
+#: astersay/dialog.py:1081 astersay/dialog.py:1210 astersay/dialog.py:1337
+#, python-format
+msgid "Кратность %r."
+msgstr ""
+
+#: astersay/dialog.py:1263
+#, python-format
+msgid "Режим `fail_on_false`, ответ %r."
+msgstr ""
+
+#: astersay/dialog.py:1316
+#, python-format
+msgid "Первая попытка успешна. Ответ: %s"
+msgstr ""
+
+#: astersay/dialog.py:1318
+msgid "Первая попытка провалилась. Ответа нет."
+msgstr ""
+
+#: astersay/dialog.py:1442
+msgid "Результат есть."
+msgstr ""
+
+#: astersay/dialog.py:1451
+msgid "Результата нет."
+msgstr ""
+
+#: astersay/dummy.py:156
+#, python-format
+msgid "Остановлен поток записи: %s"
+msgstr ""
+
+#: astersay/dummy.py:168
+#, python-format
+msgid "Создан поток записи: %s"
+msgstr ""
+
+#: astersay/dummy.py:177
+msgid "Дожидаемся отключения старого процесса проигрывания аудио."
+msgstr ""
+
+#: astersay/dummy.py:181
+msgid "Cтарый процесс проигрывания аудио завершён."
+msgstr ""
+
+#: astersay/dummy.py:190
+msgid "Начинается плейлист."
+msgstr ""
+
+#: astersay/dummy.py:194
+#, python-format
+msgid "Проигрываем %(filename)s с агрументами %(args)s"
+msgstr ""
+
+#: astersay/dummy.py:202
+#, python-format
+msgid "Файл %s не найден."
+msgstr ""
+
+#: astersay/dummy.py:223
+msgid "Воспроизведение прервано."
+msgstr ""
+
+#: astersay/dummy.py:231
+msgid "Плейлист окончен."
+msgstr ""
+
+#: astersay/dummy.py:274
+msgid "Метод не найден."
+msgstr ""
+
+#: astersay/dummy.py:277 astersay/dummy.py:289
+msgid "Сервер остановлен."
+msgstr ""
+
+#: astersay/dummy.py:280
+msgid "Сервер останавливается."
+msgstr ""
+
+#: astersay/dummy.py:320
+#, python-format
+msgid "Уровень должен быть от 1 до 4, level == %r"
+msgstr ""
+
+#: astersay/dummy.py:339
+#, python-format
+msgid "escape_digits должны быть цифрами, а не %r"
+msgstr ""
+
+#: astersay/dummy.py:361
+#, python-format
+msgid "Отправлено нажатие %s."
+msgstr ""
+
+#: astersay/utils.py:130
+msgid "Начинается синтез речи."
+msgstr ""
+
+#: astersay/utils.py:141
+#, python-format
+msgid "Речь %r существует и будет взята из хранилища."
+msgstr ""
+
+#: astersay/utils.py:150
+#, python-format
+msgid "Сохранён файл спецификации: %s"
+msgstr ""
+
+#: astersay/utils.py:160
+#, python-format
+msgid "Записан исходный файл речи: %s"
+msgstr ""
+
+#: astersay/utils.py:163
+#, python-format
+msgid "Записан конечный файл речи: %s"
+msgstr ""
+
+#: astersay/utils.py:180 astersay/utils.py:191
+#, python-format
+msgid "Синтезирую в речь текст: %r"
+msgstr ""
+
+#: astersay/utils.py:199
+msgid "Для предварительного синтеза речи конечный файл не собирается."
+msgstr ""
