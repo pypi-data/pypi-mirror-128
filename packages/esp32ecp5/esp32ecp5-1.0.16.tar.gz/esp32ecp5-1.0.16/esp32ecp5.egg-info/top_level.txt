@@ -1,0 +1,7 @@
+ecp5
+ecp5setup
+ecp5wp
+gzip4k
+sdraw
+uftpd
+wifiman

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: esp32ecp5
+Version: 1.0.16
+Summary: MicroPython ESP32 JTAG programmer for ECP5 FPGA
+Home-page: https://github.com/emard/esp32ecp5
+Author: EMARD
+Author-email: vordah@gmail.com
+Maintainer: EMARD
+Maintainer-email: vordah@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/emard/esp32ecp5/issues
+Project-URL: Documentation, https://github.com/emard/esp32ecp5/blob/master/README.md
+Project-URL: Source, https://github.com/emard/esp32ecp5
+Keywords: JTAG,FPGA,ECP5,WiFi,FTP,FLASH,SD
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Full featured ECP5 FPGA programmer with native support for ULX3S boards
+
