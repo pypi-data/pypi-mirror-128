@@ -1,0 +1,4 @@
+.
+ipykernel
+nbsphinx
+pygments-csv-lexer
