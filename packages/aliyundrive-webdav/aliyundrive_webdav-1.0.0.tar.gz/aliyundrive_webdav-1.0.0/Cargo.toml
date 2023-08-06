@@ -1,0 +1,45 @@
+[package]
+name = "aliyundrive-webdav"
+version = "1.0.0"
+edition = "2021"
+description = "WebDAV server for AliyunDrive"
+license = "MIT"
+homepage = "https://github.com/messense/aliyundrive-webdav"
+repository = "https://github.com/messense/aliyundrive-webdav.git"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.47"
+bytes = "1.0.1"
+dashmap = "4.0.2"
+futures-util = "0.3"
+headers = "0.3.4"
+hyper = { version = "0.14.11", features = ["server"] }
+moka = { version = "0.6.0", default-features = false, features = ["future"] }
+openssl-probe = { version = "0.1.4", optional = true }
+openssl-sys = { version = "=0.9.68", optional = true }
+reqwest = { version = "0.11.4", default-features = false, features = ["json", "gzip"] }
+serde = { version = "1.0.127", features = ["derive"] }
+structopt = "0.3.22"
+time = { version = "0.3", features = ["formatting", "parsing"] }
+tokio = { version = "1.10.0", features = ["rt-multi-thread", "io-util", "net", "time", "sync", "macros", "parking_lot", "fs"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "local-time"] }
+url = "2.2.2"
+webdav-handler = { version = "0.2.0", default-features = false, features = ["hyper"] }
+
+[features]
+default = ["rustls-tls", "atomic64"]
+rustls-tls = ["reqwest/rustls-tls"]
+native-tls = ["reqwest/native-tls"]
+native-tls-vendored = ["reqwest/native-tls-vendored", "openssl-probe", "openssl-sys"]
+atomic64 = ["moka/atomic64"]
+
+[patch.crates-io]
+webdav-handler = { git = "https://github.com/messense/webdav-handler-rs.git", branch = "aliyundrive" }
+
+[profile.release]
+lto = true
+opt-level = "z"  # Optimize for size
