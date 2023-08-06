@@ -1,0 +1,3 @@
+[console_scripts]
+reactant=reactant.run:runner
+

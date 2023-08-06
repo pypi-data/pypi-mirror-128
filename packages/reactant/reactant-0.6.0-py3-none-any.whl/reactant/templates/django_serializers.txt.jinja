@@ -1,0 +1,25 @@
+from rest_framework import serializers
+from .models import {% for name in names %}{% if loop.last %}{{ name }}{% else %}{{ name }},{% endif %}{% endfor %}
+
+{% for model in models %}
+class {{ model.name }}Serializer(serializers.ModelSerializer):
+    class Meta:
+        model = {{ model.name }}
+        fields = [
+            {% for field in model.fields %}
+                {% if not field.type == 'ForeignKey' or field.type == 'ManyToManyField' or field.type == 'OneToOneField' %}
+                    {% if loop.last %}
+                    {{ field.name|tojson }}
+                    {% else %}
+                    {{ field.name|tojson }},
+                    {% endif %}
+                {% endif %}
+                {% if field.type == 'ForeignKey' or field.type == 'ManyToManyField' or field.type == 'OneToOneField' %}
+                    # {{ field.name|tojson }} not added. It has a {{ field.type }} relationship with {{ field.extras[0]['relation'] }}.
+                    # Add a serializer relation first within {{ field.extras[0]['relation'] }}Serializer
+                    # or in this serializer class if needed.
+                {% endif %}
+            {% endfor %}
+        ]
+
+{% endfor %}
