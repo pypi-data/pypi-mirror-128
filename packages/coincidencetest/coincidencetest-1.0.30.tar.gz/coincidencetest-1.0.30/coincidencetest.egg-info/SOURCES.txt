@@ -1,0 +1,15 @@
+README.md
+setup.py
+coincidencetest/__init__.py
+coincidencetest/_coincidencetest.py
+coincidencetest/fca.py
+coincidencetest/log_formats.py
+coincidencetest/version.txt
+coincidencetest.egg-info/PKG-INFO
+coincidencetest.egg-info/SOURCES.txt
+coincidencetest.egg-info/dependency_links.txt
+coincidencetest.egg-info/requires.txt
+coincidencetest.egg-info/top_level.txt
+scripts/coincidence-clustering
+scripts/coincidencetest-distribution-plot
+scripts/coincidencetest-plot
