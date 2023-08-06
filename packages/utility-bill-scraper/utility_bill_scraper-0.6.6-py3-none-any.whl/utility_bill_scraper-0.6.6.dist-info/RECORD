@@ -1,0 +1,10 @@
+utility_bill_scraper/__init__.py,sha256=Sq-m7bYgt0CAzZBfy0hi9DVwNMQEa34mr7uLFy4G5uI,17529
+utility_bill_scraper/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utility_bill_scraper/bin/ubs.py,sha256=LZ9Xhlmmw-6cnyX5_aF7BjY5qynTwj7eRJDDTGPiTp0,4443
+utility_bill_scraper/canada/on/enbridge.py,sha256=gAFJz0d8_LxM0gXqnadcDuxfFjufqWOQw1PWHp29_a0,2798
+utility_bill_scraper/canada/on/kitchener_utilities.py,sha256=S76XfbG17n5vjgwGjzRwWilDXCkkNHkPzHf8ZN31c58,21595
+utility_bill_scraper/canada/on/kitchener_wilmot_hydro.py,sha256=f3LBQDk2J0Ol7a4Xgp96ToACz1lDUilsRTsktDieHjg,15336
+utility_bill_scraper-0.6.6.dist-info/LICENSE.md,sha256=2Tug-Nak_7mBiC1p1au-6N10EAc8jlmdbvCDDv3aWSQ,1515
+utility_bill_scraper-0.6.6.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+utility_bill_scraper-0.6.6.dist-info/METADATA,sha256=YwZdGhZao6-_yqbUzglfdHh5WVMf_1RGG5MOPYfRE6c,9345
+utility_bill_scraper-0.6.6.dist-info/RECORD,,
