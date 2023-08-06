@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: irec
+Version: 1.2.2
+Summary: Reinforcement Learning Recommender System Framework containing Multi-Armed Bandit, Active Learning and others methods for online recommendation
+Home-page: https://github.com/pypa/irec
+Author: Heitor Werneck
+Author-email: werneck@aluno.ufsj.edu.br
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/irec/issues
+Keywords: recommender,recommendation,reinforcement learning,machine learning,framework,library
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![rerec](https://user-images.githubusercontent.com/28633659/138386006-1c0ba3d1-a6c1-4571-b111-92f2c90b8bb3.png)
+
+
