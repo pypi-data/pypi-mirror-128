@@ -1,0 +1,4 @@
+[console_scripts]
+isee = isee:main
+report = isee:print_report_followed_by_log
+
