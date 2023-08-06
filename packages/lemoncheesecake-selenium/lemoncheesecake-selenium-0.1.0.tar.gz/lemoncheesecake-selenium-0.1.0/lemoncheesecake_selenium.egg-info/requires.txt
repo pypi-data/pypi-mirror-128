@@ -1,0 +1,2 @@
+lemoncheesecake~=1.10
+selenium~=4.0
