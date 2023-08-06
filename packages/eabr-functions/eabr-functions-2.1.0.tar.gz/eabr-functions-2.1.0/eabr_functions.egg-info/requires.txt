@@ -1,0 +1,5 @@
+botocore
+psycopg2-binary
+cx-Oracle
+pymongo
+pymssql
