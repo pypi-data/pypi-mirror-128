@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyobs-sbig
+Version: 0.14.2
+Summary: pyobs module for SBIG cameras
+License: MIT
+Author: Tim-Oliver Husser
+Author-email: thusser@uni-goettingen.de
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: astropy (>=4.2,<5.0)
+Requires-Dist: numpy (>=1.21,<2.0)
