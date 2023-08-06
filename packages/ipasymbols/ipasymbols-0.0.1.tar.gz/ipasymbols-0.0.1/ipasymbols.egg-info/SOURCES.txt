@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+setup.py
+ipasymbols/__init__.py
+ipasymbols/ipasymbols.py
+ipasymbols/utils.py
+ipasymbols.egg-info/PKG-INFO
+ipasymbols.egg-info/SOURCES.txt
+ipasymbols.egg-info/dependency_links.txt
+ipasymbols.egg-info/requires.txt
+ipasymbols.egg-info/top_level.txt
+ipasymbols.egg-info/zip-safe
+test/__init__.py
+test/test_db.py
