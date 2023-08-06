@@ -1,0 +1,27 @@
+docker: ghcr.io/autamus/xrootd
+url: https://github.com/orgs/autamus/packages/container/package/xrootd
+maintainer: '@vsoch'
+description: XRootD software framework is a fully generic suite for fast, low latency
+  and scalable data access, which can serve natively any kind of data, organized as
+  a hierarchical filesystem-like namespace, based on the concept of directory.
+latest:
+  5.3.1: sha256:b2787c85b57955c34487c8912fdf07778904595454559d9db979826e262e9e32
+tags:
+  5.1.0: sha256:37902350afb153684fa04bba4926f86f8bb0d580c8a2bda9dcdf0d371923dfbf
+  5.3.1: sha256:b2787c85b57955c34487c8912fdf07778904595454559d9db979826e262e9e32
+  latest: sha256:b2787c85b57955c34487c8912fdf07778904595454559d9db979826e262e9e32
+aliases:
+  xrdacctest: /opt/view/bin/xrdacctest
+  xrdadler32: /opt/view/bin/xrdadler32
+  xrdcopy: /opt/view/bin/xrdcopy
+  xrdcp: /opt/view/bin/xrdcp
+  xrdfs: /opt/view/bin/xrdfs
+  xrdgsiproxy: /opt/view/bin/xrdgsiproxy
+  xrdgsitest: /opt/view/bin/xrdgsitest
+  xrdmapc: /opt/view/bin/xrdmapc
+  xrdpfc_print: /opt/view/bin/xrdpfc_print
+  xrdpinls: /opt/view/bin/xrdpinls
+  xrdpwdadmin: /opt/view/bin/xrdpwdadmin
+  xrdsssadmin: /opt/view/bin/xrdsssadmin
+  xrootd: /opt/view/bin/xrootd
+  xrootd-config: /opt/view/bin/xrootd-config

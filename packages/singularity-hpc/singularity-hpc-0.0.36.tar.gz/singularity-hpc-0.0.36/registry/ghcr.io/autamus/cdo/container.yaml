@@ -1,0 +1,12 @@
+docker: ghcr.io/autamus/cdo
+url: https://github.com/orgs/autamus/packages/container/package/cdo
+maintainer: '@vsoch'
+description: CDO is a collection of command line Operators to manipulate and analyse
+  Climate and NWP model Data.
+latest:
+  1.9.10: sha256:fb7c94dee363def43318478ed8976616accbf126ce91b8ce9d6e4939e4ff2a6c
+tags:
+  1.9.10: sha256:fb7c94dee363def43318478ed8976616accbf126ce91b8ce9d6e4939e4ff2a6c
+  latest: sha256:fb7c94dee363def43318478ed8976616accbf126ce91b8ce9d6e4939e4ff2a6c
+aliases:
+  cdo: /opt/view/bin/cdo

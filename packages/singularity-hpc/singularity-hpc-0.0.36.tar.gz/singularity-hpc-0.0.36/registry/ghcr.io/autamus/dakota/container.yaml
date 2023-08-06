@@ -1,0 +1,18 @@
+docker: ghcr.io/autamus/dakota
+url: https://github.com/orgs/autamus/packages/container/package/dakota
+maintainer: '@vsoch'
+description: The Dakota project delivers both state-of-the-art research and robust,
+  usable software for optimization and UQ. Broadly, the Dakota software's advanced
+  parametric analyses enable design exploration, model calibration, risk analysis,
+  and quantification of margins and uncertainty with computational models.
+latest:
+  "6.12": sha256:59c2b0841425a3d8df6504d24f7c0e876218e201df6b915e1ec4a4cce822b16c
+tags:
+  "6.12": sha256:59c2b0841425a3d8df6504d24f7c0e876218e201df6b915e1ec4a4cce822b16c
+  latest: sha256:59c2b0841425a3d8df6504d24f7c0e876218e201df6b915e1ec4a4cce822b16c
+aliases:
+  dakota: /opt/view/bin/dakota
+  dakota_library_mode: /opt/view/bin/dakota_library_mode
+  dakota_library_split: /opt/view/bin/dakota_library_split
+  dakota_order_input: /opt/view/bin/dakota_order_input
+  dakota_restart_util: /opt/view/bin/dakota_restart_util

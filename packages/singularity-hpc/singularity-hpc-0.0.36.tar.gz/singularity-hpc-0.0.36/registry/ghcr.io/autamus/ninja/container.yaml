@@ -1,0 +1,11 @@
+docker: ghcr.io/autamus/ninja
+url: https://github.com/orgs/autamus/packages/container/package/ninja
+maintainer: '@vsoch'
+description: Ninja is a small build system with a focus on speed.
+latest:
+  1.10.2: sha256:ad4de9b7bd4b7f38281ea7f6488788f1bba990f613bd86136c8997773c13f99b
+tags:
+  1.10.2: sha256:ad4de9b7bd4b7f38281ea7f6488788f1bba990f613bd86136c8997773c13f99b
+aliases:
+  ninja: /opt/view/bin/ninja
+  ninja-build: /opt/view/bin/ninja-build

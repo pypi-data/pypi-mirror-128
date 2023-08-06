@@ -1,0 +1,13 @@
+docker: ghcr.io/autamus/geos
+url: https://github.com/orgs/autamus/packages/container/package/geos
+maintainer: '@vsoch'
+description: GEOS is a C++11 library for performing operations on two-dimensional
+  vector geometries.
+latest:
+  3.9.1: sha256:862a25c572f38782cc96efffc0523e9d908c2ad6f7d5ba5e6f5631c0314aae30
+tags:
+  3.8.1: sha256:731b5a546569eabad6aa69e43a01b507184379a04f5071d55d96a213bf22a121
+  3.9.1: sha256:862a25c572f38782cc96efffc0523e9d908c2ad6f7d5ba5e6f5631c0314aae30
+  latest: sha256:862a25c572f38782cc96efffc0523e9d908c2ad6f7d5ba5e6f5631c0314aae30
+aliases:
+  geos-config: /opt/view/bin/geos-config

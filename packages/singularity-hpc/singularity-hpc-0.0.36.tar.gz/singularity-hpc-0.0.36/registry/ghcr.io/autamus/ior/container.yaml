@@ -1,0 +1,12 @@
+docker: ghcr.io/autamus/ior
+url: https://github.com/orgs/autamus/packages/container/package/ior
+maintainer: '@vsoch'
+description: 'IOR is a parallel IO benchmark that can be used to test the performance
+  of parallel storage systems using various interfaces and access patterns. '
+latest:
+  3.3.0: sha256:b7cb97628271db933e632555806af2f5182f205d8525db8ce8331ff7f226d4b6
+tags:
+  3.3.0: sha256:b7cb97628271db933e632555806af2f5182f205d8525db8ce8331ff7f226d4b6
+  latest: sha256:b7cb97628271db933e632555806af2f5182f205d8525db8ce8331ff7f226d4b6
+aliases:
+  ior: /opt/view/bin/ior

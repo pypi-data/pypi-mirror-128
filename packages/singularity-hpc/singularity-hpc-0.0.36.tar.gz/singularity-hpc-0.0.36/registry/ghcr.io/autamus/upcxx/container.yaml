@@ -1,0 +1,15 @@
+docker: ghcr.io/autamus/upcxx
+url: https://github.com/orgs/autamus/packages/container/package/upcxx
+maintainer: '@vsoch'
+description: UPC++ is a C++ library that supports Partitioned Global Address Space
+  (PGAS) programming, and is designed to interoperate smoothly and efficiently with
+  MPI, OpenMP, CUDA and AMTs.
+latest:
+  2021.3.0: sha256:519d17b0961a58c6a62fc96ea2785da0f5083f57c068f10f48d06e8e4d57f09c
+tags:
+  2021.3.0: sha256:519d17b0961a58c6a62fc96ea2785da0f5083f57c068f10f48d06e8e4d57f09c
+aliases:
+  upcxx: /opt/view/bin/upcxx
+  upcxx-meta: /opt/view/bin/upcxx-meta
+  upcxx-run: /opt/view/bin/upcxx-run
+  upcxx.sh: /opt/view/bin/upcxx.sh
