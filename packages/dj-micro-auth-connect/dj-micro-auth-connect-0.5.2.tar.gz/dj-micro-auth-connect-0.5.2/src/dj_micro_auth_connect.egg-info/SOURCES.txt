@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dj_micro_auth_connect.egg-info/PKG-INFO
+src/dj_micro_auth_connect.egg-info/SOURCES.txt
+src/dj_micro_auth_connect.egg-info/dependency_links.txt
+src/dj_micro_auth_connect.egg-info/requires.txt
+src/dj_micro_auth_connect.egg-info/top_level.txt
+src/service_auth/__init__.py
+src/service_auth/admin.py
+src/service_auth/apps.py
+src/service_auth/permissions.py
+src/service_auth/remote_model.py
+src/service_auth/views.py
+src/service_auth/migrations/__init__.py
