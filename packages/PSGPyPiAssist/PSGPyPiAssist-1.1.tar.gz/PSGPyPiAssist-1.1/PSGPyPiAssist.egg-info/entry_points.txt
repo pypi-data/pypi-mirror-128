@@ -1,0 +1,3 @@
+[gui_scripts]
+psgpypiassist = psgpypiassist.script:main
+

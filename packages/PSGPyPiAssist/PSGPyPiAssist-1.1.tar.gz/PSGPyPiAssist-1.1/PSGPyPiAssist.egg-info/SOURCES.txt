@@ -1,0 +1,5 @@
+PSGPyPiAssist.egg-info/PKG-INFO
+PSGPyPiAssist.egg-info/SOURCES.txt
+PSGPyPiAssist.egg-info/dependency_links.txt
+PSGPyPiAssist.egg-info/entry_points.txt
+PSGPyPiAssist.egg-info/top_level.txt
