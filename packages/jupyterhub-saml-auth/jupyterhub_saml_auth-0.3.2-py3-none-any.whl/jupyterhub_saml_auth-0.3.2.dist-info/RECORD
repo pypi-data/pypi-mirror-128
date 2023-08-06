@@ -1,0 +1,12 @@
+jupyterhub_saml_auth/__init__.py,sha256=WUEwAAMA3ptqIhzkrwvLloaZRBuqQpdpL-mEeCi1xBw,68
+jupyterhub_saml_auth/authenticator.py,sha256=Cloc8vui4mm73Wvx3r1UE_B0Gm5m3UCPMlgesblHGhA,3247
+jupyterhub_saml_auth/handlers.py,sha256=M4vfHi_q320uvsbP7MiEXvPMZcKVdaG4pfbq3SMVF4A,4871
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/conftest.py,sha256=oZgt1mJpaPkTrU_gl7gp7drHPo2oEMBiE5l3KNECLQY,170
+test/jupyterhub_config.py,sha256=6qMusYE5zBGNur4NCwH03ruigG50MSusZxmqrswrcLo,43318
+test/test_acceptance.py,sha256=4-kvlL8tmLyLlVdSxo0SIZecsuM58XUHBs9UYDe-SIU,1928
+jupyterhub_saml_auth-0.3.2.dist-info/LICENSE,sha256=iH5rIHLHp5wqmtiYlbh4_uIH0Vj8BbD6uWNL3MRcigA,1556
+jupyterhub_saml_auth-0.3.2.dist-info/METADATA,sha256=-a0FEZtH4qZG7TqkqgDrWRMLe6frO8_Jw6hV2foH8YU,3097
+jupyterhub_saml_auth-0.3.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+jupyterhub_saml_auth-0.3.2.dist-info/top_level.txt,sha256=WKL5oY-KC6eL-Ydt-LOGVQxOw_xnmgDXCXuunpjZI5I,26
+jupyterhub_saml_auth-0.3.2.dist-info/RECORD,,
