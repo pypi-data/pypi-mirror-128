@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+lightkde/__init__.py
+lightkde/lightkde.py
+lightkde.egg-info/PKG-INFO
+lightkde.egg-info/SOURCES.txt
+lightkde.egg-info/dependency_links.txt
+lightkde.egg-info/requires.txt
+lightkde.egg-info/top_level.txt
+tests/__init__.py
+tests/test_kde_1d.py
+tests/test_kde_2d.py
