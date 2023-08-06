@@ -1,0 +1,3 @@
+[console_scripts]
+awsdata=aws_data_tools.cli:cli
+
