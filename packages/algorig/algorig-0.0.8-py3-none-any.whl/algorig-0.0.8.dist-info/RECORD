@@ -1,0 +1,11 @@
+algorig/__init__.py,sha256=9GmHxsbVp9Tnq9crfyul5krPl7_b2yIm12pmekQNQ54,56
+algorig/__main__.py,sha256=EvQ3AWihOJ2edzCoFhjv1n7W6DdzafT8C_uxSmDX10o,37
+algorig/app.py,sha256=hsLAo_79mULEHT5fu7rJv0IUndZ6tvadJW1wbbhzomE,8637
+algorig/application.py,sha256=Z7Eu7TpTtg7Ik6CkjIZk07aYXoKZ4avJbI6zlWOcpOs,7665
+algorig/cli.py,sha256=fUuZh7EdnOqCndDZLgYWoPWpVksh9p9V8vni3YHkfPs,1306
+algorig/config.py,sha256=LbWvMBIZlg9GZhQkn4KQDFJA2x5bOtCRaKbU0s4hg0E,1086
+algorig-0.0.8.dist-info/METADATA,sha256=EmRoAToNpM9J2dUOKLvGBh3Z2vxgD1eBaehDnAfKF9c,19489
+algorig-0.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+algorig-0.0.8.dist-info/entry_points.txt,sha256=FIcXR2m36Ym9NNmhY-dR8vbs5Y-ChiMovRWEC9DK1Ag,42
+algorig-0.0.8.dist-info/top_level.txt,sha256=5Joe0TkvzLbXn9JKJEvce2Halff-WeqAk3ouk4XI0ok,8
+algorig-0.0.8.dist-info/RECORD,,
