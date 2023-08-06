@@ -1,0 +1,4 @@
+osmnx
+pandas
+seaborn
+scikit-learn
