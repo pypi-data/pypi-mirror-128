@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/wikifeet/__init__.py
+src/wikifeet/feet_of_the_day.py
+src/wikifeet/feet_of_the_week.py
+src/wikifeet/feet_of_the_year.py
+src/wikifeet/random_feet.py
+src/wikifeet/wikifeet.py
+src/wikifeet/wikifeet_country_stats.py
+src/wikifeet/wikifeet_stats.py
+src/wikifeet.egg-info/PKG-INFO
+src/wikifeet.egg-info/SOURCES.txt
+src/wikifeet.egg-info/dependency_links.txt
+src/wikifeet.egg-info/top_level.txt
