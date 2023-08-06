@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyodide
+Version: 0.0.2
+Summary: Python with the scientific stack, compiled to WebAssembly.
+Home-page: https://pyodide.org/
+Author: Pyodide team
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pyodide/pyodide
+Project-URL: Documentation, https://pyodide.org/en/stable/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: Other OS
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align="center">
+  <a href="https://github.com/pyodide/pyodide">
+  <img src="https://pyodide.org/en/0.18.0/_static/img/pyodide-logo-readme.png" alt="Pyodide">
+  </a>
+</div>
+
+Python with the scientific stack, compiled to WebAssembly.
+
+Pyodide is a Python distribution that runs in the browser or Node.js. It cannot
+be installed from PyPi. See
+[github.com/pyodide/pyodide](https://github.com/pyodide/pyodide) for how to use
+Pyodide.
+
+

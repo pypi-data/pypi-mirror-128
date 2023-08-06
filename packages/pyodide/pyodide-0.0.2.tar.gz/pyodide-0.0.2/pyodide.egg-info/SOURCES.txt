@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+_static/pyodide-logo-readme.png
+pyodide.egg-info/PKG-INFO
+pyodide.egg-info/SOURCES.txt
+pyodide.egg-info/dependency_links.txt
+pyodide.egg-info/top_level.txt
