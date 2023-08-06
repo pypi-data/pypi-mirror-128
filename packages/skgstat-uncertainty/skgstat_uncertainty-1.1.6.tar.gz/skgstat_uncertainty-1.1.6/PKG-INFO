@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: skgstat_uncertainty
+Version: 1.1.6
+Summary: Uncertainty analysis tool for SciKit-GStat
+Home-page: UNKNOWN
+License: MIT License
+Description: # SciKit-GStat Uncertainty extension
+        
+        work in progress
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
