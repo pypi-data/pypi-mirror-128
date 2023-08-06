@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: muler
+Version: 0.2.5
+Summary: A Python package for working with data from IGRINS and HPF
+Home-page: https://github.com/OttoStruve/muler
+Author: gully
+Author-email: igully@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: astropy (<5.0,>=4.1)
+Requires-Dist: specutils (>=1.2)
+Requires-Dist: pandas
+Requires-Dist: importlib-resources
+Requires-Dist: gwcs (<0.17)
+Requires-Dist: matplotlib
+Provides-Extra: extra
+Requires-Dist: celerite2 ; extra == 'extra'
+Requires-Dist: h5py ; extra == 'extra'
+Requires-Dist: black ; extra == 'extra'
+
+UNKNOWN
+

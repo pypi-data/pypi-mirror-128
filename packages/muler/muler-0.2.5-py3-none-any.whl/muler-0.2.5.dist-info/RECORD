@@ -1,0 +1,16 @@
+muler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+muler/echelle.py,sha256=qJzquLhtxSprbN9VjzbepT3awfmkU0NNAtILiepTM4Y,29397
+muler/hpf.py,sha256=lJM8-ceTHHP4cHva1FCF91NAgxUYP9OzTt4bH6sP3k8,15623
+muler/igrins.py,sha256=MpLWz8E_xNM2b5LNTTydMo9HbhLuMrnho2hS-CCbKkc,7512
+muler/nirspec.py,sha256=qhDpC5x2W96zYdHVpE2IsjYkQZUdE6gA9uUv4kO0JZ8,6766
+muler/utilities.py,sha256=pdwFXtWjaBHY6bjOCB0tn0j04Ml2erglR8g8H2T51Es,3362
+muler/templates/HPF_blaze_templates.csv,sha256=0SZjTBfLo5LXCu-dCejCXLGjK8y2gNVxLzus1Xca_Sc,3216666
+muler/templates/HPF_sci_to_sky_ratio_beta.csv,sha256=NdsK_vY5DGamxhcHfZAb2vLoXdnqxislng_35unyEpE,3091088
+muler/templates/PHOENIX_10kK_hpf_template.csv,sha256=zWnj35x2C54r1J_i_xsgIjjUMzWyFz35orgbK0vsP00,9549825
+muler/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+muler/templates/telfit_HPFtemplate_temp286_hum050.csv,sha256=Bv_j0pp_FqdXg4YY8HRt0O4JrCoNJr1G_RRUWNFSt3o,2136141
+muler-0.2.5.dist-info/LICENSE,sha256=pQEgRSJCR7MmKTPFKTwTyxFHRPyZ0s0hASka5l3KZJQ,1067
+muler-0.2.5.dist-info/METADATA,sha256=6LtKxQRnSsFLEFlGyUV8XB1oCER9hEicqKWPVW7uPQQ,852
+muler-0.2.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+muler-0.2.5.dist-info/top_level.txt,sha256=uHfBH-NAFQ6XRA1DZw5DyN7t_Ut0p3675gw4_Qtsh6s,6
+muler-0.2.5.dist-info/RECORD,,
