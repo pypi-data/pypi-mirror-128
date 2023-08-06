@@ -1,0 +1,126 @@
+{% extends "stampo.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block extrahead %}
+    <script>
+        function typeform(event) {
+            const user = document.querySelector("#typeform-user").value
+            const id = document.querySelector("#typeform-id").value
+
+            const url = new URL(location.href)
+            url.pathname = `/typeform/${user}/${id}`
+
+            navigator.clipboard.writeText(url.href)
+
+            const button = document.querySelector("#typeform-generate")
+            button.classList.add("color-lime")
+            button.textContent = "Copied!"
+
+            event.preventDefault()
+            return false
+        }
+
+        function tripetto(event) {
+            const id = document.querySelector("#tripetto-id").value
+
+            const url = new URL(location.href)
+            url.pathname = `/tripetto/${id}`
+
+            navigator.clipboard.writeText(url.href)
+
+            const button = document.querySelector("#tripetto-generate")
+            button.classList.add("color-lime")
+            button.textContent = "Copied!"
+
+            event.preventDefault()
+            return false
+        }
+    </script>
+{% endblock %}
+
+{% block center %}
+    <section class="chapter">
+        <section class="panel panel-box">
+            <h3>
+                Cos'è questo sito?
+            </h3>
+            <p>
+                Questo sito permette di richiedere il login per la compilazione di moduli creati con <a href="https://www.typeform.com/">Typeform</a> e <a href="https://tripetto.app/">Tripetto</a>.
+            </p>
+            <p>
+                Viene utilizzato per verificare i voti inviati dai membri Royal Games nei sondaggi anonimi e non-anonimi.
+            </p>
+        </section>
+        <section class="panel panel-box">
+            <h3>
+                Contattaci
+            </h3>
+            <p>
+                Per contattare gli sviluppatori, visita il <a href="https://github.com/RYGhub/rygforms">repository GitHub</a>!
+            </p>
+            <p>
+                In particolare:
+            </p>
+            <ul>
+                <li>
+                    se hai riscontrato un bug, <a href="https://github.com/RYGhub/rygforms/issues/new">apri una nuova Issue</a>;
+                </li>
+                <li>
+                    se hai una domanda riguardante il progetto, <a href="https://github.com/RYGhub/rygforms/discussions/new">avvia una nuova Discussion</a>;
+                </li>
+                <li>
+                    se vuoi contribuire a migliorare il progetto, <a href="https://github.com/RYGhub/rygforms/compare"> apri una nuova Pull Request</a>.
+                </li>
+            </ul>
+        </section>
+    </section>
+    <section class="panel panel-box">
+        <h3>
+            Genera un link
+        </h3>
+        <section class="chapter">
+            <section class="panel">
+                <h3>
+                    Typeform
+                </h3>
+                <form>
+                    <label for="typeform-user">Username</label>
+                    <input id="typeform-user" type="text" placeholder="steffo99" required/>
+                    <label for="typeform-id">Form ID</label>
+                    <input id="typeform-id" type="text" placeholder="xxxxxxxx" required/>
+                    <div class="form-row">
+                        <button type="button" id="typeform-generate" onclick="typeform()">
+                            Genera e copia
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <section class="panel">
+                <h3>
+                    Tripetto
+                </h3>
+                <form>
+                    <label for="tripetto-id">Form ID</label>
+                    <input id="tripetto-id" type="text" placeholder="XXXXXXXXXX" required/>
+                    <div class="form-row">
+                        <button type="button" id="tripetto-generate" onclick="tripetto()">
+                            Genera e copia
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </section>
+    <footer class="align-center">
+        <p>
+            © {{ g.year }} - <a href="https://steffo.eu">Stefano Pigozzi</a> & <a href="https://fermitech.info">Lorenzo Balugani</a>
+        </p>
+        <p>
+            Sviluppato <a href="https://github.com/RYGhub">dalla RYG</a>, per <a href="https://ryg.one">la RYG</a>
+        </p>
+        <p>
+            Basato (e <span class="color-red">rossopillato</span>) su <a href="https://github.com/LBindustries/Gestione">Gestione 1.05 Permafrost</a> e <a href="https://github.com/RYGhub/bluelib">Bluelib</a>
+        </p>
+    </footer>
+{% endblock %}
