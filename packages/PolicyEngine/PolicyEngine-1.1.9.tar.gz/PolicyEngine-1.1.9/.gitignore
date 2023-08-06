@@ -1,0 +1,13 @@
+# dependencies
+**/node_modules
+**/package-lock.json
+**/build
+**/*.log*
+**/dist
+**/pytest_cache
+**/__pycache__
+**/*.egg-info
+**/.vscode
+**/static/*
+openfisca_uk/
+openfisca_uk_data/
