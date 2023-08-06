@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: de_git_repo_manager
+Version: 0.2.0
+Summary: de namespace module portion git_repo_manager: create and maintain local and remote git repositories of Python projects
+Home-page: https://gitlab.com/degroup/de_git_repo_manager
+Author: AndiEcker
+Author-email: aecker2@gmail.com
+License: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Keywords: configuration,development,environment,productivity
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: dev
+License-File: LICENSE.md
+
+UNKNOWN
+
