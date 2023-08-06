@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+metriql2superset/__init__.py
+metriql2superset/metadata.py
+metriql2superset/superset.py
+metriql2superset/bin/metriql-superset
+metriql_superset.egg-info/PKG-INFO
+metriql_superset.egg-info/SOURCES.txt
+metriql_superset.egg-info/dependency_links.txt
+metriql_superset.egg-info/requires.txt
+metriql_superset.egg-info/top_level.txt
