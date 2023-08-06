@@ -1,0 +1,11 @@
+trr265/__init__.py,sha256=R9xOYoYrWKcfO5zvTeGC3m_eDNOvxMd8CocQs2tLufo,22
+trr265/_nbdev.py,sha256=pFW6Px_TtPqCgxKDOq1ZgZWxGEkZsLau3RXhwtjcmRs,2025
+trr265/core.py,sha256=6jZJ2YaH67dAf7EdxSkZH_IS5vTeQ2sTUnV1FUS7shQ,111
+trr265/data_provider.py,sha256=SfgI5DMFuec-kb8PgdycT9l7EHzfMUXNc4Z3yMe949g,24824
+trr265/gbe.py,sha256=74ko_sjrpVGd7SREgT-V36jdCfP8Ev_fac2Bh1Daxbs,5624
+trr265-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+trr265-0.0.8.dist-info/METADATA,sha256=KYfo7yCEZu7hP7_QAjcW2MzZ1ugekJVnZt-1Qa-i3uk,30746
+trr265-0.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+trr265-0.0.8.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+trr265-0.0.8.dist-info/top_level.txt,sha256=QGeTwxzyQwQkU_9Q6Sz1VHwnO6XsMUtPmmh71E_O6MU,7
+trr265-0.0.8.dist-info/RECORD,,
