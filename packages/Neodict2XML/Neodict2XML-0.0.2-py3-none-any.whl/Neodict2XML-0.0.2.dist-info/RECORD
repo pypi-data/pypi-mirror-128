@@ -1,0 +1,9 @@
+neodict2xml/__init__.py,sha256=m2XWpsxGj9PP4txX-2x2NCNm29Zysw8LBakWmBaRGHI,44
+neodict2xml/dict2xml.py,sha256=PCTDEIJce36nYvB_5NCdfOppg15FzyGrkue5bz1MdRw,1362
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_neodict2xml.py,sha256=Fo666GbnBaI1VRUfXOEAgvrWVsJhln8Ru1BUYRmjasw,1327
+Neodict2XML-0.0.2.dist-info/LICENSE.txt,sha256=So_nuuQTf_N4JBqVVvt-7ER24w0j2niPE5GObt4-tz0,1070
+Neodict2XML-0.0.2.dist-info/METADATA,sha256=1dBTSqlPgmJ3aRATxXV4g7a_BCUYpcknzmOL9AiRU1g,1566
+Neodict2XML-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+Neodict2XML-0.0.2.dist-info/top_level.txt,sha256=Nb6a9M3CCQhFKSmBN-Cprs2wVmjxUg2AqQ98u2mbQq0,18
+Neodict2XML-0.0.2.dist-info/RECORD,,
