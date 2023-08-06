@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+src/entities/__init__.py
+src/enums/__init__.py
+src/pymessege.egg-info/PKG-INFO
+src/pymessege.egg-info/SOURCES.txt
+src/pymessege.egg-info/dependency_links.txt
+src/pymessege.egg-info/top_level.txt
+src/services/__init__.py
+src/services/client/__init__.py
+src/services/client/messenger/__init__.py
+src/settings/__init__.py
+src/web/__init__.py
