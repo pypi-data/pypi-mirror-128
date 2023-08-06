@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: django-first
+Version: 1.0
+Summary: login and register, base on Django
+Home-page: UNKNOWN
+Author: test
+Author-email: test@example.com
+License: BSD License
+Platform: UNKNOWN
+Classifier: Framework :: Django :: 3.2
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+
+UNKNOWN
+
+
