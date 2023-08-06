@@ -1,0 +1,3 @@
+[console_scripts]
+vaede = vaede.__main__:main
+
