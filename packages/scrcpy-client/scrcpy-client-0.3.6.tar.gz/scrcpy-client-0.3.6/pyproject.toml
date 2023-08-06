@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "scrcpy-client"
+version = "0.3.6"
+description = "A client of scrcpy"
+authors = ["lengyue <lengyue@lengyue.me>"]
+readme = "README.md"
+repository = "https://github.com/leng-yue/py-scrcpy-client"
+license = "MIT"
+packages = [
+    { include = "scrcpy" },
+    { include = "scrcpy_ui" },
+]
+
+[tool.poetry.scripts]
+py-scrcpy = "scrcpy_ui:main"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.10"
+av = "^8.0.3"
+opencv-python = "^4.5.3"
+adbutils = "^0.11.0"
+
+# Optional dependencies for ui
+click = { version = "^7.0.0", optional = true }
+PySide6 = { version = "^6.0.0", optional = true }
+
+[tool.poetry.extras]
+ui = ["click", "PySide6"]
+
+[tool.poetry.dev-dependencies]
+flake8 = "*"
+isort = "*"
+black = {version = "*", allow-prereleases = true}
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+Sphinx = "^4.1.2"
+myst-parser = "^0.15.1"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
