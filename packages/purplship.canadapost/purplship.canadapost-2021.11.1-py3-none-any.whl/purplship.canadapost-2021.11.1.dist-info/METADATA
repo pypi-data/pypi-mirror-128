@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: purplship.canadapost
+Version: 2021.11.1
+Summary: Purplship - Canada Post Shipping Extension
+Home-page: https://next.purplship.com/docs/guides/sdk
+License: Apache-2.0
+Author: Purplship
+Author-email: hello@purplship.com
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: carrier.canadapost
+Requires-Dist: purplship
+Project-URL: Repository, https://github.com/purplship/purplship
+Description-Content-Type: text/markdown
+
+# purplship.canadapost
+
+This package is a Canada Post extension of the [purplship](https://pypi.org/project/purplship) multi carrier shipping SDK.
+
+## Requirements
+
+`Python 3.7+`
+
+## Installation
+
+```bash
+pip install purplship.canadapost
+```
+
+## Usage
+
+```python
+import purplship
+from purplship.mappers.canadapost.settings import Settings
+
+
+# Initialize a carrier gateway
+canadapost = purplship.gateway["canadapost"].create(
+    Settings(
+        ...
+    )
+)
+```
+
+Check the [Purplship Mutli-carrier SDK docs](https://sdk.purplship.com) for Shipping API requests
+
