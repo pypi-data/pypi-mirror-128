@@ -1,0 +1,2 @@
+pvporcupine==2.0.0
+pvrhino==2.0.0
