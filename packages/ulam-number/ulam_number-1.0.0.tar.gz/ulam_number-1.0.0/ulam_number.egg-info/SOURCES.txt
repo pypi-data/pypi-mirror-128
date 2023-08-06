@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+package/__init__.py
+package/__main__.py
+package/input_data.py
+package/sequence.py
+ulam_number.egg-info/PKG-INFO
+ulam_number.egg-info/SOURCES.txt
+ulam_number.egg-info/dependency_links.txt
+ulam_number.egg-info/top_level.txt
