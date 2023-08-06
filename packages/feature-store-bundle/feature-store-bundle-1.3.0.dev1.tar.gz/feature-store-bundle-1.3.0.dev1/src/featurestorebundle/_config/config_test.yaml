@@ -1,0 +1,9 @@
+parameters:
+  datalake:
+    base_path: '/foo/bar'
+
+services:
+  featurestorebundle.test.DummySparkFactory:
+
+  pyspark.sql.session.SparkSession:
+    factory: ['@featurestorebundle.test.DummySparkFactory', 'create']
