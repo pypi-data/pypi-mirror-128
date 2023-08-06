@@ -1,0 +1,3 @@
+pytket~=0.17.0
+pyquil~=3.0
+typing-extensions~=3.7
