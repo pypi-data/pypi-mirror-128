@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+NOTICE
+README.md
+pyproject.toml
+setup.py
+src/aws_amplify.cdk.exported_backend.egg-info/PKG-INFO
+src/aws_amplify.cdk.exported_backend.egg-info/SOURCES.txt
+src/aws_amplify.cdk.exported_backend.egg-info/dependency_links.txt
+src/aws_amplify.cdk.exported_backend.egg-info/requires.txt
+src/aws_amplify.cdk.exported_backend.egg-info/top_level.txt
+src/aws_amplify/cdk/exported_backend/__init__.py
+src/aws_amplify/cdk/exported_backend/py.typed
+src/aws_amplify/cdk/exported_backend/_jsii/__init__.py
+src/aws_amplify/cdk/exported_backend/_jsii/cdk-exported-backend@0.0.5.jsii.tgz
