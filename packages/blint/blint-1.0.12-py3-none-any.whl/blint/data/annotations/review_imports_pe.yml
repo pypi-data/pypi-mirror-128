@@ -1,0 +1,1638 @@
+---
+text: Review for imports identified in PE binary
+group: IMPORT_REVIEWS
+url:
+  documentation: https://docs.microsoft.com/en-us/windows/win32/api/_security/
+exe_type:
+  - PE32
+  - PE64
+rules:
+  - id: WIN32_PROCESS_API
+    title: Security sensitive process functions used
+    summary: Can Create Process and Threads
+    description: |
+      Process api are used by system services.
+    patterns:
+      - GetCurrentProcessToken
+      - CreateProcessAsUserA
+      - CreateProcessAsUserW
+      - CreateRemoteThread
+      - CreateRemoteThreadEx
+      - GetCurrentProcessToken
+      - GetCurrentThreadEffectiveToken
+      - GetCurrentThreadToken
+      - GetProcessMitigationPolicy
+      - OpenProcessToken
+      - OpenThreadToken
+      - SetProcessMitigationPolicy
+      - SetThreadToken
+  - id: CRYPT_XML_API
+    title: Security sensitive crypt xml functions used
+    summary: Uses Crypt XML API
+    description: |
+      Crypt XML api are used by system services.
+    patterns:
+      - CryptXmlAddObject
+      - CryptXmlCreateReference
+      - CryptXmlDigestReference
+      - CryptXmlEncode
+      - CryptXmlImportPublicKey
+      - CryptXmlOpenToDecode
+      - CryptXmlOpenToEncode
+      - CryptXmlSetHMACSecret
+      - CryptXmlSign
+      - CryptXmlVerifySignature
+  - id: DP_API
+    title: Security sensitive dpapi functions used
+    summary: Uses DP API
+    description: |
+      DP api are used by system services.
+    patterns:
+      - CryptProtectData
+      - CryptProtectMemory
+      - CryptUnprotectData
+      - CryptUnprotectMemory
+      - CryptUpdateProtectedState
+  - id: NCRYPT_API
+    title: Security sensitive NCrypt api functions used
+    summary: Uses NCrypt API
+    description: |
+      NCrypt api are used by system services.
+    patterns:
+      - NCryptCreateClaim
+      - NCryptCreatePersistedKey
+      - NCryptDecrypt
+      - NCryptEncrypt
+      - NCryptExportKey
+      - NCryptImportKey
+      - NCryptKeyDerivation
+      - NCryptNotifyChangeKey
+      - NCryptOpenKey
+      - NCryptSecretAgreement
+      - NCryptSignHash
+      - NCryptTranslateHandle
+      - NCryptVerifyClaim
+      - NCryptVerifySignature
+      - NCryptCreateProtectionDescriptor
+      - NCryptGetProtectionDescriptorInfo
+      - NCryptProtectSecret
+      - NCryptStreamOpenToProtect
+      - NCryptStreamOpenToUnprotect
+      - NCryptStreamOpenToUnprotectEx
+      - NCryptStreamUpdate
+      - NCryptUnprotectSecret
+  - id: SCHANNEL_API
+    title: Security sensitive schannel api functions used
+    summary: Uses schannel API
+    description: |
+      schannel api are used by system services.
+    patterns:
+      - SslCrackCertificate
+  - id: SECURITY_BASE_API
+    title: Security base api functions used
+    summary: Uses Security Base API
+    description: |
+      Security Base api are used by system services.
+    patterns:
+      - AccessCheck
+      - AccessCheckAndAuditAlarmW
+      - AddAccessAllowedAce
+      - AddAccessAllowedObjectAce
+      - AddAccessDeniedAce
+      - AddAccessDeniedObjectAce
+      - AddAce
+      - AddAuditAccessAce
+      - AddAuditAccessAceEx
+      - AddAuditAccessObjectAce
+      - AddMandatoryAce
+      - AddResourceAttributeAce
+      - AddScopedPolicyIDAce
+      - AdjustTokenGroups
+      - AdjustTokenPrivileges
+      - AreAllAccessesGranted
+      - AreAnyAccessesGranted
+      - CheckTokenCapability
+      - CheckTokenMembership
+      - ConvertToAutoInheritPrivateObjectSecurity
+      - CreatePrivateObjectSecurity
+      - CreatePrivateObjectSecurityWithMultipleInheritance
+      - CreateRestrictedToken
+      - DuplicateToken
+      - GetAclInformation
+      - GetFileSecurityW
+      - GetKernelObjectSecurity
+      - GetPrivateObjectSecurity
+      - GetSecurityDescriptorControl
+      - GetSecurityDescriptorDacl
+      - GetSecurityDescriptorGroup
+      - GetSecurityDescriptorOwner
+      - GetSidIdentifierAuthority
+      - GetTokenInformation
+      - GetWindowsAccountDomainSid
+      - ImpersonateAnonymousToken
+      - ImpersonateLoggedOnUser
+      - ImpersonateSelf
+      - IsTokenRestricted
+      - IsValidAcl
+      - IsWellKnownSid
+      - PrivilegeCheck
+      - PrivilegedServiceAuditAlarmW
+      - QuerySecurityAccessMask
+      - SetAclInformation
+      - SetFileSecurityW
+      - SetKernelObjectSecurity
+      - SetPrivateObjectSecurity
+      - SetPrivateObjectSecurityEx
+      - SetSecurityAccessMask
+      - SetSecurityDescriptorControl
+      - SetSecurityDescriptorDacl
+      - SetSecurityDescriptorGroup
+      - SetSecurityDescriptorOwner
+      - SetSecurityDescriptorRMControl
+      - SetSecurityDescriptorSacl
+      - SetTokenInformation
+  - id: SOFTWARE_LICENSING_API
+    title: Software Licensing api functions used
+    summary: Uses Software Licensing API
+    description: |
+      Software Licensing api are used by system services.
+    patterns:
+      - SLAcquireGenuineTicket
+      - SLActivateProduct
+      - SLConsumeRight
+      - SLDepositMigrationBlob
+      - SLDepositOfflineConfirmationId
+      - SLGenerateOfflineInstallationId
+      - SLGetApplicationPolicy
+      - SLGetAuthenticationResult
+      - SLGetGenuineInformation
+      - SLGetInstalledProductKeyIds
+      - SLGetLicense
+      - SLGetLicenseInformation
+      - SLGetLicensingStatusInformation
+      - SLGetPKeyId
+      - SLGetPKeyInformation
+      - SLGetPolicyInformation
+      - SLGetProductSkuInformation
+      - SLGetReferralInformation
+      - SLGetServerStatus
+      - SLGetServiceInformation
+      - SLGetWindowsInformation
+      - SLInstallLicense
+      - SLInstallProofOfPurchase
+      - SLIsGenuineLocal
+      - SLLoadApplicationPolicies
+      - SLQueryLicenseValueFromApp
+      - SLRegisterEvent
+      - SLSetAuthenticationData
+      - SLSetCurrentProductKey
+      - SLSetGenuineInformation
+  - id: SS_API
+    title: SS api functions used
+    summary: Uses SS API
+    description: |
+      API to allow an application to use various security models available on a computer or network without changing the interface to the security system.
+    patterns:
+      - AcceptSecurityContext
+      - AcquireCredentialsHandle
+      - AddSecurityPackage
+      - ApplyControlToken
+      - ChangeAccountPassword
+      - CompleteAuthToken
+      - DecryptMessage
+      - DeleteSecurityContext
+      - DeleteSecurityPackage
+      - ExportSecurityContext
+      - ImpersonateSecurityContext
+      - ImportSecurityContext
+      - MakeSignature
+      - QueryContextAttributes
+      - QueryCredentialsAttributes
+      - QuerySecurityContextToken
+      - QuerySecurityPackageInfo
+      - SaslAcceptSecurityContext
+      - SaslEnumerateProfiles
+      - SaslGetContextOption
+      - SaslGetProfilePackage
+      - SaslIdentifyPackage
+      - SaslInitializeSecurityContext
+      - SaslSetContextOption
+      - SetCredentialsAttributes
+      - SspiAcquireCredentialsHandleAsync
+      - SspiAsyncContextRequiresNotify
+      - SspiDecryptAuthIdentity
+      - SspiEncodeAuthIdentityAsStrings
+      - SspiEncryptAuthIdentity
+      - SspiEncodeStringsAsAuthIdentity
+      - SspiFreeAuthIdentity
+      - SspiMarshalAuthIdentity
+      - SspiPrepareForCredRead
+      - SspiPrepareForCredWrite
+      - SspiPromptForCredentials
+      - SspiUpdateCredentials
+      - SspiValidateAuthIdentity
+      - VerifySignature
+  - id: TOKEN_BINDING_API
+    title: Token Binding api functions used
+    summary: Uses Token Binding API
+    description: |
+      Token Binding api are used by system services.
+    patterns:
+      - TokenBindingGenerateBinding
+      - TokenBindingGenerateID
+      - TokenBindingGenerateMessage
+      - TokenBindingGetKeyTypesClient
+      - TokenBindingGetKeyTypesServer
+      - TokenBindingVerifyMessage
+  - id: WIN_BASE_API
+    title: Win Base api functions used
+    summary: Uses Win Base API
+    description: |
+      Win Base api are used by system services.
+    patterns:
+      - AccessCheckAndAuditAlarmA
+      - AccessCheckByTypeAndAuditAlarmA
+      - AddIntegrityLabelToBoundaryDescriptor
+      - AddSecureMemoryCacheCallback
+      - CheckNameLegalDOS8Dot3A
+      - CreateFiber
+      - CreateProcessW
+      - CreateProcessWithLogonW
+      - CreateProcessWithTokenW
+      - TerminateProcess
+      - DeleteVolumeMountPointA
+      - FindFirstVolumeA
+      - FindFirstVolumeMountPoint
+      - FindNextVolumeA
+      - FindNextVolumeMountPoint
+      - GetActiveProcessorCount
+      - GetActiveProcessorGroupCount
+      - GetCommModemStatus
+      - GetCompressedFileSizeTransactedA
+      - GetDevicePowerState
+      - GetEventLogInformation
+      - GetFirmwareEnvironmentVariable
+      - GetFirmwareType
+      - GetMaximumProcessorCount
+      - GetProcessDEPPolicy
+      - GetSystemRegistryQuota
+      - SetFileAttributesTransacted
+      - SetFirmwareEnvironmentVariable
+      - SetSystemPowerState
+      - SetVolumeMountPoint
+      - NtQueryInformationProcess
+      - NtQueryInformationThread
+      - NtQueryMultipleValueKey
+      - NtQuerySystemInformation
+      - LoadLibraryA
+      - LoadLibraryW
+      - GetDriveTypeA
+      - GetVolumeInformation
+      - GetSystemInfo
+      - GetStartupInfoW
+      - GetDiskFreeSpaceA
+  - id: WIN_BASE_USER_API
+    title: Win Base user api functions used
+    summary: Retrieves Account Information
+    description: |
+      Win Base api are used by system services.
+    patterns:
+      - GetUserNameW
+      - GetUserNameA
+      - LogonUserA
+      - LogonUserExA
+      - LogonUserExW
+      - LogonUserW
+      - LookupAccountNameA
+      - LookupAccountNameW
+      - LookupAccountSidA
+      - LookupAccountSidLocalA
+      - LookupAccountSidLocalW
+      - LookupAccountSidW
+      - LookupPrivilegeDisplayNameA
+      - LookupPrivilegeDisplayNameW
+      - LookupPrivilegeNameA
+      - LookupPrivilegeNameW
+      - LookupPrivilegeValueA
+      - LookupPrivilegeValueW
+  - id: WIN_BASE_IO_API
+    title: Win Base IO api functions used
+    summary: Can Create and Encrypt Files
+    description: |
+      Win Base IO api are used by system services.
+    patterns:
+      - CopyFile
+      - CreateDirectory
+      - CreateHardLinkA
+      - DecryptFile
+      - DeleteFile
+      - EncryptFileA
+      - EncryptFileW
+      - FileEncryptionStatus
+      - GetFileAttributesTransacted
+      - GetFileBandwidthReservation
+      - GetFileSecurityA
+      - MoveFile
+      - OpenEncryptedFileRaw
+      - ReadEncryptedFileRaw
+      - ReadDirectoryChanges
+      - ReplaceFileA
+      - ReplaceFileW
+      - SetFileSecurityA
+      - SetFileAttributesTransacted
+      - WriteEncryptedFileRaw
+      - NtCreateFile
+      - NtDeviceIoControlFile
+      - NtNotifyChangeMultipleKeys
+      - NtOpenFile
+      - GetWindowsDirectoryA
+      - GetWindowsDirectoryW
+      - GetSystemDirectoryA
+      - GetSystemDirectoryW
+      - GetFileAttributesA
+      - GetFileAttributesW
+      - FindFirstFileA
+      - FindFirstFileW
+      - RemoveDirectoryA
+      - RemoveDirectoryW
+      - GetTempFileNameA
+      - GetTempFileNameW
+      - GetTempPathA
+      - GetFileVersionInfoSize
+      - GetFileVersionInfo
+  - id: WIN_BASE_EXEC_API
+    title: Win Base Execute api functions used
+    summary: Can Execute other programs
+    description: |
+      Win Base Execute api are used by system services.
+    patterns:
+      - WinExec
+      - WinMain
+  - id: WIN_CRED_API
+    title: Win Cred api functions used
+    summary: Can manipute Windows Credentials
+    description: |
+      Win Cred api are used by system services.
+    patterns:
+      - CredDeleteA
+      - CredDeleteW
+      - CredEnumerate
+      - CredFindBestCredential
+      - CredGetSessionTypes
+      - CredGetTargetInfo
+      - CredIsMarshaledCredential
+      - CredIsProtected
+      - CredMarshalCredential
+      - CredPackAuthenticationBuffer
+      - CredProtect
+      - CredReadDomainCredentials
+      - CredRename
+      - CredUICmdLinePromptForCredentials
+      - CredUIConfirmCredentials
+      - CredUIParseUserName
+      - CredUIPromptForCredentials
+      - CredUIPromptForWindowsCredentials
+      - CredUIReadSSOCred
+      - CredUnmarshalCredential
+      - CredUnPackAuthenticationBuffer
+      - CredUnprotect
+      - CredWriteDomainCredentials
+  - id: WIN_CRYPT_API
+    title: Win Crypt api functions used
+    summary: Uses Windows Crypt API
+    description: |
+      Cryptography is the use of codes to convert data so that only a specific recipient will be able to read it, using a key. Microsoft cryptographic technologies include CryptoAPI, Cryptographic Service Providers (CSP), CryptoAPI Tools, CAPICOM, WinTrust, issuing and managing certificates, and developing customizable public key infrastructures.
+    patterns:
+      - CertAddCertificateContextToStore
+      - CertAddCertificateLinkToStore
+      - CertAddCRLContextToStore
+      - CertAddCRLLinkToStore
+      - CertAddCTLContextToStore
+      - CertAddCTLLinkToStore
+      - CertAddEncodedCertificateToStore
+      - CertAddEncodedCertificateToSystemStore
+      - CertAddEncodedCRLToStore
+      - CertAddEnhancedKeyUsageIdentifier
+      - CertAddRefServerOcspResponse
+      - CertAddSerializedElementToStore
+      - CertCompareCertificate
+      - CertCreateCertificateChainEngine
+      - CertCreateSelfSignCertificate
+      - CertDeleteCertificateFromStore
+      - CertDeleteCRLFromStore
+      - CertDeleteCTLFromStore
+      - CertDuplicateCertificateChain
+      - CertDuplicateCertificateContext
+      - CertDuplicateCRLContext
+      - CertDuplicateCTLContext
+      - CertDuplicateStore
+      - CertEnumCertificatesInStore
+      - CertEnumCRLsInStore
+      - CertFindAttribute
+      - CertFindCertificateInCRL
+      - CertFindCertificateInStore
+      - CertFindChainInStore
+      - CertFindCRLInStore
+      - CertFindCTLInStore
+      - CertFindExtension
+      - CertFindSubjectInCTL
+      - CertFindSubjectInSortedCTL
+      - CertFreeCertificateChain
+      - CertFreeCertificateChainEngine
+      - CertFreeCertificateChainList
+      - CertFreeCertificateContext
+      - CertFreeServerOcspResponseContext
+      - CertGetCertificateChain
+      - CertGetCertificateContextProperty
+      - CertGetCRLFromStore
+      - CertGetCTLContextProperty
+      - CertGetEnhancedKeyUsage
+      - CertGetIntendedKeyUsage
+      - CertGetIssuerCertificateFromStore
+      - CertGetServerOcspResponseContext
+      - CertGetValidUsages
+      - CertGetSubjectCertificateFromStore
+      - CertIsStrongHashToSign
+      - CertIsValidCRLForCertificate
+      - CertOpenServerOcspResponse
+      - CertOpenStore
+      - CertOpenSystemStore
+      - CertRegisterPhysicalStore
+      - CertRegisterSystemStore
+      - CertSelectCertificateChains
+      - CertSetEnhancedKeyUsage
+      - CertSetStoreProperty
+      - CertVerifyCertificateChainPolicy
+      - CertVerifyCRLRevocation
+      - CertVerifyCRLTimeValidity
+      - CertVerifyCTLUsage
+      - CertVerifyRevocation
+      - CertVerifySubjectCertificateContext
+      - CertVerifyTimeValidity
+      - CertVerifyValidityNesting
+      - CryptAcquireCertificatePrivateKey
+      - CryptAcquireContext
+      - CryptBinaryToString
+      - CryptCreateHash
+      - CryptCreateKeyIdentifierFromCSP
+      - CryptDecodeMessage
+      - CryptDecodeObject
+      - CryptDecrypt
+      - CryptDecryptAndVerifyMessageSignature
+      - CryptDecryptMessage
+      - CryptDeriveKey
+      - CryptEncodeObject
+      - CryptEncrypt
+      - CryptEncryptMessage
+      - CryptExportKey
+      - CryptExportPKCS8
+      - CryptExportPublicKeyInfo
+      - CryptExportPublicKeyInfoFromBCryptKeyHandle
+      - CryptFindCertificateKeyProvInfo
+      - CryptFindOIDInfo
+      - CryptGenKey
+      - CryptGenRandom
+      - CryptGetHashParam
+      - CryptGetMessageCertificates
+      - CryptGetMessageSignerCount
+      - CryptGetUserKey
+      - CryptHashCertificate
+      - CryptHashCertificate2
+      - CryptHashData
+      - CryptHashMessage
+      - CryptHashPublicKeyInfo
+      - CryptHashSessionKey
+      - CryptImportKey
+      - CryptImportPKCS8
+      - CryptImportPublicKeyInfo
+      - CryptMsgCountersign
+      - CryptMsgEncodeAndSignCTL
+      - CryptMsgGetAndVerifySigner
+      - CryptMsgOpenToDecode
+      - CryptMsgOpenToEncode
+      - CryptMsgSignCTL
+      - CryptSignAndEncodeCertificate
+      - CryptSignAndEncryptMessage
+      - CryptSignCertificate
+      - CryptSignHashA
+      - CryptSignHashW
+      - CryptSignMessage
+      - CryptSignMessageWithKey
+      - CryptVerifyCertificateSignature
+      - CryptVerifyDetachedMessageHash
+      - CryptVerifyDetachedMessageSignature
+      - CryptVerifyMessageHash
+      - CryptVerifyMessageSignature
+      - CryptVerifyMessageSignatureWithKey
+      - CryptVerifyTimeStampSignature
+      - CryptVerifySignature
+      - PFXExportCertStore
+      - PFXExportCertStoreEx
+      - PFXImportCertStore
+      - PFXIsPFXBlob
+      - PFXVerifyPassword
+  - id: WIN_REG_API
+    title: Win Registry api functions used
+    summary: Can Manipulate Windows Registry
+    description: |
+      The registry is a system-defined database in which applications and system components store and retrieve configuration data. The data stored in the registry varies according to the version of Microsoft Windows. Applications use the registry API to retrieve, modify, or delete registry data.
+    patterns:
+      - RegConnectRegistry
+      - RegCopyTree
+      - RegCreateKey
+      - RegDeleteKey
+      - RegDisablePredefinedCache
+      - RegDisableReflectionKey
+      - RegEnableReflectionKey
+      - RegGetKeySecurity
+      - RegGetValue
+      - RegLoadAppKey
+      - RegLoadKey
+      - RegLoadMUIString
+      - RegNotifyChangeKeyValue
+      - RegOpenCurrentUser
+      - RegOpenKey
+      - RegOpenUserClassesRoot
+      - RegQueryInfoKey
+      - RegQueryMultipleValues
+      - RegQueryReflectionKey
+      - RegQueryValue
+      - RegRenameKey
+      - RegReplaceKey
+      - RegRestoreKey
+      - RegSaveKey
+      - RegSetKeySecurity
+      - RegSetKeyValue
+      - RegSetValue
+      - RegUnLoadKey
+  - id: WIN_SAFER_API
+    title: Win Safer api functions used
+    summary: Uses Windows Safer API
+    description: |
+      Functions in the Safer API provide any application that starts programs from external sources the ability to query security policy for approval before an executable is started. These functions can be called before loading and running an executable or active content.
+    patterns:
+      - SaferCloseLevel
+      - SaferComputeTokenFromLevel
+      - SaferCreateLevel
+      - SaferGetLevelInformation
+      - SaferGetPolicyInformation
+      - SaferIdentifyLevel
+      - SaferiIsExecutableFileType
+      - SaferRecordEventLogEntry
+      - SaferSetPolicyInformation
+  - id: WIN_SCARD_API
+    title: Win Smart Card api functions used
+    summary: Supports Windows Smart Card
+    description: |
+      Windows Smart Card API functions.
+    patterns:
+      - GetOpenCardName
+      - SCardAccessStartedEvent
+      - SCardAddReaderToGroup
+      - SCardAudit
+      - SCardBeginTransaction
+      - SCardConnect
+      - SCardControl
+      - SCardDisconnect
+      - SCardEndTransaction
+      - SCardEstablishContext
+      - SCardForgetCardType
+      - SCardForgetReader
+      - SCardForgetReaderGroup
+      - SCardGetAttrib
+      - SCardGetCardTypeProviderName
+      - SCardGetDeviceTypeId
+      - SCardGetProviderId
+      - SCardGetReaderDeviceInstanceId
+      - SCardGetReaderIcon
+      - SCardGetStatusChange
+      - SCardGetTransmitCount
+      - SCardIntroduceCardType
+      - SCardIntroduceReader
+      - SCardIntroduceReaderGroup
+      - SCardIsValidContext
+      - SCardListCards
+      - SCardListInterfaces
+      - SCardListReaderGroups
+      - SCardListReaders
+      - SCardListReadersWithDeviceInstanceId
+      - SCardLocateCards
+      - SCardLocateCardsByATR
+      - SCardReadCache
+      - SCardReconnect
+      - SCardReleaseContext
+      - SCardRemoveReaderFromGroup
+      - SCardSetCardTypeProviderName
+      - SCardStatus
+      - SCardUIDlgSelectCard
+      - SCardWriteCache
+  - id: WIN_NETWORK_API
+    title: Win Network api functions used
+    summary: Supports Windows Networking
+    description: |
+      Windows Network API functions.
+    patterns:
+      - MultinetGetConnectionPerformance
+      - WNetAddConnection
+      - WNetConnectionDialog
+      - WNetDisconnectDialog
+      - WNetEnumResource
+      - WNetGetNetworkInformation
+      - WNetGetProviderName
+      - WNetGetResourceInformation
+      - WNetGetResourceParent
+      - WNetGetUniversalName
+      - WNetGetUser
+      - WNetOpenEnum
+      - WNetUseConnection
+  - id: WIN_SVC_API
+    title: Win Service api functions used
+    summary: Can Manipulate Windows Services
+    description: |
+      Windows Service API functions.
+    patterns:
+      - ChangeServiceConfig
+      - ControlService
+      - CreateServiceA
+      - CreateServiceW
+      - EnumDependentServices
+      - GetServiceDirectory
+      - GetServiceDisplayNameA
+      - GetServiceDisplayNameW
+      - GetServiceKeyNameA
+      - GetServiceKeyNameW
+      - GetServiceRegistryStateKey
+      - GetSharedServiceDirectory
+      - GetSharedServiceRegistryStateKey
+      - OpenSCManager
+      - OpenServiceA
+      - OpenServiceW
+      - QueryServiceConfig
+      - QueryServiceLockStatus
+      - QueryServiceStatus
+      - RegisterServiceCtrlHandler
+      - SetServiceObjectSecurity
+      - StartServiceA
+      - StartServiceW
+      - StartServiceCtrlDispatcher
+      - UnlockServiceDatabase
+  - id: WIN_TRUST_API
+    title: Win Trust api functions used
+    summary: Uses Windows Trust API
+    description: |
+      Windows Trust API functions.
+    patterns:
+      - OpenPersonalTrustDBDialog
+      - WintrustAddActionID
+      - WintrustAddDefaultForUsage
+      - WintrustGetDefaultForUsage
+      - WintrustGetRegPolicyFlags
+      - WintrustSetDefaultIncludePEPageHashes
+      - WintrustSetRegPolicyFlags
+      - WinVerifyTrust
+      - WTHelperCertCheckValidSignature
+      - WTHelperCertIsSelfSigned
+      - WTHelperGetProvCertFromChain
+      - WTHelperGetProvPrivateDataFromChain
+      - WTHelperProvDataFromStateData
+  - id: WIN_USER_API
+    title: Win User api functions used
+    summary: Performs GUI Actions
+    description: |
+      Windows User API functions.
+    patterns:
+      - ActivateKeyboardLayout
+      - AddClipboardFormatListener
+      - AppendMenu
+      - BlockInput
+      - BroadcastSystemMessage
+      - CloseDesktop
+      - CreateMenu
+      - EmptyClipboard
+      - FindWindow
+      - LockWorkStation
+      - OpenClipboard
+      - OpenInputDesktop
+      - PeekMessageA
+      - PeekMessageW
+      - CreateDialogA
+      - CreateDialogW
+      - CreateWindowA
+      - CreateWindowW
+      - CreateWindowExA
+      - CreateWindowExW
+      - CreateWindowStation
+  - id: WIN_LOGON_API
+    title: Win Logon api functions used
+    summary: Performs Winlogon calls
+    description: |
+      Winlogon functions are used.
+    patterns:
+      - WlxActivateUserShell
+      - WlxDisconnectNotify
+      - WlxDisplayLockedNotice
+      - WlxDisplaySASNotice
+      - WlxDisplayStatusMessage
+      - WlxGetConsoleSwitchCredentials
+      - WlxGetStatusMessage
+      - WlxInitialize
+      - WlxLogoff
+      - WlxNetworkProviderLoad
+      - WlxScreenSaverNotify
+      - WlxStartApplication
+      - WlxShutdown
+      - WlxWkstaLockedSAS
+  - id: GDI_PLUS_API
+    title: GDI+ api functions used
+    summary: Interfaces with Graphics
+    description: |
+      Windows GDI+ is a class-based API for C/C++ programmers. It enables applications to use graphics and formatted text on both the video display and the printer. Applications based on the Microsoft Win32 API do not access graphics hardware directly. Instead, GDI+ interacts with device drivers on behalf of applications. GDI+ is also supported by Microsoft Win64.
+
+      NOTE: When you use the GDI+ API, you must never allow your application to download arbitrary fonts from untrusted sources. The operating system requires elevated privileges to assure that all installed fonts are trusted.
+    patterns:
+      - GdiplusStartup
+      - GdiplusShutdown
+      - GetImageDecoders
+      - GetImageEncoders
+      - GetPixelFormatSize
+      - IsAlphaPixelFormat
+      - IsCanonicalPixelFormat
+      - IsExtendedPixelFormat
+      - ObjectTypeIsValid
+      - IsIndexedPixelFormat
+      - GdipDeleteGraphics
+      - GdipFillRectangle
+      - GdipDeleteBrush
+      - GdipAlloc
+      - GdipCreateFromHDC
+      - GdipCreateSolidFill
+      - GdipCreateHatchBrush
+      - GdipCloneBrush
+  - id: DNS_API
+    title: DNS api functions used
+    summary: Performs DNS calls
+    description: |
+      Windows provides functions that enable application programmers to use DNS, such as programmatic DNS query, record compare, and name lookup.
+    patterns:
+      - DnsAcquireContextHandle
+      - DnsCancelQuery
+      - DnsExtractRecordsFromMessage
+      - DnsFreeCustomServers
+      - DnsFreeProxyName
+      - DnsGetApplicationSettings
+      - DnsGetProxyInformation
+      - DnsModifyRecordsInSet
+      - DnsNameCompare
+      - DnsQuery
+      - DnsQueryConfig
+      - DnsQueryEx
+      - DnsRecordCompare
+      - DnsRecordCopyEx
+      - DnsRecordListFree
+      - DnsRecordSetCompare
+      - DnsRecordSetCopyEx
+      - DnsRecordSetDetach
+      - DnsReleaseContextHandle
+      - DnsReplaceRecordSet
+      - DnsServiceBrowse
+      - DnsServiceBrowseCancel
+      - DnsServiceConstructInstance
+      - DnsServiceCopyInstance
+      - DnsServiceDeRegister
+      - DnsServiceFreeInstance
+      - DnsServiceRegister
+      - DnsServiceRegisterCancel
+      - DnsServiceResolve
+      - DnsServiceResolveCancel
+      - DnsSetApplicationSettings
+      - DnsStartMulticastQuery
+      - DnsStopMulticastQuery
+      - DnsValidateName
+      - DnsValidateServerStatus
+      - DnsWriteQuestionToBuffer
+  - id: HTTP_SERVER_API
+    title: HTTP server api functions used
+    summary: Can run an HTTP server
+    description: |
+      The HTTP Server API enables applications to communicate over HTTP without using Microsoft Internet Information Server (IIS). Applications can register to receive HTTP requests for particular URLs, receive HTTP requests, and send HTTP responses. The HTTP Server API includes SSL support so that applications can exchange data over secure HTTP connections without IIS. It is also designed to work with I/O completion ports.
+    patterns:
+      - HttpDelegateRequestEx
+      - HttpFindUrlGroupId
+      - HttpIsFeatureSupported
+      - HttpCreateServerSession
+      - HttpCloseServerSession
+      - HttpQueryServerSessionProperty
+      - HttpSetServerSessionProperty
+      - HttpAddUrlToUrlGroup
+      - HttpCreateUrlGroup
+      - HttpCloseUrlGroup
+      - HttpQueryUrlGroupProperty
+      - HttpRemoveUrlFromUrlGroup
+      - HttpSetUrlGroupProperty
+      - HttpCreateRequestQueue
+      - HttpQueryRequestQueueProperty
+      - HttpSetRequestQueueProperty
+      - HttpShutdownRequestQueue
+      - HttpWaitForDemandStart
+      - HttpCloseRequestQueue
+      - HttpCreateHttpHandle
+      - HttpPrepareUrl
+      - HttpTerminate
+      - HttpAddFragmentToCache
+      - HttpFlushResponseCache
+      - HttpReadFragmentFromCache
+      - HttpDeleteServiceConfiguration
+      - HttpQueryServiceConfiguration
+      - HttpSetServiceConfiguration
+      - HttpReceiveHttpRequest
+      - HttpReceiveRequestEntityBody
+      - HttpSendHttpResponse
+      - HttpSendResponseEntityBody
+      - HttpWaitForDisconnect
+      - HttpReceiveClientCertificate
+      - HttpAddUrl
+      - HttpRemoveUrl
+  - id: NET_SHARE_API
+    title: Network share api functions used
+    summary: Can access Network Share
+    description: |
+      Network share management allows applications to manage and monitor communications between Windows clients and servers using the Server Messaging Block (SMB) protocol.
+    patterns:
+      - NetFileClose
+      - NetFileEnum
+      - NetFileGetInfo
+      - NetSessionDel
+      - NetSessionGetInfo
+      - NetSessionEnum
+      - NetConnectionEnum
+      - NetShareAdd
+      - NetShareCheck
+      - NetShareDel
+      - NetShareDelEx
+      - NetShareEnum
+      - NetShareGetInfo
+      - NetShareSetInfo
+      - NetStatisticsGet
+  - id: P2P_API
+    title: Network share api functions used
+    summary: Can access Network Share
+    description: |
+      Peer-to-peer technologies are used to facilitate real-time communication and collaboration across distributed networks. In the peer-to-peer model, without using Internet servers, each PC user can do the following:
+
+      - Exchange data
+      - Share resources
+      - Locate other users
+      - Communicate
+      - Collaborate directly in real time
+
+      By using peer-to-peer technologies, applications that coordinate the use of computer CPU cycles and storage can share resources among small or large groups of computers connected to the Internet.
+    patterns:
+      - PeerEndEnumeration
+      - PeerFreeData
+      - PeerGetItemCount
+      - PeerGetNextItem
+      - PeerGraphShutdown
+      - PeerGraphStartup
+      - PeerGraphClose
+      - PeerGraphCreate
+      - PeerGraphDelete
+      - PeerGraphListen
+      - PeerGraphOpen
+      - PeerGraphEnumNodes
+      - PeerGraphGetNodeInfo
+      - PeerGraphGetProperties
+      - PeerGraphGetStatus
+      - PeerGraphSetNodeAttributes
+      - PeerGraphSetPresence
+      - PeerGraphSetProperties
+      - PeerGraphAddRecord
+      - PeerGraphDeleteRecord
+      - PeerGraphEnumRecords
+      - PeerGraphGetRecord
+      - PeerGraphSearchRecords
+      - PeerGraphUpdateRecord
+      - PeerGraphValidateDeferredRecords
+      - PeerGraphExportDatabase
+      - PeerGraphImportDatabase
+      - PeerGraphEndEnumeration
+      - PeerGraphFreeData
+      - PeerGraphGetItemCount
+      - PeerGraphGetNextItem
+      - PeerGraphPeerTimeToUniversalTime
+      - PeerGraphUniversalTimeToPeerTime
+      - PeerGraphCloseDirectConnection
+      - PeerGraphConnect
+      - PeerGraphEnumConnections
+      - PeerGraphOpenDirectConnection
+      - PeerGraphGetEventData
+      - PeerGraphSendData
+      - PeerGraphRegisterEvent
+      - PeerGraphUnregisterEvent
+      - PeerGroupShutdown
+      - PeerGroupStartup
+      - PeerGroupClose
+      - PeerGroupConnect
+      - PeerGroupConnectByAddress
+      - PeerGroupCreate
+      - PeerGroupCreateInvitation
+      - PeerGroupCreatePasswordInvitation
+      - PeerGroupDelete
+      - PeerGroupGetStatus
+      - PeerGroupIssueCredentials
+      - PeerGroupJoin
+      - PeerGroupOpen
+      - PeerGroupParseInvitation
+      - PeerGroupPasswordJoin
+      - PeerGroupEnumMembers
+      - PeerGroupGetProperties
+      - PeerGroupSetProperties
+      - PeerGroupAddRecord
+      - PeerGroupDeleteRecord
+      - PeerGroupEnumRecords
+      - PeerGroupGetRecord
+      - PeerGroupSearchRecords
+      - PeerGroupUpdateRecord
+      - PeerGroupExportDatabase
+      - PeerGroupImportDatabase
+      - PeerGroupCloseDirectConnection
+      - PeerGroupEnumConnections
+      - PeerGroupOpenDirectConnection
+      - PeerGroupSendData
+      - PeerGroupGetEventData
+      - PeerGroupRegisterEvent
+      - PeerGroupUnregisterEvent
+      - PeerGroupPeerTimeToUniversalTime
+      - PeerGroupUniversalTimeToPeerTime
+      - PeerGroupExportConfig
+      - PeerGroupImportConfig
+      - PeerCreatePeerName
+      - PeerEnumGroups
+      - PeerEnumIdentities
+      - PeerEndEnumeration
+      - PeerFreeData
+      - PeerGetItemCount
+      - PeerGetNextItem
+      - PeerIdentityCreate
+      - PeerIdentityDelete
+      - PeerIdentityExport
+      - PeerIdentityGetCryptKey
+      - PeerIdentityGetDefault
+      - PeerIdentityGetFriendlyName
+      - PeerIdentityGetXML
+      - PeerIdentityImport
+      - PeerIdentitySetFriendlyName
+      - DrtOpen
+      - DrtClose
+      - DrtGetEventData
+      - DrtGetEventDataSize
+      - DrtCreatePnrpBootstrapResolver
+      - DrtDeletePnrpBootstrapResolver
+      - DrtCreateDnsBootstrapResolver
+      - DrtDeleteDnsBootstrapResolver
+      - DrtCreateIpv6UdpTransport
+      - DrtDeleteIpv6UdpTransport
+      - DrtCreateDerivedKeySecurityProvider
+      - DrtCreateDerivedKey
+      - DrtDeleteDerivedKeySecurityProvider
+      - DrtCreateNullSecurityProvider
+      - DrtDeleteNullSecurityProvider
+      - DrtRegisterKey
+      - DrtUpdateKey
+      - DrtUnregisterKey
+      - DrtStartSearch
+      - DrtContinueSearch
+      - DrtGetSearchResult
+      - DrtGetSearchResultSize
+      - DrtGetSearchPath
+      - DrtGetSearchPathSize
+      - DrtEndSearch
+      - DrtGetInstanceName
+      - DrtGetInstanceNameSize
+      - PeerCollabAddContact
+      - PeerCollabAsyncInviteContact
+      - PeerCollabAsyncInviteEndpoint
+      - PeerCollabCancelInvitation
+      - PeerCollabCloseHandle
+      - PeerCollabDeleteContact
+      - PeerCollabDeleteEndpointData
+      - PeerCollabDeleteObject
+      - PeerCollabEnumApplications
+      - PeerCollabEnumApplicationRegistrationInfo
+      - PeerCollabEnumContacts
+      - PeerCollabEnumEndpoints
+      - PeerCollabEnumObjects
+      - PeerCollabEnumPeopleNearMe
+      - PeerCollabExportContact
+      - PeerCollabGetAppLaunchInfo
+      - PeerCollabGetApplicationRegistrationInfo
+      - PeerCollabGetContact
+      - PeerCollabGetEndpointName
+      - PeerCollabGetEventData
+      - PeerCollabGetInvitationResponse
+      - PeerCollabGetPresenceInfo
+      - PeerCollabGetSigninOptions
+      - PeerCollabInviteContact
+      - PeerCollabInviteEndpoint
+      - PeerCollabParseContact
+      - PeerCollabQueryContactData
+      - PeerCollabRefreshEndpointData
+      - PeerCollabRegisterApplication
+      - PeerCollabRegisterEvent
+      - PeerCollabSetEndpointName
+      - PeerCollabSetObject
+      - PeerCollabSetPresenceInfo
+      - PeerCollabSignIn
+      - PeerCollabSignOut
+      - PeerCollabShutdown
+      - PeerCollabStartup
+      - PeerCollabSubscribeEndpointData
+      - PeerCollabUnregisterApplication
+      - PeerCollabUnregisterEvent
+      - PeerCollabUnsubscribeEndpointData
+      - PeerCollabUpdateContact
+      - PeerDistStartup
+      - PeerDistShutdown
+      - PeerDistGetStatus
+      - PeerDistGetStatusEx
+      - PeerDistGetOverlappedResult
+      - PeerDistRegisterForStatusChangeNotification
+      - PeerDistRegisterForStatusChangeNotificationEx
+      - PeerDistUnregisterForStatusChangeNotification
+      - PeerDistClientOpenContent
+      - PeerDistClientCloseContent
+      - PeerDistClientGetInformationByHandle
+      - PeerDistClientAddContentInformation
+      - PeerDistClientCompleteContentInformation
+      - PeerDistClientAddData
+      - PeerDistClientBlockRead
+      - PeerDistClientStreamRead
+      - PeerDistClientFlushContent
+      - PeerDistClientCancelAsyncOperation
+      - PeerDistServerPublishStream
+      - PeerDistServerPublishAddToStream
+      - PeerDistServerPublishCompleteStream
+      - PeerDistServerCloseStreamHandle
+      - PeerDistServerUnpublish
+      - PeerDistServerOpenContentInformation
+      - PeerDistServerOpenContentInformationEx
+      - PeerDistServerRetrieveContentInformation
+      - PeerDistServerCloseContentInformation
+      - PeerDistServerCancelAsyncOperation
+  - id: RPC_API
+    title: RPC api functions used
+    summary: Can Execute Remote Procedures
+    description: |
+      Microsoft Remote Procedure Call (RPC) defines a powerful technology for creating distributed client/server programs. The RPC run-time stubs and libraries manage most of the processes relating to network protocols and communication. This enables you to focus on the details of the application rather than the details of the network.
+    patterns:
+      - DceErrorInqText
+      - MesBufferHandleReset
+      - MesDecodeBufferHandleCreate
+      - MesDecodeIncrementalHandleCreate
+      - MesEncodeDynBufferHandleCreate
+      - MesEncodeFixedBufferHandleCreate
+      - MesEncodeIncrementalHandleCreate
+      - MesHandleFree
+      - MesIncrementalHandleReset
+      - MesInqProcEncodingId
+      - NdrGetUserMarshalInfo
+      - RpcAbnormalTermination
+      - RpcAsyncAbortCall
+      - RpcAsyncCancelCall
+      - RpcAsyncCompleteCall
+      - RpcAsyncGetCallStatus
+      - RpcAsyncInitializeHandle
+      - RpcAsyncRegisterInfo
+      - RpcBindingBind
+      - RpcBindingCopy
+      - RpcBindingCreate
+      - RpcBindingFree
+      - RpcBindingFromStringBinding
+      - RpcBindingInqAuthClient
+      - RpcBindingInqAuthClientEx
+      - RpcBindingInqAuthInfo
+      - RpcBindingInqAuthInfoEx
+      - RpcBindingInqObject
+      - RpcBindingInqOption
+      - RpcBindingReset
+      - RpcBindingServerFromClient
+      - RpcBindingSetAuthInfo
+      - RpcBindingSetAuthInfoEx
+      - RpcBindingSetObject
+      - RpcBindingSetOption
+      - RpcBindingToStringBinding
+      - RpcBindingUnbind
+      - RpcBindingVectorFree
+      - RpcCancelThread
+      - RpcCancelThreadEx
+      - RpcCertGeneratePrincipalName
+      - RpcDiagnoseError
+      - RpcEpRegister
+      - RpcEpRegisterNoReplace
+      - RpcEpResolveBinding
+      - RpcEpUnregister
+      - RpcErrorAddRecord
+      - RpcErrorClearInformation
+      - RpcErrorEndEnumeration
+      - RpcErrorGetNextRecord
+      - RpcErrorGetNumberOfRecords
+      - RpcErrorLoadErrorInfo
+      - RpcErrorResetEnumeration
+      - RpcErrorSaveErrorInfo
+      - RpcErrorStartEnumeration
+      - RpcExceptionFilter
+      - RpcGetAuthorizationContextForClient
+      - RpcIfIdVectorFree
+      - RpcIfInqId
+      - RpcImpersonateClient
+      - RpcMgmtEnableIdleCleanup
+      - RpcMgmtEpEltInqBegin
+      - RpcMgmtEpEltInqDone
+      - RpcMgmtEpEltInqNext
+      - RpcMgmtEpUnregister
+      - RpcMgmtInqComTimeout
+      - RpcMgmtInqDefaultProtectLevel
+      - RpcMgmtInqIfIds
+      - RpcMgmtInqServerPrincName
+      - RpcMgmtInqStats
+      - RpcMgmtIsServerListening
+      - RpcMgmtSetAuthorizationFn
+      - RpcMgmtSetCancelTimeout
+      - RpcMgmtSetComTimeout
+      - RpcMgmtSetServerStackSize
+      - RpcMgmtStatsVectorFree
+      - RpcMgmtStopServerListening
+      - RpcMgmtWaitServerListen
+      - RpcNetworkInqProtseqs
+      - RpcNetworkIsProtseqValid
+      - RpcNsBindingExport
+      - RpcNsBindingExportPnP
+      - RpcNsBindingImportBegin
+      - RpcNsBindingImportDone
+      - RpcNsBindingImportNext
+      - RpcNsBindingInqEntryName
+      - RpcNsBindingLookupBegin
+      - RpcNsBindingLookupDone
+      - RpcNsBindingLookupNext
+      - RpcNsBindingSelect
+      - RpcNsBindingUnexport
+      - RpcNsBindingUnexportPnP
+      - RpcNsEntryExpandName
+      - RpcNsEntryObjectInqBegin
+      - RpcNsEntryObjectInqDone
+      - RpcNsEntryObjectInqNext
+      - RpcNsGroupDelete
+      - RpcNsGroupMbrAdd
+      - RpcNsGroupMbrInqBegin
+      - RpcNsGroupMbrInqDone
+      - RpcNsGroupMbrInqNext
+      - RpcNsGroupMbrRemove
+      - RpcNsMgmtBindingUnexport
+      - RpcNsMgmtEntryCreate
+      - RpcNsMgmtEntryDelete
+      - RpcNsMgmtEntryInqIfIds
+      - RpcNsMgmtHandleSetExpAge
+      - RpcNsMgmtInqExpAge
+      - RpcNsMgmtSetExpAge
+      - RpcNsProfileDelete
+      - RpcNsProfileEltAdd
+      - RpcNsProfileEltInqBegin
+      - RpcNsProfileEltInqDone
+      - RpcNsProfileEltInqNext
+      - RpcNsProfileEltRemove
+      - RpcObjectInqType
+      - RpcObjectSetInqFn
+      - RpcObjectSetType
+      - RpcProtseqVectorFree
+      - RpcRaiseException
+      - RpcRevertToSelf
+      - RpcRevertToSelfEx
+      - RpcServerCompleteSecurityCallback
+      - RpcServerInqBindings
+      - RpcServerInqCallAttributes
+      - RpcServerInqDefaultPrincName
+      - RpcServerInqBindingHandle
+      - RpcServerInqIf
+      - RpcServerInterfaceGroupActivate
+      - RpcServerInterfaceGroupClose
+      - RpcServerInterfaceGroupCreate
+      - RpcServerInterfaceGroupDeactivate
+      - RpcServerInterfaceGroupInqBindings
+      - RpcServerListen
+      - RpcServerRegisterAuthInfo
+      - RpcServerRegisterIf
+      - RpcServerRegisterIf2
+      - RpcServerRegisterIf3
+      - RpcServerRegisterIfEx
+      - RpcServerSubscribeForNotification
+      - RpcServerTestCancel
+      - RpcServerUnregisterIf
+      - RpcServerUnregisterIfEx
+      - RpcServerUnsubscribeForNotification
+      - RpcServerUseAllProtseqs
+      - RpcServerUseAllProtseqsEx
+      - RpcServerUseAllProtseqsIf
+      - RpcServerUseAllProtseqsIfEx
+      - RpcServerUseProtseq
+      - RpcServerUseProtseqEx
+      - RpcServerUseProtseqEp
+      - RpcServerUseProtseqEpEx
+      - RpcServerUseProtseqIf
+      - RpcServerUseProtseqIfEx
+      - RpcSmAllocate
+      - RpcSmClientFree
+      - RpcSmDestroyClientContext
+      - RpcSmDisableAllocate
+      - RpcSmEnableAllocate
+      - RpcSmFree
+      - RpcSmGetThreadHandle
+      - RpcSmSetClientAllocFree
+      - RpcSmSetThreadHandle
+      - RpcSmSwapClientAllocFree
+      - RpcSsAllocate
+      - RpcSsContextLockExclusive
+      - RpcSsContextLockShared
+      - RpcSsDestroyClientContext
+      - RpcSsDisableAllocate
+      - RpcSsDontSerializeContext
+      - RpcSsEnableAllocate
+      - RpcSsFree
+      - RpcSsGetThreadHandle
+      - RpcSsSetClientAllocFree
+      - RpcSsSetThreadHandle
+      - RpcSsSwapClientAllocFree
+      - RpcStringBindingCompose
+      - RpcStringBindingParse
+      - RpcStringFree
+      - RpcTestCancel
+  - id: RAS_API
+    title: RAS api functions used
+    summary: Uses Remote Access
+    description: |
+      The Remote Access Service is applicable in any computing environment that uses a Wide Area Network (WAN) link or a Virtual Private Network (VPN). RAS makes it possible to connect a remote client computer to a network server over a WAN link or a VPN. The remote computer then functions on the server's LAN as though the remote computer was connected to the LAN directly. The RAS API enables programmers to access the features of RAS programmatically.
+    patterns:
+      - ORASADFunc
+      - RASADFunc
+      - RasClearConnectionStatistics
+      - RasClearLinkStatistics
+      - RasConnectionNotification
+      - RasCreatePhonebookEntry
+      - RasCustomDeleteEntryNotify
+      - RasCustomDial
+      - RasCustomDialDlg
+      - RasCustomEntryDlg
+      - RasCustomHangUp
+      - RasDeleteEntry
+      - RasDeleteSubEntry
+      - RasDial
+      - RasDialDlg
+      - RasDialFunc
+      - RasDialFunc1
+      - RasDialFunc2
+      - RasEditPhonebookEntry
+      - RasEntryDlg
+      - RasEnumAutodialAddresses
+      - RasEnumConnections
+      - RasEnumDevices
+      - RasEnumEntries
+      - RasFreeEapUserIdentity
+      - RasGetAutodialAddress
+      - RasGetAutodialEnable
+      - RasGetAutodialParam
+      - RasGetConnectionStatistics
+      - RasGetConnectStatus
+      - RasGetCountryInfo
+      - RasGetCredentials
+      - RasGetCustomAuthData
+      - RasGetEapUserData
+      - RasGetEapUserIdentity
+      - RasGetEntryDialParams
+      - RasGetEntryProperties
+      - RasGetErrorString
+      - RasGetLinkStatistics
+      - RasGetNapStatus
+      - RasGetProjectionInfo
+      - RasGetProjectionInfoEx
+      - RasGetQuarantineConnectionId
+      - RasGetSubEntryHandle
+      - RasGetSubEntryProperties
+      - RasHangUp
+      - RasInvokeEapUI
+      - RasMonitorDlg
+      - RasPBDlgFunc
+      - RasPhonebookDlg
+      - RasRenameEntry
+      - RasSetAutodialAddress
+      - RasSetAutodialEnable
+      - RasSetAutodialParam
+      - RasSetCommSettings
+      - RasSetCredentials
+      - RasSetCustomAuthData
+      - RasSetEapUserData
+      - RasSetEntryDialParams
+      - RasSetEntryProperties
+      - RasSetSubEntryProperties
+      - RasUpdateConnection
+      - RasValidateEntryName
+  - id: WEB_SOCKET_API
+    title: Web Socket api functions used
+    summary: Uses Web Sockets
+    description: |
+      The WebSocket Protocol Component API enables asynchronous, bi-directional communication channels over HTTP that work across existing network intermediaries. With the WebSocket Protocol Component API, a client uses HTTP to communicate with a server, and then both sides switch to using the underlying protocol that HTTP was layered on (such as TCP or SSL). The goal is to first use HTTP to traverse over network intermediaries, and then use the established end-to-end underlying TCP/SSL channel for bi-directional application communication.
+    patterns:
+      - WebSocketAbortHandle
+      - WebSocketBeginClientHandshake
+      - WebSocketBeginServerHandshake
+      - WebSocketCompleteAction
+      - WebSocketCreateClientHandle
+      - WebSocketCreateServerHandle
+      - WebSocketDeleteHandle
+      - WebSocketEndClientHandshake
+      - WebSocketEndServerHandshake
+      - WebSocketGetAction
+      - WebSocketGetGlobalProperty
+      - WebSocketReceive
+      - WebSocketSend
+  - id: CLIPBOARD_ACCESS_API
+    title: Clipboard api functions used
+    summary: Can Manipulate Clipboard
+    description: |
+      Libraries such as SDL is used to monitor clipboard.
+    patterns:
+      - SDL_SetClipboardText
+      - SDL_GetClipboardText
+      - SDL_HasClipboardText
+  - id: AUDIO_ACCESS_API
+    title: Audio Hardware api functions used
+    summary: Can Manipulate Audio Hardware
+    description: |
+      Libraries such as SDL is used to manipulate audio devices.
+    patterns:
+      - SDL_GetNumAudioDrivers
+      - SDL_GetAudioDriver
+      - SDL_AudioInit
+      - SDL_GetCurrentAudioDriver
+      - SDL_OpenAudio
+      - SDL_GetNumAudioDevices
+      - SDL_GetAudioDeviceName
+      - SDL_GetAudioDeviceSpec
+      - SDL_OpenAudioDevice
+      - SDL_GetAudioStatus
+      - SDL_GetAudioDeviceStatus
+      - SDL_PauseAudio
+      - SDL_PauseAudioDevice
+      - SDL_LoadWAV_RW
+      - SDL_FreeWAV
+      - SDL_LoadWAV
+      - SDL_BuildAudioCVT
+      - SDL_ConvertAudio
+      - SDL_NewAudioStream
+      - SDL_AudioStreamPut
+      - SDL_AudioStreamGet
+      - SDL_AudioStreamAvailable
+      - SDL_AudioStreamFlush
+      - SDL_AudioStreamClear
+      - SDL_FreeAudioStream
+      - SDL_MixAudio
+      - SDL_MixAudioFormat
+      - SDL_QueueAudio
+      - SDL_DequeueAudio
+      - SDL_GetQueuedAudioSize
+      - SDL_ClearQueuedAudio
+      - SDL_LockAudio
+      - SDL_LockAudioDevice
+      - SDL_UnlockAudio
+      - SDL_UnlockAudioDevice
+      - SDL_CloseAudio
+      - SDL_CloseAudioDevice
+  - id: VIDEO_ACCESS_API
+    title: Video Hardware api functions used
+    summary: Can Manipulate Video Hardware
+    description: |
+      Libraries such as SDL is used to manipulate video devices.
+    patterns:
+      - SDL_GetNumVideoDrivers
+      - SDL_GetVideoDriver
+      - SDL_VideoInit
+      - SDL_VideoQuit
+      - SDL_GetCurrentVideoDriver
+      - SDL_GetNumVideoDisplays
+      - SDL_GetDisplayName
+      - SDL_GetDisplayBounds
+      - SDL_GetDisplayUsableBounds
+      - SDL_GetDisplayDPI
+      - SDL_GetNumDisplayModes
+      - SDL_GetDisplayMode
+      - SDL_GetDesktopDisplayMode
+      - SDL_GetCurrentDisplayMode
+      - SDL_GetClosestDisplayMode
+      - SDL_GetWindowDisplayIndex
+      - SDL_SetWindowDisplayMode
+      - SDL_GetWindowDisplayMode
+      - SDL_GetWindowICCProfile
+      - SDL_GetWindowPixelFormat
+      - SDL_CreateWindow
+      - SDL_CreateWindowFrom
+      - SDL_GetWindowID
+      - SDL_GetWindowFromID
+      - SDL_GetWindowFlags
+      - SDL_SetWindowTitle
+      - SDL_GetWindowTitle
+      - SDL_SetWindowData
+      - SDL_GetWindowData
+      - SDL_ShowWindow
+      - SDL_GetWindowSurface
+      - SDL_SetWindowInputFocus
+      - SDL_EnableScreenSaver
+      - SDL_DisableScreenSaver
+      - SDL_GL_LoadLibrary
+      - SDL_GL_GetProcAddress
+      - SDL_GL_UnloadLibrary
+      - SDL_GL_ExtensionSupported
+  - id: WIN_SOCK_API
+    title: Windows socket 2 library used
+    summary: Uses Network to send and receive data
+    description: |
+      Windows Sockets 2 (Winsock) enables programmers to create advanced Internet, intranet, and other network-capable applications to transmit application data across the wire, independent of the network protocol being used. With Winsock, programmers are provided access to advanced Microsoft® Windows® networking capabilities such as multicast and Quality of Service (QoS).
+    patterns:
+      - WS2_32.dll::accept
+      - WS2_32.dll::AcceptEx
+      - WS2_32.dll::bind
+      - WS2_32.dll::closesocket
+      - WS2_32.dll::connect
+      - WS2_32.dll::ConnectEx
+      - WS2_32.dll::DisconnectEx
+      - WS2_32.dll::EnumProtocols
+      - WS2_32.dll::freeaddrinfo
+      - WS2_32.dll::FreeAddrInfoEx
+      - WS2_32.dll::FreeAddrInfoW
+      - WS2_32.dll::gai_strerror
+      - WS2_32.dll::GetAcceptExSockaddrs
+      - WS2_32.dll::GetAddressByName
+      - WS2_32.dll::getaddrinfo
+      - WS2_32.dll::GetAddrInfoEx
+      - WS2_32.dll::GetAddrInfoExCancel
+      - WS2_32.dll::GetAddrInfoExOverlappedResult
+      - WS2_32.dll::GetAddrInfoW
+      - WS2_32.dll::gethostbyaddr
+      - WS2_32.dll::gethostbyname
+      - WS2_32.dll::gethostname
+      - WS2_32.dll::GetHostNameW
+      - WS2_32.dll::getipv4sourcefilter
+      - WS2_32.dll::GetNameByType
+      - WS2_32.dll::getnameinfo
+      - WS2_32.dll::GetNameInfoW
+      - WS2_32.dll::getpeername
+      - WS2_32.dll::getprotobyname
+      - WS2_32.dll::getprotobynumber
+      - WS2_32.dll::getservbyname
+      - WS2_32.dll::getservbyport
+      - WS2_32.dll::GetService
+      - WS2_32.dll::getsockname
+      - WS2_32.dll::getsockopt
+      - WS2_32.dll::getsourcefilter
+      - WS2_32.dll::GetTypeByName
+      - WS2_32.dll::htond
+      - WS2_32.dll::htonf
+      - WS2_32.dll::htonl
+      - WS2_32.dll::htonll
+      - WS2_32.dll::htons
+      - WS2_32.dll::inet_addr
+      - WS2_32.dll::inet_ntoa
+      - WS2_32.dll::InetNtop
+      - WS2_32.dll::InetPton
+      - WS2_32.dll::ioctlsocket
+      - WS2_32.dll::listen
+      - WS2_32.dll::ntohd
+      - WS2_32.dll::ntohf
+      - WS2_32.dll::ntohl
+      - WS2_32.dll::ntohll
+      - WS2_32.dll::ntohs
+      - WS2_32.dll::recv
+      - WS2_32.dll::recvfrom
+      - WS2_32.dll::RIOCloseCompletionQueue
+      - WS2_32.dll::RIOCreateCompletionQueue
+      - WS2_32.dll::RIOCreateRequestQueue
+      - WS2_32.dll::RIODequeueCompletion
+      - WS2_32.dll::RIODeregisterBuffer
+      - WS2_32.dll::RIONotify
+      - WS2_32.dll::RIOReceive
+      - WS2_32.dll::RIOReceiveEx
+      - WS2_32.dll::RIORegisterBuffer
+      - WS2_32.dll::RIOResizeCompletionQueue
+      - WS2_32.dll::RIOResizeRequestQueue
+      - WS2_32.dll::RIOSend
+      - WS2_32.dll::RIOSendEx
+      - WS2_32.dll::select
+      - WS2_32.dll::send
+      - WS2_32.dll::sendto
+      - WS2_32.dll::SetAddrInfoEx
+      - WS2_32.dll::setipv4sourcefilter
+      - WS2_32.dll::SetService
+      - WS2_32.dll::SetSocketMediaStreamingMode
+      - WS2_32.dll::setsockopt
+      - WS2_32.dll::setsourcefilter
+      - WS2_32.dll::shutdown
+      - WS2_32.dll::socket
+      - WS2_32.dll::TransmitFile
+      - WS2_32.dll::TransmitPackets
+      - WS2_32.dll::WSAAccept
+      - WS2_32.dll::WSAAddressToString
+      - WS2_32.dll::WSAAsyncGetHostByAddr
+      - WS2_32.dll::WSAAsyncGetHostByName
+      - WS2_32.dll::WSAAsyncGetProtoByName
+      - WS2_32.dll::WSAAsyncGetProtoByNumber
+      - WS2_32.dll::WSAAsyncGetServByName
+      - WS2_32.dll::WSAAsyncGetServByPort
+      - WS2_32.dll::WSAAsyncSelect
+      - WS2_32.dll::WSACancelAsyncRequest
+      - WS2_32.dll::WSACleanup
+      - WS2_32.dll::WSACloseEvent
+      - WS2_32.dll::WSAConnect
+      - WS2_32.dll::WSAConnectByList
+      - WS2_32.dll::WSAConnectByName
+      - WS2_32.dll::WSACreateEvent
+      - WS2_32.dll::WSADeleteSocketPeerTargetName
+      - WS2_32.dll::WSADuplicateSocket
+      - WS2_32.dll::WSAEnumNameSpaceProviders
+      - WS2_32.dll::WSAEnumNameSpaceProvidersEx
+      - WS2_32.dll::WSAEnumNetworkEvents
+      - WS2_32.dll::WSAEnumProtocols
+      - WS2_32.dll::WSAEventSelect
+      - WS2_32.dll::__WSAFDIsSet
+      - WS2_32.dll::WSAGetFailConnectOnIcmpError
+      - WS2_32.dll::WSAGetIcmpErrorInfo
+      - WS2_32.dll::WSAGetIPUserMtu
+      - WS2_32.dll::WSAGetLastError
+      - WS2_32.dll::WSAGetOverlappedResult
+      - WS2_32.dll::WSAGetQOSByName
+      - WS2_32.dll::WSAGetServiceClassInfo
+      - WS2_32.dll::WSAGetServiceClassNameByClassId
+      - WS2_32.dll::WSAGetUdpRecvMaxCoalescedSize
+      - WS2_32.dll::WSAGetUdpSendMessageSize
+      - WS2_32.dll::WSAHtonl
+      - WS2_32.dll::WSAHtons
+      - WS2_32.dll::WSAImpersonateSocketPeer
+      - WS2_32.dll::WSAInstallServiceClass
+      - WS2_32.dll::WSAIoctl
+      - WS2_32.dll::WSAJoinLeaf
+      - WS2_32.dll::WSALookupServiceBegin
+      - WS2_32.dll::WSALookupServiceEnd
+      - WS2_32.dll::WSALookupServiceNext
+      - WS2_32.dll::WSANSPIoctl
+      - WS2_32.dll::WSANtohl
+      - WS2_32.dll::WSANtohs
+      - WS2_32.dll::WSAPoll
+      - WS2_32.dll::WSAProviderConfigChange
+      - WS2_32.dll::WSAQuerySocketSecurity
+      - WS2_32.dll::WSARecv
+      - WS2_32.dll::WSARecvDisconnect
+      - WS2_32.dll::WSARecvEx
+      - WS2_32.dll::WSARecvFrom
+      - WS2_32.dll::LPFN_WSARECVMSG (WSARecvMsg)
+      - WS2_32.dll::WSARemoveServiceClass
+      - WS2_32.dll::WSAResetEvent
+      - WS2_32.dll::WSARevertImpersonation
+      - WS2_32.dll::WSASend
+      - WS2_32.dll::WSASendDisconnect
+      - WS2_32.dll::WSASendMsg
+      - WS2_32.dll::WSASendTo
+      - WS2_32.dll::WSASetEvent
+      - WS2_32.dll::WSASetFailConnectOnIcmpError
+      - WS2_32.dll::WSASetIPUserMtu
+      - WS2_32.dll::WSASetLastError
+      - WS2_32.dll::WSASetService
+      - WS2_32.dll::WSASetSocketPeerTargetName
+      - WS2_32.dll::WSASetSocketSecurity
+      - WS2_32.dll::WSASetUdpRecvMaxCoalescedSize
+      - WS2_32.dll::WSASetUdpSendMessageSize
+      - WS2_32.dll::WSASocket
+      - WS2_32.dll::WSAStartup
+      - WS2_32.dll::WSAStringToAddress
+      - WS2_32.dll::WSAWaitForMultipleEvents
+  - id: SHELL_API
+    title: Shell api functions used
+    summary: Manipulates System Shell
+    description: |
+      Shell Windows API allows applications to access functions provided by the operating system shell, and to change and enhance it.
+    patterns:
+      - FindExecutableA
+      - FindExecutableW
+      - InitNetworkAddressControl
+      - NetAddr_GetAddress
+      - ShellExecute
+      - ShellExecuteEx
+      - SHFileOperation
+      - SHGetDiskFreeSpaceEx
+      - SHGetFileInfo
+      - SHGetNewLinkInfo
+      - SHGetUnreadMailCount
+      - SHInvokePrinterCommand
+      - SHIsFileAvailableOffline
+      - SHQueryRecycleBin
+      - SHSetUnreadMailCount
+      - SHTestTokenMembership
+      - GetLocalManagedApplications
+      - GetManagedApplicationCategories
+      - GetManagedApplications
+      - InstallApplication
+      - UninstallApplication
