@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./pixelbuf_pi_animation/__init__.py
+./pixelbuf_pi_animation/data.py
+./pixelbuf_pi_animation/parser.py
+./pixelbuf_pi_animation/player.py
+pixelbuf_pi_animation.egg-info/PKG-INFO
+pixelbuf_pi_animation.egg-info/SOURCES.txt
+pixelbuf_pi_animation.egg-info/dependency_links.txt
+pixelbuf_pi_animation.egg-info/requires.txt
+pixelbuf_pi_animation.egg-info/top_level.txt
