@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+snm_build/__init__.py
+snm_build/__main__.py
+snm_build.egg-info/PKG-INFO
+snm_build.egg-info/SOURCES.txt
+snm_build.egg-info/dependency_links.txt
+snm_build.egg-info/not-zip-safe
+snm_build.egg-info/requires.txt
+snm_build.egg-info/top_level.txt
+sources/__init__.py
+sources/main.py
