@@ -1,0 +1,3 @@
+[console_scripts]
+terragen = terragen.cli:entrypoint
+
