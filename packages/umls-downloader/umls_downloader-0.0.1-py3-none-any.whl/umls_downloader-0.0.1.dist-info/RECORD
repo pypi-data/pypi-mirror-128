@@ -1,0 +1,11 @@
+umls_downloader/__init__.py,sha256=zs0O5hXvWi8W9AiklWTgvWArPz2itoxtDx5BmOVdhZs,122
+umls_downloader/__main__.py,sha256=YryP6Zng-dqu0322M3DGqCtfP_HD9XPO0atUe07X1wU,332
+umls_downloader/api.py,sha256=vctM65Sh72LtEcGgh0Aitzu1X_vXPQkZo0zeUG7plTk,2743
+umls_downloader/cli.py,sha256=Tgu1mPULWMGn1h65mD70u9tnUGBeUHrVFIArBYBkbG0,1089
+umls_downloader/version.py,sha256=23ARv6rpazwgi9g2hC-kq9JGlDBeHtUCSqKcSoh-YMA,1036
+umls_downloader-0.0.1.dist-info/LICENSE,sha256=GzLA83qaovFgoZWRYwaAmY-lkHZyDySJHU-YKE9NdVs,1076
+umls_downloader-0.0.1.dist-info/METADATA,sha256=XcVymVk057qX2HnhlpMbXlxCTHNzLXYP6RyfUBqSHWs,5655
+umls_downloader-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+umls_downloader-0.0.1.dist-info/entry_points.txt,sha256=PQAXvJVRVbNSO8B2AaoF1qYBq8K-j_sjFnpjjbW6HGE,62
+umls_downloader-0.0.1.dist-info/top_level.txt,sha256=rMekL8AVtH1HVnzsGFDEMrgb2R0c4y8hmW196tey3v4,16
+umls_downloader-0.0.1.dist-info/RECORD,,
