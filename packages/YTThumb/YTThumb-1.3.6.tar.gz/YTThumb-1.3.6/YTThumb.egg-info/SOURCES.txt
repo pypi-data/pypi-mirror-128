@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+YTThumb.egg-info/PKG-INFO
+YTThumb.egg-info/SOURCES.txt
+YTThumb.egg-info/dependency_links.txt
+YTThumb.egg-info/top_level.txt
