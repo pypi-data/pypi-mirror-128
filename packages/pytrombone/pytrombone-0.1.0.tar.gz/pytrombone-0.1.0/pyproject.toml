@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pytrombone"
+version = "0.1.0"
+description = "Wrapper for the Trombone project"
+authors = ["Gabriel Couture <gacou54@ulaval.ca>"]
+license = "BSD-3"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
