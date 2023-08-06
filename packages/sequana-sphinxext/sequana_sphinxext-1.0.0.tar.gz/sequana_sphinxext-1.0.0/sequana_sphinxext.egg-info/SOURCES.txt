@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+requirements.txt
+requirements_dev.txt
+setup.py
+sequana_sphinxext/__init__.py
+sequana_sphinxext/pipeline.py
+sequana_sphinxext/snakemakerule.py
+sequana_sphinxext/wrapper.py
+sequana_sphinxext.egg-info/PKG-INFO
+sequana_sphinxext.egg-info/SOURCES.txt
+sequana_sphinxext.egg-info/dependency_links.txt
+sequana_sphinxext.egg-info/not-zip-safe
+sequana_sphinxext.egg-info/requires.txt
+sequana_sphinxext.egg-info/top_level.txt
