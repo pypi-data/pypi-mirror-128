@@ -1,0 +1,12 @@
+zope.vocabularyregistry-1.2.0-py3.9-nspkg.pth,sha256=SWEVH-jEWsKYrL0qoC6GBJaStx_iKxGoAY9PQycFVC4,529
+zope/vocabularyregistry/README.rst,sha256=XG9U12RibyPfaTnhXi6rn1TBl5_CvOoby6fAysq5PfY,4555
+zope/vocabularyregistry/__init__.py,sha256=l4gYMFfF5Uxq2xpcUqTJ5-Y-SDcSnI2g9H85_1JR71c,808
+zope/vocabularyregistry/configure.zcml,sha256=Qia5Rj9NVA0RZHUkyGa19ce1bnv6VBLs4XcimmgNhwU,168
+zope/vocabularyregistry/registry.py,sha256=LP-PIluGyAdSBxsephLqhDUQbkuFMT4uMBjc0J_ApBk,3233
+zope/vocabularyregistry/tests.py,sha256=Gd2GQTJpvU-uJawcXyUNegSCqsRrU4YCQ2j9z2ZuQ2E,1148
+zope.vocabularyregistry-1.2.0.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+zope.vocabularyregistry-1.2.0.dist-info/METADATA,sha256=Um10G3Pe68Q_eGQSOIzPEQ-bg4cpA-e27ktT5ZJ4KG8,7981
+zope.vocabularyregistry-1.2.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+zope.vocabularyregistry-1.2.0.dist-info/namespace_packages.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.vocabularyregistry-1.2.0.dist-info/top_level.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.vocabularyregistry-1.2.0.dist-info/RECORD,,
