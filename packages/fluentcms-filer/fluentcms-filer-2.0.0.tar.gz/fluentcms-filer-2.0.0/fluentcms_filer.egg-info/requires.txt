@@ -1,0 +1,9 @@
+django-fluent-contents>=2.0
+django-filer>0.9
+
+[develop]
+tox
+django
+
+[test]
+coverage
