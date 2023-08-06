@@ -1,0 +1,17 @@
+jisho_api/__init__.py,sha256=UpMqeJ0C8i0pkue1AHnnyyX0bFJ9zZeJ7HBR6yhuA8A,54
+jisho_api/cli.py,sha256=h0r_QPc_Y5ugSPzK2hKa_PyM9KYdwEmYV-0XrI2tQ84,4514
+jisho_api/kanji/__init__.py,sha256=5OEua9BoZf12YZkHWoF01R7OTvsxzOxh5FIpfSF44yU,26
+jisho_api/kanji/cfg.py,sha256=j20IMWuAYRIeWbIUlo6f7X2MKxsuAqKnE23MNjtmk5Q,1576
+jisho_api/kanji/request.py,sha256=EPM5ju0wOjOFNVn5wZGE5TLwn9K3xuSOUbtN0nFJfFY,11006
+jisho_api/sentence/__init__.py,sha256=67xg4P_EADtNinNAoNGMGHyThz5zMDXbKsNoWFaznsw,29
+jisho_api/sentence/cfg.py,sha256=e1BqJqn5GozCyKafN8IulkeeD0DHG3kq9nmmqRkLo8c,108
+jisho_api/sentence/request.py,sha256=KbKbcN_FOrOUKH9tNXJteznQ283kIiq_Bwv1lYRngqA,2817
+jisho_api/util.py,sha256=VwqaJg0u9MjRkX9I5BVV93lTITe7G8jqZQtXLJUQJGc,1880
+jisho_api/word/__init__.py,sha256=Jt1xc2I2Q3KNuS8ozCeeyWul6CY77U26M9OuZhWQ30I,25
+jisho_api/word/cfg.py,sha256=HZswLXr8hJc0VwE_IFVQdHlt-05UYYF552UAgIKYNpE,1017
+jisho_api/word/request.py,sha256=Q4iSaNWghcGbe-5RlK31OCUwUUDE0B0K0pBdTn5cDwg,2591
+jisho_api-0.1.3.dist-info/entry_points.txt,sha256=XZ9ETlpOnPLXjFmdzEa9qxf2A11vAzJ-1CEiawf7PJ4,48
+jisho_api-0.1.3.dist-info/LICENSE.txt,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+jisho_api-0.1.3.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+jisho_api-0.1.3.dist-info/METADATA,sha256=Br9XztSpDBnDRIYakBA8NHgmwheiY7qHUi446xAfpoc,4074
+jisho_api-0.1.3.dist-info/RECORD,,
