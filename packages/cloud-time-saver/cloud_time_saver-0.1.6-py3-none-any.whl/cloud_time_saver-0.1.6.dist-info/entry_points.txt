@@ -1,0 +1,3 @@
+[console_scripts]
+cloud_time_saver=cloud_time_saver.cts:main
+
