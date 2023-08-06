@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: scrapyer-redis
+Version: 0.1.2
+Summary: Redis-based components for Scrapy.
+Home-page: https://github.com/rolando/scrapy-redis
+Author: Rolando Espinoza
+Author-email: rolando@rmax.io
+License: MIT
+Description: UNKNOWN
+Keywords: scrapy-redis
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
