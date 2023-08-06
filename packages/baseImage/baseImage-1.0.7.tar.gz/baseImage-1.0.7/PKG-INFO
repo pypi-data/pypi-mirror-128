@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: baseImage
+Version: 1.0.7
+Summary: This is a secondary package of OpenCV,for manage image data
+Home-page: https://github.com/hakaboom/base_image
+Author: hakaboom
+Author-email: 1534225986@qq.com
+License: Apache License 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
