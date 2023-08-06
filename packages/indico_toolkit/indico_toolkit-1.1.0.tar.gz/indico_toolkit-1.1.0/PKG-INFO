@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: indico_toolkit
+Version: 1.1.0
+Summary: A package to support Indico IPA development
+Home-page: https://github.com/IndicoDataSolutions/Indico-Solutions-Toolkit
+Author: indico
+Author-email: scott.levin@indico.io
