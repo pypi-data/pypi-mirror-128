@@ -1,0 +1,4 @@
+[console_scripts]
+zshpower=snakypy.zshpower.cli:main
+zshpower-draw=snakypy.zshpower.draw:main
+
