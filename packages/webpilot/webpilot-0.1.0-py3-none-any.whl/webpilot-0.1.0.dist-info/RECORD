@@ -1,0 +1,9 @@
+webpilot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webpilot/config.py,sha256=m9J_acjDzuB0PQEoULjZ-vmcJIjxxdSJJBLrYXJecMs,398
+webpilot/models.py,sha256=1hln9asgT8z0cYYNeu6wPUgvXLSp_S78AQoJENJuJz0,412
+webpilot/robot.py,sha256=jhx8SjDbK1-UlADtFq_0Kdyg624erUva5xXoOrcUOG0,3929
+webpilot-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+webpilot-0.1.0.dist-info/METADATA,sha256=GcTze7ok743zgbKibJ2ZhAtx3jSfsFtoIpxPavJk0OA,463
+webpilot-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+webpilot-0.1.0.dist-info/top_level.txt,sha256=5WEd7Xnpcq4Y5gJtaWNAJLGx6niLKORb5PQLPmediwY,9
+webpilot-0.1.0.dist-info/RECORD,,
