@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+looksee/__init__.py
+looksee/scanner.py
+looksee.egg-info/PKG-INFO
+looksee.egg-info/SOURCES.txt
+looksee.egg-info/dependency_links.txt
+looksee.egg-info/requires.txt
+looksee.egg-info/top_level.txt
