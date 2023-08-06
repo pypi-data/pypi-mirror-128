@@ -1,0 +1,6 @@
+Flask-SQLAlchemy
+wheel
+twine
+bdist_wheel
+naver-config
+psycopg2
