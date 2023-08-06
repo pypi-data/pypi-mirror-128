@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+check_version.py
+setup.py
+updater/VERSION
+updater/__init__.py
+updater/components.py
+updater.egg-info/PKG-INFO
+updater.egg-info/SOURCES.txt
+updater.egg-info/dependency_links.txt
+updater.egg-info/entry_points.txt
+updater.egg-info/requires.txt
+updater.egg-info/top_level.txt
