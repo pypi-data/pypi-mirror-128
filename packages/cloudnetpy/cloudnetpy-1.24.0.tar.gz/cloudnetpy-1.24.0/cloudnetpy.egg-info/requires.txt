@@ -1,0 +1,6 @@
+scipy
+netCDF4
+matplotlib
+requests
+pytz
+pytest
