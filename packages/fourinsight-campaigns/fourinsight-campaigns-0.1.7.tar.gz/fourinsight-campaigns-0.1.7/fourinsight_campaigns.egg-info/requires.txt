@@ -1,0 +1,2 @@
+fourinsight-api
+pandas

@@ -1,0 +1,15 @@
+README.rst
+pyproject.toml
+setup.cfg
+fourinsight/campaigns/__init__.py
+fourinsight/campaigns/api.py
+fourinsight/campaigns/campaign.py
+fourinsight/campaigns/channels.py
+fourinsight/campaigns/client.py
+fourinsight/campaigns/utils.py
+fourinsight_campaigns.egg-info/PKG-INFO
+fourinsight_campaigns.egg-info/SOURCES.txt
+fourinsight_campaigns.egg-info/dependency_links.txt
+fourinsight_campaigns.egg-info/not-zip-safe
+fourinsight_campaigns.egg-info/requires.txt
+fourinsight_campaigns.egg-info/top_level.txt
