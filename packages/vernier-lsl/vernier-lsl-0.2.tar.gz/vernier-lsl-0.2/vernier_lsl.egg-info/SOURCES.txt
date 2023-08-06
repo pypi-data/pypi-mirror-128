@@ -1,0 +1,9 @@
+setup.py
+vernier_lsl.egg-info/PKG-INFO
+vernier_lsl.egg-info/SOURCES.txt
+vernier_lsl.egg-info/dependency_links.txt
+vernier_lsl.egg-info/entry_points.txt
+vernier_lsl.egg-info/requires.txt
+vernier_lsl.egg-info/top_level.txt
+verniersl/__main__.py
+verniersl/ble.py
