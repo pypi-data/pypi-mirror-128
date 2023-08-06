@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mitxpro-openedx-extensions
+Version: 1.0.0
+Summary: MIT xPro plugins for Open edX
+Author: MIT Office of Open Learning
+Author-email: mitx-devops@mit.edu
+Requires-Python: >=3.8,<3.9
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: django (>=2.1,<4.0)
+Requires-Dist: futures (==3.2.0); python_version >= "2.7" and python_version < "2.8"
