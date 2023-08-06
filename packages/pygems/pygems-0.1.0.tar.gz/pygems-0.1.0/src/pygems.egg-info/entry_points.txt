@@ -1,0 +1,3 @@
+[console_scripts]
+pygems = pygems.cli:main
+

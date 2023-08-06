@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/pygems.egg-info/PKG-INFO
+src/pygems.egg-info/SOURCES.txt
+src/pygems.egg-info/dependency_links.txt
+src/pygems.egg-info/entry_points.txt
+src/pygems.egg-info/top_level.txt
