@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>orangecontrib.text.topics.topics &#8212; Orange3 Text Mining  documentation</title>
+    <link rel="stylesheet" href="../../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for orangecontrib.text.topics.topics</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">gensim</span> <span class="kn">import</span> <span class="n">matutils</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">gensim.corpora</span> <span class="kn">import</span> <span class="n">Dictionary</span>
+
+<span class="kn">from</span> <span class="nn">Orange.data</span> <span class="kn">import</span> <span class="n">StringVariable</span><span class="p">,</span> <span class="n">ContinuousVariable</span><span class="p">,</span> <span class="n">Domain</span>
+<span class="kn">from</span> <span class="nn">Orange.data.table</span> <span class="kn">import</span> <span class="n">Table</span>
+<span class="kn">from</span> <span class="nn">orangecontrib.text.corpus</span> <span class="kn">import</span> <span class="n">Corpus</span>
+<span class="kn">from</span> <span class="nn">orangecontrib.text.util</span> <span class="kn">import</span> <span class="n">chunkable</span>
+
+
+<span class="n">MAX_WORDS</span> <span class="o">=</span> <span class="mi">1000</span>
+
+
+<span class="k">class</span> <span class="nc">Topic</span><span class="p">(</span><span class="n">Table</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Dummy wrapper for Table so signals can distinguish Topic from Data.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Bypass Table.__new__. &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="n">Topic</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">GensimWrapper</span><span class="p">:</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="bp">NotImplemented</span>
+    <span class="n">Model</span> <span class="o">=</span> <span class="bp">NotImplemented</span>
+    <span class="n">num_topics</span> <span class="o">=</span> <span class="bp">NotImplemented</span>
+    <span class="n">has_negative_weights</span> <span class="o">=</span> <span class="kc">False</span>    <span class="c1"># whether words can negatively contibute to a topic</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">kwargs</span> <span class="o">=</span> <span class="n">kwargs</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">topic_names</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_words</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">running</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">doc_topic</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">actual_topics</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">corpus</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Train the model with the corpus.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            corpus (Corpus): A corpus to learn topics from.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">corpus</span><span class="o">.</span><span class="n">dictionary</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reset_model</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">running</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">corpus</span><span class="o">.</span><span class="n">ngrams_corpus</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_words</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">corpus</span><span class="o">.</span><span class="n">dictionary</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">topic_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Topic </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+                            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">num_topics</span><span class="p">)]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">running</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="nf">dummy_method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span> <span class="nf">reset_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">corpus</span><span class="p">):</span>
+        <span class="c1"># prevent model from updating</span>
+        <span class="n">_update</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">update</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">update</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dummy_method</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">id2word</span> <span class="o">=</span> <span class="n">Dictionary</span><span class="p">(</span><span class="n">corpus</span><span class="o">.</span><span class="n">ngrams_iterator</span><span class="p">(</span><span class="n">include_postags</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">prune_at</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="n">corpus</span><span class="o">=</span><span class="n">corpus</span><span class="p">,</span>
+                                <span class="n">id2word</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">id2word</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">update</span> <span class="o">=</span> <span class="n">_update</span>
+
+    <span class="nd">@chunkable</span>
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">documents</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">documents</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">corpus</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Create a table with topics representation. &quot;&quot;&quot;</span>
+        <span class="n">topics</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">[</span><span class="n">corpus</span><span class="o">.</span><span class="n">ngrams_corpus</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">actual_topics</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">get_topics</span><span class="p">()</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">matrix</span> <span class="o">=</span> <span class="n">matutils</span><span class="o">.</span><span class="n">corpus2dense</span><span class="p">(</span>
+            <span class="n">topics</span><span class="p">,</span> <span class="n">num_docs</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">corpus</span><span class="p">),</span> <span class="n">num_terms</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">num_topics</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
+        <span class="n">corpus</span> <span class="o">=</span> <span class="n">corpus</span><span class="o">.</span><span class="n">extend_attributes</span><span class="p">(</span>
+            <span class="n">matrix</span><span class="p">[:,</span> <span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">actual_topics</span><span class="p">],</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">topic_names</span><span class="p">[:</span><span class="bp">self</span><span class="o">.</span><span class="n">actual_topics</span><span class="p">]</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">doc_topic</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">[:,</span> <span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">actual_topics</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tokens</span> <span class="o">=</span> <span class="n">corpus</span><span class="o">.</span><span class="n">tokens</span>
+        <span class="n">corpus</span><span class="o">.</span><span class="n">store_tokens</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tokens</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">corpus</span>
+
+    <span class="k">def</span> <span class="nf">fit_transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">corpus</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">corpus</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">get_topics_table_by_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">topic_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Transform topics from gensim model to table. &quot;&quot;&quot;</span>
+        <span class="n">words</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_topics_words</span><span class="p">(</span><span class="n">MAX_WORDS</span><span class="p">)</span>
+        <span class="n">weights</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_topics_weights</span><span class="p">(</span><span class="n">MAX_WORDS</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">topic_id</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Too large topic ID.&quot;</span><span class="p">)</span>
+
+        <span class="n">num_words</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">[</span><span class="n">topic_id</span><span class="p">])</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">num_words</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">words</span><span class="p">[</span><span class="n">topic_id</span><span class="p">]</span>
+        <span class="n">data</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">weights</span><span class="p">[</span><span class="n">topic_id</span><span class="p">]</span>
+
+        <span class="n">metas</span> <span class="o">=</span> <span class="p">[</span><span class="n">StringVariable</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">topic_names</span><span class="p">[</span><span class="n">topic_id</span><span class="p">]),</span>
+                 <span class="n">ContinuousVariable</span><span class="p">(</span><span class="s2">&quot;Topic </span><span class="si">{}</span><span class="s2"> weights&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">topic_id</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))]</span>
+        <span class="n">metas</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">_out_format</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%.2e</span><span class="s1">&#39;</span>
+
+        <span class="n">domain</span> <span class="o">=</span> <span class="n">Domain</span><span class="p">([],</span> <span class="n">metas</span><span class="o">=</span><span class="n">metas</span><span class="p">)</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">Topic</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span>
+                             <span class="n">X</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">num_words</span><span class="p">,</span> <span class="mi">0</span><span class="p">)),</span>
+                             <span class="n">metas</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">W</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Topic </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">topic_id</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+        <span class="c1"># needed for coloring in word cloud</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="s2">&quot;topic-method-name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="k">return</span> <span class="n">t</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_marginal_probability</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">doc_topic</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Compute marginal probability of a topic, that is the probability of a</span>
+<span class="sd">        topic across all documents.</span>
+
+<span class="sd">        :return: np.array of marginal topic probabilities</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">doc_length</span> <span class="o">=</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">tokens</span><span class="p">]</span>
+        <span class="n">doc_length</span><span class="p">[:]</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="o">/</span> <span class="nb">sum</span><span class="p">(</span><span class="n">doc_length</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">doc_length</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">doc_topic</span><span class="o">.</span><span class="n">T</span> <span class="o">*</span> <span class="n">doc_length</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">get_all_topics_table</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Transform all topics from gensim model to table. &quot;&quot;&quot;</span>
+        <span class="n">all_words</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_topics_words</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_words</span><span class="p">)</span>
+        <span class="n">all_weights</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_topics_weights</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_words</span><span class="p">)</span>
+        <span class="n">sorted_words</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">all_words</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">n_topics</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">all_words</span><span class="p">)</span>
+
+        <span class="n">X</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">words</span><span class="p">,</span> <span class="n">weights</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">all_words</span><span class="p">,</span> <span class="n">all_weights</span><span class="p">):</span>
+            <span class="n">weights</span> <span class="o">=</span> <span class="p">[</span><span class="n">we</span> <span class="k">for</span> <span class="n">wo</span><span class="p">,</span> <span class="n">we</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">weights</span><span class="p">))]</span>
+            <span class="n">X</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">weights</span><span class="p">)</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+        <span class="c1"># take only first n_topics; e.g. when user requested 10, but gensim</span>
+        <span class="c1"># returns only 9 — when the rank is lower than num_topics requested</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">topic_names</span><span class="p">[:</span><span class="n">n_topics</span><span class="p">])[:,</span> <span class="kc">None</span><span class="p">]</span>
+        <span class="n">attrs</span> <span class="o">=</span> <span class="p">[</span><span class="n">ContinuousVariable</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">sorted_words</span><span class="p">]</span>
+        <span class="n">metas</span> <span class="o">=</span> <span class="p">[</span><span class="n">StringVariable</span><span class="p">(</span><span class="s1">&#39;Topics&#39;</span><span class="p">),</span>
+                 <span class="n">ContinuousVariable</span><span class="p">(</span><span class="s1">&#39;Marginal Topic Probability&#39;</span><span class="p">)]</span>
+
+        <span class="n">topic_proba</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_marginal_probability</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tokens</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">doc_topic</span><span class="p">)</span>
+
+        <span class="n">t</span> <span class="o">=</span> <span class="n">Table</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">Domain</span><span class="p">(</span><span class="n">attrs</span><span class="p">,</span> <span class="n">metas</span><span class="o">=</span><span class="n">metas</span><span class="p">),</span> <span class="n">X</span><span class="o">=</span><span class="n">X</span><span class="p">,</span>
+                             <span class="n">metas</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">names</span><span class="p">,</span> <span class="n">topic_proba</span><span class="p">)))</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;All topics&#39;</span>
+        <span class="k">return</span> <span class="n">t</span>
+
+    <span class="k">def</span> <span class="nf">get_top_words_by_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">topic_id</span><span class="p">,</span> <span class="n">num_of_words</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+        <span class="n">topics</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_topics_words</span><span class="p">(</span><span class="n">num_of_words</span><span class="o">=</span><span class="n">num_of_words</span><span class="p">)</span>
+        <span class="n">weights</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_topics_weights</span><span class="p">(</span><span class="n">num_of_words</span><span class="o">=</span><span class="n">num_of_words</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">topic_id</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_topics</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Invalid </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">topic_id</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="n">topic_id</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">topics</span><span class="p">):</span>
+            <span class="k">return</span> <span class="p">[],</span> <span class="p">[]</span>
+        <span class="k">return</span> <span class="n">topics</span><span class="p">[</span><span class="n">topic_id</span><span class="p">],</span> <span class="n">weights</span><span class="p">[</span><span class="n">topic_id</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">_topics_words</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_of_words</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Returns list of list of topic words. &quot;&quot;&quot;</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">show_topics</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">num_topics</span><span class="p">,</span> <span class="n">num_of_words</span><span class="p">,</span> <span class="n">formatted</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="c1"># `show_topics` method return a list of `(topic_number, topic)` tuples,</span>
+        <span class="c1"># where `topic` is a list of `(word, probability)` tuples.</span>
+        <span class="k">return</span> <span class="p">[[</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">topic</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">_topics_weights</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_of_words</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Returns list of list of topic weights. &quot;&quot;&quot;</span>
+        <span class="n">topics</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">show_topics</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">num_topics</span><span class="p">,</span> <span class="n">num_of_words</span><span class="p">,</span>
+                                        <span class="n">formatted</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="c1"># `show_topics` method return a list of `(topic_number, topic)` tuples,</span>
+        <span class="c1"># where `topic` is a list of `(word, probability)` tuples.</span>
+        <span class="k">return</span> <span class="p">[[</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">topics</span><span class="p">]</span>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../index.html">Orange3 Text Mining</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/corpus-widget.html">Corpus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/importdocuments.html">Import Documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/guardian-widget.html">The Guardian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/nytimes.html">NY Times</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/pubmed.html">Pubmed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/twitter-widget.html">Twitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/wikipedia-widget.html">Wikipedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/preprocesstext.html">Preprocess Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/bagofwords-widget.html">Bag of Words</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/documentembedding.html">Document Embedding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/similarityhashing.html">Similarity Hashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/sentimentanalysis.html">Sentiment Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/tweetprofiler.html">Tweet Profiler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/topicmodelling-widget.html">Topic Modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/corpusviewer.html">Corpus Viewer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/wordcloud.html">Word Cloud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/concordance.html">Concordance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/docmap.html">Document Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/wordenrichment.html">Word Enrichment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/duplicatedetection.html">Duplicate Detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/statistics.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../widgets/corpustonetwork.html">Corpus to Network</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scripting/corpus.html">Corpus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scripting/preprocess.html">Preprocessor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scripting/twitter.html">Twitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scripting/nyt.html">New York Times</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scripting/guardian.html">The Guardian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scripting/wikipedia.html">Wikipedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scripting/bagofwords.html">Bag of Words</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scripting/topicmodeling.html">Topic Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scripting/tag.html">Tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scripting/async.html">Async Module</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Laboratory of Bioinformatics, Faculty of Computer Science, University of Ljubljana.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

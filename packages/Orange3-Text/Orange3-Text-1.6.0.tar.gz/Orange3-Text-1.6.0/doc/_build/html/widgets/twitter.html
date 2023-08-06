@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Twitter &#8212; Orange3 Text Mining  documentation</title>
+    
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Wikipedia" href="wikipedia.html" />
+    <link rel="prev" title="The Guardian" href="guardian.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="wikipedia.html" title="Wikipedia"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="guardian.html" title="The Guardian"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3 Text Mining  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="twitter">
+<h1>Twitter<a class="headerlink" href="#twitter" title="Permalink to this headline">¶</a></h1>
+<div class="figure">
+<img alt="../_images/twitter.png" src="../_images/twitter.png" />
+</div>
+<p>Fetching data from <a class="reference external" href="https://dev.twitter.com/rest/public/search">The Twitter Search API</a>.</p>
+<div class="section" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p><strong>Inputs</strong>:</p>
+<ul class="simple">
+<li>(None)</li>
+</ul>
+<p><strong>Outputs</strong>:</p>
+<ul>
+<li><p class="first"><strong>Corpus</strong></p>
+<p>A <a class="reference internal" href="../scripting/corpus.html#corpus"><span class="std std-ref">Corpus</span></a> instance.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p><strong>Twitter</strong> widget enables querying tweets through Twitter API. You can query by content, author or both and  accummulate results should you wish to create a larger data set. The widget only supports REST API and allows queries for up to two weeks back.</p>
+<div class="figure">
+<img alt="../_images/Twitter-stamped.png" src="../_images/Twitter-stamped.png" />
+</div>
+<ol class="arabic">
+<li><p class="first">To begin your queries, insert Twitter key and secret. They are securely saved in your system keyring service (like Credential Vault, Keychain, KWallet, etc.) and won&#8217;t be deleted when clearing widget settings. You must first create a <a class="reference external" href="https://apps.twitter.com/">Twitter app</a> to get API keys.</p>
+<div class="figure">
+<img alt="../_images/Twitter-key.png" src="../_images/Twitter-key.png" />
+</div>
+</li>
+<li><dl class="first docutils">
+<dt>Set query parameters:</dt>
+<dd><ul class="first last simple">
+<li><em>Query word list</em>: list desired queries, one per line. Queries are automatically joined by OR.</li>
+<li><em>Search by</em>: specify whether you want to search by content, author or both. If searching by author, you must enter proper Twitter handle (without &#64;) in the query list.</li>
+<li><em>Allow retweets</em>: if &#8216;Allow retweets&#8217; is checked, retweeted tweets will also appear on the output. This might duplicate some results.</li>
+<li><em>Date</em>: set the query time frame. Twitter only allows retrieving tweets from up to two weeks back.</li>
+<li><em>Language</em>: set the language of retrieved tweets. Any will retrieve tweets in any language.</li>
+<li><em>Max tweets</em>: set the top limit of retrieved tweets. If box is not ticked, no upper bound will be set - widget will retrieve all available tweets.</li>
+<li><em>Accumulate results</em>: if &#8216;Accumulate results&#8217; is ticked, widget will append new queries to the previous ones. Enter new queries, run <em>Search</em> and new results will be appended to the previous ones.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Define which features to include as text features.</p>
+</li>
+<li><p class="first">Information on the number of tweets on the output.</p>
+</li>
+<li><p class="first">Produce report.</p>
+</li>
+<li><p class="first">Run query.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>First, let&#8217;s try a simple query. We will search for tweets containing either &#8216;data mining&#8217; or &#8216;machine learning&#8217; in the content and allow retweets. We will further limit our search to only a 100 tweets in English.</p>
+<div class="figure">
+<img alt="../_images/Twitter-Example1.png" src="../_images/Twitter-Example1.png" />
+</div>
+<p>First, we&#8217;re checking the output in <a class="reference internal" href="corpusviewer.html"><span class="doc">Corpus Viewer</span></a> to get the initial idea about our results. Then we&#8217;re preprocessing the tweets with lowercase, url removal, tweet tokenizer and removal of stopword and punctuation. The best way to see the results is with <a class="reference internal" href="wordcloud.html"><span class="doc">Word Cloud</span></a>. This will display the most popular words in field of data mining and machine learning in the past two weeks.</p>
+<p>Our next example is a bit more complex. We&#8217;re querying tweets from Hillary Clinton and Donald Trump from the presidential campaign 2016.</p>
+<div class="figure">
+<img alt="../_images/Twitter-Example2.png" src="../_images/Twitter-Example2.png" />
+</div>
+<p>Then we&#8217;ve used <a class="reference internal" href="preprocesstext.html"><span class="doc">Preprocess Text</span></a> to get suitable tokens on our output. We&#8217;ve connected <strong>Preprocess Text</strong> to <a class="reference internal" href="bagofwords.html"><span class="doc">Bag of Words</span></a> in order to create a table with words as features and their counts as values. A quick check in <strong>Word Cloud</strong> gives us an idea about the results.</p>
+<p>Now we would like to predict the author of the tweet. With <strong>Select Columns</strong> we&#8217;re setting &#8216;Author&#8217; as our target variable. Then we connect <strong>Select Columns</strong> to <strong>Test &amp; Score</strong>. We&#8217;ll be using <strong>Logistic Regression</strong> as our learner, which we also connect to <strong>Test &amp; Score</strong>.</p>
+<p>We can observe the results of our author predictions directly in the widget. AUC score is quite ok. Seems like we can to some extent predict who is the author of the tweet based on the tweet content.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Twitter</a><ul>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="guardian.html"
+                        title="previous chapter">The Guardian</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="wikipedia.html"
+                        title="next chapter">Wikipedia</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/twitter.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="wikipedia.html" title="Wikipedia"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="guardian.html" title="The Guardian"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3 Text Mining  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Laboratory of Bioinformatics, Faculty of Computer Science, University of Ljubljana.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.3.
+    </div>
+  </body>
+</html>

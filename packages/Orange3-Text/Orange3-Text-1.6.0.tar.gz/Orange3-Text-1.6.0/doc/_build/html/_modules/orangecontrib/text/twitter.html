@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>orangecontrib.text.twitter &mdash; Orange3 Text Mining  documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> Orange3 Text Mining
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/corpus-widget.html">Corpus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/importdocuments.html">Import Documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/guardian-widget.html">The Guardian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/nytimes.html">NY Times</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/pubmed.html">Pubmed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/twitter-widget.html">Twitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/wikipedia-widget.html">Wikipedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/preprocesstext.html">Preprocess Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/bagofwords-widget.html">Bag of Words</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/documentembedding.html">Document Embedding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/similarityhashing.html">Similarity Hashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/sentimentanalysis.html">Sentiment Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/tweetprofiler.html">Tweet Profiler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/topicmodelling-widget.html">Topic Modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/LDAvis.html">LDAvis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/corpusviewer.html">Corpus Viewer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/wordcloud.html">Word Cloud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/concordance.html">Concordance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/docmap.html">Document Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/wordenrichment.html">Word Enrichment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/duplicatedetection.html">Duplicate Detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/statistics.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/corpustonetwork.html">Corpus to Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/keywords.html">Extract Keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../widgets/score-documents.html">Score Documents</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../scripting/corpus.html">Corpus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scripting/preprocess.html">Preprocessor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scripting/twitter.html">Twitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scripting/nyt.html">New York Times</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scripting/guardian.html">The Guardian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scripting/wikipedia.html">Wikipedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scripting/bagofwords.html">Bag of Words</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scripting/topicmodeling.html">Topic Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scripting/tag.html">Tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../scripting/async.html">Async Module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Orange3 Text Mining</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+      <li>orangecontrib.text.twitter</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for orangecontrib.text.twitter</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span><span class="p">,</span> <span class="n">Iterable</span>
+
+<span class="kn">import</span> <span class="nn">tweepy</span>
+
+<span class="kn">from</span> <span class="nn">Orange.data</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">StringVariable</span><span class="p">,</span>
+    <span class="n">ContinuousVariable</span><span class="p">,</span>
+    <span class="n">DiscreteVariable</span><span class="p">,</span>
+    <span class="n">TimeVariable</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">orangecontrib.text</span> <span class="kn">import</span> <span class="n">Corpus</span>
+<span class="kn">from</span> <span class="nn">orangecontrib.text.language_codes</span> <span class="kn">import</span> <span class="n">code2lang</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Credentials&quot;</span><span class="p">,</span> <span class="s2">&quot;TwitterAPI&quot;</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">coordinates_geoJSON</span><span class="p">(</span><span class="n">json</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">json</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;coordinates&quot;</span><span class="p">,</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">])</span>
+    <span class="k">return</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span>
+
+
+<div class="viewcode-block" id="Credentials"><a class="viewcode-back" href="../../../scripting/twitter.html#orangecontrib.text.twitter.Credentials">[docs]</a><span class="k">class</span> <span class="nc">Credentials</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot; Twitter API credentials. &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="Credentials.__init__"><a class="viewcode-back" href="../../../scripting/twitter.html#orangecontrib.text.twitter.Credentials.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">consumer_key</span><span class="p">,</span> <span class="n">consumer_secret</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">consumer_key</span> <span class="o">=</span> <span class="n">consumer_key</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">consumer_secret</span> <span class="o">=</span> <span class="n">consumer_secret</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">auth</span> <span class="o">=</span> <span class="n">tweepy</span><span class="o">.</span><span class="n">OAuthHandler</span><span class="p">(</span><span class="n">consumer_key</span><span class="p">,</span> <span class="n">consumer_secret</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_valid</span> <span class="o">=</span> <span class="kc">None</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">valid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_valid</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">check</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_valid</span>
+
+    <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="o">.</span><span class="n">get_authorization_url</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_valid</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">except</span> <span class="n">tweepy</span><span class="o">.</span><span class="n">TweepyException</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_valid</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_valid</span>
+
+    <span class="k">def</span> <span class="nf">__getstate__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">odict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">odict</span><span class="p">[</span><span class="s2">&quot;_valid&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">odict</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;auth&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">odict</span>
+
+    <span class="k">def</span> <span class="nf">__setstate__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">odict</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">odict</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">auth</span> <span class="o">=</span> <span class="n">tweepy</span><span class="o">.</span><span class="n">OAuthHandler</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">consumer_key</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">consumer_secret</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span>
+            <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">Credentials</span><span class="p">)</span>
+            <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">consumer_key</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">consumer_key</span>
+            <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">consumer_secret</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">consumer_secret</span>
+        <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="TwitterAPI"><a class="viewcode-back" href="../../../scripting/twitter.html#orangecontrib.text.twitter.TwitterAPI">[docs]</a><span class="k">class</span> <span class="nc">TwitterAPI</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot; Fetch tweets from the Tweeter API.</span>
+
+<span class="sd">    Notes:</span>
+<span class="sd">        Results across multiple searches are aggregated. To remove tweets form</span>
+<span class="sd">        previous searches and only return results from the last search either</span>
+<span class="sd">        call `reset` method before searching or provide `collecting=False`</span>
+<span class="sd">        argument to search method.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">attributes</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">class_vars</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">tv</span> <span class="o">=</span> <span class="n">TimeVariable</span><span class="p">(</span><span class="s2">&quot;Date&quot;</span><span class="p">)</span>
+    <span class="n">authors</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">(</span><span class="n">DiscreteVariable</span><span class="p">(</span><span class="s2">&quot;Author&quot;</span><span class="p">),</span> <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="s2">&quot;@&quot;</span> <span class="o">+</span> <span class="n">doc</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">screen_name</span><span class="p">,),</span>
+    <span class="p">]</span>
+    <span class="n">metas</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">(</span>
+            <span class="n">StringVariable</span><span class="p">(</span><span class="s2">&quot;Content&quot;</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">doc</span><span class="o">.</span><span class="n">full_text</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">doc</span><span class="o">.</span><span class="n">retweeted</span> <span class="k">else</span> <span class="n">doc</span><span class="o">.</span><span class="n">text</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="c1"># temporary fix until Orange&gt;3.30.1 then change back to</span>
+        <span class="c1"># (tv, lambda doc: TwitterAPI.tv.parse(doc.created_at.isoformat())),</span>
+        <span class="p">(</span><span class="n">tv</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">TwitterAPI</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span>
+                    <span class="n">TwitterAPI</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">_tzre_sub</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">created_at</span><span class="o">.</span><span class="n">isoformat</span><span class="p">()))),</span>
+        <span class="p">(</span><span class="n">DiscreteVariable</span><span class="p">(</span><span class="s2">&quot;Language&quot;</span><span class="p">),</span> <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">doc</span><span class="o">.</span><span class="n">lang</span><span class="p">),</span>
+        <span class="p">(</span>
+            <span class="n">DiscreteVariable</span><span class="p">(</span><span class="s2">&quot;Location&quot;</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">place</span><span class="p">,</span> <span class="s2">&quot;country_code&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+        <span class="p">),</span>
+        <span class="p">(</span>
+            <span class="n">ContinuousVariable</span><span class="p">(</span><span class="s2">&quot;Number of Likes&quot;</span><span class="p">,</span> <span class="n">number_of_decimals</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">doc</span><span class="o">.</span><span class="n">favorite_count</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="p">(</span>
+            <span class="n">ContinuousVariable</span><span class="p">(</span><span class="s2">&quot;Number of Retweets&quot;</span><span class="p">,</span> <span class="n">number_of_decimals</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">doc</span><span class="o">.</span><span class="n">retweet_count</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="p">(</span>
+            <span class="n">DiscreteVariable</span><span class="p">(</span><span class="s2">&quot;In Reply To&quot;</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="s2">&quot;@&quot;</span> <span class="o">+</span> <span class="n">doc</span><span class="o">.</span><span class="n">in_reply_to_screen_name</span>
+            <span class="k">if</span> <span class="n">doc</span><span class="o">.</span><span class="n">in_reply_to_screen_name</span>
+            <span class="k">else</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="p">(</span><span class="n">DiscreteVariable</span><span class="p">(</span><span class="s2">&quot;Author Name&quot;</span><span class="p">),</span> <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">doc</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">name</span><span class="p">),</span>
+        <span class="p">(</span>
+            <span class="n">StringVariable</span><span class="p">(</span><span class="s2">&quot;Author Description&quot;</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">doc</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">description</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="p">(</span>
+            <span class="n">ContinuousVariable</span><span class="p">(</span><span class="s2">&quot;Author Statuses Count&quot;</span><span class="p">,</span> <span class="n">number_of_decimals</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">doc</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">statuses_count</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="p">(</span>
+            <span class="n">ContinuousVariable</span><span class="p">(</span><span class="s2">&quot;Author Favourites Count&quot;</span><span class="p">,</span> <span class="n">number_of_decimals</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">doc</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">favourites_count</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="p">(</span>
+            <span class="n">ContinuousVariable</span><span class="p">(</span><span class="s2">&quot;Author Friends Count&quot;</span><span class="p">,</span> <span class="n">number_of_decimals</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">doc</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">friends_count</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="p">(</span>
+            <span class="n">ContinuousVariable</span><span class="p">(</span><span class="s2">&quot;Author Followers Count&quot;</span><span class="p">,</span> <span class="n">number_of_decimals</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">doc</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">followers_count</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="p">(</span>
+            <span class="n">ContinuousVariable</span><span class="p">(</span><span class="s2">&quot;Author Listed Count&quot;</span><span class="p">,</span> <span class="n">number_of_decimals</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">doc</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">listed_count</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="p">(</span>
+            <span class="n">DiscreteVariable</span><span class="p">(</span><span class="s2">&quot;Author Verified&quot;</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">author</span><span class="o">.</span><span class="n">verified</span><span class="p">),</span>
+        <span class="p">),</span>
+        <span class="p">(</span>
+            <span class="n">ContinuousVariable</span><span class="p">(</span><span class="s2">&quot;Longitude&quot;</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">coordinates_geoJSON</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">coordinates</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">),</span>
+        <span class="p">(</span>
+            <span class="n">ContinuousVariable</span><span class="p">(</span><span class="s2">&quot;Latitude&quot;</span><span class="p">),</span>
+            <span class="k">lambda</span> <span class="n">doc</span><span class="p">:</span> <span class="n">coordinates_geoJSON</span><span class="p">(</span><span class="n">doc</span><span class="o">.</span><span class="n">coordinates</span><span class="p">)[</span><span class="mi">1</span><span class="p">],</span>
+        <span class="p">),</span>
+    <span class="p">]</span>
+
+    <span class="n">text_features</span> <span class="o">=</span> <span class="p">[</span><span class="n">metas</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]]</span>  <span class="c1"># Content</span>
+    <span class="n">string_attributes</span> <span class="o">=</span> <span class="p">[</span><span class="n">m</span> <span class="k">for</span> <span class="n">m</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">metas</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">StringVariable</span><span class="p">)]</span>
+
+<div class="viewcode-block" id="TwitterAPI.__init__"><a class="viewcode-back" href="../../../scripting/twitter.html#orangecontrib.text.twitter.TwitterAPI.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">credentials</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">key</span> <span class="o">=</span> <span class="n">credentials</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">api</span> <span class="o">=</span> <span class="n">tweepy</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">credentials</span><span class="o">.</span><span class="n">auth</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">container</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">search_history</span> <span class="o">=</span> <span class="p">[]</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">tweets</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">container</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+
+<div class="viewcode-block" id="TwitterAPI.search_content"><a class="viewcode-back" href="../../../scripting/twitter.html#orangecontrib.text.twitter.TwitterAPI.search_content">[docs]</a>    <span class="k">def</span> <span class="nf">search_content</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">content</span><span class="p">,</span>
+        <span class="o">*</span><span class="p">,</span>
+        <span class="n">max_tweets</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="n">lang</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="n">allow_retweets</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">collecting</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">callback</span><span class="o">=</span><span class="kc">None</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Search by content.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            content (list of str): A list of key words to search for.</span>
+<span class="sd">            max_tweets (int): If greater than zero limits the number of</span>
+<span class="sd">                downloaded tweets.</span>
+<span class="sd">            lang (str): A language&#39;s code (either ISO 639-1 or ISO 639-3</span>
+<span class="sd">                formats).</span>
+<span class="sd">            allow_retweets(bool): Whether to download retweets.</span>
+<span class="sd">            collecting (bool): Whether to collect results across multiple</span>
+<span class="sd">                search calls.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Corpus</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">collecting</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">max_tweets</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">max_tweets</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;Inf&quot;</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">build_query</span><span class="p">():</span>
+            <span class="k">nonlocal</span> <span class="n">content</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">content</span><span class="p">:</span>
+                <span class="n">q</span> <span class="o">=</span> <span class="s2">&quot;from: &quot;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                    <span class="n">content</span> <span class="o">=</span> <span class="p">[</span><span class="n">content</span><span class="p">]</span>
+                <span class="n">q</span> <span class="o">=</span> <span class="s2">&quot; OR &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;&quot;</span><span class="si">{}</span><span class="s1">&quot;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">q</span><span class="p">)</span> <span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">content</span><span class="p">])</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">allow_retweets</span><span class="p">:</span>
+                <span class="n">q</span> <span class="o">+=</span> <span class="s2">&quot; -filter:retweets&quot;</span>
+            <span class="k">return</span> <span class="n">q</span>
+
+        <span class="n">query</span> <span class="o">=</span> <span class="n">build_query</span><span class="p">()</span>
+        <span class="n">cursor</span> <span class="o">=</span> <span class="n">tweepy</span><span class="o">.</span><span class="n">Cursor</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">search_tweets</span><span class="p">,</span> <span class="n">q</span><span class="o">=</span><span class="n">query</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="n">lang</span><span class="p">,</span> <span class="n">tweet_mode</span><span class="o">=</span><span class="s2">&quot;extended&quot;</span>
+        <span class="p">)</span>
+
+        <span class="n">corpus</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span>
+            <span class="n">cursor</span><span class="p">,</span> <span class="n">max_tweets</span><span class="p">,</span> <span class="n">search_author</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="n">callback</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">append_history</span><span class="p">(</span>
+            <span class="s2">&quot;Content&quot;</span><span class="p">,</span>
+            <span class="n">content</span><span class="p">,</span>
+            <span class="n">lang</span> <span class="k">if</span> <span class="n">lang</span> <span class="k">else</span> <span class="s2">&quot;Any&quot;</span><span class="p">,</span>
+            <span class="nb">str</span><span class="p">(</span><span class="n">allow_retweets</span><span class="p">),</span>
+            <span class="n">count</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">corpus</span></div>
+
+<div class="viewcode-block" id="TwitterAPI.search_authors"><a class="viewcode-back" href="../../../scripting/twitter.html#orangecontrib.text.twitter.TwitterAPI.search_authors">[docs]</a>    <span class="k">def</span> <span class="nf">search_authors</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">authors</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">max_tweets</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">collecting</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="kc">None</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Search by authors.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            authors (list of str): A list of authors to search for.</span>
+<span class="sd">            max_tweets (int): If greater than zero limits the number of</span>
+<span class="sd">                downloaded tweets.</span>
+<span class="sd">            collecting (bool): Whether to collect results across multiple</span>
+<span class="sd">                search calls.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Corpus</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">collecting</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">max_tweets</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># set to max allowed for progress</span>
+            <span class="n">max_tweets</span> <span class="o">=</span> <span class="mi">3200</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">authors</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="n">authors</span> <span class="o">=</span> <span class="p">[</span><span class="n">authors</span><span class="p">]</span>
+
+        <span class="n">cursors</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">tweepy</span><span class="o">.</span><span class="n">Cursor</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">user_timeline</span><span class="p">,</span> <span class="n">screen_name</span><span class="o">=</span><span class="n">a</span><span class="p">,</span> <span class="n">tweet_mode</span><span class="o">=</span><span class="s2">&quot;extended&quot;</span>
+            <span class="p">)</span>
+            <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">authors</span>
+        <span class="p">]</span>
+        <span class="n">corpus</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span>
+            <span class="n">cursors</span><span class="p">,</span> <span class="n">max_tweets</span><span class="p">,</span> <span class="n">search_author</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="n">callback</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">append_history</span><span class="p">(</span><span class="s2">&quot;Author&quot;</span><span class="p">,</span> <span class="n">authors</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">corpus</span></div>
+
+    <span class="k">def</span> <span class="nf">fetch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cursors</span><span class="p">,</span> <span class="n">max_tweets</span><span class="p">,</span> <span class="n">search_author</span><span class="p">,</span> <span class="n">callback</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">cursors</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="n">cursors</span> <span class="o">=</span> <span class="p">[</span><span class="n">cursors</span><span class="p">]</span>
+
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">cursor</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">cursors</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">cursor</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="n">max_tweets</span><span class="p">),</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">tweet</span><span class="o">.</span><span class="n">id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">container</span><span class="p">:</span>
+                    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">container</span><span class="p">[</span><span class="n">tweet</span><span class="o">.</span><span class="n">id</span><span class="p">]</span> <span class="o">=</span> <span class="n">tweet</span>
+                <span class="k">if</span> <span class="n">j</span> <span class="o">%</span> <span class="mi">20</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">callback</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="n">callback</span><span class="p">(</span>
+                            <span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="n">max_tweets</span> <span class="o">+</span> <span class="n">j</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cursors</span><span class="p">)</span> <span class="o">*</span> <span class="n">max_tweets</span><span class="p">)</span>
+                        <span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_corpus</span><span class="p">(</span><span class="n">search_author</span><span class="p">),</span> <span class="n">count</span>
+
+    <span class="k">def</span> <span class="nf">create_corpus</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">search_author</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">search_author</span><span class="p">:</span>
+            <span class="n">class_vars</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">authors</span>
+            <span class="n">metas</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">metas</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">class_vars</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">metas</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">metas</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">authors</span>
+        <span class="k">return</span> <span class="n">Corpus</span><span class="o">.</span><span class="n">from_documents</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tweets</span><span class="p">,</span>
+            <span class="s2">&quot;Twitter&quot;</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">attributes</span><span class="p">,</span>
+            <span class="n">class_vars</span><span class="p">,</span>
+            <span class="n">metas</span><span class="p">,</span>
+            <span class="n">title_indices</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="TwitterAPI.reset"><a class="viewcode-back" href="../../../scripting/twitter.html#orangecontrib.text.twitter.TwitterAPI.reset">[docs]</a>    <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Removes all downloaded tweets. &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">search_history</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">container</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="nf">append_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">query</span><span class="p">,</span> <span class="n">lang</span><span class="p">,</span> <span class="n">allow_retweets</span><span class="p">,</span> <span class="n">n_tweets</span><span class="p">):</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">query</span><span class="p">)</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">)</span> <span class="k">else</span> <span class="n">query</span>
+        <span class="k">if</span> <span class="n">lang</span> <span class="ow">in</span> <span class="n">code2lang</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">lang</span> <span class="o">=</span> <span class="n">code2lang</span><span class="p">[</span><span class="n">lang</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">search_history</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="p">(</span>
+                <span class="p">(</span><span class="s2">&quot;Query&quot;</span><span class="p">,</span> <span class="n">query</span><span class="p">),</span>
+                <span class="p">(</span><span class="s2">&quot;Search by&quot;</span><span class="p">,</span> <span class="n">mode</span><span class="p">),</span>
+                <span class="p">(</span><span class="s2">&quot;Language&quot;</span><span class="p">,</span> <span class="n">lang</span><span class="p">),</span>
+                <span class="p">(</span><span class="s2">&quot;Allow retweets&quot;</span><span class="p">,</span> <span class="n">allow_retweets</span><span class="p">),</span>
+                <span class="p">(</span><span class="s2">&quot;Tweets count&quot;</span><span class="p">,</span> <span class="n">n_tweets</span><span class="p">),</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">report</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">search_history</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2018, Laboratory of Bioinformatics, Faculty of Computer Science, University of Ljubljana.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

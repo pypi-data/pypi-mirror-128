@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Topic Modelling &#8212; Orange3 Text Mining  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="topic-modelling">
+<h1>Topic Modelling<a class="headerlink" href="#topic-modelling" title="Permalink to this headline">¶</a></h1>
+<p>Topic modelling with Latent Dirichlet Allocation, Latent Semantic Indexing or Hierarchical Dirichlet Process.</p>
+<p><strong>Inputs</strong></p>
+<ul class="simple">
+<li><p>Corpus: A collection of documents.</p></li>
+</ul>
+<p><strong>Outputs</strong></p>
+<ul class="simple">
+<li><p>Corpus: Corpus with topic weights appended.</p></li>
+<li><p>Topics: Selected topics with word weights.</p></li>
+<li><p>All Topics: Topic weights by tokens.</p></li>
+</ul>
+<p><strong>Topic Modelling</strong> discovers abstract topics in a corpus based on clusters of words found in each document and their respective frequency. A document typically contains multiple topics in different proportions, thus the widget also reports on the topic weight per document.</p>
+<p><img alt="../_images/Topic-Modelling-stamped.png" src="../_images/Topic-Modelling-stamped.png" /></p>
+<ol class="simple">
+<li><p>Topic modelling algorithm:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Latent_semantic_analysis">Latent Semantic Indexing</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Hierarchical_Dirichlet_process">Hierarchical Dirichlet Process</a></p></li>
+</ul>
+</li>
+<li><p>Parameters for the algorithm. LSI and LDA accept only the number of topics modelled, with the default set to 10. HDP, however, has more parameters. As this algorithm is computationally very demanding, we recommend you to try it on a subset or set all the required parameters in advance and only then run the algorithm (connect the input to the widget).</p>
+<ul class="simple">
+<li><p>First level concentration (γ): distribution at the first (corpus) level of Dirichlet Process</p></li>
+<li><p>Second level concentration (α): distribution at the second (document) level of Dirichlet Process</p></li>
+<li><p>The topic Dirichlet (α): concentration parameter used for the topic draws</p></li>
+<li><p>Top level truncation (Τ): corpus-level truncation (no of topics)</p></li>
+<li><p>Second level truncation (Κ): document-level truncation (no of topics)</p></li>
+<li><p>Learning rate (κ): step size</p></li>
+<li><p>Slow down parameter (τ)</p></li>
+</ul>
+</li>
+<li><p>Produce a report.</p></li>
+<li><p>If <em>Commit Automatically</em> is on, changes are communicated automatically. Alternatively press <em>Commit</em>.</p></li>
+</ol>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>In the first example, we present a simple use of the <strong>Topic Modelling</strong> widget. First we load <em>grimm-tales-selected.tab</em> data set and use <a class="reference internal" href="preprocesstext.html"><span class="doc">Preprocess Text</span></a> to tokenize by words only and remove stopwords. Then we connect <strong>Preprocess Text</strong> to <strong>Topic Modelling</strong>, where we use a simple <em>Latent Semantic Indexing</em> to find 10 topics in the text.</p>
+<p><img alt="../_images/Topic-Modelling-Example1.png" src="../_images/Topic-Modelling-Example1.png" /></p>
+<p>LSI provides both positive and negative weights per topic. A positive weight means the word is highly representative of a topic, while a negative weight means the word is highly unrepresentative of a topic (the less it occurs in a text, the more likely the topic). Positive words are colored green and negative words are colored red.</p>
+<p>We then select the first topic and display the most frequent words in the topic in <a class="reference internal" href="wordcloud.html"><span class="doc">Word Cloud</span></a>. We also connected <strong>Preprocess Text</strong> to <strong>Word Cloud</strong> in order to be able to output selected documents. Now we can select a specific word in the word cloud, say <em>little</em>. It will be colored red and also highlighted in the word list on the left.</p>
+<p>Now we can observe all the documents containing the word <em>little</em> in <a class="reference internal" href="corpusviewer.html"><span class="doc">Corpus Viewer</span></a>.</p>
+<p>In the second example, we will look at the correlation between topics and words/documents. Connect <strong>Topic Modelling</strong> to <strong>Heat Map</strong>. Ensure the link is set to <em>All Topics</em> - <em>Data</em>. <strong>Topic Modelling</strong> will output a matrix of topic weights by words from text (more precisely, tokens).</p>
+<p>We can observe the output in a <strong>Data Table</strong>. Tokens are in rows and retrieved topics in columns. Values represent how much a word is represented in a topic.</p>
+<p><img alt="../_images/Topic-Modelling-DataTable.png" src="../_images/Topic-Modelling-DataTable.png" /></p>
+<p>To visualize this matrix, open <strong>Heat Map</strong>. Select <em>Merge by k-means</em> and <em>Cluster</em> - <em>Rows</em> to merge similar rows into one and sort them by similarity, which makes the visualization more compact.</p>
+<p>In the upper part of the visualization, we have words that highly define topics 1-3 and in the lower part those that define topics 5 and 10.</p>
+<p>We can similarly observe topic representation across documents. We connect another <strong>Heat Map</strong> to <strong>Topic Modelling</strong> and set link to <em>Corpus</em> - <em>Data</em>. We set <em>Merge</em> and <em>Cluster</em> as above.</p>
+<p>In this visualization we see how much is a topic represented in a document. Looks like Topic 1 is represented almost across the entire corpus, while other topics are more specific. To observe a specific set of document, select either a clustering node or a row in the visualization. Then pass the data to <a class="reference internal" href="corpusviewer.html"><span class="doc">Corpus Viewer</span></a>.</p>
+<p><img alt="../_images/Topic-Modelling-Example2.png" src="../_images/Topic-Modelling-Example2.png" /></p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Orange3 Text Mining</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="corpus-widget.html">Corpus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importdocuments.html">Import Documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guardian-widget.html">The Guardian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nytimes.html">NY Times</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pubmed.html">Pubmed</a></li>
+<li class="toctree-l1"><a class="reference internal" href="twitter-widget.html">Twitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wikipedia-widget.html">Wikipedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preprocesstext.html">Preprocess Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="similarityhashing.html">Similarity Hashing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sentimentanalysis.html">Sentiment Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tweetprofiler.html">Tweet Profiler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="corpusviewer.html">Corpus Viewer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wordcloud.html">Word Cloud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concordance.html">Concordance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geomap.html">GeoMap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wordenrichment.html">Word Enrichment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="duplicatedetection.html">Duplicate Detection</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/corpus.html">Corpus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/preprocess.html">Preprocessor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/twitter.html">Twitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/nyt.html">New York Times</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/guardian.html">The Guardian</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/wikipedia.html">Wikipedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/bagofwords.html">Bag of Words</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/topicmodeling.html">Topic Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/tag.html">Tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/async.html">Async Module</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Laboratory of Bioinformatics, Faculty of Computer Science, University of Ljubljana.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/widgets/topicmodelling.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
