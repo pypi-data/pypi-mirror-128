@@ -1,0 +1,7 @@
+requests
+websocket-client
+pymitter
+
+[fast]
+numpy
+wsaccel
