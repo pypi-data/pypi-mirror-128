@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: k2l
+Version: 0.15.3
+Summary: Static mach-o/img4 analysis tool.
+Home-page: https://github.com/kritantadev/ktool
+Author: kritanta
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+file: README.md
+
