@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: BotSAmino
+Version: 1.0.4
+Summary: Amino Bots with python!
+Home-page: https://github.com/SirLez/BotSAmino
+Author: SirLez
+Author-email: SirLezDV@gmail.com
+License: MIT
+Download-URL: https://github.com/SirLez/BotSAmino/archive/refs/heads/main.zip
+Keywords: aminoapps,amino-py,amino,amino-bot,narvii,api,python,python3,python3.x,ThePhoenix78,AminoBot,BotAmino,botamino,aminobot,botaminew,samino,SAmino,SirLez,sirlez
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1 align="center"><br><a href="https://discord.gg/8R6YAmApdV"><img src="https://h.top4top.io/p_2088b2c5m1.jpg" width="600"></a><br></h1>
+
+## More Info About Use -> [Pysc Overall Discord](https://discord.gg/8R6YAmApdV)
+
+### What is this lib?
+Python API to easily connect Amino servers
+
+### How to install?
+`pip install SAmino`
+- **FOCUS!:** type `SAmino` **Not** `Amino`
+
+### API Reference documentation
+Soon...
+
+- **Author**: ThePhoenix78
+- **New Author**: SirLez
+
+
