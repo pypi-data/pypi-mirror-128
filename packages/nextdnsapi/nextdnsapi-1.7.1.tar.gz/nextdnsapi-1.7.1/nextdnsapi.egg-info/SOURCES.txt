@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+nextdnsapi.egg-info/PKG-INFO
+nextdnsapi.egg-info/SOURCES.txt
+nextdnsapi.egg-info/dependency_links.txt
+nextdnsapi.egg-info/requires.txt
+nextdnsapi.egg-info/top_level.txt
