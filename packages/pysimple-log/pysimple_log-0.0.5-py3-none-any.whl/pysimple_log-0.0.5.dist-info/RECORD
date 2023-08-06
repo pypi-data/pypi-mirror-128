@@ -1,0 +1,15 @@
+simplelog/__init__.py,sha256=UB4MmB5n8GZopLhqg7AgVfiNFFqcQzQkDBV3WiyZzew,1260
+simplelog/tests/__init__.py,sha256=cYDF4UOxt5uIDrAeU5udtZyzJ5Rb931bhi1UJR_Ypr0,77
+simplelog/tests/tasks.py,sha256=xed9AmrPq4e1CCfj4EKuufkT1hu8-ctdk8BNPVj-29U,821
+simplelog/tests/test_basic.py,sha256=uCqkx73PcWAEDbu_K0kefC05JVzZBPLz71ILx7TBDKA,479
+simplelog/tests/test_json_format_basic.py,sha256=BNM-LPVTvGaEOOJMjPaM_Nbv8W5SDWYDDyA5UqF90O0,980
+simplelog/tests/test_json_formatter_set_level.py,sha256=ickOLtTlJt-eqjQ4pwJ_2rYDhX0xCn6E5SvgTFPqIhI,1228
+simplelog/tests/test_set_level.py,sha256=ie63eWdVLRKGENA7sszRIzewzLBknYSZuNzMvxedwcc,989
+simplelog/utils/__init__.py,sha256=20TzAnk6iyXkXLWX6u5qigg73_19J1OkEsLb65fJq4A,26
+simplelog/utils/defaults.py,sha256=OoLQ5qjAGQ1eGRW_L1Ue5HTi88oEDU-T1Sd01-tJGhY,477
+simplelog/utils/json_log_formatter.py,sha256=dDXSxwct260x1gFzSeObejLvwXGB0nUNfIb3hfVfsB8,4925
+simplelog/utils/logger.py,sha256=eJjTbI71y8AqxAYJVkJFeE2D1wESJMu0sE3spOTNtVU,5143
+pysimple_log-0.0.5.dist-info/METADATA,sha256=GiCp7rkXtNaXAh8QVynRMXsWJbD-tZoo1NgD0q1f__c,6379
+pysimple_log-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pysimple_log-0.0.5.dist-info/top_level.txt,sha256=JYe90Lai7fqh0Z6mwonoNkxc8CZn3R2h32h_YR52INw,10
+pysimple_log-0.0.5.dist-info/RECORD,,
