@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+aefaalgo.egg-info/PKG-INFO
+aefaalgo.egg-info/SOURCES.txt
+aefaalgo.egg-info/dependency_links.txt
+aefaalgo.egg-info/requires.txt
+aefaalgo.egg-info/top_level.txt
