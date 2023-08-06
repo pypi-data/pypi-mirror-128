@@ -1,0 +1,11 @@
+setup.py
+douglas/__init__.py
+douglas/douglas.py
+douglas.egg-info/PKG-INFO
+douglas.egg-info/SOURCES.txt
+douglas.egg-info/dependency_links.txt
+douglas.egg-info/requires.txt
+douglas.egg-info/top_level.txt
+telma/__init__.py
+telma/setup.py
+telma/telma.py
