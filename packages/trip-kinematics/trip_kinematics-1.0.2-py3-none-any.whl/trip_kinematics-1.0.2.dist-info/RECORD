@@ -1,0 +1,14 @@
+trip_kinematics/KinematicGroup.py,sha256=mdYgqcwVY34fiSZ_1NWptU8l3OrGChoYSEzrIGhOQOY,19330
+trip_kinematics/Robot.py,sha256=YuCFmB_P2-IboWeb5jZ7mo8TX4E31mHLVXM-pAsCYVU,11781
+trip_kinematics/Solver.py,sha256=-6zXAo5xwoI8CkPUqv35Vb98CYbSKCb2o-q6UNshpDs,5589
+trip_kinematics/Transformation.py,sha256=nRY6jvU6vq4k6s8-1dgncD29tOg9VFil97pA7ZlqxIU,8542
+trip_kinematics/Utility.py,sha256=GzYVaHh5X7iU8LkC8M29AME6YSOLepTImGcotEBLLsk,3340
+trip_kinematics/__init__.py,sha256=60yv8EeLfTH5uu06A3NxLMuXz8BedI8Zvu48wt2csBY,201
+trip_robots/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trip_robots/excavator_rr.py,sha256=CmdWgwqkVZXkDOdCJgqEDCvMry_a_xx4jmla0QT7mnY,6416
+trip_robots/triped.py,sha256=rAAC-xrOQxL0yAx2CXiDqn7HUTXHSQrANoDi_44cFiM,4089
+trip_robots/triped_leg.py,sha256=451BFOXj-kvaYO1zJH8yCFw1yODlbUaR0OZNNRKZQxE,7539
+trip_kinematics-1.0.2.dist-info/METADATA,sha256=N_KYbKqAHdhDIpNouxJe6XoYMLcECvB_GZNMabbNlwA,244
+trip_kinematics-1.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+trip_kinematics-1.0.2.dist-info/top_level.txt,sha256=G3xcLOFRvm-CIisoF7FwnGxXUiJ36SCS6M8gylIBY2U,28
+trip_kinematics-1.0.2.dist-info/RECORD,,
