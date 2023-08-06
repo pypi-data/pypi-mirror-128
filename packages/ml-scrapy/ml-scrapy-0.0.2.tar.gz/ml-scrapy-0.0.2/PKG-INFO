@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ml-scrapy
+Version: 0.0.2
+Summary: Components For Scrapy Project
+Home-page: https://github.com/mic1on/ml-scrapy
+Author: miclon
+Author-email: jcnd@163.com
+License: MIT Licence
+Keywords: pip,scrapy
+Platform: any
+
+Components For Scrapy Project
+
