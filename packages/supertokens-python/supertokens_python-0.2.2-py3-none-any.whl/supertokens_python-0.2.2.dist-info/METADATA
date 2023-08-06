@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: supertokens-python
+Version: 0.2.2
+Summary: SuperTokens session management solution for Fastapi
+Home-page: https://github.com/supertokens/supertokens-fastapi
+Author: SuperTokens
+Author-email: team@supertokens.io
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: PyJWT (==2.0.*)
+Requires-Dist: httpx (==0.15.*)
+Requires-Dist: pycryptodome (==3.10.*)
+Requires-Dist: jsonschema (==3.2.0)
+Requires-Dist: tldextract (==3.1.0)
+Requires-Dist: asgiref (==3.4.1)
+Requires-Dist: werkzeug (==2.0.1)
+Requires-Dist: starlette (~=0.14.2)
+Requires-Dist: typing-extensions (==3.10)
+Requires-Dist: Deprecated (==1.2.13)
+Requires-Dist: cryptography (==35.0)
+Provides-Extra: dev
+Requires-Dist: pytest (==6.2.3) ; extra == 'dev'
+Requires-Dist: flake8 (==3.9.0) ; extra == 'dev'
+Requires-Dist: autopep8 (==1.5.6) ; extra == 'dev'
+Requires-Dist: PyYAML (==5.4.1) ; extra == 'dev'
+Requires-Dist: uvicorn (==0.13.4) ; extra == 'dev'
+Requires-Dist: requests (==2.25.1) ; extra == 'dev'
+Requires-Dist: pytest-asyncio (==0.14.0) ; extra == 'dev'
+Requires-Dist: respx (==0.16.3) ; extra == 'dev'
+Requires-Dist: nest-asyncio (==1.5.1) ; extra == 'dev'
+Requires-Dist: Fastapi (==0.68.1) ; extra == 'dev'
+Requires-Dist: django ; extra == 'dev'
+Requires-Dist: Flask (==2.0.1) ; extra == 'dev'
+Requires-Dist: python-dotenv ; extra == 'dev'
+Requires-Dist: flask-cors ; extra == 'dev'
+Requires-Dist: django-cors-headers ; extra == 'dev'
+Requires-Dist: pdoc3 ; extra == 'dev'
+
+![SuperTokens banner](https://raw.githubusercontent.com/supertokens/supertokens-logo/master/images/Artboard%20%E2%80%93%2027%402x.png)
+
+# SuperTokens Python SDK
+
+<a href="https://supertokens.io/discord">
+<img src="https://img.shields.io/discord/603466164219281420.svg?logo=discord"
+    alt="chat on Discord"></a>
+
+## About
+This is a Python library that is used to interface between a python API process and the SuperTokens http service.
+
+Learn more at https://supertokens.io
+
+## Documentation
+
+To see documentation, please click [here](https://supertokens.io/docs/community/introduction).
+
+## Contributing
+
+Please see the [CONTRIBUTING.md](https://github.com/supertokens/supertokens-python/blob/master/CONTRIBUTING.md) file for instructions.
+
+## Contact us
+
+For any queries, or support requests, please email us at team@supertokens.io, or join our [Discord](supertokens.io/discord) server.
+
+## Authors
+
+Created with :heart: by the folks at SuperTokens.io.
+
