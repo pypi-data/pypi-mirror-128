@@ -1,0 +1,5 @@
+[console_scripts]
+proman-version=proman_versioning.__main__:main
+vers=proman_versioning.__main__:main
+version=proman_versioning.__main__:main
+
