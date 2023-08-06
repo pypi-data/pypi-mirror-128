@@ -1,0 +1,23 @@
+{
+  "name": "NAME",
+  "version": "0.0.1",
+  "description": "DESCRIPTION",
+  "main": "dist/lib/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Author",
+  "license": "ISC",
+  "keywords": [
+    "natml",
+    "machine learning",
+    "deep learning"
+  ],
+  "dependencies": {
+    "natml": "^0.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
+}
