@@ -1,0 +1,168 @@
+{% load i18n static %}<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}" dir="{{ LANGUAGE_BIDI|yesno:'rtl,ltr,auto' }}">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% block stylesheet %}{% static "admin/css/base.css" %}{% endblock %}">
+        
+        {% if not is_popup and is_nav_sidebar_enabled %}
+            <link rel="stylesheet" type="text/css" href="{% static "admin/css/nav_sidebar.css" %}">
+            <script src="{% static 'admin/js/nav_sidebar.js' %}" defer></script>
+        {% endif %}
+        {% block extrastyle %}{% endblock %}
+        {% if LANGUAGE_BIDI %}<link rel="stylesheet" type="text/css" href="{% block stylesheet_rtl %}{% static "admin/css/rtl.css" %}{% endblock %}">{% endif %}
+            {% block extrahead %}{% endblock %}
+            {% block responsive %}
+                <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+                <link rel="stylesheet" type="text/css" href="{% static "admin/css/responsive.css" %}">
+                {% if LANGUAGE_BIDI %}
+                    <link rel="stylesheet" type="text/css" href="{% static "admin/css/responsive_rtl.css" %}">
+                {% endif %}
+            {% endblock %}
+        {% block blockbots %}
+            <meta name="robots" content="NONE,NOARCHIVE">
+        {% endblock %}
+        <link rel="stylesheet" type="text/css" href="{% static "admin/css/app.css" %}">
+        <style>
+            
+            .module.collapse h2 {
+                color: white;
+                background: #222e3c;
+            }
+            .submit-row a.deletelink , .delete-confirmation form .cancel-link {
+                height: 37px;
+            }
+            .submit-row {
+                background: transparent;
+                border: none;
+            }
+            /* .module h2, .module caption, .inline-group h2 {
+                background: #222e3c;
+                color: var(--header-link-color);
+            } */
+        </style>
+    </head>
+
+    <body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}" data-admin-utc-offset="{% now "Z" %}">
+        <div class="wrapper">
+            <nav id="sidebar" class="sidebar js-sidebar">
+                <div class="sidebar-content js-simplebar" data-simplebar="init">
+                    <div class="simplebar-wrapper" style="margin: 0px;">
+                        <div class="simplebar-height-auto-observer-wrapper">
+                            <div class="simplebar-height-auto-observer"></div>
+                        </div>
+                        {% if not is_popup %}
+                            <!-- Header -->
+                            {% block header %}
+                            
+                            {% endblock %}
+                        {% endif %}
+                    <div class="simplebar-mask">
+                        <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                            <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden;">
+                                <div class="simplebar-content" style="padding: 0px;">
+                                    <a class="sidebar-brand d-flex flex-column" href="{% url 'admin:index' %}">
+                                        <img src="https://horario.ourense.gal/static/dashboard/img/logo_concelloV2.png" style="width: 80px;" alt="" srcset="">
+                                        <p class="title mt-2" style="font-size: 30px; color: white;"> <span style="font-weight: 400;">Web</span>  Concello </p>
+                                    </a>
+                                    
+                                    {% include "admin/nav_sidebar.html" %}
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="simplebar-placeholder" style="width: auto; height: 970px;"></div>
+                </div>
+                <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                    <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                </div>
+                <div class="simplebar-track simplebar-vertical" style="visibility: hidden;">
+                    <div class="simplebar-scrollbar" style="height: 0px; display: none;"></div>
+                </div>
+            </nav>
+
+            <div class="main">
+                <nav class="navbar navbar-expand navbar-light navbar-bg">
+                    <a class="sidebar-toggle js-sidebar-toggle">
+                        <i class="hamburger align-self-center"></i>
+                    </a>
+
+                    <div class="navbar-collapse collapse">
+                        <ul class="navbar-nav navbar-align">
+                            <li class="nav-item dropdown">
+                                {% if site_url %}
+                                    <a href="{{ site_url }}">{% translate 'View site' %}</a>
+                                {% endif %}
+                                {% if user.is_active and user.is_staff %}
+                                    {% url 'django-admindocs-docroot' as docsroot %}
+                                    {% if docsroot %}
+                                        <a href="{{ docsroot }}">{% translate 'Documentation' %}</a> /
+                                    {% endif %}
+                                {% endif %}
+                                <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings align-middle"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                                </a>
+                                
+                                <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                                    {% block welcome-msg %}
+                                        <img src="https://demo-basic.adminkit.io/img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="{% firstof user.get_short_name user.get_username %}"> <span class="text-dark">{% firstof user.get_short_name user.get_username %}</span>
+                                    {% endblock %}
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="pages-profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user align-middle me-1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Profile</a>
+                                    
+                                    <div class="dropdown-divider"></div>
+                                    {% if user.has_usable_password %}
+                                    <a class="dropdown-item" href="{% url 'admin:password_change' %}">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings align-middle me-1"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                                        {% translate 'Change password' %}
+                                    </a>
+                                    {% endif %}
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="{% url 'admin:logout' %}">{% translate 'Log out' %}</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <main class="content">
+                    <div class="container-fluid p-0">
+                        {% block messages %}
+                            {% if messages %}
+                                <ul class="messagelist">
+                                    {% for message in messages %}
+                                        <li class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %} alert-dismissible" role="alert">
+                                            <div class="alert-message">
+                                                {{ message|capfirst }}
+                                            </div>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        {% endblock messages %}
+
+                        <div class="row">
+                            <style>
+                                .module.collapse:not(.show) {
+                                    display: block;
+                                }
+                            </style>
+                            {% block pretitle %}{% endblock %}
+                            {% block content_title %}{% if title %}<h1 class="h3 mb-3">{{ title }}</h1>{% endif %}{% endblock %}
+                            {% block content_subtitle %}{% if subtitle %}<h2>{{ subtitle }}</h2>{% endif %}{% endblock %}
+                            {% block content %}
+                                {% block object-tools %}{% endblock %}
+                                {{ content }}
+                            {% endblock %}
+                            {% block sidebar %}{% endblock %}
+                        </div>
+                    </div>
+                </main>
+                {% block footer %}<div id="footer"></div>{% endblock %}  
+		    </div>
+        </div>
+        <script src="https://demo-basic.adminkit.io/js/app.js"></script>
+    </body>
+</html>
