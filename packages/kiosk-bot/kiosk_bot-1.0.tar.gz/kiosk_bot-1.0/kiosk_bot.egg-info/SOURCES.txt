@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+kiosk_bot.egg-info/PKG-INFO
+kiosk_bot.egg-info/SOURCES.txt
+kiosk_bot.egg-info/dependency_links.txt
+kiosk_bot.egg-info/top_level.txt
