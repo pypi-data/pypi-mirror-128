@@ -1,0 +1,9 @@
+setup.py
+omtestingpackage/__init__.py
+omtestingpackage/f1.py
+omtestingpackage.egg-info/PKG-INFO
+omtestingpackage.egg-info/SOURCES.txt
+omtestingpackage.egg-info/dependency_links.txt
+omtestingpackage.egg-info/top_level.txt
+omtestingpackage/extras/__init__.py
+omtestingpackage/extras/f2.py
