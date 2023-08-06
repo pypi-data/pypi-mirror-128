@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pyedictor
+Version: 0.4
+Summary: fetch functionalities for EDICTOR
+Home-page: UNKNOWN
+Author: Johann-Mattis List
+Author-email: mattis_list@eva.mpg.de
+License: Apache 2.0
+Description: # PyEDICTOR: Simple Access to EDICTOR Databases
+        
+        ## Installation:
+        
+        ```
+        $ pip install pyedictor
+        ```
+        
+        ## Usage
+        
+        ```python
+        >>> from pyedictor import fetch
+        >>> wl = fetch("deepadungpalaung", to_lingpy=True)
+        >>> print(wl.width)
+        16
+        ```
+        
+        To load as a LexStat wordlist:
+        
+        ```python
+        >>> from lingpy import *
+        >>> from pyedictor import fetch
+        >>> lex = fetch("deepadungpalaung", to_lingpy=True, transform=LexStat)
+        ```
+        
+        To convert your dataset to EDICTOR format from CLDF:
+        
+        ```
+        $ edictor wordlist -d cldf/cldf-metadata.json mydataset
+        ```
+        
+        This will create a wordlist file `mydataset.tsv` from your CLDF data located in `cldf/cldf-metadata.json`.
+        
+        
+        
+Keywords: data
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test

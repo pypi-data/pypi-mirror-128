@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/pyedictor/__init__.py
+src/pyedictor/cli.py
+src/pyedictor/sqlite.py
+src/pyedictor/util.py
+src/pyedictor.egg-info/PKG-INFO
+src/pyedictor.egg-info/SOURCES.txt
+src/pyedictor.egg-info/dependency_links.txt
+src/pyedictor.egg-info/entry_points.txt
+src/pyedictor.egg-info/not-zip-safe
+src/pyedictor.egg-info/requires.txt
+src/pyedictor.egg-info/top_level.txt
