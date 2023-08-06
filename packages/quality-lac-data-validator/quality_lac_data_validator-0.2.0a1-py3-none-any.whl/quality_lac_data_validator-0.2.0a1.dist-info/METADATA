@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: quality-lac-data-validator
+Version: 0.2.0a1
+Summary: Shared module for validating the ruleset on the SSDA903 census using DfE rules.
+Home-page: https://github.com/SocialFinanceDigitalLabs/quality-lac-data-beta-validator
+License: MIT
+Author: Mark Waddoups
+Author-email: mark.waddoups@socialfinance.org.uk
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (==1.17.5)
+Requires-Dist: openpyxl (>=3.0.9,<4.0.0)
+Requires-Dist: pandas (==1.0.5)
+Requires-Dist: quality-lac-data-ref-authorities (==2021.4a6)
+Requires-Dist: quality-lac-data-ref-postcodes (>=2021.8a3,<2022.0)
+Project-URL: Repository, https://github.com/SocialFinanceDigitalLabs/quality-lac-data-beta-validator
