@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: wikifeet
+Version: 1.0.0
+Summary: WikiFeet (The collaborative celebrity feet website) crawler
+Home-page: https://github.com/sloppydaddy/wikifeet-py
+Author: XXIV
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/sloppydaddy/wikifeet-py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# WikiFeet
+
+WikiFeet (The collaborative celebrity feet website) crawler.
+
+### Example
+
+```py
+from wikifeet import WikiFeet
+
+feet = WikiFeet("Karla Souza")
+print("Karla Souza feet pic: " + feet.image())
+print("Karla Souza shoe size: " + feet.shoe_size())
+print("Karla Souza feet rating: " + feet.rating())
+
+# Output:
+# Karla Souza feet pic: https://pics.wikifeet.com/Karla-Souza-Feet-6104875.jpg
+# Karla Souza shoe size: 6.5 US
+# Karla Souza feet rating: beautiful
+```
+
+### Documentation
+
+* [pdoc](https://sloppydaddy.github.io/wikifeet-py)
+
