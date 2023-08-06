@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/hypeban/__init__.py
+src/hypeban/hypeban.py
+src/hypeban.egg-info/PKG-INFO
+src/hypeban.egg-info/SOURCES.txt
+src/hypeban.egg-info/dependency_links.txt
+src/hypeban.egg-info/top_level.txt
