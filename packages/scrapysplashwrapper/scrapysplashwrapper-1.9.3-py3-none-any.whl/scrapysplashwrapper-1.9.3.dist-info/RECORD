@@ -1,0 +1,12 @@
+README.md,sha256=L_Dipw2ak6M24QchGZ4hGR_tPxYaJjooifEPdije5z8,951
+scrapysplashwrapper/__init__.py,sha256=tLxR3apTzP7urGV5reCdXt3keLijnhRwRQ6ZctOJGkY,4233
+scrapysplashwrapper/crawl.lua,sha256=QAOXhtPmLxpLlOleGfbkxappkHs45Z2ULp1wNK-bZ1U,2364
+scrapysplashwrapper/crawler.py,sha256=FvpUiz2IplP68MdRoCfRotEMYf-2LcsYr57beZJepJQ,10849
+scrapysplashwrapper/exceptions.py,sha256=GGDEV7X8yOEkqCLS7QUmJ08Rk4Sgs_mPNqltkBwJKhI,601
+scrapysplashwrapper/middleware.py,sha256=Hecaza6eoCAQIu9w0AWOBzDBQZFY37g03P7aImyaxD8,1779
+scrapysplashwrapper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrapysplashwrapper-1.9.3.dist-info/entry_points.txt,sha256=aBSDIJJLAp2NejiyhxMt9WoA45iSZduLwTQMaQxwo7U,52
+scrapysplashwrapper-1.9.3.dist-info/LICENSE,sha256=Xa4EVROgJsEo10CW-ISCRiw0TtqdKz1JuM3BBLBM55c,1803
+scrapysplashwrapper-1.9.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+scrapysplashwrapper-1.9.3.dist-info/METADATA,sha256=5UQv2LRtqO0fO4B4nF2VS2r6UkgY6pAdO-ajgiKzMAQ,2054
+scrapysplashwrapper-1.9.3.dist-info/RECORD,,
