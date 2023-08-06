@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+lippy/__init__.py
+lippy/_log_modes.py
+lippy/_simplex_table.py
+lippy/branch_and_bound.py
+lippy/brute_force.py
+lippy/cutting_plane_method.py
+lippy/dual_lp.py
+lippy/simplex_method.py
+lippy/zero_sum_game.py
+lippy.egg-info/PKG-INFO
+lippy.egg-info/SOURCES.txt
+lippy.egg-info/dependency_links.txt
+lippy.egg-info/top_level.txt
