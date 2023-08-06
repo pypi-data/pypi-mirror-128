@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+qsparser/__init__.py
+qsparser.egg-info/PKG-INFO
+qsparser.egg-info/SOURCES.txt
+qsparser.egg-info/dependency_links.txt
+qsparser.egg-info/not-zip-safe
+qsparser.egg-info/top_level.txt
