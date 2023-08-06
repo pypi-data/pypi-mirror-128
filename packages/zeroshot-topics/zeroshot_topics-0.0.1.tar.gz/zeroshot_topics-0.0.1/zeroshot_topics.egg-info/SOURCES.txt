@@ -1,0 +1,11 @@
+LICENSE-APACHE
+LICENSE-MIT
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+zeroshot_topics/__init__.py
+zeroshot_topics.egg-info/PKG-INFO
+zeroshot_topics.egg-info/SOURCES.txt
+zeroshot_topics.egg-info/dependency_links.txt
+zeroshot_topics.egg-info/top_level.txt
