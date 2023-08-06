@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: py4research
+Version: 1.0.0
+Summary: Build a Python package for research
+Home-page: https://github.com/gugarosa/py4research
+Author: Gustavo Rosa
+Author-email: gustavo.rosa@unesp.br
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+License-File: LICENSE
+
+# py4research
+📦 A step-by-step tutorial on how to build a Python package for research.
+
+

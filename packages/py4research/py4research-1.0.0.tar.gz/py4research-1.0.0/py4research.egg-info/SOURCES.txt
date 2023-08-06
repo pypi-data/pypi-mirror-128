@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+py4research/__init__.py
+py4research.egg-info/PKG-INFO
+py4research.egg-info/SOURCES.txt
+py4research.egg-info/dependency_links.txt
+py4research.egg-info/requires.txt
+py4research.egg-info/top_level.txt
+py4research/math/__init__.py
+py4research/math/clustering.py
+py4research/math/random.py
