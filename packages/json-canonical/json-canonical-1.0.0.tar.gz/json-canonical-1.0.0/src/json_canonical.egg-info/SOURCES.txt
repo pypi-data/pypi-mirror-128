@@ -1,0 +1,9 @@
+README.rst
+setup.py
+src/json_canonical/Canonicalize.py
+src/json_canonical/NumberToJson.py
+src/json_canonical/__init__.py
+src/json_canonical.egg-info/PKG-INFO
+src/json_canonical.egg-info/SOURCES.txt
+src/json_canonical.egg-info/dependency_links.txt
+src/json_canonical.egg-info/top_level.txt
