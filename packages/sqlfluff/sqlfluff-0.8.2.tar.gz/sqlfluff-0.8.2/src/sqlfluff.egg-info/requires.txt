@@ -1,0 +1,18 @@
+appdirs
+cached-property
+chardet
+click>=7.1
+colorama>=0.3
+configparser
+diff-cover>=2.5.0
+Jinja2
+oyaml
+pathspec
+pytest
+tblib
+toml
+tqdm
+typing_extensions
+
+[:python_version < "3.7"]
+dataclasses
