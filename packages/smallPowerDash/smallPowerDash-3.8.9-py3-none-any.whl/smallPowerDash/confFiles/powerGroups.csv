@@ -1,0 +1,10 @@
+PowerGroup,pattern,unit,voltage
+Puissance batiment,SIS.JT,,
+Puissance chauffant stack,STK_HER_00_JT.*HE16,,
+Puissance chauffant GV,STG.*_JT.*HE16,,
+Courant chauffant four,STB_HER.*_IT,A,56
+Courant blowers,BLR.*_IT,A,48
+Puissances pompes ,PMP.*_JT,,
+Courants pompes ,PMP.*_IT,A,24
+Courant armoire électrique,EPB.*IT,A,24
+Puissance alimentation générale,SEH0\.JT_.*HE16,W AC,
