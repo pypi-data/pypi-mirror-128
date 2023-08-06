@@ -1,0 +1,10 @@
+h5py
+matplotlib
+nanite
+numpy
+pyqt5
+scipy
+sphinx==4.3.0
+sphinxcontrib.bibtex>=2.0
+sphinx_rtd_theme==1.0
+
