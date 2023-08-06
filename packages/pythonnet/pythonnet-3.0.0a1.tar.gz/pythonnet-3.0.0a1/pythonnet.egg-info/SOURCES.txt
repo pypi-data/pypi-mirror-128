@@ -1,0 +1,13 @@
+README.rst
+clr.py
+pyproject.toml
+setup.py
+pythonnet/__init__.py
+pythonnet.egg-info/PKG-INFO
+pythonnet.egg-info/SOURCES.txt
+pythonnet.egg-info/dependency_links.txt
+pythonnet.egg-info/not-zip-safe
+pythonnet.egg-info/requires.txt
+pythonnet.egg-info/top_level.txt
+pythonnet/find_libpython/__init__.py
+pythonnet/find_libpython/__main__.py
