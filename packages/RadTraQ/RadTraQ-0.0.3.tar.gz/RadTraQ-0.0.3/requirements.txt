@@ -1,0 +1,9 @@
+#List required packages in this file, one per line
+numpy
+scipy
+xarray
+matplotlib<=3.4.3
+cython
+netcdf4
+act-atmos
+pint
