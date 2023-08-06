@@ -1,0 +1,3 @@
+[console_scripts]
+basestation-ctrl = basestation_ctrl.cli:cli
+
