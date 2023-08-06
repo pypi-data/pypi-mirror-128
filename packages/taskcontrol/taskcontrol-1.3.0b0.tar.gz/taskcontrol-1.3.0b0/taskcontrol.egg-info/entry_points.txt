@@ -1,0 +1,3 @@
+[console_scripts]
+tasks = run:run
+
