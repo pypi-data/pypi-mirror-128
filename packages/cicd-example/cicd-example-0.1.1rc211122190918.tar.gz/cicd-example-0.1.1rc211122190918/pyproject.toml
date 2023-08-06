@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cicd-example"
+version = "v0.1.1.pre.211122190918"
+description = "Example CICD Application"
+authors = ["Erik Li <erikl@xiaopeng.com>"]
+packages = [
+    { include = "cicd_example" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.5"
+pytest = "6.1.2"
+"requests[security]" = "2.25.1"
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"
+
+[[tool.poetry.source]]
+name = "xpev_nexus"
+url = "http://nexus-ht.xiaopeng.link:8081/repository/ai_infra_pypi/"
