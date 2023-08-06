@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "genurl"
+version = "0.2.0"
+description = "GENerate random URLs"
+authors = ["Sam Havens <sam.havens@writer.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tqdm = "^4.62.3"
+Faker = "^9.8.2"
+Random-Word = "^1.0.7"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.11b1"
+mypy = "^0.910"
+
+[tool.poetry.scripts]
+genurl = "genurl.genurl:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
