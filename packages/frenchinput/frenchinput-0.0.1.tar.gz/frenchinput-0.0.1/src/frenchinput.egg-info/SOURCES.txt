@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/freedata/__init__.py
+src/freedata/freedata.py
+src/frenchinput.egg-info/PKG-INFO
+src/frenchinput.egg-info/SOURCES.txt
+src/frenchinput.egg-info/dependency_links.txt
+src/frenchinput.egg-info/top_level.txt
