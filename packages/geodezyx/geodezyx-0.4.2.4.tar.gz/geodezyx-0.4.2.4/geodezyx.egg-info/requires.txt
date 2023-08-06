@@ -1,0 +1,15 @@
+bs4
+collection
+kepler.py
+natsort
+matplotlib
+numpy
+netCDF4
+pyorbital
+pytwobodyorbit
+pandas
+scipy
+sympy
+tabulate
+vincenty
+unlzw
