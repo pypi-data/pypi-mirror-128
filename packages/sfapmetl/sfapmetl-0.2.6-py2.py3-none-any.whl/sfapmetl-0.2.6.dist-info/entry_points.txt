@@ -1,0 +1,3 @@
+[console_scripts]
+etl-script = etl_script.cli:main
+
