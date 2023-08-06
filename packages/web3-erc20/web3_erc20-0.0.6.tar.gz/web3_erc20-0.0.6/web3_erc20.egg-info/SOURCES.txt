@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+web3_erc20/__init__.py
+web3_erc20/_abi.py
+web3_erc20/erc20.py
+web3_erc20.egg-info/PKG-INFO
+web3_erc20.egg-info/SOURCES.txt
+web3_erc20.egg-info/dependency_links.txt
+web3_erc20.egg-info/requires.txt
+web3_erc20.egg-info/top_level.txt
