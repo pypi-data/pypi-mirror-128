@@ -1,0 +1,14 @@
+parameters:
+  dbxdeploy:
+    databricks:
+      host: 'https://dbc-123.cloud.databricks.com'
+      token: 'abcd123456'
+      cluster_id: '0416-084917-doles835'
+    source:
+      notebooks:
+        base_dir: 'src/foobar'
+    target:
+      workspace:
+        base_dir: '/foobar/master'
+      repo:
+        root_dir: '/Repos/foobar'
