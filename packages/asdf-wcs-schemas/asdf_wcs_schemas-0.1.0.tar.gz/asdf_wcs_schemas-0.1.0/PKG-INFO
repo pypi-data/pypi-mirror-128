@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: asdf_wcs_schemas
+Version: 0.1.0
+Summary: ASDF WCS Schemas
+Home-page: https://github.com/spacetelescope/asdf-wcs-schemas
+Author: STScI
+License: BSD-3-Clause
+Project-URL: Bug Tracker, https://github.com/spacetelescope/asdf-wcs-schemas/issues
+Project-URL: Source Code, https://github.com/spacetelescope/asdf-wcs-schemas
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: test
+License-File: LICENSE
+
+# asdf-wcs-schemas
+
+This package provides ASDF schemas for validating WCS tags. Users should not need to install this directly; instead, install an implementation package such as gwcs, which includes asdf-wcs-schemas as a dependency.
+
+![CI](https://github.com/asdf-format/asdf-wcs-schemas/workflows/CI/badge.svg)
+
+
