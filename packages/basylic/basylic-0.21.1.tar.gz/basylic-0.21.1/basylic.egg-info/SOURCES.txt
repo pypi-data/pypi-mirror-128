@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+basylic/__init__.py
+basylic/client.py
+basylic.egg-info/PKG-INFO
+basylic.egg-info/SOURCES.txt
+basylic.egg-info/dependency_links.txt
+basylic.egg-info/requires.txt
+basylic.egg-info/top_level.txt
