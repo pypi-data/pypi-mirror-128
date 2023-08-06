@@ -1,0 +1,21 @@
+epicscorelibs<7.0.6.99.2,>=7.0.6.99.1.0
+numpy
+epicsdbbuilder>=1.4
+
+[dev]
+pytest-cov
+pytest-flake8
+p4p
+
+[dev:python_version > "3.0"]
+sphinx-rtd-theme-github-versions
+pytest-asyncio
+aioca>=1.3
+
+[dev:sys_platform != "win32"]
+cothread
+
+[useful]
+cothread
+scipy
+aioca>=1.3
