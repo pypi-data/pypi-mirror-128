@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: pydantic-factories
+Version: 0.3.1b0
+Summary: Mock data generation for pydantic based models
+Home-page: https://github.com/Goldziher/pydantic-factories
+License: MIT
+Keywords: pydantic,pytest,factory,fastapi,beanie,ormar,sqlmodel,factory-boy,testing,mock,fixtures,faker
+Author: Na'aman Hirschfeld
+Author-email: Naaman.Hirschfeld@sprylab.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Unit
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: exrex
+Requires-Dist: faker
+Requires-Dist: pydantic
+Requires-Dist: typing-extensions
+Project-URL: Documentation, https://github.com/Goldziher/pydantic-factories
+Project-URL: Repository, https://github.com/Goldziher/pydantic-factories
+Description-Content-Type: text/markdown
+
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pydantic-factories)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Goldziher_pydantic-factories&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Goldziher_pydantic-factories)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Goldziher_pydantic-factories&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Goldziher_pydantic-factories)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Goldziher_pydantic-factories&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=Goldziher_pydantic-factories)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Goldziher_pydantic-factories&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Goldziher_pydantic-factories)
+
+# Pydantic Factories
+
+This library offers mock data generation for pydantic based models. This means any user defined models as well as third
+party libraries that use pydantic as a foundation, e.g. SQLModel, FastAPI, Beanie, Ormar and others.
+
+### Features
+
+* ✅ supports both built-in and pydantic types
+* ✅ supports pydantic field constraints
+* ✅ supports complex field typings
+* ✅ supports custom model fields
+
+### Why This Library?
+
+* 💯 powerful mock data generation
+* 💯 simple to use and extend
+* 💯 rigorously tested
+
+## Installation
+
+```sh
+pip install pydantic-factories
+```
+
+OR
+
+```sh
+poetry add --dev pydantic-factories
+```
+
+## Usage
+
+```python
+from datetime import date, datetime
+from typing import List, Union
+
+from pydantic import BaseModel, UUID4
+
+from pydantic_factories.factory import ModelFactory
+
+
+class Person(BaseModel):
+    id: UUID4
+    name: str
+    hobbies: List[str]
+    age: Union[float, int]
+    birthday: Union[datetime, date]
+
+
+class PersonFactoryWithDefaults(ModelFactory):
+    __model__ = Person
+
+
+result = PersonFactoryWithDefaults.build()
+```
+
+That's it - the factory will create a data object that fits the defined model and pass it to the pydantic model as
+kwargs. It will then pass through the pydantic validation and parsing mechanism, and create a model instance.
+
