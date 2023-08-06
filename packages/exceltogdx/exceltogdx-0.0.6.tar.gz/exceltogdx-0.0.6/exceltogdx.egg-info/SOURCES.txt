@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+exceltogdx/__init__.py
+exceltogdx/exceltogdx.py
+exceltogdx.egg-info/PKG-INFO
+exceltogdx.egg-info/SOURCES.txt
+exceltogdx.egg-info/dependency_links.txt
+exceltogdx.egg-info/requires.txt
+exceltogdx.egg-info/top_level.txt
