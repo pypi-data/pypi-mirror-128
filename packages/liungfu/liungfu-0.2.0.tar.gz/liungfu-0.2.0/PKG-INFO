@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: liungfu
+Version: 0.2.0
+Summary: permainan liungfu sederhana
+Home-page: https://github.com/ExsoKamabay/ipwhois
+Author: Exso Kamabay
+License: Apache License 2.0
+Description: # LIUNGFU **`permainan sederhana`**
+        
+        ---
+        
+        `permainan berjalan di localhost dengan port secara acak`
+        
+        ---
+        
+        - **`bahasa yang digunakan`**
+        - `python`
+        - `brython`
+        - `html`
+        - `css`
+        
+        panggil di terminal ketikan `liungfu`
+        
+        ---
+        
+        ```python
+        
+        if __name__=='__main__':
+            from liungfu import main
+            main()
+        
+        ```
+        
+        ---
+        
+Keywords: kamabay,liungfu,judi,permainan,game
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
