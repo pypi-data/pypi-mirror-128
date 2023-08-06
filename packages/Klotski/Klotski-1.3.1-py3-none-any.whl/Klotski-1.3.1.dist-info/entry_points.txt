@@ -1,0 +1,3 @@
+[gui_scripts]
+klotski = klotski.klotski:main
+
