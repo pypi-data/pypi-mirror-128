@@ -1,0 +1,10 @@
+README.md
+setup.py
+newfelya2/__init__.py
+newfelya2/core.py
+newfelya2.egg-info/PKG-INFO
+newfelya2.egg-info/SOURCES.txt
+newfelya2.egg-info/dependency_links.txt
+newfelya2.egg-info/entry_points.txt
+newfelya2.egg-info/requires.txt
+newfelya2.egg-info/top_level.txt
