@@ -1,0 +1,13 @@
+fanficapi/__init_.py,sha256=_z_NgrLzWtm3vMUYCwvLkulhNKUG4SkvaHQfIUPLl5g,71
+fanficapi/fanficapi.py,sha256=FD5slLfnhB1GrvHSY65OumEPwiV84fpvzK4tWn-znsI,1865
+fanficapi/ao3essentials/author.py,sha256=gPHmuGTP9bNhW7-FtcfEcqfc27hcKOeM4J4MsZiOlQw,1777
+fanficapi/ao3essentials/errors.py,sha256=NgB-9nba7Z442EdiIBVQCOWreNXdnGEqfqLV4bbNQzg,744
+fanficapi/ao3essentials/story.py,sha256=ff0EkIodblEU_IhwZLXUS0pnetcX_CEUEKX3L9Ql_mw,2768
+fanficapi/ffnessentials/author.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fanficapi/ffnessentials/errors.py,sha256=YHPCIXHOq41pw_ZFzaGc-nYWW5vbewK5lUSkMAsS7Pk,734
+fanficapi/ffnessentials/story.py,sha256=sGqIS_XzxwJCJPzDF4Er8MPYf9Z1-C52gohkAeRZRTY,1555
+fanficapi-1.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fanficapi-1.0.2.dist-info/METADATA,sha256=DHln1e2hmapChW2Fnc8B9tn6zN8WjZTabe5UJCSUuuc,693
+fanficapi-1.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fanficapi-1.0.2.dist-info/top_level.txt,sha256=trAX6WKksDcsNntlSyB7Q2EXl_cV2toEso4u-9r27Pc,10
+fanficapi-1.0.2.dist-info/RECORD,,
