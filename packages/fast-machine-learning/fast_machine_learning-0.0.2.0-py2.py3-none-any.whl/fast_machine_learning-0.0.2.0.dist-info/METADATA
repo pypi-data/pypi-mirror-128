@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: fast-machine-learning
+Version: 0.0.2.0
+Summary: fast-machine-learning
+Home-page: UNKNOWN
+Author: luktian
+Author-email: luktian@shu.edu.cn
+Maintainer: luktian
+Maintainer-email: luktian@shu.edu.cn
+License: BSD License
+Platform: windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Requires-Dist: sklearn
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: shap
+Requires-Dist: deap
+Requires-Dist: hyperopt
+Requires-Dist: joblib
+Requires-Dist: pynput
+Requires-Dist: lightgbm
+Requires-Dist: catboost
+Requires-Dist: pyod
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
