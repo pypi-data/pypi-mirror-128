@@ -1,0 +1,3 @@
+[console_scripts]
+invoicepy=invoicepy.cli.main:cli
+
