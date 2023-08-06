@@ -1,0 +1,8 @@
+arkindex-client==1.0.7
+minio==7.1.1
+python-gnupg==0.4.7
+PyYAML==6.0
+rich==10.13.0
+
+[export]
+reportlab==3.5.67
