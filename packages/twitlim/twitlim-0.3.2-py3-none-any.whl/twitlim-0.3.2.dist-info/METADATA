@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: twitlim
+Version: 0.3.2
+Summary: Simple CLI tool to help delete Tweets.
+Home-page: https://gitlab.com/rmnl/twitlim
+Author: RMNL
+Author-email: pypi@rmnl.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE.txt
+Requires-Dist: Click (<=8.999,>=8.0)
+Requires-Dist: tweepy (<4.0.999,>=4.0.1)
+Requires-Dist: click-option-group (<0.6.0,>=0.5.3)
+
+UNKNOWN
+
