@@ -1,0 +1,12 @@
+numpy
+pandas
+joblib
+scipy
+plotly>=5.0.0
+sympy
+dash>=2.0.0
+flask
+cloudpickle
+dash_daq
+kaleido
+findiff
