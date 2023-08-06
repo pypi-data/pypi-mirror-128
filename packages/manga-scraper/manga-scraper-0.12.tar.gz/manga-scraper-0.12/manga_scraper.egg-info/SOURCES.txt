@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+manga_scraper/__init__.py
+manga_scraper/__main__.py
+manga_scraper.egg-info/PKG-INFO
+manga_scraper.egg-info/SOURCES.txt
+manga_scraper.egg-info/dependency_links.txt
+manga_scraper.egg-info/entry_points.txt
+manga_scraper.egg-info/requires.txt
+manga_scraper.egg-info/top_level.txt
