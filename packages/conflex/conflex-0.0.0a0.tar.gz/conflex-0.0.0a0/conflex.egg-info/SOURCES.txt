@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+conflex/__init__.py
+conflex/main.py
+conflex.egg-info/PKG-INFO
+conflex.egg-info/SOURCES.txt
+conflex.egg-info/dependency_links.txt
+conflex.egg-info/requires.txt
+conflex.egg-info/top_level.txt

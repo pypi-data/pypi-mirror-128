@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: conflex
+Version: 0.0.0a0
+Summary: Flexible tree-like configuration reader.
+Home-page: https://github.com/TEH30P/conflex
+Author: TEH3OP
+Author-email: TEH3OP@gmail.com
+License: MIT
+Keywords: configuration parser development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE.txt
+
+
+# Conflex
+Flexible, extensible configuration reader for Python 3.6+ projects for multiple tree-like config sources.
+
+## Introduction
+**Conflex** means "flexible configuration" it is a tool for parsing tree-like configuration with 
+any level of depth. Thus, here the configuration is a tree structure with two types of nodes: 
+_Section_ and _Option_. _Sections_ is used for grouping other nodes and _option_ is a key-value 
+pair. As it mentioned above depth is unlimited, _section_ can have a child _sections_  moreover
+_options_ can have child _options_ or _sections_. 
+
+
