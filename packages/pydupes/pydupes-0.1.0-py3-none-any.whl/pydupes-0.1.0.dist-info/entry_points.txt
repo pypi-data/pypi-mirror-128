@@ -1,0 +1,3 @@
+[console_scripts]
+pydupes=pydupes:main
+
