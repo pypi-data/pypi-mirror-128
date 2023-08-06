@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+requirements.txt
+setup.py
+.github/workflows/python-publish.yml
+config_redis.egg-info/PKG-INFO
+config_redis.egg-info/SOURCES.txt
+config_redis.egg-info/dependency_links.txt
+config_redis.egg-info/requires.txt
+config_redis.egg-info/top_level.txt
+configredis/__init__.py
+configredis/setconf.py
+configredis/setredis.py
+tests/__init__.py
+tests/setting.py
