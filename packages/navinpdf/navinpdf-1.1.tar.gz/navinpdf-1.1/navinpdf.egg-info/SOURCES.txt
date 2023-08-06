@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+navinpdf/__init__.py
+navinpdf/app.py
+navinpdf/pdf2image.py
+navinpdf/pdf2text.py
+navinpdf.egg-info/PKG-INFO
+navinpdf.egg-info/SOURCES.txt
+navinpdf.egg-info/dependency_links.txt
+navinpdf.egg-info/top_level.txt
