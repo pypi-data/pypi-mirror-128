@@ -1,0 +1,3 @@
+[console_scripts]
+skbs = skbs.cli:main
+
