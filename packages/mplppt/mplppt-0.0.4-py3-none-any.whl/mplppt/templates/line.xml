@@ -1,0 +1,26 @@
+<!-- start shape -->
+<p:sp>
+    <p:nvSpPr>
+        <p:cNvPr id="1" name="{name}"/>
+            <p:cNvSpPr/>
+        <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr>
+        <a:xfrm>
+            <a:off x="{x}" y="{y}"/>
+            <a:ext cx="{cx}" cy="{cy}"/>
+        </a:xfrm>
+        <a:custGeom>
+            <a:pathLst>
+                <a:path w="{cx}" h="{cy}">
+                    {shapespec}
+                </a:path>
+            </a:pathLst>
+        </a:custGeom>
+        {bgcolorspec}
+        <a:ln w="{lw}">
+            {colorspec}
+        </a:ln>
+    </p:spPr>
+</p:sp>
+<!-- end shape -->
