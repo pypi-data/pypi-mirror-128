@@ -1,0 +1,38 @@
+{
+  "description": "Web API Framework",
+  "author": "Cochise Ruhulessin",
+  "author_email": "cochise.ruhulessin@unimatrixone.io",
+  "entry_points": {
+    "unimatrix.runtime": [
+      "unimatrix.ext.webapi = unimatrix.ext.webapi.__unimatrix__"
+    ]
+  },
+  "extras_require": {
+    "all": [
+      "uvicorn[standard]",
+      "cryptography"
+    ],
+    "test": [
+      "cryptography"
+    ],
+    "uvicorn": [
+      "uvicorn[standard]"
+    ]
+  },
+  "url": "https://gitlab.com/unimatrixone",
+  "licenses": "Proprietary",
+  "classifiers": [
+     "Development Status :: 4 - Beta",
+     "Environment :: Web Environment",
+     "Intended Audience :: Developers",
+     "License :: Other/Proprietary License",
+     "Operating System :: POSIX",
+     "Operating System :: POSIX :: Linux",
+     "Programming Language :: Python :: 3.8",
+     "Programming Language :: Python :: 3.9",
+     "Programming Language :: Python :: 3 :: Only",
+     "Topic :: Internet",
+     "Topic :: Internet :: WWW/HTTP :: Session",
+     "Topic :: Software Development :: Libraries"
+  ]
+}
