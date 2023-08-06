@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: cbook
+Version: 0.0.2
+Summary: Cookbook app: create, edit, show and filter recipes.
+Home-page: https://github.com/br0uQ/cbook
+Author: Joshua Schmucker
+Author-email: joshua.schmucker@gmail.com
+License: GNU GPLv3
+Keywords: cbook,recpipes,recipe management
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: German
+Classifier: Operating System :: Unix
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyQt5
+Requires-Dist: Pillow
+
+# cbook
+
+## Overview
+
+This is an app to manage recipes.
+
+Features:
+* Create, edit, delete recipes
+* Change servings of a recipe on the recipe view page
+* Filter for tags in the recipe list
+
+__Text in this app is only in german for now! 
+Other language support shall be implemented in the future (at least English)!__
+
+## Dependencies
+
+This app (and it's installation) depends on:
+* python
+* pip
+
+## Installation
+
+This app is hosted on PyPI so it can be installed using `pip`:
+
+```
+$ python -m pip install cbook
+```
+
+
