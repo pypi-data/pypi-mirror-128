@@ -1,0 +1,9 @@
+{
+    "exclude": [
+        "shrike/pipeline/**",
+        "tests/**",
+        "docs/**",
+        "examples/**",
+        "./build/**"
+    ]
+}

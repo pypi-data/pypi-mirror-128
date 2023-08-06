@@ -1,0 +1,2107 @@
+{
+    "dataset_nodes": [
+        {
+            "additional_properties": {},
+            "data_path_parameter_name": null,
+            "data_set_definition": {
+                "additional_properties": {},
+                "data_type_short_name": "AnyDirectory",
+                "parameter_name": null,
+                "value": {
+                    "additional_properties": {},
+                    "data_set_reference": {
+                        "additional_properties": {},
+                        "id": "bbda226e-32dc-4bfe-92e2-30789b0762e3",
+                        "name": "dummy_data",
+                        "version": 1
+                    },
+                    "literal_value": null,
+                    "saved_data_set_reference": null
+                }
+            },
+            "dataset_id": null,
+            "id": "0c383d538533aa14c56c306d92c19aca"
+        }
+    ],
+    "default_compute": null,
+    "default_datastore": "workspaceblobstore",
+    "edges": [
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "506f4f52",
+                "port_name": "input_path",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "0c383d538533aa14c56c306d92c19aca",
+                "port_name": "data",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "81a7eecf",
+                "port_name": "source_data",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "506f4f52",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "cf38bbee",
+                "port_name": "input_path",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "81a7eecf",
+                "port_name": "destination_data",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "2ad46b6d",
+                "port_name": "source_data",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "cf38bbee",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "cf43111c",
+                "port_name": "source_data",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "506f4f52",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "89320bb3",
+                "port_name": "input_path",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "cf43111c",
+                "port_name": "destination_data",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "e81ccbef",
+                "port_name": "source_data",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "89320bb3",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "8c627087",
+                "port_name": "source_data",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "506f4f52",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "f41a43ff",
+                "port_name": "input_path",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "8c627087",
+                "port_name": "destination_data",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "c870053b",
+                "port_name": "source_data",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "f41a43ff",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "fc5053cc",
+                "port_name": "input_path",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "2ad46b6d",
+                "port_name": "destination_data",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "7484bcbf",
+                "port_name": "input_path",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "fc5053cc",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "f40c75fe",
+                "port_name": "source_data",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "7484bcbf",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "a8e10e2a",
+                "port_name": "input_path",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "f40c75fe",
+                "port_name": "destination_data",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "7edc2e59",
+                "port_name": "source_data",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "a8e10e2a",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "468dbd70",
+                "port_name": "source_data",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "7484bcbf",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "e23cf69a",
+                "port_name": "input_path",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "468dbd70",
+                "port_name": "destination_data",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "a4785473",
+                "port_name": "source_data",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "e23cf69a",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "7ee7fe5c",
+                "port_name": "source_data",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "7484bcbf",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "8035977b",
+                "port_name": "input_path",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "7ee7fe5c",
+                "port_name": "destination_data",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "c9665dad",
+                "port_name": "source_data",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "8035977b",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "66002475",
+                "port_name": "input_path",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "7edc2e59",
+                "port_name": "destination_data",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "05efe9e5",
+                "port_name": "input_path",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "66002475",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        },
+        {
+            "additional_properties": {},
+            "destination_input_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "0f0bd704",
+                "port_name": "input_path",
+                "web_service_port": null
+            },
+            "source_output_port": {
+                "additional_properties": {},
+                "graph_port_name": null,
+                "node_id": "05efe9e5",
+                "port_name": "output_path",
+                "web_service_port": null
+            }
+        }
+    ],
+    "entity_interface": {
+        "additional_properties": {},
+        "data_path_parameter_list": [],
+        "data_path_parameters": [],
+        "metadata_parameters": null,
+        "parameters": [],
+        "ports": null
+    },
+    "module_node_run_settings": [
+        {
+            "additional_properties": {},
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "node_id": "506f4f52",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": [],
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "AmlCompute",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "cpu-d14-v2",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "PythonScriptModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "node_id": "81a7eecf",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "DataFactory",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "data-factory",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "DataTransferModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "node_id": "cf38bbee",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": [],
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "AmlCompute",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "fl-wus",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "PythonScriptModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "node_id": "2ad46b6d",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "DataFactory",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "data-factory",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "DataTransferModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "node_id": "cf43111c",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "DataFactory",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "data-factory",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "DataTransferModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "node_id": "89320bb3",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": [],
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "AmlCompute",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "fl-eus",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "PythonScriptModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "node_id": "e81ccbef",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "DataFactory",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "data-factory",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "DataTransferModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "node_id": "8c627087",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "DataFactory",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "data-factory",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "DataTransferModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "node_id": "f41a43ff",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": [],
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "AmlCompute",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "fl-canada",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "PythonScriptModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "node_id": "c870053b",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "DataFactory",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "data-factory",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "DataTransferModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "node_id": "fc5053cc",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": [],
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "AmlCompute",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "cpu-d14-v2",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "PythonScriptModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "c2767b90-8b95-45b2-88ca-d4990ce16962",
+            "node_id": "7484bcbf",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": [],
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "AmlCompute",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "win-dc-preview",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "PythonScriptModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "node_id": "f40c75fe",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "DataFactory",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "data-factory",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "DataTransferModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "node_id": "a8e10e2a",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": [],
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "AmlCompute",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "fl-wus",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "PythonScriptModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "node_id": "7edc2e59",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "DataFactory",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "data-factory",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "DataTransferModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "node_id": "468dbd70",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "DataFactory",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "data-factory",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "DataTransferModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "node_id": "e23cf69a",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": [],
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "AmlCompute",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "fl-eus",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "PythonScriptModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "node_id": "a4785473",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "DataFactory",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "data-factory",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "DataTransferModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "node_id": "7ee7fe5c",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "DataFactory",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "data-factory",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "DataTransferModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "node_id": "8035977b",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": [],
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "AmlCompute",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "fl-canada",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "PythonScriptModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "node_id": "c9665dad",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "DataFactory",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "data-factory",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "DataTransferModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "node_id": "66002475",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": [],
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "AmlCompute",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "cpu-d14-v2",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "PythonScriptModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "c2767b90-8b95-45b2-88ca-d4990ce16962",
+            "node_id": "05efe9e5",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": [],
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "AmlCompute",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "win-dc-preview",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "PythonScriptModule"
+        },
+        {
+            "additional_properties": {},
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "node_id": "0f0bd704",
+            "run_settings": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "compute_run_settings": [],
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "linked_parameter_name": null,
+                    "mlc_compute_type": "AmlCompute",
+                    "name": "Target",
+                    "use_graph_default_compute": false,
+                    "value": "cpu-d14-v2",
+                    "value_type": 0
+                }
+            ],
+            "step_type": "PythonScriptModule"
+        }
+    ],
+    "module_nodes": [
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "506f4f52",
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": "mount",
+                    "name": "input_path",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "output_path",
+                    "data_store_mode": "mount",
+                    "data_store_name": "workspaceblobstore",
+                    "dataset_output_options": null,
+                    "dataset_registration": null,
+                    "name": "output_path",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [],
+            "module_type": null,
+            "name": "stats_passthrough",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "81a7eecf",
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "source_data",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "destination_data",
+                    "data_store_mode": null,
+                    "data_store_name": "fl_wus",
+                    "dataset_output_options": {
+                        "additional_properties": {},
+                        "path_on_datastore": "fl-fair-mustang/output_path",
+                        "source_globs": null
+                    },
+                    "dataset_registration": null,
+                    "name": "destination_data",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "name": "source_type",
+                    "value": "directory",
+                    "value_type": 0
+                }
+            ],
+            "module_type": null,
+            "name": "office_smart_reply_fl_data_transfer",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "cf38bbee",
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": "mount",
+                    "name": "input_path",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "output_path",
+                    "data_store_mode": "mount",
+                    "data_store_name": "fl_wus",
+                    "dataset_output_options": null,
+                    "dataset_registration": null,
+                    "name": "output_path",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [],
+            "module_type": null,
+            "name": "stats_passthrough_1",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "2ad46b6d",
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "source_data",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "destination_data",
+                    "data_store_mode": null,
+                    "data_store_name": "workspaceblobstore",
+                    "dataset_output_options": {
+                        "additional_properties": {},
+                        "path_on_datastore": "fl-fair-mustang/silo1/output_path",
+                        "source_globs": null
+                    },
+                    "dataset_registration": null,
+                    "name": "destination_data",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "name": "source_type",
+                    "value": "directory",
+                    "value_type": 0
+                }
+            ],
+            "module_type": null,
+            "name": "office_smart_reply_fl_data_transfer_1",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "cf43111c",
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "source_data",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "destination_data",
+                    "data_store_mode": null,
+                    "data_store_name": "fl_eus",
+                    "dataset_output_options": {
+                        "additional_properties": {},
+                        "path_on_datastore": "fl-fair-mustang/output_path",
+                        "source_globs": null
+                    },
+                    "dataset_registration": null,
+                    "name": "destination_data",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "name": "source_type",
+                    "value": "directory",
+                    "value_type": 0
+                }
+            ],
+            "module_type": null,
+            "name": "office_smart_reply_fl_data_transfer_2",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "89320bb3",
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": "mount",
+                    "name": "input_path",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "output_path",
+                    "data_store_mode": "mount",
+                    "data_store_name": "fl_eus",
+                    "dataset_output_options": null,
+                    "dataset_registration": null,
+                    "name": "output_path",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [],
+            "module_type": null,
+            "name": "stats_passthrough_2",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "e81ccbef",
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "source_data",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "destination_data",
+                    "data_store_mode": null,
+                    "data_store_name": "workspaceblobstore",
+                    "dataset_output_options": {
+                        "additional_properties": {},
+                        "path_on_datastore": "fl-fair-mustang/silo2/output_path",
+                        "source_globs": null
+                    },
+                    "dataset_registration": null,
+                    "name": "destination_data",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "name": "source_type",
+                    "value": "directory",
+                    "value_type": 0
+                }
+            ],
+            "module_type": null,
+            "name": "office_smart_reply_fl_data_transfer_3",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "8c627087",
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "source_data",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "destination_data",
+                    "data_store_mode": null,
+                    "data_store_name": "fl_canada",
+                    "dataset_output_options": {
+                        "additional_properties": {},
+                        "path_on_datastore": "fl-fair-mustang/output_path",
+                        "source_globs": null
+                    },
+                    "dataset_registration": null,
+                    "name": "destination_data",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "name": "source_type",
+                    "value": "directory",
+                    "value_type": 0
+                }
+            ],
+            "module_type": null,
+            "name": "office_smart_reply_fl_data_transfer_4",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "f41a43ff",
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": "mount",
+                    "name": "input_path",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "output_path",
+                    "data_store_mode": "mount",
+                    "data_store_name": "fl_canada",
+                    "dataset_output_options": null,
+                    "dataset_registration": null,
+                    "name": "output_path",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [],
+            "module_type": null,
+            "name": "stats_passthrough_3",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "c870053b",
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "source_data",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "destination_data",
+                    "data_store_mode": null,
+                    "data_store_name": "workspaceblobstore",
+                    "dataset_output_options": {
+                        "additional_properties": {},
+                        "path_on_datastore": "fl-fair-mustang/silo3/output_path",
+                        "source_globs": null
+                    },
+                    "dataset_registration": null,
+                    "name": "destination_data",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "name": "source_type",
+                    "value": "directory",
+                    "value_type": 0
+                }
+            ],
+            "module_type": null,
+            "name": "office_smart_reply_fl_data_transfer_5",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "fc5053cc",
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "input_path",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "output_path",
+                    "data_store_mode": "mount",
+                    "data_store_name": "workspaceblobstore",
+                    "dataset_output_options": null,
+                    "dataset_registration": null,
+                    "name": "output_path",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [],
+            "module_type": null,
+            "name": "stats_step",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "7484bcbf",
+            "module_id": "c2767b90-8b95-45b2-88ca-d4990ce16962",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": "download",
+                    "name": "input_path",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "output_path",
+                    "data_store_mode": "upload",
+                    "data_store_name": "workspaceblobstore",
+                    "dataset_output_options": null,
+                    "dataset_registration": null,
+                    "name": "output_path",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [],
+            "module_type": null,
+            "name": "stats_step_2",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "f40c75fe",
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "source_data",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "destination_data",
+                    "data_store_mode": null,
+                    "data_store_name": "fl_wus",
+                    "dataset_output_options": {
+                        "additional_properties": {},
+                        "path_on_datastore": "fl-juicy-quetzal/output_path",
+                        "source_globs": null
+                    },
+                    "dataset_registration": null,
+                    "name": "destination_data",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "name": "source_type",
+                    "value": "directory",
+                    "value_type": 0
+                }
+            ],
+            "module_type": null,
+            "name": "office_smart_reply_fl_data_transfer_6",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "a8e10e2a",
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": "mount",
+                    "name": "input_path",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "output_path",
+                    "data_store_mode": "mount",
+                    "data_store_name": "fl_wus",
+                    "dataset_output_options": null,
+                    "dataset_registration": null,
+                    "name": "output_path",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [],
+            "module_type": null,
+            "name": "stats_passthrough_4",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "7edc2e59",
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "source_data",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "destination_data",
+                    "data_store_mode": null,
+                    "data_store_name": "workspaceblobstore",
+                    "dataset_output_options": {
+                        "additional_properties": {},
+                        "path_on_datastore": "fl-juicy-quetzal/silo1/output_path",
+                        "source_globs": null
+                    },
+                    "dataset_registration": null,
+                    "name": "destination_data",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "name": "source_type",
+                    "value": "directory",
+                    "value_type": 0
+                }
+            ],
+            "module_type": null,
+            "name": "office_smart_reply_fl_data_transfer_7",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "468dbd70",
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "source_data",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "destination_data",
+                    "data_store_mode": null,
+                    "data_store_name": "fl_eus",
+                    "dataset_output_options": {
+                        "additional_properties": {},
+                        "path_on_datastore": "fl-juicy-quetzal/output_path",
+                        "source_globs": null
+                    },
+                    "dataset_registration": null,
+                    "name": "destination_data",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "name": "source_type",
+                    "value": "directory",
+                    "value_type": 0
+                }
+            ],
+            "module_type": null,
+            "name": "office_smart_reply_fl_data_transfer_8",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "e23cf69a",
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": "mount",
+                    "name": "input_path",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "output_path",
+                    "data_store_mode": "mount",
+                    "data_store_name": "fl_eus",
+                    "dataset_output_options": null,
+                    "dataset_registration": null,
+                    "name": "output_path",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [],
+            "module_type": null,
+            "name": "stats_passthrough_5",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "a4785473",
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "source_data",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "destination_data",
+                    "data_store_mode": null,
+                    "data_store_name": "workspaceblobstore",
+                    "dataset_output_options": {
+                        "additional_properties": {},
+                        "path_on_datastore": "fl-juicy-quetzal/silo2/output_path",
+                        "source_globs": null
+                    },
+                    "dataset_registration": null,
+                    "name": "destination_data",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "name": "source_type",
+                    "value": "directory",
+                    "value_type": 0
+                }
+            ],
+            "module_type": null,
+            "name": "office_smart_reply_fl_data_transfer_9",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "7ee7fe5c",
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "source_data",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "destination_data",
+                    "data_store_mode": null,
+                    "data_store_name": "fl_canada",
+                    "dataset_output_options": {
+                        "additional_properties": {},
+                        "path_on_datastore": "fl-juicy-quetzal/output_path",
+                        "source_globs": null
+                    },
+                    "dataset_registration": null,
+                    "name": "destination_data",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "name": "source_type",
+                    "value": "directory",
+                    "value_type": 0
+                }
+            ],
+            "module_type": null,
+            "name": "office_smart_reply_fl_data_transfer_10",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "8035977b",
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": "mount",
+                    "name": "input_path",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "output_path",
+                    "data_store_mode": "mount",
+                    "data_store_name": "fl_canada",
+                    "dataset_output_options": null,
+                    "dataset_registration": null,
+                    "name": "output_path",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [],
+            "module_type": null,
+            "name": "stats_passthrough_6",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "c9665dad",
+            "module_id": "04b50f61-16fc-449d-9e14-9610972c8529",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "source_data",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "destination_data",
+                    "data_store_mode": null,
+                    "data_store_name": "workspaceblobstore",
+                    "dataset_output_options": {
+                        "additional_properties": {},
+                        "path_on_datastore": "fl-juicy-quetzal/silo3/output_path",
+                        "source_globs": null
+                    },
+                    "dataset_registration": null,
+                    "name": "destination_data",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [
+                {
+                    "additional_properties": {},
+                    "assignments_to_concatenate": null,
+                    "data_path_assignment": null,
+                    "data_set_definition_value_assignment": null,
+                    "name": "source_type",
+                    "value": "directory",
+                    "value_type": 0
+                }
+            ],
+            "module_type": null,
+            "name": "office_smart_reply_fl_data_transfer_11",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "66002475",
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": null,
+                    "name": "input_path",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "output_path",
+                    "data_store_mode": "mount",
+                    "data_store_name": "workspaceblobstore",
+                    "dataset_output_options": null,
+                    "dataset_registration": null,
+                    "name": "output_path",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [],
+            "module_type": null,
+            "name": "stats_step",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "05efe9e5",
+            "module_id": "c2767b90-8b95-45b2-88ca-d4990ce16962",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": "download",
+                    "name": "input_path",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "output_path",
+                    "data_store_mode": "upload",
+                    "data_store_name": "workspaceblobstore",
+                    "dataset_output_options": null,
+                    "dataset_registration": null,
+                    "name": "output_path",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [],
+            "module_type": null,
+            "name": "stats_step_2",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        },
+        {
+            "additional_properties": {},
+            "cloud_settings": null,
+            "comment": null,
+            "control_inputs": null,
+            "id": "0f0bd704",
+            "module_id": "a25e91c5-7d52-4bf0-96bf-a1d649552b33",
+            "module_input_settings": [
+                {
+                    "additional_properties": {},
+                    "additional_transformations": null,
+                    "data_store_mode": "mount",
+                    "name": "input_path",
+                    "options": null,
+                    "path_on_compute": null
+                }
+            ],
+            "module_metadata_parameters": [],
+            "module_output_settings": [
+                {
+                    "additional_properties": {},
+                    "data_reference_name": "output_path",
+                    "data_store_mode": "mount",
+                    "data_store_name": "workspaceblobstore",
+                    "dataset_output_options": null,
+                    "dataset_registration": null,
+                    "name": "output_path",
+                    "overwrite": null,
+                    "parameter_name": null,
+                    "path_on_compute": null,
+                    "web_service_port": null
+                }
+            ],
+            "module_parameters": [],
+            "module_type": null,
+            "name": "stats_passthrough_7",
+            "regenerate_output": null,
+            "runconfig": null,
+            "use_graph_default_compute": false,
+            "use_graph_default_datastore": false
+        }
+    ],
+    "sub_graph_nodes": []
+}

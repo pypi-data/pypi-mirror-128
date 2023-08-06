@@ -1,0 +1,32 @@
+defaults:
+  - aml: amlds
+  - compute: amlds 
+  - modules: samples_20210208 
+
+run:
+  experiment_name: "demo_federated_learning" 
+
+
+# module_loader
+module_loader: 
+  use_local: "!office.smart_reply.fl.data_transfer"
+
+# DemoComponent config
+democomponent:
+  input_data: dummy_data 
+  input_data_version: "latest"
+
+federated_config:
+  silos: 
+    silo1: 
+      compute: fl-wus
+    silo2:
+      compute: fl-eus
+      datastore: fl_eus
+    silo3:
+      compute: fl-canada
+      datastore: fl_canada
+  config_group:
+    default_config:
+      datastore: fl_wus
+  max_iterations: 2
