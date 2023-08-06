@@ -1,0 +1,3 @@
+[console_scripts]
+sfaira = sfaira.cli:main
+
