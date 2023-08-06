@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/wtfunc/__init__.py
+src/wtfunc.egg-info/PKG-INFO
+src/wtfunc.egg-info/SOURCES.txt
+src/wtfunc.egg-info/dependency_links.txt
+src/wtfunc.egg-info/top_level.txt
