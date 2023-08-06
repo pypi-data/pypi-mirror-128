@@ -1,0 +1,12 @@
+numpy
+Shapely
+plotly
+requests
+dash
+pandas
+dash-bootstrap-components
+raster2xyz
+kml2geojson
+geo2kml
+ezdxf
+pyshp
