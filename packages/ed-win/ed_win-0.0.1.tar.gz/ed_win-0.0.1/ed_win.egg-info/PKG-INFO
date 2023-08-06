@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ed-win
+Version: 0.0.1
+Summary: EDWIN an optimization and design package for electrical networks in windfarms
+Home-page: https://gitlab.windenergy.dtu.dk/TOPFARM/EDWIN
+Author: DTU Wind Energy
+Author-email: juru@dtu.dk
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+[![pipeline status](https://gitlab.windenergy.dtu.dk/TOPFARM/edwin/badges/main/pipeline.svg)](https://gitlab.windenergy.dtu.dk/TOPFARM/edwin/-/commits/main)
+# EDWIN
+
+EDWIN: Electrical network Design for WINdfarms
+
+
