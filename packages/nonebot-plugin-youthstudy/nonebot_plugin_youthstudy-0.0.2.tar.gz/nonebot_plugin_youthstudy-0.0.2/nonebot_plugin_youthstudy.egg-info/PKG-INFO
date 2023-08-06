@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-youthstudy
+Version: 0.0.2
+Summary: 基于nonebot的青年大学习插件，用来获取最新一期的青年大学习答案
+Home-page: https://github.com/ayanamiblhx/nonebot_plugin_youthstudy
+Author: ayanamiblhx
+Author-email: 1196818079@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# nonebot_plugin_youthstudy
+基于nonebot的青年大学习插件，用来获取最新一期的青年大学习答案
+
+## 使用方法
+
+### 安装
+
+在终端输入安装命令：
+
+```
+nb plugin install nonebot_plugin_youthstudy
+```
+
+### 添加配置
+
+在bot.py中添加
+
+```
+nonebot.load_plugin("nonebot_plugin_youthstudy")
+```
+
+### 正式使用
+
+对机器人发送口令：“青年大学习”或者“大学习”即可获取最新一期的青年大学习答案
+
+
+
+### TODO
+
+- [ ] 通过检查更新自动提醒完成青年大学习
+
+
