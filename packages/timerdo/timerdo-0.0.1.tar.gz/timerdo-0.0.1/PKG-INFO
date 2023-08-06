@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: timerdo
+Version: 0.0.1
+Summary: A minimalist to-do list with a built-in timer
+Home-page: https://github.com/caiomts/timerdo
+Author: Caio Mescouto
+Author-email: caiomescouto@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/caiomts/timerdo/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Timerdo
+A minimalist to-do list with built-in timer to track your work and keep you productive.
+
