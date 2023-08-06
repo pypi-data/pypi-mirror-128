@@ -1,0 +1,21 @@
+aioredis<2.0.0,>=1.1.0
+async-timeout
+hiredis
+
+[:python_version < "3.7"]
+dataclasses
+
+[devel]
+flake8
+mypy
+isort<6.0.0,>=5.0.0
+mock>=4.0.0
+black==21.10b0
+coverage
+pytest
+pytest-cov
+pytest-mock
+pytest-asyncio
+
+[devel:python_version < "3.7"]
+types-dataclasses
