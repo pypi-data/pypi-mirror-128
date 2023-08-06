@@ -1,0 +1,12 @@
+#!/bin/bash
+if ! hash papermill 2>/dev/null; then
+>&2 echo "Installing papermill=={PAPERMILL_VERSION} ipykernel=={IPYKERNEL_VERSION}"
+
+# Pip will warn about running as root and no way to suppress it.
+# Thus, we will output pip logs to a file and print it into stderr on errors
+if pip install papermill=={PAPERMILL_VERSION} ipykernel=={IPYKERNEL_VERSION} &>/tmp/pip.log; then
+    >&2 echo "Installation successful."
+else
+    >&2 cat /tmp/pip.log
+fi
+fi
