@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: date_pick
+Version: 0.1.0
+Summary: Pick date by conditions and list of re-like wildcards
+Home-page: https://bitbucket.org/Vnk260957/date_pick.git
+Author: Nick Kuzmenkov
+Author-email: nickuzmenkov@yahoo.com
+License: MIT
+Description: # Welcome to date_pick ⛏️
+        [![Codestyle: Black](https://img.shields.io/badge/codestyle-black-black.svg)](https://github.com/psf/black)
+        [![Codecheck: Flake8](https://img.shields.io/badge/codecheck-flake8-blue.svg)](https://gitlab.com/pycqa/flake8)
+        
+        ## Description
+        
+        Pick date by conditions and list of re-like wildcards
+        
+        ## Quickstart
+        ```
+        >>> from date_pick import DatePick
+        >>> import datetime
+        >>> 
+        >>> datetime.datetime.now()
+        datetime.datetime(2021, 11, 22, 15, 53, 20, 357911)
+        >>> 
+        >>> picker = DatePicker()
+        >>> # pick the nearest Monday 4 AM
+        >>> picker.pick(["*-*-*-0 04:00:00"])
+        "2021-11-29 04:00:00"
+        ```
+        
+        ## Authors
+        
+        * Nick Kuzmenkov
+Keywords: datetime,regexp
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
