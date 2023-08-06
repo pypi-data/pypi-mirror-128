@@ -1,0 +1,11 @@
+vrelease/__init__.py,sha256=wK1-URV-TGJywtC-dxRPL8Ozi3GEYCBBzcuVSCkDHMk,992
+vrelease/meta.py,sha256=OoRqoZCnrluKCBz1xTYaP2UJWKAwzYuP_Pcgx58KDsY,274
+vrelease/bin/vrelease-linux,sha256=wWW4kzMoZxy7VkGMwoQxoGb2L2_8vl7rXpEH7CNyW6Q,101068
+vrelease/bin/vrelease-macos,sha256=mzbIj76oSBr1Mh1eS_UIlOSOvEx5poMlnudE4VNtf64,90128
+vrelease/bin/vrelease-windows.exe,sha256=prdAVRUmQ_n_zSowWYhNZtdpoUa6qBDkQfTGxxhlizs,392779
+vrelease_bin-0.3.2.dist-info/LICENSE,sha256=Nv_Z3AhdUpp-YOEnbXOuWgMLAgMT5sVAhZOmrirzlnM,6555
+vrelease_bin-0.3.2.dist-info/METADATA,sha256=rsXkB6rFDuk6X1l36TZbAvYpdviYR-ISpd0ftO3xXyU,3193
+vrelease_bin-0.3.2.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+vrelease_bin-0.3.2.dist-info/entry_points.txt,sha256=YzhjK-_OoGJg-pWETVF-vSm49GGnx-gCTCgkud_VgDA,44
+vrelease_bin-0.3.2.dist-info/top_level.txt,sha256=_J8lm8q1hVwiULDa_3GH0JTqeNhzWD9i-SsyZbDxwKU,9
+vrelease_bin-0.3.2.dist-info/RECORD,,
