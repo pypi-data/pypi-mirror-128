@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hungarian-stemmer
+Version: 2021.1
+Summary: Hungarian stemmer package to perform higher quality stemming in Hungarian.
+License: AGPL
+Author: MONTANA Knowledge Management Ltd.
+Author-email: info@distiller.dev
+Requires-Python: >=3.6.2
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cyhunspell (>=2.0.2,<3.0.0)
+Requires-Dist: importlib-resources (>=5.4.0,<6.0.0)

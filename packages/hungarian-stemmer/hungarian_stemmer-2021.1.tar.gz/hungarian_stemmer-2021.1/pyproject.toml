@@ -1,0 +1,112 @@
+# Main package description
+[tool.poetry]
+name = "hungarian_stemmer"
+version = "2021.1"
+description = "Hungarian stemmer package to perform higher quality stemming in Hungarian."
+authors = [
+    "MONTANA Knowledge Management Ltd. <info@distiller.dev>"
+]
+license = "AGPL"
+
+# Project dependencies only
+[tool.poetry.dependencies]
+python = ">=3.6.2"
+
+
+# Dependencies for developers
+importlib-resources = "^5.4.0"
+cyhunspell = "^2.0.2"
+# list all devtools here
+[tool.poetry.dev-dependencies]
+black = "*"
+coverage = "*"
+pre-commit = "*"
+pytest = "*"
+isort = "*"
+pyupgrade = "*"
+pylint = "*"
+
+
+# build system setup
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+# DEVTOOLS CONFIG #
+
+#BLACK
+[tool.black]
+line-length = 120
+target-version = ['py39']
+# force-exclude = '''
+#   (
+#     resources/
+#   | tests/
+#   )
+# '''
+quiet = true
+
+
+# COVERAGE
+# https://coverage.readthedocs.io/en/6.1.1/config.html
+
+[tool.coverage.run]
+command_line = "-m py.test"
+source = ['hungarian_stemmer']
+branch = true
+# omit = []
+
+[tool.coverage.report]
+sort = "cover"
+exclude_lines = [
+    'if __name__ == "__main__":',
+    'def __repr__',
+    'def __str',
+    '@(abc\.)?abstractmethod'
+]
+omit = ['tests']
+
+
+
+# ISORT
+# https://pycqa.github.io/isort/docs/configuration/options.html
+
+[tool.isort]
+profile = "black"
+line_length = 120
+case_sensitive = true
+use_parentheses = false
+include_trailing_comma = true
+multi_line_output = 3
+force_grid_wrap = 0
+quiet = true
+
+[tool.pylint.MASTER]
+max-line-length = 120
+fail-under = 0.85
+ignore = ['LICENSE']
+ignore-paths = ['tests', 'resources']
+disable = [
+    "bad-continuation",
+    "duplicate-code",
+    "invalid-name",
+    "missing-docstring",
+    "too-few-public-methods",
+]
+
+# [too.pylint.message_control]
+# max-line-length = 80
+# disable = [
+#   "missing-docstring",
+#   "unused-argument",
+#   "no-value-for-parameter",
+#   "no-member",
+#   "no-else-return",
+#   "bad-whitespace",
+#   "bad-continuation",
+#   "line-too-long",
+#   "fixme",
+#   "protected-access",
+#   "too-few-public-methods",
+# ]
