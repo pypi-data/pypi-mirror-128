@@ -1,0 +1,4 @@
+[console_scripts]
+repurpose_images = qa4sm_preprocessing.nc_image_reader.cli:run_repurpose
+transpose_images = qa4sm_preprocessing.nc_image_reader.cli:run_transpose
+
