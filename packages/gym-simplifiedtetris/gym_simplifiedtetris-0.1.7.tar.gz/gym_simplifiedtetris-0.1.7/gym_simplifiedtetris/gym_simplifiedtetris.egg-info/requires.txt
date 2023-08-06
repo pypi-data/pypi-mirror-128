@@ -1,0 +1,7 @@
+numpy
+gym
+opencv-python
+imageio
+matplotlib
+pillow
+stable-baselines3
