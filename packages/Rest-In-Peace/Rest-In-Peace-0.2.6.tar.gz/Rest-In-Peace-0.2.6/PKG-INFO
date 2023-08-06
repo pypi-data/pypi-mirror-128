@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: Rest-In-Peace
+Version: 0.2.6
+Summary: An instant and schemaless rest api with sqlite
+Home-page: https://github.com/henriquegogo/rest_in_peace
+Author: Henrique Gogó
+Author-email: henriquegogo@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/henriquegogo/rest_in_peace/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Rest-In-Peace (Database API)
+
+## What is this?
+It's a database abstraction to use as a REST API with zero config.
+
+## How to use
+```
+$ pip install rest-in-peace
+$ rest-in-peace database.db 8000
+```
+
+## Routes
+Static server. Return 'public/index.html' (Tip: Download and use Swagger here)
+```
+GET /
+```
+
+Return API definitions
+```
+GET /openapi.json
+```
+
+Return all items from collection
+```
+GET /{collection}
+```
+
+Delete collection
+```
+DELETE /{collection}
+```
+
+Get a specific item
+```
+GET /{collection}/{id}
+```
+
+Create an item
+```
+POST /{collection}/{id}
+DATA 'Data'
+```
+
+Update an item
+```
+PUT /{collection}/{id}
+DATA 'Data'
+```
+
+Delete an item
+```
+DELETE /{collection}/{id}
+```
+
+## Tests
+```
+python tests
+```
+
+## Next steps
+- Auth / Roles
+- Dynamic / Static schema
+- SQL Injection fix
+
+# License
+MIT
+
