@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+cosmix/__init__.py
+cosmix/_version.py
+cosmix/fixed_volume_mix.py
+cosmix/format.py
+cosmix/gsheets_integration.py
+cosmix_wetlab.egg-info/PKG-INFO
+cosmix_wetlab.egg-info/SOURCES.txt
+cosmix_wetlab.egg-info/dependency_links.txt
+cosmix_wetlab.egg-info/requires.txt
+cosmix_wetlab.egg-info/top_level.txt
