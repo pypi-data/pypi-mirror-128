@@ -1,0 +1,6 @@
+mwparserfromhell
+pytz
+mwclient
+python-dateutil
+Unidecode
+mwcleric
