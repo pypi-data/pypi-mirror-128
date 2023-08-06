@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: shared-secret-authenticator
+Version: 2.0.1
+Summary: Shared Secret Authenticator password provider module for Matrix Synapse
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: ~=3.6
+License-File: LICENSE
+Requires-Dist: matrix-synapse (>=1.46)
+
+UNKNOWN
+
