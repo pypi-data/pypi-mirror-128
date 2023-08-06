@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: unf
+Version: 0.6.0
+Summary: Universal Numeric Fingerprints
+Home-page: https://github.com/chaselgrove/python-unf
+Author: Christian Haselgrove
+Author-email: christian.haselgrove@umassmed.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: COPYING
+
+.. See file COPYING distributed with unf for copyright and license.
+
+unf contains Python code for Universal Numeric Fingerprints (UNFs).
+
+http://guides.dataverse.org/en/latest/developers/unf/index.html
+
+As of Version 0.6.0, N-dimensional numpy arrays are no longer
+supported.  This was an ad-hoc addition to this package that is not
+mentioned in the UNF specification.
+
+Usage::
+
+    >>> import unf
+    >>> obj = 0.0
+    >>> u = unf.UNF(obj)
+    >>> u.unf
+    'YUvj33xEHnzirIHQyZaHow=='
+
+
