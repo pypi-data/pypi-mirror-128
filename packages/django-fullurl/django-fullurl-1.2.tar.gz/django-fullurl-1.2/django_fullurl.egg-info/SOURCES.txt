@@ -1,0 +1,16 @@
+CHANGELOG.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_fullurl.egg-info/PKG-INFO
+django_fullurl.egg-info/SOURCES.txt
+django_fullurl.egg-info/dependency_links.txt
+django_fullurl.egg-info/requires.txt
+django_fullurl.egg-info/top_level.txt
+fullurl/__init__.py
+fullurl/apps.py
+fullurl/tests.py
+fullurl/templatetags/__init__.py
+fullurl/templatetags/fullurl.py
