@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: CompoTree
+Version: 0.0.1
+Summary: A unicode IDS component tree
+Home-page: https://github.com/seantyh/ComponentTree
+Author: seantyh
+Author-email: seantyh@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# CompoTree: An Unicode IDS Component Tree Representation
+
+The IDS dataset is from https://github.com/cjkvi/cjkvi-ids.
+
+* For displaying characters in CJK-extension planes, download [Hanazono font](https://osdn.net/projects/hanazono-font/downloads/68253/hanazono-20170904.zip/)
+
+
