@@ -1,0 +1,7 @@
+setup.py
+money_To_words_Converter.egg-info/PKG-INFO
+money_To_words_Converter.egg-info/SOURCES.txt
+money_To_words_Converter.egg-info/dependency_links.txt
+money_To_words_Converter.egg-info/not-zip-safe
+money_To_words_Converter.egg-info/top_level.txt
+money_to_words/__init__.py
