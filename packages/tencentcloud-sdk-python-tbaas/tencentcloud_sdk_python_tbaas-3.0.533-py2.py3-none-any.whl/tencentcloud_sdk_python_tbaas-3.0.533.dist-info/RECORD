@@ -1,0 +1,10 @@
+tencentcloud/__init__.py,sha256=gYxoMU3Cgj_BJnP2Sqeh4s5xKDZX9xkwb0Y3CS60A_Y,630
+tencentcloud/tbaas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/tbaas/v20180416/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/tbaas/v20180416/errorcodes.py,sha256=q_hF9Lv7HewMBjvTutPVyLcZzE3oDzzuAEF7RsRW9uU,11043
+tencentcloud/tbaas/v20180416/models.py,sha256=JUf5C7KucqvW1bpcWvj3Wh9tz1KMtbNGn9Bl-dvB5I8,111860
+tencentcloud/tbaas/v20180416/tbaas_client.py,sha256=NNgmFQo1JG89cckFlLUFQ_Qq1wyYipLlGuk3bZ-2kYo,43909
+tencentcloud_sdk_python_tbaas-3.0.533.dist-info/METADATA,sha256=L3eoTw-URMj3uO5PTqw04PHypV7fD6mah_cdZ-QZQHk,1442
+tencentcloud_sdk_python_tbaas-3.0.533.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+tencentcloud_sdk_python_tbaas-3.0.533.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_tbaas-3.0.533.dist-info/RECORD,,
