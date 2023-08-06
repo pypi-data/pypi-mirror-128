@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: icb
+Version: 0.1a2
+Summary: This library provides a way to parse, manipulate and analyze ICB codes.
+Home-page: https://github.com/batman32168/py-icb
+Author: Batman32168
+Author-email: batman32168@web.de
+License: MIT License
+Keywords: icb,icb.definitions
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
