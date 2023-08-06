@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+tempiny/__init__.py
+tempiny.egg-info/PKG-INFO
+tempiny.egg-info/SOURCES.txt
+tempiny.egg-info/dependency_links.txt
+tempiny.egg-info/not-zip-safe
+tempiny.egg-info/top_level.txt
