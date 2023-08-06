@@ -1,0 +1,42 @@
+from fastapi import Depends, FastAPI, HTTPException, WebSocket
+from starlette.websockets import WebSocketDisconnect
+
+from .manager import connection_manager
+from .redis_connector import connect_redis
+from .settings import (
+    BrokerSettings,
+    DjangoServerSettings,
+    get_broker_settings,
+    get_django_settings,
+)
+
+
+app = FastAPI()
+
+
+@app.on_event("startup")
+async def startup_event():
+    redis = await connect_redis()
+    app.state.redis = redis
+
+
+@app.websocket("/chat")
+async def websocket_endpoint(
+    websocket: WebSocket,
+    token: str,
+    django_settings: DjangoServerSettings = Depends(get_django_settings),
+    broker_settings: BrokerSettings = Depends(get_broker_settings),
+):
+    user_id = await connection_manager.check_auth(token, django_settings)
+    if not user_id:
+        raise HTTPException(status_code=401, detail="Invalid token")
+    await connection_manager.connect(websocket)
+
+    (channel,) = await app.state.redis.subscribe(broker_settings.channel_name)
+    try:
+        while await channel.wait_message():
+            msg = await channel.get()
+            await connection_manager.send_if_needed(user_id, msg, websocket)
+    except WebSocketDisconnect:
+        channel.close()
+        await connection_manager.disconnect(websocket)
