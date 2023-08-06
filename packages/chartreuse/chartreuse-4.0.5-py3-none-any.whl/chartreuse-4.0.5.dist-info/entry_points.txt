@@ -1,0 +1,3 @@
+[console_scripts]
+chartreuse-upgrade = chartreuse.chartreuse_upgrade:main
+
