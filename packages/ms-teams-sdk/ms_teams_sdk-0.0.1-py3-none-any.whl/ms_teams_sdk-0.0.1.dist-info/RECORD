@@ -1,0 +1,11 @@
+ms_teams_sdk/__init__.py,sha256=K7hDlZOwFyhjhPwMBRWQBoZpqUFUeJ1M9ra5HyxPNRw,100
+ms_teams_sdk/auth.py,sha256=six9dfXjnWJaBv7bubRJQI13U0nXlATQhz7dXCpAtwk,3419
+ms_teams_sdk/exception.py,sha256=Tf8TcEW5w4GcDh_cEMKPbjhzQJznQ6eUzuctByoQohE,119
+ms_teams_sdk/lists.py,sha256=OrhYaBP7hXNE8AMAqyiyiCMZi-gEsEodCo4Lef1zZp8,1220
+ms_teams_sdk/message.py,sha256=Itkhw6pfYXuwCTZ_XWErG0p3bb1yexSG4O8_lpeHRk8,3055
+ms_teams_sdk/users.py,sha256=zkor_GBbsrpthp49zN75MtrWq2NB6_Z0AVD1oeRpci8,1016
+ms_teams_sdk-0.0.1.dist-info/LICENSE,sha256=efS_U676PdnsjOyiwY-Q5VLGkTIQSQeg-6ei9RZJ-Ic,1065
+ms_teams_sdk-0.0.1.dist-info/METADATA,sha256=_17EfEhLPrjT8mzUEfW8KBa1XBNw2kXe34PzKCW5Jvo,837
+ms_teams_sdk-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ms_teams_sdk-0.0.1.dist-info/top_level.txt,sha256=0A2lfrgYy0BPH3j6Al7fFhp34TgTP5C2TzcF5k_Y4Ts,13
+ms_teams_sdk-0.0.1.dist-info/RECORD,,

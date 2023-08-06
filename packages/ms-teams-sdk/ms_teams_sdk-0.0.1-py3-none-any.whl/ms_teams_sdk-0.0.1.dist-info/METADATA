@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ms-teams-sdk
+Version: 0.0.1
+Summary: Library to interact with Microsoft Teams using Graph API
+Home-page: https://github.com/SudharsanRama/ms-teams-sdk
+Author: Sudharsan Ramakrishnan
+Author-email: sudharsan.ramakrishnan@wdc.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/SudharsanRama/ms-teams-sdk/issues
+Keywords: Microsoft GraphAPI Teams
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# ms-teams-sdk
+
+Python wrapper library to interact with Microsoft Teams using [Microsoft Graph API](https://docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0).
+
+
+
