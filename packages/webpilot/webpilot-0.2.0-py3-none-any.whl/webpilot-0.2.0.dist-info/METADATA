@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: webpilot
+Version: 0.2.0
+Summary: Api to control chromium browsers using puppeteer
+Home-page: UNKNOWN
+Author: fernandojerez
+License: Apache
+Platform: UNKNOWN
+Requires: websocket_client
+Requires: pydantic
+Requires: beautifulsoup4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: websocket-client
+Requires-Dist: pydantic
+Requires-Dist: beautifulsoup4
+
+# WebPilot
+
+This library allow use puppeter from python
+
+
