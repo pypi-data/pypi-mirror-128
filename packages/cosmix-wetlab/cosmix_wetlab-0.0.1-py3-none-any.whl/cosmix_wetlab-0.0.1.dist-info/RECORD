@@ -1,0 +1,9 @@
+cosmix/__init__.py,sha256=jLZnDH1Lc4ejUZjij_KhpQ2ES-qHZIZm-fOnQdUrnSk,174
+cosmix/_version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+cosmix/fixed_volume_mix.py,sha256=in-qKeqDOLC_C5hkmiV-ZClFqPiZJefJMXuOknsuFsw,7890
+cosmix/format.py,sha256=vb9UNhK_zsICCF8LmmwDnTzpnk0or4815Hh0bb9kISs,1141
+cosmix/gsheets_integration.py,sha256=1LK3p0-_WMBZ9NkODcn1azUdXRuc28GXcyWcoCxkm1E,11382
+cosmix_wetlab-0.0.1.dist-info/METADATA,sha256=nOGacWF1DRaxxKSrx1OV-TY-KfZAPzHzdIkyzo7279A,1266
+cosmix_wetlab-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cosmix_wetlab-0.0.1.dist-info/top_level.txt,sha256=ACjkbgxo7QGZve97hFrpig9yeTBL7bztq1gtPPXrMlY,7
+cosmix_wetlab-0.0.1.dist-info/RECORD,,
