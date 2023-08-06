@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+urbandictionary.py
+urbandictionary_fixed.egg-info/PKG-INFO
+urbandictionary_fixed.egg-info/SOURCES.txt
+urbandictionary_fixed.egg-info/dependency_links.txt
+urbandictionary_fixed.egg-info/top_level.txt

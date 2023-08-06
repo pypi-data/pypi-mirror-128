@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: urbandictionary-fixed
+Version: 2.0
+Summary: Simple Python wrapper for Urban Dictionary API. Forked and fixed from Bocong
+Home-page: https://github.com/Endlesszombiez/urbandictionary-py
+Author: Endlessz
+Author-email: lckrep@protonmail.com
+License: MIT
+Keywords: urban dictionary python api wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+UNKNOWN
+
