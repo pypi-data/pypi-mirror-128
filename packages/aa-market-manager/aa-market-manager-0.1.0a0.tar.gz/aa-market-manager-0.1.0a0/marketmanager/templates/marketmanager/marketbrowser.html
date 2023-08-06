@@ -1,0 +1,132 @@
+{% extends 'allianceauth/base.html' %}
+{% load i18n %}
+{% load humanize %}
+{% block page_title %}{% translate "Market Browser" %}{% endblock %}
+
+{% block content %}
+    <div class="col-lg-12">
+        <div class="col-lg-12 container">
+            <br>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#market-manager-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="{% url 'marketmanager:marketbrowser' %}">Market Browser</a>
+                    </div>
+                        <div class="collapse navbar-collapse" id="market-manager-navbar-collapse-1">
+                            <ul class="navbar-form navbar-left">
+                                {% include 'marketmanager/marketbrowser/search.html' %}
+                            </ul>
+                            <ul class="navbar-form navbar-left">
+                                {% include 'marketmanager/marketbrowser/region_selector.html' %}
+                            </ul>
+                            <ul class="navbar-form navbar-left">
+                                {% include 'marketmanager/marketbrowser/item_selector.html' %}
+                            </ul>
+                            <ul class="nav navbar-nav pull-right">
+                            <li class>
+                                <a href="{% url 'marketmanager:add_char' %}">Add Character Token</a>
+                            </li>
+                            </ul>
+                            <ul class="nav navbar-nav pull-right">
+                            <li class>
+                                <a href="{% url 'marketmanager:add_corp' %}">Add Corporate Token</a>
+                            <li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        {% include 'marketmanager/marketbrowser/item_details.html' %}
+    <div class="col-lg-12">
+        {% include 'marketmanager/marketbrowser/sell_orders.html' %}
+        {% include 'marketmanager/marketbrowser/buy_orders.html' %}
+    </div>
+{% endblock %}
+
+{% block extra_javascript %}
+    {% include 'bundles/datatables-js.html' %}
+    {% include 'bundles/jquery-ui-js.html' %}
+    {% include 'bundles/moment-js.html' %}
+{% endblock %}
+
+{% block extra_css %}
+    {% include 'bundles/datatables-css.html' %}
+    {% include 'bundles/jquery-ui-css.html' %}
+{% endblock %}
+
+{% block extra_script %}
+    $(document).ready(function(){
+        $('#table-sell-orders').DataTable({
+            columns: [
+            {
+                data: "region"
+            },
+            {
+                data: "quantity"
+            },
+            {
+                data: 'price',
+                render: $.fn.dataTable.render.number(',', '.', 2, null, " ISK")
+            },
+            {
+                data: "location"
+            },
+            {
+                data: "expires_in"
+            },
+            {
+                data: "received_at"
+            },
+            ],
+            "order": [[ 2, "asc" ]]
+        } );
+    });
+
+    $(document).ready(function(){
+        $('#table-buy-orders').DataTable({
+            columns: [
+            {
+                data: "region"
+            },
+            {
+                data: "quantity"
+            },
+            {
+                data: 'price',
+                render: $.fn.dataTable.render.number(',', '.', 2, null, " ISK")
+            },
+            {
+                data: "location"
+            },
+            {
+                data: "expires_in"
+            },
+            {
+                data: "received_at"
+            },
+            ],
+            "order": [[ 2, "desc" ]]
+        } );
+    });
+
+    $(document).ready(function() {
+        $("#search").autocomplete({
+            source: "{% url 'marketmanager:marketbrowser_autocomplete' %}",
+            minLength:2,
+            select: function(event, ui){
+                SearchTypeID(ui.item.label, ui.item.value);
+            },
+       });
+    });
+
+    function SearchTypeID(eve_type_name, eve_type_id) {
+          window.location.href = "?type_id="+eve_type_id{% if eve_region != None %} +"&region_id="+ {{ eve_region.id }} {% endif %};
+    }
+
+{% endblock %}
