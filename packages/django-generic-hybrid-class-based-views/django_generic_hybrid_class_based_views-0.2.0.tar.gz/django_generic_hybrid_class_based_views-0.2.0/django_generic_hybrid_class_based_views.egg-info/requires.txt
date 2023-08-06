@@ -1,0 +1,2 @@
+Django==3.2.9
+django_generic_json_class_based_views==0.2.0
