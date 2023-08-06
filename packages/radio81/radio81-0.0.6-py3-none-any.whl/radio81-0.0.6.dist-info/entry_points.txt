@@ -1,0 +1,3 @@
+[console_scripts]
+radio81 = radio81.console:start
+
