@@ -1,0 +1,92 @@
+scrapyer
+=========
+
+Scrapyer A library that encapsulates components based on the scrapy framework
+
+- Package many pipeline files
+
+- Package the Item pipeline files involved in PDF processing
+
+- A Spidermiddleware file is packaged to handle item requests 
+
+scrapyer 基于scrapy框架,封装部分组件的库
+
+主要：
+
+- 打包了诸多pipeline管道文件
+
+- 打包处理了涉及pdf处理的item管道文件
+
+- 打包处理了关于item请求的spidermiddleware文件
+
+
+[ContactProjectTeam](https://github.com/buliqioqiolibusdo)
+
+[联系作者](dingyeran@163.com)
+
+Usage：
+========
+#### 1.卸载scrapy,卸载前视个人情况备份修改过的scrapy项目文件
+#### 2.安装scrapyer项目
+#### 3.检查是否安装成功,版本号是否一致
+```
+pip uninstall scrapy 
+pip install scrapyer
+scrapy shell
+```
+
+#### 4.项目文件中找到uploadpackages\updatescrapy\cp_settings,执行efficientpak.sh导入到templates下settings模版文件
+```
+bash efficientpak.sh
+```
+#### 5.在项目中引用表结构字段类
+'''
+from scrapy.xcc_items.factoryitems import FactoryMaterialItem 
+'''
+#### 6.在settings中配置开启管道,并配置相关参数
+```
+ITEM_PIPELINES = {
+   # 'scrapy.xcc_pipelines.ossfiles.OssFilesPipeline': 300,
+   # 'scrapy.xcc_pipelines.ossfiles.OssFilesPipelineBak': 301,
+   # 'scrapy.xcc_pipelines.ossfiles.OssFilesPipelineBakBak': 302,
+
+   # 'scrapy.xcc_pipelines.ossfiles.OssImagesPipeline': 303,
+   # 'scrapy.xcc_pipelines.ossfiles.OssImagesPipelineBak': 304,
+
+   # 'scrapy.xcc_pipelines.sqlspipelines.SQLSPipeline':400,
+   # 'scrapy.xcc_pipelines.mysqlpipelines.MySQLPipeline':401,
+   # 'scrapy.xcc_pipelines.mongopipelines.mongodbPipeline':402,
+}
+```
+#### 或者中间件,并配置相关参数
+```
+DOWNLOADER_MIDDLEWARES = {
+   'scrapy.xcc_downloadermiddlewares.randuamiddleware.RandomUserAgent': 543,
+   'scrapy.xcc_downloadermiddlewares.proxymiddleware.ProxyMiddleware': 888,
+}
+```
+
+相关Docker相关镜像：
+========
+scrapyerd替代scrapyd
+```
+docker pull buliqioqiolibusdo:scrapyerd:1.4.1
+docker run -d -v /etc/localtime:/etc/localtime --rm -p 0.0.0.0:8080:6800/tcp dee4a75674ec
+```
+注:1.4.1版本支持scrapy-redis分布式
+注:1.4.1版本不支持rabbitmq分布式
+
+版本:
+========
+2021/11/13 更新 1.4.3 
+- mongoitem管道中DuplicateKeyError除重处理异常问题
+
+- items文件增加FactoryMaterialItemMongo类用于存储在mongo的物料管道
+
+2021/11/13 更新 1.4.4 
+- 解决 python-magic 库在win和linux不兼容问题
+
+2021/11/16 更新 1.4.6
+- 修改 items文件增加FactoryMaterialItem 增加raw_img_url字段,raw_pdf_url字段
+- 修改 items文件增加FactoryMaterialItemMongo 类用于存储在mongo的物料管道
+- 解决 python-magic 在docker中版本选择的问题
