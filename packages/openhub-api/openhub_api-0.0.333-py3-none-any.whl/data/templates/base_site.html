@@ -1,0 +1,47 @@
+{% extends "./base.html" %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} |
+    {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('OpenHub') }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}
+
+    <div id="top_menu"><a
+            href="/hubs/">Hubs</a> |
+        <ul class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+                Hubs
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="hub-list">
+                {% for hub in hubs %}
+                    <li><a class="dropdown-item" href='#{{ hub.id }}'><p
+                            style="color: #0f0f0f"> {{ hub.display_name }}</p></a></li>
+                {% endfor %}
+
+            </div>
+        </ul>
+    </div>
+    |<a id="hardware-link" href="/hardwares">Hardware</a>
+    | <a id="accessory-link" href="/accessories">Accessories</a></div>
+{% endblock %}
+
+
+{% block javascript %}
+
+    <script>
+
+        $("#hub-list").click(function () {
+            $("#hardware-link").get(0).href = $("#hub-list :selected").prevObject[0].activeElement.href.replace('#','') + "/hardwares";
+            $("#accessory-link").get(0).href = $("#hub-list :selected").prevObject[0].activeElement.href.replace('#','') + "/accessories";
+            $("#navbarDropdownMenuLink").text('Hub: ' + $("#hub-list :selected").prevObject[0].activeElement.innerText);
+        });
+
+    </script>
+    {% block javascript_0 %}
+    {% endblock javascript_0 %}
+{% endblock javascript %}
+

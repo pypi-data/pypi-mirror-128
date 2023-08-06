@@ -1,0 +1,128 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Janus WebRTC Server: Streaming Demo</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/8.0.0/adapter.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+<script type="text/javascript" src={% static 'js/janus.js' %} ></script>
+<script type="text/javascript" src={% static 'js/streamingtest.js' %}></script>
+        <script>
+        $(function(){
+
+        var empty_form_html = "<div id=\"13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormsetempty_form\" style=\"display:none\"> <div class=\"div class=\"col\"\"> <p> <label for=\"id_13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-type\">Type:</label> <select name=\"13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-type\" id=\"id_13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-type\">  <option value=\"\" selected>\-\-\-\-\-\-\-\-\-</option>  <option value=\"bf028ff5\-0e12\-40d2\-9a24\-1a7495bcdaf2\">SUM</option>  <option value=\"611b5a61\-fec8\-43f9\-a7c4\-a839ef46c285\">PRODUCT</option>  <option value=\"017c470f\-cbe6\-45b7\-8a45\-a423d14bf591\">DIFFERENCE</option>  <option value=\"43ba0acb\-93a6\-4f22\-8e69\-e918824c9f14\">QUOTIENT</option>  <option value=\"7634dd91\-a9d8\-4cd2\-ac54\-122d6cdbbf82\">MAX</option>  <option value=\"c3c717be\-be6f\-4b7f\-a029\-8c321d6e34fd\">MIN</option>  <option value=\"86500eaa\-0a81\-443a\-bca4\-12c419325523\">MEAN</option>  <option value=\"b559802c\-0f9c\-4622\-a40d\-9c783bee571e\">INVERSE</option> </select> </p> <p> <label for=\"id_13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-channels\">Channels:</label> <select name=\"13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-channels\" id=\"id_13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-channels\" multiple>  <option value=\"9e3deb43\-8a62\-487c\-bbff\-7b3453c8e463\">PiPico / PiPicoPump / 3 / 9e3deb43\-8a62\-487c\-bbff\-7b3453c8e463</option>  <option value=\"4237666e\-efbb\-46be\-8ddc\-e0bbc983edfc\">PiPico / PiPicoAnalog / 0 / 4237666e\-efbb\-46be\-8ddc\-e0bbc983edfc</option>  <option value=\"c6d9eb2e\-ad4a\-447d\-8243\-6c4326e35f70\">PiPico / PiPicoAnalog / 1 / c6d9eb2e\-ad4a\-447d\-8243\-6c4326e35f70</option>  <option value=\"1a2eb9fd\-8a1c\-487d\-a300\-a8c0041d6aeb\">PiPico / PiPicoAnalog / 2 / 1a2eb9fd\-8a1c\-487d\-a300\-a8c0041d6aeb</option>  <option value=\"29c4682e\-f303\-4931\-844a\-85f5c6700f05\">PiPico / PiPicoAnalog / 0 / 29c4682e\-f303\-4931\-844a\-85f5c6700f05</option>  <option value=\"2d468eff\-7c3f\-4c2e\-b0bc\-bd542cf6c44a\">PiPico / PiPicoAnalog / 1 / 2d468eff\-7c3f\-4c2e\-b0bc\-bd542cf6c44a</option>  <option value=\"b3548b4f\-c08a\-4fe2\-a395\-b8b7107d7566\">PiPico / PiPicoAnalog / 2 / b3548b4f\-c08a\-4fe2\-a395\-b8b7107d7566</option>  <option value=\"cf3136e0\-2209\-48b2\-8229\-8eeb0e4c7e04\">tank water pressure</option>  <option value=\"de752d46\-f4be\-4cb7\-bc61\-a29d48c8aecb\">PiPico / PiPicoAnalog / 1 / de752d46\-f4be\-4cb7\-bc61\-a29d48c8aecb</option>  <option value=\"87ef7b17\-fed5\-49d7\-b813\-943495369afe\">PiPico / PiPicoAnalog / 2 / 87ef7b17\-fed5\-49d7\-b813\-943495369afe</option>  <option value=\"70dde4df\-7d98\-41c1\-9214\-a1b7eba98f6a\">PiPico / PiPicoAnalog / 0 / 70dde4df\-7d98\-41c1\-9214\-a1b7eba98f6a</option>  <option value=\"a14ed7e5\-d027\-4b01\-9b3f\-def54d54d862\">PiPico / PiPicoAnalog / 1 / a14ed7e5\-d027\-4b01\-9b3f\-def54d54d862</option>  <option value=\"09424501\-55b4\-47c0\-9f76\-13d18f2ea331\">PiPico / PiPicoAnalog / 2 / 09424501\-55b4\-47c0\-9f76\-13d18f2ea331</option>  <option value=\"e6ab86d1\-a328\-4290\-9bad\-f9eaa2cf1a8a\">PiPico / PiPicoRelay / 4 / e6ab86d1\-a328\-4290\-9bad\-f9eaa2cf1a8a</option>  <option value=\"57213804\-b1d3\-41ab\-a5e1\-44efd02fa596\">PiPico / PiPicoAnalog / 0 / 57213804\-b1d3\-41ab\-a5e1\-44efd02fa596</option>  <option value=\"97f58a8f\-9aa4\-4749\-848a\-e5fb51b713c4\">PiPico / PiPicoAnalog / 0 / 97f58a8f\-9aa4\-4749\-848a\-e5fb51b713c4</option>  <option value=\"44af66b0\-1073\-4a4f\-836d\-1f483de98061\">PiPico / PiPicoAnalog / 1 / 44af66b0\-1073\-4a4f\-836d\-1f483de98061</option>  <option value=\"752ef27e\-7764\-430e\-8e01\-c7ad87a638b5\">PiPico / PiPicoAnalog / 2 / 752ef27e\-7764\-430e\-8e01\-c7ad87a638b5</option>  <option value=\"b4eb4436\-bd42\-498f\-893f\-90d51bcd6fae\">PiPico / PiPicoAnalog / 1 / b4eb4436\-bd42\-498f\-893f\-90d51bcd6fae</option>  <option value=\"9f131baa\-11c3\-4d67\-a18c\-dec8d803ce36\">PiPico / PiPicoAnalog / 2 / 9f131baa\-11c3\-4d67\-a18c\-dec8d803ce36</option>  <option value=\"d85b4366\-d4a0\-4944\-be8c\-ba65b0be2303\">PiPico / PiPicoACAnalog / 0 / d85b4366\-d4a0\-4944\-be8c\-ba65b0be2303</option>  <option value=\"ede698f2\-b83a\-4035\-b492\-7cbcd8342b8d\">PiPico / PiPicoACAnalog / 0 / ede698f2\-b83a\-4035\-b492\-7cbcd8342b8d</option>  <option value=\"c9f9ea44\-bbb2\-42bc\-86ce\-cc7547969913\">PiPico / PiPicoACAnalog / 0 / c9f9ea44\-bbb2\-42bc\-86ce\-cc7547969913</option>  <option value=\"e39632d8\-a27c\-414f\-a6f1\-e46d518b9f70\">PiPico / PiPicoACAnalog / 1 / e39632d8\-a27c\-414f\-a6f1\-e46d518b9f70</option>  <option value=\"90231a2e\-22dc\-49de\-90c8\-3097d5f2e3aa\">VEML7700 / VEML7700Light / 0 / 90231a2e\-22dc\-49de\-90c8\-3097d5f2e3aa</option>  <option value=\"79e31557\-752c\-4af3\-94b9\-a641aafb68a0\">ModProbe / ModProbeTemp / 0 / 79e31557\-752c\-4af3\-94b9\-a641aafb68a0</option>  <option value=\"71b6b7cc\-87d4\-440d\-a924\-b8c62c3def7b\">DHT22 / DHT22Temp / 0 / 71b6b7cc\-87d4\-440d\-a924\-b8c62c3def7b</option>  <option value=\"be464010\-d495\-41ce\-a856\-8334d7c512d4\">DHT22 / DHT22Humidity / 1 / be464010\-d495\-41ce\-a856\-8334d7c512d4</option>  <option value=\"5d7b6b98\-adac\-438f\-ae44\-9af6cbade505\">PiPico / PiPicoACAnalog / 0 / 5d7b6b98\-adac\-438f\-ae44\-9af6cbade505</option> </select> </p> <p> <label for=\"id_13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-channel_stats\">Channel stats:</label> <select name=\"13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-channel_stats\" id=\"id_13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-channel_stats\" multiple>  <option value=\"366052c9\-6d0c\-4b15\-920f\-b5d2c377a283\">tank water pressure / MIN</option>  <option value=\"0c368898\-aa5e\-412b\-9f41\-d46ac4a8c20c\">tank water pressure / MAX</option>  <option value=\"ea2adfdd\-b40f\-4b54\-a0ba\-a3ad81d630d5\">PiPico / PiPicoAnalog / 0 / 4237666e\-efbb\-46be\-8ddc\-e0bbc983edfc / MIN</option>  <option value=\"267b63f5\-b1d5\-41f8\-8529\-60a0771c85f2\">PiPico / PiPicoAnalog / 0 / 4237666e\-efbb\-46be\-8ddc\-e0bbc983edfc / MAX</option> </select> </p> <p> <label for=\"id_13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-DELETE\">Delete:</label> <input type=\"checkbox\" name=\"13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-DELETE\" id=\"id_13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-DELETE\"> <input type=\"hidden\" name=\"13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-id\" value=\"2625ac27\-10b9\-4640\-8f5d\-a559a166e105\" class=\"form\-control\" id=\"id_13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-id\"> <input type=\"hidden\" name=\"13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-accessory\" class=\"form\-control\" id=\"id_13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-accessory\"> <input type=\"hidden\" name=\"13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-parent\" value=\"13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66\" id=\"id_13141e8c\-4d7b\-459c\-8ef2\-16365f98ff66dataTransformerInlineFormset\-__prefix__\-parent\"> </p> <div class=\"row\" id=\"86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormsetdiv\">        <input type=\"hidden\" name=\"86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormset\-TOTAL_FORMS\" value=\"0\" id=\"id_86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormset\-TOTAL_FORMS\"> <input type=\"hidden\" name=\"86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormset\-INITIAL_FORMS\" value=\"0\" id=\"id_86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormset\-INITIAL_FORMS\"> <input type=\"hidden\" name=\"86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormset\-MIN_NUM_FORMS\" value=\"0\" id=\"id_86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormset\-MIN_NUM_FORMS\"> <input type=\"hidden\" name=\"86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormset\-MAX_NUM_FORMS\" value=\"1000\" id=\"id_86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormset\-MAX_NUM_FORMS\">        <input type=\"button\" value=\"Add More Constants\" id=\"86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormsetadd_more\">                            </div>                    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\"><\/script>";
+        {#<\/script> <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\"> </script> <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\"> </script>        <script>        $(function(){        var empty_form_html = \"<div id=\\"86f702c2\\-f3c8\\-4e08\\-9202\\-aa8732adef27DataConstantsTransformerInlineFormsetempty_form\\" style=\\"display:none\\"> <p> <label for=\\"id_86f702c2\\-f3c8\\-4e08\\-9202\\-aa8732adef27DataConstantsTransformerInlineFormset\\-__prefix__\\-value\\">Value:</label> <input type=\\"text\\" name=\\"86f702c2\\-f3c8\\-4e08\\-9202\\-aa8732adef27DataConstantsTransformerInlineFormset\\-__prefix__\\-value\\" class=\\"form\\-control\\" id=\\"id_86f702c2\\-f3c8\\-4e08\\-9202\\-aa8732adef27DataConstantsTransformerInlineFormset\\-__prefix__\\-value\\"> </p> <p> <label for=\\"id_86f702c2\\-f3c8\\-4e08\\-9202\\-aa8732adef27DataConstantsTransformerInlineFormset\\-__prefix__\\-DELETE\\">Delete:</label> <input type=\\"checkbox\\" name=\\"86f702c2\\-f3c8\\-4e08\\-9202\\-aa8732adef27DataConstantsTransformerInlineFormset\\-__prefix__\\-DELETE\\" id=\\"id_86f702c2\\-f3c8\\-4e08\\-9202\\-aa8732adef27DataConstantsTransformerInlineFormset\\-__prefix__\\-DELETE\\"> <input type=\\"hidden\\" name=\\"86f702c2\\-f3c8\\-4e08\\-9202\\-aa8732adef27DataConstantsTransformerInlineFormset\\-__prefix__\\-id\\" value=\\"911f560b\\-34de\\-43b7\\-9d51\\-b6dd16343278\\" class=\\"form\\-control\\" id=\\"id_86f702c2\\-f3c8\\-4e08\\-9202\\-aa8732adef27DataConstantsTransformerInlineFormset\\-__prefix__\\-id\\"> <input type=\\"hidden\\" name=\\"86f702c2\\-f3c8\\-4e08\\-9202\\-aa8732adef27DataConstantsTransformerInlineFormset\\-__prefix__\\-data_transformer\\" id=\\"id_86f702c2\\-f3c8\\-4e08\\-9202\\-aa8732adef27DataConstantsTransformerInlineFormset\\-__prefix__\\-data_transformer\\"> </p> </div>\"        (\"body\").append(empty_form_html)        });    $('#86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormsetadd_more').click(function() {        var form_idx = $('#id_86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormset\-TOTAL_FORMS').val();        var empty_form = document.getElementById('86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormsetempty_form').innerHTML.replace(/__prefix__/g, 'form_idx');                        var d1 = document.getElementById('86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormsetdiv');        d1.insertAdjacentHTML('afterend', empty_form);        $('#id_86f702c2\-f3c8\-4e08\-9202\-aa8732adef27DataConstantsTransformerInlineFormset\-TOTAL_FORMS').val(parseInt(form_idx) + 1);    });</script> </div> </div>";#}
+        ("#body").append(empty_form_html);
+        });
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cerulean/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href={% static 'demo.css' %} type="text/css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css"/>
+</head>
+<body>
+
+<a href="https://github.com/meetecho/janus-gateway"><img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1001;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+<nav class="navbar navbar-default navbar-static-top">
+</nav>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+				<h1>Plugin Demo: Streaming
+					<button class="btn btn-default" autocomplete="off" id="start">Start</button>
+				</h1>
+			</div>
+			<div class="container" id="details">
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Demo details</h3>
+						<p>This demo showcases the functionality provided by the Streaming plugin.
+						In particular, it provides three different streaming approaches, namely:</p>
+						<p><ol>
+							<li>An on-demand stream originated by a file (a song, in this case):
+							different users accessing this stream would receive a personal view
+							of the stream itself.</li>
+							<li>A pseudo-live stream, still originated by a file (an audio recording
+							of a radio running commentary): different users accessing this stream
+							would all receive the same, shared view of the stream.</li>
+							<li>A live stream, originated by a gstreamer script: as for the pseudo-live
+							stream, different users will get the same feed.</li>
+						</ol></p>
+						<p>You can try them all within the same session: just choose the stream
+						you're interested in and press the <code>Watch</code> button to start
+						the playout. Stopping it will allow you to switch to a different one.</p>
+						<p>Press the <code>Start</code> button above to launch the demo.</p>
+					</div>
+				</div>
+			</div>
+			<div class="container hide" id="streams">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Streams <i id="update-streams" class="fa fa-refresh" title="Update list of streams" style="cursor: pointer;"></i></h3>
+							</div>
+							<div class="panel-body" id="list">
+								<div class="btn-group btn-group-sm">
+									<button class="btn btn-primary" autocomplete="off" id="watch">Watch or Listen</button>
+									<div class="btn-group btn-group-sm">
+										<button autocomplete="off" id="streamset" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+											Streams list<span class="caret"></span>
+										</button>
+										<ul id="streamslist" class="dropdown-menu" role="menu">
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row hide" id="info">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title"><i class="fa fa-info-circle"></i> Metadata</h3>
+							</div>
+							<div class="panel-body">
+								<pre id="metadata" style="word-break: break-word;"></pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Stream
+								<span class="label label-info hide" id="status"></span>
+								<span class="label label-primary hide" id="curres"></span>
+								<span class="label label-info hide" id="curbitrate"></span>
+							</h3>
+						</div>
+						<div class="panel-body" id="stream"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+	<div class="footer">
+	</div>
+</div>
+
+</body>
+</html>
+
+
+<input type="hidden" name="dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-TOTAL_FORMS" value="1" id="id_dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-TOTAL_FORMS"><input type="hidden" name="dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-INITIAL_FORMS" value="0" id="id_dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-INITIAL_FORMS"><input type="hidden" name="dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-MIN_NUM_FORMS" value="0" id="id_dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-MIN_NUM_FORMS"><input type="hidden" name="dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-MAX_NUM_FORMS" value="1000" id="id_dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-MAX_NUM_FORMS">
+<tr><th><label for="id_dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-0-value">Value:</label></th><td><input type="text" name="dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-0-value" value="9876" class="form-control" id="id_dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-0-value"></td></tr>
+<tr><th><label for="id_dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-0-DELETE">Delete:</label></th><td><input type="checkbox" name="dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-0-DELETE" id="id_dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-0-DELETE"><input type="hidden" name="dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-0-id" value="58839fb9-02a5-400b-b885-0db1545590b6" class="form-control" id="id_dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-0-id"><input type="hidden" name="dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-0-data_transformer" value="dee0a8dc-4486-492f-b8d0-033f566ad7d8" id="id_dee0a8dc-4486-492f-b8d0-033f566ad7d8DataConstantsTransformerInlineFormset-0-data_transformer"></td></tr>
