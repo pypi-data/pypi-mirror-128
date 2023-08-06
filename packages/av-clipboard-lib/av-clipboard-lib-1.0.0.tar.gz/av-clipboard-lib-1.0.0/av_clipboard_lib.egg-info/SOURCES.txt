@@ -1,0 +1,12 @@
+README.md
+setup.py
+av_clipboard_lib/__init__.py
+av_clipboard_lib/av_objects.py
+av_clipboard_lib/base85.py
+av_clipboard_lib/clipboard_data.py
+av_clipboard_lib/varint.py
+av_clipboard_lib.egg-info/PKG-INFO
+av_clipboard_lib.egg-info/SOURCES.txt
+av_clipboard_lib.egg-info/dependency_links.txt
+av_clipboard_lib.egg-info/requires.txt
+av_clipboard_lib.egg-info/top_level.txt
