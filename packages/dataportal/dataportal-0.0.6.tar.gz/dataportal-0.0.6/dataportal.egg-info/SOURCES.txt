@@ -1,0 +1,7 @@
+dataportal.py
+setup.py
+dataportal.egg-info/PKG-INFO
+dataportal.egg-info/SOURCES.txt
+dataportal.egg-info/dependency_links.txt
+dataportal.egg-info/requires.txt
+dataportal.egg-info/top_level.txt
