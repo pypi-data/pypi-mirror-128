@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: protopypes
+Version: 0.1.0
+Summary: 
+Author: mike-fi
+Author-email: 77098525+mike-fi@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: black (>=21.5b1,<22.0)
+Requires-Dist: pretty-errors (>=1.2.24,<2.0.0)
