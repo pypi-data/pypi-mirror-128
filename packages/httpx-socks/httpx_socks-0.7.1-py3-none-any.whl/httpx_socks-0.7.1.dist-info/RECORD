@@ -1,0 +1,10 @@
+httpx_socks/__init__.py,sha256=GNHyWSi0C-jMap74m7pk1Isnks4ksmyBctkGu2x7q_I,448
+httpx_socks/_async_proxy.py,sha256=mMsRCY8JRZ3arYom6pv008HD9C-jwEi8SW_vz84cx98,7852
+httpx_socks/_async_transport.py,sha256=8m7d_W4POA07FOL3iPX-f73QyP0nmrMFPKgsrOfhdLY,3314
+httpx_socks/_sync_proxy.py,sha256=CK4XmC2z572R9zRnwFmHGyvEEQvP1X9h_XgmcnG7UAg,5922
+httpx_socks/_sync_transport.py,sha256=fVPvVbXtgAcjw6ZgsC_IW3xAuAnETb2DGnep5Tw_lTQ,3178
+httpx_socks-0.7.1.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+httpx_socks-0.7.1.dist-info/METADATA,sha256=lprik4fAyZIgEgajqrlNPDSPIz_7zVt7Zy85Ka1veXY,2466
+httpx_socks-0.7.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+httpx_socks-0.7.1.dist-info/top_level.txt,sha256=w-NjPGd_PneJsrpI5kELbCCdbD3YlL8mgwP3WkawJ0s,12
+httpx_socks-0.7.1.dist-info/RECORD,,
