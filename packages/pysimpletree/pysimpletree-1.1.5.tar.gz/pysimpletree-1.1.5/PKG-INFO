@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pysimpletree
+Version: 1.1.5
+Summary: https://github.com/joaocarlos-losfe/pysimpletree
+Author: João Carlos && Vitor Santos
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
