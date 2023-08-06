@@ -1,0 +1,16 @@
+dash_jbrowse/DashJbrowse.py,sha256=4KXF5x8yvWyG1VuFdb7AjFMg5lt1jrQkIdwMe5ZoAgA,2606
+dash_jbrowse/__init__.py,sha256=fGXHDpSHwN6ow6TuVdNJuFFEVQLMauTSGLTW3pJOKEk,2511
+dash_jbrowse/_imports_.py,sha256=7A1DGU5lwRpmmeHDnGBJ75f15Gq0Ailj-HRGDP4WnIA,69
+dash_jbrowse/async-DashJbrowse.js,sha256=QmSkLmJFwWdTwZ7ykGfsH0WEHByU39YAhp5HK0MCoDg,2982028
+dash_jbrowse/async-DashJbrowse.js.map,sha256=t3-_SV_Ez0qz1FHRskXKreZzWKBfwjfvF7GYiKfp5TM,97
+dash_jbrowse/async-null.js,sha256=j11MIuAt3FVvVgjYQPIH0KJTkLZoebf_OaAUFOy4WMA,10865
+dash_jbrowse/async-null.js.map,sha256=20fjnfBhaY1ml5EW28hXG4rAGZT-CjIuLMqDxAIveJM,90
+dash_jbrowse/dash_jbrowse.min.js,sha256=MaeqlsiaBTVn2vWbDykcnrQCPZdk6_id6zh-fsph83w,5694
+dash_jbrowse/dash_jbrowse.min.js.map,sha256=-QyHHI70OP6SEExKwdy8Jz2GyMzZbEL7BmsdRo5zrRM,96
+dash_jbrowse/metadata.json,sha256=JLLkgqW3uAZf84HCf4MLWp3YipXPUW_EtlIa4l1FEm0,3319
+dash_jbrowse/package-info.json,sha256=qFDlam2DB5_hMFMJ7xVuub84rqRRjnSyBdJv0POwoKk,2208
+dash_jbrowse-0.0.1.dist-info/LICENSE,sha256=0UEE0VjiYVURKTnG8fOBlqLCsBI6yoicHECIZR1c2Gk,587
+dash_jbrowse-0.0.1.dist-info/METADATA,sha256=grxVhWEXrO9fxuFU0_vmjnl0Q3yQZAyBStK47WJ0HlM,9361
+dash_jbrowse-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dash_jbrowse-0.0.1.dist-info/top_level.txt,sha256=OMoXn3V6keLR-f1JHCuj_GusALssKslFtWCET-AT3T4,13
+dash_jbrowse-0.0.1.dist-info/RECORD,,
