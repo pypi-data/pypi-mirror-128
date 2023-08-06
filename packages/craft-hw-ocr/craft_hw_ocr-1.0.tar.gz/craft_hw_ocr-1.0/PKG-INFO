@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: craft_hw_ocr
+Version: 1.0
+Summary: Deep learning for document processing
+Home-page: https://github.com/Vishnunkumar/craft_hw_ocr/
+Author: Vishnu N
+Author-email: vishnunkumar25@gmail.com
+License: MIT
+Download-URL: https://github.com/Vishnunkumar/craft_hw_ocr/archive/refs/tags/v-1.0.tar.gz
+Description: UNKNOWN
+Keywords: NLP,OCR,Deep learning,Computer Vision
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
