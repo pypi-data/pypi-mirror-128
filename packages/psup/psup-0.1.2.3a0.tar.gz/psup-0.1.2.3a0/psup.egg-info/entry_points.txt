@@ -1,0 +1,3 @@
+[console_scripts]
+psup = psup.__main__:main
+
