@@ -1,0 +1,6 @@
+earthengine-api>=0.1.230
+ipykernel
+nbformat>=4.2.0
+numpy
+pandas
+plotly
