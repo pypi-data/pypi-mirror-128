@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "geld"
+version = "0.2.0"
+description = "A library to handle money operations"
+authors = ["Affonso Brian Pereira Azevedo <contato.affonsobrian@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/affonsobrian/geld"
+repository = "https://github.com/affonsobrian/geld"
+keywords = ["money", "exchange", "currency", "conversion"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
+aiohttp = "^3.8.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+ipdb = "^0.13.9"
+pre-commit = "^2.15.0"
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

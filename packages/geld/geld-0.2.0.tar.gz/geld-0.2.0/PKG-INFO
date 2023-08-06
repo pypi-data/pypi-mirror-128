@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: geld
+Version: 0.2.0
+Summary: A library to handle money operations
+Home-page: https://github.com/affonsobrian/geld
+License: MIT
+Keywords: money,exchange,currency,conversion
+Author: Affonso Brian Pereira Azevedo
+Author-email: contato.affonsobrian@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Project-URL: Repository, https://github.com/affonsobrian/geld
+Description-Content-Type: text/markdown
+
+# Geld
+
+A library to easily handle currency conversions
+
