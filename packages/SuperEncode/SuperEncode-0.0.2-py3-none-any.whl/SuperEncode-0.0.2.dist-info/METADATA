@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: SuperEncode
+Version: 0.0.2
+Summary: Encode your python script in layers
+Home-page: https://github.com/Rann-Studio/SuperEncode
+Author: RannStudio
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### SuperEncode
+
+**Usage :**
+
+    from SuperEncode import Encode
+    Encode(fileName, layer)
+    
+**Example**
+
+    from SuperEncode import Encode
+    Encode("myFile.py", 5)
+
+
