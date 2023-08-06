@@ -1,0 +1,7 @@
+#! /usr/bin/env python3
+
+from fibonacci.fibonacci import *
+
+print(generate_fibonacci_list(10))
+print(generate_fibonacci_list_with_upperbound(50))
+print(get_next_fibonacci(25))
