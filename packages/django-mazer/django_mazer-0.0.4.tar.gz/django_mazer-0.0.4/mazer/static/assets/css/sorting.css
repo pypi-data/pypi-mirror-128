@@ -1,0 +1,3 @@
+.sorting::after{display: inline-block;font-family: bootstrap-icons !important;font-style: normal;font-weight: normal !important;font-variant: normal;text-transform: none;line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;padding-left: 2px;}
+.sorting.sorting_desc::after{content: "\f575"}
+.sorting.sorting_asc::after{content: "\f57b"}

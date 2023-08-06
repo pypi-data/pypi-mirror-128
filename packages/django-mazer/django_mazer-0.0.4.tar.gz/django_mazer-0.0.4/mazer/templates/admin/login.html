@@ -1,0 +1,119 @@
+{% load i18n static mazer admin_urls %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_current_language_bidi as LANGUAGE_BIDI %}
+{% get_mazer_settings request as mazer_settings %}
+{% get_mazer_ui_tweaks as mazer_ui %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>{% block title %}{{ title }} | {% trans 'Log in again' %}{% endblock %}</title>
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="{% static mazer_settings.site_icon %}" type="image/png">
+    <link rel="icon" href="{% static mazer_settings.site_icon %}" sizes="32x32" type="image/png">
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendors/bootstrap-icons/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/app.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/pages/auth.css' %}">
+
+    {% if mazer_settings.custom_css %}
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{% static mazer_settings.custom_css %}">
+    {% endif %}
+
+    <!-- Google Font: Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    {% block extrastyle %} {% endblock %}
+    {% block extrahead %} {% endblock %}
+</head>
+<body class="hold-transition mazer-login-page">
+
+<div id="auth">
+    <div class="row h-100">
+        <div class="col-lg-5 col-12">
+            <div id="auth-left">
+                <div class="auth-logo">
+                    <a href="index.html">
+                        {% if mazer_settings.site_header %}
+                            {{ mazer_settings.site_header }}
+                        {% else %}
+                            <img src="{% static mazer_settings.site_logo %}" alt="Logo">
+                        {% endif %}
+                    </a>
+                </div>
+                <h1 class="auth-title">{{ mazer_settings.welcome_sign }}</h1>
+                {% if user.is_authenticated %}
+                    <div class="alert alert-danger">
+                        <p>
+                            {% blocktrans trimmed %}
+                                You are authenticated as {{ username }}, but are not authorized to
+                                access this page. Would you like to login to a different account?
+                            {% endblocktrans %}
+                        </p>
+                    </div>
+                {% endif %}
+                {% if form.errors %}
+
+                    {% if form.username.errors %}
+                    <div class="alert alert-danger">
+                        <p>{{ form.username.label }}: {{ form.username.errors|join:', ' }}</p>
+                    </div>
+                    {% endif %}
+
+                    {% if form.password.errors %}
+                    <div class="alert alert-danger">
+                        <p>{{ form.password.label }}: {{ form.password.errors|join:', ' }}</p>
+                    </div>
+                    {% endif %}
+
+                    {% if form.non_field_errors %}
+                    <div class="alert alert-danger">
+                        {% for error in form.non_field_errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                {% endif %}
+
+
+                <form action="{{ app_path }}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group position-relative has-icon-left mb-4">
+                        <input type="text" name="username" class="form-control form-control-xl" placeholder="{{ form.username.label }}" required>
+                        <div class="form-control-icon">
+                            <i class="bi bi-person"></i>
+                        </div>
+                    </div>
+                    <div class="form-group position-relative has-icon-left mb-4">
+                        <input type="password" name="password" class="form-control form-control-xl" placeholder="{{ form.password.label }}" required>
+                        <div class="form-control-icon">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">{% trans "Log in" %}</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-7 d-none d-lg-block">
+            <div id="auth-right">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% if mazer_settings.custom_js %}
+<script src="{% static mazer_settings.custom_js %}"></script>
+{% endif %}
+
+</body>
+</html>
