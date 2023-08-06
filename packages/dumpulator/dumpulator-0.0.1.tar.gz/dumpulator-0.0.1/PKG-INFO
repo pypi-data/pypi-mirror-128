@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: dumpulator
+Version: 0.0.1
+Summary: An easy-to-use library for emulating minidump files
+Home-page: https://github.com/mrexodia/dumpulator
+Author: Duncan Ogilvie
+Author-email: dumpulator@mrexodia.re
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/mrexodia/dumpulator/issues
+Description: # dumpulator
+        
+        **Note: This is a work-in-progress prototype, please treat it as such.**
+        
+        An easy-to-use library for emulating code in minidump files.
+        
+        ## Example
+        
+        The example below opens `test.dmp`, allocates some memory and calls the decryption function at `0x140001000` to decrypt the string at `0x140003000`:
+        
+        ```python
+        from dumpulator import Dumpulator
+        
+        dp = Dumpulator("test.dmp", trace=True)
+        temp_addr = dp.allocate(256)
+        dp.call(0x140001000, [temp_addr, 0x140003000])
+        decrypted = dp.read_str(temp_addr)
+        print(f"decrypted: '{decrypted}'")
+        ```
+        
+        
+        ## Installation
+        
+        To install from source:
+        
+        ```
+        python setup.py install
+        ```
+        
+        Install for a development environment:
+        
+        ```
+        python setup.py install
+        ```
+        
+        From pip (not yet available):
+        
+        ```
+        python -m pip install dumpulator
+        ```
+        
+        ## Credits
+        
+        - [herrcore](https://twitter.com/herrcore) for inspiring me to make this
+        - [secret club](https://secret.club) 
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

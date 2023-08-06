@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/dumpulator/__init__.py
+src/dumpulator/dumpulator.py
+src/dumpulator/native.py
+src/dumpulator/syscalls.py
+src/dumpulator.egg-info/PKG-INFO
+src/dumpulator.egg-info/SOURCES.txt
+src/dumpulator.egg-info/dependency_links.txt
+src/dumpulator.egg-info/requires.txt
+src/dumpulator.egg-info/top_level.txt
