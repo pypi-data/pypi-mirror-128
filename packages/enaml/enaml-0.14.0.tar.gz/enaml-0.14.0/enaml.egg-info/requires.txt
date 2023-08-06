@@ -1,0 +1,12 @@
+atom>=0.7.0
+kiwisolver>=1.2.0
+ply>=3.4
+bytecode>=0.11.0
+
+[qt5-pyqt]
+qtpy
+pyqt5
+
+[qt5-pyside]
+qtpy
+pyside2
