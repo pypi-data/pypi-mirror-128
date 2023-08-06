@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: django_balloon_block_editor
+Version: 0.0.14
+Summary: Implementation of CKEditor's Balloon Block Editor, for Django.
+Home-page: https://github.com/matix-io/django-balloon-block-editor
+Author: Connor Bode
+Author-email: connor@matix.io
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
