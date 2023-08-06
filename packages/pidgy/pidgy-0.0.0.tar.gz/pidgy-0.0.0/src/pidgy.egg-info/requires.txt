@@ -1,0 +1,13 @@
+markdown-it-py
+htmlmin
+jinja2
+
+[kernel]
+jupyter-client
+ipykernel
+
+[test]
+pytest
+nbval
+pandas
+matplotlib
