@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: sumo-output-parsers
+Version: 0.5
+Summary: Fast and lightweight file parsers for SUMO(traffic simulator) output
+License: MIT
+Author: Kensuke Mitsuzawa
+Author-email: kensuke.mit@gmail.com
+Maintainer: Kensuke Mitsuzawa
+Maintainer-email: kensuke.mit@gmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Cython
+Requires-Dist: SumoNetVis
+Requires-Dist: dataclasses
+Requires-Dist: geopandas
+Requires-Dist: geoviews
+Requires-Dist: h5py
+Requires-Dist: hvplot
+Requires-Dist: joblib
+Requires-Dist: more_itertools
+Requires-Dist: moviepy (<1.0.2)
+Requires-Dist: nptyping (>=1.4.1,<2.0.0)
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: tabulate
+Requires-Dist: tqdm (>=4.61.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# What's this?
+
+Fast and lightweight file parsers for Eclipse SUMO(traffic simulator) output.
+
+The SUMO outputs are huge in size and hard to handle.
+
+SUMO team provides scripts to convert from xml into CSV, however, the procedure is troublesome (downloading XSD, executing python script...)
+
+Also, machine learning users take care of matrix data format.
+
+This package provides an easy-to-call python interface to obtain matrix form from SUMO xml files.
+
+# Contributions
+
+- easy-to-call python interfaces to obtain matrix form from SUMO xml files
+- easy-to-call python interfaces to visualize SUMO simulations
+
+![Example of animation](https://user-images.githubusercontent.com/1772712/135924848-4a938dd2-b2d3-4dfe-bfd6-94904086c382.gif)
+
+# Sample
+
+See `sample.py`
+
+# Test
+
+```
+pytest tests
+```
+
+# License
+
+```
+@misc{sumo-output-parsers,
+  author = {Kensuke Mitsuzawa},
+  title = {sumo_output_parsers},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{}},
+}
+```
