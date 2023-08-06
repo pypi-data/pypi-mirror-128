@@ -1,0 +1,10 @@
+ws_bulk_report_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ws_bulk_report_generator/_version.py,sha256=Cu2jyssZZp54Gn7fXWUJW20Dn2tnQoUnhsTv51-yH_Q,148
+ws_bulk_report_generator/bulk-reports-generator.py,sha256=ddnjHjB-qz-3Hq7SXCDSkvQDV7n5VShF1vDOhyIDHu4,6754
+ws_bulk_report_generator/bulk_report_generator.py,sha256=HWuwRM7MLSYlW3T62PWUY0KMwZj9kNiDMqwOq3wy3o8,7283
+ws_bulk_report_generator-0.1.4.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ws_bulk_report_generator-0.1.4.1.dist-info/METADATA,sha256=-caR8imm9_c65yWjwNZcxca63vDLiIg13VHyEMqnXo8,4669
+ws_bulk_report_generator-0.1.4.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ws_bulk_report_generator-0.1.4.1.dist-info/entry_points.txt,sha256=JMGjGNSgktHg8QLRIh9ljqxdaWRdkwMqEBUpsaes4dE,95
+ws_bulk_report_generator-0.1.4.1.dist-info/top_level.txt,sha256=ZYeKEudo_Hw0ydDz1FFRSyEUy9gr5JDmSCx4Yvp0Ci8,25
+ws_bulk_report_generator-0.1.4.1.dist-info/RECORD,,
