@@ -1,0 +1,7 @@
+README.md
+setup.py
+PRESCIENTnb.egg-info/PKG-INFO
+PRESCIENTnb.egg-info/SOURCES.txt
+PRESCIENTnb.egg-info/dependency_links.txt
+PRESCIENTnb.egg-info/requires.txt
+PRESCIENTnb.egg-info/top_level.txt
