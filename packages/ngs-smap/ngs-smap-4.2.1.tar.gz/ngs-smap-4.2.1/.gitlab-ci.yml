@@ -1,0 +1,133 @@
+image: python:3.9
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+
+stages:
+  - linting
+  - test
+  - coverage
+# - staging
+
+flake8:
+  stage: linting
+  image: python:3.7
+  before_script:
+    - python -V
+    - pip install -U pip
+    - pip install flake8
+  script:
+    - flake8 --verbose .
+
+
+test3.7:
+  stage: test
+  image: python:3.7
+  before_script:
+    - python -V
+    - pip install -U pip wheel
+    - pip install .
+
+  script:
+    - python -m unittest discover -v -s ./test -p test_*.py
+
+test3.8:
+  stage: test
+  image: python:3.8
+  before_script:
+    - python -V
+    - pip install -U pip wheel
+    - pip install .
+
+  script:
+    - python -m unittest discover -v -s ./test -p test_*.py
+
+test3.9:
+  stage: test
+  image: python:3.9
+  before_script:
+    - python -V
+    - pip install -U pip wheel
+    - pip install .
+
+  script:
+    - python -m unittest discover -v -s ./test -p test_*.py
+
+
+test3.10:
+  stage: test
+  image: python:3.10
+  before_script:
+    - python -V
+    - pip install -U pip wheel
+    - pip install .
+
+  script:
+    - python -m unittest discover -v -s ./test -p test_*.py
+
+test_documentation:
+  stage: test
+  image: python:3.7
+  before_script:
+    - pip install -U pip
+    - pip install .[docs]
+  script:
+    - cd docs
+    - sphinx-build -M html . build -W
+
+coverage:
+  stage: coverage
+  before_script:
+    - pip install -U pip
+    - pip install .
+    - pip install coverage
+  script:
+    - coverage run --source smap -m unittest discover -s test/ -p "test_*.py" &> /dev/null
+    - coverage report -m
+  coverage: /TOTAL.*\s+(\d+%)$/
+
+
+# test:
+#   stage: test
+#   before_script:
+#     - apt-get update && apt-get install -y libopenblas-dev
+#     - python -V  # Print out python version for debugging
+#     - python -m venv .venv
+#     - pip install -U pip wheel
+#     - source .venv/bin/activate
+#     - pip install .
+
+#   script:
+#     - python -m unittest discover -v -s ./test -p test_*.py
+    
+
+# staging:
+#   stage: staging
+#   image: python:3.8
+#   before_script:
+#     - 'command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )'
+#     - eval $(ssh-agent -s)
+#     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+#     - mkdir -p ~/.ssh
+#     - chmod 700 ~/.ssh
+#     - echo "$SSH_KNOWN_HOSTS" >> ~/.ssh/known_hosts
+#     - chmod 644 ~/.ssh/known_hosts
+#     - host_ip=$(/sbin/ip route|awk '/default/ { print $3 }')
+#     - echo "$host_ip"
+#     - ssh -T root@$host_ip <<EOM
+#     - git config --global user.email "$GITLAB_USER_EMAIL"
+#     - git config --global user.name "$GITLAB_USER_ID"
+#   only:
+#     - master
+#   script:
+#     - rm -rf smap
+#     - git clone git@gitlab.com:truttink/smap.git
+#     - cd smap
+#     - git checkout master
+#     - git reset --hard origin/master
+#     - git merge $CI_BUILD_REF
+#     - python3.8 -m pip install -U .[smap-haplotype-window]
