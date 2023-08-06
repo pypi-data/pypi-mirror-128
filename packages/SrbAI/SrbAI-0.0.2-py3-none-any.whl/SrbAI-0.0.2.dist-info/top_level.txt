@@ -1,0 +1,6 @@
+Alati
+Glas
+JezickiModeli
+Klasifikatori
+NER
+SintaktickiOperatori

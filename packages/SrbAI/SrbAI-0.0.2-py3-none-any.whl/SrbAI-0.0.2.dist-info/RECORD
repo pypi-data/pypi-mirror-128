@@ -1,0 +1,14 @@
+Alati/Transliterator.py,sha256=VUNCQ0AA7oZUdzefh1xBZi2V6Sy5zAtoi94K8HY3ahc,2853
+Alati/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Glas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+JezickiModeli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Klasifikatori/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+NER/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SintaktickiOperatori/POS_tagger.py,sha256=_eFW4dzEtidjvmSBdftuxzVAQLB-ef2fJmo1uYzBL2c,1149
+SintaktickiOperatori/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SintaktickiOperatori/stemmer_nm.py,sha256=M-g0Ib7OXAxwaYzcB8t5plKDA7-TG5oUZi4nGKgzkNA,8410
+SrbAI-0.0.2.dist-info/LICENSE,sha256=PbHmdjx7Wogk0ea2XiOWXgpa1zIb_s8eXY-V2scH3Xc,1057
+SrbAI-0.0.2.dist-info/METADATA,sha256=fAQXarl9n_OPDm9H360PtMc961w9PYgyeNp4tccDM5o,3557
+SrbAI-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+SrbAI-0.0.2.dist-info/top_level.txt,sha256=gBNDo4o28uRLfNopHNDhWXxK0Pd_sbOKGMmsh_0YulQ,64
+SrbAI-0.0.2.dist-info/RECORD,,
