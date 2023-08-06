@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: file_manager_integration
+Version: 0.1.1
+Summary: Integration of scripts into various Unix file managers
+Home-page: https://github.com/blackstream-x/file-manager-integration
+Author: Rainer Schwarzbach
+Author-email: undisclosed@example.com
+License: UNKNOWN
+Project-URL: Documentation, https://github.com/blackstream-x/file-manager-integration
+Project-URL: Source, https://github.com/blackstream-x/file-manager-integration
+Project-URL: Tracker, https://github.com/blackstream-x/file-manager-integration/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Desktop Environment :: File Managers
+Classifier: Operating System :: POSIX
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# file-manager-integration
+
+File manager integration for scripts
+
+## Supported file managers
+
+### implemented
+
+- Nautilus (GNOME)
+- Nemo (Cinnamon)
+
+### planned support
+
+- Caja (MATE)
+- KDE file manager
+- PCManFM (LXDE)
+- Thunar (XFCE)
+
+## Scripts requirements
+
+The scripts being integrated **must** support the following:
+
+For script integration:
+Read the selected file or directory from environment variables:
+`CAJA_SCRIPT_SELECTED_FILE_PATHS` for Caja,
+`NAUTILUS_SCRIPT_SELECTED_FILE_PATHS` for Nautilus,
+`NEMO_SCRIPT_SELECTED_FILE_PATHS` for Nemo.
+
+For action integration:
+Read the selected file or directory as a single command line argument.
+
+The scripts **should** provide a graphical user interface.
+
+
+
