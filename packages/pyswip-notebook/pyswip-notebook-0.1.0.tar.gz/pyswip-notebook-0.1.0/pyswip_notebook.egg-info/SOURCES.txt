@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pyswip_notebook/__init__.py
+pyswip_notebook/_version.py
+pyswip_notebook/prolog_notebook.py
+pyswip_notebook.egg-info/PKG-INFO
+pyswip_notebook.egg-info/SOURCES.txt
+pyswip_notebook.egg-info/dependency_links.txt
+pyswip_notebook.egg-info/requires.txt
+pyswip_notebook.egg-info/top_level.txt
+pyswip_notebook.egg-info/zip-safe
