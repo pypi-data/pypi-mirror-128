@@ -1,0 +1,13 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+src/hottohpy/__init__.py
+src/hottohpy/client.py
+src/hottohpy/const.py
+src/hottohpy/hottoh.py
+src/hottohpy/request.py
+src/hottohpy.egg-info/PKG-INFO
+src/hottohpy.egg-info/SOURCES.txt
+src/hottohpy.egg-info/dependency_links.txt
+src/hottohpy.egg-info/top_level.txt
