@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: django-jsonform
+Version: 2.5.0
+Summary: A user-friendly JSON editing form for Django admin.
+Home-page: https://www.github.com/bhch/django-jsonform
+Author: Bharat Chauhan
+Author-email: tell.bhch@gmail.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<p align="center">
+  <img src="docs/_static/logo.png" width="200" alt="django-jsonform icon">
+</p>
+
+<p align="center">
+    A user-friendly JSON editing form for django admin.
+</p>
+
+<p align="center">
+    <a href="http://django-jsonform.rtfd.io">Documentation</a> &bull;
+    <code>Django &gt;= 2.0</code>
+</p>
+
+## Features
+
+ - [x] File uploads
+ - [x] Postgres `ArrayField`
+ - [x] Many inputs and field types
+ - [x] UI matches with Django admin's
+ - [ ] Validation
+ - [ ] Recursion (nesting with self references)
+
+## Screenshots
+
+Here's a screenshot of items being added to a shopping list (JSON array) dynamically:
+
+![django-jsonform screenshot](docs/_static/quickstart.gif)
+
+## Install
+
+Install via pip:
+
+```sh
+$ pip install django-jsonform
+```
+
+Edit your *settings.py* file:
+
+```python
+# settings.py
+
+INSTALLED_APPS = [
+    # ...
+    'django_jsonform'
+]
+```
+
+## Documentation
+
+Quickstart and usage docs can be found at [http://django-jsonform.rtfd.io](http://django-jsonform.rtfd.io).
+
+
+## License
+
+[BSD-3-Clause](LICENSE.txt)
+
+---
+
+If you've found this library useful, and if you wish to support me you can:
+
+<a href="https://www.buymeacoffee.com/bhch">
+    <img src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg" width="170">
+</a>
+
+
