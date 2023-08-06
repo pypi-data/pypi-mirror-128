@@ -1,0 +1,13 @@
+README.md
+setup.py
+tfmc/__init__.py
+tfmc/dissimilarities.csv
+tfmc/machine_parts.json
+tfmc/machine_parts_pp.py
+tfmc/parts.csv
+tfmc_machine_parts_pp.egg-info/PKG-INFO
+tfmc_machine_parts_pp.egg-info/SOURCES.txt
+tfmc_machine_parts_pp.egg-info/dependency_links.txt
+tfmc_machine_parts_pp.egg-info/not-zip-safe
+tfmc_machine_parts_pp.egg-info/requires.txt
+tfmc_machine_parts_pp.egg-info/top_level.txt
