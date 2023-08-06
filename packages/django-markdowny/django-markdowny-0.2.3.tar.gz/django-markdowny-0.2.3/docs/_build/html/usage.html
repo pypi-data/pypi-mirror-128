@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usage &mdash; Django Markdowny 0.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Settings" href="settings.html" />
+    <link rel="prev" title="Install" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Django Markdowny
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#html">HTML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#customize-with-keyword-arguments">Customize with keyword arguments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Tests</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Django Markdowny</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Usage</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="usage">
+<span id="id1"></span><h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<section id="html">
+<h2>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h2>
+<p>Load the template tags.</p>
+<div class="highlight-django notranslate"><div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">load</span> <span class="nv">markdowny_tags</span> <span class="cp">%}</span><span class="x"></span>
+</pre></div>
+</div>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">{%</span> <span class="pre">markdowny</span> <span class="pre">%}</span></code> template tag to convert Markdown into HTML.</p>
+<div class="highlight-django notranslate"><div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">markdowny</span> <span class="cp">%}</span><span class="x">Hello, world!</span><span class="cp">{%</span> <span class="k">endmarkdowny</span> <span class="cp">%}</span><span class="x"></span>
+</pre></div>
+</div>
+<p>Or use it as a template filter.</p>
+<div class="highlight-django notranslate"><div class="highlight"><pre><span></span><span class="cp">{{</span> <span class="nv">post.body</span><span class="o">|</span><span class="nf">markdowny</span> <span class="cp">}}</span><span class="x"></span>
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="customize-with-keyword-arguments">
+<h2>Customize with keyword arguments<a class="headerlink" href="#customize-with-keyword-arguments" title="Permalink to this headline">¶</a></h2>
+<p>Additionally customize the behavior of the <code class="docutils literal notranslate"><span class="pre">{%</span> <span class="pre">markdowny</span> <span class="pre">%}</span></code> tag with keyword arguments that correspond to those of Python-Markdown’s <a class="reference external" href="https://python-markdown.github.io/reference/#markdown"><code class="docutils literal notranslate"><span class="pre">markdown</span></code></a> method.</p>
+<div class="highlight-django notranslate"><div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">markdowny</span> <span class="nv">output_format</span><span class="o">=</span><span class="s1">&#39;xhtml&#39;</span> <span class="nv">tab_length</span><span class="o">=</span><span class="m">2</span> <span class="cp">%}</span><span class="x">Hello, world!</span><span class="cp">{%</span> <span class="k">endmarkdowny</span> <span class="cp">%}</span><span class="x"></span>
+</pre></div>
+</div>
+<p>At the time of this writing, arguments include:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">extensions</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">extension_configs</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">output_format</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tab_length</span></code></p></li>
+</ul>
+<p>Django’s template language <a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/templates/language/">cannot interpret native Python code</a>. However, keyword arguments in template tags can declaratively accept strings and numbers; that is, when specifying <code class="docutils literal notranslate"><span class="pre">output_format</span></code> and/or <code class="docutils literal notranslate"><span class="pre">tab_length</span></code>, their values–<code class="docutils literal notranslate"><span class="pre">'xhtml'</span></code> and <code class="docutils literal notranslate"><span class="pre">2</span></code> in the prior example, respectively–can be assigned upon declaration. The other keyword arguments–<code class="docutils literal notranslate"><span class="pre">extensions</span></code> and <code class="docutils literal notranslate"><span class="pre">extension_configs</span></code>–cannot accept a declarative assignment because <a class="reference external" href="https://python-markdown.github.io/reference/#markdown"><code class="docutils literal notranslate"><span class="pre">markdown</span></code></a> expects a native Python list and dictionary, respectively.</p>
+<p>Therefore, if specifying <code class="docutils literal notranslate"><span class="pre">extensions</span></code> and/or <code class="docutils literal notranslate"><span class="pre">extension_configs</span></code> in the template tag, their values should be made available by the template context. For example, if one wanted <code class="docutils literal notranslate"><span class="pre">extensions</span></code> declared in the template tag and <code class="docutils literal notranslate"><span class="pre">my_extensions</span></code> existed in the template context:</p>
+<div class="highlight-django notranslate"><div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">markdowny</span> <span class="nv">extensions</span><span class="o">=</span><span class="nv">my_extensions</span> <span class="cp">%}</span><span class="x">Hello, world!</span><span class="cp">{%</span> <span class="k">endmarkdowny</span> <span class="cp">%}</span><span class="x"></span>
+</pre></div>
+</div>
+<p>The view (or middleware, context processor, etc.) should then make <code class="docutils literal notranslate"><span class="pre">my_extensions</span></code> available.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">render</span>
+
+<span class="k">def</span> <span class="nf">my_view</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s1">&#39;my_template.html&#39;</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;my_extensions&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;abbr&#39;</span><span class="p">],</span>
+    <span class="p">})</span>
+</pre></div>
+</div>
+<p>Likewise for <code class="docutils literal notranslate"><span class="pre">extension_configs</span></code> and its expectation of a dictionary. Like <code class="docutils literal notranslate"><span class="pre">extensions</span></code> and <code class="docutils literal notranslate"><span class="pre">extension_configs</span></code>, the <code class="docutils literal notranslate"><span class="pre">output_format</span></code> and <code class="docutils literal notranslate"><span class="pre">tab_length</span></code> keyword arguments can also accept template variables as their values should you choose.</p>
+<div class="highlight-django notranslate"><div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">markdowny</span> <span class="nv">output_format</span><span class="o">=</span><span class="nv">my_output_format</span> <span class="nv">tab_length</span><span class="o">=</span><span class="nv">my_tab_length</span> <span class="cp">%}</span><span class="x">Hello, world!</span><span class="cp">{%</span> <span class="k">endmarkdowny</span> <span class="cp">%}</span><span class="x"></span>
+</pre></div>
+</div>
+<p>If a required template variable does not exist in the context, then its value from the project’s settings will be used, falling back to the default app <a class="reference internal" href="settings.html#settings"><span class="std std-ref">Settings</span></a> as a last resort.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Previous versions of the template tag expected keyword arguments as strings mimicking the appearance of native Python types; e.g., <code class="docutils literal notranslate"><span class="pre">{%</span> <span class="pre">markdowny</span> <span class="pre">extensions='[&quot;abbr&quot;]'</span> <span class="pre">%}Hello,</span> <span class="pre">world!{%</span> <span class="pre">endmarkdowny</span> <span class="pre">%}</span></code>. This is always a bad idea, and the behavior has since been removed.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="install.html" class="btn btn-neutral float-left" title="Install" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="settings.html" class="btn btn-neutral float-right" title="Settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Richard Cornish.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
