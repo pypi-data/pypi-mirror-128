@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyslime
+Version: 0.1
+Summary: Tools for analyzing output of Monte Carlo Physarum Machine models
+Home-page: https://github.com/mattcwilde/pyslime
+Author: PypeIt Collaboration
+Author-email: jnb@nmsu.edu
+License: BSD-3
+Keywords: astronomy,cosmology,dark matter
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Description-Content-Type: text/markdown
+
+pyslime
+=======
+
+This software package enables simple loading and analysis of output from Monte Carlo Physarum Machine models.
+
+For basic usage:
+```
+from pyslime import slime
+slimeobj = slime.Slime.from_dir(mydir)
+```
+where `mydir` is the path to the full MCPM output directory
+
