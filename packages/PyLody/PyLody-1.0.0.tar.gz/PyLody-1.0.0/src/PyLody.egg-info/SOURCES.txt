@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/PyLody.egg-info/PKG-INFO
+src/PyLody.egg-info/SOURCES.txt
+src/PyLody.egg-info/dependency_links.txt
+src/PyLody.egg-info/top_level.txt
+src/pylody/__init__.py
+src/pylody/elements.py
+src/pylody/parser.py
