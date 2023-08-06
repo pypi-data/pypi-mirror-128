@@ -1,0 +1,10 @@
+LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+skillflux/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skillflux/apps.py,sha256=ToXZwRxIjGt73yD_aOpT_kwWhnF9cpSGhp7p5Dr3dv0,93
+skillflux/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skillflux/models.py,sha256=xhPaNYZYOrVPhxnRyc3Ofw-eF_ZL5kB6i_J9yjmHji4,7749
+skillflux/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_skillflux-1.0.dev0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+django_skillflux-1.0.dev0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+django_skillflux-1.0.dev0.dist-info/METADATA,sha256=6QlojeCshNTOmmuZytzLlDDt2TPBD658UGVawX5Qz9Y,979
+django_skillflux-1.0.dev0.dist-info/RECORD,,
