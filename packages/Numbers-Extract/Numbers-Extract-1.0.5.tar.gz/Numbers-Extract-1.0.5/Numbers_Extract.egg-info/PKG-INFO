@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: Numbers-Extract
+Version: 1.0.5
+Summary: Numbers extract from string
+Home-page: UNKNOWN
+Author: Fayas Noushad
+Author-email: contact@fayas.me
+License: MIT
+Project-URL: Tracker, https://github.com/FayasNoushad/Numbers-Extract/issues
+Project-URL: Source, https://github.com/FayasNoushad/Numbers-Extract
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+```
+Made with Python3
+(C) @FayasNoushad
+Copyright permission under MIT License
+License -> https://github.com/FayasNoushad/Numbers-Extract/blob/main/LICENSE
+```
+
+---
+
+## Installation
+
+```
+pip install Numbers-Extract
+```
+
+---
+
+## Usage
+
+```py
+import numbers_extract
+
+string = """Hello,
+You can contact me.
+Ph No. +910000000000"""
+print(numbers_extract.extract(string))
+# => ['+910000000000']
+```
+
+---
+
+## Credits
+
+- [Fayas Noushad](https://github.com/FayasNoushad)
+
+---
+
+
