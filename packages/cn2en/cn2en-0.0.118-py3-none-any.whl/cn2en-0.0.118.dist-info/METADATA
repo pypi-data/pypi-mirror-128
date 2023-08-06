@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: cn2en
+Version: 0.0.118
+Summary: Translate Chinese into English using Seq2Seq deep learning model
+Home-page: https://github.com/chientrm/cn2en
+Author: Chien Tran
+Author-email: chientrm@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/chientrm/cn2en/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib (>=3.4.3)
+Requires-Dist: torch (>=1.9.1@https://download.pytorch.org/whl/cpu/torch_stable.html)
+
+# Chinese to English translation
+
+This package provide the function to translate a Chinese sentence into an English sentence.
+
+## Requirements
+
+- Python version >= 3.6 and <= 3.9
+
+## Install
+
+```
+pip install cn2en
+```
+
+## Usage
+
+```
+from cn2en.model import Model
+
+model = Model()
+print(model.translate('湯姆不在床上。'))
+```
+
+
