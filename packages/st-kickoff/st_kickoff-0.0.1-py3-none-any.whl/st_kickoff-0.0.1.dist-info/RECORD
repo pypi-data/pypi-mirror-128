@@ -1,0 +1,11 @@
+source/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+source/main.py,sha256=B0dlKEdalXEAzP7h1gjTitSJgGJ2CvYZJjZznJ-mjms,2145
+st/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+st/main.py,sha256=3msYhC-Evbb6eEsBqFXQattWFKTK8dmGrK2zcthLQDc,2116
+st/st.py,sha256=sGHC-2cO-uLjw7ACBHJkn422tVbGZCSyjsAhZpXm8Uw,2154
+st_kickoff-0.0.1.dist-info/LICENSE,sha256=nQ73D-JN7s_v3OT2To3Mfwa0ZpVEYdr_iZ7447yNJxI,1083
+st_kickoff-0.0.1.dist-info/METADATA,sha256=QP5-BaVNkBtZm_-V5hKbA1FVaHKQm77AygZ76s6FX5k,665
+st_kickoff-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+st_kickoff-0.0.1.dist-info/entry_points.txt,sha256=RFiXOY0Tjcf_kg9gcq30bW7x7PaexmqZ-dijn1oPb5c,39
+st_kickoff-0.0.1.dist-info/top_level.txt,sha256=uLsDT5tjvQJU-8fBV8rnRsdYU_RkPWzqhE3EjdtX9SI,7
+st_kickoff-0.0.1.dist-info/RECORD,,
