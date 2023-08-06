@@ -1,0 +1,8 @@
+README.md
+setup.py
+segdisplaydecoder/BCD7segD.py
+segdisplaydecoder/__init__.py
+segdisplaydecoder.egg-info/PKG-INFO
+segdisplaydecoder.egg-info/SOURCES.txt
+segdisplaydecoder.egg-info/dependency_links.txt
+segdisplaydecoder.egg-info/top_level.txt

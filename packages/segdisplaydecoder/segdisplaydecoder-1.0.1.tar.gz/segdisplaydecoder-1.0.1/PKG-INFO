@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: segdisplaydecoder
+Version: 1.0.1
+Summary: BCD to 7 Segment Display Decoder
+Home-page: UNKNOWN
+Author: Rounak Shaw , Prasun Roy
+Author-email: prasunroyinfo@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: python,decoder,displaydecoder
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
