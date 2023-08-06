@@ -1,0 +1,6 @@
+wcmatch
+pyyaml
+paramiko
+tqdm
+connectome>=0.0.8<0.1.0
+pydantic
