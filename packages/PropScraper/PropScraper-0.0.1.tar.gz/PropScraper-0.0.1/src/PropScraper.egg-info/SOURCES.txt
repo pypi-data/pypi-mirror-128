@@ -1,0 +1,11 @@
+README.rst
+pyproject.toml
+setup.py
+src/PropScraper.egg-info/PKG-INFO
+src/PropScraper.egg-info/SOURCES.txt
+src/PropScraper.egg-info/dependency_links.txt
+src/PropScraper.egg-info/requires.txt
+src/PropScraper.egg-info/top_level.txt
+src/propscraper/__init__.py
+src/propscraper/propertydataextractor.py
+src/propscraper/propscraper.py

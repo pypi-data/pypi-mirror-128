@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PropScraper
+Version: 0.0.1
+Summary: Web scraper for real state websites
+Home-page: https://bitbucket.org/jfdez/propscraper
+Author: Jordi Fernández
+Author-email: jordi.feca@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+PropScraper
+===========
+
+PropScraper is a web scraper. It allows you to extract some information from real state websites.
+
+License
+-------
+
+PropScraper is offered under the `GNU AGPLv3
+<https://gnu.org/licenses/agpl.html>`_.
+
+
+
