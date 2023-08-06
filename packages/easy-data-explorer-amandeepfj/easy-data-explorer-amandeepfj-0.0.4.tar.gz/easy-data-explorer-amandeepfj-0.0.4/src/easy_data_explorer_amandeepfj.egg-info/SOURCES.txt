@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/easy_data_explorer/__init__.py
+src/easy_data_explorer/easy_data_explorer.py
+src/easy_data_explorer_amandeepfj.egg-info/PKG-INFO
+src/easy_data_explorer_amandeepfj.egg-info/SOURCES.txt
+src/easy_data_explorer_amandeepfj.egg-info/dependency_links.txt
+src/easy_data_explorer_amandeepfj.egg-info/requires.txt
+src/easy_data_explorer_amandeepfj.egg-info/top_level.txt
