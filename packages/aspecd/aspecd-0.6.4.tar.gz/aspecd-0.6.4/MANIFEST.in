@@ -1,0 +1,14 @@
+# Include the README
+include README*
+
+# Include the VERSION
+include VERSION
+
+# Include the LICENSE
+include LICENSE*
+
+# Include mapper recipes
+include aspecd/*_mapper.yaml
+
+# Include templates
+recursive-include aspecd/templates *
