@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "console_debugger"
+version = "0.1.8.8"
+description = "Это подключаемая библиотека, для удобного вывода отладочной информации."
+authors = ["Denis Kustov <denis-kustov@rambler.ru>"]
+license = "Apache-2.0"
+readme = "console_debugger/README.md"
+homepage = "https://github.com/denisxab/console_debugger"
+repository = "https://github.com/denisxab/console_debugger"
+keywords = ["debug", "console", "test", "profiling", "log", "print"]
+
+exclude = [
+    "console_debugger/.idea",
+    "console_debugger/venv",
+    "console_debugger/.git",
+    "console_debugger/.gitignore",
+    "console_debugger/console_debugger.socket",
+    "console_debugger/gui/static/config.txt",
+]
+
+[tool.poetry.dependencies]
+python = "^3.5"
+urwid = "^2.1.2"
+
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
