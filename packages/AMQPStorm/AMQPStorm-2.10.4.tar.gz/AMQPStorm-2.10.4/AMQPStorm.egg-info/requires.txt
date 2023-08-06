@@ -1,0 +1,7 @@
+pamqp<3.0,>=2.0.0
+
+[management]
+requests>2
+
+[pool]
+amqpstorm-pool
