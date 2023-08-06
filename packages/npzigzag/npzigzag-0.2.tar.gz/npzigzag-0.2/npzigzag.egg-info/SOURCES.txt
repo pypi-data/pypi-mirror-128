@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+npzigzag/__init__.py
+npzigzag/core.py
+npzigzag.egg-info/PKG-INFO
+npzigzag.egg-info/SOURCES.txt
+npzigzag.egg-info/dependency_links.txt
+npzigzag.egg-info/requires.txt
+npzigzag.egg-info/top_level.txt
