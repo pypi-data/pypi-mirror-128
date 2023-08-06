@@ -1,0 +1,13 @@
+numpy>=1.12
+scipy>=0.19.1
+imageio
+matplotlib
+jaxlib>=0.1.70
+jax>=0.2.19
+flax
+bm3d
+svmbir
+
+[tests]
+pytest
+pytest-runner
