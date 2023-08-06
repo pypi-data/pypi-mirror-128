@@ -1,0 +1,8 @@
+hdbscan
+loguru
+numpy
+pacmap
+pytextrank
+seaborn
+sentence-transformers
+umap-learn
