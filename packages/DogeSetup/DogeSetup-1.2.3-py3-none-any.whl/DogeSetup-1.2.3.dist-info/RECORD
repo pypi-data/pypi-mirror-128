@@ -1,0 +1,14 @@
+dogesetup/__init__.py,sha256=FZ-pYsYYnBsRg4VyGhIqtZDVMuo9SKLI80jSpEHaTRo,3118
+dogesetup/__main__.py,sha256=yRicTiiKe03DLkniJmn6x9x-g96mHuRbQQb9R4aSDAU,3965
+dogesetup/heroku.py,sha256=gpARcPvsx9R-HCLBx6Op-zN9pco_GIFQlyx4rQF5C74,2940
+dogesetup/keys.py,sha256=E8IdLxYgeEOWa7kOhgd3-bD2iBqNir5yc4zPuAMqHP4,661
+dogesetup/language.py,sha256=nGrmiCjZvD8iyJMUrRTW0XY7KqBjy8-ZrlnAwDo297I,2024
+dogesetup/session.py,sha256=XvZoHFMr_foN1KIBF7fuYZL6mfximadky0m55dWB4Mg,4440
+dogesetup/languages/DOGE-EN.json.py,sha256=LJAFCSOadd4bPzHAk4Eo6u-uLeYBGGpHcjInzqzBXUQ,6379
+dogesetup/languages/DOGE-TR.json.py,sha256=_59rdijIbkmTrzR7Cz-rE3kGpKk1o7trVJtXnCjTkw8,6769
+dogesetup/languages/__init__.py,sha256=PReT20H542aXXket0h82Z5Qs8ikKQ1LqRfTD8KNLFqM,323
+DogeSetup-1.2.3.dist-info/LICENSE,sha256=HiIVjZAL-svT464rItCE9E3Io0M763ky63oYgmGxXP0,34496
+DogeSetup-1.2.3.dist-info/METADATA,sha256=280mKmEwOmeH4TUEKQ9akOwWgzDY6uU4a8Wn9G6rIDM,2388
+DogeSetup-1.2.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+DogeSetup-1.2.3.dist-info/top_level.txt,sha256=MoujW8WzSy24h24YT6sXIwWXf0nLzDesUd1rE_4E-Gc,10
+DogeSetup-1.2.3.dist-info/RECORD,,
