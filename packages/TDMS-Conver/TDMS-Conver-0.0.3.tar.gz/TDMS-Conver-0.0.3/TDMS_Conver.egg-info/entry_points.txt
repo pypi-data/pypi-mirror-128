@@ -1,0 +1,3 @@
+[console_scripts]
+tdms-conver = conver.main:main
+

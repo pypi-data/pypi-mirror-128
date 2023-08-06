@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+TDMS_Conver.egg-info/PKG-INFO
+TDMS_Conver.egg-info/SOURCES.txt
+TDMS_Conver.egg-info/dependency_links.txt
+TDMS_Conver.egg-info/entry_points.txt
+TDMS_Conver.egg-info/requires.txt
+TDMS_Conver.egg-info/top_level.txt
+conver/__init__.py
+conver/main.py
