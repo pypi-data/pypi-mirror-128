@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+multipurpose_discord.egg-info/PKG-INFO
+multipurpose_discord.egg-info/SOURCES.txt
+multipurpose_discord.egg-info/dependency_links.txt
+multipurpose_discord.egg-info/top_level.txt
+multipurposediscord/__init__.py
