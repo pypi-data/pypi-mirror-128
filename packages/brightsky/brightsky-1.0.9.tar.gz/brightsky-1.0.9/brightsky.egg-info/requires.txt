@@ -1,0 +1,12 @@
+astral
+click
+coloredlogs
+falcon==2.*
+falcon-cors
+gunicorn
+huey[redis]
+parsel
+psycopg2-binary<2.9
+python-dateutil
+requests
+sentry-sdk
