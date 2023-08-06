@@ -1,0 +1,4 @@
+[console_scripts]
+git-phoenix = src.git_phoenix:main
+git-px = src.git_phoenix:main
+
