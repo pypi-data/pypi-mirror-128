@@ -1,0 +1,1 @@
+conn = 'clickhouse://default:Imsn0wfree@45.76.43.238:8123/system'
