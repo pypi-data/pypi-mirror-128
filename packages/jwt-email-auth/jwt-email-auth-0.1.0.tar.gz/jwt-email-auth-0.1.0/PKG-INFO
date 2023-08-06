@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: jwt-email-auth
+Version: 0.1.0
+Summary: JWT authentication from email login codes.
+Home-page: https://github.com/MrThearMan/jwt-email-auth
+License: MIT
+Keywords: django,djangorestframework,drf,email,code,login,jwt,auth,authentication
+Author: Matti Lamppu
+Author-email: lamppu.matti.akseli@gmail.com
+Requires-Python: >=3.8,<4
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.2.9,<4.0.0)
+Requires-Dist: PyJWT (>=2.3.0,<3.0.0)
+Requires-Dist: cryptography (>=36.0.0,<37.0.0)
+Requires-Dist: django-ipware (>=4.0.0,<5.0.0)
+Requires-Dist: djangorestframework (>=3.12.2,<4.0.0)
+Project-URL: Bug Tracker, https://github.com/MrThearMan/drf-pipeline-views/issues
+Project-URL: Repository, https://github.com/MrThearMan/jwt-email-auth
+Description-Content-Type: text/markdown
+
+# JSON Web Token Email Authentiation
+
+[![Coverage Status](https://coveralls.io/repos/github/MrThearMan/jwt-email-auth/badge.svg?branch=main)](https://coveralls.io/github/MrThearMan/jwt-email-auth?branch=main)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/MrThearMan/jwt-email-auth/Tests)](https://github.com/MrThearMan/jwt-email-auth/actions/workflows/main.yml)
+[![PyPI](https://img.shields.io/pypi/v/jwt-email-auth)](https://pypi.org/project/jwt-email-auth)
+[![GitHub](https://img.shields.io/github/license/MrThearMan/jwt-email-auth)](https://github.com/MrThearMan/jwt-email-auth/blob/main/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/MrThearMan/jwt-email-auth)](https://github.com/MrThearMan/jwt-email-auth/commits/main)
+[![GitHub issues](https://img.shields.io/github/issues-raw/MrThearMan/jwt-email-auth)](https://github.com/MrThearMan/jwt-email-auth/issues)
+
+
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/jwt-email-auth)](https://pypi.org/project/jwt-email-auth)
+[![PyPI - Django Version](https://img.shields.io/pypi/djversions/jwt-email-auth)](https://pypi.org/project/jwt-email-auth)
+[![Custom - Django REST Framework Version](https://img.shields.io/badge/drf%20versions-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://pypi.org/project/jwt-email-auth)
+
+```shell
+pip install jwt-email-auth
+```
+---
+
+**Documentation**: [https://mrthearman.github.io/jwt-email-auth/](https://mrthearman.github.io/jwt-email-auth/)
+
+**Source Code**: [https://github.com/MrThearMan/jwt-email-auth](https://github.com/MrThearMan/jwt-email-auth)
+
+---
+
+This module enables JSON Web Token Authentication in Django Rest framework without using Django's User model.
+Instead, login information is stored in [cache](https://docs.djangoproject.com/en/3.2/topics/cache/#the-low-level-cache-api),
+a login code is sent to the user's email inbox, and then the cached information is obtained
+using the code that was sent to the given email.
+
