@@ -1,0 +1,3 @@
+[console_scripts]
+pypetting-message-service = pypetting.message:message_service
+
