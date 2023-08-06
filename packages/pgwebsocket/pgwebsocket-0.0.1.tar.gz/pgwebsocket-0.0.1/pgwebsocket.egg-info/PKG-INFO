@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pgwebsocket
+Version: 0.0.1
+Summary: Async websocket to PostgreSQL proxy.
+Home-page: UNKNOWN
+Author: Barnaby Shearer
+Author-email: b@zi.is
+License: UNKNOWN
+Keywords: postgresql
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+
+===========
+pgwebsocket
+===========
+.. image:: https://readthedocs.org/projects/pgwebsocket/badge/?version=latest
+    :target: https://pgwebsocket.readthedocs.io/en/latest/?badge=latest
+
+.. image:: https://badge.fury.io/py/pgwebsocket.svg
+    :target: https://badge.fury.io/py/pgwebsocket
+
+Async websocket to PostgreSQL proxy.
+
+Install
+-------
+
+::
+
+    python3 -m pip install pgwebsocket
+
+Usage
+-----
+
+.. code-block:: python
+
+    from pgwebsocket import PgWebsocket
+    
+    app = PgWebsocket("")
+    
+    @app.on_connect
+    async def _on_connect(ctx):
+        await ctx.execute("LISTEN clients;")
+    
+    @app.on_disconnect
+    async def _on_disconnect(ctx):
+        await ctx.execute("UNLISTEN clients;")
+    
+    if __name__ == '__main__':
+        app.run()
+
+
+
+
