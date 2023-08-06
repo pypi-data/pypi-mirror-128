@@ -1,0 +1,4 @@
+eth-account>=0.5.5
+noraise>=0.0.16
+web3>=5.23.1
+web3-erc20-predefined>=0.0.3

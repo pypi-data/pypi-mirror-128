@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+kw3/__init__.py
+kw3/kweb3.py
+kw3.egg-info/PKG-INFO
+kw3.egg-info/SOURCES.txt
+kw3.egg-info/dependency_links.txt
+kw3.egg-info/requires.txt
+kw3.egg-info/top_level.txt
