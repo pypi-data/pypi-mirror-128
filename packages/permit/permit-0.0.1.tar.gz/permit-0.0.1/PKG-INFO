@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: permit
+Version: 0.0.1
+Summary: permit python sdk
+Home-page: UNKNOWN
+Author: Or Weis, Asaf Cohen
+Author-email: asaf@authorizon.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8

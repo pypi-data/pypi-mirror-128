@@ -1,0 +1,8 @@
+setup.py
+permit/__init__.py
+permit/api.py
+permit.egg-info/PKG-INFO
+permit.egg-info/SOURCES.txt
+permit.egg-info/dependency_links.txt
+permit.egg-info/requires.txt
+permit.egg-info/top_level.txt
