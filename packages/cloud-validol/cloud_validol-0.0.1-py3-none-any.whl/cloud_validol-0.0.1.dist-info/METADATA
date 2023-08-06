@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cloud-validol
+Version: 0.0.1
+Summary: validol scraping tasks
+Home-page: https://github.com/kokokostation/cloud_validol
+Author: Alexander Manakov
+Author-email: kokokostation@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pandas (==1.3.4)
+Requires-Dist: investpy (==1.0.7)
+Requires-Dist: sqlalchemy (==1.4.27)
+
+UNKNOWN
+
