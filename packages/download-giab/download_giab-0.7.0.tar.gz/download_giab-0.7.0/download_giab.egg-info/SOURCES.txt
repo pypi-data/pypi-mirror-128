@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+download_giab/__init__.py
+download_giab/entry.py
+download_giab.egg-info/PKG-INFO
+download_giab.egg-info/SOURCES.txt
+download_giab.egg-info/dependency_links.txt
+download_giab.egg-info/entry_points.txt
+download_giab.egg-info/requires.txt
+download_giab.egg-info/top_level.txt

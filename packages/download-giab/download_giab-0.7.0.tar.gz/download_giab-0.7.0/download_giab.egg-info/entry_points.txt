@@ -1,0 +1,3 @@
+[console_scripts]
+download_giab = download_giab.entry:main
+
