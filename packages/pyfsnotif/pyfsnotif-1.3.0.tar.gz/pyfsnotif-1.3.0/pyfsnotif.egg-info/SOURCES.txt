@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+pyfsnotif/__init__.py
+pyfsnotif/command.py
+pyfsnotif/inotify.py
+pyfsnotif/watcher.py
+pyfsnotif.egg-info/PKG-INFO
+pyfsnotif.egg-info/SOURCES.txt
+pyfsnotif.egg-info/dependency_links.txt
+pyfsnotif.egg-info/entry_points.txt
+pyfsnotif.egg-info/top_level.txt
