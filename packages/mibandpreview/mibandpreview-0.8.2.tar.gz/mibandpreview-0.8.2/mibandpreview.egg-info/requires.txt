@@ -1,0 +1,4 @@
+Pillow
+
+[qt]
+PyQt5

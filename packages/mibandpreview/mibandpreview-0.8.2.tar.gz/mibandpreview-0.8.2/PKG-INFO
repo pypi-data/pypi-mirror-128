@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mibandpreview
+Version: 0.8.2
+Summary: Mi Band Preview
+Home-page: https://github.com/melianmiko/mibandpreview
+Author: MelianMiko
+Author-email: melianmiko@gmail.com
+License: Apache 2.0
+Download-URL: https://github.com/melianmiko/mibandpreview/archive/refs/tags/v0.8.2.tar.gz
+Platform: UNKNOWN
+Provides-Extra: qt
+License-File: LICENSE.txt
+
+UNKNOWN
+
