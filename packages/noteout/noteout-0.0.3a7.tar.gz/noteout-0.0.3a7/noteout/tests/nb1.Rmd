@@ -1,0 +1,40 @@
+# A heading
+
+Some text.
+More than one line.
+
+::: {.notebook name="first_notebook"}
+Here is a paragraph.
+
+And another.
+:::
+
+More text.
+
+::: r
+This is a block for the R version.
+:::
+
+Some thoughts.
+
+::: r
+This is another block for the R version.
+:::
+
+On the other hand:
+
+::: python
+This is a block for the Python version.
+:::
+
+The text continues; [This is *some text*]{.r}[More text]{.python}.  Continues.
+
+Then we write: [more R]{.r}.
+
+::: {.notebook name="second_notebook"}
+Here, again, is a paragraph.
+
+And, again, another.
+:::
+
+End of page.

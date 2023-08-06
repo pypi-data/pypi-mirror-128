@@ -1,0 +1,34 @@
+project:
+  type: book
+
+book:
+  title: "qbook"
+  author: "Jane Doe"
+  date: "05/08/2021"
+  chapters:
+    - index.qmd
+    - intro.Rmd
+    - summary.qmd
+    - references.qmd
+
+filters:
+  - noteout-filter-pre
+  - noteout-filter-divspans
+  - quarto
+  - noteout-write-meta
+  - noteout-write-doc
+  - noteout-write-notebooks
+  - noteout-filter-nb-only
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreport
+
+noteout:
+  filter-divspans: ['r']
+  nb-format: ipynb
+  binder-url: https://mybinder.org/v2/gh/resampling-stats/resampling-with/gh-pages?filepath=python-book/

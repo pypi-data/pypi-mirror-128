@@ -1,0 +1,64 @@
+---
+title: "My Document"
+---
+
+# Introduction
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  comment = "#>" # To give unique prefix to output comments.
+)
+```
+
+This is a book created from markdown and executable code.
+
+See @knuth84 for additional discussion of literate programming.
+
+::: R
+Some R stuff.
+:::
+
+::: {.notebook name="my_notebook"}
+Here is a paragraph.
+
+::: nb-only
+
+This appears only in the notebook
+:::
+
+## A heading
+
+```{python}
+# Bare 10 in Python
+10
+```
+
+```{r}
+# Bare 10 in R
+10
+```
+
+[R thing]{.r}[Python thing]{.python}
+
+::: python
+Python text in notebook.
+:::
+
+::: r
+R text in notebook.
+:::
+
+Last text in notebook.
+::::::
+
+::: Python
+Some Python stuff.
+:::
+
+then
+
+::: R
+Some R stuff
+:::
+
+Use [`sample(1:10)`]{.R}[`np.random.permutation(np.arange(10))`]{.Python}.

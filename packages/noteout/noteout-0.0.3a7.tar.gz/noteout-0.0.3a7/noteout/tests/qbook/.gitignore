@@ -1,0 +1,5 @@
+/.quarto/
+_book/
+notebooks/
+meta*.json
+site_libs/
