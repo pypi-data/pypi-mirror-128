@@ -1,0 +1,4 @@
+[console_scripts]
+manedit=manim_editor.__main__:main
+manim_editor=manim_editor.__main__:main
+
