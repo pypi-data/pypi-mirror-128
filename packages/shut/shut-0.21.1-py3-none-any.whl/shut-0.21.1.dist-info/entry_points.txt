@@ -1,0 +1,12 @@
+[console_scripts]
+shut = shut.commands:shut
+
+[shut.templates]
+github-actions = shut.templates.github_actions:GithubActionsTemplate
+pylintrc = shut.templates.pylintrc:PylintRcTemplate
+
+[shut.test_drivers]
+mypy = shut.test.mypy:MypyTestDriver
+pylint = shut.test.pylint:PylintTestDriver
+pytest = shut.test.pytest:PytestDriver
+
