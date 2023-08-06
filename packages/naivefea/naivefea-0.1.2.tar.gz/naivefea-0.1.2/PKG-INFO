@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: naivefea
+Version: 0.1.2
+Summary: A simple python library for 2D finite element analysis.
+Home-page: https://github.com/MuTong320/NaiveFea
+Author: Tong Mu
+Author-email: mutong19970320@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# NaiveFea
+A python library for the simplest finite element analysis.
+
+You can learn how to use it by example.ipynb. 
+
+This project is a teaching material for students who want to implement FEA with Python in this post on Chaoli forum (in Chinese): 
+https://chaoli.club/index.php/6884
+
+Theory document (in Chinese):
+https://github.com/MuTong320/NaiveFeaDocument
+
+
