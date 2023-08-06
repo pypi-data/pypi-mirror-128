@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fastvcd-pkg-rishubn
+Version: 0.0.1
+Summary: VCD parser with low overhead
+Home-page: https://github.com/rishubn/fastvcd
+Author: Rishub Nagpal
+Author-email: rishub.nagpal@lamarr.at
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/rishubn/fastvcd/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
