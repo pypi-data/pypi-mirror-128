@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+joshbasiccalculator/__init__.py
+nader.egg-info/PKG-INFO
+nader.egg-info/SOURCES.txt
+nader.egg-info/dependency_links.txt
+nader.egg-info/top_level.txt
