@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+simbots/simbots.egg-info/PKG-INFO
+simbots/simbots.egg-info/SOURCES.txt
+simbots/simbots.egg-info/dependency_links.txt
+simbots/simbots.egg-info/requires.txt
+simbots/simbots.egg-info/top_level.txt
