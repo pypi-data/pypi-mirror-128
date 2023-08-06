@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: protview
+Version: 1.0.0
+Summary: Digest scheme evaluation in proteomic & proteogenomic context
+Home-page: https://github.com/SSPuliasis/ProtView
+Author: Sophia Puliasis
+Author-email: SSPuliasis@dundee.ac.uk
+License: GPL v3
+Description: README and instructions can be found on the [ProtView github page](https://github.com/SSPuliasis/ProtView)
+Platform: UNKNOWN
+Requires-Python: >3.7
+Description-Content-Type: text/markdown
