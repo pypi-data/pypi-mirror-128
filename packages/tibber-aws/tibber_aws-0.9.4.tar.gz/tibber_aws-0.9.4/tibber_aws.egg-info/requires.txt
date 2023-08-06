@@ -1,0 +1,6 @@
+aioboto3
+aiohttp
+async_timeout
+
+[:python_version < "3.7"]
+async_exit_stack
