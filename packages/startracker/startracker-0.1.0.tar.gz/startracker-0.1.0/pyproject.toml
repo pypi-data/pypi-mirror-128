@@ -1,0 +1,34 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "startracker"
+author = "Mykhailo Dalchenko"
+author-email = "mykhailo.dalchenko@unige.ch"
+classifiers = ["License :: OSI Approved :: BSD License"]
+
+requires-python=">=3.6"
+#description-file="README.rst"
+requires=[
+    'lstchain~=0.7.3',
+    'ctapipe',
+    'simple_slurm',
+    'natsort',
+    'Deprecated',
+]
+description-file = "README.md"
+[tool.flit.metadata.requires-extra]
+doc = [
+    "sphinx",
+    "sphinx_rtd_theme",
+    "recommonmark",
+    "sphinx-argparse",
+    "nbsphinx",
+]
+
+[tool.flit.scripts]
+image_producer = "startracker.tools.image_producer:main"
+star_fitter = "startracker.tools.star_fitter:main"
+process_subrun = "startracker.scripts.process_subrun:main"
+

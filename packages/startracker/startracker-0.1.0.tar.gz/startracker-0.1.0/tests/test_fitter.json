@@ -1,0 +1,14 @@
+{
+  "FitRunner":{
+	  "telescope_coordinates" : {
+            "longitude" : 342.108612,
+            "lattitude" : 28.761389,
+            "elevation" : 2147
+           },
+           "run_number" : 2967,
+	   "use_errors" : true,
+	   "input_path" : "/Users/mdalchen/work/data/startracker/run_2967/out",
+	   "output_path" : "/Users/mdalchen/work/data/startracker/run_2967/fit_res/",
+	   "analysis_type" : "by_subrun"
+  }
+}

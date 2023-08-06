@@ -1,0 +1,50 @@
+{
+    "ImageProducer" : {
+        "SlurmParameters": {
+          "partition": "short"
+        },
+        "workdir" : "/tmp/",
+        "data_path" : "/fefs/aswg/data/real/R0/20210813/",
+        "run_number" : 5737
+    },
+    "StarExtractor" : {
+        "max_images_per_file" : 1,
+        "skipping_interval" : 10000,
+        "cleaning" : {
+            "bound_thresh" : 15,
+            "pic_thresh" : 30
+        },
+        "telescope_location" : {
+            "longitude" : 342.108612,
+            "lattitude" : 28.761389,
+            "elevation" : 2147
+        },
+        "events_per_image" : 200,
+        "event_type" : 32,
+        "check_broken_pixels" : true,
+        "check_star_detection" : true,
+        "min_star_prominence" : 3,
+        "max_star_magnitude" : 5.0,
+        "min_distance_between_stars" : 0.7,
+        "max_star_offset" : 2.0
+    },
+    "EventTimeCalculator": {
+      "extract_reference": true,
+      "dragon_reference_counter": null,
+      "dragon_reference_time": null,
+      "dragon_module_id": null
+    },
+    "LSTR0Corrections" : {
+        "drs4_pedestal_path" : "/fefs/aswg/data/real/calibration/20210813/v0.7.3/drs4_pedestal.Run05717.0000.fits",
+        "calibration_path" : "/fefs/aswg/data/real/calibration/20210813/v0.7.3/calibration.Run05718.0000.hdf5",
+        "drs4_time_calibration_path" : "/fefs/aswg/data/real/calibration/20210813/v0.7.3/time_calibration.Run05718.0000.hdf5" 
+    },
+    "PointingSource" : {
+        "drive_report_path" : "/fefs/aswg/data/real/monitoring/DrivePositioning/drive_log_21_08_13.txt"
+    },
+    "LocalPeakWindowSum":{
+        "window_shift": 4,
+        "window_width": 8,
+        "apply_integration_correction": false
+    }
+}
