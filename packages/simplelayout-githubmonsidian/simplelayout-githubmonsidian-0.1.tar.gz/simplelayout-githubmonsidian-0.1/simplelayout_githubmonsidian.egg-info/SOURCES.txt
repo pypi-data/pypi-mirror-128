@@ -1,0 +1,9 @@
+setup.py
+simplelayout/__init__.py
+simplelayout/__main__.py
+simplelayout_githubmonsidian.egg-info/PKG-INFO
+simplelayout_githubmonsidian.egg-info/SOURCES.txt
+simplelayout_githubmonsidian.egg-info/dependency_links.txt
+simplelayout_githubmonsidian.egg-info/entry_points.txt
+simplelayout_githubmonsidian.egg-info/requires.txt
+simplelayout_githubmonsidian.egg-info/top_level.txt
