@@ -1,0 +1,8 @@
+py-algorand-sdk>=1.8.0
+pyteal==0.9.0
+komandr>=2.0.1
+gdparser>=0.0.2
+
+[dev]
+pytest
+flake8
