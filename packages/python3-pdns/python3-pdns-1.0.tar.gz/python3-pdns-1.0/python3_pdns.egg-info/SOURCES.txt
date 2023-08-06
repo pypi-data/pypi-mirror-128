@@ -1,0 +1,10 @@
+README.md
+setup.py
+pypdns/__init__.py
+pypdns/api.py
+python3_pdns.egg-info/PKG-INFO
+python3_pdns.egg-info/SOURCES.txt
+python3_pdns.egg-info/dependency_links.txt
+python3_pdns.egg-info/not-zip-safe
+python3_pdns.egg-info/requires.txt
+python3_pdns.egg-info/top_level.txt
