@@ -1,0 +1,3 @@
+[console_scripts]
+initpylib = initpylib.__main__:main
+
