@@ -1,0 +1,38 @@
+from django.urls import path
+from . import views
+
+
+urlpatterns = [
+    path("numbers", views.NumberListView.as_view(), name="number_list_view"),
+    path("numbers/<int:pk>/", views.NumberView.as_view(), name="number_view"),
+    path("numbers/add_number/", views.NumberEditView.as_view(), name="add_number"),
+    path('numbers/import_numbers/', views.NumberBulkImportView.as_view(), name='import_numbers'),
+    path("numbers/<int:pk>/edit/", views.NumberEditView.as_view(), name="number_edit"),
+    path("numbers/number_bulk_edit", views.NumberBulkEditView.as_view(), name="number_bulk_edit"),
+    path("numbers/<int:pk>/delete/", views.NumberDeleteView.as_view(), name="number_delete"),
+    path("numbers/number_bulk_delete", views.NumberBulkDeleteView.as_view(), name="number_bulk_delete"),
+    path("trunks", views.TrunkListView.as_view(), name="trunk_list_view"),
+    path("trunks/<int:pk>/", views.TrunkView.as_view(), name="trunk_view"),
+    path("trunks/add_trunk/", views.TrunkEditView.as_view(), name="add_trunk"),
+    path('trunks/import_trunks/', views.TrunkBulkImportView.as_view(), name='import_trunks'),
+    path("trunks/<int:pk>/edit/", views.TrunkEditView.as_view(), name="trunk_edit"),
+    path("trunks/trunk_bulk_edit", views.TrunkBulkEditView.as_view(), name="trunk_bulk_edit"),
+    path("trunks/<int:pk>/delete/", views.TrunkDeleteView.as_view(), name="trunk_delete"),
+    path("trunks/trunk_bulk_delete", views.TrunkBulkDeleteView.as_view(), name="trunk_bulk_delete"),
+    path("UCClusters", views.UCClusterListView.as_view(), name="uccluster_list_view"),
+    path("UCClusters/<int:pk>/", views.UCClusterView.as_view(), name="uccluster_view"),
+    path("UCClusters/add_uccluster/", views.UCClusterEditView.as_view(), name="add_uccluster"),
+    path('UCClusters/import_ucclusters/', views.UCClusterBulkImportView.as_view(), name='import_ucclusters'),
+    path("UCClusters/<int:pk>/edit/", views.UCClusterEditView.as_view(), name="uccluster_edit"),
+    path("UCClusters/uccluster_bulk_edit", views.UCClusterBulkEditView.as_view(), name="uccluster_bulk_edit"),
+    path("UCClusters/<int:pk>/delete/", views.UCClusterDeleteView.as_view(), name="uccluster_delete"),
+    path("UCClusters/uccluster_bulk_delete", views.UCClusterBulkDeleteView.as_view(), name="uccluster_bulk_delete"),
+    path("devicepools", views.DevicePoolListView.as_view(), name="devicepool_list_view"),
+    path("devicepools/<int:pk>/", views.DevicePoolView.as_view(), name="devicepool_view"),
+    path("devicepools/add_devicepool/", views.DevicePoolEditView.as_view(), name="add_devicepool"),
+    path('devicepools/import_devicepools/', views.DevicePoolBulkImportView.as_view(), name='import_devicepools'),
+    path("devicepools/<int:pk>/edit/", views.DevicePoolEditView.as_view(), name="devicepool_edit"),
+    path("devicepools/devicepool_bulk_edit", views.DevicePoolBulkEditView.as_view(), name="devicepool_bulk_edit"),
+    path("devicepools/<int:pk>/delete/", views.DevicePoolDeleteView.as_view(), name="devicepool_delete"),
+    path("devicepools/devicepool_bulk_delete", views.DevicePoolBulkDeleteView.as_view(), name="devicepool_bulk_delete"),
+]
