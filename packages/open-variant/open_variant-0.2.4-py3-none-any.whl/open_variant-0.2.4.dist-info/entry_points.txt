@@ -1,0 +1,3 @@
+[console_scripts]
+openvar = openvariant.task.openvar:cli
+
