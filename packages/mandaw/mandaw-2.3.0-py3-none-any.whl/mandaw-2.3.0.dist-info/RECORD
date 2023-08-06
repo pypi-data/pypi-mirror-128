@@ -1,0 +1,14 @@
+mandaw/__init__.py,sha256=pLgc78BerFOJ8zPxvdaCg7I1qVM5foWjplFGcmftP0g,267
+mandaw/animation.py,sha256=vPnfWe4pnvQ5RS-82duvR8brnlZuLDorTXQOx3horyw,388
+mandaw/audio.py,sha256=TRD1hrIs64ToLQfAGIzPhqVfA-oxb6zcjmnghsCVxnM,468
+mandaw/color.py,sha256=m4BP3S6IBS3p0b1fNgpGtHgcQuQ_4VHb2T3Ezcbxpsc,683
+mandaw/entity.py,sha256=bUbRwAuvw3T5Q-C9FLozVZQJCUcYNGUqtphb9GkqtAg,1968
+mandaw/input.py,sha256=X5s99D1v0meL848ita78nR_eYGmLihcYhkcBNca8_Ns,2480
+mandaw/main.py,sha256=SwB170t5n0Z6QeCWMhCm_CCZjms858zLzwgX2s87siQ,2946
+mandaw/sprite.py,sha256=rr_1aBFUtPNkUmkAOckH-8GCzP_5H9CvRsGgRZdye_E,4034
+mandaw/text.py,sha256=IwSfWR3wJtog2BIXSZdyeqxAFIZGlGapSKlreW20W2g,1170
+mandaw-2.3.0.dist-info/LICENSE,sha256=sj2ms0HoVdF90kBPzePlE1G-ubeK3OfHl4ryn2By7To,1063
+mandaw-2.3.0.dist-info/METADATA,sha256=1j_p-cFqwtLEbO6xvbdAicozpSbpWRzliO1uNT-DnS0,2403
+mandaw-2.3.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mandaw-2.3.0.dist-info/top_level.txt,sha256=1P9kEm_qs2CosW5-FGZpoxU1zLBVT8SSs9TlcL937rI,7
+mandaw-2.3.0.dist-info/RECORD,,
