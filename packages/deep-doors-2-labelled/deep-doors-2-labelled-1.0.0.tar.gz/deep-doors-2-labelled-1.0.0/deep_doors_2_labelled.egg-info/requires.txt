@@ -1,0 +1,8 @@
+generic-dataset
+numpy
+opencv-python
+stub-generator
+
+[test]
+pytest
+pytest-cov
