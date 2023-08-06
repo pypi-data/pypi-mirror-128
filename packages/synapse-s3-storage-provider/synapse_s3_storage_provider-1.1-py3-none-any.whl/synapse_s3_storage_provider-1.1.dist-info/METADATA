@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: synapse-s3-storage-provider
+Version: 1.1
+Summary: UNKNOWN
+Home-page: https://github.com/matrix-org/synapse-s3-storage-provider
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: boto3 (>=1.9.23<2.0)
+Requires-Dist: botocore (>=1.12.23<2.0)
+Requires-Dist: humanize (>=0.5.1<0.6)
+Requires-Dist: psycopg2 (>=2.7.5<3.0)
+Requires-Dist: PyYAML (>=3.13<4.0)
+Requires-Dist: tqdm (>=4.26.0<5.0)
+Requires-Dist: Twisted
+
+UNKNOWN
+
