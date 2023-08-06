@@ -1,0 +1,3 @@
+[console_scripts]
+db12 = db12.__main__:main
+
