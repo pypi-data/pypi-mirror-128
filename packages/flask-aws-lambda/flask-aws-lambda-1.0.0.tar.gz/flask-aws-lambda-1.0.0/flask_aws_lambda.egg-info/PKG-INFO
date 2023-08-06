@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: flask-aws-lambda
+Version: 1.0.0
+Summary: Python module to make Flask compatible with AWS Lambda for creating RESTful applications. Compatible with both REST and HTTP API gateways.
+Home-page: https://github.com/CodeSchwert/flask-aws-lambda
+Author: Nik Ho
+Author-email: codeschwert@protonmail.com
+License: Apache License, Version 2.0
+Download-URL: https://github.com/CodeSchwert/flask-aws-lambda/archive/refs/tags/v1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: flask aws amazon lambda
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License

@@ -1,0 +1,9 @@
+README.md
+flask_aws_lambda.py
+setup.cfg
+setup.py
+flask_aws_lambda.egg-info/PKG-INFO
+flask_aws_lambda.egg-info/SOURCES.txt
+flask_aws_lambda.egg-info/dependency_links.txt
+flask_aws_lambda.egg-info/requires.txt
+flask_aws_lambda.egg-info/top_level.txt
