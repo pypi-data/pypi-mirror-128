@@ -1,0 +1,11 @@
+machine_stats/__init__.py,sha256=wy21QiirQwL3mYwocE0eQU3QU37fPTmrlwI_27gutW4,13850
+machine_stats/__main__.py,sha256=JZVc2YTs5ErnujhQ-r681EZjkquG3auXkT7ysW16KqI,123
+machine_stats/modules/cpu_utilization.py,sha256=X1QkF1_3jDegXpx8kg4cKZrppQQYYVnvLnAsTJ8vJWU,2497
+machine_stats/modules/proc_stats.py,sha256=P8d9BYRlcbVPIMKlLALftO83Wc2NMRuLidltgGI7HMQ,4514
+machine_stats/plugins/cpu_utilization.py,sha256=PA2wVVpoqgcmGV0lIUmmhbMUaTgEnkKa2w4vIwew7EA,985
+machine_stats/plugins/proc_stats.py,sha256=_3bLt9Wf_vX8lSXLbn2eN2PpLq32kIetuiwRPNQCa78,723
+machine_stats-2.1.0.dist-info/METADATA,sha256=WC23NnSMky2zvZaJohtf4PxKbqAMtnu1iQzUutrmsT0,9924
+machine_stats-2.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+machine_stats-2.1.0.dist-info/entry_points.txt,sha256=tFoufz-Y0yDCv_I5CIjl-Go_Sm0qv2nxA8NDeNO91Xs,89
+machine_stats-2.1.0.dist-info/top_level.txt,sha256=ZUmGAd8af4NQuwMegorWGSqfOV2dmw-2Xvkl49MPRII,14
+machine_stats-2.1.0.dist-info/RECORD,,
