@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: hottohpy
+Version: 0.0.24
+Summary: Python lib to control Hottoh based stove Devices
+Home-page: https://github.com/benlbrm/hottohpy
+Author: benlbrm
+Author-email: web@lebruman.fr
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/benlbrm/hottohpy/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Home Automation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Project desciption
+
+This library can be used to discuss with HootoH based stove devices
+
+Actually tested and validated with a CMG Drum stove.
+
+To use this library you need to have a wifi capable stove.
+
+# Usage
+
+```shell
+$ stove = Hottoh(address="192.168.1.10", port="5001")
+$ stove.connect()
+$ stove.get_temperature()
+```
+
+You can check example.py 
+
+
