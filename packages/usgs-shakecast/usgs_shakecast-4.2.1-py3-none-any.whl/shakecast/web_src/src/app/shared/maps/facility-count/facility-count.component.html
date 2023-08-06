@@ -1,0 +1,5 @@
+<ng-container *ngIf="types">
+  <div class="fac" *ngFor="let item of types | keyvalue">
+    {{ item.key }}: {{ item.value }}
+  </div>
+</ng-container>
