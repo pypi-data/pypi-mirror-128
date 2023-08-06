@@ -1,0 +1,10 @@
+pygame
+aiohttp
+
+[dev]
+pytest
+pytest-mock
+coverage
+flake8
+twine
+bump2version

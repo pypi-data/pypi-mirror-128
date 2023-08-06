@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bomberman-code-showdown
+Version: 0.1.0
+Summary: A bomberman game where you can control the characters through a HTTP API.
+Home-page: https://gitlab.com/vladcalin/bomberman-code-showdown
+Author: Vlad Calin
+License: MIT
+Platform: UNKNOWN
+Provides-Extra: dev
+
+UNKNOWN
+
