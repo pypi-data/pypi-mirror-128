@@ -1,0 +1,10 @@
+aws_cdk/aws_workspaces/__init__.py,sha256=1Gf8zUC3MCn-xNnfzTCzkPB54auEPUWHJOoyXNHt2jo,38777
+aws_cdk/aws_workspaces/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_workspaces/_jsii/__init__.py,sha256=ZuupAVXutze5J6Mo9DNHY4yBSu2aQT-T5in54loAkNI,392
+aws_cdk/aws_workspaces/_jsii/aws-workspaces@1.133.0.jsii.tgz,sha256=vdIDtiiv2mMs9aqwrKMW3Ikkeq0jRsE39LvdGNZGjJU,28016
+aws_cdk.aws_workspaces-1.133.0.dist-info/LICENSE,sha256=PPdRlpoLCV1CRrCV1eKpp3m0lNjchFAP4a9zfc8tRLo,11391
+aws_cdk.aws_workspaces-1.133.0.dist-info/METADATA,sha256=XiRR7P88GL8KLuquxe350X4qoSf3wuLeVkrKkVVAc40,1622
+aws_cdk.aws_workspaces-1.133.0.dist-info/NOTICE,sha256=xo56krus2e5ShfXqz_B7vuvGcMn_D0F7TjjpfTz8YMw,113
+aws_cdk.aws_workspaces-1.133.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_cdk.aws_workspaces-1.133.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_workspaces-1.133.0.dist-info/RECORD,,
