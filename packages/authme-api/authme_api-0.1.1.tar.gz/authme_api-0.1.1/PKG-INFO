@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: authme_api
+Version: 0.1.1
+Summary: MySQL API for AuthMe
+Home-page: https://git.cofob.ru/cofob/authme_api
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![](https://ci.cofob.ru/job/authme_api/job/Black%20Style/badge/icon?style=plastic&subject=Black%20Style)](https://github.com/psf/black) [![](https://ci.cofob.ru/job/authme_api/job/Pylint/badge/icon?style=plastic&subject=Pylint)](https://ci.cofob.ru/job/authme_api/job/Pylint/lastBuild/) [![](https://ci.cofob.ru/job/authme_api/job/Black%20Style/badge/icon?style=plastic&subject=Tests)](https://ci.cofob.ru/job/authme_api/job/Tests/lastBuild/)
+
+# authme_api
+
+Python AuthMe (minecraft plugin) API working with MySQL
+
+
