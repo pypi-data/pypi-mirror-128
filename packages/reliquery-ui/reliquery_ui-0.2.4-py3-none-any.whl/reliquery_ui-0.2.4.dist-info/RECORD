@@ -1,0 +1,13 @@
+frontend/dist/bundle.js,sha256=hyZzi1p7xLSAp6L_7WxYtftgNNJLHyCgT51yRolhLGM,532212
+frontend/dist/bundle.js.LICENSE.txt,sha256=MWaSlPSODUyzTS-6uhTd6MYi8HGJgjOtFyvm2-GJi4U,1035
+frontend/dist/index.html,sha256=a3v2lXUvmhZn0NgRXgbvFVjINhI4ehGk9qBmL7zwJVQ,167
+reliquery_ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reliquery_ui/main.py,sha256=xlhDuVkaLJZfl9JctXFfkmsXaAGLB7lkxcFZSlcmZSU,1590
+reliquery_ui/routers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reliquery_ui/routers/relics.py,sha256=0R6jmUoykowyPZTVNeVXW1bQIb1KCDIodJvPD-Ex4iU,9725
+reliquery_ui-0.2.4.data/scripts/reliquery-ui,sha256=HmDw4L1F38WziWVqBhzYuYp7itMlVLBr-pbcLHNS3oc,42
+reliquery_ui-0.2.4.dist-info/LICENSE,sha256=rSWMyCUzyGWHeIsrgE8AOv5kPO0LwVwQHmhABmlEfzE,227
+reliquery_ui-0.2.4.dist-info/METADATA,sha256=o8AeGA19fr8WWlSb_hyGv8vUqbBhnr2B4XIAvai83jE,463
+reliquery_ui-0.2.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+reliquery_ui-0.2.4.dist-info/top_level.txt,sha256=GIXmnAZFF5N891SSTx8xHT3oMswdrmWKAO-DnXHYzIo,34
+reliquery_ui-0.2.4.dist-info/RECORD,,
