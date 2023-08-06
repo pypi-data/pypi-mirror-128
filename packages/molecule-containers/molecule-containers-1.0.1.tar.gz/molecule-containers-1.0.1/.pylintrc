@@ -1,0 +1,10 @@
+[MESSAGES CONTROL]
+
+disable =
+
+[REPORTS]
+output-format = colorized
+
+[IMPORTS]
+preferred-modules =
+    ansible:,
