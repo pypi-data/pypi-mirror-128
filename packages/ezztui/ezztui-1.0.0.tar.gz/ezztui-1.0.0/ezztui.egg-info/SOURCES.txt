@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+ezztui.py
+setup.py
+ezztui.egg-info/PKG-INFO
+ezztui.egg-info/SOURCES.txt
+ezztui.egg-info/dependency_links.txt
+ezztui.egg-info/top_level.txt
