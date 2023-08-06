@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: oppapi
+Version: 0.0.1
+Summary: 
+Home-page: https://github.com/yukinarit/oppapi
+License: MIT
+Author: yukinarit
+Author-email: yukinarit84@gmail.com
+Requires-Python: >=3.7.0,<4.0.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: okome (>=0.0.1,<0.0.2)
+Requires-Dist: pyserde (>=0.5.3,<0.6.0)
+Project-URL: Repository, https://github.com/yukinarit/oppapi
+Description-Content-Type: text/markdown
+
+# `oppapī`
+
+*Option parser on top of dataclasses, inspired by structopt.*
+
+<p align="center">
+  <img src="logo.png" width=25% />
+</p>
+
+## Overview
+
+
