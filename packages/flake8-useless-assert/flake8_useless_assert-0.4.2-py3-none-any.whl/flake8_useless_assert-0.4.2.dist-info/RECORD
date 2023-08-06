@@ -1,0 +1,10 @@
+flake8_useless_assert/__init__.py,sha256=PP4IRgP_MnBX3JU4WuYZ1KFV6mzSWOKd0lyaEdZvyxI,48
+flake8_useless_assert/flake_diagnostic.py,sha256=c0oJ76-eKMFx8QmpMVKcpDleKh0RgYVMuLJPYbvqTNg,215
+flake8_useless_assert/patch_const.py,sha256=DCVnmcIKr-g5MLXhRkOKOtQrdvAVpI9t0sz3MPzrUJU,898
+flake8_useless_assert/plugin.py,sha256=StX0K0IARBD50K2eBajm_JEVIxGwwRHqverKf1fwt9k,490
+flake8_useless_assert/rules.py,sha256=UkDHDQsKchhES_kvZongFM0OXg5bzRvZwsshVAQWS98,5515
+flake8_useless_assert-0.4.2.dist-info/entry_points.txt,sha256=FSCnur7MHKnPsDhmlsE__wOQnQ9bc2N5hzw913ngF8o,60
+flake8_useless_assert-0.4.2.dist-info/LICENSE,sha256=yczEObMqQwy8s5oCcqmKYDoNzRsjPpyGTpRRZOTTS9Y,1074
+flake8_useless_assert-0.4.2.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+flake8_useless_assert-0.4.2.dist-info/METADATA,sha256=xdooR1i5RgRIaqXz83IQ7HWe5u_IEUkMuffTW832ras,2131
+flake8_useless_assert-0.4.2.dist-info/RECORD,,
