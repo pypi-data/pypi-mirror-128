@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+whatajoke/__init__.py
+whatajoke/service.py
+whatajoke/whatajoke.py
+whatajoke.egg-info/PKG-INFO
+whatajoke.egg-info/SOURCES.txt
+whatajoke.egg-info/dependency_links.txt
+whatajoke.egg-info/entry_points.txt
+whatajoke.egg-info/requires.txt
+whatajoke.egg-info/top_level.txt
