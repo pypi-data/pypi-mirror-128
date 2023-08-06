@@ -1,0 +1,12 @@
+github2pandas_manager/__init__.py,sha256=QiiYsv0kcJaB8wCWyT-FnI2b6be87HA-CrrIUn8LQhg,22
+github2pandas_manager/__main__.py,sha256=3oFIM-mooX0lpxm-hCKOByNbLumyh-GeMyOuSTY7PXY,1678
+github2pandas_manager/config_parser.py,sha256=q_MrRVEYWFWbuybG4OhqjkOQBVlEcfPVPG8lFc-cbpM,1874
+github2pandas_manager/data_extractor.py,sha256=rCRf7f21veUyoU3IrzenIUhuxsZOT3JwngzeAz6JNXI,4404
+github2pandas_manager/data_merger.py,sha256=thg3lthzx4-W_kyRBQpI5oBiApBmR8yP0mqqCtSLVZM,4103
+github2pandas_manager/repository_handler.py,sha256=HI_9qc2J2StW2rrkXe20tE_FHqCkXJoxeU4un7mcU5k,25915
+github2pandas_manager/utilities.py,sha256=TuIdSSFz8BNXQH089sXz305OC9iZ7_JanMvI4ExpkD4,3079
+github2pandas_manager-0.0.6.dist-info/LICENSE,sha256=RHxpPOZJRgVEMfLf3FeurhOqgWqYuTHanJU39WbQJDg,1354
+github2pandas_manager-0.0.6.dist-info/METADATA,sha256=mR6nvdiONWynlnXWxX2eu-yU5mVpcXlwbJIgxAg9ftQ,4606
+github2pandas_manager-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+github2pandas_manager-0.0.6.dist-info/top_level.txt,sha256=QW3H1NvTj5mYrGx-W8oBlfO3msDahMRCrtD5Fb9v5Hs,22
+github2pandas_manager-0.0.6.dist-info/RECORD,,
