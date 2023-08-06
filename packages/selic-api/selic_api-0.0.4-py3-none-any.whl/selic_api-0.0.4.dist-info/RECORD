@@ -1,0 +1,5 @@
+selic_api/__init__.py,sha256=asDRCsFN2IAuaV0IK_EKQX67QNpaUdTj3hZ-kVSubUE,23
+selic_api/selic.py,sha256=ZzGMwm9dMFdp4_XhD9kSNzzk5Lzh19-0j8Qz1y9-KcQ,7483
+selic_api-0.0.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+selic_api-0.0.4.dist-info/METADATA,sha256=Hgo0VKo07QsiJRHvQeaKrHga2-kMoEsNk86MYWtKVeY,965
+selic_api-0.0.4.dist-info/RECORD,,
