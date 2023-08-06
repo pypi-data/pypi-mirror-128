@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: slang
+Version: 0.1.0
+Summary: A structural approach to signal ML
+Home-page: https://github.com/otosense/slang
+Author: OtoSense
+Author-email: UNKNOWN
+License: mit
+Description: UNKNOWN
+Keywords: sound recognition,machine learning,language,audio,signal processing,natural language processing,NLP,text mining
+Platform: any
