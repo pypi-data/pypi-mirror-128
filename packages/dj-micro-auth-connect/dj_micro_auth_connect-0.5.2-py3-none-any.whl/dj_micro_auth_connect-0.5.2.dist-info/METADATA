@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: dj-micro-auth-connect
+Version: 0.5.2
+Summary: A small package to connect microservices and authenticate user.
+Home-page: https://github.com/krishna-bhandari/dj_micro_auth_connect
+Author: Krishna Bhandari
+Author-email: author@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/krishna-bhandari/dj_micro_auth_connect/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: djangorestframework (>=3.12.4)
+Requires-Dist: requests (>=2.26.0)
+
+
+service_auth
+=====
+
+A small package to connect microservices and authenticate user. It uses RemoteModel to make http requests with multiple services.
+Also used to verify tokens to authenticate users.
+
+Quick start
+-----------
+Install the package `pip install dj-micro-auth-connect`.
+
+Add `service_auth` in INSTALLED_APPS
+
+    INSTALLED_APPS = (
+        ...
+        'service_auth'
+    )
+
+Add
+    
+    ENTITY_BASE_URL_MAP = {
+        ...
+    'auth':'url-for-authentication-service.com',
+    
+    }
+
+    ENTITY_URL_PATH = {
+        ...
+    'verify_token':'api/path/for/endpoint',
+    }
+
+
+* Note: Above mentioned keys must be same to get it work.
+
+
+

@@ -1,0 +1,12 @@
+service_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+service_auth/admin.py,sha256=p6xop1PuuDG2Uwv3G_aRfldxOfBzTRfMaoZmORVkqyU,66
+service_auth/apps.py,sha256=WzEEr1AxGwV9LBqj87sJfWMwhYqdCgRf54g6vkWrWwU,161
+service_auth/permissions.py,sha256=-2C84quKohmAeLdEJTWk8h-q_rXDCIYh8-jGWwncqo4,4784
+service_auth/remote_model.py,sha256=datq1NGrfSHIwoO3JQcnx18vA8CJhQy93or1uaAzZJ0,2648
+service_auth/views.py,sha256=fAjjsOcioBeehPmqfTNjDXXqYNl-ZChAGgX60Sg7YOc,957
+service_auth/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_micro_auth_connect-0.5.2.dist-info/LICENSE,sha256=eTAMrQxkyw6ApSsWH9vJdyVXchbASCr9kEPFfwQzv-c,1091
+dj_micro_auth_connect-0.5.2.dist-info/METADATA,sha256=YZRxxZXDrSOXviMOhkLmKz8kaUQT_f07zRpuvaHKMhI,1350
+dj_micro_auth_connect-0.5.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dj_micro_auth_connect-0.5.2.dist-info/top_level.txt,sha256=BuXXMuSzP6865i_Jtze5ZGexPUcrgzOArpx28pEYQ24,13
+dj_micro_auth_connect-0.5.2.dist-info/RECORD,,
