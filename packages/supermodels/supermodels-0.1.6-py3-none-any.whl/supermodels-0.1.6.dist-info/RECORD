@@ -1,0 +1,12 @@
+supermodels/__init__.py,sha256=YcXYwluoF8_5_yEL53YAQAKJdba0POjtRbMjJ1SGzWk,502
+supermodels/config.py,sha256=7v_2y2Y9NoELWkqdFXdq34WYjUcUlR4wR84C2O98ZnM,787
+supermodels/exceptions.py,sha256=4NB7jq7oNAqAcsYkv8V5YAk-Rw1h1IXoQx1e6greSNk,1154
+supermodels/fields.py,sha256=vQkAmzT51PikYcaIP8taxfqG3W-QyT9eUIC1De8GIqI,6470
+supermodels/logging.py,sha256=RsFisr0SLoeKrIdJQg6Jzfn9pF6aO7vMBx2VcNSc_FU,499
+supermodels/models.py,sha256=EWmfFuVQEhCVlXeXyDL16dr0KZzhaUJge4gdN6vBvro,8649
+supermodels/rules.py,sha256=hZfz9wAb_7RdXsVynqwuoXyGKG5hlNk3lKNtgdbN8sc,1385
+supermodels/serdes.py,sha256=QkEgVsmRZ9kLAqdnv6gV7fJ0D_-36y6zk5Ll7QUCpjg,6854
+supermodels/util.py,sha256=LxJs1aFoEPlvH-e1RVdATBdyuL5ZjxNzZFIw3Lg5lic,2498
+supermodels-0.1.6.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+supermodels-0.1.6.dist-info/METADATA,sha256=SITSOHqS6b-6O0dN1Yu0VznkhPbF0nS6UYT-C2bn8tk,303
+supermodels-0.1.6.dist-info/RECORD,,
