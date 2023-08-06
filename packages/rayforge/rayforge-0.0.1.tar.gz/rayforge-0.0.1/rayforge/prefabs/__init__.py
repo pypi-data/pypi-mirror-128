@@ -1,0 +1,1 @@
+from rayforge.prefabs.fps_counter import FpsCounter
