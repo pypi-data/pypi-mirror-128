@@ -1,0 +1,3 @@
+[console_scripts]
+diamond_art = diamond_art.cli:main
+
