@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: simple-async-mq
+Version: 0.1
+Summary: A simple async message queue client - socket-io wrapper
+Home-page: https://github.com/3520kramer/simple-async-mq
+Author: Oliver Kramer
+Author-email: 3520.kramer@gmail.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: mq,async,client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
