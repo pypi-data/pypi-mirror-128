@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+pysrpm/__init__.py
+pysrpm/__main__.py
+pysrpm/convert.py
+pysrpm/rpm.py
+pysrpm.egg-info/PKG-INFO
+pysrpm.egg-info/SOURCES.txt
+pysrpm.egg-info/dependency_links.txt
+pysrpm.egg-info/entry_points.txt
+pysrpm.egg-info/requires.txt
+pysrpm.egg-info/top_level.txt
+pysrpm/presets/00-base.conf
+pysrpm/presets/10-compat.conf
+pysrpm/presets/10-sphinx.conf
