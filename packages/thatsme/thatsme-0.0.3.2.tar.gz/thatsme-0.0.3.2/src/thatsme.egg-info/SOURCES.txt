@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/thatsme/__init__.py
+src/thatsme/dados.py
+src/thatsme/pdf.py
+src/thatsme/qrcode.py
+src/thatsme/thatsme.py
+src/thatsme.egg-info/PKG-INFO
+src/thatsme.egg-info/SOURCES.txt
+src/thatsme.egg-info/dependency_links.txt
+src/thatsme.egg-info/top_level.txt
