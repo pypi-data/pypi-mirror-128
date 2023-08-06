@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+hubcap/__init__.py
+hubcap.egg-info/PKG-INFO
+hubcap.egg-info/SOURCES.txt
+hubcap.egg-info/dependency_links.txt
+hubcap.egg-info/not-zip-safe
+hubcap.egg-info/requires.txt
+hubcap.egg-info/top_level.txt
+hubcap/scrap/__init__.py
+hubcap/scrap/direct_github_api.py
