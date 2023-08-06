@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pydisc/Bot.py
+pydisc/__init__.py
+pydisc/api.py
+pydisc/ws.py
+pydisc.egg-info/PKG-INFO
+pydisc.egg-info/SOURCES.txt
+pydisc.egg-info/dependency_links.txt
+pydisc.egg-info/requires.txt
+pydisc.egg-info/top_level.txt
