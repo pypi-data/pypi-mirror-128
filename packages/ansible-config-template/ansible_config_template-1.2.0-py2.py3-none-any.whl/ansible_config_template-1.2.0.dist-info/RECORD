@@ -1,0 +1,7 @@
+ansible_config_template-1.2.0.data/data/share/ansible/plugins/action/config_template.py,sha256=FQwOdDkqU488LXDf8q7oWp_6lLS-ZcdeADNpOAP9F40,36859
+ansible_config_template-1.2.0.data/data/share/ansible/plugins/modules/config_template,sha256=hsvOvHDb-ErtHpYmD5fmhzEt-JAabSgi5y0AiCvFWh8,3882
+ansible_config_template-1.2.0.dist-info/LICENSE,sha256=ltOqm_2eb_QtqU-nbBdooPFd0Lhk9DCBzxVVrUiBHZ0,12605
+ansible_config_template-1.2.0.dist-info/METADATA,sha256=wbBpI9cZTiwsr3H3Jc7FUf2bDZ3ZQE4kYcT-D_pdXUc,1588
+ansible_config_template-1.2.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+ansible_config_template-1.2.0.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ansible_config_template-1.2.0.dist-info/RECORD,,
