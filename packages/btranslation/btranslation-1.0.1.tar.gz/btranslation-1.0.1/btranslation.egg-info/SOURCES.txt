@@ -1,0 +1,8 @@
+README.md
+setup.py
+btranslation/__init__.py
+btranslation.egg-info/PKG-INFO
+btranslation.egg-info/SOURCES.txt
+btranslation.egg-info/dependency_links.txt
+btranslation.egg-info/requires.txt
+btranslation.egg-info/top_level.txt
