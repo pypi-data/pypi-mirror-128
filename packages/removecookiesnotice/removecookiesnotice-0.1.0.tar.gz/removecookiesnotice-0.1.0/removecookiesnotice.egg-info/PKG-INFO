@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: removecookiesnotice
+Version: 0.1.0
+Summary: Tool to remove cookies notice in html pages
+Home-page: https://github.com/owlint/CookiesNoticeRemover
+Author: Laurent Evrard
+Author-email: laurent@owlint.fr
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Communications
+License-File: LICENCE
+
+# RemoveCookiesNotice
+
+This library is aimed at removing cookies notices in scraped web pages
+
+It do so using two strategies : 
+* By using known attributes values
+* By fuzzy matching text in HTML page
+
+This is very much a work in progress
+
+

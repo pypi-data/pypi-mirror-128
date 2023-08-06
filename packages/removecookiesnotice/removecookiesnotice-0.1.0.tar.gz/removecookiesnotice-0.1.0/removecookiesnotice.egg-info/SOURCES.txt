@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+removecookiesnotice/CookiesNoticeRemover.py
+removecookiesnotice/__init__.py
+removecookiesnotice.egg-info/PKG-INFO
+removecookiesnotice.egg-info/SOURCES.txt
+removecookiesnotice.egg-info/dependency_links.txt
+removecookiesnotice.egg-info/top_level.txt
