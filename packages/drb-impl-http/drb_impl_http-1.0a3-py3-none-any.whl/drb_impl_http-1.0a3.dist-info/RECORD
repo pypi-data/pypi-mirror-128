@@ -1,0 +1,12 @@
+drb_impl_http/Bearer.py,sha256=4MxINMGFW-GOj_a4-AzZAU8qtakF5pY9lRDJNYZfweE,269
+drb_impl_http/__init__.py,sha256=LAYw3uMBcrND6glFJFR7PJB43X_ndDLNVzZ4sxqP8nU,372
+drb_impl_http/_version.py,sha256=DhUQ16em4nryQaizihgaqMUwNNHXpxSaKZfHTXanebA,497
+drb_impl_http/drb_impl_http.py,sha256=pB1jrpmPnJCzc6kkc_JKnLig6XwslCh20hf8zuBhjx0,4209
+drb_impl_http/drb_impl_signature_http.py,sha256=_1KwGfcEn6GmEp-9WXwQWg9RQ6PybmOmpYxdxjGEG1s,782
+drb_impl_http/drb_impl_signature_https.py,sha256=PMFPB-vZEbZQ2173H-Y_aNh2Sd4-oBxf4a_11ejWWu8,785
+drb_impl_http/execptions.py,sha256=WMqm76xJt9h40eEqRTbMx890QhVVDlCIRVpq20jZR-I,181
+drb_impl_http-1.0a3.dist-info/METADATA,sha256=DTPcLnTcpp4uGKoUNh5Qj0lm9Lq6EmriHGWlAmFMNfM,2438
+drb_impl_http-1.0a3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+drb_impl_http-1.0a3.dist-info/entry_points.txt,sha256=MugEp6UIqnOJFTfpRnCM6irhv_rQec_hQB95_eSsa_I,104
+drb_impl_http-1.0a3.dist-info/top_level.txt,sha256=FYwahx9Ck0tt8FxhpE_MIppd7JZL58Gc0J-ysoK-Mlg,14
+drb_impl_http-1.0a3.dist-info/RECORD,,
