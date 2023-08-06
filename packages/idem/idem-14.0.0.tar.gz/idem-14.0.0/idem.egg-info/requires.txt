@@ -1,0 +1,13 @@
+aiofiles>=0.7.0
+acct>=6.2.0
+dict-toolbox>=2.1.0
+jinja2
+jmespath
+pop>=20
+pop-config>=8.0.0
+pop-loop
+PyYaml
+toml
+tqdm
+rend>=6.3.1
+wheel
