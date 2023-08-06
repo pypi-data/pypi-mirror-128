@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: apsbss
+Version: 1.5.4rc3
+Summary: Read-only interface to information from APS Proposal and ESAF (experiment safety approval form) databases.
+Home-page: https://apsbss.readthedocs.org
+Author: Pete Jemian
+Author-email: jemian@anl.gov
+License: (c) 2017-2022, UChicago Argonne, LLC (see LICENSE.txt file for details)
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Freely Distributable
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7,<3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: bluesky (>=1.6.2)
+Requires-Dist: databroker (>=1.0.6)
+Requires-Dist: ophyd (>=1.5.1)
+Requires-Dist: pyepics (>=3.4.2)
+Requires-Dist: pyRestTable
+Requires-Dist: spec2nexus (>=2021.1.7)
+
+# apsbss
+
+Read-only interface to information from APS Proposal and ESAF (experiment safety
+approval form) databases.
+
+[![Release](https://img.shields.io/github/release/BCDA-APS/apsbss.svg)](https://github.com/BCDA-APS/apsbss/releases)
+[![Tag](https://img.shields.io/github/tag/BCDA-APS/apsbss.svg)](https://github.com/BCDA-APS/apsbss/tags)
+[![Build Status](https://img.shields.io/github/workflow/status/BCDA-APS/apsbss/Unit%20Tests)](https://github.com/BCDA-APS/apsbss/actions?query=workflow%3A%22Unit+Tests%22+branch%3Amain)
+[![License](https://anaconda.org/aps-anl-tag/apsbss/badges/license.svg)](https://anaconda.org/aps-anl-tag/apsbss)
+
+[![PyPI](https://img.shields.io/pypi/v/apsbss.svg)](https://pypi.python.org/pypi/apsbss)
+[![Conda package](https://anaconda.org/aps-anl-tag/apsbss/badges/installer/conda.svg)](https://conda.anaconda.org/prjemian)
+[![Conda package version](https://anaconda.org/aps-anl-tag/apsbss/badges/version.svg)](https://anaconda.org/aps-anl-tag/apsbss)
+[![Conda package platform(s)](https://anaconda.org/aps-anl-tag/apsbss/badges/platforms.svg)](https://anaconda.org/aps-anl-tag/apsbss)
+[![Conda package release date](https://anaconda.org/aps-anl-tag/apsbss/badges/latest_release_date.svg)](https://anaconda.org/aps-anl-tag/apsbss)
+
+
