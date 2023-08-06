@@ -1,0 +1,3 @@
+
+class CommandFailedException(Exception):
+    pass
