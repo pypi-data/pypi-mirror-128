@@ -1,0 +1,6 @@
+django-drf-filepond
+django-photologue<4.0,>=3.7
+django-rq
+django-video-encoding<2.0,>=1.0
+python-magic
+redis
