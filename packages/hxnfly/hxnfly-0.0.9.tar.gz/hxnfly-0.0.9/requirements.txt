@@ -1,0 +1,9 @@
+bluesky
+databroker
+IPython
+nslsii
+numpy
+ophyd
+pandas
+pyepics
+scipy
