@@ -1,0 +1,6 @@
+pandas
+numpy
+pandasql
+sas7bdat
+statsmodels
+matplotlib
