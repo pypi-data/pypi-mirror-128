@@ -1,0 +1,5 @@
+python-consul
+python-decouple
+wheel
+twine
+bdist_wheel
