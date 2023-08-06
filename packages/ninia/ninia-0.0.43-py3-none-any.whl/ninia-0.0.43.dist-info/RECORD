@@ -1,0 +1,15 @@
+ninia/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ninia/example.py,sha256=lb-DThgJIL2-asdx9RJkLvn_BkpQRkqmSDspWnQezu8,45
+ninia/mw_species_.py,sha256=wbi4dyE0bjAbGEJwVK7fgmnEup2RoHkpY_gqCRWvjCs,1995
+ninia/object.py,sha256=XPB7f276dCpvVdmGHZyQ9AaSQT1UMTeTWzTjSmU8HwM,1433
+ninia/output.py,sha256=b47IfxvVAvcNnFLad1AotrEzBreefKqgV3gj8gwPRM4,1434
+ninia/relax.py,sha256=YkYHqLzkEJAVusAV5acQ9aR4CJqbSwMUuFVA1mGbGX8,11019
+ninia/data/mm_of_elements.csv,sha256=U0XJXK-FiLWMv1Eckvt6RLNSOSKcpPMq4KdKkeYuhCI,1402
+ninia/input/pbs.sh,sha256=rn74IlOpA_6je_CmpMdy8qx8sKcWo1OgiXydiySj95w,332
+ninia/input/relax.i,sha256=BSSPYiHY-iMhJmiw4tpcw49tZc4T898rX9AIQo5Paew,753
+ninia/input/slurm.sh,sha256=6gY0s4pdJLiq10Juk_QRvjFw2jj_hhMMWHiQ6XNIDWo,436
+ninia-0.0.43.dist-info/LICENSE,sha256=GecWNOtdzzY5igXLnmmNItrxrOJ86aoWkB6y7MRaVMQ,1088
+ninia-0.0.43.dist-info/METADATA,sha256=nEj3fpJrlsDNurwYuP1PkcAIZu4U3px973BXOISGJyw,4174
+ninia-0.0.43.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ninia-0.0.43.dist-info/top_level.txt,sha256=aUdSu-9ua-Tu59Ss8NLCDN6epQvUBFfTPSoTWTEQBtw,6
+ninia-0.0.43.dist-info/RECORD,,
