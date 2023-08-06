@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: py-ele-1
+Version: 1.0.6
+Summary: 测试本地发布模块py_ele_1
+Home-page: https://gitee.com/xx/xxx.git
+Author: peter.peng
+Author-email: peng.peter@qq.com
+License: MIT
+Platform: linux/Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+
+UNKNOWN
+
