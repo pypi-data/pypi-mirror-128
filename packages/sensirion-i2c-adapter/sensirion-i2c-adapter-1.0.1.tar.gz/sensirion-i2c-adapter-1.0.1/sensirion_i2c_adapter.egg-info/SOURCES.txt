@@ -1,0 +1,15 @@
+CHANGELOG.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+sensirion_i2c_adapter/__init__.py
+sensirion_i2c_adapter/channel.py
+sensirion_i2c_adapter/i2c_channel.py
+sensirion_i2c_adapter/transfer.py
+sensirion_i2c_adapter/version.py
+sensirion_i2c_adapter.egg-info/PKG-INFO
+sensirion_i2c_adapter.egg-info/SOURCES.txt
+sensirion_i2c_adapter.egg-info/dependency_links.txt
+sensirion_i2c_adapter.egg-info/requires.txt
+sensirion_i2c_adapter.egg-info/top_level.txt

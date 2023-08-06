@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: sensirion-i2c-adapter
+Version: 1.0.1
+Summary: adapter classes to use sensirion_i2c_driver package
+Home-page: http://developers.sensirion.com
+Author: Rolf Laich
+Author-email: rolf.laich@sensirion.com
+License: proprietary
+Description: sensirion-i2c-adapter
+        =====================
+        
+        Install
+        -------
+        .. sourcecode:: bash
+        
+            pip install sensirion-i2c-adapter
+        
+        Recommended usage is within a virtualenv.
+        
+        Usage
+        -----
+        .. sourcecode:: python
+        
+            import sensirion_i2c_adapter
+        
+        CHANGELOG
+        ---------
+        1.0.1
+        :::::
+        
+        - First public release
+        - Extended documentation
+        
+        1.0.0
+        :::::
+        - added support for ignore_ack
+        
+        0.9.0
+        :::::
+        - Initial release
+        
+Keywords: driver driver-generator
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6, <4
+Provides-Extra: docs
+Provides-Extra: test
