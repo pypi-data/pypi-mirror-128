@@ -1,0 +1,3 @@
+[console_scripts]
+haimgard = haimgard.haimgard:main
+
