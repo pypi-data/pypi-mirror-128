@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "wa-status"
+version = "0.1.0"
+description = ""
+authors = ["ggzor <30713864+ggzor@users.noreply.github.com>"]
+
+[tool.poe.tasks]
+test = "pytest"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.11b1"
+pynvim = "^0.4.3"
+pylint = "^2.12.1"
+rope = "^0.22.0"
+poethepoet = "^0.11.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
