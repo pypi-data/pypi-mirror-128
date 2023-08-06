@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: gubert
+Version: 0.0.3
+Summary: Read the latest Real Python tutorials
+Home-page: https://github.com/Stranger65536/gubert
+Author: Stranger65536
+Author-email: stranger.65536@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: singleton-decorator (~=1.0.0)
+Requires-Dist: simple-term-menu (~=1.4.1)
+Requires-Dist: tabulate (~=0.8.9)
+
+# Gubert
+Interactive cli for managing kubernetes contexts & gcloud configurations
+
