@@ -1,0 +1,10 @@
+PyYAML==6.0
+coloredlogs==15.0.1
+pykwalify==1.8.0
+colorama==0.4.4
+typing-extensions==4.0.0
+semver==2.13.0
+patch-ng==1.17.4
+
+[:python_version <= "3.7.0"]
+importlib-resources==5.4.0
