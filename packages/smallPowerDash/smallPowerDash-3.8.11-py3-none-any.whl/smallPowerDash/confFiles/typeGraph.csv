@@ -1,0 +1,13 @@
+typeGraph,disabled
+Bilan système en puissance,False
+Validation instrumentation,True
+Bilan énergétique du GV,True
+Réglage de la ligne air,True
+Pertes de charge ligne air 1,True
+Réglage du GV 1,True
+Rendement du GV 2,True
+Pertes de charge ligne air 2,True
+Réglage du GV 3,True
+Rendement du GV 1,True
+Rendement du GV 2,True
+Pertes de charge ligne air 3,True
