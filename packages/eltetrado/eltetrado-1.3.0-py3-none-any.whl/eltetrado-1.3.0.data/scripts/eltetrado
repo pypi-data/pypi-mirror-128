@@ -1,0 +1,4 @@
+#!python
+import eltetrado.compute.analysis
+
+eltetrado.compute.analysis.eltetrado()
