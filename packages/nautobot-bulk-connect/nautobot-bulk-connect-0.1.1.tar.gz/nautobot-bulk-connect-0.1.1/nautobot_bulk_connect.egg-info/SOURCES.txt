@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+nautobot_bulk_connect/__init__.py
+nautobot_bulk_connect/forms.py
+nautobot_bulk_connect/template_content.py
+nautobot_bulk_connect/urls.py
+nautobot_bulk_connect/views.py
+nautobot_bulk_connect.egg-info/PKG-INFO
+nautobot_bulk_connect.egg-info/SOURCES.txt
+nautobot_bulk_connect.egg-info/dependency_links.txt
+nautobot_bulk_connect.egg-info/not-zip-safe
+nautobot_bulk_connect.egg-info/top_level.txt
+nautobot_bulk_connect/templates/nautobot_bulk_connect/cable_connect.html
+nautobot_bulk_connect/templates/nautobot_bulk_connect/inc/buttons.html
