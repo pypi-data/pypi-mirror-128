@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/rosenbrock/__init__.py
+src/rosenbrock/rosenbrock.py
+src/rosenbrock.egg-info/PKG-INFO
+src/rosenbrock.egg-info/SOURCES.txt
+src/rosenbrock.egg-info/dependency_links.txt
+src/rosenbrock.egg-info/requires.txt
+src/rosenbrock.egg-info/top_level.txt
