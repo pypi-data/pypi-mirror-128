@@ -1,0 +1,2 @@
+mysmallutils>=0.2.0
+pymongo<4.0,>=3.0
