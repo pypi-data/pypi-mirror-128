@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+fitkit/__init__.py
+fitkit.egg-info/PKG-INFO
+fitkit.egg-info/SOURCES.txt
+fitkit.egg-info/dependency_links.txt
+fitkit.egg-info/top_level.txt
