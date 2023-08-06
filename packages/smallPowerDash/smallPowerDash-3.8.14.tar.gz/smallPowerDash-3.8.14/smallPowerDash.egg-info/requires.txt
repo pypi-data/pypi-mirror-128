@@ -1,0 +1,2 @@
+dorianUtilsModulaire==3.11.6
+openpyxl==3.0.7
