@@ -1,0 +1,10 @@
+pandas
+requests
+tqdm
+click
+python-dotenv
+
+[dev]
+twine
+ipython
+bump2version
