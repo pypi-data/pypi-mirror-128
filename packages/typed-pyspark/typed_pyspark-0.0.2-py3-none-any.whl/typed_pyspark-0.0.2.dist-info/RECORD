@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+tests/test_object_def.py,sha256=LOV5my9FaIMieC9anjlNq12aHyd8uIw_bRP6pZkbFzc,441
+tests/test_subscriptableclass_approach.py,sha256=QQEfEG2cH3_T8DbFYgzLNSg_ESl-eWsdEh7Ua_w55iw,534
+tests/test_tuple_approach.py,sha256=T4cjfOpTRLh_0vJKpV810SUOlzizqkNXsao8s2awa9o,1076
+tests/test_validate.py,sha256=Kq-wsFWaftLTDKT4XgC_Rg0_jYuHN5YR4Zm0BJUCAy0,1542
+typed_pyspark/__init__.py,sha256=H_AoP1nyLw0ljplS885mKltOsL9C_WRX39T3ktRYUrM,2892
+typed_pyspark/mypy_plugin.py,sha256=zBPJR341Csg7IsolC_eSDCrbQL4BhsCuVb675NwtYe8,444
+typed_pyspark-0.0.2.dist-info/METADATA,sha256=s8tP56W6HnrGVmymykT9TXspc_0INoXv4780Q1BI9tg,334
+typed_pyspark-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+typed_pyspark-0.0.2.dist-info/top_level.txt,sha256=QtBs0ui62BS3wZS_cCtn35aaoZpRjoACx_Z5vNc34p8,20
+typed_pyspark-0.0.2.dist-info/RECORD,,
