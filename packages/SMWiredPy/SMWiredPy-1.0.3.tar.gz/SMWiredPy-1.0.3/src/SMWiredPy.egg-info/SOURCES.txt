@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/SMWiredPy.egg-info/PKG-INFO
+src/SMWiredPy.egg-info/SOURCES.txt
+src/SMWiredPy.egg-info/dependency_links.txt
+src/SMWiredPy.egg-info/requires.txt
+src/SMWiredPy.egg-info/top_level.txt
+src/sensemore/SMWiredPy.py
+src/sensemore/__init__.py
+src/sensemore/example.py
