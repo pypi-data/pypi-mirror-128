@@ -1,0 +1,42 @@
+{# has_regressions is used in blocks/subject.jinja #}
+{% set has_regressions = True if regressions|length > 0 else False %}
+{% include "blocks/subject.jinja" %}
+{% include "blocks/kernel.jinja" %}
+
+## Regressions (compared to {{ base_build.version }})
+{% if regressions|length == 0 %}
+No regressions found.
+{% else %}
+{% for key in regressions %}
+{% if regressions[key]|length == 0 %}{% continue %}{% endif %}
+* {{ key[0] }}, {{ key[1] }}
+{% for t in regressions[key] %}
+  - {{ t }}
+{% endfor %}
+
+{% endfor %}
+{% endif %}
+
+{% if regressions|length == 0 %}
+Tested-by: {{config.reported_tested_by}}
+
+{% else %}
+Reported-by: {{config.reported_tested_by}}
+
+{% endif %}
+
+## Fixes (compared to {{ base_build.version }})
+{% if fixes|length == 0 %}
+No fixes found.
+{% else %}
+{% for key in fixes %}
+{% if fixes[key]|length == 0 %}{% continue %}{% endif %}
+* {{ key[0] }}, {{ key[1] }}
+{% for t in fixes[key] %}
+  - {{ t }}
+{% endfor %}
+
+{% endfor %}
+{% endif %}
+
+{% include "blocks/summary.jinja" %}
