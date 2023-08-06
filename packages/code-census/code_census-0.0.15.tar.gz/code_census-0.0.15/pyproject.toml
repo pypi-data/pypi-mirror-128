@@ -1,0 +1,65 @@
+[tool.poetry]
+name = "code_census"
+version = "0.0.15"
+description = "A command line tool to collect, organize, report code metrics."
+authors = ["Kracekumar <me@kracekumar.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/kracekumar/code_census"
+include = ["code_census/alembic.ini", "README.md"]
+homepage = "https://kracekumar.github.io/code_census/"
+documentation = "https://kracekumar.github.io/code_census/"
+keywords = ["CLI", "mypy", "developer-tools", "code-quality", "metrics"]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/kracekumar/code_census/issues"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = ">= 7.1.2"
+SQLAlchemy = "1.4.0"
+alembic = "^1.6.5"
+psycopg2 = "^2.9.1"
+SQLAlchemy-Utils = "^0.37.8"
+rich = "^10.7.0"
+mypy = "^0.910"
+beautifulsoup4 = "^4.9.3"
+lxml = "^4.6.3"
+
+[tool.poetry.dev-dependencies]
+black = "^21.8b0"
+mypy = "^0.910"
+taskipy = "^1.8.1"
+mkdocs = "^1.2.2"
+mkdocs-material = "^7.2.6"
+mkdocs-click = "^0.4.0"
+pre-commit = "^2.15.0"
+ipython = "^7.27.0"
+pytest = "^6.2.5"
+sqlalchemy2-stubs = "^0.0.2-alpha.19"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+mypy_report = "mypy --config-file=pyproject.toml . --html-report ."
+docs_serve = "mkdocs serve"
+docs_build = "mkdocs build"
+
+[tool.poetry.scripts]
+census = "code_census.cli:cli"
+code_census = "code_census.cli:cli"
+
+
+[tool.mypy]
+exclude="code_census/alembic"
+plugins = ["sqlalchemy.ext.mypy.plugin"]
+
+ignore_errors = true
