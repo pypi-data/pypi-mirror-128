@@ -1,0 +1,5 @@
+<tal:block i18n:domain="propfinder" metal:define-macro="listing_buttons">
+    <tal:block tal:condition="view.creation_allowed and api.has_permission(view.creation_permission, request.context)" tal:define="model context.model;">
+        <a metal:use-macro="view.macros['create_button']"></a>
+    </tal:block>
+</tal:block>

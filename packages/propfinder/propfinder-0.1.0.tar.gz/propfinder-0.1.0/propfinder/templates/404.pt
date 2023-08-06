@@ -1,0 +1,18 @@
+<div metal:use-macro="load: layout.pt" tal:define="cls 'page not-found';">
+
+    <div metal:fill-slot="content">
+
+        <div class="content">
+
+            <h1>PropFinder</h1>
+
+            <h2 i18n:translate="">Page not found</h2>
+
+            <p i18n:translate="">
+                Couldn't find the indicated address. Please, verify it and try again.
+            </p>
+
+        </div>
+
+    </div>
+</div>

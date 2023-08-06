@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      i18n:domain="propfinder">
+    <head>
+        <title>Macros</title>
+    </head>
+    <body>
+
+        <script type="text/javascript" metal:define-macro="zone_selector_script">
+            $(document).ready(function(){
+                var locationsURL = "${request.route_url('locations.values', id='{0}')}";
+                var $townSelector = $('select[name=town_id]');
+                var $zoneSelector = $('select[name=zone_id]');
+
+                var updateZoneOptions = function () {
+                    // Disable zone selector if no town has been selected
+                    if (!$townSelector.val()) {
+                        $zoneSelector.val('');
+                        $zoneSelector.trigger('change');
+                        $zoneSelector.prop("disabled", true);
+                    }
+                    else {
+                        var zone = $zoneSelector.val();
+
+                        //Remove all options except first
+                        $zoneSelector[0].options.length = 1;
+                        $zoneSelector.trigger("change");
+                        $zoneSelector.prop("disabled", false);
+                        $.ajax({
+                            type: "GET",
+                            url: unescape(locationsURL).format($townSelector.val()),
+                            dataType: "json",
+                            error: function (data) {
+                                console.error("Error occurred when updating zone selection options");
+                            },
+                            success: function (data) {
+                                for (key in data) {
+                                    selected = (key == zone);
+                                    option = new Option(data[key], key, false, selected);
+                                    $zoneSelector.append(option);
+                                }
+                                $zoneSelector.trigger("change");
+                            }
+                        });
+                    }
+                };
+
+                updateZoneOptions();
+
+                $townSelector.change(function(e) {
+                    updateZoneOptions();
+                });
+            });
+        </script>
+
+    </body>
+</html>

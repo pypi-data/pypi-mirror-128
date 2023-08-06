@@ -1,0 +1,18 @@
+<div metal:use-macro="load: layout.pt" tal:define="cls 'page forbidden';" i18n:domain="propfinder">
+
+    <div metal:fill-slot="content">
+
+        <div class="content">
+
+            <h1>PropFinder</h1>
+
+            <h2 i18n:translate="">Access denied</h2>
+
+            <p i18n:translate="">
+                You don't have permission to access to this section
+            </p>
+
+        </div>
+
+    </div>
+</div>

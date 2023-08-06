@@ -1,0 +1,9 @@
+[console_scripts]
+deactivate_properties = propfinder.scripts.deactivate_properties:main
+initialize_propfinder_db = propfinder.scripts.initialize_db:main
+scrape_properties = propfinder.scripts.scrape_properties:main
+update_stats = propfinder.scripts.update_stats:main
+
+[paste.app_factory]
+main = propfinder:main
+

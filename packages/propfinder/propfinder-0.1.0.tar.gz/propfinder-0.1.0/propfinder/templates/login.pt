@@ -1,0 +1,15 @@
+<div metal:use-macro="load: layout.pt">
+
+    <div metal:fill-slot="content">
+
+        <h1>PropFinder</h1>
+
+        <div class="alert alert-danger" tal:condition="login_failed" i18n:translate="">
+            Incorrect user or password
+        </div>
+
+        <tal:form replace="structure forms['login_form'].render()" />
+
+    </div>
+
+</div>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}"
+    metal:define-macro="layout"
+    i18n:domain="propfinder"
+    tal:define="navigation navigation | request.user is not None; cls cls | '';">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="${request.static_url('propfinder:static/img/favicon.ico')}" type="image/vnd.microsoft.icon" />
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <title><tal:title condition="page_title | None">${page_title} &mdash; </tal:title>PropFinder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jordi Fernández">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- Le styles -->
+
+        <link rel="stylesheet" type="text/css" media="screen" charset="utf-8"
+            href="${request.static_url('propfinder:static/font-awesome/css/all.min.css')}" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
+        <link rel="stylesheet"
+            href="${request.static_url('deform:static/css/bootstrap.min.css')}" type="text/css" />
+        <link rel="stylesheet"
+            href="${request.static_url('deform:static/css/form.css')}" type="text/css" />
+
+        <!-- Generated resources -->
+        <tal:resources repeat="css_path css_resources | []">
+            <link rel="stylesheet" media="screen" type="text/css"
+                tal:attributes="href python: request.static_url(css_path)" />
+        </tal:resources>
+
+        <link rel="stylesheet" type="text/css" charset="utf-8"
+              href="${request.static_url('propfinder:static/css/main.css')}" />
+
+        <metal:css define-slot="css"/>
+
+        <!-- JavaScript -->
+        <script type="text/javascript"
+            src="${request.static_url('deform:static/scripts/jquery-2.0.3.min.js')}"></script>
+
+        <script type="text/javascript"
+            src="${request.static_url('deform:static/scripts/bootstrap.min.js')}"></script>
+
+        <!-- Generated Resources -->
+        <tal:resources repeat="js_path js_resources | []">
+            <script type="text/javascript"
+                tal:attributes="src python: request.static_url(js_path)"></script>
+        </tal:resources>
+
+        <metal:js define-slot="javascript"/>
+
+        <script type="text/javascript"
+            src="${request.static_url('propfinder:static/js/propfinder.js')}"></script>
+
+    </head>
+
+    <?python
+    if request.matched_route:
+        cls = ("%s %s" % (cls, request.matched_route.name.replace('.', '-'))).strip()
+
+    if request.authenticated_userid:
+        cls = "%s logged-in" % (cls,)
+    ?>
+    <body class="Layout ${cls}">
+
+        <nav tal:condition="navigation | True" class="navbar navbar-inverse navbar-fixed-top">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only" i18n:translate="">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="${request.application_url}" class="navbar-brand">
+                    PropFinder
+                </a>
+            </div>
+
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li tal:condition="api.has_permission('view', context='propfinder.resources.PageResource')">
+                        <a href="${request.route_url('properties.listing')}" i18n:translate="">Properties</a>
+                    </li>
+                    <li tal:condition="api.has_permission('view', context='propfinder.resources.AdminResource')">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span i18n:translate="">Administration</span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li tal:condition="api.has_permission('view', context='propfinder.resources.URLResource')">
+                                <a href="${request.route_url('urls.listing')}" i18n:translate="">URLs</a>
+                            </li>
+                            <li tal:condition="api.has_permission('view', context='propfinder.resources.LocationResource')">
+                                <a href="${request.route_url('locations.listing')}" i18n:translate="">Locations</a>
+                            </li>
+                            <li tal:condition="api.has_permission('admin', context='propfinder.resources.UserResource')">
+                                <a href="${request.route_url('users.listing')}" i18n:translate="">Users</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" tal:condition="request.authenticated_userid">
+                    <li>
+                        <span class="identity">${request.user.name}</span>
+                    </li>
+                    <li><a class="logout-button" href="${request.route_url('logout')}" i18n:translate="">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+
+            <div class="notifications" tal:condition="request.session.peek_flash(queue='success') or request.session.peek_flash(queue='warning') or request.session.peek_flash(queue='error')">
+                <div class="alert alert-success" tal:condition="request.session.peek_flash(queue='success')">
+                    <p class="message" tal:repeat="message set(request.session.pop_flash(queue='success'))">
+                        ${structure: message}
+                    </p>
+                </div>
+                <div class="alert alert-warning" tal:condition="request.session.peek_flash(queue='warning')">
+                    <p class="message" tal:repeat="message set(request.session.pop_flash(queue='warning'))">
+                        ${structure: message}
+                    </p>
+                </div>
+                <div class="alert alert-danger" tal:condition="request.session.peek_flash(queue='error')">
+                    <p class="message" tal:repeat="message set(request.session.pop_flash(queue='error'))">
+                        ${structure: message}
+                    </p>
+                </div>
+            </div>
+
+            <metal:content define-slot="title"></metal:content>
+
+            <div class="toolbar">
+                <metal:content define-slot="toolbar">
+                </metal:content>
+            </div>
+
+            <!--! Page Content from other templates -->
+            <div id="content">
+                <metal:content define-slot="content"></metal:content>
+            </div>
+
+            <tal:block tal:repeat="modal modals | ()">
+                <tal:block replace="structure modal" />
+            </tal:block>
+
+            <div id="footer">
+            </div>
+
+        </div>
+
+    </body>
+</html>

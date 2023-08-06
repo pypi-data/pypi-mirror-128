@@ -1,0 +1,27 @@
+<div metal:extend-macro="load: backofficelisting.pt"
+    i18n:domain="propfinder">
+
+    <tal:block metal:fill-slot="javascript">
+        <script type="text/javascript" metal:use-macro="view.macros['zone_selector_script']"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.toggle-starred').click(function(e) {
+                    $link = $(this);
+                    $.ajax({
+                        type: "POST",
+                        url: $link.data("toggle-starred"),
+                        dataType: "json",
+                        error: function (data) {
+                            console.error("Error occurred when changing starred flag");
+                        },
+                        success: function (data) {
+                            $link.toggleClass("fa");
+                            $link.toggleClass("far");
+                        }
+                    });
+                });
+            });
+        </script>
+    </tal:block>
+
+</div>

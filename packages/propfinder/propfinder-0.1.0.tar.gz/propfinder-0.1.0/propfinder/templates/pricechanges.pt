@@ -1,0 +1,5 @@
+<tal:block metal:extend-macro="load: dynamicmodalcontent.pt" i18n:domain="propfinder">
+    <tal:block metal:fill-slot="content">
+        <table tal:replace="structure content" />
+    </tal:block>
+</tal:block>
