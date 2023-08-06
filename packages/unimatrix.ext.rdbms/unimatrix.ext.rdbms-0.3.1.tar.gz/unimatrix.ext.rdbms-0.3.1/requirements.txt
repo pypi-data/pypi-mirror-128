@@ -1,0 +1,5 @@
+alembic>=1.7.5
+python-ioc
+sqlalchemy>=1.4.27
+unimatrix>=0.14.1
+unimatrix.ext.etc
