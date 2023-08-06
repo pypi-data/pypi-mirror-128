@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: carnival
+Version: 3.0.0
+Summary: Fabric-based software provisioning tool
+License: MIT
+Author: Dmirty Simonov
+Author-email: demalf@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Click (==8.0.3)
+Requires-Dist: Fabric (==2.6.0)
+Requires-Dist: Jinja2 (==3.0.3)
+Requires-Dist: invoke (==1.6.0)
+Requires-Dist: python-dotenv (==0.19.2)
