@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: redis_cache_lock
+Version: 3.5
+Summary: Synchronizing cache generation to reduce work
+Author-email: HoverHell <hoverhell@gmail.com>
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: attrs
+Requires-Dist: aioredis
+Requires-Dist: docutils>=0.16 ; extra == "tests"
+Requires-Dist: flake8>=3.9.0 ; extra == "tests"
+Requires-Dist: flake8-future-import>=0.4.6 ; extra == "tests"
+Requires-Dist: flake8-print>=4.0.0 ; extra == "tests"
+Requires-Dist: pyproject-flake8 ; extra == "tests"
+Requires-Dist: isort>=5.8.0 ; extra == "tests"
+Requires-Dist: mypy>=0.812 ; extra == "tests"
+Requires-Dist: pep8-naming>=0.11.1 ; extra == "tests"
+Requires-Dist: Pygments>=2.8.1 ; extra == "tests"
+Requires-Dist: pylint>=2.7.4 ; extra == "tests"
+Requires-Dist: pytest>=6.2.2 ; extra == "tests"
+Requires-Dist: pytest-asyncio>=0.14.0 ; extra == "tests"
+Requires-Dist: pytest-cov>=2.11.1 ; extra == "tests"
+Requires-Dist: pytest-html>=3.1.1 ; extra == "tests"
+Requires-Dist: tox>=3.5.3 ; extra == "tests"
+Requires-Dist: black ; extra == "tools"
+Requires-Dist: isort ; extra == "tools"
+Project-URL: Home, https://gitlab.com/hoverhell/redis-cache-lock/
+Provides-Extra: tests
+Provides-Extra: tools
+
+================
+redis_cache_lock
+================
+
+Cache with synchronization over redis.
+
+Similar to `aioredis lock
+<https://github.com/aio-libs/aioredis-py/blob/master/aioredis/lock.py>`_,
+but optimized for synchronizing cache, to reduce work done.
+
+Highly similar to `redis-memolock
+<https://github.com/kristoff-it/redis-memolock>`_.
+
+
+Usage
+-----
+
+See `example.py <doc/example.py>`_.
+
