@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ukedown"
+version = "2.0.0"
+description = "Markdown extensions for songsheet creation"
+authors = ["Stuart Sears <stuart@sjsears.com>"]
+license = "GPL-3.0-or-later"
+include = ["README.md", "CHANGELOG.md", "example.css" ]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/lanky/ukedown/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Markdown = "^3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
