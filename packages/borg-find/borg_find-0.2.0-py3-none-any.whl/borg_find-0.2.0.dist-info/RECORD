@@ -1,0 +1,12 @@
+borg_find/__init__.py,sha256=6WH3d-BfaFMgipXpLWnqFMchP_HHdD5-W6FtlJmSlsA,126
+borg_find/borg.py,sha256=mXps8uzF7yxh426XUHPmod9NfGZqLjo9Xu-cXi_WKfs,2885
+borg_find/cli.py,sha256=2KvoNMjm0OGPF0LQyebSHbO-5KMQSL1Nifh1x3rkCVQ,9326
+borg_find/filters.py,sha256=LvhIauGKyXKKc55smCtgCm1xt6zvWmmSm6gTaAfp3xc,2180
+borg_find/model.py,sha256=4WdWM3U7_gfgM780g9CbO6bFsaXx6uA4pXQp7uvmUfM,4889
+borg_find/ui.py,sha256=7qSMHn0NPnf__OlpsfVba1A8LsT9Ju1M31jECHtZbK4,2058
+borg_find/utils.py,sha256=94msoydFVnZjwrYIhRiH5HRANHcxe5bO0siVdaf_ZBU,904
+borg_find-0.2.0.dist-info/entry_points.txt,sha256=LSwc2GiX8YZN4IsW62wLB4RF8m2g_prpxXEqRLYe4vw,47
+borg_find-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+borg_find-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+borg_find-0.2.0.dist-info/METADATA,sha256=pLAWy0EJaWo1Z4B1iUCf8MIivYnwA7v-5czWYx-_Rqc,592
+borg_find-0.2.0.dist-info/RECORD,,
