@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/cldfcatalog/__init__.py
+src/cldfcatalog/catalog.py
+src/cldfcatalog/config.py
+src/cldfcatalog/repository.py
+src/cldfcatalog.egg-info/PKG-INFO
+src/cldfcatalog.egg-info/SOURCES.txt
+src/cldfcatalog.egg-info/dependency_links.txt
+src/cldfcatalog.egg-info/not-zip-safe
+src/cldfcatalog.egg-info/requires.txt
+src/cldfcatalog.egg-info/top_level.txt
