@@ -1,0 +1,4 @@
+[console_scripts]
+logistes = akrophonobolos.logistes:main
+obol = akrophonobolos.obol:main
+
