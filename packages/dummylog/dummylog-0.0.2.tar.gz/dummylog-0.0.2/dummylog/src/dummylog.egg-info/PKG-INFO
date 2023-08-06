@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: dummylog
+Version: 0.0.2
+Summary: dummylog is the open source python package to help the python module/plugin developers to create/update the log files in simple syntax and easy format
+Home-page: https://github.com/selva221724/dummylog
+Author: Tamil Selvan A V
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Framework :: IPython
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Environment :: Console
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/selva221724/dummylog/main/readme_src/dummyloglogo.png"  width="70%" height="70%">
+  <br><br>
+</p>
+
+
+**dummylog** is the open source python package to help the python module/plugin developers to create/update the log files in simple syntax and easy format. If you are looking for a single file based log, then dummylog is for you to keep your simple logs
+
+If you are using Flask API or any API decorators with dummylog, it will create a new log every time since decorators will trigger the function as every new instance. 
+
+
+<!---[<img src="https://img.shields.io/pypi/v/edaSQL">](https://pypi.org/project/edaSQL/)
+[<img src="https://img.shields.io/readthedocs/edasql">](https://edasql.readthedocs.io/en/latest/)
+[<img src="https://img.shields.io/static/v1?label=license&message=MIT&color=green">](https://opensource.org/licenses/MIT)
+<img src="https://img.shields.io/pypi/wheel/edaSQL">
+<img src = "https://img.shields.io/pypi/pyversions/edaSQL">
+<img src = "https://img.shields.io/github/commit-activity/w/selva221724/edaSQL">
+<img src = "https://img.shields.io/github/languages/code-size/selva221724/edaSQL">--->
+
+
+## Installation
+
+**Install using pip** . [Offical Python Package Here!!](https://pypi.org/project/pypostalwin/)
+```shell
+pip install dummylog
+```
+
+(OR)
+
+Clone this Repository. Run this from the root directory to install
+
+```shell
+python setup.py install
+```
+
+## Documentation
+
+<img src="https://blog.readthedocs.com/_static/logo-opengraph.png"  width="20%" height="20%">
+
+[Read the detailed documentation in readthedocs.io](https://pypostalwin.readthedocs.io/en/latest/)
+
+## License
+The license for dummylog is MIT license 
+
+## Need help?
+Stuck on your dummylog code or problem? Any other questions? Don't
+hestitate to send me an email (selva221724@gmail.com).
+
+## Usage
+
+### 1. Import Package
+```python
+import dummylog
+```
+
+### 2. Initialize the dummylog Object
+```python
+dl = dummylog.DummyLog()
+
+```
+
+### 3. Enjoy Logging
+```python
+dl.logger.info('Log File is Created Successfully')
+
+dl.logger.info('Unmayanaa Google Competitors')
+
+dl.logger.error('Vada poche')
+```
+
+This will create a log file in the root directory of the python script.
+
+### 4. To Kill the dummylog instance
+```python
+dl.kill()
+```
+**Note:** Do not use dummylog in case if you are using the logging module in the same script for other purposes. it will conflict with the logging thread and append things to gather.
+
+
+
+## Future Work
+- dummylog will be enabled for multithreading
+- enhance logging capability
+
+
