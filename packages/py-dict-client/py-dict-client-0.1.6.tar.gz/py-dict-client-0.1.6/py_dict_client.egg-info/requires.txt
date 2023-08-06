@@ -1,0 +1,13 @@
+
+[dev]
+nose2
+coverage
+pylint
+flake8
+black
+isort
+
+[dist]
+setuptools
+wheel
+twine
