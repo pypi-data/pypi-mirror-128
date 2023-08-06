@@ -1,0 +1,2 @@
+include src/nanocompare/*.csv
+include src/nanocompare/xgboost/trained_model/*.pkl
