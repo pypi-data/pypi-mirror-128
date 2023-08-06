@@ -1,0 +1,13 @@
+numpy
+scipy
+pandas
+obspy
+pyasdf
+numba
+pycwt
+shapely
+netCDF4
+tslearn
+plotly
+kaleido
+minisom
