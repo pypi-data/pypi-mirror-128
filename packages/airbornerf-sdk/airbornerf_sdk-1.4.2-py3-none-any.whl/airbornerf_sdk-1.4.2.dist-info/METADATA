@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: airbornerf-sdk
+Version: 1.4.2
+Summary: AirborneRF SDK
+Home-page: https://www.airbornerf.com/
+Author: Thomas Wana
+Author-email: support@airbornerf.com
+License: Proprietary
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: requests
+
+UNKNOWN
+
+
