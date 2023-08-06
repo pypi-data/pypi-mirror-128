@@ -1,0 +1,4 @@
+certifi
+python-mpv
+python-mpv-jsonipc>=1.1.8
+requests
