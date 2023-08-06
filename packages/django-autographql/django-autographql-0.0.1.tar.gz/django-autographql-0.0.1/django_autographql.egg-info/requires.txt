@@ -1,0 +1,6 @@
+Django>=3.2
+djangorestframework>=3.12
+graphene>=3.0
+graphene-django>=3.0
+graphene-django-optimizer>=0.9.1
+bridgekeeper>=0.9
