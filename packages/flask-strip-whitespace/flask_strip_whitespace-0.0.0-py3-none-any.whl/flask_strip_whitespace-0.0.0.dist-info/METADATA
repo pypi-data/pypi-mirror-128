@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: flask-strip-whitespace
+Version: 0.0.0
+Summary: A powerful HTML whitespace remover
+Home-page: https://github.com/baseplate-admin/flask_strip_whitespace
+Author: baseplate-admin
+Author-email: zarifahanf@outlook.com
+License: GPLv3
+Keywords: flask alpinejs middleware
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only 
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.7, <3.11
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: minify-html
+Provides-Extra: brotli
+Requires-Dist: brotlipy ; (implementation_name == "PyPy") and extra == 'brotli'
+Requires-Dist: Brotli ; (implementation_name == "cpython") and extra == 'brotli'
+Provides-Extra: zstd
+Requires-Dist: zstd ; extra == 'zstd'
+
+UNKNOWN
+
