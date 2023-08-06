@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+PoliticsAndData.egg-info/PKG-INFO
+PoliticsAndData.egg-info/SOURCES.txt
+PoliticsAndData.egg-info/dependency_links.txt
+PoliticsAndData.egg-info/top_level.txt
+pnd/__init__.py
+pnd/apathy.py
+pnd/boredom.py
+pnd/specific.py
