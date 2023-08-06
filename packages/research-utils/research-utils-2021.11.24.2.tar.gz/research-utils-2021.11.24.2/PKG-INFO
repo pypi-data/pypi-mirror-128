@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: research-utils
+Version: 2021.11.24.2
+Summary: some utils for my research
+Author: Rainforest Cheng
+Author-email: r08521610@ntu.edu.tw
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: sqlite-utils (>=3.6,<4.0)
