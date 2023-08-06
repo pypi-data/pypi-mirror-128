@@ -1,0 +1,8 @@
+cython
+bx-python
+numpy
+pandas
+pystan
+pysam
+plotnine
+scipy
