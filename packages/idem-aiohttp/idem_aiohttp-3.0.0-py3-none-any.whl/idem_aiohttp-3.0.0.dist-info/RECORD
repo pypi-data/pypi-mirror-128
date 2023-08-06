@@ -1,0 +1,15 @@
+idem_aiohttp/conf.py,sha256=ysjQnj2k6Xfjpcgd_O8ZQOVlDQmnB4DgvU2_MInoGMc,62
+idem_aiohttp/version.py,sha256=zLlTCbOtEF_nxy8L7Yt6LAR_p8MCmlQWBI6eWqY7VXs,18
+idem_aiohttp/acct/request/basic_auth.py,sha256=NQ5UQsNzzwg9O5O38i_KpJkOuqqNGet-sRMDK5NNB6k,2731
+idem_aiohttp/exec/request/init.py,sha256=lsGTYpuqKBlXcnFMwx4cCsemaxJdr_J0zrVifAAxb6M,67
+idem_aiohttp/exec/request/json_request.py,sha256=umhr7r-RymDjxmlVIdGl6cIFBdD2Vk2v19Wo1Zv6rC8,5854
+idem_aiohttp/exec/request/raw.py,sha256=zWLp_lo8H5m6W-L30UFD3JgdCOLk6hx0G-k7KXbBTK0,2390
+idem_aiohttp/tool/request/application.py,sha256=Uhpa6_EsMABq3ahXqbEd7WkLn7BE61XjVP3_0d4R2vs,3651
+idem_aiohttp/tool/request/session.py,sha256=7pPI4eGwmKtRu8C-vMBOSYHa6ej8gjzEfVYXxe1rc8Y,995
+idem_aiohttp/tool/type/dict.py,sha256=7hD4R0n6mhcRP1le-TLk29XIobdkCg83URjNmjrAUVg,373
+idem_aiohttp-3.0.0.dist-info/LICENSE,sha256=O7IpADM12kOhyGCTRMTdwc1BK4QtI9avtj2pRW-_cW0,11343
+idem_aiohttp-3.0.0.dist-info/METADATA,sha256=lvmp_M2_oXzl9alpuYr8pxInzt9Hs6tzIQgBVgBQ1iI,4247
+idem_aiohttp-3.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+idem_aiohttp-3.0.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+idem_aiohttp-3.0.0.dist-info/top_level.txt,sha256=5vBq2xsFLCA2qoED44_a_t50pqQ3VhVCFUNq1QT0T30,13
+idem_aiohttp-3.0.0.dist-info/RECORD,,
