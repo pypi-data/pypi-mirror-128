@@ -1,0 +1,9 @@
+README.md
+setup.py
+metadata_dc/__init__.py
+metadata_dc/metadata.py
+ndpmetadata.egg-info/PKG-INFO
+ndpmetadata.egg-info/SOURCES.txt
+ndpmetadata.egg-info/dependency_links.txt
+ndpmetadata.egg-info/requires.txt
+ndpmetadata.egg-info/top_level.txt
