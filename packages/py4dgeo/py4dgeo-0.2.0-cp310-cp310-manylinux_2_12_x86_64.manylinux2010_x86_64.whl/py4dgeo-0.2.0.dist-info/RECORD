@@ -1,0 +1,13 @@
+py4dgeo/__init__.py,sha256=OjNI4vGOUZ34B_yOcS0WvapYWjAQpzum7EmGfZeExkI,189
+py4dgeo/m3c2.py,sha256=EGZhkQdezjiwsCP-G8zESEjApYBbrYheduCxcEg-JFs,5085
+py4dgeo/_py4dgeo.cpython-310-x86_64-linux-gnu.so,sha256=qtwS3q-md377Wmsi1XobAk6LB1w2q2zVkrGx5yOjhYo,546160
+py4dgeo/epoch.py,sha256=OjnFuvsYJWRaZWDkBbeA-g-4lHDM40optYLw8QnapqU,1116
+py4dgeo/fallback.py,sha256=TSne24ruIOPFkE0xRKetEx8GOf7KZyJFUhZTL7zJLZY,2450
+py4dgeo/util.py,sha256=gHR2YGW2n13viCX-VpAlpBofuDg3-r5vIP4kG8-4NcM,5847
+py4dgeo.libs/libgomp-f7e03b3e.so.1.0.0,sha256=GzmXB1qluHXQUhlsmNKuWncNm8Jezfq1jt5rKrV_8kQ,93080
+py4dgeo-0.2.0.dist-info/LICENSE.md,sha256=vMqotsCflOgfBmluF52-BYRku9-8gjttScraHXHoSsM,1022
+py4dgeo-0.2.0.dist-info/top_level.txt,sha256=Hda6A92db-qiPIT5hUPqcZF2jhZNGidN7XyRJHmfs9A,8
+py4dgeo-0.2.0.dist-info/RECORD,,
+py4dgeo-0.2.0.dist-info/WHEEL,sha256=OTe0Bm210n0fwyQv3WgLNwWbJc5XtrpVREECdzKDxEs,146
+py4dgeo-0.2.0.dist-info/COPYING.md,sha256=1mYe0909WJ8Wkeo3D0E7QW_mKVFJ0xTjPPzbeQIpOKw,795
+py4dgeo-0.2.0.dist-info/METADATA,sha256=UTIxbZ2-3EziloqR-t2EoYl0OfNDCAE9L013ruyBDjA,474
