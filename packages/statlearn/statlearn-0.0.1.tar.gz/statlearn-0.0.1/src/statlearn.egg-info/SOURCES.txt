@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/statlearn/__init__.py
+src/statlearn/statlearn.py
+src/statlearn.egg-info/PKG-INFO
+src/statlearn.egg-info/SOURCES.txt
+src/statlearn.egg-info/dependency_links.txt
+src/statlearn.egg-info/top_level.txt
