@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ColorfulData.egg-info/PKG-INFO
+src/ColorfulData.egg-info/SOURCES.txt
+src/ColorfulData.egg-info/dependency_links.txt
+src/ColorfulData.egg-info/requires.txt
+src/ColorfulData.egg-info/top_level.txt
+src/ColorfulData_Package/ColorfulData.py
+src/ColorfulData_Package/__init__.py

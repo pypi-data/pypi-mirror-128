@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ColorfulData
+Version: 1.0.0
+Summary: Evenly Distribute Color Palettes Across Data
+Home-page: https://github.com/Alex8695/ColorfulData
+Author: Alex Crockett
+Author-email: gf8stiv3@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/Alex8695/ColorfulData/issues
+Project-URL: Source, https://github.com/Alex8695/ColorfulData
+Keywords: color palette,data,graphing,charting,setuptools,development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+
+# Colorful Data
+Evenly Distribute Color Palette To Objects
+
+Easily Scale Color Palette 
+
