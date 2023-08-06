@@ -1,0 +1,17 @@
+setup.py
+crash2json/__init__.py
+crash2json/__main__.py
+crash2json/_binary_image.py
+crash2json/_crash2json.py
+crash2json/_crashed_thread_state.py
+crash2json/_diagnostic_message.py
+crash2json/_exception_backtrace.py
+crash2json/_exception_information.py
+crash2json/_header.py
+crash2json/_other_threads_backtrace.py
+crash2json/_thread_0_backtrace.py
+crash2json.egg-info/PKG-INFO
+crash2json.egg-info/SOURCES.txt
+crash2json.egg-info/dependency_links.txt
+crash2json.egg-info/entry_points.txt
+crash2json.egg-info/top_level.txt
