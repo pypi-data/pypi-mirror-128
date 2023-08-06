@@ -1,0 +1,10 @@
+ntcore/__about__.py,sha256=dacWk--ub9Lzhxl8SKILXc97V2tesfbfADmb3oa_W5E,266
+ntcore/__init__.py,sha256=K8g7EZ1uc2a8_jVQr6potPgmXSRH4dQ3Td2LUwJe3lo,45
+ntcore/client/__init__.py,sha256=2F73h0_2LJKcdTm0QLz52M2KBEM2sFgZbcoAmoJOIyA,4618
+ntcore/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ntcore/integrations/sklearn/__init__.py,sha256=mKLmmR-3aQzMRMIikcwD9nxK5VdcH1VpKDsCEhlbIS4,3436
+ntcore-0.0.1.dist-info/METADATA,sha256=bn4QVy4xdPhglwKBT2xFNuCL37uDCOr6lcuQjklLANA,595
+ntcore-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ntcore-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+ntcore-0.0.1.dist-info/top_level.txt,sha256=AAaE3j5A7CbLJ5iZKrJnK-vUXFxkjBDNiFljbUDu4m0,7
+ntcore-0.0.1.dist-info/RECORD,,
