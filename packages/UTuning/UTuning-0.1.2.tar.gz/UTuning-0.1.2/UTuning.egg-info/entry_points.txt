@@ -1,0 +1,3 @@
+[console_scripts]
+UTuning = UTuning.cli:main
+
