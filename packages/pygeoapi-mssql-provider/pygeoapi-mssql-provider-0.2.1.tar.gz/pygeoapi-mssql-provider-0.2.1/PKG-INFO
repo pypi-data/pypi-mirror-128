@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pygeoapi-mssql-provider
+Version: 0.2.1
+Summary: Feature provider for the pygeoapi service
+Author: maarten-betman
+Author-email: mbetman@hotmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pygeoapi (>=0.10.1,<0.11.0)
+Requires-Dist: pymssql (>=2.2.2,<3.0.0)
