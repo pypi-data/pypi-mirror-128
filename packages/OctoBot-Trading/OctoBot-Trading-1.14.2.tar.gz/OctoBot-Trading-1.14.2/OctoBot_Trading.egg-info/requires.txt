@@ -1,0 +1,15 @@
+cython==0.29.24
+numpy==1.21.3
+OctoBot-Backtesting<1.7,>=1.6.27
+Async-Channel<2.1,>=2.0.12
+OctoBot-Commons<1.7,>=1.6.18
+OctoBot-Tentacles-Manager<2.7,>=2.6.3
+trading-backend>=1.0.12
+ccxt==1.61.66
+cryptography
+websockets==10.1
+cryptofeed==2.1.0
+sortedcontainers==2.4.0
+yarl==1.6.3
+idna<2.9,>=2.5
+multidict<5.0,>=4.5
