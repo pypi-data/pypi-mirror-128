@@ -1,0 +1,16 @@
+napari-plugin-engine>=0.1.4
+pyopencl
+toolz
+scikit-image
+napari>=0.4.7
+pyclesperanto_prototype>=0.10.0
+magicgui
+numpy!=1.19.4
+pyperclip
+loguru
+jupytext
+jupyter
+pandas
+napari-tools-menu
+napari-time-slicer
+napari-skimage-regionprops>=0.2.0
