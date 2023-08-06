@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+nonebot_plugin_youthstudy/__init__.py
+nonebot_plugin_youthstudy/convert_pic.py
+nonebot_plugin_youthstudy/getdata.py
+nonebot_plugin_youthstudy.egg-info/PKG-INFO
+nonebot_plugin_youthstudy.egg-info/SOURCES.txt
+nonebot_plugin_youthstudy.egg-info/dependency_links.txt
+nonebot_plugin_youthstudy.egg-info/top_level.txt
+nonebot_plugin_youthstudy/resource/bac/bac.png
+nonebot_plugin_youthstudy/resource/font/font.otf
