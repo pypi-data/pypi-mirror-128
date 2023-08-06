@@ -1,0 +1,3 @@
+[console_scripts]
+gmtd=gmtd.cli:main
+
