@@ -1,0 +1,11 @@
+Pillow
+cytoolz>=0.8.2
+aiohttp>=2.3.5
+setuptools
+
+[tests]
+mypy
+pytest-cov
+pytest-timeout
+pytest-asyncio
+uvloop
