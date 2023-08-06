@@ -1,0 +1,3 @@
+[console_scripts]
+damebasics = damebasics.command_line:damebasics
+
