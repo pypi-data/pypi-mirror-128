@@ -1,0 +1,4 @@
+# requirements.txt
+clustercron
+Sphinx
+sphinx-rtd-theme
