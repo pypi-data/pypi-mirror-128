@@ -1,0 +1,13 @@
+.pypirc
+build/*
+*.pyc
+.vscode/*
+.idea/*
+.pytest_cache/*
+docs/_build/*
+docs/auto_examples/*
+dist/*
+*egg-info/*
+docs/api/*
+.mypy_cache/
+skultrafast/.mypy_cache/*
