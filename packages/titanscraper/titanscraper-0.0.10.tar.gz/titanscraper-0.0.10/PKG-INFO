@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: titanscraper
+Version: 0.0.10
+Summary: A simple but yet powerfull scraping library
+Home-page: https://github.com/emileKing/titanscraper
+Author: Emile DJIDA GONGDEBIYA
+Author-email: djidadevacc@gmail.com
+License: MIT
+Download-URL: https://github.com/emileKing/titanscraper/archive/refs/tags/v.0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: web scraping,web data collection
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
