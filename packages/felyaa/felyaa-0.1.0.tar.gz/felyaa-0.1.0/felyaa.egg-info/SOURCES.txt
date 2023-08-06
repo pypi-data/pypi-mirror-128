@@ -1,0 +1,8 @@
+setup.py
+felyaa.egg-info/PKG-INFO
+felyaa.egg-info/SOURCES.txt
+felyaa.egg-info/dependency_links.txt
+felyaa.egg-info/requires.txt
+felyaa.egg-info/top_level.txt
+first/__init__.py
+first/core.py
