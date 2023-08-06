@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Itzuli/Api.py
+Itzuli/__init__.py
+Itzuli.egg-info/PKG-INFO
+Itzuli.egg-info/SOURCES.txt
+Itzuli.egg-info/dependency_links.txt
+Itzuli.egg-info/top_level.txt
