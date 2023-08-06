@@ -1,0 +1,16 @@
+pyclarify/__init__.py,sha256=FQXM6-8AkALxY7fwJefqy7aSmT99EaiWaLtBpAd0WLE,660
+pyclarify/client.py,sha256=5Si75JzfVqm1KZ3YbL7pqvCkHHrMXdE1aHuJfoDbazY,20489
+pyclarify/oauth2.py,sha256=W9KgqHiF3TMhPnLmNZai5SuEWBe0oky6rmDTF8p2USY,4419
+pyclarify/__utils__/__init__.py,sha256=SKJLJajmWRKqsyOnoEzr70Fl0bdHdvmwSrDbkfBRvLk,557
+pyclarify/__utils__/convert.py,sha256=olQjTy3li0v-PmgVRvAgVbjlVAFUByk_bmpOBbyXDgU,1037
+pyclarify/models/__init__.py,sha256=Vn1y7UsQnrwMzJP6IZ_EANnMfoLoDWvivhq2tvTxgME,641
+pyclarify/models/auth.py,sha256=ObczlRwrdfFo6gK9BAeX1b7Ju2T4bGkiaDqxvTro4Ew,1208
+pyclarify/models/data.py,sha256=u1gYPz6Qyc-X1VeiAgtA-OjOKncfkE3gmmceWkApdYI,4256
+pyclarify/models/requests.py,sha256=B5anPlbQH19WRD_qSi4xdX4hIVkyMA4tVjjF8q6blT8,4237
+pyclarify/models/response.py,sha256=E6OGZmRY5dLlfbb0ubKzPwKzorNl3VZWjK4uXqRkZ5M,1392
+pyclarify-0.2.1.dist-info/LICENSE,sha256=RFhQPdSOiMTguUX7JSoIuTxA7HVzCbj_p8WU36HjUQQ,10947
+pyclarify-0.2.1.dist-info/LICENSE.txt,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+pyclarify-0.2.1.dist-info/METADATA,sha256=DB-X0UCs8JkbodIknhmIbGmeF2994EER7h8wf2XWFe8,6928
+pyclarify-0.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyclarify-0.2.1.dist-info/top_level.txt,sha256=3d43AQgENYzgWo9lQhbPpdNs3e6hU9vwlaiFmd_-Jm0,10
+pyclarify-0.2.1.dist-info/RECORD,,
