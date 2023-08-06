@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+setup.py
+src/trc.py
+src/trc_data_reader.egg-info/PKG-INFO
+src/trc_data_reader.egg-info/SOURCES.txt
+src/trc_data_reader.egg-info/dependency_links.txt
+src/trc_data_reader.egg-info/top_level.txt
