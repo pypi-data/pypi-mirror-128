@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/gflight.py
+src/gflight_api.egg-info/PKG-INFO
+src/gflight_api.egg-info/SOURCES.txt
+src/gflight_api.egg-info/dependency_links.txt
+src/gflight_api.egg-info/requires.txt
+src/gflight_api.egg-info/top_level.txt
