@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "protopypes"
+version = "0.1.0"
+description = ""
+authors = ["mike-fi <77098525+mike-fi@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+black = "^21.5b1"
+pretty-errors = "^1.2.24"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^21.5b1"
+flake8 = "^3.9.2"
+jupyter = "^1.0.0"
+ipykernel = "^5.5.5"
+jupyterlab = "^3.0.16"
+tox = "^3.24.4"
+mypy = "^0.910"
+pytest-cov = "^3.0.0"
+tox-gh-actions = "^2.8.1"
+coverage = "^6.0.1"
+radon = "^5.1.0"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
