@@ -1,0 +1,5 @@
+[console_scripts]
+lotusops = lotusops.cli.lotusops:lotusops
+lotuspledge = lotusops.cli.lotuspledge:lotuspledge
+lotusspeed = lotusops.cli.speedtest:lotusspeed
+
