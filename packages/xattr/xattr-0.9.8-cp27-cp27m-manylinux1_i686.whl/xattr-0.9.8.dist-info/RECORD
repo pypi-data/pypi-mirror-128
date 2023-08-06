@@ -1,0 +1,13 @@
+xattr/pyxattr_compat.py,sha256=ZLT_lONRPRAkUWaq8lWl4QZLwOTqnVYqGz_ZkKOqLfg,3743
+xattr/__init__.py,sha256=zeCoUkrWHYY_W3rYd6yayEDs_FeJAy7CRmmla_8GF34,5319
+xattr/lib.py,sha256=8JmtCRPRvS-iGUP6gkktYw9wonF-WwuN3wnEUXzxrf4,3752
+xattr/tool.py,sha256=ZECJAFO8Uz8vbkXeemUDLHwNZP4Hwcmgp0QHAGeMh9k,7454
+xattr/_lib.so,sha256=8m-X0JQcJKaUqtSEzhAHyOppy11AZ6r8y19y5vpAQ-M,74332
+xattr/compat.py,sha256=6IcJpgeuGot1uhl-RJy_jbWkVO5utb09Qr2dhRj0TlM,680
+xattr/lib_build.py,sha256=o1Lo6Du5uNTm6rBqV5jHbaFNcQZnaoQVQcnPA5463vo,342
+xattr-0.9.8.dist-info/top_level.txt,sha256=ZUHZcuN2meJ0miIIsDb0KaElzOvDRrIIl8CZjnvRUrc,11
+xattr-0.9.8.dist-info/RECORD,,
+xattr-0.9.8.dist-info/WHEEL,sha256=RHL4_oqTQwAQAboyX8EIDbm9ny1pqfnXLwPBUu9zcCc,107
+xattr-0.9.8.dist-info/LICENSE.txt,sha256=8q6jLbdqJC7GYArvyHXRyfBB9cf9RmAiPos-ip4FCb0,1172
+xattr-0.9.8.dist-info/METADATA,sha256=XbXNyQYOoZQk6Ki5Z5cmZjbeHZFkSIomLJBT9RT90Hc,1212
+xattr-0.9.8.dist-info/entry_points.txt,sha256=0SjmtcSXURBLDEiZ9N1R82g7rAmXYLZBrlo0Kl4a8pU,43
