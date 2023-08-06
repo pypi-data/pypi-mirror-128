@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: jm-crypto-attacks
+Version: 0.4.0
+Summary: 
+Author: Jonathan Mahaffey
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
