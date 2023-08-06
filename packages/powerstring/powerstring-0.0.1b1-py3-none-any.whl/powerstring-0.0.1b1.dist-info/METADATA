@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: powerstring
+Version: 0.0.1b1
+Summary: Powerful Strings
+Home-page: UNKNOWN
+Author: phoenixR
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Powerstring :zap::knot:
+=======================
+
+***WARNING***
+
+Keep in mind that the documentation of this
+module is not finished yet. The same counts
+for the module itself. Avoid using the beta
+version!
+
+********************************************
+
+The Powerstring module provides many features for working with strings.
+
+Working with multiline strings in python can be very frustating. There's
+an option by using backslash n and spaces which can be very confusing for
+reading. Another option is creating multiline strings with three quotes.
+The problem with that option is, that you have problems with the indention
+and the code will look ugly.
+This module provides a feature where you can create multiline strings without
+destroying the overall look of the code. You can also style parts of the text,
+insert horizontal rules, create lists and add comments in the text itself.
+
+This module also provides following features:
+- swapping substrings within a string
+- replacing substrings within a string
+- progress counter/bar
+- highlighted strings
+- ansi sequences
+
+********************************************
+
+Contents
+--------
+
+1. Install the powerstring module
+2. The `Powerstring` class
+    - Setting up a powerstring
+    - Style text
+    - Adding text to a powerstring
+    - Remove ansi from a powerstring
+    - Guidelines for setting a title and description
+
+********************************************
+
+Install the powerstring module
+------------------------------
+
+`pip install powerstring`
+
+Import the powerstring module:
+
+```python
+import powerstring as ps
+```
+
+when only using the `powerstring` class
+
+```python
+from powerstring import Powerstring
+```
+
+
+The Powerstring class
+---------------------
+
+### Setting up a powerstring
+
+```python
+setup = Powerstring("""Setup -- General information for the setup
+    username :: John Doe
+    password :: pa0-@kB95$v-Z/~Ky
+    email :: john.doe@email.com
+""")
+print(setup)
+print()
+print(setup.title)
+print(setup.description)
+```
+
+Output:
+
+```
+username :: John Doe
+password :: pa0-@kB95$v-Z/~Ky
+email :: john.doe@email.com
+
+Setup
+General information for the setup
+```
+
+Notice that the print function automatically
+turns the arguments to string. If you want the
+powerstring in string format use the `str()`
+function.
+
+```python
+print(type(setup))
+print(type(str(setup)))
+```
+
+Output:
+
+```
+<class 'powerstring.Powerstring'>
+<class 'str'>
+```
+
+
+### Style text
+
+The default syntax the Powerstring class uses
+is `powerstring.Syntax.Default`. You can use
+a different syntax by editing the `syntax`
+argument.
+
+All syntaxes and their function can be looked
+up [here]().
+
+Let's take a look at a few basic functions from
+the default syntax:
+
+
+#### Titles
+
+```python
+setup = ps.Powerstring("""
+    [ Setup ]
+    [username](u) :: [John Doe]i
+    [password](u) :: [pa0-@kB95$v-Z/~Ky]i
+    [email](u)    :: [john.doe@email.com]i
+```
+
+Keep in mind that the output won't be shown
+correctly in markdown. Check out the docs or
+copypaste the code.
+
