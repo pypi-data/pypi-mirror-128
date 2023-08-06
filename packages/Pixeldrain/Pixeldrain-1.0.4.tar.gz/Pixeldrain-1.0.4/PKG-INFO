@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: Pixeldrain
+Version: 1.0.4
+Summary: Pixeldrain API
+Home-page: UNKNOWN
+Author: Fayas Noushad
+Author-email: contact@fayas.me
+License: MIT
+Download-URL: https://github.com/FayasNoushad/Pixeldrain/releases/latest
+Project-URL: Tracker, https://github.com/FayasNoushad/Pixeldrain/issues
+Project-URL: Source, https://github.com/FayasNoushad/Pixeldrain
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+```
+Made with Python3
+(C) @FayasNoushad
+Copyright permission under MIT License
+License -> https://github.com/FayasNoushad/Pixeldrain/blob/main/LICENSE
+```
+
+---
+
+## Installation
+
+```
+pip install Pixeldrain
+```
+
+---
+
+## Usage
+
+```py
+import pixeldrain
+
+
+pixeldrain.upload_file("file_path")
+# For upload file
+
+pixeldrain.download_file("file_id", "file_name")
+# For get direct file
+
+file = pixeldrain.file("file_id")
+# For get file link
+
+info = pixeldrain.info("file_id")
+# For information about the file
+
+thumbnail = pixeldrain.thumbnail("file_id", width="", height="")
+# For get thumbnail
+```
+
+---
+
+## Credits
+
+- [Fayas Noushad](https://github.com/FayasNoushad)
+- [Pixeldrain API](https://pixeldrain.com/api)
+
+---
+
+
