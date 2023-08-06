@@ -1,0 +1,8 @@
+setup.py
+playerFramework/__init__.py
+playerFramework/exceptions.py
+playerFramework.egg-info/PKG-INFO
+playerFramework.egg-info/SOURCES.txt
+playerFramework.egg-info/dependency_links.txt
+playerFramework.egg-info/requires.txt
+playerFramework.egg-info/top_level.txt
