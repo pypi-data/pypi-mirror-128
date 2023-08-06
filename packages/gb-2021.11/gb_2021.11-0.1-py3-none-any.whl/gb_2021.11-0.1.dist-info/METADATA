@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gb-2021.11
+Version: 0.1
+Summary: Trains with PyQt
+Home-page: UNKNOWN
+Author: Jo
+Author-email: jo@gb.local
+License: GNU General Public License v3.0
+Keywords: pyqt,finder
+Platform: UNKNOWN
+Requires-Dist: PyQt5 (>=5.15)
+
+# GB 2021.11
+train with PyQt
+
+
