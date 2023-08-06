@@ -1,0 +1,9 @@
+LICENCE.txt
+README.txt
+setup.py
+mongodbplus/__init__.py
+mongodbplus.egg-info/PKG-INFO
+mongodbplus.egg-info/SOURCES.txt
+mongodbplus.egg-info/dependency_links.txt
+mongodbplus.egg-info/requires.txt
+mongodbplus.egg-info/top_level.txt
