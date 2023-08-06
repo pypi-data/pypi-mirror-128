@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hrefs
+Version: 0.1
+Summary: Reference support for pydantic models
+Author-email: Jaakko Moisio <jaakko@moisio.fi>
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pydantic>=1.7
+Requires-Dist: starlette
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme ; extra == "docs"
+Requires-Dist: pytest>=6.2 ; extra == "test"
+Requires-Dist: hypothesis>=6.24 ; extra == "test"
+Requires-Dist: fastapi ; extra == "test"
+Requires-Dist: black ; extra == "test"
+Requires-Dist: pylint ; extra == "test"
+Requires-Dist: mypy ; extra == "test"
+Project-URL: Home, https://github.com/jasujm/hrefs
+Provides-Extra: docs
+Provides-Extra: test
