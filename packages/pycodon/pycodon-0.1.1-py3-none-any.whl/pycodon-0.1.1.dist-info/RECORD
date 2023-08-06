@@ -1,0 +1,13 @@
+pycodon/__init__.py,sha256=vVxfGKOeRKB3ZaPbJuzbyr3vZcLxj4bev2rfJbl-r5U,324
+pycodon/codon_dict.py,sha256=LGmbK1Lm-ejAQsO2DSwz56J8-tAGu-MXAGjHSPGDPas,1811
+pycodon/utils.py,sha256=A2c9ow2NqT743afqsGbxcM48wXHcksKCnb0rQCH5-NE,364
+pycodon/metasequence/__init__.py,sha256=EOq2-SpkcKhVrvn6sojWVFcWMh7eNzBgD96d7xxEFkY,1841
+pycodon/metasequence/utils.py,sha256=4i7HyKhxl8pibxahku8u4ssJKxGiossgh9tfG6458WY,691
+pycodon/sequence/__init__.py,sha256=WMgSJRxUsqFWR5byw_Wl7bpubNFLIN-Q3tBtBadq2zU,2646
+pycodon/sequence/utils.py,sha256=e36wC13hx8Nv77qDnaOS-6Gy0T5O84312ip4dt4TVfE,1356
+pycodon-0.1.1.dist-info/LICENSE,sha256=tMtSC2YNE9Z_hZ7PvOriXaG83kB2cEyohXmKHGXF3nc,1123
+pycodon-0.1.1.dist-info/METADATA,sha256=GiPHDtK2KicMNsByKAiaHizfAxyso4WD4ZDSesK3wTQ,3224
+pycodon-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pycodon-0.1.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pycodon-0.1.1.dist-info/top_level.txt,sha256=BoGDvZMuIDkqVTNETvVPResQtUnN7MaKUNdSFi9N7X8,8
+pycodon-0.1.1.dist-info/RECORD,,
