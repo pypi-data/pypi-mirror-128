@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: simple-starlette
+Version: 0.0.3
+Summary: a micro server
+Home-page: UNKNOWN
+Author: mapyJJJ
+Author-email: wszsdpyjjj@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: SQLAlchemy (>=1.4.27)
+Requires-Dist: aiomysql (>=0.0.21)
+Requires-Dist: jsonrpcclient (==4.0.1)
+Requires-Dist: jsonrpcserver (==5.0.4)
+Requires-Dist: pydantic (~=1.8.2)
+Requires-Dist: python-version (>='3.8.0')
+Requires-Dist: requests (~=2.25.1)
+Requires-Dist: starlette (>=0.16.0)
+Requires-Dist: uvicorn[standard] (==0.15.0)
+Requires-Dist: werkzeug (>=2.0.2)
+
+UNKNOWN
+
+
