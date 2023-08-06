@@ -1,0 +1,17 @@
+ikea_api_wrapped/__init__.py,sha256=ckq6nAgHVfggcLJMi2D6xRHfrrOXInrrR1Cbo60wY5M,437
+ikea_api_wrapped/_utils.py,sha256=hhbxsGSSMu7uKGTm61jtWe0W0GorWNzHKVh71EhlHqM,1764
+ikea_api_wrapped/_wrappers.py,sha256=8aGcEuyh-lA0jaa5BFSuPhscZ2BTDEg0dEnOb2o1_rM,5189
+ikea_api_wrapped/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ikea_api_wrapped/types.py,sha256=qv5tApE2fPjzV6_BbBuoFcHmtDgxmyVNMzYUbZd7D48,1787
+ikea_api_wrapped/_parsers/__init__.py,sha256=45tUU18COew-iXCHTV6kW7_h2jy4N9aeX3dcOI5wMHQ,319
+ikea_api_wrapped/_parsers/order_capture.py,sha256=pTlxyD88Pl0OtXRpIZCP_lnX-Kua0Hi7IOLcy9qUBBw,3068
+ikea_api_wrapped/_parsers/purchases.py,sha256=JGgryGWBLv0bxT-mVWUhITDEMxgJXGc6vGWakfnmEJ0,3033
+ikea_api_wrapped/_parsers/item/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ikea_api_wrapped/_parsers/item/ingka.py,sha256=5JjT3CQlYbU8v5Jnt1Btw3ss21qY9o8HeEytJUQYha8,4193
+ikea_api_wrapped/_parsers/item/iows.py,sha256=MDgN4lLFWtxMVQFEHKYFgR0IBsOIWNlbqOP8AMiR3-s,5520
+ikea_api_wrapped/_parsers/item/pip.py,sha256=MYId6YeuQeZ8Uz1KMrig27yyGCPEVRsc9zYhDSPuKUg,1327
+ikea_api_wrapped-0.4.5.dist-info/LICENSE,sha256=YZPnlBWXoVNGs1VF4ZuAsWoIfZ6_X-9hqxAWUeAC_Yc,1081
+ikea_api_wrapped-0.4.5.dist-info/METADATA,sha256=4n2uYMQRjsu1VQTld-dI4NRCthzVR2XGnMCHfoSY410,557
+ikea_api_wrapped-0.4.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ikea_api_wrapped-0.4.5.dist-info/top_level.txt,sha256=XUe8ABUhqc9t8mWv7_OAGP-dooOGWX3ppl2McIBavNg,17
+ikea_api_wrapped-0.4.5.dist-info/RECORD,,
