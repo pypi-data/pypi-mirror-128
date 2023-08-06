@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: iris-validator
+Version: 0.0.1
+Summary: Implementation of IRIS StationXML validation rules
+Home-page: https://gitlab.isti.com/mhagerty/iris-validator
+Author: Mike Hagerty
+Author-email: mhagerty@isti.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+Implementation of IRIS StationXML validation rules. >iris-validator --infile path/to/stationxml/file
+
