@@ -1,0 +1,3 @@
+[console_scripts]
+akit = akit.cli.akitcommand:akit_root_command
+
