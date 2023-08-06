@@ -1,0 +1,4 @@
+[console_scripts]
+cmdsMD = md.databases:main
+cmdsSQL = SQL.databasesB:main
+
