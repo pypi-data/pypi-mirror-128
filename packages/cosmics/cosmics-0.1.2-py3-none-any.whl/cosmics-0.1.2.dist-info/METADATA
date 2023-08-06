@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: cosmics
+Version: 0.1.2
+Summary: Tools for an event-driven design following Cosmic Python
+Home-page: https://gitlab.com/emmerich-os/cosmics
+Author: Fabian Emmerich
+Author-email: gitlab@emmerichs.eu
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: flakehell
+Requires-Dist: flake8 (>=3.9.2,<4.0.0); extra == "flakehell"
+Requires-Dist: flake8-bandit (>=2.1.2,<3.0.0); extra == "flakehell"
+Requires-Dist: flake8-blind-except (>=0.2.0,<0.3.0); extra == "flakehell"
+Requires-Dist: flake8-bugbear (>=20.11.1,<21.0.0); extra == "flakehell"
+Requires-Dist: flake8-builtins-unleashed (>=1.3.1,<2.0.0); extra == "flakehell"
+Requires-Dist: flake8-comprehensions (>=3.3.1,<4.0.0); extra == "flakehell"
+Requires-Dist: flake8-debugger (>=4.0.0,<5.0.0); extra == "flakehell"
+Requires-Dist: flake8-docstrings (>=1.5.0,<2.0.0); extra == "flakehell"
+Requires-Dist: flake8-eradicate (>=1.0.0,<2.0.0); extra == "flakehell"
+Requires-Dist: flake8-mutable (>=1.2.0,<2.0.0); extra == "flakehell"
+Requires-Dist: flake8-pytest-style (>=1.3.0,<2.0.0); extra == "flakehell"
+Requires-Dist: flake8-simplify (>=0.14.2,<0.15.0); extra == "flakehell"
+Requires-Dist: flakehell (>=0.8.0,<0.9.0); extra == "flakehell"
+Requires-Dist: pep8-naming (>=0.11.1,<0.12.0); extra == "flakehell"
+Requires-Dist: psycopg2-binary (>=2.9.1,<3.0.0)
+Requires-Dist: pydocstyle (>=5.1.1,<6.0.0); extra == "flakehell"
+Requires-Dist: pyflakes (>=2.3.0,<2.4.0); extra == "flakehell"
+Project-URL: Repository, https://gitlab.com/emmerich-os/cosmics
+Description-Content-Type: text/markdown
+
+# cosmics
+[![pipeline status](https://gitlab.com/emmerich-os/cosmics/badges/main/pipeline.svg)](https://gitlab.com/emmerich-os/cosmics/-/commits/main)
+[![coverage report](https://gitlab.com/emmerich-os/cosmics/badges/main/coverage.svg)](https://gitlab.com/emmerich-os/cosmics/-/commits/main)
+[![](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+A set of helper classes suitable for an event-driven software design. Inspired by the Cosmic Python book.
+
+The API documentation can be found [here](https://emmerich-os.gitlab.io/cosmics).
+
+## Helper Classes
+
+- Repository as a database inferface.
+- Client for interaction between repository and database. Allows to decouple the repository from the database type.
+- Messagebus for forwarding commands and events to their respective handler functions.
+- Unit of Work for processing commands/events with(-out) database access.
+
