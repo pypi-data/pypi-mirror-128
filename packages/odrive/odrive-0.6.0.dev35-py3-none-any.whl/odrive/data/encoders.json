@@ -1,0 +1,59 @@
+{
+    "amt10x": {
+        "type": "incremental",
+        "cpr": 8192,
+        "max_rpm": 7500,
+        "datasheet_url": "https://www.cuidevices.com/product/resource/amt10.pdf"
+    },
+    "amt102": {
+        "inherits": "amt10x"
+    },
+    "amt103": {
+        "inherits": "amt10x"
+    },
+    "amt21": {
+        "type": "rs485",
+        "protocol": "amt21",
+        "datasheet_url": "https://www.cuidevices.com/product/resource/amt21.pdf"
+    },
+    "amt21xA": {
+        "inherits": "amt21",
+        "cpr": 4096,
+        "max_rpm": 8000
+    },
+    "amt21xB": {
+        "inherits": "amt21",
+        "cpr": 16384,
+        "max_rpm": 4000
+    },
+    "amt21xC": {
+        "inherits": "amt21",
+        "cpr": 4096,
+        "max_rpm": 8000
+    },
+    "amt21xD": {
+        "inherits": "amt21",
+        "cpr": 16384,
+        "max_rpm": 4000
+    },
+    "amt21xE": {
+        "inherits": "amt21",
+        "cpr": 4096,
+        "max_rpm": 8000
+    },
+    "amt21xF": {
+        "inherits": "amt21",
+        "cpr": 16384,
+        "max_rpm": 4000
+    },
+    "amt21xG": {
+        "inherits": "amt21",
+        "cpr": 4096,
+        "max_rpm": 8000
+    },
+    "amt21xH": {
+        "inherits": "amt21",
+        "cpr": 16384,
+        "max_rpm": 4000
+    }
+}
