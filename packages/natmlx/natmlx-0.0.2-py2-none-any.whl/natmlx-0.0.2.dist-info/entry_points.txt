@@ -1,0 +1,3 @@
+[console_scripts]
+natml-template = natmlx.template:main
+
