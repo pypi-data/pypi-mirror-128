@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: seqlike
+Version: 1.1.6
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: biopython
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: weblogo
+Requires-Dist: Pillow
+Requires-Dist: pytest-regtest
+Requires-Dist: pytest
+Requires-Dist: multipledispatch
+Requires-Dist: python-codon-tables
+
+UNKNOWN
+
