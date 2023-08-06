@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: simplelayout-Alex-X-yang
+Version: 1.0.0
+Summary: A simplelayout package
+Home-page: https://github.com/idrl-assignment/3-simplelayout-package-Alex-X-yang
+Author: Alex-X-yang
+Author-email: 735629961@qq.com
+License: UNKNOWN
+Keywords: simplelayout
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: argparse
+Requires-Dist: pathlib
+
+UNKNOWN
+

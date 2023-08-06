@@ -1,0 +1,13 @@
+simplelayout/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplelayout/__main__.py,sha256=nIoo4Re3KfRPX-Qjyf_os8kfR7jTqke2Idy4cHLxdR0,666
+simplelayout/cli/__init__.py,sha256=gfleRdvwS5KUSXsGh8aFp555PSJKY02fZP1BlCMrnbA,74
+simplelayout/cli/cli_generate.py,sha256=bMAqTyDzESGn42FkUhQ0Bvn-vAfeaUndLleXuheKXLI,1200
+simplelayout/generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplelayout/generator/core.py,sha256=-VlK3FfoWB5kKAt41GpuWT9MX3nQEUt-BdfT7UZTOck,1451
+simplelayout/generator/utils.py,sha256=TJMbnnjaI6P4F1Tf-8kInohhE6_NXK0Gnm1v_fzsu2U,629
+simplelayout_Alex_X_yang-1.0.0.dist-info/LICENSE.txt,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+simplelayout_Alex_X_yang-1.0.0.dist-info/METADATA,sha256=QNCUoK9k6cuZKUkNeABDMYq4QXT_Njp4S5empOB4hUA,627
+simplelayout_Alex_X_yang-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+simplelayout_Alex_X_yang-1.0.0.dist-info/entry_points.txt,sha256=64GML6zCwFjCvXxZ1N0cLt7rf2gp09Ts87dJC00Xd2I,52
+simplelayout_Alex_X_yang-1.0.0.dist-info/top_level.txt,sha256=iFIi60UoADwVgRZlfkvG5r_zYD2rGEOll3P-m2Tj0Uw,13
+simplelayout_Alex_X_yang-1.0.0.dist-info/RECORD,,
