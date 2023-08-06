@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: machdi
+Version: 0.0.1.3.dev1
+Summary: machdi is an open source machine learning module that provides create ML models, preprocessing algorithms and evaluation metrics. this project is developing.
+Home-page: https://github.com/ThisIsMahdiZare/machdi
+Author: Mahdi Zare
+Author-email: thisismahdizare@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ThisIsMahdiZare/machdi/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+Welcome to Mahdi Zare's Machine Learning Library. With the help of this package, you can create machine learning models and algorithms.
+Included preprocessing, training, evaluation, and so on.
+This module is similar to the sikit learn package.
+
