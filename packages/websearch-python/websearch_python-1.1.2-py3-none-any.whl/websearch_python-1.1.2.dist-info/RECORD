@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=-4Sef2MBAA4D8VWTj9c6Udu6c8B0-YVXDUeFFhKe5yQ,3412
+websearch/__init__.py,sha256=YhznVMTFcMMRq_MPL5-oN-LXa6HHPOG5FfB8FxqWKdc,154
+websearch/__main__.py,sha256=MgsYHrzkBMH6hZnZyyJWGXJE88eUEQ7TXAeswuLpjnY,2620
+websearch/extension.json,sha256=atHSsytsykNImsDz7gfDbBZ13fKrEoA-cqfZILwXfjY,1399
+websearch/script.py,sha256=spAnBmgGMo9Py3nTjAa8c-dYhDXVhJBYrt29mwzUDYA,11829
+websearch_python-1.1.2.dist-info/LICENSE,sha256=2k9V1BVg0sN9WNdQBQH6T3oQLX6S2Ou4eNKgsOvSoMA,1338
+websearch_python-1.1.2.dist-info/METADATA,sha256=iQtf6XWT_dBRo5VEP5UcLTYqsv_YNjBrNwwVKwhf7Qs,10657
+websearch_python-1.1.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+websearch_python-1.1.2.dist-info/top_level.txt,sha256=M5rSjQzNA38NIHmC0mzZvUUzkUFzX3w9VUScArim1As,16
+websearch_python-1.1.2.dist-info/RECORD,,
