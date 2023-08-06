@@ -1,0 +1,14 @@
+numpy>=1.16.3
+six>=1.12.0
+warg
+pillow
+markdown
+python-markdown-math
+matplotlib
+jinja2
+pyqrcode
+pdfkit
+scikit-learn
+sorcery
+draugr
+pycm

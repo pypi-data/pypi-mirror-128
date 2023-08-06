@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[munin_plugins]
+prcurve = plots.prcurve:prcurve [pretty-printer]
+
