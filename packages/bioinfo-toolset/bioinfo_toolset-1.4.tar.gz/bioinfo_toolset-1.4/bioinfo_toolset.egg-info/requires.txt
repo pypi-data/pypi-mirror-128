@@ -1,0 +1,9 @@
+liftover
+click
+friendlylog
+termcolor
+tqdm
+hgvs
+jsonschema
+docker
+ga4gh.vrs[extras]
