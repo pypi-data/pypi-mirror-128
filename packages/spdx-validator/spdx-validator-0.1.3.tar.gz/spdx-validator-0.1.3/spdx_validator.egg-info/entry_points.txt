@@ -1,0 +1,3 @@
+[console_scripts]
+spdx-validator = spdx_validator.__main__:main
+
