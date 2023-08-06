@@ -1,0 +1,9 @@
+
+[dev]
+check-manifest
+
+[test]
+coverage
+pylint
+pytest
+requests
