@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sklearn2json
+Version: 2021.5
+Summary: Python library for converting Scikit-Learn models to JSON.
+License: AGPL
+Author: MONTANA Knowledge Management ltd.
+Author-email: info@distiller.dev
+Requires-Python: >=3.7,<=3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.20.2,<2.0.0)
+Requires-Dist: scikit-learn (>=0.24.2,<0.25.0)
+Requires-Dist: scipy (>=1.6.3,<2.0.0)
