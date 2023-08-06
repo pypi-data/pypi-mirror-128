@@ -1,0 +1,1146 @@
+Metadata-Version: 2.1
+Name: acryl-datahub
+Version: 0.8.17.0
+Summary: A CLI to work with DataHub metadata
+Home-page: https://datahubproject.io/
+License: Apache License 2.0
+Project-URL: Documentation, https://datahubproject.io/docs/metadata-ingestion
+Project-URL: Source, https://github.com/acryldata/datahub/tree/master/metadata-ingestion
+Project-URL: Changelog, https://github.com/acryldata/datahub/releases
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: docker
+Requires-Dist: stackprinter
+Requires-Dist: python-dateutil (>=2.8.0)
+Requires-Dist: tabulate
+Requires-Dist: toml (>=0.10.0)
+Requires-Dist: avro (>=1.10.2)
+Requires-Dist: entrypoints
+Requires-Dist: pydantic (>=1.5.1)
+Requires-Dist: click (>=6.0.0)
+Requires-Dist: typing-inspect
+Requires-Dist: PyYAML
+Requires-Dist: progressbar2
+Requires-Dist: click-default-group
+Requires-Dist: avro-gen3 (==0.7.1)
+Requires-Dist: expandvars (>=0.6.5)
+Requires-Dist: mypy-extensions (>=0.4.3)
+Requires-Dist: dataclasses (>=0.6) ; python_version < "3.7"
+Requires-Dist: typing-extensions (>=3.7.4) ; python_version < "3.8"
+Provides-Extra: airflow
+Requires-Dist: avro (>=1.10.2) ; extra == 'airflow'
+Requires-Dist: docker ; extra == 'airflow'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'airflow'
+Requires-Dist: click (>=6.0.0) ; extra == 'airflow'
+Requires-Dist: stackprinter ; extra == 'airflow'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'airflow'
+Requires-Dist: PyYAML ; extra == 'airflow'
+Requires-Dist: tabulate ; extra == 'airflow'
+Requires-Dist: progressbar2 ; extra == 'airflow'
+Requires-Dist: click-default-group ; extra == 'airflow'
+Requires-Dist: apache-airflow (>=1.10.2) ; extra == 'airflow'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'airflow'
+Requires-Dist: toml (>=0.10.0) ; extra == 'airflow'
+Requires-Dist: entrypoints ; extra == 'airflow'
+Provides-Extra: all
+Requires-Dist: acryl-pyhive[hive] (>=0.6.11) ; extra == 'all'
+Requires-Dist: looker-sdk (==21.6.0) ; extra == 'all'
+Requires-Dist: snowflake-sqlalchemy (<=1.2.4) ; extra == 'all'
+Requires-Dist: sqlalchemy-redshift ; extra == 'all'
+Requires-Dist: requests ; extra == 'all'
+Requires-Dist: tabulate ; extra == 'all'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'all'
+Requires-Dist: fastavro (>=1.2.0) ; extra == 'all'
+Requires-Dist: sqlalchemy-pytds (>=0.3) ; extra == 'all'
+Requires-Dist: botocore (!=1.23.0) ; extra == 'all'
+Requires-Dist: apache-airflow (>=1.10.2) ; extra == 'all'
+Requires-Dist: GeoAlchemy2 ; extra == 'all'
+Requires-Dist: sqlalchemy-trino ; extra == 'all'
+Requires-Dist: great-expectations ; extra == 'all'
+Requires-Dist: pydruid (>=0.6.2) ; extra == 'all'
+Requires-Dist: sql-metadata (==2.2.2) ; extra == 'all'
+Requires-Dist: cx-Oracle ; extra == 'all'
+Requires-Dist: python-ldap (>=2.4) ; extra == 'all'
+Requires-Dist: PyYAML ; extra == 'all'
+Requires-Dist: pymongo (>=3.11) ; extra == 'all'
+Requires-Dist: progressbar2 ; extra == 'all'
+Requires-Dist: click-default-group ; extra == 'all'
+Requires-Dist: lkml (>=1.1.0) ; extra == 'all'
+Requires-Dist: pymysql (>=1.0.2) ; extra == 'all'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'all'
+Requires-Dist: entrypoints ; extra == 'all'
+Requires-Dist: docker ; extra == 'all'
+Requires-Dist: cachetools ; extra == 'all'
+Requires-Dist: PyAthena[sqlalchemy] ; extra == 'all'
+Requires-Dist: confluent-kafka (>=1.5.0) ; extra == 'all'
+Requires-Dist: stackprinter ; extra == 'all'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'all'
+Requires-Dist: google-cloud-logging ; extra == 'all'
+Requires-Dist: psycopg2-binary ; extra == 'all'
+Requires-Dist: toml (>=0.10.0) ; extra == 'all'
+Requires-Dist: redash-toolbelt ; extra == 'all'
+Requires-Dist: avro (>=1.10.2) ; extra == 'all'
+Requires-Dist: boto3 ; extra == 'all'
+Requires-Dist: click (>=6.0.0) ; extra == 'all'
+Requires-Dist: okta (~=1.7.0) ; extra == 'all'
+Requires-Dist: JPype1 ; extra == 'all'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'all'
+Requires-Dist: sql-metadata ; extra == 'all'
+Requires-Dist: pybigquery (>=0.6.0) ; extra == 'all'
+Provides-Extra: athena
+Requires-Dist: avro (>=1.10.2) ; extra == 'athena'
+Requires-Dist: docker ; extra == 'athena'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'athena'
+Requires-Dist: click (>=6.0.0) ; extra == 'athena'
+Requires-Dist: PyAthena[sqlalchemy] ; extra == 'athena'
+Requires-Dist: stackprinter ; extra == 'athena'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'athena'
+Requires-Dist: PyYAML ; extra == 'athena'
+Requires-Dist: tabulate ; extra == 'athena'
+Requires-Dist: progressbar2 ; extra == 'athena'
+Requires-Dist: click-default-group ; extra == 'athena'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'athena'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'athena'
+Requires-Dist: toml (>=0.10.0) ; extra == 'athena'
+Requires-Dist: entrypoints ; extra == 'athena'
+Requires-Dist: great-expectations ; extra == 'athena'
+Provides-Extra: azure-ad
+Requires-Dist: avro (>=1.10.2) ; extra == 'azure-ad'
+Requires-Dist: docker ; extra == 'azure-ad'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'azure-ad'
+Requires-Dist: click (>=6.0.0) ; extra == 'azure-ad'
+Requires-Dist: stackprinter ; extra == 'azure-ad'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'azure-ad'
+Requires-Dist: PyYAML ; extra == 'azure-ad'
+Requires-Dist: tabulate ; extra == 'azure-ad'
+Requires-Dist: progressbar2 ; extra == 'azure-ad'
+Requires-Dist: click-default-group ; extra == 'azure-ad'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'azure-ad'
+Requires-Dist: toml (>=0.10.0) ; extra == 'azure-ad'
+Requires-Dist: entrypoints ; extra == 'azure-ad'
+Provides-Extra: base
+Requires-Dist: avro (>=1.10.2) ; extra == 'base'
+Requires-Dist: docker ; extra == 'base'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'base'
+Requires-Dist: click (>=6.0.0) ; extra == 'base'
+Requires-Dist: stackprinter ; extra == 'base'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'base'
+Requires-Dist: PyYAML ; extra == 'base'
+Requires-Dist: tabulate ; extra == 'base'
+Requires-Dist: progressbar2 ; extra == 'base'
+Requires-Dist: click-default-group ; extra == 'base'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'base'
+Requires-Dist: toml (>=0.10.0) ; extra == 'base'
+Requires-Dist: entrypoints ; extra == 'base'
+Provides-Extra: bigquery
+Requires-Dist: avro (>=1.10.2) ; extra == 'bigquery'
+Requires-Dist: docker ; extra == 'bigquery'
+Requires-Dist: great-expectations ; extra == 'bigquery'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'bigquery'
+Requires-Dist: click (>=6.0.0) ; extra == 'bigquery'
+Requires-Dist: stackprinter ; extra == 'bigquery'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'bigquery'
+Requires-Dist: PyYAML ; extra == 'bigquery'
+Requires-Dist: tabulate ; extra == 'bigquery'
+Requires-Dist: progressbar2 ; extra == 'bigquery'
+Requires-Dist: click-default-group ; extra == 'bigquery'
+Requires-Dist: google-cloud-logging ; extra == 'bigquery'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'bigquery'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'bigquery'
+Requires-Dist: toml (>=0.10.0) ; extra == 'bigquery'
+Requires-Dist: entrypoints ; extra == 'bigquery'
+Requires-Dist: pybigquery (>=0.6.0) ; extra == 'bigquery'
+Provides-Extra: bigquery-usage
+Requires-Dist: avro (>=1.10.2) ; extra == 'bigquery-usage'
+Requires-Dist: docker ; extra == 'bigquery-usage'
+Requires-Dist: cachetools ; extra == 'bigquery-usage'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'bigquery-usage'
+Requires-Dist: click (>=6.0.0) ; extra == 'bigquery-usage'
+Requires-Dist: stackprinter ; extra == 'bigquery-usage'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'bigquery-usage'
+Requires-Dist: PyYAML ; extra == 'bigquery-usage'
+Requires-Dist: tabulate ; extra == 'bigquery-usage'
+Requires-Dist: progressbar2 ; extra == 'bigquery-usage'
+Requires-Dist: click-default-group ; extra == 'bigquery-usage'
+Requires-Dist: google-cloud-logging ; extra == 'bigquery-usage'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'bigquery-usage'
+Requires-Dist: toml (>=0.10.0) ; extra == 'bigquery-usage'
+Requires-Dist: entrypoints ; extra == 'bigquery-usage'
+Provides-Extra: datahub-business-glossary
+Requires-Dist: avro (>=1.10.2) ; extra == 'datahub-business-glossary'
+Requires-Dist: docker ; extra == 'datahub-business-glossary'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'datahub-business-glossary'
+Requires-Dist: click (>=6.0.0) ; extra == 'datahub-business-glossary'
+Requires-Dist: stackprinter ; extra == 'datahub-business-glossary'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'datahub-business-glossary'
+Requires-Dist: PyYAML ; extra == 'datahub-business-glossary'
+Requires-Dist: tabulate ; extra == 'datahub-business-glossary'
+Requires-Dist: progressbar2 ; extra == 'datahub-business-glossary'
+Requires-Dist: click-default-group ; extra == 'datahub-business-glossary'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'datahub-business-glossary'
+Requires-Dist: toml (>=0.10.0) ; extra == 'datahub-business-glossary'
+Requires-Dist: entrypoints ; extra == 'datahub-business-glossary'
+Provides-Extra: datahub-kafka
+Requires-Dist: avro (>=1.10.2) ; extra == 'datahub-kafka'
+Requires-Dist: docker ; extra == 'datahub-kafka'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'datahub-kafka'
+Requires-Dist: click (>=6.0.0) ; extra == 'datahub-kafka'
+Requires-Dist: confluent-kafka (>=1.5.0) ; extra == 'datahub-kafka'
+Requires-Dist: stackprinter ; extra == 'datahub-kafka'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'datahub-kafka'
+Requires-Dist: PyYAML ; extra == 'datahub-kafka'
+Requires-Dist: tabulate ; extra == 'datahub-kafka'
+Requires-Dist: progressbar2 ; extra == 'datahub-kafka'
+Requires-Dist: click-default-group ; extra == 'datahub-kafka'
+Requires-Dist: fastavro (>=1.2.0) ; extra == 'datahub-kafka'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'datahub-kafka'
+Requires-Dist: toml (>=0.10.0) ; extra == 'datahub-kafka'
+Requires-Dist: entrypoints ; extra == 'datahub-kafka'
+Provides-Extra: datahub-rest
+Requires-Dist: avro (>=1.10.2) ; extra == 'datahub-rest'
+Requires-Dist: docker ; extra == 'datahub-rest'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'datahub-rest'
+Requires-Dist: click (>=6.0.0) ; extra == 'datahub-rest'
+Requires-Dist: requests ; extra == 'datahub-rest'
+Requires-Dist: stackprinter ; extra == 'datahub-rest'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'datahub-rest'
+Requires-Dist: PyYAML ; extra == 'datahub-rest'
+Requires-Dist: tabulate ; extra == 'datahub-rest'
+Requires-Dist: progressbar2 ; extra == 'datahub-rest'
+Requires-Dist: click-default-group ; extra == 'datahub-rest'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'datahub-rest'
+Requires-Dist: toml (>=0.10.0) ; extra == 'datahub-rest'
+Requires-Dist: entrypoints ; extra == 'datahub-rest'
+Provides-Extra: dbt
+Requires-Dist: avro (>=1.10.2) ; extra == 'dbt'
+Requires-Dist: docker ; extra == 'dbt'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'dbt'
+Requires-Dist: click (>=6.0.0) ; extra == 'dbt'
+Requires-Dist: stackprinter ; extra == 'dbt'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'dbt'
+Requires-Dist: PyYAML ; extra == 'dbt'
+Requires-Dist: tabulate ; extra == 'dbt'
+Requires-Dist: progressbar2 ; extra == 'dbt'
+Requires-Dist: click-default-group ; extra == 'dbt'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'dbt'
+Requires-Dist: toml (>=0.10.0) ; extra == 'dbt'
+Requires-Dist: entrypoints ; extra == 'dbt'
+Provides-Extra: dev
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.8.1) ; extra == 'dev'
+Requires-Dist: types-dataclasses ; extra == 'dev'
+Requires-Dist: tabulate ; extra == 'dev'
+Requires-Dist: pytest (>=6.2.2) ; extra == 'dev'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'dev'
+Requires-Dist: types-python-dateutil ; extra == 'dev'
+Requires-Dist: types-six ; extra == 'dev'
+Requires-Dist: sql-metadata (==2.2.2) ; extra == 'dev'
+Requires-Dist: types-click (==0.1.12) ; extra == 'dev'
+Requires-Dist: typing-inspect ; extra == 'dev'
+Requires-Dist: types-PyMySQL ; extra == 'dev'
+Requires-Dist: types-tabulate ; extra == 'dev'
+Requires-Dist: black (>=19.10b0) ; extra == 'dev'
+Requires-Dist: click-default-group ; extra == 'dev'
+Requires-Dist: lkml (>=1.1.0) ; extra == 'dev'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'dev'
+Requires-Dist: pymysql (>=1.0.2) ; extra == 'dev'
+Requires-Dist: apache-airflow[snowflake] (>=2.0.2) ; extra == 'dev'
+Requires-Dist: docker ; extra == 'dev'
+Requires-Dist: cachetools ; extra == 'dev'
+Requires-Dist: freezegun ; extra == 'dev'
+Requires-Dist: jsonpickle ; extra == 'dev'
+Requires-Dist: mypy (>=0.901) ; extra == 'dev'
+Requires-Dist: coverage (>=5.1) ; extra == 'dev'
+Requires-Dist: deepdiff ; extra == 'dev'
+Requires-Dist: google-cloud-logging ; extra == 'dev'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'dev'
+Requires-Dist: toml (>=0.10.0) ; extra == 'dev'
+Requires-Dist: redash-toolbelt ; extra == 'dev'
+Requires-Dist: types-freezegun ; extra == 'dev'
+Requires-Dist: avro (>=1.10.2) ; extra == 'dev'
+Requires-Dist: boto3 ; extra == 'dev'
+Requires-Dist: click (>=6.0.0) ; extra == 'dev'
+Requires-Dist: types-PyYAML ; extra == 'dev'
+Requires-Dist: okta (~=1.7.0) ; extra == 'dev'
+Requires-Dist: flake8-tidy-imports (>=4.3.0) ; extra == 'dev'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'dev'
+Requires-Dist: mypy-extensions (>=0.4.3) ; extra == 'dev'
+Requires-Dist: sql-metadata ; extra == 'dev'
+Requires-Dist: looker-sdk (==21.6.0) ; extra == 'dev'
+Requires-Dist: snowflake-sqlalchemy (<=1.2.4) ; extra == 'dev'
+Requires-Dist: sqlalchemy-redshift ; extra == 'dev'
+Requires-Dist: requests ; extra == 'dev'
+Requires-Dist: fastavro (>=1.2.0) ; extra == 'dev'
+Requires-Dist: isort (>=5.7.0) ; extra == 'dev'
+Requires-Dist: sqlalchemy-trino ; extra == 'dev'
+Requires-Dist: botocore (!=1.23.0) ; extra == 'dev'
+Requires-Dist: GeoAlchemy2 ; extra == 'dev'
+Requires-Dist: types-toml ; extra == 'dev'
+Requires-Dist: great-expectations ; extra == 'dev'
+Requires-Dist: cx-Oracle ; extra == 'dev'
+Requires-Dist: pydantic (>=1.5.1) ; extra == 'dev'
+Requires-Dist: PyYAML ; extra == 'dev'
+Requires-Dist: types-cachetools ; extra == 'dev'
+Requires-Dist: progressbar2 ; extra == 'dev'
+Requires-Dist: entrypoints ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: sqlalchemy-stubs ; extra == 'dev'
+Requires-Dist: types-pkg-resources ; extra == 'dev'
+Requires-Dist: confluent-kafka (>=1.5.0) ; extra == 'dev'
+Requires-Dist: stackprinter ; extra == 'dev'
+Requires-Dist: requests-mock ; extra == 'dev'
+Requires-Dist: pytest-docker (>=0.10.3) ; extra == 'dev'
+Requires-Dist: psycopg2-binary ; extra == 'dev'
+Requires-Dist: types-requests ; extra == 'dev'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'dev'
+Requires-Dist: boto3-stubs[glue,s3,sagemaker] ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: pybigquery (>=0.6.0) ; extra == 'dev'
+Provides-Extra: dev-airflow1
+Requires-Dist: twine ; extra == 'dev-airflow1'
+Requires-Dist: pytest-cov (>=2.8.1) ; extra == 'dev-airflow1'
+Requires-Dist: types-dataclasses ; extra == 'dev-airflow1'
+Requires-Dist: WTForms (==2.3.3) ; extra == 'dev-airflow1'
+Requires-Dist: tabulate ; extra == 'dev-airflow1'
+Requires-Dist: pytest (>=6.2.2) ; extra == 'dev-airflow1'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'dev-airflow1'
+Requires-Dist: types-python-dateutil ; extra == 'dev-airflow1'
+Requires-Dist: types-six ; extra == 'dev-airflow1'
+Requires-Dist: sql-metadata (==2.2.2) ; extra == 'dev-airflow1'
+Requires-Dist: types-click (==0.1.12) ; extra == 'dev-airflow1'
+Requires-Dist: typing-inspect ; extra == 'dev-airflow1'
+Requires-Dist: types-PyMySQL ; extra == 'dev-airflow1'
+Requires-Dist: types-tabulate ; extra == 'dev-airflow1'
+Requires-Dist: black (>=19.10b0) ; extra == 'dev-airflow1'
+Requires-Dist: click-default-group ; extra == 'dev-airflow1'
+Requires-Dist: lkml (>=1.1.0) ; extra == 'dev-airflow1'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'dev-airflow1'
+Requires-Dist: pymysql (>=1.0.2) ; extra == 'dev-airflow1'
+Requires-Dist: docker ; extra == 'dev-airflow1'
+Requires-Dist: cachetools ; extra == 'dev-airflow1'
+Requires-Dist: freezegun ; extra == 'dev-airflow1'
+Requires-Dist: jsonpickle ; extra == 'dev-airflow1'
+Requires-Dist: mypy (>=0.901) ; extra == 'dev-airflow1'
+Requires-Dist: coverage (>=5.1) ; extra == 'dev-airflow1'
+Requires-Dist: deepdiff ; extra == 'dev-airflow1'
+Requires-Dist: google-cloud-logging ; extra == 'dev-airflow1'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'dev-airflow1'
+Requires-Dist: toml (>=0.10.0) ; extra == 'dev-airflow1'
+Requires-Dist: redash-toolbelt ; extra == 'dev-airflow1'
+Requires-Dist: types-freezegun ; extra == 'dev-airflow1'
+Requires-Dist: avro (>=1.10.2) ; extra == 'dev-airflow1'
+Requires-Dist: boto3 ; extra == 'dev-airflow1'
+Requires-Dist: click (>=6.0.0) ; extra == 'dev-airflow1'
+Requires-Dist: types-PyYAML ; extra == 'dev-airflow1'
+Requires-Dist: okta (~=1.7.0) ; extra == 'dev-airflow1'
+Requires-Dist: flake8-tidy-imports (>=4.3.0) ; extra == 'dev-airflow1'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'dev-airflow1'
+Requires-Dist: mypy-extensions (>=0.4.3) ; extra == 'dev-airflow1'
+Requires-Dist: sql-metadata ; extra == 'dev-airflow1'
+Requires-Dist: looker-sdk (==21.6.0) ; extra == 'dev-airflow1'
+Requires-Dist: snowflake-sqlalchemy (<=1.2.4) ; extra == 'dev-airflow1'
+Requires-Dist: apache-airflow-backport-providers-snowflake ; extra == 'dev-airflow1'
+Requires-Dist: sqlalchemy-redshift ; extra == 'dev-airflow1'
+Requires-Dist: requests ; extra == 'dev-airflow1'
+Requires-Dist: fastavro (>=1.2.0) ; extra == 'dev-airflow1'
+Requires-Dist: isort (>=5.7.0) ; extra == 'dev-airflow1'
+Requires-Dist: sqlalchemy-trino ; extra == 'dev-airflow1'
+Requires-Dist: botocore (!=1.23.0) ; extra == 'dev-airflow1'
+Requires-Dist: GeoAlchemy2 ; extra == 'dev-airflow1'
+Requires-Dist: types-toml ; extra == 'dev-airflow1'
+Requires-Dist: great-expectations ; extra == 'dev-airflow1'
+Requires-Dist: cx-Oracle ; extra == 'dev-airflow1'
+Requires-Dist: pydantic (>=1.5.1) ; extra == 'dev-airflow1'
+Requires-Dist: PyYAML ; extra == 'dev-airflow1'
+Requires-Dist: types-cachetools ; extra == 'dev-airflow1'
+Requires-Dist: progressbar2 ; extra == 'dev-airflow1'
+Requires-Dist: entrypoints ; extra == 'dev-airflow1'
+Requires-Dist: build ; extra == 'dev-airflow1'
+Requires-Dist: sqlalchemy-stubs ; extra == 'dev-airflow1'
+Requires-Dist: types-pkg-resources ; extra == 'dev-airflow1'
+Requires-Dist: confluent-kafka (>=1.5.0) ; extra == 'dev-airflow1'
+Requires-Dist: stackprinter ; extra == 'dev-airflow1'
+Requires-Dist: requests-mock ; extra == 'dev-airflow1'
+Requires-Dist: pytest-docker (>=0.10.3) ; extra == 'dev-airflow1'
+Requires-Dist: psycopg2-binary ; extra == 'dev-airflow1'
+Requires-Dist: types-requests ; extra == 'dev-airflow1'
+Requires-Dist: apache-airflow (==1.10.15) ; extra == 'dev-airflow1'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'dev-airflow1'
+Requires-Dist: boto3-stubs[glue,s3,sagemaker] ; extra == 'dev-airflow1'
+Requires-Dist: tox ; extra == 'dev-airflow1'
+Requires-Dist: pybigquery (>=0.6.0) ; extra == 'dev-airflow1'
+Requires-Dist: dataclasses (>=0.6) ; (python_version < "3.7") and extra == 'dev-airflow1'
+Requires-Dist: typing-extensions (>=3.7.4) ; (python_version < "3.8") and extra == 'dev-airflow1'
+Requires-Dist: dataclasses (>=0.6) ; (python_version < "3.7") and extra == 'dev'
+Requires-Dist: typing-extensions (>=3.7.4) ; (python_version < "3.8") and extra == 'dev'
+Provides-Extra: druid
+Requires-Dist: pydruid (>=0.6.2) ; extra == 'druid'
+Requires-Dist: avro (>=1.10.2) ; extra == 'druid'
+Requires-Dist: docker ; extra == 'druid'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'druid'
+Requires-Dist: click (>=6.0.0) ; extra == 'druid'
+Requires-Dist: stackprinter ; extra == 'druid'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'druid'
+Requires-Dist: PyYAML ; extra == 'druid'
+Requires-Dist: tabulate ; extra == 'druid'
+Requires-Dist: progressbar2 ; extra == 'druid'
+Requires-Dist: click-default-group ; extra == 'druid'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'druid'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'druid'
+Requires-Dist: toml (>=0.10.0) ; extra == 'druid'
+Requires-Dist: entrypoints ; extra == 'druid'
+Requires-Dist: great-expectations ; extra == 'druid'
+Provides-Extra: feast
+Requires-Dist: avro (>=1.10.2) ; extra == 'feast'
+Requires-Dist: docker ; extra == 'feast'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'feast'
+Requires-Dist: click (>=6.0.0) ; extra == 'feast'
+Requires-Dist: stackprinter ; extra == 'feast'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'feast'
+Requires-Dist: PyYAML ; extra == 'feast'
+Requires-Dist: tabulate ; extra == 'feast'
+Requires-Dist: progressbar2 ; extra == 'feast'
+Requires-Dist: click-default-group ; extra == 'feast'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'feast'
+Requires-Dist: toml (>=0.10.0) ; extra == 'feast'
+Requires-Dist: entrypoints ; extra == 'feast'
+Provides-Extra: glue
+Requires-Dist: avro (>=1.10.2) ; extra == 'glue'
+Requires-Dist: docker ; extra == 'glue'
+Requires-Dist: botocore (!=1.23.0) ; extra == 'glue'
+Requires-Dist: boto3 ; extra == 'glue'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'glue'
+Requires-Dist: click (>=6.0.0) ; extra == 'glue'
+Requires-Dist: stackprinter ; extra == 'glue'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'glue'
+Requires-Dist: PyYAML ; extra == 'glue'
+Requires-Dist: tabulate ; extra == 'glue'
+Requires-Dist: progressbar2 ; extra == 'glue'
+Requires-Dist: click-default-group ; extra == 'glue'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'glue'
+Requires-Dist: toml (>=0.10.0) ; extra == 'glue'
+Requires-Dist: entrypoints ; extra == 'glue'
+Provides-Extra: hive
+Requires-Dist: avro (>=1.10.2) ; extra == 'hive'
+Requires-Dist: docker ; extra == 'hive'
+Requires-Dist: acryl-pyhive[hive] (>=0.6.11) ; extra == 'hive'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'hive'
+Requires-Dist: click (>=6.0.0) ; extra == 'hive'
+Requires-Dist: stackprinter ; extra == 'hive'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'hive'
+Requires-Dist: PyYAML ; extra == 'hive'
+Requires-Dist: tabulate ; extra == 'hive'
+Requires-Dist: progressbar2 ; extra == 'hive'
+Requires-Dist: click-default-group ; extra == 'hive'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'hive'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'hive'
+Requires-Dist: toml (>=0.10.0) ; extra == 'hive'
+Requires-Dist: entrypoints ; extra == 'hive'
+Requires-Dist: great-expectations ; extra == 'hive'
+Provides-Extra: integration-tests
+Requires-Dist: pydruid (>=0.6.2) ; extra == 'integration-tests'
+Requires-Dist: docker ; extra == 'integration-tests'
+Requires-Dist: acryl-pyhive[hive] (>=0.6.11) ; extra == 'integration-tests'
+Requires-Dist: snowflake-sqlalchemy (<=1.2.4) ; extra == 'integration-tests'
+Requires-Dist: python-ldap (>=2.4) ; extra == 'integration-tests'
+Requires-Dist: redash-toolbelt ; extra == 'integration-tests'
+Requires-Dist: requests ; extra == 'integration-tests'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'integration-tests'
+Requires-Dist: pymongo (>=3.11) ; extra == 'integration-tests'
+Requires-Dist: JPype1 ; extra == 'integration-tests'
+Requires-Dist: sqlalchemy-pytds (>=0.3) ; extra == 'integration-tests'
+Requires-Dist: pymysql (>=1.0.2) ; extra == 'integration-tests'
+Requires-Dist: sql-metadata ; extra == 'integration-tests'
+Requires-Dist: great-expectations ; extra == 'integration-tests'
+Provides-Extra: kafka
+Requires-Dist: avro (>=1.10.2) ; extra == 'kafka'
+Requires-Dist: docker ; extra == 'kafka'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'kafka'
+Requires-Dist: click (>=6.0.0) ; extra == 'kafka'
+Requires-Dist: confluent-kafka (>=1.5.0) ; extra == 'kafka'
+Requires-Dist: stackprinter ; extra == 'kafka'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'kafka'
+Requires-Dist: PyYAML ; extra == 'kafka'
+Requires-Dist: tabulate ; extra == 'kafka'
+Requires-Dist: progressbar2 ; extra == 'kafka'
+Requires-Dist: click-default-group ; extra == 'kafka'
+Requires-Dist: fastavro (>=1.2.0) ; extra == 'kafka'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'kafka'
+Requires-Dist: toml (>=0.10.0) ; extra == 'kafka'
+Requires-Dist: entrypoints ; extra == 'kafka'
+Provides-Extra: kafka-connect
+Requires-Dist: avro (>=1.10.2) ; extra == 'kafka-connect'
+Requires-Dist: docker ; extra == 'kafka-connect'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'kafka-connect'
+Requires-Dist: click (>=6.0.0) ; extra == 'kafka-connect'
+Requires-Dist: JPype1 ; extra == 'kafka-connect'
+Requires-Dist: requests ; extra == 'kafka-connect'
+Requires-Dist: stackprinter ; extra == 'kafka-connect'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'kafka-connect'
+Requires-Dist: PyYAML ; extra == 'kafka-connect'
+Requires-Dist: tabulate ; extra == 'kafka-connect'
+Requires-Dist: progressbar2 ; extra == 'kafka-connect'
+Requires-Dist: click-default-group ; extra == 'kafka-connect'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'kafka-connect'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'kafka-connect'
+Requires-Dist: toml (>=0.10.0) ; extra == 'kafka-connect'
+Requires-Dist: entrypoints ; extra == 'kafka-connect'
+Requires-Dist: great-expectations ; extra == 'kafka-connect'
+Provides-Extra: ldap
+Requires-Dist: avro (>=1.10.2) ; extra == 'ldap'
+Requires-Dist: docker ; extra == 'ldap'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'ldap'
+Requires-Dist: click (>=6.0.0) ; extra == 'ldap'
+Requires-Dist: python-ldap (>=2.4) ; extra == 'ldap'
+Requires-Dist: stackprinter ; extra == 'ldap'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'ldap'
+Requires-Dist: PyYAML ; extra == 'ldap'
+Requires-Dist: tabulate ; extra == 'ldap'
+Requires-Dist: progressbar2 ; extra == 'ldap'
+Requires-Dist: click-default-group ; extra == 'ldap'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'ldap'
+Requires-Dist: toml (>=0.10.0) ; extra == 'ldap'
+Requires-Dist: entrypoints ; extra == 'ldap'
+Provides-Extra: looker
+Requires-Dist: avro (>=1.10.2) ; extra == 'looker'
+Requires-Dist: docker ; extra == 'looker'
+Requires-Dist: looker-sdk (==21.6.0) ; extra == 'looker'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'looker'
+Requires-Dist: click (>=6.0.0) ; extra == 'looker'
+Requires-Dist: stackprinter ; extra == 'looker'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'looker'
+Requires-Dist: PyYAML ; extra == 'looker'
+Requires-Dist: tabulate ; extra == 'looker'
+Requires-Dist: progressbar2 ; extra == 'looker'
+Requires-Dist: click-default-group ; extra == 'looker'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'looker'
+Requires-Dist: toml (>=0.10.0) ; extra == 'looker'
+Requires-Dist: entrypoints ; extra == 'looker'
+Provides-Extra: lookml
+Requires-Dist: avro (>=1.10.2) ; extra == 'lookml'
+Requires-Dist: sql-metadata (==2.2.2) ; extra == 'lookml'
+Requires-Dist: docker ; extra == 'lookml'
+Requires-Dist: looker-sdk (==21.6.0) ; extra == 'lookml'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'lookml'
+Requires-Dist: click (>=6.0.0) ; extra == 'lookml'
+Requires-Dist: lkml (>=1.1.0) ; extra == 'lookml'
+Requires-Dist: stackprinter ; extra == 'lookml'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'lookml'
+Requires-Dist: PyYAML ; extra == 'lookml'
+Requires-Dist: tabulate ; extra == 'lookml'
+Requires-Dist: progressbar2 ; extra == 'lookml'
+Requires-Dist: click-default-group ; extra == 'lookml'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'lookml'
+Requires-Dist: toml (>=0.10.0) ; extra == 'lookml'
+Requires-Dist: entrypoints ; extra == 'lookml'
+Provides-Extra: mariadb
+Requires-Dist: avro (>=1.10.2) ; extra == 'mariadb'
+Requires-Dist: docker ; extra == 'mariadb'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'mariadb'
+Requires-Dist: click (>=6.0.0) ; extra == 'mariadb'
+Requires-Dist: pymysql (>=1.0.2) ; extra == 'mariadb'
+Requires-Dist: stackprinter ; extra == 'mariadb'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'mariadb'
+Requires-Dist: PyYAML ; extra == 'mariadb'
+Requires-Dist: tabulate ; extra == 'mariadb'
+Requires-Dist: progressbar2 ; extra == 'mariadb'
+Requires-Dist: click-default-group ; extra == 'mariadb'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'mariadb'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'mariadb'
+Requires-Dist: toml (>=0.10.0) ; extra == 'mariadb'
+Requires-Dist: entrypoints ; extra == 'mariadb'
+Requires-Dist: great-expectations ; extra == 'mariadb'
+Provides-Extra: mongodb
+Requires-Dist: avro (>=1.10.2) ; extra == 'mongodb'
+Requires-Dist: docker ; extra == 'mongodb'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'mongodb'
+Requires-Dist: click (>=6.0.0) ; extra == 'mongodb'
+Requires-Dist: stackprinter ; extra == 'mongodb'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'mongodb'
+Requires-Dist: PyYAML ; extra == 'mongodb'
+Requires-Dist: tabulate ; extra == 'mongodb'
+Requires-Dist: progressbar2 ; extra == 'mongodb'
+Requires-Dist: click-default-group ; extra == 'mongodb'
+Requires-Dist: pymongo (>=3.11) ; extra == 'mongodb'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'mongodb'
+Requires-Dist: toml (>=0.10.0) ; extra == 'mongodb'
+Requires-Dist: entrypoints ; extra == 'mongodb'
+Provides-Extra: mssql
+Requires-Dist: avro (>=1.10.2) ; extra == 'mssql'
+Requires-Dist: docker ; extra == 'mssql'
+Requires-Dist: sqlalchemy-pytds (>=0.3) ; extra == 'mssql'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'mssql'
+Requires-Dist: click (>=6.0.0) ; extra == 'mssql'
+Requires-Dist: stackprinter ; extra == 'mssql'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'mssql'
+Requires-Dist: PyYAML ; extra == 'mssql'
+Requires-Dist: tabulate ; extra == 'mssql'
+Requires-Dist: progressbar2 ; extra == 'mssql'
+Requires-Dist: click-default-group ; extra == 'mssql'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'mssql'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'mssql'
+Requires-Dist: toml (>=0.10.0) ; extra == 'mssql'
+Requires-Dist: entrypoints ; extra == 'mssql'
+Requires-Dist: great-expectations ; extra == 'mssql'
+Provides-Extra: mssql-odbc
+Requires-Dist: avro (>=1.10.2) ; extra == 'mssql-odbc'
+Requires-Dist: docker ; extra == 'mssql-odbc'
+Requires-Dist: pyodbc ; extra == 'mssql-odbc'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'mssql-odbc'
+Requires-Dist: click (>=6.0.0) ; extra == 'mssql-odbc'
+Requires-Dist: stackprinter ; extra == 'mssql-odbc'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'mssql-odbc'
+Requires-Dist: PyYAML ; extra == 'mssql-odbc'
+Requires-Dist: tabulate ; extra == 'mssql-odbc'
+Requires-Dist: progressbar2 ; extra == 'mssql-odbc'
+Requires-Dist: click-default-group ; extra == 'mssql-odbc'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'mssql-odbc'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'mssql-odbc'
+Requires-Dist: toml (>=0.10.0) ; extra == 'mssql-odbc'
+Requires-Dist: entrypoints ; extra == 'mssql-odbc'
+Requires-Dist: great-expectations ; extra == 'mssql-odbc'
+Provides-Extra: mysql
+Requires-Dist: avro (>=1.10.2) ; extra == 'mysql'
+Requires-Dist: docker ; extra == 'mysql'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'mysql'
+Requires-Dist: click (>=6.0.0) ; extra == 'mysql'
+Requires-Dist: pymysql (>=1.0.2) ; extra == 'mysql'
+Requires-Dist: stackprinter ; extra == 'mysql'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'mysql'
+Requires-Dist: PyYAML ; extra == 'mysql'
+Requires-Dist: tabulate ; extra == 'mysql'
+Requires-Dist: progressbar2 ; extra == 'mysql'
+Requires-Dist: click-default-group ; extra == 'mysql'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'mysql'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'mysql'
+Requires-Dist: toml (>=0.10.0) ; extra == 'mysql'
+Requires-Dist: entrypoints ; extra == 'mysql'
+Requires-Dist: great-expectations ; extra == 'mysql'
+Provides-Extra: okta
+Requires-Dist: avro (>=1.10.2) ; extra == 'okta'
+Requires-Dist: docker ; extra == 'okta'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'okta'
+Requires-Dist: click (>=6.0.0) ; extra == 'okta'
+Requires-Dist: stackprinter ; extra == 'okta'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'okta'
+Requires-Dist: PyYAML ; extra == 'okta'
+Requires-Dist: tabulate ; extra == 'okta'
+Requires-Dist: progressbar2 ; extra == 'okta'
+Requires-Dist: click-default-group ; extra == 'okta'
+Requires-Dist: okta (~=1.7.0) ; extra == 'okta'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'okta'
+Requires-Dist: toml (>=0.10.0) ; extra == 'okta'
+Requires-Dist: entrypoints ; extra == 'okta'
+Provides-Extra: oracle
+Requires-Dist: avro (>=1.10.2) ; extra == 'oracle'
+Requires-Dist: cx-Oracle ; extra == 'oracle'
+Requires-Dist: docker ; extra == 'oracle'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'oracle'
+Requires-Dist: click (>=6.0.0) ; extra == 'oracle'
+Requires-Dist: stackprinter ; extra == 'oracle'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'oracle'
+Requires-Dist: PyYAML ; extra == 'oracle'
+Requires-Dist: tabulate ; extra == 'oracle'
+Requires-Dist: progressbar2 ; extra == 'oracle'
+Requires-Dist: click-default-group ; extra == 'oracle'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'oracle'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'oracle'
+Requires-Dist: toml (>=0.10.0) ; extra == 'oracle'
+Requires-Dist: entrypoints ; extra == 'oracle'
+Requires-Dist: great-expectations ; extra == 'oracle'
+Provides-Extra: postgres
+Requires-Dist: avro (>=1.10.2) ; extra == 'postgres'
+Requires-Dist: docker ; extra == 'postgres'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'postgres'
+Requires-Dist: click (>=6.0.0) ; extra == 'postgres'
+Requires-Dist: stackprinter ; extra == 'postgres'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'postgres'
+Requires-Dist: PyYAML ; extra == 'postgres'
+Requires-Dist: tabulate ; extra == 'postgres'
+Requires-Dist: progressbar2 ; extra == 'postgres'
+Requires-Dist: click-default-group ; extra == 'postgres'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'postgres'
+Requires-Dist: psycopg2-binary ; extra == 'postgres'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'postgres'
+Requires-Dist: toml (>=0.10.0) ; extra == 'postgres'
+Requires-Dist: entrypoints ; extra == 'postgres'
+Requires-Dist: GeoAlchemy2 ; extra == 'postgres'
+Requires-Dist: great-expectations ; extra == 'postgres'
+Provides-Extra: redash
+Requires-Dist: avro (>=1.10.2) ; extra == 'redash'
+Requires-Dist: docker ; extra == 'redash'
+Requires-Dist: sql-metadata ; extra == 'redash'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'redash'
+Requires-Dist: click (>=6.0.0) ; extra == 'redash'
+Requires-Dist: redash-toolbelt ; extra == 'redash'
+Requires-Dist: stackprinter ; extra == 'redash'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'redash'
+Requires-Dist: PyYAML ; extra == 'redash'
+Requires-Dist: tabulate ; extra == 'redash'
+Requires-Dist: progressbar2 ; extra == 'redash'
+Requires-Dist: click-default-group ; extra == 'redash'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'redash'
+Requires-Dist: toml (>=0.10.0) ; extra == 'redash'
+Requires-Dist: entrypoints ; extra == 'redash'
+Provides-Extra: redshift
+Requires-Dist: avro (>=1.10.2) ; extra == 'redshift'
+Requires-Dist: docker ; extra == 'redshift'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'redshift'
+Requires-Dist: click (>=6.0.0) ; extra == 'redshift'
+Requires-Dist: sqlalchemy-redshift ; extra == 'redshift'
+Requires-Dist: stackprinter ; extra == 'redshift'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'redshift'
+Requires-Dist: PyYAML ; extra == 'redshift'
+Requires-Dist: tabulate ; extra == 'redshift'
+Requires-Dist: progressbar2 ; extra == 'redshift'
+Requires-Dist: click-default-group ; extra == 'redshift'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'redshift'
+Requires-Dist: psycopg2-binary ; extra == 'redshift'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'redshift'
+Requires-Dist: toml (>=0.10.0) ; extra == 'redshift'
+Requires-Dist: entrypoints ; extra == 'redshift'
+Requires-Dist: GeoAlchemy2 ; extra == 'redshift'
+Requires-Dist: great-expectations ; extra == 'redshift'
+Provides-Extra: redshift-usage
+Requires-Dist: avro (>=1.10.2) ; extra == 'redshift-usage'
+Requires-Dist: docker ; extra == 'redshift-usage'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'redshift-usage'
+Requires-Dist: click (>=6.0.0) ; extra == 'redshift-usage'
+Requires-Dist: sqlalchemy-redshift ; extra == 'redshift-usage'
+Requires-Dist: stackprinter ; extra == 'redshift-usage'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'redshift-usage'
+Requires-Dist: PyYAML ; extra == 'redshift-usage'
+Requires-Dist: tabulate ; extra == 'redshift-usage'
+Requires-Dist: progressbar2 ; extra == 'redshift-usage'
+Requires-Dist: click-default-group ; extra == 'redshift-usage'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'redshift-usage'
+Requires-Dist: psycopg2-binary ; extra == 'redshift-usage'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'redshift-usage'
+Requires-Dist: toml (>=0.10.0) ; extra == 'redshift-usage'
+Requires-Dist: entrypoints ; extra == 'redshift-usage'
+Requires-Dist: GeoAlchemy2 ; extra == 'redshift-usage'
+Requires-Dist: great-expectations ; extra == 'redshift-usage'
+Provides-Extra: sagemaker
+Requires-Dist: avro (>=1.10.2) ; extra == 'sagemaker'
+Requires-Dist: docker ; extra == 'sagemaker'
+Requires-Dist: botocore (!=1.23.0) ; extra == 'sagemaker'
+Requires-Dist: boto3 ; extra == 'sagemaker'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'sagemaker'
+Requires-Dist: click (>=6.0.0) ; extra == 'sagemaker'
+Requires-Dist: stackprinter ; extra == 'sagemaker'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'sagemaker'
+Requires-Dist: PyYAML ; extra == 'sagemaker'
+Requires-Dist: tabulate ; extra == 'sagemaker'
+Requires-Dist: progressbar2 ; extra == 'sagemaker'
+Requires-Dist: click-default-group ; extra == 'sagemaker'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'sagemaker'
+Requires-Dist: toml (>=0.10.0) ; extra == 'sagemaker'
+Requires-Dist: entrypoints ; extra == 'sagemaker'
+Provides-Extra: snowflake
+Requires-Dist: avro (>=1.10.2) ; extra == 'snowflake'
+Requires-Dist: docker ; extra == 'snowflake'
+Requires-Dist: snowflake-sqlalchemy (<=1.2.4) ; extra == 'snowflake'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'snowflake'
+Requires-Dist: click (>=6.0.0) ; extra == 'snowflake'
+Requires-Dist: stackprinter ; extra == 'snowflake'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'snowflake'
+Requires-Dist: PyYAML ; extra == 'snowflake'
+Requires-Dist: tabulate ; extra == 'snowflake'
+Requires-Dist: progressbar2 ; extra == 'snowflake'
+Requires-Dist: click-default-group ; extra == 'snowflake'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'snowflake'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'snowflake'
+Requires-Dist: toml (>=0.10.0) ; extra == 'snowflake'
+Requires-Dist: entrypoints ; extra == 'snowflake'
+Requires-Dist: great-expectations ; extra == 'snowflake'
+Provides-Extra: snowflake-usage
+Requires-Dist: avro (>=1.10.2) ; extra == 'snowflake-usage'
+Requires-Dist: docker ; extra == 'snowflake-usage'
+Requires-Dist: snowflake-sqlalchemy (<=1.2.4) ; extra == 'snowflake-usage'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'snowflake-usage'
+Requires-Dist: click (>=6.0.0) ; extra == 'snowflake-usage'
+Requires-Dist: stackprinter ; extra == 'snowflake-usage'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'snowflake-usage'
+Requires-Dist: PyYAML ; extra == 'snowflake-usage'
+Requires-Dist: tabulate ; extra == 'snowflake-usage'
+Requires-Dist: progressbar2 ; extra == 'snowflake-usage'
+Requires-Dist: click-default-group ; extra == 'snowflake-usage'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'snowflake-usage'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'snowflake-usage'
+Requires-Dist: toml (>=0.10.0) ; extra == 'snowflake-usage'
+Requires-Dist: entrypoints ; extra == 'snowflake-usage'
+Requires-Dist: great-expectations ; extra == 'snowflake-usage'
+Provides-Extra: sqlalchemy
+Requires-Dist: avro (>=1.10.2) ; extra == 'sqlalchemy'
+Requires-Dist: docker ; extra == 'sqlalchemy'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'sqlalchemy'
+Requires-Dist: click (>=6.0.0) ; extra == 'sqlalchemy'
+Requires-Dist: stackprinter ; extra == 'sqlalchemy'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'sqlalchemy'
+Requires-Dist: PyYAML ; extra == 'sqlalchemy'
+Requires-Dist: tabulate ; extra == 'sqlalchemy'
+Requires-Dist: progressbar2 ; extra == 'sqlalchemy'
+Requires-Dist: click-default-group ; extra == 'sqlalchemy'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'sqlalchemy'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'sqlalchemy'
+Requires-Dist: toml (>=0.10.0) ; extra == 'sqlalchemy'
+Requires-Dist: entrypoints ; extra == 'sqlalchemy'
+Requires-Dist: great-expectations ; extra == 'sqlalchemy'
+Provides-Extra: starburst-trino-usage
+Requires-Dist: avro (>=1.10.2) ; extra == 'starburst-trino-usage'
+Requires-Dist: docker ; extra == 'starburst-trino-usage'
+Requires-Dist: sqlalchemy-trino ; extra == 'starburst-trino-usage'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'starburst-trino-usage'
+Requires-Dist: click (>=6.0.0) ; extra == 'starburst-trino-usage'
+Requires-Dist: stackprinter ; extra == 'starburst-trino-usage'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'starburst-trino-usage'
+Requires-Dist: PyYAML ; extra == 'starburst-trino-usage'
+Requires-Dist: tabulate ; extra == 'starburst-trino-usage'
+Requires-Dist: progressbar2 ; extra == 'starburst-trino-usage'
+Requires-Dist: click-default-group ; extra == 'starburst-trino-usage'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'starburst-trino-usage'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'starburst-trino-usage'
+Requires-Dist: toml (>=0.10.0) ; extra == 'starburst-trino-usage'
+Requires-Dist: entrypoints ; extra == 'starburst-trino-usage'
+Requires-Dist: great-expectations ; extra == 'starburst-trino-usage'
+Provides-Extra: superset
+Requires-Dist: avro (>=1.10.2) ; extra == 'superset'
+Requires-Dist: docker ; extra == 'superset'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'superset'
+Requires-Dist: click (>=6.0.0) ; extra == 'superset'
+Requires-Dist: requests ; extra == 'superset'
+Requires-Dist: stackprinter ; extra == 'superset'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'superset'
+Requires-Dist: PyYAML ; extra == 'superset'
+Requires-Dist: tabulate ; extra == 'superset'
+Requires-Dist: progressbar2 ; extra == 'superset'
+Requires-Dist: click-default-group ; extra == 'superset'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'superset'
+Requires-Dist: toml (>=0.10.0) ; extra == 'superset'
+Requires-Dist: entrypoints ; extra == 'superset'
+Provides-Extra: trino
+Requires-Dist: avro (>=1.10.2) ; extra == 'trino'
+Requires-Dist: docker ; extra == 'trino'
+Requires-Dist: sqlalchemy-trino ; extra == 'trino'
+Requires-Dist: expandvars (>=0.6.5) ; extra == 'trino'
+Requires-Dist: click (>=6.0.0) ; extra == 'trino'
+Requires-Dist: stackprinter ; extra == 'trino'
+Requires-Dist: python-dateutil (>=2.8.0) ; extra == 'trino'
+Requires-Dist: PyYAML ; extra == 'trino'
+Requires-Dist: tabulate ; extra == 'trino'
+Requires-Dist: progressbar2 ; extra == 'trino'
+Requires-Dist: click-default-group ; extra == 'trino'
+Requires-Dist: sqlalchemy (==1.3.24) ; extra == 'trino'
+Requires-Dist: avro-gen3 (==0.7.1) ; extra == 'trino'
+Requires-Dist: toml (>=0.10.0) ; extra == 'trino'
+Requires-Dist: entrypoints ; extra == 'trino'
+Requires-Dist: great-expectations ; extra == 'trino'
+
+# Metadata Ingestion
+
+![Python version 3.6+](https://img.shields.io/badge/python-3.6%2B-blue)
+
+This module hosts an extensible Python-based metadata ingestion system for DataHub.
+This supports sending data to DataHub using Kafka or through the REST API.
+It can be used through our CLI tool, with an orchestrator like Airflow, or as a library.
+
+## Getting Started
+
+### Prerequisites
+
+Before running any metadata ingestion job, you should make sure that DataHub backend services are all running. If you are trying this out locally, the easiest way to do that is through [quickstart Docker images](../docker).
+
+### Install from PyPI
+
+The folks over at [Acryl Data](https://www.acryl.io/) maintain a PyPI package for DataHub metadata ingestion.
+
+```shell
+# Requires Python 3.6+
+python3 -m pip install --upgrade pip wheel setuptools
+python3 -m pip install --upgrade acryl-datahub
+datahub version
+# If you see "command not found", try running this instead: python3 -m datahub version
+```
+
+If you run into an error, try checking the [_common setup issues_](./developing.md#Common-setup-issues).
+
+#### Installing Plugins
+
+We use a plugin architecture so that you can install only the dependencies you actually need. Click the plugin name to learn more about the specific source recipe and any FAQs!
+
+Sources:
+
+| Plugin Name                                     | Install Command                                            | Provides                            |
+| ----------------------------------------------- | ---------------------------------------------------------- | ----------------------------------- |
+| [file](./source_docs/file.md)                   | _included by default_                                      | File source and sink                |
+| [athena](./source_docs/athena.md)               | `pip install 'acryl-datahub[athena]'`                      | AWS Athena source                   |
+| [bigquery](./source_docs/bigquery.md)           | `pip install 'acryl-datahub[bigquery]'`                    | BigQuery source                     |
+| [bigquery-usage](./source_docs/bigquery.md)     | `pip install 'acryl-datahub[bigquery-usage]'`              | BigQuery usage statistics source    |
+| [datahub-business-glossary](./source_docs/business_glossary.md)                     | _no additional dependencies_                               | Business Glossary File source                          |
+| [dbt](./source_docs/dbt.md)                     | _no additional dependencies_                               | dbt source                          |
+| [druid](./source_docs/druid.md)                 | `pip install 'acryl-datahub[druid]'`                       | Druid Source                        |
+| [feast](./source_docs/feast.md)                 | `pip install 'acryl-datahub[feast]'`                       | Feast source                        |
+| [glue](./source_docs/glue.md)                   | `pip install 'acryl-datahub[glue]'`                        | AWS Glue source                     |
+| [hive](./source_docs/hive.md)                   | `pip install 'acryl-datahub[hive]'`                        | Hive source                         |
+| [kafka](./source_docs/kafka.md)                 | `pip install 'acryl-datahub[kafka]'`                       | Kafka source                        |
+| [kafka-connect](./source_docs/kafka-connect.md) | `pip install 'acryl-datahub[kafka-connect]'`               | Kafka connect source                |
+| [ldap](./source_docs/ldap.md)                   | `pip install 'acryl-datahub[ldap]'` ([extra requirements]) | LDAP source                         |
+| [looker](./source_docs/looker.md)               | `pip install 'acryl-datahub[looker]'`                      | Looker source                       |
+| [lookml](./source_docs/lookml.md)               | `pip install 'acryl-datahub[lookml]'`                      | LookML source, requires Python 3.7+ |
+| [mongodb](./source_docs/mongodb.md)             | `pip install 'acryl-datahub[mongodb]'`                     | MongoDB source                      |
+| [mssql](./source_docs/mssql.md)                 | `pip install 'acryl-datahub[mssql]'`                       | SQL Server source                   |
+| [mysql](./source_docs/mysql.md)                 | `pip install 'acryl-datahub[mysql]'`                       | MySQL source                        |
+| [mariadb](./source_docs/mariadb.md)             | `pip install 'acryl-datahub[mariadb]'`                     | MariaDB source                      |
+| [openapi](./source_docs/openapi.md)             | `pip install 'acryl-datahub[openapi]'`                     | OpenApi Source                      |
+| [oracle](./source_docs/oracle.md)               | `pip install 'acryl-datahub[oracle]'`                      | Oracle source                       |
+| [postgres](./source_docs/postgres.md)           | `pip install 'acryl-datahub[postgres]'`                    | Postgres source                     |
+| [redash](./source_docs/redash.md)               | `pip install 'acryl-datahub[redash]'`                      | Redash source                       |
+| [redshift](./source_docs/redshift.md)           | `pip install 'acryl-datahub[redshift]'`                    | Redshift source                     |
+| [sagemaker](./source_docs/sagemaker.md)         | `pip install 'acryl-datahub[sagemaker]'`                   | AWS SageMaker source                |
+| [snowflake](./source_docs/snowflake.md)         | `pip install 'acryl-datahub[snowflake]'`                   | Snowflake source                    |
+| [snowflake-usage](./source_docs/snowflake.md)   | `pip install 'acryl-datahub[snowflake-usage]'`             | Snowflake usage statistics source   |
+| [sql-profiles](./source_docs/sql_profiles.md)   | `pip install 'acryl-datahub[sql-profiles]'`                | Data profiles for SQL-based systems |
+| [sqlalchemy](./source_docs/sqlalchemy.md)       | `pip install 'acryl-datahub[sqlalchemy]'`                  | Generic SQLAlchemy source           |
+| [superset](./source_docs/superset.md)           | `pip install 'acryl-datahub[superset]'`                    | Superset source                     |
+| [trino](./source_docs/trino.md)                 | `pip install 'acryl-datahub[trino]`                        | Trino source                     |
+| [starburst-trino-usage](./source_docs/trino.md) | `pip install 'acryl-datahub[starburst-trino-usage]'`       | Starburst Trino usage statistics source   |
+
+Sinks
+
+| Plugin Name                             | Install Command                              | Provides                   |
+| --------------------------------------- | -------------------------------------------- | -------------------------- |
+| [file](./sink_docs/file.md)             | _included by default_                        | File source and sink       |
+| [console](./sink_docs/console.md)       | _included by default_                        | Console sink               |
+| [datahub-rest](./sink_docs/datahub.md)  | `pip install 'acryl-datahub[datahub-rest]'`  | DataHub sink over REST API |
+| [datahub-kafka](./sink_docs/datahub.md) | `pip install 'acryl-datahub[datahub-kafka]'` | DataHub sink over Kafka    |
+
+These plugins can be mixed and matched as desired. For example:
+
+```shell
+pip install 'acryl-datahub[bigquery,datahub-rest]'
+```
+
+You can check the active plugins:
+
+```shell
+datahub check plugins
+```
+
+[extra requirements]: https://www.python-ldap.org/en/python-ldap-3.3.0/installing.html#build-prerequisites
+
+#### Basic Usage
+
+```shell
+pip install 'acryl-datahub[datahub-rest]'  # install the required plugin
+datahub ingest -c ./examples/recipes/example_to_datahub_rest.yml
+```
+
+The `--dry-run` option of the `ingest` command performs all of the ingestion steps, except writing to the sink. This is useful to ensure that the
+ingestion recipe is producing the desired workunits before ingesting them into datahub.
+
+```shell
+# Dry run
+datahub ingest -c ./examples/recipes/example_to_datahub_rest.yml --dry-run
+# Short-form
+datahub ingest -c ./examples/recipes/example_to_datahub_rest.yml -n
+```
+
+The `--preview` option of the `ingest` command performs all of the ingestion steps, but limits the processing to only the first 10 workunits produced by the source.
+This option helps with quick end-to-end smoke testing of the ingestion recipe.
+
+```shell
+# Preview
+datahub ingest -c ./examples/recipes/example_to_datahub_rest.yml --preview
+# Preview with dry-run
+datahub ingest -c ./examples/recipes/example_to_datahub_rest.yml -n --preview
+```
+
+### Install using Docker
+
+[![Docker Hub](https://img.shields.io/docker/pulls/linkedin/datahub-ingestion?style=plastic)](https://hub.docker.com/r/linkedin/datahub-ingestion)
+[![datahub-ingestion docker](https://github.com/linkedin/datahub/actions/workflows/docker-ingestion.yml/badge.svg)](https://github.com/linkedin/datahub/actions/workflows/docker-ingestion.yml)
+
+If you don't want to install locally, you can alternatively run metadata ingestion within a Docker container.
+We have prebuilt images available on [Docker hub](https://hub.docker.com/r/linkedin/datahub-ingestion). All plugins will be installed and enabled automatically.
+
+_Limitation: the datahub_docker.sh convenience script assumes that the recipe and any input/output files are accessible in the current working directory or its subdirectories. Files outside the current working directory will not be found, and you'll need to invoke the Docker image directly._
+
+```shell
+# Assumes the DataHub repo is cloned locally.
+./metadata-ingestion/scripts/datahub_docker.sh ingest -c ./examples/recipes/example_to_datahub_rest.yml
+```
+
+### Install from source
+
+If you'd like to install from source, see the [developer guide](./developing.md).
+
+## Recipes
+
+A recipe is a configuration file that tells our ingestion scripts where to pull data from (source) and where to put it (sink).
+Here's a simple example that pulls metadata from MSSQL and puts it into datahub.
+
+```yaml
+# A sample recipe that pulls metadata from MSSQL and puts it into DataHub
+# using the Rest API.
+source:
+  type: mssql
+  config:
+    username: sa
+    password: ${MSSQL_PASSWORD}
+    database: DemoData
+
+transformers:
+  - type: "fully-qualified-class-name-of-transformer"
+    config:
+      some_property: "some.value"
+
+sink:
+  type: "datahub-rest"
+  config:
+    server: "http://localhost:8080"
+```
+
+We automatically expand environment variables in the config,
+similar to variable substitution in GNU bash or in docker-compose files. For details, see
+https://docs.docker.com/compose/compose-file/compose-file-v2/#variable-substitution.
+
+Running a recipe is quite easy.
+
+```shell
+datahub ingest -c ./examples/recipes/mssql_to_datahub.yml
+```
+
+A number of recipes are included in the [examples/recipes](./examples/recipes) directory. For full info and context on each source and sink, see the pages described in the [table of plugins](#installing-plugins).
+
+## Transformations
+
+If you'd like to modify data before it reaches the ingestion sinks – for instance, adding additional owners or tags – you can use a transformer to write your own module and integrate it with DataHub.
+
+Check out the [transformers guide](./transformers.md) for more info!
+
+## Using as a library
+
+In some cases, you might want to construct the MetadataChangeEvents yourself but still use this framework to emit that metadata to DataHub. In this case, take a look at the emitter interfaces, which can easily be imported and called from your own code.
+
+- [DataHub emitter via REST](./src/datahub/emitter/rest_emitter.py) (same requirements as `datahub-rest`).
+- [DataHub emitter via Kafka](./src/datahub/emitter/kafka_emitter.py) (same requirements as `datahub-kafka`).
+### Sample code
+#### Lineage
+The following samples will cover emitting dataset-to-dataset, dataset-to-job-to-dataset, chart-to-dataset, dashboard-to-chart and job-to-dataflow lineages.
+- [lineage_emitter_mcpw_rest.py](./examples/library/lineage_emitter_mcpw_rest.py) - emits simple bigquery table-to-table (dataset-to-dataset) lineage via REST as MetadataChangeProposalWrapper.
+- [lineage_dataset_job_dataset.py](./examples/library/lineage_dataset_job_dataset.py) - emits mysql-to-airflow-to-kafka (dataset-to-job-to-dataset) lineage via REST as MetadataChangeProposalWrapper.
+- [lineage_dataset_chart.py](./examples/library/lineage_dataset_chart.py) - emits the dataset-to-chart lineage via REST as MetadataChangeProposalWrapper.
+- [lineage_chart_dashboard.py](./examples/library/lineage_chart_dashboard.py) - emits the chart-to-dashboard lineage via REST as MetadataChangeProposalWrapper.
+- [lineage_job_dataflow.py](./examples/library/lineage_job_dataflow.py) - emits the job-to-dataflow lineage via REST as MetadataChangeProposalWrapper.
+- [lineage_emitter_rest.py](./examples/library/lineage_emitter_rest.py) - emits simple dataset-to-dataset lineage via REST as MetadataChangeEvent.
+- [lineage_emitter_kafka.py](./examples/library/lineage_emitter_kafka.py) - emits simple dataset-to-dataset lineage via Kafka as MetadataChangeEvent.
+- [Datahub Snowflake Lineage](https://github.com/linkedin/datahub/blob/master/metadata-ingestion/src/datahub/ingestion/source/sql/snowflake.py#L249) - emits Datahub's Snowflake lineage as MetadataChangeProposalWrapper.
+- [Datahub Bigquery Lineage](https://github.com/linkedin/datahub/blob/a1bf95307b040074c8d65ebb86b5eb177fdcd591/metadata-ingestion/src/datahub/ingestion/source/sql/bigquery.py#L229) - emits Datahub's Bigquery lineage as MetadataChangeProposalWrapper.
+- [Datahub Dbt Lineage](https://github.com/linkedin/datahub/blob/a9754ebe83b6b73bc2bfbf49d9ebf5dbd2ca5a8f/metadata-ingestion/src/datahub/ingestion/source/dbt.py#L625,L630) - emits Datahub's DBT lineage as MetadataChangeEvent.
+
+NOTE:
+- Emitting aspects as MetadataChangeProposalWrapper is recommended over emitting aspects via the
+MetadataChangeEvent.
+- Emitting any aspect associated with an entity completely overwrites the previous
+value of the aspect associated with the entity. This means that emitting a lineage aspect associated with a dataset will overwrite lineage edges that already exist.
+#### Programmatic Pipeline
+In some cases, you might want to configure and run a pipeline entirely from within your custom python script. Here is an example of how to do it.
+ - [programmatic_pipeline.py](./examples/library/programatic_pipeline.py) - a basic mysql to REST programmatic pipeline.
+
+
+## Lineage with Airflow
+
+There's a couple ways to get lineage information from Airflow into DataHub.
+
+:::note
+
+If you're simply looking to run ingestion on a schedule, take a look at these sample DAGs:
+
+- [`generic_recipe_sample_dag.py`](./src/datahub_provider/example_dags/generic_recipe_sample_dag.py) - reads a DataHub ingestion recipe file and runs it
+- [`mysql_sample_dag.py`](./src/datahub_provider/example_dags/mysql_sample_dag.py) - runs a MySQL metadata ingestion pipeline using an inlined configuration.
+
+:::
+
+### Using Datahub's Airflow lineage backend (recommended)
+
+:::caution
+
+The Airflow lineage backend is only supported in Airflow 1.10.15+ and 2.0.2+.
+
+:::
+
+### Running on Docker locally
+
+If you are looking to run Airflow and DataHub using docker locally, follow the guide [here](../docker/airflow/local_airflow.md). Otherwise proceed to follow the instructions below.
+
+### Setting up Airflow to use DataHub as Lineage Backend
+
+1. You need to install the required dependency in your airflow. See https://registry.astronomer.io/providers/datahub/modules/datahublineagebackend
+
+```shell
+  pip install acryl-datahub[airflow]
+```
+
+2. You must configure an Airflow hook for Datahub. We support both a Datahub REST hook and a Kafka-based hook, but you only need one.
+
+   ```shell
+   # For REST-based:
+   airflow connections add  --conn-type 'datahub_rest' 'datahub_rest_default' --conn-host 'http://localhost:8080'
+   # For Kafka-based (standard Kafka sink config can be passed via extras):
+   airflow connections add  --conn-type 'datahub_kafka' 'datahub_kafka_default' --conn-host 'broker:9092' --conn-extra '{}'
+   ```
+
+3. Add the following lines to your `airflow.cfg` file.
+   ```ini
+   [lineage]
+   backend = datahub_provider.lineage.datahub.DatahubLineageBackend
+   datahub_kwargs = {
+       "datahub_conn_id": "datahub_rest_default",
+       "cluster": "prod",
+       "capture_ownership_info": true,
+       "capture_tags_info": true,
+       "graceful_exceptions": true }
+   # The above indentation is important!
+   ```
+   **Configuration options:**
+   - `datahub_conn_id` (required): Usually `datahub_rest_default` or `datahub_kafka_default`, depending on what you named the connection in step 1.
+   - `cluster` (defaults to "prod"): The "cluster" to associate Airflow DAGs and tasks with.
+   - `capture_ownership_info` (defaults to true): If true, the owners field of the DAG will be capture as a DataHub corpuser.
+   - `capture_tags_info` (defaults to true): If true, the tags field of the DAG will be captured as DataHub tags.
+   - `graceful_exceptions` (defaults to true): If set to true, most runtime errors in the lineage backend will be suppressed and will not cause the overall task to fail. Note that configuration issues will still throw exceptions.
+4. Configure `inlets` and `outlets` for your Airflow operators. For reference, look at the sample DAG in [`lineage_backend_demo.py`](./src/datahub_provider/example_dags/lineage_backend_demo.py), or reference [`lineage_backend_taskflow_demo.py`](./src/datahub_provider/example_dags/lineage_backend_taskflow_demo.py) if you're using the [TaskFlow API](https://airflow.apache.org/docs/apache-airflow/stable/concepts/taskflow.html).
+5. [optional] Learn more about [Airflow lineage](https://airflow.apache.org/docs/apache-airflow/stable/lineage.html), including shorthand notation and some automation.
+
+### Emitting lineage via a separate operator
+
+Take a look at this sample DAG:
+
+- [`lineage_emission_dag.py`](./src/datahub_provider/example_dags/lineage_emission_dag.py) - emits lineage using the DatahubEmitterOperator.
+
+In order to use this example, you must first configure the Datahub hook. Like in ingestion, we support a Datahub REST hook and a Kafka-based hook. See step 1 above for details.
+
+## Developing
+
+See the guides on [developing](./developing.md), [adding a source](./adding-source.md) and [using transformers](./transformers.md).
+
+
+
