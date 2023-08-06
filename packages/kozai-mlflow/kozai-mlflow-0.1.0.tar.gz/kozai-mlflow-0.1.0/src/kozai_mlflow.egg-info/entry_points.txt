@@ -1,0 +1,6 @@
+[console_scripts]
+kozai-operator = kozai.operator.main:main
+
+[mlflow.artifact_repository]
+kozai = kozai.mlflow.artifact_repository:KozaiArtifactRepository
+
