@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+justanunsuspectingmodule/__init__.py
+justanunsuspectingmodule/model_class.py
+justanunsuspectingmodule.egg-info/PKG-INFO
+justanunsuspectingmodule.egg-info/SOURCES.txt
+justanunsuspectingmodule.egg-info/dependency_links.txt
+justanunsuspectingmodule.egg-info/requires.txt
+justanunsuspectingmodule.egg-info/top_level.txt

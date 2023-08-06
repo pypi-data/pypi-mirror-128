@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: justanunsuspectingmodule
+Version: 1.1
+Summary: Class with a module for lab
+Home-page: https://github.com/Igor-Sviridov/justanunsuspectingmodule
+Author: Mekatto
+Author-email: igor@mekatto.com
+License: MIT
+Download-URL: https://pypi.org/project/justanunsuspectingmodule/
+Platform: UNKNOWN
+Requires-Python: >3.6.0
+License-File: LICENSE
+
+UNKNOWN
+
