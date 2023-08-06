@@ -1,0 +1,3 @@
+[console_scripts]
+deepsignal2 = deepsignal2.deepsignal2:main
+
