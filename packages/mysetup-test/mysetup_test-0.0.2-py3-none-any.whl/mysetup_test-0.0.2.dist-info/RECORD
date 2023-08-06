@@ -1,0 +1,12 @@
+testa/__init__.py,sha256=8p1NoqiOD1D1oTodSJyMqrhfFUBbYDitV7LABdU4vG0,1513
+testa/tools.py,sha256=pb2FzxC5xvMxuvBxGOL959P2ML4Ehd-fu0NZl_ZVwSE,39
+testa/tools2.py,sha256=mcvxz023hrhw-aRDzUi_7qCmGTIhdYwouuWGiMjOeds,41
+testa/ta/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testa/ta/core.py,sha256=zt165_OTDcsUQH4XXM0FwUzs2KxTgcePmn-Tc-3X4Ag,128
+testa/tb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testa/tb/utilities.py,sha256=qw5Qq7BvLD9AP5hxiA9ghxd6jgm0qroZ-GwHziDaFso,93
+mysetup_test-0.0.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+mysetup_test-0.0.2.dist-info/METADATA,sha256=XmfZDWOSPJ4sdCtZ6-BME75FNfLgrhk82RWGoqxWLCE,596
+mysetup_test-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mysetup_test-0.0.2.dist-info/top_level.txt,sha256=CJ9obr4r0pxtWVnpeTwSCCwNN7dEeRgsw4Z51Z9YZoA,24
+mysetup_test-0.0.2.dist-info/RECORD,,
