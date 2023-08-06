@@ -1,0 +1,4 @@
+[console_scripts]
+vernier-lsl = verniersl.__main__:main
+verniersl = verniersl.__main__:main
+
