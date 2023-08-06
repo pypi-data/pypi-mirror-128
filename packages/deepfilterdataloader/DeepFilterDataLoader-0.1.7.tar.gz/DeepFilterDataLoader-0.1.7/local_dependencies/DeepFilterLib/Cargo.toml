@@ -1,0 +1,23 @@
+[dependencies]
+ndarray = "^0.15"
+numpy = "^0.15"
+
+[dependencies.deep_filter]
+features = ["transforms"]
+path = "../deep_filter"
+
+[dependencies.pyo3]
+default_features = true
+features = ["extension-module"]
+version = "^0.15"
+
+[lib]
+crate-type = ["cdylib"]
+name = "libdf"
+path = "src/lib.rs"
+
+[package]
+authors = ["Hendrik Schröter <h.schroeter@pm.me>"]
+edition = "2021"
+name = "DeepFilterLib"
+version = "0.1.7"
