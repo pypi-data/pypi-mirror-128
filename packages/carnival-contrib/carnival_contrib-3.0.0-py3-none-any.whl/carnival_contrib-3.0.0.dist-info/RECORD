@@ -1,0 +1,14 @@
+carnival_contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+carnival_contrib/apt.py,sha256=9gF05cBOwXsmXNMonnKxnokeT9-zIkK65AZGa5IPakk,7744
+carnival_contrib/caddy/Caddyfile,sha256=grhHgrmOLw9ivYWWD0J1lGy-HAVnZ75-QX3p5NBxc0k,248
+carnival_contrib/caddy/__init__.py,sha256=hRM-UCcWFBLius7eEfmb1KyJ-4Th6xgx4KcIrvMsWN4,1863
+carnival_contrib/caddy/caddy.service,sha256=NfvMI0KD5gZiekIxxoMSA154bE8bStHjxXKJyFBptsA,1945
+carnival_contrib/docker.py,sha256=qGhf1dWlq9n9n4E12Z8tMiw5bDNtsI8Svagxs-ufwZE,3816
+carnival_contrib/docker_compose.py,sha256=9z4DdeFdvi9nk93iwTk-pbSG06IL_veST1_oYAOP6iI,5948
+carnival_contrib/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+carnival_contrib/ssh.py,sha256=GYhABklhKzJFqy_SQtouWhN7yxbPnW6iorRPbRUGBx4,2113
+carnival_contrib/systemd.py,sha256=Dz_J-vIebkr3lf5iQKvHy3HWxJ8zW5dsvGo0pLpy8dY,3285
+carnival_contrib-3.0.0.dist-info/LICENSE,sha256=ffcq8NoAmhLCKBRvVoaKYHDX-ELkmmMJGJeXrkxxLVs,1069
+carnival_contrib-3.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+carnival_contrib-3.0.0.dist-info/METADATA,sha256=dUD_kklUzflYkOyz0a0wBBoswYPPgQWInjKBzt8CgRs,425
+carnival_contrib-3.0.0.dist-info/RECORD,,
