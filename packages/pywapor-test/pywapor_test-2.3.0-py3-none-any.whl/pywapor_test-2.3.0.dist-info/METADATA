@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pywapor-test
+Version: 2.3.0
+Summary: UNKNOWN
+Home-page: https://bitbucket.org/cioapps/wapor-et-look/src/master/
+Author: FAO
+Author-email: bert.coerver@fao.org
+License: Apache
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: gdal (<=3.1.4)
+Requires-Dist: aiohttp (==3.7.4.post0)
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: matplotlib
+Requires-Dist: netcdf4
+Requires-Dist: pyproj
+Requires-Dist: scipy
+Requires-Dist: fiona
+Requires-Dist: pycurl
+Requires-Dist: pyshp
+Requires-Dist: joblib
+Requires-Dist: bs4
+Requires-Dist: paramiko
+Requires-Dist: rasterio
+Requires-Dist: xarray
+Requires-Dist: geojson
+Requires-Dist: vito-download
+Requires-Dist: nest-asyncio
+Requires-Dist: tqdm
+Requires-Dist: dask
+Requires-Dist: rioxarray
+Requires-Dist: ipympl
+
+UNKNOWN
+
