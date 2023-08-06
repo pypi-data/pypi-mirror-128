@@ -1,0 +1,12 @@
+pgr/__init__.py,sha256=YyN_UpocBximh4PbQVdh1-X3sTTB7aub2B3BeeQbnqo,59
+pgr/__init__.pyc,sha256=a5XT_ghhx4xjmtPe6wCVuBv9xF6YtRFxYJ-_H8ADI3Y,165
+pgr/_version.py,sha256=3fLqkmbApFpWDT82sko7lupqlkZJkUxvcg_TBO9GFvk,98
+pgr/_version.pyc,sha256=fx0D9eJZ-jL5mgRAJighvj59X3z7LfpWA2nTYKxI4Yw,187
+pgr/helpers.py,sha256=wXDRCgkqILlUNq8vFM3RWtL23x7QfG3fI-CJu5_KNas,213
+pgr/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+pgr-0.0.1.dist-info/AUTHORS.rst,sha256=Z_vwpcazyABKtlfTl44KkpMA6JeeQgiLVKWRbAM95bI,510
+pgr-0.0.1.dist-info/LICENSE.txt,sha256=CKErj0jo-mtkDEMii1U45CJNL6gvoYaO5wp1RFKpApM,1366
+pgr-0.0.1.dist-info/METADATA,sha256=0HpIyEC7y4OJ6wukRUJTTIN8jCPFsOC8E-IVoI3Nv9k,2010
+pgr-0.0.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pgr-0.0.1.dist-info/top_level.txt,sha256=2uQh7DBYj8QKUvmWkLRFNIqZikmpED53zlanjG83Er8,4
+pgr-0.0.1.dist-info/RECORD,,
