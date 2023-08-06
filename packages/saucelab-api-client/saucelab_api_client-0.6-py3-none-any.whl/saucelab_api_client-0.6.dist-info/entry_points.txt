@@ -1,0 +1,3 @@
+[saucelab_api_client]
+sauce_lab_api = saucelab_api_client.saucelab_api_client
+
