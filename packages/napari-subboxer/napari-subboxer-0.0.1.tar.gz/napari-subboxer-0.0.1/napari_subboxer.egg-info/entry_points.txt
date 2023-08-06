@@ -1,0 +1,6 @@
+[console_scripts]
+napari-subboxer = napari_subboxer.cli:cli
+
+[napari.plugin]
+napari-subboxer = napari_subboxer
+
