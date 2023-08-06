@@ -1,0 +1,17 @@
+ipykernel
+jupyter_core
+pexpect>=4.2
+
+[:python_version <= "3.6"]
+jedi<0.18
+
+[activity]
+portalocker
+
+[parallel]
+ipyparallel
+
+[test]
+pytest
+pytest-cov
+requests
