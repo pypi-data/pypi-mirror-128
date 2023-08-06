@@ -1,0 +1,6 @@
+{% import "macros/form.html" as form %}
+
+{% if h.hierarchy_enable_tree_search() %}
+    {% set field = 'ext_hierarchy_enable_tree_search' %}
+    {{ form.checkbox(field, label=_("Include Sub-Organizations"), checked=field in request.params, value=true, error=error) }}
+{% endif %}
