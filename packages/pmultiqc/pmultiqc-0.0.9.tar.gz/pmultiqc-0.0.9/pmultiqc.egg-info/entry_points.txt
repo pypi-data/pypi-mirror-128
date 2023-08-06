@@ -1,0 +1,20 @@
+[multiqc.cli_options.v1]
+affix_type = pmultiqc.cli:affix_type
+condition = pmultiqc.cli:condition
+decoy_affix = pmultiqc.cli:decoy_affix
+disable_plugin = pmultiqc.cli:disable_plugin
+exp_design = pmultiqc.cli:exp_design
+mzMLs = pmultiqc.cli:mzMLs
+pmultiqc_version = pmultiqc.cli:pmultiqc_version
+quant_method = pmultiqc.cli:quant_method
+raw = pmultiqc.cli:raw
+raw_ids = pmultiqc.cli:raw_ids
+remove_decoy = pmultiqc.cli:remove_decoy
+sdrf = pmultiqc.cli:sdrf
+
+[multiqc.hooks.v1]
+execution_start = pmultiqc.main:pmultiqc_plugin_execution_start
+
+[multiqc.modules.v1]
+quantms = pmultiqc.modules.quantms:QuantMSModule
+
