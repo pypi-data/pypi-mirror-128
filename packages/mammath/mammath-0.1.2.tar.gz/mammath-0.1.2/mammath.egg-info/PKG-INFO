@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mammath
+Version: 0.1.2
+Summary: A package that contains all you will need when you need to do complicated maths in python
+Home-page: UNKNOWN
+Author: Vihaan Mathur & Harihar Rengan
+Author-email: vihaan.harihar341@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# mammath
+
+Mammath is the python library with all the functions you need to do complicated mathematics (e.g logarithms, integrals, and more).
+
+It is built upon several other modules including sys, tkinter, string, time, math, cmath, fractions, mpmath, keyboard, numpy, sympy, tabulate, re, matplotlib, and modules within them.
+
+You can have full detail on its functions using the help(mammath) syntax in the shell after importing the module.
+
+We hope Mammath is a useful and reliable asset.
+
+Thank you!
+
