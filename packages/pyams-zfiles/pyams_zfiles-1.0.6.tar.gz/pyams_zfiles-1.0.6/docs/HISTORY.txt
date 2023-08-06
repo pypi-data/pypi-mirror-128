@@ -1,0 +1,30 @@
+Changelog
+=========
+
+1.0.6
+-----
+ - updated document properties widget template
+
+1.0.5
+-----
+ - added option to display menu to access documents container from ZMI home page
+
+1.0.4
+-----
+ - added missing "context" argument to permission check
+
+1.0.3
+-----
+ - added title to applications vocabulary terms
+
+1.0.2
+-----
+ - updated application manager permissions
+
+1.0.1
+-----
+ - updated context of permissions checks in REST and GraphQL APIs
+
+1.0.0
+-----
+ - initial release
