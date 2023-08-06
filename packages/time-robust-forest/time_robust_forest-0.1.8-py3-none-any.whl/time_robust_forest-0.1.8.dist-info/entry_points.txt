@@ -1,0 +1,3 @@
+[console_scripts]
+time-robust-forest=time_robust_forest.__main__:app
+
