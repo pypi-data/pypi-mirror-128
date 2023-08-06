@@ -1,0 +1,9 @@
+upgradeable_streams/__init__.py,sha256=_PE1WUcjab1iLKje2fu5CZowQ45vMELiUVasVgQucNg,321
+upgradeable_streams/client.py,sha256=F-rH48layu5dVR_2qINyxXPL1YBkRFiEpmJ7oD9a110,1270
+upgradeable_streams/protocol.py,sha256=29fTTF3LNj3WwjJCSizGC8Yax8UJyShexV2ooYKZHUY,512
+upgradeable_streams/py.typed,sha256=qrkHrYJvGoZpU2BpVLNxJB44LlhqVSKyYOwD_L_1m3s,10
+upgradeable_streams/server.py,sha256=RNMqj7RRwaoWRPipZOIp7MIJHGAaCOAZvJ39QEX77vY,1812
+upgradeable_streams/writer.py,sha256=iYIivJ5hlZ2j37to95cdabwIAup81pjB7U2P86mgwks,1612
+jetblack_upgradeable_streams-0.3.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+jetblack_upgradeable_streams-0.3.0.dist-info/METADATA,sha256=1LuLXGZx6zPdgSe8e6Bn4zOxZsIjejUWBTO4ygGoWiA,7087
+jetblack_upgradeable_streams-0.3.0.dist-info/RECORD,,
