@@ -1,0 +1,3 @@
+[console_scripts]
+ta_bitwarden_cli = ta_bitwarden_cli.cli:main
+
