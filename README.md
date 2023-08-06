@@ -3,36 +3,10 @@
 This repo contains 40000 packages uploaded to PyPI between 
 2021-11-18 13:03 and 2021-11-27 01:39.
 
-The repo is 35% (14000/40000) complete.
+The repo is 39% (15999/40000) complete.
 
-## Packages:
+Package contents can be found [in the code branch](https://github.com/pypi-data/pypi-mirror-128/tree/code/packages).
 
-| Name  | Count |
-| ----- | ----- |
-| pyagrum-nightly | 200 |
-| spanishconjugator | 140 |
-| flatterer | 132 |
-| digitalguide | 124 |
-| cdktf-cdktf-provider-postgresql | 118 |
-| cdktf-cdktf-provider-pagerduty | 116 |
-| cdktf-cdktf-provider-opentelekomcloud | 116 |
-| cdktf-cdktf-provider-newrelic | 116 |
-| cdktf-cdktf-provider-local | 116 |
-| cdktf-cdktf-provider-docker | 116 |
-| cdktf-cdktf-provider-datadog | 116 |
-| cdktf-cdktf-provider-azuread | 116 |
-| cdktf-cdktf-provider-null | 114 |
-| cdktf-cdktf-provider-cloudinit | 114 |
-| cdktf-cdktf-provider-external | 112 |
-| cdktf-cdktf-provider-tls | 110 |
-| cdktf-cdktf-provider-github | 108 |
-| cdktf-cdktf-provider-helm | 106 |
-| cdktf-cdktf-provider-kubernetes | 104 |
-| cdktf-cdktf-provider-google | 104 |
-| cdktf-cdktf-provider-archive | 102 |
-| main-LedCD | 92 |
-| jetpack-io | 88 |
-| tensorflow-io-nightly | 81 |
-| tensorflow-io-gcs-filesystem-nightly | 81 |
+A browsable package list for all repositories [all packages here](https://pypi-data.github.io/website/repositories/pypi-mirror-128).
 
 
