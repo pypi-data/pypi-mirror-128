@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: ceda-directory-tree
+Version: 1.0.2
+Summary: Python package to create a virtual tree data structure to represent a directory tree to be used for efficient search
+Home-page: https://github.com/cedadev/ceda-directory-tree
+Author: Tommy Godfrey
+Author-email: tommy.godfrey@stfc.ac.uk
+License: BSD - See LICENSE file for details
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anytree
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: requests ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'docs'
+
+[![PYPI](https://github.com/cedadev/ceda-directory-tree/actions/workflows/release.yml/badge.svg)](https://pypi.org/project/ceda-directory-tree/)
+[![Test](https://github.com/cedadev/ceda-directory-tree/actions/workflows/test.yml/badge.svg)](https://github.com/cedadev/ceda-directory-tree/actions/workflows/test.yml)
+
+# CEDA directory-tree
+Data structure for storing and searching directory trees.
+
+This repo provides a efficient process for matching paths against known directories.
+
+[Library Documentation](https://cedadev.github.io/directory-tree/)
+
+## Installation
+
+`pip install ceda-directory-tree`
+
+
+## Building and editing the docs
+
+The documentation is written and built using the Sphinx workflow.
+
+1. Install the docs requirements `pip install ceda-directory-tree[docs]
+`
+2. Edit the .rst files in the docsrc directory
+3. Build the docs `make html`
+
+This will build the docs and place in the `docsrc/build/html` directory. It will also
+copy the html to the `/doc` directory for serving with github pages.
+
+
