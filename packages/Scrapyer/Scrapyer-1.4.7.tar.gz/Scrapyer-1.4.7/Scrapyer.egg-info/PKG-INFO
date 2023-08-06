@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: Scrapyer
+Version: 1.4.7
+Summary: Based on scrapy framework, combined with common component tools
+Home-page: https://scrapy.org
+Author: buliqioqiolibusdo
+Author-email: dingyeran@163.com
+License: BSD
+Project-URL: Documentation, https://docs.scrapy.org/
+Project-URL: Source, https://github.com/buliqioqiolibusdo/scrapyer
+Project-URL: Tracker, https://github.com/buliqioqiolibusdo/scrapyer/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
