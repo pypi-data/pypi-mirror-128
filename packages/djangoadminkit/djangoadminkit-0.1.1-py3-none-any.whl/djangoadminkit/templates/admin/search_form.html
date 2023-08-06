@@ -1,0 +1,48 @@
+{% load i18n static %}
+{% if cl.search_fields %}
+<style>
+    #toolbar form input[type="submit"] {
+        color: #fff;
+        border-radius: .3rem;
+        font-size: .75rem;
+        margin-left:  .7rem;
+        padding: .2rem .5rem;
+        background-color: #3b7ddd;
+        border-color: #3b7ddd;
+        border: 1px solid transparent;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        vertical-align: middle;
+    }
+</style>
+<div id="toolbar" style="">
+    <form id="changelist-search" method="get">
+        <div class="d-flex align-items-center">
+            <label for="searchbar-custom">
+                
+            </label>
+            <div class="input-group input-group-navbar">
+                <input type="text" style="flex:none; width: 350px; background-color: white;" id="searchbar-custom" size="40" class="form-control" name="{{ search_var }}" value="{{ cl.query }}" placeholder="Search…" aria-label="Search" autofocus>
+                <input type="submit" class="btn btn-primary btn-sm" value="{% translate 'Search' %}">
+            </div>
+            {% if show_result_count %}
+                <span class="small quiet">{% blocktranslate count counter=cl.result_count %}{{ counter }} result{% plural %}{{ counter }} results{% endblocktranslate %} (<a href="?{% if cl.is_popup %}{{ is_popup_var }}=1{% endif %}">{% if cl.show_full_result_count %}{% blocktranslate with full_result_count=cl.full_result_count %}{{ full_result_count }} total{% endblocktranslate %}{% else %}{% translate "Show all" %}{% endif %}</a>)</span>
+            {% endif %}
+            {% for pair in cl.params.items %}
+                {% if pair.0 != search_var %}<input type="hidden" name="{{ pair.0 }}" value="{{ pair.1 }}">{% endif %}
+            {% endfor %}
+        </div>
+    {% if cl.search_help_text %}
+        <br class="clear">
+        <div class="help">{{ cl.search_help_text }}</div>
+    {% endif %}
+    </form>
+</div>
+{% endif %}
