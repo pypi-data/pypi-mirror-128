@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: fika-analytics-0.1.0
+Version: 0.1.2
+Summary: Fika analytics library
+Home-page: https://github.com/meetaiapp/mixpanel
+Author: Albus Ha
+Author-email: albus@keepfika.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Dist: mixpanel
+Requires-Dist: mixpanel-py-async
+
+UNKNOWN
+
