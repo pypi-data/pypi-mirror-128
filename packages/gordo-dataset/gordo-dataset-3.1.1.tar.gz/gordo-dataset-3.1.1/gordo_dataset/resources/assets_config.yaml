@@ -1,0 +1,186 @@
+assets:
+  aliases:
+    1100-sfa: '1100'
+    1101-sfb: '1101'
+    1102-sfc: '1102'
+    1110-gfa: '1110'
+    1111-gfb: '1111'
+    1112-gfc: '1112'
+    1120-vfr: '1120'
+    1125-kvb: '1125'
+    1130-troa: '1130'
+    1138-val: '1138'
+    1140-sla: '1140'
+    1141-slt: '1141'
+    1142-slb: '1142'
+    1163-gdr: '1163'
+    1170-hd: '1170'
+    1175-kris: '1175'
+    1180-nor: '1180'
+    1190-asga: '1190'
+    1191-asgb: '1191'
+    #1192-asgs: '1192'
+    1218-gkr: '1218'
+    1219-aha: '1219'
+    1220-sna: '1220'
+    1221-snb: '1221'
+    1230-vis: '1230'
+    1294-pera: '1294'
+    #1295-pera: '1295'
+    1298-perb: '1298'
+    1299-per: '1299'
+    1299-perf: '1299'
+    1340-met: '1340'
+    1380-sno: '1380'
+    1755-gra: '1755'
+    1760-hea: '1760'
+    1765-osc: '1765'
+    1766-oss: '1766'
+    1767-ose: '1767'
+    1772-osf: '1772'
+    1774-osf: '1774'
+    1775-trob: '1775'
+    1776-troc: '1776'
+    1886-mara: '1886'
+    1900-jsv: '1900'
+    1901-jsv: '1901'
+    1902-jsv: '1902'
+    1903-jsv: '1903'
+    1904-jsv: '1904'
+    1970-mla: '1970'
+storages:
+  dls@omniadlseun:
+  - assets:
+    - name: '1100'
+      path: IMS Statfjord/sensordata/1100-SFA
+    - name: '1101'
+      path: IMS Statfjord/sensordata/1101-SFB
+    - name: '1102'
+      path: IMS Statfjord/sensordata/1102-SFC
+    - name: '1110'
+      path: Aspen MS - IP21 Gullfaks A/sensordata/1110-GFA
+      tag_pattern: ^gfa.
+    - name: '1111'
+      path: Aspen MS - IP21 Gullfaks B/sensordata/1111-GFB
+      tag_pattern: ^gfb.
+    - name: '1112'
+      path: Aspen MS - IP21 Gullfaks C/sensordata/1112-GFC
+      tag_pattern: ^gfc.
+    - name: '1120'
+      path: Aspen MS - IP21 Veslefrikk/sensordata/1120-VFR
+    - name: '1125'
+      path: PI System Operation Norway/sensordata/1125-KVB
+      tag_pattern: ^1125.
+    - name: '1130'
+      path: Aspen MS - IP21 Troll A/sensordata/1130-TROA
+      tag_pattern: ^tra.
+    - name: '1138'
+      path: PI System Operation Norway/sensordata/1138-VAL
+      tag_pattern: ^1138.
+    - name: '1140'
+      path: PI System Manager Sleipner/sensordata/1140-SLA
+    - name: '1141'
+      path: PI System Manager Sleipner/sensordata/1141-SLT
+    - name: '1142'
+      path: PI System Manager Sleipner/sensordata/1142-SLB
+    - name: '1163'
+      path: PI System Manager Sleipner/sensordata/1163-GDR
+    - name: '1170'
+      path: PI System Operation North/sensordata/1170-HD
+      tag_pattern: ^hd.
+    - name: '1175'
+      path: PI System Operation North/sensordata/1175-KRIS
+      tag_pattern: ^kri.
+    - name: '1180'
+      path: PI System Operation North/sensordata/1180-NOR
+      tag_pattern: ^nor.
+    - name: '1190'
+      path: PI System Operation North/sensordata/1190-ASGA
+      tag_pattern: ^asga.
+    - name: '1191'
+      path: PI System Operation North/sensordata/1191-ASGB
+      tag_pattern: ^asgb.
+    #- name: '1192'
+    #  path: PI System Operation North/sensordata/1192-ASGS
+    - name: '1218'
+      path: PI System Manager Sleipner/sensordata/1218-GKR
+      tag_pattern: ^1218.
+    - name: '1219'
+      path: PI System Operation Mam/sensordata/1219-AHA
+      tag_pattern: ^1219.
+    - name: '1220'
+      path: IMS Snorre A/sensordata/1220-SNA
+      additional_directory_patterns:
+        - .*ProcVal$
+        - .*AnalogMap$
+    - name: '1221'
+      path: IMS Snorre B/sensordata/1221-SNB
+      additional_directory_patterns:
+        - .*ProcVal$
+        - .*AnalogMap$
+    - name: '1230'
+      path: Aspen MS - IP21 Visund/sensordata/1230-VIS
+      tag_pattern: ^vis.
+    - name: '1294'
+      path: Aspen MS - IP21 Peregrino/sensordata/1294-PERA
+      tag_pattern: ^per-pa.
+    #- name: '1295'
+    #  path: Aspen MS - IP21 Peregrino/sensordata/1295-PERA
+    - name: '1298'
+      path: Aspen MS - IP21 Peregrino/sensordata/1298-PERB
+      tag_pattern: ^per-pb.
+    - name: '1299'
+      path: Aspen MS - IP21 Peregrino/sensordata/1299-PERF
+      tag_pattern: ^per.
+    - name: '1340'
+      path: PI System Operation Norway/sensordata/1340-MET
+    - name: '1380'
+      path: Aspen MS - IP21 Hammerfest/sensordata/1380-SNO
+    - name: '1755'
+      path: Aspen MS - IP21 Grane/sensordata/1755-GRA
+      tag_pattern: ^gra.
+    - name: '1760'
+      path: PI System Operation Norway/sensordata/1760-HEA
+      tag_pattern: ^hea.
+    - name: '1765'
+      path: Aspen MS - IP21 Oseberg C/sensordata/1765-OSC
+      tag_pattern: ^osc.
+    - name: '1766'
+      path: Aspen MS - IP21 Oseberg South/sensordata/1766-OSS
+      tag_pattern: ^oss.
+    - name: '1767'
+      path: Aspen MS - IP21 Oseberg East/sensordata/1767-OSE
+      tag_pattern: ^ose.
+    - name: '1772'
+      path: Aspen MS - IP21 Oseberg Field Center/sensordata/1772-OSA
+      tag_pattern: ^osf.
+    - name: '1774'
+      path: Aspen MS - IP21 Oseberg Field Center/sensordata/1774-OSD
+      tag_pattern: ^osf.
+    - name: '1775'
+      path: Aspen MS - IP21 Troll B/sensordata/1775-TROB
+      tag_pattern: ^trb.
+    - name: '1776'
+      path: Aspen MS - IP21 Troll C/sensordata/1776-TROC
+      tag_pattern: ^trc.
+    - name: '1886'
+      path: PI System Operation Mam/sensordata/1886-MARA
+    - name: '1900'
+      path: PI System Operation Johan Sverdrup/sensordata/1900-JSV
+      tag_pattern: ^1900.
+    - name: '1901'
+      path: PI System Operation Johan Sverdrup/sensordata/1901-JSV
+      tag_pattern: ^1901.
+    - name: '1902'
+      path: PI System Operation Johan Sverdrup/sensordata/1902-JSV
+      tag_pattern: ^1902.
+    - name: '1903'
+      path: PI System Operation Johan Sverdrup/sensordata/1903-JSV
+      tag_pattern: ^1903.
+    - name: '1904'
+      path: PI System Operation Johan Sverdrup/sensordata/1904-JSV
+      tag_pattern: ^1904.
+    - name: '1970'
+      path: PI System Operation Mam/sensordata/1970-MLA
+      tag_pattern: ^hld.
+    base_dir: /raw/data
