@@ -1,0 +1,4 @@
+[console_scripts]
+inifix-format = inifix.format:main
+inifix-validate = inifix.validate:main
+
