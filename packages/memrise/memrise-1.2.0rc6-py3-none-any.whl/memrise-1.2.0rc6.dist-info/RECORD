@@ -1,0 +1,12 @@
+memrise/__init__.py,sha256=R3o8N6tb0fbpjADOIoJ-OugiXZv8iN1QjkThy0oR6T4,201
+memrise/__main__.py,sha256=wNpcwAVPpniVKw8fV_Wz3nEyXHoTKU4laMyXkDOUtpo,222
+memrise/data/__init__.py,sha256=OZp4Gj04amtVJaGLVCJ0kn5oR6FqRaFrowy6zxo9daQ,188
+memrise/data/constant.py,sha256=qd_hKSVfGhcDM7VXiwGUeJIgzGHyz9mrzQAN2-KOWV4,3169
+memrise/data/data.py,sha256=prZbrvdGf-x0FnG1QoYvlaBcj7Xu8Dg5jon29z9FFA0,2581
+memrise/extract/__init__.py,sha256=Q0T_C3HO951OCGO1jmX1QGNa75jGb-hO0DqfpFc8Vpg,71
+memrise/extract/extract.py,sha256=qKqjj4blve8g3oMOJ8p3Hy656LenTMLcOVbWLPwQ2XI,4752
+memrise/memrise.py,sha256=8ywU6Tk-0d4yYIQvrCFsxDX6RKa_O4b7rHd-781pYU0,1443
+memrise-1.2.0rc6.dist-info/LICENSE,sha256=SELwrfzhzSJ6VoLThzBoMEP-E1jEB3igFzo_xeZE54c,1090
+memrise-1.2.0rc6.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+memrise-1.2.0rc6.dist-info/METADATA,sha256=wJYM_UjESkYKzuG6wTjt1WQXP43m46ppBPS0d0_mrZc,4977
+memrise-1.2.0rc6.dist-info/RECORD,,
