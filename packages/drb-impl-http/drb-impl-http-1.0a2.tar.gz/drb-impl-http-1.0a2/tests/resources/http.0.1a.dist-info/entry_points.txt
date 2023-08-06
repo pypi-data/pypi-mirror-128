@@ -1,0 +1,3 @@
+[drb.impl]
+http = drb_impl_http.drb_impl_signature_http
+https = drb_impl_http.drb_impl_signature_https

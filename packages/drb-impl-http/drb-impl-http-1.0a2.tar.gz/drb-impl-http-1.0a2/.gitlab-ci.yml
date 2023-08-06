@@ -1,0 +1,44 @@
+stages:
+  - validate
+  - test
+  - deploy
+
+checkstyle:
+  tags:
+    - docker
+  image: python:3.8
+  stage: validate
+  before_script:
+    - pip install -r requirements-dev.txt
+  script:
+    - pycodestyle --show-source --show-pep8 --exclude=".eggs,versioneer.py,*_version.py,venv"
+
+unit_tests:
+  tags:
+    - docker
+  image: python:3.8
+  stage: test
+  before_script:
+    - pip install -r requirements.txt -r requirements-dev.txt -r requirements-test.txt
+  script:
+    - coverage run --source=drb_impl_http --omit=*_version.py,*__init__.py -m unittest -v
+    - coverage xml
+    - coverage report
+    - coverage-badge
+  coverage: '/TOTAL.+ ([0-9]{1,3}%)/'
+  artifacts:
+    reports:
+      cobertura: coverage.xml
+
+release:
+  tags:
+    - docker
+  image: python:3.8
+  stage: deploy
+  before_script:
+    - pip install -r requirements.txt -r requirements-dev.txt
+  script:
+    - python setup.py sdist bdist_wheel
+    - python -m twine upload dist/*
+  only:
+    - tags
