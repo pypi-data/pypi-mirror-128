@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mysql-toolbox
+Version: 0.0.13
+Summary: MySQL toolbox.
+Home-page: https://github.com/walkerever/mysql-toolbox
+Author: Yonghang Wang
+Author-email: wyhang@gmail.com
+License: Apache 2
+Description: # mysql-toolbox
+        mysql tool box 
+        
+Keywords: mysql,toolbox
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown

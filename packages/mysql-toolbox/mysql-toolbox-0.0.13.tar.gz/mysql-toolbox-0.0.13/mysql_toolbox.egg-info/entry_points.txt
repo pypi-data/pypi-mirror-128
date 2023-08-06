@@ -1,0 +1,4 @@
+[console_scripts]
+mysql-replication-display = toolbox:repl_main
+mysql-xml-formatter = toolbox:xml_formatter_main
+
