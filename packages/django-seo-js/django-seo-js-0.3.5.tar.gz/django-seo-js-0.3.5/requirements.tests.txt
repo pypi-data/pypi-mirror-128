@@ -1,0 +1,6 @@
+fabric
+httmock
+mock
+nose
+pep8
+tox
