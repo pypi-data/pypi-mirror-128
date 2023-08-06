@@ -1,0 +1,35 @@
+{% extends 'account/base.html' %}
+{% block title %} Log into account{% endblock title %}
+    {% block account_auth %}
+
+        <div class="column col-lg-8 col-md-12 col-sm-12 align-self-center">
+            <h2>Log into account</h2>
+            
+            <!-- Register Form -->
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address or Username</label>
+                    <input type="text" class="form-control" name="username" id="exampleFormControlInput1" placeholder="name@example.com or example">
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="exampleFormControlInput1" placeholder="example: ********">
+                </div>
+
+                <br>
+                <div class="form-control">
+                    <a href="{% url 'accounts:register' %}" class="psw">Create an account!</a>
+                </div>
+
+                <div class="form-control text-right">
+                    <button class="btn btn-primary" type="submit" name="submit-form">Login</button>
+                </div>
+            
+            </form>
+            <!--End Register Form -->
+        </div>
+
+{% endblock account_auth %}
