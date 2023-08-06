@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: colosseum-sdk
+Version: 0.1.3
+Summary: Colosseum's SDK for developing agents
+Home-page: https://www.colosseum.website/
+License: MIT
+Keywords: automated-tournaments,multi-agents,sdk
+Author: h3nnn4n
+Author-email: colosseum@h3nnn4n.me
+Requires-Python: >=3.10,<3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
+Project-URL: Documentation, https://colosseum-sdk.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/h3nnn4n/colosseum_sdk/
+Description-Content-Type: text/markdown
+
+# Python3 Colosseum Agent SDK
+
+# LICENSE
+
+See [LICENSE](LICENSE).
+
