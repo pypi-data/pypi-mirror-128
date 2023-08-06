@@ -1,0 +1,12 @@
+daisykit/__init__.py,sha256=Pb26DPtTtFny9uftSiFA1m3rvLhQKuwiJAonnkcGyPQ,63
+daisykit/daisykit.cp310-win_amd64.pyd,sha256=-6BdxxvoCUYGU-abYBDwa4Qmol-17d_wkklGNzlUGyE,3091456
+daisykit/utils/__init__.py,sha256=-8DMGaJ061QmJ32Mq5EXN4g3ihRteUIi1FoqTj1hT48,80
+daisykit/utils/asset_store.py,sha256=ewsWhYR8Reyc7sklrh1z8i6ZO0bp3W-kBwuRXNtTBRY,9449
+daisykit/utils/conversion.py,sha256=4llLE9Dc0RgTv8KpENE3D4tKKXPm8UnR7tgFLm9gZ4o,1936
+daisykit/utils/download.py,sha256=Y-jRtwCmaxDRHCJTcLqjNDzzYgFs0bk-x6TJKQcwFz8,4122
+daisykit/utils/generate_file_list.py,sha256=3mRWfLF_kpLLHhHuc1H9DViS5vsiQs3kBjGlSFYrlqM,384
+daisykit-0.1.20211122.dist-info/LICENSE,sha256=l1XUMS4cMESu5iIrz24vu671eXycxN-CIyUyiycPr6k,11550
+daisykit-0.1.20211122.dist-info/METADATA,sha256=k146GDh2fSwSnsV2bl5Ay3V9c659bg3IkJem4ynrRh8,12361
+daisykit-0.1.20211122.dist-info/WHEEL,sha256=C6CHup2HLC2Rld8AL5u9w89MYULjdaP5k0k7SG83CcI,102
+daisykit-0.1.20211122.dist-info/top_level.txt,sha256=Aa4jVTmiDrXggHrp70808d5GmzefUWn0zScl0NqodHk,9
+daisykit-0.1.20211122.dist-info/RECORD,,
