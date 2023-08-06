@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fable_py/__init__.py
+fable_py/__main__.py
+fable_py/kernel.py
+fable_py/version.py
+fable_py.egg-info/PKG-INFO
+fable_py.egg-info/SOURCES.txt
+fable_py.egg-info/dependency_links.txt
+fable_py.egg-info/requires.txt
+fable_py.egg-info/top_level.txt
+fable_py/images/logo-32x32.png
+fable_py/images/logo-64x64.png
+fable_py/images/logo-fable.png
