@@ -1,0 +1,3 @@
+[console_scripts]
+publishextrator = publishextrator.cli:main
+
