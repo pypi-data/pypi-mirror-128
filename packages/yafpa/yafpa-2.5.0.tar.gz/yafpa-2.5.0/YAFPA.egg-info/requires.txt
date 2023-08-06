@@ -1,0 +1,6 @@
+gitpython
+pyYAML
+pyperclip
+python-dotenv
+python-frontmatter
+unidecode
