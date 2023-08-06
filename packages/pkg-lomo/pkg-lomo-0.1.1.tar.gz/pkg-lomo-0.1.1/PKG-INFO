@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pkg-lomo
+Version: 0.1.1
+Summary: pkg lib form lomo.space
+Home-page: https://lomo.space
+Author: lomo.space
+Author-email: lomo@lomo.space
+Maintainer: lomo.space
+Maintainer-email: lomo@lomo.space
+License: MIT
+Keywords: pkg lomo lib
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >3.6.0
+License-File: LICENSE
+
+
+# Example Package
+This is a simple example package by Lomo.
+
+# Content
+
+```bash
+/Users/lomo/Documents/codes/py_package/pkg_lomo
+├── LICENSE
+├── README.rst
+├── pkg
+└── setup.py
+```
+
+# Change Log
+
+1、First submit, at 2021.11.20
+2、add more func lib
+
+

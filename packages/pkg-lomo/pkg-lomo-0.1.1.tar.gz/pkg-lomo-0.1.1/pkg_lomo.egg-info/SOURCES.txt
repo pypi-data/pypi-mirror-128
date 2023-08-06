@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+pkg/__init__.py
+pkg/crawler.py
+pkg/main.py
+pkg/news.py
+pkg_lomo.egg-info/PKG-INFO
+pkg_lomo.egg-info/SOURCES.txt
+pkg_lomo.egg-info/dependency_links.txt
+pkg_lomo.egg-info/requires.txt
+pkg_lomo.egg-info/top_level.txt
