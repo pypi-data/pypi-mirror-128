@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+cookdir/__init__.py
+cookdir/main.py
+cookdir.egg-info/PKG-INFO
+cookdir.egg-info/SOURCES.txt
+cookdir.egg-info/dependency_links.txt
+cookdir.egg-info/top_level.txt
+cookdir/recipe/data_analysis.yml
+cookdir/recipe/main.yml
+cookdir/recipe/pypkg.yml
