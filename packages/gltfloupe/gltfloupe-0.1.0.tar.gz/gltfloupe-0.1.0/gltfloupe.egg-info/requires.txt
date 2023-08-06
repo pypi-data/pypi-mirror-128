@@ -1,0 +1,3 @@
+glglue
+pyside6
+pillow
