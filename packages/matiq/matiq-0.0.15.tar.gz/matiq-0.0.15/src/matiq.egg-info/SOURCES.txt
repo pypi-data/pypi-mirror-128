@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/matiq.py
+src/matiq.egg-info/PKG-INFO
+src/matiq.egg-info/SOURCES.txt
+src/matiq.egg-info/dependency_links.txt
+src/matiq.egg-info/top_level.txt
