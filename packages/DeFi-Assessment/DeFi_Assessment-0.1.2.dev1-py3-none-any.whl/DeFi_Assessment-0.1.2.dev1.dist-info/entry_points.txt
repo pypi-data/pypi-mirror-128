@@ -1,0 +1,3 @@
+[console_scripts]
+dass = defi_assessment.cli:cli
+
