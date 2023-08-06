@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: mishmash-io-auth-jwt
+Version: 0.0.2
+Summary: mishmash io auth jwt plugin
+Home-page: https://mishmash.io
+Author: mishmash.io
+Author-email: info@mishmash.io
+License: Apache License v2.0
+Project-URL: Bug Tracker, https://github.com/mishmash-io/mishmash-io-auth-plugins/tree/main/python/mishmash-io-auth-jwt/issues
+Project-URL: Documentation, https://mishmash.io
+Project-URL: Source Code, https://github.com/mishmash-io/mishmash-io-auth-plugins/tree/main/python/mishmash-io-auth-jwt
+Keywords: database,artificial intelligence,development
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Database
+Classifier: Topic :: Utilities
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pyjwt[crypto]
+Requires-Dist: pycryptodome
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# Mishmash io authentication openid connect plugin
+
+This package is intended to be used as part of [*mishamsh-io-client*](https://mishmash.io) for authorization with identity provider implementing openid connect.
+
+*mishmash io* is a distributed and scalable database that allows you to easily implement smart, predictive features in your app.
+*Find out more on [mishmash.io](https://mishmash.io)*
+
+# Getting Started
+
+## Installation
+
+*The desired authorization plugin must be installed and used only with [*mishamsh-io-client*](https://mishmash.io)*.
+
+You shoudnt install this package independently
+
+
+##  Usage
+
+This module is used by [*mishamsh-io-client*](https://mishmash.io) to generate access token signed by identity provider. To be able to work it needs the following configuration:
+
+* MISHMASHIO_SERVERS - list of mishmash servers endpoints
+* MISHMASHIO_APP_ID - id of the app using mishmash client
+* MISHMASHIO_AUTH_SERVER - the identity provider server endpoint
+* MISHMASHIO_AUTH_PRIVATE_KEY - Private key used for authentication with the identity provider
+
+
+## Dependencies
+
+* Python 3.6 or greater
+
+* PyJwt[crypto] - we are using RS256 algorithm for signing JWT tokens, and using pyjwt as dependency. Creators of PyJwtrecommends to use PyJwt [crypto] in requirements files RS256 algorithm has been used 
+
+* requests 
+
+* pycryptodome
+
+##	Latest releases
+- 0.0.1 (Latest)
+
+##	Authors
+
+- Mishmash io
+
+    * <https://mishmash.io/> 
+    *  <info@mishmash.io>
+    * [github](https://github.com/mishmash-io)
+
+##	License
+
+- This project is licensed under Apache 2.0. Full license text is available in [LICENSE](https://www.apache.org/licenses/LICENSE-2.0).
+
+
