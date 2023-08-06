@@ -1,0 +1,6 @@
+PySimpleGUI
+joblib
+numpy
+scipy
+pyqtgraph
+serial
