@@ -1,0 +1,15 @@
+paramiko
+dargs>=0.2.6
+requests
+
+[:python_version<'3.7']
+typing_extensions
+
+[cloudserver]
+oss2
+
+[docs]
+sphinx
+recommonmark
+sphinx_rtd_theme>=1.0.0rc1
+numpydoc
