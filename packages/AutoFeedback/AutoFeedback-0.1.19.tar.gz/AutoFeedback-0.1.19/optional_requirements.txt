@@ -1,0 +1,4 @@
+plot: 
+   - matplotlib
+sympy: 
+   - sympy
