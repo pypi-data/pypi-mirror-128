@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: renson_endura_delta
+Version: 1.3.0
+Summary: Unofficial Renson endura delta Python library
+Home-page: https://github.com/jimmyd-be/Renson-ventilation-library
+Author: JimmyD-be
+License: MIT
+Project-URL: Bug Tracker, https://github.com/jimmyd-be/Renson-ventilation-library/issues
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Renson-ventilation-library
+
+An unofficial library to get and control the Renson ventilation units.
+
+Following features are support:
+- Getting data for most of the fields that can be found in the official 'Endura Delta' app.
+- Override the auto mode and set a level manually
+- Set a timer for a level
+- Sync the current time to the Renson ventilation unit
+- Setup the breeze function
+- Setup the day and night time
+- Setup pollution settings
+- Set the filter clean time
+- Compare firmware version with online version
+
