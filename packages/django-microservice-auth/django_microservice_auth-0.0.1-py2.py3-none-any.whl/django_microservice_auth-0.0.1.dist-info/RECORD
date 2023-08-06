@@ -1,0 +1,7 @@
+django_microservice_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_microservice_auth/auth.py,sha256=hHNnndcaPwF-BsYGloTVwF0RIKfiIq3UOiYKg4xii0I,2757
+django_microservice_auth/exceptions.py,sha256=Jz3UE7YB9WvWu2cnNhrHCCn8LaQ1qhpZ2YKEbTstIdY,52
+django_microservice_auth-0.0.1.dist-info/METADATA,sha256=MRnw9nHidJ7ryIXN14p-iQcZ2C8RBeancInfbUOBb1c,374
+django_microservice_auth-0.0.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+django_microservice_auth-0.0.1.dist-info/top_level.txt,sha256=neeCnDo69u4OLdNfiREakJ7CSd0as5uB1DbJKKewy08,25
+django_microservice_auth-0.0.1.dist-info/RECORD,,
