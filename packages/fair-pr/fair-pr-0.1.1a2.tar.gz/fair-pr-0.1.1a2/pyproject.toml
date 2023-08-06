@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "fair-pr"
+version = "0.1.1-alpha.2"
+description = "Fair graph algorithms for ranking as described in 'Fairness-Aware PageRank' (https://arxiv.org/abs/2005.14431)."
+authors = ["Sotiris Tsioutsiouliklis <sotiris.ts@outlook.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
