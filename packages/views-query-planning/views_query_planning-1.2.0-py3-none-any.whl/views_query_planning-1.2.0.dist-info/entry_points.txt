@@ -1,0 +1,3 @@
+[console_scripts]
+vqp=views_query_planning.cli:vqp
+
