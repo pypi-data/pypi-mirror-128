@@ -1,0 +1,8 @@
+ttls/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ttls/cli.py,sha256=dCmXWmGkcVkIHFC8ycj6t60xpmg7WABs8_ooq-poYFY,9765
+ttls/client.py,sha256=H77DI5QBO_CRoqtVPOSqRnUN17rerYbOJmjfYguRjCk,14663
+ttls-1.4.0.dist-info/entry_points.txt,sha256=FgRfbO4nyLmgZnWt7mVKCo5gho0HuYsPVTrgnGdj0MM,38
+ttls-1.4.0.dist-info/LICENSE,sha256=mQj9PNlkP-FE_551AJOh270s1vVzVXMbK_k5vVDUyyE,1248
+ttls-1.4.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+ttls-1.4.0.dist-info/METADATA,sha256=A9Zwur7YGDooDXowZj3-FSqLK82mjmWmkgGw0wDlMic,1042
+ttls-1.4.0.dist-info/RECORD,,
