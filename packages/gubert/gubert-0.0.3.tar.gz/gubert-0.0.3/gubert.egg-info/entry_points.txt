@@ -1,0 +1,3 @@
+[console_scripts]
+gubert = gubert.__main__:main
+
