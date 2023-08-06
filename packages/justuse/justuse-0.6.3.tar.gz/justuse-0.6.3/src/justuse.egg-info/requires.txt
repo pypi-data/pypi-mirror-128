@@ -1,0 +1,14 @@
+requests>=2.24.0
+packaging==21.0
+pydantic>=1.8.2
+typeguard>=2.12.1
+pip
+furl>=2.1.2
+wheel>=0.36.2
+icontract>=2.5.4
+hypothesis>=6.23.1
+
+[test]
+pytest
+pytest-cov
+pytest-env
