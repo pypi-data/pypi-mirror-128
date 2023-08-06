@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+consumption_model_ch.egg-info/PKG-INFO
+consumption_model_ch.egg-info/SOURCES.txt
+consumption_model_ch.egg-info/dependency_links.txt
+consumption_model_ch.egg-info/top_level.txt

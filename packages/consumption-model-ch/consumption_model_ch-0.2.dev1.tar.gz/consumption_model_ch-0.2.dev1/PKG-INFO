@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: consumption_model_ch
+Version: 0.2.dev1
+Summary: create Swiss household consumption model
+Home-page: https://github.com/aleksandra-kim/consumption_model_ch
+Author: Aleksandra Kim
+Author-email: aleksandra.kim@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Welcome to consumption_model_ch!
+================================
+
+This package allows to create a model that reflects consumption patterns of Swiss households.
+
