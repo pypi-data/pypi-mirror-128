@@ -1,0 +1,4 @@
+pyjwt
+hiredis
+redis
+yhttp>=3.4.3
