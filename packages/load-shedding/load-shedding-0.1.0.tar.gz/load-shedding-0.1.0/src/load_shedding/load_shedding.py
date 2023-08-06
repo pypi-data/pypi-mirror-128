@@ -1,0 +1,106 @@
+#      A python library for getting Load Shedding schedules.
+#      Copyright (C) 2021  Werner Pieterson
+#
+#      This program is free software: you can redistribute it and/or modify
+#      it under the terms of the GNU General Public License as published by
+#      the Free Software Foundation, either version 3 of the License, or
+#      (at your option) any later version.
+#
+#      This program is distributed in the hope that it will be useful,
+#      but WITHOUT ANY WARRANTY; without even the implied warranty of
+#      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#      GNU General Public License for more details.
+#
+#      You should have received a copy of the GNU General Public License
+#      along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+import json
+import logging
+from datetime import datetime
+from typing import Dict
+
+from src.load_shedding import ScheduleError
+from src.load_shedding.providers.eskom import Eskom, Province, Stage, Suburb
+from src.load_shedding.providers import Provider, ProviderError
+
+
+def get_suburb_schedule(provider: Provider, province: Province, suburb: Suburb, cached: bool = True) -> Dict[Stage, list]:
+    stage_schedule = {}
+
+    if cached:
+        try:
+            cache_file = ".cache/{suburb_id}.json".format(suburb_id=suburb.id)
+            with open(cache_file, "r") as cache:
+                stage_schedule = json.loads(cache.read(), object_pairs_hook=lambda pairs: {Stage(int(k)).value: v for k, v in pairs})
+
+            today = datetime.now().date()
+            first = datetime.strptime(stage_schedule.get(Stage.STAGE_1.value)[0][0], "%Y-%m-%d %H:%M").date()
+            if today > first:
+                stage_schedule = {}
+        except FileNotFoundError as e:
+            logging.log(logging.ERROR, "Unable to get schedule from cache. {e}".format(e=e))
+
+    if not stage_schedule:
+        try:
+            for stage in [Stage.STAGE_1, Stage.STAGE_2, Stage.STAGE_3, Stage.STAGE_4]:
+                stage_schedule[stage.value] = provider.get_schedule(province=province, suburb=suburb, stage=stage)
+
+            if cached:
+                cache_file = ".cache/{suburb_id}.json".format(suburb_id=suburb.id)
+                with open(cache_file, "w") as cache:
+                    cache.write(json.dumps(stage_schedule))
+
+        except ProviderError as e:
+            logging.log(logging.ERROR, "Unable to get schedule from {provider}. {e}".format(provider=provider, e=e))
+            raise e
+    return stage_schedule
+
+
+def get_schedule(provider: Provider, province: Province, suburb: Suburb, stage: Stage = None, cached: bool = True) -> Dict[int, list]:
+    if stage in [None, Stage.UNKNOWN]:
+        try:
+            stage = provider.get_stage()
+        except ProviderError as e:
+            logging.log(logging.ERROR, "Unable to get stage from {provider}. {e}".format(provider=provider, e=e))
+            raise e
+
+    if stage in [None, Stage.UNKNOWN, Stage.NO_LOAD_SHEDDING]:
+        raise ScheduleError("{stage}".format(stage=Stage.NO_LOAD_SHEDDING))
+
+    suburb_schedule = get_suburb_schedule(provider, province, suburb, cached=cached)
+    return suburb_schedule.get(stage.value)
+
+
+def get_schedule_by_suburb_id(provider: Provider, province: Province, suburb_id: int, stage: Stage = None, cached: bool = True) -> Dict[int, list]:
+    suburb = Suburb(id=suburb_id)
+    # if province is None:
+    #     try:
+    #         info = provider.get_schedule_area_info(suburb_id=suburb_id)
+    #         province = info.province
+    #         suburb = info.suburb
+    #     except ProviderError as e:
+    #         logging.log(logging.ERROR, "Unable to get suburb info from {provider}. {e}".format(provider=provider, e=e))
+    #         raise e
+    try:
+        schedule = get_schedule(provider, province=province, suburb=suburb, stage=stage, cached=cached)
+    except ScheduleError as e:
+        logging.log(logging.ERROR, "Unable to get schedule. {e}".format(e=e))
+        raise e
+
+    return schedule
+
+
+def list_to_dict(schedule: list) -> Dict:
+    schedule_dict = {}
+    now = datetime.now()
+    for item in schedule:
+        start = datetime.strptime(item[0], "%Y-%m-%d %H:%M")
+        end = datetime.strptime(item[1], "%Y-%m-%d %H:%M")
+
+        schedule_dict[start.strftime("%Y-%m-%d")] = (
+            now.replace(month=start.month, day=start.day, hour=start.hour, minute=start.minute, microsecond=0).strftime(
+                "%H:%M"),
+            now.replace(month=end.month, day=end.day, hour=end.hour, minute=end.minute, microsecond=0).strftime(
+                "%H:%M"),
+        )
+    return schedule_dict
