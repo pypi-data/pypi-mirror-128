@@ -1,0 +1,11 @@
+pyiqvia/__init__.py,sha256=7AO_dRumfQVy84kXjqUbXmR-F24E4XfohdzTfRpXsuk,64
+pyiqvia/allergens.py,sha256=re5W1K0zn_W5HqQbq7HhsNQooeibYGmIj4xmkgkTmnk,1195
+pyiqvia/asthma.py,sha256=Q9mpGiCzqTj7_eTLmb43bI3aGXxKLDxDOdGTra--B0A,993
+pyiqvia/client.py,sha256=qnKicGySu34VKwbvH0JckMJ3hVA8FQrFB4HTGUsdvMc,3762
+pyiqvia/disease.py,sha256=2eEGpNOuhtUgcrSfgzZQ3pFyAWK5RqTLbNCc7eOHUyc,963
+pyiqvia/errors.py,sha256=tMwZCyaeRsEVV4zuA1uGALzNv4AwZT-K0fuOxsPn0RY,264
+pyiqvia/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyiqvia-2021.11.0.dist-info/LICENSE,sha256=FTF9lC9P4MjR5EcYxNqTzoze0OjPm4L7Up_oihQ3S5I,1067
+pyiqvia-2021.11.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pyiqvia-2021.11.0.dist-info/METADATA,sha256=vpqR09vhfMsm9RpN_B8BtONLNabQBPG-e57RN3fB9W8,5028
+pyiqvia-2021.11.0.dist-info/RECORD,,
