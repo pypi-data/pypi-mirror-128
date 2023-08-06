@@ -1,0 +1,11 @@
+README.md
+setup.py
+mastercurves/__init__.py
+mastercurves/mastercurves.py
+mastercurves.egg-info/PKG-INFO
+mastercurves.egg-info/SOURCES.txt
+mastercurves.egg-info/dependency_links.txt
+mastercurves.egg-info/requires.txt
+mastercurves.egg-info/top_level.txt
+mastercurves/transforms/__init__.py
+mastercurves/transforms/transforms.py
