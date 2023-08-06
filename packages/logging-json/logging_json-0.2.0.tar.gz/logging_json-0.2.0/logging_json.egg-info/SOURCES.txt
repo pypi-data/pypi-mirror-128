@@ -1,0 +1,10 @@
+README.md
+setup.py
+logging_json/__init__.py
+logging_json/_formatter.py
+logging_json/version.py
+logging_json.egg-info/PKG-INFO
+logging_json.egg-info/SOURCES.txt
+logging_json.egg-info/dependency_links.txt
+logging_json.egg-info/requires.txt
+logging_json.egg-info/top_level.txt
