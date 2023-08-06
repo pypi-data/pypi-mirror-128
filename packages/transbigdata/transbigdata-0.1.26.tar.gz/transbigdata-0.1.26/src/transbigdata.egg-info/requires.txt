@@ -1,0 +1,4 @@
+geopandas
+matplotlib
+plot_map>=0.3.1
+CoordinatesConverter>=0.1.4
