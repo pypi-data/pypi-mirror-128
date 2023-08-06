@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: modelspec
+Version: 0.1.3
+Summary: A common JSON/YAML based format for compact model specification
+Home-page: https://github.com/ModECI/modelspec
+Author: Padraig Gleeson
+Author-email: p.gleeson@gmail.com
+License: LICENSE.lesser
+Description: # Modelspec
+        
+        Functionality for specifying models & enabling automatic serialization is being moved here from https://github.com/NeuroML/NeuroMLlite.
+        
+        This package will be used by NeuroMLlite & [MDF](https://github.com/ModECI/MDF/actions).
+        
+        
+        [![Continuous builds](https://github.com/ModECI/modelspec/actions/workflows/ci.yml/badge.svg)](https://github.com/ModECI/modelspec/actions/workflows/ci.yml)
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
