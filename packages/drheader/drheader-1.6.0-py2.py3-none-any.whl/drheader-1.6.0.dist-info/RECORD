@@ -1,0 +1,12 @@
+drheader/__init__.py,sha256=TfG8lGa-RHQGjGvfZ8YumaeTS5VAy5LYM6QaUpwBbIA,135
+drheader/cli.py,sha256=2uQ5MO9bJjU2uxkCupM3Zd_B3sXAuo2fhyiqGi3RaW0,10908
+drheader/cli_utils.py,sha256=uQGe-4ThgH67yBbw1ONOk6LIwjZwe66GxCKEDlc1-Fg,1711
+drheader/core.py,sha256=22L6Ik8zQwMEUHnns0vzV-zDRoEwBTE0IbGF98bpJ18,13788
+drheader/rules.yml,sha256=aMlzF3OXnW8FwylbclvHE-9JPYawSM3Ul3lvh_Fzoxo,1944
+drheader/utils.py,sha256=HcHEUdEQn8tiu6p6YUr-rZg68iwbspRj_A7GEsfU5SM,2703
+drheader-1.6.0.dist-info/LICENSE,sha256=9k0zoqYkBc31L_Ou-hAUpFRvl8Aolf1YVMwB5FdHS68,1069
+drheader-1.6.0.dist-info/METADATA,sha256=hfJmwA-TFtQjh8ZI8F-m07X0xtH1uEGe_0N09_GxhCI,7191
+drheader-1.6.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+drheader-1.6.0.dist-info/entry_points.txt,sha256=fU7rhBhm6b6nGZCLqdfvIncq8qHWZOCc02wt6fojDHM,48
+drheader-1.6.0.dist-info/top_level.txt,sha256=WIQ8J07cYODqHOmghRZgJmPb0WFQmPm41Em-K8dkaiA,9
+drheader-1.6.0.dist-info/RECORD,,
