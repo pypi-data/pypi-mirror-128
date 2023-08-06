@@ -1,0 +1,7 @@
+sqlite-utils>=2.4.2
+httpx
+loguru
+pydantic
+
+[test]
+pytest
