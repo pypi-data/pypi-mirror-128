@@ -1,0 +1,16 @@
+genanki/__init__.py,sha256=zYi9BS7DxlPJcVn5g08kmeWLX-PlAsks4-XC5Nxx4AE,447
+genanki/apkg_col.py,sha256=wVPwX56BnHbsvwA5wgpIuU-G30FkQJ2Zx6Oh3dfUkXQ,2290
+genanki/apkg_schema.py,sha256=mG8E1B9EzBHRstBlziWLZEoYs10G9l0WGSC0_QhIq2g,2882
+genanki/builtin_models.py,sha256=vbwLxrlIRdXRnzz_vLudDccvEj5kv6R8BXATeSeiWPY,3660
+genanki/card.py,sha256=VPN4HVvxZRNIwvCiupPcOSoMphLeX_pjdMp_50BvkD0,909
+genanki/deck.py,sha256=EeLn3L66EztO4TCJHN1HEQgx5RJRL25e5kOD4ge8kII,2871
+genanki/model.py,sha256=rYBN8F6ZCALTYXwk3d7u9tGkarN4TANIOeS-1L_cnzA,4400
+genanki/note.py,sha256=AeqVMLwvvKxjjL79DUiWdp_EEmeoKNxypG5Ko8B0xOw,6217
+genanki/package.py,sha256=hhmKIGAm24KcPs_nZUnuz8u6CTM9bErPlmLGqJbZrFM,3052
+genanki/util.py,sha256=8ryaw2YJMjkJyyOwOhtcMilPbGRS88nGn8Ehmy-Uj4k,1041
+genanki/version.py,sha256=KzYlv9mV5BAclb_b4mb6NprSS8L9Xd0qsNzjQFwnp30,23
+genanki_noyaml-0.12.2.dist-info/LICENSE.txt,sha256=zXg1BI5UuQoipnWH9FmNYK8LHIrx5G3TfUdmD8VF3_Q,1075
+genanki_noyaml-0.12.2.dist-info/METADATA,sha256=G_je9bia2lDPNLk3J8rMGiSjyKTP4fK7BN806LD6EX4,396
+genanki_noyaml-0.12.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+genanki_noyaml-0.12.2.dist-info/top_level.txt,sha256=FEeF6FK374USsaxMHclCUAaXbqw3VQke1XwDN3PtBX8,8
+genanki_noyaml-0.12.2.dist-info/RECORD,,
