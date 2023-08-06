@@ -1,0 +1,3 @@
+[console_scripts]
+prun = web_agent.run:run
+
