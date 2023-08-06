@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+libpythonbruno/__init__.py
+libpythonbruno/github_api.py
+libpythonbruno.egg-info/PKG-INFO
+libpythonbruno.egg-info/SOURCES.txt
+libpythonbruno.egg-info/dependency_links.txt
+libpythonbruno.egg-info/not-zip-safe
+libpythonbruno.egg-info/requires.txt
+libpythonbruno.egg-info/top_level.txt
