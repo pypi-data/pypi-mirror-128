@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pygrate2/__init__.py
+pygrate2/migrate.py
+pygrate2/seed.py
+pygrate2/settings.py
+pygrate2.egg-info/PKG-INFO
+pygrate2.egg-info/SOURCES.txt
+pygrate2.egg-info/dependency_links.txt
+pygrate2.egg-info/top_level.txt

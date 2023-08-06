@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pygrate2
+Version: 0.1.0
+Summary: Migration tools for python
+Home-page: https://git.fenrys.io/fenrys/back/python_ddd
+Author: Laurent Evrard
+License: Apache-2.0 License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Communications
+License-File: LICENSE
+
+# Pygrate
+
+pygrate2 is a library aimed to allow database independant migration and seeding for python
+
+
