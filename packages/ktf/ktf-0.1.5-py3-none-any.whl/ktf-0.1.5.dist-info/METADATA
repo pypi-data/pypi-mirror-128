@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ktf
+Version: 0.1.5
+Summary: A distributed testing framework
+Home-page: https://github.com/samkos/ktf
+Author: Samuel Kortas
+Author-email: samuel.kortas@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: ClusterShell
+Requires-Dist: six
+
+A distributed testing framework
+
