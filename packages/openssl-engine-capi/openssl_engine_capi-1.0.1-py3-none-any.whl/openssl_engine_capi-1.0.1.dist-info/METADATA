@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: openssl-engine-capi
+Version: 1.0.1
+Summary: Python capi openssl engine support and utility methods to set a default for urllib3 and pip
+Home-page: https://github.com/jose-pr/pypki
+Author: Jose A.
+Author-email: jose-pr@coqui.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: openssl-engine
+
+UNKNOWN
+
