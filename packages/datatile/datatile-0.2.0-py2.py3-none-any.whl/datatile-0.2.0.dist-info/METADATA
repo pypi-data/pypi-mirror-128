@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: datatile
+Version: 0.2.0
+Summary: A data catalog, summary, viz, and profiling package.
+Home-page: https://github.com/polyaxon/datatile
+Maintainer: Polyaxon, Inc
+Maintainer-email: contact@polyaxon.com
+License: Apache 2.0
+Keywords: pandas,data analysis,machine learning
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+

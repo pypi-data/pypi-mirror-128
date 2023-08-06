@@ -1,0 +1,10 @@
+datatile/__init__.py,sha256=RM47jIeWPk_ZUZJVCAktwoZRl5N-coOFyOm3oP7C6g4,604
+datatile/catalog/__init__.py,sha256=RM47jIeWPk_ZUZJVCAktwoZRl5N-coOFyOm3oP7C6g4,604
+datatile/summary/__init__.py,sha256=RM47jIeWPk_ZUZJVCAktwoZRl5N-coOFyOm3oP7C6g4,604
+datatile/summary/df.py,sha256=oj0JYk1ol7Jq64CFO3OUdwCZTmmEh5w8qTY2SW4HpbU,12931
+datatile/viz/__init__.py,sha256=RM47jIeWPk_ZUZJVCAktwoZRl5N-coOFyOm3oP7C6g4,604
+datatile-0.2.0.dist-info/LICENSE,sha256=KolWgia4XETjWETdCzLsEMlp80tSgfA1wwnXoCdbbT8,10934
+datatile-0.2.0.dist-info/METADATA,sha256=PAHOG2WhDFVvXN8U8zj1e2o7lfQ0trQqy43cCNQG5Do,568
+datatile-0.2.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+datatile-0.2.0.dist-info/top_level.txt,sha256=ZhSoZ7nGfy5m5Bwm4dFNU9YCg9L1mSlxMtT8NZ8g_Bw,9
+datatile-0.2.0.dist-info/RECORD,,
