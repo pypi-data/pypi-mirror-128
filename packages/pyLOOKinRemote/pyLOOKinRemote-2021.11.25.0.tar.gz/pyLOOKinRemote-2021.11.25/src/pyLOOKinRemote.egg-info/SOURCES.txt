@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyLOOKinRemote.egg-info/PKG-INFO
+src/pyLOOKinRemote.egg-info/SOURCES.txt
+src/pyLOOKinRemote.egg-info/dependency_links.txt
+src/pyLOOKinRemote.egg-info/requires.txt
+src/pyLOOKinRemote.egg-info/top_level.txt
+src/pylookinremote/__init__.py
+src/pylookinremote/pylookinremote.py
