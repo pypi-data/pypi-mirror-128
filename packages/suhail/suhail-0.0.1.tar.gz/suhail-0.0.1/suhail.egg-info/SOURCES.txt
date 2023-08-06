@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+joshbasiccalculator/__init__.py
+suhail.egg-info/PKG-INFO
+suhail.egg-info/SOURCES.txt
+suhail.egg-info/dependency_links.txt
+suhail.egg-info/top_level.txt
