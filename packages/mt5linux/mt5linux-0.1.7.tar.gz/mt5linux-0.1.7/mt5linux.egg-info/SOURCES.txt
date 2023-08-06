@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+requirements.txt
+setup.cfg
+setup.py
+mt5linux/__init__.py
+mt5linux/__main__.py
+mt5linux.egg-info/PKG-INFO
+mt5linux.egg-info/SOURCES.txt
+mt5linux.egg-info/dependency_links.txt
+mt5linux.egg-info/requires.txt
+mt5linux.egg-info/top_level.txt
+mt5linux/__pycache__/__init__.cpython-38.pyc
+mt5linux/__pycache__/__main__.cpython-38.pyc
+tests/test_01.py
