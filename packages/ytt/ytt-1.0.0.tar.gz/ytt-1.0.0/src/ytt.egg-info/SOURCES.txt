@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ytt/__init__.py
+src/ytt/ytt.py
+src/ytt.egg-info/PKG-INFO
+src/ytt.egg-info/SOURCES.txt
+src/ytt.egg-info/dependency_links.txt
+src/ytt.egg-info/top_level.txt
