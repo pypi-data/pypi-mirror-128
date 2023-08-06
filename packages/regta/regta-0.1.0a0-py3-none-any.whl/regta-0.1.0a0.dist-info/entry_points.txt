@@ -1,0 +1,3 @@
+[console_scripts]
+regta=regta.console:main
+
