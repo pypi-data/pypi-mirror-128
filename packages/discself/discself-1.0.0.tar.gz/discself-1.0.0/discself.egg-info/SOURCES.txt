@@ -1,0 +1,7 @@
+README.md
+setup.py
+discself/__init__.py
+discself.egg-info/PKG-INFO
+discself.egg-info/SOURCES.txt
+discself.egg-info/dependency_links.txt
+discself.egg-info/top_level.txt

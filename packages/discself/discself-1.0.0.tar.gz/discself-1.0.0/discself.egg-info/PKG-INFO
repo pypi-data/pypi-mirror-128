@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: discself
+Version: 1.0.0
+Summary: A simple discord selfbot client.
+Home-page: UNKNOWN
+Author: elijahgives
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# DiscSelf
+A simple discord selfbot client made in Python3 - documentation coming soon! (package is still a WIP)
+
