@@ -1,0 +1,23 @@
+[dependencies]
+conv = "^0.3.3"
+csv = "^1.1"
+include_dir = "^0.6.1"
+unzip3 = "1.0.0"
+
+[dependencies.light-curve-feature]
+default-features = false
+features = ["gsl"]
+path = "../light-curve-feature"
+
+[dependencies.serde]
+features = ["derive"]
+version = "^1.0"
+
+[package]
+authors = ["Konstantin Malanchev <hombit@gmail.com>"]
+description = "Common test utilities for light-curve-feature tests, benchmarks and examples"
+edition = "2018"
+license = "MIT"
+name = "light-curve-feature-test-util"
+repository = "https://github.com/light-curve/light-curve"
+version = "0.0.0"
