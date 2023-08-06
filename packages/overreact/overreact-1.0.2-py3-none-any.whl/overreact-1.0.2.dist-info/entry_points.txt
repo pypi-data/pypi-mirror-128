@@ -1,0 +1,3 @@
+[console_scripts]
+overreact=overreact._cli:main
+
