@@ -1,0 +1,9 @@
+ws_nexus_integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ws_nexus_integration/_version.py,sha256=l4etyD7ar0V2C1CK-sG9HZ90BJ89J45uw2Mh5ungYXs,141
+ws_nexus_integration/nexus_integration.py,sha256=Hybh2EBG-XIYBcxHLDNTqxpgmZn6K3o9gPKF9iYz1tY,26196
+ws_nexus_integration-0.2.9a1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ws_nexus_integration-0.2.9a1.dist-info/METADATA,sha256=G8Kwf5uEHdFg7ctJ06XF6NFpoKtcJ4yw1Yeneiy7Kxs,8385
+ws_nexus_integration-0.2.9a1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ws_nexus_integration-0.2.9a1.dist-info/entry_points.txt,sha256=8cqAWzQeLYXxF7AcZIxLTV800_TgE6rOpCQ2RqRVJUU,83
+ws_nexus_integration-0.2.9a1.dist-info/top_level.txt,sha256=A0JoTqbJ8wjMbyeAJZv-wk3B8TLdV3tvKppgdJhLMkM,21
+ws_nexus_integration-0.2.9a1.dist-info/RECORD,,
