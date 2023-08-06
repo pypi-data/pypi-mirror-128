@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: lisa-orm
+Version: 0.0.4
+Summary: lisa is an orm semi like django orm
+Home-page: https://www.facebook.com/marwanmo7amed8
+Author: marawan mohamed
+Author-email: marawan6569@gmail.com
+License: UNKNOWN
+Description: # lisa-orm
+        Lisa is an ORM semi like django ORM:
+        
+        ### Available fields now:
+            - CharField()
+            - IntegerField()
+            - BooleanField()
+            - FloatField()
+            - TextField()
+            - DateField() -> not fully ready
+            - DateTimeField() -> not fully ready
+        
+        ### Available actions now:
+            - add() -> to add recordes to DB
+            - drop() -> to drop tables(models)
+            - delete_field() -> to delete fields
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
