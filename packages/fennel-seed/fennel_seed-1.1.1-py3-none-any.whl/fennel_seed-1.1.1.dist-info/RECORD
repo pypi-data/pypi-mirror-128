@@ -1,0 +1,15 @@
+fennel/__init__.py,sha256=VX_l7fA33Xic_RAGu8rjto2mkbostRiS4L5dqFcXssQ,210
+fennel/__main__.py,sha256=-nAC4RHsEYTwZDkZ2T7jkkZOcYX5pb-3NetxQ_Gk1pk,592
+fennel/config.py,sha256=6cBsTK0Ko2YYRrvxNvqRaTqTh1hIuHp_Cd_WGx9VeUY,14129
+fennel/em_cascades.py,sha256=FB4k8q7skySEIBDMOfYHFTR9JB3rK5sFwOZ5CAvf2QE,10279
+fennel/fennel.py,sha256=G1xoGpvHtNtJd1604VyIlnEv1bG5ysWylo3HrrzeCyw,20098
+fennel/hadron_cascades.py,sha256=SKgxb1FIVeOZ_8372xWYAJP0NI7jVvNiL4axuboyE-g,21780
+fennel/particle.py,sha256=HQwsX1ZSlOmw6o_HJxiqe6TpHnjGottvqcINk0rCrYw,1297
+fennel/photons.py,sha256=9IrwJu0MSrK8dX4mrXxZR6QEBkBtTx8vI8OtlVeOOyU,41138
+fennel/tracks.py,sha256=lXSxw0D_iFZ0VBT2JBCCOBGPF7HvNKGlcTyWHWf7Xjo,7292
+fennel/data/muon_production.pkl,sha256=d2If4ucBaWdWg9pQyJEECIq3OYdeZ4EzlCM5h7v7xrM,1677
+fennel_seed-1.1.1.dist-info/LICENSE.txt,sha256=no9KIXuIzPThhPlF2zWGIvpVl6XWEjnueic0vJ3kKm0,1108
+fennel_seed-1.1.1.dist-info/METADATA,sha256=iSxomjiFQwIiu8vEnzYTj9YFiNcz2GlmW5Sa23uYPUY,2938
+fennel_seed-1.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fennel_seed-1.1.1.dist-info/top_level.txt,sha256=WuG49ZVTu53wd9kEZKwOuWQ0of1GvewuXHCzG8JEhh0,7
+fennel_seed-1.1.1.dist-info/RECORD,,
