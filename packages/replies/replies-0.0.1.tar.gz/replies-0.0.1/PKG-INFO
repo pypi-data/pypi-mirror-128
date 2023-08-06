@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: replies
+Version: 0.0.1
+Summary: Composable, pure, immutable toolkit for HTTP APIs
+License: MIT
+Author: Arie Bovenberg
+Author-email: a.c.bovenberg@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+Serve
+=====
+
+Functional, composable web toolkit
+
