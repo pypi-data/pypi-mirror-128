@@ -1,0 +1,16 @@
+pytr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytr/__main__.py,sha256=1IIhVeC6PL88K4hifXlwH-b7pVKiUxn8fEI2DhVXYHI,340
+pytr/account.py,sha256=oawGHrrJUJdeZ19iMkFLldODN_Oxe31r8oujmWw17gs,4396
+pytr/alarms.py,sha256=GBjQBJFn21okSxtn13Yi2j7RpQUBgEyK_8MGVh2TKQo,2162
+pytr/api.py,sha256=-PV09SyNP_YfD2_HUBWvKUvsAgi4q4uc-sElkWHfKDY,26869
+pytr/details.py,sha256=UtzT616te0MqLt915ItQSaqtT063fHrqF1-vZS2nxMo,2938
+pytr/dl.py,sha256=lWXybInLErZZJLcyfSd91lzvk378Slv9zpg_peTrwss,5153
+pytr/main.py,sha256=ck9sg2SSXMDGcB1Y2U6t7Hryff0oUNA67V0BShCnnfo,5867
+pytr/portfolio.py,sha256=4IAadA-A3EG2ouSwTcDbNuG-KY0RQaiLDuq6d69ZEFc,2724
+pytr/utils.py,sha256=ASUTJQPbafTABPiEFms1SWuJZM0oXhypb6wI5-rSy2A,8452
+pytr-0.0.10.dist-info/LICENSE,sha256=0aWwIo9EkZ-Lk0JTIXt8Tvdl7t3Veqv6yDPUfxFhu5M,1067
+pytr-0.0.10.dist-info/METADATA,sha256=-m5oM5Jhaxb4Ro4rAzw3ExEXOdTt1iNreNd5yo-emao,3257
+pytr-0.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pytr-0.0.10.dist-info/entry_points.txt,sha256=xkTQcN0qoJfz1n0X7yagLb9UjNghm7YadmbTdSY_KLE,41
+pytr-0.0.10.dist-info/top_level.txt,sha256=WkdEZ7ulwHPdwoYvzDynIuoQFGzJnV7JHNkDoTZQreU,5
+pytr-0.0.10.dist-info/RECORD,,
