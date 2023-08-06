@@ -1,0 +1,11 @@
+django-fluent-contents>=2.0
+django-forms-builder>0.13
+django-polymorphic<3.0
+django-any-urlfield
+
+[develop]
+tox
+django
+
+[test]
+coverage
