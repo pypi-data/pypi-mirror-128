@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: poindexter-models
+Version: 0.0.10
+Summary: enhanced Google dorking (data model)
+Home-page: UNKNOWN
+Author: Peter Crampton
+License: MIT
+Platform: unix
+Platform: linux
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
