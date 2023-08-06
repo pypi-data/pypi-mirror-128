@@ -1,0 +1,16 @@
+annotell_openlabel-0.1.0-py3.8-nspkg.pth,sha256=QpBPPgWNKzm0ysnHOq_yHjdpWnH3BJrz1TQeNgOzolw,549
+annotell/openlabel/__init__.py,sha256=jihay0Ku5I8GnJv-dP689UoONTBuVLILjomachlzc4o,125
+annotell/openlabel/models/__init__.py,sha256=B2iw27wpGYPQ74yxPKBZpqWVg_RP7qhOXhhpfgouDjE,290
+annotell/openlabel/models/models.py,sha256=q3xu_ndnnyUmwN19OVCzL-G0ZhWwRNIDjCl6hiwUMpk,52411
+annotell/openlabel/models/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+annotell/openlabel/models/utils/data_type_parsing.py,sha256=HRESSDV9AJEZWjbI4pRVVW5ymKQl8Lhw0-fdsMEcvsc,746
+annotell/openlabel/schemas/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+annotell/openlabel/schemas/openlabel-1-0-0-edited.json,sha256=Rc68w2CeTqUQqHwiJDJMwb1GX8JhGapAsERW0KYroMU,68850
+annotell/openlabel/schemas/openlabel-1-0-0.json,sha256=sTLB4odrtdHDBoPbiqg64zS1Wjzhwn52V0RomA_XPkw,67920
+annotell/openlabel/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+annotell/openlabel/tools/model_generation.py,sha256=S6LJf8deBe4WR1j-JxAq7Q2rvlUp946xTcbD7aW295k,687
+annotell_openlabel-0.1.0.dist-info/METADATA,sha256=2XdN5wtxQon5fZb9tZ2jczSmgyTkHdjZnFmXOEfg0_A,1663
+annotell_openlabel-0.1.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+annotell_openlabel-0.1.0.dist-info/namespace_packages.txt,sha256=ovwDyo5ajMsAZxqAovd0d4s8ZFftRtmvbKk1zN8Z0go,9
+annotell_openlabel-0.1.0.dist-info/top_level.txt,sha256=ovwDyo5ajMsAZxqAovd0d4s8ZFftRtmvbKk1zN8Z0go,9
+annotell_openlabel-0.1.0.dist-info/RECORD,,

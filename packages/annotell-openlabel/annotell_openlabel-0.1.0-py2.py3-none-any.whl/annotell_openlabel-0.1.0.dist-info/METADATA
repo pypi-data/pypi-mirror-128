@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: annotell-openlabel
+Version: 0.1.0
+Summary: Annotell OpenLABEL Datamodel
+Home-page: https://github.com/annotell/annotell-python
+Author: Annotell
+Author-email: Interoperability <interoperability@annotell.com>
+License: MIT
+Download-URL: https://github.com/annotell/annotell-python/tarball/0.1.0
+Keywords: Annotell,OpenLABEL
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Annotell OpenLABEL
+
+## Installation
+Install the Annotell OpenLABEL package from pip with
+
+    pip install annotell-openlabel
+
+## Serialization and deserialization
+
+Since all models inherit from `pydantic`'s `BaseModel`, serialization and deserialization from dicts or json strings are relatively straight forward. 
+
+```py
+data = {
+    "openlabel": {
+        "metadata": {
+            "schema_version": "1.0.0"
+        }
+    }
+}
+
+import annotell.openlabel.models as OLM
+
+# Deserialize dict
+openlabel_annotation = OLM.OpenLabelAnnotation.parse_obj(data)
+
+# Serialize to json
+json_data = openlabel_annotation.json(exclude_none=True)
+
+# Deserialize json
+openlabel_annotation = OLM.OpenLabelAnnotation.parse_raw(json_data)
+
+# Serialize to dict
+dict_data = openlabel_annotation.dict(exclude_none=True)
+```
+
+## Further reading
+https://www.asam.net/project-detail/asam-openlabel-v100/
+
+# Changelog
+
+## [0.1.0] - 2021-11-18
+- Updated json schema and model to be true to the 1.0.0 release of openlabel. Previously it was based on the release-candidate
+
