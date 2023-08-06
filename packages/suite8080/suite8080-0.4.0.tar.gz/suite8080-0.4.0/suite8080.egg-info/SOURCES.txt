@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+suite8080/__init__.py
+suite8080/asm80.py
+suite8080/dis80.py
+suite8080.egg-info/PKG-INFO
+suite8080.egg-info/SOURCES.txt
+suite8080.egg-info/dependency_links.txt
+suite8080.egg-info/entry_points.txt
+suite8080.egg-info/top_level.txt

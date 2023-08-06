@@ -1,0 +1,4 @@
+[console_scripts]
+asm80 = suite8080.asm80:main
+dis80 = suite8080.dis80:main
+
