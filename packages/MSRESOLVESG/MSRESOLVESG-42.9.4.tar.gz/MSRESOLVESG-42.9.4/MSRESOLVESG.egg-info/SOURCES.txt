@@ -1,0 +1,7 @@
+README.txt
+setup.py
+MSRESOLVESG.egg-info/PKG-INFO
+MSRESOLVESG.egg-info/SOURCES.txt
+MSRESOLVESG.egg-info/dependency_links.txt
+MSRESOLVESG.egg-info/requires.txt
+MSRESOLVESG.egg-info/top_level.txt

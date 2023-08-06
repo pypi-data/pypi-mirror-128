@@ -1,0 +1,8 @@
+numpy
+timeit
+copy
+
+[COMPLETE]
+matplotlib
+scipy
+pandas
