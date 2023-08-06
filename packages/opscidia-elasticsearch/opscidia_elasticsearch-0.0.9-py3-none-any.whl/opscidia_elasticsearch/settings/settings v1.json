@@ -1,0 +1,185 @@
+{
+    "settings": {
+        "number_of_shards": 9,
+        "number_of_replicas": 1,
+        "sort": {
+            "field": "publication_date",
+            "order": "desc",
+            "missing": "_last"
+        },
+        "analysis": {
+            "filter": {
+                "english_snowball": {
+                    "type": "snowball",
+                    "language": "English"
+                },
+                "english_pos_stem": {
+                    "type": "stemmer",
+                    "language": "possessive_english"
+                },
+                "english_stop": {
+                    "type": "stop",
+                    "stopwords": "_english_"
+                }
+            },
+            "analyzer": {
+                "classic": {
+                    "tokenizer": "standard",
+                    "filter": [
+                        "english_pos_stem",
+                        "lowercase",
+                        "english_stop",
+                        "english_snowball"
+                    ]
+                },
+                "exact": {
+                    "tokenizer": "standard",
+                    "filter": [
+                        "lowercase"
+                    ]
+                }
+            },
+            "normalizer": {
+                "global": {
+                    "type": "custom",
+                    "filter": [
+                        "lowercase",
+                        "asciifolding"
+                    ]
+                }
+            }
+        }
+    },
+    "mappings": {
+        "properties": {
+            "DOI": {
+                "type": "keyword"
+            },
+            "URLs": {
+                "type": "text",
+                "fields": {
+                    "raw": {
+                        "type": "keyword"
+                    }
+                }
+            },
+            "custom_id": {
+                "type": "keyword"
+            },
+            "content": {
+                "type": "text",
+                "index_options": "offsets",
+                "analyzer": "classic",
+                "search_analyzer": "classic", 
+                "search_quote_analyzer": "exact",
+                "store": true
+            },
+            "authors": {
+                "type": "text",
+                "fields": {
+                    "raw": {
+                        "type": "keyword",
+                        "normalizer": "global"
+                    }
+                }
+            },
+            "keywords": {
+                "type": "text",
+                "fields": {
+                    "raw": {
+                        "type": "keyword",
+                        "normalizer": "global"
+                    }
+                }
+            },
+            "title": {
+                "type": "text",
+                "copy_to": "content"
+            },
+            "title_clean": {
+                "type": "keyword"
+            },
+            "abstract": {
+                "type": "text",
+                "copy_to": "content",
+                "norms": false
+            },
+            "abstract_clean" : {
+                "type" : "keyword"
+            },
+            "fulltext": {
+                "type": "text",
+                "index": false,
+                "norms": false
+            },
+            "publication_date": {
+                "type": "date",
+                "ignore_malformed": false,
+                "format": "yyyy-mm-dd"
+            },
+            "language": {
+                "type": "keyword"
+            },
+            "subject": {
+                "type": "text"
+            },
+            "type": {
+                "type": "keyword",
+                "index": false
+            },
+            "citation": {
+                "type": "integer",
+                "index": false,
+                "ignore_malformed": true
+            },
+            "pages": {
+                "type": "keyword",
+                "index": false
+            },
+            "isbn": {
+                "type": "keyword",
+                "index": false
+            },
+            "issn": {
+                "type": "keyword",
+                "index": false
+            },
+            "container-title": {
+                "type": "text",
+                "index": false
+            },
+            "volume": {
+                "type": "keyword",
+                "index": false
+            },
+            "issue": {
+                "type": "keyword",
+                "index": false
+            },
+            "chapter": {
+                "type": "keyword",
+                "index": false
+            },
+            "publisher": {
+                "type": "text",
+                "index": false
+            },
+            "published-print": {
+                "type": "keyword",
+                "index": false
+            },
+            "license": {
+                "type": "keyword",
+                "index": false
+            },
+            "editor": {
+                "type": "text",
+                "index": false
+            },
+            "address": {
+                "type": "text",
+                "index": false
+            }
+        }
+    }
+}
