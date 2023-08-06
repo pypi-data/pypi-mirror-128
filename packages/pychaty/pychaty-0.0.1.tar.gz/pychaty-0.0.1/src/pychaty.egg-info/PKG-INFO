@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pychaty
+Version: 0.0.1
+Summary: easy chatroom creator
+Home-page: https://github.com/acteam-ux/py-chatroom
+Author: acteam
+Author-email: acteam1245@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/acteam-ux/py-chatroom/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+this is a simple chatroom lib written in python.
+for examples, see:
+[tests](https://github.com/acteam-ux/py-chatroom/tests)
+for further docs and examples.
+

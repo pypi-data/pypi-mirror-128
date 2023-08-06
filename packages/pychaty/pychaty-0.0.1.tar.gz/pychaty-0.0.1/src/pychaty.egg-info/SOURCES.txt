@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pychaty.egg-info/PKG-INFO
+src/pychaty.egg-info/SOURCES.txt
+src/pychaty.egg-info/dependency_links.txt
+src/pychaty.egg-info/top_level.txt
