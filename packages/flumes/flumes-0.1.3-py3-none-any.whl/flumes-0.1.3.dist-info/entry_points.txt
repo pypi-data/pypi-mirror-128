@@ -1,0 +1,3 @@
+[console_scripts]
+flume-discovery=flume.discoverer:run
+

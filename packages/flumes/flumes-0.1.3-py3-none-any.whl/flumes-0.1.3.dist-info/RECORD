@@ -1,0 +1,10 @@
+flumes/__init__.py,sha256=XEqb2aiIn8fzGE68Mph4ck1FtQqsR_am0wRWvrYPffQ,22
+flumes/config.py,sha256=olskXkO7NStJ0WD2SF3TYqKw9vyagduEhIYS4DTlxuc,3039
+flumes/discoverer.py,sha256=-BKR1_BL3RCwi2S2hUUjlnWBq36eqFdAtw-FFnTij2s,12002
+flumes/options.py,sha256=lhNCs2QlKVGDdVeHJxM3_gnj6USSPBrc18wvTFsu6Kk,966
+flumes/schema.py,sha256=rakZ6mttCRUPu44dVJeFVL29xmiUHEpy_QM98NZUOek,4161
+flumes-0.1.3.dist-info/entry_points.txt,sha256=CgXh2BPtacJ-8leX1zsk2JtsVP3XM78wujDNysQ8Cvo,56
+flumes-0.1.3.dist-info/LICENSE.LGPL,sha256=XfBwBxmJicYi9dQd6NcD577z0OedYuJDMu5zmkUq9io,26436
+flumes-0.1.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+flumes-0.1.3.dist-info/METADATA,sha256=YiKIMp_m0O9diy-i-q6PWYGj3UsJ8SVdoE-num0NMi0,434
+flumes-0.1.3.dist-info/RECORD,,
