@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+diffractsim/__init__.py
+diffractsim/backend_functions.py
+diffractsim/colour_functions.py
+diffractsim/monochromatic_simulator.py
+diffractsim/polychromatic_simulator.py
+diffractsim/visualization.py
+diffractsim/zernike_polynomials.py
+diffractsim.egg-info/PKG-INFO
+diffractsim.egg-info/SOURCES.txt
+diffractsim.egg-info/dependency_links.txt
+diffractsim.egg-info/requires.txt
+diffractsim.egg-info/top_level.txt
+diffractsim/data/cie-cmf.txt
+diffractsim/data/illuminant_d65.txt
