@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tunetools
+Version: 1.0.0
+Summary: A powerful tuning and result management toolkit for AI experiments
+Home-page: https://github.com/Keytoyze/TuneTools
+Author: Keytoize
+Author-email: cmx_1007@foxmail.com
+License: UNKNOWN
+Description: Documentation: https://github.com/Keytoyze/TuneTools/blob/main/README.md
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
