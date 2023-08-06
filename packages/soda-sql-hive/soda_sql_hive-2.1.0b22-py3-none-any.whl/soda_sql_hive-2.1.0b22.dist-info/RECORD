@@ -1,0 +1,5 @@
+sodasql/dialects/hive_dialect.py,sha256=RGH8JPoVRj0M33TIz425B8QEJ2wuUTcdzCAnodIfu-0,5433
+soda_sql_hive-2.1.0b22.dist-info/METADATA,sha256=1tez2rIMslH3J__S0e-IpCGvXmGA2JNMp0houBFPafQ,258
+soda_sql_hive-2.1.0b22.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+soda_sql_hive-2.1.0b22.dist-info/top_level.txt,sha256=iWRgaTzdfqDF5qGyrChKrnJh7tIweOrFM4J4_Lun_Xc,8
+soda_sql_hive-2.1.0b22.dist-info/RECORD,,
