@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "kams"
+version = "0.1.2"
+description = "A macro lang for KeeperRL"
+authors = ["GameDungeon <gamedungeon@protonmail.com>"]
+license = "MIT"
+packages = [
+    { include = "kams" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.3"
+click-default-group = "^1.2.2"
+pathlib = "^1.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins]
+[tool.poetry.plugins."console_scripts"]
+"kams" = "kams.__main__:main"
