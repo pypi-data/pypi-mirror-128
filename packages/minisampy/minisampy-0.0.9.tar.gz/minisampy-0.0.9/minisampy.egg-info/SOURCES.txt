@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+minisampy/__init__.py
+minisampy/_minisam_py_wrapper.cpython-37m-x86_64-linux-gnu.so
+minisampy/libminisam.so
+minisampy.egg-info/PKG-INFO
+minisampy.egg-info/SOURCES.txt
+minisampy.egg-info/dependency_links.txt
+minisampy.egg-info/requires.txt
+minisampy.egg-info/top_level.txt
+minisampy/sophus/__init__.py
+minisampy/sophus/_minisam_sophus_py_wrapper.cpython-37m-x86_64-linux-gnu.so

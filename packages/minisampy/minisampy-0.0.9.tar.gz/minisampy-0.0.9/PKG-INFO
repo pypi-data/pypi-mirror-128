@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: minisampy
+Version: 0.0.9
+Summary: Python wrapper for minisam and sophus with additional functionality.
+Home-page: https://github.com/Nick-Kou/minisampy.git
+Author: Nikolaos Kourtzanidis
+Author-email: nkourtza@ryerson.ca
+License: MIT
+Description: 
+        # minisampy
+        Python wrapper for minisam and sophus with additional functionality.
+        
+Keywords: GRAPH OPTIMIZATION,SLAM,SOPHUS
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
