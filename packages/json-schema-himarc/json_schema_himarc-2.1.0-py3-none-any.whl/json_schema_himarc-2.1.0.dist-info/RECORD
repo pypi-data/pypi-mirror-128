@@ -1,0 +1,12 @@
+json_schema_himarc/__init__.py,sha256=CkUa4aZVlRZjXBBGwStjKXNO9WvhD43MTSmungDbHzQ,486
+json_schema_himarc/validation.py,sha256=F52aTWibEqC3SOc3b9YTpVhgIyLRK7AHTNz15Teu1O4,1694
+json_schema_himarc/schema/himarc-register.schema.json,sha256=4ETFZsS6Ytkz0aACr4e6Qlt_dJfI_4NRSaXd7Kt_JNU,1160352
+json_schema_himarc/schema/himarc-work.schema.json,sha256=WUJnf5Epetr5CZQDXiXal0fG2QaAbTkqhTUwHVINX4g,1158721
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=gC2O6L25klvPb3Tg8HIkjt-EEyk8RLQ6IsLA6PXlvDY,5578
+tests/test_validation.py,sha256=cfqfuL-Cy09EB9OLxXDORnMYUktzBRS0KEt0KYioUls,1732
+json_schema_himarc-2.1.0.dist-info/LICENSE,sha256=_Cy-jV9bYCuY9gSMcuy4SsIBX0fW0UVLphHgeaQde5w,1049
+json_schema_himarc-2.1.0.dist-info/METADATA,sha256=H0E3Y-H4UzfEKVJ5hczxkP4ezoKngEI0vFfP9UfxAqU,890
+json_schema_himarc-2.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+json_schema_himarc-2.1.0.dist-info/top_level.txt,sha256=ec1IY4MeHlwC7MLlTPR7f4-b2n95oTUk5pZNRe0-VCI,25
+json_schema_himarc-2.1.0.dist-info/RECORD,,
