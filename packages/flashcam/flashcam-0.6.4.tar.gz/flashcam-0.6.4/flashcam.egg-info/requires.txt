@@ -1,0 +1,9 @@
+fire
+flask_httpauth
+gunicorn
+imutils
+matplotlib
+numpy
+pandas
+psutil
+v4l2py

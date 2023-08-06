@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+ls -1 *avi | xargs -n 1 -I III ffmpeg -i III -c:v copy -c:a copy repIII
