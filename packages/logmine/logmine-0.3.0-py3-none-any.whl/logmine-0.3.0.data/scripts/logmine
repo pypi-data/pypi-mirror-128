@@ -1,0 +1,6 @@
+#!python
+
+from logmine_pkg.run import run
+
+if __name__ == '__main__':
+    run()
