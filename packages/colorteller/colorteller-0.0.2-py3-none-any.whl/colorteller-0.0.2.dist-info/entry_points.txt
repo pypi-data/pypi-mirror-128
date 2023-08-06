@@ -1,0 +1,3 @@
+[console_scripts]
+colorteller = colorteller.command:colorteller
+

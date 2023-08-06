@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: colorteller
+Version: 0.0.2
+Summary: colorteller, benchmarking color palattes.
+Home-page: https://github.com/kausalflow/colorteller-package
+Author: L Ma
+Author-email: hi@leima.is
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: colormath (>=3.0.0)
+Requires-Dist: loguru (>=0.5.3)
+Requires-Dist: matplotlib (>=3.5.0)
+Requires-Dist: click (>=7.0.0)
+Requires-Dist: seaborn (>=0.11.2)
+Provides-Extra: all
+Requires-Dist: nose (>=1.3.7) ; extra == 'all'
+Requires-Dist: mkdocs-material (>=0.4.4) ; extra == 'all'
+Requires-Dist: mkdocstrings (>=0.15.0) ; extra == 'all'
+Requires-Dist: mkdocs-autorefs (>=0.1.1) ; extra == 'all'
+Provides-Extra: docs
+Requires-Dist: mkdocs-autorefs (>=0.1.1) ; extra == 'docs'
+Requires-Dist: mkdocs-material (>=0.4.4) ; extra == 'docs'
+Requires-Dist: mkdocstrings (>=0.15.0) ; extra == 'docs'
+Provides-Extra: mkdocs-autorefs
+Requires-Dist: mkdocs-autorefs (>=0.1.1) ; extra == 'mkdocs-autorefs'
+Provides-Extra: mkdocs-material
+Requires-Dist: mkdocs-material (>=0.4.4) ; extra == 'mkdocs-material'
+Provides-Extra: mkdocstrings
+Requires-Dist: mkdocstrings (>=0.15.0) ; extra == 'mkdocstrings'
+Provides-Extra: nose
+Requires-Dist: nose (>=1.3.7) ; extra == 'nose'
+Provides-Extra: tests
+Requires-Dist: nose (>=1.3.7) ; extra == 'tests'
+
+# colorteller
+
+[![Test Code with Pip](https://github.com/kausalflow/colorteller-package/actions/workflows/tests.yaml/badge.svg?branch=main)](https://github.com/kausalflow/colorteller-package/actions/workflows/tests.yaml)
+
+Benchmark color palettes.
+
+`pip install colorteller`
+
+
+## How to Use Command Line Tool
+
+```bash
+colorteller benchmark -h "#8de4d3" -h "#344b46" -h "#74ee65" -h "#238910" -h "#a6c363" -h "#509d99" -wbc True -t test_colorteller_cmd
+```
+
+- `-h` specifies a color in hex format;
+- `-t` specifies the folder to hold all the results (charts, metrics json, etc);
+- `-wbc` is `True` will create benchmark metric charts;
+
