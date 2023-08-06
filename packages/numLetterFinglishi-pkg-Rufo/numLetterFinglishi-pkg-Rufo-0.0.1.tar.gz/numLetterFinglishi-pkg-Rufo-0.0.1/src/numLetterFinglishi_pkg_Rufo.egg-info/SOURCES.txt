@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/numLetterFing/__init__.py
+src/numLetterFing/numLetterFinglishi.py
+src/numLetterFinglishi_pkg_Rufo.egg-info/PKG-INFO
+src/numLetterFinglishi_pkg_Rufo.egg-info/SOURCES.txt
+src/numLetterFinglishi_pkg_Rufo.egg-info/dependency_links.txt
+src/numLetterFinglishi_pkg_Rufo.egg-info/top_level.txt
