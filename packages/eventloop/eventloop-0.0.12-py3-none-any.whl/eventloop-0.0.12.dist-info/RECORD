@@ -1,0 +1,12 @@
+eventloop/__init__.py,sha256=fRx9eWYXeHfJkrtuPu-TpMDdAeSEysjLLjtAn0QcGOs,3472
+eventloop/__main__.py,sha256=ICXXOv2eLBX1aMwLEIaLKFU1INaOLPxJXOvkRP1JjS4,2311
+eventloop/base.py,sha256=KKYhCwgVpIzjd09sNXDM9SSWIRySCoxkF7FBqlO5qfY,1114
+eventloop/common.py,sha256=7ZsmXz-uhblmxO1a316Wn4hi1QYxbc9wWYpD3_oaUcU,2303
+eventloop/qt.py,sha256=OMB_7Q8ruVmc2TAi8qcJhPT6pzAhIjSeONBlI5hJqPw,2315
+eventloop/qta.py,sha256=tHGjfmyI5u8dN2DnDnl8TcSyK53z2CoFGP8VWB2511o,784
+eventloop/uv.py,sha256=j_QsVA1iXNgibLHSIREzIFCg6OqKc31AMeu27dEmOS0,2615
+eventloop-0.0.12.dist-info/LICENSE,sha256=p5_2lGiDlTYb_HIuYAIoSQtmW7oxQn9SOirkkd8OW4o,1095
+eventloop-0.0.12.dist-info/METADATA,sha256=he9H2qeqw_DmOdkbkbrC46b6cyygDlt6fmcgsGdB9H4,3289
+eventloop-0.0.12.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+eventloop-0.0.12.dist-info/top_level.txt,sha256=SVjnqcN-FSY-DGnHxuZb316QKIrg-BnWZtfWL1bc2lw,10
+eventloop-0.0.12.dist-info/RECORD,,
