@@ -1,0 +1,10 @@
+slxjsonrpc/__init__.py,sha256=d2u_IBUi4LTekD-DrueJevIRrkaOLWgBI431ZjOXz9g,543
+slxjsonrpc/jsonrpc.py,sha256=rqZRqyDQfdTw-ZRZYsvqy-nwukbZAXgGYVCnjOK56rY,18870
+slxjsonrpc/jsonrpc.pyi,sha256=1KxPLrWU6MlmuGskqejRG04ryCCokflcmOHFDFd9Sp4,2172
+slxjsonrpc/schema/__init__.py,sha256=V6AjHz6ZTS-SoGAKkJaX06b2hXgGx1ahgptS0YKR6AI,8
+slxjsonrpc/schema/jsonrpc.py,sha256=0OR8M-S8VedHkIa3xXNGDjKPDifALe-xIOJ_DUokXbU,11076
+slxjsonrpc-0.8.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+slxjsonrpc-0.8.1.dist-info/METADATA,sha256=eYcWLJSiTZhraOOKx9U0ONT4DmMbeGt6fLwjsB1U-oQ,4029
+slxjsonrpc-0.8.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+slxjsonrpc-0.8.1.dist-info/top_level.txt,sha256=FGDjDhuHA6AzA88PdeU6dI-zDSWJomnrP0WAIsscSRc,11
+slxjsonrpc-0.8.1.dist-info/RECORD,,
