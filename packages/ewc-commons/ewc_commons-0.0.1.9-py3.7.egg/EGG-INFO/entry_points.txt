@@ -1,0 +1,5 @@
+[console_scripts]
+ewc_dicerolls = ewccommons.dicerolls:main
+ewc_sophie = ewccommons.sophie:main
+ewccommons = ewccommons.__main__:main
+
