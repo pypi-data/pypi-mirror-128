@@ -1,0 +1,5 @@
+PyYaml
+networkx
+pandas
+matplotlib
+rdflib
