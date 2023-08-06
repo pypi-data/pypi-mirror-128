@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: django-skillflux
+Version: 1.0.dev2
+Summary: SkillFlux — Data model and logic
+Home-page: https://skillflux.vision
+License: Apache-2.0
+Author: Dominik George
+Author-email: dominik.george@teckids.org
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.0,<4.0)
+Project-URL: Repository, https://edugit.org/Teckids/LEOPARD/SkillFlux/django-skillflux
+Description-Content-Type: text/markdown
+
+SkillFlux — Data model and logic
+================================
+
+Synopsis
+--------
+
+This is a Django application encapsulating the SkillFlux method as
+data model and accompanying logic. It is designed to be reusable in
+projects that intend to employ the SkillFlux method, and are creating
+digital tooling to support it.
+
+SkillFlux and information science
+---------------------------------
+
+TBA.
+
