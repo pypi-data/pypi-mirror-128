@@ -1,0 +1,222 @@
+TASK (documentation): developer guide
+- data schema and operation graph. how represented
+- dependencies. which functions.
+- topology translation. use of dependencies. augmentation.
+- Inheritance and path resolution. fully qualified paths.
+
+TASK (documentation). Reflect these items:
+- Column paths and their usage (in Column-SQL)
+- Inheritance (at least in filter operation)
+  Logic: If we find missing column (in filter/product) and can resolve it via inheritance,
+  then insert merge and still use the original simple name.
+  Demonstrate how it works recursively. !!! ColumnSQL, Unit test, notebook or example in documentation.
+  Aspects: what is important: super name or filter/product operaiton etc.
+
+
++++ TASK Check how filtering and inheritance work on real example. Create and change a notebook.
+1. Project to groups, then fiter groups, then aggregate to filtered table - will it work?
+2. Filter facts, then project, the aggregate - will it work? The idea is that we want to use for aggregation only certain facts.
+
+TASK (Usability, API)
+!!! When we get and print a table df, the we see only super column.
+Yet, we want to see all (inherited) attributes. It is extremely inconvenient.
+Maybe add special operation for materialization (of inherited attributes till some depth).
+It can be called SELECT (similar to SQL select) or it could be added to filter operation as an option
+(and then the system will augment during translation).
+
+TASK: Scenario: first computer filter, and then add calculate (or any other) column to the base table.
+Will it be still visible for further operations with the filter table?
+The system (translator) probably should understand that the calculate column can be (and should be)
+computed before filter (even if it was added later), just because it does not depend on it.
+
+++TASK (API, concept refactoring): Rework and clearly define the role of attributes.
+HOw they participate in deps? How they participate in column paths?
+How they participate in groupby etc.?
+Currently "attributes" in definitions (table creation, filter at least)
+must have a list of strings and does not work with one string.
+Make like for other arguments where we can provide one string and the system uses it as a list.
+- TASK (API): make columns and attributes similar or same when getting data.
+Currenlty getting data is different for columns and attributes.
+The only difference of attributes is that they do not have a definition (they are derived from table operations). Yet, from data point of view, they are the same as columns.
+One treatment is that attributes have "key" flat.
+- TASK (populate): Automatically load attributes from data frame rather than always specifying them manually at definition.
+It is a problem because we can do it only at run time when we really can access the data frame
+Yet, we need the attribute list before loading in order to build dependencies of operations,
+that is, we need to known attributes in order to build dependency graph. For example, if some operation
+say it is going to use A from MyTable we try to find A in the list of attributes or columns.
+If not found then we raise exception.
+- Option 1: Provide attributes as a column slice in the TABLE statement
+- Option 2: If attribute list is empty, then we assume that any attribute will be resolved (by assuming that the attribute will be found at run time after populating this table).
+The indicator is that attribute list is None which is interpreted as open for future.
+In fact, this means switch to a more general conception where schema can evolve at execution time.
+Accordingly, we need to adjust the evaluators because they might not find some dependency because it cannot be resolved.
+- Option 3: Weaken attribute requirement by a special indicator like MyTable(*) which means all attributes loaded from the input and determined at run time. The start is hence a special attribute name
+that need to be recognized as such.
+It seems that it has been done but not clear in which way. Probably, if the attribute list is empty,
+we assume that it is open (dependency is always satisfied).
+!!! We could extend this approach. When we add operation, and attributes are empty,
+and the data frame is given (in func), then we retrieve its columns.
+- Currently, populate gets a df and then checks if all declared attributes are present amoung df columns.
+If not the exception. If yes, nothing. This means that df might have much more columns.
+So where attributes are needed?
+- Currently, if a table does not have attributes (empty or None), then we assume that they will be added
+later during execution and we always returns True for any request like has_attribute(). We might change
+this logic and use it only for source tables. Or we might introduce a flag for using this logic (static check for attribtues and dynamic attributes).
+
+- TASK (product)(priority low because the pattern can be implemented manually): Currently product cannot use filter predicate. Base boolean column cannot be uased because it is a product and has several tables. Therefore, the only option is predicate function which takes
+declared columns from input tables. Yet, we cannot implement this approach because pandas does not support this. What we did in filter, we simply computed and added a technical boolean column and then used its true
+values in the filter table. It seems that this is the only option for product.
+- If product gets predicate function, then we fist create a full product (as usual even without predicate), and then additionally add a simple filter operation. This means we always materialize full product and do filtering only after that (because we do not know how to filter product on the fly using pandas). The logic: if no function then simple product (like now), else (if there is function), the add filter table after that and use the target name for filter while product table will be auxiliary (hidden) operation with arbitrary system table name. Ensure that column paths (from filtered table) work correctly by bypassing the intermediate product table (how?). We need to smart generic strategy for augmenting/resolving column paths using inherited tables: filter base table, product base tables, filter base and then hidden product table. Note that there can be recursion, for example, several filtered tables. The logic of inheritance is that if we cannot find some column in this table, the we continue search along inherited links (need a criterioin for them) like filtered super link, product super links (independent of whether they are explicitly added tables or implicitly added).
+Solution: create an intermediate full product, and then apply filter. So essentially, add two operations
+instead of one: full product, filter. What is needed is correctly propagate and materialize column names
+from several source tables to the full product table where they will be used by the filter predicate (using column paths).
+
+
+TASK (API, investigate, convenience): Easy access to the data: tables (df), columns (series), subset of columns (df), attributes. We need to make it absolutely easy.
+
+TASK (explore). Currently, we augment operations in two points: 1) adding (Column-SQL) higher level operations like filter or project, 2) topology translation where we resolve links and column paths and add merge operation for their materialization (because other operations work only with already materialized columns and not linked columns). Essentially, we have higher level operations and lower level operations.
+Maybe somehow re-think the concept of elementary operations and higher level operations. Also, there should be one place where we translate higher level operations. We have the following translation needs: materialize links and column paths, add column for predicates, add link column for project operation.
+- Augment call operation directly which adds operation directly to the Prosto context and not to the topology. This essentially changes the source operations during augmentation which is not very good.
+Better is to add new technical operations to the topology and not user operations.
+
+TASK (simplify, concepts, not clear, explore).
+We use "input_length" field with two values row and table.
+Only one is used. What was the purpose? Maybe delete and clean everything.
+Maybe delete method _evaluate_populate_row().
+            if input_length == "row":
+                new_data = self._evaluate_populate_row()
+            elif input_length == "table":
+                new_data = self._evaluate_populate_table()
+Currently we always use input_length=table. This means that function returns a whole data frame.
+This corresponds to "compute" operation where a whole column is produced by a function given whole input columns.
+If input_length=row then this probably means that the function returns rows. Note however,
+that in contrast to whole columns, here we do not know when to stop. Second, for this to work,
+inputs have to be provided as rows too. Further, these inputs have to be converted into one (or several)
+output rows but currently we do not know how - the only that we have is populate source table,
+project and product/filter.
+Alternative: move this difference to separate operations. If we need input_length=row in future,
+then we define a new operation.
+- TASK (rework, concept) Currently we have "calculate" and "compute" as two separate operations
+algorithm the only difference is whether they take as input and produce as output values or columns.
+The difference is similar to input_length.
+Alternative: use introspection to determine if provided function expects/returns values or columns and
+set the corresponding parameter of the definition.
+
+#
+# Operations
+#
+
+We specify query as string to context.sql() which returns Python result object
+result = c.sql("
+    SELECT
+        my_data.name,
+        SUM(my_data.x)
+    FROM
+        my_data
+    GROUP BY
+        my_data.name
+", return_futures=False)
+# Parser recognizes Python objects like my_data and understands how to bind
+fields like name or x to the underlying df columns.
+
+bc.create_table('table_name_01', 's3://dir_name/file1.csv')
+bc.create_table('table_name_02', 's3://dir_name/file2.parquet')
+bc.create_table('table_name_03', existing_gdf)
+
+POPULATE/CREATE/LOAD/IMPORT pd.DataFrame(df) -> my_table - also read_csv, external queries etc.
+CREATE/LOAD/IMPORT pd.Series(my_series) -> my_table - arrow and other formats
+CREATE/LOAD/IMPORT CSV(s3://dir_name/file1.csv) -> my_table FUNC pd.read_csv ARGS
+CREATE/LOAD/IMPORT parquet(s3://dir_name/file2.parquet) -> my_table FUNC
+Arrowflow 1: Source specification string or list
+Arrowflow 2: new_table_name string
+FUNC: optionally, there could be a function with the logic of import
+Alternatively:
+Arrowflow 1: new_table_name string
+FUNC: function to read like read_csv
+ARGs: arbitrary arguments like 'my_file.csv' or 's3://my_backet/', my_data_frame (Python object name)
+  by default, if no function, the system will guess the input format and do import itself, typically, data frame
+
+
+CALCULATE table1 (col1, col2,...) -> *new_name = FUNC fn
+  AF 1: table with column list
+  AF 2: new_column_name
+  FUNC: call signature
+ROLL table1 (col1, col2,...) -> *new_column_name = FUNC fn WITH/WINDOW my_window_spec
+  AF1: table with column list
+  AF2: new_column_name
+  FUNC: agg signature
+  WINDOW: custom window specification: integer etc.
+
+# link/project Pattern: source_table(column_slice_list), link_column, target_table(column_slice_list)
+# ! Can be united - if target table does not exist, then it will be created using projection
+LINK table1 (col1, col2,...) -> *new_link_name -> table2 [ (col1, col2, ...) ]
+  AF1: table with column list
+  AF2: new_link_column_name
+  AF3: second_table_name with column list
+PROJECT table1 (col1, col2,...) -> *new_link_name -> *table2 [ (col1, col2, ...) ]
+  AF1: table with column list
+  AF2: new_link_column_name
+  AF3: second_table_name with column list - will be created
+
+
+
+# Aggregate pattern: source_table(column_slice_list), link_column_path_list FUNC fn
+# Example MyTable(col1, col2) -> link1 -> link2 -> my_agg_column FUNC my_func
+AGGREGATE table1 (col1, col2,...) -> group_link_name1 -> group_link_name2 -> *agg_column_name = FUNC fn
+  AF1: table with column list
+  AF2: group_column_path
+  AF3: new_agg_column_name
+  FUNC: function with agg signature
+# Use case (groupby): group_link_name1 is not link but rather normal column:
+#  project this column (find all unique values), create a new group table and a new link column
+#  names of new table and new link have to be chosen by default
+#  finally do aggregation
+#  Alternatively, without link, create only group table:
+table1 (col1, col2,...) -> groupby_column, [*new_link_column] -> *new_table(*agg_column_name)
+
+
+# Example: MyTable -> link1 -> link2 -> MyMergedColumn
+MERGE table1 [ (*col1, *col2, ...) ] -> link_name -> table2 (col1, col2, ...)
+GENERAL MERGE table1 [ (*col1, *col2, ...) ] -> link_name1 -> link_name2 -> table2 (col1, col2, ...)
+  AF1: table (optionally column list)
+  AF2: column_path - path to target table with column(s) to be merged
+  AF3: table with column list - table is optional and columns will be merged
+
+# I kind of project with filter on input/source table
+FILTER table1 (col1, col2) -> [super] -> *table FUNC/WHERE predicate_fn(col1, col2) - example col1 > 5.0
+  AF1: table and column list
+  AF2: new_link_column_name - super column
+  AF3: new_table_name
+  FUNC predicate_fn
+PRODUCT table1(col1, col2), table2(col3), table3(col4) -> super1, super2, super3 -> *product_table FUNC/WHERE predicate_fn(col1, col2) - example col1 > 5.0
+  AF1: table list each with column list
+  AF2: new_link_column list
+  AF3: new_table_name
+  FUNC predicate_fn
+NOTE: Currently without predicate function (see the corresponding task)
+
+
+Names:
+- Column-SQL
+- Arrow-SQL, arrow notation
+- Link-SQL
+- Concept-SQL
+# Arrow flow, column flow
+- Benefits:
+  - only table and column names, focus on data elements with much less syntactic sugar (brackets, commas, roles etc.)
+    in contrast, our current programmatic version is not intuitive - I do not understand big picture and what needs to be done
+  - only one main pattern: arrow notation
+  - general simple semantics: data (value) flow along links/references
+Issues
+- usage of column paths within expressions:
+  - if in func arguments: we simply assume that column paths have special syntax and can be used anywhere where column names are expected
+  - when a column is met, we merge it to the main table (using special well defined name, for example, equal to the path), and then this column is used as usual
+  - arrow flow in query is not column path - it is query structure so it is better use a different separator like => or >> or whatever
+    the arrow flow could connect quite tables, columns and lists thereof
+
+Links:
+- BlazingSQL: https://docs.blazingsql.com/getting_started/index.html
+- Dask-SQL: https://dask-sql.readthedocs.io/
+
+
+
