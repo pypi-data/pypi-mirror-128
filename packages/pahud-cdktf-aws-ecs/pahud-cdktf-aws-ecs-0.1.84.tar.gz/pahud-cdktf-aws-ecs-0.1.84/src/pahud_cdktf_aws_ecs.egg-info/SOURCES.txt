@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/pahud_cdktf_aws_ecs/__init__.py
+src/pahud_cdktf_aws_ecs/py.typed
+src/pahud_cdktf_aws_ecs.egg-info/PKG-INFO
+src/pahud_cdktf_aws_ecs.egg-info/SOURCES.txt
+src/pahud_cdktf_aws_ecs.egg-info/dependency_links.txt
+src/pahud_cdktf_aws_ecs.egg-info/requires.txt
+src/pahud_cdktf_aws_ecs.egg-info/top_level.txt
+src/pahud_cdktf_aws_ecs/_jsii/__init__.py
+src/pahud_cdktf_aws_ecs/_jsii/cdktf-aws-ecs@0.1.84.jsii.tgz
