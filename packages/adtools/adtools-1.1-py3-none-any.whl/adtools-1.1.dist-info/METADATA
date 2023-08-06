@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: adtools
+Version: 1.1
+Summary: A module to work with Active Directory from Python
+Home-page: https://github.com/StorFollo-IKT/django-stamdata3
+Author: Anders Birkenes
+Author-email: anders.birkenes@storfolloikt.no
+License: GPL
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ldap3
+
+# adtools-py
+Tools for working with Active Directory from Python
+
+
