@@ -1,0 +1,11 @@
+econ_layers/__init__.py,sha256=XQI22lhJYvfxDIhxZrIqcrJXWgC-1pOSySwAeh76FZk,426
+econ_layers/callbacks.py,sha256=tpmf-1rnNXk2EWk4KsmyKRPIxbdSIUTPtKGLzxUeaqI,647
+econ_layers/econ_layers.py,sha256=TDIbH_opgjWFVPG1yG1_p2gJHYJyGYBOAbS557VDfYw,18
+econ_layers/layers.py,sha256=2a_MhJ0NcBBrhyIQz5OrJHbvQp4mnd5zlKGgOhZiIgI,3321
+econ_layers/utilities.py,sha256=4P3X5vEkf6iuSW0PgKWbNfFgrQdjnNc8WBfMO43SYJ8,241
+econ_layers-0.0.20.dist-info/LICENSE,sha256=4wQsWSef7OPYFEkRywIJFNnlcWLVIryBcOHkz6QzMdY,1092
+econ_layers-0.0.20.dist-info/METADATA,sha256=Eyxau26srdQPX2s_PKGUz03Yr5wOnA7LDkctLzmAB_k,2238
+econ_layers-0.0.20.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+econ_layers-0.0.20.dist-info/dependency_links.txt,sha256=DvemTdGPEoKWu81DDu0dtDUkHEHTgLGo4dmR8JVWlG0,83
+econ_layers-0.0.20.dist-info/top_level.txt,sha256=_llxluORJBR5fkBIFoygtJcKrBbPMl4ZGcoB5Yp2IlE,12
+econ_layers-0.0.20.dist-info/RECORD,,
