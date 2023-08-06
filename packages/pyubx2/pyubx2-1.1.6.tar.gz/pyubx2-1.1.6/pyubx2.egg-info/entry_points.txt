@@ -1,0 +1,3 @@
+[console_scripts]
+ubxdump = pyubx2cli.ubxdump:main
+
