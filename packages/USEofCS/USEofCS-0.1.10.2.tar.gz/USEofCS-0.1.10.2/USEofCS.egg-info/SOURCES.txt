@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+USEofCS/__init__.py
+USEofCS/ns_calc.py
+USEofCS/ns_calc_auto.py
+USEofCS.egg-info/PKG-INFO
+USEofCS.egg-info/SOURCES.txt
+USEofCS.egg-info/dependency_links.txt
+USEofCS.egg-info/requires.txt
+USEofCS.egg-info/top_level.txt
