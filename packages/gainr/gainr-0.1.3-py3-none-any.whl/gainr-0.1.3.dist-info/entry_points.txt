@@ -1,0 +1,3 @@
+[console_scripts]
+gainr=gainr.main:cli
+
