@@ -1,0 +1,10 @@
+tentaclio_gs/__init__.py,sha256=ptW-2ltTIp59Pe4c_k9_jNESUlIqmCC9XaVQrG0FOWI,664
+tentaclio_gs/__main__.py,sha256=ilMhCoG2DY3ostV7pgJDdicT27oJFduGHOhPcAzoGHY,141
+tentaclio_gs/clients/__init__.py,sha256=PIyDntNVsRTgJiYqoXI8ZnFkRDVwsKXIXKF85VAfGBI,288
+tentaclio_gs/clients/exceptions.py,sha256=mZ_9QqtjMuI5PaDh7nx4jhlvLQkdx-rCYKW6FGwm334,169
+tentaclio_gs/clients/gs_client.py,sha256=hOwUNdH65-A7Cf2h1TCyBXlNVPSKbyBPfFn5vlInS0M,5091
+tentaclio_gs-0.0.1.dist-info/LICENSE.txt,sha256=Aqv2h5R53YlGaQXl7XgUDMZPUxJK1HftERN2ExXJ_u4,1080
+tentaclio_gs-0.0.1.dist-info/METADATA,sha256=5RTyJIUO2IiNPtYr96qcWm1fh0gpW9Trzu-wZZsv5mM,1530
+tentaclio_gs-0.0.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+tentaclio_gs-0.0.1.dist-info/top_level.txt,sha256=AU1qUUeAUADHMwc7k5nqQ3PW3V1mFgF_QZnMqdZltI4,13
+tentaclio_gs-0.0.1.dist-info/RECORD,,
