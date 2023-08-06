@@ -1,0 +1,14 @@
+dico_interaction/__init__.py,sha256=-j0wdQQX3KoqMzv79LMISS0mCdbecTzdV1-eeAgMixs,461
+dico_interaction/client.py,sha256=2HeuSbr3NS-MSOsh_Gghv3EblATK3ll1sch0hNgFFCg,27843
+dico_interaction/command.py,sha256=1CfeaUIvFvLHjKSDYk9Vd-OUj-YOhTuBVew-MvvlRX8,6047
+dico_interaction/component.py,sha256=WfkLxQctar-IA1lMHF8xY1pFw9QL42WHz27wx_SgKRQ,456
+dico_interaction/context.py,sha256=4d983XsGb4G5UfBKFXrcnTRQlFQ6LkgTfrIoDuEHc5U,4606
+dico_interaction/deco.py,sha256=COpy_ye0JWsG4pq08YsB1PctCVdjjGjyeQBQ1BYpwbY,7057
+dico_interaction/exception.py,sha256=cmEv9sJm9X8mTrVGlu8si1r3TrY43z5_6Hy7lr2Zz5Q,268
+dico_interaction/utils.py,sha256=bZdFWDcugB_eZWUM6b_KTr9N4Rmu7LrYIfeL8qi5uew,1338
+dico_interaction/webserver.py,sha256=63wemHfhza152sK4DSmic3J1WQU8swSbfiX1FnzVw54,3000
+dico_interaction-0.0.7.dist-info/LICENSE,sha256=XEqrGR-hi1oT4Qddkn1GDEdi1lqiygDyoRnAijiymk8,1065
+dico_interaction-0.0.7.dist-info/METADATA,sha256=H_qlgybfr7M5U_gFQxa5ewubOxun8IZNFpuFBVr4-ik,2672
+dico_interaction-0.0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dico_interaction-0.0.7.dist-info/top_level.txt,sha256=LkhUhNmAC7IUx4w7Aa-xFVm9khIFkVEuK8JhNb5dOgA,17
+dico_interaction-0.0.7.dist-info/RECORD,,
