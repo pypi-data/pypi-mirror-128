@@ -1,0 +1,4 @@
+deprecated
+
+[hiredis]
+hiredis>=1.0.0
