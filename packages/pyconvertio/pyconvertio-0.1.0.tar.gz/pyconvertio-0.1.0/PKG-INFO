@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pyconvertio
+Version: 0.1.0
+Summary: Convert your files
+Home-page: UNKNOWN
+Author: Henrique Pires
+Author-email: pireshenrique22@gmail.com
+License: UNKNOWN
+Description: # Convertio-py
+        A python library to use https://convertio.co/ API to convert your files.
+        
+        ### Installation
+        ```
+        pip install pyconvertio
+        ```
+        ### Current functions:
+        
+        ```Python
+        from pyconvertio import Convert
+        API_KEY = "YOUR_API_KEY"
+        convert_io = Convert()
+        convert_io.local_file(api_key=API_KEY, file="filename", output_format="format", verbose=True)
+        ```
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
