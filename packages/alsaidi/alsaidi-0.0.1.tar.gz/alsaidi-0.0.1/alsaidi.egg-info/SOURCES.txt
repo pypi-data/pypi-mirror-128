@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+alsaidi.egg-info/PKG-INFO
+alsaidi.egg-info/SOURCES.txt
+alsaidi.egg-info/dependency_links.txt
+alsaidi.egg-info/top_level.txt
+joshbasiccalculator/__init__.py
