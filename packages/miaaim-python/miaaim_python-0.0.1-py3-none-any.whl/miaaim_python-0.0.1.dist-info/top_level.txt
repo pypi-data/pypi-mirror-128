@@ -1,0 +1,3 @@
+hdiprep
+hdireg
+patchmap
