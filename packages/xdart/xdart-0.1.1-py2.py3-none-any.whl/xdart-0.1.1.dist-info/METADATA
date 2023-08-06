@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: xdart
+Version: 0.1.1
+Summary: A pyFAI based GUI utility to rebin and visualize X-ray Diffraction data
+Home-page: https://github.com/rwalroth/xdart.git
+Author: Vivek Thampy
+Author-email: vthampy@slac.stanford.edu
+License: UNKNOWN
+Keywords: xrd,diffracion,pyFAI
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+Requires-Dist: pyfai
+Requires-Dist: pygix
+Requires-Dist: pyqtgraph
+Requires-Dist: pyqt5
+Requires-Dist: pandas
+Requires-Dist: scikit-image
+Requires-Dist: lmfit
+Requires-Dist: pyyaml
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: silx
+Requires-Dist: fabio
+Requires-Dist: matplotlib
+Requires-Dist: requests
+Requires-Dist: h5py
+Requires-Dist: pyopencl
+Requires-Dist: ipympl
+Requires-Dist: ipywidgets
+
+# xdart
+X-ray Data Analysis in Real Time
+
+# Installation
+Recommended method:
+Install Anaconda if you don't already have it (Miniconda recommended)
+From the terminal, create a new environment with python 3.9: "conda create -n xdart python=3.9"
+Activate the xdart environment: "conda activate xdart"
+Install xdart using pip: "pip install xdart --upgrade"
+
+Alternative:
+If you already have conda installed and a working environment you want to use, you can simply install xdart in that environment: "pip install xdart --upgrade". 
+
+Once installed, you can run the program by simply typing xdart in the terminal: "xdart" 
+
