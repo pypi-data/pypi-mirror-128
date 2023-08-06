@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pycodon/__init__.py
+pycodon/codon_dict.py
+pycodon/utils.py
+pycodon.egg-info/PKG-INFO
+pycodon.egg-info/SOURCES.txt
+pycodon.egg-info/dependency_links.txt
+pycodon.egg-info/entry_points.txt
+pycodon.egg-info/top_level.txt
+pycodon/metasequence/__init__.py
+pycodon/metasequence/utils.py
+pycodon/sequence/__init__.py
+pycodon/sequence/utils.py
