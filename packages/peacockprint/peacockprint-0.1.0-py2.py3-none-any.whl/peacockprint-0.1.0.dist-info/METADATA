@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: peacockprint
+Version: 0.1.0
+Summary: Pretty print text in varioua replacement template and a color tuple.
+Home-page: https://github.com/gvido-berzins/peacockprint
+Author: Gvido Bērziņš
+Author-email: gvido.berzins@syberu.xyz
+License: GNU General Public License v3
+Keywords: peacockprint
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+============
+PeacockPrint
+============
+
+
+.. image:: https://img.shields.io/pypi/v/peacockprint.svg
+        :target: https://pypi.python.org/pypi/peacockprint
+
+.. image:: https://img.shields.io/travis/gvido-berzins/peacockprint.svg
+        :target: https://travis-ci.com/gvido-berzins/peacockprint
+
+.. image:: https://readthedocs.org/projects/peacockprint/badge/?version=latest
+        :target: https://peacockprint.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Pretty print text in varioua replacement template and a color tuple.
+
+
+* Free software: GNU General Public License v3
+* Documentation: https://peacockprint.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2021-11-20)
+------------------
+
+* First release on PyPI.
+
+
