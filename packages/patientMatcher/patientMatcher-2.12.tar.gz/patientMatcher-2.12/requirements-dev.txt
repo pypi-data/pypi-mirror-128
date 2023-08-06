@@ -1,0 +1,10 @@
+# testing:
+click
+pytest
+mongomock
+pytest-cov
+coveralls
+
+# server-related stuff
+requests
+Flask-Mail
