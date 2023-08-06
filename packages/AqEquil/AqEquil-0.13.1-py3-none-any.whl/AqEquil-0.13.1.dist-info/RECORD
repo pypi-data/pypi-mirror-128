@@ -1,0 +1,13 @@
+AqEquil/3o_mine.r,sha256=Q-aHxXKyOZyZbmIS0udMZaEzBohiWkJxt2_36gCjbAw,43224
+AqEquil/AqSpeciation.py,sha256=JrDXOTe2QyFrAl02HzZJeis_vO0UBUB9m4-KfblYfTA,181719
+AqEquil/CHNOSZ_funcs.r,sha256=5HTQM8_L5U0utJ8b6Ib3nyZEXjRZSFk0HQRjqLai_mA,12698
+AqEquil/__init__.py,sha256=LjpLPNomKiiTkDrvXI8FjcwcjxypeB76s8yODl8bgX8,48
+AqEquil/create_data0.r,sha256=B75AgzE5AZ7wndIHbOyDaTh4wkgG8eC6RsnVC_hzP_w,70856
+AqEquil/data0.min,sha256=2qawHyy_QokSP8YbY98pXAnu-UFoJ92_Ktwp332AFbE,12215
+AqEquil/half_cell_reactions.csv,sha256=l_7Nxqe8UjnXEMbjTji-JpoShZV9MzdXV1kI52DbDoE,675
+AqEquil/preprocess_for_EQ3.r,sha256=Fettld4Hr5KE4uCEngPA98I2gAzbYQce6n097iR-q9w,47591
+AqEquil-0.13.1.dist-info/LICENSE.txt,sha256=uGYDpDAm50bfIM8K6-IdrGsNUP2Wn9A3ev8aLMwcVwI,1119
+AqEquil-0.13.1.dist-info/METADATA,sha256=AOqyvrkEm7iP_SnNwexMXbYwjk_8QT3FiSbSILxNxxM,2905
+AqEquil-0.13.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+AqEquil-0.13.1.dist-info/top_level.txt,sha256=czDcbzjWnSEc6kErdshO0C-eUN3KF3ueLGm0HR16JFE,8
+AqEquil-0.13.1.dist-info/RECORD,,
