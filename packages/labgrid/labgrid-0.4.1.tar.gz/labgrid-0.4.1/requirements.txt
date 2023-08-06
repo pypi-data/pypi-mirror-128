@@ -1,0 +1,17 @@
+attrs==20.2.0
+jinja2==2.11.3
+packaging==20.4
+pexpect==4.8.0
+https://github.com/labgrid-project/pyserial/archive/v3.4.0.1.zip#egg=pyserial
+pytest==6.1.2
+pyudev==0.22.0
+requests==2.24.0
+xmodem==0.4.5
+autobahn==21.2.1
+PyYAML==5.4
+ansicolors==1.1.8
+pyusb==1.1.0
+six>=1.13.0
+# Workaround for crossbar/autobahn regression with twisted>=21.2.0 (we still
+# suppport python 3.6)
+twisted<21.2.0
