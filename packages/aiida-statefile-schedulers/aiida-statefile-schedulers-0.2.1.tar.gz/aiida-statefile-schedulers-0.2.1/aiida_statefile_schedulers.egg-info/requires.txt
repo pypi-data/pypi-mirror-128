@@ -1,0 +1,10 @@
+aiida-core>=1.1.0
+
+[pre-commit]
+pre-commit~=2.2
+pylint~=2.6.0
+
+[testing]
+pgtest~=1.3
+pytest~=6.0
+pytest-cov

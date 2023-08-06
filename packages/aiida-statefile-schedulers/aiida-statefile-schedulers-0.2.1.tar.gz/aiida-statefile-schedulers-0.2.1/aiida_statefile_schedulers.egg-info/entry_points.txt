@@ -1,0 +1,3 @@
+[aiida.schedulers]
+statefile_schedulers.direct = aiida_statefile_schedulers.schedulers.direct:StatefileDirectScheduler
+
