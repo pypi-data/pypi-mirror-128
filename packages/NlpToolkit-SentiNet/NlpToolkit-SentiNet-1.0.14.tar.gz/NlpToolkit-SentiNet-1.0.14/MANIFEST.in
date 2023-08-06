@@ -1,0 +1,2 @@
+include SentiNet/data/turkish_sentinet.xml
+include SentiNet/data/turkish_sentiliteralnet.xml
