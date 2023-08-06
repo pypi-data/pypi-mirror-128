@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: causal-dmir
+Version: 0.0.1
+Summary: Causal-dmir Library: Causal Discovery Modeling, Identification and Reasoning
+Home-page: UNKNOWN
+Author: DMIRLab
+License: GPL
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+# Causal-dmir Library: Causal Discovery Modeling, Identification and Reasoning
+
+
+
