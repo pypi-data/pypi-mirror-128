@@ -1,0 +1,3 @@
+[console_scripts]
+aydin = aydin.cli.cli:cli
+
