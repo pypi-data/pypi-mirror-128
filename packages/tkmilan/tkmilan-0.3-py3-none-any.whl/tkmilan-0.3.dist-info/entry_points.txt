@@ -1,0 +1,3 @@
+[console_scripts]
+tkmilan-showcase = tkmilan.__main__:entrypoint
+
