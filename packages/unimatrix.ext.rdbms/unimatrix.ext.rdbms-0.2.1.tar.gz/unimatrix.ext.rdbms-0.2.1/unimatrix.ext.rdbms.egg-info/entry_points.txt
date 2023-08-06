@@ -1,0 +1,9 @@
+[pytest11]
+pytest-sqlalchemy = unimatrix.ext.rdbms.fixtures
+
+[unimatrix.runtime.cleanup]
+unimatrix.ext.rdbms = unimatrix.ext.rdbms:disconnect
+
+[unimatrix.runtime.init]
+unimatrix.ext.rdbms = unimatrix.ext.rdbms:connect
+
