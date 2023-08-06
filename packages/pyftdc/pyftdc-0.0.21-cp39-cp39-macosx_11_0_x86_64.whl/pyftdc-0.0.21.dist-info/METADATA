@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyftdc
+Version: 0.0.21
+Summary: A parser for MongoDB FTDC files, with Python bindings.
+Home-page: https://github.com/jorge-imperial/mongo_ftdc
+Author: Jorge Imperial
+Author-email: jorgeluis.imperial@gmail.com
+License: Apache v2
+Platform: UNKNOWN
+
+UNKNOWN
+
+
