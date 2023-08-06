@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fhir_faker.egg-info/PKG-INFO
+fhir_faker.egg-info/SOURCES.txt
+fhir_faker.egg-info/dependency_links.txt
+fhir_faker.egg-info/not-zip-safe
+fhir_faker.egg-info/requires.txt
+fhir_faker.egg-info/top_level.txt
+src/__init__.py
+src/fake.py
