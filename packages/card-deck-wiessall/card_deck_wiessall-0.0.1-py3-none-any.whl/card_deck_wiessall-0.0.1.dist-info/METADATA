@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: card-deck-wiessall
+Version: 0.0.1
+Summary: "Minimal example of nbdev"
+Home-page: https://github.com/wiessall/card_deck_wiessall/tree/{branch}/
+Author: Tristan Wiessalla
+Author-email: tristan.wiessalla@embl.it
+License: Apache Software License 2.0
+Keywords: "nbdev tutorial"
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pip
+Requires-Dist: packaging
+Provides-Extra: dev
+
+
+# card_deck
+> Example for nbdev.
+
+
+This file will become your README and also the index of your documentation.
+
+## Install
+
+`pip install card_deck_wiessall`
+
+## How to use
+
+Fill me in please! Don't forget code examples:
+
+```python
+1+1
+```
+
+
+
+
+    2
+
+
+
+```python
+notebook2script()
+```
+
+    Converted 00_card.ipynb.
+    Converted index.ipynb.
+
+
+
