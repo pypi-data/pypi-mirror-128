@@ -1,0 +1,8 @@
+mlserver_sklearn/__init__.py,sha256=YPCNWAkaW_ulG1JSGPJgJjNMxpbfyFlF9T4q1HCPtgo,62
+mlserver_sklearn/sklearn.py,sha256=WSrnbW88-A4LjRBhOY4w8jeO1sp3bSI7UHPbB429KUs,3748
+mlserver_sklearn/version.py,sha256=ZJ1XJEi2zefvijraZg6JBZXI4eUQwHhK4yU4pLQ_4X0,27
+mlserver_sklearn-0.6.0.dev4.dist-info/LICENSE,sha256=oFTxI2WrIw40oH8llz-MxofuGjTBZzOMhvmE7gGWhQg,11354
+mlserver_sklearn-0.6.0.dev4.dist-info/METADATA,sha256=hsb3TL5pOuTC2uDg3-Adbvvi9HGgD6yWrhDxyO584A0,754
+mlserver_sklearn-0.6.0.dev4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mlserver_sklearn-0.6.0.dev4.dist-info/top_level.txt,sha256=FdGL0U6gfNMAnJ1XzkRbspVBVI4lBbb4p3RNh6w4vDc,17
+mlserver_sklearn-0.6.0.dev4.dist-info/RECORD,,
