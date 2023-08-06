@@ -1,0 +1,106 @@
+{% load static %}
+<script>
+if (!window._djangoBalloonBlockEditorLoadedHooks) {
+  window._djangoBalloonBlockEditorLoadedHooks = [];
+}
+if (!window._hasLoadedDjangoBalloonBlockEditorScript) {
+  var script = document.createElement('script');
+  script.setAttribute('src', "{% static 'balloon_block_editor/ckeditor.js' %}");
+  document.body.appendChild(script);
+  window._hasLoadedDjangoBalloonBlockEditorScript = true;
+  script.addEventListener('load', function () {
+    for (var i = 0; i < window._djangoBalloonBlockEditorLoadedHooks.length; i += 1) {
+      window._djangoBalloonBlockEditorLoadedHooks[i]();
+    }
+  })
+}
+</script>
+
+<textarea id="id_{{ name }}" style="display:none" name="{{ name }}">{% if value %}{{ value | safe }}{% endif %}</textarea>
+<div class="balloon-block-editor" id="balloon-block-editor-{{ name }}">{% if value %}{{ value | safe }}{% endif %}</div>
+<script>
+(function () {
+  function init() {
+    var textarea = document.querySelector('#id_{{ name }}');
+    BalloonEditor
+      .create( document.querySelector( '#balloon-block-editor-{{ name }}' ), {
+        blockToolbar: [
+          'paragraph', 'heading',
+          '|',
+          'bulletedList', 'numberedList',
+          '|',
+          'blockQuote', 'imageUpload',
+          '|',
+          'codeBlock', 'code',
+        ],
+        simpleUpload: {
+          uploadUrl: '{% url "balloon-block-editor-image-upload" %}',
+        }
+      })
+      .then(function (editor) {
+        editor.model.document.on('change', function () {
+          textarea.value = editor.getData();
+        });
+      })
+      .catch( error => {
+          console.error( error );
+      } );
+  }
+  if (window._hasLoadedDjangoBalloonBlockEditor) {
+    init();
+  } else {
+    window._djangoBalloonBlockEditorLoadedHooks.push(init)
+  }
+})()
+
+</script>
+<style>
+form .balloon-block-editor {
+  border: 1px solid #eee !important;
+}
+
+form .balloon-block-editor h2, 
+form .balloon-block-editor h3,
+form .balloon-block-editor h4 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+  background: none;
+  color: black;
+  margin-top: 12px;
+}
+
+form .balloon-block-editor h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+form .balloon-block-editor h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+form .balloon-block-editor h4 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+form .balloon-block-editor ul {
+  margin-left: 15px;
+}
+
+form .balloon-block-editor ul li {
+  list-style-type: disc;
+}
+
+form .balloon-block-editor ol {
+  margin-left: 15px;
+  padding-left: 10px;
+}
+</style>
