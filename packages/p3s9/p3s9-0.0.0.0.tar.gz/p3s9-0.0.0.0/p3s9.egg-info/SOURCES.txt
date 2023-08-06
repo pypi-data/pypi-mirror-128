@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+p3s9/__init__.py
+p3s9/prism.cp36-win_amd64.pyd
+p3s9/prism.cp37-win_amd64.pyd
+p3s9/prism.cp38-win_amd64.pyd
+p3s9/prism.cp39-win_amd64.pyd
+p3s9/prism.cpython-36m-x86_64-linux-gnu.so
+p3s9/prism.cpython-37m-x86_64-linux-gnu.so
+p3s9/prism.cpython-38-x86_64-linux-gnu.so
+p3s9/prism.cpython-39-x86_64-linux-gnu.so
+p3s9.egg-info/PKG-INFO
+p3s9.egg-info/SOURCES.txt
+p3s9.egg-info/dependency_links.txt
+p3s9.egg-info/requires.txt
+p3s9.egg-info/top_level.txt
