@@ -1,0 +1,10 @@
+README.md
+fuo_bilibili.py
+setup.cfg
+setup.py
+fuo_bilibili.egg-info/PKG-INFO
+fuo_bilibili.egg-info/SOURCES.txt
+fuo_bilibili.egg-info/dependency_links.txt
+fuo_bilibili.egg-info/entry_points.txt
+fuo_bilibili.egg-info/requires.txt
+fuo_bilibili.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+feeluown>=3.7.13
+bilibili-api>=9.0.1
+aiohttp
