@@ -1,0 +1,3 @@
+[console_scripts]
+startapp = django_routine.start:start
+
