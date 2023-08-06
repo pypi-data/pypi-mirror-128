@@ -1,0 +1,8 @@
+[console_scripts]
+dicom_dump = imagedata.image_data:dump
+image_calculator = imagedata.image_data:calculator
+image_data = imagedata.image_data:conversion
+image_list = imagedata.image_data:image_list
+image_statistics = imagedata.image_data:statistics
+timeline = imagedata.image_data:timeline
+
