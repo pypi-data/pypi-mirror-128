@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+rosenbrock.egg-info/PKG-INFO
+rosenbrock.egg-info/SOURCES.txt
+rosenbrock.egg-info/dependency_links.txt
+rosenbrock.egg-info/requires.txt
+rosenbrock.egg-info/top_level.txt
