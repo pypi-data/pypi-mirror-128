@@ -1,0 +1,11 @@
+open_dread_rando/__init__.py,sha256=3KFfrf2UAR-g15r3n03VhyVBYmWYjnBjeooJCbk_UuQ,34
+open_dread_rando/__main__.py,sha256=KB6Be1WfWf2r2P_BBa-ihptn6hp0Q2YTyE9w8DEQ8_c,48
+open_dread_rando/cli.py,sha256=UHt_vpWYjdDMp_RU1cOOuCRUKMGaB0Z4Mn11aJWYNHU,1855
+open_dread_rando/dread_patcher.py,sha256=rozbj9VSJTERmxAu8ufR9GE5tIfx-A1EjakC-f616p0,2250
+open_dread_rando/schema.json,sha256=cHQHfyGFWOyBUyQfvOVVN6ZrZ8Z0y_jUpvI-EvEmEvs,636
+open_dread_rando/version.py,sha256=iUc0Cc6LYHHrvjApSgkSeJtuvu0KOplfl3wBbQg8D24,155
+open_dread_rando-0.1.dev9.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+open_dread_rando-0.1.dev9.dist-info/METADATA,sha256=kW88BeTS9K2B_nCxS5OmKv8IIGJ8IBEEdWe7H-JzKe8,859
+open_dread_rando-0.1.dev9.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+open_dread_rando-0.1.dev9.dist-info/top_level.txt,sha256=-H-KcVYaTKE513EfVFijHyo6TmDEwfsxRqaEzZTyHno,17
+open_dread_rando-0.1.dev9.dist-info/RECORD,,
