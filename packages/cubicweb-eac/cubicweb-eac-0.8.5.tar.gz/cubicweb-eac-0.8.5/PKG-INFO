@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cubicweb-eac
+Version: 0.8.5
+Summary: Implementation of Encoded Archival Context for CubicWeb
+Home-page: http://www.cubicweb.org/project/cubicweb-eac
+Author: LOGILAB S.A. (Paris, FRANCE)
+Author-email: contact@logilab.fr
+License: LGPL
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: CubicWeb
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: JavaScript
+
+Summary
+-------
+Implementation of Encoded Archival Context for CubicWeb
+
+
