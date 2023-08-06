@@ -1,0 +1,16 @@
+loafang/__init__.py,sha256=Gw5xZ58htsQz4T70dKRzFj_fgMck-iNrPW6DNOdh57U,46
+loafang/__main__.py,sha256=fdA1QWBe5LNX0fbtaJXa1-dwEhrg_4sS_5UnjaajcMo,80
+loafang/_const.py,sha256=iA38TJ5ajzKq_bfdZcg8ytXCwttpHqxYKZWFci_WErM,772
+loafang/_dataclasses.py,sha256=qSHIc0VqK8Ql4qORpoKTZ9tcgP9qpBipHe57OyHQ_FI,1166
+loafang/_parsers.py,sha256=-PFPmUhg_AVCBbceSeHsxX8Nc6VmAJCv682mjqC49P0,4884
+loafang/main.py,sha256=yEYxGUKOVoPzlrRHXQh-pRuAF7wGbOoDTB_guWo9Mnc,239
+loafang/methods.py,sha256=dWB3AJEdQbJnsDq-hkvZIpelXY9-B-mosP5XjkomZGk,1320
+loafang/parser.py,sha256=CslYwzTmLU0NZK2cEqfnlWYcSmZAqb2SGxnoUytFPaQ,3078
+loafang/query.py,sha256=jNwvqcsyvtpMTiUt9VWNCkGRuxGZT0nhOL1PRiYvY_c,726
+loafang/utils.py,sha256=oJp8zHa1xDPhe5cmFJUHGBh3qzEWwOzXkvAlqKeXilU,102
+loafang-0.1.0.dist-info/LICENSE,sha256=PuKjwk_qBmeHkvhdkiRn6F06EmZTawU0QqUfqQMOke4,1071
+loafang-0.1.0.dist-info/METADATA,sha256=GTFGmiPIjmumaJPVX5I3WqZSuvT-p8bd780r3-bNXnc,2042
+loafang-0.1.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+loafang-0.1.0.dist-info/entry_points.txt,sha256=rQgIIBBCYqSHSdqU8hNauvP3td-K6tvuEGD7ZSTwBYo,47
+loafang-0.1.0.dist-info/top_level.txt,sha256=AEAIuFZgT82YIGI7_G_pKU-82Nx4cH81TH2Ck-oykEU,8
+loafang-0.1.0.dist-info/RECORD,,
