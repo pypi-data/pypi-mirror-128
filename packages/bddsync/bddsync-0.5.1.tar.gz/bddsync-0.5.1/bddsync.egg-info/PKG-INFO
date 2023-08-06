@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: bddsync
+Version: 0.5.1
+Summary: Tools to synchronize BDD files with test management tools like Jira-Xray
+Home-page: https://github.com/Manzanero/bddsync
+Author: Alejandro Manzanero
+Author-email: alejmans@gmail.com
+License: MIT
+Download-URL: https://github.com/Manzanero/bddsync/archive/refs/tags/v0.5.1.tar.gz
+Keywords: cucumber,behave,jira,xray,testing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bddsync
+Tools to synchronize BDD files with test management tools like Jira-Xray
+
+
