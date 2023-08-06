@@ -1,0 +1,6 @@
+coloredlogs
+ecdsa
+pygments
+requests_futures
+shtab
+websockets
