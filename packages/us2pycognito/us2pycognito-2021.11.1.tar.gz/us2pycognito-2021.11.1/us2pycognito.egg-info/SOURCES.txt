@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pycognito/__init__.py
+pycognito/aws_srp.py
+pycognito/exceptions.py
+us2pycognito.egg-info/PKG-INFO
+us2pycognito.egg-info/SOURCES.txt
+us2pycognito.egg-info/dependency_links.txt
+us2pycognito.egg-info/requires.txt
+us2pycognito.egg-info/top_level.txt
+us2pycognito.egg-info/zip-safe
