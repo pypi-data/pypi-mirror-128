@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ikcms
+Version: 0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: mysql
+Provides-Extra: aiomysql
+Provides-Extra: aiopg
+Provides-Extra: memcache
+Provides-Extra: aiomcache
+Provides-Extra: redis
+Provides-Extra: aioredis
+
+UNKNOWN
+
