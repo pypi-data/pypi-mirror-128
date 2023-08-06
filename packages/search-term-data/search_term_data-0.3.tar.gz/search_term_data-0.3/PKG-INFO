@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: search_term_data
+Version: 0.3
+Summary: Python deamon that monitors a directory for new csv files.
+Home-page: https://github.com/DVHKAB00122/coding-challenge
+Author: Kabelo Davhana
+Author-email: eugene.davhana@gmail.com
+License: MIT
+Download-URL: https://github.com/DVHKAB00122/coding-challenge/archive/refs/tags/v_03.tar.gz
+Description: UNKNOWN
+Keywords: Monitors,daemon,csv
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
