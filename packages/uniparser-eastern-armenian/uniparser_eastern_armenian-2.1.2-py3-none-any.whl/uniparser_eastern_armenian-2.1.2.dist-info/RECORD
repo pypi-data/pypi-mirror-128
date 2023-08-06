@@ -1,0 +1,12 @@
+uniparser_eastern_armenian/__init__.py,sha256=b2c3S24VQHYZ2Wwa9nmRsr7gOXKus56V2w4c3_XVBOQ,2119
+uniparser_eastern_armenian/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniparser_eastern_armenian/data/armenian_disambiguation.cg3,sha256=wnAVoedxC4bEosQk6dRzKfT2T5SPGAUIC622kMmd1Hg,1750
+uniparser_eastern_armenian/data/bad_analyses.txt,sha256=QEJIbq0KFtx6-991Gs1jF1jk2HGYPYaWf_IUfbazDac,5
+uniparser_eastern_armenian/data/lex_rules.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniparser_eastern_armenian/data/lexemes.txt,sha256=jlUK5YdCyOCbDGAc28OPhTFj1-furaHGIR6O9wXlJ4E,11998206
+uniparser_eastern_armenian/data/paradigms.txt,sha256=ZFOyuaFFoC__yVC8lrNpkdY-oQu4De54afiBHyS3WjY,82994
+uniparser_eastern_armenian-2.1.2.dist-info/LICENSE,sha256=BNgqtjd1-v1Lsy_K6yCWQzLmQtBFsQ07p8B-FsTh9Sc,1169
+uniparser_eastern_armenian-2.1.2.dist-info/METADATA,sha256=CF69qMYFQ1q6yCf7EEI0HI8_6W2iAocSUaa7691j81Q,5190
+uniparser_eastern_armenian-2.1.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+uniparser_eastern_armenian-2.1.2.dist-info/top_level.txt,sha256=NLi9_WXGc_5vunxT-Oh7nW57a49NKvTSsl5-_A9ZLso,27
+uniparser_eastern_armenian-2.1.2.dist-info/RECORD,,
