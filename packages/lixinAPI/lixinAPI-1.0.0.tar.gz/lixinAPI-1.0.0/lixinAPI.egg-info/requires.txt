@@ -1,0 +1,5 @@
+pandas
+pymssql==2.1.4
+SQLAlchemy
+pycryptodome
+requests
