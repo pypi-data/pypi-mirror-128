@@ -1,0 +1,11 @@
+perceiver_io/__init__.py,sha256=hvpDyulBL7WpQlNiJ2p1FMC29fsFlCeSO9Cr-b6q2i8,262
+perceiver_io/attention.py,sha256=xtNwXD_Z5hIgaFjZAMc_fKNyiI_2PRFZmLMgxfNVNxs,8558
+perceiver_io/decoders.py,sha256=AzjFDTfudVV6JQV_r60uH8uK3QxwfU1_bDO6gD4XYcs,3414
+perceiver_io/encoder.py,sha256=3T25NSRQcIZ_DC1RjmU4ZrqYULquDzBnOuoivrUuL1A,4244
+perceiver_io/perceiver.py,sha256=uCfwJtRmkBW03PnhFrtAsmv7kPNQ7bGuiCqIZZ4Gtq8,1492
+perceiver_io/positional_encoding.py,sha256=12KMFoNG_Mr9mA9GWoAzF2RLk3HTcbanoMuexz1Gg2E,1715
+perceiver_io_pytorch-0.1.4.dist-info/LICENSE,sha256=49FQ38Uql6BPf11UBqni15vksoRAtzmmxTISUuYqUu4,1069
+perceiver_io_pytorch-0.1.4.dist-info/METADATA,sha256=xr4iMaTtLbL90GsN_ePF7I5RJPDO_CnRDACVSAd1FsE,347
+perceiver_io_pytorch-0.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+perceiver_io_pytorch-0.1.4.dist-info/top_level.txt,sha256=f4xgA-EtiTTTUVSQ-mxY1YLdc4dWCLzs1aLsV-ce57I,13
+perceiver_io_pytorch-0.1.4.dist-info/RECORD,,
