@@ -1,0 +1,7 @@
+LICENSE
+MANIFEST.in
+setup.py
+polyaxon_sandbox.egg-info/PKG-INFO
+polyaxon_sandbox.egg-info/SOURCES.txt
+polyaxon_sandbox.egg-info/dependency_links.txt
+polyaxon_sandbox.egg-info/top_level.txt
