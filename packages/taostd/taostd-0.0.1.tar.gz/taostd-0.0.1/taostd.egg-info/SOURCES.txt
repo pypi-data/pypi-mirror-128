@@ -1,0 +1,15 @@
+README.md
+README.rst
+setup.py
+taostd/__init__.py
+taostd/bind.py
+taostd/cache.py
+taostd/model.py
+taostd/sql.py
+taostd/td.py
+taostd.egg-info/PKG-INFO
+taostd.egg-info/SOURCES.txt
+taostd.egg-info/dependency_links.txt
+taostd.egg-info/not-zip-safe
+taostd.egg-info/requires.txt
+taostd.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: taostd
+Version: 0.0.1
+Summary: taostd is a simple sql executor for TDengine.
+Home-page: https://github.com/nzhzds/taostd
+Author: sunny
+Author-email: xiazhongbiao@126.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: sql,taos,TDengine,Time Series Database,python
+Platform: UNKNOWN
+Requires-Python: >=3.6.10
+Description-Content-Type: text/markdown
