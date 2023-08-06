@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools >= 35.0.2", "wheel >= 0.29.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+     "ignore:'contextfunction' is renamed to 'pass_context',*:DeprecationWarning",
+     "ignore:'environmentfilter' is renamed to 'pass_environment',*:DeprecationWarning"
+]
+
+[tool.towncrier]
+filename = "CHANGES.rst"
+directory = "changes/"
+title_format = "v{version} - {project_date}"
+issue_format = "`#{issue} <https://github.com/swyddfa/esbonio/issues/{issue}>`_"
+underlines = ["-", "^", "\""]
+
+[[tool.towncrier.type]]
+     directory = "feature"
+     name = "Features"
+     showcontent = true
+
+[[tool.towncrier.type]]
+     directory = "fix"
+     name = "Fixes"
+     showcontent = true
+
+[[tool.towncrier.type]]
+     directory = "doc"
+     name = "Docs"
+     showcontent = true
+
+[[tool.towncrier.type]]
+     directory = "breaking"
+     name = "Breaking Changes"
+     showcontent = true
+
+[[tool.towncrier.type]]
+     directory = "deprecated"
+     name = "Deprecated"
+     showcontent = true
+
+[[tool.towncrier.type]]
+     directory = "misc"
+     name = "Misc"
+     showcontent = true
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = True
+skip_missing_interpreters = true
+envlist = py{36,37,38,39}-sphinx{2,3,4}, py310-sphinx{2,4}
+
+[testenv]
+deps =
+    sphinx2: sphinx>=2,<3
+    sphinx2: docutils<0.18
+    sphinx3: sphinx>=3,<4
+    sphinx4: sphinx>=4,<5
+    pytest
+    pytest-asyncio
+    pytest-cov
+    pytest-timeout
+commands =
+    pytest --tb=short --cov=esbonio.lsp {posargs}
+
+[testenv:pkg]
+deps =
+    wheel
+usedevelop = True
+commands =
+    python setup.py clean --all
+    python setup.py sdist bdist_wheel
+"""
