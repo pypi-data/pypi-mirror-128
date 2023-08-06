@@ -1,0 +1,11 @@
+numpy<2
+
+[docs]
+sphinx<5,>=3
+sphinx-copybutton<1
+myst-parser<1
+furo
+
+[tests]
+pytest
+coverage[toml]
