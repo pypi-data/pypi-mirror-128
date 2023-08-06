@@ -1,0 +1,27 @@
+.vscode/
+
+# compiled Python files
+*.egg-info/
+__pycache__/
+*.pyc
+dist/
+build/
+
+# coverage files
+htmlcov/
+.coverage
+coverage.xml
+
+# compiled documentation
+README.rst
+docs/objects.inv
+docs/.buildinfo
+docs/.doctrees/
+docs/_raw_sources/
+docs/_sources/
+
+# compiled model files
+tests/fixtures/*.mod
+tests/fixtures/*.hoc
+tests/fixtures/tmp*
+tests/fixtures/x86_64/

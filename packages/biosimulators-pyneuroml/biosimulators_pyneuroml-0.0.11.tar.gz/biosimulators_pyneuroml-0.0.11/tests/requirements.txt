@@ -1,0 +1,4 @@
+biosimulators_utils[containers]
+numpy
+parameterized
+python_dateutil
