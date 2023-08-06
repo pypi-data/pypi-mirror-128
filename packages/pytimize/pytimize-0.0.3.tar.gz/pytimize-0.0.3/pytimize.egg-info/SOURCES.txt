@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pytimize/__init__.py
+pytimize.egg-info/PKG-INFO
+pytimize.egg-info/SOURCES.txt
+pytimize.egg-info/dependency_links.txt
+pytimize.egg-info/not-zip-safe
+pytimize.egg-info/requires.txt
+pytimize.egg-info/top_level.txt
