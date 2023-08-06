@@ -1,0 +1,144 @@
+body {
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: right;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url(../fonts/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff);
+}
+
+* {
+    text-align: right;
+    font-family: Vazir, cursive;
+}
+
+.navbar-nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-right: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-right: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.float-right {
+    float: left !important;
+}
+
+.djn-checkbox-select-all {
+    padding-right: 24px !important;
+    width: 0;
+}
+
+.card-title {
+    float: right;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+.main-sidebar, .main-sidebar::before {
+    transition: margin-right .3s ease-in-out, width .3s ease-in-out;
+    width: 250px;
+}
+
+@media (min-width: 768px) {
+    body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header {
+        transition: margin-right .3s ease-in-out;
+        margin-right: 250px;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar::before {
+        margin-right: 0;
+        width: 4.6rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
+        margin-right: 4.6rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .sidebar-mini.sidebar-collapse .main-sidebar {
+        box-shadow: none !important;
+    }
+}
+
+.sidebar-collapse .main-sidebar, .sidebar-collapse .main-sidebar::before {
+    margin-right: -250px;
+}
+
+@media (max-width: 991.98px) {
+    body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header {
+        margin-right: 0;
+    }
+}
+
+.float-sm-right {
+    float: left !important;
+}
+
+.timeline-item {
+    word-break: inherit !important;
+}
+
+#jazzy-sidebar svg {
+    overflow: hidden !important;
+    vertical-align: baseline !important;
+}
+
+.control {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    #log-index {
+        margin-top: -80px
+    }
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+     text-align: right;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}

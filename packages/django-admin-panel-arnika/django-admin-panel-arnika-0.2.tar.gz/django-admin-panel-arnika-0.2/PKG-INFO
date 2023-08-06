@@ -1,0 +1,68 @@
+Metadata-Version: 1.2
+Name: django-admin-panel-arnika
+Version: 0.2
+Summary: A Django app for django admin.
+Home-page: https://github.com/navaiy/admin-panel
+Author: mohamad
+Author-email: navaiy38@gmail.com
+License: MIT License
+Description: django-admin-panel-arnika est un modèle pour Django Manager
+        
+        This admin panel has been edited by jazzmin and works only for the right languages
+        
+        
+        Quick start
+        -----------
+        
+        1. Add to terminal:
+        
+        .. code-block:: bash
+        
+           pip install django-admin-panel-arnika
+        
+        2. Add jazzmin to the first list before admin app:
+        
+        .. code-block:: bash
+        
+            INSTALLED_APPS = [
+                'jazzmin',
+        
+            ]
+        
+        3. change in settings.py:
+        
+        .. code-block:: bash
+        
+           LANGUAGE_CODE = 'fa-ir'
+        
+        4. add to urls.py:
+        
+        .. code-block:: python
+        
+           from django.urls import include
+           from jazzmin.view import register
+           urlpatterns = [
+               path("i18n/", include("django.conf.urls.i18n")),
+               path("", include("django.contrib.auth.urls")),
+               path('register', register, name='register'), ]
+           ]
+        
+        
+        5.run to server
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6

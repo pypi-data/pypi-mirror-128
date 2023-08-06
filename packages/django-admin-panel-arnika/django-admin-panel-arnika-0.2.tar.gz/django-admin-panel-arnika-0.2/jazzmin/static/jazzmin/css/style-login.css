@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+@font-face {
+    font-family: Vazir;
+    src: url(../fonts/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-family: Vazir;
+}
+
+body {
+    /*background: linear-gradient(180deg, #ffffff, #776BCC);*/
+    background-image: url("../img/image-from-rawpixel-id-936986-jpeg (1).jpg");
+    background-size: cover;
+    font-family: Vazir, serif;
+
+}
+
+@media (max-width: 576px) {
+    #form-l {
+        margin-top: 100px !important;
+    }
+}
+
+.mask {
+
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: #2125297a;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    overflow: auto;
+}
+
+
+.border-login {
+
+    border-bottom-left-radius: 4rem !important;
+    border-top-right-radius: 4rem !important;
+    opacity: 0.7
+}
+
+.bg-gradient {
+    transform: scaleX(1.4);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 350px;
+    /*    background: linear-gradient(*/
+    /*            87deg, #5e72e4 0, #825ee4 100%) !important;*/
+    /*    background-color:#825ee4*/
+    /*}*/
+}
+
