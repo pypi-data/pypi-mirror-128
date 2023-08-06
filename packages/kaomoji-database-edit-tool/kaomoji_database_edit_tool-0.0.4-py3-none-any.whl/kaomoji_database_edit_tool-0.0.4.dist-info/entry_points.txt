@@ -1,0 +1,3 @@
+[console_scripts]
+kaomojitool = kaomojitool.__main__:cli
+
