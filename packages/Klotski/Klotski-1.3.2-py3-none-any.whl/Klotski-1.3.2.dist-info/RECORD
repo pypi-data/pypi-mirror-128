@@ -1,0 +1,17 @@
+klotski/README.md,sha256=z1MS4vQI6wZJQfD4NV-ZKBVdz2EPg0f43H4bVjlvjjE,2871
+klotski/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+klotski/__main__.py,sha256=Eegd-vnaApK0TKaimKi618KGKphHIE3hR03y85hkIxs,69
+klotski/boards.kts,sha256=M7F5Fo7oNM6xtexhYOa5MaweHU8lZk-FG1giPhYXgV0,6027
+klotski/kl_board.py,sha256=sbPIbQy3A7UnyaI0UOOuEuVyPtYbLYRvtndmMuIvfVk,13903
+klotski/kl_board_chooser.py,sha256=wnVdbEtl3jqzKZJ94Hq5YO-EhoeSTVpiw0MOuVAPB6c,2037
+klotski/kl_enum.py,sha256=FMPIad3oy29tpXCnF4eRC7vQls7hKCcRDN4RjL6HBeo,2599
+klotski/kl_map.py,sha256=T31jL7HFxEQSfLpNb7ozOMDkqpd9FtQzgw-IViFljMw,10998
+klotski/klotski-icon.png,sha256=eBb9m_w091p8I-lZNLTGULkfU19FPdNuMVwSB8q2T0I,763
+klotski/klotski-tiles.png,sha256=RMxTNm2AchOk-is1WGmxnIxdqI5yZm1v4AQI5ZU-x7U,4125
+klotski/klotski.py,sha256=gNz3Xj1we6Sc8Ihx5YadaJr1Ums-v1QBJmiPIyhHVPA,9623
+Klotski-1.3.2.dist-info/LICENSE.txt,sha256=t-w97hAt7JZc2gkKKkyX3zRFWv9DHSrw1IKv3gRYdu4,15411
+Klotski-1.3.2.dist-info/METADATA,sha256=vDmPjZyyXW9nOGJEMbRGi1HNTou2Prr8ZrSAdTNk1Rc,3873
+Klotski-1.3.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+Klotski-1.3.2.dist-info/entry_points.txt,sha256=pQl7oueO01c8QRB1fwrBuWuMhocA833mLW8G-SXO0Y8,46
+Klotski-1.3.2.dist-info/top_level.txt,sha256=WmBhOi7wsm0uke263cQT6AbcxiYcgR8BXCKkhxxavTI,8
+Klotski-1.3.2.dist-info/RECORD,,
