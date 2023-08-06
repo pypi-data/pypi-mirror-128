@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "reactant"
+version = "0.6.0"
+description = "Generate code for models, views, and urls based on Python type annotations."
+authors = ["Neil Van <nvq.alino@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Jinja2 = "^3.0.1"
+pydantic = "^1.8.2"
+black = "^21.8b0"
+click = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+mypy = "^0.910"
+Django = "^3.2.7"
+isort = "^5.9.3"
+peewee = "^3.14.4"
+SQLAlchemy = "^1.4.26"
+autoflake = "^1.4"
+flake8 = "^4.0.1"
+bandit = "^1.7.0"
+safety = "^1.10.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+reactant  = "reactant.run:runner"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
