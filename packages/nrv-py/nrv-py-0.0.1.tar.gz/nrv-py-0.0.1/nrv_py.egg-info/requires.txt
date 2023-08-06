@@ -1,0 +1,8 @@
+mph
+numpy
+scipy
+neuron
+matplotlib
+numba
+ezdxf
+icecream

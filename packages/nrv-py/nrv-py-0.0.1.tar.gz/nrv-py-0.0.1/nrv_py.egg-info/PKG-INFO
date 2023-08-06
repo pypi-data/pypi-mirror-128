@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nrv-py
+Version: 0.0.1
+Summary: NeuRon Virtualizer
+Home-page: https://github.com/fkolbl/NRV
+Author: Florian Kolbl - Roland Giraud - Louis Regnacq - Thomas Couppey
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+file: README.md
+
