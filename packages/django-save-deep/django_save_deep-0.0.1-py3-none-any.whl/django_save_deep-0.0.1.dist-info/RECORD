@@ -1,0 +1,9 @@
+safe/__init__.py,sha256=lwPMtDuKH62K_Ad6rzOF8jHU5e7krhcdhfCU8Cai-AE,26
+safe/safe.py,sha256=bhMKbxC_FICRDhDfbr5QMI9V7-PuW16Awpear-z1fS8,106
+save_deep/__init__.py,sha256=Yc1_G0aJEfNRwCgTUUAUqau6efDgnvDvXxSvWGjvdiA,41
+save_deep/save_deep.py,sha256=ZvCu4w8ESQY8iXkvKiDvGJ-SEUv7eqKYcMbg0hUk7vk,687
+django_save_deep-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_save_deep-0.0.1.dist-info/METADATA,sha256=a0sobtwkCYHd3qjyiPva9ybs3YWz7xc4dFB8llZPUNU,1756
+django_save_deep-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_save_deep-0.0.1.dist-info/top_level.txt,sha256=mLdRvUuoDRNe8QFo2dfeakC23FodS_IyfinL_KL_Vsc,10
+django_save_deep-0.0.1.dist-info/RECORD,,
