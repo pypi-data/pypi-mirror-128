@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: interfacepact
+Version: 0.35
+Summary: interface pact verify
+Home-page: https://github.com/crazymonkey/PactVerify_demo
+Author: jaygeli
+Author-email: 348447053@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+interface pact
+
