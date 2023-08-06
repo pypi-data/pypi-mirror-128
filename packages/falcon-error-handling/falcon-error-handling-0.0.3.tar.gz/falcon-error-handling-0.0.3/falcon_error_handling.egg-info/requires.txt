@@ -1,0 +1,6 @@
+marshmallow==3.13.0
+pyparsing==2.4.7
+typing-extensions==3.10.0.2
+falcon==3.0.1
+falcon-jsonify==1.2
+ptyprocess==0.7.0
