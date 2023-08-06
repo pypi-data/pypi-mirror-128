@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: crowdstrike-client
+Version: 0.0.4
+Summary: A Non-oficial crowdstrike client API
+Home-page: https://github.com/pyperanger/crowdstrike-client
+Author: Pyperanger
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pyperanger/crowdstrike-client/issues
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
