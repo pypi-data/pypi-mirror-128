@@ -1,0 +1,14 @@
+setup.py
+Scrapy_kk_Plus.egg-info/PKG-INFO
+Scrapy_kk_Plus.egg-info/SOURCES.txt
+Scrapy_kk_Plus.egg-info/dependency_links.txt
+Scrapy_kk_Plus.egg-info/requires.txt
+Scrapy_kk_Plus.egg-info/top_level.txt
+scrapy_kk_plus/__init__.py
+scrapy_kk_plus/__version__.py
+scrapy_kk_plus/bloomfilter.py
+scrapy_kk_plus/defaults.py
+scrapy_kk_plus/dupefilter.py
+scrapy_kk_plus/middlewares.py
+scrapy_kk_plus/pipelines.py
+scrapy_kk_plus/scheduler.py
