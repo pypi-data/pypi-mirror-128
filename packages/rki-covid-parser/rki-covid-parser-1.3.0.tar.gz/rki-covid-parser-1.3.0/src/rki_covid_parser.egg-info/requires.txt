@@ -1,0 +1,13 @@
+aiohttp>=3.5.2
+
+[all]
+pytest>=6.2.2
+pytest-asyncio
+pytest-aiohttp
+pytest-cov
+
+[test]
+pytest>=6.2.2
+pytest-asyncio
+pytest-aiohttp
+pytest-cov
