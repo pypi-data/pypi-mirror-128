@@ -1,0 +1,49 @@
+QTabWidget::pane {
+    border: 1px solid #444;
+}
+
+QWidget {
+    background-color: #fff;
+}
+
+QPushButton {
+    color: #494949 !important;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 5%;
+    border: 2px solid #494949 !important;
+}
+
+QPushButton:hover:!pressed {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+}
+
+QComboBox {
+    color: #494949 !important;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 5%;
+    border: 2px solid #494949 !important;
+}
+
+QComboBox:hover:!pressed {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+}
+
+QComboBox:open {
+    color: #ffffff !important;
+    background: #494949;
+    border-color: #f6b93b !important;
+}
+
+QRadioButton{
+	font:bold;
+}
+
+QRadioButton::indicator{
+	color:#f6b93b;
+}
