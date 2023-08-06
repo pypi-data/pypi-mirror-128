@@ -1,0 +1,9 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+pytz-stubs/METADATA.toml
+pytz-stubs/__init__.pyi
+types_pytz.egg-info/PKG-INFO
+types_pytz.egg-info/SOURCES.txt
+types_pytz.egg-info/dependency_links.txt
+types_pytz.egg-info/top_level.txt
