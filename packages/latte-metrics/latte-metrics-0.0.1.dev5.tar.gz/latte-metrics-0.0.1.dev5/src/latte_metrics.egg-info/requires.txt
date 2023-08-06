@@ -1,0 +1,14 @@
+numpy>=1.18
+scikit-learn>=1.0
+
+[keras]
+tensorflow
+
+[pytorch]
+torch
+torchmetrics
+
+[tests]
+pytest
+pytest-cov
+pytest-xdist
