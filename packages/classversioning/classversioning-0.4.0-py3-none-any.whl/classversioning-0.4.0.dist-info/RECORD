@@ -1,0 +1,17 @@
+classversioning/__header__.py,sha256=3ay_kKPzPvBH8wghvId_ddAaFC3HXBOseqtFUjtfYAA,530
+classversioning/__init__.py,sha256=mekV8L8pxF79KuaMaDyCL-Ay1pTNTRZkXiEKt4Girmc,1190
+classversioning/meta/__init__.py,sha256=SG8snsoDt7BI3uZGDWTr1dohWnVnFVfsy7iyi0511lM,427
+classversioning/meta/cachingversionedinitmeta.py,sha256=g9c83SKXDntcchVAweI4v9Rl6oNN1XhnJk3DJBesVBQ,593
+classversioning/meta/versionedinitmeta.py,sha256=bLA3vQflI2FhOBzt4i9DUDdEsulDXqX8URY5tjK6GOw,557
+classversioning/meta/versionedmeta.py,sha256=hDcjcCiBvOjoOF8N5CUeDr6FaCHy-rnXtlTeXkSucRA,7089
+classversioning/version.py,sha256=Nh0VEwn4Z0hRFM0p_XE-Ga4O5MAFYAlNVez9WHRqJTs,7698
+classversioning/versionedclass.py,sha256=gWp8625pS2iGH9cB_E2R4y17ozY0BjvSR5PSbev56So,3616
+classversioning/versionregistry.py,sha256=WOGI-plXYAs0STEeaelE2BN8_dEK7ZvelaePZkg_X0M,3623
+classversioning/versions/__init__.py,sha256=utIAl8SmMAaE0I_SDAWxpAsIC5fIKGQOQUdb6JFczxg,344
+classversioning/versions/trinumberversion.py,sha256=Lb1WT0IjqKJ5GtBkE9FZ2lmMMZ5JlV1lwiEO8gXHIDU,9115
+classversioning/versiontype.py,sha256=KfaiFbY-xdcqncMVsWdGjB68u29ExjXPU-wfUoQ2rp8,2942
+classversioning-0.4.0.dist-info/entry_points.txt,sha256=cDESWF9106fGdiD3KxQ1rR60KZNi3Tr6esiVYYJDqMk,65
+classversioning-0.4.0.dist-info/LICENSE.rst,sha256=WNS5lU35RgkS6WBvroY3OraIvMXKuAnZUv1oPmNGftc,1084
+classversioning-0.4.0.dist-info/WHEEL,sha256=FMw6u7Kp3jrdDDtJRZ3hkPV-9adLQT8pbM4iifKUGfw,85
+classversioning-0.4.0.dist-info/METADATA,sha256=eurEONLx3r6GuCiHkj6TjhJaSUwGg7WUxkrGbgo6ZSs,3851
+classversioning-0.4.0.dist-info/RECORD,,
