@@ -1,0 +1,29 @@
+from elementalcms.persistence.repositories import GlobalDepsRepository, PagesRepository, DraftsRepository
+from elementalcms.services import UseCaseResult, NoResult, Success
+from elementalcms.core import MongoDbContext
+
+
+class GetMe:
+    __db_context: MongoDbContext
+
+    def __init__(self, db_context: MongoDbContext):
+        self.__db_context = db_context
+
+    def execute(self, name, language, draft=False, add_global_deps=True) -> UseCaseResult:
+        if draft:
+            repo = DraftsRepository(self.__db_context)
+        else:
+            repo = PagesRepository(self.__db_context)
+        page = 0
+        page_size = 100
+        result = repo.find({'name': name, 'language': language}, page, page_size)
+        if result['total'] == 0:
+            return NoResult()
+        page = result['items'][0]
+        if add_global_deps:
+            global_deps = GlobalDepsRepository(self.__db_context).find()
+            css_deps = [d for d in global_deps if d['type'] == 'text/css']
+            page['cssDeps'] = css_deps + page['cssDeps']
+            js_deps = [d for d in global_deps if d['type'] == 'application/javascript']
+            page['jsDeps'] = js_deps + page['jsDeps']
+        return Success(page)
