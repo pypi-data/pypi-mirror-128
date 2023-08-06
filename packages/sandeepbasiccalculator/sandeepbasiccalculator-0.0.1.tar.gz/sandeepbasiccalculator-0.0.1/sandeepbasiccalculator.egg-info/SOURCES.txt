@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+sandeepbasiccalculator/__init__.py
+sandeepbasiccalculator.egg-info/PKG-INFO
+sandeepbasiccalculator.egg-info/SOURCES.txt
+sandeepbasiccalculator.egg-info/dependency_links.txt
+sandeepbasiccalculator.egg-info/top_level.txt
