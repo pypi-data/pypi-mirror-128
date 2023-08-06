@@ -1,0 +1,182 @@
+#------------------------------------------------------------------------------
+# Description    : Gitlab CI pipeline file
+# Git repository : https://gitlab.com/qblox/packages/software/qblox_instruments.git
+# Copyright (C) Qblox BV (2020)
+#------------------------------------------------------------------------------
+
+
+#-- Runners -------------------------------------------------------------------
+
+#Official Python language image. Look for the different tagged releases at https://hub.docker.com/r/library/python/tags/
+image: python:3.8
+
+#Windows runner (https://about.gitlab.com/blog/2020/01/21/windows-shared-runner-beta/)
+.shared_windows_runners:
+    tags:
+    - shared-windows
+    - windows
+    - windows-1809
+
+
+#-- Configuration -------------------------------------------------------------
+
+#Change pip's cache directory to be inside the project directory since we can only cache local items.
+variables:
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+    GIT_SUBMODULE_STRATEGY: recursive
+
+#Pip's cache doesn't store the python packages (https://pip.pypa.io/en/stable/reference/pip_install/#caching)
+#If you want to also cache the installed packages, you have to install them in a virtualenv and cache it as well.
+cache:
+    paths:
+        - .cache/pip
+        - venv/
+
+#Global before script
+before_script:
+    - python -V  # Print out python version for debugging
+    - pip install virtualenv
+    - virtualenv venv
+    - source venv/bin/activate
+    - apt update
+    - sleep 3
+
+#Pipeline stages
+stages:
+    - Installation
+    - Static Analysis
+    - Testing
+    - Building
+    - Staging
+    - Deployment
+
+
+#-- Installation stage --------------------------------------------------------
+
+#Linux installation
+install_lin:
+    stage: Installation
+    script:
+        - pip install -e .[dev] --upgrade --upgrade-strategy eager
+
+#Windows installation
+install_win:
+    stage: Installation
+    extends:
+        - .shared_windows_runners
+        - install_lin
+    before_script:
+        - choco install python --version=3.8.7 -y -f
+        - $env:PATH+=";C:\Python38;C:\Python38\Scripts"
+        - python -V
+        - python -m pip install -U pip
+    only:
+        - master
+        - development
+
+
+#-- Static analysis stage -----------------------------------------------------
+
+#Linting check on Linux
+pylint:
+    stage: Static Analysis
+    script:
+        - mkdir pylint
+        - pylint --rcfile .pylint_rc qblox_instruments/ ieee488_2/ pulsar_qcm/ pulsar_qrm/ spi_rack/ tests/ | tee pylint/pylint.log || pylint-exit -efail $?
+        - PYLINT_SCORE=$(sed -n 's/^Your code has been rated at \([-0-9.]*\)\/.*/\1/p' pylint/pylint.log)
+        - anybadge --label=Pylint --file=pylint/pylint.svg --value=$PYLINT_SCORE/10 2=red 4=orange 6=yellow 8=green
+    artifacts:
+        paths:
+            - pylint
+
+
+#-- Testing stage -------------------------------------------------------------
+
+#Pytest on Linux
+pytest_lin:
+    stage: Testing
+    script:
+        - python -m pytest -s --color=yes --junitxml=report.xml --cov-report html --cov-report term --cov=qblox_instruments/ --cov=ieee488_2/ --cov=pulsar_qcm/ --cov=pulsar_qrm/ --cov=spi_rack/
+    artifacts:
+        paths:
+            - htmlcov
+            - report.xml
+        reports:
+            junit: report.xml
+
+#Pytest on Windows
+pytest_win:
+    stage: Testing
+    extends:
+        - .shared_windows_runners
+        - pytest_lin
+    before_script:
+        - choco install python --version=3.8.7 -y -f
+        - $env:PATH+=";C:\Python38;C:\Python38\Scripts"
+        - python -V
+        - python -m pip install -U pip
+        - pip install -e .[dev] --upgrade --upgrade-strategy eager
+    only:
+        - master
+        - development
+
+
+#-- Building stage -------------------------------------------------------------
+
+#Build ReadTheDocs on Linux
+docs:
+    stage: Building
+    script:
+        - apt install -y pandoc # Required for nbsphinx plugin
+        - cd docs; make html
+        - mv _build/html/ ../public/
+    artifacts:
+        paths:
+            - public
+
+#Build package on Linux
+dist:
+    stage: Building
+    script:
+        - python setup.py sdist
+        - twine check dist/*
+        - pip install dist/*
+    artifacts:
+        paths:
+            - dist/*
+
+
+#-- Staging stage -------------------------------------------------------------
+
+#Deploy to Test PyPI on Linux
+test_pypi:
+    stage: Staging
+    dependencies:
+        - dist
+    environment:
+        name: Test PyPI
+        url: https://test.pypi.org/project/qblox-instruments/
+    script:
+        - twine upload -r testpypi -u $TEST_PYPI_USERNAME -p $TEST_PYPI_PASSWORD dist/*
+    when: manual
+    only:
+        - tags
+    allow_failure: False
+
+
+#-- Deployment stage -------------------------------------------------------------
+
+#Deploy to PyPI on Linux
+pypi:
+    stage: Deployment
+    dependencies:
+        - dist
+    environment:
+        name: PyPI
+        url: https://pypi.org/project/qblox-instruments/
+    script:
+        - twine upload -u $PYPI_USERNAME -p $PYPI_PASSWORD dist/*
+    when: manual
+    only:
+        - tags
+    allow_failure: False

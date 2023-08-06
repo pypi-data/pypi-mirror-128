@@ -1,0 +1,22 @@
+.. _ieee488_2:
+
+IEEE488.2
+=========
+
+Every SCPI interface is based on the IEEE488.2 protocol. This Python implementation separates the protocol into two layers:
+
+- :ref:`api_reference/ieee488_2:IEEE488.2 layer`: IEEE488.2 layer that implements the protocol based on the transport layer.
+
+- :ref:`api_reference/ieee488_2:Transport layer`: Transport layers responsible for lowest level of communcation (e.g. Ethernet)."
+
+
+IEEE488.2 layer
+---------------
+
+.. automodule:: ieee488_2.ieee488_2
+
+
+Transport layer
+---------------
+
+.. automodule:: ieee488_2.transport
