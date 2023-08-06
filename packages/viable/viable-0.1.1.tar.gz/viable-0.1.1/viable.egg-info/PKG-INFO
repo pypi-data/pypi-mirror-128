@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: viable
+Version: 0.1.1
+Summary: Diagnose source data for sound recognition ML
+Home-page: https://github.com/otosense/viable
+Author: OtoSense
+License: apache-2.0
+Description: 
+        # viable
+        Diagnose source data for sound recognition ML
+        
+        
+        To install:	```pip install viable```
+        
+Platform: any
+Description-Content-Type: text/markdown
