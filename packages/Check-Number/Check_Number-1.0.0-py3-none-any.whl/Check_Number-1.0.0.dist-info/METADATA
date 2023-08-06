@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: Check-Number
+Version: 1.0.0
+Summary: A number checker python module
+Home-page: https://github.com/FayasNoushad/Check-Number
+Author: FayasNoushad
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+```
+Made with Python3
+(C) @FayasNoushad
+Copyright permission under MIT License
+License -> https://github.com/FayasNoushad/Check-Number/blob/main/LICENSE
+```
+
+---
+
+## Installation
+
+```
+pip install Check-Number
+```
+
+---
+
+## Usage
+
+```py
+import check_number
+
+print(check_number.is_number('+910000000000')
+# => {"status": True}
+
+print(check_number.is_number('Hello')
+# => {"status": False}
+
+print(check_number.is_numbers(
+    ['+910000000000', '+10000000000']
+)
+# => {"status": True}
+```
+
+---
+
+## Credits
+
+- [Fayas Noushad](https://github.com/FayasNoushad)
+
+---
+
+
