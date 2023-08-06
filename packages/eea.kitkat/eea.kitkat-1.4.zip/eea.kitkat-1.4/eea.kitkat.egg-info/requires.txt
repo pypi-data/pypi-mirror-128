@@ -1,0 +1,14 @@
+eea.zotero
+eea.api.layout
+eea.api.taxonomy
+eea.geolocation
+eea.schema.slate
+eea.sentry
+eea.volto.policy
+collective.taxonomy
+plone.volto
+plone.restapi
+setuptools
+
+[test]
+plone.app.testing
