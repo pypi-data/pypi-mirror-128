@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+socketcan_uds.egg-info/PKG-INFO
+socketcan_uds.egg-info/SOURCES.txt
+socketcan_uds.egg-info/dependency_links.txt
+socketcan_uds.egg-info/top_level.txt
+uds/__init__.py
+uds/uds.py
