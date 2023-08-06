@@ -1,0 +1,15 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+HowManyPhotons.egg-info/PKG-INFO
+HowManyPhotons.egg-info/SOURCES.txt
+HowManyPhotons.egg-info/dependency_links.txt
+HowManyPhotons.egg-info/requires.txt
+HowManyPhotons.egg-info/top_level.txt
+hmbp/__init__.py
+hmbp/main.py
+hmbp/utils.py
+hmbp/version.py
+hmbp/tests/__init__.py
+hmbp/tests/test_main.py
