@@ -1,0 +1,2 @@
+Twine>=3.4.1
+Clien-karjakak>=0.0.8
