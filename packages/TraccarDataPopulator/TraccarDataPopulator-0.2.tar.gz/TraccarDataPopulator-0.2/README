@@ -1,0 +1,71 @@
+Traccar Data Populator
+======================
+
+Generating real data for development is troublesome, thats why better to
+create data populator for that purpose, this library. This library help
+us to populate data for device trip.
+
+How to Use
+----------
+
+Installation
+~~~~~~~~~~~~
+
+Installation
+
+.. code:: sh
+
+    pip install TraccarDataPopulator
+
+Usage
+~~~~~
+
+To use this library you just need to provide traccar url for osmand and
+device\_id
+
+.. code:: python
+
+    from TraccarDataPopulator.Populator import Populator
+    populator = Populator('http://demo.traccar.org:5055','testid2',5)
+    populator.populateData([[-8.2257,113.2190],[-8.2258,113.2190],[-8.1260,113.2190,10]])
+    populator.populateDataBetweenTwoLocationFollowingRoad(112.78532737805308,-7.38007105,105.4596077,-7.0249592)
+
+Available Function
+~~~~~~~~~~~~~~~~~~
+
+Populator(traccar\_url,device\_id,speed)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+| This function instantiate populator for specific traccar url, device
+  id, and speed
+| #### setSpeed(speed)
+| This function set speed that sent to traccar server
+| #### setDeviceId(device\_id)
+| This function set device\_id that sent to traccar server
+| #### populateData([[lat,lon],[lat,lon,speed]])
+| This function send data to traccar by given input format lat,lon with
+  speed as mentioned in setSpeed. Other format is lat,lon,speed which
+  send data with custom speed
+| ####
+  populateDataBetweenTwoLocationFollowingRoad(origin\_lon,origin\_lat,destination\_lon,destination\_lat)
+  This function send data to traccar by following routes
+| #### populateDataFromFile(filepath)
+| This function send data to traccar by given flat file with each input
+  perline.
+
+.. code:: text
+
+    -8.1257,113.2190
+    -8.1260,113.2190,10
+
+Contact:
+~~~~~~~~
+
+| mail: aryya.widigdha@yahoo.com
+| YT Traccar Tutorial:
+  https://www.youtube.com/playlist?list=PLAog7t\_ArobujtC6UMWjUiOWwsSrUKpi-
+
+License
+-------
+
+MIT License
