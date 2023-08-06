@@ -1,0 +1,47 @@
+<div metal:use-macro="load: layout.pt"
+    tal:define="get_full_name import: chisel.pkgutils.get_full_name"
+    i18n:domain="propfinder">
+
+    <div metal:fill-slot="title">
+        <h1>${page_title}</h1>
+    </div>
+
+    <div metal:fill-slot="toolbar">
+
+        <div class="filters" tal:condition="'filters_form' in forms">
+            <tal:form replace="structure forms['filters_form'].render()" />
+        </div>
+
+        <div class="buttons">
+            <tal:block metal:use-macro="view.macros['listing_buttons']"></tal:block>
+        </div>
+
+    </div>
+
+    <div metal:fill-slot="content">
+
+        <div class="items-summary" tal:condition="view.macros.get('listing_summary')">
+            <tal:block metal:use-macro="view.macros['listing_summary']"></tal:block>
+        </div>
+
+        <tal:block tal:condition="items">
+            <table tal:replace="structure grid" />
+        </tal:block>
+
+        <div class="no-items-found alert alert-block" tal:condition="not items" i18n:translate="">
+            No items found for the selected criteria
+        </div>
+
+        <div class="pagination" tal:condition="items">
+            <div class="items-pager">
+                <tal:div replace="structure items.pager(curpage_attr={'class': 'pager_curpage'})"/>
+            </div>
+        </div>
+
+        <tal:block tal:condition="view.deletion_allowed">
+            <tal:form replace="structure delete_form" />
+        </tal:block>
+
+    </div>
+
+</div>

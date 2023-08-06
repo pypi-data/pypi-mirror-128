@@ -1,0 +1,93 @@
+<div metal:extend-macro="load: layout.pt"
+    i18n:domain="propfinder">
+
+    <tal:block metal:fill-slot="javascript">
+        <script type="text/javascript"
+            src="${request.static_url('propfinder:static/chartjs/dist/Chart.min.js')}"></script>
+
+        <script type="text/javascript" metal:use-macro="view.macros['zone_selector_script']"></script>
+    </tal:block>
+
+    <div metal:fill-slot="toolbar">
+
+        <div class="filters" tal:condition="'filters_form' in forms">
+            <tal:form replace="structure forms['filters_form'].render()" />
+        </div>
+
+    </div>
+
+    <div metal:fill-slot="content">
+
+        <div class="chart-container">
+            <canvas id="month-price-evolution" width="600" height="400"></canvas>
+            <script>
+                var ctx = document.getElementById('month-price-evolution');
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                        datasets: [{
+                            backgroundColor: Chart.helpers.color('rgb(54, 162, 235)').alpha(0.5).rgbString(),
+                            data: ${monthly_stats},
+                            borderWidth: 1
+                        }],
+                    },
+                    options: {
+                        title: {
+                            display: true,
+                            text: 'Price m2',
+                        },
+                        legend: {
+                            display: false,
+                        },
+                        responsive: false,
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                });
+            </script>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="zone-price-evolution" width="600" height="400"></canvas>
+            <script>
+                var ctx = document.getElementById('zone-price-evolution');
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ${zone_labels},
+                        datasets: [{
+                            backgroundColor: Chart.helpers.color('rgb(54, 162, 235)').alpha(0.5).rgbString(),
+                            data: ${zone_stats},
+                            borderWidth: 1
+                        }],
+                    },
+                    options: {
+                        title: {
+                            display: true,
+                            text: 'Price m2',
+                        },
+                    legend: {
+                            display: false,
+                        },
+                        responsive: false,
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                });
+            </script>
+        </div>
+
+    </div>
+
+</div>

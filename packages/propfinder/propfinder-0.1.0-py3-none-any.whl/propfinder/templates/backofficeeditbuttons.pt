@@ -1,0 +1,2 @@
+<tal:block i18n:domain="propfinder" metal:define-macro="edit_buttons">
+</tal:block>

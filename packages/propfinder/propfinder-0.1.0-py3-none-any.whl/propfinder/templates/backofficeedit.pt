@@ -1,0 +1,21 @@
+<div metal:use-macro="load: layout.pt" i18n:domain="propfinder">
+
+    <div metal:fill-slot="title">
+        <h1>${page_title}</h1>
+    </div>
+
+    <tal:block metal:fill-slot="toolbar">
+        <div class="buttons">
+            <tal:block metal:use-macro="view.macros['edit_buttons']"></tal:block>
+        </div>
+    </tal:block>
+
+    <div metal:fill-slot="content">
+
+        <tal:block tal:repeat="form forms.values()">
+            <tal:form replace="structure form.render()" />
+        </tal:block>
+
+    </div>
+
+</div>

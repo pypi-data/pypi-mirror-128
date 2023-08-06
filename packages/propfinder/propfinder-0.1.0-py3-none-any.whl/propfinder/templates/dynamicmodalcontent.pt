@@ -1,0 +1,13 @@
+<tal:block
+    metal:define-macro="dynamic_modal_content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <metal:content define-slot="title">
+            <h1 class="modal-title" tal:condition="title">${title}</h1>
+        </metal:content>
+    </div>
+
+    <div class="modal-body">
+        <metal:content define-slot="content"></metal:content>
+    </div>
+</tal:block>

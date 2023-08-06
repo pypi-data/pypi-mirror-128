@@ -1,0 +1,15 @@
+<div class="dropdown open-offer-link" title="Open offer">
+    <tal:block tal:condition="len(offers) == 1">
+        <a class="fa fa-globe" href="${offers[0].url}" target="_blank"></a>
+    </tal:block>
+    <tal:block tal:condition="len(offers) > 1">
+        <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-globe"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute;transform: translate3d(0px, 38px, 0px);top: 0px;left: 0px;will-change: transform;z-index: 10000;">
+            <tal:block tal:repeat="offer offers">
+                <a class="dropdown-item" href="${offer.url}" target="_blank">${offer.offer_id}</a>
+            </tal:block>
+        </div>
+    </tal:block>
+</div>
