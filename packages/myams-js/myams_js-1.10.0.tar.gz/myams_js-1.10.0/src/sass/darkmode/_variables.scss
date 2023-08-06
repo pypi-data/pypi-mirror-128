@@ -1,0 +1,131 @@
+//
+// MyAMS.js styles
+// These styles are extending Bootstrap styles
+//
+
+
+// Skin colors and styles
+
+$black:                     #f5f7fa !default;
+$gray-900:                  #e4e7eb !default;
+$gray-800:                  #cbd2d9 !default;
+$gray-700:                  #9aa5b1 !default;
+$gray-600:                  #7b8794 !default;
+$gray-500:                  #616e7c !default;
+$gray-400:                  #52606d !default;
+$gray-300:                  #3e4c59 !default;
+$gray-200:                  #323f4b !default;
+$gray-100:                  #1f2933 !default;
+$white:                     #1F2427 !default;
+
+$primary:                   #d9882b !default;
+$success: #00a801 !default;
+$secondary:                 $gray-400 !default;
+$info:                      #2b7bb9 !default;
+$warning:                   #bf9300 !default;
+$danger:                    #b9372b !default;
+$light:                     $gray-600 !default;
+$dark:                      $gray-500 !default;
+
+
+
+$font-size-base:            0.9rem !default;
+
+
+$body:                      $black !default;
+$body-bg:                   rgba($gray-100, 0.9) !default;
+
+$body-scrollbar-color:             rgba(35, 53, 66, 0.8) rgba(182, 182, 182, 0.8) !default;
+$wk-body-scrollbar-thumb-hover-bg: rgba(53, 78, 98, 0.8) !default;
+
+$top-tabs-border-color:     rgba($primary, 0.5) !default;
+
+$header-bg:                 rgba(31, 41, 51, 0.7) !default;
+
+$aside-width:               270px !default;
+$aside-min-width:           260px !default;
+$aside-bg:                  rgba(31, 41, 51, 0.7) !default;
+
+$nav-bg:                    rgba(31, 41, 51, 0.7) !default;
+$nav-divider-bg:            $gray-300 !default;
+$nav-header:                $gray-800 !default;
+$nav-header-bg:             rgba(31, 41, 51, 0.7) !default;
+$nav-link:                  $gray-700 !default;
+$nav-link-active:           $gray-200 !default;
+$nav-link-focus:            #c9c9c9 !default;
+$nav-link-hover:            #fff !default;
+$nav-link-pipe:             #e5e2cf !default;
+$nav-menu-active:           #fefefe !default;
+$nav-sub-menu-bg:           $gray-400 !default;
+$nav-sub-menu-active-bg:    $gray-200 !default;
+$nav-sub-menu-hover-bg:     $gray-300 !default;
+$nav-sub-menu-hover-border: rgba(231, 231, 231, 0.5) !default;
+$nav-sub-menu-hover-bold:   #d5d9e2 !default;
+$nav-sub2-menu:             #bfbfbf !default;
+$nav-sub2-menu-pipe:        rgba(122, 122, 122, .1) !default;
+$nav-sub2-menu-hover-bg:    $gray-300 !default;
+$nav-sub2-menu-em-bg:       #b3151b !default;
+$nav-sub2-menu-em-border:   rgba(255, 255, 255, .1) !default;
+$nav-sub2-menu-bold:        #b3b3b3 !default;
+
+$nav-minify-item-bg:        $gray-300 !default;
+$nav-minify-item-top:       $gray-300 !default;
+$nav-minify-item-bottom:    $gray-300 !default;
+$nav-minify-item-left:      $gray-300 !default;
+
+$version-color:             $gray-400 !default;
+
+$main-margin-top:           60px !default;
+$main-height:               calc(100% - 40px) !default;
+$main-fixed-height:         calc(100% - 110px) !default;
+
+$ribbon-height:             60px !default;
+$ribbon-bg:                 $body-bg !default;
+$ribbon-mobile-bg:          #f5f5f5 !default;
+$ribbon-mobile-bottom:      #cfcfcf !default;
+$ribbon-mobile-top:         #f5f5f5 !default;
+$ribbon-link:               $body !default;
+$ribbon-mobile-link:        $primary !default;
+$ribbon-link-strong:        #6d6c6c !default;
+$ribbon-mobile-link-strong: #333 !default;
+$ribbon-active-link:        #6c757d !default;
+$ribbon-mobile-active-link: #333 !default;
+
+$breadcrumb-border-color:   $gray-400 !default;
+$breadcrumb-divider-color:  #6d6c6c !default;
+$breadcrumb-active-color:   #ffffff !default;
+
+$content-padding:         1rem calc(2rem - 4px) 2rem 2rem !default;
+
+$modal-content-border-color: rgba($gray-500, .5) !default;
+$modal-backdrop-bg:       $white !default;
+$modal-backdrop-opacity:  0.1 !default;
+
+$tooltip-color:           $gray-200 !default;
+$tooltip-bg:              $gray-700 !default;
+$tooltip-opacity:         1.0 !default;
+
+$form-legend-border:      $gray-500 !default;
+$form-legend-bg:          $gray-300 !default;
+
+$fieldset-bg:             $gray-200 !default;
+$fieldset-border:         $gray-300 !default;
+$fieldset-border-margin:  1rem !default;
+
+$input-placeholder-color: $gray-400 !default;
+$input-plaintext-color:   $gray-600 !default;
+
+$select2-highlight:       $body !default;
+$select2-multiple-sortable-width: calc(100% - 32px) !default;
+$select2-selection-color: $body !default;
+
+$font-family-sans-serif:    -apple-system, BlinkMacSystemFont, "Montserrat", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-wide:          "Montserrat", "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:     "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+
+@import "../myams/variables";
+
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
