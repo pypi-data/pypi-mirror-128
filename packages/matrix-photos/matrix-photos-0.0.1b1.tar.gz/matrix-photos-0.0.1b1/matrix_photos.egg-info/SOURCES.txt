@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+matrix_photos/__init__.py
+matrix_photos/__main__.py
+matrix_photos/photos_client.py
+matrix_photos.egg-info/PKG-INFO
+matrix_photos.egg-info/SOURCES.txt
+matrix_photos.egg-info/dependency_links.txt
+matrix_photos.egg-info/entry_points.txt
+matrix_photos.egg-info/not-zip-safe
+matrix_photos.egg-info/requires.txt
+matrix_photos.egg-info/top_level.txt
