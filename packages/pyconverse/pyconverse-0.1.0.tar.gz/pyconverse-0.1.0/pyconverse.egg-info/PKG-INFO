@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: pyconverse
+Version: 0.1.0
+Summary: Coversational Transcript Analysis using various NLP techniques
+Home-page: https://github.com/AnjanaRita/Converse
+Author: AnjanaRita
+Author-email: ritaanjana1993@gmail.com
+Maintainer: AnjanaRita
+Maintainer-email: ritaanjana1993@gmail.com
+License: MIT/Apache-2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE-APACHE
+License-File: LICENSE-MIT
+
+# Converse
+-----------
+
+## Let me try first
+
+### Installation 
+
+```
+pip install pyconverse
+```
+
+### Usage
+
+Please try this notebook that demos the core functionalities: (usage_notebook)[notebook/usage.ipynb]
+
+## Introduction
+
+Conversation analytics plays an increasingly important role in shaping great customer experiences across various industries like finance/contact centers etc..
+primarily to gain a deeper understanding about the customers and to better serve their needs. This library, *Converse* is an attempt to provide tools & methods which can be used to gain an understannding of the conversations from multiple perspecitves using various NLP techniques. 
+
+## Why *Converse*?
+
+I have been doing what can be called as conversational text NLP with primarily contact center data from various domains like Financial services, Banking, Insurace etc for the past year or so, and I have not come across any interesting open source tools that can help in understanding conversational texts as such I decided to create this library that can provide various tools and methods to analyse calls and help answer important questions/compute important metrics that usually people want to find from conversations, in contact center data analysis settings. 
+
+## Where can I use *Converse*?
+
+The primary usecase is geared towards contact center call analytics, but most of tools that Converse provides can be used elsewhere as well. 
+
+There’s a lot of insights hidden in every single call that happens, Converse enables you to extract those insights and compute various kinds of KPIs from the point of Operational Efficiency, Agent Effectiveness & monitoring Customer Experience etc. 
+
+If you are looking to answer questions like these:- 
+
+1. What was the overall sentiment of the conversation that was exhibited by the speakers? 
+2. Was there periods of dead air(silence periods) between the agents and customer? if so how much? 
+3. Was the agent empathetic towards the customer?
+4. What was the average agent response time/average hold time?
+5. What was being said on calls? 
+
+and more... converse might be of a small help.
+
+## What can *Converse* do?
+
+At the moment converse can do few things that broadly fall into these categories:- 
+
+1. Emotion identification 
+2. Empathetic statement identification
+3. Call Segmentation
+4. Topic identification from call segments
+5. Compute various type of Speaker attributes: 
+    1. linguistic attributes like : word counts/number of words per utterance/negations etc.
+    2. Identify periods of silence & interruptions. 
+    3. Question identification
+    4. Backchannel identification
+6. Assess the overall nature of the speaker via linguistic attributes and tell if the Speaker is: 
+    1. Talkative, verbally fluent
+    2. Informal/Personal/social
+    3. Goal oriented or Forward/future looking/focused on past
+    4. Identify inhibitions
+
+### What Next?
+
+1. Improve documentation.
+2. Add more usecase notebooks/examples.
+3. Improve some of the functionalities and make it more streamlined. 
+
+
+
+
