@@ -1,0 +1,22 @@
+pybind11[global]
+numpy
+sparse
+scipy
+attrs
+black
+demes
+
+#below are for building package
+#and running tests
+# requirements for docs are in docs/requirements.txt
+msprime
+tskit
+setuptools_scm==1.11.1
+pytest
+pytest-xdist
+
+#below are for formatting, linting,
+#etc.
+flake8
+flake8-bugbear
+blacken-docs
