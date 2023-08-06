@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: django-db-retry
+Version: 0.1
+Summary: Adds support for database query retries
+Home-page: https://github.com/parikls/django-db-retry
+Author: Dmytro Smyk
+Author-email: porovozls@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
