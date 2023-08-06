@@ -1,0 +1,10 @@
+pdf2bib/__init__.py,sha256=APBWYDpVvwOEquHpfZ14Gx2PJdbQzgXzMSHfgRlQiP0,776
+pdf2bib/bibtex_makers.py,sha256=EAwFlUylOh0677IeXksDMPnkesv-P722Zq1zvCyb6wU,8891
+pdf2bib/config.py,sha256=iXS9Ncg0G4DftuQGJYPTGtsZVdNwbL6MXTZXnDk6v-k,3698
+pdf2bib/main.py,sha256=QB1Yu5D71FA3ttLgQ_hg5GNifcx_D7WjrydPgCAI6Y4,14642
+pdf2bib/utils_registry.py,sha256=y-1ni5CptS0mYWioDhckNLH7NYsxJXn28Ma3wm9udGA,4992
+pdf2bib-1.0rc3.dist-info/METADATA,sha256=dVjIfHUoyE9ST2QVxnRxRw4jxAPaToFJega8-byqsHg,18545
+pdf2bib-1.0rc3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pdf2bib-1.0rc3.dist-info/entry_points.txt,sha256=9aXFxWzN9DXoWTngi3uHz07MZbz9uuU9rpY_0Axn7i0,47
+pdf2bib-1.0rc3.dist-info/top_level.txt,sha256=n32Zv6QTt4MhjrriyHuT37B8J0OSMRBnATdmOCg1x34,8
+pdf2bib-1.0rc3.dist-info/RECORD,,
