@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "kodak"
+version = "0.1.0"
+license = "MIT"
+authors = ["Ethan Paul <24588726+enpaul@users.noreply.github.com>"]
+description = "HTTP server for uploading images and generating thumbnails"
+repository = "https://github.com/enpaul/kodak/"
+packages = [
+  {include = "kodak"},
+  {include = "tests", format = "sdist"}
+]
+include = [
+  "kodak/py.typed",
+  "kodak/openapi.yaml"
+]
+keywords = ["flask", "image", "thumbnail", "hosting"]
+readme = "README.md"
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Environment :: Web Environment",
+  "Framework :: Flask",
+  "Intended Audience :: Developers",
+  "Intended Audience :: System Administrators",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+  "Topic :: Multimedia :: Graphics",
+  "Topic :: Multimedia :: Graphics :: Graphics Conversion"
+]
+
+[tool.poetry.scripts]
+kodak = "kodak.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+flask = "^1.1.2"
+flask-restful = "^0.3.8"
+gunicorn = {version = "^20.1.0", optional = true}
+peewee = "^3.13.3"
+Pillow = "^8.3.2"
+"ruamel.yaml" = "^0.16.12"
+
+[tool.poetry.extras]
+deployment = ["gunicorn"]
+
+[tool.poetry.dev-dependencies]
+bandit = "^1.6.2"
+black = "^21.4b2"
+blacken-docs = "^1.9.1"
+ipython = "^7.10.2"
+mdformat = "^0.6"
+mdformat-gfm = "^0.2"
+mypy = "^0.800"
+pre-commit = "^2.1.1"
+pre-commit-hooks = "^3.4.0"
+pylint = "^2.6.0"
+pytest = "^5.2.0"
+pytest-cov = "^2.8.0"
+reorder-python-imports = "^2.3.0"
+safety = "^1.9.0"
+toml = "^0.10.1"
+tox = "^3.20.0"
+tox-poetry-installer = {extras = ["poetry"], version = "^0.8.0"}
+openapi-spec-validator = "^0.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
