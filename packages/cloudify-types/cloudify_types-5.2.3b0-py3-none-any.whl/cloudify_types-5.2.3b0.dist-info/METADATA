@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cloudify-types
+Version: 5.2.3b0
+Summary: Various special Cloudify types implementation.
+Home-page: UNKNOWN
+Author: Cloudify
+Author-email: cosmo-admin@cloudify.co
+License: LICENSE
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: cloudify-common (==5.2.3)
+Requires-Dist: requests (<3.0.0,>=2.25.0)
+Requires-Dist: PyYAML (>=5.3.1)
+
+UNKNOWN
+
