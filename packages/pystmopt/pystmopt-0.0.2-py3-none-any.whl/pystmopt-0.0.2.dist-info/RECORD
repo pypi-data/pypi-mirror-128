@@ -1,0 +1,13 @@
+Solver/PenCF.py,sha256=ZMk_DidJFXhx1N1JExMVQ-JjYeMau6qb-qzXk4IDcVA,2777
+Solver/SLPG.py,sha256=TgvYDVhSJQ3tQMMG1AhCHDlIjcVGjmOdnDrunylmM9M,9108
+Solver/__init__.py,sha256=d5Vu1-BQfa9yb7B7XWw7uCy7epUBaCnMnXCgX6wt76E,173
+manifold/Stiefel.py,sha256=U_TjEbVBV3ypV7wYdu7bGYTPL0kwYf8J7u4aSfOZan4,1287
+manifold/__init__.py,sha256=u-D-QqqQwvCu34964DTUoiVo-4kTFZ2g3NMsAdxCabI,59
+pystmopt-0.0.2.data/data/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+pystmopt-0.0.2.data/data/README.md,sha256=Za_rwDBJM1N96QegtXQOAspYjIAcEpoqKIqk1U1qIbQ,5864
+pystmopt-0.0.2.dist-info/METADATA,sha256=XktIbNRRm5UhBVcgZ5ELZbJ9lfgdjs14cdQMsyl5vIU,6412
+pystmopt-0.0.2.dist-info/RECORD,,
+pystmopt-0.0.2.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+pystmopt-0.0.2.dist-info/top_level.txt,sha256=-jS2rb2o4bwQrID_AqYLgk7kE2exseZ6x9MX8sBie80,24
+utility/__init__.py,sha256=mmKWC_r4f5PxfL5wBTLC89midIhyuhXrzRiu1KoP5v8,81
+utility/utility.py,sha256=5NlZduH2MqmuSOXzTJieU5Ev3v8DwiYMOZ8UjIsuy3Y,557
