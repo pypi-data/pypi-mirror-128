@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mdweek
+Version: 1.1.4
+Summary: a utility package handling week based calculations
+License: MIT
+Author: Yasunori Horikoshi
+Author-email: hotoku@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
