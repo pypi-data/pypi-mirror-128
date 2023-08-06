@@ -1,0 +1,3 @@
+[console_scripts]
+mxdev = mxdev:main
+

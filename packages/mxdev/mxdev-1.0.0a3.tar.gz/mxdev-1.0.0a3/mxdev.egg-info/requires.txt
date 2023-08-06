@@ -1,0 +1,6 @@
+setuptools
+libvcs
+
+[test]
+pytest
+types-setuptools
