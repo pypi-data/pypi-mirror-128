@@ -1,0 +1,27 @@
+[dependencies]
+nanorand = "^0.6"
+rand = "^0.8"
+
+[dependencies.pyo3]
+features = ["extension-module"]
+version = "^0.15"
+
+[dependencies.tuid]
+features = ["full"]
+path = "local_dependencies/tuid"
+
+[lib]
+crate-type = ["cdylib"]
+name = "tuid"
+
+[package]
+description = "Sequential UUID generator"
+edition = "2021"
+include = ["**/*.rs", "LICENSE", "README.md", "Cargo.toml", "pyproject.toml"]
+keywords = ["tuid", "uuid", "guid", "sequential", "identifier"]
+license = "MPL-2.0"
+name = "tuid-py"
+publish = false
+readme = "README.md"
+repository = "https://github.com/mselee/tuid/blob/master/tuid-py"
+version = "0.0.0"
