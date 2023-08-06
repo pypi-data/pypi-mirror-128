@@ -1,0 +1,14 @@
+setup.py
+biblioteca/__init__.py
+biblioteca.egg-info/PKG-INFO
+biblioteca.egg-info/SOURCES.txt
+biblioteca.egg-info/dependency_links.txt
+biblioteca.egg-info/top_level.txt
+biblioteca/corpora/__init__.py
+biblioteca/corpora/base.py
+biblioteca/corpora/external.py
+biblioteca/corpora/jsondb.py
+biblioteca/corpora/phonemes.py
+biblioteca/corpora/text.py
+biblioteca/utils/__init__.py
+biblioteca/utils/tagsets.py
