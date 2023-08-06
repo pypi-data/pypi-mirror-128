@@ -1,0 +1,10 @@
+README.md
+setup.py
+websupportsk/__init__.py
+websupportsk/client.py
+websupportsk/exceptions.py
+websupportsk.egg-info/PKG-INFO
+websupportsk.egg-info/SOURCES.txt
+websupportsk.egg-info/dependency_links.txt
+websupportsk.egg-info/requires.txt
+websupportsk.egg-info/top_level.txt
