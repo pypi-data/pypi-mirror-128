@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sokort
+Version: 0.4.2
+Summary: CEMC Graphics Script Tool.
+Home-page: https://github.com/nwpc-oper/sokort
+Author: perillaroc
+Author-email: perillaroc@gmail.com
+License: GPLv3
+Keywords: cemc graph
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.md
+Requires-Dist: click
+Requires-Dist: pyyaml
+Requires-Dist: IPython
+Requires-Dist: pillow
+Requires-Dist: pandas
+Requires-Dist: ipywidgets
+Provides-Extra: all
+Requires-Dist: loguru ; extra == 'all'
+
+UNKNOWN
+
