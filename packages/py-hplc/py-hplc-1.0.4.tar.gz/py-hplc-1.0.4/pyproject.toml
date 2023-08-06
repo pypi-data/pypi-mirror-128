@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "py-hplc"
+version = "1.0.4"
+description = "An unoffical Python wrapper for the SSI-Teledyne Next Generation class HPLC pumps."
+license = "MIT"
+repository = "https://github.com/pct-code/py-hplc"
+documentation = "https://py-hplc.readthedocs.io/en/latest/"
+readme = "README.rst"
+authors = ["Alex W <alex@southsun.tech>"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator",
+    "Topic :: System :: Hardware :: Universal Serial Bus (USB)",
+    "Topic :: Terminals :: Serial"
+]
+
+packages = [
+    {include = "py_hplc"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.9 | ^3.10"
+pyserial = "^3.5"
+
+[tool.poetry.dev-dependencies]
+rope = "^0.18.0"
+mypy = "^0.812"
+Sphinx = "^3.5.4"
+sphinx-rtd-theme = "^0.5.2"
+snooty = "^0.8.2-alpha.0"
+readme-renderer = "^29.0"
+pre-commit = "^2.12.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
