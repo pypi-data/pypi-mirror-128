@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: yog
+Version: 1.2.0
+Summary: The Gate and Key
+License: AGPLv3
+Author: Josh Hertlein
+Author-email: jmhertlein@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: docker (>=5.0.3,<6.0.0)
+Requires-Dist: paramiko (>=2.8.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+## Yog
+
+An opinionated docker-and-ssh-centric declarative system management tool.
+
+Some features:
+* Like puppet or ansible but a lot smaller and focused on docker.
+* "agentless" in the same sense that ansible is, in that it (ab)uses ssh to do lots of its functionality.
+* (ab)uses ssh as a poor-person's Envoy - it prefers to tunnel traffic over ssh even if it could otherwise just hit the port directly.
+
+Command summary:
+
+* `yog`: Applies configurations to hosts. e.g. `yog myhost.mytld` applies the config from `./domains/mytld.myhost.yml`.
+* `yog-repo`: Manages a docker repository. `yog-repo push` uses the contents of `./Yogfile` to build an image and push it to the configured registry with the configured name and tag.
+
