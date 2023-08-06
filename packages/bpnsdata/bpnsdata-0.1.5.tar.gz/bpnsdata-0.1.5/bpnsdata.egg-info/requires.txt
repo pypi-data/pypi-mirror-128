@@ -1,0 +1,14 @@
+geopandas
+owslib
+pygeos
+rtree
+tqdm
+contextily
+importlib-resources
+
+[griddap]
+erddapy
+xarray
+
+[time]
+skyfield
