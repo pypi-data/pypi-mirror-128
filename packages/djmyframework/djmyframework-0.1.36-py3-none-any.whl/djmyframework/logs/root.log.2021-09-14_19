@@ -1,0 +1,186 @@
+[2021-09-14T19:44:52+0800] [WARNING] [root] [pid:60076] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/framework/middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/views/query.py", line 233, in query_view
+    return render(request, template, locals())
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/query_view.html", line 1, in top-level template code
+    {% extends "analysis/base.html" %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/base.html", line 1, in top-level template code
+    {% extends "analysis/old/base.html" %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/old/base.html", line 29, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/query_view.html", line 307, in block "content"
+    {% include 'analysis/plugins/datatable.html' %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/plugins/datatable.html", line 257, in top-level template code
+    {% for name,config in field_configs.items %} {% if config.className %}
+TypeError: 'builtin_function_or_method' object is not iterable
+
+[2021-09-14T19:44:52+0800] [ERROR] [django.request] [pid:60076] [/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/utils/log.py:228] Internal Server Error: /analysis/query/view
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/views/query.py", line 233, in query_view
+    return render(request, template, locals())
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/query_view.html", line 1, in top-level template code
+    {% extends "analysis/base.html" %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/base.html", line 1, in top-level template code
+    {% extends "analysis/old/base.html" %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/old/base.html", line 29, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/query_view.html", line 307, in block "content"
+    {% include 'analysis/plugins/datatable.html' %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/plugins/datatable.html", line 257, in top-level template code
+    {% for name,config in field_configs.items %} {% if config.className %}
+TypeError: 'builtin_function_or_method' object is not iterable
+[2021-09-14T19:45:07+0800] [WARNING] [root] [pid:60076] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/framework/middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/views/query.py", line 233, in query_view
+    return render(request, template, locals())
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/query_view.html", line 1, in top-level template code
+    {% extends "analysis/base.html" %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/base.html", line 1, in top-level template code
+    {% extends "analysis/old/base.html" %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/old/base.html", line 29, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/query_view.html", line 307, in block "content"
+    {% include 'analysis/plugins/datatable.html' %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/plugins/datatable.html", line 257, in top-level template code
+    {% for name,config in field_configs.items %} {% if config.className %}
+TypeError: 'builtin_function_or_method' object is not iterable
+
+[2021-09-14T19:45:08+0800] [ERROR] [django.request] [pid:60076] [/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/utils/log.py:228] Internal Server Error: /analysis/query/view
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/views/query.py", line 233, in query_view
+    return render(request, template, locals())
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/query_view.html", line 1, in top-level template code
+    {% extends "analysis/base.html" %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/base.html", line 1, in top-level template code
+    {% extends "analysis/old/base.html" %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/old/base.html", line 29, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/query_view.html", line 307, in block "content"
+    {% include 'analysis/plugins/datatable.html' %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/plugins/datatable.html", line 257, in top-level template code
+    {% for name,config in field_configs.items %} {% if config.className %}
+TypeError: 'builtin_function_or_method' object is not iterable
+[2021-09-14T19:45:23+0800] [WARNING] [root] [pid:61141] [/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/framework/middleware.py:81] Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/views/query.py", line 233, in query_view
+    return render(request, template, locals())
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/query_view.html", line 1, in top-level template code
+    {% extends "analysis/base.html" %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/base.html", line 1, in top-level template code
+    {% extends "analysis/old/base.html" %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/old/base.html", line 29, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/query_view.html", line 307, in block "content"
+    {% include 'analysis/plugins/datatable.html' %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/plugins/datatable.html", line 257, in top-level template code
+    {% for name,config in field_configs.items %} {% if config.className %}
+TypeError: 'builtin_function_or_method' object is not iterable
+
+[2021-09-14T19:45:23+0800] [ERROR] [django.request] [pid:61141] [/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/utils/log.py:228] Internal Server Error: /analysis/query/view
+Traceback (most recent call last):
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/views/query.py", line 233, in query_view
+    return render(request, template, locals())
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/django/template/backends/jinja2.py", line 71, in render
+    return self.template.render(context)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/.venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/query_view.html", line 1, in top-level template code
+    {% extends "analysis/base.html" %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/base.html", line 1, in top-level template code
+    {% extends "analysis/old/base.html" %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/old/base.html", line 29, in top-level template code
+    {% block content %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/query_view.html", line 307, in block "content"
+    {% include 'analysis/plugins/datatable.html' %}
+  File "/Users/xiezhaorong/Desktop/my_py/djmyframework/djmyframework/apps/analysis/jinja2_templates/analysis/plugins/datatable.html", line 257, in top-level template code
+    {% for name,config in field_configs.items %} {% if config.className %}
+TypeError: 'builtin_function_or_method' object is not iterable

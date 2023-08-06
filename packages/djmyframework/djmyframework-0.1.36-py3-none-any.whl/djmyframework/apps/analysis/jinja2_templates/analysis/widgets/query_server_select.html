@@ -1,0 +1,13 @@
+<!-- 服务器-->
+{% set query_servers=context_data %}
+<span>
+<label for="">   {{ _('选择查询的服务器') }}
+    <select class="select2" name="{{ name_prefix }}server_id">
+
+        {% for query_server in query_servers %}
+            <option value="{{ query_server.id }}">{{ query_server.alias }}</option>
+        {% endfor %}
+    </select>
+</label>
+</span>
+
