@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+wilddrummer/__init__.py
+wilddrummer/utils.py
+wilddrummer/wild_drummer.py
+wilddrummer.egg-info/PKG-INFO
+wilddrummer.egg-info/SOURCES.txt
+wilddrummer.egg-info/dependency_links.txt
+wilddrummer.egg-info/entry_points.txt
+wilddrummer.egg-info/requires.txt
+wilddrummer.egg-info/top_level.txt
