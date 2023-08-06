@@ -1,0 +1,4 @@
+include .requirements/*
+include *.rst
+include LICENSE
+include CHANGELOG.md
