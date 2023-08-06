@@ -1,0 +1,7 @@
+README.md
+setup.py
+zhangjie/__init__.py
+zhangjie.egg-info/PKG-INFO
+zhangjie.egg-info/SOURCES.txt
+zhangjie.egg-info/dependency_links.txt
+zhangjie.egg-info/top_level.txt
