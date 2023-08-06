@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dimtim-utils
+Version: 0.0.2
+Summary: Python utils
+Home-page: https://github.com/dim-tim-inc/dimtim-utils
+Author: Dim-Tim, Inc.
+Author-email: info@dim-tim.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: asgiref (>=3.4.1)
+Requires-Dist: pytz (>=2021.3)
+
+# dimtim-utils
+
+Python utils for Dim-Tim projects
+
+
