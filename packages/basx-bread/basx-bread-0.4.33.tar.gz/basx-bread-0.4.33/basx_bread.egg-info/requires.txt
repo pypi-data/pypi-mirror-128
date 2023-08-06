@@ -1,0 +1,25 @@
+Django
+python-dateutil
+htmlgenerator
+django-extensions
+django-guardian
+django-dynamic-preferences
+django-countries
+django-money[exchange]
+django-simple-history
+openpyxl
+djangoql
+celery
+django-celery-results
+django-celery-beat
+celery-haystack-ng
+whoosh
+WeasyPrint
+django-ckeditor
+requests
+
+[:python_version < "3.9"]
+backports.zoneinfo
+
+[testing]
+hypothesis[django]
