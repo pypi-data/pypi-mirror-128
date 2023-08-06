@@ -1,0 +1,14 @@
+targe/__init__.py,sha256=q5nO3_s95xSZLkQ3dlsN3DoqG_UPTwHunu_t_KsbBo4,202
+targe/__version__.py,sha256=8KcCYTXH99C2-gCLuPILJvtT9YftRWJsartIx6TQ2ZY,22
+targe/actor.py,sha256=J3_MxLXICaY9MsCYiI9B1rR6_nT1UByzZRHyIAzaqco,1601
+targe/audit.py,sha256=YabvlgMv9LqlaJaNzHehoRIOCWnpGSsdBh9tFNeGWbU,1214
+targe/auth.py,sha256=xXMzxNYG3kvQx9m2FCi3Lxedi_-FzKHR19fK_Arkwnk,4699
+targe/errors.py,sha256=EHsKvWzakw9WHgmGGDVshb4g1CtqJmxtLQKzApgpq48,1381
+targe/policy.py,sha256=-9faGSFIf_niFm_3rjrNQuHVZjRuDlydOXBiSuMQG4o,4795
+targe/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+targe/role.py,sha256=1KAvBHt_UhPR5pyDRQq-Cm1pVD5y7Bt3LIhO_ho7THw,563
+targe/utils.py,sha256=Pq55NFDBD6POQvB13EwRDKx1feLrajiE5OtmtKoF8qc,1656
+targe-0.3.3.dist-info/LICENSE,sha256=znrVi_SaJWnxOAc4cx9NdkH1im1d22fGVkHpZz41OvI,1065
+targe-0.3.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+targe-0.3.3.dist-info/METADATA,sha256=Lv6QBE-bXkO30GxBsOrQbScPUJX4pv00yVBO3TJAXcA,17098
+targe-0.3.3.dist-info/RECORD,,
