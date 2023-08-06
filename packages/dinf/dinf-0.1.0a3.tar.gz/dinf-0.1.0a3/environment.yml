@@ -1,0 +1,19 @@
+name: dinf
+channels:
+  # prioritise conda-forge over defaults channel
+  - conda-forge
+  - defaults
+dependencies:
+  # https://docs.anaconda.com/mkl-optimizations/index.html
+  - mkl
+  - numpy
+  # Jax and friends.
+  - jax
+  - flax
+  - optax
+  # The rest.
+  - arviz
+  - cyvcf2
+  - emcee
+  - demes
+  - msprime

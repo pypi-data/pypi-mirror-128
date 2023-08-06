@@ -1,0 +1,28 @@
+name: dinf-jax
+channels:
+  # prioritise conda-forge over defaults channel
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  # We have CUDA v10.1 drivers.
+  - cudatoolkit=10.1
+  - cudnn=7
+  # https://docs.anaconda.com/mkl-optimizations/index.html
+  - mkl
+  - numpy
+  # jax
+  - jax
+  - flax
+  - optax
+  # The rest.
+  - arviz
+  - cyvcf2
+  - emcee
+  - demes
+  - msprime
+  - pip
+  - pip:
+    # Last jaxlib version to support CUDA 10.1
+    # Only available via pip.
+    - jaxlib==0.1.70+cuda101 -f https://storage.googleapis.com/jax-releases/jax_releases.html
