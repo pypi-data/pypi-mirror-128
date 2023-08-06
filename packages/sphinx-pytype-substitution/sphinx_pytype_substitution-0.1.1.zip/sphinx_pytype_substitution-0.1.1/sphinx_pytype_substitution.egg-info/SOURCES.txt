@@ -1,0 +1,13 @@
+CHANGES.rst
+HOWTO.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+sphinx_pytype_substitution/__init__.py
+sphinx_pytype_substitution/substitution_collection.py
+sphinx_pytype_substitution.egg-info/PKG-INFO
+sphinx_pytype_substitution.egg-info/SOURCES.txt
+sphinx_pytype_substitution.egg-info/dependency_links.txt
+sphinx_pytype_substitution.egg-info/entry_points.txt
+sphinx_pytype_substitution.egg-info/top_level.txt
