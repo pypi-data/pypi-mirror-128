@@ -1,0 +1,3 @@
+gdal==3.0.4
+munibot
+requests
