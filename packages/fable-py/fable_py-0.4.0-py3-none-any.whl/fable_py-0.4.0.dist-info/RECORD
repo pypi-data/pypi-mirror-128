@@ -1,0 +1,12 @@
+fable_py/__init__.py,sha256=1--DNaAYSAEAIrU0LZzjDSaVpTfDERz5YakEUvPo62g,61
+fable_py/__main__.py,sha256=dLyVgRFEHlHjWboS7FVilfFdytsyBbk5yVb9-Y8Ksns,86
+fable_py/kernel.py,sha256=pI6OI4wLxt7N_-pA23bCltIeCQlFSFMvCwy-gwfxTWU,13924
+fable_py/version.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+fable_py/images/logo-32x32.png,sha256=eDQegNtkrci6NSShYz3bdnE_Qe-sc9DeCeAZFNhN8zo,763
+fable_py/images/logo-64x64.png,sha256=JpIMRcRCKfNySg60SpMFvTbRacqdHpB9T_mG343C2Vk,1429
+fable_py/images/logo-fable.png,sha256=ldoJyOZnUOFSXkOM2GxxkUpHSf86WMJGqkqHaUvhR-c,17840
+fable_py-0.4.0.dist-info/LICENSE,sha256=6cICas9RlrmlfIcUSTt9rvLM5tt3bsshukM5y8RXngM,1068
+fable_py-0.4.0.dist-info/METADATA,sha256=PjukaAEHyorlWYCXIxMJekDMmeMPA8XlxI_wxrjxw20,2439
+fable_py-0.4.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fable_py-0.4.0.dist-info/top_level.txt,sha256=Wbq-Pa4O6RSr8S4cJUS3XdeYHORuDBkvdxLxJaVUxyQ,9
+fable_py-0.4.0.dist-info/RECORD,,
