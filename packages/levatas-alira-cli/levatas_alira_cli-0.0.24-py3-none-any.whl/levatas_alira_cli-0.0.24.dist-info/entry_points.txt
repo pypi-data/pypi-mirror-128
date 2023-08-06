@@ -1,0 +1,3 @@
+[console_scripts]
+alr = alira_cli.alr:cli
+
