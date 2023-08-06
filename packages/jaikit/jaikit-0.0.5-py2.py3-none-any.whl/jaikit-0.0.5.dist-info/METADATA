@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: jaikit
+Version: 0.0.5
+Summary: Jingwei AI Kit for AI exploration and development.
+Home-page: https://github.com/DoliteMatheo/JAIKit.git
+Author: Jeffrey Ma
+Author-email: mjw814@163.com
+License: UNKNOWN
+Keywords: jaikit
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: numpy
+Provides-Extra: plot
+Requires-Dist: tensorflow ; extra == 'plot'
+Requires-Dist: matplotlib ; extra == 'plot'
+Provides-Extra: unicode
+Requires-Dist: pandas ; extra == 'unicode'
+
+# JAIKit
+Jingwei AI Kit for AI exploration and development.
+
+
