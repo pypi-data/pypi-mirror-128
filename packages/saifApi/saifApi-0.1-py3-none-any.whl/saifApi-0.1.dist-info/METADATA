@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: saifApi
+Version: 0.1
+Summary: A client for financial database
+Home-page: UNKNOWN
+Author: zzw
+License: MIT
+Keywords: client
+Platform: UNKNOWN
+Requires-Python: >3
+Requires-Dist: pandas
+Requires-Dist: requests
+
+===========
+saifApi
+===========
+ 
+This project provides a client for database connection and query in SAIF network.
+
