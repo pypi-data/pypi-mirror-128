@@ -1,0 +1,6 @@
+cone.app
+setuptools
+yafowil.widget.location
+
+[test]
+zope.testrunner
