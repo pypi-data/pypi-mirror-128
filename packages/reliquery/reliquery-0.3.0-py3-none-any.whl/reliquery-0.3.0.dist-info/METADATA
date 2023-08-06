@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: reliquery
+Version: 0.3.0
+Summary: Science's Artifact Antiformat
+Home-page: https://github.com/The-Dev-Effect/reliquery
+Author: The Dev Effect
+Author-email: company@thedeveffect.com
+License: MIT OR Apache-2.0
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy (>=1.16)
+Requires-Dist: boto3 (>=1.17)
+Requires-Dist: black (>=21.4b)
+Requires-Dist: pytest
+Requires-Dist: flake8
+Requires-Dist: sphinx
+Requires-Dist: pandas
+Requires-Dist: nbconvert
+Requires-Dist: nbformat
+
+UNKNOWN
+
