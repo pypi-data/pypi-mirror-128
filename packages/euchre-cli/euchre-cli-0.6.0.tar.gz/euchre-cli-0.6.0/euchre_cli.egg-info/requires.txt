@@ -1,0 +1,10 @@
+click>=8
+names==0.3.0
+loguru>=0.5.0
+
+[dev]
+black
+pytest
+pytest-cov
+pytest-mock
+codecov
