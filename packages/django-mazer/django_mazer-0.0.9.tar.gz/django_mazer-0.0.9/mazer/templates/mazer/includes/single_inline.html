@@ -1,0 +1,15 @@
+{% load mazer %}
+{% get_sections adminform inline_admin_formsets as forms %}
+
+{% for fieldset in forms %}
+    {% if fieldset.is_inline %}
+        {% if not adminform|has_fieldsets %}
+            <div class="card">
+                <div class="card-header">
+                    <b>{{ fieldset.name }}</b>
+                </div>
+                {% include fieldset.opts.template with inline_admin_formset=fieldset %}
+            </div>
+        {% endif %}
+    {% endif %}
+{% endfor %}
