@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nectaapi
+Version: 1.0.0
+Summary: Fetch results of various national examinations done in Tanzania
+Home-page: UNKNOWN
+Author: Tanzania Programmers (Vincent Laizer)
+Author-email: <laizercorp@gmail.com>
+License: UNKNOWN
+Keywords: python,necta,api,necta api,necta tanzania,tanzania programmers
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A get a dictionary of school sammury results, students results and list of all schools and their registration number that participated in national exams in a particular year
+
+
