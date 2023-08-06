@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: via-api
+Version: 0.0.44
+Summary: Analysing and serving crowdsourced road quality data
+Home-page: https://github.com/RobertLucey/via
+Author: Robert Lucey
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6,<3.10
+Requires-Dist: road-collisions (==0.0.6)
+Requires-Dist: cached-property
+Requires-Dist: backoff
+Requires-Dist: packaging
+Requires-Dist: reverse-geocoder
+Requires-Dist: fast-json
+Requires-Dist: boto3
+Requires-Dist: haversine
+Requires-Dist: osmnx
+Requires-Dist: scikit-learn
+Requires-Dist: requests
+Requires-Dist: geopandas
+Requires-Dist: imagehash
+Requires-Dist: pillow
+
+UNKNOWN
+
