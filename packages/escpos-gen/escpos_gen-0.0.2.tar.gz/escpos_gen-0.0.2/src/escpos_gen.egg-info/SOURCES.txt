@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/escpos_gen.py
+src/escpos_gen.egg-info/PKG-INFO
+src/escpos_gen.egg-info/SOURCES.txt
+src/escpos_gen.egg-info/dependency_links.txt
+src/escpos_gen.egg-info/top_level.txt
