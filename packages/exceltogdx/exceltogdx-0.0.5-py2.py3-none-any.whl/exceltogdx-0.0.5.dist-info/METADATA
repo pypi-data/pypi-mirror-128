@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: exceltogdx
+Version: 0.0.5
+Summary: A simple python tool to extract sets and parameters from excel files by creating GDX files for GAMS
+Home-page: UNKNOWN
+Author: Carlos Gaete
+Author-email: cdgaete@gmail.com
+License: MIT License        
+        Copyright (c) 2021 Carlos Gaete-Morales        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.        
+Platform: UNKNOWN
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: gdxpds
+
+# Excel to gdx
+A simple python tool to extract sets and parameters from excel files by creating GDX files for GAMS
+
+See sheet name 'py' in the excel files that describes sets and parameters settings. Similar approach for https://www.gams.com/latest/docs/T_GDXXRW.html
+
+Particularly useful for linux and ios where GDXXRW.exe is not compatible, see here: https://forum.gamsworld.org/viewtopic.php?t=10418#p24019
+
+### <font color='green'>NEW FEATURE (v0.0.5):</font> <font color='red'>+INF, -INF, EPS</font> 
+
+Required library:
+ - gdxpds
+ - pandas
+ - numpy
+ - openpyxl
+ - GAMS API for python
+ 
+Installation
+ 
+    pip install exceltogdx
+ 
+Delete
+ 
+     pip uninstall exceltogdx
+
+See notebook [example.ipynb](https://github.com/diw-berlin/exceltogdx/tree/master/notebooks) and download the excel file [test.xlsx](https://github.com/diw-berlin/exceltogdx/tree/master/notebooks)
+
+```
+from exceltogdx import exceltogdx
+frames = exceltogdx('test.xlsx','test.gdx')
+```
+
+Repository: https://github.com/diw-berlin/exceltogdx
+
+<font color='red'>If you find and error in the code, please raise an issue or solve it by pushing a commit.</font>
+
+
