@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" href="/logo.ico" type="image/x-icon"/>
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet">
+        <script src="/js/markdown-palettes.min.js"></script>
+        <link href="/css/markdown-palettes.css" rel="stylesheet">
+		<link href="/css/modern-business.css" rel="stylesheet">
+		<script src="/js/axios.min.js"></script>
+		<script src="/js/ace.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			#editor
+			{
+				width:100%;
+				height:calc(100vh - 115px);
+			}
+		</style>
+	</head>
+	<body>
+        <iframe src="/head.html" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="height:75px;"></iframe><br>
+        <iframe src="/main-control1.html" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" id="main-control1" style="height:40px;"></iframe>
+		<div id="editor"></div>
+		<script>
+			var init_code="<init_code>";
+			var show_init_code=decodeURIComponent(init_code);
+			console.log(show_init_code);
+			var editor=new MarkdownPalettes('#editor');
+			console.log(editor);
+			editor.content=show_init_code;
+			function GetQueryString(name)
+			{
+				var reg=new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+				var r=window.location.search.substr(1).match(reg);
+				if (r!=null)
+				{
+					return unescape(r[2]);
+				}
+				return null;
+			}
+			function save()
+			{
+				//var editor=new MarkdownPalettes('editor');
+				var save_value=editor.content;
+				console.log(save_value);
+				var send_value=encodeURIComponent(save_value);
+				axios.post("/save?path="+GetQueryString("path"),data=send_value).then(function(response){console.log(response);});
+			}
+			document.onkeydown=function(key)
+			{
+				if(key.code=="KeyS"&&key.ctrlKey==true)
+				{
+					save();
+					return false;
+				}
+			}
+		</script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
