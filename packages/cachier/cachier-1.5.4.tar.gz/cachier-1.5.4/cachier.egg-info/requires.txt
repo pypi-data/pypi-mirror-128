@@ -1,0 +1,14 @@
+watchdog
+portalocker
+pathtools
+
+[test]
+pytest
+coverage
+pytest-cov
+birch
+pymongo
+dnspython
+pandas
+collective.checkdocs
+pygments
