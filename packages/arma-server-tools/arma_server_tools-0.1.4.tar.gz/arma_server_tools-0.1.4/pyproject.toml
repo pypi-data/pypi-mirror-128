@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "arma_server_tools"
+version = "0.1.4"
+description = ""
+authors = ["Ryan <citizen.townshend@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+beautifulsoup4 = "^4.9.3"
+pyyaml = "^5.4.1"
+colorama = "0.4.3"
+click = "^8.0.3"
+click-log = "0.3.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+arma_server = "arma_server_tools.arma_server:main"
+steam_pull = "arma_server_tools.workshop:main"
