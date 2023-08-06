@@ -1,0 +1,17 @@
+sib/__init__.py,sha256=5pZIhrAZNnSMVJ4j6kheL80nXRMEAD8JcTSEb_Go8Ik,388
+sib/c_sib_optimizer.py,sha256=YSXWsGV6RFC3KWPNCLTGvKBLvyR5QDDl2mf950liX8I,2332
+sib/p_sib_optimizer.py,sha256=lo2Ye8d8LPTcSU4z50U4dUh3HCpDfCxH9ucJta-j72A,7158
+sib/sib.py,sha256=IMe6REFGJdh5xNNpcW_PCQV9C6FdeDyZsgHk4_MVGak,20318
+sib/_version.py,sha256=rMAP4LNNrDyhoLtlO9ZmfPdkzchTx-YKsaMqPeWdtWw,497
+sib/c_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sib/c_package/sib_optimizer.cpp,sha256=TKEwdrTYVkh5ojFsU81fFkj45yy-FJm73XgIMAzga8I,13027
+sib/c_package/sib_optimizer.h,sha256=IjjZrUrUX-gjNQJ0If9f2pqdPU717kFvKJxlegRdztg,1518
+sib/c_package/c_sib_optimizer.cpython-39-i386-linux-gnu.so,sha256=CZGH40zJ4OTCu0jYHPguxw_FiIYPwBqAts1EvHvo68k,1065976
+sib/c_package/c_sib_optimizer.pxd,sha256=e7X-iRrlpMrisBOYRBfsWEYvlcW11S1TIzjq4I1KpI4,1213
+sib/c_package/c_sib_optimizer.pyx,sha256=gop94XD6CC0jf1SicH_lAcU3c22eeiMb8GeKgNb0x6s,7381
+sib/c_package/c_sib_optimizer.cpp,sha256=9KanelwXOfrecc2lBKdZ27cG3pCSvk2DecrSwJ8vWv4,946715
+sib_clustering-0.1.4.dist-info/LICENSE,sha256=xllut76FgcGL5zbIRvuRc7aezPbvlMUTWJPsVr2Sugg,11358
+sib_clustering-0.1.4.dist-info/WHEEL,sha256=AVUsxDcuOQrSMWw1RjmHGYt0XoMnIw-iDprjdjsUbsQ,209
+sib_clustering-0.1.4.dist-info/RECORD,,
+sib_clustering-0.1.4.dist-info/METADATA,sha256=Cz3tvMTlXjQ1pzDBsqaF03yIUUgt-_Bg6_iYcHMlwuM,5579
+sib_clustering-0.1.4.dist-info/top_level.txt,sha256=EW2F2zZUgVKrGIxnUCcA3BltCni5AZM6MHZOV6ShlKY,4
