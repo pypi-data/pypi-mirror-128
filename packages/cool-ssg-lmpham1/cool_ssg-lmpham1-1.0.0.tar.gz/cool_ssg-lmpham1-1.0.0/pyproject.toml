@@ -1,0 +1,18 @@
+[tool.black]
+include='\.pyi?$'
+line-length=79
+
+exclude = '''
+/(
+    \.git
+  | dist
+  | public
+)/
+'''
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "markdown"
+]
+build-backend = "setuptools.build_meta"
