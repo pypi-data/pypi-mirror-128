@@ -1,0 +1,3 @@
+types-Jinja2
+types-Werkzeug
+types-click
