@@ -1,0 +1,4 @@
+Name: nlohmann_json
+Description: JSON for Modern C++
+Version: 3.9.1
+Cflags: -I/Users/runner/work/scikit-decide/scikit-decide/build/lib.macosx-10.14-x86_64-3.8/skdecide/hub/include
