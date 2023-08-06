@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: debutizer
+Version: 0.10.0
+Summary: A tool for managing APT packages
+Home-page: https://github.com/velovix/debutizer
+Author: Tyler Compton
+Author-email: xaviosx@gmail.com
+License: UNKNOWN
+Keywords: deb,apt
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.spdx
+Requires-Dist: python-debian
+Requires-Dist: pyxdg
+Requires-Dist: requests
+Requires-Dist: flask
+Requires-Dist: PyYAML
+Provides-Extra: dev
+Requires-Dist: pre-commit (~=2.15) ; extra == 'dev'
+Requires-Dist: pytest (~=6.2) ; extra == 'dev'
+Requires-Dist: black (==21.9b0) ; extra == 'dev'
+Requires-Dist: isort (~=5.9) ; extra == 'dev'
+Requires-Dist: mypy (~=0.910) ; extra == 'dev'
+Requires-Dist: types-requests ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+
+# Debutizer
+
+Debutizer is a tool for managing APT packages, targeted at users who need to
+manage a suite of potentially interdependent packages and want to do so with
+minimal boilerplate and modern continuous integration tooling.
+
+## Installation
+
+### APT Repository (Recommended)
+
+Naturally, Debutizer is available for installation as an APT repository. If
+you're running on a Debian-based distribution, Debutizer can be installed with
+the following commands:
+
+```bash
+curl -SsL https://raw.githubusercontent.com/velovix/debutizer/main/debutizer.key | sudo apt-key add -
+echo "deb http://apt.debutizer.dev $(lsb_release -s -c) main" | sudo tee /etc/apt/sources.list.d/debutizer.list
+sudo apt update
+sudo apt install debutizer
+```
+
+### PyPI
+
+Debutizer is also available on PyPI and can be installed like any other Python
+package. This is a good option for non-Debian Linux environments, but you will
+need to install Debutizer's system dependencies yourself.
+
+Pipx is the recommended way to install through PyPI, as it gives Debutizer its
+own virtual environment to run in.
+
+```
+pipx install debutizer
+```
+
+You can check if Debutizer's system dependencies are available by running
+`debutizer check`.
+
+
