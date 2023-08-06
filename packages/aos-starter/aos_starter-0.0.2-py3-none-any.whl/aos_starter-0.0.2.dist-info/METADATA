@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: aos-starter
+Version: 0.0.2
+Summary: Aos Unit user starter tool
+Home-page: UNKNOWN
+Author: EPAM Systems
+Author-email: support@aoscloud.io
+License: Apache License 2.0
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: aos-keys (>=1.1.7)
+Requires-Dist: aos-prov (>=3.4.8)
+
+UNKNOWN
+
+
