@@ -1,0 +1,17 @@
+mishmash-io-rpc>=0.0.5
+async-timeout
+
+[aws]
+mishmash-io-auth-aws>=0.0.2
+
+[azure]
+mishmash-io-auth-azure>=0.0.2
+
+[dev]
+pytest
+
+[google]
+mishmash-io-auth-google>=0.0.2
+
+[jwt]
+mishmash-io-auth-jwt>=0.0.2
