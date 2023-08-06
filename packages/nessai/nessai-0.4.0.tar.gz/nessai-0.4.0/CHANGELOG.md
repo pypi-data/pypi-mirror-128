@@ -1,0 +1,307 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## [0.4.0] - 2021-11-23
+
+### Added
+
+- Add a constant volume mode to `FlowProposal`. In this mode the radius of the latent contour is fixed to the q'th quantile, which by default is `0.95`. ([#125](https://github.com/mj-will/nessai/pull/125))
+- Add a check for `resume_file` when `resume=True`. ([#126](https://github.com/mj-will/nessai/pull/126))
+- Change default logging level to `WARNING`. ([#126](https://github.com/mj-will/nessai/pull/126))
+- Add `angle-cosine` reparameterisation. ([#126](https://github.com/mj-will/nessai/pull/126))
+- Added an explicit check for one-dimensional models that raises a custom exception `OneDimensionalModelError`. ([#121](https://github.com/mj-will/nessai/pull/121))
+- `RealNVP` and `NeuralSplineFlow` now raise an error if `features<=1`. ([#121](https://github.com/mj-will/nessai/pull/121))
+- Add option in `nessai.reparameterisations.Angle` to set `scale=None`, the scale is then set as `2 * pi / angle_prior_range`. ([#127](https://github.com/mj-will/nessai/pull/127))
+- Add `'periodic'` reparameterisation that uses `scale=None` in `nessai.reparameterisations.Angle`. ([#127](https://github.com/mj-will/nessai/pull/127))
+- Add the `use_default_reparameterisations` option to `FlowProposal` to allow the use of the default reparameterisations in `GWFlowProposal` without specifying any reparameterisations. ([#129](https://github.com/mj-will/nessai/pull/129))
+- Add `chi_1`, `chi_2` and `time_jitter` to known parameters in `GWFlowProposal` with corresponding defaults. ([#130](https://github.com/mj-will/nessai/pull/130))
+
+### Changed
+
+- Reparameterisation `angle-sine` is now an alias for `RescaledToBounds` instead of `Angle` with specific keyword arguments. ([#126](https://github.com/mj-will/nessai/pull/126))
+- `maximum_uninformed=None` now defaults to 2 times `nlive` instead of `np.inf`. ([#126](https://github.com/mj-will/nessai/pull/126))
+- `nlive=2000` by default. ([#126](https://github.com/mj-will/nessai/pull/126))
+- Default `batch_size` is now 1000. ([#126](https://github.com/mj-will/nessai/pull/126))
+- Default `n_neurons` is now 2 times the dimensions of the normalising flow. ([#126](https://github.com/mj-will/nessai/pull/126))
+- Default mode for `FlowProposal` is `constant_volume_mode=True`. ([#126](https://github.com/mj-will/nessai/pull/126))
+- Proposal plots are now disabled by default. ([#126](https://github.com/mj-will/nessai/pull/126))
+- `cooldown` now defaults to `200` to reflect the change in `nlive`. ([#126](https://github.com/mj-will/nessai/pull/126))
+- Default optimiser is now `adamw`. ([#126](https://github.com/mj-will/nessai/pull/126))
+- Rework `AugmentedFlowProposal` to work with the new defaults. ([#126](https://github.com/mj-will/nessai/pull/126))
+- `Model.names` and `Model.bounds` are now properties by default and their setters include checks to verify the values provided are valid and raise errors if not. ([#121](https://github.com/mj-will/nessai/pull/121))
+- Logger now has propagation enabled by default. ([#128](https://github.com/mj-will/nessai/pull/128))
+- `FlowProposal.configure_reparameterisations` can now handle an input of `None`. In this case only the default reparameterisations will be added. ([#129](https://github.com/mj-will/nessai/pull/129))
+- Changed default reparameterisation for gravitational-wave parameters `a_1` and `a_2` to `'default'`. ([#130](https://github.com/mj-will/nessai/pull/130))
+
+### Fixed
+
+- Fixed a bug where the parameters list passed to `Reparameterisation` (or its child classes) wasn't being copied and changes made within the reparameterisation would change the original list. ([#127](https://github.com/mj-will/nessai/pull/127))
+
+### Deprecated
+
+- `keep_samples` in `FlowProposal` will be removed in the next minor release.
+
+
+## [0.3.3] - 2021-11-04
+
+### Fixed
+
+- Fixed a bug in `nessai.livepoint.dict_to_live_points` when passing a dictionary where the entries contained floats instead of objects with a length raised an error. ([#119](https://github.com/mj-will/nessai/pull/119))
+
+
+## [0.3.2] - 2021-10-12
+
+### Added
+
+- Added more checks to the init method for `nessai.reparameterisations.AnglePair` to catch invalid combinations of priors and/or angle conventions. Now supports RA or azimuth defined on [-pi, pi] in addition to [0, 2pi]. ([#114](https://github.com/mj-will/nessai/pull/114))
+- Add a check in `nessai.flowmodel.update_config` for `'noise_scale'`, a `ValueError` is now raised if `noise_scale` is not a float or `'adaptive'`. ([#115](https://github.com/mj-will/nessai/pull/115))
+- Add `codespell` to the pre-commit checks. ([#116](https://github.com/mj-will/nessai/pull/116))
+
+### Changed
+
+- The dtype for tensors passed to the flow is now set using `torch.get_default_dtype()` rather than always using `float32`. ([#108](https://github.com/mj-will/nessai/pull/108))
+- Incorrect values for `mask` in `nessai.flows.realnvp.RealNVP` now raise `ValueError` and improved the error messages returned by all the exceptions in the class. ([#109](https://github.com/mj-will/nessai/pull/109))
+- Change scale of y-axis of the log-prior volume vs. log-likelihood plot from `symlog` to the default linear axis. ([#110](https://github.com/mj-will/nessai/pull/110))
+- `nessai.plot.plot_trace` now includes additional parameters such as `logL` and `logP` default, previously the last two parameters (assumed to be `logL` and `logP` were always excluded). ([#111](https://github.com/mj-will/nessai/pull/111))
+
+### Fixed
+
+- Fixed an issue where `nessai.reparameterisations.AnglePair` would silently break when the prior range for RA or azimuth was set to a range that wasn't [0, 2pi]. It now correctly handles both [0, 2pi] and [-pi, pi] and raises an error for any other ranges. ([#114](https://github.com/mj-will/nessai/pull/114))
+- Fixed various spelling mistakes throughtout the source code and documentation. ([#116](https://github.com/mj-will/nessai/pull/116))
+
+
+## [0.3.1] Minor improvements and bug fixes - 2021-08-23
+
+This release has a few minor improvements and bug fixes. It also explicitly adds support for python 3.9, which worked previously but was not tested.
+### Added
+
+- Add `in_bounds`, `parameter_in_bounds` and `sample_parameter` methods to `nessai.model.Model`. ([#90](https://github.com/mj-will/nessai/pull/90))
+- Implemented the option to specify the cosmology in `nessai.gw.utils.ComovingDistanceConverter` using `astropy`. Previously changing the value had no effect of the transformation. ([#91](https://github.com/mj-will/nessai/pull/91))
+- Improve test coverage for `nessai.proposal.base.Proposal` ([#92](https://github.com/mj-will/nessai/pull/92))
+- Add `'logit'` to the default reparameterisations ([#98](https://github.com/mj-will/nessai/pull/98))
+- Add example using the Rosenbrock likelihood in two dimensions ([#99](https://github.com/mj-will/nessai/pull/99))
+- Add a `colours` argument to `nessai.plot.plot_1d_comparison` ([#102](https://github.com/mj-will/nessai/pull/102))
+- Explicitly support Python 3.9 (Added Python 3.9 to unit tests) ([#103](https://github.com/mj-will/nessai/pull/103))
+
+### Changed
+
+- `nessai.gw.utils.DistanceConverter` now inherits from `abc.ABC` and `to_uniform_parameter` and `from_uniform_parameter` are both abstract methods. ([#91](https://github.com/mj-will/nessai/pull/91))
+- `nessai.proposal.base.Proposal` now inherits from `abc.ABC` and `draw` is an abstract method. ([#92](https://github.com/mj-will/nessai/pull/92))
+- `nessai.proposal.rejection.RejectionProposal` now inherits from `nessai.proposal.analytic.AnalyticProposal`. Functionality is the same but the code will be easier to maintain since this removes several methods that were identical. ([#93](https://github.com/mj-will/nessai/pull/93))
+- `noise_scale='adaptive'` option in `FlowModel` now correctly uses a standard deviation of 0.2 times the mean nearest neighbour separation as described in [Moss 2019](https://arxiv.org/abs/1903.10860). Note that this feature is disabled by default, so this does not change the default behaviour. ([#95](https://github.com/mj-will/nessai/pull/95))
+- Refactor `nessai.utils` into a submodule. ([#96](https://github.com/mj-will/nessai/pull/96))
+- Change behaviour of `determine_rescaled_bounds` so that `rescale_bounds` is ignored when `inversion=True`. This matches the behaviour in `RescaledToBounds` where when boundary inversion is enabled, values are rescaled to [0, 1] and then if no inversion if applied, changed to [-1, 1]. ([#96](https://github.com/mj-will/nessai/pull/96))
+- Tweaked `detect_edges` so that `both` is returned in cases where the lower and upper regions contain zero probability. ([#96](https://github.com/mj-will/nessai/pull/96))
+- `NestedSampler` no longer checks capitalisation of `flow_class` when determining which proposal class to use. E.g. `'FlowProposal'` and `'flowproposal'` are now both valid values. ([#100](https://github.com/mj-will/nessai/pull/100))
+- `NestedSampler.configure_flow_proposal` now raises `ValueError` instead of `RuntimeError` if `flow_class` is an invalid string. ([#100](https://github.com/mj-will/nessai/pull/100))
+- Raise a `ValueError` if `nessai.plot.plot_1d_comparison` is called with a labels list and the length does not match the number of sets of live points being compared. ([#102](https://github.com/mj-will/nessai/pull/102))
+- `nessai.flow.base.BaseFlow` now also inherits from `abc.ABC` and methods that should be defined by the user are abstract methods. ([#104](https://github.com/mj-will/nessai/pull/104))
+- Changed default to `fuzz=1e-12` in `nessai.utils.rescaling.logit` and `nessai.utils.rescaling.sigmoid` and improved stability. ([#105](https://github.com/mj-will/nessai/pull/105))
+
+### Fixed
+
+- Fixed a typo in `nessai.gw.utils.NullDistanceConverter.from_uniform_parameter` that broke the method. ([#91](https://github.com/mj-will/nessai/pull/91))
+- Fixed a bug in `nessai.reparameterisations.RescaleToBounds` when using `offset=True` and `pre_rescaling` where the prime prior bounds were incorrectly set. ([#97](https://github.com/mj-will/nessai/pull/97))
+- Fixed a bug that prevented disabling periodic checkpointing. ([#101](https://github.com/mj-will/nessai/pull/101))
+- Fixed a bug when calling `nessai.plot.plot_1d_comparison` with live points that contain a field with only infinite values. ([#102](https://github.com/mj-will/nessai/pull/102))
+- Fixed the log Jacobian determinant for `nessai.utils.rescaling.logit` and `nessai.utils.rescaling.sigmoid` which previously did not include the Jacobian for the fuzz when it was used. ([#105](https://github.com/mj-will/nessai/pull/105))
+
+
+## [0.3.0] Testing, testing and more testing - 2021-07-05
+
+This release contains a large number of changes related to bugs and issues that were discovered when writing more tests for `nessai`.
+
+It also adds a number of feature and examples.
+
+**Note:** Runs produced with previous releases are incompatible with this release and cannot be resumed with out manual intervention.
+
+### Added
+
+- Added code to catch errors when calling `plot_live_points` when `gwpy` is installed.
+- Added tests for `_NSIntegralState`.
+- Add code coverage upload
+- Added an example of using unbounded priors, `bilby_unbounded_priors.py`
+- Added `Rescale` reparameterisation that just rescales by a constant and does not require prior bounds. Also add
+tests for this reparameterisation.
+- Added more GW examples.
+- Added tests for `AugmentedFlowProposal`.
+- Added an example using `AugmentedFlowProposal`.
+- Added eggbox example.
+- Added an error if calling `FlowProposal.rejection_sampling` with `FlowProposal.truncate=True` but `worst_q=None`.
+- Add option to train using dataloaders or directly with tensors. This is faster when using CUDA.
+- Add options to train with different optimisers: Adam, AdamW, SGD
+- Add tests for `NestedSampler`
+- Explicitly check prior bounds when using reparameterisations. This catches cases where infinite bounds are used and break some reparameterisations. (#82)
+- Add error when calling `FlowProposal.populate` without initialising the proposal.
+- Add `NestedSampler.plot_insertion_indices` to allow for easier plotting of insertion indices.
+- Add `filename` keyword argument to `NestedSampler.plot_trace`.
+- Added `batch_norm_within_layers` to `NeuralSplineFlow`
+
+### Changed
+
+- Plotting logX vs logL now returns the figure is `filename=None`
+- `NestedSampler.plot_state` now has the keyword argument `filename` and the figure is only saved if it is specified.
+- Changed name from `_NSintegralState` to `_NSIntegralState`.
+- `nessai.model.Model` now inherits from `abc.ABC` and `log_prior` and `log_likelihood` are now `abstractmethods`. This prevents the class from being used without redefining those methods.
+- Updated `AumgentedFlowProposal` to work with current version of `FlowProposal`
+- Fix random seed unit tests.
+- Improved `FlowProposal.reset` so that all attributes that are changed by calling `draw` are reset.
+- Move `_NSIntegralState` and some functions from `posterior.py` to `evidence.py`
+- `NestedSampler.check_flow_model_reset` will now NOT reset the flow it has never been trained (i.e `proposal.training_count==0`)
+- Moved all legacy gw functions to `nessai/gw/legacy.py` and removed them from the coverage report.
+- Minor improvements to `NestedSampler`
+- Better handling on NaNs in `NestedSampler.populate_live_points`
+- Minor improvements to plotting in `FlowProposal` and moved plotting to separate methods in `FlowProposal`.
+- Switch to using `os.path.join` when joins paths.
+- Improved `FlowProposal.reset`
+- Renamed `FlexibleRealNVP` to `RealNVP`, shouldn't affect most uses since the default way to specify a flow is via strings in `configure_model`.
+- Renamed `nessai.flows.utils.setup_model` to `configure_model`.
+- Renamed `nessai.flows.utils.CustomMLP` to `MLP`
+- Changed default value for `tail_bound` in `NeuralSplineFlow` to 5.
+
+
+### Fixed
+
+- Fixed a bug when plotting the state plot from a saved instance of the sampler where the sampling time was changed based on the current time.
+- Fixed a bug when using `plot_trace`, `plot_1d_comparison` or `plot_live_points` with a single parameter
+- Total sampling time is now correctly displayed when producing a state plot from a saved sampler.
+- Fixed a bug when using unbounded priors related to `Model.verify_model`
+- Fix inversion-split with `RescaleToBounds`
+- Fixed `AugmentedGWFlowProposal`.
+- Fixed a bug with `plot_live_points` when the hue parameter (`c`) was constant.
+- Fixed a bug with the reparameterisation `Rescale` when `scale` was set to a negative number.
+- Fixed a bug where `scale` could not be changed in `ToCartesian`.
+- Fixed a error when specifying `NullReparameterisation` (!82)
+- Fix typo in `FlowProposal.set_poolsize_scale` when `acceptance=0`
+- Fixed unintended behaviour when `rescale_parameters` is a list and `boundary_inversion=True`, where the code would try apply inversion to all parameters in `Model.names`.
+- Fixed bug where `z` returned by `FlowProposal.rejection_sampling` was incorrect when using truncation (which is not recommended).
+- Fix `prior_sampling`
+- Fixed minor typos in `nessai.proposal.flowproposal.py`
+
+
+### Removed
+
+- Remove "clip" option in `FlowProposal`, this was unused and untested.
+
+
+## [0.2.4] - 2021-03-08
+
+This release includes a number of bug fixes, changes to make the `GWFlowProposal` consistent with `LegacyGWFlowProposal` and a number of new unit tests to improve test coverage.
+
+### Added
+
+- Add poolsize to `AnalyticProposal`
+- Add a test for sampling with multiprocessing.
+- Add a test for sampling with `AnalyticProposal` and `RejectionProposal`.
+- Add a test for using the proposal methods with `n_pool`
+- Add tests for reparameterisations.
+- Add a test for comparing `GWFlowProposal` and `LegacyGWFlowProposal`.
+
+### Changed
+
+- Changed prime priors in `LegacyGWFlowProposal` to not update. This improves efficiency.
+- Changes to the reparameterisations to the the proposal consistent with `LegacayGWFlowProposal`:
+    - Use [-1, 1] when inversion is enabled but not applied
+- Improved errors when reparameterisations are configured incorrectly.
+
+### Fixed
+
+- Fixed a bug with saving results when multiprocessing is enabled.
+- Fixed a bug with `AnalyticProposal` introduced in the last release.
+- Fixed a bug with resuming when using certain reparameterisations.
+
+
+## [0.2.3] - 2021-02-24
+
+Add support for Python >= 3.6 and other minor changes and bug fixes
+
+### Added
+
+- Badges for DOI and PyPI versions.
+- Add support for Python >= 3.6.
+- Improve doc-strings and tweak settings for doc-strings in the documentation.
+- Add tests for plotting functions.
+- Added sections to README and docs on citing `nessai`.
+
+### Changed
+
+- Remove `:=` operator to enable support for Python >= 3.6.
+- Plotting functions are now more consistent and all return the figure if `filename=None`.
+
+### Fixed
+
+- Fixed bug when plotting non-structured arrays with `plot_1d_comparison` and specifying `parameters`.
+- Fixed bug where `plot_indices` failed if using an empty array but worked with an empty list.
+
+### Removed
+
+- Remove `plot_posterior` because functionality is include in `plot_live_points`.
+- Remove `plot_likelihood_evaluations` because information is already contained in the state plot.
+- Remove `plot_acceptance` as it is only by augmented proposal which is subject to change.
+- Remove `plot_flow`.
+
+## [0.2.2] - 2021-02-19
+
+This release was added to trigger Zenodo for producing a DOI.
+
+### Added
+
+- Docs badge
+
+## [0.2.1] - 2021-02-18
+
+Minor repository related fixes. Core code remains unchanged.
+
+### Added
+
+- PyPI workflow to automatically release package to PyPI
+
+### Fixed
+
+- Fixed issue with README not rendering of PyPi
+
+## [0.2.0] - 2021-02-18
+
+First public release.
+
+### Added
+
+- Complete documentation
+- Use `setup.cfg` and `pyproject.toml` for installing package
+- `reparemeterisations` submodule for more specific reparameterisations
+- `half_gaussian.py` example
+
+### Changed
+
+- Change to use `main` instead of `master`
+- Default `GWFlowProposal` changed to used `reparameterisations`
+- Split `proposal.py` into various submodules
+- Minor updates to examples
+- `max_threads` default changed to 1.
+
+### Fixed
+
+- Fix a bug where `maximum_uninformed` did not have the expected behaviour.
+
+### Deprecated
+
+- Original `GWFlowProposal` method renamed to `LegacyGWFlowProposal`. Will be removed in the next release.
+
+
+[Unreleased]: https://github.com/mj-will/nessai/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/mj-will/nessai/compare/v0.3.3...v0.4.0
+[0.3.3]: https://github.com/mj-will/nessai/compare/v0.3.2...v0.3.3
+[0.3.2]: https://github.com/mj-will/nessai/compare/v0.3.1...v0.3.2
+[0.3.1]: https://github.com/mj-will/nessai/compare/v0.3.0...v0.3.1
+[0.3.0]: https://github.com/mj-will/nessai/compare/v0.2.4...v0.3.0
+[0.2.4]: https://github.com/mj-will/nessai/compare/v0.2.3...v0.2.4
+[0.2.3]: https://github.com/mj-will/nessai/compare/v0.2.2...v0.2.3
+[0.2.2]: https://github.com/mj-will/nessai/compare/v0.2.1...v0.2.2
+[0.2.1]: https://github.com/mj-will/nessai/compare/v0.2.0...v0.2.1
+[0.2.0]: https://github.com/mj-will/nessai/compare/v0.1.1...v0.2.0
