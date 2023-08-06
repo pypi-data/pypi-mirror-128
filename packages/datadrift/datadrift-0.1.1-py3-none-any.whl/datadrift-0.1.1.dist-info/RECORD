@@ -1,0 +1,9 @@
+datadrift/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+datadrift/datadrift.py,sha256=zLwyw9rPKowfSBpjKd23hn6bHvUdeB-G1E5xH0tS-2s,4392
+datadrift/detect_drift.py,sha256=gS3R_o9SDJIKc6_t6iZ_rACfM51L1u860AhM5yrPezU,12689
+datadrift/parse_results.py,sha256=eR0CwnWCA9za2CneZHLUXiha7Z7sXXytVCMtW_X9a0w,2944
+datadrift-0.1.1.dist-info/LICENSE,sha256=bVX9Bc0OyCCVQOfOV6YwPCW027ucRl1Kp6kKBbCHpVE,1068
+datadrift-0.1.1.dist-info/METADATA,sha256=O2JvyqNeQSAHVDbvOpYEns7ATHt6m9HWUDPgN_M7ZMs,489
+datadrift-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+datadrift-0.1.1.dist-info/top_level.txt,sha256=V9oePdFHaK6XSqtq2ZOQ01TNpsEv14J5C6E3PyE8T4A,10
+datadrift-0.1.1.dist-info/RECORD,,
