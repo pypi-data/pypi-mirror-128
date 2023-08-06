@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block headtitle %}
+	{{ error }} (400)
+{% endblock headtitle %}
+
+{% block content %}
+    <section title="{{ error }}" data-role="content" data-theme="e">
+        <h2>
+			<span class="ui-icon ui-icon-alert ui-icon-shadow" style="align:center;display:inline-block;margin-right:20px;">&nbsp;</span>
+			{{ error_message }}
+		</h2>
+		{% if exception %}
+       		<p>{{ exception }}</p>
+		{% endif%}
+    </section>
+{% endblock %}
