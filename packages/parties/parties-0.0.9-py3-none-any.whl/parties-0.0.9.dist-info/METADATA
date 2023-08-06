@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: parties
+Version: 0.0.9
+Summary: A python shell for parties cfd code
+Home-page: https://github.com/metialex/PARTIES_python_shell
+Author: Alexander Metelkin
+Author-email: a.metelkin@tu-braunschweig.de
+License: MIT
+Platform: UNKNOWN
+License-File: LICENCE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: h5py
+Requires-Dist: icecream
+Requires-Dist: matplotlib
+
+A python shell for parties cfd code
+
