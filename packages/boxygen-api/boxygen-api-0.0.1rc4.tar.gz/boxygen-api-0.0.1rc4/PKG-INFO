@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: boxygen-api
+Version: 0.0.1rc4
+Summary: The Boxygen base API client for Python 3
+Home-page: https://github.com/nitrictech/boxygen-apis
+Author: Nitric
+Author-email: maintainers@nitric.io
+License: UNKNOWN
+Description: # Boxygen Python Base API Client
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
