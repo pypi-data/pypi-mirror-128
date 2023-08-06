@@ -1,0 +1,7 @@
+[console_scripts]
+rpn = rpn.rpn:main
+rpnChilada = rpn.rpn:main
+rpnMakeHelp = rpn.makeHelp:main
+rpnMakeUnits = rpn.makeUnits:main
+testRPN = rpn.testRPN:main
+
