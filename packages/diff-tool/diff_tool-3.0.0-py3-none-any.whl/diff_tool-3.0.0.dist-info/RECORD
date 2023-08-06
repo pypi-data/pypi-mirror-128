@@ -1,0 +1,12 @@
+diff_tool/__init__.py,sha256=e3x1Zq_Q3g_wWRWY5JR2dj2zY8ZdB0GisOU74kj32VE,77
+diff_tool/cli.py,sha256=PJjAXwxC0expd59jS7vacvVw4cpXLPaI3cNf6KQRe08,1417
+diff_tool/diff.py,sha256=wY-5fS5qKU89ckrIPS33RLx2W0UIwz4lC_I_us0Np7k,623
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unit/test_diff.py,sha256=2qoQ-jwc4j1U4t7e_jV_HN6iL1f--Ora7ac0gysh2Qo,755
+diff_tool-3.0.0.dist-info/LICENSE,sha256=eetzvdaAaPwdWbQ3lrIVNAsUEimMPZII2-W94pVigoI,1071
+diff_tool-3.0.0.dist-info/METADATA,sha256=GDF1lg8bCzf_7nJIKt6AMSFt2kTZAuKR3g7sibxUQBg,2400
+diff_tool-3.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+diff_tool-3.0.0.dist-info/entry_points.txt,sha256=fRPZhw9ckQiRAGhjbu5Ka0_-JTIqfl93mKhAoZIBCmo,50
+diff_tool-3.0.0.dist-info/top_level.txt,sha256=Fq905jW-ZbeNZzkSI4UYhd33K2ccKfxUElQjFr2wITE,15
+diff_tool-3.0.0.dist-info/RECORD,,
