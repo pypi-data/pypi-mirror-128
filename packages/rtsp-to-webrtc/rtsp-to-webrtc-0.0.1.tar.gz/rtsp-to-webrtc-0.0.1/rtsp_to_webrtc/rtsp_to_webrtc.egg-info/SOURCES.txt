@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+rtsp_to_webrtc/rtsp_to_webrtc.egg-info/PKG-INFO
+rtsp_to_webrtc/rtsp_to_webrtc.egg-info/SOURCES.txt
+rtsp_to_webrtc/rtsp_to_webrtc.egg-info/dependency_links.txt
+rtsp_to_webrtc/rtsp_to_webrtc.egg-info/top_level.txt
+tests/__init__.py
+tests/client_test.py
+tests/conftest.py
