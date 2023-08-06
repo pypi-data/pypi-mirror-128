@@ -1,0 +1,10 @@
+hydraulic/__init__.py,sha256=iWdPotVMCdgTYBJQxLMbv0XUYdNZUPyHyIb4iH7JjXE,76
+hydraulic/core.py,sha256=BQUShOtHrNCgg80izg7QNOsVsMsSH58RMT5iVnR_JDE,21578
+hydraulic/fluids.py,sha256=Mf6NfBFqxR7cTQWVnbQ1jFLDSYdAl-5Slv_r28pKGpQ,765
+hydraulic/pipes.py,sha256=ue-WH6Kf43c9u2B7tK60fI3fhWAk2l2iFRJWxMVfAYE,17627
+hydraulic/thermal.py,sha256=yrB-1eG03vSxjHutDLkZQomSu4orTb37u0qwhUexVk0,23822
+hydraulic-0.1.0.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+hydraulic-0.1.0.dist-info/METADATA,sha256=kF6dAvCVw36b1s7sbK6bGnyeCmj-AXx9e90K4fUpZb8,923
+hydraulic-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hydraulic-0.1.0.dist-info/top_level.txt,sha256=LjYiIOpAZ0ozdqLGb6Bqxz1OUF01MckLqilrYQcgoxo,10
+hydraulic-0.1.0.dist-info/RECORD,,
