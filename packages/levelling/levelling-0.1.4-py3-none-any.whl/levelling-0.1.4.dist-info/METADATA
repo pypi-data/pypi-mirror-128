@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: levelling
+Version: 0.1.4
+Summary: An easy to use package for levelling features in discord.py.
+Home-page: https://github.com/MenuDocs/discord.ext.levelling
+Author: Menudocs
+Author-email: contact@menudocs.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: aiosqlite
+
+Discord Levelling
+---
+
+A package built for discord.py developers who want to
+easily and seamlessly integrate a levelling system into
+their bots.
+
+#### Key features
+ - Easy database integration for *any* database system
+ - Fully tested
+ - Highly customizable 
+ - Plug & Play
+
+---
+
+## Example usage
+
+```python
+import os
+
+import discord
+from discord.ext import commands
+from levelling import Level, LevelUpPayload
+
+
+class Bot(commands.Bot):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.level = Level(self)
+
+    async def on_ready(self):
+        print(f"-----\nLogged in as: {self.user.name} : {self.user.id}\n-----")
+
+    async def on_message(self, message):
+        leveled_up = await self.level.propagate(message)
+        if leveled_up:
+            await self.on_level_up(leveled_up)
+
+        await self.process_commands(message)
+
+    async def on_level_up(self, payload: LevelUpPayload):
+        # This is triggered when a LevellingMember levels up
+        member = payload.guild.get_member(payload.member.id)
+        embed = discord.Embed(
+            title=f"`{member.display_name}` has leveled up to level `{payload.level}`!"
+        )
+        await payload.channel.send(embed=embed)
+
+
+bot = Bot(command_prefix="!", intents=discord.Intents.all())
+
+
+@bot.command()
+async def leaderboard(ctx):
+    leaderboard_members = await bot.level.leaderboard()
+    desc = "\n".join(f"<@{m.id}> - level `{m.level}`" for m in leaderboard_members)
+
+    await ctx.send(f"Here's our leaders!\n---\n\n{desc}")
+
+
+if __name__ == "__main__":
+    token = os.getenv("TOKEN")
+    bot.run(token)
+
+```
+
+## Documentation | Examples | Support
+
+For documentation and examples, [see here](https://discord-ext-levelling.readthedocs.io/en/latest/)
+
+Join the MenuDocs' discord server for support with this package!
+- https://discord.gg/menudocs
+
+or dm us on twitter!
+- https://twitter.com/menudocs
+
+
