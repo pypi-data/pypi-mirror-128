@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "quality-lac-data-ref-postcodes"
+version = "2021.8-alpha.1"
+description = """\
+This is a redistribution of the ONS dataset on Lower Tier Local Authority to\
+Upper Tier Local Authority Lookup packaged for the Quality Lac Data project.\
+\
+Source: Office for National Statistics licensed under the Open Government Licence v.3.0\
+"""
+authors = [
+    "Office for National Statistics <sharedcustomercontactcentre@ons.gov.uk>",
+    "Kaj Siebert <kaj@k-si.com>",
+]
+license = "OGL-UK-3.0"
+packages = [
+    { include = "qlacref_postcodes" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<4.0"
+pandas = { version="^1.0.0", optional=true }
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.extras]
+pandas = ["pandas"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
