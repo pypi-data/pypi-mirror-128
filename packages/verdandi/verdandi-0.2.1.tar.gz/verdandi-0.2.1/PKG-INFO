@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: verdandi
+Version: 0.2.1
+Summary: Benchmarking framework
+Home-page: https://github.com/exler/verdandi
+License: MIT
+Keywords: benchmark,performance
+Author: Kamil Marut
+Author-email: kamil@kamilmarut.com
+Requires-Python: >=3.6.2,<4.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Benchmark
+Project-URL: Bug Tracker, https://github.com/exler/verdandi/issues
+Project-URL: Repository, https://github.com/exler/verdandi
+Description-Content-Type: text/markdown
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/exler/verdandi/main/docs/logo.png" width="192">
+</p>
+<p align="center">
+    Class-based benchmarking framework with <code>unittest</code>-style behavior 
+</p>
+<p align="center">
+    <img src="https://github.com/exler/verdandi/actions/workflows/quality.yml/badge.svg">
+</p>
+
+## Overview
+
+Verdandi is a small library providing class-based benchmarking functionality with similar interface to Python's [unittest](https://docs.python.org/3/library/unittest.html).
+
+## Requirements
+
+* Python >= 3.6
+
+## Installation
+```
+$ pip install verdandi
+```
+
+## Usage
+
+Verdandi can be used as a command-line both by passing the files containing benchmarks as arguments or by using the discovery functionality:
+
+```bash
+# Specifying the files
+$ verdandi tests.benchmarks.bench_module1 tests.benchmarks.bench_module2
+
+# Running discovery
+$ verdandi
+```
+
+## Credits
+
+* [unittest](https://docs.python.org/3/library/unittest.html) - Verdandi is based on `unittest` and wouldn't exist without it!
+* [pytest](https://docs.pytest.org/en/6.2.x/) - some improvements over the `unittest` library are inspired by `pytest` or its plugins!
+
+## License
+
+Copyright (c) 2021 by ***Kamil Marut***
+
+`verdandi` is under the terms of the [MIT License](https://www.tldrlegal.com/l/mit), following all clarifications stated in the [license file](LICENSE).
+

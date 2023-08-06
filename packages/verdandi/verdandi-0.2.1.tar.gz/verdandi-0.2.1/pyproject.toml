@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "verdandi"
+version = "0.2.1"
+authors = ["Kamil Marut <kamil@kamilmarut.com>"]
+description = "Benchmarking framework"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/exler/verdandi"
+keywords = ["benchmark", "performance"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: System :: Benchmark",
+    "Topic :: Software Development :: Testing",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/exler/verdandi/issues"
+
+[tool.poetry.scripts]
+verdandi = "verdandi.main:main"
+
+[tool.poetry.dependencies]
+python = ">=3.6.2,<4.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.6b0"
+flake8 = "^3.9.2"
+flake8-annotations = "^2.7.0"
+bandit = "^1.7.0"
+isort = "^5.8.0"
+mypy = "^0.910"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = true
+exclude = "(tests)"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
