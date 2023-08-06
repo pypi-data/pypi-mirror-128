@@ -1,0 +1,14 @@
+numpy
+pyproj
+asf_search
+hyp3_sdk
+IPython
+ipywidgets
+matplotlib-base
+osgeo
+pandas
+requests
+
+[dev]
+pytest
+pytest-cov
