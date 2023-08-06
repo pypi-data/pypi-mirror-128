@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: simple_health_checks_django_database
+Version: 1.0.0
+Summary: Django database plugin for simple-health-checks
+Home-page: https://gitlab.com/genomicsengland/opensource/simple-healthchecks
+Author: Nicholas Dentandt, Oleg Gerasimenko, Constantina Polycarpou
+Author-email: noreply@genomicsengland.co.uk
+License: Apache License 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: dev
+
+file: README.md
+
