@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+requirements_dev.txt
+setup.cfg
+setup.py
+pathable/__init__.py
+pathable/accessors.py
+pathable/parsers.py
+pathable/paths.py
+pathable.egg-info/PKG-INFO
+pathable.egg-info/SOURCES.txt
+pathable.egg-info/dependency_links.txt
+pathable.egg-info/not-zip-safe
+pathable.egg-info/top_level.txt
