@@ -1,0 +1,26 @@
+six>=1.11
+aws-sam-translator>=1.40.0
+jsonpatch
+jsonschema~=3.0
+junit-xml~=1.9
+jschema_to_python~=1.2.3
+sarif-om~=1.0.4
+
+[:python_version != "3.5"]
+pyyaml>5.4
+
+[:python_version < "3.5"]
+networkx<=2.2
+pyrsistent<=0.16.0
+
+[:python_version < "3.7"]
+importlib_resources<4,>=1.4
+
+[:python_version <= "3.4"]
+pathlib2>=2.3.0
+
+[:python_version == "3.5"]
+pyyaml<=5.4
+
+[:python_version >= "3.5"]
+networkx~=2.4
