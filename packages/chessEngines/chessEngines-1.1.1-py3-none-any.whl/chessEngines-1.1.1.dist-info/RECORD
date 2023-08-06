@@ -1,0 +1,14 @@
+chess_engines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chess_engines/engines.py,sha256=xKdiPa-3tulbNpWQPZu9HUiKgZtKlIh3oyhNlpWN7U4,10103
+chess_engines/parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chess_engines/parser/parser.py,sha256=x9VK5xyp0XF6eoZYCFWys5p47tNAKhWX1vEAzBNaFt4,2754
+chess_engines/parser/gen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chess_engines/parser/gen/pgnLexer.py,sha256=ZYt2YVNuarU7O2t8rM_8EDziKrT0-_GIK0shrl_g7dE,4228
+chess_engines/parser/gen/pgnListener.py,sha256=gufbL2DsqCxoX_JrUTYOaF9FGrwz-zJWCpWYk8kaPjQ,2358
+chess_engines/parser/gen/pgnParser.py,sha256=D6mlsKftr9iVSv4GVta_gYPGNtYtVQAbENAYe739NBQ,35681
+chess_engines/parser/gen/pgnVisitor.py,sha256=mG3Abh_LmW2auwUTb3k5TYQaEF5Tx_5kt9RF9OtTVEc,1591
+chessEngines-1.1.1.dist-info/LICENCE,sha256=8QInZNN27G4_8ijhraBr-AigEWMkdjEgCDSOAxR2cIY,1072
+chessEngines-1.1.1.dist-info/METADATA,sha256=948SaYn9WpWHDWIEAF63w2zcwlIKWON-Jcn0AEOrqGY,1592
+chessEngines-1.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+chessEngines-1.1.1.dist-info/top_level.txt,sha256=93rVkZdelD9bZk27D2gfqcXYkus-WNENLie9U-iyGHQ,14
+chessEngines-1.1.1.dist-info/RECORD,,
