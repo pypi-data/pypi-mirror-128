@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+forged/__init__.py
+forged/categories.py
+forged/drift.py
+forged/misc.py
+forged/strings.py
+forged.egg-info/PKG-INFO
+forged.egg-info/SOURCES.txt
+forged.egg-info/dependency_links.txt
+forged.egg-info/not-zip-safe
+forged.egg-info/requires.txt
+forged.egg-info/top_level.txt
