@@ -1,0 +1,9 @@
+pycryptodomex>=3.11.0
+pygtrie>=2.4.2
+aenum>=3.1.5
+
+[dev]
+pytest>=6.2.5
+pytest-cov>=3.0.0
+flake8>=4.0.1
+build>=0.7.0
