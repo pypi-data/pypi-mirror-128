@@ -1,0 +1,10 @@
+matrix_photos/__init__.py,sha256=CAABO4eabOlG5KvLt0ZLdNQcCVr8Xx45VLSbvm1fy48,40
+matrix_photos/__main__.py,sha256=gX_-KTO3FhIBEqlg41NPjLPje33_R1UvtiOz84lYnVA,2524
+matrix_photos/event.py,sha256=v5ODxkcDK6smhb9EY8i14xHtU0tvAsfCYydqtBUtHu4,1730
+matrix_photos/photos_client.py,sha256=qXDDP2shpgPWDBg-9Zg4-OAJ_P7F0KWBuQve7Xv5PBM,7556
+matrix_photos-0.0.1b1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+matrix_photos-0.0.1b1.dist-info/METADATA,sha256=bgQtcTQVLvXdJOjOQZi3Gw8piXmmwlVvBwIe7M6C6po,1974
+matrix_photos-0.0.1b1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+matrix_photos-0.0.1b1.dist-info/entry_points.txt,sha256=FS65AoGf3n-NDf4H9XVixDDXyPzampWU-SOn1oNEos8,62
+matrix_photos-0.0.1b1.dist-info/top_level.txt,sha256=3ngTk-LGsacDgJGfoP0RlO9WzvAz-nXhWgOPHyr--8E,14
+matrix_photos-0.0.1b1.dist-info/RECORD,,

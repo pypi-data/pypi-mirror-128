@@ -1,0 +1,3 @@
+[console_scripts]
+matrixphotos = matrix_photos.__main__:main
+
