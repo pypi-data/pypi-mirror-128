@@ -1,0 +1,13 @@
+simplelayout/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplelayout/__main__.py,sha256=xQH4LKAAx_M7cntR0EHywDIZ-PK1R967UWxHfffmicw,730
+simplelayout/cli/__init__.py,sha256=x7ww883J8J4709qlELaetIXD9AbprOlVcRoTOlXzMjI,103
+simplelayout/cli/cli_generate.py,sha256=IJ92DN1iWj_BHr_S5tDd-pvt3ucc4wEQHrV7KtUb9s0,1211
+simplelayout/generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplelayout/generator/core.py,sha256=1yWzHgRcq_LrBzqYGOrl2KKbuQ6gOYoUgh1vmwiRFCo,1198
+simplelayout/generator/utils.py,sha256=LBG328h9RMZwrTsi_K38neqncj2-b85lwuZmujPGkgU,561
+simplelayout_github_onelazyfish-1.0.0.dist-info/LICENSE.txt,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+simplelayout_github_onelazyfish-1.0.0.dist-info/METADATA,sha256=pvCIKJ01YKr_Syr7XgiIjSWG_TZVZ5VyheQJRiRSKSg,572
+simplelayout_github_onelazyfish-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+simplelayout_github_onelazyfish-1.0.0.dist-info/entry_points.txt,sha256=O_HKPZSBcDfZv_LmquDG4CdYB74vabMb-T4NCjP-A-s,61
+simplelayout_github_onelazyfish-1.0.0.dist-info/top_level.txt,sha256=iFIi60UoADwVgRZlfkvG5r_zYD2rGEOll3P-m2Tj0Uw,13
+simplelayout_github_onelazyfish-1.0.0.dist-info/RECORD,,
