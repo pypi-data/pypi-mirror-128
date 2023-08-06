@@ -1,0 +1,25 @@
+#!python
+
+__author__ = "Jie Li"
+__copyright__ = "Copyright 2020-2021"
+__credits__ = "Jie Li"
+__license__ = "GPLv3"
+__email__ = "jlli6t at gmail.com"
+__status__ = "Development"
+
+import sys
+
+from MetaAssemblieImprove.version import Version
+from MetaAssemblieImprove.Main import ReadPar, Main
+
+
+if __name__ == "__main__":
+    if len(sys.argv) == 1:
+        sys.argv.append("-h")
+        ReadPar.read()
+    elif len(sys.argv) == 2 and "-h" in sys.argv[1]:
+        ReadPar.read()
+    elif len(sys.argv) == 2 and "-v" in sys.argv[1]:
+        Version.show_version()
+    else:
+        Main.exe()
