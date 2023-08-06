@@ -1,0 +1,7 @@
+obplatform/__init__.py,sha256=ZRbdv_34rhOyHr0LKXFOMVolMmk0uXXVUr6pQvDTCA0,99
+obplatform/connector.py,sha256=bw5H_fsQPHTYUHY20iRyzJ_36TCBpAt13Ynu1LBCQQw,8088
+obplatform/logger.py,sha256=ulHE3jZEm-wfnEcN-HVgYUTJQv5zSEwWIezSRZywlTQ,294
+obplatform-1.0.0.dist-info/LICENSE,sha256=dkiXO2ho-XSCVnKez6Lh_eRsywRQvhxjCeybSr6v0L8,1082
+obplatform-1.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+obplatform-1.0.0.dist-info/METADATA,sha256=MZriB5jtxwkRuvVvktKVxuZZmEnHP1kmoVsDaJ9O7y0,6392
+obplatform-1.0.0.dist-info/RECORD,,
