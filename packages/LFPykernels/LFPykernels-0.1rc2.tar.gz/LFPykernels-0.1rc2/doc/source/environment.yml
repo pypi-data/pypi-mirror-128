@@ -1,0 +1,15 @@
+name: lfpykernels
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - numpy
+  - c-compiler
+  - cxx-compiler
+  - lfpy
+  - sphinx_rtd_theme
+  - numpydoc
+  - m2r2
+  - pip
+  - pip:

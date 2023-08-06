@@ -1,0 +1,11 @@
+LFPy>=2.2.2
+
+[docs]
+sphinx
+numpydoc
+sphinx_rtd_theme
+recommonmark
+
+[tests]
+pytest
+sympy
