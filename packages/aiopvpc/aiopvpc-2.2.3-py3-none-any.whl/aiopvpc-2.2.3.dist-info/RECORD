@@ -1,0 +1,10 @@
+aiopvpc/__init__.py,sha256=gMmeMgtTJfHnwJT8WCgBe35fl1ML6z2tUkvfOIjH3TM,186
+aiopvpc/const.py,sha256=N8N36iCURxgHWWOX6Zys-J0Xi-MjAKyV1vdXyEdzdfg,1146
+aiopvpc/prices.py,sha256=wnWgJZleR7VtvpHIVJJDybBMbFdP9gNUQlbCstchIgI,4084
+aiopvpc/pvpc_data.py,sha256=R9e0GMl6WdV5m810MU9p0GrRk0j8BP-fsb2BYM_RQPg,13264
+aiopvpc/pvpc_download.py,sha256=1FuUAVt8VKchYe7s7BwjE-NBzZbXjpT5tOe-_pfx_Vg,1580
+aiopvpc/pvpc_tariff.py,sha256=ucNpMcBh0IjydBjuEekTuiOMYZ_M7E8snBTB4w-XFRE,1317
+aiopvpc-2.2.3.dist-info/LICENSE,sha256=0VFrtNQc8ma8PoPqLPum66K8UydQdPppYXoCPhweeTg,1074
+aiopvpc-2.2.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aiopvpc-2.2.3.dist-info/METADATA,sha256=jDVZ_Gt4WxyUq2wBmsQ9aSYhNpSZrGZIeuqR6Dz0BCc,3089
+aiopvpc-2.2.3.dist-info/RECORD,,
