@@ -1,0 +1,8 @@
+README.md
+setup.py
+islanders/__init__.py
+islanders.egg-info/PKG-INFO
+islanders.egg-info/SOURCES.txt
+islanders.egg-info/dependency_links.txt
+islanders.egg-info/requires.txt
+islanders.egg-info/top_level.txt
