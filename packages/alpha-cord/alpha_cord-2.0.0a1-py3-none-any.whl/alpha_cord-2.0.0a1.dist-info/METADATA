@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: alpha-cord
+Version: 2.0.0a1
+Summary: UNKNOWN
+Home-page: https://github.com/Pycord-Development/pycord
+Author: Pycord Development
+License: MIT
+Project-URL: Documentation, https://pycord.readthedocs.io/en/latest/
+Project-URL: Issue tracker, https://github.com/Pycord-Development/pycord/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8.0
+License-File: LICENSE
+Requires-Dist: aiohttp (<3.9.0,>=3.6.0)
+Provides-Extra: docs
+Requires-Dist: sphinx (==4.3.0) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-trio (==1.1.2) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-websupport ; extra == 'docs'
+Provides-Extra: speed
+Requires-Dist: orjson (>=3.5.4) ; extra == 'speed'
+Requires-Dist: aiodns (>=1.1) ; extra == 'speed'
+Requires-Dist: Brotlipy ; extra == 'speed'
+Requires-Dist: cchardet ; extra == 'speed'
+Provides-Extra: voice
+Requires-Dist: PyNaCl (<1.5,>=1.3.0) ; extra == 'voice'
+
+UNKNOWN
+
