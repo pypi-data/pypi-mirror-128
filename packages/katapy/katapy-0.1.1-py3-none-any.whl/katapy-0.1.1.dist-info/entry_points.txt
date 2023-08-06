@@ -1,0 +1,4 @@
+[console_scripts]
+kat=katapy.program:program.run
+katapy=katapy.program:program.run
+

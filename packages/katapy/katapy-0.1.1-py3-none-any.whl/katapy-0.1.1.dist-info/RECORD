@@ -1,0 +1,12 @@
+coverage.svg,sha256=FYyZRNrIvrH9XYSwqBHt6qcgc4HWT7Gu0TC5yTd8eug,903
+katapy/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+katapy/precommit.py,sha256=JHaMEY6SpjyO0DqIHjw8IVxktTl7Ct-GQHHjChbQW2Q,172
+katapy/program.py,sha256=uIQDiwN0V7duu6OhLuJ9u6OumYZI-1QhJNSEILKl3Sw,251
+katapy/tasks.py,sha256=qBkWEC5V8fR5sEpm5Obcv8MpFiFtNpi3PWH2h7jUGUM,239
+katapy/tox.ini,sha256=Yr2LdR-x-DRiKHoDFt4ZXpxnQ0yDt5NoNUvuKG5KH-o,341
+katapy/tox.py,sha256=_3PAWsBB-acXpWTakjJbb1s37sQ9oMnjcnf_BnhN_zM,313
+katapy-0.1.1.dist-info/entry_points.txt,sha256=sdvNfB6RaOa0tac0fmm8vY_oPz140IXvHNHkq8rvAxo,84
+katapy-0.1.1.dist-info/LICENSE,sha256=VmoYDVU76yXp2kteFjfaq-SchPMqB-AznyvaDkSHlZU,1067
+katapy-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+katapy-0.1.1.dist-info/METADATA,sha256=L3dx4Wbu3ywd-8d25QeyzJXqJbfBhqJ6POe3mUqZsiE,2646
+katapy-0.1.1.dist-info/RECORD,,
