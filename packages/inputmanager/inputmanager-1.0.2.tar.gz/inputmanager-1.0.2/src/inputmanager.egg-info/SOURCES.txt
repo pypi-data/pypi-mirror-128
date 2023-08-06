@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/inputmanager/__init__.py
+src/inputmanager/inputmanager.py
+src/inputmanager.egg-info/PKG-INFO
+src/inputmanager.egg-info/SOURCES.txt
+src/inputmanager.egg-info/dependency_links.txt
+src/inputmanager.egg-info/not-zip-safe
+src/inputmanager.egg-info/requires.txt
+src/inputmanager.egg-info/top_level.txt
