@@ -1,0 +1,3 @@
+[console_scripts]
+Magphi = Magphi.__main__:main
+
