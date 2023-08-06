@@ -1,0 +1,6 @@
+quantum-blackbird==0.2.4
+
+[:python_version >= "3.7"]
+boss-tomev==1.0.4
+numpy>=1.19.5
+scipy>=1.5.4
