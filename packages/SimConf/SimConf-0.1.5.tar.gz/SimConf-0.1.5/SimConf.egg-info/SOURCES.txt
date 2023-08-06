@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+SimConf/TestSimconf.py
+SimConf/__init__.py
+SimConf/propertys.py
+SimConf/simconf.py
+SimConf.egg-info/PKG-INFO
+SimConf.egg-info/SOURCES.txt
+SimConf.egg-info/dependency_links.txt
+SimConf.egg-info/top_level.txt
