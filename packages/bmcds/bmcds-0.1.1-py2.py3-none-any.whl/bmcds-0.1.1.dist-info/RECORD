@@ -1,0 +1,16 @@
+bmcds/__init__.py,sha256=kcJGYBlzcRwpQW0IN0f-GfNKYvNqVpEsRUMI9XEjaEM,330
+bmcds/bmcds.py,sha256=vR5AaF0iel21LvsdcqwheoBz0SIj9K9I_Ub8M8oA98Y,20
+bmcds/classification.py,sha256=e6Val6kTzBZSiB-YZqk_OvoxpxbosdiIEohFjiA1FDI,14091
+bmcds/cli.py,sha256=SVjcVE45yz7Cf0z7wMWbzSyQi0m6tuXP8EWqzVo6Tus,409
+bmcds/eda.py,sha256=rF5wjb8cWwksBDTNP9_w-SB93bAeATitF1ffFwuK2eY,23920
+bmcds/functions.py,sha256=raOBvqc_IXkWn4MnaVKZxMbo6FWI6XCxn9JndGINseU,28101
+bmcds/regression.py,sha256=HAPxb7c15rOGR2YFFk8g7wC4fmRjLp6BrCaaTCbnlG4,10640
+bmcds/time_series_modeling.py,sha256=bsCDyci_OhDmnM73UsvmWDfCxPVoT0YStdhjjUlq7w8,17411
+bmcds/time_series_modeling_old.py,sha256=orL3q5acQYkdDigRX1JssHIWml3fomsbcxD1BRmojW0,16125
+bmcds-0.1.1.dist-info/AUTHORS.rst,sha256=2sPbkdQQm-6wV-SQiiBaE_lD2Je01g2DeYNIBB6DrY8,171
+bmcds-0.1.1.dist-info/LICENSE,sha256=aFLFZg6LEJFpTlNQ8su3__jw4GfV-xWBmC1cePkKZVw,35802
+bmcds-0.1.1.dist-info/METADATA,sha256=A95wP-XJ-SqTBubFO3a6gFmTE235D_P1N22K8h8qOKE,1781
+bmcds-0.1.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+bmcds-0.1.1.dist-info/entry_points.txt,sha256=0jKDS8lWQ9ynOuUzbocQUNfv_aew5vh27yrPygv9F18,42
+bmcds-0.1.1.dist-info/top_level.txt,sha256=pOK9VG_E6_8B0vxC70AvyqjtAxwagAq4QqBTwXxRHOU,6
+bmcds-0.1.1.dist-info/RECORD,,
