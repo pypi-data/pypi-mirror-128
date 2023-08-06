@@ -1,0 +1,3 @@
+[console_scripts]
+vault-bitwarden-client=vault_bitwarden_client:main
+
