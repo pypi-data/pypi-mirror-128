@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: LISA-CNN-ExplainerV3
+Version: 0.0.4
+Summary: Unified Explanation Provider For CNNs
+Home-page: https://github.com/SudilHasitha/LISA_CNN_ExplainerV3
+Author: Sudil H.P Abeyagunasekera
+Author-email: <sudilhasithaa51@gmail.com>
+License: UNKNOWN
+Keywords: LIME,Integrated gradients,SHAP,Anchors,Explainable AI,XAI,CNN Explainer
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: lime
+Requires-Dist: shap
+Requires-Dist: alibi
+Requires-Dist: scikit-image
+
+
+# Explain LISA
+
+It takes the following.
+
+img: local path of img to be explained
+
+class_names: the classes available as predictions for the given model
+
+img_shape: shape of the image accepts by the neural network
+
+model: the model to be explained get from tf.keras.models.load_model("your model path")
+
+img1: local path background data point for produce explanations with SHAP
+
+img2: local path background data point for produce explanations with SHAP
+
+scale: for manual image scaling if scaling layer absent in the model to be explained 
+
+filter_radius: the pixel value of the radius of the High pass filter
+
+
+
+## Installation
+
+```pip install LISA_CNN_ExplainerV3```
+
+
+
+## How to use it?
+
+Open terminal and type python/python3 according to your OS.
+
+
+
+
+
+``` import LISA_CNN_ExplainerV3 as e \n```  
+
+
+
+``` e.ExplainLISA(img,class_names,img_shape,model,img1,img2,scale,filter_radius) \n```
+
+
+
+``` e.displayImages() \n```
+
+
+
+## License
+
+
+
+© 2021 Sudil H.P Abeyagunasekera
+
+
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
+
+
