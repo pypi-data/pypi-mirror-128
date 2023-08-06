@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kafka-connect-dependency
+Version: 0.1.2
+Summary: Library to run distributed Kafka Consumers using Ray
+Home-page: https://github.com/bkatwal/distributed-kafka-consumer-python
+Author: Bikas Katwal
+Author-email: bikas.katwal10@gmail.com
+License: MIT
+Keywords: ray,kafka,consumer
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+This library need to be installed in ray nodes. So, ray head and worker nodes can find and pickle/unpickle Kafka Consumer modules.
+
