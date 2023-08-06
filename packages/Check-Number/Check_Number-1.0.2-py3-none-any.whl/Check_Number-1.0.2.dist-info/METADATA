@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: Check-Number
+Version: 1.0.2
+Summary: Number Checker
+Home-page: https://github.com/FayasNoushad/Check-Number
+Author: Fayas Noushad
+Author-email: contact@fayas.me
+License: MIT
+Download-URL: https://github.com/FayasNoushad/Check-Number/releases/latest
+Project-URL: Tracker, https://github.com/FayasNoushad/Check-Number/issues
+Project-URL: Source, https://github.com/FayasNoushad/Check-Number
+Project-URL: Documentation, https://check-number.projects.fayas.me
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+```
+Made with Python3
+(C) @FayasNoushad
+Copyright permission under MIT License
+License -> https://github.com/FayasNoushad/Check-Number/blob/main/LICENSE
+```
+
+---
+
+## Installation
+
+```
+pip install Check-Number
+```
+
+---
+
+## Usage
+
+```py
+import check_number
+
+print(check_number.is_number('+910000000000')
+# => {"status": true}
+
+print(check_number.is_number('Hello')
+# => {"status": false}
+
+print(check_number.is_numbers(
+    ['+910000000000', '+10000000000', 'Hello']
+)
+# => ['+910000000000', '+10000000000']
+```
+
+---
+
+## Credits
+
+- [Fayas Noushad](https://github.com/FayasNoushad)
+
+---
+
+
