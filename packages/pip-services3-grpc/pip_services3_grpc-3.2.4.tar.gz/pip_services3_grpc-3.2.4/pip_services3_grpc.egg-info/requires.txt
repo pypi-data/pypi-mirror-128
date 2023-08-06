@@ -1,0 +1,10 @@
+grpcio
+grpcio-tools
+protobuf
+pytest
+iso8601
+PyYAML
+pystache
+pip_services3_commons
+pip_services3_rpc
+pip_services3_components
