@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: motorized
+Version: 0.4.1
+Summary: Asyncio mongodb ODM
+License: MIT
+Author: Sebastien Nicolet
+Author-email: snicolet95@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: motor (>=2.5.1,<3.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
