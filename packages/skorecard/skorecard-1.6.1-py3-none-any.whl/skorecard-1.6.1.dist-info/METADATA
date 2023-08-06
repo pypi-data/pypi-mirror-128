@@ -1,0 +1,143 @@
+Metadata-Version: 2.1
+Name: skorecard
+Version: 1.6.1
+Summary: Tools for building scorecard models in python, with a sklearn-compatible API
+Home-page: https://github.com/ing-bank/skorecard/
+Author: ING Bank
+Author-email: daniel.timbrell@ing.com
+License: MIT license
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy (>=1.5.2)
+Requires-Dist: numpy (>=1.19.5)
+Requires-Dist: pandas (>=1.1.5)
+Requires-Dist: scikit-learn (>=0.23.2)
+Requires-Dist: dataclasses
+Requires-Dist: pyyaml
+Requires-Dist: category-encoders (>=2.2.2)
+Provides-Extra: all
+Requires-Dist: scipy (>=1.5.2) ; extra == 'all'
+Requires-Dist: numpy (>=1.19.5) ; extra == 'all'
+Requires-Dist: pandas (>=1.1.5) ; extra == 'all'
+Requires-Dist: scikit-learn (>=0.23.2) ; extra == 'all'
+Requires-Dist: dataclasses ; extra == 'all'
+Requires-Dist: pyyaml ; extra == 'all'
+Requires-Dist: category-encoders (>=2.2.2) ; extra == 'all'
+Requires-Dist: dash (>=1.21.0) ; extra == 'all'
+Requires-Dist: jupyter-dash (>=0.4.0) ; extra == 'all'
+Requires-Dist: dash-bootstrap-components (>=0.13) ; extra == 'all'
+Requires-Dist: plotly (>=4.14.3) ; extra == 'all'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'all'
+Requires-Dist: black (>=19.10b0) ; extra == 'all'
+Requires-Dist: pre-commit (>=2.5.0) ; extra == 'all'
+Requires-Dist: mypy (>=0.770) ; extra == 'all'
+Requires-Dist: flake8-docstrings (>=1.4.0) ; extra == 'all'
+Requires-Dist: pytest (>=6.0.0) ; extra == 'all'
+Requires-Dist: pytest-cov (>=2.10.0) ; extra == 'all'
+Requires-Dist: mkdocs (>=1.1.2) ; extra == 'all'
+Requires-Dist: mkdocs-material (>=7.1) ; extra == 'all'
+Requires-Dist: mkdocstrings (>=0.13.2) ; extra == 'all'
+Requires-Dist: mknotebooks (>=0.7.0) ; extra == 'all'
+Requires-Dist: mkdocs-git-revision-date-localized-plugin (>=0.7.2) ; extra == 'all'
+Requires-Dist: optbinning (>=0.8.0) ; extra == 'all'
+Provides-Extra: base
+Requires-Dist: scipy (>=1.5.2) ; extra == 'base'
+Requires-Dist: numpy (>=1.19.5) ; extra == 'base'
+Requires-Dist: pandas (>=1.1.5) ; extra == 'base'
+Requires-Dist: scikit-learn (>=0.23.2) ; extra == 'base'
+Requires-Dist: dataclasses ; extra == 'base'
+Requires-Dist: pyyaml ; extra == 'base'
+Requires-Dist: category-encoders (>=2.2.2) ; extra == 'base'
+Provides-Extra: dashboard
+Requires-Dist: dash (>=1.21.0) ; extra == 'dashboard'
+Requires-Dist: jupyter-dash (>=0.4.0) ; extra == 'dashboard'
+Requires-Dist: dash-bootstrap-components (>=0.13) ; extra == 'dashboard'
+Provides-Extra: reporting
+Requires-Dist: plotly (>=4.14.3) ; extra == 'reporting'
+
+<img src="https://github.com/ing-bank/skorecard/raw/main/docs/assets/img/skorecard_logo.svg" width="150" align="right">
+
+# skorecard
+
+<!-- ![pytest](https://github.com/ing-bank/skorecard/workflows/Release/badge.svg) -->
+![pytest](https://github.com/ing-bank/skorecard/workflows/Development/badge.svg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/skorecard)
+![PyPI](https://img.shields.io/pypi/v/skorecard)
+![PyPI - License](https://img.shields.io/pypi/l/skorecard)
+![GitHub contributors](https://img.shields.io/github/contributors/ing-bank/skorecard)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/skorecard)](#)
+[![Downloads](https://pepy.tech/badge/skorecard)](https://pepy.tech/project/skorecard)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
+`skorecard` is a scikit-learn compatible python package that helps streamline the development of credit risk acceptance models (scorecards).
+
+Scorecards are ‘traditional’ models used by banks in the credit decision process. Internally, scorecards are Logistic Regression models that make use of features that are binned into different groups. The process of binning is usually done manually by experts, and `skorecard` provides tools to makes this process easier. `skorecard` is built on top of [scikit-learn](https://pypi.org/project/scikit-learn/) as well as other excellent open source projects like [optbinning](https://pypi.org/project/optbinning/), [dash](https://pypi.org/project/dash/) and [plotly](https://pypi.org/project/plotly/).
+
+## Features ⭐
+
+- Automate bucketing of features inside scikit-learn pipelines.
+- Dash webapp to help manually tweak bucketing of features with business knowledge
+- Extension to `sklearn.linear_model.LogisticRegression` that is also able to report p-values
+- Plots and reports to speed up analysis and writing technical documentation.
+
+## Quick demo
+
+`skorecard` offers a range of [bucketers](https://ing-bank.github.io/skorecard/api/bucketers/OptimalBucketer/):
+
+```python
+import pandas as pd
+from skorecard.bucketers import EqualWidthBucketer
+
+df = pd.DataFrame({'column' : range(100)})
+
+ewb = EqualWidthBucketer(n_bins=5)
+ewb.fit_transform(df)
+
+ewb.bucket_table('column')
+#>    bucket                       label  Count  Count (%)
+#> 0      -1                     Missing    0.0        0.0
+#> 1       0                (-inf, 19.8]   20.0       20.0
+#> 2       1                (19.8, 39.6]   20.0       20.0
+#> 3       2  (39.6, 59.400000000000006]   20.0       20.0
+#> 4       3  (59.400000000000006, 79.2]   20.0       20.0
+#> 5       4                 (79.2, inf]   20.0       20.0
+```
+
+That also support a dash app to explore and update bucket boundaries:
+
+```python
+ewb.fit_interactive(df)
+#> Dash app running on http://127.0.0.1:8050/
+```
+
+![](docs/assets/img/dash_app_unsupervised_bucketer.png)
+
+## Installation
+
+```shell
+pip3 install skorecard
+```
+
+## Documentation
+
+See [ing-bank.github.io/skorecard/](https://ing-bank.github.io/skorecard/).
+
+## Presentations
+
+| Title                                              | Host                    | Date         | Speaker(s)                                   |
+|----------------------------------------------------|-------------------------|--------------|----------------------------------------------|
+| Skorecard: Making logistic regressions great again | [ING Data Science Meetup](https://www.youtube.com/watch?v=UR_1XZxEuCw) | 10 June 2021 | Daniel Timbrell, Sandro Bjelogrlic, Tim Vink |
+
+
