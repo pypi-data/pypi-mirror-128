@@ -1,0 +1,17 @@
+simplezfs/__init__.py,sha256=9cztvm60bJo7VMUCVzizfz5tE3TFu6EZV0O7CfzAJVs,186
+simplezfs/exceptions.py,sha256=OtXp2KGBkg2pk1pY4vwKQ-TKrdrWpdcivr6cH9Cr2sc,1455
+simplezfs/pe_helper.py,sha256=sSbb3ryynik6m4VfQwdGlY4UlQPsUgFZPZB8rh50Lk0,7521
+simplezfs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplezfs/types.py,sha256=E7tstAvKnm5-hEfBtKB3B1arw1kAx4g1tSsxlsRw6Gs,7044
+simplezfs/validation.py,sha256=aZQeaHCYizxBnRlnpJiFvIlVSGXhkfr20bAwuIaVAKQ,7402
+simplezfs/zfs.py,sha256=VMbjE5L-yg_BtcbFjv7C0Z5FF6uhQW8T30Y3ZmtqiHE,42391
+simplezfs/zfs_cli.py,sha256=scgK01BDO_RY_rTsaQgLdZa61xeQlq6XcAk0cLyqqNU,20524
+simplezfs/zfs_native.py,sha256=ZPBzIzW8nIR9WDWGw8BWDgpb-lDMao-BXROXxcVNHEw,1389
+simplezfs/zpool.py,sha256=fjAC1AT4Wlb4jeGENn-7RVA8blUh3aIPfSti8RHhopA,3922
+simplezfs/zpool_cli.py,sha256=cqpoDaoOO8B9WBnM4kNBwT-RwgVt1BpygPTgLzm2OFI,7596
+simplezfs/zpool_native.py,sha256=kcLo94yvgQkAXgnsiKz5WRY36h-0BoldABC2GQaa444,688
+simplezfs-0.0.3.dist-info/LICENSE,sha256=uGOB4enxDxSrtUU5BAasQ56qPtRM-Al0-6pX7LQSCrU,1653
+simplezfs-0.0.3.dist-info/METADATA,sha256=8_SymC8Ks_QDcvWcwmcl7Uu5iY_eQ_NaW1CZnd8sHmQ,8794
+simplezfs-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+simplezfs-0.0.3.dist-info/top_level.txt,sha256=7_DphL9ppjPkUTSHa9uz5rWbO0p98bxmzs2-BIYGO5w,10
+simplezfs-0.0.3.dist-info/RECORD,,
