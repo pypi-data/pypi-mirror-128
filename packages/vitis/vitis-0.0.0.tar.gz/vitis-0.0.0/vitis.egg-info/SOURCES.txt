@@ -1,0 +1,6 @@
+README.md
+setup.py
+vitis.egg-info/PKG-INFO
+vitis.egg-info/SOURCES.txt
+vitis.egg-info/dependency_links.txt
+vitis.egg-info/top_level.txt
