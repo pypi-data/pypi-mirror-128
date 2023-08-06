@@ -1,0 +1,9 @@
+veracode_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+veracode_to_sqlite/__main__.py,sha256=C97K475eU1jIlpDDBdLQVYWvpjjHTkSqRu7tQj8JEps,696
+veracode_to_sqlite/database.py,sha256=o2OusFNHGpxMswSIECiIYQSMNTZi5KgWzAweFiPccTg,1949
+veracode_to_sqlite/model.py,sha256=UjNb1dUMFsEqXZ003BNKsyEnzNiut85UZKDPDvGxqQI,1694
+veracode_to_sqlite-0.1.4.dist-info/entry_points.txt,sha256=14XTMuPaBy2K3PuCul7aGKFwFzeUicQEDK0kjDB5Onc,71
+veracode_to_sqlite-0.1.4.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+veracode_to_sqlite-0.1.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+veracode_to_sqlite-0.1.4.dist-info/METADATA,sha256=3XANQLzFfkJ9vCsvyZ0IrlhUSFco-xXn7ldsdERQ8eQ,1219
+veracode_to_sqlite-0.1.4.dist-info/RECORD,,
