@@ -1,0 +1,12 @@
+aiohttp_xmlrpc/__init__.py,sha256=DClnWRQF9ao5vvZ4dql2hVRL0RB7px3cpuCdDzqEO3I,446
+aiohttp_xmlrpc/client.py,sha256=1hLtj_eRqfOTgMaRn62ma-XndgiaGxKIs9TRhBg9MxY,4252
+aiohttp_xmlrpc/common.py,sha256=NmloiBUT-jbjLKFLXf6DEg1wpr8-_oLz6Xc_XUzL29Q,4642
+aiohttp_xmlrpc/exceptions.py,sha256=w_EmQAtvQ5R8zKmq_OSfm9OWsqOTzL3k42SrSgmLh90,3142
+aiohttp_xmlrpc/handler.py,sha256=hSLALSf2EYeKEQtv9l23877MY99oWx_CY_U_lTnrU7M,5436
+aiohttp_xmlrpc/pytest_plugin.py,sha256=z6VoXWhlyHvVrxca5F_g_xzeedRf-wOG3ew9sa2Gpbw,1235
+aiohttp_xmlrpc/xmlrpc.rng,sha256=dFsAfHyYt01WVHHqVKY5AvuSdcI-jqQfIFb7MgxLcIw,3783
+aiohttp_xmlrpc-1.4.0.dist-info/LICENSE,sha256=NPBuZesd3vmBz7ASKhNg8Gilnl9RluHwQQmX0qrBvQM,1076
+aiohttp_xmlrpc-1.4.0.dist-info/METADATA,sha256=diVxC8u5AjFY7YNsjCIdqkme5PLXvG8tOlbYpESujTo,3033
+aiohttp_xmlrpc-1.4.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aiohttp_xmlrpc-1.4.0.dist-info/top_level.txt,sha256=SWv2tZIbuyK5pxkt4a8oEILxDSEfF519EKKY2W5joG8,15
+aiohttp_xmlrpc-1.4.0.dist-info/RECORD,,
