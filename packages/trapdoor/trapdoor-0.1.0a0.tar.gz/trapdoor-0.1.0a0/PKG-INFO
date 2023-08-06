@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: trapdoor
+Version: 0.1.0a0
+Summary: Turn-key configuration file management for Python packages.
+License: MIT
+Author: Clay McLeod
+Author-email: clay.l.mcleod@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: toml (>=0.10.2,<0.11.0)
