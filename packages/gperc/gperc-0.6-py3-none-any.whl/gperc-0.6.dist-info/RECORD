@@ -1,0 +1,16 @@
+gperc/__init__.py,sha256=Vnmue8ztFvDg0cYAHPNVUcU1fDvE8h8Dt_AK6TlVFio,475
+gperc/__main__.py,sha256=_xdBWflw3itl5Wkd_BtRtJtzR4-9Tsgwcyi9oYatiGI,120
+gperc/arrow.py,sha256=Tjsss5QhWVAanzxQm0rPalOGfdyVSL_-lUJ414-oA9U,9324
+gperc/cli.py,sha256=vffXd77f39J1hdUIfeLUlxyOb76Fzg9BPlkJIDUDKcY,5611
+gperc/configs.py,sha256=RvzJI1DyeNDiEv51Sj9cNi8ZetkTjrx5g03qk-zgnRU,13287
+gperc/data.py,sha256=b0wHFhIjZLy1J2TAfaRzPjhuKS6KwoOl0wd0swb43No,33379
+gperc/fastlibs/README.md,sha256=WOkzR-lDM4pBWCar6sw2vZQXyOFw3eEP8nAmquT8xkY,564
+gperc/fastlibs/cargo.toml,sha256=iMU2tuePRIH3qimpo65jV8gSVkmmhoyq1l6e95AxXgU,485
+gperc/fastlibs/src/lib.rs,sha256=S0tJbnGD8ZLlHcs3JuJeDPQKW0BuCMrOUcidkKXfPSA,1155
+gperc/fastlibs/tests.py,sha256=uUvgNU8gos_l4F4B_kQUV8K802eSROy5TGpVMIeRoEg,197
+gperc/models.py,sha256=rLl4nNg7SRzsDWE4F9bBi_cSmMSeMGgb3KiZwsEwf4E,23526
+gperc/utils.py,sha256=Z85nx9agxRAOu-ChCRUWScH28VC8xZgmlZIggYbtIJ8,821
+gperc-0.6.dist-info/LICENSE,sha256=i_-YCPpJO0n1wOs6961PGd76w_H173WTzYf29GF9RKk,1067
+gperc-0.6.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+gperc-0.6.dist-info/METADATA,sha256=Qs1pksd9yXQ6Nz31qajjxFs-atQ1KsXJj7g22V59F1w,679
+gperc-0.6.dist-info/RECORD,,
