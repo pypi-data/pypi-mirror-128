@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: aos-keys
+Version: 1.1.7
+Summary: Aos access manager
+Home-page: UNKNOWN
+Author: EPAM Systems
+Author-email: support@aoscloud.io
+License: Apache License 2.0
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: rich (>=10.13)
+Requires-Dist: importlib-resources (>=3.0)
+Requires-Dist: requests (>=2.22)
+Requires-Dist: cryptography (>=3.4.8)
+
+Aos user keys management tool
+=====================
+This tool is part of the Aos SDK.
+
+
+Overview
+--------
+This tool will help you issue new user certificates for Aos Cloud.
+
+Using this tool you'll be able to:
+* Issue new user certificate in pkcs12 format.
+* Show info about user certificate.
+* Convert PKCS12 certificate to PEM key and certificate files.
+
+
+Prepequicities
+--------------
+* Python 3.6+
+
+
+Installation
+------------
+```bash
+pip install aos-keys
+```
+
+Usage
+------------
+
+### Issue new user certificate:
+```bash
+aos-keys new-user -d {aoscloud.io} -t {token} {--oem|--sp}
+```
+>Where: 
+>* **-d** - Aos CLoud domain to register user
+>* **-t** - User Token
+>* **-oem** or **-sp** - Certificate for OEM or SP User 
+
+Example:
+```bash
+aos-keys new-user -d aoscloud.io -t 1111 --oem
+```
+
+### Show info about certificate and related user:
+```bash
+aos-keys info -c {path-to-cert} {--oem|--sp}
+```
+>Where: 
+>* **-c** - Path to user certificate
+>* **-sp** - Show info of default SP user
+>* **-oem** or **-sp** - Show info of default SP user
+ 
+Example:
+Show info about default SP user
+```bash
+aos-keys info --oem
+```
+
+
