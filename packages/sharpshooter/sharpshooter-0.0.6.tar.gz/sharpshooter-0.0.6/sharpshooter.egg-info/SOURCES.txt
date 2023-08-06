@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sharpshooter/__init__.py
+sharpshooter/__main__.py
+sharpshooter.egg-info/PKG-INFO
+sharpshooter.egg-info/SOURCES.txt
+sharpshooter.egg-info/dependency_links.txt
+sharpshooter.egg-info/entry_points.txt
+sharpshooter.egg-info/requires.txt
+sharpshooter.egg-info/top_level.txt
