@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sedML xmlns="http://sed-ml.org/sed-ml/level1/version3" level="1" version="3">
+  <listOfDataDescriptions>
+    <dataDescription id="data_description_1" format="urn:sedml:format:numl" source="data.numl">
+      <listOfDataSources >
+        <dataSource id="dataS1">
+        </dataSource>
+    </listOfDataSources>
+    </dataDescription>
+  </listOfDataDescriptions>
+
+  <listOfDataGenerators>
+    <dataGenerator id="data_generator">
+      <listOfVariables>
+        <variable id="variable" target="#dataS1" />
+      </listOfVariables>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> variable </ci>
+      </math>
+    </dataGenerator>
+  </listOfDataGenerators>
+</sedML>
