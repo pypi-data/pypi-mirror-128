@@ -1,0 +1,3 @@
+pythainlp>=2.2
+sentence-transformers
+transformers
