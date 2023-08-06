@@ -1,0 +1,13 @@
+mazer/__init__.py,sha256=1fTyf85QRXkrI39L2fKuKakyML0ylnhdO1ZAtFOiOVA,62
+mazer/apps.py,sha256=LuAv7oBpBUQZ0_mxDmcIt-e_UImPj2s_3SqFm8S12Qo,200
+mazer/compat.py,sha256=wNS982SBDQ8Uhdvaw0OMkEwfSwEMFCmFiNEcXGGG_EA,176
+mazer/settings.py,sha256=SMNAUtk6oxI0bRJjmmRbpOah0IqE-4LXogMa8dZtqVs,11161
+mazer/utils.py,sha256=-zBUfOFuxB41jNebzi9EJHr3o8lJEqILr0M1Kp-c0eE,7811
+mazer/widgets.py,sha256=bfNe3u_0rtCH6kNPucERs8AuSLYBSVEYbhNV6saa7oI,795
+mazer/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mazer/templatetags/mazer.py,sha256=JH5ToP62SQexQaWpZi2O-7Ql-qBCziM9mOCgYQtEBdQ,16952
+django_mazer_megaelebrus-0.0.1.dist-info/LICENSE,sha256=2rbJpPIZGFydJv4inI9ViBYo_Q4Rp54Z3XlMCMGoFCU,1055
+django_mazer_megaelebrus-0.0.1.dist-info/METADATA,sha256=Ok9JvVs0BQ6ABiyD5LDhWkZFDWq8rpeTGismztUB5Qw,494
+django_mazer_megaelebrus-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_mazer_megaelebrus-0.0.1.dist-info/top_level.txt,sha256=b1f6c4_UavlgOsCcE2-Xg3aIZsoQeOP0ZN_j1Tuuyxc,6
+django_mazer_megaelebrus-0.0.1.dist-info/RECORD,,
