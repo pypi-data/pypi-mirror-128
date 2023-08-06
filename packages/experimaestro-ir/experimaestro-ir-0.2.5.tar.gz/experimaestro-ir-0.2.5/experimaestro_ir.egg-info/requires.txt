@@ -1,0 +1,10 @@
+experimaestro>=0.9.11
+datamaestro_text>=2021.11.19
+ir-measures>=0.2.1
+ir_datasets
+toma
+pytorch-lightning
+
+[neural]
+torch>=1.7
+tensorboard
