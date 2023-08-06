@@ -1,0 +1,11 @@
+setup.py
+./a9a/__init__.py
+./a9a/__main__.py
+./a9a/decoder.py
+./a9a/dir_reader.py
+./a9a/dir_writer.py
+./a9a/encoder.py
+a9a.egg-info/PKG-INFO
+a9a.egg-info/SOURCES.txt
+a9a.egg-info/dependency_links.txt
+a9a.egg-info/top_level.txt
