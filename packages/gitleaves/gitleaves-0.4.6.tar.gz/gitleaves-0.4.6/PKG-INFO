@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: gitleaves
+Version: 0.4.6
+Summary: Git Based Leaves management system
+Home-page: https://github.com/scrollstack/gitleaves
+Author: Shekhar Tiwatne
+Author-email: pythonic@gmail.com
+License: MIT license
+Keywords: gitleaves
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+# gitleaves
+
+*Git Based Leaves management system*
+
+Project status: WIP
+
+## Specifications
+
+### File names
+
+- leaves.\<YYYY\>.csv
+- extras.\<YYYY\>.csv
+
+### Format
+
+### Leaves
+MMDD [- MMDD], Name, Reason / Details [Optional]
+
+### Extra days
+MMDD [- MMDD], Name, Reason / Details [Optional]
+
+### Example
+
+
+```
+1115 - 1126, Tony Stark, Hawaii
+1129 - 1210, Peter Parker,
+1129 - 1202, Bruce Wayne,
+1220 - 1224, Loki Laufeyson, Smell the flowers
+```
+
+## Usage
+
+```
+$ pip install gitleaves
+$ mkdir data/
+$ cp leaves.<this-year>.csv data/
+$ gitleaves genreports
+$ ls reports/
+```
+
+## Process
+
+- Apply for leave(s) by adding records to leaves.YYYY.csv
+- Optionally mention details/reasons in commit message
+- Raise a PR
+- Leave is approved if the PR is merged
+
+## Guidelines
+
+- Do take leaves when necessary :)
+- Make sure you spell your name same everywhere
+- Generally try to add records in order
+- When applying for leaves
+    - make sure you take look at peers leave plans 
+    - ensure that you have a collegue to cover your work while you are away
+    - if necessary, do essential knowledge transfer to ensure that there are no dependencies on you
+    - if you are a major contributor to an important release then avoid immediate leaves after the release
+
+## Dev Guidelines
+- Human Readable data files (as much possible)
+
+## Features
+
+## TODO
+
+## Credits
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage` project template.
+
+- Cookiecutter: https://github.com/audreyr/cookiecutter
+- audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
