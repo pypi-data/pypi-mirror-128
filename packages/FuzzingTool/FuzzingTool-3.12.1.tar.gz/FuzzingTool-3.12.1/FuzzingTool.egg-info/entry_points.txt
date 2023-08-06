@@ -1,0 +1,3 @@
+[console_scripts]
+FuzzingTool = fuzzingtool.fuzzingtool:main_cli
+
