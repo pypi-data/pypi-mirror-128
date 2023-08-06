@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: hhnk-research-tools
+Version: 0.4
+Summary: HHNK tools for working with 3di
+Home-page: https://github.com/HHNK/hhnk-research-tools
+Author: Wietse van Gerwen
+Author-email: w.vangerwen@hhnk.nl
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/HHNK/hhnk-research-tools/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
