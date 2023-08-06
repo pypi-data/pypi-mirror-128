@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: qctrl-qiskit
+Version: 0.0.4
+Summary: Q-CTRL Qiskit Adapter
+Home-page: https://github.com/qctrl/python-qiskit
+License: Apache-2.0
+Keywords: quantum,computing,open source,engineering,qiskit
+Author: Q-CTRL
+Author-email: support@q-ctrl.com
+Requires-Python: >=3.7,<3.9
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: System :: Distributed Computing
+Requires-Dist: numpy (>=1.16,<2.0)
+Requires-Dist: qctrl-open-controls (>=8.5.1,<9.0.0)
+Requires-Dist: qiskit-ibmq-provider (>=0.3.3,<0.4.0)
+Requires-Dist: qiskit-terra (>=0.12.0,<0.13.0)
+Requires-Dist: scipy (>=1.3,<2.0)
+Requires-Dist: toml (>=0.10.0,<0.11.0)
+Project-URL: Repository, https://github.com/qctrl/python-qiskit
+Description-Content-Type: text/markdown
+
+# Q-CTRL Qiskit adapter
+
+The aim of the Q-CTRL Qiskit Adapter package is to provide export functions allowing
+users to deploy established error-robust quantum control protocols from the
+open literature and defined in Q-CTRL Open Controls on IBM Quantum hardware.
+
+Anyone interested in quantum control is welcome to contribute to this project.
+
