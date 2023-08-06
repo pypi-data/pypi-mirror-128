@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+mun_info_gastos/__init__.py
+mun_info_gastos/desenvolvimento_projeto.py
+mun_info_gastos/frameworkclasses.py
+mun_info_gastos.egg-info/PKG-INFO
+mun_info_gastos.egg-info/SOURCES.txt
+mun_info_gastos.egg-info/dependency_links.txt
+mun_info_gastos.egg-info/top_level.txt
