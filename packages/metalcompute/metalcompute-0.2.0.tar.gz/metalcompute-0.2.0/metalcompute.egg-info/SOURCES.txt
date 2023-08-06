@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+examples/metalcompute-mandelbrot
+examples/metalcompute-measure
+examples/metalcompute-pipe
+examples/metalcompute-raymarch
+metalcompute.egg-info/PKG-INFO
+metalcompute.egg-info/SOURCES.txt
+metalcompute.egg-info/dependency_links.txt
+metalcompute.egg-info/top_level.txt
+src/metalcompute.c
+src/metalcompute.swift
