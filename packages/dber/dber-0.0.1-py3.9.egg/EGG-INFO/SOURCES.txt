@@ -1,0 +1,10 @@
+README.md
+dber.py
+jdbcer.py
+setup.py
+dber.egg-info/PKG-INFO
+dber.egg-info/SOURCES.txt
+dber.egg-info/dependency_links.txt
+dber.egg-info/entry_points.txt
+dber.egg-info/requires.txt
+dber.egg-info/top_level.txt
