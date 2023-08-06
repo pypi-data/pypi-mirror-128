@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/saynihello/__init__.py
+src/saynihello/hello.py
+src/saynihello.egg-info/PKG-INFO
+src/saynihello.egg-info/SOURCES.txt
+src/saynihello.egg-info/dependency_links.txt
+src/saynihello.egg-info/top_level.txt
