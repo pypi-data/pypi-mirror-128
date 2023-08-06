@@ -1,0 +1,7 @@
+setup.py
+example_pkg/b/__init__.py
+example_pkg_b.egg-info/PKG-INFO
+example_pkg_b.egg-info/SOURCES.txt
+example_pkg_b.egg-info/dependency_links.txt
+example_pkg_b.egg-info/not-zip-safe
+example_pkg_b.egg-info/top_level.txt
