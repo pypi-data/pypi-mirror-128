@@ -1,0 +1,2 @@
+recursive-include strmprivacy_io_strmprivacy_schemas_demo_v1 *
+include top_package * 

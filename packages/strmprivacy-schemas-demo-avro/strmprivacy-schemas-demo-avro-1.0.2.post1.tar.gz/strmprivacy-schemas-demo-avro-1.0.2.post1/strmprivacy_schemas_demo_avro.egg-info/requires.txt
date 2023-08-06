@@ -1,0 +1,2 @@
+avro-gen==0.3.0
+tzlocal==2.1
