@@ -1,0 +1,17 @@
+COPYING
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+mdsmosaic/__init__.py
+mdsmosaic/epix.py
+mdsmosaic/gpas.py
+mdsmosaic/helpers.py
+mdsmosaic/model.py
+mdsmosaic/schema.py
+mdsmosaic.egg-info/PKG-INFO
+mdsmosaic.egg-info/SOURCES.txt
+mdsmosaic.egg-info/dependency_links.txt
+mdsmosaic.egg-info/not-zip-safe
+mdsmosaic.egg-info/requires.txt
+mdsmosaic.egg-info/top_level.txt
