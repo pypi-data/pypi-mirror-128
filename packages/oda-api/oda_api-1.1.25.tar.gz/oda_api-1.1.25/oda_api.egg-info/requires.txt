@@ -1,0 +1,8 @@
+requests
+future
+astropy>=3.2<5.0.0
+json_tricks
+matplotlib
+numpy
+jsonschema
+pyjwt
