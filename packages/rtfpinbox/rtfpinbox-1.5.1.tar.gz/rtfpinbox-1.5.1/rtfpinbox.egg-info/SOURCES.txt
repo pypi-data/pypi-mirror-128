@@ -1,0 +1,12 @@
+README.md
+setup.py
+content/__init__.py
+demographics/__init__.py
+emails/__init__.py
+headers/__init__.py
+inbox/__init__.py
+rtfpinbox.egg-info/PKG-INFO
+rtfpinbox.egg-info/SOURCES.txt
+rtfpinbox.egg-info/dependency_links.txt
+rtfpinbox.egg-info/requires.txt
+rtfpinbox.egg-info/top_level.txt
