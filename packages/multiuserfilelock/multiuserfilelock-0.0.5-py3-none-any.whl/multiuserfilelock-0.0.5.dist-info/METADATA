@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: multiuserfilelock
+Version: 0.0.5
+Summary: A lock to share resources between users based on filelock.
+Home-page: https://github.com/ramonaoptics/python-multiuserfilelock
+Author: Ramona Optics, Inc.
+Author-email: info@ramonaoptics.com
+License: BSD
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: filelock
+
+UNKNOWN
+
