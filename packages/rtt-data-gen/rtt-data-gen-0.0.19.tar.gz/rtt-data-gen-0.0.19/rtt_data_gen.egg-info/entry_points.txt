@@ -1,0 +1,5 @@
+[console_scripts]
+rtt-data-gen = rtt_data_gen.main:main
+rtt-data-qrng = rtt_data_gen.qrng:main
+rtt-data-spread = rtt_data_gen.spreader:main
+
