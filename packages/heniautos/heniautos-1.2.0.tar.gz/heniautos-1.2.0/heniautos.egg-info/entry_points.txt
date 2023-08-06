@@ -1,0 +1,4 @@
+[console_scripts]
+calendar-equation = heniautos.calendar_equation:main
+heniautos = heniautos.command_line:main
+
