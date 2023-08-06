@@ -1,0 +1,13 @@
+README.md
+setup.py
+sortinghatinf/__init__.py
+sortinghatinf/model_loading.py
+sortinghatinf/pylib.py
+sortinghatinf.egg-info/PKG-INFO
+sortinghatinf.egg-info/SOURCES.txt
+sortinghatinf.egg-info/dependency_links.txt
+sortinghatinf.egg-info/requires.txt
+sortinghatinf.egg-info/top_level.txt
+sortinghatinf/resources/compressed_rf.pbz2
+sortinghatinf/resources/dictionaryName.pkl
+sortinghatinf/resources/dictionarySample.pkl
