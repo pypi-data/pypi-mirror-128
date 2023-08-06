@@ -1,0 +1,9 @@
+
+[test]
+pytest>=4.6
+codecov
+pytest-cov
+pytest-flake8
+pytest-console-scripts
+pytest-xdist[psutil]
+filelock
