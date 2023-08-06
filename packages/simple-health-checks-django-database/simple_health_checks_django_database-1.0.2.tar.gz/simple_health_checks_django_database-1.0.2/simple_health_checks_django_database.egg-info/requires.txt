@@ -1,0 +1,8 @@
+simple_health_checks
+Django
+
+[dev]
+simple_health_checks[dev]
+
+[tests]
+simple_health_checks[tests]
