@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: skippa
+Version: 0.1.0
+Summary: SciKIt-learn Pipeline in PAndas
+Home-page: https://dev.azure.com/data-science-lab/Intern/_git/skippa
+Author: Robert van Straalen
+Author-email: tech@datasciencelab.nl
+License: UNKNOWN
+Keywords: preprocessing pipeline pandas sklearn
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+
+=============
+skippa
+=============
+
+SciKIt-learn Pipeline in PAndas
+
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2021-11-05)
+------------------
+
+* First release on PyPI.
+
+
