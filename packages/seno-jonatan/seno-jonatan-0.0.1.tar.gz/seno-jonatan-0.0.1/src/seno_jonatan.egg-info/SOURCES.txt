@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README
+pyproject.toml
+setup.py
+src/seno/__init__.py
+src/seno/sound.mp3
+src/seno_jonatan.egg-info/PKG-INFO
+src/seno_jonatan.egg-info/SOURCES.txt
+src/seno_jonatan.egg-info/dependency_links.txt
+src/seno_jonatan.egg-info/top_level.txt
