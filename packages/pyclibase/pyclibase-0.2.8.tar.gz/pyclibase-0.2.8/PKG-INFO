@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyclibase
+Version: 0.2.8
+Summary: A base class of python cli
+Home-page: https://github.com/ksungkeun84/pyclibase
+Author: Sungkeun Kim
+Author-email: danguria@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ksungkeun84/pyclibase/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# A python base class for the cli program.
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+How to package this repo: refer to the following
+1. create a pypi package
+   [this link](https://packaging.python.org/tutorials/packaging-projects/) and [this link](https://datacadamia.com/lang/python/conda/pypi#about)
+2. create an anaconda package
+   [this link](https://docs.conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs-skeleton.html)
+
+
