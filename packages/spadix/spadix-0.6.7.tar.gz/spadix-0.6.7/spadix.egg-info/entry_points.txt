@@ -1,0 +1,3 @@
+[console_scripts]
+spadix = spadix.__main__:main
+
