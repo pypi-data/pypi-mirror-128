@@ -1,0 +1,9 @@
+simplification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplification/cutil.cpython-38-x86_64-linux-gnu.so,sha256=axK2mk6IHTlVYeYhU63nyPaWpnJLa8rH678Z4py00Gc,1598232
+simplification/librdp.so,sha256=f758H2vrGOuIWVlsVb4CXY91vFqDGZTPXxpwzNhbB44,325728
+simplification/cutil.c,sha256=kKl1eirPeX-1edeiDvf2jWS2G3mOfbykHxrg_f9VQMo,891600
+simplification/util.py,sha256=pRZaFZcUccA_6PQ_1y0CemwMh12kG49BuGCbkQNbi4c,5190
+simplification-0.5.17.dist-info/top_level.txt,sha256=lJID9g5MiPOFux6Cv4ykfEGrZoG7aOrKCU27q-bVaXA,15
+simplification-0.5.17.dist-info/RECORD,,
+simplification-0.5.17.dist-info/WHEEL,sha256=RiwktpmF40OphKd3_aIG01PzIOQlJ7dpBn3cFSc9vak,217
+simplification-0.5.17.dist-info/METADATA,sha256=vqMQ-WvAHCOxNA-6Eym20hjKLCaDXInUgkcPFCrQJkI,5391
