@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: tkfab
+Version: 1.8
+Summary: fast user fabric3
+Home-page: UNKNOWN
+Author: TimHuang
+Author-email: 1400471035@qq.com
+License: Apache License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+
+# Quick Start
+
+## What is tkfab
+tkfab = tool kit with fabric of the local command of git clone
+
+## What is fabric
+Three major artifact:
+
+| Artifact | Desc                                                   |
+| -------- | ------------------------------------------------------ |
+| pip      | PIP is used for package management                     |
+| Venv     | Virtualenv is managed by a separate Python environment |
+| Fabric   | Fabric server management and application publishing    |
+
+so tkfab is a simple encapsulation os fabric
+
+it provide some common git clone task
+
+## Install 
+```
+pip install tkfab -U -i https://pypi.python.org/simple
+```
+
+

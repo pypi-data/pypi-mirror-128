@@ -1,0 +1,9 @@
+README.md
+setup.py
+tkfab/__init__.py
+tkfab/allure_pytest_listener.txt
+tkfab.egg-info/PKG-INFO
+tkfab.egg-info/SOURCES.txt
+tkfab.egg-info/dependency_links.txt
+tkfab.egg-info/requires.txt
+tkfab.egg-info/top_level.txt
