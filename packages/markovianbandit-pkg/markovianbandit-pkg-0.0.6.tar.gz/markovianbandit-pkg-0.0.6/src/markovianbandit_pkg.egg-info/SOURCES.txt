@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/markovianbandit/__init__.py
+src/markovianbandit/markovianbandit.py
+src/markovianbandit/whittle_computation.py
+src/markovianbandit_pkg.egg-info/PKG-INFO
+src/markovianbandit_pkg.egg-info/SOURCES.txt
+src/markovianbandit_pkg.egg-info/dependency_links.txt
+src/markovianbandit_pkg.egg-info/top_level.txt
