@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: checkurl
+Version: 0.0.1
+Summary: Package for check url
+Home-page: UNKNOWN
+Author: Maxime JARRY
+Author-email: maxime.jarry@outlook.com
+License: MIT
+Keywords: URL,STATUS
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This Package it's a package for verified some url.
+
+Change Log
+==========
+
+0.0.1 (17/11/2021)
+------------------
+- First Release
+
