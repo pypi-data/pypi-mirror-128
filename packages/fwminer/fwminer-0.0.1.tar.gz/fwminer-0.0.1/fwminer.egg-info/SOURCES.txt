@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+fwminer/__init__.py
+fwminer/fwminer.py
+fwminer.egg-info/PKG-INFO
+fwminer.egg-info/SOURCES.txt
+fwminer.egg-info/dependency_links.txt
+fwminer.egg-info/not-zip-safe
+fwminer.egg-info/top_level.txt
