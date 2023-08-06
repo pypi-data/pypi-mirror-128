@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: stjudecloud-utilities
+Version: 1.0.0rc0
+Summary: A set of utilities used on the St. Jude Cloud project.
+License: MIT
+Author: St. Jude Cloud
+Author-email: support@stjude.cloud
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
