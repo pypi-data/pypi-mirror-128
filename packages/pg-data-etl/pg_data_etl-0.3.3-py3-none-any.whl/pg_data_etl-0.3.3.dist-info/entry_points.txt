@@ -1,0 +1,3 @@
+[console_scripts]
+pg=pg_data_etl.cli:main
+
