@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pydev-utils
+Version: 0.0.1
+Summary: a package with some developer tools
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: all
+Provides-Extra: ufmt_wrapper
+
+UNKNOWN
+

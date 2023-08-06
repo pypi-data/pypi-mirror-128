@@ -1,0 +1,20 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+  "setuptools>=58",
+  "wheel",
+  "setuptools_scm>=6.2"
+]
+
+[tool]
+[tool.setuptools_scm]
+
+[tool.pytest.ini_options]
+addopts = "--color=yes -vv"
+console_output_style = "progress"
+testpaths = [
+  "tests",
+]
+
+[tool.pylint.miscellaneous]
+output-format = "colorized"

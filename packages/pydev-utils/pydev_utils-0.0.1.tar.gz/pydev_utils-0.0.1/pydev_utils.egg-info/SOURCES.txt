@@ -1,0 +1,12 @@
+.gitignore
+Makefile
+pyproject.toml
+requirements.txt
+setup.cfg
+pydev_utils/__init__.py
+pydev_utils/ufmt_wrapper.py
+pydev_utils.egg-info/PKG-INFO
+pydev_utils.egg-info/SOURCES.txt
+pydev_utils.egg-info/dependency_links.txt
+pydev_utils.egg-info/requires.txt
+pydev_utils.egg-info/top_level.txt
