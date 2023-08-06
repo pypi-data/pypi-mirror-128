@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+SetSolver1/__init__.py
+SetSolver1/main.py
+SetSolver1.egg-info/PKG-INFO
+SetSolver1.egg-info/SOURCES.txt
+SetSolver1.egg-info/dependency_links.txt
+SetSolver1.egg-info/top_level.txt
