@@ -1,0 +1,3 @@
+[console_scripts]
+snvis = snvis.cli.__main__:main
+
