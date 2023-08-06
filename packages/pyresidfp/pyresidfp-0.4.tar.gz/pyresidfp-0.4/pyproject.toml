@@ -1,0 +1,14 @@
+[project]
+requires-python = ">=3.6"
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "pybind11>=2.6.0",
+    "cmake",
+    "scikit-build",
+    "ninja",
+    "setuptools-git-versioning",
+]
+build-backend = "setuptools.build_meta"
