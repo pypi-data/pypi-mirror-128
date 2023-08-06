@@ -1,0 +1,8 @@
+aiohttp>=3.8.1
+fastapi
+python-ioc>=1.8.0
+marshmallow
+unimatrix>=0.15.0
+unimatrix.ext.crypto>=0.20.4
+unimatrix.ext.jose>=1.5.1
+unimatrix.ext.model
