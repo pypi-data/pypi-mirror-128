@@ -1,0 +1,6 @@
+{
+  "tags": "$TAGS",
+  "first_line": "$FIRST_LINE",
+  "other_lines": "$OTHER_LINES",
+  "regex_string": "$RE_1_STR",
+}
