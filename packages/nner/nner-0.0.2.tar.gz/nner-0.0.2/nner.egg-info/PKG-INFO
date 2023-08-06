@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: nner
+Version: 0.0.2
+Summary: Nested Named Entity Recognition
+Home-page: https://github.com/cb1cyf/NNER/
+Author: Yufeng Cheng
+Author-email: 2101210556@pku.edu.cn
+License: UNKNOWN
+Description: # Nested Named Entity Recognition
+        
+        Training Dataset: CBLUE: A Chinese Biomedical Language Understanding Evaluation Benchmark
+        url: https://tianchi.aliyun.com/dataset/dataDetail?dataId=95414
+        
+        
+        
+        TODO:
+        
+        description
+        
+        package version dependency
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown

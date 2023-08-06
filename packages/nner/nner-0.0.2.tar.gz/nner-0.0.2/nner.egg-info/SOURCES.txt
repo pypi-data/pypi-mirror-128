@@ -1,0 +1,12 @@
+README.md
+setup.py
+nner/__init__.py
+nner/inference.py
+nner/main.py
+nner/model.py
+nner/utils.py
+nner.egg-info/PKG-INFO
+nner.egg-info/SOURCES.txt
+nner.egg-info/dependency_links.txt
+nner.egg-info/requires.txt
+nner.egg-info/top_level.txt
