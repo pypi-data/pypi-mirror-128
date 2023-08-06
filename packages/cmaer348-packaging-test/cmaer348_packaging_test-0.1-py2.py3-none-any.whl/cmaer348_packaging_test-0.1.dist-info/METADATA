@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cmaer348-packaging-test
+Version: 0.1
+Summary: What the module does
+Home-page: https://github.com/cmaer/cmaer348-packaging-test
+Author: Chris Maer
+Author-email: chris@maer.fyi
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.11)
+Requires-Dist: matplotlib (>=1.5)
+
+UNKNOWN
+
