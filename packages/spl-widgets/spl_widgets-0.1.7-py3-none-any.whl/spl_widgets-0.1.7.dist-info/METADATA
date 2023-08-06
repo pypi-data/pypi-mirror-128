@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: spl-widgets
+Version: 0.1.7
+Summary: Widgets for the Barnard Speech Perception Laboratory
+Home-page: https://github.com/pypa/spl_widgets
+Author: Colin Simon-Fellowes
+Author-email: colin.tsf@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/spl_widgets/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+
+_Nothing to see here yet... If I ever get off my **\[censored\]** and write something this'll look nicer_
+
