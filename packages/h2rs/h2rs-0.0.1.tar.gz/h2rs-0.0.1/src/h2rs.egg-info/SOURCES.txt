@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/h2rs/__init__.py
+src/h2rs/__main__.py
+src/h2rs/h2rs.py
+src/h2rs/h2rscmd.py
+src/h2rs.egg-info/PKG-INFO
+src/h2rs.egg-info/SOURCES.txt
+src/h2rs.egg-info/dependency_links.txt
+src/h2rs.egg-info/entry_points.txt
+src/h2rs.egg-info/requires.txt
+src/h2rs.egg-info/top_level.txt
