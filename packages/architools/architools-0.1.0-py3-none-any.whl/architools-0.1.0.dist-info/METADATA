@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: architools
+Version: 0.1.0
+Summary: Helper functions and classes for architectural logic
+Home-page: UNKNOWN
+Author: Carsten Rodin
+Author-email: carsten.rodin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# architools
+
+`architools` is a collection of convenience functions and classes for physical planning, urban design and architecture maintained by [Common Objects](https://commonobjects.net). It is licensed under LGPL-3.0 following `pythonocc-core` and `OpenCASCADE` on which it depends.
+
+
