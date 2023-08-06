@@ -1,0 +1,3 @@
+[console_scripts]
+wilddrummer = wilddrummer.wild_drummer:main
+
