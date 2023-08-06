@@ -1,0 +1,10 @@
+create_tables/Dockerfile,sha256=nfMiuXlgtwiybkr7E5oI1JhlJIvLpkv0aZj_-KgGJPc,178
+create_tables/create_tables.py,sha256=YxAdf4_x7b5zbQRjCPLTx8LdWAlSZnMcyK78OAGhu_o,490
+create_tables/models.py,sha256=gx_KPEwV6cH0ecbC9w-FNXMoUBksLPTe7GcNsU9fSOg,619
+create_tables/requirements.txt,sha256=VOECDyLerETC2Gzr5lSQFaU0tnm6zV0Kf_IpIF2juXY,34
+db_api_client/parent_cli.py,sha256=-Bs7-KcaiaY8H-MhcelJG-1LuOKzj4FpdFoT8Hl7r68,1365
+db_api_client/postgres_cli.py,sha256=8TH6W8O594-j2_BrcXtE_fzpghUtyHEAVc86H0d0LT0,555
+db_api_client/sqlite_cli.py,sha256=IkysmI29rUYPGSK6FeCPQa81Z5JA_mw04jaLdB2XnNI,326
+itba_cde_tpf_python_applications_fvidal90-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+itba_cde_tpf_python_applications_fvidal90-0.1.1.dist-info/METADATA,sha256=fe4XBSmFm_AG92H8a2iQDZkGwTm-UG2TqNq34bOIYg8,484
+itba_cde_tpf_python_applications_fvidal90-0.1.1.dist-info/RECORD,,
