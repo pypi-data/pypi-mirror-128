@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: Gitfetch
+Version: 1.0
+Summary: Gitfetch is a simple tool to get github user details
+Home-page: https://github.com/Itz-fork/Gitfetch
+Author: Itz-fork
+Author-email: itz-fork@users.noreply.github.com
+License: MIT
+Download-URL: https://github.com/Itz-fork/Gitfetch/releases/tag/Gitfetch-v1.0
+Keywords: python,bash,github,gitfetch
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Gitfetch
+
+Just a (cli?) tool to get github user details
+
+## Installation
+
+Install [Gitfetch](https://github.com/Itz-fork/Gitfetch) via pypi
+
+```
+pip install gitfetch
+```
+
+or
+
+```
+pip install git+https://github.com/Itz-fork/Gitfetch.git
+```
+
+
+## Usage
+
+- **CLI Usage 👇,**
+  - ```
+    gitfetch [your github username]
+    ```
+  - Ex:
+    ```gitfetch Itz-fork```
+
+- **Use it as a python module 👇,**
+  - ```python
+    from gitfetch_tools import GitFetch
+
+    git = GitFetch("Your-Github-Username")
+    print(git.fetch_user_data())
+    ```
+
+## FAQ
+
+#### Q: Can I customize it?
+**A:** Yeah, check [fetch.py](https://github.com/Itz-fork/Gitfetch/blob/master/gitfetch_tools/fetch.py) and [display](https://github.com/Itz-fork/Gitfetch/blob/master/gitfetch_tools/display) files.
+
+

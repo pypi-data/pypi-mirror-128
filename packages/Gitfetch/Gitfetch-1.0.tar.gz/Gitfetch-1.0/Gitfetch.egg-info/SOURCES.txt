@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+gitfetch
+setup.py
+Gitfetch.egg-info/PKG-INFO
+Gitfetch.egg-info/SOURCES.txt
+Gitfetch.egg-info/dependency_links.txt
+Gitfetch.egg-info/requires.txt
+Gitfetch.egg-info/top_level.txt
