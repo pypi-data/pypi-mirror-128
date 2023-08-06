@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: biterator
+Version: 0.3.0
+Summary: Bit manipulation and iteration tool suite.
+Author: derek-strasters
+Author-email: paracite.org@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+
+

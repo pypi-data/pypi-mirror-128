@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "biterator"
+version = "0.3.0"
+description = "Bit manipulation and iteration tool suite."
+authors = ["derek-strasters <paracite.org@gmail.com>"]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.15.0"
+black = "*"
+pydocstyle = "*"
+pytest = "*"
+mypy = "*"
+coverage = "*"
+isort = "*"
+
+flake8 = "*"
+flake8-black = "*"
+flake8-coding = "*"
+flake8-commas = "*"
+flake8-import-order = "*"
+flake8-isort = "*"
+flake8-quotes = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.black]
+target_version = ["py38"]
+line-length = 120
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+
+[tool.pydocstyle]
+match-dir = "(?!venv|dist).*"
