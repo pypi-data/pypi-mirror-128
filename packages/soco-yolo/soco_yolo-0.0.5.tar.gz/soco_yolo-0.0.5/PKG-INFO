@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: soco_yolo
+Version: 0.0.5
+Summary: YOLO wrapper
+Home-page: https://www.soco.ai
+Author: kyusonglee
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Free for non-commercial use
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## YoloV5 
+### Download models
+    yolo/resources
+    ├── yolov5x.pt
+
+### Working Directory:
+    cd yolo
+
+### install dependencies
+    pip install -r requirements.txt
+
+### run API
+    uvicorn models.http.server:app --host 0.0.0.0 --workers 4
+
+### Benchmark
+|  | n_jobs | batch_size | pps | cuda |
+|---|---|---|---|---|
+|  | 5 | 20 | 37.5 | 14126 |
+|  | 5 | 10 | 37 | 11516 |
+|  | 4 | 40 | 34.8 | 14959 |
+|  | 4 | 30 | 35.9 | 13527 |
+|  | 4 | 20 | 35.2 | 11303 |
+|  | 4 | 10 | 35.4 | 9215 |
+|  | 3 | 60 | 33.1 | 15008 |
+|  | 3 | 30 | 33.2 | 10148 |
+|  | 3 | 10 | 32.4 | 6914 |
+|  | 2 | 100 | 27.6 | 14939 |
+|  | 2 | 50 | 28.6 | 8937 |
+|  | 2 | 10 | 27.5 | 4613 |
+
+Based on model: yolov5x
+
