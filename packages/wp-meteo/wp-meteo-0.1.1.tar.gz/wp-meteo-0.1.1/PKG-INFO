@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: wp-meteo
+Version: 0.1.1
+Summary: Python package to easily load exported WindPRO meteo files into a pandas DataFrame.
+Home-page: https://github.com/gpauvert/wp-meteo
+Author: Guillaume Pauvert
+Author-email: g.pauvert@hotmail.com
+License: gpl-3.0
+Description: UNKNOWN
+Keywords: wind,windpro
+Platform: UNKNOWN
