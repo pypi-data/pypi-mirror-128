@@ -1,0 +1,17 @@
+name: flox-tests
+channels:
+  - conda-forge
+dependencies:
+  - codecov
+  - dask-core
+  - netcdf4
+  - pandas
+  - pip
+  - pytest
+  - pytest-cov
+  - xarray
+  - pre-commit
+  - numpy_groupies
+  - pooch
+  - toolz
+  - numba
