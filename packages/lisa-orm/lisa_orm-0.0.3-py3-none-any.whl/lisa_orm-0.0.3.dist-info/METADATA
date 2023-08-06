@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lisa-orm
+Version: 0.0.3
+Summary: lisa is an orm system like django orm
+Home-page: https://linktr.ee/marawan6569
+Author: marawan mohamed
+Author-email: marawan6569@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+
+# lisa-orm
+Lisa is an ORM system
+
+

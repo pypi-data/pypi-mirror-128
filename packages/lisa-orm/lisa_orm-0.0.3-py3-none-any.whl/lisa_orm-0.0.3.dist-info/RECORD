@@ -1,0 +1,10 @@
+lisa_orm/__init__.py,sha256=TT9KmoEgJQLptCroXbFxy9_kXc_-AtfvAMfADPJ12dE,85
+lisa_orm/actions.py,sha256=LA258Rh9uiA2l9ZBOk30j8tE7398p6OVT7RdqWomLgw,975
+lisa_orm/migrate.py,sha256=V5yNW6S_R6Oq8j-CwBGtx8FM8ZDj_vZ71m3Gx4Ncof4,2029
+lisa_orm/migrations.py,sha256=7NvmVUEEzU7r4D0Y3QqmErJrbuX-_zmLVEL3XcD7V-w,3921
+lisa_orm/db/__init__.py,sha256=ILf4rTa_XK3jdSQJbVAjiCoGtVYVOi8txy1uy4RNBwM,376
+lisa_orm/db/models.py,sha256=OpMboZKbT-UvJFYGILt1IXv0juPtpfvR8m-KqC4N1c4,7145
+lisa_orm-0.0.3.dist-info/METADATA,sha256=_zcMz_sSjUk46xdQl3duFU-FT2tH8zF_hYrC4bxi_D8,358
+lisa_orm-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+lisa_orm-0.0.3.dist-info/top_level.txt,sha256=pebwHwQ4iFyluiNjE-owWuCjRUC3JDC8O61W_LFy6PA,9
+lisa_orm-0.0.3.dist-info/RECORD,,
