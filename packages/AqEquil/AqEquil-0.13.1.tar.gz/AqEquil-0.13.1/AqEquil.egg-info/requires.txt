@@ -1,0 +1,7 @@
+rpy2
+pandas
+numpy
+matplotlib
+plotly
+ipython
+chemparse
