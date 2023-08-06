@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: simple_health_checks_rabbitmq
+Version: 1.0.1
+Summary: RabbitMQ plugin for simple-health-checks
+Home-page: https://gitlab.com/genomicsengland/opensource/simple-healthchecks
+Author: Nicholas Dentandt, Oleg Gerasimenko, Constantina Polycarpou
+Author-email: noreply@genomicsengland.co.uk
+License: Apache License 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: dev
+
+## RabbitMQ health checks plugin
+
+Adds health checks for RabbitMQ
+
+### Required env variables
+
+`HEALTH_CHECKS_RABBITMQ_BROKER_URL` - The broker URL for your RabbitMQ instance
+
+
