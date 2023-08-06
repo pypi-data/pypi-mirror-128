@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pydracodec
+Version: 1.0.0
+Summary: draco decoder
+Home-page: https://ousttrue.github.io/pydracodec/
+Author: ousttrue
+Author-email: ousttrue@gmail.com
+License: Apache License 2.0
+Keywords: gltf
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pydracodec
+
+dracodec_unity.dll ctypes wrapper
+
+
