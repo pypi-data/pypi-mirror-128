@@ -1,0 +1,97 @@
+/////////////////////////////////////////////////////////////////////////////
+// Name:        pedal.h
+// Author:      Laurent Pugin
+// Created:     2016
+// Copyright (c) Authors and others. All rights reserved.
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef __VRV_PEDAL_H__
+#define __VRV_PEDAL_H__
+
+#include "atts_cmn.h"
+#include "atts_externalsymbols.h"
+#include "atts_visual.h"
+#include "controlelement.h"
+#include "timeinterface.h"
+
+namespace vrv {
+
+class System;
+//----------------------------------------------------------------------------
+// Pedal
+//----------------------------------------------------------------------------
+
+/**
+ * This class models the MEI <pedal> element.
+ */
+class Pedal : public ControlElement,
+              public TimeSpanningInterface,
+              public AttColor,
+              public AttExtSym,
+              public AttPedalLog,
+              public AttPedalVis,
+              public AttPlacementRelStaff,
+              public AttVerticalGroup {
+public:
+    /**
+     * @name Constructors, destructors, and other standard methods
+     * Reset method reset all attribute classes
+     */
+    ///@{
+    Pedal();
+    virtual ~Pedal();
+    Object *Clone() const override { return new Pedal(*this); }
+    void Reset() override;
+    std::string GetClassName() const override { return "Pedal"; }
+    ///@}
+
+    /**
+     * @name Getter to interfaces
+     */
+    ///@{
+    TimePointInterface *GetTimePointInterface() override { return dynamic_cast<TimePointInterface *>(this); }
+    TimeSpanningInterface *GetTimeSpanningInterface() override { return dynamic_cast<TimeSpanningInterface *>(this); }
+    ////@}
+
+    /**
+     * @name Setter and getter of the bounce flag
+     */
+    ///@{
+    bool EndsWithBounce() const { return m_endsWithBounce; }
+    void EndsWithBounce(bool endsWithBounce) { m_endsWithBounce = endsWithBounce; }
+    ///@}
+
+    /**
+     * Get the SMuFL glyph for the pedal based on function or glyph.num
+     */
+    wchar_t GetPedalGlyph() const;
+
+    /**
+     * Get the pedal form based on the options and corresponding attributes from <pedal> and <scoreDef>
+     */
+    pedalVis_FORM GetPedalForm(Doc *doc, System *system) const;
+
+    //----------//
+    // Functors //
+    //----------//
+
+    /**
+     * See Object::PrepareFloatingGrps
+     */
+    int PrepareFloatingGrps(FunctorParams *functorParams) override;
+
+    /**
+     * See Object::GenerateMIDI
+     */
+    int GenerateMIDI(FunctorParams *functorParams) override;
+
+private:
+    /**
+     * Flag indicating if following pedal mark is a bounce
+     */
+    bool m_endsWithBounce;
+};
+
+} // namespace vrv
+
+#endif
