@@ -1,0 +1,17 @@
+AUTHORS.rst
+LICENSE
+README.rst
+setup.cfg
+setup.py
+ydiskarc/__init__.py
+ydiskarc/__main__.py
+ydiskarc/core.py
+ydiskarc.egg-info/PKG-INFO
+ydiskarc.egg-info/SOURCES.txt
+ydiskarc.egg-info/dependency_links.txt
+ydiskarc.egg-info/entry_points.txt
+ydiskarc.egg-info/not-zip-safe
+ydiskarc.egg-info/requires.txt
+ydiskarc.egg-info/top_level.txt
+ydiskarc/cmds/__init__.py
+ydiskarc/cmds/processor.py

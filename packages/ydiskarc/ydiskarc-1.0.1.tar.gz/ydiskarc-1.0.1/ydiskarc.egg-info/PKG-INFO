@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: ydiskarc
+Version: 1.0.1
+Summary: yydiskarc: a command-line tool to backup documents from Yandex.Disk public resources
+Home-page: https://github.com/ruarxive/ydiskarc/
+Author: Ivan Begtin
+Author-email: ivan@begtin.tech
+License: MIT
+Download-URL: https://github.com/ruarxive/ydiskarc/
+Keywords: backup archive metadata yandex yandex-disk
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Terminals
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Provides-Extra: python_version == "3.0" or python_version == "3.1"
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+ydiskarc: a command-line tool to backup public resources from Yandex.disk (disk.yandex.ru / yadi.sk) filestorage service
+########################################################################################################################
+
+ydiskarc (pronounced *Ai-disk-arc*) is a command line tool used to backup Yandex.Disk public resources.
+Public resources are opnly shared files and folders from Yandex.Disk service.
+Yandex provides free-to-use API that allow to download the data.
+
+
+.. contents::
+
+.. section-numbering::
+
+
+
+Main features
+=============
+
+* Metadata extraction
+* Download any public resource file or directory
+
+
+
+Installation
+============
+
+
+Any OS
+-------------
+
+A universal installation method (that works on Windows, Mac OS X, Linux, …,
+and always provides the latest version) is to use pip:
+
+
+.. code-block:: bash
+
+    # Make sure we have an up-to-date version of pip and setuptools:
+    $ pip install --upgrade pip setuptools
+
+    $ pip install --upgrade ydiskarc
+
+
+(If ``pip`` installation fails for some reason, you can try
+``easy_install ydiskarc`` as a fallback.)
+
+
+Python version
+--------------
+
+Python version 3.6 or greater is required.
+
+Usage
+=====
+
+
+Synopsis:
+
+.. code-block:: bash
+
+    $ ydiskarc [command] [flags]
+
+
+See also ``python -m ydiskarc`` and ``ydiskarc [command] --help`` for help for each command.
+
+
+
+Commands
+========
+
+Sync command
+----------------
+Synchronizes files and metadata from public resource of directory type to the local directory.
+
+
+Extracts all files and metadata from "https://disk.yandex.ru/d/VVNMYpZtWtST9Q" resource to the dir "mos9maystyle"
+
+.. code-block:: bash
+
+    $ ydiskarc sync --url https://disk.yandex.ru/d/VVNMYpZtWtST9Q -o mos9maystyle
+
+
+
+Full command
+----------------
+Downloads single file or directory. Single file downloaded with original file format. Directory downloaded as ZIP file
+with all files inside.
+
+Downloads file from url "https://disk.yandex.ru/i/t_pNaarK8UJ-bQ" and saves it into folder "files" with metadata saved as "_metadata.json"
+
+.. code-block:: bash
+
+    $ ydiskarc full --url https://disk.yandex.ru/i/t_pNaarK8UJ-bQ -o files -v -m
+
+
+
