@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "panaetius"
+version = "2.3.3"
+description = "Python module to gracefully handle a .config file/environment variables for scripts, with built in masking for sensitive options. Provides a Splunk friendly formatted logger instance."
+license = "MIT"
+authors = ["dtomlinson <dtomlinson@panaetius.co.uk>"]
+readme = "./README.md"
+homepage = "https://github.com/dtomlinson91/panaetius"
+repository = "https://github.com/dtomlinson91/panaetius"
+documentation = "https://panaetius.readthedocs.io/en/latest/introduction.html"
+classifiers = [
+    "Environment :: Plugins",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Environment :: MacOS X",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+toml = "^0.10.0"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+prospector = {extras = ["with_bandit", "with_mypy"], version = "^1.5.1"}
+types-toml = "^0.10.1"
+pytest = "^6.2.5"
+pytest-datadir = "^1.3.1"
+pytest-xdist = "^2.4.0"
+coverage = "^6.0.2"
+duty = "^0.7.0"
+types-PyYAML = "^6.0.1"
+isort = "^5.10.1"
+mypy = "^0.910"
+safety = "^1.10.3"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+line-length = 120
+not_skip = "__init__.py"
+multi_line_output = 3
+force_single_line = false
+balanced_wrapping = true
+default_section = "THIRDPARTY"
+known_first_party = "duty"
+include_trailing_comma = true
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

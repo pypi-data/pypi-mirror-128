@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: panaetius
+Version: 2.3.3
+Summary: Python module to gracefully handle a .config file/environment variables for scripts, with built in masking for sensitive options. Provides a Splunk friendly formatted logger instance.
+Home-page: https://github.com/dtomlinson91/panaetius
+License: MIT
+Author: dtomlinson
+Author-email: dtomlinson@panaetius.co.uk
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: toml (>=0.10.0,<0.11.0)
+Project-URL: Documentation, https://panaetius.readthedocs.io/en/latest/introduction.html
+Project-URL: Repository, https://github.com/dtomlinson91/panaetius
+Description-Content-Type: text/markdown
+
+# Panaetius
+
+This package provides:
+
+- Functionality to read user variables from a `config.yml` or environment variables.
+- A convenient default logging formatter printing `json` that can save to disk and rotate.
+- Utility functions.
+
+## Config
+
+### options
+
+#### skip_header_init
+
+If `skip_header_init=True` then the `config_path` will not use the `header_variable` as the
+sub-directory in the `config_path`.
+
+E.g
+
+`CONFIG = panaetius.Config("tembo", "~/tembo/.config", skip_header_init=True)`
+
+Will look in `~/tembo/config/config.yml`.
+
+If `skip_header_init=False` then would look in `~/tembo/config/tembo/config.yml`.
+
+### Module
+
+Convenient to place in a package/sub-package `__init__.py`.
+
+See Tembo for an example: <https://github.com/tembo-pages/tembo-core/blob/main/tembo/cli/__init__.py>
+
+Example snippet to use in a module:
+
+```python
+"""Subpackage that contains the CLI application."""
+
+import os
+from typing import Any
+
+import panaetius
+from panaetius.exceptions import LoggingDirectoryDoesNotExistException
+
+
+if (config_path := os.environ.get("TEMBO_CONFIG")) is not None:
+    CONFIG: Any = panaetius.Config("tembo", config_path, skip_header_init=True)
+else:
+    CONFIG = panaetius.Config(
+        "tembo", "~/tembo/.config", skip_header_init=True
+    )
+
+
+panaetius.set_config(CONFIG, "base_path", "~/tembo")
+panaetius.set_config(CONFIG, "template_path", "~/tembo/.templates")
+panaetius.set_config(CONFIG, "scopes", {})
+panaetius.set_config(CONFIG, "logging.level", "DEBUG")
+panaetius.set_config(CONFIG, "logging.path")
+
+try:
+    logger = panaetius.set_logger(
+        CONFIG, panaetius.SimpleLogger(logging_level=CONFIG.logging_level)
+    )
+except LoggingDirectoryDoesNotExistException:
+    _LOGGING_PATH = CONFIG.logging_path
+    CONFIG.logging_path = ""
+    logger = panaetius.set_logger(
+        CONFIG, panaetius.SimpleLogger(logging_level=CONFIG.logging_level)
+    )
+    logger.warning("Logging directory %s does not exist", _LOGGING_PATH)
+
+```
+
+This means in `./tembo/cli/cli.py` you can
+
+```python
+import tembo.cli
+
+# access the CONFIG instance + variables from the config.yml
+tembo.cli.CONFIG
+```
+
+
+## Utility Functions
+
+### Squasher
+
+Squashes a json object or Python dictionary into a single level dictionary.
+
