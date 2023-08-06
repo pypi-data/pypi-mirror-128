@@ -1,0 +1,2 @@
+tentaclio
+PyAthena==1.10.7

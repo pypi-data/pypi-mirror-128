@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/tentaclio_athena/__init__.py
+src/tentaclio_athena/__main__.py
+src/tentaclio_athena.egg-info/PKG-INFO
+src/tentaclio_athena.egg-info/SOURCES.txt
+src/tentaclio_athena.egg-info/dependency_links.txt
+src/tentaclio_athena.egg-info/requires.txt
+src/tentaclio_athena.egg-info/top_level.txt
+src/tentaclio_athena/clients/__init__.py
+src/tentaclio_athena/clients/athena_client.py
