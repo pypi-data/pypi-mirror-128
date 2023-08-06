@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pygems/__init__.py
+src/pygems.egg-info/PKG-INFO
+src/pygems.egg-info/SOURCES.txt
+src/pygems.egg-info/dependency_links.txt
+src/pygems.egg-info/entry_points.txt
+src/pygems.egg-info/top_level.txt
+src/pygems/cli/__init__.py
+src/pygems/lib/__init__.py
+src/pygems/lib/namespace.py
+src/pygems/lib/plugin.py
