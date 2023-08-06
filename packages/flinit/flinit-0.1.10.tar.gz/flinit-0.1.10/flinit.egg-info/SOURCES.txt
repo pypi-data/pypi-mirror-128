@@ -1,0 +1,11 @@
+README.md
+setup.py
+flinit/__init__.py
+flinit/flinit.py
+flinit.egg-info/PKG-INFO
+flinit.egg-info/SOURCES.txt
+flinit.egg-info/dependency_links.txt
+flinit.egg-info/entry_points.txt
+flinit.egg-info/not-zip-safe
+flinit.egg-info/requires.txt
+flinit.egg-info/top_level.txt
