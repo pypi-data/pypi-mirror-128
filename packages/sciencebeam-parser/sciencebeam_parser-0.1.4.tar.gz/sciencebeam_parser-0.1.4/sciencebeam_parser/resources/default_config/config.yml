@@ -1,0 +1,132 @@
+logging:
+  # Python logging config (passed to dictConfig)
+  version: 1
+  formatters:
+    default:
+      format: '[%(asctime)s] %(levelname)s in %(name)s:%(lineno)s: %(message)s'
+  handlers:
+    wsgi:
+      level: INFO
+      formatter: default
+      class: logging.StreamHandler
+      stream: 'ext://flask.logging.wsgi_errors_stream'
+    log_file:
+      level: INFO
+      formatter: default
+      class: logging.handlers.RotatingFileHandler
+      filename: 'logs/server.log'
+      mode: 'a'
+      maxBytes: 67108864  # 64 MB
+      backupCount: 10
+  loggers:
+    # root logger
+    '':
+      level: INFO
+      handlers:
+        - wsgi
+        - log_file
+    sciencebeam_parser:
+      level: DEBUG
+    __main__:
+      level: DEBUG
+    delft:
+      level: INFO
+    sciencebeam_trainer_delft:
+      level: INFO
+
+# The download directory for ScienceBeam Parser resources
+# Note: the CV model may download resources to `~/.torch/iopath_cache`,
+#    unless FVCORE_CACHE is set. (See `iopath.common.file_io.get_cache_dir`)
+download_dir: '~/.cache/sciencebeam-parser/downloads'
+
+pdfalto:
+  path: https://github.com/kermitt2/pdfalto/files/6104204/pdfalto-4b4e983413278a07bb4cc4b2836de03adc8ca6dc-dockcross-linux-64.gz
+wapiti:
+  install_source: 'https://github.com/kermitt2/Wapiti/archive/5f9a52351fddf21916008daa4becd41d56e7f608.tar.gz'
+xslt:
+  tei_to_jats:
+    parameters:
+      # parameters for tei-to-jats.xsl
+      output_parameters: 'false'
+      output_bold: 'false'
+      output_italic: 'false'
+      output_empty_figure_graphic: 'true'
+      acknowledgement_target: 'ack'
+      annex_target: 'back'
+lookup:
+  country:
+    paths:
+      - https://raw.githubusercontent.com/kermitt2/grobid/0.6.2/grobid-home/lexicon/countries/CountryCodes.xml
+  first_name:
+    paths:
+      - https://raw.githubusercontent.com/kermitt2/grobid/0.6.2/grobid-home/lexicon/names/firstname.5k
+      - https://raw.githubusercontent.com/kermitt2/grobid/0.6.2/grobid-home/lexicon/names/names.female
+      - https://raw.githubusercontent.com/kermitt2/grobid/0.6.2/grobid-home/lexicon/names/names.male
+  last_name:
+    paths:
+      - https://raw.githubusercontent.com/kermitt2/grobid/0.6.2/grobid-home/lexicon/names/lastname.5k
+      - https://raw.githubusercontent.com/kermitt2/grobid/0.6.2/grobid-home/lexicon/names/names.family
+processors:
+  fulltext:
+    merge_raw_authors: false
+    use_cv_model: false
+    cv_render_dpi: 100
+    use_ocr_model: false
+    replace_text_by_cv_graphic: false
+models:
+  segmentation:
+    path: 'https://github.com/elifesciences/sciencebeam-models/releases/download/biorxiv-grobid/2021-05-11-delft-grobid-segmentation-biorxiv-10k-auto-v0.0.23-train-1966-e133.tar.gz'
+    use_first_token_of_block: false
+  header:
+    path: 'https://github.com/elifesciences/sciencebeam-models/releases/download/v0.0.1/2020-10-04-delft-grobid-header-biorxiv-no-word-embedding.tar.gz'
+  name_header:
+    # path: 'https://github.com/elifesciences/sciencebeam-models/releases/download/grobid-0.6.1/2021-06-21-grobid-0.6.1-name-header-no-word-embedding-no-layout-features-e800.tar.gz'
+    path: 'https://github.com/kermitt2/grobid/raw/0.6.0/grobid-home/models/name/header'
+    engine: 'wapiti'
+  name_citation:
+    # path: 'https://github.com/elifesciences/sciencebeam-models/releases/download/grobid-0.6.1/2021-06-28-grobid-0.6.1-name-citation-no-word-embedding-no-layout-features-e500.tar.gz'
+    path: 'https://github.com/kermitt2/grobid/raw/0.6.2/grobid-home/models/name/citation'
+    engine: 'wapiti'
+  affiliation_address:
+    path: 'https://github.com/elifesciences/sciencebeam-models/releases/download/v0.0.1/2020-10-04-delft-grobid-affiliation-address-biorxiv-no-word-embedding.tar.gz'
+  fulltext:
+    path: 'https://github.com/elifesciences/sciencebeam-models/releases/download/biorxiv-grobid/2021-05-11-delft-grobid-fulltext-biorxiv-10k-auto-v0.0.21-train-1986-e159.tar.gz'
+  figure:
+    path: 'https://github.com/elifesciences/sciencebeam-models/releases/download/biorxiv-grobid/2021-05-11-delft-grobid-figure-biorxiv-10k-auto-v0.0.18-train-1865-e219.tar.gz'
+  table:
+    path: 'https://github.com/elifesciences/sciencebeam-models/releases/download/biorxiv-grobid/2021-05-11-delft-grobid-table-biorxiv-10k-auto-v0.0.18-train-1865-e569.tar.gz'
+  reference_segmenter:
+    path: 'https://github.com/elifesciences/sciencebeam-models/releases/download/v0.0.1/2020-10-04-delft-grobid-reference-segmenter-biorxiv-no-word-embedding.tar.gz'
+  citation:
+    path: 'https://github.com/elifesciences/sciencebeam-models/releases/download/v0.0.1/2020-10-04-delft-grobid-citation-biorxiv-no-word-embedding.tar.gz'
+
+cv_models:
+  default:
+    path: 'lp://efficientdet/PubLayNet'
+    engine: 'layout_parser'
+    score_threshold: 0.1
+
+ocr_models:
+  default:
+    engine: 'tesserocr'
+    lang: 'eng'
+    # see https://github.com/sirfz/tesserocr/blob/v2.5.2/tesserocr.pyx#L75-L90
+    # (specify literal or int value)
+    oem: 'DEFAULT'
+    # see https://github.com/sirfz/tesserocr/blob/v2.5.2/tesserocr.pyx#L102-L121
+    # (specify literal or int value)
+    psm: 'SPARSE_TEXT'
+
+doc_to_pdf:
+  enabled: true
+  listener:
+    port: 2003
+    process_timeout: 600
+    max_uptime: 10
+  convert:
+    remove_line_no: true
+    remove_header_footer: true
+    remove_redline: true
+
+# preload resources and models on startup
+preload_on_startup: false
