@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: cv_pruner
+Version: 0.0.1rc3
+Summary: Three-layer Pruning for Nested Cross-Validation to Accelerate Automated Hyperparameter Optimization for Embedded Feature Selection in High-Dimensional Data With Very Small Sample Sizes
+Home-page: https://github.com/sigrun-may/cv-pruner
+Author: Sigrun May
+Author-email: s.may@ostfalia.de
+Maintainer: Sigrun May
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/sigrun-may/cv-pruner/issues
+Project-URL: Source Code, https://github.com/sigrun-may/cv-pruner
+Project-URL: Contributing, https://github.com/sigrun-may/cv-pruner/blob/main/CONTRIBUTING.md
+Project-URL: Code of Conduct, https://github.com/sigrun-may/cv-pruner/blob/main/CODE_OF_CONDUCT.md
+Keywords: ml ai machine-learning hyperparameter-optimization high-dimensional data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: checking
+Provides-Extra: optional
+Provides-Extra: testing
+Provides-Extra: doc
+License-File: LICENSE
+
+# CV-Pruner
+
+[![MIT License](https://img.shields.io/github/license/sigrun-may/cv-pruner)](https://github.com/sigrun-may/cv-pruner/blob/main/LICENSE)
+[![pytest](https://github.com/sigrun-may/cv-pruner/actions/workflows/pytest.yml/badge.svg)](https://github.com/sigrun-may/cv-pruner/actions/workflows/pytest.yml)
+[![Static Code Checks](https://github.com/sigrun-may/cv-pruner/actions/workflows/static_checks.yml/badge.svg)](https://github.com/sigrun-may/cv-pruner/actions/workflows/static_checks.yml)
+[![GitHub issues](https://img.shields.io/github/issues-raw/sigrun-may/cv-pruner)](https://github.com/sigrun-may/cv-pruner/issues)
+
+## Installation
+
+CV-Pruner is available at [the Python Package Index (PyPI)](https://pypi.org/project/cv-pruner/).
+It can be installed with pip:
+
+```bash
+$ pip install cv-pruner
+```
+
+## Licensing
+
+Copyright (c) 2021 Sigrun May, Helmholtz-Zentrum für Infektionsforschung GmbH (HZI)<br/>
+Copyright (c) 2021 Sigrun May, Ostfalia Hochschule für angewandte Wissenschaften
+
+Licensed under the **MIT License** (the "License"); you may not use this file except in compliance with the License.
+You may obtain a copy of the License by reviewing the file
+[LICENSE](https://github.com/sigrun-may/cv-pruner/blob/main/LICENSE) in the repository.
+
+
