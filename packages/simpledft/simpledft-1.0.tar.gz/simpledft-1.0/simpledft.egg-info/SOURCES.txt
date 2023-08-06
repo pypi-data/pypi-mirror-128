@@ -1,0 +1,15 @@
+README.md
+setup.py
+simpledft/__init__.py
+simpledft/atoms.py
+simpledft/energies.py
+simpledft/exc.py
+simpledft/operators.py
+simpledft/scf.py
+simpledft/utils.py
+simpledft.egg-info/PKG-INFO
+simpledft.egg-info/SOURCES.txt
+simpledft.egg-info/dependency_links.txt
+simpledft.egg-info/not-zip-safe
+simpledft.egg-info/requires.txt
+simpledft.egg-info/top_level.txt

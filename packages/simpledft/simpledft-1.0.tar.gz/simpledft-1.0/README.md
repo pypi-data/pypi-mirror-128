@@ -1,0 +1,51 @@
+# SimpleDFT
+
+A simple density functional theory (DFT) code.
+
+It implements the [DFT++](https://arxiv.org/abs/cond-mat/9909130) pragmas proposed by Prof. Thomas Arias
+in Python3.
+
+SimpleDFT is the minimalistic prototype for the [eminus](https://gitlab.com/nextdft/eminus) code,
+which was introduced in the [master thesis](https://www.researchgate.net/publication/356537762_Domain-averaged_Fermi_holes_A_self-interaction_correction_perspective) of
+Wanja Timm Schulze (wangenau@protonmail.com)
+to explain theory and development in a very compact way.
+
+| SimpleDFT | Description |
+| --------- | ----------- |
+| Language | Python3 |
+| Installation | Very simple |
+| Dependencies | Minimalistic (NumPy and SciPy) |
+| Basis set| Plane waves (PW) |
+| DFT | Restricted Kohn-Sham (RKS) |
+| Scope | Atoms, molecules in a box, Gamma-point solids |
+
+# Installation 
+The SimpleDFT code only uses standard scientific
+Python packages, i.e., NumPy and SciPy.
+To install the package use
+
+```bash 
+pip3 install simpledft
+```
+
+# Examples 
+You can run the examples, i.e.,
+the H atom, He atom, and H2 molecule
+with the following command.
+
+```bash 
+python3 examples.py
+```
+
+# Files
+| File | Description |
+| ---- | ----------- |
+| atoms.py | Atoms object, principal input |
+| operators.py | DFT++ operators |
+| exc.py | Exchange-correlation functional |
+| enegies.py | Energy contributions calculation |
+| scf.py | Self-consistent field (SCF) |
+| utils.py | Additional functionality |
+| examples.py | Examples, i.e., H, He and H2 |
+| ref_values.jl | Calculate reference values (PWDFT.jl) |
+
