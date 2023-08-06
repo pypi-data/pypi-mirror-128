@@ -1,0 +1,13 @@
+README.md
+setup.py
+dafact/__init__.py
+dafact/__main__.py
+dafact/_main.py
+dafact.egg-info/PKG-INFO
+dafact.egg-info/SOURCES.txt
+dafact.egg-info/dependency_links.txt
+dafact.egg-info/entry_points.txt
+dafact.egg-info/requires.txt
+dafact.egg-info/top_level.txt
+dafact/encoders/__init__.py
+dafact/encoders/_encoders.py
