@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: rexmex
+Version: 0.0.6
+Summary: UNKNOWN
+Home-page: https://github.com/AstraZeneca/rexmex
+Author: AstraZeneca BIKG Team
+Author-email: UNKNOWN
+License: Apache License, Version 2.0
+Download-URL: https://github.com/AstraZeneca/rexmex/archive/v_00006.tar.gz
+Description: UNKNOWN
+Keywords: recommender,nmf,matrix factorisation,system,evaluation metric,ranking,recsys,metric,ranking metric,performance metric
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
