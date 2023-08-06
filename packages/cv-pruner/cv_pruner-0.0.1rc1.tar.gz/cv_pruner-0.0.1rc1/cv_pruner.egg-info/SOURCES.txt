@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cv_pruner/__init__.py
+cv_pruner/cv_pruner.py
+cv_pruner.egg-info/PKG-INFO
+cv_pruner.egg-info/SOURCES.txt
+cv_pruner.egg-info/dependency_links.txt
+cv_pruner.egg-info/requires.txt
+cv_pruner.egg-info/top_level.txt
