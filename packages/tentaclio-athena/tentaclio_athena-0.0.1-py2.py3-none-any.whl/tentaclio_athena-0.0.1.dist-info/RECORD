@@ -1,0 +1,9 @@
+tentaclio_athena/__init__.py,sha256=G_sxI1SmlAFGfFTGsvBcMufOR7st3K7U-UpNW-lP4TA,229
+tentaclio_athena/__main__.py,sha256=LyOhvbqEBlV9HfnXSZMUyX7Czw3OGbVOU4xftzT1ebE,145
+tentaclio_athena/clients/__init__.py,sha256=vPHPVAx45wPSKLqJAjMwKN9OdJBNFZWeEyoQQ4SY3XY,292
+tentaclio_athena/clients/athena_client.py,sha256=ssiGyON6z5BDNzPDuInESAdTv7s0sD-Vl-ZsHPA263s,938
+tentaclio_athena-0.0.1.dist-info/LICENSE.txt,sha256=Aqv2h5R53YlGaQXl7XgUDMZPUxJK1HftERN2ExXJ_u4,1080
+tentaclio_athena-0.0.1.dist-info/METADATA,sha256=OGmVpR4kCn_-f5S1mwVJhZiPUtKErN20ustS2B9Pej8,1562
+tentaclio_athena-0.0.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+tentaclio_athena-0.0.1.dist-info/top_level.txt,sha256=1ozDOlMg-mvQbI57iPq_T42Zn6zw4BW0i6g0AXwIRDU,17
+tentaclio_athena-0.0.1.dist-info/RECORD,,
