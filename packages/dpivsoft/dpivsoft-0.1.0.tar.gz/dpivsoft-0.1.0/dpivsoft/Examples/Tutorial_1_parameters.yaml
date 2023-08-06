@@ -1,0 +1,24 @@
+box_size_1_x: 64
+box_size_1_y: 64
+no_boxes_1_x: 32
+no_boxes_1_y: 32
+window_x_1: 32
+window_y_1: 32
+
+no_iter_1: 1
+no_iter_2: 2
+
+box_size_2_x: 32
+box_size_2_y: 32
+no_boxes_2_x: 64
+no_boxes_2_y: 64
+window_x_2: 16
+window_y_2: 16
+
+mask: 0
+peak_ratio:  1
+weighting: 0
+gaussian_filter: 0
+median_limit: 0.5
+factor: 1
+dt: 1
