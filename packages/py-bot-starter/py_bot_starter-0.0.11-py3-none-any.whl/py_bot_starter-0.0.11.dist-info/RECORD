@@ -1,0 +1,13 @@
+botstarter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botstarter/bot.py,sha256=pJfp6l06sgXNGtlyMNGrXba7QBNE_MtMCREOQySkFrw,5427
+botstarter/common.py,sha256=jRWQxf1KukSCrZ7qxVNG0Z_xv8dtX9Sdgeizo0hlbbw,1000
+botstarter/decorators.py,sha256=HrYJKIn_blPqVVkoiIVxjx5NxqNdTUcABPhHu3045CI,5352
+botstarter/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botstarter/db/base.py,sha256=yYjzU0r0na9hdkopAlwyLLRZN7NYM6dvDkghXxgNmHA,3835
+botstarter/db/medias.py,sha256=wxqidwx1lEiDRjMQxb8u5qz0ojWDwl83wtyEvEh50Ik,419
+botstarter/db/users.py,sha256=CuS9URE_XPqu0wxcol2p_NSmybRa4xUk6cs5-OrZOZY,938
+py_bot_starter-0.0.11.dist-info/LICENSE,sha256=6aVxcY5OBu1OemfM9VWA4LGdfBa5Aagy0EyKLzN76zo,1073
+py_bot_starter-0.0.11.dist-info/METADATA,sha256=DqdNDVkbA6Y9UJyGoZ_lirj3n3VoHwRZsfpJdGOBOBA,1440
+py_bot_starter-0.0.11.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+py_bot_starter-0.0.11.dist-info/top_level.txt,sha256=b5X7abhc48NV7X4UM4APE2fzboMOI9LbnF5s3L4D9UI,11
+py_bot_starter-0.0.11.dist-info/RECORD,,
