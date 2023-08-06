@@ -1,0 +1,11 @@
+beautifulsoup4
+requests
+regex
+rich
+pandas
+setuptools
+SPARQLWrapper
+gensim
+nltk
+spacy
+prefixspan
