@@ -1,0 +1,17 @@
+pivotpy/__init__.py,sha256=OgvUPqzzDdx16OJTcXbC-lM9TKBhKTZ-PF04mmld8ks,3544
+pivotpy/_nbdev.py,sha256=be79WwWOxE88GMt8GLOwY1G4EpAjiQhGrWGdHjt6oxM,4507
+pivotpy/api.py,sha256=Tl-mVFXo6NzMv8msvM9Gg-Y3YOuVYuxb40QO1BKke3E,17444
+pivotpy/cli.py,sha256=eIEe0P-ob1qQg5iqdK_39rP3R9_r6rSwFC0sbzIKdFI,2703
+pivotpy/g_utils.py,sha256=DCg5dwsuRto10uCMcZGoqG63owjsTA40ZCTh64GrHJw,19393
+pivotpy/i_plots.py,sha256=QeX-NQ0ldfAGNzRPKLZCOw83Rfy7cu_eohlVQJCRpkQ,24013
+pivotpy/s_plots.py,sha256=IkUZKSr-TKg9-FCPpZUUOzq8PFhh9Qw_1obl_LfUw6w,73495
+pivotpy/sio.py,sha256=MldDKY-Lu8TLOXCWcEIGdhoFt55TzJF0Q8dem4xqnPM,64137
+pivotpy/styles.py,sha256=kg8C-3aKyBWqbczlMaThAx03J9uNucuBI_rxR6tqkbk,4799
+pivotpy/vr_parser.py,sha256=jCPAyVKSQdL4cvg0T-UgLlafbohf8hOZGDCoPRgX-Z8,53236
+pivotpy/widgets.py,sha256=fmKVewHRxiKAN_tNFxYHX04CAzUoA_YQrxgTAY3g9x8,62960
+pivotpy-1.0.10.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pivotpy-1.0.10.dist-info/METADATA,sha256=MO5xB0KJRJd3M-dJVWZ0zDWGmju5oteWxD1o9ztRQPs,14406
+pivotpy-1.0.10.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pivotpy-1.0.10.dist-info/entry_points.txt,sha256=kIGvyoywRvXUeM3fqHuw5Py7wRlkSlY1UdvvQlGVBOg,175
+pivotpy-1.0.10.dist-info/top_level.txt,sha256=d5rotuxg0CD9tFKDgxLzstkHvAyX7PxMOrq9Bjy6vjg,8
+pivotpy-1.0.10.dist-info/RECORD,,
