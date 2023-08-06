@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: mb-commons
+Version: 1.1.8
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: PySocks (==1.7.1)
+Requires-Dist: sorcery (==0.2.2)
+Requires-Dist: pydash (==5.1.0)
+Requires-Dist: wrapt (==1.13.3)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pymongo (==3.12.1)
+Requires-Dist: pydantic (==1.8.2)
+Requires-Dist: python-dotenv (==0.19.2)
+Provides-Extra: dev
+Requires-Dist: pytest (==6.2.5) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.15.0) ; extra == 'dev'
+Requires-Dist: pytest-xdist (==2.4.0) ; extra == 'dev'
+Requires-Dist: wheel (==0.37.0) ; extra == 'dev'
+Requires-Dist: twine (==3.6.0) ; extra == 'dev'
+
+UNKNOWN
+
