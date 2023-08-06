@@ -1,0 +1,9 @@
+README.md
+setup.py
+project_face_sdk/__init__.py
+project_face_sdk/message.py
+project_face_sdk.egg-info/PKG-INFO
+project_face_sdk.egg-info/SOURCES.txt
+project_face_sdk.egg-info/dependency_links.txt
+project_face_sdk.egg-info/top_level.txt
+project_face_sdk.egg-info/zip-safe
