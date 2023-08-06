@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gflight-api
+Version: 0.0.1
+Summary: Fetch data from google flights
+Home-page: https://github.com/sujaldev/gflight-api
+Author: Sujal Singh
+Author-email: email.sujalsingh@gmail.com
+License: UNKNOWN
+Project-URL: Issues, https://github.com/sujaldev/gflight-api/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# GFlight API (Unofficial)
+This package allows you to fetch data from Google Flights.
+
+
+
