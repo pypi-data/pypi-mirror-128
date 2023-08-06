@@ -1,0 +1,9 @@
+
+<script>
+    (function ($) {
+        $("[data-role=datepicker]").datepicker({
+            dateFormat: 'dd/mm/yy',
+            regional: '{{ LANGUAGE_CODE }}'
+        }).prop('autocomplete', 'off');
+    })(jQuery);
+</script>
