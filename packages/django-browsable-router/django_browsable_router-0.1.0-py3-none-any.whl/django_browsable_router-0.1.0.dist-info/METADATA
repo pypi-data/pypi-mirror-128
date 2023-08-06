@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: django-browsable-router
+Version: 0.1.0
+Summary: A Django REST Framework router that can show APIViews and include other routers as navigable urls in the root view.
+Home-page: https://github.com/MrThearMan/django-browsable-router
+License: MIT
+Keywords: django,djangorestframework,drf
+Author: Matti Lamppu
+Author-email: lamppu.matti.akseli@gmail.com
+Requires-Python: >=3.6.1,<4
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=1.10)
+Requires-Dist: djangorestframework (>=3.7.0)
+Requires-Dist: typing-extensions (>=3.10.0,<4.0.0)
+Project-URL: Bug Tracker, https://github.com/MrThearMan/django-browsable-router/issues
+Project-URL: Repository, https://github.com/MrThearMan/django-browsable-router
+Description-Content-Type: text/markdown
+
+# Django Browsable Router
+
+[![Coverage Status](https://coveralls.io/repos/github/MrThearMan/django-browsable-router/badge.svg?branch=main)](https://coveralls.io/github/MrThearMan/django-browsable-router?branch=main)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/MrThearMan/django-browsable-router/Tests)](https://github.com/MrThearMan/django-browsable-router/actions/workflows/main.yml)
+[![PyPI](https://img.shields.io/pypi/v/django-browsable-router)](https://pypi.org/project/django-browsable-router)
+[![GitHub](https://img.shields.io/github/license/MrThearMan/django-browsable-router)](https://github.com/MrThearMan/django-browsable-router/blob/main/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/MrThearMan/django-browsable-router)](https://github.com/MrThearMan/django-browsable-router/commits/main)
+[![GitHub issues](https://img.shields.io/github/issues-raw/MrThearMan/django-browsable-router)](https://github.com/MrThearMan/django-browsable-router/issues)
+
+```shell
+pip install django-browsable-router
+```
+---
+
+**Documentation**: [https://mrthearman.github.io/django-browsable-router/](https://mrthearman.github.io/django-browsable-router/)
+
+**Source Code**: [https://github.com/MrThearMan/django-browsable-router](https://github.com/MrThearMan/django-browsable-router)
+
+---
+
