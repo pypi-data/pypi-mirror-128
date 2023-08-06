@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pytest-test-utils
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/iterative/pytest-test-utils
+Maintainer-email: support@dvc.org
+License: Apache License 2.0
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Pytest
+Requires-Python: >=3.7
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+
