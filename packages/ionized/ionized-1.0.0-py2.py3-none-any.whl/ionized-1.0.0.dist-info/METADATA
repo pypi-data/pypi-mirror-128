@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: ionized
+Version: 1.0.0
+Summary: Bootstrap Amazon Ion into existing projects
+Home-page: https://github.com/tbobm/ionized
+Author: Theo "Bob" Massard
+Author-email: tbobm@protonmail.com
+License: Apache Software License 2.0
+Keywords: ionized
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: amazon.ion
+
+=======
+ionized
+=======
+
+
+.. image:: https://img.shields.io/pypi/v/ionized.svg
+        :target: https://pypi.python.org/pypi/ionized
+
+.. image:: https://img.shields.io/travis/tbobm/ionized.svg
+        :target: https://travis-ci.com/tbobm/ionized
+
+.. image:: https://readthedocs.org/projects/ionized/badge/?version=latest
+        :target: https://ionized.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Bootstrap Amazon Ion into existing projects
+
+
+* Free software: Apache Software License 2.0
+* Documentation: https://ionized.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.0.1 (2021-11-20)
+------------------
+
+* First release on PyPI.
+
+
