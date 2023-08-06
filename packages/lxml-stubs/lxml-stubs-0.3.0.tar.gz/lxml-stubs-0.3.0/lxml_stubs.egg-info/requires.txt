@@ -1,0 +1,5 @@
+
+[test]
+coverage[toml]==5.2
+pytest-mypy-plugins==1.4.0
+pytest>=6.0.0

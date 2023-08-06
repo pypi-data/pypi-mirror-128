@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+lxml-stubs/__init__.pyi
+lxml-stubs/cssselect.pyi
+lxml-stubs/etree.pyi
+lxml-stubs/objectify.pyi
+lxml-stubs/html/__init__.pyi
+lxml-stubs/html/defs.pyi
+lxml_stubs.egg-info/PKG-INFO
+lxml_stubs.egg-info/SOURCES.txt
+lxml_stubs.egg-info/dependency_links.txt
+lxml_stubs.egg-info/not-zip-safe
+lxml_stubs.egg-info/requires.txt
+lxml_stubs.egg-info/top_level.txt
