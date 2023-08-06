@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyUsda/__init__.py
+pyUsda/base.py
+pyUsda/client.py
+pyUsda/domain.py
+pyUsda/enums.py
+pyUsda.egg-info/PKG-INFO
+pyUsda.egg-info/SOURCES.txt
+pyUsda.egg-info/dependency_links.txt
+pyUsda.egg-info/requires.txt
+pyUsda.egg-info/top_level.txt

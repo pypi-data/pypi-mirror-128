@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pyUsda
+Version: 1.0.3
+Summary: Interface for accessing USDA's FDC API
+Home-page: https://github.com/eghosa-eke/python-usda-fdc
+Author: Eghosa Eke
+Author-email: eghosaeke@gmail.com
+License: GNU General Public License 3
+Project-URL: Source Code, https://github.com/eghosa-eke/python-usda-fdc
+Keywords: api usda fdc nutrition food
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyUsda
+
+pyUsda provides an interface for interacting with [USDA's Food Data Central API ](https://fdc.nal.usda.gov/api-guide.html).
+
+## Installation
+
+```
+pip install pyUsda
+```
+
+## Usage
+
+``` python
+from pyUsda.client import UsdaClient
+
+client = UsdaClient("YOUR_API_KEY")
+foods = client.list_foods(page_size=5)
+
+for food in foods:
+    print(food)
+```
+
+Result:
+
+```
+Abiyuch, raw
+Acerola juice, raw
+Acerola, (west indian cherry), raw
+Acorn stew (Apache)
+Agave, cooked (Southwest)
+```
+
