@@ -1,0 +1,11 @@
+configparserc-1.2.8.dist-info/RECORD,,
+configparserc-1.2.8.dist-info/METADATA,sha256=mzPsSIWdi8BGytdeBDkaHCI4hwzpP69V-co6pltqwzQ,5245
+configparserc-1.2.8.dist-info/WHEEL,sha256=LyPBqUINU1DzSOqbXuVeW7TXh1mTAsgLZPJzPqTx1kY,146
+configparserc-1.2.8.dist-info/top_level.txt,sha256=HeCyLRRE7cKZLhO7wIqBXGIJIn9SNc45PEx_um2vlio,14
+configparserc/tools.cpython-37m-x86_64-linux-gnu.so,sha256=xen4hJGv30TnA3Lx4BdoDpjnAkhsln8rOtPzMtg1MN4,106240
+configparserc/__init__.py,sha256=8JMqOeLilvfr-nDktmJ4zB_WW_-iSymYoXf2B3a5Ovw,674
+configparserc/py.typed,sha256=zlBhTdAQBRfJxeJXD-QnlXiZYsiAJYYkr3mbEsmwSac,64
+configparserc/config.cpython-37m-x86_64-linux-gnu.so,sha256=WD60_oAq8xN2QaSJ9rLwOjRQECW3HUg0dMrD6q2sdHk,450872
+configparserc/config.pyi,sha256=h9K5C2V0N79-llbfADjYnTdAlYUDYdh2i2P5oIcjSrw,2993
+configparserc/tools.pyi,sha256=ypu5xeoTg80pfOS9BfoMhd0puDJIbzIPsFnagSYwAnY,776
+configparserc/include/_config.h,sha256=WP6rp9tNtl55QA0gonIiGuvPrUXNfOZbloZQOjUci6M,518
