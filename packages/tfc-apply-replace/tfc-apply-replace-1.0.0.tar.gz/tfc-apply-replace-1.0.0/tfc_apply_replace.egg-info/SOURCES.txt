@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+cli/__init__.py
+cli/cli.py
+tfc_apply_replace.egg-info/PKG-INFO
+tfc_apply_replace.egg-info/SOURCES.txt
+tfc_apply_replace.egg-info/dependency_links.txt
+tfc_apply_replace.egg-info/entry_points.txt
+tfc_apply_replace.egg-info/requires.txt
+tfc_apply_replace.egg-info/top_level.txt
