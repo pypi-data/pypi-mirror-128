@@ -1,0 +1,12 @@
+avmesos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+avmesos/acs.py,sha256=hbsAWddf8t9KbAGyMqrGMcps7qgQg83wCewg3ANL1Pc,2871
+avmesos/client.py,sha256=nusc9mGvDjFynnFc5pwMhEWsyxmLAhJxyws0C_4deP8,34978
+avmesos/core.py,sha256=Ozb_0R-8eeCFG4FaxYT-0YJ8iqYFcRNTGoavOlYIbhU,421
+avmesos/exception.py,sha256=PcmqGo2qaf_DGDI7jGOUPDN05j1TPEy3sfyK9hkIEpk,85
+avmesos/offers.py,sha256=PK_9MQ5Si0hkDFUY7k6fdsPB63jOZoREzJAZCtigQNs,3887
+avmesos/update.py,sha256=us8BYGhIcyhersJ0ZKQtowIOykL8XBbpUwk6JDpGmas,1816
+avmesos-0.4.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+avmesos-0.4.0.dist-info/METADATA,sha256=6ISCIZkjSR12dbfi0n40rvJQEdZWif-4PfCWT1FJLlk,949
+avmesos-0.4.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+avmesos-0.4.0.dist-info/top_level.txt,sha256=9-5AnBpaOyQL6J0yhfsFJfdnfcmkn6s2ncF7FWFj7i8,8
+avmesos-0.4.0.dist-info/RECORD,,
