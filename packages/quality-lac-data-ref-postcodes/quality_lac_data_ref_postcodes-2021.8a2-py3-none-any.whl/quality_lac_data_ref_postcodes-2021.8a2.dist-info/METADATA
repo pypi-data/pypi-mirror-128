@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: quality-lac-data-ref-postcodes
+Version: 2021.8a2
+Summary: This is a redistribution of the ONS dataset on Lower Tier Local Authority toUpper Tier Local Authority Lookup packaged for the Quality Lac Data project.Source: Office for National Statistics licensed under the Open Government Licence v.3.0
+License: OGL-UK-3.0
+Author: Office for National Statistics
+Author-email: sharedcustomercontactcentre@ons.gov.uk
+Requires-Python: >=3.7.1,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: pandas
+Requires-Dist: pandas (>=1.0.0,<2.0.0); extra == "pandas"
