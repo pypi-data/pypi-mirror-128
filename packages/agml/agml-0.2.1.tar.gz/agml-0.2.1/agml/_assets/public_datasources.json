@@ -1,0 +1,436 @@
+{
+    "bean_disease_uganda": {
+        "crop_types": {
+            "1": "angular_leaf_spot",
+            "2": "bean_rust",
+            "3": "healthy"
+        },
+        "ml_task": "image_classification",
+        "ag_task": "disease_classification",
+        "location": {
+            "continent": "africa",
+            "country": "uganda"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "handheld",
+        "input_data_format": "jpg",
+        "annotation_format": "directory_names",
+        "n_images": "1295",
+        "docs_url": "https://github.com/AI-Lab-Makerere/ibean/"
+    },
+    "carrot_weeds_germany": {
+        "crop_types": {
+            "1": "carrot",
+            "2": "weeds"
+        },
+        "ml_task": "semantic_segmentation",
+        "ag_task": "weed_segmentation",
+        "location": {
+            "continent": "europe",
+            "country": "germany"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "ground_mobile",
+        "input_data_format": "png",
+        "annotation_format": "image",
+        "n_images": "60",
+        "docs_url": "https://github.com/cwfid/dataset"
+    },
+    "plant_seedlings_aarhus": {
+        "crop_types": {
+            "1": "maize",
+            "2": "common_wheat",
+            "3": "sugar_beet",
+            "4": "scentless_mayweed",
+            "5": "common_chickweed",
+            "6": "shepherds_purse",
+            "7": "cleavers",
+            "8": "charlock",
+            "9": "fat_hen",
+            "10": "smallflowered_cranesbill",
+            "11": "black_grass",
+            "12": "loose_silkybent"
+        },
+        "ml_task": "image_classification",
+        "ag_task": "weed_classification",
+        "location": {
+            "continent": "europe",
+            "country": "denmark"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "ground_fixed",
+        "input_data_format": "png",
+        "annotation_format": "directory_names",
+        "n_images": "5588",
+        "docs_url": "https://vision.eng.au.dk/plant-seedlings-dataset/"
+    },
+    "soybean_weed_uav_brazil": {
+        "crop_types": {
+            "1": "broadleaf",
+            "2": "grass",
+            "3": "soybean",
+            "4": "soil"
+        },
+        "ml_task": "image_classification",
+        "ag_task": "weed_classification",
+        "location": {
+            "continent": "south_america",
+            "country": "brazil"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "uav",
+        "input_data_format": "tif",
+        "annotation_format": "directory_names",
+        "n_images": "15336",
+        "docs_url": "https://data.mendeley.com/datasets/3fmjm7ncc6/2"
+    },
+    "sugarcane_damage_usa": {
+        "crop_types": {
+            "1": "cracked",
+            "2": "crushed",
+            "3": "no_buds",
+            "4": "two_buds",
+            "5": "single_damaged_buds",
+            "6": "no_damage"
+        },
+        "ml_task": "image_classification",
+        "ag_task": "damage_classification",
+        "location": {
+            "continent": "north_america",
+            "country": "usa"
+        },
+        "sensor_modality": "rgb",
+        "platform": "ground_fixed",
+        "input_data_format": "bmp",
+        "annotation_format": "directory_names",
+        "n_images": "153",
+        "docs_url": "https://github.com/The77Lab/SugarcaneBilletsDataset"
+    },
+    "crop_weeds_greece": {
+        "crop_types": {
+            "1": "black_nightshade",
+            "2": "velvet_leaf",
+            "3": "cotton",
+            "4": "tomato"
+        },
+        "ml_task": "image_classification",
+        "ag_task": "weed_classification",
+        "location": {
+            "continent": "europe",
+            "country": "greece"
+        },
+        "sensor_modality": "rgb",
+        "platform": "handheld",
+        "input_data_format": "jpg",
+        "annotation_format": "directory_names",
+        "n_images": "508",
+        "docs_url": "https://github.com/AUAgroup/early-crop-weed"
+    },
+    "sugarbeet_weed_segmentation": {
+        "crop_types": {
+            "1": "sugar_beet",
+            "2": "random_weeds"
+        },
+        "ml_task": "semantic_segmentation",
+        "ag_task": "weed_segmentation",
+        "location": {
+            "continent": "none",
+            "country": "none"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "ground",
+        "input_data_format": "png",
+        "annotation_format": "image",
+        "n_images": "1931",
+        "docs_url": "https://github.com/inkyusa/weedNet"
+    },
+    "rangeland_weeds_australia": {
+        "crop_types": {
+            "1": "no_weeds",
+            "2": "chinee_apple",
+            "3": "lantana",
+            "4": "parkinsonia",
+            "5": "parthenium",
+            "6": "prickly_acacia",
+            "7": "rubber_vine",
+            "8": "siam_weed",
+            "9": "snake_weed",
+            "10": "negative"
+        },
+        "ml_task": "image_classification",
+        "ag_task": "weed_classification",
+        "location": {
+            "continent": "oceania",
+            "country": "australia"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "ground",
+        "input_data_format": "jpg",
+        "annotation_format": "directory_names",
+        "n_images": "17509",
+        "docs_url": "https://github.com/AlexOlsen/DeepWeeds"
+    },
+    "fruit_detection_worldwide": {
+        "crop_types": {
+            "1": "avocado",
+            "2": "rockmelon",
+            "3": "apple",
+            "4": "orange",
+            "5": "strawberry",
+            "6": "mango",
+            "7": "capsicum"
+        },
+        "ml_task": "object_detection",
+        "ag_task": "fruit_detection",
+        "location": {
+            "continent": "worldwide",
+            "country": "worldwide"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "mixed",
+        "input_data_format": "jpg",
+        "annotation_format": "coco_json",
+        "n_images": "565",
+        "docs_url": "https://drive.google.com/drive/folders/1CmsZb1caggLRN7ANfika8WuPiywo4mBb"
+    },
+    "leaf_counting_denmark": {
+        "crop_types": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9+"
+        },
+        "ml_task": "image_classification",
+        "ag_task": "leaf_counting",
+        "platform": "mixed",
+        "input_data_format": "png",
+        "annotation_format": "directory_names",
+        "n_images": "9372",
+        "docs_url": "https://vision.eng.au.dk/leaf-counting-dataset/"
+    },
+    "apple_detection_usa": {
+        "crop_types": {
+            "1": "apple"
+        },
+        "ml_task": "object_detection",
+        "ag_task": "fruit_detection",
+        "location": {
+            "continent": "north_america",
+            "country": "usa"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "ground",
+        "input_data_format": "png",
+        "annotation_format": "coco_json",
+        "n_images": "2290",
+        "docs_url": "https://hdl.handle.net/2376/17721"
+    },
+    "cotton_seedling_counting": {
+        "crop_types": {
+            "1": "Plant",
+            "2": "Weed"
+        },
+        "ml_task": "object_detection",
+        "ag_task": "seedling_counting",
+        "location": {
+            "continent": "worldwide",
+            "country": "worldwide"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "ground",
+        "input_data_format": "png",
+        "annotation_format": "coco_json",
+        "n_images": "2290",
+        "docs_url": "https://github.com/UGA-BSAIL/deepseedling"
+    },
+    "mango_detection_australia": {
+        "crop_types": {
+            "1": "mango"
+        },
+        "ml_task": "object_detection",
+        "ag_task": "fruit_detection",
+        "location": {
+            "continent": "oceania",
+            "country": "australia"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "handheld",
+        "input_data_format": "jpg",
+        "annotation_format": "coco_json",
+        "n_images": "1730",
+        "docs_url": "https://researchdata.edu.au/mangoyolo-set/1697505"
+    },
+    "apple_flower_segmentation": {
+        "crop_types": {
+            "1": "apple"
+        },
+        "ml_task": "semantic_segmentation",
+        "ag_task": "flower_segmentation",
+        "location": {
+            "continent": "north_america",
+            "country": "usa"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "ground",
+        "input_data_format": "jpg",
+        "annotation_format": "image",
+        "n_images": "148",
+        "docs_url": "https://data.nal.usda.gov/dataset/data-multi-species-fruit-flower-detection-using-refined-semantic-segmentation-network"
+    },
+    "apple_segmentation_minnesota": {
+        "crop_types": {
+            "1": "apple"
+        },
+        "ml_task": "semantic_segmentation",
+        "ag_task": "fruit_segmentation",
+        "location": {
+            "continent": "north_america",
+            "country": "usa"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "ground",
+        "input_data_format": "png",
+        "annotation_format": "image",
+        "n_images": "670",
+        "docs_url": "https://rsn.umn.edu/projects/orchard-monitoring/minneapple"
+    },
+    "rice_seedling_segmentation": {
+        "crop_types": {
+            "1": "Rice",
+            "2": "Background",
+            "3": "Weed"
+        },
+        "ml_task": "semantic_segmentation",
+        "ag_task": "weed_segmentation",
+        "location": {
+            "continent": "asia",
+            "country": "china"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "handheld",
+        "input_data_format": "jpg",
+        "annotation_format": "image",
+        "n_images": "224",
+        "docs_url": "https://github.com/kabbas570/CED-Net-Crops-and-Weeds-Segmentation-for-Smart-Farming-Using-a-Small-Cascaded-Encoder-Decoder-Archi"
+    },
+    "plant_village_classification": {
+        "crop_types": {
+            "1": "Apple___Apple_scab",
+            "2": "Apple___Black_rot",
+            "3": "Apple___Cedar_apple_rust",
+            "4": "Apple___healthy",
+            "5": "Background_without_leaves",
+            "6": "Blueberry___healthy",
+            "7": "Cherry___Powdery_mildew",
+            "8": "Cherry___healthy",
+            "9": "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+            "10": "Corn___Common_rust",
+            "11": "Corn___Northern_Leaf_Blight",
+            "12": "Corn___healthy",
+            "13": "Grape___Black_rot",
+            "14": "Grape___Esca_(Black_Measles)",
+            "15": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+            "16": "Grape___healthy",
+            "17": "Orange___Haunglongbing_(Citrus_greening)",
+            "18": "Peach___Bacterial_spot",
+            "19": "Peach___healthy",
+            "20": "Pepper,_bell___Bacterial_spot",
+            "21": "Pepper,_bell___healthy",
+            "22": "Potato___Early_blight",
+            "23": "Potato___Late_blight",
+            "24": "Potato___healthy",
+            "25": "Raspberry___healthy",
+            "26": "Soybean___healthy",
+            "27": "Squash___Powdery_mildew",
+            "28": "Strawberry___Leaf_scorch",
+            "29": "Strawberry___healthy",
+            "30": "Tomato___Bacterial_spot",
+            "31": "Tomato___Early_blight",
+            "32": "Tomato___Late_blight",
+            "33": "Tomato___Leaf_Mold",
+            "34": "Tomato___Septoria_leaf_spot",
+            "35": "Tomato___Spider_mites Two-spotted_spider_mite",
+            "36": "Tomato___Target_Spot",
+            "37": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+            "38": "Tomato___Tomato_mosaic_virus",
+            "39": "Tomato___healthy"
+        },
+        "ml_task": "image_classification",
+        "ag_task": "disease_classification",
+        "location": {
+            "continent": "north_america",
+            "country": "usa"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "ground",
+        "input_data_format": "jpg",
+        "annotation_format": "directory_names",
+        "n_images": "55448",
+        "docs_url": "https://github.com/spMohanty/PlantVillage-Dataset"
+    },
+    "plant_doc_classification": {
+        "crop_types": {
+            "1": "Apple_Scab_Leaf",
+            "2": "Apple_leaf",
+            "3": "Apple_rust_leaf",
+            "4": "Bell_pepper_leaf_spot",
+            "5": "Bell_pepper_leaf",
+            "6": "Blueberry_leaf",
+            "7": "Cherry_leaf",
+            "8": "Corn_Gray_leaf_spot",
+            "9": "Corn_leaf_blight",
+            "10": "Corn_rust_leaf",
+            "11": "Peach_leaf",
+            "12": "Potato_leaf_early_blight",
+            "13": "Potato_leaf_late_blight",
+            "14": "Raspberry_leaf",
+            "15": "Soybean_leaf",
+            "16": "Squash_Powdery_mildew_leaf",
+            "17": "Strawberry_leaf",
+            "18": "Tomato_Early_blight_leaf",
+            "19": "Tomato_Septoria_leaf_spot",
+            "20": "Tomato_leaf_bacterial_spot",
+            "21": "Tomato_leaf_late_blight",
+            "22": "Tomato_leaf_mosaic_virus",
+            "23": "Tomato_leaf_yellow_virus",
+            "24": "Tomato_leaf",
+            "25": "Tomato_mold_leaf",
+            "26": "Tomato_two_spotted_spider_mites_leaf",
+            "27": "grape_leaf_black_rot",
+            "28": "grape_leaf"
+        },
+        "ml_task": "image_classification",
+        "ag_task": "disease_classification",
+        "location": {
+            "continent": "worldwide",
+            "country": "worldwide"
+        },
+        "sensor_modality": "rgb",
+        "real_synthetic": "real",
+        "platform": "ground",
+        "input_data_format": "jpg",
+        "annotation_format": "directory_names",
+        "n_images": "2598",
+        "docs_url": "https://github.com/pratikkayal/PlantDoc-Dataset"
+    }
+}
+
