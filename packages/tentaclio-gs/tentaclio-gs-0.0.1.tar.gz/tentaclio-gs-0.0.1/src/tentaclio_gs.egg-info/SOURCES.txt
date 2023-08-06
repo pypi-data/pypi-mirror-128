@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/tentaclio_gs/__init__.py
+src/tentaclio_gs/__main__.py
+src/tentaclio_gs.egg-info/PKG-INFO
+src/tentaclio_gs.egg-info/SOURCES.txt
+src/tentaclio_gs.egg-info/dependency_links.txt
+src/tentaclio_gs.egg-info/requires.txt
+src/tentaclio_gs.egg-info/top_level.txt
+src/tentaclio_gs/clients/__init__.py
+src/tentaclio_gs/clients/exceptions.py
+src/tentaclio_gs/clients/gs_client.py
