@@ -1,0 +1,17 @@
+pypely/__init__.py,sha256=JL5R4RXDURkf1vXcwzggxDCmMZIn85xGxVFn4ChecP0,129
+pypely/_types.py,sha256=LyKqVVKIqd1ZyaZESdchYQzOtaMESVgcW8DAwBpzYF0,111
+pypely/helpers.py,sha256=fLCwArSWIG7G-z1HzUsv__gZKxd4tx-6iQruclCKzH0,1585
+pypely/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypely/core/_debug_helpers.py,sha256=4EMM3RN5osnZD-6i2Od-h2zAIrsB9qneJegjRUXgVF0,770
+pypely/core/errors.py,sha256=ggXVNSvNjbJWjj0JqwYQiBrisSUuJiP8LSe0erWG48c,2356
+pypely/core/functions.py,sha256=Gig6umttClzij96SBtMk02PJo8EulSrKscunZ3933uQ,1713
+pypely/memory/__init__.py,sha256=-5HEVz_Bm9Cq7B5ncGcgjDcr_YXaNw5OLwXJCHDjPVk,181
+pypely/memory/_context.py,sha256=T07pBSQphy_5iz0Ys9QtXSXmKJmwpsRACT2QPNAsPxU,342
+pypely/memory/_impl.py,sha256=JBCQseU_KjqalG8jDaXy4s-TIbZ_wMm4KTo-L9E19oY,963
+pypely/memory/errors.py,sha256=xA9k91DhcG6Z9LKYZFxGA8F8MMPwTNdubiG2ypTl46g,413
+pypely/memory/wrappers.py,sha256=rV-biDRPQ_ngb9zH6ytGWha1jzxRUvcqR8x7t1h8-2Q,1913
+pypely-0.2.1.dist-info/LICENSE,sha256=hl_EDWH6_BOtTGwq4-a2OeFr41vEdBOQdW_qyBQpcQY,35144
+pypely-0.2.1.dist-info/METADATA,sha256=SUKRa89lJWwcF42RmxVhlctvPd3sAptkAHQQ7daIiGY,5358
+pypely-0.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pypely-0.2.1.dist-info/top_level.txt,sha256=NbkTsBRHvv0oWgc91McKQjBB2auqeziJLeGDGrf5YQM,7
+pypely-0.2.1.dist-info/RECORD,,
