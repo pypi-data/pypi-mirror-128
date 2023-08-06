@@ -1,0 +1,3 @@
+[console_scripts]
+which-key=which_key.cli:app
+
