@@ -1,0 +1,15 @@
+vineyard/drivers/io/__init__.py,sha256=2bKIQyYn7hZ77ureUE4BJA4w8b-C_IAbzYvn2tOMwHg,672
+vineyard/drivers/io/kube_ssh.sh,sha256=YQ0PIAMffajqvq61Jkk6v5XfbUmgsBY1JIKciSjLLO4,880
+vineyard/drivers/io/ossfs.py,sha256=TCah-1S2aeVeTxQ_CI-tqNrevQPudD_p_LkipGW_mzc,50081
+vineyard/drivers/io/ssh.sh,sha256=4Rf62HlULVK9y5vB7HnQsJ8WNkl3Tp1O95DV5Ogcgy8,573
+vineyard/drivers/io/stream.py,sha256=7At9qzZuzLqwt0KgHXWWlWXt90BEOuQsJX3Y7zOz_w4,18287
+vineyard/drivers/io/tests/__init__.py,sha256=sjKemFal9OMZ0ESym8X_P1pTvILycJrbDZPEp0wQz2M,650
+vineyard/drivers/io/tests/conftest.py,sha256=C3vJ6-oRAcGH301LvlqE5JNofX2A2J8zHVAtqnGYr14,4893
+vineyard/drivers/io/tests/test_migrate_stream.py,sha256=bL4buwrDt3Q1uvh0vc8MWhX9EIUP6QFRQ0hvHIJ3R2k,2363
+vineyard/drivers/io/tests/test_open.py,sha256=LSmrzqBknpUiKd0oh5CEG3yyaMT1oAnH3ZOPvcXQDOE,14241
+vineyard/drivers/io/tests/test_ossfs.py,sha256=woMV8QnoI6XvUlXGi2oE7gb4x0g2-GsmlLktKF4-iDI,49443
+vineyard/drivers/io/tests/test_serialize.py,sha256=-1tw-Q7A4fFq9nmh3uAJodkBLD8j_b7JydoRg9tbHhc,5035
+vineyard_io-0.3.10.dist-info/METADATA,sha256=arIMQHNcmaJguZ7DI3PmczB7kayvx58ipOxL-UDUBaw,1979
+vineyard_io-0.3.10.dist-info/WHEEL,sha256=7S85KtyFD8rVLcRtbU_ImUEvhGsQLjg2zj19rOEAGNM,93
+vineyard_io-0.3.10.dist-info/top_level.txt,sha256=eZrYkLRbDypCZAYVfMwFNTMYj4dRG-c-6B5uV6vu4Sk,9
+vineyard_io-0.3.10.dist-info/RECORD,,
