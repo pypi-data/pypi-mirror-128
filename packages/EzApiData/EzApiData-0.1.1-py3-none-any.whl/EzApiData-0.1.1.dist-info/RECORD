@@ -1,0 +1,11 @@
+ezapidata/__init__.py,sha256=eGCPnxZdZ-VvuqOnYx0oYwgauU9nka2OCtTZwgctLhY,47
+ezapidata/__main__.py,sha256=4cc5zrGVGH4CCJCLhph5LJjTb_t7qUfA586y-Tjvzvo,98
+gamedata/__init__.py,sha256=83qE4snMd1K85p1nwgQO-jOd66aMBHMDmOUw6gDEoFA,45
+gamedata/__main__.py,sha256=6dLsARg0pWHoDDhPxcXnTw17SR31HPsOnz7ce4RDTz8,7958
+gamedata/main.py,sha256=6dLsARg0pWHoDDhPxcXnTw17SR31HPsOnz7ce4RDTz8,7958
+gamedata/mainfunc.py,sha256=6dLsARg0pWHoDDhPxcXnTw17SR31HPsOnz7ce4RDTz8,7958
+EzApiData-0.1.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+EzApiData-0.1.1.dist-info/METADATA,sha256=Tj1wYpdmxGdCQNrgjhZSqWMjKXYZSOjc67jBdybERDw,1622
+EzApiData-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+EzApiData-0.1.1.dist-info/top_level.txt,sha256=4WkBkPIdXcXzX8JRX6Tur_JysvOaK0rbpsX1U6bDujc,10
+EzApiData-0.1.1.dist-info/RECORD,,
