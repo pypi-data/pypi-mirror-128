@@ -1,0 +1,38 @@
+# manderageneral
+Missing description.
+
+This package and 6 other make up [ManderaGeneral](https://github.com/ManderaGeneral).
+
+## Information
+| Package                                                            | Ver                                               | Latest Release       | Python                                                                                                                   | Platform        |   Lvl | Todo                                                       | Tests   |
+|:-------------------------------------------------------------------|:--------------------------------------------------|:---------------------|:-------------------------------------------------------------------------------------------------------------------------|:----------------|------:|:-----------------------------------------------------------|:--------|
+| [manderageneral](https://github.com/ManderaGeneral/manderageneral) | [0.0.1](https://pypi.org/project/manderageneral/) | 2021-11-19 19:22 CET | [3.8](https://www.python.org/downloads/release/python-380/), [3.9](https://www.python.org/downloads/release/python-390/) | Windows, Ubuntu |     1 | [0](https://github.com/ManderaGeneral/manderageneral#Todo) | 100 %   |
+
+## Contents
+<pre>
+<a href='#manderageneral'>manderageneral</a>
+├─ <a href='#Information'>Information</a>
+├─ <a href='#Contents'>Contents</a>
+├─ <a href='#Installation'>Installation</a>
+├─ <a href='#Attributes'>Attributes</a>
+└─ <a href='#Todo'>Todo</a>
+   └─ <a href='#None'>None</a>
+</pre>
+
+## Installation
+| Command                      | <a href='https://pypi.org/project/generallibrary'>generallibrary</a>   |
+|:-----------------------------|:-----------------------------------------------------------------------|
+| `pip install manderageneral` | Yes                                                                    |
+
+## Attributes
+<pre>
+No module to get attributes
+</pre>
+
+## Todo
+
+No todos!
+
+<sup>
+Generated 2021-11-19 19:22 CET for commit <a href='https://github.com/ManderaGeneral/manderageneral/commit/master'>master</a>.
+</sup>

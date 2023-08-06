@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+metadata.json
+setup.py
+manderageneral/__init__.py
+manderageneral.egg-info/PKG-INFO
+manderageneral.egg-info/SOURCES.txt
+manderageneral.egg-info/dependency_links.txt
+manderageneral.egg-info/requires.txt
+manderageneral.egg-info/top_level.txt
+manderageneral/test/test_manderageneral.py

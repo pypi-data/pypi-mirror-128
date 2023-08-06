@@ -1,0 +1,14 @@
+{
+    "enabled": true,
+    "private": false,
+    "installable": true,
+    "name": "manderageneral",
+    "version": "0.0.1",
+    "description": "Missing description.",
+    "install_requires": [
+        "generallibrary"
+    ],
+    "extras_require": {},
+    "topics": [],
+    "manifest": []
+}
