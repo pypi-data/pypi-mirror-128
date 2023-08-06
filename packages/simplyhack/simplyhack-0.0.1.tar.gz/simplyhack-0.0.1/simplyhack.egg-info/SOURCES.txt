@@ -1,0 +1,8 @@
+setup.py
+simply_hack/__init__.py
+simply_hack/simplyhack.py
+simplyhack.egg-info/PKG-INFO
+simplyhack.egg-info/SOURCES.txt
+simplyhack.egg-info/dependency_links.txt
+simplyhack.egg-info/requires.txt
+simplyhack.egg-info/top_level.txt
