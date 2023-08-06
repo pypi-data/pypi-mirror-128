@@ -1,0 +1,10 @@
+MANIFEST.in
+MqttMonitor.py
+README.md
+setup.cfg
+setup.py
+MqttMonitor.egg-info/PKG-INFO
+MqttMonitor.egg-info/SOURCES.txt
+MqttMonitor.egg-info/dependency_links.txt
+MqttMonitor.egg-info/requires.txt
+MqttMonitor.egg-info/top_level.txt
