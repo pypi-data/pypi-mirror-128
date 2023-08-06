@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hexagonal-sanity-check
+Version: 0.0.1
+Summary: Hexagonal Sanity Check
+=========================================
+
+If you are adopting Hexagonal Architecture into your project,
+you can force the correct usage of dependencies through the layers.
+Author: rfrezino
+Author-email: rodrigofrezino@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: diagrams (>=0.20.0,<0.21.0)
