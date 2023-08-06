@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: MPCdata
+Version: 0.0.2.8
+Summary: Package to read Med Associates Files MedPCIV
+Home-page: https://github.com/matthewperkins/MPCdata
+Author: Matthew Perkins
+Author-email: matthew.perkins@mssm.edu
+License: UNKNOWN
+Description: # MPCdata
+        Parse med-associates text data into python. Can write this data to Excel (xlsx) also
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
