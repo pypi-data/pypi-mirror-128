@@ -1,0 +1,10 @@
+click
+jinja2
+requests
+tomli
+tomli-w
+
+[test]
+pytest
+pytest-regressions
+betamax
