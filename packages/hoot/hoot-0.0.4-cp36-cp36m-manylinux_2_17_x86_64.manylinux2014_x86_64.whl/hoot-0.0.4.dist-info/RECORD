@@ -1,0 +1,8 @@
+hoot/__init__.py,sha256=M38K5VnIO7YP0SwgDXr1bVrojypUpL41akbLjrQpp6I,27
+hoot/libpyhoot.so,sha256=P8C1ID5rBBk_0od7Yj7S64XIzrDhAXuuU5LKe-FxZsI,254824
+hoot/info/Version.cpp,sha256=-SPfFKp06n03W2SGU9Kml6wSrzHQOu1xsUq6vzkF4r4,568
+hoot-0.0.4.dist-info/LICENSE,sha256=8s-6k-T0R4XveosB69KsKkuy2876okid2vBlRYPEQ5k,1065
+hoot-0.0.4.dist-info/METADATA,sha256=nVcNc32p53L6lheHfywEHNA48iR3JzfDJk4E0KReGp4,639
+hoot-0.0.4.dist-info/WHEEL,sha256=CdtYEWrHtc5X47KcSSxmzTgyODOCt-se2tHGP9gLcoc,150
+hoot-0.0.4.dist-info/top_level.txt,sha256=QANz0zeYL2Iu55CHXkv3lIeZWKQa7EyaVCpsbTfSltM,15
+hoot-0.0.4.dist-info/RECORD,,
