@@ -1,0 +1,8 @@
+README.md
+reGeorgSocksProxy.py
+setup.py
+regeorg.egg-info/PKG-INFO
+regeorg.egg-info/SOURCES.txt
+regeorg.egg-info/dependency_links.txt
+regeorg.egg-info/requires.txt
+regeorg.egg-info/top_level.txt
