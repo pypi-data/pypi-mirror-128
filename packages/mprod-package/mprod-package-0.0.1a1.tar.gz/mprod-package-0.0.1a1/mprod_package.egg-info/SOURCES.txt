@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+mprod/__init__.py
+mprod/_base.py
+mprod/_misc.py
+mprod/_ml_helpers.py
+mprod/_pytester.py
+mprod/_pytesttester.py
+mprod_package.egg-info/PKG-INFO
+mprod_package.egg-info/SOURCES.txt
+mprod_package.egg-info/dependency_links.txt
+mprod_package.egg-info/requires.txt
+mprod_package.egg-info/top_level.txt
