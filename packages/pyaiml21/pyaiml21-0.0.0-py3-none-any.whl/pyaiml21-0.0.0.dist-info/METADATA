@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pyaiml21
+Version: 0.0.0
+Summary: Simple interpreter for AIML 2.1
+Home-page: https://gitlab.fi.muni.cz/nlp/pyaiml21
+Author: Michal Barnišin
+Author-email: xbarnis@fi.muni.cz
+License: MIT
+Keywords: aiml,interpreter
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: LICENSE
+Provides-Extra: testing
+Requires-Dist: pytest (>=6.0) ; extra == 'testing'
+Requires-Dist: pytest-cov (>=2.0) ; extra == 'testing'
+Requires-Dist: mypy (>=0.910) ; extra == 'testing'
+Requires-Dist: flake8 (>=3.9) ; extra == 'testing'
+Requires-Dist: tox (>=3.24) ; extra == 'testing'
+
+UNKNOWN
+
