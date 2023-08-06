@@ -1,0 +1,17 @@
+CHANGES
+=======
+
+0.12.2
+------
+
+* fix yaml format
+* wrap TimeoutError to AdbTimeout
+* add --parse <uri> support
+* device: adb\_output: redirect subprocess' stdin to devnull
+* utils: \_is\_valid\_exe: redirect subprocess' stdin to devnull
+* Update README.md
+* add get\_{serialno,devpath,state} wait\_for command
+* fix windows stat error, close #42
+* Upgrade to GitHub-native Dependabot
+* support show current package info
+* add method create\_connection
