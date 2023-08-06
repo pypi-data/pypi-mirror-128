@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: EduNLP
+Version: 0.0.7
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: networkx
+Requires-Dist: numpy (>=1.17.0)
+Requires-Dist: jieba
+Requires-Dist: js2py
+Requires-Dist: EduData (>=0.0.16)
+Requires-Dist: PyBaize (>=0.0.3)
+Provides-Extra: dev
+Requires-Dist: requests ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinx-toggleprompt ; extra == 'dev'
+Requires-Dist: sphinx-gallery (>=0.6) ; extra == 'dev'
+Requires-Dist: nbsphinx ; extra == 'dev'
+Requires-Dist: m2r2 ; extra == 'dev'
+Requires-Dist: pytest (>=4) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.6.0) ; extra == 'dev'
+Requires-Dist: pytest-flake8 ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Requires-Dist: sphinx-toggleprompt ; extra == 'doc'
+Requires-Dist: sphinx-gallery (>=0.6) ; extra == 'doc'
+Requires-Dist: nbsphinx ; extra == 'doc'
+Requires-Dist: m2r2 ; extra == 'doc'
+Provides-Extra: full
+Requires-Dist: gensim ; extra == 'full'
+Requires-Dist: torch ; extra == 'full'
+Requires-Dist: transformers ; extra == 'full'
+Requires-Dist: pillow ; extra == 'full'
+Requires-Dist: tqdm ; extra == 'full'
+Requires-Dist: ipython ; extra == 'full'
+Provides-Extra: test
+Requires-Dist: pytest (>=4) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.6.0) ; extra == 'test'
+Requires-Dist: pytest-flake8 ; extra == 'test'
+Provides-Extra: tutor
+Requires-Dist: pillow ; extra == 'tutor'
+Requires-Dist: tqdm ; extra == 'tutor'
+Requires-Dist: ipython ; extra == 'tutor'
+Provides-Extra: vec
+Requires-Dist: gensim ; extra == 'vec'
+Requires-Dist: torch ; extra == 'vec'
+Requires-Dist: transformers ; extra == 'vec'
+
+UNKNOWN
+

@@ -1,0 +1,3 @@
+[console_scripts]
+edunlp = EduNLP.main:cli
+
