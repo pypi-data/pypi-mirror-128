@@ -1,0 +1,12 @@
+textprivacy/__init__.py,sha256=n_-JOJeZYe-bTcCJBjaFfHZs5m_e5ahtk-2cm1WFaLg,305
+textprivacy/cli.py,sha256=xQt96dT-HedHWeO8ydxmVIodTQ3gWlwAVQGJNxZBBhc,913
+textprivacy/textanonymization.py,sha256=yOSgGhDmZcRaO7LDRZuC3tsUbM3DykLEqXeZMW6xMZM,15428
+textprivacy/textpseudonymization.py,sha256=iTP5EPBTs_K2p7PEQxM0pzqmoH48B1q6TW2JJL2_wqA,7209
+textprivacy/utils.py,sha256=Xkp3kHun7ulghA2Kn9M7m21sZduesuXK8b0Uol7jC5s,3017
+DaAnonymization-0.1.0.dist-info/AUTHORS.rst,sha256=SfD3HZNhyNY1AVewh0m2HpbMb0EHB4kWarDGWuHrMoA,176
+DaAnonymization-0.1.0.dist-info/LICENSE,sha256=ZIg_39eo8-7vtMLA35MUBEIZ7A0m_XvtcZwtIA77sZ8,11355
+DaAnonymization-0.1.0.dist-info/METADATA,sha256=1HZmthJIrNtRnpq-cAegwhiujXKsY8BZm2-fubYE9FE,9549
+DaAnonymization-0.1.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+DaAnonymization-0.1.0.dist-info/entry_points.txt,sha256=XJHu3DU99t98KmFLul66HRdCYz4GME_n4oolMjb3OSY,54
+DaAnonymization-0.1.0.dist-info/top_level.txt,sha256=auyMAP_SKSf7cFobBWA1LZ57L6o_nFhtob-iCKhZRKw,12
+DaAnonymization-0.1.0.dist-info/RECORD,,
