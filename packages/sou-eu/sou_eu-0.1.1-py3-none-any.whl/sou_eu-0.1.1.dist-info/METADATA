@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sou-eu
+Version: 0.1.1
+Summary: Pacote que gera crachá em pdf através do nome de usuário do Github com seus dados (Avatar e Bio) e, qrcode de redes sociais (Facebook, Instagram).
+Author: Wendel dos Santos Nunes
+Author-email: wendelnunes9999@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
