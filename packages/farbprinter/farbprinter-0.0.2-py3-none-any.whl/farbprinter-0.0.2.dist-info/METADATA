@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: farbprinter
+Version: 0.0.2
+Summary: L̶i̶f̶e̶ Terminal is like a box of crayons
+Home-page: UNKNOWN
+Author: Johannes Fischer -Hans Alemão-
+Author-email: <deutschlernen@queroestudaralemao.com.br>
+License: UNKNOWN
+Keywords: terminal,colorful,colourful,pandas,dataframe,print,ascii-art,ansi,figlet,auto-complete,dot notation
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: ansi
+Requires-Dist: pyfiglet
+Requires-Dist: addict
+Requires-Dist: python-box
+Requires-Dist: Pillow
+
+Print colorful text, dataframes, lists, dicts, ASCII Arts with auto-completion! Make your terminal look like a pirate's parrot!
+
