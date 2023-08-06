@@ -1,0 +1,8 @@
+README.md
+setup.py
+lijunmao/__init__.py
+lijunmao/add_num.py
+lijunmao.egg-info/PKG-INFO
+lijunmao.egg-info/SOURCES.txt
+lijunmao.egg-info/dependency_links.txt
+lijunmao.egg-info/top_level.txt
