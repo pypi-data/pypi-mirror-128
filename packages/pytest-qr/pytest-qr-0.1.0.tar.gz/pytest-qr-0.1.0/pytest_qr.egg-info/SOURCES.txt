@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+pytest_qr.py
+setup.py
+pytest_qr.egg-info/PKG-INFO
+pytest_qr.egg-info/SOURCES.txt
+pytest_qr.egg-info/dependency_links.txt
+pytest_qr.egg-info/entry_points.txt
+pytest_qr.egg-info/requires.txt
+pytest_qr.egg-info/top_level.txt
