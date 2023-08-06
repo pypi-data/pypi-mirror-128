@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pyaw/__init__.py
+pyaw/core.py
+pyaw/errors.py
+pyaw.egg-info/PKG-INFO
+pyaw.egg-info/SOURCES.txt
+pyaw.egg-info/dependency_links.txt
+pyaw.egg-info/top_level.txt
