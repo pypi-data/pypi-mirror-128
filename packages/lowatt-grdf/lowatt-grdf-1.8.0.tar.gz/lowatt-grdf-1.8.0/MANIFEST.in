@@ -1,0 +1,6 @@
+include *.ini
+include dev-requirements.txt
+include .flake8
+include lowatt_grdf/py.typed
+recursive-include tests *.py
+prune .tox

@@ -1,0 +1,13 @@
+click
+ndjson
+pydantic
+requests
+
+[test]
+pytest
+pytest-cov
+responses
+
+[typing]
+mypy
+types-requests
