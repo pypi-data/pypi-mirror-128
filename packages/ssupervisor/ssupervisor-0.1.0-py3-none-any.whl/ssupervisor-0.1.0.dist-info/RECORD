@@ -1,0 +1,12 @@
+ssupervisor/Supervisor.py,sha256=HJ1RbyXAKcLVQvSa0ChHLKES22dG1vr7sTGGgFz3Iw8,1313
+ssupervisor/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+ssupervisor/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssupervisor/lib/config.py,sha256=4IFlFS8itdsY3anzwxhRjV7ruokWedLFLLrEOmJk-dA,2312
+ssupervisor/lib/logger.py,sha256=2xzIst1x3Pvq1dk361jIie9qhXE438Z53eD-Y3mE1cQ,424
+ssupervisor/lib/main.py,sha256=q048mxtdQ3zXl1Ef6YTT_pblCOOPVcPI71QFhRe6aeQ,683
+ssupervisor/lib/parser.py,sha256=IHy-cGQgaZONflxNNSN-cBrFGS6yrqoNIHrtYR9hzQo,1044
+ssupervisor/lib/process.py,sha256=yAwdO8E1Eh0PvoqRczfic1MfjHwaxJvyVkh9jlkydIc,314
+ssupervisor/lib/watcher.py,sha256=g9jF9UD_R67JiyNIN0LX4DyjjzQvXacL7MsBsks7Tgg,4082
+ssupervisor-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+ssupervisor-0.1.0.dist-info/METADATA,sha256=Njxc5mSN-HwRqmzEBM74wUTFbAww5qplJk0wX_Z_2eE,371
+ssupervisor-0.1.0.dist-info/RECORD,,
