@@ -1,0 +1,10 @@
+pyparsing
+typing_extensions
+babel
+dataclass_utils
+
+[all]
+python-pptx
+
+[pptx]
+python-pptx
