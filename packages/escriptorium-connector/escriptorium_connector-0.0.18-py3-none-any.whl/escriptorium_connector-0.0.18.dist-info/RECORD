@@ -1,0 +1,13 @@
+escriptorium_connector/__init__.py,sha256=0E4dntchL0eWIBCmmLXDStkvBhT9UJYeLCJ6L1rKDmY,232
+escriptorium_connector/connector.py,sha256=HSpHmRIwb-ba9dOLEDTtp3DV6XeXooPn-UxFad96LUY,22093
+escriptorium_connector/models/__init__.py,sha256=JGxgNYwAsEOUAetJq3armtjRBdt7se8lP8WOwce5kX8,268
+escriptorium_connector/models/document_models.py,sha256=DeAV5OOgnwfVdmuiV7ZpYXbz9aCPG7_riRwFz5W39sE,2876
+escriptorium_connector/models/escriptorium_schema.py,sha256=V7c1mecj5yDGRuR-UsYDpQDeRLUeRmGLyo1Mu0AQPLU,20895
+escriptorium_connector/models/line_models.py,sha256=MCz8_uE1lILsqsYSOSJGy-Pi2rpRxRmkjWClaGvQlvM,116
+escriptorium_connector/models/part_models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+escriptorium_connector/models/region_models.py,sha256=GLSNgs8Mkat1-1bzHPeFxxO3LZZeWQ5EJR_vqVucMPs,118
+escriptorium_connector/models/transcription_models.py,sha256=-cctC7CADAUms0EwJyWdaJdz_ZXZwIyv6T4VOa3FRik,121
+escriptorium_connector-0.0.18.dist-info/LICENSE,sha256=0DDy4A1-J2cD_fmwXHl1i1vsGQAmiWnIyU5s6UicqAQ,1102
+escriptorium_connector-0.0.18.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+escriptorium_connector-0.0.18.dist-info/METADATA,sha256=N-MsXp7AJS0vUtv4mn-R0RopYpKjStqQnsuAmPDNSSM,3476
+escriptorium_connector-0.0.18.dist-info/RECORD,,
