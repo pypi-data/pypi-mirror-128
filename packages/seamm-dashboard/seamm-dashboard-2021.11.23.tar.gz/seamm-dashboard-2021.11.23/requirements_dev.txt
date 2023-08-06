@@ -1,0 +1,14 @@
+-r requirements_install.txt
+
+# For testing:
+chromedriver-binary==89.0.4389.23
+flask-authorize
+flask-jwt-extended
+pytest
+pytest-selenium
+pytest-flask
+pytest-cov
+# For development
+flake8
+twine
+yapf
