@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+zhanlanpkg.egg-info/PKG-INFO
+zhanlanpkg.egg-info/SOURCES.txt
+zhanlanpkg.egg-info/dependency_links.txt
+zhanlanpkg.egg-info/top_level.txt
