@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+joshbasiccalculator/__init__.py
+maramalbdr.egg-info/PKG-INFO
+maramalbdr.egg-info/SOURCES.txt
+maramalbdr.egg-info/dependency_links.txt
+maramalbdr.egg-info/top_level.txt
