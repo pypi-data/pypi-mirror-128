@@ -1,0 +1,2 @@
+Simuwater is a control-oriented modelling software, integrating mechanism model and generalized model. Simuwater balances the simulation accuracy and speed, and achieves the ability of integrated water quantity and quality simulation of  urban water system. Simuwater owns the functions of auxiliary design and real time control, and can perform full-scale simulation at community level, city level and watershed level.
+You can use this package to run a simuwater simulation, and operate control facilities (including SWMM objects) on real time.
