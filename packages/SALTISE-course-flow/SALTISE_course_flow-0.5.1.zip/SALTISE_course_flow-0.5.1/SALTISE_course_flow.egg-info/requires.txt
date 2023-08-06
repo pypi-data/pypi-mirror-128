@@ -1,0 +1,7 @@
+bleach
+django<2.3,>=2.2
+django-compressor
+django-csp
+django-model-utils
+djangorestframework
+SALTISE_user_feedback
