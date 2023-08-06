@@ -1,0 +1,646 @@
+Metadata-Version: 2.1
+Name: tabular-ml-toolkit
+Version: 0.0.21
+Summary: A helper library to jumpstart your machine learning project based on tabular or structured data.
+Home-page: https://github.com/psmathur/tabular_ml_toolkit/tree/master/
+Author: Pankaj Mathur
+Author-email: psmathur.public@gmail.com
+License: Apache Software License 2.0
+Keywords: machine learning,tabular data,scikit-learn,XGBoost
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Getting Started Tutorial with TMLT (Tabular ML Toolkit)
+> A tutorial on getting started with TMLT (Tabular ML Toolkit)
+
+
+```
+%load_ext autoreload
+%autoreload 2
+```
+
+## Install
+
+`pip install -U tabular_ml_toolkit`
+
+## How to Best Use tabular_ml_toolkit
+
+Start with your favorite model and then just simply create MLPipeline with one API.
+
+*For example, Here we are using RandomForestRegressor from Scikit-Learn, on  [Melbourne Home Sale price data](https://www.kaggle.com/estrotococo/home-data-for-ml-course)*
+
+
+*No need to install scikit-learn as it comes preinstall with Tabular_ML_Toolkit*
+
+```
+from tabular_ml_toolkit.tmlt import *
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error
+import numpy as np
+
+# for displaying diagram of pipelines 
+from sklearn import set_config
+set_config(display="diagram")
+
+# Just to compare fit times
+import time
+```
+
+```
+# Dataset file names and Paths
+DIRECTORY_PATH = "input/home_data/"
+TRAIN_FILE = "train.csv"
+TEST_FILE = "test.csv"
+SAMPLE_SUB_FILE = "sample_submission.csv"
+OUTPUT_PATH = "output/"
+```
+
+```
+from xgboost import XGBRegressor
+xgb_params = {
+    'use_label_encoder':False,
+    'eval_metric':'rmse',
+    'random_state':42,
+    # for GPU
+#     'tree_method': 'gpu_hist',
+#     'predictor': 'gpu_predictor',
+}
+# create xgb ml model
+xgb_model = XGBRegressor(**xgb_params)
+```
+
+##### Just point in the direction of your data, let tmlt know what are idx and target columns in your tabular data and what kind of problem type you are trying to resolve
+
+```
+# tmlt
+tmlt = TMLT().prepare_data_for_training(
+    train_file_path= DIRECTORY_PATH+TRAIN_FILE,
+    test_file_path= DIRECTORY_PATH+TEST_FILE,
+    idx_col="Id", target="SalePrice",
+    model=xgb_model,
+    random_state=42,
+    problem_type="regression")
+```
+
+    2021-11-22 16:57:13,379 INFO 12 cores found, model and data parallel processing should worked!
+    2021-11-22 16:57:13,432 INFO DataFrame Memory usage decreased to 0.58 Mb (35.5% reduction)
+    2021-11-22 16:57:13,479 INFO DataFrame Memory usage decreased to 0.58 Mb (34.8% reduction)
+    2021-11-22 16:57:13,512 INFO Both Numerical & Categorical columns found, Preprocessing will done accordingly!
+
+
+```
+# check sklearn pipeline
+tmlt.spl
+```
+
+
+
+
+<style>#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 {color: black;background-color: white;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 pre{padding: 0;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-toggleable {background-color: white;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-estimator:hover {background-color: #d4ebff;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-item {z-index: 1;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-parallel::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-parallel-item:only-child::after {width: 0;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;position: relative;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-label-container {position: relative;z-index: 2;text-align: center;}#sk-9fa8e572-fc23-49ec-a461-bed4406d18f9 div.sk-container {display: inline-block;position: relative;}</style><div id="sk-9fa8e572-fc23-49ec-a461-bed4406d18f9" class"sk-top-container"><div class="sk-container"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="9b47608e-a481-4351-a0ff-f4a5b4a3ec41" type="checkbox" ><label class="sk-toggleable__label" for="9b47608e-a481-4351-a0ff-f4a5b4a3ec41">Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('num_cols',
+                                                  Pipeline(steps=[('imputer',
+                                                                   SimpleImputer(strategy='constant')),
+                                                                  ('scaler',
+                                                                   StandardScaler())]),
+                                                  ['MSSubClass', 'LotFrontage',
+                                                   'LotArea', 'OverallQual',
+                                                   'OverallCond', 'YearBuilt',
+                                                   'YearRemodAdd', 'MasVnrArea',
+                                                   'BsmtFinSF1', 'BsmtFinSF2',
+                                                   'BsmtUnfSF', 'TotalBsmtSF',
+                                                   '1stFlrSF', '2ndFlrSF',
+                                                   '...
+                              interaction_constraints=None, learning_rate=None,
+                              max_delta_step=None, max_depth=None,
+                              min_child_weight=None, missing=nan,
+                              monotone_constraints=None, n_estimators=100,
+                              n_jobs=11, num_parallel_tree=None, predictor=None,
+                              random_state=42, reg_alpha=None, reg_lambda=None,
+                              scale_pos_weight=None, subsample=None,
+                              tree_method=None, use_label_encoder=False,
+                              validate_parameters=None, verbosity=None))])</pre></div></div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="d3de4fb1-75e0-4e84-87bf-e1e7dee35388" type="checkbox" ><label class="sk-toggleable__label" for="d3de4fb1-75e0-4e84-87bf-e1e7dee35388">preprocessor: ColumnTransformer</label><div class="sk-toggleable__content"><pre>ColumnTransformer(transformers=[('num_cols',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='constant')),
+                                                 ('scaler', StandardScaler())]),
+                                 ['MSSubClass', 'LotFrontage', 'LotArea',
+                                  'OverallQual', 'OverallCond', 'YearBuilt',
+                                  'YearRemodAdd', 'MasVnrArea', 'BsmtFinSF1',
+                                  'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF',
+                                  '1stFlrSF', '2ndFlrSF', 'LowQualFinSF',
+                                  'GrLivArea', 'BsmtF...
+                                 ['MSZoning', 'Street', 'Alley', 'LotShape',
+                                  'LandContour', 'Utilities', 'LotConfig',
+                                  'LandSlope', 'Condition1', 'Condition2',
+                                  'BldgType', 'HouseStyle', 'RoofStyle',
+                                  'RoofMatl', 'MasVnrType', 'ExterQual',
+                                  'ExterCond', 'Foundation', 'BsmtQual',
+                                  'BsmtCond', 'BsmtExposure', 'BsmtFinType1',
+                                  'BsmtFinType2', 'Heating', 'HeatingQC',
+                                  'CentralAir', 'Electrical', 'KitchenQual',
+                                  'Functional', 'FireplaceQu', ...])])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="08f50cb5-2f79-4b79-ac8c-8a2db42f7fbb" type="checkbox" ><label class="sk-toggleable__label" for="08f50cb5-2f79-4b79-ac8c-8a2db42f7fbb">num_cols</label><div class="sk-toggleable__content"><pre>['MSSubClass', 'LotFrontage', 'LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'MasVnrArea', 'BsmtFinSF1', 'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF', '1stFlrSF', '2ndFlrSF', 'LowQualFinSF', 'GrLivArea', 'BsmtFullBath', 'BsmtHalfBath', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'TotRmsAbvGrd', 'Fireplaces', 'GarageYrBlt', 'GarageCars', 'GarageArea', 'WoodDeckSF', 'OpenPorchSF', 'EnclosedPorch', '3SsnPorch', 'ScreenPorch', 'PoolArea', 'MiscVal', 'MoSold', 'YrSold']</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="8409ac94-ef05-4c64-94ec-bdc12c02a60e" type="checkbox" ><label class="sk-toggleable__label" for="8409ac94-ef05-4c64-94ec-bdc12c02a60e">SimpleImputer</label><div class="sk-toggleable__content"><pre>SimpleImputer(strategy='constant')</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="c21ae064-839b-4b16-98af-3893cdaaf4a6" type="checkbox" ><label class="sk-toggleable__label" for="c21ae064-839b-4b16-98af-3893cdaaf4a6">StandardScaler</label><div class="sk-toggleable__content"><pre>StandardScaler()</pre></div></div></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="a236afdf-86ee-41f6-ae11-29321832dffc" type="checkbox" ><label class="sk-toggleable__label" for="a236afdf-86ee-41f6-ae11-29321832dffc">cat_cols</label><div class="sk-toggleable__content"><pre>['MSZoning', 'Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'LotConfig', 'LandSlope', 'Condition1', 'Condition2', 'BldgType', 'HouseStyle', 'RoofStyle', 'RoofMatl', 'MasVnrType', 'ExterQual', 'ExterCond', 'Foundation', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'Heating', 'HeatingQC', 'CentralAir', 'Electrical', 'KitchenQual', 'Functional', 'FireplaceQu', 'GarageType', 'GarageFinish', 'GarageQual', 'GarageCond', 'PavedDrive', 'PoolQC', 'Fence', 'MiscFeature', 'SaleType', 'SaleCondition', 'Neighborhood', 'Exterior1st', 'Exterior2nd']</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="9678d35d-28f7-4def-95f0-de5c8886f164" type="checkbox" ><label class="sk-toggleable__label" for="9678d35d-28f7-4def-95f0-de5c8886f164">SimpleImputer</label><div class="sk-toggleable__content"><pre>SimpleImputer(strategy='constant')</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="035300a4-0bb7-4c10-bfe8-83b6437dbafd" type="checkbox" ><label class="sk-toggleable__label" for="035300a4-0bb7-4c10-bfe8-83b6437dbafd">OneHotEncoder</label><div class="sk-toggleable__content"><pre>OneHotEncoder(handle_unknown='ignore')</pre></div></div></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="a16d44b4-053d-4443-aea3-d6869cec4d52" type="checkbox" ><label class="sk-toggleable__label" for="a16d44b4-053d-4443-aea3-d6869cec4d52">XGBRegressor</label><div class="sk-toggleable__content"><pre>XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None,
+             enable_categorical=False, eval_metric='mae', gamma=None,
+             gpu_id=None, importance_type=None, interaction_constraints=None,
+             learning_rate=None, max_delta_step=None, max_depth=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=100, n_jobs=11, num_parallel_tree=None,
+             predictor=None, random_state=42, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, subsample=None, tree_method=None,
+             use_label_encoder=False, validate_parameters=None, verbosity=None)</pre></div></div></div></div></div></div></div>
+
+
+
+```
+# create train, valid split to evaulate model on valid dataset
+tmlt.dfl.create_train_valid(valid_size=0.2)
+
+start = time.time()
+# Now fit
+tmlt.spl.fit(tmlt.dfl.X_train, tmlt.dfl.y_train)
+end = time.time()
+print("Fit Time:", end - start)
+
+#predict
+preds = tmlt.spl.predict(tmlt.dfl.X_valid)
+print('X_valid MAE:', mean_absolute_error(tmlt.dfl.y_valid, preds))
+```
+
+    Fit Time: 0.232680082321167
+    X_valid MAE: 16565.101415346748
+
+
+In background `prepare_data_for_training` method loads your input data into Pandas DataFrame, seprates X(features) and y(target).
+
+The `prepare_data_for_training` methods prepare X and y DataFrames, preprocess all numerical and categorical type data found in these DataFrames using scikit-learn pipelines. Then it bundle preprocessed data with your given model and return an MLPipeline object, this class instance has dataframeloader, preprocessor and scikit-lean pipeline instances.
+
+The `create_train_valid` method use valid_size to split X(features) into X_train, y_train, X_valid and y_valid DataFrames, so you can call fit methods on X_train and y_train and predict methods on X_valid or X_test.
+
+
+Please check detail documentation and source code for more details.
+
+*NOTE: If you want to customize data and preprocessing steps you can do so by using `DataFrameLoader` and `PreProessor` classes. Check detail documentations for these classes for more options.*
+
+
+
+#### To see more clear picture of model performance, Let's do a quick Cross Validation on our Pipeline
+
+```
+start = time.time()
+# Now do cross_validation
+scores = tmlt.do_cross_validation(cv=5, scoring='neg_mean_absolute_error')
+end = time.time()
+print("Cross Validation Time:", end - start)
+
+print("scores:", scores)
+print("Average MAE score:", scores.mean())
+```
+
+    Cross Validation Time: 1.1889641284942627
+    scores: [15865.5140732  18431.08924176 18670.3333155  15439.67369435
+     16835.6969847 ]
+    Average MAE score: 17048.461461900682
+
+
+##### *MAE did came out slightly bad with cross validation*
+
+##### Let's see if we can improve our cross validation score with hyperparams tunning
+
+```
+# lets choose our choice of metrics
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score, mean_squared_log_error
+```
+
+**we are using optuna based hyperparameter search here, make sure to supply a new directory path so search is saved**
+
+```
+study = tmlt.do_xgb_optuna_optimization(preds_metrics=[mean_absolute_error,
+                                                       mean_squared_error,
+                                                       r2_score],
+                                        output_dir_path=OUTPUT_PATH)
+print(study.best_trial)
+```
+
+    2021-11-22 16:58:20,148 INFO Optimization Direction is: minimize
+    [32m[I 2021-11-22 16:58:20,175][0m Using an existing study with name 'tmlt_autoxgb' instead of creating a new one.[0m
+    2021-11-22 16:58:20,296 INFO Training Started!
+
+
+    [16:58:20] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "colsample_bytree", "max_depth", "subsample", "tree_method" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 16:58:26,066 INFO Training Ended!
+    2021-11-22 16:58:26,116 INFO mean_absolute_error: 18430.128959760274
+    2021-11-22 16:58:26,116 INFO mean_squared_error: 1003740151.2011865
+    2021-11-22 16:58:26,117 INFO r2_score: 0.8691398352444675
+    [32m[I 2021-11-22 16:58:26,148][0m Trial 5 finished with value: 1003740151.2011865 and parameters: {'learning_rate': 0.011287646791421295, 'reg_lambda': 0.06938986879711422, 'reg_alpha': 8.176124256580969e-05, 'subsample': 0.3654130556583419, 'colsample_bytree': 0.3647997317624503, 'max_depth': 1, 'early_stopping_rounds': 240, 'n_estimators': 20000, 'tree_method': 'approx', 'booster': 'gblinear'}. Best is trial 2 with value: 859935950.534274.[0m
+    2021-11-22 16:58:26,247 INFO Training Started!
+
+
+    [16:58:26] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "colsample_bytree", "max_depth", "subsample", "tree_method" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 16:58:28,378 INFO Training Ended!
+    2021-11-22 16:58:28,424 INFO mean_absolute_error: 31222.505752354453
+    2021-11-22 16:58:28,424 INFO mean_squared_error: 2771208996.3631716
+    2021-11-22 16:58:28,425 INFO r2_score: 0.638710411850993
+    [32m[I 2021-11-22 16:58:28,449][0m Trial 6 finished with value: 2771208996.3631716 and parameters: {'learning_rate': 0.03334511464699647, 'reg_lambda': 5.25800680500751, 'reg_alpha': 0.045533012584301466, 'subsample': 0.5010774952608195, 'colsample_bytree': 0.5190423499031988, 'max_depth': 5, 'early_stopping_rounds': 122, 'n_estimators': 7000, 'tree_method': 'hist', 'booster': 'gblinear'}. Best is trial 2 with value: 859935950.534274.[0m
+    2021-11-22 16:58:28,542 INFO Training Started!
+
+
+    [16:58:28] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "colsample_bytree", "max_depth", "subsample", "tree_method" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 16:58:34,604 INFO Training Ended!
+    2021-11-22 16:58:34,657 INFO mean_absolute_error: 18308.20339255137
+    2021-11-22 16:58:34,657 INFO mean_squared_error: 819804093.191586
+    2021-11-22 16:58:34,658 INFO r2_score: 0.8931200484767615
+    [32m[I 2021-11-22 16:58:34,683][0m Trial 7 finished with value: 819804093.191586 and parameters: {'learning_rate': 0.04089996575161834, 'reg_lambda': 8.596335607070313e-05, 'reg_alpha': 0.02043920450683123, 'subsample': 0.9184407885806762, 'colsample_bytree': 0.20385362758786968, 'max_depth': 9, 'early_stopping_rounds': 485, 'n_estimators': 20000, 'tree_method': 'exact', 'booster': 'gblinear'}. Best is trial 7 with value: 819804093.191586.[0m
+    2021-11-22 16:58:34,804 INFO Training Started!
+    2021-11-22 16:59:17,739 INFO Training Ended!
+    2021-11-22 16:59:18,499 INFO mean_absolute_error: 16149.496602097603
+    2021-11-22 16:59:18,500 INFO mean_squared_error: 842794160.6512825
+    2021-11-22 16:59:18,500 INFO r2_score: 0.8901227747182928
+    [32m[I 2021-11-22 16:59:18,532][0m Trial 8 finished with value: 842794160.6512825 and parameters: {'learning_rate': 0.030222339821538807, 'reg_lambda': 0.09895705776538985, 'reg_alpha': 2.2504091517410305e-06, 'subsample': 0.5584749705539753, 'colsample_bytree': 0.15912009415082107, 'max_depth': 9, 'early_stopping_rounds': 500, 'n_estimators': 20000, 'tree_method': 'exact', 'booster': 'gbtree', 'gamma': 9.917098787836175e-07, 'grow_policy': 'lossguide'}. Best is trial 7 with value: 819804093.191586.[0m
+    2021-11-22 16:59:18,717 INFO Training Started!
+
+
+    [16:59:18] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "colsample_bytree", "max_depth", "subsample", "tree_method" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 16:59:23,129 INFO Training Ended!
+    2021-11-22 16:59:23,177 INFO mean_absolute_error: 18419.340887200342
+    2021-11-22 16:59:23,178 INFO mean_squared_error: 817311608.0615362
+    2021-11-22 16:59:23,178 INFO r2_score: 0.8934450001232396
+    [32m[I 2021-11-22 16:59:23,208][0m Trial 9 finished with value: 817311608.0615362 and parameters: {'learning_rate': 0.22322780828302763, 'reg_lambda': 1.6754489349191887e-05, 'reg_alpha': 2.1992031654524757e-06, 'subsample': 0.5257239751043923, 'colsample_bytree': 0.1836836077039992, 'max_depth': 6, 'early_stopping_rounds': 442, 'n_estimators': 15000, 'tree_method': 'approx', 'booster': 'gblinear'}. Best is trial 9 with value: 817311608.0615362.[0m
+    2021-11-22 16:59:23,321 INFO Training Started!
+
+
+    [16:59:23] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "colsample_bytree", "max_depth", "subsample", "tree_method" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 16:59:28,052 INFO Training Ended!
+    2021-11-22 16:59:28,104 INFO mean_absolute_error: 56409.48624785959
+    2021-11-22 16:59:28,105 INFO mean_squared_error: 6504554246.374722
+    2021-11-22 16:59:28,105 INFO r2_score: 0.15198466523106557
+    [32m[I 2021-11-22 16:59:28,137][0m Trial 10 finished with value: 6504554246.374722 and parameters: {'learning_rate': 0.1340147043391367, 'reg_lambda': 63.39872490630416, 'reg_alpha': 6.373289028896017e-05, 'subsample': 0.4471511816218636, 'colsample_bytree': 0.20334039219317368, 'max_depth': 4, 'early_stopping_rounds': 101, 'n_estimators': 15000, 'tree_method': 'hist', 'booster': 'gblinear'}. Best is trial 9 with value: 817311608.0615362.[0m
+    2021-11-22 16:59:28,237 INFO Training Started!
+
+
+    [16:59:28] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "colsample_bytree", "max_depth", "subsample", "tree_method" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 16:59:35,476 INFO Training Ended!
+    2021-11-22 16:59:35,527 INFO mean_absolute_error: 18619.747498394692
+    2021-11-22 16:59:35,528 INFO mean_squared_error: 1060765653.880221
+    2021-11-22 16:59:35,528 INFO r2_score: 0.8617052749482441
+    [32m[I 2021-11-22 16:59:35,552][0m Trial 11 finished with value: 1060765653.880221 and parameters: {'learning_rate': 0.018948988994948266, 'reg_lambda': 0.11940360049263372, 'reg_alpha': 0.3478769379762252, 'subsample': 0.19267541567301605, 'colsample_bytree': 0.46957499489616195, 'max_depth': 3, 'early_stopping_rounds': 390, 'n_estimators': 20000, 'tree_method': 'exact', 'booster': 'gblinear'}. Best is trial 9 with value: 817311608.0615362.[0m
+    2021-11-22 16:59:35,686 INFO Training Started!
+    2021-11-22 17:00:28,688 INFO Training Ended!
+    2021-11-22 17:00:28,888 INFO mean_absolute_error: 16017.475412029109
+    2021-11-22 17:00:28,888 INFO mean_squared_error: 731863525.6978335
+    2021-11-22 17:00:28,889 INFO r2_score: 0.9045850846588409
+    [32m[I 2021-11-22 17:00:28,915][0m Trial 12 finished with value: 731863525.6978335 and parameters: {'learning_rate': 0.07808709699682324, 'reg_lambda': 9.871089998565025e-08, 'reg_alpha': 1.0673222786209778e-08, 'subsample': 0.7165371749773521, 'colsample_bytree': 0.7641468442580719, 'max_depth': 7, 'early_stopping_rounds': 376, 'n_estimators': 15000, 'tree_method': 'approx', 'booster': 'gbtree', 'gamma': 0.8079088948323129, 'grow_policy': 'lossguide'}. Best is trial 12 with value: 731863525.6978335.[0m
+    2021-11-22 17:00:29,106 INFO Training Started!
+    2021-11-22 17:01:16,207 INFO Training Ended!
+    2021-11-22 17:01:16,377 INFO mean_absolute_error: 16352.778454088186
+    2021-11-22 17:01:16,378 INFO mean_squared_error: 744122288.9684557
+    2021-11-22 17:01:16,379 INFO r2_score: 0.9029868784105675
+    [32m[I 2021-11-22 17:01:16,409][0m Trial 13 finished with value: 744122288.9684557 and parameters: {'learning_rate': 0.08318544049038572, 'reg_lambda': 4.654274233615053e-08, 'reg_alpha': 2.184767986189026e-08, 'subsample': 0.6746291410083555, 'colsample_bytree': 0.7990169757948151, 'max_depth': 7, 'early_stopping_rounds': 381, 'n_estimators': 15000, 'tree_method': 'approx', 'booster': 'gbtree', 'gamma': 0.4585867037796719, 'grow_policy': 'lossguide'}. Best is trial 12 with value: 731863525.6978335.[0m
+    2021-11-22 17:01:16,594 INFO Training Started!
+    2021-11-22 17:02:07,158 INFO Training Ended!
+    2021-11-22 17:02:07,335 INFO mean_absolute_error: 16126.497953232021
+    2021-11-22 17:02:07,336 INFO mean_squared_error: 780217945.1506925
+    2021-11-22 17:02:07,337 INFO r2_score: 0.8982809956088145
+    [32m[I 2021-11-22 17:02:07,365][0m Trial 14 finished with value: 780217945.1506925 and parameters: {'learning_rate': 0.07549860943857781, 'reg_lambda': 1.7749082269700017e-08, 'reg_alpha': 1.941329606118197e-08, 'subsample': 0.736007047743309, 'colsample_bytree': 0.8737589345624964, 'max_depth': 7, 'early_stopping_rounds': 357, 'n_estimators': 15000, 'tree_method': 'approx', 'booster': 'gbtree', 'gamma': 0.8158952450888562, 'grow_policy': 'lossguide'}. Best is trial 12 with value: 731863525.6978335.[0m
+    2021-11-22 17:02:07,553 INFO Training Started!
+    2021-11-22 17:02:47,669 INFO Training Ended!
+    2021-11-22 17:02:48,209 INFO mean_absolute_error: 15801.584706763699
+    2021-11-22 17:02:48,210 INFO mean_squared_error: 766536423.2441648
+    2021-11-22 17:02:48,211 INFO r2_score: 0.9000646905309038
+    [32m[I 2021-11-22 17:02:48,247][0m Trial 15 finished with value: 766536423.2441648 and parameters: {'learning_rate': 0.07398928435966287, 'reg_lambda': 1.1940556339241501e-08, 'reg_alpha': 1.760152827513985e-08, 'subsample': 0.7195078189746692, 'colsample_bytree': 0.6899120607572461, 'max_depth': 7, 'early_stopping_rounds': 335, 'n_estimators': 15000, 'tree_method': 'approx', 'booster': 'gbtree', 'gamma': 0.008291443066176078, 'grow_policy': 'lossguide'}. Best is trial 12 with value: 731863525.6978335.[0m
+    2021-11-22 17:02:48,427 INFO Training Started!
+    2021-11-22 17:03:35,781 INFO Training Ended!
+    2021-11-22 17:03:36,139 INFO mean_absolute_error: 15482.647688356165
+    2021-11-22 17:03:36,140 INFO mean_squared_error: 686933953.1421537
+    2021-11-22 17:03:36,140 INFO r2_score: 0.9104426676797013
+    [32m[I 2021-11-22 17:03:36,166][0m Trial 16 finished with value: 686933953.1421537 and parameters: {'learning_rate': 0.08235476908327058, 'reg_lambda': 6.647799361804065e-07, 'reg_alpha': 1.0067601266720434e-08, 'subsample': 0.7228884546525054, 'colsample_bytree': 0.9947016819536298, 'max_depth': 7, 'early_stopping_rounds': 409, 'n_estimators': 15000, 'tree_method': 'approx', 'booster': 'gbtree', 'gamma': 0.0038226799902060316, 'grow_policy': 'lossguide'}. Best is trial 16 with value: 686933953.1421537.[0m
+    2021-11-22 17:03:36,332 INFO Training Started!
+    2021-11-22 17:03:55,399 INFO Training Ended!
+    2021-11-22 17:03:55,565 INFO mean_absolute_error: 16349.99369916524
+    2021-11-22 17:03:55,566 INFO mean_squared_error: 807699951.7007654
+    2021-11-22 17:03:55,567 INFO r2_score: 0.8946980962890538
+    [32m[I 2021-11-22 17:03:55,600][0m Trial 17 finished with value: 807699951.7007654 and parameters: {'learning_rate': 0.055596616114553216, 'reg_lambda': 1.3893364258209366e-06, 'reg_alpha': 67.41099834562895, 'subsample': 0.8192815751548503, 'colsample_bytree': 0.9860680008198711, 'max_depth': 8, 'early_stopping_rounds': 427, 'n_estimators': 15000, 'tree_method': 'approx', 'booster': 'gbtree', 'gamma': 0.001304182841715915, 'grow_policy': 'lossguide'}. Best is trial 16 with value: 686933953.1421537.[0m
+    2021-11-22 17:03:55,770 INFO Training Started!
+    2021-11-22 17:04:11,003 INFO Training Ended!
+    2021-11-22 17:04:11,158 INFO mean_absolute_error: 15908.28640036387
+    2021-11-22 17:04:11,159 INFO mean_squared_error: 778115201.6020439
+    2021-11-22 17:04:11,160 INFO r2_score: 0.8985551356508219
+    [32m[I 2021-11-22 17:04:11,188][0m Trial 18 finished with value: 778115201.6020439 and parameters: {'learning_rate': 0.09711661764783566, 'reg_lambda': 7.823454743474081e-07, 'reg_alpha': 4.5072692770014974e-07, 'subsample': 0.6263107892204567, 'colsample_bytree': 0.9527217430143557, 'max_depth': 5, 'early_stopping_rounds': 318, 'n_estimators': 7000, 'tree_method': 'approx', 'booster': 'gbtree', 'gamma': 1.117709416173302e-08, 'grow_policy': 'lossguide'}. Best is trial 16 with value: 686933953.1421537.[0m
+    2021-11-22 17:04:11,326 INFO Training Started!
+    2021-11-22 17:04:40,256 INFO Training Ended!
+    2021-11-22 17:04:40,573 INFO mean_absolute_error: 15689.446797410103
+    2021-11-22 17:04:40,574 INFO mean_squared_error: 716682978.005267
+    2021-11-22 17:04:40,574 INFO r2_score: 0.9065642113977197
+    [32m[I 2021-11-22 17:04:40,608][0m Trial 19 finished with value: 716682978.005267 and parameters: {'learning_rate': 0.0578712823399666, 'reg_lambda': 1.1030332244677372e-06, 'reg_alpha': 4.487986572959091e-06, 'subsample': 0.8699561697539606, 'colsample_bytree': 0.6341900847864899, 'max_depth': 6, 'early_stopping_rounds': 419, 'n_estimators': 15000, 'tree_method': 'approx', 'booster': 'gbtree', 'gamma': 0.005851046483654154, 'grow_policy': 'lossguide'}. Best is trial 16 with value: 686933953.1421537.[0m
+
+
+    FrozenTrial(number=16, values=[686933953.1421537], datetime_start=datetime.datetime(2021, 11, 22, 17, 2, 48, 252811), datetime_complete=datetime.datetime(2021, 11, 22, 17, 3, 36, 141725), params={'booster': 'gbtree', 'colsample_bytree': 0.9947016819536298, 'early_stopping_rounds': 409, 'gamma': 0.0038226799902060316, 'grow_policy': 'lossguide', 'learning_rate': 0.08235476908327058, 'max_depth': 7, 'n_estimators': 15000, 'reg_alpha': 1.0067601266720434e-08, 'reg_lambda': 6.647799361804065e-07, 'subsample': 0.7228884546525054, 'tree_method': 'approx'}, distributions={'booster': CategoricalDistribution(choices=('gbtree', 'gblinear')), 'colsample_bytree': UniformDistribution(high=1.0, low=0.1), 'early_stopping_rounds': IntUniformDistribution(high=500, low=100, step=1), 'gamma': LogUniformDistribution(high=1.0, low=1e-08), 'grow_policy': CategoricalDistribution(choices=('depthwise', 'lossguide')), 'learning_rate': LogUniformDistribution(high=0.25, low=0.01), 'max_depth': IntUniformDistribution(high=9, low=1, step=1), 'n_estimators': CategoricalDistribution(choices=(7000, 15000, 20000)), 'reg_alpha': LogUniformDistribution(high=100.0, low=1e-08), 'reg_lambda': LogUniformDistribution(high=100.0, low=1e-08), 'subsample': UniformDistribution(high=1.0, low=0.1), 'tree_method': CategoricalDistribution(choices=('exact', 'approx', 'hist'))}, user_attrs={}, system_attrs={}, intermediate_values={}, trial_id=17, state=TrialState.COMPLETE, value=None)
+
+
+#### Let's use our newly found best params to update the model on sklearn pipeline
+
+```
+xgb_params.update(study.best_trial.params)
+print("xgb_params", xgb_params)
+xgb_model = XGBRegressor(**xgb_params)
+tmlt.update_model(xgb_model)
+tmlt.spl
+```
+
+    xgb_params {'use_label_encoder': False, 'eval_metric': 'mae', 'random_state': 42, 'booster': 'gbtree', 'colsample_bytree': 0.9947016819536298, 'early_stopping_rounds': 409, 'gamma': 0.0038226799902060316, 'grow_policy': 'lossguide', 'learning_rate': 0.08235476908327058, 'max_depth': 7, 'n_estimators': 15000, 'reg_alpha': 1.0067601266720434e-08, 'reg_lambda': 6.647799361804065e-07, 'subsample': 0.7228884546525054, 'tree_method': 'approx'}
+
+
+
+
+
+<style>#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a {color: black;background-color: white;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a pre{padding: 0;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-toggleable {background-color: white;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-estimator:hover {background-color: #d4ebff;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-item {z-index: 1;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-parallel::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-parallel-item:only-child::after {width: 0;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;position: relative;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-label-container {position: relative;z-index: 2;text-align: center;}#sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a div.sk-container {display: inline-block;position: relative;}</style><div id="sk-2e31a1db-0287-4ccc-86d3-47f28ee2ee9a" class"sk-top-container"><div class="sk-container"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="eaec5118-a728-46f6-b3e5-3f57f23b67a9" type="checkbox" ><label class="sk-toggleable__label" for="eaec5118-a728-46f6-b3e5-3f57f23b67a9">Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('num_cols',
+                                                  Pipeline(steps=[('imputer',
+                                                                   SimpleImputer(strategy='constant')),
+                                                                  ('scaler',
+                                                                   StandardScaler())]),
+                                                  ['MSSubClass', 'LotFrontage',
+                                                   'LotArea', 'OverallQual',
+                                                   'OverallCond', 'YearBuilt',
+                                                   'YearRemodAdd', 'MasVnrArea',
+                                                   'BsmtFinSF1', 'BsmtFinSF2',
+                                                   'BsmtUnfSF', 'TotalBsmtSF',
+                                                   '1stFlrSF', '2ndFlrSF',
+                                                   '...
+                              learning_rate=0.08235476908327058,
+                              max_delta_step=None, max_depth=7,
+                              min_child_weight=None, missing=nan,
+                              monotone_constraints=None, n_estimators=15000,
+                              n_jobs=None, num_parallel_tree=None,
+                              predictor=None, random_state=42,
+                              reg_alpha=1.0067601266720434e-08,
+                              reg_lambda=6.647799361804065e-07,
+                              scale_pos_weight=None,
+                              subsample=0.7228884546525054,
+                              tree_method='approx', use_label_encoder=False, ...))])</pre></div></div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="0c96efa7-77dd-4ed9-b87f-c46dc5ec64ee" type="checkbox" ><label class="sk-toggleable__label" for="0c96efa7-77dd-4ed9-b87f-c46dc5ec64ee">preprocessor: ColumnTransformer</label><div class="sk-toggleable__content"><pre>ColumnTransformer(transformers=[('num_cols',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='constant')),
+                                                 ('scaler', StandardScaler())]),
+                                 ['MSSubClass', 'LotFrontage', 'LotArea',
+                                  'OverallQual', 'OverallCond', 'YearBuilt',
+                                  'YearRemodAdd', 'MasVnrArea', 'BsmtFinSF1',
+                                  'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF',
+                                  '1stFlrSF', '2ndFlrSF', 'LowQualFinSF',
+                                  'GrLivArea', 'BsmtF...
+                                 ['MSZoning', 'Street', 'Alley', 'LotShape',
+                                  'LandContour', 'Utilities', 'LotConfig',
+                                  'LandSlope', 'Condition1', 'Condition2',
+                                  'BldgType', 'HouseStyle', 'RoofStyle',
+                                  'RoofMatl', 'MasVnrType', 'ExterQual',
+                                  'ExterCond', 'Foundation', 'BsmtQual',
+                                  'BsmtCond', 'BsmtExposure', 'BsmtFinType1',
+                                  'BsmtFinType2', 'Heating', 'HeatingQC',
+                                  'CentralAir', 'Electrical', 'KitchenQual',
+                                  'Functional', 'FireplaceQu', ...])])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="a236f6ea-f75b-4ac9-8a89-322e2e8089fa" type="checkbox" ><label class="sk-toggleable__label" for="a236f6ea-f75b-4ac9-8a89-322e2e8089fa">num_cols</label><div class="sk-toggleable__content"><pre>['MSSubClass', 'LotFrontage', 'LotArea', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'MasVnrArea', 'BsmtFinSF1', 'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF', '1stFlrSF', '2ndFlrSF', 'LowQualFinSF', 'GrLivArea', 'BsmtFullBath', 'BsmtHalfBath', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'TotRmsAbvGrd', 'Fireplaces', 'GarageYrBlt', 'GarageCars', 'GarageArea', 'WoodDeckSF', 'OpenPorchSF', 'EnclosedPorch', '3SsnPorch', 'ScreenPorch', 'PoolArea', 'MiscVal', 'MoSold', 'YrSold']</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="02562a0c-2fbf-46a9-a451-c0b32d0dadea" type="checkbox" ><label class="sk-toggleable__label" for="02562a0c-2fbf-46a9-a451-c0b32d0dadea">SimpleImputer</label><div class="sk-toggleable__content"><pre>SimpleImputer(strategy='constant')</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="80b365be-3573-4be7-9375-42eaab4e66ab" type="checkbox" ><label class="sk-toggleable__label" for="80b365be-3573-4be7-9375-42eaab4e66ab">StandardScaler</label><div class="sk-toggleable__content"><pre>StandardScaler()</pre></div></div></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="caea1be7-b864-4a91-b796-607b663c9e49" type="checkbox" ><label class="sk-toggleable__label" for="caea1be7-b864-4a91-b796-607b663c9e49">cat_cols</label><div class="sk-toggleable__content"><pre>['MSZoning', 'Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'LotConfig', 'LandSlope', 'Condition1', 'Condition2', 'BldgType', 'HouseStyle', 'RoofStyle', 'RoofMatl', 'MasVnrType', 'ExterQual', 'ExterCond', 'Foundation', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'Heating', 'HeatingQC', 'CentralAir', 'Electrical', 'KitchenQual', 'Functional', 'FireplaceQu', 'GarageType', 'GarageFinish', 'GarageQual', 'GarageCond', 'PavedDrive', 'PoolQC', 'Fence', 'MiscFeature', 'SaleType', 'SaleCondition', 'Neighborhood', 'Exterior1st', 'Exterior2nd']</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="a08af16a-85b9-4e86-89d7-8b5c4c96d948" type="checkbox" ><label class="sk-toggleable__label" for="a08af16a-85b9-4e86-89d7-8b5c4c96d948">SimpleImputer</label><div class="sk-toggleable__content"><pre>SimpleImputer(strategy='constant')</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="6c519629-2d6c-4b15-b612-5e18d611fbf6" type="checkbox" ><label class="sk-toggleable__label" for="6c519629-2d6c-4b15-b612-5e18d611fbf6">OneHotEncoder</label><div class="sk-toggleable__content"><pre>OneHotEncoder(handle_unknown='ignore')</pre></div></div></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="098bbbcd-22b3-409d-940e-b0e16376c24c" type="checkbox" ><label class="sk-toggleable__label" for="098bbbcd-22b3-409d-940e-b0e16376c24c">XGBRegressor</label><div class="sk-toggleable__content"><pre>XGBRegressor(base_score=None, booster='gbtree', colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=0.9947016819536298,
+             early_stopping_rounds=409, enable_categorical=False,
+             eval_metric='mae', gamma=0.0038226799902060316, gpu_id=None,
+             grow_policy='lossguide', importance_type=None,
+             interaction_constraints=None, learning_rate=0.08235476908327058,
+             max_delta_step=None, max_depth=7, min_child_weight=None,
+             missing=nan, monotone_constraints=None, n_estimators=15000,
+             n_jobs=None, num_parallel_tree=None, predictor=None,
+             random_state=42, reg_alpha=1.0067601266720434e-08,
+             reg_lambda=6.647799361804065e-07, scale_pos_weight=None,
+             subsample=0.7228884546525054, tree_method='approx',
+             use_label_encoder=False, ...)</pre></div></div></div></div></div></div></div>
+
+
+
+#### Now, Let's use 5 K-Fold Training on this Updated XGB model with best params found from Optuna search
+
+```
+# k-fold training
+xgb_model_metrics_score, xgb_model_test_preds = tmlt.do_kfold_training(n_splits=5, metrics=mean_absolute_error)
+```
+
+    /Users/pamathur/miniconda3/envs/nbdev_env/lib/python3.9/site-packages/sklearn/model_selection/_split.py:676: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=10.
+      warnings.warn(
+
+
+    [17:05:00] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "early_stopping_rounds" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 17:05:47,618 INFO fold: 1 , mean_absolute_error: 15661.41831656678
+
+
+    [17:05:47] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "early_stopping_rounds" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 17:06:59,831 INFO fold: 2 , mean_absolute_error: 16383.731324914384
+
+
+    [17:06:59] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "early_stopping_rounds" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 17:07:50,938 INFO fold: 3 , mean_absolute_error: 15294.39223030822
+
+
+    [17:07:50] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "early_stopping_rounds" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 17:08:47,789 INFO fold: 4 , mean_absolute_error: 14800.260916095891
+
+
+    [17:08:47] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "early_stopping_rounds" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 17:09:37,629 INFO fold: 5 , mean_absolute_error: 14129.463800299658
+
+
+    [17:09:37] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "early_stopping_rounds" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 17:10:28,624 INFO fold: 6 , mean_absolute_error: 19015.87021083048
+
+
+    [17:10:28] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "early_stopping_rounds" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 17:11:37,261 INFO fold: 7 , mean_absolute_error: 14327.51765839041
+
+
+    [17:11:37] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "early_stopping_rounds" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 17:12:48,462 INFO fold: 8 , mean_absolute_error: 17722.195740582192
+
+
+    [17:12:48] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "early_stopping_rounds" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 17:13:39,624 INFO fold: 9 , mean_absolute_error: 15262.005136986301
+
+
+    [17:13:39] WARNING: /Users/runner/miniforge3/conda-bld/xgboost-split_1634712680264/work/src/learner.cc:576: 
+    Parameters: { "early_stopping_rounds" } might not be used.
+    
+      This could be a false alarm, with some parameters getting used by language bindings but
+      then being mistakenly passed down to XGBoost core, or some parameter actually being used
+      but getting flagged wrongly here. Please open an issue if you find any such cases.
+    
+    
+
+
+    2021-11-22 17:14:30,893 INFO fold: 10 , mean_absolute_error: 15830.971532534246
+    2021-11-22 17:14:30,894 INFO  mean metrics score: 15842.782686750856
+
+
+
+    ---------------------------------------------------------------------------
+
+    ValueError                                Traceback (most recent call last)
+
+    /var/folders/p3/zmg8jfwx0hb9gwzs0w69d7f0rgyjx2/T/ipykernel_70698/3966110186.py in <module>
+          2 xgb_model_metrics_score, xgb_model_test_preds = tmlt.do_kfold_training(n_splits=10, metrics=mean_absolute_error)
+          3 # predict on test dataset
+    ----> 4 if xgb_model_test_preds:
+          5     print(xgb_model_preds.shape)
+
+
+    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+
+
+```
+# predict on test dataset
+if xgb_model_test_preds is not None:
+    print(xgb_model_test_preds.shape)
+```
+
+    (1459,)
+
+
+
+##### You can even improve metrics score further by running Optuna search for longer time or rerunning the study, check documentation for more details
+
+
