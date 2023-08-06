@@ -1,0 +1,16 @@
+yowasp_nextpnr_ice40/__init__.py,sha256=ftQZQzOEN7f1-ylU_ibwEbnHIoZ5XnIH6jsDDgaoWNU,3181
+yowasp_nextpnr_ice40/icebram.wasm,sha256=OUNZBGlGrsUBWZDa19ZYcerAh8fuobKRe9SFvRSa4uA,510331
+yowasp_nextpnr_ice40/icemulti.wasm,sha256=rGSOlbpCtE_FD8bz1rsCPgMGO2ys5NxvT_3vvjo4IMI,463065
+yowasp_nextpnr_ice40/icepack.wasm,sha256=B5-W8uIZVK9HDtCF4ryG98f9T5X7EzJPy5CY4iKTTj4,552512
+yowasp_nextpnr_ice40/icepll.wasm,sha256=iRerMdXvglV58o-4hM3b9P4AYv6G6PyR_1N67mPITaw,61409
+yowasp_nextpnr_ice40/nextpnr-ice40.wasm,sha256=_oE4EayviWr7GbgJhVDvFpmJrafQZ7YvkGcsi9RkcPM,1715085
+yowasp_nextpnr_ice40/share/ice40/chipdb-1k.bin,sha256=ZKkunw0iCTP_szrVgPW6uz3Wk5LXvvb6Kv18UehfxW8,17887968
+yowasp_nextpnr_ice40/share/ice40/chipdb-384.bin,sha256=mBRlGFrnM-xCEJ0O7l7pqqLmY0HETqNKTMU3z9un2w4,4979044
+yowasp_nextpnr_ice40/share/ice40/chipdb-5k.bin,sha256=2h-fWkMLGQ_KQi6ZQLF71_GAAqLVk0QAwToRwr-xDyQ,68332606
+yowasp_nextpnr_ice40/share/ice40/chipdb-8k.bin,sha256=cZDqCbtDzYriaIs5jj1PyQkihV0XNU7AVsNUlB_nu-c,93005171
+yowasp_nextpnr_ice40/share/ice40/chipdb-u4k.bin,sha256=g7vU3yJfn0isCTA1EZxI_YkwfFPK0qUqCZBF7NHpCCs,45978122
+yowasp_nextpnr_ice40-0.0.post3894.dev239.dist-info/METADATA,sha256=cc1ft99pu-5iYfByyAkzxFUAQUAYItEiefNH3jJeyBA,1632
+yowasp_nextpnr_ice40-0.0.post3894.dev239.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+yowasp_nextpnr_ice40-0.0.post3894.dev239.dist-info/entry_points.txt,sha256=kmtWwGAD2zrwnSifDlIrKX6GZv3AfkUG20T8yGf9HsY,371
+yowasp_nextpnr_ice40-0.0.post3894.dev239.dist-info/top_level.txt,sha256=JsqBSQJgfE-9Or6J52YpOk1sRBM-U1v60tVgfalNhiw,21
+yowasp_nextpnr_ice40-0.0.post3894.dev239.dist-info/RECORD,,
