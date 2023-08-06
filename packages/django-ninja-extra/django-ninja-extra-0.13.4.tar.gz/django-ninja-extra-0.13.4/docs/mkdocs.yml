@@ -1,0 +1,56 @@
+site_name: Django Ninja Extra
+site_description: Django Ninja Extra - Adds more power to Django Ninja RESTful api library
+site_url: https://eadwincode.github.io/django-ninja-extra/
+repo_name: eadwinCode/django-ninja
+repo_url: https://github.com/eadwinCode/django-ninja-extra
+edit_uri: ''
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deeppurple
+      accent: deeppurple
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+  language: en
+  icon:
+    repo: fontawesome/brands/git-alt
+plugins:
+- search
+- mkdocstrings
+
+nav:
+- Index: index.md
+- Usage:
+  - Quick Tutorial: tutorial/index.md
+  - APIController: tutorial/api_controller.md
+  - Controller Routes: tutorial/api_controller_route.md
+  - Controller Permissions: tutorial/api_controller_permission.md
+  - Controller Router: tutorial/api_controller_router.md
+  - Authentication: tutorial/authentication.md
+  - Body Request: tutorial/body_request.md
+  - Settings: tutorial/settings.md
+  - Pagination: tutorial/pagination.md
+  - Exception: tutorial/custom_exception.md
+  - Versoning: tutorial/versioning.md
+  - Testing: tutorial/testing.md
+- Dependency Injection: service_module_injector.md
+- Ninja Schema: ninja_schema.md
+
+markdown_extensions:
+- markdown_include.include
+- codehilite
+- admonition
+- pymdownx.superfences
