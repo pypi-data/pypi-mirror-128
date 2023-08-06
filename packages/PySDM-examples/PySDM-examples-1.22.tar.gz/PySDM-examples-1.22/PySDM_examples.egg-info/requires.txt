@@ -1,0 +1,8 @@
+PySDM
+PyMPDATA
+atmos-cloud-sim-uj-utils
+pystrict
+matplotlib
+ipywidgets
+pyvinecopulib
+ghapi
