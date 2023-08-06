@@ -1,0 +1,16 @@
+odoo/addons/account_fiscal_year/README.rst,sha256=1WKt3TYvCJYmVIiVdF8dIX_omrsSStHckIRCOqHXWdk,3350
+odoo/addons/account_fiscal_year/__init__.py,sha256=3QE8Cop-3SSO2Gci4rTpRcT7xki5pSq8put1mdJzdX4,65
+odoo/addons/account_fiscal_year/__manifest__.py,sha256=PSsC69O_IAkHRvX8V6DJktOzYph7liOBOq0l_NGflbw,725
+odoo/addons/account_fiscal_year/data/date_range_type.xml,sha256=JRNecPtBtlUoiZO9iB9dCs-nYElS8u2sSqBs-H_PQR0,221
+odoo/addons/account_fiscal_year/i18n/account_fiscal_year.pot,sha256=HbZnzbAQ6IzZerERDZX09cgJZZOe6_QdIrisp6Dpa8I,1205
+odoo/addons/account_fiscal_year/i18n/it.po,sha256=udAnevq_V5LkY0opEA8waenOL0wQ0pAl1D7I1UiuHJU,1475
+odoo/addons/account_fiscal_year/i18n/nl.po,sha256=E7NPexWEW1AyL-9su2QRFS6RIJQ999fSq0KpK_Lzfsc,1438
+odoo/addons/account_fiscal_year/readme/CONTRIBUTORS.rst,sha256=lY7tH_x8Oa0GxaV9dZYNZo_g7C3NV4GqesUlqE8dEqk,177
+odoo/addons/account_fiscal_year/readme/DESCRIPTION.rst,sha256=qx3cfU0G84LH9Nwd_ArtQOovMe-HXXCdrbm-W_G5L-8,269
+odoo/addons/account_fiscal_year/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/account_fiscal_year/static/description/index.html,sha256=IVt8_eN7TqtMF30bmIdil5fxL9pi-S6L4ztJWjtomxQ,12902
+odoo/addons/account_fiscal_year/views/account_views.xml,sha256=VCO-Szl3JdqfFi5p9tkxTRT9E1-ca8qVFiqB4MW0_rw,868
+odoo13_addon_account_fiscal_year-13.0.1.0.1.dev6.dist-info/METADATA,sha256=OwehhPDMe7p1ZVR_-W4FFcpBA38XbAYQZjTZaEfHUuQ,4028
+odoo13_addon_account_fiscal_year-13.0.1.0.1.dev6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+odoo13_addon_account_fiscal_year-13.0.1.0.1.dev6.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_account_fiscal_year-13.0.1.0.1.dev6.dist-info/RECORD,,
