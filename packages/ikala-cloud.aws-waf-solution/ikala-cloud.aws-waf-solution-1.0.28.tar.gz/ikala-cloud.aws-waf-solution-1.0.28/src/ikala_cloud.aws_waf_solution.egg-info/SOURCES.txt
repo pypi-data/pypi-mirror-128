@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/ikala-cloud/aws-waf-solution/__init__.py
+src/ikala-cloud/aws-waf-solution/py.typed
+src/ikala-cloud/aws-waf-solution/_jsii/__init__.py
+src/ikala-cloud/aws-waf-solution/_jsii/aws-waf-solution@1.0.28.jsii.tgz
+src/ikala_cloud.aws_waf_solution.egg-info/PKG-INFO
+src/ikala_cloud.aws_waf_solution.egg-info/SOURCES.txt
+src/ikala_cloud.aws_waf_solution.egg-info/dependency_links.txt
+src/ikala_cloud.aws_waf_solution.egg-info/requires.txt
+src/ikala_cloud.aws_waf_solution.egg-info/top_level.txt
