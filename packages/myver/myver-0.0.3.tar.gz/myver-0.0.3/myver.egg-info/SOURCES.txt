@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+setup.py
+myver/__init__.py
+myver/__main__.py
+myver/cli.py
+myver/config.py
+myver/error.py
+myver/part.py
+myver/version.py
+myver.egg-info/PKG-INFO
+myver.egg-info/SOURCES.txt
+myver.egg-info/dependency_links.txt
+myver.egg-info/entry_points.txt
+myver.egg-info/requires.txt
+myver.egg-info/top_level.txt
