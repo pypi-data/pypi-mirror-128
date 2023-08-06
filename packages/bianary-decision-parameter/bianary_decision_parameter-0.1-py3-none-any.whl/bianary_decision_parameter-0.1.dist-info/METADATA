@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: bianary-decision-parameter
+Version: 0.1
+Summary: bianary_classification
+Home-page: UNKNOWN
+Author: MAINAK RAY
+Author-email: mainakr748@gmail.com
+License: MIT
+Keywords: decision
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: sklearn
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+this module is used to find out best parameters of desision tree.
+![Markdown Logo](https://github.com/mainak-cmd/All-Ml/blob/main/flow_chart.drawio.png)
+
+
+
+
+Change Log
+==========
+
+0.1(11/20/2021)
+-------------------
+- 1st Release
+
+
