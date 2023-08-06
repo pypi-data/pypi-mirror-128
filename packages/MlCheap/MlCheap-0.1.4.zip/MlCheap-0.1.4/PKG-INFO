@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: MlCheap
+Version: 0.1.4
+Summary: MlCheap help you to easily label your data, train your model and publish it
+Home-page: https://github.com/mlcheap/api.git
+Author: Arash Safari
+Author-email: arashsafari86@email.com
+License: MIT
+Download-URL: https://github.com/mlcheap/api/archive/refs/heads/main.zip
+Description: UNKNOWN
+Keywords: mlcheap,api,labeling,annotation,machine learning,deeplearning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
