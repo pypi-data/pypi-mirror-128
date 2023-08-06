@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: pydeflate
+Version: 0.1.8
+Summary: Python package to convert current prices figures to constant prices and vice versa
+Home-page: https://github.com/jm-rivera/pydeflate
+Author: Jorge Rivera
+Author-email: jorge.rivera@one.org
+License: MIT license
+Keywords: pydeflate
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: pandas (>=1.2.1)
+Requires-Dist: weo (==0.7.0)
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: BeautifulSoup4 (>=4.0)
+Requires-Dist: pandas-datareader (>=0.10.0)
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: requests-cache (==0.8.1)
+Requires-Dist: pyarrow (>=1.19.2)
+
+=========
+pydeflate
+=========
+
+
+.. image:: https://img.shields.io/pypi/v/pydeflate.svg
+        :target: https://pypi.python.org/pypi/pydeflate
+
+.. image:: https://img.shields.io/travis/jm-rivera/pydeflate.svg
+        :target: https://travis-ci.com/jm-rivera/pydeflate
+
+.. image:: https://readthedocs.org/projects/pydeflate/badge/?version=latest
+        :target: https://pydeflate.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Python package to convert current prices figures to constant prices and vice versa
+
+
+* Free software: MIT license
+* Documentation: https://pydeflate.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+
+
+0.1.4 (2021-04-21)
+------------------
+
+* Minor release.
+
+This is a minor update to fix a couple of small errors in doc strings.
+It also adds unit testing for updating the underlying data.
+
+
+
+
+0.1.3 (2021-04-21)
+------------------
+
+* Minor release.
+
+This version achieves the basic task at hand. It does not yet have full testing.
+
+
+
+0.1.2 (2021-04-21)
+------------------
+
+* Minor release.
+
+This version achieves the basic task at hand. It does not yet have full testing.
+
+
+
+0.1.1 (2021-04-21)
+------------------
+
+* Minor release.
+
+This version has been yanked.
+
+
+
+0.1.0 (2021-04-21)
+------------------
+
+* First release on PyPI.
+
+This version has been yanked.
+
+
+
+
+
+
+
+
