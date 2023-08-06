@@ -1,0 +1,17 @@
+colcon_poetry_ros/__init__.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+colcon_poetry_ros/config.py,sha256=vyK_LPKX2SR_ko5PlqSfI2ca_jtoZ7iigJzPhkJs_4Y,1370
+colcon_poetry_ros/package_augmentation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colcon_poetry_ros/package_augmentation/poetry.py,sha256=lKGM4PjvqTptpj2iwu8lURymo2nZOe0X59fl3-ZZf7M,3939
+colcon_poetry_ros/package_identification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colcon_poetry_ros/package_identification/poetry.py,sha256=G588JaKM_9rD1mUSyc1GmR96-VMsUkjYbDVNjE5eCpc,2699
+colcon_poetry_ros/task/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colcon_poetry_ros/task/poetry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+colcon_poetry_ros/task/poetry/build.py,sha256=Tf9C_AwBt5ga-palXOF1wlAZ723B-27EuQiPNtbds4I,7705
+colcon_poetry_ros/task/poetry/test.py,sha256=nGYJ4TSbMQhuD8edK6ay7pSlUdRmPdUVJLhI-3hpzWc,1213
+colcon_poetry_ros-0.3.0.dist-info/LICENSE,sha256=ICnxAlSaHiTxd828dIPTyHyTE0CPohuxutYSwpsy8ds,1478
+colcon_poetry_ros-0.3.0.dist-info/METADATA,sha256=3ewsZLvIrGv7B-qfd9cGYfn3gWexp0m4K3SLazLg3_8,5365
+colcon_poetry_ros-0.3.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+colcon_poetry_ros-0.3.0.dist-info/entry_points.txt,sha256=1raS5gJCUQ4uaULfhPqDsO_D60U_aRZNSWxbD-zoqwo,425
+colcon_poetry_ros-0.3.0.dist-info/top_level.txt,sha256=IvhgDzAVXWqwH2vyHwNg6Lr3I99Ud4_5GrnaHld-FP4,18
+colcon_poetry_ros-0.3.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+colcon_poetry_ros-0.3.0.dist-info/RECORD,,
