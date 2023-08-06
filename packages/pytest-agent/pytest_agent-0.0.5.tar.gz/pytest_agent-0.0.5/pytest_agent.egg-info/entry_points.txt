@@ -1,0 +1,3 @@
+[console_scripts]
+pytest-agent = pytest_agent.__main__:cli
+

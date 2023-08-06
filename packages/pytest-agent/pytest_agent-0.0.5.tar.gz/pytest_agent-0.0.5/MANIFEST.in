@@ -1,0 +1,2 @@
+include README.md
+recursive-include pytest_agent *
