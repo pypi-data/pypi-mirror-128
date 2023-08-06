@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: urge
+Version: 0.4.6.4
+Summary: You've got the Urge to write some code ,so go ahead
+Home-page: UNKNOWN
+Author: Hou
+Author-email: hhhoujue@gmail.com
+License: MIT
+Keywords: schedule,jobs,toy,file,utils
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Natural Language :: English
+Requires-Python: >=3.7
+Requires-Dist: playwright (==1.13.1)
+Requires-Dist: schedule (==1.1.0)
+Requires-Dist: daoism (==0.0.4)
+Requires-Dist: pyquery
+Requires-Dist: httpx
+Requires-Dist: path
+Requires-Dist: fs
+
+UNKNOWN
+
