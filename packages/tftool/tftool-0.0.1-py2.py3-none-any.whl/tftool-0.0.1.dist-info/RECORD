@@ -1,0 +1,9 @@
+tftool/__init__.py,sha256=6fX7B2iNUbTntPHuB4wTMN8kEwDqo3M193nGejb3M58,598
+tftool/__main__.py,sha256=LmY9FC4Hghv_ow-gT05DGutwnL92FwCKTmTkFEapr5Y,2138
+tftool/_backport.py,sha256=NhagsoReTTSrCMibmdGCRTHxcFqRktgtaaqGJF5Kca8,1401
+tftool-0.0.1.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+tftool-0.0.1.dist-info/METADATA,sha256=2Qa-wlD_FUMQqqdi9VVo-91BZinbWhmeljSutUf7TII,1450
+tftool-0.0.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+tftool-0.0.1.dist-info/entry_points.txt,sha256=zWbTAk6yAo2boym60qEA3XRjS363tJrMKfIStJWgAEs,49
+tftool-0.0.1.dist-info/top_level.txt,sha256=mDsrKLW4ZpKZJWe3286oZ7vFXKw4_XMIiy0iAeF1nYg,7
+tftool-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+tftool = tftool.__main__:main
+
