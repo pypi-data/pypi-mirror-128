@@ -1,0 +1,5 @@
+[console_scripts]
+bn-app-api=bn_adjustable_bed.app_api:main
+bn-bed-socket=bn_adjustable_bed.bed_socket:main
+bn-controller-api=bn_adjustable_bed.controller_api:main
+
