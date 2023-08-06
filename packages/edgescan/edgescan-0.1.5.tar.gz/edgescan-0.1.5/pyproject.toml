@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "edgescan"
+version = "0.1.5"
+description = "An API client for EdgeScan"
+authors = ["Tyler Fisher <tylerfisher@tylerfisher.ca>"]
+license = "MIT"
+repository = 'https://github.com/whitfieldsdad/edgescan'
+readme = 'README.md'
+
+[tool.poetry.scripts]
+edgescan = "edgescan.cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+hodgepodge = "^2.3.3"
+
+[tool.poetry.dev-dependencies]
+coverage = "^6.1.2"
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
