@@ -1,0 +1,16 @@
+[console_scripts]
+966 = dofast.sli_entry:eta
+hemabot = dofast.sli_entry:hemabot
+hint = dofast.sli_entry:_hint_wubi
+jsy = dofast.sli_entry:jsonify
+pxy = dofast.sli_entry:pxy
+qflask = dofast.qflask:run
+qget = dofast.qget:entry
+sli = dofast.sli_entry:main
+sn = dofast.sli_entry:nsq_sync
+snc = dofast.sli_entry:_sync
+syncfile = dofast.nsq.syncfile:daemon
+tgpostman = dofast.nsq.telegram_postman:daemon
+weather = dofast.weather:entry
+websurf = dofast.nsq.websurf:run
+
