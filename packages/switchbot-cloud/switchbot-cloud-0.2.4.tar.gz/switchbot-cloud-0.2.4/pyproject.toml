@@ -1,0 +1,21 @@
+[tool.poetry]
+authors = ["Eric Abruzzese <eric.abruzzese@gmail.com>"]
+description = "A Python API client for controlling SwitchBot devices via the SwitchBot Cloud API"
+license = "MIT"
+name = "switchbot-cloud"
+version = "0.2.4"
+
+[tool.poetry.dependencies]
+python = ">=3.6.2"
+requests = "^2.26.0"
+pyhumps = "^3.0.2"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+mypy = "^0.910"
+pre-commit = "^2.15.0"
+types-requests = "^2.26.0"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
