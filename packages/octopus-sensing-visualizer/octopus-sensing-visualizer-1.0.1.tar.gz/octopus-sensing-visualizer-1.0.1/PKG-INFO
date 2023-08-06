@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: octopus-sensing-visualizer
+Version: 1.0.1
+Summary: Library for visualizing data synchronously recorded from different sensors
+Home-page: https://octopus-sensing.nastaran-saffar.me
+License: GPL-3.0-or-later
+Keywords: sensors,eeg,gsr,visualizer
+Author: Nastaran Saffaryazdi
+Author-email: nsaffar@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: CherryPy (>=18.6.0,<19.0.0)
+Requires-Dist: heartpy (>=1.2.7,<2.0.0)
+Requires-Dist: neurokit (>=0.2.0,<0.3.0)
+Requires-Dist: numpy (>=1.21.0,<2.0.0)
+Requires-Dist: pandas (>=1.2.5,<2.0.0)
+Requires-Dist: pycairo (>=1.20.1,<2.0.0)
+Project-URL: Repository, https://github.com/nastaran62/octopus-sensing-visualizer
