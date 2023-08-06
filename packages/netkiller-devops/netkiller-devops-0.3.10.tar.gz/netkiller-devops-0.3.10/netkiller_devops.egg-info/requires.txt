@@ -1,0 +1,4 @@
+ruamel.yaml
+requests
+redis
+pyttsx3
