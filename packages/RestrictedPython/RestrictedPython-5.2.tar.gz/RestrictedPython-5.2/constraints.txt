@@ -1,0 +1,10 @@
+# Constraints for Python Packages
+# -----------------------------------------------
+# Pin Versions / Version Ranges if necessary.
+isort >= 4.3.2
+# Needed for Appveyor as long as PY2 is supported:
+pytest < 5
+pytest-html < 2
+# coverage 6+ no longer supports Python 2 and coverage results of older
+# versions cannot not combined with newer ones:
+coverage < 6
