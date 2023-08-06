@@ -1,0 +1,3 @@
+[console_scripts]
+aws_ext = aws_ext.command_line:main
+

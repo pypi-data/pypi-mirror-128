@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/aws_ext/__init__.py
+src/aws_ext/command_line.py
+src/aws_ext/glue_databases.py
+src/aws_ext/glue_tables.py
+src/aws_ext.egg-info/PKG-INFO
+src/aws_ext.egg-info/SOURCES.txt
+src/aws_ext.egg-info/dependency_links.txt
+src/aws_ext.egg-info/entry_points.txt
+src/aws_ext.egg-info/top_level.txt
