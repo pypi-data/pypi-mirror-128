@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: aprofiles
+Version: 0.2.0
+Summary: Analysis of atmospheric profilers measurements
+License: GPL-3.0
+Author: augustinm
+Author-email: augustinm@met.no
+Requires-Python: >=3.7,<3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.5.0,<4.0.0)
+Requires-Dist: miepython (>=2.2.1,<3.0.0)
+Requires-Dist: netCDF4 (>=1.5.8,<2.0.0)
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
+Requires-Dist: scipy (>=1.7.2,<2.0.0)
+Requires-Dist: seaborn (>=0.11.2,<0.12.0)
+Requires-Dist: tqdm (>=4.62.3,<5.0.0)
+Requires-Dist: xarray (>=0.20.1,<0.21.0)
