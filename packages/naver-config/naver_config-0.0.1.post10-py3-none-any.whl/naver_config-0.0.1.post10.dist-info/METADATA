@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: naver-config
+Version: 0.0.1.post10
+Summary: A Config Ancestor Library
+Home-page: https://github.com/jacr6/naver-config
+Author: Jose Cuevas
+Author-email: jose.cuevas.cv@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: python-consul
+Requires-Dist: python-decouple
+Requires-Dist: wheel
+Requires-Dist: twine
+Requires-Dist: bdist-wheel
+
+# core
+
