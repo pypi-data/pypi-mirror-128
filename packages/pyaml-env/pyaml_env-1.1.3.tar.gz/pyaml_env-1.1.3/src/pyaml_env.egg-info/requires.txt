@@ -1,0 +1,5 @@
+PyYAML==5.*
+
+[test]
+pytest
+mock
