@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ui-manager
+Version: 0.2.0
+Summary: A UI Manager for PyQt & PySide
+Home-page: https://github.com/Hkaar/UI-Manager
+Author: Hkaar
+Author-email: HkaarDev@gmail.com
+License: MIT License (MIT)
+Platform: Windows
+Platform: OS X
+Platform: Linux
+Requires-Python: >=3.4
+License-File: LICENSE.txt
+
+UNKNOWN
+

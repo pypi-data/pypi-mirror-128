@@ -1,0 +1,26 @@
+from setuptools import setup
+
+setup(
+    name="ui-manager",
+    version="0.2.0",
+
+    author="Hkaar",
+    author_email="HkaarDev@gmail.com",
+
+    license="MIT License (MIT)",
+
+    description="A UI Manager for PyQt & PySide",
+
+    url="https://github.com/Hkaar/UI-Manager",
+
+    packages=["ui_manager"],
+    include_package_data=True,
+
+    package_data={
+        ".": ["*txt"],
+        "ui_manager": ["resources/themes/*.qss"],
+    },
+
+    python_requires=">=3.4",
+    platforms="Windows, OS X, Linux"
+)

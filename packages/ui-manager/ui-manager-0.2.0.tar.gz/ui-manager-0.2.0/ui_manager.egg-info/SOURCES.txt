@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+ui_manager/__init__.py
+ui_manager.egg-info/PKG-INFO
+ui_manager.egg-info/SOURCES.txt
+ui_manager.egg-info/dependency_links.txt
+ui_manager.egg-info/top_level.txt
+ui_manager/resources/themes/dark.qss
+ui_manager/resources/themes/light.qss
