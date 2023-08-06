@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: SchemaV
+Version: 0.3
+Summary: SchemaV validates Python dict/list structure against a schema in each step, adding default values and strcutures if needed
+Home-page: https://github.com/QuanticData/SchemaV
+Author: Abdallah Ben Hamida
+Author-email: noemail@gmail.com
+License: MIT
+Download-URL: https://github.com/QuanticData/SchemaV/archive/refs/tags/v_01.tar.gz
+Description: UNKNOWN
+Keywords: dict,python,schema,validation,validator,json,yml,yaml,specification,config,configuration
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
