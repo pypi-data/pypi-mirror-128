@@ -1,0 +1,3 @@
+[console_scripts]
+yourdfpy = yourdfpy.viz:run
+
