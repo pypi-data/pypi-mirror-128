@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: tufa
+Version: 0.1.0
+Summary: A command-line tool for managing TOTP/HOTP credentials using the Mac OS keychain.
+Home-page: https://github.com/nickgaya/tufa
+Author: Nicholas Gaya
+Author-email: nicholasgaya+pypi@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/nickgaya/tufa/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tufa
+
+A command-line tool for managing TOTP/HOTP credentials using the Mac OS
+keychain.
+
+## Installation
+
+Use pip to install the package in your desired environment:
+
+    pip install -U .
+
+## Usage
+
+Use the `add` command to add a new credential. The secret can be passed into
+stdin or provided interactively via a terminal prompt.
+
+    tufa add --name example --totp
+
+You can use the `addurl` command to add a credential from a URL. This example
+uses [ZBar](https://github.com/mchehab/zbar) to extract a URL from a QR code
+and store the information using tufa:
+
+    zbarimg qr.png | tufa addurl --name example
+
+The `getotp` command generates a one-time password for a credential:
+
+    tufa getotp --name example
+
+To export a credential you can use the `geturl` command. This example generates
+a QR code for a credential using
+[libqrencode](https://fukuchi.org/works/qrencode/).
+
+    tufa geturl --name example | qrencode -o qr.png
+
+For full command-line documentation, see `tufa --help`.
+
+## Configuration
+
+You can set the following environment variables to configure tufa:
+
+* `TUFA_DB_PATH`: Path tufa's credential metadata database. The default
+  location is `~/.tufa.sqlite3`
+* `TUFA_DEFAULT_KEYCHAIN`: Keychain to use when adding credentials, if not
+  specified via command-line flags.
+
+
