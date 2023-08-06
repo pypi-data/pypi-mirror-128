@@ -1,0 +1,3 @@
+[console_scripts]
+radiko-podcast = radikopodcast.cli:radiko_podcast
+
