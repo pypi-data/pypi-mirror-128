@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+dsfzl/__init__.py
+dsfzl/_init_.py
+dsfzl/dsfzl.py
+dsfzl/setup.py
+dsfzl.egg-info/PKG-INFO
+dsfzl.egg-info/SOURCES.txt
+dsfzl.egg-info/dependency_links.txt
+dsfzl.egg-info/not-zip-safe
+dsfzl.egg-info/top_level.txt
