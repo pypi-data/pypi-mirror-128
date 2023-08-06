@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pmnb
+Version: 0.0.4
+Summary: '产品经理常用工具箱'
+Home-page: UNKNOWN
+Author: likun.pm
+Author-email: likun2440@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 产品经理常用工具
+* 提升占比计算：绝对值，相对值  ipr(之前的，新的)
+* AB样本量计算  ABSample()
+
