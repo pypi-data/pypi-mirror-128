@@ -1,0 +1,3 @@
+[console_scripts]
+newofw = pyOFW.tools.cmd:newofw_command
+
