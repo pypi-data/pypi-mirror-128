@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        zsim-cli=zsim.cli:entry_point
+    
