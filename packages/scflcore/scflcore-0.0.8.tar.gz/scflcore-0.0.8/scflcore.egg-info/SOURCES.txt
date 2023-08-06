@@ -1,0 +1,8 @@
+setup.py
+scflcore/__init__.py
+scflcore/core.py
+scflcore.egg-info/PKG-INFO
+scflcore.egg-info/SOURCES.txt
+scflcore.egg-info/dependency_links.txt
+scflcore.egg-info/requires.txt
+scflcore.egg-info/top_level.txt
