@@ -1,0 +1,77 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "wgl_sample",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/wgl_sample.py",
+            "cwd": "${workspaceRoot}",
+        },
+        {
+            "name": "glut_sample",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/glut_sample.py",
+            "cwd": "${workspaceRoot}",
+            "justMyCode": false
+        },
+        {
+            "name": "pysdl2_sample",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/pysdl2_sample.py",
+            "cwd": "${workspaceRoot}",
+            "justMyCode": false
+        },
+        {
+            "name": "pyqt5_sample",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/pyqt5_sample.py",
+            "cwd": "${workspaceRoot}",
+            "justMyCode": false
+        },
+        {
+            "name": "pyside6_sample",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/pyside6_sample.py",
+            "cwd": "${workspaceRoot}",
+        },
+        {
+            "name": "gltf_sample",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/gltf_sample.py",
+            "args": [
+                "${env:GLTF_SAMPLE_MODELS}/2.0/BoxTextured/glTF-Binary/BoxTextured.glb"
+            ],
+            "cwd": "${workspaceRoot}",
+        },
+        {
+            "name": "imgui_sample",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/imgui_sample.py",
+            "cwd": "${workspaceRoot}",
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+    ]
+}
