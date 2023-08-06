@@ -1,0 +1,3 @@
+[vdk.plugin.run]
+vdk-csv = vdk.plugin.csv.csv_plugin
+
