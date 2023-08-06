@@ -1,0 +1,13 @@
+pyktx2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyktx2/_version.py,sha256=56WwOPv-d8e44F7v4kBRqHfVcnK0UZTh2j5uL4kUa3g,142
+pyktx2/parser.py,sha256=0wMymTNVfExybDJD1b_pr5euTTg3WqWuyK0bJM24pKk,26557
+pyktx2/viewer/__init__.py,sha256=5FCfGmBaYYfQBAsheWymA3YRfATVEDrs1eohOAuGrDI,807
+pyktx2/viewer/__main__.py,sha256=r-IewwX6xPaGR_D839mvzSwaMhr7yTy12PvyKFbujc4,74
+pyktx2/viewer/image_viewer.py,sha256=d1fN5vTSKeJqPe4VJ9wT_FbcNlwWufCRYG5W-2bC2uM,11340
+tests/test_ktx2.py,sha256=Q2feUkzxgTzuEOjFWOuvcby7FG6MyUvYvFlVNhFoQag,593
+pyktx2-0.3.1.dist-info/LICENSE,sha256=wTrwk8Bq-8P6dXKSM3j-80m0vZteVFcQlfWhlPeJIZs,1065
+pyktx2-0.3.1.dist-info/METADATA,sha256=y8Cs93Ah6ItLZ-x8SL0RWgF88qsSIeyvqsXqbw-t08M,620
+pyktx2-0.3.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyktx2-0.3.1.dist-info/entry_points.txt,sha256=2Nv6vIh23-1SvFpfhOgm9gh4uEq0_pFDTkpNgxJZ7B4,47
+pyktx2-0.3.1.dist-info/top_level.txt,sha256=ZGdaaMEMUgvyAIT3b5pu0FZ0d0Lwi9C54Z14Fr_oTdY,18
+pyktx2-0.3.1.dist-info/RECORD,,
