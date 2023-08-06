@@ -1,0 +1,162 @@
+Metadata-Version: 2.1
+Name: ontolearn
+Version: 0.3.1
+Summary: Ontolearn is an open-source software library for structured machine learning in Python. Ontolearn includes modules for processing knowledge bases, inductive logic programming and ontology engineering.
+Home-page: UNKNOWN
+Author: Ontolearn team
+Author-email: onto-learn@lists.uni-paderborn.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scikit-learn (<1.0,>=0.24.1)
+Requires-Dist: matplotlib (>=3.3.4)
+Requires-Dist: owlready2 (>=0.34)
+Requires-Dist: torch (>=1.7.1)
+Requires-Dist: rdflib (>=6.0.0)
+Requires-Dist: pandas (>=1.2.3)
+Requires-Dist: sortedcontainers (>=2.4.0)
+Requires-Dist: flask (>=1.1.2)
+Requires-Dist: typing-extensions ; python_version < "3.7"
+Provides-Extra: dev
+Requires-Dist: build (>=0.6.0) ; extra == 'dev'
+Requires-Dist: pytest (>=6.2.4) ; extra == 'dev'
+Requires-Dist: pytest-codeblocks (>=0.11.2) ; extra == 'dev'
+Requires-Dist: tox (>=3.24.3) ; extra == 'dev'
+Requires-Dist: tox-run-before (>=0.1) ; extra == 'dev'
+Requires-Dist: sphinx (>=4.0.2) ; extra == 'dev'
+Requires-Dist: sphinxext-autox (>=0.0.2) ; extra == 'dev'
+Requires-Dist: sphinx-theme (>=1.0) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (>=0.5.1) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-plantuml (>=0.21) ; extra == 'dev'
+Requires-Dist: plantuml-local-client (>=1.2021.10) ; extra == 'dev'
+Requires-Dist: myst-parser (>=0.15.2) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx (>=4.0.2) ; extra == 'docs'
+Requires-Dist: sphinxext-autox (>=0.0.2) ; extra == 'docs'
+Requires-Dist: sphinx-theme (>=1.0) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (>=0.5.1) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-plantuml (>=0.21) ; extra == 'docs'
+Requires-Dist: plantuml-local-client (>=1.2021.10) ; extra == 'docs'
+Requires-Dist: myst-parser (>=0.15.2) ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: flake8 (>=3.9.2) ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest (>=6.2.4) ; extra == 'test'
+Requires-Dist: pytest-codeblocks (>=0.11.2) ; extra == 'test'
+Requires-Dist: tox (>=3.24.3) ; extra == 'test'
+Requires-Dist: tox-run-before (>=0.1) ; extra == 'test'
+
+# Ontolearn
+
+Ontolearn is an open-source software library for explainable structured machine learning in Python.
+
+- [Installation](#installation)
+
+# Installation
+
+### Installation from source
+
+```shell
+git clone https://github.com/dice-group/Ontolearn.git
+cd Ontolearn
+conda create --name temp python=3.8
+conda activate temp
+conda env update --name temp
+python -c 'from setuptools import setup; setup()' develop
+python -c "import ontolearn"
+tox  # to test
+```
+
+### Installation via pip
+
+```shell
+pip install ontolearn  # see https://pypi.org/project/ontolearn/
+```
+
+### Download external files (.link files)
+
+Some resources like pre-calculated embeddings or `pre_trained_agents`
+are not included in the Git repository directly. Use the following
+command to download them from our data server.
+
+```shell
+./big_gitext/download_big.sh pre_trained_agents.zip.link
+./big_gitext/download_big.sh -A  # to download them all
+```
+
+To update or upload resource files, follow the instructions
+[here](https://github.com/dice-group/Ontolearn-internal/wiki/Upload-big-data-to-hobbitdata)
+and use the following command.
+
+```shell
+./big_gitext/upload_big.sh pre_trained_agents.zip
+```
+
+### Building (sdist and bdist_wheel)
+
+```shell
+tox -e build
+```
+
+#### Building the docs
+
+```shell
+tox -e docs
+```
+
+## Usage
+See the [manual](https://ontolearn-docs-dice-group.netlify.app/),
+tests and examples folder for details.
+
+```python
+from ontolearn.concept_learner import CELOE
+from ontolearn.model_adapter import ModelAdapter
+from owlapy.model import OWLNamedIndividual, IRI
+from owlapy.namespaces import Namespaces
+from owlapy.render import DLSyntaxObjectRenderer
+from experiments_standard import ClosedWorld_ReasonerFactory
+
+NS = Namespaces('ex', 'http://example.com/father#')
+
+positive_examples = {OWLNamedIndividual(IRI.create(NS, 'stefan')),
+                     OWLNamedIndividual(IRI.create(NS, 'markus')),
+                     OWLNamedIndividual(IRI.create(NS, 'martin'))}
+negative_examples = {OWLNamedIndividual(IRI.create(NS, 'heinz')),
+                     OWLNamedIndividual(IRI.create(NS, 'anna')),
+                     OWLNamedIndividual(IRI.create(NS, 'michelle'))}
+
+# Only the class of the learning algorithm is specified
+model = ModelAdapter(learner_type=CELOE,
+                     reasoner_factory=ClosedWorld_ReasonerFactory,
+                     path="KGs/father.owl")
+
+model.fit(pos=positive_examples,
+          neg=negative_examples)
+
+dlsr = DLSyntaxObjectRenderer()
+
+for desc in model.best_hypotheses(1):
+    print('The result:', dlsr.render(desc.concept), 'has quality', desc.quality)
+```
+
+
+## Contribution
+Feel free to create a pull request
+
+### Simple Linting
+
+Run
+```shell
+tox -e lint --
+```
+
+This will run [flake8](https://flake8.pycqa.org/) on the source code.
+
+For any further questions, please contact:  ```onto-learn@lists.uni-paderborn.de```
+
+
