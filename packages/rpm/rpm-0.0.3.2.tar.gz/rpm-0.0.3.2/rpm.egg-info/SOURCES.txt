@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+rpm.egg-info/PKG-INFO
+rpm.egg-info/SOURCES.txt
+rpm.egg-info/dependency_links.txt
+rpm.egg-info/top_level.txt
