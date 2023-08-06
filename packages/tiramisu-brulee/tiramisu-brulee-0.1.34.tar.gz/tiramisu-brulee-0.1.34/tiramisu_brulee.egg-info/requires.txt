@@ -1,0 +1,17 @@
+torch
+
+[lesionseg]
+jsonargparse~=3.12.0
+numpy
+pandas
+pytorch-lightning~=1.5.1
+PyYAML
+ruyaml
+scikit-image
+scipy
+SimpleITK~=2.1.0
+torchio
+torchmetrics
+
+[mlflow]
+mlflow
