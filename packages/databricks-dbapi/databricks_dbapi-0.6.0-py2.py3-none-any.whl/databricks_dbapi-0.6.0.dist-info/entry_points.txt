@@ -1,0 +1,4 @@
+[sqlalchemy.dialects]
+databricks.pyhive=databricks_dbapi.sqlalchemy_dialects.hive:DatabricksPyhiveDialect
+databricks.pyodbc=databricks_dbapi.sqlalchemy_dialects.odbc:DatabricksPyodbcDialect
+
