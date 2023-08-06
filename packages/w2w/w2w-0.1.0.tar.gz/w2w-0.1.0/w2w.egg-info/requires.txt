@@ -1,0 +1,10 @@
+numpy
+pandas
+rasterio
+rioxarray
+scipy
+xarray[io]
+
+[:python_version < "3.8"]
+importlib-metadata
+importlib-resources
