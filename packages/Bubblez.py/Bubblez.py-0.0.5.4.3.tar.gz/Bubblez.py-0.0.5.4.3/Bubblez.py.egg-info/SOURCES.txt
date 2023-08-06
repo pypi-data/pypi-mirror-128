@@ -1,0 +1,11 @@
+README.md
+setup.py
+Bubblez/__init__.py
+Bubblez.py.egg-info/PKG-INFO
+Bubblez.py.egg-info/SOURCES.txt
+Bubblez.py.egg-info/dependency_links.txt
+Bubblez.py.egg-info/requires.txt
+Bubblez.py.egg-info/top_level.txt
+Bubblez/socket/__init__.py
+Bubblez/socket/classes.py
+Bubblez/socket/core.py
