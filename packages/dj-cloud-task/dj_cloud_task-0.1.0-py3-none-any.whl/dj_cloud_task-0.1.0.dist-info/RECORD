@@ -1,0 +1,17 @@
+cloudtask/__init__.py,sha256=O9X_yeSQ642sQRK5lp2s2cb8_c7lf4ioSgVDkhIPIWI,161
+cloudtask/apps.py,sha256=ucYjX7wiNFMcMLW1jdfzPWa2G4EEqLFitOoLHWq4jOY,229
+cloudtask/client.py,sha256=2lZXH5xlVz9SpbCXzJZ-13hD-OXwWvp_7kQnrfIqlsE,95
+cloudtask/configs.py,sha256=imlL7enJ-avrBgr6Yk1-K0WdzCgZxM16q6Civ3GQRL4,2701
+cloudtask/decorators.py,sha256=gQ780Ze2mK68lPb_h2KpVENFn9FQI2uP8FU4emEU6nA,479
+cloudtask/encoder.py,sha256=CqQVoXbVIAYHJHj2JY3crXFDsc86klyo6FxhyYHsAYE,941
+cloudtask/exceptions.py,sha256=Bki-pAPvxTwUxwvgYn3tPmIcavcmSpPQ8WvVKiWu16M,48
+cloudtask/tasks.py,sha256=OzmXN3o7uRjNOPGIqxyDijzfr7RC7MDDH9VWfhk5scA,6356
+cloudtask/urls.py,sha256=7Sr-4dYdclSoOIVuavauasM5rlWCJJ8tcqcKevLIlOI,159
+cloudtask/utils.py,sha256=A8DWXYHgtTmeKVEbKTxpi9xsFTZSly-H3XNWRsQtEYk,694
+cloudtask/views.py,sha256=jKaLkBsNdaGToMFDalxtwqd_Hf1fBG_EQWu-YJoECig,1780
+cloudtask/worker.py,sha256=TDIBUR2aAnIbilCcTpyB6bkEd8IA38SBKh5xvxRFYes,931
+dj_cloud_task-0.1.0.dist-info/LICENCE,sha256=2jfw6fWHaZR5gZDXcsHAoEMB4F8yicrWIsuYWWBj6Ws,1071
+dj_cloud_task-0.1.0.dist-info/METADATA,sha256=7bFsRa3_8SNTwB4C8icqtODuv6SqdcLSoGl5NZ8vyzg,11012
+dj_cloud_task-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dj_cloud_task-0.1.0.dist-info/top_level.txt,sha256=SgxxdEzjylEve-r1ZzVSQ7NW_BjgQ7bwHgiW9YhwWrI,10
+dj_cloud_task-0.1.0.dist-info/RECORD,,
