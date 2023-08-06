@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+ssg/ssg_a_rokay.egg-info/PKG-INFO
+ssg/ssg_a_rokay.egg-info/SOURCES.txt
+ssg/ssg_a_rokay.egg-info/dependency_links.txt
+ssg/ssg_a_rokay.egg-info/top_level.txt
