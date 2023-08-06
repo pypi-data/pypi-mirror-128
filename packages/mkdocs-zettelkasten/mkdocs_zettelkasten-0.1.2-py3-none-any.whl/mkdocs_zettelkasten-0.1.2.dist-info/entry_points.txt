@@ -1,0 +1,6 @@
+[mkdocs.plugins]
+zettelkasten = plugin.plugin:ZettelkastenPlugin
+
+[mkdocs.themes]
+zettelkasten-solarized-light = themes.solarized_light
+
