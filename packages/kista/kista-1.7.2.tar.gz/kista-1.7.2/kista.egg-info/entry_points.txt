@@ -1,0 +1,3 @@
+[console_scripts]
+kista = kista.cli:main
+
