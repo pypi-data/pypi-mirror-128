@@ -1,0 +1,4 @@
+roku>=3.0
+blessed
+nose
+future
