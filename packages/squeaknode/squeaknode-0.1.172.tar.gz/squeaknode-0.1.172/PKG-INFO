@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: squeaknode
+Version: 0.1.172
+Summary: Node for squeak protocol.
+Home-page: https://github.com/yzernik/squeaknode
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
+Provides-Extra: postgres
+License-File: LICENSE
+
+UNKNOWN
+
