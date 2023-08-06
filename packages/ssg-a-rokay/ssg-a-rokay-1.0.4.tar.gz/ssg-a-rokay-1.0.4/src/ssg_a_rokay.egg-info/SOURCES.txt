@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ssg/SSGParser.py
+src/ssg/SSGUtil.py
+src/ssg/__init__.py
+src/ssg/ssg.py
+src/ssg_a_rokay.egg-info/PKG-INFO
+src/ssg_a_rokay.egg-info/SOURCES.txt
+src/ssg_a_rokay.egg-info/dependency_links.txt
+src/ssg_a_rokay.egg-info/top_level.txt
