@@ -1,0 +1,3 @@
+[console_scripts]
+colabfold_batch=colabfold.batch:main
+
