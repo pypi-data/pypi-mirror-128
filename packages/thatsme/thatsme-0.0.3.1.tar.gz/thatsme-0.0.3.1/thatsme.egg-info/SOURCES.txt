@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+thatsme.egg-info/PKG-INFO
+thatsme.egg-info/SOURCES.txt
+thatsme.egg-info/dependency_links.txt
+thatsme.egg-info/top_level.txt
