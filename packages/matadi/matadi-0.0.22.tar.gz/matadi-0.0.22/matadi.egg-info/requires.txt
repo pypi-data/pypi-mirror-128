@@ -1,0 +1,6 @@
+numpy
+casadi
+
+[all]
+matplotlib
+scipy
