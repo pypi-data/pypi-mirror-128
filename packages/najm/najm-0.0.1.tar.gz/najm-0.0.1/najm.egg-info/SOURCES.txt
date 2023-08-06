@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+joshbasiccalculator/__init__.py
+najm.egg-info/PKG-INFO
+najm.egg-info/SOURCES.txt
+najm.egg-info/dependency_links.txt
+najm.egg-info/top_level.txt
