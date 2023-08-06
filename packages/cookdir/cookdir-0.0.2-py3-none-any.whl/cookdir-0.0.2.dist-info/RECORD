@@ -1,0 +1,11 @@
+cookdir/__init__.py,sha256=t8uju34UxDSmXHU7Gx-p3vJbWAO1na8VEHJOu6bjUVY,11
+cookdir/main.py,sha256=lKj230UV96XQwHHwROe409Lyz_xdqEHOeEVVh0LOQJ4,2221
+cookdir/recipe/data_analysis.yml,sha256=oNwgHmhqQHgEFkF84F5vSLCsqQS9kwizSqaXuSa2S44,121
+cookdir/recipe/main.yml,sha256=0HsxYxhDEPt7veSuLwQzMnNsKL-3vCyrEqsV9Ik_Rmo,203
+cookdir/recipe/pypkg.yml,sha256=A0z7e8NjofWO7L1yVJffXl6S8BVpWxVlWdpS1CnelTg,96
+cookdir-0.0.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+cookdir-0.0.2.dist-info/METADATA,sha256=RpyBpACOyqjmjCRdHkpDPbsr-AKTlc-kglJl8eaWM4I,1259
+cookdir-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cookdir-0.0.2.dist-info/entry_points.txt,sha256=rWOJvkhK-BLlUSyrvaXbXyYVMRnjZjnuTB7mjA3LJiU,42
+cookdir-0.0.2.dist-info/top_level.txt,sha256=A1_G-YlUAMa4Ecb8q4zLurK4I8dMW0h7NGvGeo8iFAY,8
+cookdir-0.0.2.dist-info/RECORD,,

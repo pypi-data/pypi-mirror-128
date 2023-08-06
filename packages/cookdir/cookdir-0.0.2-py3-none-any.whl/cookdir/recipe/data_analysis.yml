@@ -1,0 +1,9 @@
+# this recipe is for data analysis
+
+DEFAULT:
+  - data
+  - scripts
+  - results:
+    - figs
+  - docs
+  - template
