@@ -1,0 +1,32 @@
+
+# GENERAL
+tmp/*
+__pycache__/
+
+# DEPLOYMENT
+dist/*
+*.egg-info/*
+
+# TESTING
+**/.coverage*
+**/htmlcov
+
+# PYCHARM
+.idea/
+
+# MYPY
+dmypy.json
+.mypy_cache/
+.dmypy.json
+
+# PYRE TYPE CHECKER
+.pyre/
+
+# VIRTUALENV
+pyvenv.cfg
+pip-selfcheck.json
+
+# MAC OS
+.DS_Store
+.AppleDouble
+.LSOverride
