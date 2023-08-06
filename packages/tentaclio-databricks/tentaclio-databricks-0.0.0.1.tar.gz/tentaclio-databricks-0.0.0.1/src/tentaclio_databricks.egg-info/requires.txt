@@ -1,0 +1,3 @@
+tentaclio
+pyodbc
+psycopg2
