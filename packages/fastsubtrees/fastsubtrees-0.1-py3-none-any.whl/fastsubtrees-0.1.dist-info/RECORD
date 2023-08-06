@@ -1,0 +1,10 @@
+fastsubtrees/__init__.py,sha256=uB9Kv0vhPW4A6MspO4GZC-djbJRQGdMgZ4FBWy5wb3o,850
+fastsubtrees/_scripts_support.py,sha256=DcaSD3wl9yJR8jSiFSXOuM3DWbTURHUmt9Zl5kx4uVU,297
+fastsubtrees/error.py,sha256=DEyOzbSk6UG2j16BMh7yLLAfRTx6DI4pnRXg5JYR5d4,117
+fastsubtrees/tree.py,sha256=2Y-HiylgUt1jkrdQE7e4Hxf94BVBiodAaoAULSNUb68,4467
+fastsubtrees-0.1.data/scripts/fastsubtrees-construct,sha256=8Hlg2irm-_1VmHSiHTroJcsWHSArqg_d1US4zYPqFF4,931
+fastsubtrees-0.1.data/scripts/fastsubtrees-query,sha256=kgvsPxRsLgD8iTsEnBBT3eCeIzq0At6NCuVXI7HdA9w,732
+fastsubtrees-0.1.dist-info/METADATA,sha256=Jj9nj41FQLKLdggakd3mL7DUTmnloP888GklVxKMeNE,3277
+fastsubtrees-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastsubtrees-0.1.dist-info/top_level.txt,sha256=4f1GeKfK08UxopKQsNN_RdYMQVIFJMK_pz_gs31GmeA,13
+fastsubtrees-0.1.dist-info/RECORD,,
