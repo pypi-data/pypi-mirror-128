@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-heweather
+Version: 0.2.1
+Summary: Get Heweather information and convert to pictures
+License: MIT
+Author: kexue
+Author-email: x@kexue.io
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=8.3.1,<9.0.0)
+Requires-Dist: httpx (>=0.19.0,<0.20.0)
