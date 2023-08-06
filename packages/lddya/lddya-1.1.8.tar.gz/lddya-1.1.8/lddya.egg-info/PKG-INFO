@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: lddya
+Version: 1.1.8
+Summary: 修改ACO蚂蚁终点仅能为19，19的缺点
+Home-page: https://github.com/not_define/please_wait
+Author: lidongdong
+Author-email: 927052521@qq.com
+License: MIT Licence
+Description: 具体功能，请自行挖掘。
+Keywords: pip,license,licensetool,tool,gm
+Platform: any
