@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: openhsi
+Version: 0.0.9
+Summary: Library to calibrate, trigger and capture data cubes for the open source hyperspectral camera.
+Home-page: https://github.com/openhsi/openhsi/tree/master/
+Author: Yiwei Mao, et al.
+Author-email: yiwei.mao@sydney.edu.au
+License: Creative Commons Attribution 3.0 Australia License
+Keywords: Open Hyperspectral Imager
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: Other/Proprietary License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pip
+Requires-Dist: packaging
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: nbdev
+Requires-Dist: fastcore
+Requires-Dist: fastprogress
+Requires-Dist: h5py
+Requires-Dist: xarray
+Requires-Dist: pillow
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: bokeh
+Requires-Dist: holoviews
+Requires-Dist: panel
+Requires-Dist: param
+Requires-Dist: Py6S
+Requires-Dist: pyserial
+Requires-Dist: opencv-python
+Requires-Dist: netcdf4
+Requires-Dist: streamz
+Provides-Extra: dev
+
+# Open Source DIY Hyperspectral Imager Library
+> Library to calibrate, trigger and capture data cubes for the open source DIY hyperspectral camera. 
+
+
+![](https://github.com/openhsi/openhsi/actions/workflows/main.yml/badge.svg)
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/"><img alt="Creative Commons Licence" style="border-width:0" src="https://raw.githubusercontent.com/openhsi/openhsi/master/https://i.creativecommons.org/l/by/3.0/au/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/">Creative Commons Attribution 3.0 Australia License</a>.
+
+Documentation can be found here: [https://openhsi.github.io/openhsi/](https://openhsi.github.io/openhsi/).
+
+## Install
+
+`pip install openhsi`
+
+## Requirements
+
+- Python 3.6+
+- Ximea SDK (See https://www.ximea.com/support/wiki/apis/Python)
+
+## Development and Contributions
+
+This whole software library, testing suite, documentation website, and PyPI package was developed in Jupyter Notebooks using [nbdev](https://nbdev.fast.ai/). 
+
+
+
+## How to use
+
+### Taking a single hyperspectral datacube
+
+The example shown here uses a simulated camera for testing purposes. Replace `SimulatedCamera` with the appropriate Python class for your own camera to work with real hardware. 
+
+```
+from openhsi.capture import *
+
+with SimulatedCamera(img_path="assets/rocky_beach.png", n_lines=1024, processing_lvl = 3) as cam:
+    cam.collect()
+    fig = cam.show(plot_lib="matplotlib",robust=True)
+
+```
+
+    100%|██████████| 1024/1024 [00:16<00:00, 61.44it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Text(0, 0.5, 'cross-track')
+
+
+
+
+![png](https://raw.githubusercontent.com/openhsi/openhsi/master/docs/images/output_9_1.png)
+
+
+
