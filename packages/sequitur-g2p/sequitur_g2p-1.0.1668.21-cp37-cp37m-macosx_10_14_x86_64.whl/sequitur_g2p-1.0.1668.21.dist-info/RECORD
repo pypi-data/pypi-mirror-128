@@ -1,0 +1,17 @@
+Evaluation.py,sha256=L_FFmU-ehDkbPzpeDR3u2HiA_0MtX62TTKzXK92eEYI,8150
+Minimization.py,sha256=AJUP9vzZSHA1n2wTlDhWL6GyQV7p3u8KSCs9L_nbe7g,8453
+SequenceModel.py,sha256=DejjxIv8fJJV9WqYRhI4_q95UFNmbWcyVGqR2pyalKg,13503
+SequiturTool.py,sha256=iNhVztFbsVRoPfABw6oZqBZAD9F8Cjx6pTOppOqeQBU,13467
+_sequitur_.cpython-37m-darwin.so,sha256=A65-NFp7mS5kFrvRFWXf1-6Wwa9ai-i9epr9yIQss_E,308680
+g2p.py,sha256=xT3H-uSYwXbEYN5eVCIcTD_-D_oGZUz2AQ9u1w1DSus,12839
+misc.py,sha256=6jgLloGUjpKGFikkecwk7W-BNsdCrzSIOMbpe7AKe1Q,8990
+sequitur.py,sha256=MqGwll39u2Doqm83N4vn6jF5gTCKptXbTYnVx0LXKVE,33002
+sequitur_.py,sha256=i2dBfuh57NXjNHH0TC_i_vDOY9zGeJCFOXC0JgEkJW8,12132
+symbols.py,sha256=qj5FAVTWjFEedz4kf4mt98EWr_WTuC18ThrWoApCtXs,2205
+tool.py,sha256=5izywb-P3qQdMJmIRbzz7qt5QtTtCcW_8-XOs5-OQUQ,3622
+sequitur_g2p-1.0.1668.21.data/scripts/g2p.py,sha256=diqF__Kkd5Tj_qKmNvzY_o2jfdLBXBJjo9GONedjnas,12826
+sequitur_g2p-1.0.1668.21.dist-info/LICENSE,sha256=qxX9UmvY3Rip5368E5ZWv00z6X_HI4zRG_YOK5uGZsY,17987
+sequitur_g2p-1.0.1668.21.dist-info/METADATA,sha256=oVdcqyAMNZbx5Otg_XwfnGWpQZLkZbOVohfE-Yc1o6o,7553
+sequitur_g2p-1.0.1668.21.dist-info/WHEEL,sha256=09ilctnU90ztFuksfSRiG_Vbal2GkMIuPJ3QrdP4HAo,111
+sequitur_g2p-1.0.1668.21.dist-info/top_level.txt,sha256=BRyIvnInZOrvqZfH9o5XYWDFYBC1mLqk39bHzLqkcec,103
+sequitur_g2p-1.0.1668.21.dist-info/RECORD,,
