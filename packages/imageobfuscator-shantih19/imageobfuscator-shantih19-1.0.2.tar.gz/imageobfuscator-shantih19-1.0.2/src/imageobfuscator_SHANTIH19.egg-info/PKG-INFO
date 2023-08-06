@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: imageobfuscator-shantih19
+Version: 1.0.2
+Summary: Encode and decode data in an image using a password
+Home-page: https://github.com/shantih19/imageobfuscator
+Author: shantih19
+Author-email: shantih19@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/shantih19/imageobfuscator/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# imageobfuscator.py
+
+Encode and decode data in an image using a password
+
+### Usage
+    usage: Image Obfuscator [-h] [-d | -e] [-o [OUTPUT]] [-f] path seed [phrase]
+    
+    Encode and decode data in an image using a seed as a "password"
+    
+    positional arguments:
+      path                  image path
+      seed                  seed/password
+      phrase                phrase to encode
+    
+    options:
+      -h, --help            show this help message and exit
+      -d, --decode          decode (default)
+      -e, --encode          encode
+      -o [OUTPUT], --output [OUTPUT]
+                            output path
+      -f, --file            phrase is a path to a file to encode
+
+### Install
+
+    pip install imageobfuscator-shantih19
+
+### Dependencies
+- Python 3.x
+- [Pillow](https://github.com/python-pillow/Pillow "Pillow")
+
+### License
+
+This program is distributed AS IS, with no guarantees, under [wtfpl](http://www.wtfpl.net/).
+
+
+
