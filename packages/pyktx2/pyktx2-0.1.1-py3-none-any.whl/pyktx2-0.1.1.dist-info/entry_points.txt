@@ -1,0 +1,3 @@
+[gui_scripts]
+ktx2_viewer = pyktx2.viewer:run
+
