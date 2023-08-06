@@ -1,0 +1,3 @@
+[console_scripts]
+pylaprof-merge=scripts.merge:main
+
