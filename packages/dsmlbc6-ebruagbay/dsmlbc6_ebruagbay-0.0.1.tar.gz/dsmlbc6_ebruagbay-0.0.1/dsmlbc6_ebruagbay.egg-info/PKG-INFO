@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dsmlbc6-ebruagbay
+Version: 0.0.1
+Summary: Data Science Tools
+Home-page: https://github.com/ebruagbay/dsmlbc6_ebruagbay.git
+Author: Ebru Topsakal Agbay
+License: MIT
+Keywords: datascience,machine learning,bootcamp
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE.md
+
+UNKNOWN
+
