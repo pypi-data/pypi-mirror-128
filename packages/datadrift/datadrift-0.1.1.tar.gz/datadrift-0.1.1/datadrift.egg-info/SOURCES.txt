@@ -1,0 +1,15 @@
+Dockerfile
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+datadrift/__init__.py
+datadrift/datadrift.py
+datadrift/detect_drift.py
+datadrift/parse_results.py
+datadrift.egg-info/PKG-INFO
+datadrift.egg-info/SOURCES.txt
+datadrift.egg-info/dependency_links.txt
+datadrift.egg-info/top_level.txt
