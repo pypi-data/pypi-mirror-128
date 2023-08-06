@@ -1,0 +1,1 @@
+from .Brawl_Stars import Brawl_Stars_api as Brawl_Stars_API
