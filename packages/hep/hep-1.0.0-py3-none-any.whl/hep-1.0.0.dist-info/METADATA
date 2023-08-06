@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hep
+Version: 1.0.0
+Summary: Scripts to help with Energy Plus simulation.
+Home-page: https://github.com/Gurgenci/hep
+Author: Hal Gurgenci
+Author-email: h.gurgenci@uq.edu.au
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
