@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: json-to-table
+Version: 0.1.0
+Summary: Convert Json File to CSV(XLSX)
+Home-page: https://github.com/duyixian1234/json2table
+License: MIT
+Author: duyixian
+Author-email: duyixian1234@qq.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: openpyxl (>=3.0.9,<4.0.0)
+Requires-Dist: pandas (>=1.3.4,<2.0.0)
+Requires-Dist: typer (>=0.4.0,<0.5.0)
+Requires-Dist: xlwt (>=1.3.0,<2.0.0)
+Project-URL: Repository, https://github.com/duyixian1234/json2table
+Description-Content-Type: text/markdown
+
+# JSON-TO-Table
+
+Convert JSON File to CSV or XLSX File.
+
+## Installation
+
+Install JSON-TO-Table using pip:
+
+```bash
+pip install json-to-table
+```
+
+## Usage/Examples
+
+```bash
+# Show Header
+$ j2t head data/example.json --n 5
+    name  age  married
+0   Mike   18     True
+1    Tom   25    False
+2   Jane   20     True
+3    Bob   30    False
+4  Alice   22     True
+# Convert JSON to CSV
+$ j2t convert data/example.json
+# Convert JSON to XLSX
+$ j2t convert data/example.json --t xlsx
+```
+
+## Authors
+
+- [@duyixian1234](https://www.github.com/duyixian1234)
+

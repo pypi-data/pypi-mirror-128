@@ -1,0 +1,70 @@
+[tool.poetry]
+authors = ["duyixian <duyixian1234@qq.com>"]
+description = "Convert Json File to CSV(XLSX)"
+license = "MIT"
+name = "json_to_table"
+readme = "README.md"
+repository = "https://github.com/duyixian1234/json2table"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+openpyxl = "^3.0.9"
+pandas = "^1.3.4"
+python = "^3.9"
+typer = "^0.4.0"
+xlwt = "^1.3.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+isort = "^5.10.1"
+mypy = "^0.910"
+pylint = "^2.11.1"
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+
+[tool.poetry.scripts]
+j2t = 'json_to_table.__main__:main'
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.pylint.master]
+job = 0
+suggestion-mode = "yes"
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.pylint.message_control]
+disable = ["missing-docstring", "invalid-name"]
+
+[tool.pylint.design]
+min-public-methods = 1
+
+[tool.pytest.ini_options]
+addopts = "-ra -svv --cov=json_to_table"
+minversion = "6.0"
+testpaths = [
+  "tests",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "if __name__ == .__main__.:",
+]
+fail_under = 90.0
+omit = ['*/__main__.py']
+show_missing = true
+skip_covered = true
+skip_empty = true
+sort = "miss"
+
+[tool.coverage.path]
+source = "json_to_table"
+
+[tool.black]
+line-length = 120
+
+[tool.mypy]
+ignore_missing_imports = true
