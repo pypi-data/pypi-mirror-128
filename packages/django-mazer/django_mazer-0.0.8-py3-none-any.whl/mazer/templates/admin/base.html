@@ -1,0 +1,354 @@
+{% load i18n static mazer admin_urls %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_current_language_bidi as LANGUAGE_BIDI %}
+{% get_mazer_settings request as mazer_settings %}
+{% get_mazer_ui_tweaks as mazer_ui %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>{% block title %}{{ title }} | {{ mazer_settings.site_title }}{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'assets/css/filter.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/vendors/toastify/toastify.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/vendors/simple-datatables/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/vendors/simple-datatables/select-datatables.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/vendors/perfect-scrollbar/perfect-scrollbar.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendors/bootstrap-icons/bootstrap-icons.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/vendors/toastify/toastify.css' %}">
+
+    <!-- Custom fixes -->
+    <link rel="stylesheet" href="{% static 'assets/css/app.css' %}">
+
+    {% if mazer_settings.custom_css %}
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static mazer_settings.custom_css %}">
+    {% endif %}
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="{% static mazer_settings.site_icon %}" type="image/png">
+    <link rel="icon" href="{% static mazer_settings.site_icon %}" sizes="32x32" type="image/png">
+
+    <!-- Google Font: Nunito -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    {% block extrastyle %} {% endblock %}
+    {% block extrahead %} {% endblock %}
+</head>
+<body class="{% block bodyclass %}{% endblock %} {{ mazer_ui.body_classes }}" data-admin-utc-offset="{% now "Z" %}">
+
+<section class="app">
+
+    {% if not is_popup %}
+        {% block sidebar %}
+        {% if mazer_settings.show_sidebar %}
+            {% get_side_menu as side_menu_list %}
+            <div id="sidebar" class="active {{ mazer_ui.navbar_classes }}">
+                <div class="sidebar-wrapper active">
+                    <div class="sidebar-header">
+                        <div class="d-flex justify-content-between">
+                            <div class="logo">
+                                <a href="{% url 'admin:index' %}">
+                                    {% if mazer_settings.site_header %}
+                                        {{ mazer_settings.site_header }}
+                                    {% else %}
+                                        <img src="{% static mazer_settings.site_logo %}" alt="Logo">
+                                    {% endif %}
+                                </a>
+                            </div>
+                            <div class="toggler">
+                                <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-panel mt-3 pb-3 mb-3 text-center">
+                        <div class="image d-inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" style="color: #25396f;" viewBox="0 0 16 16">
+                              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                        </div>
+                        <div class="info d-inline-block">
+                            {% if perms|can_view_self %}
+                                <a href="{% mazer_admin_url request.user request.current_app|default:"admin" %}" class="d-block">{{ request.user }},</a>
+                            {% else %}
+                                <span class="d-block" style="color: black;">{{ request.user }},</span>
+                            {% endif %}
+                        </div>
+                        <div class="d-inline-block">
+                            <a href="{% url 'admin:logout' %}" class="d-block">{% trans 'Log out' %}</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-menu">
+                        <ul class="menu">
+                            <li class="sidebar-item">
+                                <a href="{% url 'admin:index' %}" class="sidebar-link">
+                                    <i class="bi bi-speedometer2"></i>
+                                    <span>{% trans 'Dashboard' %}</span>
+                                </a>
+                            </li>
+                            {% if mazer_settings.navigation_expanded %}
+                                {% for app in side_menu_list %}
+                                    <li class="sidebar-item has-sub">
+                                    <a class="sidebar-link" href="{{ app.app_url }}">
+                                        <i class="bi {{ app.icon }}"></i>
+                                        <span>{{ app.name }}</span>
+                                    </a>
+                                        <ul class="submenu">
+                                        {% for model in app.models %}
+                                            <li class="submenu-item">
+                                            {% if model.url %}
+                                                <a href="{{ model.url }}">
+                                                    <i class="bi {{ model.icon }}"></i>
+                                                    <span>{{ model.name|truncatechars:11 }}</span>
+                                                </a>
+                                            {% else %}
+                                                <a href="#{{ model.name }}" class="disabled">
+                                                    <i class="bi {{ model.icon }}"></i>
+                                                    <span>{{ model.name|truncatechars:16 }}</span>
+                                                </a>
+                                            {% endif %}
+                                            </li>
+                                        {% endfor %}
+                                        </ul>
+                                    </li>
+                                {% endfor %}
+                            {% else %}
+                                {% for app in side_menu_list %}
+                                    <li class="sidebar-title">
+                                        <i class="bi {{ app.icon }}"></i>
+                                        <span>{{ app.name|truncatechars:21 }}</span>
+                                    </li>
+                                    {% for model in app.models %}
+                                        <li class="sidebar-item">
+                                            <a href="{% if model.url %}{{ model.url }}{% else %}javascript:void(0){% endif %}" class="sidebar-link">
+                                                <i class="bi {{ model.icon }}"></i>
+                                                <span>{{ model.name }}</span>
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                {% endfor %}
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        {% endblock %}
+
+{#        <nav class="main-header navbar navbar-expand {{ mazer_ui.navbar_classes }}" id="jazzy-navbar">#}
+{#            <ul class="navbar-nav">#}
+{##}
+{#                {% if mazer_settings.show_sidebar %}#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>#}
+{#                    </li>#}
+{#                {% else %}#}
+{#                    <li class="nav-item">#}
+{#                        <a href="{% url 'admin:index' %}" class="brand-link">#}
+{#                            <img src="{% static mazer_settings.site_logo %}" alt="{{ mazer_settings.site_header }} Logo" class="{{ mazer_settings.site_logo_classes }} brand-image" style="opacity: .8; margin: 0 0 0 5px;">#}
+{#                        </a>#}
+{#                    </li>#}
+{#                {% endif %}#}
+{##}
+{#                {% get_top_menu user request.current_app|default:"admin" as top_menu %}#}
+{#                {% for link in top_menu %}#}
+{#                    <li class="nav-item d-none d-sm-inline-block{% if link.children %} dropdown{% endif %}">#}
+{#                        {% if link.children %}#}
+{#                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+{#                                {{ link.name }}#}
+{#                            </a>#}
+{#                            <div class="dropdown-menu">#}
+{#                                {% for child in link.children %}#}
+{#                                    <a class="dropdown-item" href="{{ child.url }}" {% if link.new_window %}target="_blank"{% endif %}>{{ child.name }}</a>#}
+{#                                {% endfor %}#}
+{#                            </div>#}
+{#                        {% else %}#}
+{#                            <a href="{{ link.url }}" class="nav-link" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>#}
+{#                        {% endif %}#}
+{#                    </li>#}
+{#                {% endfor %}#}
+{#            </ul>#}
+{##}
+{#            {% if mazer_settings.search_model %}#}
+{#                <form action="{{ mazer_settings.search_url }}" method="GET" class="form-inline ml-3">#}
+{#                    <div class="input-group input-group-sm">#}
+{#                        <input class="form-control form-control-navbar" name="q" type="search" placeholder="{% trans 'Search' %} {{ mazer_settings.search_name }}..." aria-label="{% trans 'Search' %} {{ mazer_settings.search_name }}...">#}
+{#                        <div class="input-group-append">#}
+{#                            <button class="btn btn-navbar" type="submit">#}
+{#                                <i class="fas fa-search"></i>#}
+{#                            </button>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </form>#}
+{#            {% endif %}#}
+{##}
+{#            <ul class="navbar-nav ml-auto">#}
+{##}
+{#                {% if mazer_settings.show_ui_builder %}#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">#}
+{#                        <i class="fas fa-th-large"></i>#}
+{#                    </a>#}
+{#                </li>#}
+{#                {% endif %}#}
+{#                {% if 'django.contrib.admindocs'|app_is_installed %}#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" href="{% url 'django-admindocs-docroot' %}" role="button">#}
+{#                        <i class="fas fa-book"></i>#}
+{#                    </a>#}
+{#                </li>#}
+{#                {% endif %}#}
+{##}
+{#                <li class="nav-item dropdown">#}
+{#                    <a class="nav-link btn" data-toggle="dropdown" href="#" title="{{ request.user }}">#}
+{#                        <i class="far fa-user pr-2" aria-hidden="true"></i>#}
+{#                    </a>#}
+{#                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left" id="jazzy-usermenu">#}
+{#                        <span class="dropdown-header">{% trans 'Account' %}</span>#}
+{#                        <div class="dropdown-divider"></div>#}
+{#                        <a href="{% url 'admin:password_change' %}" class="dropdown-item">#}
+{#                            <i class="fas fa-key mr-2"></i> {% trans 'Change password' %}#}
+{#                        </a>#}
+{#                        <div class="dropdown-divider"></div>#}
+{#                        <a href="{% url 'admin:logout' %}" class="dropdown-item">#}
+{#                            <i class="fas fa-users mr-2"></i> {% trans 'Log out' %}#}
+{#                        </a>#}
+{#                        {% get_user_menu user request.current_app|default:"admin" as user_menu %}#}
+{#                        {% for link in user_menu %}#}
+{#                            <div class="dropdown-divider"></div>#}
+{#                            <a href="{{ link.url }}" class="dropdown-item" {% if link.new_window %}target="_blank"{% endif %}>#}
+{#                                <i class="{{ link.icon }} mr-2"></i> {% trans link.name %}#}
+{#                            </a>#}
+{#                        {% endfor %}#}
+{#                        <div class="dropdown-divider"></div>#}
+{#                        {% if perms|can_view_self %}#}
+{#                            <a href="{% jazzy_admin_url request.user request.current_app|default:"admin" %}" class="dropdown-item dropdown-footer">{% trans 'See Profile' %}</a>#}
+{#                        {% endif %}#}
+{#                    </div>#}
+{#                </li>#}
+{#            </ul>#}
+{#        </nav>#}
+    {% endif %}
+
+    <section {% if mazer_settings.show_sidebar %}id="main"{% endif %} {% if is_popup %}class="m-0"{% endif %}>
+        {% block page_content %}
+            {% if not is_popup %}
+                <header class="mb-3">
+                    <a href="#" class="burger-btn d-block d-xl-none">
+                        <i class="bi bi-justify fs-3"></i>
+                    </a>
+
+                </header>
+            {% endif %}
+                <div class="page-heading">
+                    {% if not is_popup %}
+                    <div class="page-title">
+                        <div class="row">
+                            <div class="col-12 col-md-6 order-md-1 order-last">
+                                <h1 class="m-0">{% block content_title %}{% endblock %}</h1>
+                            </div>
+                            <div class="col-12 col-md-6 order-md-2 order-first">
+                                {% block breadcrumbs %}{% endblock %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <section class="section">
+{#                        <div class="{% if request.path_info == '/admin/'%}row{% else %}card{% endif %}">#}
+                        <div class="row">
+                            {% block content %} {% endblock %}
+                        </div>
+                    </section>
+                </div>
+        {% endblock %}
+        {% block footer %}
+        {% if not is_popup %}
+            <footer class="main-footer pt-5 {{ mazer_ui.footer_classes }}">
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>{% now 'Y' %} &copy; {{ mazer_settings.copyright }}.</p>
+                    </div>
+                    <div class="float-end">
+                        <div class="float-end">
+                            <p>Crafted with <span class="text-danger"><i class="bi bi-heart"></i></span> <a href="https://github.com/ElebrUS/">MegaElebrUS</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            {% if mazer_settings.show_ui_builder %}
+                {% include 'mazer/includes/ui_builder_panel.html' %}
+            {% endif %}
+        {% endif %}
+        {% endblock %}
+    </section>
+</section>
+
+{% if mazer_settings.show_ui_builder %}
+<div id="codeBox" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">{% trans 'UI Configuration' %}</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>{% trans 'Copy this info your settings file to persist these UI changes' %}</p>
+                <pre><code></code></pre>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn {{ mazer_ui.button_classes.danger }}" data-dismiss="modal">{% trans 'Close' %}</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endif %}
+
+<script src="{% static 'assets/vendors/toastify/toastify.js' %}"></script>
+<script src="{% static 'assets/vendors/jquery/jquery.min.js' %}"></script>
+
+<script src="{% static 'assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+
+
+<script src="{% static 'assets/js/sidebar.js' %}"></script>
+
+{% if mazer_settings.custom_js %}
+<script src="{% static mazer_settings.custom_js %}"></script>
+{% endif %}
+
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+{% block messages %}
+    {% for message in messages %}
+        <script>
+        {% if message.tags == 'success' %}
+            ShowMessage('#4fbe87', '{{ message|capfirst }}');
+        {% elif message.tags == 'error' %}
+            ShowMessage('#dc3545', '{{ message|capfirst }}');
+        {% elif message.tags == 'warning' %}
+            ShowMessage('#ffc107', '{{ message|capfirst }}');
+        {% elif message.tags == 'info' %}
+            ShowMessage('#17a2b8', '{{ message|capfirst }}');
+        {% endif %}
+        </script>
+    {% endfor %}
+{% endblock messages %}
+
+{% block extrajs %}{% endblock %}
+
+</body>
+</html>

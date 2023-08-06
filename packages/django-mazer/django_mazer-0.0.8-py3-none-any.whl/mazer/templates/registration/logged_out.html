@@ -1,0 +1,54 @@
+{% load i18n static mazer admin_urls %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_current_language_bidi as LANGUAGE_BIDI %}
+{% get_mazer_settings request as mazer_settings %}
+
+<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>{% block title %}{{ title }} | {% trans 'Log in again' %}{% endblock %}</title>
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="{% static mazer_settings.site_icon %}" type="image/png">
+    <link rel="icon" href="{% static mazer_settings.site_icon %}" sizes="32x32" type="image/png">
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/pages/auth.css' %}">
+
+    {% if mazer_settings.custom_css %}
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{% static mazer_settings.custom_css %}">
+    {% endif %}
+
+    <!-- Google Font: Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    {% block extrastyle %} {% endblock %}
+    {% block extrahead %} {% endblock %}
+</head>
+
+<body>
+
+<div id="auth">
+    <div class="row h-100">
+        <div class="login-box-body">
+            <h1 class="text-center">{{ mazer_settings.site_header }}</h1>
+            <p class="text-center">{{ mazer_settings.welcome_sign }}</p>
+            <p class="text-center">{% trans "Thanks for spending some quality time with the Web site today." %}</p>
+            <p class="text-center"><a class="btn btn-primary" href="{% url 'admin:index' %}">{% trans 'Log in again' %}</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% if mazer_settings.custom_js %}
+<script src="{% static mazer_settings.custom_js %}"></script>
+{% endif %}
+
+</body>
+</html>
