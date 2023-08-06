@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: blockchain_myananta
+Version: 1.0
+Summary: myananata blockchain repository
+Home-page: https://github.com/user/reponame
+Author: Pratham Manocha
+Author-email: pratham369@yahoo.com
+License: wtfpl
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Blockchain,API,Python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
