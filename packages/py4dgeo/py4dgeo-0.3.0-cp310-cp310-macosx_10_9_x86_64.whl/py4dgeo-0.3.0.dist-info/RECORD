@@ -1,0 +1,13 @@
+py4dgeo/util.py,sha256=gHR2YGW2n13viCX-VpAlpBofuDg3-r5vIP4kG8-4NcM,5847
+py4dgeo/__init__.py,sha256=OjNI4vGOUZ34B_yOcS0WvapYWjAQpzum7EmGfZeExkI,189
+py4dgeo/epoch.py,sha256=OjnFuvsYJWRaZWDkBbeA-g-4lHDM40optYLw8QnapqU,1116
+py4dgeo/_py4dgeo.cpython-310-darwin.so,sha256=RDTrssau54jS_twSHecBAeBLqviCKDpwBYqGa1uNnFI,401232
+py4dgeo/m3c2.py,sha256=UwGD_6SW_zqMfKFw340PrEi4YJxE-ONcoOb1xOQ67jU,5135
+py4dgeo/fallback.py,sha256=QkUSA9OJgU2-XNs1QXmDWTtzqJt5HU91IdTF04uD2v0,3217
+py4dgeo/.dylibs/libomp.dylib,sha256=GWL3nnHlZSyyEaxJMZGXhyKJBLOXPf8Uy3pesmm9DLw,662464
+py4dgeo-0.3.0.dist-info/LICENSE.md,sha256=vMqotsCflOgfBmluF52-BYRku9-8gjttScraHXHoSsM,1022
+py4dgeo-0.3.0.dist-info/RECORD,,
+py4dgeo-0.3.0.dist-info/WHEEL,sha256=WQxLNYmO1wYFG3_l45QS5QtrST0p6sfzcuXATxZ6OH8,105
+py4dgeo-0.3.0.dist-info/COPYING.md,sha256=1mYe0909WJ8Wkeo3D0E7QW_mKVFJ0xTjPPzbeQIpOKw,795
+py4dgeo-0.3.0.dist-info/top_level.txt,sha256=Hda6A92db-qiPIT5hUPqcZF2jhZNGidN7XyRJHmfs9A,8
+py4dgeo-0.3.0.dist-info/METADATA,sha256=nG3-8AZIIZVno1B4cFVnhx7-MIKv64idphMwyUjVZPU,474
