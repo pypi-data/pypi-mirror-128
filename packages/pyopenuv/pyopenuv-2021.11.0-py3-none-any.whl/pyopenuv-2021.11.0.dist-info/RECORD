@@ -1,0 +1,8 @@
+pyopenuv/__init__.py,sha256=9R9q9KFrbgSv8DIbdVZH4BB7HXa95hGgfJG8xwvFxn0,70
+pyopenuv/client.py,sha256=Xia-66z4KaBCqsIvjq8MFdXuqp3Dc5PPWuvLk7CwOeo,4591
+pyopenuv/errors.py,sha256=6OEC5kXWXvSP7WZtcQDUPixO9jkbxeAUAjImIo1kVXY,308
+pyopenuv/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyopenuv-2021.11.0.dist-info/LICENSE,sha256=FTF9lC9P4MjR5EcYxNqTzoze0OjPm4L7Up_oihQ3S5I,1067
+pyopenuv-2021.11.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pyopenuv-2021.11.0.dist-info/METADATA,sha256=tTkDyHr6B64wHttaXijGGiUbri1n5J-VVVL9CQYBPMk,5475
+pyopenuv-2021.11.0.dist-info/RECORD,,
