@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: tempfifo
+Version: 1.1.0
+Summary: This module creates temporary named pipes
+Home-page: https://github.com/anthony-aylward/tempfifo.git
+Author: Anthony Aylward
+Author-email: aaylward@eng.ucsd.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tempfifo
+
+This module creates temporary named pipes
+
+## Installation
+
+```sh
+pip3 install tempfifo
+```
+or
+```sh
+pip3 install --user tempfifo
+```
+
+## Example
+
+A `NamedTemporaryFIFO` class is provided and is intended to be used as a
+context manager. The filename of the created pipe is accessible as its `name`
+attribute. For example:
+
+```python
+from tempfifo import NamedTemporaryFIFO
+with NamedTemporaryFIFO() as ntf:
+    print(ntf.name)
+```
+
+
