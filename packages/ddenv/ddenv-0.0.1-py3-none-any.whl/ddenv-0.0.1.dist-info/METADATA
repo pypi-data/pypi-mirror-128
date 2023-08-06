@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ddenv
+Version: 0.0.1
+Summary: Docker Dev Environment, easily develop your programs using containers
+Author-email: Sjors Smits <smits.sjors@gmail.com>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: docker >=5.0.3
+Requires-Dist: typer >=0.4.0
+Project-URL: Home, https://github.com/smitssjors/ddenv
+
+# ddenv
