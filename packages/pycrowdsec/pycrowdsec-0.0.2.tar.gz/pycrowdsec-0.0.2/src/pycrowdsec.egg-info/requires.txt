@@ -1,0 +1,4 @@
+requests
+
+[geo]
+geoip2

@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pycrowdsec/__init__.py
+src/pycrowdsec/cache.py
+src/pycrowdsec/client.py
+src/pycrowdsec/utils.py
+src/pycrowdsec.egg-info/PKG-INFO
+src/pycrowdsec.egg-info/SOURCES.txt
+src/pycrowdsec.egg-info/dependency_links.txt
+src/pycrowdsec.egg-info/requires.txt
+src/pycrowdsec.egg-info/top_level.txt
+src/pycrowdsec/django/__init__.py
+src/pycrowdsec/flask/__init__.py
