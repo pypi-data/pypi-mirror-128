@@ -1,0 +1,26 @@
+{
+  "children": [
+    {
+      "type": "group",
+      "name": "entry-01",
+      "attributes": {
+        "NX_class": "NXentry"
+      },
+      "children": [
+        {
+          "type": "group",
+          "name": "axis_position",
+          "children": [
+            {
+              "module": "f142",
+              "config": {
+                "topic": "Ymir_motion",
+                "source": "SES-SCAN:MC-MCU-001:m2.RBV"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
