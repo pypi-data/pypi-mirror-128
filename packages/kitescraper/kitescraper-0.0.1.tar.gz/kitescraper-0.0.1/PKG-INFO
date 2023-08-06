@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: kitescraper
+Version: 0.0.1
+Summary: Tool for bulk scraping data from Zerodha Kite
+Home-page: UNKNOWN
+Author: Vrishank Bhardwaj
+Author-email: vrishank1997@gmail.com
+License: UNKNOWN
+Description: Tool for bulk scraping data from Zerodha Kite
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows

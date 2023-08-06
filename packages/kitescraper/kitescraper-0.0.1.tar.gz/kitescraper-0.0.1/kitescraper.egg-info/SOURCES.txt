@@ -1,0 +1,9 @@
+README.md
+setup.py
+kitescraper/__init__.py
+kitescraper/login.py
+kitescraper/scrape.py
+kitescraper.egg-info/PKG-INFO
+kitescraper.egg-info/SOURCES.txt
+kitescraper.egg-info/dependency_links.txt
+kitescraper.egg-info/top_level.txt
