@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/IndigoScript.egg-info/PKG-INFO
+src/IndigoScript.egg-info/SOURCES.txt
+src/IndigoScript.egg-info/dependency_links.txt
+src/IndigoScript.egg-info/top_level.txt
