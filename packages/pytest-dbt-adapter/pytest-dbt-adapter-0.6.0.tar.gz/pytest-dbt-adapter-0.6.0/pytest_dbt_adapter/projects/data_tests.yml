@@ -1,0 +1,14 @@
+name: data_tests
+paths:
+    tests/passing.sql: files.tests.passing
+    tests/failing.sql: files.tests.failing
+dbt_project_yml:
+    test-paths:
+        - tests
+
+facts:
+    test:
+        length: 2
+        names:
+            - passing
+            - failing
