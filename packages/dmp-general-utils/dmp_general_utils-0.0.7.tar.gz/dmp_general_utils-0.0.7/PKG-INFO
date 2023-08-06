@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dmp_general_utils
+Version: 0.0.7
+Summary: General functions for the implementation of microservices.
+Home-page: https://github.com/DynamicMedicalPlan/dmp-utils.git
+Author: teisoftllc
+Author-email: logistics@teisoftllc.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+License-File: LICENSE.txt
+
+UNKNOWN
+
