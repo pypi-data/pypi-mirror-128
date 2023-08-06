@@ -1,0 +1,3 @@
+[console_scripts]
+file_manager_integration = file_manager_integration.cli:main
+
