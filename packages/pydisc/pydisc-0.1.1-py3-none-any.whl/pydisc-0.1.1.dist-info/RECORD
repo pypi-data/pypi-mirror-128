@@ -1,0 +1,15 @@
+pydisc/Bot.py,sha256=Lyr20Eo4AXdJth2wRDeYAZZrsrhdKWUWSTzMC9HjH-M,1927
+pydisc/__init__.py,sha256=xjXsg9jK5NzwxL0Z0hM295hwN2kaqZmqYZTsYZdQoOw,40
+pydisc/api.py,sha256=1mOAOBGDkiJ1vI_6F9koSL5H1dWet3GWCWNBEyk89qM,1535
+pydisc/ws.py,sha256=8wjTElYEesJvrQXE5VWGcTtl2dmTPtvTIqGHe_klR6c,1481
+pydisc/setup/__init__.py,sha256=7HOyxOgTJ290_XLvDd0Zv8MgAbF9hWvAa5IXBZO638M,29
+pydisc/setup/command.py,sha256=lPuPABxKLt0q2J0XNQrg4HzRWCSDFJiwq-dmmch4jeA,699
+pydisc/types/__init__.py,sha256=anMnezUSpKpLRoNLd5dc4Ev9f-xX-X7uCpK-2f-pFAc,89
+pydisc/types/interaction.py,sha256=kOYK9y8PcrQmv-L1hOY-BB_FPkE8no7JmkoFP9HfecE,581
+pydisc/types/message.py,sha256=oFk-A4w8-d-YRw_TxQgisz_iYDm1EqJLiLrnWMCgNuE,915
+pydisc/types/user.py,sha256=Ah1b6ZfANtvvYwqrsNfmeAyAnDVQNMp2RNtTdOvbxu0,810
+pydisc-0.1.1.dist-info/LICENSE,sha256=87wz59aBo13O7C5kOmNbpuBXR7uaG_imoVRxJEd2CcY,1068
+pydisc-0.1.1.dist-info/METADATA,sha256=HjfQHsJE6l0UzR0n_XoCVXI5_mBVECnjQiSvJ-2VRD8,1572
+pydisc-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pydisc-0.1.1.dist-info/top_level.txt,sha256=opz1_uqH8Xizgau5hkkQPqEAMzmlgssStG_LUTYWhco,7
+pydisc-0.1.1.dist-info/RECORD,,
