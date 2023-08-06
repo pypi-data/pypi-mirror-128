@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+pystatworld/Binomialdistribution.py
+pystatworld/Gaussiandistribution.py
+pystatworld/Generaldistribution.py
+pystatworld/__init__.py
+pystatworld.egg-info/PKG-INFO
+pystatworld.egg-info/SOURCES.txt
+pystatworld.egg-info/dependency_links.txt
+pystatworld.egg-info/not-zip-safe
+pystatworld.egg-info/top_level.txt
