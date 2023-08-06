@@ -1,0 +1,11 @@
+napari_script_editor/__init__.py,sha256=XnpV36bKI1XocHqy3b9oj_K3jXympAF3ej9u-is-Dg8,186
+napari_script_editor/_dock_widget.py,sha256=WavzTgGeF3gIO1mJ1C9wVG_wD-33k-oOwJrFzKJjTBc,3246
+napari_script_editor/_scripts_directory.py,sha256=bzl5iAFPS-fgpWApFfzukPyeQobqx5X3ddKLXzLWMQQ,2004
+napari_script_editor/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_script_editor/_tests/test_dock_widget.py,sha256=XK6ouiF-llhcwxoaFCI_w4OdH1wbwEp6H-HM4_xuTDw,735
+napari_script_editor-0.2.1.dist-info/LICENSE,sha256=gaEK9zf6A7i7WTQXrc4mKng8hJNBuCtHFyZr35Zo5FA,1519
+napari_script_editor-0.2.1.dist-info/METADATA,sha256=QXPlidIU3Z5iCKs1AqkxIqUncCHoqVhldlbaeigT5II,5455
+napari_script_editor-0.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+napari_script_editor-0.2.1.dist-info/entry_points.txt,sha256=aOmX_aBE_w_mXDqXV5pNUq1lUcGEpk3YP98dwHI2E3k,61
+napari_script_editor-0.2.1.dist-info/top_level.txt,sha256=dYgX_6rIpXqeWdwT5tUtUl5JNV3X6aTpznufUzHQHhM,21
+napari_script_editor-0.2.1.dist-info/RECORD,,
