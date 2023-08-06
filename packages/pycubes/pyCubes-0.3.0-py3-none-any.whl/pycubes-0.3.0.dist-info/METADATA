@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: pycubes
+Version: 0.3.0
+Summary: Library for creating servers and clients Minecraft Java Edition
+Home-page: https://github.com/DavisDmitry/pyCubes
+License: MIT
+Author: Dmitry Davis
+Author-email: dmitrydavis@protonmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Provides-Extra: docs
+Requires-Dist: lazydocs (>=0.4.8,<0.5.0); extra == "docs"
+Requires-Dist: mkdocs-material (>=7.3.6,<8.0.0); extra == "docs"
+Requires-Dist: mkdocs-static-i18n (>=0.21,<0.23); extra == "docs"
+Requires-Dist: nbtlib (==2.0.4)
+Requires-Dist: pydocstyle (>=6.1.1,<7.0.0); extra == "docs"
+Project-URL: Documentation, https://pycubes.dmitrydavis.xyz
+Description-Content-Type: text/markdown
+
+# pyCubes
+
+[![PyPI](https://img.shields.io/pypi/v/pyCubes?style=flat)](https://pypi.org/project/pycubes) [![Test](https://github.com/DavisDmitry/pyCubes/actions/workflows/test.yml/badge.svg)](https://github.com/DavisDmitry/pyCubes/actions/workflows/test.yml) [![Lint](https://github.com/DavisDmitry/pyCubes/actions/workflows/lint.yml/badge.svg)](https://github.com/DavisDmitry/pyCubes/actions/workflows/lint.yml) [![codecov](https://codecov.io/gh/DavisDmitry/pyCubes/branch/master/graph/badge.svg?token=Y18ZNYT4YS)](https://codecov.io/gh/DavisDmitry/pyCubes) [![PyPI - License](https://img.shields.io/pypi/l/pyCubes)](https://pypi.org/project/pycubes) [![Downloads](https://pepy.tech/badge/pycubes/month)](https://pepy.tech/project/pycubes) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+
+---
+[Documentation](https://pycubes.dmitrydavis.xyz/)
+
+---
+pyCubes is a library for creating servers and clients Minecraft Java Edition.
+
+**❗ 0.x versions are not stable. The library API is subject to change.**
+
+Installation:
+
+```bash
+pip install pyCubes
+```
+
+## Usage
+
+First you need to create application instance:
+
+```python3
+import cubes
+
+app = cubes.Application()
+```
+
+After that add a low-level handler:
+
+```python3
+async def process_handshake(packet_id: int, packet: cubes.ReadBuffer):
+    print('Protocol version:', packet.varint)
+    print('Server host:', packet.string)
+    print('Server port:', packet.unsigned_short)
+    print('Next state:', cubes.ConnectionStatus(packet.varint))
+
+app.add_low_level_handler(cubes.ConnectionStatus.HANDSHAKE, 0x00, process_handshake)
+```
+
+All that remains is to launch the application:
+
+```python3
+app.run('127.0.0.1', 25565)
+```
+
+A more detailed example can be found [here](https://github.com/DavisDmitry/pyCubes/blob/master/example.py).
+
+All packages are described [here](https://wiki.vg/Protocol).
+
