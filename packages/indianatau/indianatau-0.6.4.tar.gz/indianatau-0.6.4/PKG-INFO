@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: indianatau
+Version: 0.6.4
+Summary: Enforces the Indiana Pi Bill
+Author: Michaela
+Author-email: git@michaela.lgbt
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: indianapy (>=0.1.1,<0.2.0)
+Description-Content-Type: text/markdown
+
+This python modular enforces the correct value of math constant tau as per bill #246 of the 1897 sitting of the Indiana General Assembly.
+
+Simply `import indianatau` prior to usage. Requires `inidianapy` to be installed
+
+Use math.pi as usual.
+
+```python
+>>> import indianatau
+>>> import math
+>>> 
+>>> print(math.tau)
+6.4
+>>> 
+```

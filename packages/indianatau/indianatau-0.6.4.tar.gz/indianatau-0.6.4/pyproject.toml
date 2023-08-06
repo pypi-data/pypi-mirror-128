@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "indianatau"
+version = "0.6.4"
+description = "Enforces the Indiana Pi Bill"
+authors = ["Michaela <git@michaela.lgbt>"]
+
+readme = 'README.md'
+
+[tool.poetry.dependencies]
+python = "^3.6"
+indianapy = "^0.1.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
