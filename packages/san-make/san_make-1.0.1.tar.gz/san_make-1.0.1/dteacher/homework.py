@@ -1,0 +1,36 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
+import time,random
+drive=webdriver.Chrome(executable_path='chromedriver')
+drive.maximize_window()
+drive.get('http://localhost:8080/woniusales/')
+acc1=drive.find_element_by_id('username')
+passwd1=drive.find_element(By.ID,'password')
+verifycode1=drive.find_element_by_id("verifycode")
+login1=drive.find_elements(By.CLASS_NAME,'btn-primary')
+acc1.clear()
+acc1.send_keys('admin')
+passwd1.send_keys('123456')
+verifycode1.send_keys('0000')
+drive.find_elements(By.CLASS_NAME,'btn-primary')[1].click()
+time.sleep(1)
+bar=drive.find_element_by_id('barcode')
+bar.send_keys('6955203636348')
+drive.find_element_by_xpath('/html/body/div[4]/div[1]/div/div[1]/form/button').click()
+s=drive.find_element_by_id('paymethod')
+op=Select(s).options
+op=random.choice(op)
+op.click()
+time.sleep(2)
+# r=random.randint(0,len(op)-1)
+# Select(s).select_by_index(r)
+js='document.getElementById("newcredit").value="1000"'
+drive.execute_script(js)
+time.sleep(1)
+phone=drive.find_element_by_id('customerphone')
+phone.send_keys('13143214321')
+drive.find_element_by_id('submit').click()
+time.sleep(5)
+drive.switch_to.alert.accept()
+# drive.quit()

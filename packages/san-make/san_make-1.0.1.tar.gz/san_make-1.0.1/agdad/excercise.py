@@ -1,0 +1,37 @@
+s=' ashjhsas asasak '
+list=['1','2','3','4','5','6']
+dc={1:'1',2:'2',3:'3',4:'4',5:'5'}
+print(s.find('as'))
+print(s.count('a'))
+print(s.replace('a','我'))
+print(s.split('a'))
+print(s.capitalize())
+print(s.title())
+print(s.strip())
+print(s.startswith(' '))
+print(s.swapcase())
+print(s.join(list))
+list.append('7')
+print(list)
+list.insert(0,'0')
+print(list)
+list.remove('1')
+print(list)
+list.pop()
+print(list)
+print(max(list),min(list),list.count('2'),list.index('2'))
+list.reverse()
+print(list)
+list.sort()
+print(list)
+print(dc.get(1),dc.keys(),dc.values())
+for i in dc.items():
+    print(i)
+del dc[1]
+print(dc)
+dc.clear()
+print(dc)
+# reversed(list)
+# print(list)
+# del list
+# print(list)
