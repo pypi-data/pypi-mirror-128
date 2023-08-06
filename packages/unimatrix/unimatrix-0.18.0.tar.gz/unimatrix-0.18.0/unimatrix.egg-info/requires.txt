@@ -1,0 +1,4 @@
+dsnparse
+jinja2
+PyYAML>=5.2
+termcolor
