@@ -1,0 +1,181 @@
+sql:
+  filename: testDB_large.sqlite
+  type: sqlite
+
+database:
+  
+  tables:
+    storage:
+      sample_id:
+        label: Storage ID
+        type: String
+        primary_key: True
+      unique_id:
+        label: Unique ID
+        type: String
+      sample_status:
+        label: Sample Status
+        type: String
+      sample_type:
+        label: Sample Type
+        type: String
+      sample_used:
+        label: Sample Used
+        type: String
+      plate:
+        label: Plate
+        type: String
+        not_null: True
+      well:
+        label: Well
+        type: String
+        not_null: True
+      collection_box:
+        label: Collection Box
+        type: String
+      processed_by:
+        label: Processed By
+        type: String
+      date_processed:
+        label: Date Processed
+        type: Date
+      storage_file:
+        label: Storage File
+        type: String
+    boxes:
+      box_id:
+        label: Box ID
+        type: Integer
+        primary_key: True
+      box:
+        label: Box
+        type: String
+        not_null: True
+        unique: True
+      rack:
+        label: Rack
+        type: String
+      freezer:
+        label: Freezer
+        type: String
+    plates:
+      plate_id:
+        label: Plate ID
+        type: Integer
+        primary_key: True
+      plate:
+        label: Plate
+        type: String
+        not_null: True
+        unique: True
+      box:
+        label: Box
+        type: String
+    collection:
+      unique_id:
+        label: Unique ID
+        type: String
+        not_null: True
+        unique: True
+      site_code:
+        label: Site Code
+        type: String
+      collected_by:
+        label: Collected By
+        type: String
+      date_collected:
+        label: Date Collected
+        type: Date
+      time_entered:
+        label: Time Entered
+        type: String
+      sex:
+        label: Sex
+        type: String
+      life_stage: 
+        label: Life Stage
+        type: String
+      has_pollen:
+        label: Has Pollen?
+        type: String
+      species_guess:
+        label: Species Guess
+        type: String
+      sample_preserved:
+        label: Sample Preserved
+        type: String
+      preservation_method:
+        label: Sample Preservation Method
+        type: String
+      head_preserved:
+        label: Head Preserved
+        type: String
+      head_preservation_method:
+        label: Head Preservation Method
+        type: String
+      from_nest:  
+        label: From Nest?
+        type: String
+      nest_code:  
+        label: Nest Code
+        type: String
+      collected_notes:  
+        label: Notes
+        type: String
+      collection_file: 
+        label: Collection File
+        type: String
+    sequencing:
+      sequence_id:
+        label: Sequence ID
+        type: String
+        not_null: True
+        unique: True
+      sample_id:
+        label: Storage ID
+        type: String
+        not_null: True
+      sequence_status:
+        label: Status
+        type: String
+        not_null: True
+      species:
+        label: Species
+        type: String
+      reads:  
+        label: Reads
+        type: String
+        not_null: True
+      bold_id:
+        label: BOLD Identifier
+        type: String
+      seq_percent_ident:  
+        label: Percent Identity
+        type: String
+      seq_align_len:  
+        label: Alignment Length
+        type: String
+      seq_len:  
+        label: Sequence Length
+        type: String
+      sequence:  
+        label: Sequence
+        type: String
+      ambiguous_hits:  
+        label: Ambiguous Hits
+        type: String
+      bold_bins:  
+        label: BOLD Bins
+        type: String
+    
+    locations:
+      site_code:
+        label: Site Code
+        type: String
+        not_null: True
+        unique: True
+      location_name:
+        label: Location
+        type: String
+        label: GPS
+        type: String
