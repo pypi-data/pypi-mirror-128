@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+webpilot/__init__.py
+webpilot/config.py
+webpilot/models.py
+webpilot/robot.py
+webpilot.egg-info/PKG-INFO
+webpilot.egg-info/SOURCES.txt
+webpilot.egg-info/dependency_links.txt
+webpilot.egg-info/requires.txt
+webpilot.egg-info/top_level.txt
