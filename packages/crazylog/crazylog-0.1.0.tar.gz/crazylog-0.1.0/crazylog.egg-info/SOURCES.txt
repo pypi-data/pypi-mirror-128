@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+crazylog/__init__.py
+crazylog/crazy_logger.py
+crazylog/module_dec.py
+crazylog.egg-info/PKG-INFO
+crazylog.egg-info/SOURCES.txt
+crazylog.egg-info/dependency_links.txt
+crazylog.egg-info/top_level.txt
