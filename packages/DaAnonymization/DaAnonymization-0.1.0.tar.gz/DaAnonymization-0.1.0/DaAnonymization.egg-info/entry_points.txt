@@ -1,0 +1,3 @@
+[console_scripts]
+textprivacy = textprivacy.cli:main
+
