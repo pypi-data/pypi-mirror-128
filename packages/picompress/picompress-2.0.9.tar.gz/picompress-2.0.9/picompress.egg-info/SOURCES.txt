@@ -1,0 +1,8 @@
+setup.py
+picompress/__init__.py
+picompress/compressor.py
+picompress.egg-info/PKG-INFO
+picompress.egg-info/SOURCES.txt
+picompress.egg-info/dependency_links.txt
+picompress.egg-info/top_level.txt
+picompress/so/libcim.so
