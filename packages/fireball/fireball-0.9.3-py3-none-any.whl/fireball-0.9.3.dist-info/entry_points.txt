@@ -1,0 +1,6 @@
+[console_scripts]
+fib = fireball:exec
+fib-arg-to-stat = fireball:exec_print_export_variable_statements
+fireball = fireball:exec
+fireball-argument-to-export-statement = fireball:exec_print_export_variable_statements
+
