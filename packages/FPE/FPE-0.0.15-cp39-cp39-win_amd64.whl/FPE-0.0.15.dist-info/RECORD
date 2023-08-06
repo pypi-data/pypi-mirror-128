@@ -1,0 +1,14 @@
+FPE/FPE.py,sha256=MbywiLVG1j-urJFvZBC1aEhkByj5fZJXlpS65ppeKvo,1224
+FPE/Format.py,sha256=4cF4pZPH4FnByX0DbHzMx4tdZUv6LBd6vS_vWEEUXY8,71
+FPE/Mode.py,sha256=n5RItQSzhY-GQIOWOstLGzjToPL52fYTyrCjSOHi6WY,16
+FPE/ff1.cp39-win_amd64.pyd,sha256=L7qtS4gAuO6ltQDY8pusD3Ac3DvSpm3Q88faHIt3UR8,87552
+FPE/ff3.cp39-win_amd64.pyd,sha256=27pivTTGJ1ixiuTB0v5VkKM3oG_c5v3_N80ipfb3JAY,65536
+FPE/format_translator.py,sha256=wrtTqucXuywis4puQ2U1j1rZ0tunhZP0I7JGxoqIQ7s,24982
+FPE/formatter.py,sha256=R5Z4wL-DSJokMnN8kpXA09_WJWuzWeO-9RvpjHseLrk,3689
+FPE/fpe_csv.py,sha256=2fUEHJ9sxpLjTZsJMEx6mRw2RlxxMpFdnIuPdp-RpFo,4947
+FPE/mode_selector.py,sha256=4i3PraNyhZEfhXRcOoKAzqRBwAvdmeaUbrcdlz3pvjM,475
+FPE-0.0.15.dist-info/LICENSE.txt,sha256=aocVvREI4kXCiA28mDYODH-4avWL-8RiLF2RvR47g5c,1077
+FPE-0.0.15.dist-info/METADATA,sha256=Xai-HSGVLCEBWazUAmUNuYzVXW0qw2ZVcMjnZPY9d8g,1256
+FPE-0.0.15.dist-info/WHEEL,sha256=MRZ_p7RU4olp1XL4U2EYLkuYikriaVRqXBoKVLH_OSE,100
+FPE-0.0.15.dist-info/top_level.txt,sha256=m4wNcOuXnIXyAcVndAP8jz6qEWBWx-Sk5sfvTXUnD1A,98
+FPE-0.0.15.dist-info/RECORD,,
