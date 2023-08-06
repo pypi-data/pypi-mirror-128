@@ -1,0 +1,8 @@
+setup.py
+aplotme/__init__.py
+aplotme/animate.py
+aplotme.egg-info/PKG-INFO
+aplotme.egg-info/SOURCES.txt
+aplotme.egg-info/dependency_links.txt
+aplotme.egg-info/requires.txt
+aplotme.egg-info/top_level.txt

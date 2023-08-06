@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aplotme
+Version: 0.0.3
+Summary: plot pendulum simulation
+Home-page: UNKNOWN
+Author: mohammad saeidi
+Author-email: mohammadsaeidi1551@gmail.com
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+ploting your pendulum datas extracted from apdl
+
