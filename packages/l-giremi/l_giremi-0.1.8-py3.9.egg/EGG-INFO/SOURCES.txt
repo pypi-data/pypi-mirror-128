@@ -1,0 +1,15 @@
+README.md
+l-giremi
+setup.py
+bin/calculate_site_splice_mi
+bin/correct_splice_site
+bin/get_aei
+bin/get_read_intron
+bin/get_read_mismatch
+bin/get_read_site
+bin/get_read_splice
+bin/split_bam_by_site
+l_giremi.egg-info/PKG-INFO
+l_giremi.egg-info/SOURCES.txt
+l_giremi.egg-info/dependency_links.txt
+l_giremi.egg-info/top_level.txt
