@@ -1,0 +1,3 @@
+[munibot_profiles]
+us = countybot_us.profile:CountyBotUS
+
