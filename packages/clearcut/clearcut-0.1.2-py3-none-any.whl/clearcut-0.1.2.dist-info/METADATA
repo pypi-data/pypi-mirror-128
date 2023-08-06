@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: clearcut
+Version: 0.1.2
+Summary: A straightforward and lightweight logging wrapper library
+Home-page: https://github.com/tangibleintelligence/clearcut
+Author: Tangible Intelligence
+Author-email: austin@tangibleintelligence.com
+License: UNKNOWN
+Keywords: logging
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+
+# Clearcut: A straightforward and lightweight logging wrapper library
+
+[![Build Status](https://cloud.drone.io/api/badges/tangibleintelligence/clearcut/status.svg)](https://cloud.drone.io/tangibleintelligence/clearcut)
+
+This provides some helpful wrapper and util functions for logging, and formats log messages in a more human-readable way by default.
+
+## Use
+
+At the top of the file:
+
+```python
+from clearcut import get_logger
+
+...
+
+logger = get_logger(__name__)
+```
+
+Logging can be performed ad-hoc:
+
+```python
+logger.info("info log")
+logger.warning("warn log", exc_info=e)
+```
+
+"log blocks" can also be created which automatically log entrance/exits as well as performance information
+
+```python
+from clearcut import log_block, get_logger
+
+...
+
+logger = get_logger(__name__)
+
+...
+
+with log_block("block name", logger):
+    ...
+```
+
+## TODO
+- Would like to use contextvars to create a contextmanager where additional "metadata" can be specified (and unspecified) which would be
+included with logging automatically.
+- json logging
+- Integration with a tool like Splunk
+
