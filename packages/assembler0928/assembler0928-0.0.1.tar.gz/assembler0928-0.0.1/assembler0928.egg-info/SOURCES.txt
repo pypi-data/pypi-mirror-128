@@ -1,0 +1,6 @@
+setup.py
+SIC_Assembler/main.py
+assembler0928.egg-info/PKG-INFO
+assembler0928.egg-info/SOURCES.txt
+assembler0928.egg-info/dependency_links.txt
+assembler0928.egg-info/top_level.txt
