@@ -1,0 +1,17 @@
+Evaluation.py,sha256=N2-S0pyYFzFt4cddII7LRzA2Y9k07jySNnDQsYpnFts,8386
+Minimization.py,sha256=GfhQwy8dwXo8NiifICofxlpEnIxlvuZoK4UiasLKXCk,8727
+SequenceModel.py,sha256=ZOVFRWuykMpsnlKSeLgSkKBjAQkcI5COZGVwjzcPV0Y,13884
+SequiturTool.py,sha256=l0pp8qPAF1k3RBZvho4ZG3LdRdsdGaNF21ySSmce8iA,13868
+_sequitur_.cp38-win_amd64.pyd,sha256=cyMujVoOoO-vXEbrd5XibQFck8qehD92MnBWL9s7z5M,238080
+g2p.py,sha256=RJevaN3IevlnLXsWUNSTFrSijOycfILFZY3cWtpmoUE,13283
+misc.py,sha256=fOkld7uQCk3FbrrTekm_TJDVrQx2DbiSWfbS2S10YV0,9300
+sequitur.py,sha256=vYmAuee1Q81BrWTnYJOqD5MhaUtenrnpXcf3_yS3Zxs,32968
+sequitur_.py,sha256=zeN4AnieV1iPsOX9ZVwO3ZzLMicxRc4Z8bAVPXAIpic,12475
+symbols.py,sha256=nPtQdfgF5wR-MVwiOz91JAcnlunlHL1BTzY1BdYPsDA,2269
+tool.py,sha256=Mih_SYDYwoRkBLaEQsSp3h2tGc5uG_yC1gTTH80292Y,3742
+sequitur_g2p-1.0.1668.20.data/scripts/g2p.py,sha256=RJevaN3IevlnLXsWUNSTFrSijOycfILFZY3cWtpmoUE,13283
+sequitur_g2p-1.0.1668.20.dist-info/LICENSE,sha256=ny4lCZPGIG-sZDgk4F5aDX0-CJXZ4Jpc5LErwmEK_BE,18326
+sequitur_g2p-1.0.1668.20.dist-info/METADATA,sha256=q4B50rVJv4LRJ5aTIUQNKnGU0g_A9K9F2dc9fHvPmhU,7553
+sequitur_g2p-1.0.1668.20.dist-info/WHEEL,sha256=P24hRDQapckAvHvgBBzlH5uw6rQ_oZQtKbG6drGrqOM,100
+sequitur_g2p-1.0.1668.20.dist-info/top_level.txt,sha256=BRyIvnInZOrvqZfH9o5XYWDFYBC1mLqk39bHzLqkcec,103
+sequitur_g2p-1.0.1668.20.dist-info/RECORD,,
