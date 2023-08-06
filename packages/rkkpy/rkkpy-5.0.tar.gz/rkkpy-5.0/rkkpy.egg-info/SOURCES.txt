@@ -1,0 +1,11 @@
+MANIFEST.in
+README.txt
+setup.py
+myPackage/__init__.py
+myPackage/somePython.py
+myPackage/packageData/sampleData.dat
+rkkpy.egg-info/PKG-INFO
+rkkpy.egg-info/SOURCES.txt
+rkkpy.egg-info/dependency_links.txt
+rkkpy.egg-info/requires.txt
+rkkpy.egg-info/top_level.txt
