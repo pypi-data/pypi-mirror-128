@@ -1,0 +1,3 @@
+[console_scripts]
+fit_rpy=clophfit.fit_rpy:main
+

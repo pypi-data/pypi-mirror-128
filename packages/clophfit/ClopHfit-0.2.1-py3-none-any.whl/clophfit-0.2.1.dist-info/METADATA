@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: clophfit
+Version: 0.2.1
+Summary: Cli for fitting macromolecule pH titration or binding assays data e.g. fluorescence spectra.
+Home-page: https://github.com/darosio/ClopHfit
+License: BSD-3-Clause
+Keywords: svd,ClopHensor,data fitting,pH,macromolecule binding
+Author: daniele arosio
+Author-email: daniele.arosio@cnr.it
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: lmfit (>=0.8,<0.9)
+Requires-Dist: matplotlib (>=1,<2)
+Requires-Dist: numpy (>=1.10,<1.11)
+Requires-Dist: pandas (>=0.18,<0.19)
+Requires-Dist: scipy (>=0.18,<0.19)
+Requires-Dist: seaborn (>=0.7,<0.8)
+Project-URL: Repository, https://github.com/darosio/ClopHfit
+Description-Content-Type: text/markdown
+
+[![PyPI](https://img.shields.io/pypi/v/ClopHfit.svg)](https://pypi.org/project/ClopHfit/)
+
+# ClopHfit #
+
+* Cli for fitting macromolecule pH titration or binding assays data e.g. fluorescence spectra.
+* Version: "0.1.1"
+
+## Installation
+
+At this stage few scripts are available in src/clophfit/old.
+
+    pyenv install 3.6.15
+    poetry install
+    poetry run pytest -v
+
+## Use
+
+### fit_titration.py ###
+
+A single script for pK and Cl and various methods w/out bootstraping:
+1. svd
+2. bands and
+3. single lambda.
+
+>   input ← csvtable and note_file
+
+>   output → pK spK (stdout) and pdf of analysis
+
+#### To do
+
+- Bootstrap svd with optimize or lmfit.
+- **Average spectra**
+- Join spectra ['B', 'E', 'F']
+- Compute band integral (or sums)
+
+### fit_titration_global.py ###
+
+A script for fitting tuples (y1, y2) of values for each concentration (x).
+It uses lmfit confint and bootstrap.
+
+>   input ← x y1 y2 (file)
+
+>   output → K SA1 SB1 SA2 SB2 , png and correl.png
+    
+In global fit the best approach was using lmfit without bootstraping.
+
+#### Example
+     
+	 for i in *.dat; do gfit $i png2 --boot 99 > png2/$i.txt; done
+
