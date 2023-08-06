@@ -1,0 +1,17 @@
+parameters:
+  jobsbundle:
+    databricks:
+      host: 'https://dbc-123.cloud.databricks.com'
+      token: 'abcd123456'
+      notifications:
+        on_failure: []
+
+    jobs:
+      main:
+        name: '{identifier} (%kernel.environment%)'
+
+        new_cluster:
+          spark_version: '9.1.x-scala2.12'
+          node_type_id: 'i3.2xlarge'
+        notebook_task:
+          notebook_path: '/my-project/main'
