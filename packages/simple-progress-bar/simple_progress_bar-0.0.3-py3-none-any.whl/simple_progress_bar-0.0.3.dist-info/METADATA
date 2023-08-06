@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: simple-progress-bar
+Version: 0.0.3
+Summary: Simple progress bar for your console apps in python
+Home-page: https://github.com/mLandim/simple_progress_bar
+Author: Marcelo Landim
+Author-email: marcelolandim85@gmail.com
+License: MIT
+Project-URL: Bug Report, https://github.com/mLandim/simple_progress_bar/issues
+Keywords: progress,bar,progress-bar,console,terminal
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: tox (>=3.24) ; extra == 'dev'
+Requires-Dist: check-manifest (>=0.47wheel) ; extra == 'dev'
+
+# Simple Progress Bar
+
+This module will print a progress bar for console apps.
+It should be used inside a for loop.
+
+
+## Installation
+
+`pip install simple-progress-bar`
+
+## Usage
+
+```python
+
+# import function from module
+from simple_progress_bar import print_progressbar
+
+def test_function():
+
+    df_test = pd.read_excel('test_file_read.xls')
+    df_test_size = len(df_dles.index)
+
+    # iterate through anything
+    for index, row in df_test.iterrows():
+        index_fix = index + 1
+        result = 'Test' 
+        df_test.loc[index, 'result'] = result
+
+        # Printing the progress bar
+        print_progressbar(index_fix, df_test_size, blank='-', description=f"Testing: Line {index}")
+
+    df_test.to_excel('test_file_write.xls')
+
+
+```
+
+
