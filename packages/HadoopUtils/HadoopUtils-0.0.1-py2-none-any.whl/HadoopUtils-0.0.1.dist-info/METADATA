@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: HadoopUtils
+Version: 0.0.1
+Summary: Use python to connect to the relevant configuration of the CDP cluster
+Home-page: UNKNOWN
+Author: Zhuhs
+Author-email: zhuhs087@163.com
+License: apache 3.0
+Platform: UNKNOWN
+Requires: impyla
+Requires: boto3
+Requires: kafka
+
+UNKNOWN
+
+
