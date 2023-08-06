@@ -1,0 +1,10 @@
+tencentcloud/__init__.py,sha256=gYxoMU3Cgj_BJnP2Sqeh4s5xKDZX9xkwb0Y3CS60A_Y,630
+tencentcloud/tione/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/tione/v20191022/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/tione/v20191022/errorcodes.py,sha256=582AUJfcxPrfGUa3WvBgidNScDCShY7YSnoMVK3jlwo,4347
+tencentcloud/tione/v20191022/models.py,sha256=ilhSYTpfb9_4_Jb2Fwuv-1TmwcMKcFYS3bvJXpDc56Y,91250
+tencentcloud/tione/v20191022/tione_client.py,sha256=ALCN9ja9iiLB5EfDKOpFKUHRbuMpNJ2CmXvqRWs9oFk,28496
+tencentcloud_sdk_python_tione-3.0.533.dist-info/METADATA,sha256=si_Rbh16XsN2GyXu3wREwdX0fpyOncCu55NMFeR44h0,1442
+tencentcloud_sdk_python_tione-3.0.533.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+tencentcloud_sdk_python_tione-3.0.533.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_tione-3.0.533.dist-info/RECORD,,
