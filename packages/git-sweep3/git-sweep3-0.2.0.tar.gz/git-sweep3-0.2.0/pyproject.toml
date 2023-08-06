@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "git-sweep3"
+version = "0.2.0"
+description = "Clean up branches from your Git remotes"
+authors = ["Talha Junaid <talhajunaidd@gmail.com>"]
+repository = "https://github.com/talhajunaidd/git-sweep3"
+license = "MIT"
+readme = "README.rst"
+packages = [{ include = "gitsweep", from = "src" }]
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Environment :: Console',
+    'License :: OSI Approved :: MIT License',
+    'Intended Audience :: Developers',
+    'Natural Language :: English',
+    'Operating System :: POSIX',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Topic :: Software Development :: Quality Assurance',
+    'Topic :: Software Development :: Version Control',
+    'Topic :: Text Processing'
+]
+keywords = ["git", "maintenance", "branches"]
+
+[tool.poetry.dependencies]
+python = "^3.7,<3.10.0"
+GitPython = "^3.1.24"
+
+
+[tool.poetry.dev-dependencies]
+nose = "^1.3.7"
+mock = "^4.0.3"
+tox = "^3.24.4"
+
+[tool.poetry.scripts]
+git-sweep = 'gitsweep.entrypoints:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.build]
+generate-setup-file = false
