@@ -1,0 +1,10 @@
+belief_propagation/__init__.py,sha256=EUKu5LRFZhtFBSwyveY8_1j82Y2H0m0kYlVSFOEsvEU,216
+belief_propagation/algorithm.py,sha256=4uVxFfgQFAbJ0bgrHFHZ0mFVrWCQWr9Uh052cm2VJwY,1459
+belief_propagation/channel_models.py,sha256=Ry7cRwgyRXvrDQNVzrOvdGy-hSjHYthpRTS_eGJS8gw,593
+belief_propagation/graph.py,sha256=o6z8bsfDgO3o_PxyBEj7InEmBu-BBxMvnk6ixSPRzJo,4630
+belief_propagation/node.py,sha256=XHuWGTn8hsG82irWLdozKw93MTIC-fMb0h_CFaJaRxY,3526
+belief_propagation_ldpc-1.0.1.dist-info/LICENSE,sha256=4ft1X1qbS7uOp6s31ZTrRwQG0O_Odn63LeEbb676hFE,1067
+belief_propagation_ldpc-1.0.1.dist-info/METADATA,sha256=1KuKS-5UAbV6UkmK4DNV1fV6fAIHRjtKHpgPERP75ew,4806
+belief_propagation_ldpc-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+belief_propagation_ldpc-1.0.1.dist-info/top_level.txt,sha256=WhKuRerDfc1phXjIF_gsGEv8YpW6UOx35zzNNafOEUQ,19
+belief_propagation_ldpc-1.0.1.dist-info/RECORD,,
