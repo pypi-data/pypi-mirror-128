@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/promisio/__init__.py
+src/promisio.egg-info/PKG-INFO
+src/promisio.egg-info/SOURCES.txt
+src/promisio.egg-info/dependency_links.txt
+src/promisio.egg-info/not-zip-safe
+src/promisio.egg-info/top_level.txt
