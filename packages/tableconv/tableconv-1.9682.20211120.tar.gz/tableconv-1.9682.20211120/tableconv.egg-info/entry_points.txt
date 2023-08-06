@@ -1,0 +1,3 @@
+[console_scripts]
+tableconv = tableconv.main:main_cli_wrapper
+
