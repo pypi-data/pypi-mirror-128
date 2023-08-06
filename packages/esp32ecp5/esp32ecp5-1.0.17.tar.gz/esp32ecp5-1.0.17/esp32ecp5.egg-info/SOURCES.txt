@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+ecp5.py
+ecp5setup.py
+ecp5wp.py
+gzip4k.py
+sdraw.py
+setup.cfg
+setup.py
+uftpd.py
+wifiman.py
+esp32ecp5.egg-info/PKG-INFO
+esp32ecp5.egg-info/SOURCES.txt
+esp32ecp5.egg-info/dependency_links.txt
+esp32ecp5.egg-info/top_level.txt
