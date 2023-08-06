@@ -1,0 +1,5 @@
+.vscode
+__pycache__
+Dockerfile.dev
+Dockerfile.product
+README.md

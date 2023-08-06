@@ -1,0 +1,3 @@
+
+[console_scripts]
+roictl=roi_ctl:cli

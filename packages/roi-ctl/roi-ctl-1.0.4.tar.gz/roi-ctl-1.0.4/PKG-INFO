@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: roi-ctl
+Version: 1.0.4
+Summary: Change Module Infomation
+Home-page: UNKNOWN
+Author: roictl
+Author-email: ops@smartahc.com
+License: smartahc
+Description: UNKNOWN
+Keywords: roi_ctl
+Platform: UNKNOWN
+Requires-Python: >=3.8

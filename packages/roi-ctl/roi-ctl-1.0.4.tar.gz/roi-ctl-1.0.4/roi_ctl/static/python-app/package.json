@@ -1,0 +1,33 @@
+{
+    "name": "{NAME}",
+    "mode": "project",
+    "version": "1.0.0",
+    "description": "Change Module Infomation",
+    "author": "roictl",
+    "author_email": "ops@smartahc.com",
+    "keywords": [
+        "{PACKAGE_NAME}"
+    ],
+    "license": "smartahc",
+    "requires": [
+        "requests"
+    ],
+    "python": ">=3.6",
+    "repository": {},
+    "environ_static": "{PACKAGE_NAME_PATH}",
+    "build": {
+        "source": "app",
+        "static": "static"
+    },
+    "envs": {
+        "debug": {
+            "is_debug": true
+        },
+        "beta": {
+            "is_debug": false
+        },
+        "product": {
+            "is_debug": true
+        }
+    }
+}

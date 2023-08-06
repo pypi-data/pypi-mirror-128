@@ -1,0 +1,11 @@
+__pycache__
+__pycache__
+dist
+build
+outputs
+*.onnx
+*.engine
+*.mp4
+*.egg-info
+*.log
+setup.py
