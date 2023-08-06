@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "pygot"
+version = "0.2.0"
+description = "A Python library for https://anapioficeandfire.com"
+authors = ["Ernane Sena <ernane.sena@gmail.com>"]
+license = "BSD-2-Clause"
+readme = "README.md"
+homepage = "https://github.com/ernane/pygot"
+repository = "https://github.com/ernane/pygot"
+keywords = ["flake8", "markdown", "lint"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries",
+]
+include = [
+    "LICENSE",
+]
+
+[tool.pytest.ini_options]
+addopts = "-vvv --cov=pygot --cov-report=term-missing --cov-report=xml"
+testpaths = ["tests"]
+
+[tool.isort]
+line_length = 100
+
+[tool.poetry.dependencies]
+python = "^3.9"
+simple-rest-client = "^1.1.1"
+marshmallow = "^3.14.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+flake8 = "^4.0.1"
+pre-commit = "^2.15.0"
+isort = "^5.9.3"
+ipython = "^7.28.0"
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+pytest-httpserver = "^1.0.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
