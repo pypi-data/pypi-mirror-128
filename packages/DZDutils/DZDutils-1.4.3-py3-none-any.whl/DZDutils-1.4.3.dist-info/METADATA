@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: DZDutils
+Version: 1.4.3
+Summary: Tool collection from the DZD Devs
+Home-page: UNKNOWN
+Author: TB
+Author-email: tim.bleimehl@helmholtz-muenchen.de
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE.md
+Requires-Dist: py2neo
+Requires-Dist: numpy
+Requires-Dist: linetimer
+Requires-Dist: graphio
+
+UNKNOWN
+
