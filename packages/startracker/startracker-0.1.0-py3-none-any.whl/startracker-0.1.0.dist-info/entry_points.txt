@@ -1,0 +1,5 @@
+[console_scripts]
+image_producer=startracker.tools.image_producer:main
+process_subrun=startracker.scripts.process_subrun:main
+star_fitter=startracker.tools.star_fitter:main
+

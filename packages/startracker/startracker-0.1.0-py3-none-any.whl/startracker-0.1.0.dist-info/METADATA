@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: startracker
+Version: 0.1.0
+Summary: Startracker
+Author: Mykhailo Dalchenko
+Author-email: mykhailo.dalchenko@unige.ch
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: BSD License
+Requires-Dist: lstchain~=0.7.3
+Requires-Dist: ctapipe
+Requires-Dist: simple_slurm
+Requires-Dist: natsort
+Requires-Dist: Deprecated
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: sphinx_rtd_theme ; extra == "doc"
+Requires-Dist: recommonmark ; extra == "doc"
+Requires-Dist: sphinx-argparse ; extra == "doc"
+Requires-Dist: nbsphinx ; extra == "doc"
+Provides-Extra: doc
+
+# Startracker
+
+
+Welcome to `startracker` project.
+This set of tools allows to extract the pointing offset of the IACT telescope using the stars in the field of view.
+
+You can find quick start guide together with detailed documentation on the [startacker  website][documentation_website].
+
+If you would like to contribute to the project please start with reading the [Contributor's Guide][contributors].
+
+Enjoy!
+
+[contributors]:https://ctaunigesw-startracker.web.cern.ch/contributing.html
+[documentation_website]:https://ctaunigesw-startracker.web.cern.ch
+
