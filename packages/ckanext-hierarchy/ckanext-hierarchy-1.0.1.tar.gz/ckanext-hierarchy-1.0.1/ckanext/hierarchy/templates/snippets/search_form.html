@@ -1,0 +1,6 @@
+{% ckan_extends %}
+
+{% block search_input %}
+    {{ super() }}
+    {% snippet "hierarchy/snippets/enable_tree_search.html" %}
+{% endblock %}
