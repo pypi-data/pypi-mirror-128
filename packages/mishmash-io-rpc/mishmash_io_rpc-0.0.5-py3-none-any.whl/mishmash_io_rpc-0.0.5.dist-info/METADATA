@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: mishmash-io-rpc
+Version: 0.0.5
+Summary: mishmash gRPC client service
+Home-page: https://mishmash.io
+Author: mishmash.io
+Author-email: info@mishmash.io
+License: Apache License v2.0
+Project-URL: Bug Tracker, https://github.com/mishmash-io/mishmash-io-client-common/issues
+Project-URL: Documentation, https://mishmash.io
+Project-URL: Source Code, https://github.com/mishmash-io/mishmash-io-client-common/
+Keywords: database,artificial intelligence,development
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Database
+Classifier: Topic :: Utilities
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: grpcio (>=1.41.1)
+Requires-Dist: protobuf (>=3.19.0)
+
+# mishmash io
+
+*mishmash io* is a distributed and scalable database that allows you to easily implement smart, predictive features in your app.
+
+Find out more on [mishmash.io](https://mishmash.io)
+
+# About this package
+
+This package contains base code that shared between various components of *mishmash io.*
+
+It should not be used directly. Instead, take a look at the client library for your programming language. Client library packages are usually called *mishmash-io-client* and are available from package managers like PyPI, npm, maven, etc.
+
+Find out more on which client library you should use on [mishmash.io](https://mishmash.io)
+
+
