@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Sem3Py/Numerical.py
+src/Sem3Py/Optimization.py
+src/Sem3Py/__init__.py
+src/Sem3Py.egg-info/PKG-INFO
+src/Sem3Py.egg-info/SOURCES.txt
+src/Sem3Py.egg-info/dependency_links.txt
+src/Sem3Py.egg-info/top_level.txt
