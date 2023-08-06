@@ -1,0 +1,5 @@
+biopython
+
+[testing]
+flake8
+pytest
