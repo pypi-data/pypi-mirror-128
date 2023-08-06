@@ -1,0 +1,14 @@
+requests>=2.5.3
+numpy
+pandas
+python-dateutil
+pytz
+six
+tqdm
+blackduck
+configargparse
+structlog
+pyyaml>=5.3
+urllib3
+requests-toolbelt
+google-cloud-storage
