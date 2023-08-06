@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: workstreamdatatech
+Version: 0.0.2
+Summary: Workstream airflow 
+Home-page: https://github.com/helloworld1812/airflow-ecs
+Author: wsdatateam
+License: Apache License v2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+UNKNOWN
+
