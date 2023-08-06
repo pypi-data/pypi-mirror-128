@@ -1,0 +1,38 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.00 
+header_name {.h} 
+code_name {.cxx} 
+gridx 5 
+gridy 5 
+snap 3
+Function {adjusterChanged(ptr)} {} {
+  code {dial = Fl_AdjusterPtr(ptr)
+anAdjuster.value(dial.value())
+aCounter.value(dial.value())
+aSimpleCounter.value(dial.value())} {}
+} 
+
+Function {} {open
+} {
+  Fl_Window {} {open selected
+    xywh {560 330 239 225} color 215 visible
+  } {
+    Fl_Adjuster anAdjuster {
+      label Adjuster
+      callback adjusterChanged
+      xywh {20 15 195 25}
+    }
+    Fl_Adjuster aCounter {
+      label Counter
+      callback adjusterChanged
+      xywh {20 155 195 25}
+      class Fl_Counter
+    }
+    Fl_Adjuster aSimpleCounter {
+      label {Simple Counter}
+      callback adjusterChanged
+      xywh {20 85 195 25} selection_color 1
+      class Fl_Simple_Counter
+    }
+  }
+} 

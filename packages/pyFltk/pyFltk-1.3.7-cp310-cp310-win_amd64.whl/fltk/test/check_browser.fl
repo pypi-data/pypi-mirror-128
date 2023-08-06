@@ -1,0 +1,49 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.00 
+header_name {.h} 
+code_name {.cxx} 
+gridx 5 
+gridy 5 
+snap 3
+Function {checkBrowserCallback(ptr)} {open
+} {
+  code {cb = Check_BrowserPtr(ptr)
+print "contains %d items"%cb.nitems()
+for i in range(1, cb.nitems()+1):
+	if cb.checked(i):
+		print cb.text(i)+" is checked"
+	else:
+		print cb.text(i)+" is not checked"} {}
+} 
+
+Function {onOK(ptr)} {open
+} {
+  code {import sys
+checkBrowserCallback(aCheckBrowser.this)
+sys.exit(0)} {}
+} 
+
+Function {} {open
+} {
+  Fl_Window {} {
+    label {check_browser.py} open selected
+    xywh {394 309 245 133} visible
+  } {
+    Fl_Browser aCheckBrowser {
+      callback checkBrowserCallback
+      xywh {5 5 240 75}
+      class Check_Browser
+    }
+    Fl_Return_Button {} {
+      label OK
+      callback onOK
+      xywh {160 90 70 30}
+    }
+  }
+  code {aCheckBrowser.add("Guiness", 1)
+aCheckBrowser.add("Bud")
+aCheckBrowser.add("Coors")
+aCheckBrowser.add("Grimbergen", 1)
+aCheckBrowser.add("Burning River", 1)
+aCheckBrowser.add("Little Kings")} {}
+} 

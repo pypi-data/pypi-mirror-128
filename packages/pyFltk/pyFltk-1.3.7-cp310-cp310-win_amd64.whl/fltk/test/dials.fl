@@ -1,0 +1,38 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.00 
+header_name {.h} 
+code_name {.cxx} 
+gridx 5 
+gridy 5 
+snap 3
+Function {dialChanged(ptr)} {} {
+  code {dial = Fl_DialPtr(ptr)
+aDial.value(dial.value())
+aLineDial.value(dial.value())
+aFillDial.value(dial.value())} {}
+} 
+
+Function {} {open
+} {
+  Fl_Window {} {open
+    xywh {550 247 269 116} color 215 hide
+  } {
+    Fl_Dial aDial {
+      label Dial
+      callback dialChanged
+      xywh {20 15 45 45}
+    }
+    Fl_Dial aLineDial {
+      label {Line Dial}
+      callback dialChanged
+      xywh {190 15 45 45}
+      class Fl_Line_Dial
+    }
+    Fl_Dial aFillDial {
+      label {Fill Dial}
+      callback dialChanged selected
+      xywh {105 15 45 45} selection_color 1
+      class Fl_Fill_Dial
+    }
+  }
+} 

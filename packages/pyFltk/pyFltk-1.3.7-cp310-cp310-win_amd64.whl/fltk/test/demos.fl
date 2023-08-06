@@ -1,0 +1,45 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.00 
+header_name {.h} 
+code_name {.cxx} 
+gridx 5 
+gridy 5 
+snap 3
+decl {import os, glob} {} 
+
+Function {onOK(ptr)} {} {
+  code {import sys
+sys.exit(0)} {}
+} 
+
+Function {runDemo(ptr)} {} {
+  code {os.system("python "+demoList.text(demoList.value()))} {}
+} 
+
+Function {fillList()} {open
+} {
+  code {files = glob.glob("*.py")
+files.sort()
+for file in files:
+	if not file in ['fltk.py', 'fltk_pre.py', 'demos.py', 'browserData.py']:      		
+		demoList.add(file)} {selected
+  }
+} 
+
+Function {} {} {
+  Fl_Window {} {open
+    xywh {451 190 192 231} hide
+  } {
+    Fl_Browser demoList {
+      label {Click to run a demo}
+      callback runDemo
+      xywh {5 5 180 150} type Select
+      code0 {fillList()}
+    }
+    Fl_Return_Button {} {
+      label OK
+      callback onOK
+      xywh {115 185 50 25}
+    }
+  }
+} 

@@ -1,0 +1,37 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.00 
+header_name {.h} 
+code_name {.cxx} 
+gridx 5 
+gridy 5 
+snap 3
+Function {onOK(ptr)} {open
+} {
+  code {sys.exit(0)} {}
+} 
+
+Function {thePosCallback(ptr)} {open
+} {
+  code {theDisplay.value("%3.3f, %3.3f"%(thePos.xvalue(), thePos.yvalue()))} {}
+} 
+
+Function {} {open
+} {
+  Fl_Window {} {open selected
+    xywh {461 360 221 185} visible
+  } {
+    Fl_Return_Button {} {
+      label OK
+      callback onOK
+      xywh {80 145 65 25}
+    }
+    Fl_Output theDisplay {
+      xywh {60 110 100 25}
+    }
+    Fl_Box thePos {
+      callback thePosCallback
+      xywh {10 10 200 90}
+      class Fl_Positioner
+    }
+  }
+} 
