@@ -1,0 +1,6 @@
+requests
+certifi
+boto3
+botocore
+s3transfer
+cryptography
