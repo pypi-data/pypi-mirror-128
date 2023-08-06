@@ -1,0 +1,26 @@
+# Version constraints for pip-installation.
+#
+# This file doesn't install any packages. It specifies version constraints
+# that will be applied if a package is needed.
+#
+# When pinning something here, please provide an explanation of why.  Ideally,
+# link to other information that will help people in the future to remove the
+# pin when possible.  Writing an issue against the offending project and
+# linking to it here is good.
+
+# Common constraints for edx repos
+-c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
+ 
+# Tox and virtualenv require importlib-metadata<3.0 to support python3.5
+# so pinning until both packages drop support for python3.5 &
+# update their required importlib-metadata version constraint
+importlib-metadata<3.0
+
+# aiohttp latest version 3.7.3 requires chardet<4.0, can be removed once aiohttp==4.0.0 is released.
+chardet<4.0
+
+# diff-cover==4.2.0 requires chardet==4.0.0 which is pinned due to aiohttp issue
+diff-cover<4.2.0
+
+# requests has a constraint idna<3 in it, so pinning it unless requests updates the constraint
+idna<3.0
