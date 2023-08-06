@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/simulation_smpl/__init__.py
+src/simulation_smpl/smpl.py
+src/simulation_smpl.egg-info/PKG-INFO
+src/simulation_smpl.egg-info/SOURCES.txt
+src/simulation_smpl.egg-info/dependency_links.txt
+src/simulation_smpl.egg-info/top_level.txt
+test/test.py
