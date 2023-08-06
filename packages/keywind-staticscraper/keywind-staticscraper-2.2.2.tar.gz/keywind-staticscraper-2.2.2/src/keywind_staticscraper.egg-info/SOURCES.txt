@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/keywind_staticscraper.egg-info/PKG-INFO
+src/keywind_staticscraper.egg-info/SOURCES.txt
+src/keywind_staticscraper.egg-info/dependency_links.txt
+src/keywind_staticscraper.egg-info/requires.txt
+src/keywind_staticscraper.egg-info/top_level.txt
+src/staticscraper/__init__.py
+src/staticscraper/staticscraper.py

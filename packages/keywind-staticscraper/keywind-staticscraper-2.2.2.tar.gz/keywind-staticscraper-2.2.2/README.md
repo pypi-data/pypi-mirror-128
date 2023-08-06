@@ -1,0 +1,1 @@
+Installing this package will allow you to scrape static webpages and filter the contents.
