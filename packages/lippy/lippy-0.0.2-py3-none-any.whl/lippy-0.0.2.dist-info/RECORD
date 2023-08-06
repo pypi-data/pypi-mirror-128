@@ -1,0 +1,13 @@
+lippy/__init__.py,sha256=WVHcItpuKosG-OmEYxQTGrqxWCKPw7kHZgcCF5eWODM,740
+lippy/_log_modes.py,sha256=HdUZSzF5ysL6061xuf5Gr3KeN-Tw8WslKYYMLC82kls,43
+lippy/_simplex_table.py,sha256=Lu8qwMwYF0Gv6WEiRN4NgPAPrIFz1pDkKHoCG0WmnMw,8914
+lippy/branch_and_bound.py,sha256=1YO3Gy1HAzXqz0d_prwdgAQYWbT2sUxIFLiyNMn1P3U,5315
+lippy/brute_force.py,sha256=250pG79VH70NZbY8m6FF5bXaeR3Dfo3xnLipnwdzGsU,5013
+lippy/cutting_plane_method.py,sha256=VuBFa4AVMExpP9Nu4TIvED5zuoQ5g9Ezax17pXLM4ro,5478
+lippy/dual_lp.py,sha256=rLZ6cE1HquvC7XHoCQUCWvSFohcctJOEMN1SokLTy_Q,1025
+lippy/simplex_method.py,sha256=08khy9nMSQyYterd62weGDaIJHs6ootsOzXheKIbGOQ,5142
+lippy/zero_sum_game.py,sha256=007t75Zba0c-W7RJz_lZlvgK2JK1eoOOXf_fp_DpRJk,2509
+lippy-0.0.2.dist-info/METADATA,sha256=xZrQ1as2yrs9FplIGhmZ8m4jopMcLtQlvGhw2u9KDbw,2779
+lippy-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lippy-0.0.2.dist-info/top_level.txt,sha256=S_SdWv5HuengMPSJ0XG5bWX9krVziT4oebYFbGdh48I,6
+lippy-0.0.2.dist-info/RECORD,,
