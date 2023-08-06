@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: sil-machine
+Version: 0.4.0
+Summary: A natural language processing library that is focused on providing tools for resource-poor languages.
+Home-page: https://github.com/sillsdev/machine.py
+License: MIT
+Keywords: machine,translation,natural,language,processing
+Author: SIL International
+Maintainer: Damien Daspit
+Maintainer-email: damien_daspit@sil.org
+Requires-Python: >=3.7,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Linguistic
+Provides-Extra: thot
+Requires-Dist: chardet (>=4.0.0,<5.0.0)
+Requires-Dist: networkx (>=2.6.3,<3.0.0)
+Requires-Dist: numpy (>=1.19.0,<2.0.0)
+Requires-Dist: regex (>=2021.7.6,<2022.0.0)
+Requires-Dist: sil-thot (>=3.3.5,<4.0.0); extra == "thot"
+Requires-Dist: sortedcontainers (>=2.4.0,<3.0.0)
+Project-URL: Repository, https://github.com/sillsdev/machine.py
+Description-Content-Type: text/markdown
+
+# Machine for Python
+
+Machine is a natural language processing library. It is specifically focused on providing tools and techniques that are useful for processing languages that are very resource-poor. The library is also useful as a foundation for building more advanced language processing techniques. The library currently only provides a basic set of algorithms, but the goal is to include many more in the future.
+
+## Installation
+
+```
+pip install sil-machine
+```
+
