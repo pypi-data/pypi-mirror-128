@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: lumispy
+Version: 0.1.3
+Summary: Analysis of luminescence spectroscopy data with HyperSpy.
+Home-page: http://lumispy.org
+Author: The LumiSpy developers
+License: GPLv3
+Project-URL: Bug Reports, https://github.com/lumispy/lumispy/issues
+Project-URL: Source, https://github.com/lumispy/lumispy
+Description: [![Build Status](https://dev.azure.com/Lumispy/lumispy/_apis/build/status/LumiSpy.lumispy?branchName=main)](https://dev.azure.com/Lumispy/lumispy/_build/latest?definitionId=3&branchName=main)
+        [![Tests](https://github.com/lumispy/lumispy/workflows/Tests/badge.svg)](https://github.com/lumispy/lumispy/actions)
+        [![Codecov Status](https://codecov.io/gh/lumispy/lumispy/branch/main/graph/badge.svg?token=8ZFX8X4Z1I)](https://codecov.io/gh/lumispy/lumispy)
+        [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4640445.svg)](https://doi.org/10.5281/zenodo.4640445)
+        
+        [![Python Version](https://img.shields.io/pypi/pyversions/lumispy.svg?style=flat)](https://pypi.python.org/pypi/lumispy)
+        [![PyPi Version](http://img.shields.io/pypi/v/lumispy.svg?style=flat)](https://pypi.python.org/pypi/lumispy)
+        [![Anaconda Version](https://anaconda.org/conda-forge/lumispy/badges/version.svg)](https://anaconda.org/conda-forge/lumispy)
+        [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+        
+        
+        <img src="https://github.com/LumiSpy/lumispy/raw/main/doc/media/logo_rec_april21.svg" width="300" alt="LumiSpy">
+        
+        LumiSpy is an extension Python package for multi-dimensional data analysis 
+        provided by the [HyperSpy](http://hyperspy.org) library. It is aimed at helping 
+        with the analysis of luminescence spectroscopy data (cathodoluminescence, 
+        photoluminescence, electroluminescence, Raman, SNOM).
+        
+        If analysis using LumiSpy forms a part of published work, please consider 
+        recognising the code development by citing the project using the [Zenodo-DOI](https://doi.org/10.5281/zenodo.4640445).
+        
+        Instructions on how to install LumiSpy and get started: [installation guide](INSTALLATION.md).
+        
+        [Tutorials and example workflows](https://github.com/lumispy/lumispy-demos)
+        have been curated as a series of Jupyter notebooks that you can work through 
+        and modify to perform many common analyses. Simply:
+        
+        1. Download the `lumispy_demos` repository in your desired folder
+        2. Load LumiSpy (see [installation guide](INSTALLATION.md))
+        3. In Jupyter lab, navigate to the folder and start using the notebook
+        
+        Everyone is welcome to contribute. Please read our
+        [contributing guidelines](.github/CONTRIBUTING.md) and get started!
+        
+Keywords: CL,PL,EL,TRCL,TRPL,SEM,STEM,TEM,cathodoluminescence,photoluminescence,electroluminescence,Raman,curve fitting,electron microscopy,hyperspectral,hyperspectrum,hyperspy,luminescence spectroscopy,lumispy,machine learning,model,multidimensional,numpy,python,scipy,spectroscopy,spectrum image,time-resolved
+Platform: Linux
+Platform: Mac OSX
+Platform: Windows XP/2000/NT
+Platform: Windows 95/98/ME
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: coverage
