@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: scflcore
+Version: 0.0.8
+Summary: Function core package by SScefaLI
+Home-page: UNKNOWN
+Author: SScefaLI
+Author-email: birka11@list.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# About
+
+
+Functional package
+
+```py
+from scflcore import CoreManager
+
+core = coreManager(
+	name="MyCore"
+)
+
+print(core.request(url="https://example.com", json=True))
+```
+
+
