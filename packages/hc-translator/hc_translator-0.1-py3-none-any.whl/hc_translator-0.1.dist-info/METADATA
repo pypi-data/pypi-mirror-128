@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hc-translator
+Version: 0.1
+Summary: python EN -> KO tranlator
+Home-page: https://github.com/gocks456/translator
+Author: gocks456
+Author-email: gocks456@changwon.ac.kr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Requires-Dist: beautifulsoup4 (==4.10.0)
+Requires-Dist: requests (==2.26.0)
+
+UNKNOWN
+
+
