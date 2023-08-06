@@ -1,0 +1,86 @@
+device_type: "qemu"
+
+job_name: "tuxrun@{{ device }}: {{ tests|default(["boot"], true)|join(", ")}}"
+priority: "medium"
+visibility: "public"
+
+context:
+    arch: "{{ lava_arch }}"
+    machine: "{{ machine }}"
+    cpu: "{{ cpu }}"
+{% if memory %}
+    memory: "{{ memory }}"
+{% endif %}
+{% if guestfs_interface %}
+    guestfs_interface: "{{ guestfs_interface }}"
+{% endif %}
+    extra_options: ["-no-reboot", "{{ '", "'.join(extra_options) }}"]
+    no_kvm: true
+    no_network: true
+
+{%- set ns = namespace(timeout=5+3) %}
+{%- for test in tests %}
+  {%- set ns.timeout = ns.timeout + timeouts[test] %}
+{%- endfor %}
+
+{% block timeouts %}
+timeouts:
+  job:
+    minutes: {{ ns.timeout }}
+  action:
+   minutes: 5
+  actions:
+    power-off:
+      seconds: 30
+{% endblock %}
+
+actions:
+- deploy:
+    to: tmpfs
+    timeout:
+      minutes: 5
+    os: oe
+    images:
+      kernel:
+        image_arg: '-kernel {kernel} -append "console={{ console }},115200 rootwait root={{ rootfs_dev }}{{ rootfs_partition|default("", true) }} debug verbose console_msg_format=syslog{% if tux_boot_args %} {{ tux_boot_args }}{% endif %}"'
+        url: "{{ kernel }}"
+{% if kernel_compression %}
+        compression: {{ kernel_compression }}
+{% endif %}
+{% if bios %}
+      bios:
+        image_arg: "-bios {bios}"
+        url: "{{ bios }}"
+{% endif %}
+{% if dtb %}
+      dtb:
+        image_arg: "-dtb {dtb}"
+        url: "{{ dtb }}"
+{% endif %}
+      rootfs:
+        image_arg: "{{ rootfs_arg }}"
+        url: "{{ rootfs }}"
+        compression: zstd
+        format: ext4
+{% if overlays %}
+        overlays:
+{% for name, overlay in overlays %}
+          {{ name }}:
+            url: "{{ overlay }}"
+            path: /
+            format: tar
+            compression: xz
+{% endfor %}
+{% endif %}
+- boot:
+    method: qemu
+    timeout:
+      minutes: 3
+    auto_login:
+      login_prompt: '(.*)login:'
+      username: root
+    prompts:
+    - 'root@(.*):[/~]#'
+{% for test in tests %}
+{% include "tests/" + test + ".yaml.jinja2" %}
+{% endfor %}
