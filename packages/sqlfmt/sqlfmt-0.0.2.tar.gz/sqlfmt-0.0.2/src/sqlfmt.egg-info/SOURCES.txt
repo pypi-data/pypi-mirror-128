@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+src/sqlfmt/__init__.py
+src/sqlfmt/__main__.py
+src/sqlfmt/core.py
+src/sqlfmt.egg-info/PKG-INFO
+src/sqlfmt.egg-info/SOURCES.txt
+src/sqlfmt.egg-info/dependency_links.txt
+src/sqlfmt.egg-info/entry_points.txt
+src/sqlfmt.egg-info/requires.txt
+src/sqlfmt.egg-info/top_level.txt
+src/sqlfmt.egg-info/zip-safe
