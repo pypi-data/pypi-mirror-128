@@ -1,0 +1,11 @@
+gemseo_petsc/__init__.py,sha256=3jjWnT1ehrSZDKl0R8Bh87Dq-G2LDPaOlOeJBsysp68,791
+gemseo_petsc/linear_solvers/__init__.py,sha256=CMHKYFeAp7GQm80YMPwwYgvbqMd0L0_zO68aMB8Ih90,788
+gemseo_petsc/linear_solvers/ksp_lib.py,sha256=wH0RdnNhAvRQwvx-Krio0_xHKXsHG82FX5Yz4yH6SSI,9674
+gemseo_petsc/linear_solvers/options/PETSC_KSP_options.json,sha256=Dxyoyvi57DsW4tzCW4RvywEHt2mvUDI2FDDujuCKa4M,1965
+gemseo_petsc-1.0.0.dist-info/CREDITS.rst,sha256=PKMOgjfgqrgWTSRFLIvNQ879hp7O_LvNx-2X8ZDievc,1780
+gemseo_petsc-1.0.0.dist-info/LICENSE.txt,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+gemseo_petsc-1.0.0.dist-info/METADATA,sha256=2D_IXaUB7fOY4cVAbt8NiMdxpA8xRgXKRusTgV4oE_4,3690
+gemseo_petsc-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gemseo_petsc-1.0.0.dist-info/entry_points.txt,sha256=yvKP0g0uvhkXQqL-K1RW9CbI_4X5WCJy2Yvc_uNjuAY,46
+gemseo_petsc-1.0.0.dist-info/top_level.txt,sha256=Yf_lE1R-xz1XHsnT9yLAlw0XrD_oeIw1UGU91rXO9Mo,13
+gemseo_petsc-1.0.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[gemseo_plugins]
+gemseo-petsc = gemseo_petsc
+
