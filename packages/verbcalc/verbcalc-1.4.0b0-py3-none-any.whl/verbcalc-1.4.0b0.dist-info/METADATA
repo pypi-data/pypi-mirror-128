@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: verbcalc
+Version: 1.4.0b0
+Summary: VerbCalc is a Python library that allows to perform calculations based on human speech.
+Home-page: https://github.com/ErykPiasecki07/VerbCalc
+Author: Eryk Piasecki
+Author-email: da3aab79-4378-4321-a726-67c4bb1f17ea@aleeas.com
+License: BSD-3-Clause Licence
+Project-URL: Bug Tracker, https://github.com/ErykPiasecki07/VerbCalc/labels/bug
+Project-URL: Documentation, https://verbcalc.readthedocs.io
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Topic :: Communications
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+
+# VerbCalc
+Python library for making calculations from natural language.<br><br>
+[![logo](https://github.com/ErykPiasecki07/VerbCalc/blob/main/extras/logo_small.png)](https://github.com/ErykPiasecki07/VerbCalc) <br><br>
+[![CircleCI](https://circleci.com/gh/ErykPiasecki07/VerbCalc/tree/main.svg?style=svg)](https://circleci.com/gh/ErykPiasecki07/VerbCalc/tree/main)
+[![Documentation Status](https://readthedocs.org/projects/verbcalc/badge/?version=latest)](https://verbcalc.readthedocs.io/en/latest/?badge=latest)
+### Can I use Verbcalc in my project?
+
+Yes! See: [LICENSE](LICENSE)<br><br>
+
+### Can I contribute?
+
+Yes! See: [CONTRIBUTING.md](CONTRIBUTING.md)<br><br>
+
+### What versions are currently supported and where can I report security vurnelability?
+
+See: [SECURITY.md](SECURITY.md)<br><br>
+
+## Installation
+
+`pip install verbcalc` <br><br>
+
+## Documentation
+
+Documentation is available under: https://verbcalc.readthedocs.io <br><br>
+
+## Attributions
+
+Thanks to Kinga Stefaniak for the project logo.
+
+

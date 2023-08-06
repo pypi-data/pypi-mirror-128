@@ -1,0 +1,16 @@
+verbcalc/__init__.py,sha256=VESwTnskN-0R-mZgwSpuSxV9jv6ZV89LqmPvWWvBqsk,276
+verbcalc/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verbcalc/core/answers.py,sha256=fM6hMRB8LKd0LID4RvPTs2OkEIGDjt_S-jiWGl6g-Ok,496
+verbcalc/core/calculate.py,sha256=4Jf5aX6R8y42Wf2xdCh9RE5UDXCK8b5Zi8luEtBvXWc,1210
+verbcalc/core/dispatcher.py,sha256=pFxXyGjFluILfFFr_ulqe-sk1l7n64LQUCw3gK0X76Y,2604
+verbcalc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verbcalc/tests/test_answers.py,sha256=mYqwptHYcRGx1sLI2eMIiA-iEc3GK9nikVysxpQeOdM,871
+verbcalc/tests/test_calculating.py,sha256=A1OI0nXzpd1EGsVRLeDSDm6QB168iCTLIXFMTMermhE,1488
+verbcalc/tests/test_dispatcher.py,sha256=fBy34wlxjLB5MrnIfr1uAZMxqDPEzgD89vM8XMmBOG0,1048
+verbcalc/tests/test_translator.py,sha256=ickZyCTXO_0Y1sHQZx5764GXn7xrrOSGZIl-VZdq6VU,1747
+verbcalc-1.4.0b0.dist-info/AUTHORS.md,sha256=BBk4fWB49fnKOkb1sNgTtNq27g0jsE0dfBJ0pECCBCE,701
+verbcalc-1.4.0b0.dist-info/LICENSE,sha256=Fd2E1nj-kptXeU76410GSy0f8A-12kPQZD24LibHDxY,1521
+verbcalc-1.4.0b0.dist-info/METADATA,sha256=ybLGfzLleItxJ9mGWSMvobRrtZVyjtb4UWzfiyhaY6M,1950
+verbcalc-1.4.0b0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+verbcalc-1.4.0b0.dist-info/top_level.txt,sha256=2R17KH4XdDiCUm9ARMlJ0oCkg-cjjEWwBIrXCYmw5n0,9
+verbcalc-1.4.0b0.dist-info/RECORD,,
