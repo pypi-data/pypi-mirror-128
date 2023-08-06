@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "which-key"
+version = "0.2.2"
+description = "Universal command launcher"
+license = "MIT"
+authors = ["Bendik Samseth <b.samseth@gmail.com>"]
+readme = "README.md"
+homepage = "https://bsamseth.github.io/which-key/"
+documentation = "https://bsamseth.github.io/which-key/"
+repository = "https://github.com/bsamseth/which-key"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+toml = "^0.10.2"
+pydantic = "^1.8.2"
+typer = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+mypy = "^0.910"
+types-toml = "^0.10.1"
+mkdocs-material = "^7.3.6"
+
+[tool.poetry.scripts]
+which-key = "which_key.cli:app"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.commitizen]
+version = "0.2.2"
+version_files = [
+    "which_key/__init__.py",
+    "pyproject.toml",
+]
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
