@@ -1,0 +1,9 @@
+brightway2
+bw_processing
+numpy
+pandas
+pytest
+pytest-cov
+python-coveralls
+scipy
+stats_arrays
