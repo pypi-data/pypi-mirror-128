@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+setup.py
+usrv/__init__.py
+usrv/req.py
+usrv/srv.py
+usrv/zjsn.py
+usrv.egg-info/PKG-INFO
+usrv.egg-info/SOURCES.txt
+usrv.egg-info/dependency_links.txt
+usrv.egg-info/top_level.txt
