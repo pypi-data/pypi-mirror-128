@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: asgiproxy
+Version: 0.1.1
+Summary: Tools for building HTTP and Websocket proxies for the asynchronous ASGI protocol
+Home-page: https://github.com/valohai/asgiproxy
+Author: Valohai
+Author-email: dev@valohai.com
+Maintainer: Aarni Koskela
+Maintainer-email: akx@iki.fi
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
