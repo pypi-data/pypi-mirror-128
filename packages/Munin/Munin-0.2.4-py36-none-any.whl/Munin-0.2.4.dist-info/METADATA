@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: Munin
+Version: 0.2.4
+Summary: A package for easing return of multiple values
+Home-page: https://github.com/cnheider/munin
+Author: Christian Heider Nielsen
+Author-email: christian.heider@alexandra.dk
+Maintainer: Christian Heider Nielsen
+Maintainer-email: christian.heider@alexandra.dk
+License: Apache License, Version 2.0
+Download-URL: https://github.com/cnheider/munin/releases
+Keywords: python reinforcement-learning interface api
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: six (>=1.12.0)
+Requires-Dist: scikit-learn
+Requires-Dist: sorcery
+Requires-Dist: draugr
+Requires-Dist: markdown
+Requires-Dist: numpy (>=1.16.3)
+Requires-Dist: pyqrcode
+Requires-Dist: pillow
+Requires-Dist: pycm
+Requires-Dist: pdfkit
+Requires-Dist: warg
+Requires-Dist: python-markdown-math
+Requires-Dist: jinja2
+Requires-Dist: matplotlib
+Provides-Extra: all
+Requires-Dist: pytest (>=4.3.0) ; extra == 'all'
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'all'
+Requires-Dist: wheel (>=0.33.0) ; extra == 'all'
+Requires-Dist: m2r2 ; extra == 'all'
+Requires-Dist: pytest-cov (>=2.6.1) ; extra == 'all'
+Requires-Dist: twine (>=1.13.0) ; extra == 'all'
+Requires-Dist: coveralls (>=1.6.0) ; extra == 'all'
+Requires-Dist: black (>=18.9b0) ; extra == 'all'
+Requires-Dist: pytest (>=4.4.1) ; extra == 'all'
+Requires-Dist: munin ; extra == 'all'
+Requires-Dist: pip (>=19.0.3) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pip (>=19.0.3) ; extra == 'dev'
+Requires-Dist: wheel (>=0.33.0) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.6.1) ; extra == 'dev'
+Requires-Dist: twine (>=1.13.0) ; extra == 'dev'
+Requires-Dist: coveralls (>=1.6.0) ; extra == 'dev'
+Requires-Dist: black (>=18.9b0) ; extra == 'dev'
+Requires-Dist: pytest (>=4.3.0) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'docs'
+Requires-Dist: munin ; extra == 'docs'
+Requires-Dist: m2r2 ; extra == 'docs'
+Provides-Extra: setup
+Requires-Dist: pytest (>=4.4.1) ; extra == 'setup'
+Provides-Extra: tests
+Requires-Dist: pytest (>=4.4.1) ; extra == 'tests'
+
+
+<!--![munin](.github/images/munin.svg)-->
+
+<p align="center">
+  <img src=".github/images/munin.svg" alt='munin' />
+</p>
+
+<h1 align="center">Munin</h1>
+
+<!--# Munin-->
+
+```
+Old Norse: Muninn
+```
+
+![python](.github/images/python.svg)
+
+[![Build Status](https://travis-ci.com/pything/munin.svg?branch=master)](https://travis-ci.com/pything/munin) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black) [![Coverage Status](https://coveralls.io/repos/github/pything/munin/badge.svg?branch=master)](https://coveralls.io/github/pything/munin?branch=master)
+___
+> Reporting.
+___
+
+This package is a package for generating classification reports. Uses jinja2 templates, see documentation.
+
+# Quick Start
+
+```
+  pip install munin
+
+```
+
+Now you can add all your metrics and plots.
+
+```
+  from munin import generate_html
+  from warg import NOD # used for generating a dict with the same keys as names in context
+
+  ...
+
+  metrics = NOD.dict_of(accuracy, precision, f1_score, recall, support).as_flat_tuples()
+
+  bundle = NOD.dict_of(title, confusion_matrix, metrics, predictions)
+
+  generate_html(file_name, **bundle)
+```
+
+
