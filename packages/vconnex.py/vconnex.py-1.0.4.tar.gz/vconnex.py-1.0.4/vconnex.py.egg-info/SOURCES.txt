@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+vconnex/__init__.py
+vconnex/api.py
+vconnex/device.py
+vconnex.py.egg-info/PKG-INFO
+vconnex.py.egg-info/SOURCES.txt
+vconnex.py.egg-info/dependency_links.txt
+vconnex.py.egg-info/requires.txt
+vconnex.py.egg-info/top_level.txt

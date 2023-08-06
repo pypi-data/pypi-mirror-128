@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: vconnex.py
+Version: 1.0.4
+Summary: A Python library for Vconnex Open API
+Home-page: UNKNOWN
+Author: Vconnex Inc.
+License: MIT
+Keywords: vconnex python
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Vconnex Python Library
+
+
+A Python library for Vconnex Open API.
+
+
+## Features
+
+
+## Prerequisite
+
+### Registration
+
+
+## Usage
+
+
+## Installation
+
+`pip install vconnex.py`
+
+
+## Sample code
+
+
+## API reference
+
+
+## License
+
+vconnex.py is available under the MIT license.
+
