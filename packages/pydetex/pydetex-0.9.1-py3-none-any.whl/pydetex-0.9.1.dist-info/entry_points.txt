@@ -1,0 +1,3 @@
+[pyinstaller40]
+hook-dirs = pydetex.__pyinstaller:get_hook_dirs
+
