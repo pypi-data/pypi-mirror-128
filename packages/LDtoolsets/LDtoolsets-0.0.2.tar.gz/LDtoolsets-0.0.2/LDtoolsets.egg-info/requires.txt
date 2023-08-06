@@ -1,0 +1,12 @@
+pip
+packaging
+torch
+numpy
+pandas
+scipy
+dask
+bgen_reader
+pandas_plink
+liftover
+
+[dev]
