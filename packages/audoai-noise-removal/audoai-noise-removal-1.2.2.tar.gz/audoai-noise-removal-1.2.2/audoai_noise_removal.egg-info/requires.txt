@@ -1,0 +1,5 @@
+audoai-common>=0.3.1
+websocket_client
+
+[test]
+pytest
