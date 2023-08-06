@@ -1,0 +1,10 @@
+README.md
+setup.py
+newfelya6/__init__.py
+newfelya6/core.py
+newfelya6.egg-info/PKG-INFO
+newfelya6.egg-info/SOURCES.txt
+newfelya6.egg-info/dependency_links.txt
+newfelya6.egg-info/entry_points.txt
+newfelya6.egg-info/requires.txt
+newfelya6.egg-info/top_level.txt
