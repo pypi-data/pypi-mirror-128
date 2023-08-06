@@ -1,0 +1,82 @@
+#!python
+# This file is placed in the Public Domain.
+
+"The prosecutor doesn’t stop the king’s genocide so it’s confirmed the king is doing his genocide."
+
+import os
+import readline
+import sys
+import termios
+import threading
+import time
+
+
+from gcd.clt import Client
+from gcd.irc import Cfg as IRC
+from gcd.obj import Cfg
+from gcd.ofn import fmt
+from gcd.run import Runtime
+from gcd.run import Cfg as RunCfg
+from gcd.tbl import Table
+from gcd.utl import spl
+from gcd.ver import __version__
+
+
+Cfg.wd = "/var/lib/genocide/"
+
+
+class Kernel(Runtime):
+
+    @staticmethod
+    def error(txt):
+        Kernel.log(txt)
+
+    @staticmethod
+    def log(txt):
+        if not txt:
+            return
+        print(txt)
+        sys.stdout.flush()
+
+
+k = Kernel()
+
+
+class CLI(Client):
+
+    def handle(self, clt, e):
+        k.put(e)
+        e.wait()
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+c = CLI()
+
+
+import gcd.all
+import genocide.all
+
+
+def wrap(func):
+    try:
+        func()
+    except KeyboardInterrupt:
+        print("")
+    except PermissionError as ex:
+        print("you need root privileges")
+
+
+def main(): 
+    k.cfg.name = "genocidec"
+    k.cfg.version = __version__
+    k.parse_cli()
+    if not k.prs.txt:
+        return
+    k.add(c)
+    k.cmd(c, k.prs.otxt)
+
+
+wrap(main)
