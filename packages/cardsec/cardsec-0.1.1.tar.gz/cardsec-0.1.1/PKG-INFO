@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: cardsec
+Version: 0.1.1
+Summary: System and Security Assesment Tool for Cardano SPOs.
+Home-page: https://github.com/SkryptLabs/Cardsec
+License: MIT
+Keywords: cardsec,cardano,SPO
+Author: Advait Joglekar
+Author-email: advaitjoglekar@yahoo.in
+Maintainer: Advait Joglekar
+Maintainer-email: advaitjoglekar@yahoo.in
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: distro (>=1.6.0,<2.0.0)
+Requires-Dist: psutil (>=5.8.0,<6.0.0)
+Requires-Dist: simple-term-menu (>=1.4.1,<2.0.0)
+Requires-Dist: termcolor (>=1.1.0,<2.0.0)
+Project-URL: Repository, https://github.com/SkryptLabs/Cardsec
+Description-Content-Type: text/markdown
+
+<h1>Cardsec</h1>
+<h3>Security Assessment Tool for Cardano SPOs</h3>
+<br>
+<p>
+  <h3> Prerequisites </h3>
+  <ul>
+    <li> Linux System
+    <li> Python 3.6 or above
+  </ul>
+</p>
+<br>
+<p>
+  <h3> Installation </h3>
+
+```python
+  sudo pip install cardsec
+```
+</p>
+<br>
+
