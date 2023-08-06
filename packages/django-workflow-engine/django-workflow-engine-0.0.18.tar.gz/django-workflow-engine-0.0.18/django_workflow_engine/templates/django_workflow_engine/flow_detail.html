@@ -1,0 +1,44 @@
+<h1>{{ object.get_workflow_name_display }} - {{ object.flow_name }}</h1>
+<dl>
+  <div>
+    <dt>
+      Started
+    </dt>
+    <dd>
+      {{ object.started }}
+    </dd>
+  </div>
+  <div>
+    <dt>
+      Started by
+    </dt>
+    <dd>
+      {{ object.executed_by.get_full_name }}
+    </dd>
+  </div>
+  {% if object.finished %}
+      <div>
+        <dt>
+          Finished?
+        </dt>
+        <dd>
+          {{ object.finished }}
+        </dd>
+      </div>
+  {% else %}
+  <div>
+    <dt>
+      Status
+    </dt>
+    <dd>
+      {{ object.nice_name }}
+    </dd>
+  </div>
+  {% endif %}
+</dl>
+
+{% if object.current_task_record and not task.auto %}
+  <a href="{% url 'flow-continue' object.pk %}">Continue</a>
+{% endif %}
+
+{% include 'django_workflow_engine/flow_diagram.html' %}

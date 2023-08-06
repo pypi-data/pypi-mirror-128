@@ -1,0 +1,36 @@
+<dl>
+    <div>
+        <dt>
+            Workflows
+        </dt>
+        <dd>
+            {{ flow.get_workflow_name_display }} - {{ flow.flow_name }}
+        </dd>
+    </div>
+    <div>
+        <dt>
+            Current state
+        </dt>
+        <dd>
+            {{ flow.nice_name }}
+        </dd>
+    </div>
+    <div>
+        <dt>
+            Started by
+        </dt>
+        <dd>
+            {{ flow.executed_by }}
+        </dd>
+    </div>
+    {% if flow.started %}
+        <div>
+            <dt>
+                Started at
+            </dt>
+            <dd>
+                {{ flow.started|default_if_none:"" }}
+            </dd>
+        </div>
+    {% endif %}
+</dl>
