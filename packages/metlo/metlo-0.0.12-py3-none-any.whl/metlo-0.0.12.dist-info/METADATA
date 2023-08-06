@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: metlo
+Version: 0.0.12
+Summary: Metlo's Python SDK
+Home-page: UNKNOWN
+Author: S2 Labs Inc.
+Author-email: akshay@metlo.com
+License: MIT
+Project-URL: Homepage, https://www.metlo.com
+Project-URL: Documentation, https://docs.metlo.com
+Project-URL: Source Code, https://github.com/metlo-labs/metlo-python
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests (~=2.26.0)
+Requires-Dist: pydantic (~=1.8.2)
+Requires-Dist: python-dotenv (~=0.19.0)
+Requires-Dist: pyyaml (~=5.4.1)
+Requires-Dist: colorama (~=0.4.4)
+Requires-Dist: termcolor (~=1.1.0)
+Requires-Dist: pandas
+
+# metlo-python
+
+metlo-python is a python client for [Metlo](https://metlo.com)
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+metlo = metlo.command_line:main
+
