@@ -1,0 +1,8 @@
+payping/__init__.py,sha256=3PE_4seyMLz8nRRDVeYbogD5r1ghnHhzIcDYg-SKEps,55
+payping/authentication.py,sha256=7mjhX2B2QE6hF9r5o8ME37lMAWLue4YTQM6o5NccN7s,154
+payping/payment.py,sha256=EkZt9cSG6mj5pP2szJkzaQHJrl6z8k545A-a_S9xSRc,1176
+payping-0.0.4.dist-info/LICENSE,sha256=GB9vf_RaGl_GMSK1_4-y8tBlHfMFsiDMuwRl-f8ymog,1096
+payping-0.0.4.dist-info/METADATA,sha256=qWGhyhSyC_pnLOWiPlbRveQy_E4oWWcEZdRa8Hcc57A,2242
+payping-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+payping-0.0.4.dist-info/top_level.txt,sha256=1QpCydUn2Oc5UlIq1fCfDcCn5x_AMmC_n8IbR0qUmVE,8
+payping-0.0.4.dist-info/RECORD,,
