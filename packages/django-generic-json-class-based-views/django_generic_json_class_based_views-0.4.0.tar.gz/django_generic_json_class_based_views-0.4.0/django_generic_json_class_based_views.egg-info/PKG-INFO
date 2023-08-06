@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: django-generic-json-class-based-views
+Version: 0.4.0
+Summary: Generic JSON class based views for the webframework Django.
+Home-page: https://github.com/T1mbo96/django_generic_json_views
+Author: Timo Michel
+Author-email: TimoM96@outlook.de
+License: MIT
+Download-URL: https://github.com/T1mbo96/django_generic_json_views/archive/refs/tags/v_040.tar.gz
+Description: UNKNOWN
+Keywords: django,json
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
