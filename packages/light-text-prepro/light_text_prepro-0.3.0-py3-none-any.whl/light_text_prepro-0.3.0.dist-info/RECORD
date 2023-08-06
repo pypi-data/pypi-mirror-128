@@ -1,0 +1,8 @@
+LICENSE,sha256=npnlp7TlTpQRyaf-2IrCJ9-dyqxU8X_pVVZfsNTivO0,1060
+light_text_prepro/__init__.py,sha256=QQ0yjZQnvXM7JeLLZEZWX6NmVUPu1lSROWOXF49_gug,22
+light_text_prepro/lprepro.py,sha256=eEp-5hmQp5ZNK0CLV6YTbaGxk05dmzKPlzYGEA2fcU0,984
+light_text_prepro/rules/regex.yml,sha256=muP_9M88EzRfE5REdR9wwaxtoTMh7PcXJiFz_zkH23w,587
+light_text_prepro-0.3.0.dist-info/LICENSE,sha256=npnlp7TlTpQRyaf-2IrCJ9-dyqxU8X_pVVZfsNTivO0,1060
+light_text_prepro-0.3.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+light_text_prepro-0.3.0.dist-info/METADATA,sha256=y1APMPBdLDsdwqZEh2cwQBTVbQ2rnzHYRbCBB0mV7S4,3946
+light_text_prepro-0.3.0.dist-info/RECORD,,
