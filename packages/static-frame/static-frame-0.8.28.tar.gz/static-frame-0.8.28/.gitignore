@@ -1,0 +1,18 @@
+.coverage
+.hypothesis
+.mypy_cache
+.pytest_cache
+.vscode
+.env
+.env-sf
+.DS_Store
+
+__pycache__
+build
+dist
+
+*.egg-info
+*.so
+
+# Wing
+*.wp[ur]
