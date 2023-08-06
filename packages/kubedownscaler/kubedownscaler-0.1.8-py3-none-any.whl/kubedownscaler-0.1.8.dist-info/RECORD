@@ -1,0 +1,6 @@
+kubedownscaler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kubedownscaler/main.py,sha256=SK7VNs5fQnTVCz_K2ysks02Bk1i588D8Oq0PRPnGx4o,6388
+kubedownscaler-0.1.8.dist-info/entry_points.txt,sha256=oxy0QNRRRYU5wgUeJY_kl7vzIhn_q_EFMY8EPCOXZqU,59
+kubedownscaler-0.1.8.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+kubedownscaler-0.1.8.dist-info/METADATA,sha256=gBBVeqyLiJUgh1S7eQC9sM6hlkyasiWhFD2Kr9PAmrw,1905
+kubedownscaler-0.1.8.dist-info/RECORD,,
