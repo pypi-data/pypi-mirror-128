@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="csankey.css" rel="stylesheet">
+
+  <title>Sankey</title>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@riversun/sortable-table/lib/sortable-table.js"></script>
+  <script src="d3-sankey-circular.js"></script>
+  <script src="dlimage.js"></script>
+  <script src="index.js"></script>
+
+  <!-- My Sankey Data Section -->
+  <script>
+    var data = {
+      nodes: [
+        { name: "startX", col: 0 },
+        { name: "startA", col: 0 },
+        { name: "startB", col: 0 },
+        { name: "process1", col: 1 },
+        { name: "process2", col: 1 },
+        { name: "process3", col: 2 },
+        { name: "process4", col: 2 },
+        { name: "process5", col: 3 },
+        { name: "process6", col: 4 },
+        { name: "process7", col: 5 },
+        { name: "process8", col: 6 },
+        { name: "process9", col: 7 },
+        { name: "process10", col: 6 },
+        { name: "process11", col: 8 },
+        { name: "process12", col: 6 },
+        { name: "process13", col: 9 },
+        { name: "process14", col: 9 },
+        { name: "process15", col: 8 },
+        { name: "process16", col: 9 },
+        { name: "finishA", col: 10 },
+        { name: "finishB", col: 10 },
+      ],
+      links: [
+        { source: "startA", target: "process8", value: 20, optimal: "yes" },
+        { source: "startA", target: "process5", value: 20, optimal: "yes" },
+        { source: "startA", target: "process6", value: 20, optimal: "yes" },
+        { source: "startB", target: "process1", value: 15, optimal: "yes" },
+        { source: "startB", target: "process5", value: 15, optimal: "yes" },
+        { source: "process1", target: "process4", value: 30, optimal: "yes" },
+        { source: "process4", target: "process1", value: 10, optimal: "yes" },
+        { source: "process2", target: "process7", value: 35, optimal: "yes" },
+        { source: "process1", target: "process3", value: 20, optimal: "yes" },
+        { source: "process5", target: "process1", value: 20, optimal: "yes" },
+        { source: "process6", target: "startA", value: 5, optimal: "yes" },
+        { source: "process4", target: "process2", value: 5, optimal: "yes" },
+        { source: "process6", target: "process8", value: 15, optimal: "yes" },
+        { source: "process4", target: "startB", value: 5, optimal: "yes" },
+        { source: "process3", target: "process2", value: 15, optimal: "yes" },
+        { source: "process3", target: "startB", value: 5, optimal: "yes" },
+        { source: "process15", target: "process13", value: 10, optimal: "yes" },
+        { source: "process13", target: "process9", value: 10, optimal: "yes" },
+        { source: "process7", target: "startB", value: 20, optimal: "yes" },
+        { source: "process8", target: "process1", value: 10, optimal: "yes" },
+        { source: "process8", target: "process16", value: 10, optimal: "yes" },
+        { source: "process16", target: "process9", value: 10, optimal: "yes" },
+        { source: "process8", target: "process11", value: 25, optimal: "yes" },
+        { source: "process11", target: "process10", value: 20, optimal: "yes" },
+        { source: "process4", target: "process12", value: 10, optimal: "yes" },
+        { source: "process12", target: "process11", value: 10, optimal: "yes" },
+        { source: "process7", target: "process15", value: 15, optimal: "yes" },
+        { source: "process15", target: "process14", value: 10, optimal: "yes" },
+        { source: "process10", target: "process13", value: 10, optimal: "yes" },
+        { source: "process10", target: "process16", value: 10, optimal: "yes" },
+        { source: "process14", target: "finishB", value: 10, optimal: "yes" },
+        { source: "process9", target: "finishA", value: 10, optimal: "yes" },
+        { source: "process16", target: "process8", value: 10, optimal: "yes" },
+        { source: "process9", target: "finishB", value: 10, optimal: "yes" },
+        { source: "process15", target: "finishB", value: 10, optimal: "yes" },
+        { source: "process15", target: "finishA", value: 10, optimal: "yes" },
+        { source: "process11", target: "process15", value: 25, optimal: "yes" },
+      ],
+    };</script>
+
+</head>
+
+<body>
+
+  <h1>Sankey Diagram Output Page
+    <div class="viewsetting">
+
+      <div class="horizon-center">
+
+        <fieldset onchange="redraw(event)">
+
+          <legend>全体設定</legend>
+          <form name="SVGSIZE" action="#">
+            <div class="horizon-left">
+              <div>
+                図幅<input type="text" name="width" size="3" maxlength="4" placeholder="幅pixel" value="1100"
+                  oninput="value = value.replace(/[^0-9]+/i,'');" title="図全体幅ピクセルを4桁数値以下で指定">
+              </div>
+              <div>
+                図高<input type="text" name="height" size="3" maxlength="4" placeholder="高pixel" value="900"
+                  oninput="value = value.replace(/[^0-9]+/i,'');" title="図全体高さピクセルを4桁数値以下で指定">
+              </div>
+            </div>
+          </form>
+
+          <div class='cp_ipselect cp_sl01'>
+            <select id="fontfamily" title="フォントは？">
+              <option value='MS UI Gothic' style='font-family: MS UI Gothic'>MS UI Gothic</option>
+              <option value='ＭＳ Ｐゴシック' style='font-family: ＭＳ Ｐゴシック'>ＭＳ Ｐゴシック</option>
+              <option value='MS PGothic' style='font-family: MS PGothic'>MS PGothic</option>
+              <option value='ＭＳ ゴシック' style='font-family: ＭＳ ゴシック'>ＭＳ ゴシック</option>
+              <option value='MS Gothic' style='font-family: MS Gothic'>MS Gothic</option>
+              <option value='ＭＳ Ｐ明朝' style='font-family: ＭＳ Ｐ明朝'>ＭＳ Ｐ明朝</option>
+              <option value='MS PMincho' style='font-family: MS PMincho'>MS PMincho</option>
+              <option value='ＭＳ 明朝' style='font-family: ＭＳ 明朝'>ＭＳ 明朝</option>
+              <option value='MS Mincho' style='font-family: MS Mincho'>MS Mincho</option>
+              <option value='メイリオ' style='font-family: メイリオ'>メイリオ</option>
+              <option value='Meiryo' style='font-family: Meiryo'>Meiryo</option>
+              <option value='Meiryo UI' style='font-family: Meiryo UI'>Meiryo UI</option>
+              <option value='游ゴシック' style='font-family: 游ゴシック'>游ゴシック</option>
+              <option value='Yu Gothic' style='font-family: Yu Gothic'>Yu Gothic</option>
+              <option value='游明朝' style='font-family: 游明朝'>游明朝</option>
+              <option value='Yu Mincho' style='font-family: Yu Mincho'>Yu Mincho</option>
+              <option value='ヒラギノ角ゴ Pro W3' style='font-family: ヒラギノ角ゴ Pro W3'>ヒラギノ角ゴ Pro W3</option>
+              <option value='Hiragino Kaku Gothic Pro' style='font-family: Hiragino Kaku Gothic Pro'>Hiragino Kaku
+                Gothic Pro</option>
+              <option value='ヒラギノ角ゴ ProN W3' style='font-family: ヒラギノ角ゴ ProN W3'>ヒラギノ角ゴ ProN W3</option>
+              <option value='Hiragino Kaku Gothic ProN' style='font-family: Hiragino Kaku Gothic ProN'>Hiragino Kaku
+                Gothic ProN</option>
+              <option value='HiraKakuProN-W3' style='font-family: HiraKakuProN-W3'>HiraKakuProN-W3</option>
+              <option value='ヒラギノ角ゴ Pro W6' style='font-family: ヒラギノ角ゴ Pro W6'>ヒラギノ角ゴ Pro W6</option>
+              <option value='HiraKakuPro-W6' style='font-family: HiraKakuPro-W6'>HiraKakuPro-W6</option>
+              <option value='ヒラギノ角ゴ ProN W6' style='font-family: ヒラギノ角ゴ ProN W6'>ヒラギノ角ゴ ProN W6</option>
+              <option value='HiraKakuProN-W6' style='font-family: HiraKakuProN-W6'>HiraKakuProN-W6</option>
+              <option value='HiraKakuProN-W6' style='font-family: HiraKakuProN-W6'>HiraKakuProN-W6</option>
+              <option value='ヒラギノ角ゴ Std W8' style='font-family: ヒラギノ角ゴ Std W8'>ヒラギノ角ゴ Std W8</option>
+              <option value='Hiragino Kaku Gothic Std' style='font-family: Hiragino Kaku Gothic Std'>Hiragino Kaku
+                Gothic Std</option>
+              <option value='ヒラギノ角ゴ StdN W8' style='font-family: ヒラギノ角ゴ StdN W8'>ヒラギノ角ゴ StdN W8</option>
+              <option value='Hiragino Kaku Gothic StdN' style='font-family: Hiragino Kaku Gothic StdN'>Hiragino Kaku
+                Gothic StdN</option>
+              <option value='ヒラギノ丸ゴ Pro W4' style='font-family: ヒラギノ丸ゴ Pro W4'>ヒラギノ丸ゴ Pro W4</option>
+              <option value='Hiragino Maru Gothic Pro' style='font-family: Hiragino Maru Gothic Pro'>Hiragino Maru
+                Gothic Pro</option>
+              <option value='ヒラギノ丸ゴ ProN W4' style='font-family: ヒラギノ丸ゴ ProN W4'>ヒラギノ丸ゴ ProN W4</option>
+              <option value='Hiragino Maru Gothic ProN' style='font-family: Hiragino Maru Gothic ProN'>Hiragino Maru
+                Gothic ProN</option>
+              <option value='ヒラギノ明朝 Pro W3' style='font-family: ヒラギノ明朝 Pro W3'>ヒラギノ明朝 Pro W3</option>
+              <option value='Hiragino Mincho Pro' style='font-family: Hiragino Mincho Pro'>Hiragino Mincho Pro</option>
+              <option value='ヒラギノ明朝 ProN W3' style='font-family: ヒラギノ明朝 ProN W3'>ヒラギノ明朝 ProN W3</option>
+              <option value='Hiragino Mincho ProN' style='font-family: Hiragino Mincho ProN'>Hiragino Mincho ProN
+              </option>
+              <option value='HiraMinProN-W3' style='font-family: HiraMinProN-W3'>HiraMinProN-W3</option>
+              <option value='ヒラギノ明朝 Pro W6' style='font-family: ヒラギノ明朝 Pro W6'>ヒラギノ明朝 Pro W6</option>
+              <option value='HiraMinPro-W6' style='font-family: HiraMinPro-W6'>HiraMinPro-W6</option>
+              <option value='ヒラギノ明朝 ProN W6' style='font-family: ヒラギノ明朝 ProN W6'>ヒラギノ明朝 ProN W6</option>
+              <option value='HiraMinProN-W6' style='font-family: HiraMinProN-W6'>HiraMinProN-W6</option>
+              <option value='HiraMinProN-W6' style='font-family: HiraMinProN-W6'>HiraMinProN-W6</option>
+              <option value='游ゴシック体' style='font-family: 游ゴシック体'>游ゴシック体</option>
+              <option value='YuGothic' style='font-family: YuGothic'>YuGothic</option>
+              <option value='游明朝体' style='font-family: 游明朝体'>游明朝体</option>
+              <option value='YuMincho' style='font-family: YuMincho'>YuMincho</option>
+              <option value='Osaka' style='font-family: Osaka'>Osaka</option>
+              <option value='Osaka－等幅' style='font-family: Osaka－等幅'>Osaka－等幅</option>
+              <option value='Osaka-Mono' style='font-family: Osaka-Mono'>Osaka-Mono</option>
+              <option value='Droid Sans' style='font-family: Droid Sans'>Droid Sans</option>
+              <option value='Roboto' style='font-family: Roboto'>Roboto</option>
+
+            </select>
+          </div>
+
+          <div class='cp_ipselect cp_sl01'>
+            <select id="nodealign" title="並びのアルゴリズムは？">
+              <option value="Justify" selected>sankeyJustify</option>
+              <option value="Left">sankeyLeft</option>
+              <option value="Center">sankeyCenter</option>
+              <option value="Right">sankeyRight</option>
+            </select>
+          </div>
+
+          <div class='cp_ipselect cp_sl01'>
+            <select id="highlighttype" title="マウスオーバー時のハイライト動作は？">
+              <option value="highlightneighbor" selected>隣までハイライトさせる</option>
+              <option value="nohighlight">ハイライトなし</option>
+            </select>
+          </div>
+
+        </fieldset>
+
+      </div>
+
+      <div class="horizon-center">
+
+        <fieldset>
+
+          <legend>ノード</legend>
+
+          <form class="segmented" name="f_nodepos" action="#">
+            <label title="左寄せ"><input type="radio" name="R4" value="left" onclick="nodetext_left()"><span
+                class="label">左</span></label>
+            <label title="中央揃え"><input type="radio" name="R4" value="center" onclick="nodetext_center()" checked><span
+                class="label">中</span></label>
+            <label title="右寄せ"><input type="radio" name="R4" value="right" onclick="nodetext_right()"><span
+                class="label">右</span></label>
+          </form>
+
+          <div class="horizon-left" onchange="redraw(event)">
+            <div><input type="range" id="nodewidth" value="10" min="0" max="100" step="1"
+                title="ノード幅サイズをピクセル指定します"><label for="nodewidth">幅</label></div>
+            <div><input type='range' id='nodepaddingratio' value='0.5' min='0' max='1' step='0.01' title=''><label
+                for='nodepaddingratio'>間隔</label></div>
+            <div><input type='range' id='nodeopacity' value='0.9' min='0' max='1' step='0.01' title=''><label
+                for='nodeopacity'>不透明度</label></div>
+          </div>
+
+          <div class="horizon-left" onchange="redraw(event)">
+            <div><input type='range' id='nodetextfontsize' value='26' min='0' max='64' step='1' title=''><label
+                for='nodetextfontsize'>フォントサイズ</label></div>
+            <div><input type='range' id='nodetextfontweight' value='600' min='0' max='1000' step='100' title=''><label
+                for='nodetextfontweight'>文字太さ</label></div>
+            <div hidden><input type='range' id='nodeiterations' value='5' min='1' max='32' step='1' title=''><label
+                for='nodeiterations'>イテレーション</label></div>
+          </div>
+
+          <div onchange="redraw(event)">
+            <input type="color" id="nodecolor" name="nodecolor" value="#ffffff" title="デフォルトはランダムカラー">
+            <label for="nodecolor">ノード色</label>
+            <input type="color" id="nodetextfontcolor" name="nodetextfontcolor" value="#ffffff" title="デフォルトはランダムカラー">
+            <label for="nodetextfontcolor">文字色</label>
+          </div>
+
+        </fieldset>
+
+      </div>
+
+      <div class="horizon-center">
+        <fieldset>
+
+          <legend>ルート</legend>
+          <div class="horizon-center">
+            <form class="segmented" name="f_animation" action="#"><label>アニメーション</label>
+              <label><input type="radio" name="R1" value="on" onclick="animation_on()" checked><span
+                  class="label">入</span></label>
+              <label><input type="radio" name="R1" value="off" onclick="animation_off()"><span
+                  class="label">切</span></label>
+            </form>
+
+            <input type='range' id='maxOffset' value='10' min='0' max='60' step='1' title=''
+              onchange="redraw(event)"><label for='maxOffset'>速さ</label>
+          </div>
+
+          <div>
+            <div class="horizon-left" onchange="redraw(event)">
+              <div><input type='range' id='strokeopacity' value='0.2' min='0' max='1' step='0.01' title=''><label
+                  for='strokeopacity'>経路の不透明度</label></div>
+              <div><input type='range' id='hideopacity' value='0.1' min='0' max='1' step='0.01' title=''><label
+                  for='hideopacity'>非表示時不透明度</label></div>
+              <div><input type='range' id='circularLinkGap' value='2' min='1' max='20' step='1' title=''><label
+                  for='circularLinkGap'>逆行経路の間隔</label></div>
+            </div>
+          </div>
+
+          <div class="horizon-left" onchange="redraw(event)">
+            <input type="color" id="linkforwardcolor" name="linkforwardcolor" value="#000000">
+            <label for="linkforwardcolor">通常ルート色</label>
+            <input type="color" id="linkreversecolor" name="linkreversecolor" value="#FF0000">
+            <label for="linkreversecolor">逆行ルート色</label>
+          </div>
+
+        </fieldset>
+
+      </div>
+
+      <div class="horizon-center">
+        <fieldset>
+
+          <legend>バッヂ</legend>
+
+          <form class="segmented" name="f_value" action="#">
+            <label><input type="radio" name="R3" value="on" onclick="value_on()" checked><span
+                class="label">入</span></label>
+            <label><input type="radio" name="R3" value="off" onclick="value_off()"><span class="label">切</span></label>
+          </form>
+
+          <div class="horizon-left" onchange="redraw(event)">
+            <div><input type='range' id='badgetextsize' value='26' min='0' max='64' step='1' title=''><label
+                for='badgetextsize'>バッヂサイズ</label></div>
+          </div>
+
+          <div onchange="redraw(event)">
+            <input type="color" id="badgebgcolor" name="badgebgcolor" value="#0000FF">
+            <label for="badgebgcolor">背景色</label>
+            <input type="color" id="badgetextcolor" name="badgetextcolor" value="#FFFFFF">
+            <label for="badgetextcolor">文字色</label>
+          </div>
+
+        </fieldset>
+
+      </div>
+
+      <div class="horizon-center">
+
+        <fieldset>
+
+          <legend>矢印</legend>
+
+          <form class="segmented" name="f_arrow" action="#">
+            <label><input type="radio" name="R2" value="on" onclick="arrow_on()" checked><span
+                class="label">入</span></label>
+            <label><input type="radio" name="R2" value="off" onclick="arrow_off()"><span class="label">切</span></label>
+          </form>
+
+          <div class="horizon-left" onchange="redraw(event)">
+            <div><input type='range' id='arrowlen' value='40' min='0' max='200' step='1' title=''><label
+                for='arrowlen'>矢印長さ</label></div>
+            <div><input type='range' id='arrowgaplen' value='300' min='0' max='1000' step='10' title=''><label
+                for='arrowgaplen'>矢印間隔</label></div>
+            <div><input type='range' id='arrowheadsize' value='4' min='0' max='20' step='1' title=''><label
+                for='arrowheadsize'>矢尻サイズ</label></div>
+          </div>
+          <div onchange="redraw(event)">
+            <input type="color" id="arrowcolor" name="arrowcolor" value="#000000">
+            <label for="arrowcolor">色</label>
+          </div>
+
+        </fieldset>
+
+      </div>
+
+      <div class="horizon-center">
+        <fieldset>
+
+          <legend>ダウンロード</legend>
+
+          <form name="F1" action="#">
+            <div class="horizon-left">
+              <div>
+                <input type="text" name="T1" size="3" maxlength="4" placeholder="幅pixel"
+                  oninput="value = value.replace(/[^0-9]+/i,'');"
+                  title="解像度 幅ピクセルを4桁数値以下で指定します&#13;&#10;PNGのみ設定可&#13;&#10;無指定の場合は原寸大の解像度を自動設定します">
+              </div>
+              <div>
+                <input type="text" name="T1" size="3" maxlength="4" placeholder="高pixel"
+                  oninput="value = value.replace(/[^0-9]+/i,'');"
+                  title="解像度 高さピクセルを4桁数値以下で指定します&#13;&#10;PNGのみ設定可&#13;&#10;無指定の場合は原寸大の解像度を自動設定します">
+              </div>
+            </div>
+            <div class="horizon-left">
+              <a href="javascript:download_PNG();" id="DLPNG" download><span>Download</span><span>PNG</span></a>
+            </div>
+            <div class="horizon-left">
+              <a href="javascript:download_SVG();" id="DLSVG" download><span>Download</span><span>SVG</span></a>
+            </div>
+          </form>
+
+        </fieldset>
+
+      </div>
+
+    </div>
+
+  </h1>
+
+
+  <div id="chart"></div>
+
+  <hr>
+
+  <div>
+
+    <div style="float: left;">
+      <h2>ノード一覧</h2>
+      <div class="sortable-table">
+        <table id="nodes-table"></table>
+      </div>
+
+    </div>
+
+    <div style="float: left;">
+      <h2>ルート一覧</h2>
+      <div class="sortable-table">
+        <table id="links-table"></table>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div style="float: left;width:100%;height: 50px;"></div>
+
+  <script>
+    maketable("#nodes-table", data["nodes"])
+    maketable("#links-table", data["links"])
+    redraw()
+    window.addEventListener('resize', redraw);
+  </script>
+
+
+</body>
+
+<footer>
+  csankey Copyright © 2021 kirin123kirin see <a href="https://opensource.org/licenses/MIT">MIT
+    Liscense</a>&nbsp;&nbsp;|
+  Powered by &nbsp;<a href="https://d3js.org/d3.v4.min.js">d3.js</a>
+  &nbsp;|&nbsp;<a href="https://github.com/tomshanley/d3-sankey-circular">tomshanley's d3-sankey-circular(fork of
+    d3-sankey copyright Mike Bostock)</a>
+  &nbsp;|<a
+    href="https://bl.ocks.org/tomshanley/raw/6f3fcf68c0dbc401548733dd0c64e3c3/d3-sankey-circular.js">d3-sankey-circular.js</a>|&nbsp;<a
+    href="https://www.npmjs.com/package/@riversun/sortable-table">sortable-table.js copyright riversun</script>
+
+</footer>
+
+</html>
