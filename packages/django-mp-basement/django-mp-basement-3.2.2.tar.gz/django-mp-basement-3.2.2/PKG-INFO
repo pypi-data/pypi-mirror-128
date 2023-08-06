@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-mp-basement
+Version: 3.2.2
+Summary: Django basement app
+Home-page: https://github.com/pmaigutyak/mp-basement
+Author: Paul Maigutyak
+Author-email: pmaigutyak@gmail.com
+License: MIT
+Download-URL: https://github.com/pmaigutyak/mp-basement/archive/3.2.2.tar.gz
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

@@ -1,0 +1,16 @@
+
+<script src="{{ STATIC_URL }}bootstrap-notify.min.js"></script>
+
+{% if messages %}
+    <script>
+        (function ($) {
+            {% for message in messages %}
+                $.notify({
+                    message: '{{ message|linebreaksbr }}'
+                }, {
+                    type: '{% if message.tags == 'success' %}success{% else %}danger{% endif %}'
+                });
+            {% endfor %}
+        })(jQuery);
+    </script>
+{% endif %}

@@ -1,0 +1,26 @@
+.slideshow .slick-next, .slideshow .slick-prev {
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+}
+
+.slideshow .slick-prev {
+    left: 20px;
+}
+
+.slideshow .slick-next {
+    right: 20px;
+}
+
+.slideshow .slick-prev:before, .slideshow .slick-next:before {
+    color: #0E2231 !important;
+    font-size: 30px;
+}
+
+.slideshow-nav .slideshow-nav-item {
+    padding: 5px 10px;
+}
+
+.slideshow-nav .slideshow-nav-item:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,8 @@
+{% load i18n %}
+<h3>{{ title }}</h3>
+<ul style="max-height: 300px;overflow-y: auto">
+{% for choice in choices %}
+    <li{% if choice.selected %} class="selected"{% endif %}>
+    <a href="{{ choice.query_string|iriencode }}" title="{{ choice.display }}">{{ choice.display }}</a></li>
+{% endfor %}
+</ul>

@@ -1,0 +1,59 @@
+
+{% load i18n seo sitemetrics pipeline notify %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {% block head %}
+            <title>{% block meta_title %}{% get_meta_tag 'title' config.default_title %}{% endblock %}</title>
+
+            <script>
+                lang_code = '{{ LANGUAGE_CODE }}';
+                csrf='{{ csrf_token }}';
+            </script>
+
+            {% get_meta_tag 'charset' %}
+            {% get_meta_tag 'keywords' %}
+            {% get_meta_tag 'description' %}
+            {% get_meta_tag 'robots' %}
+            {% get_meta_tag 'og:image' '/static/img/site-logo.png' %}
+
+            {% get_favicon_tag %}
+            {% get_viewport_tag %}
+            {% get_language_meta_tags %}
+
+            {% block css %}
+                {% stylesheet 'generic' %}
+            {% endblock %}
+        {% endblock %}
+    </head>
+
+    <body {% block body_attrs %}{% endblock %}>
+
+        {% block body %}
+
+            {% block header %}{% endblock %}
+
+            {% block wrapper %}{% endblock %}
+
+            {% block footer %}{% endblock %}
+
+        {% endblock %}
+
+    </body>
+
+    {% block js %}
+
+        {% javascript 'generic' %}
+
+        {% sitemetrics %}
+
+        {% notify_js %}
+
+        {{ config.extra_js|default:''|safe }}
+
+    {% endblock %}
+
+</html>

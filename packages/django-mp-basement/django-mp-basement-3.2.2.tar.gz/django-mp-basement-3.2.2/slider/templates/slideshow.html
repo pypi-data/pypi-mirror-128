@@ -1,0 +1,52 @@
+
+{% load thumbnail %}
+
+
+<div class="slideshow hidden" data-role="slideshow">
+    {% for image in images %}
+        <li>
+            <a href="{{ MEDIA_URL }}{{ image.file }}">
+                {% thumbnail image.file '500' crop="center" as img %}
+                    <img src="{{ img.url }}"
+                         alt="{{ image }}"
+                         class="img-responsive"
+                         itemprop="image" />
+                {% endthumbnail %}
+            </a>
+        </li>
+    {% endfor %}
+</div>
+
+<div class="slideshow-nav hidden" data-role="slideshow-nav">
+    {% for image in images %}
+        {% thumbnail image.file preview_size|default:'120' crop="center" as img %}
+            <img src="{{ img.url }}"
+                 alt="{{ image }}"
+                 class="img-responsive slideshow-nav-item" />
+        {% endthumbnail %}
+    {% endfor %}
+</div>
+
+<script>
+    window.addEventListener("load", function(event) {
+        $('[data-role=slideshow]').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true
+        }).removeClass('hidden');
+
+        $('[data-role=slideshow-nav]').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '[data-role=slideshow]',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+        }).removeClass('hidden');
+
+        $('[data-role=slideshow] a')
+            .attr('data-fancybox', '{{ group_name }}')
+            .fancybox();
+    });
+</script>
