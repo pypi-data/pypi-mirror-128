@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+licensetool/__init__.py
+licensetool/encrypt_tools.py
+licensetool/linux_tools.py
+licensetool/private.pem
+licensetool/verify_tools.py
+licensetool/win_tools.py
+mogic_model.egg-info/PKG-INFO
+mogic_model.egg-info/SOURCES.txt
+mogic_model.egg-info/dependency_links.txt
+mogic_model.egg-info/requires.txt
+mogic_model.egg-info/top_level.txt
