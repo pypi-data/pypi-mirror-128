@@ -1,0 +1,17 @@
+torch
+pandas
+numpy
+tqdm
+treelib
+joblib
+
+[catalyst]
+catalyst==20.12
+scikit_learn
+matplotlib
+
+[interpretability]
+captum
+
+[nlp]
+transformers
