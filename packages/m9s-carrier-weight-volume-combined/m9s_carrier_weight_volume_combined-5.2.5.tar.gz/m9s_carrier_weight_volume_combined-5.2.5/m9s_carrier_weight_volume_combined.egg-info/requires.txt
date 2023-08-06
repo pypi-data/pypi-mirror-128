@@ -1,0 +1,4 @@
+m9s-trytond<5.3,>=5.2
+trytond_carrier<5.3,>=5.2
+trytond_carrier_weight<5.3,>=5.2
+trytond_sale<5.3,>=5.2
