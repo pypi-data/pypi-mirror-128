@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: fmdl
+Version: 0.0.6
+Summary: Failure Mode Definition Language Compiler
+Home-page: https://mahicks.org
+Author: Michael A. Hicks
+Author-email: michael@mahicks.org
+License: Proprietary
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.8,<3.10
