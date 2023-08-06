@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dumbelek/__init__.py
+dumbelek/funcs.py
+dumbelek/stopwordlist.py
+dumbelek.egg-info/PKG-INFO
+dumbelek.egg-info/SOURCES.txt
+dumbelek.egg-info/dependency_links.txt
+dumbelek.egg-info/requires.txt
+dumbelek.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+nltk
+TurkishStemmer
+scikit-learn
+pandas
+googletrans==4.0.0rc1
