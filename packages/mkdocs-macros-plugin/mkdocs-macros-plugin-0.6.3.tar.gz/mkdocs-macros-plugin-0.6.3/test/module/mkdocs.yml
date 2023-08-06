@@ -1,0 +1,20 @@
+site_name: Main test site
+theme: material
+copyright: (C) SettleNext Laurent Franceschetti 2020
+
+nav:
+    - Home: index.md
+    - Environment: environment.md
+    - Second:
+        - other.md
+    - Not interpreted: literal.md
+
+plugins:
+  - search
+  - macros:
+      include_dir: include
+      modules: ['mkdocs-macros-test:mkdocs_macros_test']
+      verbose: true # toggle to true if you want to macro debug
+
+extra:
+  unit_price: 50
