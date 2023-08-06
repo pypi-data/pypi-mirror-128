@@ -1,0 +1,3 @@
+[console_scripts]
+igel=igel.__main__:cli
+
