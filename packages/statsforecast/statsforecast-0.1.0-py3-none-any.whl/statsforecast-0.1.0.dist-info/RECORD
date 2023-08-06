@@ -1,0 +1,11 @@
+statsforecast/__init__.py,sha256=Knx_ezTPsP1y0eQhChutZi7sd2gL0AzKJe2WJlpWMII,55
+statsforecast/_nbdev.py,sha256=CVmcYY-yIklHwxfK6oB3CfMynuaYiEGI3Fpzfw-A7HQ,1081
+statsforecast/core.py,sha256=3Dgiy2md--gyflINBnSXeTdjcHhsQo6dUTYmBm3db-Q,4760
+statsforecast/models.py,sha256=ezLSLVA_iIVymu_NjFKlCGiPakJ0sqctb_79Iy1LwH0,6438
+statsforecast/utils.py,sha256=jWzeOkVDdBh16Z1SSYfrqk6ytC3S5SZpkylDTbiRM-g,2038
+statsforecast-0.1.0.dist-info/LICENSE,sha256=BXlFsFliXlCHqR67z422Si-haXR9ti7jUIPDJHx3LxA,11337
+statsforecast-0.1.0.dist-info/METADATA,sha256=pFKJtGGZfl69iprOuQ8yp_c1qvav7c-IfFyuBXCfhUY,4145
+statsforecast-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+statsforecast-0.1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+statsforecast-0.1.0.dist-info/top_level.txt,sha256=dmrJvc9xuN3C4vp4TLs_igwvAPxZseWYsKmgvvGJETA,14
+statsforecast-0.1.0.dist-info/RECORD,,
