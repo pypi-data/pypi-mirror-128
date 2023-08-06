@@ -1,0 +1,10 @@
+aws_cdk/aws_chatbot/__init__.py,sha256=yWPMvLNmfh_Wgm7KQ-2Pa38ncOUxDhHgICWC0VyGJf4,53321
+aws_cdk/aws_chatbot/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_chatbot/_jsii/__init__.py,sha256=HELF2em2oioQnNCBRYTNyFyZjgSxWyF8ort_c3nPXow,544
+aws_cdk/aws_chatbot/_jsii/aws-chatbot@1.134.0.jsii.tgz,sha256=j6CnnqDz0gIjBc_kTU5l0no1Y3U79M2C638JSlMltuQ,30430
+aws_cdk.aws_chatbot-1.134.0.dist-info/LICENSE,sha256=PPdRlpoLCV1CRrCV1eKpp3m0lNjchFAP4a9zfc8tRLo,11391
+aws_cdk.aws_chatbot-1.134.0.dist-info/METADATA,sha256=qpkNghR-BJ7TTa-NHg-gKIF_QyjyhgM3CE16Qpvhcno,3840
+aws_cdk.aws_chatbot-1.134.0.dist-info/NOTICE,sha256=xo56krus2e5ShfXqz_B7vuvGcMn_D0F7TjjpfTz8YMw,113
+aws_cdk.aws_chatbot-1.134.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_cdk.aws_chatbot-1.134.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_chatbot-1.134.0.dist-info/RECORD,,
