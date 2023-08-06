@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ms_teams_sdk/__init__.py
+src/ms_teams_sdk/auth.py
+src/ms_teams_sdk/exception.py
+src/ms_teams_sdk/lists.py
+src/ms_teams_sdk/message.py
+src/ms_teams_sdk/users.py
+src/ms_teams_sdk.egg-info/PKG-INFO
+src/ms_teams_sdk.egg-info/SOURCES.txt
+src/ms_teams_sdk.egg-info/dependency_links.txt
+src/ms_teams_sdk.egg-info/requires.txt
+src/ms_teams_sdk.egg-info/top_level.txt
