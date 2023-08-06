@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+xcaptcha/__init__.py
+xcaptcha.egg-info/PKG-INFO
+xcaptcha.egg-info/SOURCES.txt
+xcaptcha.egg-info/dependency_links.txt
+xcaptcha.egg-info/requires.txt
+xcaptcha.egg-info/top_level.txt
+xcaptcha/defaults/__init__.py
+xcaptcha/generator/__init__.py
+xcaptcha/generator/captcha_generator.py
+xcaptcha/types/__init__.py
+xcaptcha/types/captcha.py
