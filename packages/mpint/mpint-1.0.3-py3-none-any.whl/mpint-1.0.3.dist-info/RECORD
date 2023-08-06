@@ -1,0 +1,11 @@
+mpint/__init__.py,sha256=MiGmaBt1moGvOijfvPuCPAyDNZBDbby7C4_YzluWZBk,207
+mpint/integrate.py,sha256=ivDmM61YtKTk6fAtjp2-7Ixv2f22r7ArWuI1XzWx--4,1102
+mpint/pio.py,sha256=jKg6p5eUOerSkUFgtolhE3SPVPddirQ5M0e5s79Q2KY,3227
+mpint/pvars.py,sha256=EkNkG8zbUbO9Ez7YSnxtobiW2X-3r18SsQis3hPUlFw,7506
+mpint/lib/__init__.py,sha256=hTb9XInMJschJNXaL6WWO5Zu9teWdebwuXJ48W2tAT4,99
+mpint/lib/pe.py,sha256=ia7HrJbDHUZd3ZwLkTZsi4KCWoGwprK1dIIO2FdeB0A,4607
+mpint-1.0.3.dist-info/LICENCE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+mpint-1.0.3.dist-info/METADATA,sha256=C0rnLh_5rZfce0vQaqpPOdaDX0uKHbhCg0YMoMa0B6w,1917
+mpint-1.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mpint-1.0.3.dist-info/top_level.txt,sha256=EyJGUrqvBEGfKj-xtsKv1dv9YB0VsGd5b464iq5A2Uc,6
+mpint-1.0.3.dist-info/RECORD,,
