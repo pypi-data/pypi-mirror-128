@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: color-pandas
+Version: 0.0.3
+Summary: Pandas plugin to make easy styling of cells
+Home-page: https://github.com/gianfa/color_pandas.git
+Author: Gianfrancesco Angelini
+Author-email: gian.angelini@hotmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/gianfa/color_pandas/issues
+Keywords: pandas,color,datascience,visualization,plugin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ColorPandas
+Visualize colorful tables with ease
+
+ColorPandas is a Pandas plugin to make styling of cells easy.
+
+Check out the [Getting Started](https://github.com/gianfa/color_pandas/blob/main/examples/getting_started.ipynb) notebook.
+
+
+### Installation
+
+```
+pip install color-pandas
+```
+
+
+

@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+color_pandas/__init__.py
+color_pandas/colorizer.py
+color_pandas/funx.py
+color_pandas/styles.py
+color_pandas.egg-info/PKG-INFO
+color_pandas.egg-info/SOURCES.txt
+color_pandas.egg-info/dependency_links.txt
+color_pandas.egg-info/top_level.txt
