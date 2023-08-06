@@ -1,0 +1,3 @@
+[console_scripts]
+flowchem = flowchem.cli:main
+
