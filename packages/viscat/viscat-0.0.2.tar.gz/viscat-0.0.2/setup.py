@@ -1,0 +1,28 @@
+import setuptools
+from setuptools.command.install import install
+from setuptools.command.develop import develop
+from setuptools.command.egg_info import egg_info
+
+with open("./README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="viscat",
+    version="0.0.2",
+    author="w-is-h",
+    author_email="w.kraljevic@gmail.com",
+    description="Visualization of a dataset annotated with CAT",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/w-is-h/viscat",
+    packages=['viscat'],
+    install_requires=[
+        'py2neo==2021.2.3',
+        'pandas==1.3.4',
+        ],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+)
