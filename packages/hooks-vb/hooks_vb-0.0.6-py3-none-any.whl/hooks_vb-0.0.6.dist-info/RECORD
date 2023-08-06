@@ -1,0 +1,12 @@
+hooks_vb/__init__.py,sha256=Xp57XaGIGJNm1TadNknceSzvf9rUziwSIiDaFv3oO90,142
+hooks_vb/add_version_tag.py,sha256=E4fgOEKDMDMVgsFMbDzrRgKA0r4JfaCPUHg3d_uoRw8,2153
+hooks_vb/build_utils.py,sha256=d5ql1-l3iMsS6he4UQxGvvZd2yM4rp2ZR0nAcvvQ1PY,2257
+hooks_vb/check_commit_msg.py,sha256=INp5KRRklm-ycjTi9xsmHbViVacJVJkGcxvKktDzEf4,2417
+hooks_vb/git_utils.py,sha256=FKRbf--4k2__d6PWvo1W8ahODzJuSNAV27cpVtdNPmg,1825
+hooks_vb/publish.py,sha256=SedSsc3STsvY9pKnXYXW4TNbKM93BkHTnCJtDI-lR_s,2806
+hooks_vb-0.0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hooks_vb-0.0.6.dist-info/METADATA,sha256=JrDN0pJXvhMoiOp-TV9DtWlUyos2IZLufhpuiVoOS-k,7366
+hooks_vb-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hooks_vb-0.0.6.dist-info/entry_points.txt,sha256=hXZAk3a6A1f_dBNqYrDFRebk2seRFlwwJl6-ijzOseQ,157
+hooks_vb-0.0.6.dist-info/top_level.txt,sha256=z3IUSVWGNEX-6eWScX5_gDyZ0YP8EgQjsCPesfUEjJU,9
+hooks_vb-0.0.6.dist-info/RECORD,,

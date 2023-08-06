@@ -1,0 +1,5 @@
+[console_scripts]
+add-version-tag = hooks_vb.add_version_tag:main
+check-commit-msg = hooks_vb.check_commit_msg:main
+publish-package = hooks_vb.publish:main
+
