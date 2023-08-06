@@ -1,0 +1,70 @@
+import json
+import typing
+
+from hypothesis import given, strategies as st
+import pydantic
+import pytest
+
+from hrefs import Href, BaseReferrableModel
+from util import hrefs
+
+
+class Pet(BaseReferrableModel):
+    id: int
+
+    @staticmethod
+    def key_to_url(key: int) -> str:
+        return f"/pets/{key}"
+
+    @staticmethod
+    def url_to_key(url: str) -> int:
+        return int(url.split("/")[-1])
+
+
+class Owner(pydantic.BaseModel):
+    pets: typing.List[Href[Pet]]
+
+
+pet_hrefs = hrefs(Pet, st.integers())
+
+
+@given(pet_hrefs)
+def test_parse_href(href):
+    assert pydantic.parse_obj_as(Href[Pet], href) is href
+
+
+@given(st.builds(Pet))
+def test_parse_referrable_model(pet):
+    href = pydantic.parse_obj_as(Href[Pet], pet)
+    assert href.key == pet.id
+    assert href.url == Pet.key_to_url(pet.id)
+
+
+@given(st.integers())
+def test_parse_key_to_href(key):
+    href = pydantic.parse_obj_as(Href[Pet], key)
+    assert href.key == key
+    assert href.url == Pet.key_to_url(key)
+
+
+@given(st.from_regex(r"\A/pets/\d+\Z"))
+def test_parse_url_to_key(url):
+    href = pydantic.parse_obj_as(Href[Pet], url)
+    assert href.key == Pet.url_to_key(url)
+    assert href.url == url
+
+
+def test_parse_href_with_unparseable_key_fails():
+    with pytest.raises(pydantic.ValidationError):
+        pydantic.parse_obj_as(Href, object())
+
+
+def test_parse_href_without_parameter_fails():
+    with pytest.raises(pydantic.ValidationError):
+        pydantic.parse_obj_as(Href, 123)
+
+
+@given(st.builds(Owner, pets=st.lists(pet_hrefs)))
+def test_json_encode(owner):
+    owner_json = json.loads(owner.json())
+    assert owner_json["pets"] == [pet.url for pet in owner.pets]
