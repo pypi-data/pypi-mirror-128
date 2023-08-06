@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wmath
+Version: 0.0.3
+Summary: Another simple math package in the world
+Home-page: https://dev/null
+Author: wang606
+Author-email: wang__qing__hua@163.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://please/send/to/dev/null/i/check/that/place/every/night
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+

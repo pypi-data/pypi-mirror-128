@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/wmath/__init__.py
+src/wmath/fraction.py
+src/wmath/meta.py
+src/wmath/number_theory.py
+src/wmath/polynomial.py
+src/wmath.egg-info/PKG-INFO
+src/wmath.egg-info/SOURCES.txt
+src/wmath.egg-info/dependency_links.txt
+src/wmath.egg-info/top_level.txt
