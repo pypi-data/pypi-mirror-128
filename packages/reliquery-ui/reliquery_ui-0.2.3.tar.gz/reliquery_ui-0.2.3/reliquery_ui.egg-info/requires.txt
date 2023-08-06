@@ -1,0 +1,6 @@
+reliquery>=0.2.9
+numpy>=1.16
+black>=21.4b
+fastapi[all]
+requests
+uvicorn
