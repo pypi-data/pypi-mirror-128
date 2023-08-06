@@ -1,0 +1,4 @@
+pyserial
+pyusb
+gitpython
+hello-robot-stretch-body
