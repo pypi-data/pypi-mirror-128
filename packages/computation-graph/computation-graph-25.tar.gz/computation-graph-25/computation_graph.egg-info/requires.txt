@@ -1,0 +1,8 @@
+gamla>=103
+typeguard
+toposort
+immutables
+
+[test]
+pygraphviz
+pytest>=5.4.0
