@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+
+import apprentice as app
+import numpy as np
+
+if __name__ == "__main__":
+    import sys
+    import time
+
+
+    import optparse, os, sys
+    op = optparse.OptionParser(usage=__doc__)
+    op.add_option("-v", "--debug", dest="DEBUG", action="store_true", default=False, help="Turn on some debug messages")
+    op.add_option("-w", dest="WEIGHTS", default=None, help="Weight file to choose observables to predict (default: %default)")
+    op.add_option("-p", dest="PARAMS", default=None, help="Parameter file (default: %default)")
+    op.add_option("-o", "--output", dest="OUTPUT", default="pred.yoda", help="Output file name (default: %default)")
+    op.add_option("-e", "--errorapprox", dest="ERRAPP", default=None, help="Approximations of bin uncertainties (default: %default)")
+    opts, args = op.parse_args()
+
+    if opts.PARAMS is None:
+        print("No parameter files specified, (-p) exiting\n\n")
+        sys.exit(1)
+    if not os.path.exists(opts.PARAMS):
+        print("Specified parameter file {} does not exist, exiting\n\n".format(opts.PARAMS))
+        sys.exit(1)
+
+    with open(opts.PARAMS) as f: VALS  = [float(l.strip().split("#")[0].split()[-1]) for l in f if not l.startswith("#") and not len(l.strip())==0]
+    with open(opts.PARAMS) as f: NAMES = [      l.strip().split("#")[0].split()[0]   for l in f if not l.startswith("#") and not len(l.strip())==0]
+    pd = dict(zip(NAMES,VALS))
+
+    app.tools.prediction2YODA(args[0], pd, opts.OUTPUT, opts.ERRAPP, opts.WEIGHTS)
+    exit(0)
