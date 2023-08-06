@@ -1,0 +1,13 @@
+README.md
+setup.py
+mercariGetter.egg-info/PKG-INFO
+mercariGetter.egg-info/SOURCES.txt
+mercariGetter.egg-info/dependency_links.txt
+mercariGetter.egg-info/requires.txt
+mercariGetter.egg-info/top_level.txt
+mercariGetter/Library/mercariConfig.py
+mercariGetter/Library/mercariDataController.py
+mercariGetter/Library/mercariException.py
+mercariGetter/Library/mercariConfig.py
+mercariGetter/Library/mercariDataController.py
+mercariGetter/Library/mercariException.py
