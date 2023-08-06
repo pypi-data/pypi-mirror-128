@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: glob2regex
+Version: 0.0.3
+Summary: Python library for converting glob formatted search to regex
+Home-page: https://github.com/Salamek/glob2regex
+Author: Adam Schubert
+Author-email: adam.schubert@sg1-game.net
+License: LGPL-3.0 
+Project-URL: Release notes, https://github.com/Salamek/glob2regex/releases
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# glob2regex
+
+Converts glob search format to regex format
+
+[![Python package](https://github.com/Salamek/glob2regex/actions/workflows/python-test.yml/badge.svg)](https://github.com/Salamek/glob2regex/actions/workflows/python-test.yml)
+
+
+## Install
+
+
+```bash
+pip install glob2regex
+```
+
+
+## Example of usage
+
+
+```python
+from glob2regex import glob2regex
+
+glob_search = '/home/*/ST-*/q[01-10]*.pdf'
+
+regex = glob2regex(glob_search)
+
+print(regex)
+
+```
+
