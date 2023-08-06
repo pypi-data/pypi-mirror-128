@@ -1,0 +1,3 @@
+[console_scripts]
+ua = useragent_rs.base:script_ua
+
