@@ -1,0 +1,10 @@
+[project]
+name = "mexpress"
+dependencies = ["numpy"]
+description = "Math parser and evaluator capable of computing gradients and Hessians."
+readme = "README.md"
+
+[build-system]
+requires = ["maturin>=0.11,<0.12"]
+build-backend = "maturin"
+
