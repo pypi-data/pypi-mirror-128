@@ -1,0 +1,6 @@
+wheel
+typing_extensions
+
+[:sys_platform == "win32"]
+machomachomangler
+bindepend
