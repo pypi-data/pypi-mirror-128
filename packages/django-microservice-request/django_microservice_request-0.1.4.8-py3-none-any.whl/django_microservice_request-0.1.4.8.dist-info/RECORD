@@ -1,0 +1,11 @@
+microservice_request/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+microservice_request/decorators.py,sha256=AIPZyuSwluNHe4OPJ7NgaX31cDBO_buowVYxkq_ngrc,508
+microservice_request/exceptions.py,sha256=GHEDStLvgdrJizOqye4PiKSjgmhzOwjanjqFkPEwmXU,51
+microservice_request/middleware.py,sha256=KlaSMsIy3mXmsAXgDMm30Yb5tMnDto4PxNhf1di_dLI,484
+microservice_request/permissions.py,sha256=6kptKLY060R1HicqBAfkx1I7LtGqt7-omfIVtQkDTOc,510
+microservice_request/services.py,sha256=_CDJ69hgru_sya8poGrMGUFRGBxE884w34FDmwgBk7s,8667
+django_microservice_request-0.1.4.8.dist-info/LICENSE,sha256=rN7DNqU4iCefge6jDKC908fSHCJPJ1xStcwUQ34XYGQ,1463
+django_microservice_request-0.1.4.8.dist-info/METADATA,sha256=vodkIYh3HMougVnf_aVyLdKtHcFojOe2wW0kE6XJKAQ,3474
+django_microservice_request-0.1.4.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_microservice_request-0.1.4.8.dist-info/top_level.txt,sha256=LraSi1JlAwOxywKiBK1pZjxBpn_kJCsUl3bKh9lzHl8,21
+django_microservice_request-0.1.4.8.dist-info/RECORD,,

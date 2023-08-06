@@ -1,0 +1,14 @@
+from json import dumps
+from hashlib import md5
+from django.conf import settings
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
+
+
+class HasApiKeyOrIsAuthenticated(IsAuthenticated):
+
+    def has_permission(self, request, view):
+        if key := request.headers.get('Authorization'):
+            token = list(key.split(" "))
+            if token[0] == settings.API_KEY_HEADER and token[1] == settings.API_KEY:
+                return True
+        return super().has_permission(request, view)
