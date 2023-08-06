@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: hctk
+Version: 0.0.7
+Summary: Hanzi Corpus toolkit
+Home-page: http://github.com/liao961120/hctk
+Author: Yongfu Liao
+Author-email: liao961120@github.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: cqls
+Requires-Dist: gdown (>=3.10.2)
+Requires-Dist: hanziPhon
+Requires-Dist: pyyaml (>=5.1)
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: pickle5 ; python_version < "3.8.0"
+Provides-Extra: all
+Requires-Dist: bokeh ; extra == 'all'
+Requires-Dist: colorcet ; extra == 'all'
+Requires-Dist: datashader ; extra == 'all'
+Requires-Dist: holoviews ; extra == 'all'
+Requires-Dist: opencc ; extra == 'all'
+Requires-Dist: scikit-image ; extra == 'all'
+Requires-Dist: torch ; extra == 'all'
+Requires-Dist: transformers ; extra == 'all'
+Requires-Dist: umap-learn ; extra == 'all'
+Requires-Dist: yellowbrick (>=1.3) ; extra == 'all'
+Provides-Extra: colab
+Requires-Dist: bokeh ; extra == 'colab'
+Requires-Dist: colorcet ; extra == 'colab'
+Requires-Dist: datashader ; extra == 'colab'
+Requires-Dist: holoviews ; extra == 'colab'
+Requires-Dist: scikit-image ; extra == 'colab'
+Provides-Extra: sense
+Requires-Dist: opencc ; extra == 'sense'
+Requires-Dist: torch ; extra == 'sense'
+Requires-Dist: transformers ; extra == 'sense'
+Requires-Dist: umap-learn ; extra == 'sense'
+Requires-Dist: yellowbrick (>=1.3) ; extra == 'sense'
+
+# Hanzi Corpus toolkit
+
+
