@@ -1,0 +1,2 @@
+recursive-include simplemathcaptcha/locale *
+recursive-include simplemathcaptcha/templates *
