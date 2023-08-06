@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+torch_runstats/__init__.py
+torch_runstats/_runstats.py
+torch_runstats/_version.py
+torch_runstats/scatter.py
+torch_runstats.egg-info/PKG-INFO
+torch_runstats.egg-info/SOURCES.txt
+torch_runstats.egg-info/dependency_links.txt
+torch_runstats.egg-info/top_level.txt
