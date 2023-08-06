@@ -1,0 +1,10 @@
+pyfsnotif/__init__.py,sha256=aMKKvu6s7b6Pw9r2FQb58QmuL4nzV6QR8Duv2NkVpyM,46
+pyfsnotif/command.py,sha256=KsLbvIWIx3k5o8MaSdkf5TiBQvtoCJGzKHz4K1R0UHE,1657
+pyfsnotif/inotify.py,sha256=TH9aEHrcmyFVPKBfR_Xqz6uOfdwsO0DhKOnas1Mj2f8,2929
+pyfsnotif/watcher.py,sha256=l7dKm1zFWDmQwD_05dJt6_Ju4M0AHgaWffq2IO9rwBo,3911
+pyfsnotif-1.2.0.dist-info/LICENSE,sha256=0tNHXfCacj_eX-GwlIVtBc7i881BDBotZvM9QeCIUPY,1090
+pyfsnotif-1.2.0.dist-info/METADATA,sha256=TdVYp-PrGW0b51rZjAXLYvOctZYPA2-bdSNyL2pWS4s,543
+pyfsnotif-1.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyfsnotif-1.2.0.dist-info/entry_points.txt,sha256=c0jtPy-LUrWY7Y0XtoRVuP8vgIOzLg_sYHzGd6xur1I,101
+pyfsnotif-1.2.0.dist-info/top_level.txt,sha256=Qgedu7nuW7-Zb0nzjU-udluHCqtPst6zDjRYLGobVow,10
+pyfsnotif-1.2.0.dist-info/RECORD,,
