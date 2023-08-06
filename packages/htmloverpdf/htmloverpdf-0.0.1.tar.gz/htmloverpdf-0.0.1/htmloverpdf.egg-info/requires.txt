@@ -1,0 +1,5 @@
+weasyprint==52.*
+pygobject
+cairocffi
+lxml
+lxml-stubs
