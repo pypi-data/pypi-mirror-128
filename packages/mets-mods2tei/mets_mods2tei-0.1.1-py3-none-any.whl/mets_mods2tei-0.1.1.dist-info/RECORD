@@ -1,0 +1,17 @@
+mets_mods2tei/__init__.py,sha256=Gs4E79fKoy0OpiWkx-PfV127jURd31unMwdq8n28bzU,181
+mets_mods2tei/api/__init__.py,sha256=m6pAt18h3bFyqUtAYpAtFOfdWF0eyhB5dAlLPqtSNVQ,94
+mets_mods2tei/api/alto.py,sha256=zQkfq0kBCjTorfxC9MKhx0jmH5JbW7-l1e2QutEeQOg,5181
+mets_mods2tei/api/mets.py,sha256=6DTnq31bk22z8_1c-PzPdjd_IQPvYV7AJjUZZukVXAc,15400
+mets_mods2tei/api/mets_generateds.py,sha256=TIR4uk6Cxdx8_syYQvWa9jMqju0lRbc9Ua6N9SCYEc4,393033
+mets_mods2tei/api/mods_generateds.py,sha256=6U-68YW_Sd2ie_q30mzmQ6Ljc4LZ7GMnnYgVYK4FUkk,711439
+mets_mods2tei/api/tei.py,sha256=X-C0-RZ9iSDK-Y5WbZdvGH-ofXeUDOUgRenECNmvaKQ,27238
+mets_mods2tei/data/iso15924-utf8-20180827.txt,sha256=plUK3FMUsb_ZU8_5TyZBTsHA53mB1nRNYt7WXicjc0g,12965
+mets_mods2tei/data/tei_skeleton.xml,sha256=fte2-qiRrD9GgiO-v0m2nYz42t-N1dLOz5ykYXM_XZ8,1177
+mets_mods2tei/scripts/__init__.py,sha256=EwskenaxSmvgq1X-DLpllrYbh0UUcRrBBFUgVk5CJDk,31
+mets_mods2tei/scripts/mets_mods2tei.py,sha256=2Qv87rdoxM0QUaVZLDz33SxYAHvHnQL1qRvBCW8Nl7A,1178
+mets_mods2tei-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mets_mods2tei-0.1.1.dist-info/METADATA,sha256=T4PnRxtqroXo2jVD1bPDtSrMkV2vgxVxaxqvGfc3ROM,44595
+mets_mods2tei-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mets_mods2tei-0.1.1.dist-info/entry_points.txt,sha256=kVWSP7ON6zMhzSoyndgWSKGRdZQtE-ZW51lknY3F7lg,68
+mets_mods2tei-0.1.1.dist-info/top_level.txt,sha256=DyYgQDv4RKxytW2o8FNj-xhhoD3gcV0thh1EBKFGVqQ,14
+mets_mods2tei-0.1.1.dist-info/RECORD,,
