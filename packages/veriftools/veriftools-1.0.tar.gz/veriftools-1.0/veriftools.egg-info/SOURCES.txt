@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+veriftools/veriftools.py
+veriftools.egg-info/PKG-INFO
+veriftools.egg-info/SOURCES.txt
+veriftools.egg-info/dependency_links.txt
+veriftools.egg-info/not-zip-safe
+veriftools.egg-info/top_level.txt
