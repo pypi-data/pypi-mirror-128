@@ -1,0 +1,3 @@
+[console_scripts]
+obstotestlink = obisidian_to_testlink.main:main
+

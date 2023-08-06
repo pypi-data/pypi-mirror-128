@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: obisidian_to_testlink
+Version: 1.2.2
+Summary: Convert obisidian to TestLink xml
+Home-page: UNKNOWN
+Author: zhaobk
+Author-email: zhaobk@nationalchip.com
+License: UNKNOWN
+Description: 
+        Documentation
+        -------------
+        v1.1.1: 不需要需求，也可以生成用例
+        v1.2.1: 支持gxtest格式
+        
+        
+Keywords: obisidian testlink testcase requirement
+Platform: UNKNOWN
