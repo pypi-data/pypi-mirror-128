@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+WatonAPI.egg-info/PKG-INFO
+WatonAPI.egg-info/SOURCES.txt
+WatonAPI.egg-info/dependency_links.txt
+WatonAPI.egg-info/requires.txt
+WatonAPI.egg-info/top_level.txt
+watonapi/__init__.py
+watonapi/address.py
+watonapi/codec.py
+watonapi/connection.py
+watonapi/dispatcher.py
+watonapi/errors.py
+watonapi/packets.py
+watonapi/server.py
