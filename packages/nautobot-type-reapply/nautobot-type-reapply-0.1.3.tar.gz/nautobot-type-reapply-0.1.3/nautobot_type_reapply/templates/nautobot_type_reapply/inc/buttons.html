@@ -1,0 +1,9 @@
+<div class="btn-group" role="group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> Reapply Device Type <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="{% url 'plugins:nautobot_type_reapply:reapply' device.pk %}?additive=true" class="dropdown-item">Additive</a></li>
+    <li><a href="{% url 'plugins:nautobot_type_reapply:reapply' device.pk %}" class="dropdown-item">Differential</a></li>
+  </ul>
+</div>

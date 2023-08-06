@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+nautobot_type_reapply/__init__.py
+nautobot_type_reapply/template_content.py
+nautobot_type_reapply/urls.py
+nautobot_type_reapply/views.py
+nautobot_type_reapply.egg-info/PKG-INFO
+nautobot_type_reapply.egg-info/SOURCES.txt
+nautobot_type_reapply.egg-info/dependency_links.txt
+nautobot_type_reapply.egg-info/not-zip-safe
+nautobot_type_reapply.egg-info/top_level.txt
+nautobot_type_reapply/templates/nautobot_type_reapply/confirm.html
+nautobot_type_reapply/templates/nautobot_type_reapply/inc/buttons.html
