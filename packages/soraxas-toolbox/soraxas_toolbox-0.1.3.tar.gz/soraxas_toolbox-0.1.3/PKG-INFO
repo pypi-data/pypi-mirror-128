@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: soraxas_toolbox
+Version: 0.1.3
+Summary: A simple packaged toolbox for various scenario
+Home-page: https://github.com/soraxas/pytoolbox
+Author: soraxas
+Author-email: oscar@tinyiu.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![pypi](https://img.shields.io/pypi/v/soraxas-toolbox)](https://pypi.org/project/soraxas-toolbox/)
+[![python-version](https://img.shields.io/pypi/pyversions/soraxas-toolbox)](https://pypi.org/project/soraxas-toolbox)
+[![Master Update](https://img.shields.io/github/last-commit/soraxas/python-soraxas_toolbox/master.svg)](https://github.com/soraxas/python-soraxas_toolbox/commits/master)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![License](https://img.shields.io/github/license/soraxas/python-soraxas_toolbox.svg)](https://github.com/soraxas/python-soraxas_toolbox/blob/master/LICENSE)
+
+# Python toolbox
+
+A simple toolbox for various scenario. Documentation will unlikely be provided here.
+
+Use without any warranty :)
+
+Cheers
+
+
