@@ -1,0 +1,1 @@
+cbpi@ git+ssh://git@github.com/avollkopf/craftbeerpi4.git

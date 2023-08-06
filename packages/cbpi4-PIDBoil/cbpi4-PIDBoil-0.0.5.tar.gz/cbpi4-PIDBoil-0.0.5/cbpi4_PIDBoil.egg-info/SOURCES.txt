@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+cbpi4-PIDBoil/__init__.py
+cbpi4-PIDBoil/config.yaml
+cbpi4-PIDBoil/static/cbpi.png
+cbpi4-PIDBoil/static/index.html
+cbpi4-PIDBoil/static/style.css
+cbpi4_PIDBoil.egg-info/PKG-INFO
+cbpi4_PIDBoil.egg-info/SOURCES.txt
+cbpi4_PIDBoil.egg-info/dependency_links.txt
+cbpi4_PIDBoil.egg-info/requires.txt
+cbpi4_PIDBoil.egg-info/top_level.txt
