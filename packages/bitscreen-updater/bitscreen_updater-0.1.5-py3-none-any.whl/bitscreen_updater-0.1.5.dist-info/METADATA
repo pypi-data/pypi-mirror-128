@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: bitscreen-updater
+Version: 0.1.5
+Summary: A BitScreen daemon that keeps track of all blocked CIDs and checks deal requests through a socket
+Home-page: UNKNOWN
+Author: Keyko
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: web3 (==5.23.1)
+Requires-Dist: tabulate (==0.8.9)
+Requires-Dist: dashing (==0.1.0)
+Requires-Dist: py-crypto-hd-wallet (==0.13.0)
+Requires-Dist: pycryptodome (==3.11.0)
+Requires-Dist: zmq
+
+# list-updater
+Python process to keep the list of filters up to date
+
+## Setup
+Environment variables
+
+description       | env var                        | default
+------------- | ------------------------------ | -------
+socket_port   | BITSCREEN_SOCKET_PORT          | 5555
+host          | BITSCREEN_BACKEND_HOST         | http://localhost:3030
+cids file     | BITSCREEN_CIDS_FILE            | ~/.murmuration/bitscreen
+key           | BITSCREEN_PROVIDER_KEY         |
+seed_phrase   | BITSCREEN_PROVIDER_SEED_PHRASE |
+
+`To load the provider wallet to communicate with the backend either
+BITSCREEN_PROVIDER_KEY or BITSCREEN_PROVIDER_SEED_PHRASE must be set.`
+
+## pip install
+```bash
+pip install bitscreen-updater
+```
+
+## Development install
+```bash
+sudo python setup.py install
+```
+
+## Run from source
+```bash
+# clone this repo
+cd bitscreen-updater
+export BITSCREEN_PROVIDER_SEED_PHRASE="provider wallet seed phrase"
+
+# Start the daemon
+python -m bitscreen_updater start
+
+# Stop the daemon
+python -m bitscreen_updater stop
+
+# Restart the daemon
+python -m bitscreen_updater restart
+
+# Get the status of the daemon
+python -m bitscreen_updater status
+
+```
+
+## Run installed
+```bash
+bitscreen-updater [start|stop|restart|status]
+```
+
+
