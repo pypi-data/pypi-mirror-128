@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+G_plot/__init__.py
+G_plot.egg-info/PKG-INFO
+G_plot.egg-info/SOURCES.txt
+G_plot.egg-info/dependency_links.txt
+G_plot.egg-info/top_level.txt
