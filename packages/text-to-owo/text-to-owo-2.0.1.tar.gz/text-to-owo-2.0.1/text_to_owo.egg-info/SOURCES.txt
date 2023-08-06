@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+owo/__init__.py
+text_to_owo.egg-info/PKG-INFO
+text_to_owo.egg-info/SOURCES.txt
+text_to_owo.egg-info/dependency_links.txt
+text_to_owo.egg-info/top_level.txt
