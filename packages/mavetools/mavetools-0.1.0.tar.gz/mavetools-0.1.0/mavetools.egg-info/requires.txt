@@ -1,0 +1,7 @@
+attrs
+requests
+fqfa>=1.2.1
+mavehgvs
+numpy
+pandas
+idutils
