@@ -1,0 +1,9 @@
+MC
+Meta
+Preset
+apolloCommon
+lobby
+lobbyGame
+master
+mod
+service
