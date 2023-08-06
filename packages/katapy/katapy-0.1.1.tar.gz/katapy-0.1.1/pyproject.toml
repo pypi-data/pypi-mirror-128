@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "katapy"
+version = "0.1.1"
+description = "A tool for assisting python developers"
+authors = ["Nuno Costa <91nunocosta@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/91nunocosta/katapy"
+
+include = ["coverage.svg", "katapy/tox.ini"]
+
+[tool.poetry.scripts]
+katapy = 'katapy.program:program.run'
+kat = 'katapy.program:program.run'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+invoke = "^1.6.0"
+pre-commit = "^2.15.0"
+tox = "^3.24.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^3.0.0"
+coverage-badge = "^1.0.2"
+poetry-core = "^1.0.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
