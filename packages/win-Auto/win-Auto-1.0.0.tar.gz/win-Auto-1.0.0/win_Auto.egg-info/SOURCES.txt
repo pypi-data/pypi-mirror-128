@@ -1,0 +1,10 @@
+setup.py
+winAuto/__init__.py
+winAuto/constant.py
+winAuto/exceptions.py
+winAuto/win.py
+win_Auto.egg-info/PKG-INFO
+win_Auto.egg-info/SOURCES.txt
+win_Auto.egg-info/dependency_links.txt
+win_Auto.egg-info/requires.txt
+win_Auto.egg-info/top_level.txt
