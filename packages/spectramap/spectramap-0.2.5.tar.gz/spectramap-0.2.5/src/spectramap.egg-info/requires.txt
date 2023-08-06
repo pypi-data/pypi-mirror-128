@@ -1,0 +1,6 @@
+pyspectra
+hdbscan
+sklearn
+scipy
+matplotlib
+pandas
