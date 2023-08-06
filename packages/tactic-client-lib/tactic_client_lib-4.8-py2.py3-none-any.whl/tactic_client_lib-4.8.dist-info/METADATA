@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tactic-client-lib
+Version: 4.8
+Summary: Tactic Client Library
+Home-page: https://github.com/rvanlaar/tactic-client
+Author: Roland van Laar
+Author-email: roland@micite.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+Requires-Dist: six
+
+UNKNOWN
+
