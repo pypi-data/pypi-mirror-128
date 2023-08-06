@@ -1,0 +1,3 @@
+[console_scripts]
+nonin-lsl = nonin.__main__:main
+
