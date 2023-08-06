@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pylexers
+Version: 3.1
+Summary: PyLexers is a python lexical analyzer generator.
+Home-page: UNKNOWN
+Author: Andrew Reed
+Author-email: andrewreed2017@icloud.com
+License: UNKNOWN
+Description: PyLexer can be used to make many different types of lexical analyzer generators for your project.
+Keywords: python,lexical analysis,lexical analyzer generator,lexer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
