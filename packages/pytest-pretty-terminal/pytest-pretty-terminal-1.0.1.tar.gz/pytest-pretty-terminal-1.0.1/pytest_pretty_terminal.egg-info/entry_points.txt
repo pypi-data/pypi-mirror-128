@@ -1,0 +1,3 @@
+[pytest11]
+pretty-terminal = pytest_pretty_terminal
+
