@@ -1,0 +1,7 @@
+testwizard.test==3.5.0b1250
+testwizard.testobjects-core==3.5.0b1250
+testwizard.commands-audio==3.5.0b1250
+testwizard.commands-mobile==3.5.0b1250
+testwizard.commands-powerswitch==3.5.0b1250
+testwizard.commands-remotecontrol==3.5.0b1250
+testwizard.commands-video==3.5.0b1250
