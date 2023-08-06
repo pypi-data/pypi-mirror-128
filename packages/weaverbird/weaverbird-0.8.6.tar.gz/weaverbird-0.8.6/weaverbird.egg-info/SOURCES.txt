@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+weaverbird/__init__.py
+weaverbird/exceptions.py
+weaverbird.egg-info/PKG-INFO
+weaverbird.egg-info/SOURCES.txt
+weaverbird.egg-info/dependency_links.txt
+weaverbird.egg-info/requires.txt
+weaverbird.egg-info/top_level.txt
