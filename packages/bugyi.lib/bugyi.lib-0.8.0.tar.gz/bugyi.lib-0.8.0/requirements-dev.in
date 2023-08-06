@@ -1,0 +1,33 @@
+### Tests
+freezegun
+pytest
+pytest-cov
+pytest-mock
+syrupy
+tox
+tox-pyenv
+typeguard
+
+### Lint
+black
+flake8
+isort
+mypy
+pydocstyle[toml]
+pylint
+
+### Types
+types-freezegun
+types-python-dateutil
+
+### Docs
+m2r2
+sphinx
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+
+### Misc
+bump2version
+cruft[pyproject]
+pip-tools
+setuptools_scm
