@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+bin/reliquery-ui
+reliquery_ui/__init__.py
+reliquery_ui/main.py
+reliquery_ui.egg-info/PKG-INFO
+reliquery_ui.egg-info/SOURCES.txt
+reliquery_ui.egg-info/dependency_links.txt
+reliquery_ui.egg-info/requires.txt
+reliquery_ui.egg-info/top_level.txt
+reliquery_ui/../frontend/dist/bundle.js
+reliquery_ui/../frontend/dist/bundle.js.LICENSE.txt
+reliquery_ui/../frontend/dist/index.html
+reliquery_ui/routers/__init__.py
+reliquery_ui/routers/relics.py
