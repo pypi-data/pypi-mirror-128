@@ -1,0 +1,3 @@
+[console_scripts]
+expam = expam.cli:main
+
