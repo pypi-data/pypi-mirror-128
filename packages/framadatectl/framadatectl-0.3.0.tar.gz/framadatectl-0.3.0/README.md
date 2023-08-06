@@ -1,0 +1,341 @@
+# framadatectl
+
+This python program offers both a Python API and a shell command allowing you
+to:
+- read data from a Framadate (via its public link)
+- manage a Framadate (via its admin link)
+
+Framadate is a service from Framasoft (https://framadate.org) but it can also be
+self-hosted.
+
+## Installation
+
+### From PyPI
+
+```bash
+pip install framadatectl
+```
+
+### From sources
+
+```bash
+git clone https://gitlab.com/albinou/python-framadatectl.git
+cd python-framadatectl
+pip install .
+```
+
+### Use framadatectl without installation
+
+```bash
+git clone https://gitlab.com/albinou/python-framadatectl.git
+cd python-framadatectl/src
+python -m framadatectl [arguments]
+```
+
+## Command line
+
+### Basic usage
+
+Here are a few examples of command line usage. `URL` is to be replaced with a
+valid Framadate link. It can either be:
+- a public link of the form https://framadate.org/IDENTIFIER
+- an admin link of the form https://framadate.org/ADMIN_IDENTIFIER/admin
+
+Examples:
+
+1. Display all poll results, i.e. all date slots:
+
+```bash
+shell> framadatectl --url=URL show all-slots
+2021-09-01: [Bob, Alice, John] (3 vote(s))
+2021-09-08: [Bob, Alice] (2 vote(s))
+2021-09-15: [John] (1 vote(s))
+```
+
+2. Display the next date slot (let's consider today date is 2021-09-05):
+
+```bash
+shell> framadatectl --url=URL show next-slot
+2021-09-08: [Bob, Alice] (2 vote(s))
+```
+
+3. Check if at least 3 people voted for the next date slot:
+
+```bash
+shell> framadatectl --url=URL --min-votes=3 check next-slot
+2021-09-08: KO (1 missing vote(s))
+```
+
+4. Check if at least 3 people voted for the date slot "2021-09-01":
+
+```bash
+shell> framadatectl --url=URL --min-votes=3 check vote 2021-09-01
+2021-09-01: OK (3 vote(s))
+```
+
+5. Add a new date slot for 2021-09-22:
+
+```bash
+shell> framadatectl --url=URL add slot 2021-09-22
+2021-09-22: added
+```
+
+6. Delete old date slots (let's consider today date is 2021-09-05):
+
+```bash
+shell> framadatectl --url=URL delete old-slots
+2021-09-01: deleted
+```
+
+7. Much more commands and sub-commands can be found in the usage:
+
+```bash
+shell> framadatectl --help
+usage: __main__.py [-h] [-c CONFIG] [--url URL] [--min-votes MIN_VOTES] [--max-votes MAX_VOTES] [--quiet] [-v]
+                   {show,check,add,delete,job} ...
+
+A tool to manage a Framadate
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c CONFIG, --config CONFIG
+                        Path to a config file
+  --url URL             Full Framadate URL (admin or public)
+  --min-votes MIN_VOTES
+                        Minimum number of required votes (used by check commands)
+  --max-votes MAX_VOTES
+                        Maximum number of required votes (used by check commands)
+  --quiet               Make the output less verbose
+  -v, --version         show program's version number and exit
+
+commands:
+  {show,check,add,delete,job}
+    show                Show poll results
+    check               Check poll results
+    add                 Add new date slots
+    delete              Delete date slots
+    job                 Run a job from a config file
+```
+
+### Using a configuration file
+
+Having to specify the URL, the min-votes and max-votes values on the command can
+be cumbersome. Here is where the configuration comes in!
+
+The configuration can be passed to `framadatectl` thanks to the `--config`
+option. The configuration file follows the
+[YAML](https://en.wikipedia.org/wiki/YAML) syntax.
+
+Here a basic `config.yaml` file example:
+
+```yaml
+configuration:
+  url: https://framadate.org/IDENTIFIER
+  constraints:
+    votes:
+      min: 3
+      max: 3
+      moment_regexp: '^(\d+) people$'
+```
+
+Note that `url` is the only required field.
+
+Beware to keep the space indentation.
+
+### Running jobs
+
+#### Overview
+
+Jobs can defined in the configuration and then run like this:
+
+```bash
+framadatectl --config=config.yaml job JOB_NAME
+```
+
+The syntax for defining jobs has been highly inspired by the
+[Home Assistant](https://www.home-assistant.io) project.
+Here is an example of job named `JOB_ID`:
+
+```yaml
+job:
+  - id: JOB_ID
+    condition:
+      - condition: CONDITION_1
+        # arguments for the condition rule
+      - condition: CONDITION_2
+        # arguments for the condition rule
+      [...]
+    action:
+      - action: ACTION_1
+        # arguments for the action rule
+      - action: ACTION_2
+        # arguments for the action rule
+```
+
+Calling `framadatectl --config=config.yaml job JOB_ID` will run `ACTION_1` and
+`ACTION_2` if both `CONDITION_1` and `CONDITION_2` are true.
+Definitions of supported conditions and actions are available below.
+
+#### Conditions
+
+Conditions are optional and allows to run a job only if all conditions are met.
+Here is a list of supported conditions.
+
+##### slots
+
+The `slots` condition allows to verify conditions on a set of slots.
+This condition requires 2 arguments:
+- `slots`: filter the date slots
+- `verify`: condition to check on the filtered slots
+
+`verify` can specify:
+- `votes` / `less` or `more`: number of expected votes
+- `constraints`: a boolean specifying whether the check of config constraints
+must return True or False
+
+For example, the following `slots` condition is met if the next date slot has
+less than 3 participants and more than 2 participants.
+
+```yaml
+job:
+  - id: JOB_NAME
+    condition:
+      - condition: slots
+        slots: next-slot
+        verify:
+          votes:
+            less: 3
+            more: 2
+    action:
+      - action: ACTION
+```
+
+This other condition example checks whether the config constraints are met.
+
+```yaml
+job:
+  - id: JOB_NAME
+    condition:
+      - condition: slots
+        slots: next-slot
+        verify:
+          constraints: True
+    action:
+      - action: ACTION
+```
+
+It could be used to warn people that there is not enough people for this date.
+
+#### Actions
+
+##### command
+
+This `command` action can be used to run commands that are usually run from a
+shell.
+This action requires 2 arguments:
+- `command`: a command like `show`, `check`, `add` or `delete`
+- `subcommand`: the subcommand of the given command
+
+For example, the following `command` action deletes all old date slots.
+
+```yaml
+job:
+  - id: JOB_NAME
+    action:
+      - action: command
+        command: delete
+        subcommand: old-slots
+```
+
+##### backup
+
+The `backup` action allows to backup some votes.
+This action requires 2 arguments :
+- `slots`: filter the date slots to backup
+- `mode`: file mode ('w' for truncating the file, 'a' for appending)
+- `filepath`: location of the backup file
+
+For example, the following `backup` action appends the outdated votes to the
+backup.txt file.
+
+```yaml
+    action:
+      - action: backup
+        slots: old-slots
+        mode: a
+        filepath: /PATH/TO/backup.txt
+```
+
+Output file will have the following format (one information per line, allowing
+the file to be easily parsed with grep or sed):
+
+```
+# 2021-09-01
+Bob
+Alice
+John
+```
+
+##### email
+
+The `email` action allows to send an email.
+This action requires 2 arguments:
+- `slot`: date slot whose data can be used in the email content
+- `content`: Email content
+
+For example, the following `email` action sends an email to dest@example.org
+with details on the next comming date slot:
+
+```yaml
+job:
+  - id: JOB_NAME
+    action:
+      - action: email
+        slot: next-slot
+        content: |
+          From: me@example.org
+          To: dest@example.org
+          Content-Type: text/plain; charset=utf-8
+          Content-Language: fr-FR
+          Subject: Information on date slot {date:%A %d %B}
+          
+          Hello,
+          
+          There is {nb_votes} for {date:%A %d %B}.
+```
+
+This command requires to add the smtp server into your configuration:
+
+```yaml
+configuration:
+  url: https://framadate.org/IDENTIFIER
+  email:
+    smtp_host: localhost
+```
+
+## Library
+
+This python package provides a Framadate class that you can instantiate.
+
+Here is an example below:
+
+```python
+from datetime import date
+from framadatectl import framadate
+
+framadate = framadate.Framadate(config.get_url())
+votes = framadate.get_votes(date(2021, 9, 1))
+for v in votes:
+    print(v.get_name())
+```
+
+Take a look at the [source code](https://gitlab.com/albinou/python-framadatectl/-/blob/master/src/framadatectl/framadate.py)
+for more details.
+
+## How does this work?
+
+This programs works by:
+- fetching a Framadate CSV file with the poll results
+- running some well formated HTTP GET or POST requests
+- parsing the HTML page in order to get some advanced operations URLs
+  (with the Python Beautiful Soup library)

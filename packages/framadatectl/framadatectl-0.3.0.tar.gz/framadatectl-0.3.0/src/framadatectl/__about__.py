@@ -1,0 +1,6 @@
+__author__ = 'Albin Kauffmann'
+__email__ = 'albin@kauff.org'
+__description__ = 'A tool to manage a Framadate'
+__url__ = 'https://gitlab.com/albinou/python-framadatectl'
+__license__ = 'GPLv3'
+__version__ = '0.3.0'

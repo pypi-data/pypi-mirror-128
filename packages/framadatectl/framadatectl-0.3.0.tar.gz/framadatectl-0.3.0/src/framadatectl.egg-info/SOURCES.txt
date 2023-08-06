@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+setup.py
+src/framadatectl/__about__.py
+src/framadatectl/__init__.py
+src/framadatectl/__main__.py
+src/framadatectl/commands.py
+src/framadatectl/configuration.py
+src/framadatectl/framadate.py
+src/framadatectl/slot.py
+src/framadatectl/vote.py
+src/framadatectl.egg-info/PKG-INFO
+src/framadatectl.egg-info/SOURCES.txt
+src/framadatectl.egg-info/dependency_links.txt
+src/framadatectl.egg-info/entry_points.txt
+src/framadatectl.egg-info/requires.txt
+src/framadatectl.egg-info/top_level.txt
