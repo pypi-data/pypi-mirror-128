@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "sorte.py"
+version = "0.1.0.dev1"
+description = "Geração e conferência de apostas de loterias."
+authors = [
+    "Wagner Macedo <wagnerluis1982@gmail.com>",
+]
+license = "GPL-3.0-only"
+
+readme = "README.md"
+
+packages = [
+    { include = "sortepy", from = "src" }
+]
+include = [
+    "CHANGELOG.md",
+    { path = "tests", format = "sdist" },
+]
+
+repository = "https://github.com/wagnerluis1982/sorte.py"
+
+keywords = [
+    "loteria",
+    "aposta",
+    "sorte.py",
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Other/Nonlisted Topic",
+]
+
+[tool.poetry.scripts]
+"sorte.py" = "sortepy.script:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pre-commit = "^2.15.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "tests",
+]
+
+[tool.isort]
+profile = "black"
+atomic = true
+skip_gitignore = true
+force_single_line = true
+lines_after_imports = 2
+lines_between_types = 1
+src_paths = ["sortepy", "tests"]
+known_first_party = "sortepy"
+
+[tool.black]
+line-length = 88
