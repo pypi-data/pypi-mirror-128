@@ -1,0 +1,25 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:plone="http://namespaces.plone.org/plone">
+
+  <include package="plone.restapi"  />
+
+  <plone:service
+    method="GET"
+    name="@eea.relations"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    factory=".get.EEARelations"
+    permission="zope2.View"
+    />
+
+  <plone:service
+    method="GET"
+    name="@eea.relations"
+    for="Products.CMFCore.interfaces.IContentish"
+    factory=".get.EEARelationsGet"
+    permission="zope2.View"
+    />
+
+   <adapter factory=".get.EEARelations" name="eea.relations" />
+
+</configure>
