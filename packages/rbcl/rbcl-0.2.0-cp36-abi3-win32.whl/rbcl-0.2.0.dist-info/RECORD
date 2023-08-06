@@ -1,0 +1,9 @@
+rbcl/__init__.py,sha256=qmWcKgeboMe5Vt7vgWuX4I27Nqgx3KFe3EORXgop5-k,1038
+rbcl/_sodium.pyd,sha256=8ZgzlzaeBLHtW5V7P4c9BjzOnn7NgF4VVOBuby0SyDo,174080
+rbcl/rbcl.py,sha256=n1ghixEIigNFgo0qiKNV9sAOGz4CkvgCdnjekJPEbeA,23931
+rbcl/sodium_ffi.py,sha256=3tGNPHr-2MYQkkdohq9gDR_PG7EIZGVsav0s0FQidKA,624
+rbcl-0.2.0.dist-info/LICENSE,sha256=PPPK9pZKC4ylV6bQfAwC6cCG0lYWK0et9FmZEaU_5UE,1093
+rbcl-0.2.0.dist-info/METADATA,sha256=nhTdq_nTx95Rrkz8olD6si-449Vo9OOEX1h384cjieQ,4824
+rbcl-0.2.0.dist-info/WHEEL,sha256=rGAGfIx0Lm665PBOzFoh1AvLjRlcL--DGiUnVFA8L7A,96
+rbcl-0.2.0.dist-info/top_level.txt,sha256=k_ck5kA8xAulVjqS0fg_OMcH6q0P7WUoAOEIVKXoCvI,13
+rbcl-0.2.0.dist-info/RECORD,,
