@@ -1,0 +1,6 @@
+dclab[dcor]==0.38.2
+requests>=2.13
+requests_toolbelt
+
+[GUI]
+pyqt5
