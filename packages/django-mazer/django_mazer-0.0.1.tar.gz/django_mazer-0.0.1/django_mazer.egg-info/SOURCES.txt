@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+django_mazer.egg-info/PKG-INFO
+django_mazer.egg-info/SOURCES.txt
+django_mazer.egg-info/dependency_links.txt
+django_mazer.egg-info/top_level.txt
+mazer/__init__.py
+mazer/apps.py
+mazer/compat.py
+mazer/settings.py
+mazer/utils.py
+mazer/widgets.py
+mazer/templatetags/__init__.py
+mazer/templatetags/mazer.py
