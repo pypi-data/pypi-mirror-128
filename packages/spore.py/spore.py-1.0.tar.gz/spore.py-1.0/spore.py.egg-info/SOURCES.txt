@@ -1,0 +1,17 @@
+README.md
+setup.py
+spore.py.egg-info/PKG-INFO
+spore.py.egg-info/SOURCES.txt
+spore.py.egg-info/dependency_links.txt
+spore.py.egg-info/entry_points.txt
+spore.py.egg-info/requires.txt
+spore.py.egg-info/top_level.txt
+spore_api/__init__.py
+spore_api/__main__.py
+spore_api/client.py
+spore_api/constants.py
+spore_api/enums.py
+spore_api/errors.py
+spore_api/json_builders.py
+spore_api/models.py
+spore_api/utils.py

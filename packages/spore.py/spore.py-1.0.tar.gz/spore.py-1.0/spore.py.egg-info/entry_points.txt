@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    spore_cli=spore_api.__main__:cli
+    

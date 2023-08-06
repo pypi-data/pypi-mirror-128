@@ -1,0 +1,6 @@
+aiohttp
+anyio
+asyncclick
+click
+dataclasses_json
+xmltodict
