@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+alida_arg_parser.egg-info/PKG-INFO
+alida_arg_parser.egg-info/SOURCES.txt
+alida_arg_parser.egg-info/dependency_links.txt
+alida_arg_parser.egg-info/requires.txt
+alida_arg_parser.egg-info/top_level.txt
+alidaargparser/__init__.py
+alidaargparser/dataset.py
+alidaargparser/generator.py
+alidaargparser/model.py
+alidaargparser/parser.py
+alidaargparser/property.py
+alidaargparser/template.py
+alidaargparser/translation_dictionary.py
+alidaargparser/type_utils.py
