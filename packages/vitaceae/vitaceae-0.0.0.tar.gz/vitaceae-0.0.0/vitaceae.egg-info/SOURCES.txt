@@ -1,0 +1,6 @@
+README.md
+setup.py
+vitaceae.egg-info/PKG-INFO
+vitaceae.egg-info/SOURCES.txt
+vitaceae.egg-info/dependency_links.txt
+vitaceae.egg-info/top_level.txt
