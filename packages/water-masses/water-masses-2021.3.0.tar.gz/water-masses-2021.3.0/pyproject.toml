@@ -1,0 +1,115 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/Eisbrenner/wemake-python-package/master/styles/nitpick-style-wemake.toml"
+
+
+[tool.poetry]
+name = "water-masses"
+version = "2021.3.0"
+description = "Analysis of the northern European shelf seas"
+license = "GPL3"
+
+authors = []
+
+readme = "README.md"
+
+repository = "https://github.com/shelf-sea/water-masses"
+
+keywords = []
+
+# https://pypi.org/classifiers/
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.10"
+#
+cftime = "^1.2"
+nc-time-axis = "^1.2"
+netcdf4 = "^1.5"
+#
+numpy = "^1.19"
+scipy = "^1.7"
+statsmodels = ">=0.12, <1.0"
+pandas = "^1.1"
+xarray = ">=0.16, <1.0"
+cf-xarray = ">=0.5, <1.0"
+eofs = "^1.4.0"
+#
+intake = ">=0.6, <1.0"
+intake-xarray = ">=0.4, <1.0"
+dask = "^2021.1"
+h5netcdf = ">=0.10, <1.0"
+
+
+[tool.poetry.dev-dependencies]
+# pre-commit dependencies are hard coded in .pre-commit-config.yaml
+pre-commit = "^2.6.0"
+mypy = "0.910"
+black = "21.10b0"
+isort = "5.10.0"
+flake8 = "3.9.2"
+
+# checks, formatting and linting
+wemake-python-styleguide = "^0.15"
+flake8-pytest-style = "^1.5"
+flake8-isort = "^4.1"
+nitpick = "^0.28"
+
+safety = "^1.10"
+
+# testing
+pytest = "^6.2"
+pytest-cov = "^3.0"
+pytest-randomly = "^3.8"
+pytest-sugar = "^0.9"
+
+# docs
+sphinx = "^4.1"
+sphinx-autodoc-typehints = "^1.12"
+doc8 = "^0.9"
+m2r2 = "^0.3"
+tomlkit = "^0.7"
+
+# template updates
+cookiecutter = "^1.7"
+jinja2_git = "^1.1"
+lice = "^0.6"
+cruft = "^2.9"
+toml = "^0.10"
+types-setuptools = "^57.4.2"
+
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | tests/.*/setup.py
+  | \.ipynb_checkpoints
+)/
+'''
+
+
+[tool.cruft]
+skip = ["src/water_masses/__init__.py", "tests"]
