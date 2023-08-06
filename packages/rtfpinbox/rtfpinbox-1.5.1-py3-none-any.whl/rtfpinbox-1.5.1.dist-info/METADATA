@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rtfpinbox
+Version: 1.5.1
+Summary: Data Structure For UAAPIL and RTFP Fellowship 2021
+Home-page: https://github.com/jboyle1013/rtfpinbox
+Author: Jordan Boyle
+Author-email: jboyle1013@vt.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: mailbox (~=0.4)
+Requires-Dist: nltk (~=3.6.5)
+Requires-Dist: pytz (~=2021.3)
+
+UNKNOWN
+
+
