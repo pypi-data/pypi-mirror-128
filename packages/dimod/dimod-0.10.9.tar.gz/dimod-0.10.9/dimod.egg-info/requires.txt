@@ -1,0 +1,5 @@
+numpy!=1.21.0,!=1.21.1,<2.0.0,>=1.17.3
+pyparsing<3.0.0,>=2.4.7
+
+[all]
+dwave-preprocessing<0.4,>=0.3
