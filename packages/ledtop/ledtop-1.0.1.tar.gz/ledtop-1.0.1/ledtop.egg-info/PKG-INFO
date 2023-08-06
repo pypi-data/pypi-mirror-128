@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: ledtop
+Version: 1.0.1
+Summary: Like htop (CPU and memory usage), but for your case LEDs.
+Home-page: https://github.com/keredson/ledtop
+Author: Derek Anderson
+Author-email: public@kered.org
+License: UNKNOWN
+Description: ledtop
+        ======
+        
+        Like ``htop`` (CPU and memory usage), but for your case LEDs. 😄
+        
+        .. figure:: demo.gif
+           :alt: Demo
+        
+           Demo
+        
+        In this setup, memory is the left strip, CPU is the right strip.
+        
+        Install
+        -------
+        
+        ::
+        
+           $ pip install ledtop
+        
+        Configure
+        ---------
+        
+        Example (``~/.config/ledtop/config.toml``):
+        
+        ::
+        
+           [cpu]
+           device = 'B550I AORUS PRO AX'
+           zone = 'D_LED1'
+           size = 42
+           leds = '1-21'
+        
+           [memory]
+           device = 'B550I AORUS PRO AX'
+           zone = 'D_LED1'
+           leds = '42-22'
+           brightness = 20
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3

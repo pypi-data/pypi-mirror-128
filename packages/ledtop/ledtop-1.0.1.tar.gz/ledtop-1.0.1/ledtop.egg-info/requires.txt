@@ -1,0 +1,5 @@
+appdirs
+darp
+openrgb-python
+psutil
+toml
