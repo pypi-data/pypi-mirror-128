@@ -1,0 +1,5 @@
+graft paithon/dist
+include README.md
+global-exclude *.ipynb_checkpoints/*
+global-exclude *.py[co]
+global-exclude *~
