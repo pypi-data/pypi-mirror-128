@@ -1,0 +1,164 @@
+Metadata-Version: 2.1
+Name: qsync
+Version: 0.1.8
+Summary: The simplest one/two ways local/remote sync module in python.
+Home-page: https://github.com/ThaaoBlues/qsync
+Author: _ThaaoBlues_
+Author-email: thaaoblues81@gmail.com
+License: CC BY-NC-ND 4.0
+Platform: UNKNOWN
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+
+# QSYNC
+
+## introduction
+> sync_module is the simplest way to set-up a one/two ways syncronisations between folders and even between two distinct devices, from a single python script ! just use it like so :
+
+```python
+from qsync import SyncIniter
+from sys import argv
+from multiprocessing import freeze_support
+import argparse
+from qsync import server
+
+
+def main():
+
+    # nothing usefull, just parsing command line args
+
+    parser = argparse.ArgumentParser(description="")
+
+    parser.add_argument('sync_src', type=str,
+                        help='sync source directory')
+
+    parser.add_argument('sync_dst', type=str,
+                        help='sync destination directory')
+
+    parser.add_argument('-bd', action='store_true',
+                        help='bi directionnal mode')
+
+    parser.add_argument('--force-id', type=str,
+                        help='force a specific id associated to the sync process (necessary to acces via http)')
+
+    parser.add_argument('--remote', type=str,
+                        help='open sync server, specify destination ip')
+
+    parser.add_argument('--loop-time', type=float,
+                        help='adjust the time between two sync (each use has it\'s own optimal inter-loop time to avoid sync errors'))
+
+    args = parser.parse_args()
+
+    sync_src = args.sync_src.replace("\\", "/")
+    sync_dst = args.sync_dst.replace("\\", "/")
+    bi_d = args.bd
+    if args.remote:
+        remote_ip = args.remote
+        remote = True
+    else:
+        remote_ip = ""
+        remote = False
+
+    force_id = args.force_id
+    loop_time = args.loop_time
+
+    # sync_src and sync_dst must be two strings containing two path
+    # bi_directionnal is an optionnal boolean, default set to False
+    # remote is an optionnal boolean, set to True if the sync_dst path is on a remote location
+    # force_id let you specify the sync id, usefull in case of remote and/or want to keep a sync state after shutdown
+    # loop_time let you adjust the time between two sync (each use has it\'s own optimal inter-loop time to avoid sync errors)
+    s = SyncIniter(sync_src, sync_dst, bi_directionnal=bi_d,
+                   remote=remote, force_id=force_id, remote_ip=remote_ip,loop_time=loop_time)
+     
+    s.start_sync()
+    print(f"started to sync, bi directionnal mode : {bi_d}, remote: {remote}")
+
+    print(f"\n\nSYNC ID :\n{s.sync_id}\n\n")
+
+    # start the server if the other side is on a remote machine if not already running
+    if remote:
+        try:
+            get("https://127.0.0.1:2121/is_running", timeout=1, verify=False)
+        except TimeoutError:
+            server.app.run(host="0.0.0.0", port=2121, ssl_context='adhoc')
+
+
+if __name__ == "__main__":
+
+    freeze_support()
+
+    main()
+
+
+    
+```
+
+## A cli is also available with this module :
+
+```
+usage: __main__.py [-h] [-bd] [--force-id FORCE_ID] [--remote REMOTE] [--loop-time LOOP_TIME]
+                   sync_src sync_dst
+
+positional arguments:
+  sync_src              sync source directory
+  sync_dst              sync destination directory
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -bd                   bi directionnal mode
+  --force-id FORCE_ID   force a specific id associated to the sync process (necessary to acces via
+                        http)
+  --remote REMOTE       open sync server, specify destination ip
+  --loop-time LOOP_TIME
+                        adjust the time between two sync (each use has it's own optimal inter-loop
+                        time to avoid sync errors)
+```
+(remote sync does not need to be in real time, each device will store changes and wait the other when they can't connect to each other)
+
+### Example :
+
+```
+C:\> python -m qsync "D:\test_src" "C:\Users\USER\Documents\test_dst" -bd --remote "192.168.0.64" --force-id "0x1bfdc4f5e421fe563476d2441980349d79c32ccae555134b3eb7a4b62f68f1e66aa574f933289edbc6043b25977b69f2c921961fd60596e4281464fc84f76d3c16df24db5c15fcf98ab071aaf6711da44efcc0024f37a0213b98e42739eb5398cf760a307149cfb58dfa5a" --loop-time 10
+```
+
+
+## Errors :
+
+#### InvalidPathError
+> raised in start_sync() when a path don't exists
+
+
+
+## how qsync server works in a remote context :
+(Sync does not need to be in real time, each device will store changes and wait the other when they can't connect to each other)
+#### Specifications :
+- The qsync sync server is an http server, to encrypt data it uses on-the-fly certificates.
+- Because of these certificates, you must force whatever client you use to not verify certificates.
+for example, qsync uses ```requests.get(< args >,verify=False)```. 
+- This server enable a great range of uses of qsync, from mobile-to-pc folders sync at multiple-pc sync.
+- the sync id is an hexadecimal representation of a 256 digits lenght number and must be present on any http requests, so the two sync ends must share this id. Once you got this id, to start the other sync process you need to use --force-id FORCE_ID optionnal argument. Or place it in your script as optionnal argument into the SyncIniter class : ``SyncIniter(< args >, remote=True, force_id=force_id, remote_ip=remote_ip)`` 
+
+#### How does it make its things to syncronize :
+
+
+- The main infinite loop make two requests :
+  - "https://{self.sRemoteIP}:2121/remote_map" to try to syncronize the folders map between two devices
+  - "https://{self.sRemoteIP}:2121/sync_map" to try to ask the other device what's new, trigger multiple requests from the other device
+
+
+- The server has 7 URLs :
+    - ``/is_running``, to check if the server is already running
+    - ``/sync_map?sync_id=...``, to trigger many requests that will make pending changes on your filesystem
+    - ``/remote_map?sync_id=...``, return a JSON response containing the current filesystem map
+    - ``/get_file?sync_id=...&full_path=...``, make you download a specific file. Full_path is the full path to get the file from the other side's filesystem (server side).
+    - ``/upload_file?sync_id=...&full_path=...``, POST only. Upload a specific file. Full_path is thefull path to upload the file from the other side's filesystem (server side).
+    - ``/remove?sync_id=...&full_path=...``, Suppress something. File or folder (server side).
+    - ``/mkdir?sync_id=...&full_path=...``, Create a folder (server side). Full_path is the full path to create the folder from the other side's filesystem (server side).
+
+### The server make sure each request don't tries to download/modify... things outside the root folder of your sync. If anything wrong is made, an explicit error message will be return as response. Each uploaded file's name is also checked. 
+

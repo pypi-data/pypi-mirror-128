@@ -1,0 +1,11 @@
+README.md
+setup.py
+qsync/__init__.py
+qsync/__main__.py
+qsync/server.py
+qsync.egg-info/PKG-INFO
+qsync.egg-info/SOURCES.txt
+qsync.egg-info/dependency_links.txt
+qsync.egg-info/entry_points.txt
+qsync.egg-info/requires.txt
+qsync.egg-info/top_level.txt

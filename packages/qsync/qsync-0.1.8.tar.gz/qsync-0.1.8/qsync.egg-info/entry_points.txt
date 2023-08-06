@@ -1,0 +1,3 @@
+[console_scripts]
+qsync = qsync.__main__:main
+
