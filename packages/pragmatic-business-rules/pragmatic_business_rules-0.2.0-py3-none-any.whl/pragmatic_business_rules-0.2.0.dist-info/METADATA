@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pragmatic-business-rules
+Version: 0.2.0
+Summary: Pragmatic business rules
+Home-page: https://github.com/Soremwar/pragmatic_business_rules
+Author: Soremwar
+Author-email: stephenguerrero43@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jsonschema
+
+`pragmatic-business-rules`
+
+
