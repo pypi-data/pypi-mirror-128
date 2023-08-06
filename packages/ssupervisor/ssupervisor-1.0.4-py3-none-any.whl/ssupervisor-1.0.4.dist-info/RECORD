@@ -1,0 +1,13 @@
+ssupervisor/Supervisor.py,sha256=XwkzXJ3q5QKy4cXXE_kxGklwUUuBic1y7A-pY8VOg1A,1280
+ssupervisor/__init__.py,sha256=Oi2b5pm3sFbESQW0xgj8kqwDPX_Hxmx4gNILYpLzYqI,21
+ssupervisor/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssupervisor/lib/config.py,sha256=4IFlFS8itdsY3anzwxhRjV7ruokWedLFLLrEOmJk-dA,2312
+ssupervisor/lib/logger.py,sha256=ro_8e0_YKJBKfzT_W299ckjt_l9sbNBpHidXaSWGQ90,495
+ssupervisor/lib/main.py,sha256=q048mxtdQ3zXl1Ef6YTT_pblCOOPVcPI71QFhRe6aeQ,683
+ssupervisor/lib/parser.py,sha256=IHy-cGQgaZONflxNNSN-cBrFGS6yrqoNIHrtYR9hzQo,1044
+ssupervisor/lib/process.py,sha256=yAwdO8E1Eh0PvoqRczfic1MfjHwaxJvyVkh9jlkydIc,314
+ssupervisor/lib/watcher.py,sha256=MsxMYSUaLCI443LB8LauR2jHW8WKTGlkhW_KBviipkY,3994
+ssupervisor-1.0.4.dist-info/entry_points.txt,sha256=oM0vLoYbUw4cS3d4kGKokFy8RwHuxmiRuo7racvEHFo,57
+ssupervisor-1.0.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+ssupervisor-1.0.4.dist-info/METADATA,sha256=gP-eD08GdsKT39Ocp8skp7A90wuXttZ92UM0V__f5VE,371
+ssupervisor-1.0.4.dist-info/RECORD,,
