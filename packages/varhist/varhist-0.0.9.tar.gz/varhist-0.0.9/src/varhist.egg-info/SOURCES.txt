@@ -1,0 +1,17 @@
+.DS_Store
+.gitignore
+LICENSE.txt
+MANIFEST.in
+README.md
+module.py
+setup.py
+test_varhist.py
+.history/README_20211123142700.md
+.history/README_20211123144127.md
+.history/README_20211124080448.md
+src/varhist.py
+src/varhist.egg-info/PKG-INFO
+src/varhist.egg-info/SOURCES.txt
+src/varhist.egg-info/dependency_links.txt
+src/varhist.egg-info/requires.txt
+src/varhist.egg-info/top_level.txt
