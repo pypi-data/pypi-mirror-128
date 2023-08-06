@@ -1,0 +1,13 @@
+librosa<1.0.,>=0.8.1
+numpy==1.20.3
+SoundFile<1.0.,>=0.10.3
+sounddevice<1.0.,>=0.4.1
+matplotlib<4.0.0,>=3.3.4
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
