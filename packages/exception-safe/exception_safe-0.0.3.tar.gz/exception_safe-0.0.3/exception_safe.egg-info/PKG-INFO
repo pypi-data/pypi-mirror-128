@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: exception-safe
+Version: 0.0.3
+Summary: Catch all exceptions and return None
+Home-page: https://github.com/tom-010/exception-safe
+Author: Thomas Deniffel
+Author-email: tdeniffel@gmail.com
+License: Apache2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Safe
+====
+
+This is quite a simple package. It catches all exceptions within a given 
+callable and returns None, if they occur and the return-value of the 
+callable if not.
+
+```python
+
+def boom():
+    raise Exception()
+    return 1
+
+def non_boom():
+    return 2
+
+a = safe(lambda: boom())
+b = safe(lambda: non_boom())
+
+assert a == None
+assert b == 2
+```
+
