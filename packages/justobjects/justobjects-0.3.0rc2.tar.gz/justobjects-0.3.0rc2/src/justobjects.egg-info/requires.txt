@@ -1,0 +1,23 @@
+attrs
+jsonschema
+validators
+
+[:python_version < "3.8"]
+typing_extensions
+
+[changelog]
+towncrier
+
+[dev]
+coverage[toml]
+pytest
+pytest-cov
+
+[docs]
+sphinx
+sphinx_rtd_theme
+sphinxcontrib-napoleon
+
+[lint]
+mypy
+pre-commit
