@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/Self_Check_Algorithm_Model.egg-info/PKG-INFO
+src/Self_Check_Algorithm_Model.egg-info/SOURCES.txt
+src/Self_Check_Algorithm_Model.egg-info/dependency_links.txt
+src/Self_Check_Algorithm_Model.egg-info/entry_points.txt
+src/Self_Check_Algorithm_Model.egg-info/requires.txt
+src/Self_Check_Algorithm_Model.egg-info/top_level.txt
+src/sample/__init__.py
+src/sample/package_data.dat
+src/sample/simple.py
