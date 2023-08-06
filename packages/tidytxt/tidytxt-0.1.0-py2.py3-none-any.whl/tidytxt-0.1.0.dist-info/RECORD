@@ -1,0 +1,10 @@
+tidytxt/__init__.py,sha256=h4zAKHevItHbIBTSKX3HJYoMgMnnueVOjZRw4rNtyIg,136
+tidytxt/cli.py,sha256=84alIb9RlOeOUeXvPigKD6pFSn4upIiXJq2eJTHbb9c,399
+tidytxt/tidytxt.py,sha256=GL3enTunL7NhS4H0cjYqDSnnTvP3W_HxagN9rgylz5o,5230
+tidytxt-0.1.0.dist-info/AUTHORS.rst,sha256=y91A8mQlO7eoyQIJeBDw-5lhXHWaLyRpnlGVA1T87Bk,167
+tidytxt-0.1.0.dist-info/LICENSE,sha256=d-c7jWtD8ibFvhz5CRBdwBSoyeapdgvR_1o59hT2Q6o,1075
+tidytxt-0.1.0.dist-info/METADATA,sha256=EVHcEUVGHRFt3nqrCOb7WF4mAE4yquKA9BUA9iDMuZk,1848
+tidytxt-0.1.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+tidytxt-0.1.0.dist-info/entry_points.txt,sha256=id26FHwui1r1g2UtFGQmwqOkEvlMmUEmCGyijx243x8,46
+tidytxt-0.1.0.dist-info/top_level.txt,sha256=GjfKc-_etilRZSKTQiD9_ptgA8jyR0FuCphlVemN6nw,8
+tidytxt-0.1.0.dist-info/RECORD,,
