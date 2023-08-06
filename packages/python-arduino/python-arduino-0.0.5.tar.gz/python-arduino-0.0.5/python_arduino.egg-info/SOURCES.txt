@@ -1,0 +1,10 @@
+README.md
+setup.py
+arduino/__init__.py
+arduino/core.py
+arduino/motor.py
+python_arduino.egg-info/PKG-INFO
+python_arduino.egg-info/SOURCES.txt
+python_arduino.egg-info/dependency_links.txt
+python_arduino.egg-info/requires.txt
+python_arduino.egg-info/top_level.txt
