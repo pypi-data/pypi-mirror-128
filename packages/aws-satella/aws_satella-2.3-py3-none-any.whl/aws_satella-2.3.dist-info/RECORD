@@ -1,0 +1,9 @@
+aws_satella/__init__.py,sha256=9AJNV1O9osTmysG1Z7chiLq5_nMxps2Nd4NOBYxggYI,199
+aws_satella/exporter.py,sha256=-acoGNbbfIwfz3Bwg55hyqJfGX3hgcy6xuEbaqb1d2U,4891
+aws_satella/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_satella/contrib/django.py,sha256=agdfbMVvBkWexcvJlqs-DQCPF3chqv_CW468-5UBkp0,494
+aws_satella-2.3.dist-info/LICENSE,sha256=xEwE1GM-C_1-FhFBXhdZXsXfJkt9PAOIQ7CgaxD9ZTQ,1093
+aws_satella-2.3.dist-info/METADATA,sha256=sQvPtQJjCf_9my2dAuBv56ymc8BSTEK9N2jzU2B0RVA,3556
+aws_satella-2.3.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+aws_satella-2.3.dist-info/top_level.txt,sha256=pPVSRCgvBGemms9tJiM7FcTEYU67_VtJHxGRv_bFcO4,12
+aws_satella-2.3.dist-info/RECORD,,
