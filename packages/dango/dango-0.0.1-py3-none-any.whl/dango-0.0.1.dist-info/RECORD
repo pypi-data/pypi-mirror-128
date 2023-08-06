@@ -1,0 +1,12 @@
+dango/__init__.py,sha256=6YphM1BmaFd8WIZNK6nMCZX1neUBgmVlz3l8dpqQvtM,391
+dango/cli.py,sha256=xV4uvg777vPmbUubkUMPrJL1YCaR4SefsQph-0vpZ1Q,758
+dango/dango.py,sha256=4N90diZwPNybHnpM9FZAj5nU2tdf6D_bO6U93DqQonY,5771
+dango/fsm.py,sha256=t9bGbMArmN-w3KvgOTlJjzL9wJnMGqxcgRH2zmUn3fA,4398
+dango/util.py,sha256=crgVbrYGd3ZBTYUglWSF54oGp_d1AxYhKChmUI3a66s,1090
+dango/word.py,sha256=Gd1uV2RF_K0gL9GbP8vqrye8v--C6621ykq4UeTjCmY,3980
+dango-0.0.1.dist-info/LICENSE,sha256=8gV_DBdn4UAAHkGYyXfJTIlsOYiN9hIqJP8R4DroHIk,1526
+dango-0.0.1.dist-info/METADATA,sha256=lTIurYfXO-FqOdhenyIkefwRvZs7qCFgFyCZA6vpYhw,3641
+dango-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dango-0.0.1.dist-info/entry_points.txt,sha256=_xjR_QDkLOmpEemR4zxxp1oQEMtw0rCtl65KTxK-Oak,42
+dango-0.0.1.dist-info/top_level.txt,sha256=ZRXhVd1c7CVYvHRgKBmD1a_C6sujIS6uPWO7pRwiXhI,6
+dango-0.0.1.dist-info/RECORD,,
