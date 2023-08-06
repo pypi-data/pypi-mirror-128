@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+frenamer/__init__.py
+frenamer/__main__.py
+frenamer/frenamer.py
+frenamer/version.py
+frenamer.egg-info/PKG-INFO
+frenamer.egg-info/SOURCES.txt
+frenamer.egg-info/dependency_links.txt
+frenamer.egg-info/requires.txt
+frenamer.egg-info/top_level.txt
