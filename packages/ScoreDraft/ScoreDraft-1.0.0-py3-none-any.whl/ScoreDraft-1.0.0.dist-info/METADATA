@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ScoreDraft
+Version: 1.0.0
+Summary: A music/singing synthesizer that provides a Python based score authoring interface. 
+Home-page: https://github.com/fynv/ScoreDraft
+Author: Fei Yang, Vulcan Eon, Beijing
+Author-email: hyangfeih@gmail.com
+License: MIT
+Keywords: synthesizer audio music utau psola
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: cffi
+
+ScoreDraft
+================
+
+[ScoreDraft](https://github.com/fynv/ScoreDraft) is a music/singing 
+synthesizer that provides a Python based score authoring interface. 
+
+
+
+
+
