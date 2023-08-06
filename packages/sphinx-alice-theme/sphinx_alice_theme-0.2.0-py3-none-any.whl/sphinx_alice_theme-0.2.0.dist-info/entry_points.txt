@@ -1,0 +1,3 @@
+[sphinx.html_themes]
+sphinx_alice_theme = sphinx_alice_theme
+
