@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+DemystiPy/__init__.py
+DemystiPy/pdistributions.py
+DemystiPy.egg-info/PKG-INFO
+DemystiPy.egg-info/SOURCES.txt
+DemystiPy.egg-info/dependency_links.txt
+DemystiPy.egg-info/requires.txt
+DemystiPy.egg-info/top_level.txt
+tests/test_demystipy.py
