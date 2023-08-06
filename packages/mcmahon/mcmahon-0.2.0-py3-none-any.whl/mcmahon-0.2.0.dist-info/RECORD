@@ -1,0 +1,10 @@
+mcmahon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcmahon/constants.py,sha256=p8n2Gqr4j5zcgrZK4QwMdfSUfKjy_itvJcaaGYqCJ8Y,935
+mcmahon/game.py,sha256=y39M6Ddji2aTfovPcnjLYzHWOANbNMbO_kDKGBW7T6o,2553
+mcmahon/helpers.py,sha256=FPZSfaEF0jqAGKgxhNPBMyimk20fnhdrW2DQYonLQcY,2568
+mcmahon/parameters.py,sha256=zLsDwv740Hs07yQ8dw5Kj5lJzjOwQ2IEY5SyBGVCzN8,211
+mcmahon/player.py,sha256=o3R-Yf9gF-mgHqzxJuwDNlA53bskzexkJbU2W_hSdCA,1986
+mcmahon/tournament.py,sha256=7lnOCVeGHqti6VPMVaHA0KQ7nhmSWTy6ohbDCemAeig,12666
+mcmahon-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+mcmahon-0.2.0.dist-info/METADATA,sha256=JreT9K2NZ-wYUu_19Q9dnkG2k4dhyq3Evy1VPMfOEPA,373
+mcmahon-0.2.0.dist-info/RECORD,,
