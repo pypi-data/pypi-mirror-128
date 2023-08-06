@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: totptray
+Version: 1.0.0
+Summary: A simple tray icon tool with a TOTP implementation.
+Home-page: https://github.com/McCzarny/totptray
+Author: Maciej Czarnecki
+Author-email: mcczarny@gmail.com
+License: The Unlicense
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyperclip
+Requires-Dist: pystray
+Requires-Dist: pyotp
+
+# totptray
+A simple tray icon tool with a TOTP implementation. Creates a tray icon with a menu that allows to copy the current TOTP code for key passes to the script.
+
+[![Python package](https://github.com/McCzarny/totptray/actions/workflows/python-package.yml/badge.svg)](https://github.com/McCzarny/totptray/actions/workflows/python-package.yml)
+
+## Usage
+The tool expects one or more pairs in this format: `name=key`, e.g.:
+
+```./totptray.py Google=000000000 Microsoft=000000000 TomTom=000000000```
+
+
