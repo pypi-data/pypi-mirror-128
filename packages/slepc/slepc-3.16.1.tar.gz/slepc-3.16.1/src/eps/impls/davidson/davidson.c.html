@@ -1,0 +1,369 @@
+<center><a href="davidson.c">Actual source code: davidson.c</a></center><br>
+
+<html>
+<head> <link rel="canonical" href="https://slepc.upv.es/documentation/current/src/eps/impls/davidson/davidson.c.html" />
+<title></title>
+<meta name="generator" content="c2html 0.9.4">
+<meta name="date" content="2021-11-17T14:29:35+00:00">
+</head>
+
+<body bgcolor="#FFFFFF">
+   <div id="version" align=right><b>slepc-3.16.1 2021-11-17</b></div>
+   <div id="bugreport" align=right><a href="mailto:slepc-maint@upv.es?subject=Typo or Error in Documentation &body=Please describe the typo or error in the documentation: slepc-3.16.1 v3.16.1 src/eps/impls/davidson/davidson.c.html "><small>Report Typos and Errors</small></a></div>
+<pre width="80">
+<a name="line1">  1: </a><font color="#B22222">/*</font>
+<a name="line2">  2: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line3">  3: </a><font color="#B22222">   SLEPc - Scalable Library for Eigenvalue Problem Computations</font>
+<a name="line4">  4: </a><font color="#B22222">   Copyright (c) 2002-2021, Universitat Politecnica de Valencia, Spain</font>
+
+<a name="line6">  6: </a><font color="#B22222">   This file is part of SLEPc.</font>
+<a name="line7">  7: </a><font color="#B22222">   SLEPc is distributed under a 2-clause BSD license (see LICENSE).</font>
+<a name="line8">  8: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line9">  9: </a><font color="#B22222">*/</font>
+<a name="line10"> 10: </a><font color="#B22222">/*</font>
+<a name="line11"> 11: </a><font color="#B22222">   Skeleton of Davidson solver. Actual solvers are GD and JD.</font>
+
+<a name="line13"> 13: </a><font color="#B22222">   References:</font>
+
+<a name="line15"> 15: </a><font color="#B22222">       [1] E. Romero and J.E. Roman, "A parallel implementation of Davidson</font>
+<a name="line16"> 16: </a><font color="#B22222">           methods for large-scale eigenvalue problems in SLEPc", ACM Trans.</font>
+<a name="line17"> 17: </a><font color="#B22222">           Math. Software 40(2):13, 2014.</font>
+<a name="line18"> 18: </a><font color="#B22222">*/</font>
+
+<a name="line20"> 20: </a><font color="#A020F0">#include </font><font color="#666666">"davidson.h"</font><font color="#A020F0"></font>
+
+<a name="line22"> 22: </a>static PetscBool  cited = PETSC_FALSE;
+<a name="line23"> 23: </a>static const char citation[] =
+<a name="line24"> 24: </a>  <font color="#666666">"@Article{slepc-davidson,\n"</font>
+<a name="line25"> 25: </a>  <font color="#666666">"   author = \"E. Romero and J. E. Roman\",\n"</font>
+<a name="line26"> 26: </a>  <font color="#666666">"   title = \"A parallel implementation of {Davidson} methods for large-scale eigenvalue problems in {SLEPc}\",\n"</font>
+<a name="line27"> 27: </a>  <font color="#666666">"   journal = \"{ACM} Trans. Math. Software\",\n"</font>
+<a name="line28"> 28: </a>  <font color="#666666">"   volume = \"40\",\n"</font>
+<a name="line29"> 29: </a>  <font color="#666666">"   number = \"2\",\n"</font>
+<a name="line30"> 30: </a>  <font color="#666666">"   pages = \"13:1--13:29\",\n"</font>
+<a name="line31"> 31: </a>  <font color="#666666">"   year = \"2014,\"\n"</font>
+<a name="line32"> 32: </a>  <font color="#666666">"   doi = \"https://doi.org/10.1145/2543696\"\n"</font>
+<a name="line33"> 33: </a>  <font color="#666666">"}\n"</font>;
+
+<a name="line35"> 35: </a><strong><font color="#4169E1"><a name="EPSSetUp_XD"></a>PetscErrorCode EPSSetUp_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line36"> 36: </a>{
+<a name="line38"> 38: </a>  EPS_DAVIDSON   *data = (EPS_DAVIDSON*)eps-&gt;data;
+<a name="line39"> 39: </a>  dvdDashboard   *dvd = &amp;data-&gt;ddb;
+<a name="line40"> 40: </a>  dvdBlackboard  b;
+<a name="line41"> 41: </a>  PetscInt       min_size_V,bs,initv,nmat;
+<a name="line42"> 42: </a>  Mat            A,B;
+<a name="line43"> 43: </a>  KSP            ksp;
+<a name="line44"> 44: </a>  PetscBool      ipB,ispositive;
+<a name="line45"> 45: </a>  HarmType_t     harm;
+<a name="line46"> 46: </a>  InitType_t     init;
+<a name="line47"> 47: </a>  PetscScalar    target;
+
+<a name="line50"> 50: </a>  <font color="#B22222">/* Setup <a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> options and get the problem specification */</font>
+<a name="line51"> 51: </a>  bs = data-&gt;blocksize;
+<a name="line52"> 52: </a>  <font color="#4169E1">if</font> (bs &lt;= 0) bs = 1;
+<a name="line53"> 53: </a>  <font color="#4169E1">if</font> (eps-&gt;ncv!=PETSC_DEFAULT) {
+<a name="line54"> 54: </a>    <font color="#4169E1">if</font> (eps-&gt;ncv&lt;eps-&gt;nev) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_SUP,<font color="#666666">"The value of ncv must be at least nev"</font>);
+<a name="line55"> 55: </a>  } <font color="#4169E1">else</font> <font color="#4169E1">if</font> (eps-&gt;mpd!=PETSC_DEFAULT) eps-&gt;ncv = eps-&gt;mpd + eps-&gt;nev + bs;
+<a name="line56"> 56: </a>  <font color="#4169E1">else</font> <font color="#4169E1">if</font> (eps-&gt;nev&lt;500) eps-&gt;ncv = PetscMin(eps-&gt;n-bs,PetscMax(2*eps-&gt;nev,eps-&gt;nev+15))+bs;
+<a name="line57"> 57: </a>  <font color="#4169E1">else</font> eps-&gt;ncv = PetscMin(eps-&gt;n-bs,eps-&gt;nev+500)+bs;
+<a name="line58"> 58: </a>  <font color="#4169E1">if</font> (eps-&gt;mpd==PETSC_DEFAULT) eps-&gt;mpd = eps-&gt;ncv;
+<a name="line59"> 59: </a>  <font color="#4169E1">if</font> (eps-&gt;mpd &gt; eps-&gt;ncv) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_SUP,<font color="#666666">"The mpd has to be less or equal than ncv"</font>);
+<a name="line60"> 60: </a>  <font color="#4169E1">if</font> (eps-&gt;mpd &lt; 2) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_SUP,<font color="#666666">"The mpd has to be greater than 2"</font>);
+<a name="line61"> 61: </a>  <font color="#4169E1">if</font> (eps-&gt;max_it==PETSC_DEFAULT) eps-&gt;max_it = PetscMax(100*eps-&gt;ncv,2*eps-&gt;n);
+<a name="line62"> 62: </a>  <font color="#4169E1">if</font> (!eps-&gt;which) eps-&gt;which = <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_LARGEST_MAGNITUDE</a>;
+<a name="line63"> 63: </a>  <font color="#4169E1">if</font> (!(eps-&gt;nev + bs &lt;= eps-&gt;ncv)) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_SUP,<font color="#666666">"The ncv has to be greater than nev plus blocksize"</font>);
+<a name="line64"> 64: </a>  <font color="#4169E1">if</font> (eps-&gt;trueres) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_SUP,<font color="#666666">"-eps_true_residual is temporally disable in this solver."</font>);
+<a name="line65"> 65: </a>  EPSCheckUnsupported(eps,EPS_FEATURE_REGION | EPS_FEATURE_TWOSIDED);
+
+<a name="line67"> 67: </a>  EPSXDSetRestart_XD(eps,data-&gt;minv,data-&gt;plusk);
+<a name="line68"> 68: </a>  min_size_V = data-&gt;minv;
+<a name="line69"> 69: </a>  <font color="#4169E1">if</font> (!min_size_V) min_size_V = PetscMin(PetscMax(bs,5),eps-&gt;mpd/2);
+<a name="line70"> 70: </a>  <font color="#4169E1">if</font> (!(min_size_V+bs &lt;= eps-&gt;mpd)) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_SUP,<font color="#666666">"The value of minv must be less than mpd minus blocksize"</font>);
+<a name="line71"> 71: </a>  initv = data-&gt;initialsize;
+<a name="line72"> 72: </a>  <font color="#4169E1">if</font> (eps-&gt;mpd &lt; initv) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_SUP,<font color="#666666">"The initv has to be less or equal than mpd"</font>);
+
+<a name="line74"> 74: </a>  <font color="#B22222">/* Change the default sigma to inf if necessary */</font>
+<a name="line75"> 75: </a>  <font color="#4169E1">if</font> (eps-&gt;which == <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_LARGEST_MAGNITUDE</a> || eps-&gt;which == <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_LARGEST_REAL</a> || eps-&gt;which == <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_LARGEST_IMAGINARY</a>) {
+<a name="line76"> 76: </a>    <a href="../../../../docs/manualpages/ST/STSetDefaultShift.html#STSetDefaultShift">STSetDefaultShift</a>(eps-&gt;st,PETSC_MAX_REAL);
+<a name="line77"> 77: </a>  }
+
+<a name="line79"> 79: </a>  <font color="#B22222">/* Set up preconditioner */</font>
+<a name="line80"> 80: </a>  <a href="../../../../docs/manualpages/ST/STSetUp.html#STSetUp">STSetUp</a>(eps-&gt;st);
+
+<a name="line82"> 82: </a>  <font color="#B22222">/* Setup problem specification in dvd */</font>
+<a name="line83"> 83: </a>  <a href="../../../../docs/manualpages/ST/STGetNumMatrices.html#STGetNumMatrices">STGetNumMatrices</a>(eps-&gt;st,&amp;nmat);
+<a name="line84"> 84: </a>  <a href="../../../../docs/manualpages/ST/STGetMatrix.html#STGetMatrix">STGetMatrix</a>(eps-&gt;st,0,&amp;A);
+<a name="line85"> 85: </a>  <font color="#4169E1">if</font> (nmat&gt;1) { <a href="../../../../docs/manualpages/ST/STGetMatrix.html#STGetMatrix">STGetMatrix</a>(eps-&gt;st,1,&amp;B); }
+<a name="line86"> 86: </a>  EPSReset_XD(eps);
+<a name="line87"> 87: </a>  PetscMemzero(dvd,<font color="#4169E1">sizeof</font>(dvdDashboard));
+<a name="line88"> 88: </a>  dvd-&gt;A = A; dvd-&gt;B = eps-&gt;isgeneralized? B: NULL;
+<a name="line89"> 89: </a>  ispositive = eps-&gt;ispositive;
+<a name="line90"> 90: </a>  dvd-&gt;sA = DVD_MAT_IMPLICIT | (eps-&gt;ishermitian? DVD_MAT_HERMITIAN: 0) | ((ispositive &amp;&amp; !eps-&gt;isgeneralized) ? DVD_MAT_POS_DEF: 0);
+<a name="line91"> 91: </a>  <font color="#B22222">/* Assume -eps_hermitian means hermitian-definite in generalized problems */</font>
+<a name="line92"> 92: </a>  <font color="#4169E1">if</font> (!ispositive &amp;&amp; !eps-&gt;isgeneralized &amp;&amp; eps-&gt;ishermitian) ispositive = PETSC_TRUE;
+<a name="line93"> 93: </a>  <font color="#4169E1">if</font> (!eps-&gt;isgeneralized) dvd-&gt;sB = DVD_MAT_IMPLICIT | DVD_MAT_HERMITIAN | DVD_MAT_IDENTITY | DVD_MAT_UNITARY | DVD_MAT_POS_DEF;
+<a name="line94"> 94: </a>  <font color="#4169E1">else</font> dvd-&gt;sB = DVD_MAT_IMPLICIT | (eps-&gt;ishermitian? DVD_MAT_HERMITIAN: 0) | (ispositive? DVD_MAT_POS_DEF: 0);
+<a name="line95"> 95: </a>  ipB = (dvd-&gt;B &amp;&amp; data-&gt;ipB &amp;&amp; DVD_IS(dvd-&gt;sB,DVD_MAT_HERMITIAN))?PETSC_TRUE:PETSC_FALSE;
+<a name="line96"> 96: </a>  dvd-&gt;sEP = ((!eps-&gt;isgeneralized || (eps-&gt;isgeneralized &amp;&amp; ipB))? DVD_EP_STD: 0) | (ispositive? DVD_EP_HERMITIAN: 0) | ((eps-&gt;problem_type == <a href="../../../../docs/manualpages/sys/EPSProblemType.html#EPSProblemType">EPS_GHIEP</a> &amp;&amp; ipB) ? DVD_EP_INDEFINITE : 0);
+<a name="line97"> 97: </a>  <font color="#4169E1">if</font> (data-&gt;ipB &amp;&amp; !ipB) data-&gt;ipB = PETSC_FALSE;
+<a name="line98"> 98: </a>  dvd-&gt;correctXnorm = (dvd-&gt;B &amp;&amp; (DVD_IS(dvd-&gt;sB,DVD_MAT_HERMITIAN)||DVD_IS(dvd-&gt;sEP,DVD_EP_INDEFINITE)))?PETSC_TRUE:PETSC_FALSE;
+<a name="line99"> 99: </a>  dvd-&gt;nev        = eps-&gt;nev;
+<a name="line100">100: </a>  dvd-&gt;which      = eps-&gt;which;
+<a name="line101">101: </a>  dvd-&gt;withTarget = PETSC_TRUE;
+<a name="line102">102: </a>  <font color="#4169E1">switch</font> (eps-&gt;which) {
+<a name="line103">103: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_TARGET_MAGNITUDE</a>:
+<a name="line104">104: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_TARGET_IMAGINARY</a>:
+<a name="line105">105: </a>      dvd-&gt;target[0] = target = eps-&gt;target;
+<a name="line106">106: </a>      dvd-&gt;target[1] = 1.0;
+<a name="line107">107: </a>      <font color="#4169E1">break</font>;
+<a name="line108">108: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_TARGET_REAL</a>:
+<a name="line109">109: </a>      dvd-&gt;target[0] = PetscRealPart(target = eps-&gt;target);
+<a name="line110">110: </a>      dvd-&gt;target[1] = 1.0;
+<a name="line111">111: </a>      <font color="#4169E1">break</font>;
+<a name="line112">112: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_LARGEST_REAL</a>:
+<a name="line113">113: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_LARGEST_MAGNITUDE</a>:
+<a name="line114">114: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_LARGEST_IMAGINARY</a>: <font color="#B22222">/* TODO: think about this case */</font>
+<a name="line115">115: </a>      dvd-&gt;target[0] = 1.0;
+<a name="line116">116: </a>      dvd-&gt;target[1] = target = 0.0;
+<a name="line117">117: </a>      <font color="#4169E1">break</font>;
+<a name="line118">118: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_SMALLEST_MAGNITUDE</a>:
+<a name="line119">119: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_SMALLEST_REAL</a>:
+<a name="line120">120: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_SMALLEST_IMAGINARY</a>: <font color="#B22222">/* TODO: think about this case */</font>
+<a name="line121">121: </a>      dvd-&gt;target[0] = target = 0.0;
+<a name="line122">122: </a>      dvd-&gt;target[1] = 1.0;
+<a name="line123">123: </a>      <font color="#4169E1">break</font>;
+<a name="line124">124: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_WHICH_USER</a>:
+<a name="line125">125: </a>      <a href="../../../../docs/manualpages/ST/STGetShift.html#STGetShift">STGetShift</a>(eps-&gt;st,&amp;target);
+<a name="line126">126: </a>      dvd-&gt;target[0] = target;
+<a name="line127">127: </a>      dvd-&gt;target[1] = 1.0;
+<a name="line128">128: </a>      <font color="#4169E1">break</font>;
+<a name="line129">129: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_ALL</a>:
+<a name="line130">130: </a>      SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_SUP,<font color="#666666">"This solver does not support computing all eigenvalues"</font>);
+<a name="line131">131: </a><strong><font color="#FF0000">    default:</font></strong>
+<a name="line132">132: </a>      SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_SUP,<font color="#666666">"Unsupported value of option 'which'"</font>);
+<a name="line133">133: </a>  }
+<a name="line134">134: </a>  dvd-&gt;tol = SlepcDefaultTol(eps-&gt;tol);
+<a name="line135">135: </a>  dvd-&gt;eps = eps;
+
+<a name="line137">137: </a>  <font color="#B22222">/* Setup the extraction technique */</font>
+<a name="line138">138: </a>  <font color="#4169E1">if</font> (!eps-&gt;extraction) {
+<a name="line139">139: </a>    <font color="#4169E1">if</font> (ipB || ispositive) eps-&gt;extraction = <a href="../../../../docs/manualpages/sys/EPSExtraction.html#EPSExtraction">EPS_RITZ</a>;
+<a name="line140">140: </a>    <font color="#4169E1">else</font> {
+<a name="line141">141: </a>      <font color="#4169E1">switch</font> (eps-&gt;which) {
+<a name="line142">142: </a>        <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_TARGET_REAL</a>:
+<a name="line143">143: </a>        <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_TARGET_MAGNITUDE</a>:
+<a name="line144">144: </a>        <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_TARGET_IMAGINARY</a>:
+<a name="line145">145: </a>        <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_SMALLEST_MAGNITUDE</a>:
+<a name="line146">146: </a>        <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_SMALLEST_REAL</a>:
+<a name="line147">147: </a>        <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_SMALLEST_IMAGINARY</a>:
+<a name="line148">148: </a>          eps-&gt;extraction = <a href="../../../../docs/manualpages/sys/EPSExtraction.html#EPSExtraction">EPS_HARMONIC</a>;
+<a name="line149">149: </a>          <font color="#4169E1">break</font>;
+<a name="line150">150: </a>        <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_LARGEST_REAL</a>:
+<a name="line151">151: </a>        <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_LARGEST_MAGNITUDE</a>:
+<a name="line152">152: </a>        <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_LARGEST_IMAGINARY</a>:
+<a name="line153">153: </a>          eps-&gt;extraction = <a href="../../../../docs/manualpages/sys/EPSExtraction.html#EPSExtraction">EPS_HARMONIC_LARGEST</a>;
+<a name="line154">154: </a>          <font color="#4169E1">break</font>;
+<a name="line155">155: </a><strong><font color="#FF0000">        default:</font></strong>
+<a name="line156">156: </a>          eps-&gt;extraction = <a href="../../../../docs/manualpages/sys/EPSExtraction.html#EPSExtraction">EPS_RITZ</a>;
+<a name="line157">157: </a>      }
+<a name="line158">158: </a>    }
+<a name="line159">159: </a>  }
+<a name="line160">160: </a>  <font color="#4169E1">switch</font> (eps-&gt;extraction) {
+<a name="line161">161: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSExtraction.html#EPSExtraction">EPS_RITZ</a>:              harm = DVD_HARM_NONE; <font color="#4169E1">break</font>;
+<a name="line162">162: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSExtraction.html#EPSExtraction">EPS_HARMONIC</a>:          harm = DVD_HARM_RR; <font color="#4169E1">break</font>;
+<a name="line163">163: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSExtraction.html#EPSExtraction">EPS_HARMONIC_RELATIVE</a>: harm = DVD_HARM_RRR; <font color="#4169E1">break</font>;
+<a name="line164">164: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSExtraction.html#EPSExtraction">EPS_HARMONIC_RIGHT</a>:    harm = DVD_HARM_REIGS; <font color="#4169E1">break</font>;
+<a name="line165">165: </a>    <font color="#4169E1">case</font> <a href="../../../../docs/manualpages/sys/EPSExtraction.html#EPSExtraction">EPS_HARMONIC_LARGEST</a>:  harm = DVD_HARM_LEIGS; <font color="#4169E1">break</font>;
+<a name="line166">166: </a><strong><font color="#FF0000">    default:</font></strong> SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_SUP,<font color="#666666">"Unsupported extraction type"</font>);
+<a name="line167">167: </a>  }
+
+<a name="line169">169: </a>  <font color="#B22222">/* Setup the type of starting subspace */</font>
+<a name="line170">170: </a>  init = data-&gt;krylovstart? DVD_INITV_KRYLOV: DVD_INITV_CLASSIC;
+
+<a name="line172">172: </a>  <font color="#B22222">/* Preconfigure dvd */</font>
+<a name="line173">173: </a>  <a href="../../../../docs/manualpages/ST/STGetKSP.html#STGetKSP">STGetKSP</a>(eps-&gt;st,&amp;ksp);
+<a name="line174">174: </a>  dvd_schm_basic_preconf(dvd,&amp;b,eps-&gt;mpd,min_size_V,bs,initv,PetscAbs(eps-&gt;nini),data-&gt;plusk,harm,ksp,init,eps-&gt;trackall,data-&gt;ipB,data-&gt;doubleexp);
+
+<a name="line176">176: </a>  <font color="#B22222">/* Allocate memory */</font>
+<a name="line177">177: </a>  <a href="../../../../docs/manualpages/EPS/EPSAllocateSolution.html#EPSAllocateSolution">EPSAllocateSolution</a>(eps,0);
+
+<a name="line179">179: </a>  <font color="#B22222">/* Setup orthogonalization */</font>
+<a name="line180">180: </a>  EPS_SetInnerProduct(eps);
+<a name="line181">181: </a>  <font color="#4169E1">if</font> (!(ipB &amp;&amp; dvd-&gt;B)) {
+<a name="line182">182: </a>    <a href="../../../../docs/manualpages/BV/BVSetMatrix.html#BVSetMatrix">BVSetMatrix</a>(eps-&gt;V,NULL,PETSC_FALSE);
+<a name="line183">183: </a>  }
+
+<a name="line185">185: </a>  <font color="#B22222">/* Configure dvd for a basic GD */</font>
+<a name="line186">186: </a>  dvd_schm_basic_conf(dvd,&amp;b,eps-&gt;mpd,min_size_V,bs,initv,PetscAbs(eps-&gt;nini),data-&gt;plusk,harm,dvd-&gt;withTarget,target,ksp,data-&gt;fix,init,eps-&gt;trackall,data-&gt;ipB,data-&gt;dynamic,data-&gt;doubleexp);
+<a name="line187">187: </a>  <font color="#4169E1">return</font>(0);
+<a name="line188">188: </a>}
+
+<a name="line190">190: </a><strong><font color="#4169E1"><a name="EPSSolve_XD"></a>PetscErrorCode EPSSolve_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line191">191: </a>{
+<a name="line192">192: </a>  EPS_DAVIDSON   *data = (EPS_DAVIDSON*)eps-&gt;data;
+<a name="line193">193: </a>  dvdDashboard   *d = &amp;data-&gt;ddb;
+<a name="line194">194: </a>  PetscInt       l,k;
+
+<a name="line198">198: </a>  PetscCitationsRegister(citation,&amp;cited);
+<a name="line199">199: </a>  <font color="#B22222">/* Call the starting routines */</font>
+<a name="line200">200: </a>  EPSDavidsonFLCall(d-&gt;startList,d);
+
+<a name="line202">202: </a>  <font color="#4169E1">while</font> (eps-&gt;reason == <a href="../../../../docs/manualpages/sys/EPSConvergedReason.html#EPSConvergedReason">EPS_CONVERGED_ITERATING</a>) {
+
+<a name="line204">204: </a>    <font color="#B22222">/* Initialize V, if it is needed */</font>
+<a name="line205">205: </a>    <a href="../../../../docs/manualpages/BV/BVGetActiveColumns.html#BVGetActiveColumns">BVGetActiveColumns</a>(d-&gt;eps-&gt;V,&amp;l,&amp;k);
+<a name="line206">206: </a>    <font color="#4169E1">if</font> (l == k) { d-&gt;initV(d); }
+
+<a name="line208">208: </a>    <font color="#B22222">/* Find the best approximated eigenpairs in V, X */</font>
+<a name="line209">209: </a>    d-&gt;calcPairs(d);
+
+<a name="line211">211: </a>    <font color="#B22222">/* Test for convergence */</font>
+<a name="line212">212: </a>    (*eps-&gt;stopping)(eps,eps-&gt;its,eps-&gt;max_it,eps-&gt;nconv,eps-&gt;nev,&amp;eps-&gt;reason,eps-&gt;stoppingctx);
+<a name="line213">213: </a>    <font color="#4169E1">if</font> (eps-&gt;reason != <a href="../../../../docs/manualpages/sys/EPSConvergedReason.html#EPSConvergedReason">EPS_CONVERGED_ITERATING</a>) <font color="#4169E1">break</font>;
+
+<a name="line215">215: </a>    <font color="#B22222">/* Expand the subspace */</font>
+<a name="line216">216: </a>    d-&gt;updateV(d);
+
+<a name="line218">218: </a>    <font color="#B22222">/* Monitor progress */</font>
+<a name="line219">219: </a>    eps-&gt;nconv = d-&gt;nconv;
+<a name="line220">220: </a>    eps-&gt;its++;
+<a name="line221">221: </a>    <a href="../../../../docs/manualpages/BV/BVGetActiveColumns.html#BVGetActiveColumns">BVGetActiveColumns</a>(d-&gt;eps-&gt;V,NULL,&amp;k);
+<a name="line222">222: </a>    EPSMonitor(eps,eps-&gt;its,eps-&gt;nconv+d-&gt;npreconv,eps-&gt;eigr,eps-&gt;eigi,eps-&gt;errest,PetscMin(k,eps-&gt;nev));
+<a name="line223">223: </a>  }
+
+<a name="line225">225: </a>  <font color="#B22222">/* Call the ending routines */</font>
+<a name="line226">226: </a>  EPSDavidsonFLCall(d-&gt;endList,d);
+<a name="line227">227: </a>  <font color="#4169E1">return</font>(0);
+<a name="line228">228: </a>}
+
+<a name="line230">230: </a><strong><font color="#4169E1"><a name="EPSReset_XD"></a>PetscErrorCode EPSReset_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line231">231: </a>{
+<a name="line232">232: </a>  EPS_DAVIDSON   *data = (EPS_DAVIDSON*)eps-&gt;data;
+<a name="line233">233: </a>  dvdDashboard   *dvd = &amp;data-&gt;ddb;
+
+<a name="line237">237: </a>  <font color="#B22222">/* Call step destructors and destroys the list */</font>
+<a name="line238">238: </a>  EPSDavidsonFLCall(dvd-&gt;destroyList,dvd);
+<a name="line239">239: </a>  EPSDavidsonFLDestroy(&amp;dvd-&gt;destroyList);
+<a name="line240">240: </a>  EPSDavidsonFLDestroy(&amp;dvd-&gt;startList);
+<a name="line241">241: </a>  EPSDavidsonFLDestroy(&amp;dvd-&gt;endList);
+<a name="line242">242: </a>  <font color="#4169E1">return</font>(0);
+<a name="line243">243: </a>}
+
+<a name="line245">245: </a><strong><font color="#4169E1"><a name="EPSXDSetKrylovStart_XD"></a>PetscErrorCode EPSXDSetKrylovStart_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscBool krylovstart)</font></strong>
+<a name="line246">246: </a>{
+<a name="line247">247: </a>  EPS_DAVIDSON *data = (EPS_DAVIDSON*)eps-&gt;data;
+
+<a name="line250">250: </a>  data-&gt;krylovstart = krylovstart;
+<a name="line251">251: </a>  <font color="#4169E1">return</font>(0);
+<a name="line252">252: </a>}
+
+<a name="line254">254: </a><strong><font color="#4169E1"><a name="EPSXDGetKrylovStart_XD"></a>PetscErrorCode EPSXDGetKrylovStart_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscBool *krylovstart)</font></strong>
+<a name="line255">255: </a>{
+<a name="line256">256: </a>  EPS_DAVIDSON *data = (EPS_DAVIDSON*)eps-&gt;data;
+
+<a name="line259">259: </a>  *krylovstart = data-&gt;krylovstart;
+<a name="line260">260: </a>  <font color="#4169E1">return</font>(0);
+<a name="line261">261: </a>}
+
+<a name="line263">263: </a><strong><font color="#4169E1"><a name="EPSXDSetBlockSize_XD"></a>PetscErrorCode EPSXDSetBlockSize_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscInt blocksize)</font></strong>
+<a name="line264">264: </a>{
+<a name="line265">265: </a>  EPS_DAVIDSON *data = (EPS_DAVIDSON*)eps-&gt;data;
+
+<a name="line268">268: </a>  <font color="#4169E1">if</font> (blocksize == PETSC_DEFAULT || blocksize == PETSC_DECIDE) blocksize = 1;
+<a name="line269">269: </a>  <font color="#4169E1">if</font> (blocksize &lt;= 0) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"Invalid blocksize value"</font>);
+<a name="line270">270: </a>  data-&gt;blocksize = blocksize;
+<a name="line271">271: </a>  <font color="#4169E1">return</font>(0);
+<a name="line272">272: </a>}
+
+<a name="line274">274: </a><strong><font color="#4169E1"><a name="EPSXDGetBlockSize_XD"></a>PetscErrorCode EPSXDGetBlockSize_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscInt *blocksize)</font></strong>
+<a name="line275">275: </a>{
+<a name="line276">276: </a>  EPS_DAVIDSON *data = (EPS_DAVIDSON*)eps-&gt;data;
+
+<a name="line279">279: </a>  *blocksize = data-&gt;blocksize;
+<a name="line280">280: </a>  <font color="#4169E1">return</font>(0);
+<a name="line281">281: </a>}
+
+<a name="line283">283: </a><strong><font color="#4169E1"><a name="EPSXDSetRestart_XD"></a>PetscErrorCode EPSXDSetRestart_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscInt minv,PetscInt plusk)</font></strong>
+<a name="line284">284: </a>{
+<a name="line285">285: </a>  EPS_DAVIDSON *data = (EPS_DAVIDSON*)eps-&gt;data;
+
+<a name="line288">288: </a>  <font color="#4169E1">if</font> (minv == PETSC_DEFAULT || minv == PETSC_DECIDE) minv = 5;
+<a name="line289">289: </a>  <font color="#4169E1">if</font> (minv &lt;= 0) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"Invalid minv value"</font>);
+<a name="line290">290: </a>  <font color="#4169E1">if</font> (plusk == PETSC_DEFAULT || plusk == PETSC_DECIDE) plusk = eps-&gt;problem_type == <a href="../../../../docs/manualpages/sys/EPSProblemType.html#EPSProblemType">EPS_GHIEP</a>?0:1;
+<a name="line291">291: </a>  <font color="#4169E1">if</font> (plusk &lt; 0) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"Invalid plusk value"</font>);
+<a name="line292">292: </a>  data-&gt;minv = minv;
+<a name="line293">293: </a>  data-&gt;plusk = plusk;
+<a name="line294">294: </a>  <font color="#4169E1">return</font>(0);
+<a name="line295">295: </a>}
+
+<a name="line297">297: </a><strong><font color="#4169E1"><a name="EPSXDGetRestart_XD"></a>PetscErrorCode EPSXDGetRestart_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscInt *minv,PetscInt *plusk)</font></strong>
+<a name="line298">298: </a>{
+<a name="line299">299: </a>  EPS_DAVIDSON *data = (EPS_DAVIDSON*)eps-&gt;data;
+
+<a name="line302">302: </a>  <font color="#4169E1">if</font> (minv) *minv = data-&gt;minv;
+<a name="line303">303: </a>  <font color="#4169E1">if</font> (plusk) *plusk = data-&gt;plusk;
+<a name="line304">304: </a>  <font color="#4169E1">return</font>(0);
+<a name="line305">305: </a>}
+
+<a name="line307">307: </a><strong><font color="#4169E1"><a name="EPSXDGetInitialSize_XD"></a>PetscErrorCode EPSXDGetInitialSize_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscInt *initialsize)</font></strong>
+<a name="line308">308: </a>{
+<a name="line309">309: </a>  EPS_DAVIDSON *data = (EPS_DAVIDSON*)eps-&gt;data;
+
+<a name="line312">312: </a>  *initialsize = data-&gt;initialsize;
+<a name="line313">313: </a>  <font color="#4169E1">return</font>(0);
+<a name="line314">314: </a>}
+
+<a name="line316">316: </a><strong><font color="#4169E1"><a name="EPSXDSetInitialSize_XD"></a>PetscErrorCode EPSXDSetInitialSize_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscInt initialsize)</font></strong>
+<a name="line317">317: </a>{
+<a name="line318">318: </a>  EPS_DAVIDSON *data = (EPS_DAVIDSON*)eps-&gt;data;
+
+<a name="line321">321: </a>  <font color="#4169E1">if</font> (initialsize == PETSC_DEFAULT || initialsize == PETSC_DECIDE) initialsize = 5;
+<a name="line322">322: </a>  <font color="#4169E1">if</font> (initialsize &lt;= 0) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"Invalid initial size value"</font>);
+<a name="line323">323: </a>  data-&gt;initialsize = initialsize;
+<a name="line324">324: </a>  <font color="#4169E1">return</font>(0);
+<a name="line325">325: </a>}
+
+<a name="line327">327: </a><strong><font color="#4169E1"><a name="EPSXDSetBOrth_XD"></a>PetscErrorCode EPSXDSetBOrth_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscBool borth)</font></strong>
+<a name="line328">328: </a>{
+<a name="line329">329: </a>  EPS_DAVIDSON *data = (EPS_DAVIDSON*)eps-&gt;data;
+
+<a name="line332">332: </a>  data-&gt;ipB = borth;
+<a name="line333">333: </a>  <font color="#4169E1">return</font>(0);
+<a name="line334">334: </a>}
+
+<a name="line336">336: </a><strong><font color="#4169E1"><a name="EPSXDGetBOrth_XD"></a>PetscErrorCode EPSXDGetBOrth_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscBool *borth)</font></strong>
+<a name="line337">337: </a>{
+<a name="line338">338: </a>  EPS_DAVIDSON *data = (EPS_DAVIDSON*)eps-&gt;data;
+
+<a name="line341">341: </a>  *borth = data-&gt;ipB;
+<a name="line342">342: </a>  <font color="#4169E1">return</font>(0);
+<a name="line343">343: </a>}
+
+<a name="line345">345: </a><font color="#B22222">/*</font>
+<a name="line346">346: </a><font color="#B22222">  EPSComputeVectors_XD - Compute eigenvectors from the vectors</font>
+<a name="line347">347: </a><font color="#B22222">  provided by the eigensolver. This version is intended for solvers</font>
+<a name="line348">348: </a><font color="#B22222">  that provide Schur vectors from the QZ decomposition. Given the partial</font>
+<a name="line349">349: </a><font color="#B22222">  Schur decomposition OP*V=V*T, the following steps are performed:</font>
+<a name="line350">350: </a><font color="#B22222">      1) compute eigenvectors of (S,T): S*Z=T*Z*D</font>
+<a name="line351">351: </a><font color="#B22222">      2) compute eigenvectors of OP: X=V*Z</font>
+<a name="line352">352: </a><font color="#B22222"> */</font>
+<a name="line353">353: </a><strong><font color="#4169E1"><a name="EPSComputeVectors_XD"></a>PetscErrorCode EPSComputeVectors_XD(<a href="../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line354">354: </a>{
+<a name="line356">356: </a>  Mat            X;
+<a name="line357">357: </a>  PetscBool      symm;
+
+<a name="line360">360: </a>  PetscObjectTypeCompare((PetscObject)eps-&gt;ds,<a href="../../../../docs/manualpages/DS/DSHEP.html#DSHEP">DSHEP</a>,&amp;symm);
+<a name="line361">361: </a>  <font color="#4169E1">if</font> (symm) <font color="#4169E1">return</font>(0);
+<a name="line362">362: </a>  <a href="../../../../docs/manualpages/DS/DSVectors.html#DSVectors">DSVectors</a>(eps-&gt;ds,<a href="../../../../docs/manualpages/sys/DSMatType.html#DSMatType">DS_MAT_X</a>,NULL,NULL);
+
+<a name="line364">364: </a>  <font color="#B22222">/* V &lt;- V * X */</font>
+<a name="line365">365: </a>  <a href="../../../../docs/manualpages/DS/DSGetMat.html#DSGetMat">DSGetMat</a>(eps-&gt;ds,<a href="../../../../docs/manualpages/sys/DSMatType.html#DSMatType">DS_MAT_X</a>,&amp;X);
+<a name="line366">366: </a>  <a href="../../../../docs/manualpages/BV/BVSetActiveColumns.html#BVSetActiveColumns">BVSetActiveColumns</a>(eps-&gt;V,0,eps-&gt;nconv);
+<a name="line367">367: </a>  <a href="../../../../docs/manualpages/BV/BVMultInPlace.html#BVMultInPlace">BVMultInPlace</a>(eps-&gt;V,X,0,eps-&gt;nconv);
+<a name="line368">368: </a>  MatDestroy(&amp;X);
+<a name="line369">369: </a>  <font color="#4169E1">return</font>(0);
+<a name="line370">370: </a>}
+</pre>
+</body>
+
+</html>

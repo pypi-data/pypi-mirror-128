@@ -1,0 +1,278 @@
+<center><a href="arnoldi.c">Actual source code: arnoldi.c</a></center><br>
+
+<html>
+<head> <link rel="canonical" href="https://slepc.upv.es/documentation/current/src/eps/impls/krylov/arnoldi/arnoldi.c.html" />
+<title></title>
+<meta name="generator" content="c2html 0.9.4">
+<meta name="date" content="2021-11-17T14:29:35+00:00">
+</head>
+
+<body bgcolor="#FFFFFF">
+   <div id="version" align=right><b>slepc-3.16.1 2021-11-17</b></div>
+   <div id="bugreport" align=right><a href="mailto:slepc-maint@upv.es?subject=Typo or Error in Documentation &body=Please describe the typo or error in the documentation: slepc-3.16.1 v3.16.1 src/eps/impls/krylov/arnoldi/arnoldi.c.html "><small>Report Typos and Errors</small></a></div>
+<pre width="80">
+<a name="line1">  1: </a><font color="#B22222">/*</font>
+<a name="line2">  2: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line3">  3: </a><font color="#B22222">   SLEPc - Scalable Library for Eigenvalue Problem Computations</font>
+<a name="line4">  4: </a><font color="#B22222">   Copyright (c) 2002-2021, Universitat Politecnica de Valencia, Spain</font>
+
+<a name="line6">  6: </a><font color="#B22222">   This file is part of SLEPc.</font>
+<a name="line7">  7: </a><font color="#B22222">   SLEPc is distributed under a 2-clause BSD license (see LICENSE).</font>
+<a name="line8">  8: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line9">  9: </a><font color="#B22222">*/</font>
+<a name="line10"> 10: </a><font color="#B22222">/*</font>
+<a name="line11"> 11: </a><font color="#B22222">   SLEPc eigensolver: "arnoldi"</font>
+
+<a name="line13"> 13: </a><font color="#B22222">   Method: Explicitly Restarted Arnoldi</font>
+
+<a name="line15"> 15: </a><font color="#B22222">   Algorithm:</font>
+
+<a name="line17"> 17: </a><font color="#B22222">       Arnoldi method with explicit restart and deflation.</font>
+
+<a name="line19"> 19: </a><font color="#B22222">   References:</font>
+
+<a name="line21"> 21: </a><font color="#B22222">       [1] "Arnoldi Methods in SLEPc", SLEPc Technical Report STR-4,</font>
+<a name="line22"> 22: </a><font color="#B22222">           available at https://slepc.upv.es.</font>
+<a name="line23"> 23: </a><font color="#B22222">*/</font>
+
+<a name="line25"> 25: </a>#include <A href="../../../../../include/slepc/private/epsimpl.h.html">&lt;slepc/private/epsimpl.h&gt;</A>
+
+<a name="line27"> 27: </a><font color="#4169E1">typedef</font> <font color="#4169E1">struct</font> {
+<a name="line28"> 28: </a>  PetscBool delayed;
+<a name="line29"> 29: </a>} EPS_ARNOLDI;
+
+<a name="line31"> 31: </a><strong><font color="#4169E1"><a name="EPSSetUp_Arnoldi"></a>PetscErrorCode EPSSetUp_Arnoldi(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line32"> 32: </a>{
+
+<a name="line36"> 36: </a>  EPSCheckDefinite(eps);
+<a name="line37"> 37: </a>  EPSSetDimensions_Default(eps,eps-&gt;nev,&amp;eps-&gt;ncv,&amp;eps-&gt;mpd);
+<a name="line38"> 38: </a>  <font color="#4169E1">if</font> (eps-&gt;ncv&gt;eps-&gt;nev+eps-&gt;mpd) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_USER_INPUT,<font color="#666666">"The value of ncv must not be larger than nev+mpd"</font>);
+<a name="line39"> 39: </a>  <font color="#4169E1">if</font> (eps-&gt;max_it==PETSC_DEFAULT) eps-&gt;max_it = PetscMax(100,2*eps-&gt;n/eps-&gt;ncv);
+<a name="line40"> 40: </a>  <font color="#4169E1">if</font> (!eps-&gt;which) { EPSSetWhichEigenpairs_Default(eps); }
+<a name="line41"> 41: </a>  <font color="#4169E1">if</font> (eps-&gt;which==<a href="../../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_ALL</a>) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_SUP,<font color="#666666">"This solver does not support computing all eigenvalues"</font>);
+<a name="line42"> 42: </a>  EPSCheckUnsupported(eps,EPS_FEATURE_ARBITRARY | EPS_FEATURE_TWOSIDED);
+
+<a name="line44"> 44: </a>  <a href="../../../../../docs/manualpages/EPS/EPSAllocateSolution.html#EPSAllocateSolution">EPSAllocateSolution</a>(eps,1);
+<a name="line45"> 45: </a>  EPS_SetInnerProduct(eps);
+<a name="line46"> 46: </a>  <a href="../../../../../docs/manualpages/DS/DSSetType.html#DSSetType">DSSetType</a>(eps-&gt;ds,<a href="../../../../../docs/manualpages/DS/DSNHEP.html#DSNHEP">DSNHEP</a>);
+<a name="line47"> 47: </a>  <font color="#4169E1">if</font> (eps-&gt;extraction==<a href="../../../../../docs/manualpages/sys/EPSExtraction.html#EPSExtraction">EPS_REFINED</a> || eps-&gt;extraction==<a href="../../../../../docs/manualpages/sys/EPSExtraction.html#EPSExtraction">EPS_REFINED_HARMONIC</a>) {
+<a name="line48"> 48: </a>    <a href="../../../../../docs/manualpages/DS/DSSetRefined.html#DSSetRefined">DSSetRefined</a>(eps-&gt;ds,PETSC_TRUE);
+<a name="line49"> 49: </a>  }
+<a name="line50"> 50: </a>  <a href="../../../../../docs/manualpages/DS/DSSetExtraRow.html#DSSetExtraRow">DSSetExtraRow</a>(eps-&gt;ds,PETSC_TRUE);
+<a name="line51"> 51: </a>  <a href="../../../../../docs/manualpages/DS/DSAllocate.html#DSAllocate">DSAllocate</a>(eps-&gt;ds,eps-&gt;ncv+1);
+<a name="line52"> 52: </a>  <font color="#4169E1">return</font>(0);
+<a name="line53"> 53: </a>}
+
+<a name="line55"> 55: </a><strong><font color="#4169E1"><a name="EPSSolve_Arnoldi"></a>PetscErrorCode EPSSolve_Arnoldi(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line56"> 56: </a>{
+<a name="line57"> 57: </a>  PetscErrorCode     ierr;
+<a name="line58"> 58: </a>  PetscInt           k,nv,ld;
+<a name="line59"> 59: </a>  Mat                U,Op,H;
+<a name="line60"> 60: </a>  PetscScalar        *Harray;
+<a name="line61"> 61: </a>  PetscReal          beta,gamma=1.0;
+<a name="line62"> 62: </a>  PetscBool          breakdown,harmonic,refined;
+<a name="line63"> 63: </a>  <a href="../../../../../docs/manualpages/sys/BVOrthogRefineType.html#BVOrthogRefineType">BVOrthogRefineType</a> orthog_ref;
+<a name="line64"> 64: </a>  EPS_ARNOLDI        *arnoldi = (EPS_ARNOLDI*)eps-&gt;data;
+
+<a name="line67"> 67: </a>  <a href="../../../../../docs/manualpages/DS/DSGetLeadingDimension.html#DSGetLeadingDimension">DSGetLeadingDimension</a>(eps-&gt;ds,&amp;ld);
+<a name="line68"> 68: </a>  <a href="../../../../../docs/manualpages/DS/DSGetRefined.html#DSGetRefined">DSGetRefined</a>(eps-&gt;ds,&amp;refined);
+<a name="line69"> 69: </a>  harmonic = (eps-&gt;extraction==<a href="../../../../../docs/manualpages/sys/EPSExtraction.html#EPSExtraction">EPS_HARMONIC</a> || eps-&gt;extraction==<a href="../../../../../docs/manualpages/sys/EPSExtraction.html#EPSExtraction">EPS_REFINED_HARMONIC</a>)?PETSC_TRUE:PETSC_FALSE;
+<a name="line70"> 70: </a>  <a href="../../../../../docs/manualpages/BV/BVGetOrthogonalization.html#BVGetOrthogonalization">BVGetOrthogonalization</a>(eps-&gt;V,NULL,&amp;orthog_ref,NULL,NULL);
+
+<a name="line72"> 72: </a>  <font color="#B22222">/* Get the starting Arnoldi vector */</font>
+<a name="line73"> 73: </a>  EPSGetStartVector(eps,0,NULL);
+
+<a name="line75"> 75: </a>  <font color="#B22222">/* Restart loop */</font>
+<a name="line76"> 76: </a>  <font color="#4169E1">while</font> (eps-&gt;reason == <a href="../../../../../docs/manualpages/sys/EPSConvergedReason.html#EPSConvergedReason">EPS_CONVERGED_ITERATING</a>) {
+<a name="line77"> 77: </a>    eps-&gt;its++;
+
+<a name="line79"> 79: </a>    <font color="#B22222">/* Compute an nv-step Arnoldi factorization */</font>
+<a name="line80"> 80: </a>    nv = PetscMin(eps-&gt;nconv+eps-&gt;mpd,eps-&gt;ncv);
+<a name="line81"> 81: </a>    <a href="../../../../../docs/manualpages/DS/DSSetDimensions.html#DSSetDimensions">DSSetDimensions</a>(eps-&gt;ds,nv,eps-&gt;nconv,0);
+<a name="line82"> 82: </a>    <font color="#4169E1">if</font> (!arnoldi-&gt;delayed) {
+<a name="line83"> 83: </a>      <a href="../../../../../docs/manualpages/ST/STGetOperator.html#STGetOperator">STGetOperator</a>(eps-&gt;st,&amp;Op);
+<a name="line84"> 84: </a>      <a href="../../../../../docs/manualpages/DS/DSGetMat.html#DSGetMat">DSGetMat</a>(eps-&gt;ds,<a href="../../../../../docs/manualpages/sys/DSMatType.html#DSMatType">DS_MAT_A</a>,&amp;H);
+<a name="line85"> 85: </a>      <a href="../../../../../docs/manualpages/BV/BVMatArnoldi.html#BVMatArnoldi">BVMatArnoldi</a>(eps-&gt;V,Op,H,eps-&gt;nconv,&amp;nv,&amp;beta,&amp;breakdown);
+<a name="line86"> 86: </a>      <a href="../../../../../docs/manualpages/DS/DSRestoreMat.html#DSRestoreMat">DSRestoreMat</a>(eps-&gt;ds,<a href="../../../../../docs/manualpages/sys/DSMatType.html#DSMatType">DS_MAT_A</a>,&amp;H);
+<a name="line87"> 87: </a>      <a href="../../../../../docs/manualpages/ST/STRestoreOperator.html#STRestoreOperator">STRestoreOperator</a>(eps-&gt;st,&amp;Op);
+<a name="line88"> 88: </a>    } <font color="#4169E1">else</font> <font color="#4169E1">if</font> (orthog_ref == <a href="../../../../../docs/manualpages/sys/BVOrthogRefineType.html#BVOrthogRefineType">BV_ORTHOG_REFINE_NEVER</a>) {
+<a name="line89"> 89: </a>      <a href="../../../../../docs/manualpages/DS/DSGetArray.html#DSGetArray">DSGetArray</a>(eps-&gt;ds,<a href="../../../../../docs/manualpages/sys/DSMatType.html#DSMatType">DS_MAT_A</a>,&amp;Harray);
+<a name="line90"> 90: </a>      EPSDelayedArnoldi1(eps,Harray,ld,eps-&gt;nconv,&amp;nv,&amp;beta,&amp;breakdown);
+<a name="line91"> 91: </a>      <a href="../../../../../docs/manualpages/DS/DSRestoreArray.html#DSRestoreArray">DSRestoreArray</a>(eps-&gt;ds,<a href="../../../../../docs/manualpages/sys/DSMatType.html#DSMatType">DS_MAT_A</a>,&amp;Harray);
+<a name="line92"> 92: </a>    } <font color="#4169E1">else</font> {
+<a name="line93"> 93: </a>      <a href="../../../../../docs/manualpages/DS/DSGetArray.html#DSGetArray">DSGetArray</a>(eps-&gt;ds,<a href="../../../../../docs/manualpages/sys/DSMatType.html#DSMatType">DS_MAT_A</a>,&amp;Harray);
+<a name="line94"> 94: </a>      EPSDelayedArnoldi(eps,Harray,ld,eps-&gt;nconv,&amp;nv,&amp;beta,&amp;breakdown);
+<a name="line95"> 95: </a>      <a href="../../../../../docs/manualpages/DS/DSRestoreArray.html#DSRestoreArray">DSRestoreArray</a>(eps-&gt;ds,<a href="../../../../../docs/manualpages/sys/DSMatType.html#DSMatType">DS_MAT_A</a>,&amp;Harray);
+<a name="line96"> 96: </a>    }
+<a name="line97"> 97: </a>    <a href="../../../../../docs/manualpages/DS/DSSetState.html#DSSetState">DSSetState</a>(eps-&gt;ds,<a href="../../../../../docs/manualpages/sys/DSStateType.html#DSStateType">DS_STATE_INTERMEDIATE</a>);
+<a name="line98"> 98: </a>    <a href="../../../../../docs/manualpages/BV/BVSetActiveColumns.html#BVSetActiveColumns">BVSetActiveColumns</a>(eps-&gt;V,eps-&gt;nconv,nv);
+
+<a name="line100">100: </a>    <font color="#B22222">/* Compute translation of Krylov decomposition if harmonic extraction used */</font>
+<a name="line101">101: </a>    <font color="#4169E1">if</font> (harmonic) {
+<a name="line102">102: </a>      <a href="../../../../../docs/manualpages/DS/DSTranslateHarmonic.html#DSTranslateHarmonic">DSTranslateHarmonic</a>(eps-&gt;ds,eps-&gt;target,beta,PETSC_FALSE,NULL,&amp;gamma);
+<a name="line103">103: </a>    }
+
+<a name="line105">105: </a>    <font color="#B22222">/* Solve projected problem */</font>
+<a name="line106">106: </a>    <a href="../../../../../docs/manualpages/DS/DSSolve.html#DSSolve">DSSolve</a>(eps-&gt;ds,eps-&gt;eigr,eps-&gt;eigi);
+<a name="line107">107: </a>    <a href="../../../../../docs/manualpages/DS/DSSort.html#DSSort">DSSort</a>(eps-&gt;ds,eps-&gt;eigr,eps-&gt;eigi,NULL,NULL,NULL);
+<a name="line108">108: </a>    <a href="../../../../../docs/manualpages/DS/DSUpdateExtraRow.html#DSUpdateExtraRow">DSUpdateExtraRow</a>(eps-&gt;ds);
+<a name="line109">109: </a>    <a href="../../../../../docs/manualpages/DS/DSSynchronize.html#DSSynchronize">DSSynchronize</a>(eps-&gt;ds,eps-&gt;eigr,eps-&gt;eigi);
+
+<a name="line111">111: </a>    <font color="#B22222">/* Check convergence */</font>
+<a name="line112">112: </a>    EPSKrylovConvergence(eps,PETSC_FALSE,eps-&gt;nconv,nv-eps-&gt;nconv,beta,0.0,gamma,&amp;k);
+<a name="line113">113: </a>    <font color="#4169E1">if</font> (refined) {
+<a name="line114">114: </a>      <a href="../../../../../docs/manualpages/DS/DSGetMat.html#DSGetMat">DSGetMat</a>(eps-&gt;ds,<a href="../../../../../docs/manualpages/sys/DSMatType.html#DSMatType">DS_MAT_X</a>,&amp;U);
+<a name="line115">115: </a>      <a href="../../../../../docs/manualpages/BV/BVMultInPlace.html#BVMultInPlace">BVMultInPlace</a>(eps-&gt;V,U,eps-&gt;nconv,k+1);
+<a name="line116">116: </a>      MatDestroy(&amp;U);
+<a name="line117">117: </a>      <a href="../../../../../docs/manualpages/BV/BVOrthonormalizeColumn.html#BVOrthonormalizeColumn">BVOrthonormalizeColumn</a>(eps-&gt;V,k,PETSC_FALSE,NULL,NULL);
+<a name="line118">118: </a>    } <font color="#4169E1">else</font> {
+<a name="line119">119: </a>      <a href="../../../../../docs/manualpages/DS/DSGetMat.html#DSGetMat">DSGetMat</a>(eps-&gt;ds,<a href="../../../../../docs/manualpages/sys/DSMatType.html#DSMatType">DS_MAT_Q</a>,&amp;U);
+<a name="line120">120: </a>      <a href="../../../../../docs/manualpages/BV/BVMultInPlace.html#BVMultInPlace">BVMultInPlace</a>(eps-&gt;V,U,eps-&gt;nconv,PetscMin(k+1,nv));
+<a name="line121">121: </a>      MatDestroy(&amp;U);
+<a name="line122">122: </a>    }
+<a name="line123">123: </a>    (*eps-&gt;stopping)(eps,eps-&gt;its,eps-&gt;max_it,k,eps-&gt;nev,&amp;eps-&gt;reason,eps-&gt;stoppingctx);
+<a name="line124">124: </a>    <font color="#4169E1">if</font> (eps-&gt;reason == <a href="../../../../../docs/manualpages/sys/EPSConvergedReason.html#EPSConvergedReason">EPS_CONVERGED_ITERATING</a> &amp;&amp; breakdown) {
+<a name="line125">125: </a>      PetscInfo2(eps,<font color="#666666">"Breakdown in Arnoldi method (it=%D norm=%g)\n"</font>,eps-&gt;its,(double)beta);
+<a name="line126">126: </a>      EPSGetStartVector(eps,k,&amp;breakdown);
+<a name="line127">127: </a>      <font color="#4169E1">if</font> (breakdown) {
+<a name="line128">128: </a>        eps-&gt;reason = <a href="../../../../../docs/manualpages/sys/EPSConvergedReason.html#EPSConvergedReason">EPS_DIVERGED_BREAKDOWN</a>;
+<a name="line129">129: </a>        PetscInfo(eps,<font color="#666666">"Unable to generate more start vectors\n"</font>);
+<a name="line130">130: </a>      }
+<a name="line131">131: </a>    }
+<a name="line132">132: </a>    eps-&gt;nconv = k;
+<a name="line133">133: </a>    EPSMonitor(eps,eps-&gt;its,eps-&gt;nconv,eps-&gt;eigr,eps-&gt;eigi,eps-&gt;errest,nv);
+<a name="line134">134: </a>  }
+<a name="line135">135: </a>  <a href="../../../../../docs/manualpages/DS/DSTruncate.html#DSTruncate">DSTruncate</a>(eps-&gt;ds,eps-&gt;nconv,PETSC_TRUE);
+<a name="line136">136: </a>  <font color="#4169E1">return</font>(0);
+<a name="line137">137: </a>}
+
+<a name="line139">139: </a><strong><font color="#4169E1"><a name="EPSSetFromOptions_Arnoldi"></a>PetscErrorCode EPSSetFromOptions_Arnoldi(PetscOptionItems *PetscOptionsObject,<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line140">140: </a>{
+<a name="line142">142: </a>  PetscBool      set,val;
+<a name="line143">143: </a>  EPS_ARNOLDI    *arnoldi = (EPS_ARNOLDI*)eps-&gt;data;
+
+<a name="line146">146: </a>  PetscOptionsHead(PetscOptionsObject,<font color="#666666">"<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> Arnoldi Options"</font>);
+
+<a name="line148">148: </a>    PetscOptionsBool(<font color="#666666">"-eps_arnoldi_delayed"</font>,<font color="#666666">"Use delayed reorthogonalization"</font>,<font color="#666666">"<a href="../../../../../docs/manualpages/EPS/EPSArnoldiSetDelayed.html#EPSArnoldiSetDelayed">EPSArnoldiSetDelayed</a>"</font>,arnoldi-&gt;delayed,&amp;val,&amp;set);
+<a name="line149">149: </a>    <font color="#4169E1">if</font> (set) { <a href="../../../../../docs/manualpages/EPS/EPSArnoldiSetDelayed.html#EPSArnoldiSetDelayed">EPSArnoldiSetDelayed</a>(eps,val); }
+
+<a name="line151">151: </a>  PetscOptionsTail();
+<a name="line152">152: </a>  <font color="#4169E1">return</font>(0);
+<a name="line153">153: </a>}
+
+<a name="line155">155: </a><strong><font color="#4169E1"><a name="EPSArnoldiSetDelayed_Arnoldi"></a>static PetscErrorCode EPSArnoldiSetDelayed_Arnoldi(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscBool delayed)</font></strong>
+<a name="line156">156: </a>{
+<a name="line157">157: </a>  EPS_ARNOLDI *arnoldi = (EPS_ARNOLDI*)eps-&gt;data;
+
+<a name="line160">160: </a>  arnoldi-&gt;delayed = delayed;
+<a name="line161">161: </a>  <font color="#4169E1">return</font>(0);
+<a name="line162">162: </a>}
+
+<a name="line164">164: </a><font color="#B22222">/*@</font>
+<a name="line165">165: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/EPS/EPSArnoldiSetDelayed.html#EPSArnoldiSetDelayed">EPSArnoldiSetDelayed</a> - Activates or deactivates delayed reorthogonalization</font>
+<a name="line166">166: </a><font color="#B22222">   in the Arnoldi iteration.</font>
+
+<a name="line168">168: </a><font color="#B22222">   Logically Collective on eps</font>
+
+<a name="line170">170: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line171">171: </a><font color="#B22222">+  eps - the eigenproblem solver context</font>
+<a name="line172">172: </a><font color="#B22222">-  delayed - boolean flag</font>
+
+<a name="line174">174: </a><font color="#B22222">   Options Database Key:</font>
+<a name="line175">175: </a><font color="#B22222">.  -eps_arnoldi_delayed - Activates delayed reorthogonalization in Arnoldi</font>
+
+<a name="line177">177: </a><font color="#B22222">   Note:</font>
+<a name="line178">178: </a><font color="#B22222">   Delayed reorthogonalization is an aggressive optimization for the Arnoldi</font>
+<a name="line179">179: </a><font color="#B22222">   eigensolver than may provide better scalability, but sometimes makes the</font>
+<a name="line180">180: </a><font color="#B22222">   solver converge less than the default algorithm.</font>
+
+<a name="line182">182: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line184">184: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/EPS/EPSArnoldiGetDelayed.html#EPSArnoldiGetDelayed">EPSArnoldiGetDelayed</a>()</font>
+<a name="line185">185: </a><font color="#B22222">@*/</font>
+<a name="line186">186: </a><strong><font color="#4169E1"><a name="EPSArnoldiSetDelayed"></a>PetscErrorCode <a href="../../../../../docs/manualpages/EPS/EPSArnoldiSetDelayed.html#EPSArnoldiSetDelayed">EPSArnoldiSetDelayed</a>(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscBool delayed)</font></strong>
+<a name="line187">187: </a>{
+
+<a name="line193">193: </a>  PetscTryMethod(eps,<font color="#666666">"EPSArnoldiSetDelayed_C"</font>,(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a>,PetscBool),(eps,delayed));
+<a name="line194">194: </a>  <font color="#4169E1">return</font>(0);
+<a name="line195">195: </a>}
+
+<a name="line197">197: </a><strong><font color="#4169E1"><a name="EPSArnoldiGetDelayed_Arnoldi"></a>static PetscErrorCode EPSArnoldiGetDelayed_Arnoldi(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscBool *delayed)</font></strong>
+<a name="line198">198: </a>{
+<a name="line199">199: </a>  EPS_ARNOLDI *arnoldi = (EPS_ARNOLDI*)eps-&gt;data;
+
+<a name="line202">202: </a>  *delayed = arnoldi-&gt;delayed;
+<a name="line203">203: </a>  <font color="#4169E1">return</font>(0);
+<a name="line204">204: </a>}
+
+<a name="line206">206: </a><font color="#B22222">/*@</font>
+<a name="line207">207: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/EPS/EPSArnoldiGetDelayed.html#EPSArnoldiGetDelayed">EPSArnoldiGetDelayed</a> - Gets the type of reorthogonalization used during the Arnoldi</font>
+<a name="line208">208: </a><font color="#B22222">   iteration.</font>
+
+<a name="line210">210: </a><font color="#B22222">   Not Collective</font>
+
+<a name="line212">212: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line213">213: </a><font color="#B22222">.  eps - the eigenproblem solver context</font>
+
+<a name="line215">215: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line216">216: </a><font color="#B22222">.  delayed - boolean flag indicating if delayed reorthogonalization has been enabled</font>
+
+<a name="line218">218: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line220">220: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/EPS/EPSArnoldiSetDelayed.html#EPSArnoldiSetDelayed">EPSArnoldiSetDelayed</a>()</font>
+<a name="line221">221: </a><font color="#B22222">@*/</font>
+<a name="line222">222: </a><strong><font color="#4169E1"><a name="EPSArnoldiGetDelayed"></a>PetscErrorCode <a href="../../../../../docs/manualpages/EPS/EPSArnoldiGetDelayed.html#EPSArnoldiGetDelayed">EPSArnoldiGetDelayed</a>(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscBool *delayed)</font></strong>
+<a name="line223">223: </a>{
+
+<a name="line229">229: </a>  PetscUseMethod(eps,<font color="#666666">"EPSArnoldiGetDelayed_C"</font>,(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a>,PetscBool*),(eps,delayed));
+<a name="line230">230: </a>  <font color="#4169E1">return</font>(0);
+<a name="line231">231: </a>}
+
+<a name="line233">233: </a><strong><font color="#4169E1"><a name="EPSDestroy_Arnoldi"></a>PetscErrorCode EPSDestroy_Arnoldi(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line234">234: </a>{
+
+<a name="line238">238: </a>  PetscFree(eps-&gt;data);
+<a name="line239">239: </a>  PetscObjectComposeFunction((PetscObject)eps,<font color="#666666">"EPSArnoldiSetDelayed_C"</font>,NULL);
+<a name="line240">240: </a>  PetscObjectComposeFunction((PetscObject)eps,<font color="#666666">"EPSArnoldiGetDelayed_C"</font>,NULL);
+<a name="line241">241: </a>  <font color="#4169E1">return</font>(0);
+<a name="line242">242: </a>}
+
+<a name="line244">244: </a><strong><font color="#4169E1"><a name="EPSView_Arnoldi"></a>PetscErrorCode EPSView_Arnoldi(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps,PetscViewer viewer)</font></strong>
+<a name="line245">245: </a>{
+<a name="line247">247: </a>  PetscBool      isascii;
+<a name="line248">248: </a>  EPS_ARNOLDI    *arnoldi = (EPS_ARNOLDI*)eps-&gt;data;
+
+<a name="line251">251: </a>  PetscObjectTypeCompare((PetscObject)viewer,PETSCVIEWERASCII,&amp;isascii);
+<a name="line252">252: </a>  <font color="#4169E1">if</font> (isascii &amp;&amp; arnoldi-&gt;delayed) {
+<a name="line253">253: </a>    PetscViewerASCIIPrintf(viewer,<font color="#666666">"  using delayed reorthogonalization\n"</font>);
+<a name="line254">254: </a>  }
+<a name="line255">255: </a>  <font color="#4169E1">return</font>(0);
+<a name="line256">256: </a>}
+
+<a name="line258">258: </a><strong><font color="#4169E1"><a name="EPSCreate_Arnoldi"></a>SLEPC_EXTERN PetscErrorCode EPSCreate_Arnoldi(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line259">259: </a>{
+<a name="line260">260: </a>  EPS_ARNOLDI    *ctx;
+
+<a name="line264">264: </a>  PetscNewLog(eps,&amp;ctx);
+<a name="line265">265: </a>  eps-&gt;data = (void*)ctx;
+
+<a name="line267">267: </a>  eps-&gt;useds = PETSC_TRUE;
+
+<a name="line269">269: </a>  eps-&gt;ops-&gt;solve          = EPSSolve_Arnoldi;
+<a name="line270">270: </a>  eps-&gt;ops-&gt;setup          = EPSSetUp_Arnoldi;
+<a name="line271">271: </a>  eps-&gt;ops-&gt;setupsort      = EPSSetUpSort_Default;
+<a name="line272">272: </a>  eps-&gt;ops-&gt;setfromoptions = EPSSetFromOptions_Arnoldi;
+<a name="line273">273: </a>  eps-&gt;ops-&gt;destroy        = EPSDestroy_Arnoldi;
+<a name="line274">274: </a>  eps-&gt;ops-&gt;view           = EPSView_Arnoldi;
+<a name="line275">275: </a>  eps-&gt;ops-&gt;backtransform  = EPSBackTransform_Default;
+<a name="line276">276: </a>  eps-&gt;ops-&gt;computevectors = EPSComputeVectors_Schur;
+
+<a name="line278">278: </a>  PetscObjectComposeFunction((PetscObject)eps,<font color="#666666">"EPSArnoldiSetDelayed_C"</font>,EPSArnoldiSetDelayed_Arnoldi);
+<a name="line279">279: </a>  PetscObjectComposeFunction((PetscObject)eps,<font color="#666666">"EPSArnoldiGetDelayed_C"</font>,EPSArnoldiGetDelayed_Arnoldi);
+<a name="line280">280: </a>  <font color="#4169E1">return</font>(0);
+<a name="line281">281: </a>}
+
+</pre>
+</body>
+
+</html>

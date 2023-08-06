@@ -1,0 +1,319 @@
+<center><a href="vecutil.c">Actual source code: vecutil.c</a></center><br>
+
+<html>
+<head> <link rel="canonical" href="https://slepc.upv.es/documentation/current/src/sys/vec/vecutil.c.html" />
+<title></title>
+<meta name="generator" content="c2html 0.9.4">
+<meta name="date" content="2021-11-17T14:29:18+00:00">
+</head>
+
+<body bgcolor="#FFFFFF">
+   <div id="version" align=right><b>slepc-3.16.1 2021-11-17</b></div>
+   <div id="bugreport" align=right><a href="mailto:slepc-maint@upv.es?subject=Typo or Error in Documentation &body=Please describe the typo or error in the documentation: slepc-3.16.1 v3.16.1 src/sys/vec/vecutil.c.html "><small>Report Typos and Errors</small></a></div>
+<pre width="80">
+<a name="line1">  1: </a><font color="#B22222">/*</font>
+<a name="line2">  2: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line3">  3: </a><font color="#B22222">   SLEPc - Scalable Library for Eigenvalue Problem Computations</font>
+<a name="line4">  4: </a><font color="#B22222">   Copyright (c) 2002-2021, Universitat Politecnica de Valencia, Spain</font>
+
+<a name="line6">  6: </a><font color="#B22222">   This file is part of SLEPc.</font>
+<a name="line7">  7: </a><font color="#B22222">   SLEPc is distributed under a 2-clause BSD license (see LICENSE).</font>
+<a name="line8">  8: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line9">  9: </a><font color="#B22222">*/</font>
+
+<a name="line11"> 11: </a>#include <A href="../../../include/slepc/private/vecimplslepc.h.html">&lt;slepc/private/vecimplslepc.h&gt;</A>
+
+<a name="line13"> 13: </a><font color="#B22222">/*@</font>
+<a name="line14"> 14: </a><font color="#B22222">   <a href="../../../docs/manualpages/sys/VecNormalizeComplex.html#VecNormalizeComplex">VecNormalizeComplex</a> - Normalizes a possibly complex vector by the 2-norm.</font>
+
+<a name="line16"> 16: </a><font color="#B22222">   Collective on xr</font>
+
+<a name="line18"> 18: </a><font color="#B22222">   Input parameters:</font>
+<a name="line19"> 19: </a><font color="#B22222">+  xr - the real part of the vector (overwritten on output)</font>
+<a name="line20"> 20: </a><font color="#B22222">.  xi - the imaginary part of the vector (not referenced if iscomplex is false)</font>
+<a name="line21"> 21: </a><font color="#B22222">-  iscomplex - a flag indicating if the vector is complex</font>
+
+<a name="line23"> 23: </a><font color="#B22222">   Output parameter:</font>
+<a name="line24"> 24: </a><font color="#B22222">.  norm - the vector norm before normalization (can be set to NULL)</font>
+
+<a name="line26"> 26: </a><font color="#B22222">   Level: developer</font>
+<a name="line27"> 27: </a><font color="#B22222">@*/</font>
+<a name="line28"> 28: </a><strong><font color="#4169E1"><a name="VecNormalizeComplex"></a>PetscErrorCode <a href="../../../docs/manualpages/sys/VecNormalizeComplex.html#VecNormalizeComplex">VecNormalizeComplex</a>(Vec xr,Vec xi,PetscBool iscomplex,PetscReal *norm)</font></strong>
+<a name="line29"> 29: </a>{
+<a name="line31"> 31: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line32"> 32: </a>  PetscReal      normr,normi,alpha;
+<a name="line33"> 33: </a><font color="#A020F0">#endif</font>
+
+<a name="line37"> 37: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line38"> 38: </a>  <font color="#4169E1">if</font> (iscomplex) {
+<a name="line40"> 40: </a>    VecNormBegin(xr,NORM_2,&amp;normr);
+<a name="line41"> 41: </a>    VecNormBegin(xi,NORM_2,&amp;normi);
+<a name="line42"> 42: </a>    VecNormEnd(xr,NORM_2,&amp;normr);
+<a name="line43"> 43: </a>    VecNormEnd(xi,NORM_2,&amp;normi);
+<a name="line44"> 44: </a>    alpha = <a href="../../../docs/manualpages/sys/SlepcAbsEigenvalue.html#SlepcAbsEigenvalue">SlepcAbsEigenvalue</a>(normr,normi);
+<a name="line45"> 45: </a>    <font color="#4169E1">if</font> (norm) *norm = alpha;
+<a name="line46"> 46: </a>    alpha = 1.0 / alpha;
+<a name="line47"> 47: </a>    VecScale(xr,alpha);
+<a name="line48"> 48: </a>    VecScale(xi,alpha);
+<a name="line49"> 49: </a>  } <font color="#4169E1">else</font>
+<a name="line50"> 50: </a><font color="#A020F0">#endif</font>
+<a name="line51"> 51: </a>  {
+<a name="line52"> 52: </a>    VecNormalize(xr,norm);
+<a name="line53"> 53: </a>  }
+<a name="line54"> 54: </a>  <font color="#4169E1">return</font>(0);
+<a name="line55"> 55: </a>}
+
+<a name="line57"> 57: </a><strong><font color="#4169E1"><a name="VecCheckOrthogonality_Private"></a>static PetscErrorCode VecCheckOrthogonality_Private(Vec V[],PetscInt nv,Vec W[],PetscInt nw,Mat B,PetscViewer viewer,PetscReal *lev,PetscBool norm)</font></strong>
+<a name="line58"> 58: </a>{
+<a name="line60"> 60: </a>  PetscInt       i,j;
+<a name="line61"> 61: </a>  PetscScalar    *vals;
+<a name="line62"> 62: </a>  PetscBool      isascii;
+<a name="line63"> 63: </a>  Vec            w;
+
+<a name="line66"> 66: </a>  <font color="#4169E1">if</font> (!lev) {
+<a name="line67"> 67: </a>    <font color="#4169E1">if</font> (!viewer) {
+<a name="line68"> 68: </a>      PetscViewerASCIIGetStdout(PetscObjectComm((PetscObject)*V),&amp;viewer);
+<a name="line69"> 69: </a>    }
+<a name="line72"> 72: </a>    PetscObjectTypeCompare((PetscObject)viewer,PETSCVIEWERASCII,&amp;isascii);
+<a name="line73"> 73: </a>    <font color="#4169E1">if</font> (!isascii) <font color="#4169E1">return</font>(0);
+<a name="line74"> 74: </a>  }
+
+<a name="line76"> 76: </a>  PetscMalloc1(nv,&amp;vals);
+<a name="line77"> 77: </a>  <font color="#4169E1">if</font> (B) {
+<a name="line78"> 78: </a>    VecDuplicate(V[0],&amp;w);
+<a name="line79"> 79: </a>  }
+<a name="line80"> 80: </a>  <font color="#4169E1">if</font> (lev) *lev = 0.0;
+<a name="line81"> 81: </a>  <font color="#4169E1">for</font> (i=0;i&lt;nw;i++) {
+<a name="line82"> 82: </a>    <font color="#4169E1">if</font> (B) {
+<a name="line83"> 83: </a>      <font color="#4169E1">if</font> (W) {
+<a name="line84"> 84: </a>        MatMultTranspose(B,W[i],w);
+<a name="line85"> 85: </a>      } <font color="#4169E1">else</font> {
+<a name="line86"> 86: </a>        MatMultTranspose(B,V[i],w);
+<a name="line87"> 87: </a>      }
+<a name="line88"> 88: </a>    } <font color="#4169E1">else</font> {
+<a name="line89"> 89: </a>      <font color="#4169E1">if</font> (W) w = W[i];
+<a name="line90"> 90: </a>      <font color="#4169E1">else</font> w = V[i];
+<a name="line91"> 91: </a>    }
+<a name="line92"> 92: </a>    VecMDot(w,nv,V,vals);
+<a name="line93"> 93: </a>    <font color="#4169E1">for</font> (j=0;j&lt;nv;j++) {
+<a name="line94"> 94: </a>      <font color="#4169E1">if</font> (lev) {
+<a name="line95"> 95: </a>        <font color="#4169E1">if</font> (i!=j) *lev = PetscMax(*lev,PetscAbsScalar(vals[j]));
+<a name="line96"> 96: </a>        <font color="#4169E1">else</font> <font color="#4169E1">if</font> (norm) *lev = PetscMax(*lev,PetscAbsScalar(vals[j]-PetscRealConstant(1.0)));
+<a name="line97"> 97: </a>      } <font color="#4169E1">else</font> {
+<a name="line98"> 98: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line99"> 99: </a>        PetscViewerASCIIPrintf(viewer,<font color="#666666">" %12g  "</font>,(double)vals[j]);
+<a name="line100">100: </a><font color="#A020F0">#else</font>
+<a name="line101">101: </a>        PetscViewerASCIIPrintf(viewer,<font color="#666666">" %12g%+12gi "</font>,(double)PetscRealPart(vals[j]),(double)PetscImaginaryPart(vals[j]));
+<a name="line102">102: </a><font color="#A020F0">#endif</font>
+<a name="line103">103: </a>      }
+<a name="line104">104: </a>    }
+<a name="line105">105: </a>    <font color="#4169E1">if</font> (!lev) { PetscViewerASCIIPrintf(viewer,<font color="#666666">"\n"</font>); }
+<a name="line106">106: </a>  }
+<a name="line107">107: </a>  PetscFree(vals);
+<a name="line108">108: </a>  <font color="#4169E1">if</font> (B) {
+<a name="line109">109: </a>    VecDestroy(&amp;w);
+<a name="line110">110: </a>  }
+<a name="line111">111: </a>  <font color="#4169E1">return</font>(0);
+<a name="line112">112: </a>}
+
+<a name="line114">114: </a><font color="#B22222">/*@</font>
+<a name="line115">115: </a><font color="#B22222">   <a href="../../../docs/manualpages/sys/VecCheckOrthogonality.html#VecCheckOrthogonality">VecCheckOrthogonality</a> - Checks (or prints) the level of (bi-)orthogonality</font>
+<a name="line116">116: </a><font color="#B22222">   of a set of vectors.</font>
+
+<a name="line118">118: </a><font color="#B22222">   Collective on V</font>
+
+<a name="line120">120: </a><font color="#B22222">   Input parameters:</font>
+<a name="line121">121: </a><font color="#B22222">+  V  - a set of vectors</font>
+<a name="line122">122: </a><font color="#B22222">.  nv - number of V vectors</font>
+<a name="line123">123: </a><font color="#B22222">.  W  - an alternative set of vectors (optional)</font>
+<a name="line124">124: </a><font color="#B22222">.  nw - number of W vectors</font>
+<a name="line125">125: </a><font color="#B22222">.  B  - matrix defining the inner product (optional)</font>
+<a name="line126">126: </a><font color="#B22222">-  viewer - optional visualization context</font>
+
+<a name="line128">128: </a><font color="#B22222">   Output parameter:</font>
+<a name="line129">129: </a><font color="#B22222">.  lev - level of orthogonality (optional)</font>
+
+<a name="line131">131: </a><font color="#B22222">   Notes:</font>
+<a name="line132">132: </a><font color="#B22222">   This function computes W'*V and prints the result. It is intended to check</font>
+<a name="line133">133: </a><font color="#B22222">   the level of bi-orthogonality of the vectors in the two sets. If W is equal</font>
+<a name="line134">134: </a><font color="#B22222">   to NULL then V is used, thus checking the orthogonality of the V vectors.</font>
+
+<a name="line136">136: </a><font color="#B22222">   If matrix B is provided then the check uses the B-inner product, W'*B*V.</font>
+
+<a name="line138">138: </a><font color="#B22222">   If lev is not NULL, it will contain the maximum entry of matrix</font>
+<a name="line139">139: </a><font color="#B22222">   W'*V - I (in absolute value) omitting the diagonal. Otherwise, the matrix W'*V</font>
+<a name="line140">140: </a><font color="#B22222">   is printed.</font>
+
+<a name="line142">142: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line144">144: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/sys/VecCheckOrthonormality.html#VecCheckOrthonormality">VecCheckOrthonormality</a>()</font>
+<a name="line145">145: </a><font color="#B22222">@*/</font>
+<a name="line146">146: </a><strong><font color="#4169E1"><a name="VecCheckOrthogonality"></a>PetscErrorCode <a href="../../../docs/manualpages/sys/VecCheckOrthogonality.html#VecCheckOrthogonality">VecCheckOrthogonality</a>(Vec V[],PetscInt nv,Vec W[],PetscInt nw,Mat B,PetscViewer viewer,PetscReal *lev)</font></strong>
+<a name="line147">147: </a>{
+
+<a name="line155">155: </a>  <font color="#4169E1">if</font> (nv&lt;=0 || nw&lt;=0) <font color="#4169E1">return</font>(0);
+<a name="line156">156: </a>  <font color="#4169E1">if</font> (W) {
+<a name="line160">160: </a>  }
+<a name="line161">161: </a>  VecCheckOrthogonality_Private(V,nv,W,nw,B,viewer,lev,PETSC_FALSE);
+<a name="line162">162: </a>  <font color="#4169E1">return</font>(0);
+<a name="line163">163: </a>}
+
+<a name="line165">165: </a><font color="#B22222">/*@</font>
+<a name="line166">166: </a><font color="#B22222">   <a href="../../../docs/manualpages/sys/VecCheckOrthonormality.html#VecCheckOrthonormality">VecCheckOrthonormality</a> - Checks (or prints) the level of (bi-)orthonormality</font>
+<a name="line167">167: </a><font color="#B22222">   of a set of vectors.</font>
+
+<a name="line169">169: </a><font color="#B22222">   Collective on V</font>
+
+<a name="line171">171: </a><font color="#B22222">   Input parameters:</font>
+<a name="line172">172: </a><font color="#B22222">+  V  - a set of vectors</font>
+<a name="line173">173: </a><font color="#B22222">.  nv - number of V vectors</font>
+<a name="line174">174: </a><font color="#B22222">.  W  - an alternative set of vectors (optional)</font>
+<a name="line175">175: </a><font color="#B22222">.  nw - number of W vectors</font>
+<a name="line176">176: </a><font color="#B22222">.  B  - matrix defining the inner product (optional)</font>
+<a name="line177">177: </a><font color="#B22222">-  viewer - optional visualization context</font>
+
+<a name="line179">179: </a><font color="#B22222">   Output parameter:</font>
+<a name="line180">180: </a><font color="#B22222">.  lev - level of orthogonality (optional)</font>
+
+<a name="line182">182: </a><font color="#B22222">   Notes:</font>
+<a name="line183">183: </a><font color="#B22222">   This function is equivalent to <a href="../../../docs/manualpages/sys/VecCheckOrthonormality.html#VecCheckOrthonormality">VecCheckOrthonormality</a>(), but in addition it checks</font>
+<a name="line184">184: </a><font color="#B22222">   that the diagonal of W'*V (or W'*B*V) is equal to all ones.</font>
+
+<a name="line186">186: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line188">188: </a><font color="#B22222">.seealso: <a href="../../../docs/manualpages/sys/VecCheckOrthogonality.html#VecCheckOrthogonality">VecCheckOrthogonality</a>()</font>
+<a name="line189">189: </a><font color="#B22222">@*/</font>
+<a name="line190">190: </a><strong><font color="#4169E1"><a name="VecCheckOrthonormality"></a>PetscErrorCode <a href="../../../docs/manualpages/sys/VecCheckOrthonormality.html#VecCheckOrthonormality">VecCheckOrthonormality</a>(Vec V[],PetscInt nv,Vec W[],PetscInt nw,Mat B,PetscViewer viewer,PetscReal *lev)</font></strong>
+<a name="line191">191: </a>{
+
+<a name="line199">199: </a>  <font color="#4169E1">if</font> (nv&lt;=0 || nw&lt;=0) <font color="#4169E1">return</font>(0);
+<a name="line200">200: </a>  <font color="#4169E1">if</font> (W) {
+<a name="line204">204: </a>  }
+<a name="line205">205: </a>  VecCheckOrthogonality_Private(V,nv,W,nw,B,viewer,lev,PETSC_TRUE);
+<a name="line206">206: </a>  <font color="#4169E1">return</font>(0);
+<a name="line207">207: </a>}
+
+<a name="line209">209: </a><font color="#B22222">/*@</font>
+<a name="line210">210: </a><font color="#B22222">   <a href="../../../docs/manualpages/sys/VecDuplicateEmpty.html#VecDuplicateEmpty">VecDuplicateEmpty</a> - Creates a new vector of the same type as an existing vector,</font>
+<a name="line211">211: </a><font color="#B22222">   but without internal array.</font>
+
+<a name="line213">213: </a><font color="#B22222">   Collective on v</font>
+
+<a name="line215">215: </a><font color="#B22222">   Input parameters:</font>
+<a name="line216">216: </a><font color="#B22222">.  v - a vector to mimic</font>
+
+<a name="line218">218: </a><font color="#B22222">   Output parameter:</font>
+<a name="line219">219: </a><font color="#B22222">.  newv - location to put new vector</font>
+
+<a name="line221">221: </a><font color="#B22222">   Note:</font>
+<a name="line222">222: </a><font color="#B22222">   This is similar to VecDuplicate(), but the new vector does not have an internal</font>
+<a name="line223">223: </a><font color="#B22222">   array, so the intended usage is with VecPlaceArray().</font>
+
+<a name="line225">225: </a><font color="#B22222">   Level: developer</font>
+<a name="line226">226: </a><font color="#B22222">@*/</font>
+<a name="line227">227: </a><strong><font color="#4169E1"><a name="VecDuplicateEmpty"></a>PetscErrorCode <a href="../../../docs/manualpages/sys/VecDuplicateEmpty.html#VecDuplicateEmpty">VecDuplicateEmpty</a>(Vec v,Vec *newv)</font></strong>
+<a name="line228">228: </a>{
+<a name="line230">230: </a>  PetscBool      standard,cuda,mpi;
+<a name="line231">231: </a>  PetscInt       N,nloc,bs;
+
+
+<a name="line238">238: </a>  PetscObjectTypeCompareAny((PetscObject)v,&amp;standard,VECSEQ,VECMPI,<font color="#666666">""</font>);
+<a name="line239">239: </a>  PetscObjectTypeCompareAny((PetscObject)v,&amp;cuda,VECSEQCUDA,VECMPICUDA,<font color="#666666">""</font>);
+<a name="line240">240: </a>  <font color="#4169E1">if</font> (standard || cuda) {
+<a name="line241">241: </a>    PetscObjectTypeCompareAny((PetscObject)v,&amp;mpi,VECMPI,VECMPICUDA,<font color="#666666">""</font>);
+<a name="line242">242: </a>    VecGetLocalSize(v,&amp;nloc);
+<a name="line243">243: </a>    VecGetSize(v,&amp;N);
+<a name="line244">244: </a>    VecGetBlockSize(v,&amp;bs);
+<a name="line245">245: </a>    <font color="#4169E1">if</font> (cuda) {
+<a name="line246">246: </a><font color="#A020F0">#if defined(PETSC_HAVE_CUDA)</font>
+<a name="line247">247: </a>      <font color="#4169E1">if</font> (mpi) {
+<a name="line248">248: </a>        VecCreateMPICUDAWithArray(PetscObjectComm((PetscObject)v),bs,nloc,N,NULL,newv);
+<a name="line249">249: </a>      } <font color="#4169E1">else</font> {
+<a name="line250">250: </a>        VecCreateSeqCUDAWithArray(PetscObjectComm((PetscObject)v),bs,N,NULL,newv);
+<a name="line251">251: </a>      }
+<a name="line252">252: </a><font color="#A020F0">#endif</font>
+<a name="line253">253: </a>    } <font color="#4169E1">else</font> {
+<a name="line254">254: </a>      <font color="#4169E1">if</font> (mpi) {
+<a name="line255">255: </a>        VecCreateMPIWithArray(PetscObjectComm((PetscObject)v),bs,nloc,N,NULL,newv);
+<a name="line256">256: </a>      } <font color="#4169E1">else</font> {
+<a name="line257">257: </a>        VecCreateSeqWithArray(PetscObjectComm((PetscObject)v),bs,N,NULL,newv);
+<a name="line258">258: </a>      }
+<a name="line259">259: </a>    }
+<a name="line260">260: </a>  } <font color="#4169E1">else</font> {  <font color="#B22222">/* standard duplicate, with internal array */</font>
+<a name="line261">261: </a>    VecDuplicate(v,newv);
+<a name="line262">262: </a>  }
+<a name="line263">263: </a>  <font color="#4169E1">return</font>(0);
+<a name="line264">264: </a>}
+
+<a name="line266">266: </a><font color="#B22222">/*@</font>
+<a name="line267">267: </a><font color="#B22222">   <a href="../../../docs/manualpages/sys/VecSetRandomNormal.html#VecSetRandomNormal">VecSetRandomNormal</a> - Sets all components of a vector to normally distributed random values.</font>
+
+<a name="line269">269: </a><font color="#B22222">   Logically Collective on v</font>
+
+<a name="line271">271: </a><font color="#B22222">   Input parameters:</font>
+<a name="line272">272: </a><font color="#B22222">+  v     - the vector to be filled with random values</font>
+<a name="line273">273: </a><font color="#B22222">.  rctx  - the random number context (can be NULL)</font>
+<a name="line274">274: </a><font color="#B22222">-  w1,w2 - two work vectors (can be NULL)</font>
+
+<a name="line276">276: </a><font color="#B22222">   Output parameter:</font>
+<a name="line277">277: </a><font color="#B22222">.  v     - the vector</font>
+
+<a name="line279">279: </a><font color="#B22222">   Notes:</font>
+<a name="line280">280: </a><font color="#B22222">   Fills the two work vectors with uniformly distributed random values (VecSetRandom)</font>
+<a name="line281">281: </a><font color="#B22222">   and then applies the Box-Muller transform to get normally distributed values on v.</font>
+
+<a name="line283">283: </a><font color="#B22222">   Level: developer</font>
+<a name="line284">284: </a><font color="#B22222">@*/</font>
+<a name="line285">285: </a><strong><font color="#4169E1"><a name="VecSetRandomNormal"></a>PetscErrorCode <a href="../../../docs/manualpages/sys/VecSetRandomNormal.html#VecSetRandomNormal">VecSetRandomNormal</a>(Vec v,PetscRandom rctx,Vec w1,Vec w2)</font></strong>
+<a name="line286">286: </a>{
+<a name="line287">287: </a>  PetscErrorCode    ierr;
+<a name="line288">288: </a>  const PetscScalar *x,*y;
+<a name="line289">289: </a>  PetscScalar       *z;
+<a name="line290">290: </a>  PetscInt          n,i;
+<a name="line291">291: </a>  PetscRandom       rand=NULL;
+<a name="line292">292: </a>  Vec               v1=NULL,v2=NULL;
+
+
+<a name="line301">301: </a>  <font color="#4169E1">if</font> (!rctx) {
+<a name="line302">302: </a>    PetscRandomCreate(PetscObjectComm((PetscObject)v),&amp;rand);
+<a name="line303">303: </a>    PetscRandomSetFromOptions(rand);
+<a name="line304">304: </a>    rctx = rand;
+<a name="line305">305: </a>  }
+<a name="line306">306: </a>  <font color="#4169E1">if</font> (!w1) {
+<a name="line307">307: </a>    VecDuplicate(v,&amp;v1);
+<a name="line308">308: </a>    w1 = v1;
+<a name="line309">309: </a>  }
+<a name="line310">310: </a>  <font color="#4169E1">if</font> (!w2) {
+<a name="line311">311: </a>    VecDuplicate(v,&amp;v2);
+<a name="line312">312: </a>    w2 = v2;
+<a name="line313">313: </a>  }
+
+<a name="line317">317: </a>  VecSetRandom(w1,rctx);
+<a name="line318">318: </a>  VecSetRandom(w2,rctx);
+<a name="line319">319: </a>  VecGetLocalSize(v,&amp;n);
+<a name="line320">320: </a>  VecGetArrayWrite(v,&amp;z);
+<a name="line321">321: </a>  VecGetArrayRead(w1,&amp;x);
+<a name="line322">322: </a>  VecGetArrayRead(w2,&amp;y);
+<a name="line323">323: </a>  <font color="#4169E1">for</font> (i=0;i&lt;n;i++) {
+<a name="line324">324: </a><font color="#A020F0">#if defined(PETSC_USE_COMPLEX)</font>
+<a name="line325">325: </a>    z[i] = PetscCMPLX(PetscSqrtReal(-2.0*PetscLogReal(PetscRealPart(x[i])))*PetscCosReal(2.0*PETSC_PI*PetscRealPart(y[i])),PetscSqrtReal(-2.0*PetscLogReal(PetscImaginaryPart(x[i])))*PetscCosReal(2.0*PETSC_PI*PetscImaginaryPart(y[i])));
+<a name="line326">326: </a><font color="#A020F0">#else</font>
+<a name="line327">327: </a>    z[i] = PetscSqrtReal(-2.0*PetscLogReal(x[i]))*PetscCosReal(2.0*PETSC_PI*y[i]);
+<a name="line328">328: </a><font color="#A020F0">#endif</font>
+<a name="line329">329: </a>  }
+<a name="line330">330: </a>  VecRestoreArrayWrite(v,&amp;z);
+<a name="line331">331: </a>  VecRestoreArrayRead(w1,&amp;x);
+<a name="line332">332: </a>  VecRestoreArrayRead(w2,&amp;y);
+
+<a name="line334">334: </a>  VecDestroy(&amp;v1);
+<a name="line335">335: </a>  VecDestroy(&amp;v2);
+<a name="line336">336: </a>  <font color="#4169E1">if</font> (!rctx) {
+<a name="line337">337: </a>    PetscRandomDestroy(&amp;rand);
+<a name="line338">338: </a>  }
+<a name="line339">339: </a>  <font color="#4169E1">return</font>(0);
+<a name="line340">340: </a>}
+
+</pre>
+</body>
+
+</html>

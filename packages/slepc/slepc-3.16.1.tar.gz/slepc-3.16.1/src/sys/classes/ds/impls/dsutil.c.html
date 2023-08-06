@@ -1,0 +1,240 @@
+<center><a href="dsutil.c">Actual source code: dsutil.c</a></center><br>
+
+<html>
+<head> <link rel="canonical" href="https://slepc.upv.es/documentation/current/src/sys/classes/ds/impls/dsutil.c.html" />
+<title></title>
+<meta name="generator" content="c2html 0.9.4">
+<meta name="date" content="2021-11-17T14:29:22+00:00">
+</head>
+
+<body bgcolor="#FFFFFF">
+   <div id="version" align=right><b>slepc-3.16.1 2021-11-17</b></div>
+   <div id="bugreport" align=right><a href="mailto:slepc-maint@upv.es?subject=Typo or Error in Documentation &body=Please describe the typo or error in the documentation: slepc-3.16.1 v3.16.1 src/sys/classes/ds/impls/dsutil.c.html "><small>Report Typos and Errors</small></a></div>
+<pre width="80">
+<a name="line1">  1: </a><font color="#B22222">/*</font>
+<a name="line2">  2: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line3">  3: </a><font color="#B22222">   SLEPc - Scalable Library for Eigenvalue Problem Computations</font>
+<a name="line4">  4: </a><font color="#B22222">   Copyright (c) 2002-2021, Universitat Politecnica de Valencia, Spain</font>
+
+<a name="line6">  6: </a><font color="#B22222">   This file is part of SLEPc.</font>
+<a name="line7">  7: </a><font color="#B22222">   SLEPc is distributed under a 2-clause BSD license (see LICENSE).</font>
+<a name="line8">  8: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line9">  9: </a><font color="#B22222">*/</font>
+<a name="line10"> 10: </a><font color="#B22222">/*</font>
+<a name="line11"> 11: </a><font color="#B22222">   Utility subroutines common to several impls</font>
+<a name="line12"> 12: </a><font color="#B22222">*/</font>
+
+<a name="line14"> 14: </a>#include <A href="../../../../../include/slepc/private/dsimpl.h.html">&lt;slepc/private/dsimpl.h&gt;</A>
+<a name="line15"> 15: </a>#include <A href="../../../../../include/slepcblaslapack.h.html">&lt;slepcblaslapack.h&gt;</A>
+
+<a name="line17"> 17: </a><font color="#B22222">/*</font>
+<a name="line18"> 18: </a><font color="#B22222">   Compute the (real) Schur form of A. At the end, A is (quasi-)triangular and Q</font>
+<a name="line19"> 19: </a><font color="#B22222">   contains the unitary matrix of Schur vectors. Eigenvalues are returned in wr,wi</font>
+<a name="line20"> 20: </a><font color="#B22222">*/</font>
+<a name="line21"> 21: </a><strong><font color="#4169E1"><a name="DSSolve_NHEP_Private"></a>PetscErrorCode DSSolve_NHEP_Private(<a href="../../../../../docs/manualpages/sys/DS.html#DS">DS</a> ds,PetscScalar *A,PetscScalar *Q,PetscScalar *wr,PetscScalar *wi)</font></strong>
+<a name="line22"> 22: </a>{
+<a name="line24"> 24: </a>  PetscScalar    *work,*tau;
+<a name="line25"> 25: </a>  PetscInt       i,j;
+<a name="line26"> 26: </a>  PetscBLASInt   ilo,lwork,info,n,k,ld;
+
+<a name="line29"> 29: </a>  PetscBLASIntCast(ds-&gt;n,&amp;n);
+<a name="line30"> 30: </a>  PetscBLASIntCast(ds-&gt;ld,&amp;ld);
+<a name="line31"> 31: </a>  PetscBLASIntCast(ds-&gt;l+1,&amp;ilo);
+<a name="line32"> 32: </a>  PetscBLASIntCast(ds-&gt;k,&amp;k);
+<a name="line33"> 33: </a>  DSAllocateWork_Private(ds,ld+6*ld,0,0);
+<a name="line34"> 34: </a>  tau  = ds-&gt;work;
+<a name="line35"> 35: </a>  work = ds-&gt;work+ld;
+<a name="line36"> 36: </a>  lwork = 6*ld;
+
+<a name="line38"> 38: </a>  <font color="#B22222">/* initialize orthogonal matrix */</font>
+<a name="line39"> 39: </a>  PetscArrayzero(Q,ld*ld);
+<a name="line40"> 40: </a>  <font color="#4169E1">for</font> (i=0;i&lt;n;i++) Q[i+i*ld] = 1.0;
+<a name="line41"> 41: </a>  <font color="#4169E1">if</font> (n==1) { <font color="#B22222">/* quick return */</font>
+<a name="line42"> 42: </a>    wr[0] = A[0];
+<a name="line43"> 43: </a>    <font color="#4169E1">if</font> (wi) wi[0] = 0.0;
+<a name="line44"> 44: </a>    <font color="#4169E1">return</font>(0);
+<a name="line45"> 45: </a>  }
+
+<a name="line47"> 47: </a>  <font color="#B22222">/* reduce to upper Hessenberg form */</font>
+<a name="line48"> 48: </a>  <font color="#4169E1">if</font> (ds-&gt;state&lt;<a href="../../../../../docs/manualpages/sys/DSStateType.html#DSStateType">DS_STATE_INTERMEDIATE</a>) {
+<a name="line49"> 49: </a>    PetscStackCallBLAS(<font color="#666666">"LAPACKgehrd"</font>,LAPACKgehrd_(&amp;n,&amp;ilo,&amp;n,A,&amp;ld,tau,work,&amp;lwork,&amp;info));
+<a name="line50"> 50: </a>    SlepcCheckLapackInfo(<font color="#666666">"gehrd"</font>,info);
+<a name="line51"> 51: </a>    <font color="#4169E1">for</font> (j=0;j&lt;n-1;j++) {
+<a name="line52"> 52: </a>      <font color="#4169E1">for</font> (i=j+2;i&lt;n;i++) {
+<a name="line53"> 53: </a>        Q[i+j*ld] = A[i+j*ld];
+<a name="line54"> 54: </a>        A[i+j*ld] = 0.0;
+<a name="line55"> 55: </a>      }
+<a name="line56"> 56: </a>    }
+<a name="line57"> 57: </a>    PetscStackCallBLAS(<font color="#666666">"LAPACKorghr"</font>,LAPACKorghr_(&amp;n,&amp;ilo,&amp;n,Q,&amp;ld,tau,work,&amp;lwork,&amp;info));
+<a name="line58"> 58: </a>    SlepcCheckLapackInfo(<font color="#666666">"orghr"</font>,info);
+<a name="line59"> 59: </a>  }
+
+<a name="line61"> 61: </a>  <font color="#B22222">/* compute the (real) Schur form */</font>
+<a name="line62"> 62: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line63"> 63: </a>  PetscStackCallBLAS(<font color="#666666">"LAPACKhseqr"</font>,LAPACKhseqr_(<font color="#666666">"S"</font>,<font color="#666666">"V"</font>,&amp;n,&amp;ilo,&amp;n,A,&amp;ld,wr,wi,Q,&amp;ld,work,&amp;lwork,&amp;info));
+<a name="line64"> 64: </a>  <font color="#4169E1">for</font> (j=0;j&lt;ds-&gt;l;j++) {
+<a name="line65"> 65: </a>    <font color="#4169E1">if</font> (j==n-1 || A[j+1+j*ld] == 0.0) {
+<a name="line66"> 66: </a>      <font color="#B22222">/* real eigenvalue */</font>
+<a name="line67"> 67: </a>      wr[j] = A[j+j*ld];
+<a name="line68"> 68: </a>      wi[j] = 0.0;
+<a name="line69"> 69: </a>    } <font color="#4169E1">else</font> {
+<a name="line70"> 70: </a>      <font color="#B22222">/* complex eigenvalue */</font>
+<a name="line71"> 71: </a>      wr[j] = A[j+j*ld];
+<a name="line72"> 72: </a>      wr[j+1] = A[j+j*ld];
+<a name="line73"> 73: </a>      wi[j] = PetscSqrtReal(PetscAbsReal(A[j+1+j*ld]))*PetscSqrtReal(PetscAbsReal(A[j+(j+1)*ld]));
+<a name="line74"> 74: </a>      wi[j+1] = -wi[j];
+<a name="line75"> 75: </a>      j++;
+<a name="line76"> 76: </a>    }
+<a name="line77"> 77: </a>  }
+<a name="line78"> 78: </a><font color="#A020F0">#else</font>
+<a name="line79"> 79: </a>  PetscStackCallBLAS(<font color="#666666">"LAPACKhseqr"</font>,LAPACKhseqr_(<font color="#666666">"S"</font>,<font color="#666666">"V"</font>,&amp;n,&amp;ilo,&amp;n,A,&amp;ld,wr,Q,&amp;ld,work,&amp;lwork,&amp;info));
+<a name="line80"> 80: </a>  <font color="#4169E1">if</font> (wi) <font color="#4169E1">for</font> (i=ds-&gt;l;i&lt;n;i++) wi[i] = 0.0;
+<a name="line81"> 81: </a><font color="#A020F0">#endif</font>
+<a name="line82"> 82: </a>  SlepcCheckLapackInfo(<font color="#666666">"hseqr"</font>,info);
+<a name="line83"> 83: </a>  <font color="#4169E1">return</font>(0);
+<a name="line84"> 84: </a>}
+
+<a name="line86"> 86: </a><font color="#B22222">/*</font>
+<a name="line87"> 87: </a><font color="#B22222">   Sort a Schur form represented by the (quasi-)triangular matrix T and</font>
+<a name="line88"> 88: </a><font color="#B22222">   the unitary matrix Q, and return the sorted eigenvalues in wr,wi</font>
+<a name="line89"> 89: </a><font color="#B22222">*/</font>
+<a name="line90"> 90: </a><strong><font color="#4169E1"><a name="DSSort_NHEP_Total"></a>PetscErrorCode DSSort_NHEP_Total(<a href="../../../../../docs/manualpages/sys/DS.html#DS">DS</a> ds,PetscScalar *T,PetscScalar *Q,PetscScalar *wr,PetscScalar *wi)</font></strong>
+<a name="line91"> 91: </a>{
+<a name="line93"> 93: </a>  PetscScalar    re;
+<a name="line94"> 94: </a>  PetscInt       i,j,pos,result;
+<a name="line95"> 95: </a>  PetscBLASInt   ifst,ilst,info,n,ld;
+<a name="line96"> 96: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line97"> 97: </a>  PetscScalar    *work,im;
+<a name="line98"> 98: </a><font color="#A020F0">#endif</font>
+
+<a name="line101">101: </a>  PetscBLASIntCast(ds-&gt;n,&amp;n);
+<a name="line102">102: </a>  PetscBLASIntCast(ds-&gt;ld,&amp;ld);
+<a name="line103">103: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line104">104: </a>  DSAllocateWork_Private(ds,ld,0,0);
+<a name="line105">105: </a>  work = ds-&gt;work;
+<a name="line106">106: </a><font color="#A020F0">#endif</font>
+<a name="line107">107: </a>  <font color="#B22222">/* selection sort */</font>
+<a name="line108">108: </a>  <font color="#4169E1">for</font> (i=ds-&gt;l;i&lt;n-1;i++) {
+<a name="line109">109: </a>    re = wr[i];
+<a name="line110">110: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line111">111: </a>    im = wi[i];
+<a name="line112">112: </a><font color="#A020F0">#endif</font>
+<a name="line113">113: </a>    pos = 0;
+<a name="line114">114: </a>    j=i+1; <font color="#B22222">/* j points to the next eigenvalue */</font>
+<a name="line115">115: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line116">116: </a>    <font color="#4169E1">if</font> (im != 0) j=i+2;
+<a name="line117">117: </a><font color="#A020F0">#endif</font>
+<a name="line118">118: </a>    <font color="#B22222">/* find minimum eigenvalue */</font>
+<a name="line119">119: </a>    <font color="#4169E1">for</font> (;j&lt;n;j++) {
+<a name="line120">120: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line121">121: </a>      <a href="../../../../../docs/manualpages/sys/SlepcSCCompare.html#SlepcSCCompare">SlepcSCCompare</a>(ds-&gt;sc,re,im,wr[j],wi[j],&amp;result);
+<a name="line122">122: </a><font color="#A020F0">#else</font>
+<a name="line123">123: </a>      <a href="../../../../../docs/manualpages/sys/SlepcSCCompare.html#SlepcSCCompare">SlepcSCCompare</a>(ds-&gt;sc,re,0.0,wr[j],0.0,&amp;result);
+<a name="line124">124: </a><font color="#A020F0">#endif</font>
+<a name="line125">125: </a>      <font color="#4169E1">if</font> (result &gt; 0) {
+<a name="line126">126: </a>        re = wr[j];
+<a name="line127">127: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line128">128: </a>        im = wi[j];
+<a name="line129">129: </a><font color="#A020F0">#endif</font>
+<a name="line130">130: </a>        pos = j;
+<a name="line131">131: </a>      }
+<a name="line132">132: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line133">133: </a>      <font color="#4169E1">if</font> (wi[j] != 0) j++;
+<a name="line134">134: </a><font color="#A020F0">#endif</font>
+<a name="line135">135: </a>    }
+<a name="line136">136: </a>    <font color="#4169E1">if</font> (pos) {
+<a name="line137">137: </a>      <font color="#B22222">/* interchange blocks */</font>
+<a name="line138">138: </a>      PetscBLASIntCast(pos+1,&amp;ifst);
+<a name="line139">139: </a>      PetscBLASIntCast(i+1,&amp;ilst);
+<a name="line140">140: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line141">141: </a>      PetscStackCallBLAS(<font color="#666666">"LAPACKtrexc"</font>,LAPACKtrexc_(<font color="#666666">"V"</font>,&amp;n,T,&amp;ld,Q,&amp;ld,&amp;ifst,&amp;ilst,work,&amp;info));
+<a name="line142">142: </a><font color="#A020F0">#else</font>
+<a name="line143">143: </a>      PetscStackCallBLAS(<font color="#666666">"LAPACKtrexc"</font>,LAPACKtrexc_(<font color="#666666">"V"</font>,&amp;n,T,&amp;ld,Q,&amp;ld,&amp;ifst,&amp;ilst,&amp;info));
+<a name="line144">144: </a><font color="#A020F0">#endif</font>
+<a name="line145">145: </a>      SlepcCheckLapackInfo(<font color="#666666">"trexc"</font>,info);
+<a name="line146">146: </a>      <font color="#B22222">/* recover original eigenvalues from T matrix */</font>
+<a name="line147">147: </a>      <font color="#4169E1">for</font> (j=i;j&lt;n;j++) {
+<a name="line148">148: </a>        wr[j] = T[j+j*ld];
+<a name="line149">149: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line150">150: </a>        <font color="#4169E1">if</font> (j&lt;n-1 &amp;&amp; T[j+1+j*ld] != 0.0) {
+<a name="line151">151: </a>          <font color="#B22222">/* complex conjugate eigenvalue */</font>
+<a name="line152">152: </a>          wi[j] = PetscSqrtReal(PetscAbsReal(T[j+1+j*ld]))*PetscSqrtReal(PetscAbsReal(T[j+(j+1)*ld]));
+<a name="line153">153: </a>          wr[j+1] = wr[j];
+<a name="line154">154: </a>          wi[j+1] = -wi[j];
+<a name="line155">155: </a>          j++;
+<a name="line156">156: </a>        } <font color="#4169E1">else</font> wi[j] = 0.0;
+<a name="line157">157: </a><font color="#A020F0">#endif</font>
+<a name="line158">158: </a>      }
+<a name="line159">159: </a>    }
+<a name="line160">160: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line161">161: </a>    <font color="#4169E1">if</font> (wi[i] != 0) i++;
+<a name="line162">162: </a><font color="#A020F0">#endif</font>
+<a name="line163">163: </a>  }
+<a name="line164">164: </a>  <font color="#4169E1">return</font>(0);
+<a name="line165">165: </a>}
+
+<a name="line167">167: </a><font color="#B22222">/*</font>
+<a name="line168">168: </a><font color="#B22222">   Reorder a Schur form represented by T,Q according to a permutation perm,</font>
+<a name="line169">169: </a><font color="#B22222">   and return the sorted eigenvalues in wr,wi</font>
+<a name="line170">170: </a><font color="#B22222">*/</font>
+<a name="line171">171: </a><strong><font color="#4169E1"><a name="DSSortWithPermutation_NHEP_Private"></a>PetscErrorCode DSSortWithPermutation_NHEP_Private(<a href="../../../../../docs/manualpages/sys/DS.html#DS">DS</a> ds,PetscInt *perm,PetscScalar *T,PetscScalar *Q,PetscScalar *wr,PetscScalar *wi)</font></strong>
+<a name="line172">172: </a>{
+<a name="line174">174: </a>  PetscInt       i,j,pos,inc=1;
+<a name="line175">175: </a>  PetscBLASInt   ifst,ilst,info,n,ld;
+<a name="line176">176: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line177">177: </a>  PetscScalar    *work;
+<a name="line178">178: </a><font color="#A020F0">#endif</font>
+
+<a name="line181">181: </a>  PetscBLASIntCast(ds-&gt;n,&amp;n);
+<a name="line182">182: </a>  PetscBLASIntCast(ds-&gt;ld,&amp;ld);
+<a name="line183">183: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line184">184: </a>  DSAllocateWork_Private(ds,ld,0,0);
+<a name="line185">185: </a>  work = ds-&gt;work;
+<a name="line186">186: </a><font color="#A020F0">#endif</font>
+<a name="line187">187: </a>  <font color="#4169E1">for</font> (i=ds-&gt;l;i&lt;n-1;i++) {
+<a name="line188">188: </a>    pos = perm[i];
+<a name="line189">189: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line190">190: </a>    inc = (pos&lt;n-1 &amp;&amp; T[pos+1+pos*ld] != 0.0)? 2: 1;
+<a name="line191">191: </a><font color="#A020F0">#endif</font>
+<a name="line192">192: </a>    <font color="#4169E1">if</font> (pos!=i) {
+<a name="line193">193: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line194">194: </a>      <font color="#4169E1">if</font> ((T[pos+(pos-1)*ld] != 0.0 &amp;&amp; perm[i+1]!=pos-1) || (T[pos+1+pos*ld] != 0.0 &amp;&amp; perm[i+1]!=pos+1))
+<a name="line195">195: </a> SETERRQ1(PETSC_COMM_SELF,1,<font color="#666666">"Invalid permutation due to a 2x2 block at position %D"</font>,pos);
+<a name="line196">196: </a><font color="#A020F0">#endif</font>
+<a name="line197">197: </a>      <font color="#B22222">/* interchange blocks */</font>
+<a name="line198">198: </a>      PetscBLASIntCast(pos+1,&amp;ifst);
+<a name="line199">199: </a>      PetscBLASIntCast(i+1,&amp;ilst);
+<a name="line200">200: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line201">201: </a>      PetscStackCallBLAS(<font color="#666666">"LAPACKtrexc"</font>,LAPACKtrexc_(<font color="#666666">"V"</font>,&amp;n,T,&amp;ld,Q,&amp;ld,&amp;ifst,&amp;ilst,work,&amp;info));
+<a name="line202">202: </a><font color="#A020F0">#else</font>
+<a name="line203">203: </a>      PetscStackCallBLAS(<font color="#666666">"LAPACKtrexc"</font>,LAPACKtrexc_(<font color="#666666">"V"</font>,&amp;n,T,&amp;ld,Q,&amp;ld,&amp;ifst,&amp;ilst,&amp;info));
+<a name="line204">204: </a><font color="#A020F0">#endif</font>
+<a name="line205">205: </a>      SlepcCheckLapackInfo(<font color="#666666">"trexc"</font>,info);
+<a name="line206">206: </a>      <font color="#4169E1">for</font> (j=i+1;j&lt;n;j++) {
+<a name="line207">207: </a>        <font color="#4169E1">if</font> (perm[j]&gt;=i &amp;&amp; perm[j]&lt;pos) perm[j]+=inc;
+<a name="line208">208: </a>      }
+<a name="line209">209: </a>      perm[i] = i;
+<a name="line210">210: </a>      <font color="#4169E1">if</font> (inc==2) perm[i+1] = i+1;
+<a name="line211">211: </a>    }
+<a name="line212">212: </a>    <font color="#4169E1">if</font> (inc==2) i++;
+<a name="line213">213: </a>  }
+<a name="line214">214: </a>  <font color="#B22222">/* recover original eigenvalues from T matrix */</font>
+<a name="line215">215: </a>  <font color="#4169E1">for</font> (j=ds-&gt;l;j&lt;n;j++) {
+<a name="line216">216: </a>    wr[j] = T[j+j*ld];
+<a name="line217">217: </a><font color="#A020F0">#if !defined(PETSC_USE_COMPLEX)</font>
+<a name="line218">218: </a>    <font color="#4169E1">if</font> (j&lt;n-1 &amp;&amp; T[j+1+j*ld] != 0.0) {
+<a name="line219">219: </a>      <font color="#B22222">/* complex conjugate eigenvalue */</font>
+<a name="line220">220: </a>      wi[j] = PetscSqrtReal(PetscAbsReal(T[j+1+j*ld]))*PetscSqrtReal(PetscAbsReal(T[j+(j+1)*ld]));
+<a name="line221">221: </a>      wr[j+1] = wr[j];
+<a name="line222">222: </a>      wi[j+1] = -wi[j];
+<a name="line223">223: </a>      j++;
+<a name="line224">224: </a>    } <font color="#4169E1">else</font> wi[j] = 0.0;
+<a name="line225">225: </a><font color="#A020F0">#endif</font>
+<a name="line226">226: </a>  }
+<a name="line227">227: </a>  <font color="#4169E1">return</font>(0);
+<a name="line228">228: </a>}
+
+</pre>
+</body>
+
+</html>

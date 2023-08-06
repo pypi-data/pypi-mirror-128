@@ -1,0 +1,145 @@
+<center><a href="elemental.cxx">Actual source code: elemental.cxx</a></center><br>
+
+<html>
+<head> <link rel="canonical" href="https://slepc.upv.es/documentation/current/src/eps/impls/external/elemental/elemental.cxx.html" />
+<title></title>
+<meta name="generator" content="c2html 0.9.4">
+<meta name="date" content="2021-11-17T14:29:37+00:00">
+</head>
+
+<body bgcolor="#FFFFFF">
+   <div id="version" align=right><b>slepc-3.16.1 2021-11-17</b></div>
+   <div id="bugreport" align=right><a href="mailto:slepc-maint@upv.es?subject=Typo or Error in Documentation &body=Please describe the typo or error in the documentation: slepc-3.16.1 v3.16.1 src/eps/impls/external/elemental/elemental.cxx.html "><small>Report Typos and Errors</small></a></div>
+<pre width="80">
+<a name="line1">  1: </a><font color="#B22222">/*</font>
+<a name="line2">  2: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line3">  3: </a><font color="#B22222">   SLEPc - Scalable Library for Eigenvalue Problem Computations</font>
+<a name="line4">  4: </a><font color="#B22222">   Copyright (c) 2002-2021, Universitat Politecnica de Valencia, Spain</font>
+
+<a name="line6">  6: </a><font color="#B22222">   This file is part of SLEPc.</font>
+<a name="line7">  7: </a><font color="#B22222">   SLEPc is distributed under a 2-clause BSD license (see LICENSE).</font>
+<a name="line8">  8: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line9">  9: </a><font color="#B22222">*/</font>
+<a name="line10"> 10: </a><font color="#B22222">/*</font>
+<a name="line11"> 11: </a><font color="#B22222">   This file implements a wrapper to eigensolvers in Elemental.</font>
+<a name="line12"> 12: </a><font color="#B22222">*/</font>
+
+<a name="line14"> 14: </a>#include <A href="../../../../../include/slepc/private/epsimpl.h.html">&lt;slepc/private/epsimpl.h&gt;</A>
+<a name="line15"> 15: </a><font color="#A020F0">#include &lt;petsc/private/petscelemental.h&gt;</font>
+
+<a name="line17"> 17: </a><font color="#4169E1">typedef</font> <font color="#4169E1">struct</font> {
+<a name="line18"> 18: </a>  Mat Ae,Be;        <font color="#B22222">/* converted matrices */</font>
+<a name="line19"> 19: </a>} EPS_Elemental;
+
+<a name="line21"> 21: </a><strong><font color="#4169E1"><a name="EPSSetUp_Elemental"></a>PetscErrorCode EPSSetUp_Elemental(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line22"> 22: </a>{
+<a name="line24"> 24: </a>  EPS_Elemental  *ctx = (EPS_Elemental*)eps-&gt;data;
+<a name="line25"> 25: </a>  Mat            A,B;
+<a name="line26"> 26: </a>  PetscInt       nmat;
+<a name="line27"> 27: </a>  PetscBool      isshift;
+<a name="line28"> 28: </a>  PetscScalar    shift;
+
+<a name="line31"> 31: </a>  EPSCheckHermitianDefinite(eps);
+<a name="line32"> 32: </a>  PetscObjectTypeCompare((PetscObject)eps-&gt;st,STSHIFT,&amp;isshift);
+<a name="line33"> 33: </a>  <font color="#4169E1">if</font> (!isshift) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_SUP,<font color="#666666">"This solver does not support spectral transformations"</font>);
+<a name="line34"> 34: </a>  eps-&gt;ncv = eps-&gt;n;
+<a name="line35"> 35: </a>  <font color="#4169E1">if</font> (eps-&gt;mpd!=PETSC_DEFAULT) { PetscInfo(eps,<font color="#666666">"Warning: parameter mpd ignored\n"</font>); }
+<a name="line36"> 36: </a>  <font color="#4169E1">if</font> (eps-&gt;max_it==PETSC_DEFAULT) eps-&gt;max_it = 1;
+<a name="line37"> 37: </a>  <font color="#4169E1">if</font> (!eps-&gt;which) { EPSSetWhichEigenpairs_Default(eps); }
+<a name="line38"> 38: </a>  <font color="#4169E1">if</font> (eps-&gt;which==<a href="../../../../../docs/manualpages/sys/EPSWhich.html#EPSWhich">EPS_ALL</a> &amp;&amp; eps-&gt;inta!=eps-&gt;intb) SETERRQ(PetscObjectComm((PetscObject)eps),PETSC_ERR_SUP,<font color="#666666">"This solver does not support interval computation"</font>);
+<a name="line39"> 39: </a>  EPSCheckUnsupported(eps,EPS_FEATURE_BALANCE | EPS_FEATURE_ARBITRARY | EPS_FEATURE_REGION | EPS_FEATURE_STOPPING);
+<a name="line40"> 40: </a>  EPSCheckIgnored(eps,EPS_FEATURE_EXTRACTION | EPS_FEATURE_CONVERGENCE);
+<a name="line41"> 41: </a>  <a href="../../../../../docs/manualpages/EPS/EPSAllocateSolution.html#EPSAllocateSolution">EPSAllocateSolution</a>(eps,0);
+
+<a name="line43"> 43: </a>  <font color="#B22222">/* convert matrices */</font>
+<a name="line44"> 44: </a>  MatDestroy(&amp;ctx-&gt;Ae);
+<a name="line45"> 45: </a>  MatDestroy(&amp;ctx-&gt;Be);
+<a name="line46"> 46: </a>  <a href="../../../../../docs/manualpages/ST/STGetNumMatrices.html#STGetNumMatrices">STGetNumMatrices</a>(eps-&gt;st,&amp;nmat);
+<a name="line47"> 47: </a>  <a href="../../../../../docs/manualpages/ST/STGetMatrix.html#STGetMatrix">STGetMatrix</a>(eps-&gt;st,0,&amp;A);
+<a name="line48"> 48: </a>  MatConvert(A,MATELEMENTAL,MAT_INITIAL_MATRIX,&amp;ctx-&gt;Ae);
+<a name="line49"> 49: </a>  <font color="#4169E1">if</font> (nmat&gt;1) {
+<a name="line50"> 50: </a>    <a href="../../../../../docs/manualpages/ST/STGetMatrix.html#STGetMatrix">STGetMatrix</a>(eps-&gt;st,1,&amp;B);
+<a name="line51"> 51: </a>    MatConvert(B,MATELEMENTAL,MAT_INITIAL_MATRIX,&amp;ctx-&gt;Be);
+<a name="line52"> 52: </a>  }
+<a name="line53"> 53: </a>  <a href="../../../../../docs/manualpages/ST/STGetShift.html#STGetShift">STGetShift</a>(eps-&gt;st,&amp;shift);
+<a name="line54"> 54: </a>  <font color="#4169E1">if</font> (shift != 0.0) {
+<a name="line55"> 55: </a>    <font color="#4169E1">if</font> (nmat&gt;1) {
+<a name="line56"> 56: </a>      MatAXPY(ctx-&gt;Ae,-shift,ctx-&gt;Be,SAME_NONZERO_PATTERN);
+<a name="line57"> 57: </a>    } <font color="#4169E1">else</font> {
+<a name="line58"> 58: </a>      MatShift(ctx-&gt;Ae,-shift);
+<a name="line59"> 59: </a>    }
+<a name="line60"> 60: </a>  }
+<a name="line61"> 61: </a>  <font color="#4169E1">return</font>(0);
+<a name="line62"> 62: </a>}
+
+<a name="line64"> 64: </a><strong><font color="#4169E1"><a name="EPSSolve_Elemental"></a>PetscErrorCode EPSSolve_Elemental(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line65"> 65: </a>{
+<a name="line67"> 67: </a>  EPS_Elemental  *ctx = (EPS_Elemental*)eps-&gt;data;
+<a name="line68"> 68: </a>  Mat            A = ctx-&gt;Ae,B = ctx-&gt;Be,Q,V;
+<a name="line69"> 69: </a>  Mat_Elemental  *a = (Mat_Elemental*)A-&gt;data,*b,*q;
+<a name="line70"> 70: </a>  PetscInt       i,rrank,ridx,erow;
+
+<a name="line73"> 73: </a><strong><font color="#FF0000">  El:</font></strong>:DistMatrix&lt;PetscReal,El::VR,El::STAR&gt; w(*a-&gt;grid);
+<a name="line74"> 74: </a>  MatDuplicate(A,MAT_DO_NOT_COPY_VALUES,&amp;Q);
+<a name="line75"> 75: </a>  q = (Mat_Elemental*)Q-&gt;data;
+
+<a name="line77"> 77: </a>  <font color="#4169E1">if</font> (B) {
+<a name="line78"> 78: </a>    b = (Mat_Elemental*)B-&gt;data;
+<a name="line79"> 79: </a><strong><font color="#FF0000">    El:</font></strong>:HermitianGenDefEig(El::AXBX,El::LOWER,*a-&gt;emat,*b-&gt;emat,w,*q-&gt;emat);
+<a name="line80"> 80: </a>  } <font color="#4169E1">else</font> El::HermitianEig(El::LOWER,*a-&gt;emat,w,*q-&gt;emat);
+
+<a name="line82"> 82: </a>  <font color="#4169E1">for</font> (i=0;i&lt;eps-&gt;ncv;i++) {
+<a name="line83"> 83: </a>    P2RO(A,0,i,&amp;rrank,&amp;ridx);
+<a name="line84"> 84: </a>    RO2E(A,0,rrank,ridx,&amp;erow);
+<a name="line85"> 85: </a>    eps-&gt;eigr[i] = w.Get(erow,0);
+<a name="line86"> 86: </a>  }
+<a name="line87"> 87: </a>  <a href="../../../../../docs/manualpages/BV/BVGetMat.html#BVGetMat">BVGetMat</a>(eps-&gt;V,&amp;V);
+<a name="line88"> 88: </a>  MatConvert(Q,MATDENSE,MAT_REUSE_MATRIX,&amp;V);
+<a name="line89"> 89: </a>  <a href="../../../../../docs/manualpages/BV/BVRestoreMat.html#BVRestoreMat">BVRestoreMat</a>(eps-&gt;V,&amp;V);
+<a name="line90"> 90: </a>  MatDestroy(&amp;Q);
+
+<a name="line92"> 92: </a>  eps-&gt;nconv  = eps-&gt;ncv;
+<a name="line93"> 93: </a>  eps-&gt;its    = 1;
+<a name="line94"> 94: </a>  eps-&gt;reason = <a href="../../../../../docs/manualpages/sys/EPSConvergedReason.html#EPSConvergedReason">EPS_CONVERGED_TOL</a>;
+<a name="line95"> 95: </a>  <font color="#4169E1">return</font>(0);
+<a name="line96"> 96: </a>}
+
+<a name="line98"> 98: </a><strong><font color="#4169E1"><a name="EPSDestroy_Elemental"></a>PetscErrorCode EPSDestroy_Elemental(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line99"> 99: </a>{
+
+<a name="line103">103: </a>  PetscFree(eps-&gt;data);
+<a name="line104">104: </a>  <font color="#4169E1">return</font>(0);
+<a name="line105">105: </a>}
+
+<a name="line107">107: </a><strong><font color="#4169E1"><a name="EPSReset_Elemental"></a>PetscErrorCode EPSReset_Elemental(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line108">108: </a>{
+<a name="line110">110: </a>  EPS_Elemental  *ctx = (EPS_Elemental*)eps-&gt;data;
+
+<a name="line113">113: </a>  MatDestroy(&amp;ctx-&gt;Ae);
+<a name="line114">114: </a>  MatDestroy(&amp;ctx-&gt;Be);
+<a name="line115">115: </a>  <font color="#4169E1">return</font>(0);
+<a name="line116">116: </a>}
+
+<a name="line118">118: </a><strong><font color="#4169E1"><a name="EPSCreate_Elemental"></a>SLEPC_EXTERN PetscErrorCode EPSCreate_Elemental(<a href="../../../../../docs/manualpages/sys/EPS.html#EPS">EPS</a> eps)</font></strong>
+<a name="line119">119: </a>{
+<a name="line120">120: </a>  EPS_Elemental  *ctx;
+
+<a name="line124">124: </a>  PetscNewLog(eps,&amp;ctx);
+<a name="line125">125: </a>  eps-&gt;data = (void*)ctx;
+
+<a name="line127">127: </a>  eps-&gt;categ = EPS_CATEGORY_OTHER;
+
+<a name="line129">129: </a>  eps-&gt;ops-&gt;solve          = EPSSolve_Elemental;
+<a name="line130">130: </a>  eps-&gt;ops-&gt;setup          = EPSSetUp_Elemental;
+<a name="line131">131: </a>  eps-&gt;ops-&gt;setupsort      = EPSSetUpSort_Basic;
+<a name="line132">132: </a>  eps-&gt;ops-&gt;destroy        = EPSDestroy_Elemental;
+<a name="line133">133: </a>  eps-&gt;ops-&gt;reset          = EPSReset_Elemental;
+<a name="line134">134: </a>  eps-&gt;ops-&gt;backtransform  = EPSBackTransform_Default;
+<a name="line135">135: </a>  eps-&gt;ops-&gt;setdefaultst   = EPSSetDefaultST_NoFactor;
+<a name="line136">136: </a>  <font color="#4169E1">return</font>(0);
+<a name="line137">137: </a>}
+
+</pre>
+</body>
+
+</html>

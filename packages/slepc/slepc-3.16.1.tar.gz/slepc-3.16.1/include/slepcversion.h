@@ -1,0 +1,57 @@
+/*
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   SLEPc - Scalable Library for Eigenvalue Problem Computations
+   Copyright (c) 2002-2021, Universitat Politecnica de Valencia, Spain
+
+   This file is part of SLEPc.
+   SLEPc is distributed under a 2-clause BSD license (see LICENSE).
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*/
+
+#if !defined(SLEPCVERSION_H)
+#define SLEPCVERSION_H
+
+#define SLEPC_VERSION_RELEASE    1
+#define SLEPC_VERSION_MAJOR      3
+#define SLEPC_VERSION_MINOR      16
+#define SLEPC_VERSION_SUBMINOR   1
+#define SLEPC_VERSION_PATCH      0
+#define SLEPC_RELEASE_DATE       "September 30, 2021"
+#define SLEPC_VERSION_DATE       "Nov 17, 2021"
+
+#if !defined (SLEPC_VERSION_GIT)
+#define SLEPC_VERSION_GIT        "v3.16.1"
+#endif
+
+#if !defined(SLEPC_VERSION_DATE_GIT)
+#define SLEPC_VERSION_DATE_GIT   "2021-11-17 15:21:47 +0100"
+#endif
+
+#define SLEPC_VERSION_EQ(MAJOR,MINOR,SUBMINOR) \
+ ((SLEPC_VERSION_MAJOR == (MAJOR)) &&       \
+  (SLEPC_VERSION_MINOR == (MINOR)) &&       \
+  (SLEPC_VERSION_SUBMINOR == (SUBMINOR)) && \
+  (SLEPC_VERSION_RELEASE  == 1))
+
+#define SLEPC_VERSION_ SLEPC_VERSION_EQ
+
+#define SLEPC_VERSION_LT(MAJOR,MINOR,SUBMINOR)          \
+  (SLEPC_VERSION_RELEASE == 1 &&                        \
+   (SLEPC_VERSION_MAJOR < (MAJOR) ||                    \
+    (SLEPC_VERSION_MAJOR == (MAJOR) &&                  \
+     (SLEPC_VERSION_MINOR < (MINOR) ||                  \
+      (SLEPC_VERSION_MINOR == (MINOR) &&                \
+       (SLEPC_VERSION_SUBMINOR < (SUBMINOR)))))))
+
+#define SLEPC_VERSION_LE(MAJOR,MINOR,SUBMINOR) \
+  (SLEPC_VERSION_LT(MAJOR,MINOR,SUBMINOR) || \
+   SLEPC_VERSION_EQ(MAJOR,MINOR,SUBMINOR))
+
+#define SLEPC_VERSION_GT(MAJOR,MINOR,SUBMINOR) \
+  (0 == SLEPC_VERSION_LE(MAJOR,MINOR,SUBMINOR))
+
+#define SLEPC_VERSION_GE(MAJOR,MINOR,SUBMINOR) \
+  (0 == SLEPC_VERSION_LT(MAJOR,MINOR,SUBMINOR))
+
+#endif
+

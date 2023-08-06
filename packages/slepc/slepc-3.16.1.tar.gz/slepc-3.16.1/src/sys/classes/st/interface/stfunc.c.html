@@ -1,0 +1,940 @@
+<center><a href="stfunc.c">Actual source code: stfunc.c</a></center><br>
+
+<html>
+<head> <link rel="canonical" href="https://slepc.upv.es/documentation/current/src/sys/classes/st/interface/stfunc.c.html" />
+<title></title>
+<meta name="generator" content="c2html 0.9.4">
+<meta name="date" content="2021-11-17T14:29:30+00:00">
+</head>
+
+<body bgcolor="#FFFFFF">
+   <div id="version" align=right><b>slepc-3.16.1 2021-11-17</b></div>
+   <div id="bugreport" align=right><a href="mailto:slepc-maint@upv.es?subject=Typo or Error in Documentation &body=Please describe the typo or error in the documentation: slepc-3.16.1 v3.16.1 src/sys/classes/st/interface/stfunc.c.html "><small>Report Typos and Errors</small></a></div>
+<pre width="80">
+<a name="line1">  1: </a><font color="#B22222">/*</font>
+<a name="line2">  2: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line3">  3: </a><font color="#B22222">   SLEPc - Scalable Library for Eigenvalue Problem Computations</font>
+<a name="line4">  4: </a><font color="#B22222">   Copyright (c) 2002-2021, Universitat Politecnica de Valencia, Spain</font>
+
+<a name="line6">  6: </a><font color="#B22222">   This file is part of SLEPc.</font>
+<a name="line7">  7: </a><font color="#B22222">   SLEPc is distributed under a 2-clause BSD license (see LICENSE).</font>
+<a name="line8">  8: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line9">  9: </a><font color="#B22222">*/</font>
+<a name="line10"> 10: </a><font color="#B22222">/*</font>
+<a name="line11"> 11: </a><font color="#B22222">   The <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> interface routines, callable by users</font>
+<a name="line12"> 12: </a><font color="#B22222">*/</font>
+
+<a name="line14"> 14: </a>#include <A href="../../../../../include/slepc/private/stimpl.h.html">&lt;slepc/private/stimpl.h&gt;</A>
+
+<a name="line16"> 16: </a>PetscClassId     ST_CLASSID = 0;
+<a name="line17"> 17: </a>PetscLogEvent    ST_SetUp = 0,ST_ComputeOperator = 0,ST_Apply = 0,ST_ApplyTranspose = 0,ST_MatSetUp = 0,ST_MatMult = 0,ST_MatMultTranspose = 0,ST_MatSolve = 0,ST_MatSolveTranspose = 0;
+<a name="line18"> 18: </a>static PetscBool STPackageInitialized = PETSC_FALSE;
+
+<a name="line20"> 20: </a>const char *STMatModes[] = {<font color="#666666">"COPY"</font>,<font color="#666666">"INPLACE"</font>,<font color="#666666">"SHELL"</font>,<font color="#666666">"<a href="../../../../../docs/manualpages/sys/STMatMode.html#STMatMode">STMatMode</a>"</font>,<font color="#666666">"ST_MATMODE_"</font>,0};
+
+<a name="line22"> 22: </a><font color="#B22222">/*@C</font>
+<a name="line23"> 23: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STFinalizePackage.html#STFinalizePackage">STFinalizePackage</a> - This function destroys everything in the Slepc interface</font>
+<a name="line24"> 24: </a><font color="#B22222">   to the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> package. It is called from <a href="../../../../../docs/manualpages/sys/SlepcFinalize.html#SlepcFinalize">SlepcFinalize</a>().</font>
+
+<a name="line26"> 26: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line28"> 28: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/sys/SlepcFinalize.html#SlepcFinalize">SlepcFinalize</a>()</font>
+<a name="line29"> 29: </a><font color="#B22222">@*/</font>
+<a name="line30"> 30: </a><strong><font color="#4169E1"><a name="STFinalizePackage"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STFinalizePackage.html#STFinalizePackage">STFinalizePackage</a>(void)</font></strong>
+<a name="line31"> 31: </a>{
+
+<a name="line35"> 35: </a>  PetscFunctionListDestroy(&amp;STList);
+<a name="line36"> 36: </a>  STPackageInitialized = PETSC_FALSE;
+<a name="line37"> 37: </a>  STRegisterAllCalled  = PETSC_FALSE;
+<a name="line38"> 38: </a>  <font color="#4169E1">return</font>(0);
+<a name="line39"> 39: </a>}
+
+<a name="line41"> 41: </a><font color="#B22222">/*@C</font>
+<a name="line42"> 42: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STInitializePackage.html#STInitializePackage">STInitializePackage</a> - This function initializes everything in the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> package.</font>
+<a name="line43"> 43: </a><font color="#B22222">   It is called from PetscDLLibraryRegister() when using dynamic libraries, and</font>
+<a name="line44"> 44: </a><font color="#B22222">   on the first call to <a href="../../../../../docs/manualpages/ST/STCreate.html#STCreate">STCreate</a>() when using static libraries.</font>
+
+<a name="line46"> 46: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line48"> 48: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/sys/SlepcInitialize.html#SlepcInitialize">SlepcInitialize</a>()</font>
+<a name="line49"> 49: </a><font color="#B22222">@*/</font>
+<a name="line50"> 50: </a><strong><font color="#4169E1"><a name="STInitializePackage"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STInitializePackage.html#STInitializePackage">STInitializePackage</a>(void)</font></strong>
+<a name="line51"> 51: </a>{
+<a name="line52"> 52: </a>  char           logList[256];
+<a name="line53"> 53: </a>  PetscBool      opt,pkg;
+<a name="line54"> 54: </a>  PetscClassId   classids[1];
+
+<a name="line58"> 58: </a>  <font color="#4169E1">if</font> (STPackageInitialized) <font color="#4169E1">return</font>(0);
+<a name="line59"> 59: </a>  STPackageInitialized = PETSC_TRUE;
+<a name="line60"> 60: </a>  <font color="#B22222">/* Register Classes */</font>
+<a name="line61"> 61: </a>  PetscClassIdRegister(<font color="#666666">"Spectral Transform"</font>,&amp;ST_CLASSID);
+<a name="line62"> 62: </a>  <font color="#B22222">/* Register Constructors */</font>
+<a name="line63"> 63: </a>  <a href="../../../../../docs/manualpages/ST/STRegisterAll.html#STRegisterAll">STRegisterAll</a>();
+<a name="line64"> 64: </a>  <font color="#B22222">/* Register Events */</font>
+<a name="line65"> 65: </a>  PetscLogEventRegister(<font color="#666666">"<a href="../../../../../docs/manualpages/ST/STSetUp.html#STSetUp">STSetUp</a>"</font>,ST_CLASSID,&amp;ST_SetUp);
+<a name="line66"> 66: </a>  PetscLogEventRegister(<font color="#666666">"STComputeOperatr"</font>,ST_CLASSID,&amp;ST_ComputeOperator);
+<a name="line67"> 67: </a>  PetscLogEventRegister(<font color="#666666">"<a href="../../../../../docs/manualpages/ST/STApply.html#STApply">STApply</a>"</font>,ST_CLASSID,&amp;ST_Apply);
+<a name="line68"> 68: </a>  PetscLogEventRegister(<font color="#666666">"<a href="../../../../../docs/manualpages/ST/STApplyTranspose.html#STApplyTranspose">STApplyTranspose</a>"</font>,ST_CLASSID,&amp;ST_ApplyTranspose);
+<a name="line69"> 69: </a>  PetscLogEventRegister(<font color="#666666">"<a href="../../../../../docs/manualpages/ST/STMatSetUp.html#STMatSetUp">STMatSetUp</a>"</font>,ST_CLASSID,&amp;ST_MatSetUp);
+<a name="line70"> 70: </a>  PetscLogEventRegister(<font color="#666666">"<a href="../../../../../docs/manualpages/ST/STMatMult.html#STMatMult">STMatMult</a>"</font>,ST_CLASSID,&amp;ST_MatMult);
+<a name="line71"> 71: </a>  PetscLogEventRegister(<font color="#666666">"<a href="../../../../../docs/manualpages/ST/STMatMultTranspose.html#STMatMultTranspose">STMatMultTranspose</a>"</font>,ST_CLASSID,&amp;ST_MatMultTranspose);
+<a name="line72"> 72: </a>  PetscLogEventRegister(<font color="#666666">"<a href="../../../../../docs/manualpages/ST/STMatSolve.html#STMatSolve">STMatSolve</a>"</font>,ST_CLASSID,&amp;ST_MatSolve);
+<a name="line73"> 73: </a>  PetscLogEventRegister(<font color="#666666">"<a href="../../../../../docs/manualpages/ST/STMatSolveTranspose.html#STMatSolveTranspose">STMatSolveTranspose</a>"</font>,ST_CLASSID,&amp;ST_MatSolveTranspose);
+<a name="line74"> 74: </a>  <font color="#B22222">/* Process Info */</font>
+<a name="line75"> 75: </a>  classids[0] = ST_CLASSID;
+<a name="line76"> 76: </a>  PetscInfoProcessClass(<font color="#666666">"st"</font>,1,&amp;classids[0]);
+<a name="line77"> 77: </a>  <font color="#B22222">/* Process summary exclusions */</font>
+<a name="line78"> 78: </a>  PetscOptionsGetString(NULL,NULL,<font color="#666666">"-log_exclude"</font>,logList,<font color="#4169E1">sizeof</font>(logList),&amp;opt);
+<a name="line79"> 79: </a>  <font color="#4169E1">if</font> (opt) {
+<a name="line80"> 80: </a>    PetscStrInList(<font color="#666666">"st"</font>,logList,',',&amp;pkg);
+<a name="line81"> 81: </a>    <font color="#4169E1">if</font> (pkg) { PetscLogEventDeactivateClass(ST_CLASSID); }
+<a name="line82"> 82: </a>  }
+<a name="line83"> 83: </a>  <font color="#B22222">/* Register package finalizer */</font>
+<a name="line84"> 84: </a>  PetscRegisterFinalize(<a href="../../../../../docs/manualpages/ST/STFinalizePackage.html#STFinalizePackage">STFinalizePackage</a>);
+<a name="line85"> 85: </a>  <font color="#4169E1">return</font>(0);
+<a name="line86"> 86: </a>}
+
+<a name="line88"> 88: </a><font color="#B22222">/*@</font>
+<a name="line89"> 89: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STReset.html#STReset">STReset</a> - Resets the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> context to the initial state (prior to setup)</font>
+<a name="line90"> 90: </a><font color="#B22222">   and destroys any allocated Vecs and Mats.</font>
+
+<a name="line92"> 92: </a><font color="#B22222">   Collective on st</font>
+
+<a name="line94"> 94: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line95"> 95: </a><font color="#B22222">.  st - the spectral transformation context</font>
+
+<a name="line97"> 97: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line99"> 99: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STDestroy.html#STDestroy">STDestroy</a>()</font>
+<a name="line100">100: </a><font color="#B22222">@*/</font>
+<a name="line101">101: </a><strong><font color="#4169E1"><a name="STReset"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STReset.html#STReset">STReset</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st)</font></strong>
+<a name="line102">102: </a>{
+
+<a name="line107">107: </a>  <font color="#4169E1">if</font> (!st) <font color="#4169E1">return</font>(0);
+<a name="line108">108: </a>  STCheckNotSeized(st,1);
+<a name="line109">109: </a>  <font color="#4169E1">if</font> (st-&gt;ops-&gt;reset) { (*st-&gt;ops-&gt;reset)(st); }
+<a name="line110">110: </a>  <font color="#4169E1">if</font> (st-&gt;ksp) { KSPReset(st-&gt;ksp); }
+<a name="line111">111: </a>  MatDestroyMatrices(PetscMax(2,st-&gt;nmat),&amp;st-&gt;T);
+<a name="line112">112: </a>  MatDestroyMatrices(PetscMax(2,st-&gt;nmat),&amp;st-&gt;A);
+<a name="line113">113: </a>  st-&gt;nmat = 0;
+<a name="line114">114: </a>  PetscFree(st-&gt;Astate);
+<a name="line115">115: </a>  MatDestroy(&amp;st-&gt;Op);
+<a name="line116">116: </a>  MatDestroy(&amp;st-&gt;P);
+<a name="line117">117: </a>  MatDestroy(&amp;st-&gt;Pmat);
+<a name="line118">118: </a>  VecDestroyVecs(st-&gt;nwork,&amp;st-&gt;work);
+<a name="line119">119: </a>  st-&gt;nwork = 0;
+<a name="line120">120: </a>  VecDestroy(&amp;st-&gt;wb);
+<a name="line121">121: </a>  VecDestroy(&amp;st-&gt;wht);
+<a name="line122">122: </a>  VecDestroy(&amp;st-&gt;D);
+<a name="line123">123: </a>  st-&gt;state   = ST_STATE_INITIAL;
+<a name="line124">124: </a>  st-&gt;opready = PETSC_FALSE;
+<a name="line125">125: </a>  <font color="#4169E1">return</font>(0);
+<a name="line126">126: </a>}
+
+<a name="line128">128: </a><font color="#B22222">/*@C</font>
+<a name="line129">129: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STDestroy.html#STDestroy">STDestroy</a> - Destroys <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> context that was created with <a href="../../../../../docs/manualpages/ST/STCreate.html#STCreate">STCreate</a>().</font>
+
+<a name="line131">131: </a><font color="#B22222">   Collective on st</font>
+
+<a name="line133">133: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line134">134: </a><font color="#B22222">.  st - the spectral transformation context</font>
+
+<a name="line136">136: </a><font color="#B22222">   Level: beginner</font>
+
+<a name="line138">138: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STCreate.html#STCreate">STCreate</a>(), <a href="../../../../../docs/manualpages/ST/STSetUp.html#STSetUp">STSetUp</a>()</font>
+<a name="line139">139: </a><font color="#B22222">@*/</font>
+<a name="line140">140: </a><strong><font color="#4169E1"><a name="STDestroy"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STDestroy.html#STDestroy">STDestroy</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> *st)</font></strong>
+<a name="line141">141: </a>{
+
+<a name="line145">145: </a>  <font color="#4169E1">if</font> (!*st) <font color="#4169E1">return</font>(0);
+<a name="line147">147: </a>  <font color="#4169E1">if</font> (--((PetscObject)(*st))-&gt;refct &gt; 0) { *st = 0; <font color="#4169E1">return</font>(0); }
+<a name="line148">148: </a>  <a href="../../../../../docs/manualpages/ST/STReset.html#STReset">STReset</a>(*st);
+<a name="line149">149: </a>  <font color="#4169E1">if</font> ((*st)-&gt;ops-&gt;destroy) { (*(*st)-&gt;ops-&gt;destroy)(*st); }
+<a name="line150">150: </a>  KSPDestroy(&amp;(*st)-&gt;ksp);
+<a name="line151">151: </a>  PetscHeaderDestroy(st);
+<a name="line152">152: </a>  <font color="#4169E1">return</font>(0);
+<a name="line153">153: </a>}
+
+<a name="line155">155: </a><font color="#B22222">/*@</font>
+<a name="line156">156: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STCreate.html#STCreate">STCreate</a> - Creates a spectral transformation context.</font>
+
+<a name="line158">158: </a><font color="#B22222">   Collective</font>
+
+<a name="line160">160: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line161">161: </a><font color="#B22222">.  comm - MPI communicator</font>
+
+<a name="line163">163: </a><font color="#B22222">   Output Parameter:</font>
+<a name="line164">164: </a><font color="#B22222">.  st - location to put the spectral transformation context</font>
+
+<a name="line166">166: </a><font color="#B22222">   Level: beginner</font>
+
+<a name="line168">168: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STSetUp.html#STSetUp">STSetUp</a>(), <a href="../../../../../docs/manualpages/ST/STApply.html#STApply">STApply</a>(), <a href="../../../../../docs/manualpages/ST/STDestroy.html#STDestroy">STDestroy</a>(), <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a></font>
+<a name="line169">169: </a><font color="#B22222">@*/</font>
+<a name="line170">170: </a><strong><font color="#4169E1"><a name="STCreate"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STCreate.html#STCreate">STCreate</a>(MPI_Comm comm,<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> *newst)</font></strong>
+<a name="line171">171: </a>{
+<a name="line173">173: </a>  <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a>             st;
+
+<a name="line177">177: </a>  *newst = 0;
+<a name="line178">178: </a>  <a href="../../../../../docs/manualpages/ST/STInitializePackage.html#STInitializePackage">STInitializePackage</a>();
+<a name="line179">179: </a>  SlepcHeaderCreate(st,ST_CLASSID,<font color="#666666">"<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a>"</font>,<font color="#666666">"Spectral Transformation"</font>,<font color="#666666">"<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a>"</font>,comm,<a href="../../../../../docs/manualpages/ST/STDestroy.html#STDestroy">STDestroy</a>,<a href="../../../../../docs/manualpages/ST/STView.html#STView">STView</a>);
+
+<a name="line181">181: </a>  st-&gt;A            = NULL;
+<a name="line182">182: </a>  st-&gt;nmat         = 0;
+<a name="line183">183: </a>  st-&gt;sigma        = 0.0;
+<a name="line184">184: </a>  st-&gt;defsigma     = 0.0;
+<a name="line185">185: </a>  st-&gt;matmode      = <a href="../../../../../docs/manualpages/sys/STMatMode.html#STMatMode">ST_MATMODE_COPY</a>;
+<a name="line186">186: </a>  st-&gt;str          = UNKNOWN_NONZERO_PATTERN;
+<a name="line187">187: </a>  st-&gt;transform    = PETSC_FALSE;
+<a name="line188">188: </a>  st-&gt;D            = NULL;
+<a name="line189">189: </a>  st-&gt;Pmat         = NULL;
+
+<a name="line191">191: </a>  st-&gt;ksp          = NULL;
+<a name="line192">192: </a>  st-&gt;usesksp      = PETSC_FALSE;
+<a name="line193">193: </a>  st-&gt;nwork        = 0;
+<a name="line194">194: </a>  st-&gt;work         = NULL;
+<a name="line195">195: </a>  st-&gt;wb           = NULL;
+<a name="line196">196: </a>  st-&gt;wht          = NULL;
+<a name="line197">197: </a>  st-&gt;state        = ST_STATE_INITIAL;
+<a name="line198">198: </a>  st-&gt;Astate       = NULL;
+<a name="line199">199: </a>  st-&gt;T            = NULL;
+<a name="line200">200: </a>  st-&gt;Op           = NULL;
+<a name="line201">201: </a>  st-&gt;opseized     = PETSC_FALSE;
+<a name="line202">202: </a>  st-&gt;opready      = PETSC_FALSE;
+<a name="line203">203: </a>  st-&gt;P            = NULL;
+<a name="line204">204: </a>  st-&gt;M            = NULL;
+<a name="line205">205: </a>  st-&gt;sigma_set    = PETSC_FALSE;
+<a name="line206">206: </a>  st-&gt;asymm        = PETSC_FALSE;
+<a name="line207">207: </a>  st-&gt;aherm        = PETSC_FALSE;
+<a name="line208">208: </a>  st-&gt;data         = NULL;
+
+<a name="line210">210: </a>  *newst = st;
+<a name="line211">211: </a>  <font color="#4169E1">return</font>(0);
+<a name="line212">212: </a>}
+
+<a name="line214">214: </a><font color="#B22222">/*</font>
+<a name="line215">215: </a><font color="#B22222">   Checks whether the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> matrices are all symmetric or hermitian.</font>
+<a name="line216">216: </a><font color="#B22222">*/</font>
+<a name="line217">217: </a><strong><font color="#4169E1"><a name="STMatIsSymmetricKnown"></a>PETSC_STATIC_INLINE PetscErrorCode STMatIsSymmetricKnown(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,PetscBool *symm,PetscBool *herm)</font></strong>
+<a name="line218">218: </a>{
+<a name="line220">220: </a>  PetscInt       i;
+<a name="line221">221: </a>  PetscBool      sbaij=PETSC_FALSE,set,flg=PETSC_FALSE;
+
+<a name="line224">224: </a>  <font color="#B22222">/* check if problem matrices are all sbaij */</font>
+<a name="line225">225: </a>  <font color="#4169E1">for</font> (i=0;i&lt;st-&gt;nmat;i++) {
+<a name="line226">226: </a>    PetscObjectTypeCompareAny((PetscObject)st-&gt;A[i],&amp;sbaij,MATSEQSBAIJ,MATMPISBAIJ,<font color="#666666">""</font>);
+<a name="line227">227: </a>    <font color="#4169E1">if</font> (!sbaij) <font color="#4169E1">break</font>;
+<a name="line228">228: </a>  }
+<a name="line229">229: </a>  <font color="#B22222">/* check if user has set the symmetric flag */</font>
+<a name="line230">230: </a>  *symm = PETSC_TRUE;
+<a name="line231">231: </a>  <font color="#4169E1">for</font> (i=0;i&lt;st-&gt;nmat;i++) {
+<a name="line232">232: </a>    MatIsSymmetricKnown(st-&gt;A[i],&amp;set,&amp;flg);
+<a name="line233">233: </a>    <font color="#4169E1">if</font> (!set || !flg) { *symm = PETSC_FALSE; <font color="#4169E1">break</font>; }
+<a name="line234">234: </a>  }
+<a name="line235">235: </a>  <font color="#4169E1">if</font> (sbaij) *symm = PETSC_TRUE;
+<a name="line236">236: </a><font color="#A020F0">#if defined(PETSC_USE_COMPLEX)</font>
+<a name="line237">237: </a>  <font color="#B22222">/* check if user has set the hermitian flag */</font>
+<a name="line238">238: </a>  *herm = PETSC_TRUE;
+<a name="line239">239: </a>  <font color="#4169E1">for</font> (i=0;i&lt;st-&gt;nmat;i++) {
+<a name="line240">240: </a>    MatIsHermitianKnown(st-&gt;A[i],&amp;set,&amp;flg);
+<a name="line241">241: </a>    <font color="#4169E1">if</font> (!set || !flg) { *herm = PETSC_FALSE; <font color="#4169E1">break</font>; }
+<a name="line242">242: </a>  }
+<a name="line243">243: </a><font color="#A020F0">#else</font>
+<a name="line244">244: </a>  *herm = *symm;
+<a name="line245">245: </a><font color="#A020F0">#endif</font>
+<a name="line246">246: </a>  <font color="#4169E1">return</font>(0);
+<a name="line247">247: </a>}
+
+<a name="line249">249: </a><font color="#B22222">/*@</font>
+<a name="line250">250: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STSetMatrices.html#STSetMatrices">STSetMatrices</a> - Sets the matrices associated with the eigenvalue problem.</font>
+
+<a name="line252">252: </a><font color="#B22222">   Collective on st</font>
+
+<a name="line254">254: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line255">255: </a><font color="#B22222">+  st - the spectral transformation context</font>
+<a name="line256">256: </a><font color="#B22222">.  n  - number of matrices in array A</font>
+<a name="line257">257: </a><font color="#B22222">-  A  - the array of matrices associated with the eigensystem</font>
+
+<a name="line259">259: </a><font color="#B22222">   Notes:</font>
+<a name="line260">260: </a><font color="#B22222">   It must be called before <a href="../../../../../docs/manualpages/ST/STSetUp.html#STSetUp">STSetUp</a>(). If it is called again after <a href="../../../../../docs/manualpages/ST/STSetUp.html#STSetUp">STSetUp</a>() then</font>
+<a name="line261">261: </a><font color="#B22222">   the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> object is reset.</font>
+
+<a name="line263">263: </a><font color="#B22222">   Level: intermediate</font>
+
+<a name="line265">265: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STGetMatrix.html#STGetMatrix">STGetMatrix</a>(), <a href="../../../../../docs/manualpages/ST/STGetNumMatrices.html#STGetNumMatrices">STGetNumMatrices</a>(), <a href="../../../../../docs/manualpages/ST/STSetUp.html#STSetUp">STSetUp</a>(), <a href="../../../../../docs/manualpages/ST/STReset.html#STReset">STReset</a>()</font>
+<a name="line266">266: </a><font color="#B22222"> @*/</font>
+<a name="line267">267: </a><strong><font color="#4169E1"><a name="STSetMatrices"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STSetMatrices.html#STSetMatrices">STSetMatrices</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,PetscInt n,Mat A[])</font></strong>
+<a name="line268">268: </a>{
+<a name="line269">269: </a>  PetscInt       i;
+<a name="line271">271: </a>  PetscBool      same=PETSC_TRUE;
+
+<a name="line276">276: </a>  <font color="#4169E1">if</font> (n &lt;= 0) SETERRQ1(PetscObjectComm((PetscObject)st),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"Must have one or more matrices, you have %D"</font>,n);
+<a name="line279">279: </a>  STCheckNotSeized(st,1);
+
+<a name="line281">281: </a>  <font color="#4169E1">if</font> (st-&gt;state) {
+<a name="line282">282: </a>    <font color="#4169E1">if</font> (n!=st-&gt;nmat) same = PETSC_FALSE;
+<a name="line283">283: </a>    <font color="#4169E1">for</font> (i=0;same&amp;&amp;i&lt;n;i++) {
+<a name="line284">284: </a>      <font color="#4169E1">if</font> (A[i]!=st-&gt;A[i]) same = PETSC_FALSE;
+<a name="line285">285: </a>    }
+<a name="line286">286: </a>    <font color="#4169E1">if</font> (!same) { <a href="../../../../../docs/manualpages/ST/STReset.html#STReset">STReset</a>(st); }
+<a name="line287">287: </a>  } <font color="#4169E1">else</font> same = PETSC_FALSE;
+<a name="line288">288: </a>  <font color="#4169E1">if</font> (!same) {
+<a name="line289">289: </a>    MatDestroyMatrices(PetscMax(2,st-&gt;nmat),&amp;st-&gt;A);
+<a name="line290">290: </a>    PetscCalloc1(PetscMax(2,n),&amp;st-&gt;A);
+<a name="line291">291: </a>    PetscLogObjectMemory((PetscObject)st,PetscMax(2,n)*<font color="#4169E1">sizeof</font>(Mat));
+<a name="line292">292: </a>    PetscFree(st-&gt;Astate);
+<a name="line293">293: </a>    PetscMalloc1(PetscMax(2,n),&amp;st-&gt;Astate);
+<a name="line294">294: </a>    PetscLogObjectMemory((PetscObject)st,PetscMax(2,n)*<font color="#4169E1">sizeof</font>(PetscInt));
+<a name="line295">295: </a>  }
+<a name="line296">296: </a>  <font color="#4169E1">for</font> (i=0;i&lt;n;i++) {
+<a name="line298">298: </a>    PetscObjectReference((PetscObject)A[i]);
+<a name="line299">299: </a>    MatDestroy(&amp;st-&gt;A[i]);
+<a name="line300">300: </a>    st-&gt;A[i] = A[i];
+<a name="line301">301: </a>    st-&gt;Astate[i] = ((PetscObject)A[i])-&gt;state;
+<a name="line302">302: </a>  }
+<a name="line303">303: </a>  <font color="#4169E1">if</font> (n==1) {
+<a name="line304">304: </a>    st-&gt;A[1] = NULL;
+<a name="line305">305: </a>    st-&gt;Astate[1] = 0;
+<a name="line306">306: </a>  }
+<a name="line307">307: </a>  st-&gt;nmat = n;
+<a name="line308">308: </a>  <font color="#4169E1">if</font> (same) st-&gt;state = ST_STATE_UPDATED;
+<a name="line309">309: </a>  <font color="#4169E1">else</font> st-&gt;state = ST_STATE_INITIAL;
+<a name="line310">310: </a>  st-&gt;opready = PETSC_FALSE;
+<a name="line311">311: </a>  <font color="#4169E1">if</font> (!same) {
+<a name="line312">312: </a>    STMatIsSymmetricKnown(st,&amp;st-&gt;asymm,&amp;st-&gt;aherm);
+<a name="line313">313: </a>  }
+<a name="line314">314: </a>  <font color="#4169E1">return</font>(0);
+<a name="line315">315: </a>}
+
+<a name="line317">317: </a><font color="#B22222">/*@</font>
+<a name="line318">318: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STGetMatrix.html#STGetMatrix">STGetMatrix</a> - Gets the matrices associated with the original eigensystem.</font>
+
+<a name="line320">320: </a><font color="#B22222">   Not collective, though parallel Mats are returned if the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> is parallel</font>
+
+<a name="line322">322: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line323">323: </a><font color="#B22222">+  st - the spectral transformation context</font>
+<a name="line324">324: </a><font color="#B22222">-  k  - the index of the requested matrix (starting in 0)</font>
+
+<a name="line326">326: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line327">327: </a><font color="#B22222">.  A - the requested matrix</font>
+
+<a name="line329">329: </a><font color="#B22222">   Level: intermediate</font>
+
+<a name="line331">331: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STSetMatrices.html#STSetMatrices">STSetMatrices</a>(), <a href="../../../../../docs/manualpages/ST/STGetNumMatrices.html#STGetNumMatrices">STGetNumMatrices</a>()</font>
+<a name="line332">332: </a><font color="#B22222">@*/</font>
+<a name="line333">333: </a><strong><font color="#4169E1"><a name="STGetMatrix"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STGetMatrix.html#STGetMatrix">STGetMatrix</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,PetscInt k,Mat *A)</font></strong>
+<a name="line334">334: </a>{
+<a name="line339">339: </a>  STCheckMatrices(st,1);
+<a name="line340">340: </a>  <font color="#4169E1">if</font> (k&lt;0 || k&gt;=st-&gt;nmat) SETERRQ1(PetscObjectComm((PetscObject)st),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"k must be between 0 and %D"</font>,st-&gt;nmat-1);
+<a name="line341">341: </a>  <font color="#4169E1">if</font> (((PetscObject)st-&gt;A[k])-&gt;state!=st-&gt;Astate[k]) SETERRQ(PetscObjectComm((PetscObject)st),PETSC_ERR_SUP,<font color="#666666">"Cannot retrieve original matrices (have been modified)"</font>);
+<a name="line342">342: </a>  *A = st-&gt;A[k];
+<a name="line343">343: </a>  <font color="#4169E1">return</font>(0);
+<a name="line344">344: </a>}
+
+<a name="line346">346: </a><font color="#B22222">/*@</font>
+<a name="line347">347: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STGetMatrixTransformed.html#STGetMatrixTransformed">STGetMatrixTransformed</a> - Gets the matrices associated with the transformed eigensystem.</font>
+
+<a name="line349">349: </a><font color="#B22222">   Not collective, though parallel Mats are returned if the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> is parallel</font>
+
+<a name="line351">351: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line352">352: </a><font color="#B22222">+  st - the spectral transformation context</font>
+<a name="line353">353: </a><font color="#B22222">-  k  - the index of the requested matrix (starting in 0)</font>
+
+<a name="line355">355: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line356">356: </a><font color="#B22222">.  T - the requested matrix</font>
+
+<a name="line358">358: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line360">360: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STGetMatrix.html#STGetMatrix">STGetMatrix</a>(), <a href="../../../../../docs/manualpages/ST/STGetNumMatrices.html#STGetNumMatrices">STGetNumMatrices</a>()</font>
+<a name="line361">361: </a><font color="#B22222">@*/</font>
+<a name="line362">362: </a><strong><font color="#4169E1"><a name="STGetMatrixTransformed"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STGetMatrixTransformed.html#STGetMatrixTransformed">STGetMatrixTransformed</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,PetscInt k,Mat *T)</font></strong>
+<a name="line363">363: </a>{
+<a name="line368">368: </a>  STCheckMatrices(st,1);
+<a name="line369">369: </a>  <font color="#4169E1">if</font> (k&lt;0 || k&gt;=st-&gt;nmat) SETERRQ1(PetscObjectComm((PetscObject)st),PETSC_ERR_ARG_OUTOFRANGE,<font color="#666666">"k must be between 0 and %D"</font>,st-&gt;nmat-1);
+<a name="line370">370: </a>  <font color="#4169E1">if</font> (!st-&gt;T) SETERRQ(PetscObjectComm((PetscObject)st),PETSC_ERR_POINTER,<font color="#666666">"There are no transformed matrices"</font>);
+<a name="line371">371: </a>  *T = st-&gt;T[k];
+<a name="line372">372: </a>  <font color="#4169E1">return</font>(0);
+<a name="line373">373: </a>}
+
+<a name="line375">375: </a><font color="#B22222">/*@</font>
+<a name="line376">376: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STGetNumMatrices.html#STGetNumMatrices">STGetNumMatrices</a> - Returns the number of matrices stored in the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a>.</font>
+
+<a name="line378">378: </a><font color="#B22222">   Not collective</font>
+
+<a name="line380">380: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line381">381: </a><font color="#B22222">.  st - the spectral transformation context</font>
+
+<a name="line383">383: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line384">384: </a><font color="#B22222">.  n - the number of matrices passed in <a href="../../../../../docs/manualpages/ST/STSetMatrices.html#STSetMatrices">STSetMatrices</a>()</font>
+
+<a name="line386">386: </a><font color="#B22222">   Level: intermediate</font>
+
+<a name="line388">388: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STSetMatrices.html#STSetMatrices">STSetMatrices</a>()</font>
+<a name="line389">389: </a><font color="#B22222">@*/</font>
+<a name="line390">390: </a><strong><font color="#4169E1"><a name="STGetNumMatrices"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STGetNumMatrices.html#STGetNumMatrices">STGetNumMatrices</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,PetscInt *n)</font></strong>
+<a name="line391">391: </a>{
+<a name="line395">395: </a>  *n = st-&gt;nmat;
+<a name="line396">396: </a>  <font color="#4169E1">return</font>(0);
+<a name="line397">397: </a>}
+
+<a name="line399">399: </a><font color="#B22222">/*@</font>
+<a name="line400">400: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STResetMatrixState.html#STResetMatrixState">STResetMatrixState</a> - Resets the stored state of the matrices in the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a>.</font>
+
+<a name="line402">402: </a><font color="#B22222">   Logically Collective on st</font>
+
+<a name="line404">404: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line405">405: </a><font color="#B22222">.  st - the spectral transformation context</font>
+
+<a name="line407">407: </a><font color="#B22222">   Note:</font>
+<a name="line408">408: </a><font color="#B22222">   This is useful in solvers where the user matrices are modified during</font>
+<a name="line409">409: </a><font color="#B22222">   the computation, as in nonlinear inverse iteration. The effect is that</font>
+<a name="line410">410: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STGetMatrix.html#STGetMatrix">STGetMatrix</a>() will retrieve the modified matrices as if they were</font>
+<a name="line411">411: </a><font color="#B22222">   the matrices originally provided by the user.</font>
+
+<a name="line413">413: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line415">415: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STGetMatrix.html#STGetMatrix">STGetMatrix</a>(), <a href="../../../../../docs/manualpages/EPS/EPSPowerSetNonlinear.html#EPSPowerSetNonlinear">EPSPowerSetNonlinear</a>()</font>
+<a name="line416">416: </a><font color="#B22222">@*/</font>
+<a name="line417">417: </a><strong><font color="#4169E1"><a name="STResetMatrixState"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STResetMatrixState.html#STResetMatrixState">STResetMatrixState</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st)</font></strong>
+<a name="line418">418: </a>{
+<a name="line419">419: </a>  PetscInt i;
+
+<a name="line423">423: </a>  <font color="#4169E1">for</font> (i=0;i&lt;st-&gt;nmat;i++) st-&gt;Astate[i] = ((PetscObject)st-&gt;A[i])-&gt;state;
+<a name="line424">424: </a>  <font color="#4169E1">return</font>(0);
+<a name="line425">425: </a>}
+
+<a name="line427">427: </a><font color="#B22222">/*@</font>
+<a name="line428">428: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STSetPreconditionerMat.html#STSetPreconditionerMat">STSetPreconditionerMat</a> - Sets the matrix to be used to build the preconditioner.</font>
+
+<a name="line430">430: </a><font color="#B22222">   Collective on st</font>
+
+<a name="line432">432: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line433">433: </a><font color="#B22222">+  st  - the spectral transformation context</font>
+<a name="line434">434: </a><font color="#B22222">-  mat - the matrix that will be used in constructing the preconditioner</font>
+
+<a name="line436">436: </a><font color="#B22222">   Notes:</font>
+<a name="line437">437: </a><font color="#B22222">   This matrix will be passed to the internal KSP object (via the last argument</font>
+<a name="line438">438: </a><font color="#B22222">   of KSPSetOperators()) as the matrix to be used when constructing the preconditioner.</font>
+<a name="line439">439: </a><font color="#B22222">   If no matrix is set or mat is set to NULL, A-sigma*B will be used</font>
+<a name="line440">440: </a><font color="#B22222">   to build the preconditioner, being sigma the value set by <a href="../../../../../docs/manualpages/ST/STSetShift.html#STSetShift">STSetShift</a>().</font>
+
+<a name="line442">442: </a><font color="#B22222">   More precisely, this is relevant for spectral transformations that represent</font>
+<a name="line443">443: </a><font color="#B22222">   a rational matrix function, and use a KSP object for the denominator, called</font>
+<a name="line444">444: </a><font color="#B22222">   K in the description of <a href="../../../../../docs/manualpages/ST/STGetOperator.html#STGetOperator">STGetOperator</a>(). It includes also the STPRECOND case.</font>
+<a name="line445">445: </a><font color="#B22222">   If the user has a good approximation to matrix K that can be used to build a</font>
+<a name="line446">446: </a><font color="#B22222">   cheap preconditioner, it can be passed with this function. Note that it affects</font>
+<a name="line447">447: </a><font color="#B22222">   only the Pmat argument of KSPSetOperators(), not the Amat argument.</font>
+
+<a name="line449">449: </a><font color="#B22222">   If a preconditioner matrix is set, the default is to use an iterative KSP</font>
+<a name="line450">450: </a><font color="#B22222">   rather than a direct method.</font>
+
+<a name="line452">452: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line454">454: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STGetPreconditionerMat.html#STGetPreconditionerMat">STGetPreconditionerMat</a>(), <a href="../../../../../docs/manualpages/ST/STSetShift.html#STSetShift">STSetShift</a>(), <a href="../../../../../docs/manualpages/ST/STGetOperator.html#STGetOperator">STGetOperator</a>()</font>
+<a name="line455">455: </a><font color="#B22222">@*/</font>
+<a name="line456">456: </a><strong><font color="#4169E1"><a name="STSetPreconditionerMat"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STSetPreconditionerMat.html#STSetPreconditionerMat">STSetPreconditionerMat</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,Mat mat)</font></strong>
+<a name="line457">457: </a>{
+
+<a name="line464">464: </a>  STCheckNotSeized(st,1);
+<a name="line465">465: </a>  PetscObjectReference((PetscObject)mat);
+<a name="line466">466: </a>  MatDestroy(&amp;st-&gt;Pmat);
+<a name="line467">467: </a>  st-&gt;Pmat     = mat;
+<a name="line468">468: </a>  st-&gt;state    = ST_STATE_INITIAL;
+<a name="line469">469: </a>  st-&gt;opready  = PETSC_FALSE;
+<a name="line470">470: </a>  <font color="#4169E1">return</font>(0);
+<a name="line471">471: </a>}
+
+<a name="line473">473: </a><font color="#B22222">/*@</font>
+<a name="line474">474: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STGetPreconditionerMat.html#STGetPreconditionerMat">STGetPreconditionerMat</a> - Returns the matrix previously set by <a href="../../../../../docs/manualpages/ST/STSetPreconditionerMat.html#STSetPreconditionerMat">STSetPreconditionerMat</a>().</font>
+
+<a name="line476">476: </a><font color="#B22222">   Collective on st</font>
+
+<a name="line478">478: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line479">479: </a><font color="#B22222">.  st - the spectral transformation context</font>
+
+<a name="line481">481: </a><font color="#B22222">   Output Parameter:</font>
+<a name="line482">482: </a><font color="#B22222">.  mat - the matrix that will be used in constructing the preconditioner or</font>
+<a name="line483">483: </a><font color="#B22222">   NULL if no matrix was set by <a href="../../../../../docs/manualpages/ST/STSetPreconditionerMat.html#STSetPreconditionerMat">STSetPreconditionerMat</a>().</font>
+
+<a name="line485">485: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line487">487: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STSetPreconditionerMat.html#STSetPreconditionerMat">STSetPreconditionerMat</a>()</font>
+<a name="line488">488: </a><font color="#B22222">@*/</font>
+<a name="line489">489: </a><strong><font color="#4169E1"><a name="STGetPreconditionerMat"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STGetPreconditionerMat.html#STGetPreconditionerMat">STGetPreconditionerMat</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,Mat *mat)</font></strong>
+<a name="line490">490: </a>{
+<a name="line494">494: </a>  *mat = st-&gt;Pmat;
+<a name="line495">495: </a>  <font color="#4169E1">return</font>(0);
+<a name="line496">496: </a>}
+
+<a name="line498">498: </a><font color="#B22222">/*@</font>
+<a name="line499">499: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STSetShift.html#STSetShift">STSetShift</a> - Sets the shift associated with the spectral transformation.</font>
+
+<a name="line501">501: </a><font color="#B22222">   Logically Collective on st</font>
+
+<a name="line503">503: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line504">504: </a><font color="#B22222">+  st - the spectral transformation context</font>
+<a name="line505">505: </a><font color="#B22222">-  shift - the value of the shift</font>
+
+<a name="line507">507: </a><font color="#B22222">   Notes:</font>
+<a name="line508">508: </a><font color="#B22222">   In some spectral transformations, changing the shift may have associated</font>
+<a name="line509">509: </a><font color="#B22222">   a lot of work, for example recomputing a factorization.</font>
+
+<a name="line511">511: </a><font color="#B22222">   This function is normally not directly called by users, since the shift is</font>
+<a name="line512">512: </a><font color="#B22222">   indirectly set by <a href="../../../../../docs/manualpages/EPS/EPSSetTarget.html#EPSSetTarget">EPSSetTarget</a>().</font>
+
+<a name="line514">514: </a><font color="#B22222">   Level: intermediate</font>
+
+<a name="line516">516: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/EPS/EPSSetTarget.html#EPSSetTarget">EPSSetTarget</a>(), <a href="../../../../../docs/manualpages/ST/STGetShift.html#STGetShift">STGetShift</a>(), <a href="../../../../../docs/manualpages/ST/STSetDefaultShift.html#STSetDefaultShift">STSetDefaultShift</a>()</font>
+<a name="line517">517: </a><font color="#B22222">@*/</font>
+<a name="line518">518: </a><strong><font color="#4169E1"><a name="STSetShift"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STSetShift.html#STSetShift">STSetShift</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,PetscScalar shift)</font></strong>
+<a name="line519">519: </a>{
+
+<a name="line526">526: </a>  <font color="#4169E1">if</font> (st-&gt;sigma != shift) {
+<a name="line527">527: </a>    STCheckNotSeized(st,1);
+<a name="line528">528: </a>    <font color="#4169E1">if</font> (st-&gt;state==ST_STATE_SETUP &amp;&amp; st-&gt;ops-&gt;setshift) {
+<a name="line529">529: </a>      (*st-&gt;ops-&gt;setshift)(st,shift);
+<a name="line530">530: </a>    }
+<a name="line531">531: </a>    st-&gt;sigma = shift;
+<a name="line532">532: </a>  }
+<a name="line533">533: </a>  st-&gt;sigma_set = PETSC_TRUE;
+<a name="line534">534: </a>  <font color="#4169E1">return</font>(0);
+<a name="line535">535: </a>}
+
+<a name="line537">537: </a><font color="#B22222">/*@</font>
+<a name="line538">538: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STGetShift.html#STGetShift">STGetShift</a> - Gets the shift associated with the spectral transformation.</font>
+
+<a name="line540">540: </a><font color="#B22222">   Not Collective</font>
+
+<a name="line542">542: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line543">543: </a><font color="#B22222">.  st - the spectral transformation context</font>
+
+<a name="line545">545: </a><font color="#B22222">   Output Parameter:</font>
+<a name="line546">546: </a><font color="#B22222">.  shift - the value of the shift</font>
+
+<a name="line548">548: </a><font color="#B22222">   Level: intermediate</font>
+
+<a name="line550">550: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STSetShift.html#STSetShift">STSetShift</a>()</font>
+<a name="line551">551: </a><font color="#B22222">@*/</font>
+<a name="line552">552: </a><strong><font color="#4169E1"><a name="STGetShift"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STGetShift.html#STGetShift">STGetShift</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,PetscScalar* shift)</font></strong>
+<a name="line553">553: </a>{
+<a name="line557">557: </a>  *shift = st-&gt;sigma;
+<a name="line558">558: </a>  <font color="#4169E1">return</font>(0);
+<a name="line559">559: </a>}
+
+<a name="line561">561: </a><font color="#B22222">/*@</font>
+<a name="line562">562: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STSetDefaultShift.html#STSetDefaultShift">STSetDefaultShift</a> - Sets the value of the shift that should be employed if</font>
+<a name="line563">563: </a><font color="#B22222">   the user did not specify one.</font>
+
+<a name="line565">565: </a><font color="#B22222">   Logically Collective on st</font>
+
+<a name="line567">567: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line568">568: </a><font color="#B22222">+  st - the spectral transformation context</font>
+<a name="line569">569: </a><font color="#B22222">-  defaultshift - the default value of the shift</font>
+
+<a name="line571">571: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line573">573: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STSetShift.html#STSetShift">STSetShift</a>()</font>
+<a name="line574">574: </a><font color="#B22222">@*/</font>
+<a name="line575">575: </a><strong><font color="#4169E1"><a name="STSetDefaultShift"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STSetDefaultShift.html#STSetDefaultShift">STSetDefaultShift</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,PetscScalar defaultshift)</font></strong>
+<a name="line576">576: </a>{
+<a name="line580">580: </a>  <font color="#4169E1">if</font> (st-&gt;defsigma != defaultshift) {
+<a name="line581">581: </a>    st-&gt;defsigma = defaultshift;
+<a name="line582">582: </a>    st-&gt;state    = ST_STATE_INITIAL;
+<a name="line583">583: </a>    st-&gt;opready  = PETSC_FALSE;
+<a name="line584">584: </a>  }
+<a name="line585">585: </a>  <font color="#4169E1">return</font>(0);
+<a name="line586">586: </a>}
+
+<a name="line588">588: </a><font color="#B22222">/*@</font>
+<a name="line589">589: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STScaleShift.html#STScaleShift">STScaleShift</a> - Multiply the shift with a given factor.</font>
+
+<a name="line591">591: </a><font color="#B22222">   Logically Collective on st</font>
+
+<a name="line593">593: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line594">594: </a><font color="#B22222">+  st     - the spectral transformation context</font>
+<a name="line595">595: </a><font color="#B22222">-  factor - the scaling factor</font>
+
+<a name="line597">597: </a><font color="#B22222">   Note:</font>
+<a name="line598">598: </a><font color="#B22222">   This function does not update the transformation matrices, as opposed to</font>
+<a name="line599">599: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STSetShift.html#STSetShift">STSetShift</a>().</font>
+
+<a name="line601">601: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line603">603: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STSetShift.html#STSetShift">STSetShift</a>()</font>
+<a name="line604">604: </a><font color="#B22222">@*/</font>
+<a name="line605">605: </a><strong><font color="#4169E1"><a name="STScaleShift"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STScaleShift.html#STScaleShift">STScaleShift</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,PetscScalar factor)</font></strong>
+<a name="line606">606: </a>{
+<a name="line610">610: </a>  st-&gt;sigma *= factor;
+<a name="line611">611: </a>  <font color="#4169E1">return</font>(0);
+<a name="line612">612: </a>}
+
+<a name="line614">614: </a><font color="#B22222">/*@</font>
+<a name="line615">615: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STSetBalanceMatrix.html#STSetBalanceMatrix">STSetBalanceMatrix</a> - Sets the diagonal matrix to be used for balancing.</font>
+
+<a name="line617">617: </a><font color="#B22222">   Collective on st</font>
+
+<a name="line619">619: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line620">620: </a><font color="#B22222">+  st - the spectral transformation context</font>
+<a name="line621">621: </a><font color="#B22222">-  D  - the diagonal matrix (represented as a vector)</font>
+
+<a name="line623">623: </a><font color="#B22222">   Notes:</font>
+<a name="line624">624: </a><font color="#B22222">   If this matrix is set, <a href="../../../../../docs/manualpages/ST/STApply.html#STApply">STApply</a> will effectively apply D*OP*D^{-1}. Use NULL</font>
+<a name="line625">625: </a><font color="#B22222">   to reset a previously passed D.</font>
+
+<a name="line627">627: </a><font color="#B22222">   Balancing is usually set via <a href="../../../../../docs/manualpages/EPS/EPSSetBalance.html#EPSSetBalance">EPSSetBalance</a>, but the advanced user may use</font>
+<a name="line628">628: </a><font color="#B22222">   this function to bypass the usual balancing methods.</font>
+
+<a name="line630">630: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line632">632: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/EPS/EPSSetBalance.html#EPSSetBalance">EPSSetBalance</a>(), <a href="../../../../../docs/manualpages/ST/STApply.html#STApply">STApply</a>(), <a href="../../../../../docs/manualpages/ST/STGetBalanceMatrix.html#STGetBalanceMatrix">STGetBalanceMatrix</a>()</font>
+<a name="line633">633: </a><font color="#B22222">@*/</font>
+<a name="line634">634: </a><strong><font color="#4169E1"><a name="STSetBalanceMatrix"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STSetBalanceMatrix.html#STSetBalanceMatrix">STSetBalanceMatrix</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,Vec D)</font></strong>
+<a name="line635">635: </a>{
+
+<a name="line640">640: </a>  <font color="#4169E1">if</font> (st-&gt;D == D) <font color="#4169E1">return</font>(0);
+<a name="line641">641: </a>  STCheckNotSeized(st,1);
+<a name="line642">642: </a>  <font color="#4169E1">if</font> (D) {
+<a name="line645">645: </a>    PetscObjectReference((PetscObject)D);
+<a name="line646">646: </a>  }
+<a name="line647">647: </a>  VecDestroy(&amp;st-&gt;D);
+<a name="line648">648: </a>  st-&gt;D = D;
+<a name="line649">649: </a>  st-&gt;state   = ST_STATE_INITIAL;
+<a name="line650">650: </a>  st-&gt;opready = PETSC_FALSE;
+<a name="line651">651: </a>  <font color="#4169E1">return</font>(0);
+<a name="line652">652: </a>}
+
+<a name="line654">654: </a><font color="#B22222">/*@</font>
+<a name="line655">655: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STGetBalanceMatrix.html#STGetBalanceMatrix">STGetBalanceMatrix</a> - Gets the balance matrix used by the spectral transformation.</font>
+
+<a name="line657">657: </a><font color="#B22222">   Not collective, but vector is shared by all processors that share the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a></font>
+
+<a name="line659">659: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line660">660: </a><font color="#B22222">.  st - the spectral transformation context</font>
+
+<a name="line662">662: </a><font color="#B22222">   Output Parameter:</font>
+<a name="line663">663: </a><font color="#B22222">.  D  - the diagonal matrix (represented as a vector)</font>
+
+<a name="line665">665: </a><font color="#B22222">   Note:</font>
+<a name="line666">666: </a><font color="#B22222">   If the matrix was not set, a null pointer will be returned.</font>
+
+<a name="line668">668: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line670">670: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STSetBalanceMatrix.html#STSetBalanceMatrix">STSetBalanceMatrix</a>()</font>
+<a name="line671">671: </a><font color="#B22222">@*/</font>
+<a name="line672">672: </a><strong><font color="#4169E1"><a name="STGetBalanceMatrix"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STGetBalanceMatrix.html#STGetBalanceMatrix">STGetBalanceMatrix</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,Vec *D)</font></strong>
+<a name="line673">673: </a>{
+<a name="line677">677: </a>  *D = st-&gt;D;
+<a name="line678">678: </a>  <font color="#4169E1">return</font>(0);
+<a name="line679">679: </a>}
+
+<a name="line681">681: </a><font color="#B22222">/*@C</font>
+<a name="line682">682: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STMatCreateVecs.html#STMatCreateVecs">STMatCreateVecs</a> - Get vector(s) compatible with the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> matrices.</font>
+
+<a name="line684">684: </a><font color="#B22222">   Collective on st</font>
+
+<a name="line686">686: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line687">687: </a><font color="#B22222">.  st - the spectral transformation context</font>
+
+<a name="line689">689: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line690">690: </a><font color="#B22222">+  right - (optional) vector that the matrix can be multiplied against</font>
+<a name="line691">691: </a><font color="#B22222">-  left  - (optional) vector that the matrix vector product can be stored in</font>
+
+<a name="line693">693: </a><font color="#B22222">   Level: developer</font>
+<a name="line694">694: </a><font color="#B22222">@*/</font>
+<a name="line695">695: </a><strong><font color="#4169E1"><a name="STMatCreateVecs"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STMatCreateVecs.html#STMatCreateVecs">STMatCreateVecs</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,Vec *right,Vec *left)</font></strong>
+<a name="line696">696: </a>{
+
+<a name="line700">700: </a>  STCheckMatrices(st,1);
+<a name="line701">701: </a>  MatCreateVecs(st-&gt;A[0],right,left);
+<a name="line702">702: </a>  <font color="#4169E1">return</font>(0);
+<a name="line703">703: </a>}
+
+<a name="line705">705: </a><font color="#B22222">/*@C</font>
+<a name="line706">706: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STMatCreateVecsEmpty.html#STMatCreateVecsEmpty">STMatCreateVecsEmpty</a> - Get vector(s) compatible with the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> matrices, i.e. with the same</font>
+<a name="line707">707: </a><font color="#B22222">   parallel layout, but without internal array.</font>
+
+<a name="line709">709: </a><font color="#B22222">   Collective on st</font>
+
+<a name="line711">711: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line712">712: </a><font color="#B22222">.  st - the spectral transformation context</font>
+
+<a name="line714">714: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line715">715: </a><font color="#B22222">+  right - (optional) vector that the matrix can be multiplied against</font>
+<a name="line716">716: </a><font color="#B22222">-  left  - (optional) vector that the matrix vector product can be stored in</font>
+
+<a name="line718">718: </a><font color="#B22222">   Level: developer</font>
+
+<a name="line720">720: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/sys/MatCreateVecsEmpty.html#MatCreateVecsEmpty">MatCreateVecsEmpty</a>()</font>
+<a name="line721">721: </a><font color="#B22222">@*/</font>
+<a name="line722">722: </a><strong><font color="#4169E1"><a name="STMatCreateVecsEmpty"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STMatCreateVecsEmpty.html#STMatCreateVecsEmpty">STMatCreateVecsEmpty</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,Vec *right,Vec *left)</font></strong>
+<a name="line723">723: </a>{
+
+<a name="line727">727: </a>  STCheckMatrices(st,1);
+<a name="line728">728: </a>  <a href="../../../../../docs/manualpages/sys/MatCreateVecsEmpty.html#MatCreateVecsEmpty">MatCreateVecsEmpty</a>(st-&gt;A[0],right,left);
+<a name="line729">729: </a>  <font color="#4169E1">return</font>(0);
+<a name="line730">730: </a>}
+
+<a name="line732">732: </a><font color="#B22222">/*@</font>
+<a name="line733">733: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STMatGetSize.html#STMatGetSize">STMatGetSize</a> - Returns the number of rows and columns of the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> matrices.</font>
+
+<a name="line735">735: </a><font color="#B22222">   Not Collective</font>
+
+<a name="line737">737: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line738">738: </a><font color="#B22222">.  st - the spectral transformation context</font>
+
+<a name="line740">740: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line741">741: </a><font color="#B22222">+  m - the number of global rows</font>
+<a name="line742">742: </a><font color="#B22222">-  n - the number of global columns</font>
+
+<a name="line744">744: </a><font color="#B22222">   Level: developer</font>
+<a name="line745">745: </a><font color="#B22222">@*/</font>
+<a name="line746">746: </a><strong><font color="#4169E1"><a name="STMatGetSize"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STMatGetSize.html#STMatGetSize">STMatGetSize</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,PetscInt *m,PetscInt *n)</font></strong>
+<a name="line747">747: </a>{
+
+<a name="line751">751: </a>  STCheckMatrices(st,1);
+<a name="line752">752: </a>  MatGetSize(st-&gt;A[0],m,n);
+<a name="line753">753: </a>  <font color="#4169E1">return</font>(0);
+<a name="line754">754: </a>}
+
+<a name="line756">756: </a><font color="#B22222">/*@</font>
+<a name="line757">757: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STMatGetLocalSize.html#STMatGetLocalSize">STMatGetLocalSize</a> - Returns the number of local rows and columns of the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> matrices.</font>
+
+<a name="line759">759: </a><font color="#B22222">   Not Collective</font>
+
+<a name="line761">761: </a><font color="#B22222">   Input Parameter:</font>
+<a name="line762">762: </a><font color="#B22222">.  st - the spectral transformation context</font>
+
+<a name="line764">764: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line765">765: </a><font color="#B22222">+  m - the number of local rows</font>
+<a name="line766">766: </a><font color="#B22222">-  n - the number of local columns</font>
+
+<a name="line768">768: </a><font color="#B22222">   Level: developer</font>
+<a name="line769">769: </a><font color="#B22222">@*/</font>
+<a name="line770">770: </a><strong><font color="#4169E1"><a name="STMatGetLocalSize"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STMatGetLocalSize.html#STMatGetLocalSize">STMatGetLocalSize</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,PetscInt *m,PetscInt *n)</font></strong>
+<a name="line771">771: </a>{
+
+<a name="line775">775: </a>  STCheckMatrices(st,1);
+<a name="line776">776: </a>  MatGetLocalSize(st-&gt;A[0],m,n);
+<a name="line777">777: </a>  <font color="#4169E1">return</font>(0);
+<a name="line778">778: </a>}
+
+<a name="line780">780: </a><font color="#B22222">/*@C</font>
+<a name="line781">781: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STSetOptionsPrefix.html#STSetOptionsPrefix">STSetOptionsPrefix</a> - Sets the prefix used for searching for all</font>
+<a name="line782">782: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> options in the database.</font>
+
+<a name="line784">784: </a><font color="#B22222">   Logically Collective on st</font>
+
+<a name="line786">786: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line787">787: </a><font color="#B22222">+  st     - the spectral transformation context</font>
+<a name="line788">788: </a><font color="#B22222">-  prefix - the prefix string to prepend to all <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> option requests</font>
+
+<a name="line790">790: </a><font color="#B22222">   Notes:</font>
+<a name="line791">791: </a><font color="#B22222">   A hyphen (-) must NOT be given at the beginning of the prefix name.</font>
+<a name="line792">792: </a><font color="#B22222">   The first character of all runtime options is AUTOMATICALLY the</font>
+<a name="line793">793: </a><font color="#B22222">   hyphen.</font>
+
+<a name="line795">795: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line797">797: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STAppendOptionsPrefix.html#STAppendOptionsPrefix">STAppendOptionsPrefix</a>(), <a href="../../../../../docs/manualpages/ST/STGetOptionsPrefix.html#STGetOptionsPrefix">STGetOptionsPrefix</a>()</font>
+<a name="line798">798: </a><font color="#B22222">@*/</font>
+<a name="line799">799: </a><strong><font color="#4169E1"><a name="STSetOptionsPrefix"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STSetOptionsPrefix.html#STSetOptionsPrefix">STSetOptionsPrefix</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,const char *prefix)</font></strong>
+<a name="line800">800: </a>{
+
+<a name="line805">805: </a>  <font color="#4169E1">if</font> (!st-&gt;ksp) { <a href="../../../../../docs/manualpages/ST/STGetKSP.html#STGetKSP">STGetKSP</a>(st,&amp;st-&gt;ksp); }
+<a name="line806">806: </a>  KSPSetOptionsPrefix(st-&gt;ksp,prefix);
+<a name="line807">807: </a>  KSPAppendOptionsPrefix(st-&gt;ksp,<font color="#666666">"st_"</font>);
+<a name="line808">808: </a>  PetscObjectSetOptionsPrefix((PetscObject)st,prefix);
+<a name="line809">809: </a>  <font color="#4169E1">return</font>(0);
+<a name="line810">810: </a>}
+
+<a name="line812">812: </a><font color="#B22222">/*@C</font>
+<a name="line813">813: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STAppendOptionsPrefix.html#STAppendOptionsPrefix">STAppendOptionsPrefix</a> - Appends to the prefix used for searching for all</font>
+<a name="line814">814: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> options in the database.</font>
+
+<a name="line816">816: </a><font color="#B22222">   Logically Collective on st</font>
+
+<a name="line818">818: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line819">819: </a><font color="#B22222">+  st     - the spectral transformation context</font>
+<a name="line820">820: </a><font color="#B22222">-  prefix - the prefix string to prepend to all <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> option requests</font>
+
+<a name="line822">822: </a><font color="#B22222">   Notes:</font>
+<a name="line823">823: </a><font color="#B22222">   A hyphen (-) must NOT be given at the beginning of the prefix name.</font>
+<a name="line824">824: </a><font color="#B22222">   The first character of all runtime options is AUTOMATICALLY the</font>
+<a name="line825">825: </a><font color="#B22222">   hyphen.</font>
+
+<a name="line827">827: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line829">829: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STSetOptionsPrefix.html#STSetOptionsPrefix">STSetOptionsPrefix</a>(), <a href="../../../../../docs/manualpages/ST/STGetOptionsPrefix.html#STGetOptionsPrefix">STGetOptionsPrefix</a>()</font>
+<a name="line830">830: </a><font color="#B22222">@*/</font>
+<a name="line831">831: </a><strong><font color="#4169E1"><a name="STAppendOptionsPrefix"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STAppendOptionsPrefix.html#STAppendOptionsPrefix">STAppendOptionsPrefix</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,const char *prefix)</font></strong>
+<a name="line832">832: </a>{
+
+<a name="line837">837: </a>  PetscObjectAppendOptionsPrefix((PetscObject)st,prefix);
+<a name="line838">838: </a>  <font color="#4169E1">if</font> (!st-&gt;ksp) { <a href="../../../../../docs/manualpages/ST/STGetKSP.html#STGetKSP">STGetKSP</a>(st,&amp;st-&gt;ksp); }
+<a name="line839">839: </a>  KSPSetOptionsPrefix(st-&gt;ksp,((PetscObject)st)-&gt;prefix);
+<a name="line840">840: </a>  KSPAppendOptionsPrefix(st-&gt;ksp,<font color="#666666">"st_"</font>);
+<a name="line841">841: </a>  <font color="#4169E1">return</font>(0);
+<a name="line842">842: </a>}
+
+<a name="line844">844: </a><font color="#B22222">/*@C</font>
+<a name="line845">845: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STGetOptionsPrefix.html#STGetOptionsPrefix">STGetOptionsPrefix</a> - Gets the prefix used for searching for all</font>
+<a name="line846">846: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> options in the database.</font>
+
+<a name="line848">848: </a><font color="#B22222">   Not Collective</font>
+
+<a name="line850">850: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line851">851: </a><font color="#B22222">.  st - the spectral transformation context</font>
+
+<a name="line853">853: </a><font color="#B22222">   Output Parameters:</font>
+<a name="line854">854: </a><font color="#B22222">.  prefix - pointer to the prefix string used, is returned</font>
+
+<a name="line856">856: </a><font color="#B22222">   Note:</font>
+<a name="line857">857: </a><font color="#B22222">   On the Fortran side, the user should pass in a string 'prefix' of</font>
+<a name="line858">858: </a><font color="#B22222">   sufficient length to hold the prefix.</font>
+
+<a name="line860">860: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line862">862: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STSetOptionsPrefix.html#STSetOptionsPrefix">STSetOptionsPrefix</a>(), <a href="../../../../../docs/manualpages/ST/STAppendOptionsPrefix.html#STAppendOptionsPrefix">STAppendOptionsPrefix</a>()</font>
+<a name="line863">863: </a><font color="#B22222">@*/</font>
+<a name="line864">864: </a><strong><font color="#4169E1"><a name="STGetOptionsPrefix"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STGetOptionsPrefix.html#STGetOptionsPrefix">STGetOptionsPrefix</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,const char *prefix[])</font></strong>
+<a name="line865">865: </a>{
+
+<a name="line871">871: </a>  PetscObjectGetOptionsPrefix((PetscObject)st,prefix);
+<a name="line872">872: </a>  <font color="#4169E1">return</font>(0);
+<a name="line873">873: </a>}
+
+<a name="line875">875: </a><font color="#B22222">/*@C</font>
+<a name="line876">876: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STView.html#STView">STView</a> - Prints the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> data structure.</font>
+
+<a name="line878">878: </a><font color="#B22222">   Collective on st</font>
+
+<a name="line880">880: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line881">881: </a><font color="#B22222">+  st - the <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> context</font>
+<a name="line882">882: </a><font color="#B22222">-  viewer - optional visualization context</font>
+
+<a name="line884">884: </a><font color="#B22222">   Note:</font>
+<a name="line885">885: </a><font color="#B22222">   The available visualization contexts include</font>
+<a name="line886">886: </a><font color="#B22222">+     PETSC_VIEWER_STDOUT_SELF - standard output (default)</font>
+<a name="line887">887: </a><font color="#B22222">-     PETSC_VIEWER_STDOUT_WORLD - synchronized standard</font>
+<a name="line888">888: </a><font color="#B22222">         output where only the first processor opens</font>
+<a name="line889">889: </a><font color="#B22222">         the file.  All other processors send their</font>
+<a name="line890">890: </a><font color="#B22222">         data to the first processor to print.</font>
+
+<a name="line892">892: </a><font color="#B22222">   The user can open an alternative visualization contexts with</font>
+<a name="line893">893: </a><font color="#B22222">   PetscViewerASCIIOpen() (output to a specified file).</font>
+
+<a name="line895">895: </a><font color="#B22222">   Level: beginner</font>
+
+<a name="line897">897: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/EPS/EPSView.html#EPSView">EPSView</a>()</font>
+<a name="line898">898: </a><font color="#B22222">@*/</font>
+<a name="line899">899: </a><strong><font color="#4169E1"><a name="STView"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STView.html#STView">STView</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,PetscViewer viewer)</font></strong>
+<a name="line900">900: </a>{
+<a name="line902">902: </a>  <a href="../../../../../docs/manualpages/sys/STType.html#STType">STType</a>         cstr;
+<a name="line903">903: </a>  char           str[50];
+<a name="line904">904: </a>  PetscBool      isascii,isstring;
+
+<a name="line908">908: </a>  <font color="#4169E1">if</font> (!viewer) {
+<a name="line909">909: </a>    PetscViewerASCIIGetStdout(PetscObjectComm((PetscObject)st),&amp;viewer);
+<a name="line910">910: </a>  }
+
+<a name="line914">914: </a>  PetscObjectTypeCompare((PetscObject)viewer,PETSCVIEWERASCII,&amp;isascii);
+<a name="line915">915: </a>  PetscObjectTypeCompare((PetscObject)viewer,PETSCVIEWERSTRING,&amp;isstring);
+<a name="line916">916: </a>  <font color="#4169E1">if</font> (isascii) {
+<a name="line917">917: </a>    PetscObjectPrintClassNamePrefixType((PetscObject)st,viewer);
+<a name="line918">918: </a>    <font color="#4169E1">if</font> (st-&gt;ops-&gt;view) {
+<a name="line919">919: </a>      PetscViewerASCIIPushTab(viewer);
+<a name="line920">920: </a>      (*st-&gt;ops-&gt;view)(st,viewer);
+<a name="line921">921: </a>      PetscViewerASCIIPopTab(viewer);
+<a name="line922">922: </a>    }
+<a name="line923">923: </a>    <a href="../../../../../docs/manualpages/sys/SlepcSNPrintfScalar.html#SlepcSNPrintfScalar">SlepcSNPrintfScalar</a>(str,<font color="#4169E1">sizeof</font>(str),st-&gt;sigma,PETSC_FALSE);
+<a name="line924">924: </a>    PetscViewerASCIIPrintf(viewer,<font color="#666666">"  shift: %s\n"</font>,str);
+<a name="line925">925: </a>    PetscViewerASCIIPrintf(viewer,<font color="#666666">"  number of matrices: %D\n"</font>,st-&gt;nmat);
+<a name="line926">926: </a>    <font color="#4169E1">switch</font> (st-&gt;matmode) {
+<a name="line927">927: </a>    <font color="#4169E1">case</font> <a href="../../../../../docs/manualpages/sys/STMatMode.html#STMatMode">ST_MATMODE_COPY</a>:
+<a name="line928">928: </a>      <font color="#4169E1">break</font>;
+<a name="line929">929: </a>    <font color="#4169E1">case</font> <a href="../../../../../docs/manualpages/sys/STMatMode.html#STMatMode">ST_MATMODE_INPLACE</a>:
+<a name="line930">930: </a>      PetscViewerASCIIPrintf(viewer,<font color="#666666">"  shifting the matrix and unshifting at exit\n"</font>);
+<a name="line931">931: </a>      <font color="#4169E1">break</font>;
+<a name="line932">932: </a>    <font color="#4169E1">case</font> <a href="../../../../../docs/manualpages/sys/STMatMode.html#STMatMode">ST_MATMODE_SHELL</a>:
+<a name="line933">933: </a>      PetscViewerASCIIPrintf(viewer,<font color="#666666">"  using a shell matrix\n"</font>);
+<a name="line934">934: </a>      <font color="#4169E1">break</font>;
+<a name="line935">935: </a>    }
+<a name="line936">936: </a>    <font color="#4169E1">if</font> (st-&gt;nmat&gt;1 &amp;&amp; st-&gt;matmode != <a href="../../../../../docs/manualpages/sys/STMatMode.html#STMatMode">ST_MATMODE_SHELL</a>) {
+<a name="line937">937: </a>      PetscViewerASCIIPrintf(viewer,<font color="#666666">"  all matrices have %s\n"</font>,MatStructures[st-&gt;str]);
+<a name="line938">938: </a>    }
+<a name="line939">939: </a>    <font color="#4169E1">if</font> (st-&gt;transform &amp;&amp; st-&gt;nmat&gt;2) {
+<a name="line940">940: </a>      PetscViewerASCIIPrintf(viewer,<font color="#666666">"  computing transformed matrices\n"</font>);
+<a name="line941">941: </a>    }
+<a name="line942">942: </a>  } <font color="#4169E1">else</font> <font color="#4169E1">if</font> (isstring) {
+<a name="line943">943: </a>    <a href="../../../../../docs/manualpages/ST/STGetType.html#STGetType">STGetType</a>(st,&amp;cstr);
+<a name="line944">944: </a>    PetscViewerStringSPrintf(viewer,<font color="#666666">" %-7.7s"</font>,cstr);
+<a name="line945">945: </a>    <font color="#4169E1">if</font> (st-&gt;ops-&gt;view) { (*st-&gt;ops-&gt;view)(st,viewer); }
+<a name="line946">946: </a>  }
+<a name="line947">947: </a>  <font color="#4169E1">if</font> (st-&gt;usesksp) {
+<a name="line948">948: </a>    <font color="#4169E1">if</font> (!st-&gt;ksp) { <a href="../../../../../docs/manualpages/ST/STGetKSP.html#STGetKSP">STGetKSP</a>(st,&amp;st-&gt;ksp); }
+<a name="line949">949: </a>    PetscViewerASCIIPushTab(viewer);
+<a name="line950">950: </a>    KSPView(st-&gt;ksp,viewer);
+<a name="line951">951: </a>    PetscViewerASCIIPopTab(viewer);
+<a name="line952">952: </a>  }
+<a name="line953">953: </a>  <font color="#4169E1">return</font>(0);
+<a name="line954">954: </a>}
+
+<a name="line956">956: </a><font color="#B22222">/*@C</font>
+<a name="line957">957: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STViewFromOptions.html#STViewFromOptions">STViewFromOptions</a> - View from options</font>
+
+<a name="line959">959: </a><font color="#B22222">   Collective on <a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a></font>
+
+<a name="line961">961: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line962">962: </a><font color="#B22222">+  st   - the spectral transformation context</font>
+<a name="line963">963: </a><font color="#B22222">.  obj  - optional object</font>
+<a name="line964">964: </a><font color="#B22222">-  name - command line option</font>
+
+<a name="line966">966: </a><font color="#B22222">   Level: intermediate</font>
+
+<a name="line968">968: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STView.html#STView">STView</a>(), <a href="../../../../../docs/manualpages/ST/STCreate.html#STCreate">STCreate</a>()</font>
+<a name="line969">969: </a><font color="#B22222">@*/</font>
+<a name="line970">970: </a><strong><font color="#4169E1"><a name="STViewFromOptions"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STViewFromOptions.html#STViewFromOptions">STViewFromOptions</a>(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a> st,PetscObject obj,const char name[])</font></strong>
+<a name="line971">971: </a>{
+
+<a name="line976">976: </a>  PetscObjectViewFromOptions((PetscObject)st,obj,name);
+<a name="line977">977: </a>  <font color="#4169E1">return</font>(0);
+<a name="line978">978: </a>}
+
+<a name="line980">980: </a><font color="#B22222">/*@C</font>
+<a name="line981">981: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STRegister.html#STRegister">STRegister</a> - Adds a method to the spectral transformation package.</font>
+
+<a name="line983">983: </a><font color="#B22222">   Not collective</font>
+
+<a name="line985">985: </a><font color="#B22222">   Input Parameters:</font>
+<a name="line986">986: </a><font color="#B22222">+  name - name of a new user-defined transformation</font>
+<a name="line987">987: </a><font color="#B22222">-  function - routine to create method context</font>
+
+<a name="line989">989: </a><font color="#B22222">   Notes:</font>
+<a name="line990">990: </a><font color="#B22222">   <a href="../../../../../docs/manualpages/ST/STRegister.html#STRegister">STRegister</a>() may be called multiple times to add several user-defined</font>
+<a name="line991">991: </a><font color="#B22222">   spectral transformations.</font>
+
+<a name="line993">993: </a><font color="#B22222">   Sample usage:</font>
+<a name="line994">994: </a><font color="#B22222">.vb</font>
+<a name="line995">995: </a><font color="#B22222">    <a href="../../../../../docs/manualpages/ST/STRegister.html#STRegister">STRegister</a>("my_transform",MyTransformCreate);</font>
+<a name="line996">996: </a><font color="#B22222">.ve</font>
+
+<a name="line998">998: </a><font color="#B22222">   Then, your spectral transform can be chosen with the procedural interface via</font>
+<a name="line999">999: </a><font color="#B22222">$     <a href="../../../../../docs/manualpages/ST/STSetType.html#STSetType">STSetType</a>(st,"my_transform")</font>
+<a name="line1000">1000: </a><font color="#B22222">   or at runtime via the option</font>
+<a name="line1001">1001: </a><font color="#B22222">$     -st_type my_transform</font>
+
+<a name="line1003">1003: </a><font color="#B22222">   Level: advanced</font>
+
+<a name="line1005">1005: </a><font color="#B22222">.seealso: <a href="../../../../../docs/manualpages/ST/STRegisterAll.html#STRegisterAll">STRegisterAll</a>()</font>
+<a name="line1006">1006: </a><font color="#B22222">@*/</font>
+<a name="line1007">1007: </a><strong><font color="#4169E1"><a name="STRegister"></a>PetscErrorCode <a href="../../../../../docs/manualpages/ST/STRegister.html#STRegister">STRegister</a>(const char *name,PetscErrorCode (*function)(<a href="../../../../../docs/manualpages/sys/ST.html#ST">ST</a>))</font></strong>
+<a name="line1008">1008: </a>{
+
+<a name="line1012">1012: </a>  <a href="../../../../../docs/manualpages/ST/STInitializePackage.html#STInitializePackage">STInitializePackage</a>();
+<a name="line1013">1013: </a>  PetscFunctionListAdd(&amp;STList,name,function);
+<a name="line1014">1014: </a>  <font color="#4169E1">return</font>(0);
+<a name="line1015">1015: </a>}
+
+</pre>
+</body>
+
+</html>

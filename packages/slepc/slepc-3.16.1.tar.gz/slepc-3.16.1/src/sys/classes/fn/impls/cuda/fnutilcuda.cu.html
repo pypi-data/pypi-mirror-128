@@ -1,0 +1,403 @@
+<center><a href="fnutilcuda.cu">Actual source code: fnutilcuda.cu</a></center><br>
+
+<html>
+<head> <link rel="canonical" href="https://slepc.upv.es/documentation/current/src/sys/classes/fn/impls/cuda/fnutilcuda.cu.html" />
+<title></title>
+<meta name="generator" content="c2html 0.9.4">
+<meta name="date" content="2021-11-17T14:29:20+00:00">
+</head>
+
+<body bgcolor="#FFFFFF">
+   <div id="version" align=right><b>slepc-3.16.1 2021-11-17</b></div>
+   <div id="bugreport" align=right><a href="mailto:slepc-maint@upv.es?subject=Typo or Error in Documentation &body=Please describe the typo or error in the documentation: slepc-3.16.1 v3.16.1 src/sys/classes/fn/impls/cuda/fnutilcuda.cu.html "><small>Report Typos and Errors</small></a></div>
+<pre width="80">
+<a name="line1">  1: </a><font color="#B22222">/*</font>
+<a name="line2">  2: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line3">  3: </a><font color="#B22222">   SLEPc - Scalable Library for Eigenvalue Problem Computations</font>
+<a name="line4">  4: </a><font color="#B22222">   Copyright (c) 2002-2021, Universitat Politecnica de Valencia, Spain</font>
+
+<a name="line6">  6: </a><font color="#B22222">   This file is part of SLEPc.</font>
+<a name="line7">  7: </a><font color="#B22222">   SLEPc is distributed under a 2-clause BSD license (see LICENSE).</font>
+<a name="line8">  8: </a><font color="#B22222">   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</font>
+<a name="line9">  9: </a><font color="#B22222">*/</font>
+<a name="line10"> 10: </a><font color="#B22222">/*</font>
+<a name="line11"> 11: </a><font color="#B22222">   Utility subroutines common to several impls</font>
+<a name="line12"> 12: </a><font color="#B22222">*/</font>
+
+<a name="line14"> 14: </a><font color="#A020F0">#include &lt;petscsys.h&gt;</font>
+<a name="line15"> 15: </a><font color="#A020F0">#include </font><font color="#666666">"fnutilcuda.h"</font><font color="#A020F0"></font>
+
+<a name="line17"> 17: </a><strong><font color="#4169E1"><a name="clean_offdiagonal_kernel"></a>__global__ void clean_offdiagonal_kernel(PetscInt n,PetscScalar *d_pa,PetscInt ld,PetscScalar v,PetscInt xcount)</font></strong>
+<a name="line18"> 18: </a>{
+<a name="line19"> 19: </a>  PetscInt x,j;
+<a name="line20"> 20: </a>  x = (xcount*gridDim.x*blockDim.x)+blockIdx.x*blockDim.x*TILE_SIZE_X+threadIdx.x*TILE_SIZE_X;
+
+<a name="line22"> 22: </a>  <font color="#4169E1">if</font> (x&lt;n) {
+<a name="line23"> 23: </a>    <font color="#4169E1">for</font> (j=0;j&lt;n;j++) {
+<a name="line24"> 24: </a>      <font color="#4169E1">if</font> (j != x) d_pa[x+j*ld] = 0.0;
+<a name="line25"> 25: </a>      <font color="#4169E1">else</font> d_pa[x+j*ld] = d_pa[x+j*ld]*v;
+<a name="line26"> 26: </a>    }
+<a name="line27"> 27: </a>  }
+<a name="line28"> 28: </a>}
+
+<a name="line30"> 30: </a><strong><font color="#4169E1"><a name="clean_offdiagonal"></a>__host__ PetscErrorCode clean_offdiagonal(PetscInt n,PetscScalar *d_pa,PetscInt ld,PetscScalar v)</font></strong>
+<a name="line31"> 31: </a>{
+<a name="line32"> 32: </a>  <font color="#B22222">/* XXX use 2D TBD */</font>
+<a name="line33"> 33: </a>  PetscInt    i,dimGrid_xcount;
+<a name="line34"> 34: </a>  dim3        blocks3d,threads3d;
+<a name="line35"> 35: </a>  cudaError_t cerr;
+
+<a name="line38"> 38: </a>  get_params_1D(n,&amp;blocks3d,&amp;threads3d,&amp;dimGrid_xcount);
+<a name="line39"> 39: </a>  <font color="#4169E1">for</font> (i=0;i&lt;dimGrid_xcount;i++) {
+<a name="line40"> 40: </a>    clean_offdiagonal_kernel&lt;&lt;&lt;blocks3d, threads3d&gt;&gt;&gt;(n,d_pa,ld,v,i);
+<a name="line41"> 41: </a>    cerr = cudaGetLastError();CHKERRCUDA(cerr);
+<a name="line42"> 42: </a>  }
+<a name="line43"> 43: </a>  <font color="#4169E1">return</font>(0);
+<a name="line44"> 44: </a>}
+
+<a name="line46"> 46: </a><strong><font color="#4169E1"><a name="set_diagonal_kernel"></a>__global__ void set_diagonal_kernel(PetscInt n,PetscScalar *d_pa,PetscInt ld,PetscScalar v,PetscInt xcount)</font></strong>
+<a name="line47"> 47: </a>{
+<a name="line48"> 48: </a>  PetscInt x;
+<a name="line49"> 49: </a>  x = (xcount*gridDim.x*blockDim.x)+blockIdx.x*blockDim.x+threadIdx.x;
+
+<a name="line51"> 51: </a>  <font color="#4169E1">if</font> (x&lt;n) {
+<a name="line52"> 52: </a>    d_pa[x+x*ld] = v;
+<a name="line53"> 53: </a>  }
+<a name="line54"> 54: </a>}
+
+<a name="line56"> 56: </a><strong><font color="#4169E1"><a name="set_diagonal"></a>__host__ PetscErrorCode set_diagonal(PetscInt n,PetscScalar *d_pa,PetscInt ld,PetscScalar v)</font></strong>
+<a name="line57"> 57: </a>{
+<a name="line58"> 58: </a>  PetscInt    i,dimGrid_xcount;
+<a name="line59"> 59: </a>  dim3        blocks3d,threads3d;
+<a name="line60"> 60: </a>  cudaError_t cerr;
+
+<a name="line63"> 63: </a>  get_params_1D(n,&amp;blocks3d,&amp;threads3d,&amp;dimGrid_xcount);
+<a name="line64"> 64: </a>  <font color="#4169E1">for</font> (i=0;i&lt;dimGrid_xcount;i++) {
+<a name="line65"> 65: </a>    set_diagonal_kernel&lt;&lt;&lt;blocks3d, threads3d&gt;&gt;&gt;(n,d_pa,ld,v,i);
+<a name="line66"> 66: </a>    cerr = cudaGetLastError();CHKERRCUDA(cerr);
+<a name="line67"> 67: </a>  }
+<a name="line68"> 68: </a>  <font color="#4169E1">return</font>(0);
+<a name="line69"> 69: </a>}
+
+<a name="line71"> 71: </a><strong><font color="#4169E1"><a name="set_Cdiagonal_kernel"></a>__global__ void set_Cdiagonal_kernel(PetscInt n,PetscComplex *d_pa,PetscInt ld,PetscReal vr,PetscReal vi,PetscInt xcount)</font></strong>
+<a name="line72"> 72: </a>{
+<a name="line73"> 73: </a>  PetscInt x;
+<a name="line74"> 74: </a>  x = (xcount*gridDim.x*blockDim.x)+blockIdx.x*blockDim.x+threadIdx.x;
+
+<a name="line76"> 76: </a>  <font color="#4169E1">if</font> (x&lt;n) {
+<a name="line77"> 77: </a>    d_pa[x+x*ld] = thrust::complex&lt;PetscReal&gt;(vr, vi);
+<a name="line78"> 78: </a>  }
+<a name="line79"> 79: </a>}
+
+<a name="line81"> 81: </a><strong><font color="#4169E1"><a name="set_Cdiagonal"></a>__host__ PetscErrorCode set_Cdiagonal(PetscInt n,PetscComplex *d_pa,PetscInt ld,PetscReal vr,PetscReal vi)</font></strong>
+<a name="line82"> 82: </a>{
+<a name="line83"> 83: </a>  PetscInt    i,dimGrid_xcount;
+<a name="line84"> 84: </a>  dim3        blocks3d,threads3d;
+<a name="line85"> 85: </a>  cudaError_t cerr;
+
+<a name="line88"> 88: </a>  get_params_1D(n,&amp;blocks3d,&amp;threads3d,&amp;dimGrid_xcount);
+<a name="line89"> 89: </a>  <font color="#4169E1">for</font> (i=0;i&lt;dimGrid_xcount;i++) {
+<a name="line90"> 90: </a>    set_Cdiagonal_kernel&lt;&lt;&lt;blocks3d, threads3d&gt;&gt;&gt;(n,d_pa,ld,vr,vi,i);
+<a name="line91"> 91: </a>    cerr = cudaGetLastError();CHKERRCUDA(cerr);
+<a name="line92"> 92: </a>  }
+<a name="line93"> 93: </a>  <font color="#4169E1">return</font>(0);
+<a name="line94"> 94: </a>}
+
+<a name="line96"> 96: </a><strong><font color="#4169E1"><a name="shift_diagonal_kernel"></a>__global__ void shift_diagonal_kernel(PetscInt n,PetscScalar *d_pa,PetscInt ld,PetscScalar v,PetscInt xcount)</font></strong>
+<a name="line97"> 97: </a>{
+<a name="line98"> 98: </a>  PetscInt x;
+<a name="line99"> 99: </a>  x = (xcount*gridDim.x*blockDim.x)+blockIdx.x*blockDim.x+threadIdx.x;
+
+<a name="line101">101: </a>  <font color="#4169E1">if</font> (x&lt;n) {
+<a name="line102">102: </a>    d_pa[x+x*ld] += v;
+<a name="line103">103: </a>  }
+<a name="line104">104: </a>}
+
+<a name="line106">106: </a><strong><font color="#4169E1"><a name="shift_diagonal"></a>__host__ PetscErrorCode shift_diagonal(PetscInt n,PetscScalar *d_pa,PetscInt ld,PetscScalar v)</font></strong>
+<a name="line107">107: </a>{
+<a name="line108">108: </a>  PetscInt    i,dimGrid_xcount;
+<a name="line109">109: </a>  dim3        blocks3d,threads3d;
+<a name="line110">110: </a>  cudaError_t cerr;
+
+<a name="line113">113: </a>  get_params_1D(n,&amp;blocks3d,&amp;threads3d,&amp;dimGrid_xcount);
+<a name="line114">114: </a>  <font color="#4169E1">for</font> (i=0;i&lt;dimGrid_xcount;i++) {
+<a name="line115">115: </a>    shift_diagonal_kernel&lt;&lt;&lt;blocks3d, threads3d&gt;&gt;&gt;(n,d_pa,ld,v,i);
+<a name="line116">116: </a>    cerr = cudaGetLastError();CHKERRCUDA(cerr);
+<a name="line117">117: </a>  }
+<a name="line118">118: </a>  <font color="#4169E1">return</font>(0);
+<a name="line119">119: </a>}
+
+<a name="line121">121: </a><strong><font color="#4169E1"><a name="shift_Cdiagonal_kernel"></a>__global__ void shift_Cdiagonal_kernel(PetscInt n,PetscComplex *d_pa,PetscInt ld,PetscReal vr,PetscReal vi,PetscInt xcount)</font></strong>
+<a name="line122">122: </a>{
+<a name="line123">123: </a>  PetscInt x;
+<a name="line124">124: </a>  x = (xcount*gridDim.x*blockDim.x)+blockIdx.x*blockDim.x+threadIdx.x;
+
+<a name="line126">126: </a>  <font color="#4169E1">if</font> (x&lt;n) {
+<a name="line127">127: </a>    d_pa[x+x*ld] += thrust::complex&lt;PetscReal&gt;(vr, vi);
+<a name="line128">128: </a>  }
+<a name="line129">129: </a>}
+
+<a name="line131">131: </a><strong><font color="#4169E1"><a name="shift_Cdiagonal"></a>__host__ PetscErrorCode shift_Cdiagonal(PetscInt n,PetscComplex *d_pa,PetscInt ld,PetscReal vr,PetscReal vi)</font></strong>
+<a name="line132">132: </a>{
+<a name="line133">133: </a>  PetscInt    i,dimGrid_xcount;
+<a name="line134">134: </a>  dim3        blocks3d,threads3d;
+<a name="line135">135: </a>  cudaError_t cerr;
+
+<a name="line138">138: </a>  get_params_1D(n,&amp;blocks3d,&amp;threads3d,&amp;dimGrid_xcount);
+<a name="line139">139: </a>  <font color="#4169E1">for</font> (i=0;i&lt;dimGrid_xcount;i++) {
+<a name="line140">140: </a>    shift_Cdiagonal_kernel&lt;&lt;&lt;blocks3d, threads3d&gt;&gt;&gt;(n,d_pa,ld,vr,vi,i);
+<a name="line141">141: </a>    cerr = cudaGetLastError();CHKERRCUDA(cerr);
+<a name="line142">142: </a>  }
+<a name="line143">143: </a>  <font color="#4169E1">return</font>(0);
+<a name="line144">144: </a>}
+
+<a name="line146">146: </a><strong><font color="#4169E1"><a name="copy_array2D_S2C_kernel"></a>__global__ void copy_array2D_S2C_kernel(PetscInt m,PetscInt n,PetscComplex *d_pa,PetscInt lda,PetscScalar *d_pb,PetscInt ldb,PetscInt xcount,PetscInt ycount)</font></strong>
+<a name="line147">147: </a>{
+<a name="line148">148: </a>  PetscInt x,y,i,j;
+
+<a name="line150">150: </a>  x = (xcount*gridDim.x*blockDim.x)+blockIdx.x*blockDim.x*TILE_SIZE_X+threadIdx.x*TILE_SIZE_X;
+<a name="line151">151: </a>  y = (ycount*gridDim.y*blockDim.y)+blockIdx.y*blockDim.y*TILE_SIZE_Y+threadIdx.y*TILE_SIZE_Y;
+<a name="line152">152: </a>  <font color="#4169E1">for</font> (i=x;i&lt;x+TILE_SIZE_X&amp;&amp;i&lt;m;i++) {
+<a name="line153">153: </a>    <font color="#4169E1">for</font> (j=y;j&lt;y+TILE_SIZE_Y&amp;&amp;j&lt;n;j++) {
+<a name="line154">154: </a>      d_pa[i+j*lda] = d_pb[i+j*ldb];
+<a name="line155">155: </a>    }
+<a name="line156">156: </a>  }
+<a name="line157">157: </a>}
+
+<a name="line159">159: </a><strong><font color="#4169E1"><a name="copy_array2D_S2C"></a>__host__ PetscErrorCode copy_array2D_S2C(PetscInt m,PetscInt n,PetscComplex *d_pa,PetscInt lda,PetscScalar *d_pb,PetscInt ldb)</font></strong>
+<a name="line160">160: </a>{
+<a name="line161">161: </a>  PetscInt    i,j,dimGrid_xcount,dimGrid_ycount;
+<a name="line162">162: </a>  dim3        blocks3d,threads3d;
+<a name="line163">163: </a>  cudaError_t cerr;
+
+<a name="line166">166: </a>  get_params_2D(m,n,&amp;blocks3d,&amp;threads3d,&amp;dimGrid_xcount,&amp;dimGrid_ycount);
+<a name="line167">167: </a>  <font color="#4169E1">for</font> (i=0;i&lt;dimGrid_xcount;i++) {
+<a name="line168">168: </a>    <font color="#4169E1">for</font> (j=0;j&lt;dimGrid_ycount;j++) {
+<a name="line169">169: </a>      copy_array2D_S2C_kernel&lt;&lt;&lt;blocks3d,threads3d&gt;&gt;&gt;(m,n,d_pa,lda,d_pb,ldb,i,j);
+<a name="line170">170: </a>      cerr = cudaGetLastError();CHKERRCUDA(cerr);
+<a name="line171">171: </a>    }
+<a name="line172">172: </a>  }
+<a name="line173">173: </a>  <font color="#4169E1">return</font>(0);
+<a name="line174">174: </a>}
+
+<a name="line176">176: </a><strong><font color="#4169E1"><a name="copy_array2D_C2S_kernel"></a>__global__ void copy_array2D_C2S_kernel(PetscInt m,PetscInt n,PetscScalar *d_pa,PetscInt lda,PetscComplex *d_pb,PetscInt ldb,PetscInt xcount,PetscInt ycount)</font></strong>
+<a name="line177">177: </a>{
+<a name="line178">178: </a>  PetscInt x,y,i,j;
+
+<a name="line180">180: </a>  x = (xcount*gridDim.x*blockDim.x)+blockIdx.x*blockDim.x*TILE_SIZE_X+threadIdx.x*TILE_SIZE_X;
+<a name="line181">181: </a>  y = (ycount*gridDim.y*blockDim.y)+blockIdx.y*blockDim.y*TILE_SIZE_Y+threadIdx.y*TILE_SIZE_Y;
+<a name="line182">182: </a>  <font color="#4169E1">for</font> (i=x;i&lt;x+TILE_SIZE_X&amp;&amp;i&lt;m;i++) {
+<a name="line183">183: </a>    <font color="#4169E1">for</font> (j=y;j&lt;y+TILE_SIZE_Y&amp;&amp;j&lt;n;j++) {
+<a name="line184">184: </a>      d_pa[i+j*lda] = PetscRealPartComplex(d_pb[i+j*ldb]);
+<a name="line185">185: </a>    }
+<a name="line186">186: </a>  }
+<a name="line187">187: </a>}
+
+<a name="line189">189: </a><strong><font color="#4169E1"><a name="copy_array2D_C2S"></a>__host__ PetscErrorCode copy_array2D_C2S(PetscInt m,PetscInt n,PetscScalar *d_pa,PetscInt lda,PetscComplex *d_pb,PetscInt ldb)</font></strong>
+<a name="line190">190: </a>{
+<a name="line191">191: </a>  PetscInt    i,j,dimGrid_xcount,dimGrid_ycount;
+<a name="line192">192: </a>  dim3        blocks3d,threads3d;
+<a name="line193">193: </a>  cudaError_t cerr;
+
+<a name="line196">196: </a>  get_params_2D(m,n,&amp;blocks3d,&amp;threads3d,&amp;dimGrid_xcount,&amp;dimGrid_ycount);
+<a name="line197">197: </a>  <font color="#4169E1">for</font> (i=0;i&lt;dimGrid_xcount;i++) {
+<a name="line198">198: </a>    <font color="#4169E1">for</font> (j=0;j&lt;dimGrid_ycount;j++) {
+<a name="line199">199: </a>      copy_array2D_C2S_kernel&lt;&lt;&lt;blocks3d,threads3d&gt;&gt;&gt;(m,n,d_pa,lda,d_pb,ldb,i,j);
+<a name="line200">200: </a>      cerr = cudaGetLastError();CHKERRCUDA(cerr);
+<a name="line201">201: </a>    }
+<a name="line202">202: </a>  }
+<a name="line203">203: </a>  <font color="#4169E1">return</font>(0);
+<a name="line204">204: </a>}
+
+<a name="line206">206: </a><strong><font color="#4169E1"><a name="add_array2D_Conj_kernel"></a>__global__ void add_array2D_Conj_kernel(PetscInt m,PetscInt n,PetscComplex *d_pa,PetscInt lda,PetscInt xcount,PetscInt ycount)</font></strong>
+<a name="line207">207: </a>{
+<a name="line208">208: </a>  PetscInt x,y,i,j;
+
+<a name="line210">210: </a>  x = (xcount*gridDim.x*blockDim.x)+blockIdx.x*blockDim.x*TILE_SIZE_X+threadIdx.x*TILE_SIZE_X;
+<a name="line211">211: </a>  y = (ycount*gridDim.y*blockDim.y)+blockIdx.y*blockDim.y*TILE_SIZE_Y+threadIdx.y*TILE_SIZE_Y;
+<a name="line212">212: </a>  <font color="#4169E1">for</font> (i=x;i&lt;x+TILE_SIZE_X&amp;&amp;i&lt;m;i++) {
+<a name="line213">213: </a>    <font color="#4169E1">for</font> (j=y;j&lt;y+TILE_SIZE_Y&amp;&amp;j&lt;n;j++) {
+<a name="line214">214: </a>      d_pa[i+j*lda] += PetscConj(d_pa[i+j*lda]);
+<a name="line215">215: </a>    }
+<a name="line216">216: </a>  }
+<a name="line217">217: </a>}
+
+<a name="line219">219: </a><strong><font color="#4169E1"><a name="add_array2D_Conj"></a>__host__ PetscErrorCode add_array2D_Conj(PetscInt m,PetscInt n,PetscComplex *d_pa,PetscInt lda)</font></strong>
+<a name="line220">220: </a>{
+<a name="line221">221: </a>  PetscInt    i,j,dimGrid_xcount,dimGrid_ycount;
+<a name="line222">222: </a>  dim3        blocks3d,threads3d;
+<a name="line223">223: </a>  cudaError_t cerr;
+
+<a name="line226">226: </a>  get_params_2D(m,n,&amp;blocks3d,&amp;threads3d,&amp;dimGrid_xcount,&amp;dimGrid_ycount);
+<a name="line227">227: </a>  <font color="#4169E1">for</font> (i=0;i&lt;dimGrid_xcount;i++) {
+<a name="line228">228: </a>    <font color="#4169E1">for</font> (j=0;j&lt;dimGrid_ycount;j++) {
+<a name="line229">229: </a>      add_array2D_Conj_kernel&lt;&lt;&lt;blocks3d,threads3d&gt;&gt;&gt;(m,n,d_pa,lda,i,j);
+<a name="line230">230: </a>      cerr = cudaGetLastError();CHKERRCUDA(cerr);
+<a name="line231">231: </a>    }
+<a name="line232">232: </a>  }
+<a name="line233">233: </a>  <font color="#4169E1">return</font>(0);
+<a name="line234">234: </a>}
+
+<a name="line236">236: </a><strong><font color="#4169E1"><a name="getisreal_array2D_kernel"></a>__global__ void getisreal_array2D_kernel(PetscInt m,PetscInt n,PetscComplex *d_pa,PetscInt lda,PetscBool *d_result,PetscInt xcount,PetscInt ycount)</font></strong>
+<a name="line237">237: </a>{
+<a name="line238">238: </a>  PetscInt x,y,i,j;
+
+<a name="line240">240: </a>  x = (xcount*gridDim.x*blockDim.x)+blockIdx.x*blockDim.x*TILE_SIZE_X+threadIdx.x*TILE_SIZE_X;
+<a name="line241">241: </a>  y = (ycount*gridDim.y*blockDim.y)+blockIdx.y*blockDim.y*TILE_SIZE_Y+threadIdx.y*TILE_SIZE_Y;
+<a name="line242">242: </a>  <font color="#4169E1">if</font> (*d_result) {
+<a name="line243">243: </a>    <font color="#4169E1">for</font> (i=x;i&lt;x+TILE_SIZE_X&amp;&amp;i&lt;m;i++) {
+<a name="line244">244: </a>      <font color="#4169E1">for</font> (j=y;j&lt;y+TILE_SIZE_Y&amp;&amp;j&lt;n;j++) {
+<a name="line245">245: </a>        <font color="#4169E1">if</font> (PetscImaginaryPartComplex(d_pa[i+j*lda])) *d_result=PETSC_FALSE;
+<a name="line246">246: </a>      }
+<a name="line247">247: </a>    }
+<a name="line248">248: </a>  }
+<a name="line249">249: </a>}
+
+<a name="line251">251: </a><strong><font color="#4169E1"><a name="getisreal_array2D"></a>__host__ PetscErrorCode getisreal_array2D(PetscInt m,PetscInt n,PetscComplex *d_pa,PetscInt lda,PetscBool *d_result)</font></strong>
+<a name="line252">252: </a>{
+<a name="line253">253: </a>  PetscInt    i,j,dimGrid_xcount,dimGrid_ycount;
+<a name="line254">254: </a>  PetscBool   result=PETSC_TRUE;
+<a name="line255">255: </a>  dim3        blocks3d,threads3d;
+<a name="line256">256: </a>  cudaError_t cerr;
+
+<a name="line259">259: </a>  cerr = cudaMemcpy(d_result,&amp;result,<font color="#4169E1">sizeof</font>(PetscBool),cudaMemcpyHostToDevice);CHKERRCUDA(cerr);
+<a name="line260">260: </a>  get_params_2D(m,n,&amp;blocks3d,&amp;threads3d,&amp;dimGrid_xcount,&amp;dimGrid_ycount);
+<a name="line261">261: </a>  <font color="#4169E1">for</font> (i=0;i&lt;dimGrid_xcount;i++) {
+<a name="line262">262: </a>    <font color="#4169E1">for</font> (j=0;j&lt;dimGrid_ycount;j++) {
+<a name="line263">263: </a>      getisreal_array2D_kernel&lt;&lt;&lt;blocks3d,threads3d&gt;&gt;&gt;(m,n,d_pa,lda,d_result,i,j);
+<a name="line264">264: </a>      cerr = cudaGetLastError();CHKERRCUDA(cerr);
+<a name="line265">265: </a>    }
+<a name="line266">266: </a>  }
+<a name="line267">267: </a>  <font color="#4169E1">return</font>(0);
+<a name="line268">268: </a>}
+
+<a name="line270">270: </a>//template &lt;class T, unsigned int bs&gt;
+<a name="line271">271: </a>//__global__ void mult_diagonal_kernel(T *d_pa,PetscInt n,PetscInt ld,T *d_v,PetscInt xcount)
+<a name="line272">272: </a>//{
+<a name="line273">273: </a>//  PetscInt            x;
+<a name="line274">274: </a>//  extern __shared__ T *shrdres;
+<a name="line275">275: </a>//
+<a name="line276">276: </a>//  x = (xcount*gridDim.x*blockDim.x)+blockIdx.x*blockDim.x*TILE_SIZE_X+threadIdx.x*TILE_SIZE_X;
+<a name="line277">277: </a>//
+<a name="line278">278: </a>//  <font color="#4169E1">if</font> (x&lt;n) {
+<a name="line279">279: </a>//    shrdres[x] = d_pa[x+ld*x];
+<a name="line280">280: </a>//    __syncthreads();
+<a name="line281">281: </a>//
+<a name="line282">282: </a>//    <font color="#B22222">/* reduction */</font>
+<a name="line283">283: </a>//    <font color="#4169E1">if</font> ((bs &gt;= 512) &amp;&amp; (threadIdx.x &lt; 256)) { shrdres[threadIdx.x] *= shrdres[threadIdx.x + 256]; } __syncthreads();
+<a name="line284">284: </a>//    <font color="#4169E1">if</font> ((bs &gt;= 256) &amp;&amp; (threadIdx.x &lt; 128)) { shrdres[threadIdx.x] *= shrdres[threadIdx.x + 128]; } __syncthreads();
+<a name="line285">285: </a>//    <font color="#4169E1">if</font> ((bs &gt;= 128) &amp;&amp; (threadIdx.x &lt;  64)) { shrdres[threadIdx.x] *= shrdres[threadIdx.x +  64]; } __syncthreads();
+<a name="line286">286: </a>//    <font color="#4169E1">if</font> ((bs &gt;=  64) &amp;&amp; (threadIdx.x &lt;  32)) { shrdres[threadIdx.x] *= shrdres[threadIdx.x +  32]; } __syncthreads();
+<a name="line287">287: </a>//    <font color="#4169E1">if</font> ((bs &gt;=  32) &amp;&amp; (threadIdx.x &lt;  16)) { shrdres[threadIdx.x] *= shrdres[threadIdx.x +  16]; } __syncthreads();
+<a name="line288">288: </a>//    <font color="#4169E1">if</font> ((bs &gt;=  16) &amp;&amp; (threadIdx.x &lt;   8)) { shrdres[threadIdx.x] *= shrdres[threadIdx.x +   8]; } __syncthreads();
+<a name="line289">289: </a>//    <font color="#4169E1">if</font> ((bs &gt;=   8) &amp;&amp; (threadIdx.x &lt;   4)) { shrdres[threadIdx.x] *= shrdres[threadIdx.x +   4]; } __syncthreads();
+<a name="line290">290: </a>//    <font color="#4169E1">if</font> ((bs &gt;=   4) &amp;&amp; (threadIdx.x &lt;   2)) { shrdres[threadIdx.x] *= shrdres[threadIdx.x +   2]; } __syncthreads();
+<a name="line291">291: </a>//    <font color="#4169E1">if</font> ((bs &gt;=   2) &amp;&amp; (threadIdx.x &lt;   1)) { shrdres[threadIdx.x] *= shrdres[threadIdx.x +   1]; } __syncthreads();
+<a name="line292">292: </a>//
+<a name="line293">293: </a>//    <font color="#4169E1">if</font> (threadIdx.x == 0) d_v[blockIdx.x] = shrdres[threadIdx.x];
+<a name="line294">294: </a>//  }
+<a name="line295">295: </a>//
+<a name="line296">296: </a>//}
+<a name="line297">297: </a>//
+<a name="line298">298: </a>//__host__ PetscErrorCode mult_diagonal(PetscScalar *d_pa,PetscInt n, PetscInt ld,PetscScalar *v)
+<a name="line299">299: </a>//{
+<a name="line300">300: </a>//  PetscInt       i,j,dimGrid_xcount;
+<a name="line301">301: </a>//  PetscScalar    *part,*d_part;
+<a name="line303">303: </a>//  dim3           blocks3d,threads3d;
+<a name="line304">304: </a>//  cudaError_t    cerr;
+<a name="line305">305: </a>//
+<a name="line307">307: </a>//  get_params_1D(n,&amp;blocks3d,&amp;threads3d,&amp;dimGrid_xcount);
+<a name="line308">308: </a>//  cerr = cudaMalloc((void **)&amp;d_part,<font color="#4169E1">sizeof</font>(PetscScalar)*blocks3d.x);CHKERRCUDA(cerr);
+<a name="line309">309: </a>//  PetscMalloc1(blocks3d.x,&amp;part);
+<a name="line310">310: </a>//  <font color="#4169E1">for</font> (i=0;i&lt;dimGrid_xcount;i++) {
+<a name="line311">311: </a>//    mult_diagonal_kernel&lt;threads3d.x&gt;&lt;&lt;&lt;blocks3d, threads3d&gt;&gt;&gt;(d_pa,n,ld,d_part,i);
+<a name="line312">312: </a>//    cerr = cudaGetLastError();CHKERRCUDA(cerr);
+<a name="line313">313: </a>//
+<a name="line314">314: </a>//    cerr = cudaMemcpy(part,d_part,blocks3d.x*<font color="#4169E1">sizeof</font>(PetscScalar),cudaMemcpyDeviceToHost);CHKERRCUDA(cerr);
+<a name="line315">315: </a>//    <font color="#4169E1">if</font> (i == 0) {
+<a name="line316">316: </a>//      *v = part[0];
+<a name="line317">317: </a>//      j=1;
+<a name="line318">318: </a>//    } <font color="#4169E1">else</font> {
+<a name="line319">319: </a>//      j=0;
+<a name="line320">320: </a>//    }
+<a name="line321">321: </a>//    <font color="#4169E1">for</font> (; j&lt;blocks3d.x; j++) {
+<a name="line322">322: </a>//      *v *= part[j];
+<a name="line323">323: </a>//    }
+<a name="line324">324: </a>//  }
+<a name="line325">325: </a>//  cerr = cudaFree(d_part);CHKERRCUDA(cerr);
+<a name="line326">326: </a>//  PetscFree(part);
+<a name="line327">327: </a>//  <font color="#4169E1">return</font>(0);
+<a name="line328">328: </a>//}
+
+<a name="line330">330: </a><strong><font color="#4169E1"><a name="get_params_1D"></a>__host__ PetscErrorCode get_params_1D(PetscInt rows,dim3 *dimGrid,dim3 *dimBlock,PetscInt *dimGrid_xcount)</font></strong>
+<a name="line331">331: </a>{
+<a name="line332">332: </a>  int                   card;
+<a name="line333">333: </a>  <font color="#4169E1">struct cudaDeviceProp</font> devprop;
+<a name="line334">334: </a>  cudaError_t           cerr;
+
+<a name="line337">337: </a>  cerr = cudaGetDevice(&amp;card);CHKERRCUDA(cerr);
+<a name="line338">338: </a>  cerr = cudaGetDeviceProperties(&amp;devprop,card);CHKERRCUDA(cerr);
+
+<a name="line340">340: </a>  *dimGrid_xcount = 1;
+
+<a name="line342">342: </a>  // X axis
+<a name="line343">343: </a>  dimGrid-&gt;x  = 1;
+<a name="line344">344: </a>  dimBlock-&gt;x = BLOCK_SIZE_X;
+<a name="line345">345: </a>  <font color="#4169E1">if</font> (rows&gt;(BLOCK_SIZE_X*TILE_SIZE_X)) {
+<a name="line346">346: </a>    dimGrid-&gt;x = (rows+((BLOCK_SIZE_X*TILE_SIZE_X)-1))/(BLOCK_SIZE_X*TILE_SIZE_X);
+<a name="line347">347: </a>  } <font color="#4169E1">else</font> {
+<a name="line348">348: </a>    dimBlock-&gt;x = (rows+(TILE_SIZE_X-1))/TILE_SIZE_X;
+<a name="line349">349: </a>  }
+
+<a name="line351">351: </a>  <font color="#4169E1">if</font> (dimGrid-&gt;x&gt;(unsigned)devprop.maxGridSize[X_AXIS]) {
+<a name="line352">352: </a>    *dimGrid_xcount = (dimGrid-&gt;x+(devprop.maxGridSize[X_AXIS]-1))/devprop.maxGridSize[X_AXIS];
+<a name="line353">353: </a>    dimGrid-&gt;x = devprop.maxGridSize[X_AXIS];
+<a name="line354">354: </a>  }
+<a name="line355">355: </a>  <font color="#4169E1">return</font>(0);
+<a name="line356">356: </a>}
+
+<a name="line358">358: </a><strong><font color="#4169E1"><a name="get_params_2D"></a>__host__ PetscErrorCode get_params_2D(PetscInt rows,PetscInt cols,dim3 *dimGrid,dim3 *dimBlock,PetscInt *dimGrid_xcount,PetscInt *dimGrid_ycount)</font></strong>
+<a name="line359">359: </a>{
+<a name="line360">360: </a>  int                   card;
+<a name="line361">361: </a>  cudaError_t           cerr;
+<a name="line362">362: </a>  <font color="#4169E1">struct cudaDeviceProp</font> devprop;
+
+<a name="line365">365: </a>  cerr = cudaGetDevice(&amp;card);CHKERRCUDA(cerr);
+<a name="line366">366: </a>  cerr = cudaGetDeviceProperties(&amp;devprop,card);CHKERRCUDA(cerr);
+
+<a name="line368">368: </a>  *dimGrid_xcount = *dimGrid_ycount = 1;
+
+<a name="line370">370: </a>  // X axis
+<a name="line371">371: </a>  dimGrid-&gt;x  = 1;
+<a name="line372">372: </a>  dimBlock-&gt;x = BLOCK_SIZE_X;
+<a name="line373">373: </a>  <font color="#4169E1">if</font> (rows &gt; (BLOCK_SIZE_X*TILE_SIZE_X)) {
+<a name="line374">374: </a>    dimGrid-&gt;x = (rows+((BLOCK_SIZE_X*TILE_SIZE_X)-1))/(BLOCK_SIZE_X*TILE_SIZE_X);
+<a name="line375">375: </a>  } <font color="#4169E1">else</font> {
+<a name="line376">376: </a>    dimBlock-&gt;x = (rows+(TILE_SIZE_X-1))/TILE_SIZE_X;
+<a name="line377">377: </a>  }
+
+<a name="line379">379: </a>  <font color="#4169E1">if</font> (dimGrid-&gt;x&gt;(unsigned)devprop.maxGridSize[X_AXIS]) {
+<a name="line380">380: </a>    *dimGrid_xcount = (dimGrid-&gt;x+(devprop.maxGridSize[X_AXIS]-1))/devprop.maxGridSize[X_AXIS];
+<a name="line381">381: </a>    dimGrid-&gt;x = devprop.maxGridSize[X_AXIS];
+<a name="line382">382: </a>  }
+
+<a name="line384">384: </a>  // Y axis
+<a name="line385">385: </a>  dimGrid-&gt;y  = 1;
+<a name="line386">386: </a>  dimBlock-&gt;y = BLOCK_SIZE_Y;
+<a name="line387">387: </a>  <font color="#4169E1">if</font> (cols&gt;(BLOCK_SIZE_Y*TILE_SIZE_Y)) {
+<a name="line388">388: </a>    dimGrid-&gt;y = (cols+((BLOCK_SIZE_Y*TILE_SIZE_Y)-1))/(BLOCK_SIZE_Y*TILE_SIZE_Y);
+<a name="line389">389: </a>  } <font color="#4169E1">else</font> {
+<a name="line390">390: </a>    dimBlock-&gt;y = (cols+(TILE_SIZE_Y-1))/TILE_SIZE_Y;
+<a name="line391">391: </a>  }
+
+<a name="line393">393: </a>  <font color="#4169E1">if</font> (dimGrid-&gt;y&gt;(unsigned)devprop.maxGridSize[Y_AXIS]) {
+<a name="line394">394: </a>    *dimGrid_ycount = (dimGrid-&gt;y+(devprop.maxGridSize[Y_AXIS]-1))/devprop.maxGridSize[Y_AXIS];
+<a name="line395">395: </a>    dimGrid-&gt;y = devprop.maxGridSize[Y_AXIS];
+<a name="line396">396: </a>  }
+<a name="line397">397: </a>  <font color="#4169E1">return</font>(0);
+<a name="line398">398: </a>}
+
+</pre>
+</body>
+
+</html>
