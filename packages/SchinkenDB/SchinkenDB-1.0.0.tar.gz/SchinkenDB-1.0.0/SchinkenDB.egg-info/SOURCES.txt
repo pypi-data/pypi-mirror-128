@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+SchinkenDB/SchinkenDB.py
+SchinkenDB/__init__.py
+SchinkenDB/__main__.py
+SchinkenDB.egg-info/PKG-INFO
+SchinkenDB.egg-info/SOURCES.txt
+SchinkenDB.egg-info/dependency_links.txt
+SchinkenDB.egg-info/requires.txt
+SchinkenDB.egg-info/top_level.txt
