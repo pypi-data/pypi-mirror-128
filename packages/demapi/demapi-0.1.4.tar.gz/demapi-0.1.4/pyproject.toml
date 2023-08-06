@@ -1,0 +1,48 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "demapi"
+version = "0.1.4"
+description = "Make customizable demotivators and motivators through imgonline.com.ua API. Supports async-await style"
+authors = ["Yan Kurbatov <deknowny@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/deknowny/demapi"
+documentation = "https://github.com/deknowny/demapi/blob/main/GUIDE.md"
+readme = "README.md"
+keywords = [
+    "demotivators", "imgonline", "async", "await", "aio"
+]
+classifiers = [
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Typing :: Typed",
+    "Topic :: Utilities",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.26.0"
+aiohttp = "^3.8.1"
+certifi = "^2021.10.8"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+isort = "^5.10.1"
+pre-commit = "^2.15.0"
+pytest-cov = "^3.0.0"
+coveralls = "^3.3.1"
+coverage = "^6.1.2"
+pytest-asyncio = "^0.16.0"
+
+[tool.black]
+line-length = 78
+
+[tool.isort]
+profile = "wemake"
+src_paths = ["demapi", "tests"]
+line_length = 78
