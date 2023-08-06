@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "pybricks"
+version = "3.1.0rc1"
+description = "Documentation and user-API stubs for Pybricks MicroPython"
+authors = ["The Pybricks Authors <dev@pybricks.com>"]
+maintainers = ["Laurens Valk <laurens@pybricks.com>", "David Lechner <david@pybricks.com>" ]
+license = "MIT"
+readme = "README.rst"
+homepage = "https://pybricks.com"
+repository = "https://github.com/pybricks/pybricks-api"
+documentation = "https://docs.pybricks.com"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: Implementation :: MicroPython",
+]
+packages = [
+    { include = "pybricks", from = "src" },
+    { include = "micropython", from = "src" },
+    { include = "uerrno", from = "src" },
+    { include = "uio", from = "src" },
+    { include = "umath", from = "src" },
+    { include = "urandom", from = "src" },
+    { include = "uselect", from = "src" },
+    { include = "usys", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^20.8b1", allow-prereleases = true}
+doc8 = "^0.8.1"
+flake8 = "^3.8.4"
+Sphinx = "^4.1.0"
+sphinx-rtd-theme = { git = "https://github.com/readthedocs/sphinx_rtd_theme.git", rev = "f5b02911ae074c09e690d2ad87ef95c0b2ee678c" }
+toml = "^0.10.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
