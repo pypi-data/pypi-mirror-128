@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: quart-shell-ipython
+Version: 0.1.1
+Summary: Startup the quart shell with ipython
+Home-page: https://github.com/ponytailer/quart-shell-ipython.git
+License: MIT
+Author: hs
+Author-email: huangxiaohen2738@gmail.com
+Requires-Python: >=3.7
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ipython
+Requires-Dist: quart
+Project-URL: Repository, https://github.com/ponytailer/quart-shell-ipython.git
+Description-Content-Type: text/markdown
+
+# quart-shell-ipython
+
+generated from flask-shell-ipython
+
+Start quart shell with ipython, if it installed
+
