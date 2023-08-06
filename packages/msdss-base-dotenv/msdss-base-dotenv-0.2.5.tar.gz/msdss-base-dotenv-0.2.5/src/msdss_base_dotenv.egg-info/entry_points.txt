@@ -1,0 +1,3 @@
+[console_scripts]
+msdss-dotenv = msdss_base_dotenv.cli:run
+
