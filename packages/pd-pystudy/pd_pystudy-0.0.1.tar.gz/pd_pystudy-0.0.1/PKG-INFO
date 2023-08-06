@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pd_pystudy
+Version: 0.0.1
+Summary: a easy package of Shanghai student for easy study
+Home-page: UNKNOWN
+Author: pvgobserver
+Author-email: variflight@feiyou.chat
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# shpystudy
+
+This is a package for Shanghai student to use python. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
