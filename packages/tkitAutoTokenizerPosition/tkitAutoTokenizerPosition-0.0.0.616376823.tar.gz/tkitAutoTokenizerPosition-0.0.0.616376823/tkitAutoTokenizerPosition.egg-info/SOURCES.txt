@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+test/test.py
+tkitAutoTokenizerPosition/AutoPos.py
+tkitAutoTokenizerPosition/AutoTokenizerPosition.py
+tkitAutoTokenizerPosition/__init__.py
+tkitAutoTokenizerPosition/bio.py
+tkitAutoTokenizerPosition/span.py
+tkitAutoTokenizerPosition.egg-info/PKG-INFO
+tkitAutoTokenizerPosition.egg-info/SOURCES.txt
+tkitAutoTokenizerPosition.egg-info/dependency_links.txt
+tkitAutoTokenizerPosition.egg-info/requires.txt
+tkitAutoTokenizerPosition.egg-info/top_level.txt

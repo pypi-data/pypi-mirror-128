@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: tkitAutoTokenizerPosition
+Version: 0.0.0.616376823
+Summary: Terry toolkit tkitAutoTokenizerPosition,
+Home-page: https://docs.terrychan.org/tkit-AutoTokenizerPosition/index.html
+Author: Terry Chan
+Author-email: napoler2008@gmail.com
+License: UNKNOWN
+Description: # tkitAutoTokenizerPosition
+        
+        
+        用于处理AutoTokenizer分词后位置修正，可用于BIO序列问题。
+        
+        
+        ## 安装
+        
+        ```
+        
+        pip install tkitAutoTokenizerPosition
+        # or
+        pip install git+https://github.com/napoler/tkit-AutoTokenizerPosition
+        
+        ```
+        
+        示例
+        
+        https://github.com/napoler/tkit-AutoTokenizerPosition/blob/master/demo.ipynb
+        
+        
+        
+        
+        文档查看
+        https://docs.terrychan.org/tkit-AutoTokenizerPosition/
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
