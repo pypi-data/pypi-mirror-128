@@ -1,0 +1,8 @@
+gemseo>=3.2.0
+petsc4py>=3
+
+[test]
+packaging<21
+pytest
+pytest-cov
+pytest-xdist
