@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+modules = \
+['pydupes']
+install_requires = \
+['click', 'tqdm>=4,<5']
+
+entry_points = \
+{'console_scripts': ['pydupes = pydupes:main']}
+
+setup_kwargs = {
+    'name': 'pydupes',
+    'version': '0.1.0',
+    'description': 'A duplicate file finder that may be faster in environments with millions of files and terabytes of data.',
+    'long_description': '`pydupes` is yet another duplicate file finder like rdfind/fdupes et al\nthat may be faster in environments with millions of files and terabytes\nof data or over high latency filesystems (e.g. NFS).\n\n-------------------\n\nThe algorithm is similar to [rdfind](https://github.com/pauldreik/rdfind) with threading and consolidation of\nfiltering logic (instead of separate passes).\n- traverse the input paths, collecting the inodes and file sizes\n- for each set of files with the same size:\n  - further split by matching 4KB on beginning/ends of files\n  - for each non-unique (by size, boundaries) candidate set, compute the sha256 and emit pairs with matching hash\n\nConstraints:\n- traversals do not span multiple devices\n- symlink following not implemented\n- concurrent modification of a traversed directory could produce false duplicate pairs \n(modification after hash computation)\n\n## Setup\n```bash\n# via pip\npip3 install --user --upgrade pydupes\n\n# or simply if pipx installed:\npipx run pydupes --help\n```\n\n## Usage\n\n```bash\n# Collect counts and stage the duplicate files, null-delimited source-target pairs:\npydupes /path1 /path2 --progress --output dupes.txt\n\n# Sanity check a hardlinking of all matches:\nxargs -0 -n2 echo ln --force --verbose {} {} < dupes.txt\n```\n\n## Benchmarks\nHardware is a 6 spinning disk RAID5 ext4 with\n250GB memory, Ubuntu 18.04. Peak memory and runtimes via:\n```/usr/bin/time -v```.\n\n### Dataset 1:\n- Directories: ~33k\n- Files: ~14 million\n- Total size: 11TB\n\nThe tradeoff here is a 2x decrease in wall-clock time vs a 4x on peak memory.\n\n#### Pydupes\n- Elapsed (wall clock) time (h:mm:ss or m:ss): 46:52.66\n- Maximum resident set size (kbytes): 11564692 (~11GB)\n```\nINFO:pydupes:Traversing input paths: [\'/raid/erik\']\nINFO:pydupes:Traversal time: 343.7s\nINFO:pydupes:Cursory file count: 14419138 (10.9TiB), excluding symlinks and dupe inodes\nINFO:pydupes:Directory count: 33376\nINFO:pydupes:Size filter reduced file count to: 14114518 (7.3TiB)\nINFO:pydupes:Comparison time: 2462.0s\nINFO:pydupes:Total time elapsed: 2805.8s\nINFO:pydupes:Number of duplicate files: 936948\nINFO:pydupes:Size of duplicate content: 304.1GiB\n```\n\n#### rdfind\n- Elapsed (wall clock) time (h:mm:ss or m:ss): 1:57:20\n- Maximum resident set size (kbytes): 3636396 (~3GB)\n```\nNow scanning "/raid/erik", found 14419182 files.\nNow have 14419182 files in total.\nRemoved 44 files due to nonunique device and inode.\nNow removing files with zero size from list...removed 2396 files\nTotal size is 11961280180699 bytes or 11 TiB\nNow sorting on size:removed 301978 files due to unique sizes from list.14114764 files left.\nNow eliminating candidates based on first bytes:removed 8678999 files from list.5435765 files left.\nNow eliminating candidates based on last bytes:removed 3633992 files from list.1801773 files left.\nNow eliminating candidates based on md5 checksum:removed 158638 files from list.1643135 files left.\nIt seems like you have 1643135 files that are not unique\nTotally, 304 GiB can be reduced.\n```\n',
+    'author': 'Erik Reed',
+    'author_email': 'erik.reed@pm.me',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/erikreed/pydupes',
+    'py_modules': modules,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.5,<4.0',
+}
+
+
+setup(**setup_kwargs)
