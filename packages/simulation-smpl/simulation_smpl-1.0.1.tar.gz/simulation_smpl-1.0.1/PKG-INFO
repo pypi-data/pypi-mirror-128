@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: simulation_smpl
+Version: 1.0.1
+Summary: A Python implementation of the discrete event simulation environment 'smpl' (original C version by Myron H. MacDougall)
+Home-page: UNKNOWN
+License: MIT
+Project-URL: Bug Tracker, https://github.com/fontoura/smpl-Python/issues
+Project-URL: Source Code, https://github.com/fontoura/smpl-Python
+Keywords: simulation,smpl
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# smpl-Python
+A Python implementation of the discrete event simulation environment 'smpl'. The original 'smpl' library was developed by Myron H. MacDougall. This version is mostly based on the C implementation of the library, which was released on October 22, 1987. This version is also based on the C version with bugfixes provided by Elias Procópio Duarte Júnior, and on the C version provided by Teemu Kerola.
+
+
