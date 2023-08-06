@@ -1,0 +1,13 @@
+datadownloader/__init__.py,sha256=ZwDyehJv2Xkl17-8ApapxZfXYTu3Dusy6cuYzqvZmUI,101
+datadownloader/models.py,sha256=CjELPaVIZ-Rvy-1rO4EvDo9hHkXjgev-8cFkUNOGIRg,3743
+datadownloader/urls.py,sha256=VgYQlsNE_RCnyjUxWu2IDuy2HZW2D5RTysiQAOTXDtQ,630
+datadownloader/views.py,sha256=0mcDY5Y8cjVWwnYIsTo3cxEGoIF7cW4qeDJQ4lZ8ufU,2514
+datadownloader/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datadownloader/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datadownloader/management/commands/datadownload.py,sha256=FoNh7AodR3UMhWAfdkjo_2_SAUv2ihdqcd-w-WyIERA,4717
+datadownloader/templates/admin/datadownloader/index.html,sha256=0ZsZKgomXrSOPP-rfOaZwjoGbWnuUuzMt83PCewjqDA,2597
+django_datadownloader-1.2.0.dist-info/LICENSE.txt,sha256=yE_iUttDLurhVrc7zuCQbKmWkdidh-X9vphcNSNxMGY,34462
+django_datadownloader-1.2.0.dist-info/METADATA,sha256=tQnTJYwzzySBkjsgp0GBdz3V9EGPC4KTNaZF_oWaXrc,4013
+django_datadownloader-1.2.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+django_datadownloader-1.2.0.dist-info/top_level.txt,sha256=BNcHEjsj4-50Fo2JQbufvJgWyUo0KV3cbfsv-0IynF0,15
+django_datadownloader-1.2.0.dist-info/RECORD,,

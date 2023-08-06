@@ -1,0 +1,164 @@
+Metadata-Version: 2.1
+Name: django-datadownloader
+Version: 1.2.0
+Summary: Admin interface to manage archives of db's json dumps and/or media datas
+Home-page: http://pypi.python.org/pypi/django-datadownloader
+Author: Philippe Lafaye
+Author-email: lafaye@emencia.com
+License: GNU Affero General Public License v3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.7
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django :: 1.9
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: six
+Requires-Dist: django (>=1.8)
+Requires-Dist: dr-dump (>=1.1.5)
+Requires-Dist: django-sendfile (>=0.3.11)
+
+=====================
+django-datadownloader
+=====================
+
+Description
+***********
+
+This django app is an app tool that add an admin interface to manage archives
+of database's json dumps and/or media datas.
+
+Packages can be download with
+`django-sendfile <https://pypi.python.org/pypi/django-sendfile>`_.
+
+Install
+*******
+
+You can retrieve it via pip: ::
+
+    pip install django-datadownloader
+
+Usage
+*****
+
+You need to add two libraries in your ``INSTALLED_APPS``: ::
+
+    INSTALLED_APPS = (
+        ...
+        'drdump',
+        'datadownloader',
+        ...
+    )
+
+Add this to your URLs: ::
+
+    urlpatterns = [
+        ...
+        url(r'^admin/datadownloader/', include('datadownloader.urls')),
+        ...
+    ]
+
+You can add a few options: ::
+
+    DATA_DOWNLOADER_PATH = join(VAR_PATH, 'protected_medias/datas')
+    DATA_DOWNLOADER_DUMP_PATH = join(VAR_PATH, 'dumps')
+    DRDUMP_OTHER_APPS = True
+    DRDUMP_MAP_FILE = join(BASE_DIR, 'drdump.json')
+    DRDUMP_EXCLUDE_APPS = ['auth', 'sessions', 'contenttypes']
+
+See DrDump documentation for more: https://github.com/emencia/dr-dump
+
+Links
+*****
+
+* Pypi page: https://pypi.python.org/pypi/django-datadownloader
+* Github page: https://github.com/emencia/django-datadownloader
+
+
+Running tests
+*************
+
+To run the tests, run the django test management command with the settings
+found inside ``datadownloader.tests.settings``: ::
+
+    $ django-admin test --pythonpath=. --settings=datadownloader.tests.settings
+
+You must install mock if you run python2 or python < 3.4.
+
+Changelog
+=========
+
+1.2.0 - 2021/11/23
+------------------
+
+Add settings DATA_DOWNLOADER_DUMP_PATH for specify folder where drdump dumps
+are stored
+
+1.1.0 - 2021/06/08
+------------------
+
+Package now depends on "six" instead of using the deprecated embedded "six" module from
+Django which are not available anymore since Django 3.0.
+
+1.x will be the last serie to support Python 2 and Django<2.2 versions, new serie 2.x
+will only support recent Python3 and Django versions.
+
+Also did some cleaning in package setup and dependancies to fit to supported versions:
+
+* six
+* django>=1.8
+* dr-dump>=1.1.0
+* django-sendfile>=0.3.11
+
+
+1.0.0 - 2018/09/26
+------------------
+
+Rewrite version.
+
+Previously only release on a private package mirror, it have been release publicy to
+official Pypi on 2021/06/07.
+
+0.2.2
+-----
+
+* add some information into main page
+* fix bug in uwsgi execution env
+
+0.2.1
+-----
+
+* Forgot to update MANIFEST.in on 0.2.0 release
+
+0.2.0
+-----
+
+* Refactoring code
+* Adding tests
+
+0.1.1
+-----
+
+* Use rst syntax for doc/descriptions rather markdown.
+
+0.1.0
+-----
+
+* First version.
+
+
