@@ -1,0 +1,27 @@
+name: pytest
+
+on: push
+
+jobs:
+  build-and-test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build
+        pip install pytest
+        pip install .
+    - name: Run Test 
+      env:
+        API_KEY: ${{ secrets.TRACKUNIT_API_KEY }}
+      run: |
+        echo $API_KEY | python -c $'import sys\nkey = sys.stdin.readline().strip()\nif len(key) == 32:\n   open("api.key","w").write(key)\nelse:\n   print("wrong length "+str(len(key)))\n   sys.exit(1)\n'
+        pytest
