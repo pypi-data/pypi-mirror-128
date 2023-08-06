@@ -1,0 +1,10 @@
+python3-saml
+
+[test]
+django
+coverage
+pylint
+flake8
+flake8-docstrings
+isort
+codecov

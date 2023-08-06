@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+django_saml/__init__.py
+django_saml/apps.py
+django_saml/backends.py
+django_saml/settings.py
+django_saml/urls.py
+django_saml/views.py
+python3_saml_django.egg-info/PKG-INFO
+python3_saml_django.egg-info/SOURCES.txt
+python3_saml_django.egg-info/dependency_links.txt
+python3_saml_django.egg-info/requires.txt
+python3_saml_django.egg-info/top_level.txt
