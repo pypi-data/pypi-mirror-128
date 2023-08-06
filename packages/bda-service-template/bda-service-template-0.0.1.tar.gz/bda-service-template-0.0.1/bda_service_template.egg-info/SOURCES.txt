@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+bda_service_template.egg-info/PKG-INFO
+bda_service_template.egg-info/SOURCES.txt
+bda_service_template.egg-info/dependency_links.txt
+bda_service_template.egg-info/requires.txt
+bda_service_template.egg-info/top_level.txt
+bdaservicetemplate/__init__.py
+bdaservicetemplate/model.py
+bdaservicetemplate/processor.py
+bdaservicetemplate/service.py
