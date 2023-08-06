@@ -1,0 +1,10 @@
+
+[build]
+twine
+check-wheel-contents
+
+[test]
+black
+isort
+flake8
+pytest
