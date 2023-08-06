@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+okd_camgi/__init__.py
+okd_camgi/contexts.py
+okd_camgi/interfaces.py
+okd_camgi/main.py
+okd_camgi.egg-info/PKG-INFO
+okd_camgi.egg-info/SOURCES.txt
+okd_camgi.egg-info/dependency_links.txt
+okd_camgi.egg-info/entry_points.txt
+okd_camgi.egg-info/requires.txt
+okd_camgi.egg-info/top_level.txt
+okd_camgi/templates/index.html

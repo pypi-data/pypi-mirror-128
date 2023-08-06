@@ -1,0 +1,3 @@
+[console_scripts]
+okd-camgi = okd_camgi.main:main
+

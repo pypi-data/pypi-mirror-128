@@ -1,0 +1,7 @@
+bottle
+cryptography>=35.0.0
+jinja2
+kubernetes
+python-dateutil
+pygments
+pyyaml
