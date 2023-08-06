@@ -1,0 +1,1 @@
+from tragedy import Tragedy
