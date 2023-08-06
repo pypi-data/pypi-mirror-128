@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        euchre=euchre.euchre:cli
+    
