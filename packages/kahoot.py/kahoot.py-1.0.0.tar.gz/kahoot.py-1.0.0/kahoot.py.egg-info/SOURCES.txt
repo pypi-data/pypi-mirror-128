@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+kahoot/__init__.py
+kahoot.py.egg-info/PKG-INFO
+kahoot.py.egg-info/SOURCES.txt
+kahoot.py.egg-info/dependency_links.txt
+kahoot.py.egg-info/requires.txt
+kahoot.py.egg-info/top_level.txt
+kahoot/src/Assets.py
+kahoot/src/ChallengeHandler.py
+kahoot/src/WSHandler.py
+kahoot/src/__init__.py
+kahoot/src/consts.py
+kahoot/src/token.py
