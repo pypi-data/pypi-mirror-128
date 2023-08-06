@@ -1,0 +1,9 @@
+arrange:
+    - index.md
+    - INSTALL.md
+    - configuration.md
+    - getting_started
+    - CONTRIBUTING.md
+    - CHANGELOG.md
+    - all_models.md
+    - api_reference
