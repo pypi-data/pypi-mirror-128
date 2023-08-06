@@ -1,0 +1,30 @@
+"""Exception modeule"""
+
+
+class InvalidPipelineId(Exception):
+    """Invalid pipeline id format."""
+
+
+class NonActiveModelTrackingID(Exception):
+    """A non-active model tracking ID was provided.
+    """
+
+
+class NotofTypeDictionary(Exception):
+    """A dictionary is expected.
+    """
+
+
+class NoConfig(Exception):
+    """No configuration file was found or provided
+    """
+
+
+class InvalidComputeResource(Exception):
+    """Invalid compute resource provided.
+    """
+
+
+class InvalidEstimator(Exception):
+    """ Invalid ac type provided. Available Sagemaker Estimators are sklearn and tensorflow.
+                """
