@@ -1,0 +1,14 @@
+torch
+numpy>=1.14
+matplotlib>=2.0
+dill
+
+[graphviz]
+graphviz
+
+[skimage]
+scikit-image
+
+[vision]
+torchvision
+pillow
