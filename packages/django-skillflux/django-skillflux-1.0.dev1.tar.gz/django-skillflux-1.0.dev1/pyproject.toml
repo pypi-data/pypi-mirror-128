@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "django-skillflux"
+version = "1.0dev1"
+packages = [
+    { include = "skillflux" }
+]
+readme = "README.md"
+include = ["LICENSE"]
+
+description = "SkillFlux — Data model and logic"
+authors = ["Dominik George <dominik.george@teckids.org>"]
+license = "Apache-2.0"
+homepage = "https://skillflux.vision"
+repository = "https://edugit.org/Teckids/LEOPARD/SkillFlux/django-skillflux"
+#documentation = "https://aleksis.org/official/AlekSIS/docs/html/"
+#classifiers = [
+#    "Environment :: Web Environment",
+#    "Intended Audience :: Education",
+#    "Topic :: Education"
+#]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^3.0"
+
+[tool.black]
+line-length = 100
+exclude = "/migrations/"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
