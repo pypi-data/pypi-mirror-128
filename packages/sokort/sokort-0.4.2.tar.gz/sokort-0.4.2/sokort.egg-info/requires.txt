@@ -1,0 +1,9 @@
+click
+pyyaml
+IPython
+pillow
+pandas
+ipywidgets
+
+[all]
+loguru
