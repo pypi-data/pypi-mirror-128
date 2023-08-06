@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/opensslx86/__init__.py
+src/opensslx86.egg-info/PKG-INFO
+src/opensslx86.egg-info/SOURCES.txt
+src/opensslx86.egg-info/dependency_links.txt
+src/opensslx86.egg-info/top_level.txt
