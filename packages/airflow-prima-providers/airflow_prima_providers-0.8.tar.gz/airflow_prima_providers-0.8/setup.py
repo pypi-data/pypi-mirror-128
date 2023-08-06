@@ -1,0 +1,31 @@
+from distutils.core import setup
+
+import setuptools
+from setuptools import find_packages
+
+setup(
+  name = 'airflow_prima_providers',
+  packages = setuptools.find_packages(),
+  version = '0.8',
+  license='MIT',
+  description = 'Airflow utility providers developed by Prima Assicurazioni',
+  author = 'Prima Assicurazioni',
+  author_email = 'team-data@prima.it',
+  url = 'https://github.com/albanovito/providers-prima',
+  download_url = 'https://github.com/albanovito/providers-prima/archive/refs/tags/0.8.tar.gz',
+  keywords = ['airflow', 'prima', 'providers'],
+  install_requires=[
+          'apache-airflow',
+          'boto3',
+          'botocore',
+          'cached_property'
+      ],
+  classifiers=[
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+    'Topic :: Software Development :: Build Tools',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9'
+  ],
+)
