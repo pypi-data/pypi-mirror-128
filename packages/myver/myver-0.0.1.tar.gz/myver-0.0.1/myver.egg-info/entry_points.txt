@@ -1,0 +1,3 @@
+[console_scripts]
+myver = myver.__main__:main
+
