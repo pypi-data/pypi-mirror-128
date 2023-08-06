@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+ym2021_prj/__init__.py
+ym2021_prj/_version.py
+ym2021_prj/cli.py
+ym2021_prj.egg-info/PKG-INFO
+ym2021_prj.egg-info/SOURCES.txt
+ym2021_prj.egg-info/dependency_links.txt
+ym2021_prj.egg-info/top_level.txt
+ym2021_prj/tests/__init__.py
+ym2021_prj/tests/test_cli.py

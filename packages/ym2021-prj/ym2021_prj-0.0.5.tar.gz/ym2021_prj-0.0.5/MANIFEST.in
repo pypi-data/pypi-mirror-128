@@ -1,0 +1,2 @@
+include versioneer.py
+include ym2021_prj/_version.py
