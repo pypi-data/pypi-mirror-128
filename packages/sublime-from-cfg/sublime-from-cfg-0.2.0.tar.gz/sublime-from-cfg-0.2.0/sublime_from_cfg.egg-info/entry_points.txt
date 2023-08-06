@@ -1,0 +1,6 @@
+[console_scripts]
+sublime-from-cfg = sublime_from_cfg.cli:main
+
+[setup_requires]
+setuptools > = 58.0.4
+
