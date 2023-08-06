@@ -1,0 +1,6 @@
+forbiddenfruit
+djangorestframework
+pyyaml
+uritemplate
+cython
+djangorestframework-simplejwt

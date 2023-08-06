@@ -1,0 +1,6 @@
+forbiddenfruit
+djangorestframework
+pyyaml
+cython
+sphinx-issues
+furo
