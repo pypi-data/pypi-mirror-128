@@ -1,0 +1,6 @@
+rustdef-0.3.1_rc.1.dist-info/METADATA,sha256=sQnAZ2L_VOV3vb1mIA9Wxr6QNGYvESSKbMRXZxsvykk,3107
+rustdef-0.3.1_rc.1.dist-info/WHEEL,sha256=tUWtovTamaqjU0VHF7ljv8r43Y26O5Vwx9xWrvDSWw0,107
+rustdef/__init__.py,sha256=xLqz2KjvMFw8loAYYxMBDpJDi-h0mebYUFsGtYOa6ms,363
+rustdef/magic.py,sha256=-ubCRZ6KGGxKzn2KZJx-85h_JyWlCUfQHvn97yl3BQo,10745
+rustdef/rustdef.cpython-38-x86_64-linux-gnu.so,sha256=nGUHBDE798mG3vPGvUJaYFnLdJ72l8ZgiJ5LzeHY7II,6562616
+rustdef-0.3.1_rc.1.dist-info/RECORD,,
