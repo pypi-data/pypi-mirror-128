@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: py4dgeo
+Version: 0.3.0
+Summary: Library for change detection in 4D point cloud data
+Home-page: UNKNOWN
+Author: Dominic Kempf
+Author-email: ssc@iwr.uni-heidelberg.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.md
+License-File: COPYING.md
+Requires-Dist: numpy
+Requires-Dist: xdg
+
+UNKNOWN
+
