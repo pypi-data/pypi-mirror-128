@@ -1,0 +1,4 @@
+tokenizers
+tensorflow-addons[tensorflow]
+seqeval
+smile-datasets==0.0.5
