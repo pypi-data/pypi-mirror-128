@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flit = "3.3.0"
+
+# [dev-packages]
+# twine = "*"
+
+[scripts]
+flit = "flit"
+install = "flit install"
+build = "flit build"
+publish = "flit publish"
+publish-mauja = "flit publish --repository maujagroup"
+publish-local = "flit publish --repository local"
+
+
+#install = "pip install ."
+#uninstall = "pip uninstall bws"
+## PyPI has certain required meta-data that the setup.py should provide. To quickly check if your project has this data use:
+#check = "python setup.py check"
+## Create a source distribution
+#sdist = "python setup.py sdist"
+## Creating a wheel distribution
+#bdist_wheel = "python setup.py bdist_wheel"
+#upload = "twine upload dist/*"

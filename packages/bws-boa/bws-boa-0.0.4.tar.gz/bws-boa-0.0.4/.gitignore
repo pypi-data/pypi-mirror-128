@@ -1,0 +1,8 @@
+dist
+build
+*.egg-info
+*.pyc
+example/_venv
+example/venv
+example/.env
+example/migrations
