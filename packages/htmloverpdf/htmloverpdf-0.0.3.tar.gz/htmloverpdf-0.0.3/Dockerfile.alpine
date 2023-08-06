@@ -1,0 +1,11 @@
+# Install as pure python library with all dependencies from Alpine packages.
+FROM alpine
+RUN apk add --no-cache \
+        font-croscore \
+        weasyprint \
+        py3-gobject3 \
+        py3-cairo \
+        poppler-dev
+COPY htmloverpdf /usr/lib/python3.9/site-packages/htmloverpdf/
+USER nobody
+CMD ["python3", "-m", "htmloverpdf"]

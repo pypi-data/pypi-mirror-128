@@ -1,0 +1,13 @@
+# Install as pure python library with all dependencies from Debian packages.
+FROM debian:latest
+RUN apt-get -q -o=Dpkg::Use-Pty=0 update \
+    && DEBIAN_FRONTEND=noninteractive DEBCONF_NOWARNINGS=yes \
+       apt-get -q -o=Dpkg::Use-Pty=0 install --no-install-recommends --yes \
+        ca-certificates \
+        weasyprint \
+        python3-gi-cairo \
+        gir1.2-poppler-0.18 \
+    && rm -rf /var/lib/apt/lists
+COPY htmloverpdf /usr/local/lib/python3.9/dist-packages/htmloverpdf/
+USER nobody
+CMD ["python3", "-m", "htmloverpdf"]

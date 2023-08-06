@@ -1,0 +1,42 @@
+# Build missing binary wheels, then install them on python-alpine base with no build tools.
+FROM python:3-alpine AS BUILD
+RUN apk add --no-cache \
+        build-base \
+        gobject-introspection-dev \
+        jpeg-dev \
+        zlib-dev \
+        libxml2-dev \
+        libxslt-dev
+RUN SETUPTOOLS_SCM_PRETEND_VERSION=0.0.0 python3 -m pip \
+        --disable-pip-version-check \
+        --no-python-version-warning \
+        --no-cache-dir \
+        wheel \
+            cairocffi \
+            pycairo \
+            pygobject \
+            Pillow \
+            lxml
+
+FROM python:3-alpine
+RUN apk add --no-cache \
+        font-croscore \
+        gobject-introspection \
+        poppler-dev \
+        pango \
+    && adduser --disabled-password htmloverpdf
+USER htmloverpdf
+COPY --from=BUILD --chown=htmloverpdf *.whl /src/
+COPY --chown=htmloverpdf pyproject.toml setup.cfg /src/
+COPY --chown=htmloverpdf htmloverpdf /src/htmloverpdf/
+RUN SETUPTOOLS_SCM_PRETEND_VERSION=0.0.0 python3 -m pip \
+        --disable-pip-version-check \
+        --no-python-version-warning \
+        --use-feature=in-tree-build \
+        --no-cache-dir \
+        install \
+            --user \
+            --no-warn-script-location \
+            /src/*.whl \
+            /src/
+CMD ["python3", "-m", "htmloverpdf"]
