@@ -1,0 +1,3 @@
+[console_scripts]
+otter = otter.otter:main
+
