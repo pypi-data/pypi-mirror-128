@@ -1,0 +1,12 @@
+silkie/__init__.py,sha256=2VMrPkDiEcQ55vNtvwgNwN3qzih48-9YtKfENys8zOU,3927
+silkie/__main__.py,sha256=ZrmKB1n2oaMaDX6NLclD79-A97e9Hkn8qK1S5SgTF9s,55
+silkie/cli.py,sha256=MyR4Fka_LdOwb0PHIsMJsoGHnmtA0rWMrwGiL28S3Wc,2306
+silkie/definitions.py,sha256=BDKPZwiap40Ql426tH21NWx0ugV3mkhF3YqZTAN-hGw,166
+silkie/options.py,sha256=gsD1fUvq5cu0eNcKMUV_kXcaETUNhTJ51RuloFbRJ5k,2357
+silkie/utils.py,sha256=U2dUS18DHsSZn_qR5qkZQzjz1CKP8ZE4ulB24BQC8oM,840
+silkie-1.0.6.dist-info/LICENSE,sha256=HK47DLrprOeeVEuSa-TJJCNsnnFh5i79ftaWS2z9K94,1068
+silkie-1.0.6.dist-info/METADATA,sha256=4BEs6kCx_CznWZaMOh4KfqpTmT-8d0qaYtkSmrEOQgc,4953
+silkie-1.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+silkie-1.0.6.dist-info/entry_points.txt,sha256=pCwwkdm_BZpBOmPClg5iVWCUSV3n5X0d70I1uWFjZRo,46
+silkie-1.0.6.dist-info/top_level.txt,sha256=1ljaJSy_TI97m0Uhnm6P16i5jSYyBsjUClN58AGLw8g,7
+silkie-1.0.6.dist-info/RECORD,,
