@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tokamak
+Version: 0.1.0
+Summary: HTTP Router based on radix trees
+License: BSD3
+Author: Erik Aker
+Author-email: eraker@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: trio (>=0.19.0,<0.20.0)
