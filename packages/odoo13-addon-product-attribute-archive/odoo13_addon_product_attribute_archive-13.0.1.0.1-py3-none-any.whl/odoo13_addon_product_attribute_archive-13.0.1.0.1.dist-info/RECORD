@@ -1,0 +1,17 @@
+odoo/addons/product_attribute_archive/README.rst,sha256=TP9Tl-CxyfaB1x-ltlCxFBPJkMR4wuiEPvrA2BRrQfo,2989
+odoo/addons/product_attribute_archive/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/product_attribute_archive/__manifest__.py,sha256=VkIT6iSeIZd2xHwcqX4fV34bJ0BfGeYYPKiBiywQsPE,454
+odoo/addons/product_attribute_archive/i18n/product_attribute_archive.pot,sha256=h6-oRXLtpmXMhB33ZSIUJHLRK6U4dZW2IARLJpKyZvo,1094
+odoo/addons/product_attribute_archive/models/__init__.py,sha256=gFrcPJh3E6jg523GxaWDQiDcn5CsnUlhUn0MKJJGE48,70
+odoo/addons/product_attribute_archive/models/product_attribute.py,sha256=Uwb0okbeA5nJr-QWAZK47hOb5y_FWcssJ1nEUNeAGs0,241
+odoo/addons/product_attribute_archive/models/product_attribute_value.py,sha256=E40NTpTjG2I0_5kMF8JlAxIdij5mKlNtJWQBzTK6CN8,252
+odoo/addons/product_attribute_archive/readme/CONTRIBUTORS.rst,sha256=IPkMZv_s60yWPtGzlIBqR24UlWOSEc5lvqR48DW4CYk,39
+odoo/addons/product_attribute_archive/readme/DESCRIPTION.rst,sha256=Us9VJ-m9sME7UBTb9ERyEJ26f_gre1ZNTFMcHUZMKzQ,80
+odoo/addons/product_attribute_archive/readme/USAGE.rst,sha256=4MR43UPPMVztegLPn8Ndvi80YLENXr2WFCzTYJHPMc0,217
+odoo/addons/product_attribute_archive/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/product_attribute_archive/static/description/index.html,sha256=7Snp-bC3yfUUjECD0xyvfa_ZkWLC_alIl7a7xJm06Go,12279
+odoo/addons/product_attribute_archive/views/product_attribute.xml,sha256=PYsaFlFMHFhvGHbPQgA31rJAI3b0qoTuXV9TvSuzLO0,1604
+odoo13_addon_product_attribute_archive-13.0.1.0.1.dist-info/METADATA,sha256=gSLGwSx-VxzTbLi3Dnnsl42SAxE3BI2YwJWzt-wxG4g,3556
+odoo13_addon_product_attribute_archive-13.0.1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+odoo13_addon_product_attribute_archive-13.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_product_attribute_archive-13.0.1.0.1.dist-info/RECORD,,
