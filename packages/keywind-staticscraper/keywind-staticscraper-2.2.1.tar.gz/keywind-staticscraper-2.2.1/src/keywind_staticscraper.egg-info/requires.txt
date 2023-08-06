@@ -1,0 +1,5 @@
+markdown
+bs4
+lxml
+requests
+pandas
