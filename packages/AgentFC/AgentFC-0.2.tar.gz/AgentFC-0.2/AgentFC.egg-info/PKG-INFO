@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: AgentFC
+Version: 0.2
+Summary: 人像变换辅助工具
+Home-page: https://github.com/AgentMaker/AgentFaceCollector
+Author: AgentMaker
+Author-email: agentmaker@163.com
+License: Apache2
+Platform: UNKNOWN
+Requires-Python: >3.6
+License-File: LICENSE
+
+UNKNOWN
+
