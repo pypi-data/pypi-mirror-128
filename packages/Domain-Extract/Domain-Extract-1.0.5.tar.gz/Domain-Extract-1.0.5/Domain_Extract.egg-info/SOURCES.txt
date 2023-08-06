@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Domain_Extract.egg-info/PKG-INFO
+Domain_Extract.egg-info/SOURCES.txt
+Domain_Extract.egg-info/dependency_links.txt
+Domain_Extract.egg-info/not-zip-safe
+Domain_Extract.egg-info/requires.txt
+Domain_Extract.egg-info/top_level.txt

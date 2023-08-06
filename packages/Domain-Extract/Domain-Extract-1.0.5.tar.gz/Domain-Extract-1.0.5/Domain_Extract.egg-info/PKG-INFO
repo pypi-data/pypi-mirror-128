@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: Domain-Extract
+Version: 1.0.5
+Summary: Domain extract from string
+Home-page: https://github.com/FayasNoushad/
+Author: Fayas Noushad
+Author-email: contact@fayas.me
+License: MIT
+Download-URL: https://github.com/FayasNoushad/Domain-Extract/releases/latest
+Project-URL: Tracker, https://github.com/FayasNoushad/Domain-Extract/issues
+Project-URL: Source, https://github.com/FayasNoushad/Domain-Extract
+Project-URL: Documentation, https://domain-extract.projects.fayas.me
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+```
+Made with Python3
+(C) @FayasNoushad
+Copyright permission under MIT License
+License -> https://github.com/FayasNoushad/Domain-Extract/blob/main/LICENSE
+```
+
+---
+
+## Installation
+
+```
+pip install Domain-Extract
+```
+
+---
+
+## Usage
+
+```py
+import domain_extract
+```
+
+### Extract domain from url
+
+```py
+url = "https://fayas.me/"
+
+print(domain_extract.domain(url))
+# => fayas.me
+```
+
+### Extract domains from urls list
+
+```py
+urls = [
+    "https://fayas.me",
+    "https://github.com/FayasNoushad"
+]
+
+print(domain_extract.domains(urls))
+# => ["fayas.me", "github.com"]
+```
+
+### Extract domains from a string
+
+```py
+string = "Hello [Fayas](https://fayas.me/)"
+
+print(domain_extract.string_domains(string))
+# => ["fayas.me"]
+```
+
+---
+
+## Credits
+
+- [Fayas Noushad](https://github.com/FayasNoushad)
+
+---
+
+
