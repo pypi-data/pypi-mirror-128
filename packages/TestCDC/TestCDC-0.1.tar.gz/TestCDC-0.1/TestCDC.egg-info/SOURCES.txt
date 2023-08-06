@@ -1,0 +1,9 @@
+Api.py
+License.txt
+MANIFEST.in
+Readme.txt
+setup.py
+TestCDC.egg-info/PKG-INFO
+TestCDC.egg-info/SOURCES.txt
+TestCDC.egg-info/dependency_links.txt
+TestCDC.egg-info/top_level.txt

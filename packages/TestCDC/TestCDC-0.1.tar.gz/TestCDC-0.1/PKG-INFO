@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: TestCDC
+Version: 0.1
+Summary: CDC Log Based API
+Home-page: UNKNOWN
+Author: KIIT
+Author-email: UNKNOWN
+License: MIT
+Description: Version 1.0
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
