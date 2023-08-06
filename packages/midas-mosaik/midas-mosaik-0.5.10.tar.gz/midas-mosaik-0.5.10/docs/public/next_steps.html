@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Next steps &#8212; MIDAS  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Configuration" href="configuration.html" />
+    <link rel="prev" title="Getting started" href="getting_started.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="next-steps">
+<h1>Next steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h1>
+<p>In this part, you will learn about scenario configuration files and
+the command line interface.</p>
+<section id="scenario-configuration">
+<h2>Scenario configuration<a class="headerlink" href="#scenario-configuration" title="Permalink to this headline">¶</a></h2>
+<p>A <em>midas</em> co-simulation is highly configurable with so-called scenario
+configuration files. If you have followed this guide from the beginning,
+you should by now have run your first simulation with <em>midas</em>.</p>
+<p>Inspect your current directory and you will find a new directory
+<em>_outputs</em> and inside that directory a file called <em>midasmv_cfg.yml</em>
+that contains the full configuration of the scenario you ran before.
+Note, since the file is created automatically, it is kind of unordered
+(actually, the keys are ordered alphabetically). If you plan to tinker
+around with that file, you should rename it. Otherwise, it will be
+overwritten when you start the <em>midasmv</em> scenario again.</p>
+<p>Keep this in mind. However, for the purpose of this guide, we will start with
+a new and empty configuration.</p>
+</section>
+<section id="runtime-configuration">
+<h2>Runtime configuration<a class="headerlink" href="#runtime-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Remember, we created a runtime configuration in the first step. Now it’s time
+to have a short look at it. If you decided to use the default configuration,
+you will find the runtime configuration <em>runtime-conf.yml</em> at</p>
+<ul class="simple">
+<li><p>Linux: ~/.config/midas/</p></li>
+<li><p>Windows: C:\Users\%USERNAME%\AppData\Local\OFFIS\midas\</p></li>
+</ul>
+<p>Open it with the text editor of your choice. Most of the stuff configured here
+is not important for now. Scroll down to bottom of the file, where you find
+path definitions. This contains three path definitions:</p>
+<ul class="simple">
+<li><p><em>data_path</em>: This path specifies where the datasets are located. Per
+default you find this folder at the same location like the runtime
+configuration. You should not change afterwards. Otherwise, the datasets
+will be downloaded again (unless you move the old data folder to the new
+location).</p></li>
+<li><p><em>output_path</em>: This path specifies where output files will be created. We
+already saw the <em>midasmv_cfg.yml</em> file that was created by the demo
+scenario. Per default, an output folder <em>_outputs</em> is created in your
+current working directory. You can change this value to an absolute path if
+you like or choose a different name. Relative paths will always use the
+current working directory as base.</p></li>
+<li><p><em>scenario_path</em>: This is the configuration we’re looking for. This path
+specifies where <em>midas</em> looks for scenario configuration files. Per default,
+this folder is named <em>midas_scenarios</em> and is located in the same directory
+like the runtime configuration. You can change it to any location you like
+(especially for Windows, the default location might be too hidden for
+convenient access), e.g., point it to your Documents folder.</p></li>
+</ul>
+</section>
+<section id="creating-your-own-configuration">
+<h2>Creating your own configuration<a class="headerlink" href="#creating-your-own-configuration" title="Permalink to this headline">¶</a></h2>
+<p>Now, create an empty text document and rename it to <em>my_first_scenario.yml</em>.
+Open it and paste the following content:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">my_first_midas</span><span class="p">:</span>
+  <span class="nt">modules</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">powergrid</span><span class="p p-Indicator">,</span> <span class="nv">sndata</span><span class="p p-Indicator">]</span>
+  <span class="nt">end</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1*24*60*60</span>
+</pre></div>
+</div>
+<p>This is the most simple scenario you can create. You could run it with with
+<code class="code docutils literal notranslate"><span class="pre">midasctl</span> <span class="pre">run</span> <span class="pre">my_first_midas</span></code> if you like, but we will have a closer
+look at what happened here.</p>
+<p>On the top level you find a key called <em>my_first_midas</em>. You can rename this
+as you like as long as it is <strong>unique</strong>. If you ever happen to have the same
+key twice, the scenario creation will <strong>fail</strong>. This key is the name that you
+pass to the <em>midasctl</em> command. As long as the scenario file is located in the
+scenario folder, passing that name is sufficient.</p>
+<p>On the second level, global settings for the scenario are defined. The most
+important setting is the <em>modules</em> key. It is a list specifying which modules,
+i.e., which simulators, should be included in the scenario. In this case you
+have <em>powergrid</em> and <em>sndata</em> (which is the simulator for the Smart Nord
+dataset).</p>
+<p>The second parameter is called <em>end</em> and specifies how many steps of the
+simulation will be performed. One step corresponds to one (simulated) second.
+The default step size for all simulators is 900 seconds. Providing a value
+lower than 900 will result in only the first step simulated. It is recommended
+(but not necessary) to provide this value as multiplation products since it is
+more readable. In this example, we want the scenario to be simulated for one
+day.</p>
+</section>
+<section id="default-values">
+<h2>Default values<a class="headerlink" href="#default-values" title="Permalink to this headline">¶</a></h2>
+<p>To allow such a minimalistic configuration, <em>midas</em> provides default values
+for nearly everything. If you run your previously created scenario, you will
+find <em>my_first_midas_cfg.yml</em> in the <em>_outputs</em> folder. You can have a look at
+it and see what was auto-configurated for you. Not all the values there are
+needed and most values can be left to default values.</p>
+<p>In our example, the configuration for <em>powergrid</em> and <em>sndata</em> was auto-
+configurated, i.e., a grid model was chosen and the load mapping was provided.
+The default grid is <em>midasmv</em>, which is basically the CIGRE medium voltage
+grid. The default mapping for <em>sndata</em> is a mapping for <em>midasmv</em>. Simply
+choosing a different grid will, therefore, fail since you have to provide an
+appropriate mapping.</p>
+<p>For the rest of this tutorial, we assume that you keep the <em>midasmv</em> as grid.
+However, let’s add the default values to our scenario:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">my_first_midas</span><span class="p">:</span>
+  <span class="nt">modules</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">powergrid</span><span class="p p-Indicator">,</span> <span class="nv">sndata</span><span class="p p-Indicator">]</span>
+  <span class="nt">end</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1*24*60*60</span>
+  <span class="nt">powergrid_params</span><span class="p">:</span>
+    <span class="nt">my_grid</span><span class="p">:</span>
+      <span class="nt">gridfile</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">midasmv</span>
+  <span class="nt">sndata_params</span><span class="p">:</span>
+    <span class="nt">my_grid</span><span class="p">:</span>
+      <span class="nt">land_mapping</span><span class="p">:</span>
+        <span class="nt">1</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">2</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">3.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">6</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">3</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">2</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">6</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">4</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">3.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">5</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">6</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">7</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">3.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">2</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">8</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">6</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">9</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">2</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">6</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">10</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">2</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">6</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">11</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">2</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">6</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+</pre></div>
+</div>
+<p>Just a few more words about that configuration. We added parameters for the
+two modules (the key scheme is always <em>module name</em> underscore <em>params</em>).
+The first subkey of those modules is <em>my_grid</em>. For both modules this key
+needs to be same to allow <em>midas</em> to connect those configurations.</p>
+<p>The <em>land_mapping</em> of <em>sndata</em> seems a bit confusing at the first look. The
+first keys of the land_mapping represent the grid bus, to which load should be
+connected, e.g., <code class="code docutils literal notranslate"><span class="pre">1:</span> <span class="pre">[[..],</span> <span class="pre">..]</span></code> means <em>connect the following loads to
+bus 1 of the grid</em>. On the next sublevel, we have a list that contains several
+smaller lists. Each of these smaller lists represents a time series and is
+configured by two values: The first one is the <em>ID</em> and the second one a
+<em>scaling factor</em>, e.g., <code class="code docutils literal notranslate"><span class="pre">[6,</span> <span class="pre">2.0]</span></code> means <em>take the time series with ID 6
+and scale it with factor 2</em>.</p>
+<p>This schema will be used by other modules as well, although sometimes it will
+look a bit different.</p>
+</section>
+<section id="adding-a-different-load-simulator">
+<h2>Adding a different load simulator<a class="headerlink" href="#adding-a-different-load-simulator" title="Permalink to this headline">¶</a></h2>
+<p>Now we will add another load simulator with commercial loads. Those loads have
+a different profile than households and have their own module, which we first
+have to add. Simply modify the following line of your configuration:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">modules</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">powergrid</span><span class="p p-Indicator">,</span> <span class="nv">sndata</span><span class="p p-Indicator">,</span> <span class="nv">comdata</span><span class="p p-Indicator">]</span>
+</pre></div>
+</div>
+<p>Although we have a default configuration for this as well, we will add the
+parameters manually. Add the following lines after the last current line in
+the file:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">comdata_params</span><span class="p">:</span>
+  <span class="nt">my_grid</span><span class="p">:</span>
+    <span class="nt">interpolate</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">randomize_data</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">noise_factor</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.2</span>
+    <span class="nt">mapping</span><span class="p">:</span>
+      <span class="nt">13</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">SuperMarket</span><span class="p p-Indicator">,</span> <span class="nv">0.089</span><span class="p p-Indicator">]]</span>
+      <span class="nt">14</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">SmallHotel</span><span class="p p-Indicator">,</span> <span class="nv">0.022</span><span class="p p-Indicator">]]</span>
+</pre></div>
+</div>
+<p>Make sure you get the indentation right. The <em>comdata_params</em> needs to be at
+the same level like the other <em>_params</em>.</p>
+<p>You will recognize the mapping scheme. However, this time we have names as IDs
+instead of numbers. You also see two new options that we’ve activated.</p>
+<ul class="simple">
+<li><p><em>interpolate</em>: Since most of the datasets have a certain time resolution
+(e.g., hourly, quarter-hourly). Setting <em>interpolate</em> to true will activate
+interpolation if the values are accessed with higher frequency than the
+resolution. Since the commercial datasets have hourly resolution, it makes
+sense to use this feature, here.</p></li>
+<li><p><em>randomize_data</em>: This feature adds a random distributed noise to the data
+from the dataset.</p></li>
+<li><p><em>noise_factor</em>: The default noise is 20 % (<code class="code docutils literal notranslate"><span class="pre">noise_factor:</span> <span class="pre">0.2</span></code>) of the
+datasets’ standard deviation.</p></li>
+</ul>
+<p>All these three options could be activated for the <em>sndata</em> module, as well.</p>
+</section>
+<section id="simulation-results">
+<h2>Simulation results<a class="headerlink" href="#simulation-results" title="Permalink to this headline">¶</a></h2>
+<p>Before we add the final two modules for this guide, we’ll have a short look at
+the simulation results. You’ll find them in the <em>_outputs</em> folder. During the
+simulation, a HDF5 database will be created and saved to <em>midasmv.hdf5</em>. You
+can open this file, e.g., with <a class="reference external" href="https://www.hdfgroup.org/downloads/hdfview/">hdfview</a>  or <a class="reference external" href="https://github.com/HDFGroup/hdf-compass/tree/py3">HDFCompass</a>. The database
+contains most of the powergrid outputs and all outputs from the timeseries
+provided by <em>sndata</em> and <em>comdata</em>. The following chart is created with
+HDFCompass and displays the averaged bus voltage magnitude per unit of our
+scenario.</p>
+<a class="reference internal image-reference" href="_images/avg_vm_pu.png"><img alt="_images/avg_vm_pu.png" src="_images/avg_vm_pu.png" style="width: 400px;" /></a>
+</section>
+<section id="extending-the-scenario">
+<h2>Extending the scenario<a class="headerlink" href="#extending-the-scenario" title="Permalink to this headline">¶</a></h2>
+<p>As last part of this tutorial, we want to add some distributed energy
+resources (DER). More precise, we will add Photovoltaic (PV) plants and
+combined heat and power (CHP) units. They are provided by the <em>pysimmods</em>
+package that was installed together with <em>midas</em>. Both of them depend on
+weather information. Therefore, we will add a weather simulator as well.</p>
+<p>But first, we do some additional considerations. We have created a basic
+scenario with loads only. Now, we are going to add some generation units. But
+what if you want to compare both scenarios afterwards? Do you have to create
+two files, one with and one without the generators?</p>
+<p>Of course, no. <em>midas</em> allows to create scenarios that <em>inherit</em> from
+other scenarios and both can even be in the same file! Let’s give it a try and
+add this to the bottom of your scenario configuration file:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">my_second_midas</span><span class="p">:</span>
+  <span class="nt">parent</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my_first_midas</span>
+  <span class="nt">modules</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">weather</span><span class="p p-Indicator">,</span> <span class="nv">der</span><span class="p p-Indicator">]</span>
+  <span class="nt">start_date</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2017-01-01 00:00:00+0100</span>
+</pre></div>
+</div>
+<p>A scenario that has the <em>parent</em> key defined, inherits all configurations from
+the parent scenario. If you change something there, it will be changed here,
+too. But you are free to overwrite single values. Keys that have a list or a
+dictionary, will be updated, e.g., the <em>modules</em> key is extended by two
+values, <em>weather</em> and <em>der</em>. The final configuration will contain all modules
+from the parent scenario and the modules from this scenario. We now also added
+a start date as ISO timestring. This is the default value that is already used
+in the first scenario.</p>
+<p>First, we need to configure the weather module. Update the configuration:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">my_second_midas</span><span class="p">:</span>
+  <span class="nt">parent</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my_first_midas</span>
+  <span class="nt">modules</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">weather</span><span class="p p-Indicator">,</span> <span class="nv">der</span><span class="p p-Indicator">]</span>
+  <span class="nt">start_date</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2017-01-01 00:00:00+0100</span>
+  <span class="nt">weather_params</span><span class="p">:</span>
+    <span class="nt">my_weather_station</span><span class="p">:</span>
+      <span class="nt">weather_mapping</span><span class="p">:</span>
+        <span class="nt">WeatherCurrent</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;interpolate&quot;</span><span class="p p-Indicator">:</span> <span class="nv">true</span><span class="p p-Indicator">]</span>
+</pre></div>
+</div>
+<p>Like at the grid configuration, we have a custom name <em>my_weather_station</em>
+here. This name is required when we a assign the a weather station to our DER
+models. The <em>weather_mapping</em> allows to define two models, <em>WeatherCurrent</em>
+and <em>WeatherForecast</em>. The latter will not be used in this tutorial.
+Additionally, multiple instances can be created, although most of the time one
+instance should be sufficient. Furthermore, interpolation and randomization
+can be activated for each instance individually.</p>
+<p>Next, we need to add the DER models. The module is already loaded, so we only
+need to add the configuration.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">der_params</span><span class="p">:</span>
+  <span class="nt">my_grid_pv</span><span class="p">:</span>
+    <span class="nt">grid_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my_grid</span>
+    <span class="nt">mapping</span><span class="p">:</span>
+      <span class="nt">3</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">PV</span><span class="p p-Indicator">,</span> <span class="nv">6</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">PV</span><span class="p p-Indicator">,</span> <span class="nv">2</span><span class="p p-Indicator">]]</span>
+      <span class="nt">7</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">PV</span><span class="p p-Indicator">,</span> <span class="nv">2</span><span class="p p-Indicator">]]</span>
+      <span class="nt">8</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">PV</span><span class="p p-Indicator">,</span> <span class="nv">4</span><span class="p p-Indicator">]]</span>
+      <span class="nt">14</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">PV</span><span class="p p-Indicator">,</span> <span class="nv">4</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">PV</span><span class="p p-Indicator">,</span> <span class="nv">4</span><span class="p p-Indicator">]]</span>
+    <span class="nt">weather_provider_mapping</span><span class="p">:</span>
+      <span class="nt">PV</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">my_weather_station</span><span class="p p-Indicator">,</span> <span class="nv">0</span><span class="p p-Indicator">]</span>
+</pre></div>
+</div>
+<p>(Again, make sure you get the indentation right.)
+Most of the scheme should be common by now. However, some things are
+different. Instead of relying on the subkey <em>my_grid</em> like at the other
+simulators, we added a new key-value pair <em>grid_name</em> that needs to store the
+correct value. This means, <em>my_grid_pv</em> does not need to match the correct
+grid.</p>
+<p>This allows you to define multiple simulators for the same grid, e.g., one for
+PV plants and a second one for CHP. Alternatively, it is still possible to
+only use a single simulator for both.</p>
+<p>The <em>mapping</em> follows the same rules like what we’ve seen before. The new
+thing here is the <em>weather_provider_mapping</em>. This field defines, which
+weather station is used as source for weather data. You need to define a
+mapping for each plant type but in the most simple case, all plants of a type
+use the same weather data provider.</p>
+<p>Next, we add another simulator definition for the CHP models and change the
+path of the database, so that a different database will be created instead of
+overwriting the database from <em>my_first_midas</em>. The full configuration file
+now looks like:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">my_first_midas</span><span class="p">:</span>
+  <span class="nt">modules</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">powergrid</span><span class="p p-Indicator">,</span> <span class="nv">sndata</span><span class="p p-Indicator">,</span> <span class="nv">comdata</span><span class="p p-Indicator">]</span>
+  <span class="nt">end</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1*24*60*60</span>
+  <span class="nt">powergrid_params</span><span class="p">:</span>
+    <span class="nt">my_grid</span><span class="p">:</span>
+      <span class="nt">gridfile</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">midasmv</span>
+  <span class="nt">sndata_params</span><span class="p">:</span>
+    <span class="nt">my_grid</span><span class="p">:</span>
+      <span class="nt">land_mapping</span><span class="p">:</span>
+        <span class="nt">1</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">2</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">3.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">6</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">3</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">2</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">6</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">4</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">3.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">5</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">6</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">7</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">3.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">2</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">8</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">6</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">9</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">2</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">6</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">10</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">2</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">6</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+        <span class="nt">11</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">0</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">2</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">3</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">6</span><span class="p p-Indicator">,</span> <span class="nv">2.0</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">7</span><span class="p p-Indicator">,</span> <span class="nv">1.0</span><span class="p p-Indicator">]]</span>
+  <span class="nt">comdata_params</span><span class="p">:</span>
+    <span class="nt">my_grid</span><span class="p">:</span>
+      <span class="nt">interpolate</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+      <span class="nt">randomize_data</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+      <span class="nt">noise_factor</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0.2</span>
+      <span class="nt">mapping</span><span class="p">:</span>
+        <span class="nt">13</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">SuperMarket</span><span class="p p-Indicator">,</span> <span class="nv">0.089</span><span class="p p-Indicator">]]</span>
+        <span class="nt">14</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">SmallHotel</span><span class="p p-Indicator">,</span> <span class="nv">0.022</span><span class="p p-Indicator">]]</span>
+<span class="nt">my_second_midas</span><span class="p">:</span>
+  <span class="nt">parent</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my_first_midas</span>
+  <span class="nt">modules</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">weather</span><span class="p p-Indicator">,</span> <span class="nv">der</span><span class="p p-Indicator">]</span>
+  <span class="nt">start_date</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2017-01-01 00:00:00+0100</span>
+  <span class="nt">weather_params</span><span class="p">:</span>
+    <span class="nt">my_weather_station</span><span class="p">:</span>
+      <span class="nt">weather_mapping</span><span class="p">:</span>
+        <span class="nt">WeatherCurrent</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;interpolate&quot;</span><span class="p p-Indicator">:</span> <span class="nv">true</span><span class="p p-Indicator">]</span>
+  <span class="nt">der_params</span><span class="p">:</span>
+    <span class="nt">my_grid_pv</span><span class="p">:</span>
+      <span class="nt">grid_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my_grid</span>
+      <span class="nt">mapping</span><span class="p">:</span>
+        <span class="nt">3</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">PV</span><span class="p p-Indicator">,</span> <span class="nv">6</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">PV</span><span class="p p-Indicator">,</span> <span class="nv">2</span><span class="p p-Indicator">]]</span>
+        <span class="nt">7</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">PV</span><span class="p p-Indicator">,</span> <span class="nv">2</span><span class="p p-Indicator">]]</span>
+        <span class="nt">8</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">PV</span><span class="p p-Indicator">,</span> <span class="nv">4</span><span class="p p-Indicator">]]</span>
+        <span class="nt">14</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">PV</span><span class="p p-Indicator">,</span> <span class="nv">4</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">PV</span><span class="p p-Indicator">,</span> <span class="nv">4</span><span class="p p-Indicator">]]</span>
+      <span class="nt">weather_provider_mapping</span><span class="p">:</span>
+        <span class="nt">PV</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">my_weather_station</span><span class="p p-Indicator">,</span> <span class="nv">0</span><span class="p p-Indicator">]</span>
+    <span class="nt">my_grid_chp</span><span class="p">:</span>
+      <span class="nt">grid_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my_grid</span>
+      <span class="nt">mapping</span><span class="p">:</span>
+        <span class="nt">4</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">CHP</span><span class="p p-Indicator">,</span> <span class="nv">0.4</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">CHP</span><span class="p p-Indicator">,</span> <span class="nv">0.4</span><span class="p p-Indicator">]]</span>
+        <span class="nt">13</span><span class="p">:</span> <span class="p p-Indicator">[[</span><span class="nv">CHP</span><span class="p p-Indicator">,</span> <span class="nv">0.4</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">CHP</span><span class="p p-Indicator">,</span> <span class="nv">0.4</span><span class="p p-Indicator">],</span> <span class="p p-Indicator">[</span><span class="nv">CHP</span><span class="p p-Indicator">,</span> <span class="nv">0.4</span><span class="p p-Indicator">]]</span>
+      <span class="nt">weather_provider_mapping</span><span class="p">:</span>
+        <span class="nt">CHP</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">my_weather_station</span><span class="p p-Indicator">,</span> <span class="nv">0</span><span class="p p-Indicator">]</span>
+  <span class="nt">mosaikdb_params</span><span class="p">:</span>
+    <span class="nt">filename</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my_second_midas.hdf5</span>
+</pre></div>
+</div>
+<p>This concludes this short tutorial. Further information will follow in the
+near future.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">MIDAS</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Next steps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#scenario-configuration">Scenario configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#runtime-configuration">Runtime configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-your-own-configuration">Creating your own configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#default-values">Default values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-a-different-load-simulator">Adding a different load simulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simulation-results">Simulation results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#extending-the-scenario">Extending the scenario</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/modules.html">midas</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="getting_started.html" title="previous chapter">Getting started</a></li>
+      <li>Next: <a href="configuration.html" title="next chapter">Configuration</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Stephan Balduin.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/next_steps.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
