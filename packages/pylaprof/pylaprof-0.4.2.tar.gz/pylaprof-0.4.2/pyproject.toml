@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "pylaprof"
+version = "0.4.2"
+description = "A Python sampling profiler for AWS Lambda functions (and not only)."
+authors = ["Giuseppe Lumia <g.lumia@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/glumia/pylaprof"
+repository = "https://github.com/glumia/pylaprof"
+keywords = ["profiling", "flamegraph", "lambda", "aws", "serverless"]
+classifiers = [
+    "Development Status :: 4 - Beta"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+black = "^21.10b0"
+isort = "^5.10.1"
+pytest = "^6.2.5"
+coverage = {version = "^6.1.2", extras = ["toml"]}
+freezegun = "^1.1.0"
+boto3 = "^1.20.6"
+moto = {extras = ["s3"], version = "^2.2.15"}
+
+[tool.poetry.scripts]
+pylaprof-merge = "scripts.merge:main"
+
+[tool.coverage.run]
+branch = true
+command_line = "-m pytest tests"
+source = ["pylaprof"]
+
+[tool.coverage.report]
+fail_under = 100
+show_missing = true
+skip_covered = true
+skip_empty = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
