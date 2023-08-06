@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/canLogParse/__init__.py
+src/canLogParse.egg-info/PKG-INFO
+src/canLogParse.egg-info/SOURCES.txt
+src/canLogParse.egg-info/dependency_links.txt
+src/canLogParse.egg-info/top_level.txt
