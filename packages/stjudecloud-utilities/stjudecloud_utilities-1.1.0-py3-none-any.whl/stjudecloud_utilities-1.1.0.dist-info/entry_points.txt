@@ -1,0 +1,5 @@
+[console_scripts]
+deduplicate-feature-counts=stjudecloud-utilities.deduplicate_feature_counts:main
+gtf-to-rseqc-bed=stjudecloud-utilities.gtf_to_rseqc_bed:main
+warden-counts-utils=stjudecloud-utilities.warden_counts_utils:main
+
