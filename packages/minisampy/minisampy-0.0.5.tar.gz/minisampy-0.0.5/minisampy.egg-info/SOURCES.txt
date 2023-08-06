@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+/home/nikolas/Documents/Compute Canada account info/minisampy/minisampy/__init__.py
+/home/nikolas/Documents/Compute Canada account info/minisampy/minisampy/sophus/__init__.py
+minisampy.egg-info/PKG-INFO
+minisampy.egg-info/SOURCES.txt
+minisampy.egg-info/dependency_links.txt
+minisampy.egg-info/requires.txt
+minisampy.egg-info/top_level.txt
