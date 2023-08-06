@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pushplush
+Version: 0.0.1
+Summary: A small pushplush package
+Home-page: http://aotuman.xyz
+Author: 凹凸曼大人r
+Author-email: a15512431228@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pushplush微信推送  
+
+
+
+template消息模板枚举  
+模板名称  
+
+描述  
+
+html	支持html文本。为空默认使用html模板  
+txt	纯文本内容,不转义html内容,换行使用\n  
+json	可视化展示json格式内容  
+markdown	内容基于markdown格式展示  
+cloudMonitor	阿里云监控报警定制模板  
+默认 html  
+
+使用方法   
+from pushplush import push  
+qingqiu=push.push('自己token',title='成功',content='成功','template'='html')  
+qingqiu.post_put()  
+
+
+#测试  
+qingqiu=push.push('自己token')  
+qingqiu.get_deleate()  
+
+
