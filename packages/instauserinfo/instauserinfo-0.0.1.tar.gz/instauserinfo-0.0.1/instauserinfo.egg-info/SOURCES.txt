@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+InstaUserInfo/__init__.py
+InstaUserInfo/instauserinfo.py
+InstaUserInfo/test.py
+instauserinfo.egg-info/PKG-INFO
+instauserinfo.egg-info/SOURCES.txt
+instauserinfo.egg-info/dependency_links.txt
+instauserinfo.egg-info/requires.txt
+instauserinfo.egg-info/top_level.txt
