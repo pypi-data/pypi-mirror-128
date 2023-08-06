@@ -1,0 +1,6 @@
+pandas
+Jinja2
+python-socks
+lxml
+tqdm
+goslate
