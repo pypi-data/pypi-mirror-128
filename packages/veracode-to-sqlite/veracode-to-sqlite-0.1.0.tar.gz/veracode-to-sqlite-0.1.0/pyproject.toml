@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "veracode-to-sqlite"
+version = "0.1.0"
+description = "Create a SQLite database from a Veracode results file."
+readme = "README.md"
+authors = ["Nathaniel Knight <nathaniel.ep@gmail.com>"]
+license = "MPL 2.0"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+black = "^21.11b1"
+mypy = "^0.910"
+flake8 = "^4.0.1"
+twine = "^3.6.0"
+
+[tool.poetry.scripts]
+veracode-to-sqlite = "veracode_to_sqlite.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
