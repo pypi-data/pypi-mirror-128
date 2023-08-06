@@ -1,0 +1,3 @@
+[console_scripts]
+ecsctl = ecs.bin.ecsctl:group
+
