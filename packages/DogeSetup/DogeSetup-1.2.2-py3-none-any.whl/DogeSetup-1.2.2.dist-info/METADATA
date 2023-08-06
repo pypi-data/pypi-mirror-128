@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: DogeSetup
+Version: 1.2.2
+Summary: A secure and powerful Python-Telethon based library for Doge UserBot.
+Home-page: https://github.com/DOG-E/DogeUserBot
+Author: DOG-E
+Author-email: DogeUserBot@gmail.com
+License: GNU AFFERO GENERAL PUBLIC LICENSE (v3)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gitpython
+Requires-Dist: herokum
+Requires-Dist: requests
+Requires-Dist: rich
+Requires-Dist: telethon
+
+[<img
+src="https://raw.githubusercontent.com/DOG-E/Source/DOGE/Material/DogeTemplate.png"
+alt="❤️ Hᴀᴠᴇ ᴀ Doɢ ɪɴ Tᴇʟᴇɢʀᴀᴍ!">
+](https://T.me/DogeUserBot)
+
+# **🐶 DOGE USERBOT SETUP**
+
+🐾 This tool, make it easy to install the Doge.
+
+🐾 Bu araç, Doge'u kolayca kurmaya yarar.
+
+- **[🔗 Gɪᴛʜᴜʙ Rᴇᴘo](https://github.com/DOG-E/DogeUserBot)**
+
+- **[📣 Uᴘᴅᴀᴛᴇs ~ Güɴᴄᴇʟʟᴇᴍᴇʟᴇʀ](https://T.me/DogeUserBot)**
+
+- **[💬 Sᴜᴘᴘoʀᴛ Gʀoᴜᴘ ~ Dᴇsᴛᴇᴋ Gʀᴜʙᴜ](https://T.me/DogeSup)**
+
+- **[🧩 Pʟᴜɢɪɴs ~ Pʟᴜɢɪɴʟᴇʀ](https://T.me/DogePlugin)**
+
+- **[⚡ Wɪᴋɪ](https://t.me/DogeWiki)**
+
+<br>
+
+---
+
+<br>
+
+### **🔐 Lɪᴄᴇɴsᴇ ~ Lɪsᴀɴs**
+
+[<img
+src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg"
+width="160"
+alt="❤️ Hᴀᴠᴇ ᴀ Doɢ ɪɴ Tᴇʟᴇɢʀᴀᴍ!">
+](https://github.com/DOG-E/DogeUserBot/blob/DOGE/LICENSE)
+
+🛡 This project is protected by [The GNU Affero General Public License](https://github.com/DOG-E/DogeUserBot/blob/DOGE/LICENSE).
+
+- ✅ All rights reserved.
+
+<br>
+
+### **🤍 Cʀᴇᴅɪᴛs ~ Tᴇşᴇᴋᴋüʀʟᴇʀ**
+
+- [🔮 Telethon](https://github.com/LonamiWebs/Telethon)
+
+- [🐺 Asena Dev](https://github.com/AsenaDev)
+
+<br>
+
+---
+
+<br>
+<br>
+<br>
+<h2
+align="center">
+
+**[🐶](https://bit.do/DogeUserBot) Made with [❤](https://t.me/MutluTelegram) by [DOG-E](https://github.com/DOG-E) [🐾](https://bit.do/DogeUserBot)**
+
+</h2>
+<br>
+<br>
+<br>
+
+
