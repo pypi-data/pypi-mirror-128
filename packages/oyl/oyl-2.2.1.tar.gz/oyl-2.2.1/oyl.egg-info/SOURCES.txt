@@ -1,0 +1,15 @@
+setup.py
+oyl.egg-info/PKG-INFO
+oyl.egg-info/SOURCES.txt
+oyl.egg-info/dependency_links.txt
+oyl.egg-info/requires.txt
+oyl.egg-info/top_level.txt
+src/oyl/Drawings.py
+src/oyl/Methods.py
+src/oyl/Scores.py
+src/oyl/__init__.py
+src/oyl/nn/CNN.py
+src/oyl/nn/GA_MLP.py
+src/oyl/nn/GA_RBF.py
+src/oyl/nn/RBF.py
+src/oyl/nn/__init__.py
