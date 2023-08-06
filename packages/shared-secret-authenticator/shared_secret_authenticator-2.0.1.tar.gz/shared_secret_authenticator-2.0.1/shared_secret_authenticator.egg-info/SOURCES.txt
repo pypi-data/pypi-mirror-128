@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+shared_secret_authenticator.py
+shared_secret_authenticator.egg-info/PKG-INFO
+shared_secret_authenticator.egg-info/SOURCES.txt
+shared_secret_authenticator.egg-info/dependency_links.txt
+shared_secret_authenticator.egg-info/requires.txt
+shared_secret_authenticator.egg-info/top_level.txt
+shared_secret_authenticator.egg-info/zip-safe
