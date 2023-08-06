@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+Epytoml/EpyBake.py
+Epytoml/__init__.py
+Epytoml.egg-info/PKG-INFO
+Epytoml.egg-info/SOURCES.txt
+Epytoml.egg-info/dependency_links.txt
+Epytoml.egg-info/requires.txt
+Epytoml.egg-info/top_level.txt
+Epytoml/Notaker/Notaker.py
+Epytoml/Notaker/__init__.py
