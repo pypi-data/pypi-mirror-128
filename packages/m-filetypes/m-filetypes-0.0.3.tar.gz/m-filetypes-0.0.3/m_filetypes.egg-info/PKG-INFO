@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: m-filetypes
+Version: 0.0.3
+Summary: Libs check filetype
+Home-page: UNKNOWN
+Author: MOBIO
+Author-email: contact@mobio.vn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+##  Thư viện kiểm tra file type.
+
+### Cài đặt:
+
+```bash
+ $ pip3 install m-filetypes
+ ```
+
+### Sử dụng
+```python
+from mobio.libs.filetypes.file import File
+from mobio.libs.filetypes.common import ExtensionImage
+
+File.check_filetype_by_file_extensions(
+    file_binary=file, # Check filetype của định dạng file binary.Mặc định None
+    file_path=file_path, # Check filetype của path file
+    extensions=[ExtensionImage.PNG] # Danh sách extension cần check.
+)
+
+```
+
+#### Lấy extensions support
+- Extension Image:
+```python
+from mobio.libs.filetypes.common import ExtensionImage
+ExtensionImage.LIST_EXTENSION_SUPPORTED
+```
+- Extension Document:
+```python
+from mobio.libs.filetypes.common import ExtensionDocument
+ExtensionDocument.LIST_EXTENSION_SUPPORTED
+```
+- Extension Document:
+```python
+from mobio.libs.filetypes.common import ExtensionAudio
+ExtensionAudio.LIST_EXTENSION_SUPPORTED
+```
+
