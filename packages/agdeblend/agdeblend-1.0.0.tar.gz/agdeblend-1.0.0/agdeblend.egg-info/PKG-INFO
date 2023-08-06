@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: agdeblend
+Version: 1.0.0
+Summary: Seismic data blending and deblending
+Home-page: https://github.com/ar4/agdeblend
+Author: Alan Richardson
+Author-email: alan@ausargeo.com
+License: GPLv3
+Project-URL: Documentation, https://ausargeo.pages.dev/agdeblend
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Provides-Extra: mpi
