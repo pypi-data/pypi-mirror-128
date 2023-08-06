@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: treedir
+Version: 26.11.2021
+Summary: TreeDir to define simple directory structures
+Home-page: https://www.gnu.org/licenses/gpl-3.0.txt
+Author: David Pineda Osorio
+Author-email: dpineda@csn.uchile.cl
+License: GPLv3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: anytree
+Requires-Dist: click
+
+Tree Dir base class
+
+
