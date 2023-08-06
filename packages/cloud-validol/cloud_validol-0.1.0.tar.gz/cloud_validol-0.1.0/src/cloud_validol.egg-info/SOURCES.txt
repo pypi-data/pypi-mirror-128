@@ -1,0 +1,17 @@
+MANIFEST.in
+pyproject.toml
+setup.cfg
+src/cloud_validol/__init__.py
+src/cloud_validol.egg-info/PKG-INFO
+src/cloud_validol.egg-info/SOURCES.txt
+src/cloud_validol.egg-info/dependency_links.txt
+src/cloud_validol.egg-info/entry_points.txt
+src/cloud_validol.egg-info/requires.txt
+src/cloud_validol.egg-info/top_level.txt
+src/cloud_validol/loader/__init__.py
+src/cloud_validol/loader/main.py
+src/cloud_validol/loader/lib/__init__.py
+src/cloud_validol/loader/lib/pg.py
+src/cloud_validol/loader/reports/__init__.py
+src/cloud_validol/loader/reports/prices.py
+src/cloud_validol/postgresql/pgmigrate/migrations/V01__initial_schema.sql
