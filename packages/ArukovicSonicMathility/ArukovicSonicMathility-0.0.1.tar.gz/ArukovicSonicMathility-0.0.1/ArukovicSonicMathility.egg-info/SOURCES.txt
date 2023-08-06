@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+ArukovicSonicMathility.egg-info/PKG-INFO
+ArukovicSonicMathility.egg-info/SOURCES.txt
+ArukovicSonicMathility.egg-info/dependency_links.txt
+ArukovicSonicMathility.egg-info/top_level.txt
+Math/__init__.py
