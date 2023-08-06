@@ -1,0 +1,11 @@
+histomics_stream/__init__.py,sha256=EWZF_tFGoTrek7uNSXeAPxAMrkPMz3uFibyXM3sm_Pw,104377
+histomics_stream/codecs.py,sha256=8NFSYoLOImyLiNHP-MIHIpQSgXd9yRGzJTJuOPRi-UA,3647
+histomics_stream/ds/__init__.py,sha256=uDgCfdYnmYV2AnJfR7rmOmVWNOL0EVebpKJiFK7te6E,19
+histomics_stream/ds/init.py,sha256=HM9Pc_q8TSkgoiJzTqL7_FZ0qc6KuXr7YUR9wadkENo,3278
+histomics_stream/dsm/__init__.py,sha256=48zi4AMvfm0HBJQm5SLoB6I5XSX5AP88p6AFmO73fww,25
+histomics_stream/dsm/chunk.py,sha256=Uebfh0uC2TyXYZ7cp0nVOBtRH6GfvdGqXyqqJ-5SFUw,7753
+histomics_stream/dsm/wsi.py,sha256=WXCC_gN4djzppUk-yXrSnPSolJHGgOQUVCBy3uw4_bY,22193
+histomics_stream-1.1.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+histomics_stream-1.1.1.dist-info/WHEEL,sha256=NLqmsx-ZFZ6gDavYgh2oH0ZSN-KRmpcdEXIZDnYy9Pg,99
+histomics_stream-1.1.1.dist-info/METADATA,sha256=F_7DDbLfvwG9yEaboX_LV5PT8_QsJVwP_Tjpt9qdOK0,1611
+histomics_stream-1.1.1.dist-info/RECORD,,
