@@ -1,0 +1,17 @@
+brackets:
+- rate:
+    1984-01-01:
+      value: 0.002
+    2002-01-01:
+      value: 0.005
+    2011-01-01:
+      value: null
+  threshold:
+    1984-01-01:
+      value: 0.0
+    2011-01-01:
+      value: null
+metadata:
+  description: CNRACL, Fonds de compensation de la cessation progressive d’activité
+  ux_name: Fonds de compensation de la cessation progressive d’activité
+  last_review: 2021-08-24 
