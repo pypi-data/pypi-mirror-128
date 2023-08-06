@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+agdeblend_build.py
+agdeblend_libs.py
+setup.py
+agdeblend/__init__.py
+agdeblend/agdeblend.py
+agdeblend.egg-info/PKG-INFO
+agdeblend.egg-info/SOURCES.txt
+agdeblend.egg-info/dependency_links.txt
+agdeblend.egg-info/requires.txt
+agdeblend.egg-info/top_level.txt

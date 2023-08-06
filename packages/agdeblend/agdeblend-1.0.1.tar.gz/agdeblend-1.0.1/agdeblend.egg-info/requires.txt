@@ -1,0 +1,5 @@
+cffi>=1.0.0
+numpy
+
+[mpi]
+mpi4py

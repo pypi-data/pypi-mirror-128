@@ -1,0 +1,2 @@
+include agdeblend_build.py
+include agdeblend_libs.py
