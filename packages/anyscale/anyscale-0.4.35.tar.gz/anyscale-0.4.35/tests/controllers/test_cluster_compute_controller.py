@@ -1,0 +1,171 @@
+from typing import Any, Dict, Optional
+from unittest.mock import ANY, Mock, patch
+
+import click
+import pytest
+import yaml
+from yaml.loader import SafeLoader
+
+from anyscale.controllers.cluster_compute_controller import ClusterComputeController
+from anyscale.sdk.anyscale_client.models.cluster_compute import ClusterCompute
+from anyscale.sdk.anyscale_client.models.clustercompute_response import (
+    ClustercomputeResponse,
+)
+from anyscale.sdk.anyscale_client.models.create_cluster_compute import (
+    CreateClusterCompute,
+)
+
+
+@pytest.fixture()
+def example_compute_config() -> Dict[str, Any]:
+
+    example_compute_config_str = """
+
+    {
+    "cloud_id": "cld_HSrCZdMCYDe1NmMCJhYRgQ4p",
+    "max_workers": 20,
+    "region": "us-west-2",
+    "allowed_azs": null,
+    "head_node_type": {
+        "name": "head-node-type",
+        "instance_type": "m5.2xlarge",
+        "resources": null
+    },
+    "worker_node_types": [
+        {
+        "name": "worker-node-type-0",
+        "instance_type": "m5.4xlarge",
+        "resources": null,
+        "min_workers": null,
+        "max_workers": 10,
+        "use_spot": false
+        },
+        {
+        "name": "worker-node-type-1",
+        "instance_type": "g4dn.4xlarge",
+        "resources": null,
+        "min_workers": null,
+        "max_workers": 10,
+        "use_spot": false
+        }
+    ],
+    "aws": null,
+    "gcp": null,
+    "azure": null
+    }
+    """
+    return yaml.load(example_compute_config_str, Loader=SafeLoader)
+
+
+@pytest.fixture()
+def mock_api_client() -> Mock:
+    mock_api_client = Mock()
+
+    return mock_api_client
+
+
+@pytest.fixture()
+def mock_sdk_client(cluster_compute_test_data: ClusterCompute) -> Mock:
+    mock_api_client = Mock()
+
+    mock_api_client.create_cluster_compute = Mock(
+        return_value=ClustercomputeResponse(result=cluster_compute_test_data)
+    )
+
+    return mock_api_client
+
+
+@pytest.mark.parametrize("name", [None, "test_name"])
+def test_create(
+    mock_api_client: Mock,
+    mock_sdk_client,
+    name: Optional[str],
+    example_compute_config: Dict[str, Any],
+) -> None:
+    cluster_compute_controller = ClusterComputeController(
+        api_client=mock_api_client, anyscale_api_client=mock_sdk_client
+    )
+
+    mock_load = Mock(return_value=example_compute_config)
+    mock_cluster_compute_io = Mock()
+    with patch.multiple("yaml", load=mock_load):
+        cluster_compute_controller.create(mock_cluster_compute_io, name)
+
+    mock_sdk_client.create_cluster_compute.assert_called_once_with(
+        CreateClusterCompute(name=ANY, config=example_compute_config)
+    )
+
+
+@pytest.mark.parametrize("cluster_compute_name", [None, "test_cluster_compute_name"])
+@pytest.mark.parametrize("cluster_compute_id", [None, "test_cluster_compute_id"])
+def test_get(
+    mock_api_client: Mock,
+    mock_sdk_client: Mock,
+    cluster_compute_name: Optional[str],
+    cluster_compute_id: Optional[str],
+):
+    cluster_compute_controller = ClusterComputeController(
+        api_client=mock_api_client, anyscale_api_client=mock_sdk_client
+    )
+    if (cluster_compute_name is None and cluster_compute_id is None) or (
+        cluster_compute_name is not None and cluster_compute_id is not None
+    ):
+        with pytest.raises(click.ClickException):
+            cluster_compute_controller.get(
+                cluster_compute_name=cluster_compute_name,
+                cluster_compute_id=cluster_compute_id,
+            )
+            return
+    else:
+        with patch.multiple(
+            "anyscale.controllers.cluster_compute_controller",
+            get_cluster_compute_from_name=Mock(
+                return_value=Mock(id=cluster_compute_id)
+            ),
+        ):
+            cluster_compute_controller.get(
+                cluster_compute_name=cluster_compute_name,
+                cluster_compute_id=cluster_compute_id,
+            )
+            cluster_compute_controller.api_client.get_compute_template_api_v2_compute_templates_template_id_get.assert_called_once_with(
+                cluster_compute_id
+            )
+
+
+@pytest.mark.parametrize("cluster_compute_name", [None, "test_cluster_compute_name"])
+@pytest.mark.parametrize("cluster_compute_id", [None, "test_cluster_compute_id"])
+@pytest.mark.parametrize("include_shared", [True, False])
+def test_list(
+    mock_api_client: Mock,
+    mock_sdk_client: Mock,
+    cluster_compute_name: Optional[str],
+    cluster_compute_id: Optional[str],
+    include_shared: bool,
+):
+    cluster_compute_controller = ClusterComputeController(
+        api_client=mock_api_client, anyscale_api_client=mock_sdk_client
+    )
+    cluster_compute_controller.anyscale_api_client.search_cluster_computes = Mock(
+        return_value=Mock(results=[Mock()], metadata=Mock(next_paging_token=None))
+    )
+    cluster_compute_controller.list(
+        cluster_compute_name=cluster_compute_name,
+        cluster_compute_id=cluster_compute_id,
+        include_shared=include_shared,
+        max_items=50,
+    )
+
+    if cluster_compute_id:
+        cluster_compute_controller.anyscale_api_client.get_cluster_compute.assert_called_once_with(
+            cluster_compute_id
+        )
+    elif cluster_compute_name:
+        cluster_compute_controller.anyscale_api_client.search_cluster_computes.assert_called_once_with(
+            {"name": {"equals": cluster_compute_name}, "paging": {"count": 1}}
+        )
+    else:
+        if not include_shared:
+            cluster_compute_controller.api_client.get_user_info_api_v2_userinfo_get.assert_called_once_with()
+            cluster_compute_controller.anyscale_api_client.search_cluster_computes.assert_called_once_with(
+                {"creator_id": ANY}
+            )
