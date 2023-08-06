@@ -1,0 +1,4 @@
+aiohttp
+py-dmidecode
+requests
+piecash

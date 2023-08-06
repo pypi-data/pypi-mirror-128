@@ -1,0 +1,253 @@
+#!/usr/bin/env python3
+
+import asyncio
+from aiohttp import web
+import json
+import os
+import uuid
+from datetime import date, datetime, timedelta
+import sys
+import argparse
+
+from gnucash_uk_vat.model import *
+
+class Api:
+
+    def __init__(self, data, listen="0.0.0.0:8080"):
+        self.listen = listen
+        self.data = data
+
+    async def run(self):
+
+        async def get_return(request):
+
+            key = request.match_info["periodKey"]
+            vrn = request.match_info["vrn"]
+
+            if vrn in self.data.data:
+                user = self.data.data[vrn]
+                for v in user.returns:
+                    if v.periodKey == key:
+                        return web.Response(
+                            body=json.dumps(v.to_dict(), indent=4),
+                            content_type="application/json"
+                        )
+
+            raise web.HTTPBadRequest()
+
+        def dump_headers(request):
+
+            for k in  request.headers:
+                print("%s: %s" % (k, request.headers[k]))
+            print()
+
+        async def get_fraud_validate(request):
+
+            dump_headers(request)
+
+            return web.Response(
+                body=json.dumps({}) + "\n",
+                content_type="application/json"
+            )
+
+        async def get_obligations(request):
+
+            start=None
+            end=None
+            status=None
+            vrn = request.match_info["vrn"]
+
+            try:
+                start = datetime.fromisoformat(request.query["from"]).date()
+            except:
+                pass
+
+            try:
+                end = datetime.fromisoformat(request.query["to"]).date()
+            except:
+                pass
+
+            try:
+                status = request.query["status"]
+            except:
+                pass
+
+            try:
+                obls = self.data.data[vrn].obligations
+            except:
+                raise web.HTTPBadRequest()
+
+            if start and end:
+                obls = [
+                    v for v in obls
+                    if v.in_range(start, end)
+                ]
+
+            if status:
+                obls = [
+                    v for v in obls
+                    if v.status == status
+                ]
+                
+            resp = {
+                "obligations": [
+                    v.to_dict()
+                    for v in obls
+                ]
+            }
+
+            return web.Response(
+                body=json.dumps(resp, indent=4) + "\n",
+                content_type="application/json"
+            )
+
+        async def get_liabilities(request):
+
+            try:
+                start = datetime.fromisoformat(request.query["from"]).date()
+                end = datetime.fromisoformat(request.query["to"]).date()
+            except:
+                raise web.HTTPBadRequest()
+
+            vrn = request.match_info["vrn"]
+
+            liabilities = self.data.data[vrn].liabilities
+
+            resp = {
+                "liabilities": [
+                    v.to_dict() for v in liabilities
+                    if v.in_range(start, end)
+                ]
+            }
+
+            return web.Response(
+                body=json.dumps(resp, indent=4) + "\n",
+                content_type="application/json"
+            )
+
+        async def get_payments(request):
+
+            try:
+                start = datetime.fromisoformat(request.query["from"]).date()
+                end = datetime.fromisoformat(request.query["to"]).date()
+            except:
+                raise web.HTTPBadRequest()
+
+            vrn = request.match_info["vrn"]
+
+            payments = self.data.data[vrn].payments
+
+            resp = {
+                "payments": [
+                    v.to_dict() for v in payments
+                    if v.in_range(start, end)
+                ]
+            }
+
+            return web.Response(
+                body=json.dumps(resp, indent=4) + "\n",
+                content_type="application/json"
+            )
+
+        async def submit_return(request):
+
+            body = await request.json()
+            rtn =  Return.from_dict(body)
+
+            if not rtn.finalised:
+                raise web.HTTPBadRequest()
+
+            vrn = request.match_info["vrn"]
+
+            self.data.add_return(vrn, rtn)
+
+            resp = {
+                "processingDate": datetime.utcnow().isoformat(),
+                "paymentIndicator": "BANK",
+                "formBundleNumber": str(uuid.uuid1()),
+                "chargeRefNumber": str(uuid.uuid1()),
+            }
+
+            print(resp)
+
+            raise web.HTTPCreated(
+                body=json.dumps(resp, indent=4).encode("utf-8"),
+                content_type="application/json"
+            )
+
+        async def get_token(request):
+
+            token = {
+                "access_token": "12345",
+                "refresh_token": "67890",
+                "token_type": "bearer",
+                "expires_in": 1440
+            }
+            
+            return web.Response(
+                body=json.dumps(token, indent=4) + "\n",
+                content_type="application/json"
+            )
+
+        async def authorize(request):
+
+            try:
+                id = request.query["client_id"]
+                scope = request.query["scope"]
+                redirect = request.query["redirect_uri"]
+            except:
+                raise web.HTTPBadRequest()
+                
+
+            resp = {
+                'code': 'code123',
+            }
+
+            raise web.HTTPFound(redirect + "?code=code123")
+            
+        app = web.Application()
+
+        app.router.add_get('/oauth/authorize', authorize)
+        app.router.add_post('/oauth/token', get_token)
+        app.router.add_get('/test/fraud-prevention-headers/validate',
+                           get_fraud_validate)
+        app.router.add_get('/organisations/vat/{vrn}/obligations',
+                           get_obligations)
+        app.router.add_get('/organisations/vat/{vrn}/liabilities',
+                           get_liabilities)
+        app.router.add_get('/organisations/vat/{vrn}/payments',
+                           get_payments)
+        app.router.add_get('/organisations/vat/{vrn}/returns/{periodKey}',
+                           get_return)
+        app.router.add_post('/organisations/vat/{vrn}/returns', submit_return)
+
+        runner = web.AppRunner(app)
+        await runner.setup()
+
+        host = self.listen.split(":", 2)
+
+        site = web.TCPSite(runner, host[0], host[1])
+        await site.start()
+
+        while True:
+            await asyncio.sleep(1)
+
+# Command-line argument parser
+parser = argparse.ArgumentParser(description="Gnucash to HMRC VAT API")
+parser.add_argument('--listen', '-l',
+		    default='localhost:8080',
+                    help='Host/port to listen on (default: localhost:8080)')
+parser.add_argument('--data', '-d',
+		    default='vat-data.json',
+                    help='Data file to load at init (default: vat-data.json)')
+
+# Parse arguments
+args = parser.parse_args(sys.argv[1:])
+
+data = open(args.data).read()
+v = VATData.from_json(data)
+a = Api(v, args.listen)
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(a.run())
+
