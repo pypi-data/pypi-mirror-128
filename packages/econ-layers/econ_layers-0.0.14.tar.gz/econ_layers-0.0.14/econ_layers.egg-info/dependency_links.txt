@@ -1,0 +1,6 @@
+pytorch-lightning
+torch >= 1.9.1
+pytest
+black
+numpy
+
