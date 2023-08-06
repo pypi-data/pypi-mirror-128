@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Sectumsempra
+Version: 0.1.0
+Summary: utils for nlp
+Home-page: https://github.com/hgliyuhao
+Author: liyuhao
+Author-email: 1241225413@qq.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Requires-Dist: xlrd (==1.2.0)
+Requires-Dist: xlwt
+Requires-Dist: xlutils
+
+UNKNOWN
+
+
