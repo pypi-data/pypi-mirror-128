@@ -1,0 +1,16 @@
+type: regex('^FeatureSet$', ignore_case=True)
+name: regex('^[A-z,0-9,_]+$')
+entity: regex('^[A-z,0-9,_]+$',required=False)
+documentation: str(required=False)
+description: str(required=False)
+url: str(required=False)
+owners: list(include('email'),required=False)
+columns: list(include('column'),required=True)
+profile: include('cron', required=False)
+query: str()
+---
+email: str()
+column:
+  name: str()
+  description: str(required=False)
+  type: regex('INDEX|TIME_INDEX|TEXT|NUMBER|CATEGORICAL|BOOLEAN|TIMESTAMP|DATE|NUMBERLIST|TEXTLIST',ignore_case=True)

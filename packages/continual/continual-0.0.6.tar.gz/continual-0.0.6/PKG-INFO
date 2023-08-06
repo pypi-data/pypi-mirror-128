@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: continual
+Version: 0.0.6
+Summary: Automated AI for the Modern Data Stack
+Author: Continual IQ
+Author-email: support@continual.ai
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: fsspec (>=0.8.5,<0.9.0)
+Requires-Dist: gitpython (>=3.1.7,<4.0.0)
+Requires-Dist: grpcio (>=1.27.1,<2.0.0)
+Requires-Dist: grpcio_status (>=1.31.0,<2.0.0)
+Requires-Dist: halo (>=0.0.30,<0.0.31)
+Requires-Dist: humanize (>=2.5.0,<3.0.0)
+Requires-Dist: pandas (>=1.0.1,<2.0.0)
+Requires-Dist: pandas-gbq (>=0.14.1,<0.15.0)
+Requires-Dist: pytz (>=2020.5,<2021.0)
+Requires-Dist: pyyaml (>=5.3,<6.0)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: rich (>=9.13.0,<10.0.0)
+Requires-Dist: tabulate (>=0.8.6,<0.9.0)
+Requires-Dist: tqdm (>=4.54.1,<5.0.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Requires-Dist: yamale (>=3.0.4,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Official Python SDK for Continual
+
+https://www.continual.ai
+
+## Getting Started
+
+to install the continual SDK and cli run:
+
+```
+pip3 install --no-cache-dir https://storage.googleapis.com/continual-public/sdk/continual-0.1.0.tar.gz
+```
+
