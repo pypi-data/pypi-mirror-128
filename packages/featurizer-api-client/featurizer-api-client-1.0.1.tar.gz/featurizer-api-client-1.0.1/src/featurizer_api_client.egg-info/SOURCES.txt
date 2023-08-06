@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/featurizer_api_client/__init__.py
+src/featurizer_api_client/client.py
+src/featurizer_api_client.egg-info/PKG-INFO
+src/featurizer_api_client.egg-info/SOURCES.txt
+src/featurizer_api_client.egg-info/dependency_links.txt
+src/featurizer_api_client.egg-info/requires.txt
+src/featurizer_api_client.egg-info/top_level.txt
+src/featurizer_api_client/common/__init__.py
+src/featurizer_api_client/common/exceptions.py
+src/featurizer_api_client/common/logging.py
+src/featurizer_api_client/utils/__init__.py
+src/featurizer_api_client/utils/data.py
+src/featurizer_api_client/utils/headers.py
