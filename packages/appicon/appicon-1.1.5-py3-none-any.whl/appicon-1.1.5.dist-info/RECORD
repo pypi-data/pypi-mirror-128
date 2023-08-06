@@ -1,0 +1,13 @@
+appicon/__init__.py,sha256=3c9o50ATxFIYVTChoozRoif2QlhBad0Ymxow3IbVjtE,1266
+appicon/icongen.py,sha256=-DYKD7P6sAuP97tcKXxXpWP0m30PQXlhc7qTxfSqRkE,2166
+appicon/android/Contents.json,sha256=zTolXHcwRcU3A3sBVUnATWo3tOl8-NcVgScg-0cS4nA,1671
+appicon/android/__init__.py,sha256=KRnbZcpkExatOoESsgdPA0ebpOv4985R2hXRc3jRozU,43
+appicon/android/androidicongen.py,sha256=Z6ea6T3QAqTcgiSZPjo4FPL4X-Bz__wQtq4aS8Rd2Mk,721
+appicon/ios/Contents.json,sha256=Jix20337PpWKyfkv1JmmsapIDQga9jzBCcjee104cG0,5144
+appicon/ios/__init__.py,sha256=-oCFYoKox_Pwq6Lbec-E8UY5cf7i0j_t56UaszZr9xk,35
+appicon/ios/iosicongen.py,sha256=j77KuJvoFf3JIhyxJC_l4k2aimDC1EQLHcFj7-2CffI,1056
+appicon-1.1.5.dist-info/LICENSE,sha256=sMSPCtcEEXhvQxe7VfrklZOGs9VGiVH_4AgRZNPKdqo,1070
+appicon-1.1.5.dist-info/METADATA,sha256=XuYovetJFigxaj53XyRPFsOyzlAYkQqTq0TzRLv8NiY,2780
+appicon-1.1.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+appicon-1.1.5.dist-info/top_level.txt,sha256=zTwpcjLIsPleKMt7u7PSaaiosBaNSp5wm0pW92WTUPw,8
+appicon-1.1.5.dist-info/RECORD,,
