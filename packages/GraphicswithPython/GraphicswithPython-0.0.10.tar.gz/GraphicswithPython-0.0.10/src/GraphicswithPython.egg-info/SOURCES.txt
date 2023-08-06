@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/graphicswithpython.py
+src/GraphicswithPython.egg-info/PKG-INFO
+src/GraphicswithPython.egg-info/SOURCES.txt
+src/GraphicswithPython.egg-info/dependency_links.txt
+src/GraphicswithPython.egg-info/requires.txt
+src/GraphicswithPython.egg-info/top_level.txt
