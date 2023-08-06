@@ -1,0 +1,22 @@
+include README.md
+include VERSION
+include LICENSE
+include pyproject.toml
+include src/rapidfuzz/*.pyi
+include src/rapidfuzz/py.typed
+include src/*.hpp
+include src/*.cpp
+
+include capi/*.h
+include capi/*.pxd
+
+include extern/rapidfuzz-cpp/LICENSE
+recursive-include extern/rapidfuzz-cpp/rapidfuzz *.hpp *.h *cpp
+
+include extern/taskflow/LICENSE
+include extern/taskflow/taskflow/algorithm/*
+include extern/taskflow/taskflow/core/*
+include extern/taskflow/taskflow/nstd/variant.hpp
+include extern/taskflow/taskflow/utility/*
+include extern/taskflow/taskflow/declarations.hpp
+include extern/taskflow/taskflow/taskflow.hpp
