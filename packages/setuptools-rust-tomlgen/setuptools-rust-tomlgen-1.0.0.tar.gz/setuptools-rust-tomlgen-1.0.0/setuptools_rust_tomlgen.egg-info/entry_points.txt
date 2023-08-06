@@ -1,0 +1,3 @@
+[distutils.commands]
+tomlgen_rust = setuptools_rust_tomlgen:tomlgen_rust
+
