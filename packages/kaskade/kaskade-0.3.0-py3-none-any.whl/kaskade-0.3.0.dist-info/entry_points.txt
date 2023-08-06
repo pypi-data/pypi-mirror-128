@@ -1,0 +1,4 @@
+[console_scripts]
+kaskade=kaskade.app:main
+kskd=kaskade.app:main
+
