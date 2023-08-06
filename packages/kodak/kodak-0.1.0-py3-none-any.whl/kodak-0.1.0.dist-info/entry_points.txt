@@ -1,0 +1,3 @@
+[console_scripts]
+kodak=kodak.cli:main
+

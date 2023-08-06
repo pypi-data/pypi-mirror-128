@@ -1,0 +1,291 @@
+---
+openapi: "3.0.2"
+info:
+  version: 0.1.0
+  title: Kodak
+  description: >-
+    A simple HTTP service for mucking about with images. This is a super basic HTTP
+    service for autogenerating website-ready banner and preview images from full-size
+    source images. The generated images are automatically cached with deterministic
+    URLs.
+  license:
+    name: MIT
+    url: https://mit-license.org/
+x-anchors:
+  DefaultHeaders: &headers-default
+    Server:
+      $ref: "#/components/headers/Version"
+  OptionsResponses: &responses-options
+    '204':
+      description: "Available HTTP verbs in header, per RFC 7231"
+      headers:
+        Allowed:
+          $ref: "#/components/headers/Allowed"
+    '500':
+      $ref: "#/components/responses/InternalServerError"
+  ImageHeaders: &headers-image
+    <<: *headers-default
+    Content-Digest:
+      description: SHA256 hash of the provided image content
+      schema:
+        type: string
+        format: sha256
+        example: sha-256=f2bf647325d5a6ad2d7ca138293f9cb224dd863fde0e3fa46bc5c15b43fece5c
+    Content-Type:
+      description: Content type of the image being returned
+      schema:
+        type: string
+        enum: [image/jpeg, image/png]
+    Cache-Control:
+      description: Cache settings for the image to prevent unnecessary reloads
+      schema:
+        type: string
+        example: public, max-age=604800, immutable
+paths:
+  /openapi.json:
+    get:
+      summary: Retrieve the OpenAPI specification file
+      operationId: OpenAPI
+      tags: ["meta"]
+      responses:
+        '200':
+          description: Contents of the OpenAPI spec file
+          headers: *headers-default
+          content:
+            application/json:
+              schema:
+                type: object
+  /heartbeat:
+    head:
+      summary: Check whether the service is online
+      operationId: Heartbeat
+      tags: ["meta"]
+      responses:
+        '200':
+          description: Server is operational
+          headers: *headers-default
+        '500':
+          description: Server is not operating correctly
+          headers: *headers-default
+  /image/{image_name}/original:
+    head:
+      summary: Returns metadata about the image request
+      operationId: ImageHead
+      tags: ["meta"]
+      parameters:
+        - $ref: "#/components/parameters/ImageName"
+        - $ref: "#/components/parameters/ImageFormat"
+      responses:
+        '200':
+          $ref: "#/components/responses/ImageMeta"
+        '401':
+          $ref: "#/components/responses/UnauthenticatedError"
+        '404':
+          $ref: "#/components/responses/NotFoundError"
+        '405':
+          $ref: "#/components/responses/MethodNotAllowedError"
+        '410':
+          $ref: "#/components/responses/DeletedError"
+        '422':
+          $ref: "#/components/responses/UnacceptableError"
+        '500':
+          $ref: "#/components/responses/InternalServerError"
+        '501':
+          $ref: "#/components/responses/NotImplementedError"
+    get:
+      summary: Retrieve the image resource with the specified ID
+      operationId: ImageGet
+      tags: ["image"]
+      parameters:
+        - $ref: "#/components/parameters/ImageName"
+        - $ref: "#/components/parameters/ImageFormat"
+      responses:
+        '200':
+          $ref: "#/components/responses/Image"
+        '401':
+          $ref: "#/components/responses/UnauthenticatedError"
+        '404':
+          $ref: "#/components/responses/NotFoundError"
+        '405':
+          $ref: "#/components/responses/MethodNotAllowedError"
+        '410':
+          $ref: "#/components/responses/DeletedError"
+        '422':
+          $ref: "#/components/responses/UnacceptableError"
+        '500':
+          $ref: "#/components/responses/InternalServerError"
+        '501':
+          $ref: "#/components/responses/NotImplementedError"
+    options:
+      summary: Retrieve available HTTP verbs for the selected endpoint
+      operationId: ImageOptions
+      tags: ["meta"]
+      parameters:
+        - $ref: "#/components/parameters/ImageName"
+        - $ref: "#/components/parameters/ImageFormat"
+      responses: *responses-options
+  /image/{image_name}/{manip}:
+    head:
+      summary: Returns metadata about the image request
+      operationId: ImageManipHead
+      tags: ["meta"]
+      parameters:
+        - $ref: "#/components/parameters/ImageName"
+        - $ref: "#/components/parameters/ImageFormat"
+        - $ref: "#/components/parameters/ImageManip"
+      responses:
+        '200':
+          $ref: "#/components/responses/Image"
+        '401':
+          $ref: "#/components/responses/UnauthenticatedError"
+        '404':
+          $ref: "#/components/responses/NotFoundError"
+        '405':
+          $ref: "#/components/responses/MethodNotAllowedError"
+        '410':
+          $ref: "#/components/responses/DeletedError"
+        '422':
+          $ref: "#/components/responses/UnacceptableError"
+        '500':
+          $ref: "#/components/responses/InternalServerError"
+    get:
+      summary: Fetch a pre configured version of the image
+      operationId: ImageManipGet
+      tags: ["image"]
+      parameters:
+        - $ref: "#/components/parameters/ImageName"
+        - $ref: "#/components/parameters/ImageFormat"
+        - $ref: "#/components/parameters/ImageManip"
+      responses:
+        '200':
+          $ref: "#/components/responses/Image"
+        '401':
+          $ref: "#/components/responses/UnauthenticatedError"
+        '404':
+          $ref: "#/components/responses/NotFoundError"
+        '405':
+          $ref: "#/components/responses/MethodNotAllowedError"
+        '410':
+          $ref: "#/components/responses/DeletedError"
+        '422':
+          $ref: "#/components/responses/UnacceptableError"
+        '500':
+          $ref: "#/components/responses/InternalServerError"
+    options:
+      summary: Retrieve available HTTP verbs for the selected endpoint
+      operationId: ImageManipOptions
+      tags: ["meta"]
+      parameters:
+        - $ref: "#/components/parameters/ImageName"
+        - $ref: "#/components/parameters/ImageFormat"
+        - $ref: "#/components/parameters/ImageManip"
+      responses: *responses-options
+components:
+  schemas:
+    Error:
+      type: object
+      properties:
+        event_id:
+          type: string
+          format: uuid
+        message:
+          type: string
+        data:
+          type: object
+      example:
+        event_id: 0de388ae-8277-49ba-b225-3ef7f5b9d084
+        message: Website go brrr
+        data: {}
+  headers:
+    Version:
+      description: Application name and version
+      schema:
+        type: string
+        example: kodak-1.0.0
+    Allowed:
+      description: Comma delimited list of valid HTTP verbs
+      schema:
+        type: string
+  parameters:
+    ImageName:
+      name: image_name
+      in: path
+      description: Image resource name
+      required: true
+      schema:
+        type: string
+    ImageFormat:
+      name: Accept
+      in: header
+      description: Content type indicating what format the image should be returned in
+      required: false
+      schema:
+        type: string
+        default: image/jpeg
+        enum: [image/jpeg, image/png]
+    ImageManip:
+      name: manip
+      in: path
+      description: Name of the image config manip to use
+      required: true
+      schema:
+        type: string
+  responses:
+    Image:
+      description: Image content for the specified ID
+      headers: *headers-image
+      content:
+        image/jpeg: {}
+        image/png: {}
+    ImageMeta:
+      description: Image content for the specified ID
+      headers: *headers-image
+    InternalServerError:
+      description: Internal server error
+      headers: *headers-default
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    NotFoundError:
+      description: Image with provided ID does not exist
+      headers: *headers-default
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    MethodNotAllowedError:
+      description: The request's HTTP method is not allowed on this endpoint
+      headers: *headers-default
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    DeletedError:
+      description: Image with provided ID was deleted
+      headers: *headers-default
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    UnacceptableError:
+      description: Requested image format is not supported by the server
+      headers: *headers-default
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    UnauthenticatedError:
+      description: Resource requires authentication that was not successfully provided
+      headers: *headers-default
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    NotImplementedError:
+      description: The server does not support retriving the full resolution image
+      headers: *headers-default
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
