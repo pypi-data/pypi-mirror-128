@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+github2pandas_manager/__init__.py
+github2pandas_manager/__main__.py
+github2pandas_manager/config_parser.py
+github2pandas_manager/data_extractor.py
+github2pandas_manager/data_merger.py
+github2pandas_manager/repository_handler.py
+github2pandas_manager/utilities.py
+github2pandas_manager.egg-info/PKG-INFO
+github2pandas_manager.egg-info/SOURCES.txt
+github2pandas_manager.egg-info/dependency_links.txt
+github2pandas_manager.egg-info/requires.txt
+github2pandas_manager.egg-info/top_level.txt
