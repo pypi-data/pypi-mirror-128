@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: utsc
+Version: 0.0.3
+Summary: Root package for the utsc namespace of python packages. This package only provides the `utsc` command line tool as a namespaced wrapper around all the other `utsc.*` packages
+License: MIT
+Author: Alex Tremblay
+Author-email: alex.tremblay@utoronto.ca
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: loguru
+Requires-Dist: typer
