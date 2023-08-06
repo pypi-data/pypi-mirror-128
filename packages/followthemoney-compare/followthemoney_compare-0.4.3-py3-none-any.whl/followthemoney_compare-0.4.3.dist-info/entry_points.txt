@@ -1,0 +1,4 @@
+[console_scripts]
+followthemoney-compare = followthemoney_compare.cli:main
+ftm-compare = followthemoney_compare.cli:main
+
