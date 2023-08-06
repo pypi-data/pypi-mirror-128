@@ -1,0 +1,6 @@
+strip_whitespace/middlewares/HtmlStripWhiteSpaceMiddleware.py,sha256=V9oxBilerFINuOKvggYC4edZSkHmF8J_4LQHwVGQJrU,1531
+django_strip_whitespace-0.0.22.dist-info/LICENSE,sha256=oO50YGSwbQnKsHaBFuwmX9DUUmHUCHya0saYoHx6rA4,35803
+django_strip_whitespace-0.0.22.dist-info/METADATA,sha256=AJSSRbV7Ad4FuUhlEGf_r-HJKYpMXH8hfjA7PEEKuKk,9850
+django_strip_whitespace-0.0.22.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_strip_whitespace-0.0.22.dist-info/top_level.txt,sha256=bZ1y1di0JeYYTFNlNXAI5pAQ8GLa-3xkolYalTohEfI,17
+django_strip_whitespace-0.0.22.dist-info/RECORD,,
