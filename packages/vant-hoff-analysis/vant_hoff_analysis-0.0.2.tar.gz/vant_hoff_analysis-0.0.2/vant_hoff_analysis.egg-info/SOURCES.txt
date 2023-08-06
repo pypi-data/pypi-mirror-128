@@ -1,0 +1,15 @@
+README.md
+setup.py
+tests/__init__.py
+tests/test_example_data.py
+tests/test_fitter.py
+tests/test_pct_curve.py
+vant_hoff_analysis/__init__.py
+vant_hoff_analysis/fitter.py
+vant_hoff_analysis/pct_curve.py
+vant_hoff_analysis/result.py
+vant_hoff_analysis.egg-info/PKG-INFO
+vant_hoff_analysis.egg-info/SOURCES.txt
+vant_hoff_analysis.egg-info/dependency_links.txt
+vant_hoff_analysis.egg-info/requires.txt
+vant_hoff_analysis.egg-info/top_level.txt
