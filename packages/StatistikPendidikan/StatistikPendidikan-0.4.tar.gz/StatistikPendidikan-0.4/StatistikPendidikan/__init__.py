@@ -1,0 +1,1 @@
+from StatistikPendidikan.KemdikbudScrapper import KemdikbudScrapper
