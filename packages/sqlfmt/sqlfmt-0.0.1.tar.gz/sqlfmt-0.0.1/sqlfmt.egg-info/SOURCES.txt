@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+sqlfmt.egg-info/PKG-INFO
+sqlfmt.egg-info/SOURCES.txt
+sqlfmt.egg-info/dependency_links.txt
+sqlfmt.egg-info/entry_points.txt
+sqlfmt.egg-info/requires.txt
+sqlfmt.egg-info/top_level.txt
+sqlfmt.egg-info/zip-safe
