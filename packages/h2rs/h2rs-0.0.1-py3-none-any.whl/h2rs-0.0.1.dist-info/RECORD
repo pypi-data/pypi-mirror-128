@@ -1,0 +1,10 @@
+h2rs/__init__.py,sha256=kkGrRNWJawj1h8mdBxlMLJ--viu7PiTkYYFBhwGXCcA,14
+h2rs/__main__.py,sha256=js9xXN37mlwWKR-1BxSi_k-sclFtW0K-ilBNT6gNqUo,126
+h2rs/h2rs.py,sha256=fT_7YA2rMnb4OkXtSnMGimaWIWwdOXkk2vE6CktsicQ,9032
+h2rs/h2rscmd.py,sha256=fAtSVZq3MiqnDL_QHfHKYgre6qrCYkWiNLSrxhR03m0,183
+h2rs-0.0.1.dist-info/LICENSE,sha256=wDzqAntLQORAL6vQhVdzZyfsPVvFStZKtkct5DIZjK0,18047
+h2rs-0.0.1.dist-info/METADATA,sha256=uK5vJqBr13-UbfXwhzW-Wlu-9MaVhKdQ8UNYoGLvGMk,2979
+h2rs-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+h2rs-0.0.1.dist-info/entry_points.txt,sha256=kQJ09SK0Pd6DXkwmwCRerqKFCtNkYM4xe8lJjtXMfhg,41
+h2rs-0.0.1.dist-info/top_level.txt,sha256=b2kPMKMuP3ALZ2ITzj2W0GVCGyLBO__lFr_PW9YzSkw,5
+h2rs-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+h2rs = h2rs.h2rs:main
+
