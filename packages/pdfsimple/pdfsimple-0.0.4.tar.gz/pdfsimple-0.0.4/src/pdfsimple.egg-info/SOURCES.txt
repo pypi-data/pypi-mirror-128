@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pdfsimple.egg-info/PKG-INFO
+src/pdfsimple.egg-info/SOURCES.txt
+src/pdfsimple.egg-info/dependency_links.txt
+src/pdfsimple.egg-info/top_level.txt
