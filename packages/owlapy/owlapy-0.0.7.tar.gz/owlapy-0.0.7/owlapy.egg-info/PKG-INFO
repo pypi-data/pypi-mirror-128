@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: owlapy
+Version: 0.0.7
+Summary: OWL-APy is a OWL Model for Python loosely based on OWLAPI
+Home-page: UNKNOWN
+Author: OWL-APy team
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: owlready2
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: dev
+
+UNKNOWN
+
