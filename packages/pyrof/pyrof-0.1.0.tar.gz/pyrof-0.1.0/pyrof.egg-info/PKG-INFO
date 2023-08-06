@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyrof
+Version: 0.1.0
+Summary: Python wrappers for dynamic menus (rofi, fzf)
+Home-page: https://github.com/nesstero/pyrof
+Maintainer: nesstero
+Maintainer-email: nestero@tuta.io
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
