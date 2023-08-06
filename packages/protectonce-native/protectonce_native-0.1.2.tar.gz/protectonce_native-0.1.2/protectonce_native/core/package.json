@@ -1,0 +1,30 @@
+{
+  "name": "@protectonce/core",
+  "version": "0.1.3",
+  "description": "ProtectOnce Agent Common Core",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "author": "",
+  "license": "proprietary",
+  "dependencies": {
+    "ahocorasick": "1.0.2",
+    "bindings": "1.5.0",
+    "lodash": "4.17.21",
+    "mnemonist": "0.38.3",
+    "murmurhash-native": "3.5.0",
+    "node-addon-api": "4.0.0",
+    "uuid": "8.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "deep-diff": "^1.0.2",
+    "mocha-json-output-reporter": "^2.0.1",
+    "mocha": "^9.0.3",
+    "sinon": "^11.1.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
