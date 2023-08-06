@@ -1,0 +1,11 @@
+gocqapi/__init__.py,sha256=JUORX1G6Kv8UgLk_XKc8Hd5Z1X3UiyAE1iQBZYiurQE,390
+gocqapi/_api.py,sha256=Zm0e2kljX-p6RwxrcOd11mo6U32Nnwqu4Ft3uALFNr4,2075
+gocqapi/group_manage.py,sha256=XcnIJEXrkYgWf3iFahOcnezmj6AAsibVYoVyPInDTQ8,9965
+gocqapi/info.py,sha256=qms4Lz0F30gd9_iZJ1oJ_qM1XmAxwuUJ0ldPqjHr5WU,14291
+gocqapi/message.py,sha256=6y_GcP_2cl1AfoQJetLW8bIRzNbNIn9t_-YMdmcIN98,7604
+gocqapi/models.py,sha256=oIByjIltMvlOkVZxiIPBYrKFHmCGmMJzk-Xv1dZUMig,5604
+gocqapi/self_manage.py,sha256=syUGfbTYEktnMghXvBd5M9SxkP317UVseyntq-mU8cE,1094
+gocqapi-0.1.0.dist-info/LICENSE,sha256=z2iCbEbb3FBiBJmV-m8GJkYQdiTKEayBcMUBOwXWmM8,1095
+gocqapi-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+gocqapi-0.1.0.dist-info/METADATA,sha256=y7IbI3Euw4hvuFJJjCrCX7N-RkODfWyLJP_vzSNCoQU,418
+gocqapi-0.1.0.dist-info/RECORD,,
