@@ -1,0 +1,231 @@
+{% extends "base.html" %}
+
+{% load static sekizai_tags %}
+
+{% block js %}
+{% addtoblock "js" %}
+<script charset="utf-8" type="text/javascript">
+  $(document).ready(setup);
+
+  var anonymous_mode = false;
+  var absender = {}
+
+  function setup() {
+    $("#anonymous_mode").click(toggle_anonymous_mode);
+  }
+
+  function toggle_anonymous_mode() {
+    anonymous_mode = !anonymous_mode;
+
+    var n = $("#name"), e = $("#email"), info = $("#anonymous_info");
+
+    n.prop("disabled", anonymous_mode);
+    e.prop("disabled", anonymous_mode);
+
+    if (anonymous_mode) {
+      absender = {
+        "name": n.val(),
+        "email": e.val(),
+      }
+      n.val("");
+      e.val("");
+      info.show();
+    } else {
+      n.val(absender["name"]);
+      e.val(absender["email"]);
+      info.hide();
+    }
+  }
+</script>
+{% endaddtoblock %}
+{% endblock %}
+
+{% block title %}DIVA{% endblock title %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>
+        DIVA
+        <small class="text-muted">Deine Individuelle Veranstaltungs-Auswertung</small>
+      </h1>
+    </div>
+  </div>
+
+  {% if success %}
+  <div class="row">
+    <div class="col">
+      <div class="alert alert-success">
+        Vielen Dank für deine DIVA-Mail!
+        {% if anonymous_mode %}
+        Da du lieber anonym bleiben wolltest, wurde diese E-Mail ohne personengebundene Daten verschickt.
+        Einzig dein Studiengang und -abschnitt wurden übermittelt.
+        {% else %}
+        Da du deinen Namen und deine E-Mail-Adresse angegeben hast, wird sich bald jemand von der Fachschaft bei dir melden.
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="row">
+    <div class="col">
+      <p>
+        Am einfachsten ist es, wenn Ihr Euch persönlich an den Dozenten oder zu
+        unseren Sitzungs- und Sprechzeiten bei uns in der Schillingallee 70
+        meldet.
+      </p>
+      <p>
+        Falls ihr es jedoch einmal zeitlich nicht schafft, direkt dazu aufgefordert
+        wurdet oder zu schüchtern seid, könnt ihr hier anonym loswerden, was euch auf
+        dem Herzen liegt.
+      </p>
+    </div>
+    <div class="col">
+      <p>
+        Ihr habt natürlich auch die Möglichkeit anonym zu bleiben. Wir bitten
+        Euch aber zu bedenken, dass wir dann auch keine Möglichkeit haben Euch
+        direkt über die Entwicklung der Problemlösung zu informieren!
+      </p>
+      <p>
+        Es werden keinerlei Namen, Daten (z.B. IP Adressen) oder Hinweise der
+        Studierenden veröffentlicht! Positive Kritik ist ausdrücklich
+        erwünscht, auch ganz kleine Verbesserungsvorschläge gehören hierher!
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="alert alert-primary">
+        Bedenkt bitte: DIVA soll die Lehre verbessern und eure Sicht auf Dinge
+        vermitteln. Konstruktive Kritik kann motivieren – persönliche
+        Beleidigungen führen vor allem zu verhärteten Fronten und nicht zu
+        einer Weiterentwicklung Lehre in die gewünschte Richtung.
+      </div>
+    </div>
+  </div>
+
+  {% if errors %}
+  <div class="row">
+    <div class="col">
+      <div class="alert alert-danger">
+        <h4 class="alert-heading">Achtung! <small>Folgende Fehler sind aufgetreten:</small></h4>
+        {% for error in errors %}
+        <p class="mb-0">{{ error }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <form method="post" accept-charset="utf-8">
+    {% csrf_token %}
+
+    <div class="form-row">
+      <div class="form-group col">
+        <label for="studiengang"><strong>Studiengang</strong></label>
+        <select class="form-control" name="studiengang" id="studiengang">
+          {% for s in studiengaenge %}
+          <option value="{{ s.id }}" {% if s.id == user.fachschaftuser.studiengang.id %}selected{% endif %}>{{ s.bezeichnung }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="form-group col">
+        <label for="studienabschnitt"><strong>Studienabschnitt</strong></label>
+        <select class="form-control" name="studienabschnitt" id="studienabschnitt">
+          {% for a in studienabschnitte %}
+          <option value="{{ a.id }}" {% if a.id == user.fachschaftuser.studienabschnitt.id %}selected{% endif %}>{{ a.bezeichnung }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+
+    {% if user.is_authenticated %}
+    <div class="form-row">
+      <div class="form-group col">
+        <label><strong>dein Name</strong></label>
+        <input class="form-control" type="text" name="name" id="name" value="{{ user.get_full_name }}" required readonly>
+      </div>
+      <div class="form-group col">
+        <label><strong>deine E-Mail-Adresse</strong></label>
+        <input class="form-control" type="email" name="email" id="email" value="{{ user.email }}" required readonly>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="form-row">
+      <div class="form-group col">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" name="anonymous_mode" id="anonymous_mode" {% if not user.is_authenticated %}checked{% endif %}>
+          <label class="form-check-label" for="anonymous_mode">ich möchte lieber anonym bleiben</label>
+        </div>
+      </div>
+      <span id="anonymous_info" class="text-danger" style="display: none;">
+        (niemand erhält deinen Namen oder deine E-Mail-Adresse, aber du
+        kannst auch nicht auf Rückfragen antworten)
+      </span>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col">
+        <label><strong>Empfänger</strong></label>
+        <fieldset required>
+          {% for e in empfaenger %}
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="empfaenger" value="{{ e.id }}" id="empfaenger_{{ e.id }}" {% if e.required %}checked disabled{% endif %}>
+            <label class="form-check-label" for="empfaenger_{{ e.id }}">
+              {% if e.required %}
+              <abbr title="DIVA-Mails werden immer an diesen Empfänger versandt."><strong>{{ e.name }}</strong></abbr>
+              {% else %}
+              {{ e.name }}
+              {% endif %}
+            </label>
+          </div>
+          {% empty %}
+          <p class="text-muted">Keine Empfänger vorhanden.</p>
+          {% endfor %}
+        </fieldset>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="alert alert-warning">
+          <p>
+            <strong>Es werden keine personengebundenen Daten an das Studiendekanat übermittelt.</strong>
+            Das Studiendekanat bekommt ausschließlich deine Textnachricht, deinen
+            Betreff sowie deinen Studiengang und das Semester mitgeteilt.
+          </p>
+          <p>
+            Alle weiteren Angaben erhält nur die Fachschaft. Wir gehen mit diesen Daten
+            sehr vertraulich um. Jedoch sind sie für uns wichtig, da wir so bei möglichen
+            Rückfragen mit dir kommunizieren können, um das Problem zu lösen.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col">
+        <label><strong>Betreff</strong></label>
+        <input class="form-control" type="text" name="betreff" id="betreff" value="{{ betreff }}" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col">
+        <label><strong>dein Anliegen</strong></label>
+        <textarea class="form-control" name="anliegen" id="anliegen" rows="10" required>{{ anliegen }}</textarea>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col">
+        <button type="submit" class="btn btn-primary">Absenden</button>
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock content %}
