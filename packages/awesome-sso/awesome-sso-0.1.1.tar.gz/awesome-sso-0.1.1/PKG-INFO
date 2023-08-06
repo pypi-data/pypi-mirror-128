@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: awesome-sso
+Version: 0.1.1
+Summary: sso general utility for services connected to sso
+Home-page: http://gitlab.ct.mobagel.com:7979/MOD/awesome-sso
+License: Apache-2.0
+Author: Schwannden Kuo
+Author-email: schwannden@mobagel.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# Usage
+1. to install poetry: `pip instala poetry`
+2. project setup: `poetry install`
+3. update version in `pyproject.toml`
+4. build: `poetry build`
+5. publish to pypi: `poetry publish`
+
+
