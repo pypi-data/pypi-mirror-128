@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyabsa
+Version: 1.3.5
+Summary: This tool provides the state-of-the-art models for aspect term extraction (ATE), aspect polarity classification (APC), and text classification.
+Home-page: https://github.com/yangheng95/pyabsa
+Author: Yang Heng
+Author-email: yangheng@m.scnu.edu.cn
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: findfile (>=1.5)
+Requires-Dist: autocuda (>=0.8)
+Requires-Dist: spacy
+Requires-Dist: networkx
+Requires-Dist: seqeval
+Requires-Dist: update-checker
+Requires-Dist: typing-extensions
+Requires-Dist: tqdm
+Requires-Dist: termcolor
+Requires-Dist: gitpython
+Requires-Dist: googledrivedownloader
+Requires-Dist: transformers (>4.5)
+Requires-Dist: torch (>=1.0)
+
+UNKNOWN
+
+
