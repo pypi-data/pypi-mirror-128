@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="3" skipped="3" tests="6" time="2.100" timestamp="2021-11-19T18:57:48.740272" hostname="OLI-OMEN"><testcase classname="bumpversion" name="FLAKE8" time="0.000"><skipped type="pytest.skip" message="file(s) previously passed FLAKE8 checks">/home/olivier/dev/kairntech/pyprocessors_silero_te/.tox/py38/lib/python3.8/site-packages/pytest_flake8.py:116: file(s) previously passed FLAKE8 checks</skipped></testcase><testcase classname="src.pyprocessors_silero.__init__" name="FLAKE8" time="0.000"><skipped type="pytest.skip" message="file(s) previously passed FLAKE8 checks">/home/olivier/dev/kairntech/pyprocessors_silero_te/.tox/py38/lib/python3.8/site-packages/pytest_flake8.py:116: file(s) previously passed FLAKE8 checks</skipped></testcase><testcase classname="src.pyprocessors_silero.silero" name="FLAKE8" time="0.078"><failure message="/home/olivier/dev/kairntech/pyprocessors_silero_te/src/pyprocessors_silero/silero.py:42:1: E302 expected 2 blank lines, found 1&#10;">/home/olivier/dev/kairntech/pyprocessors_silero_te/src/pyprocessors_silero/silero.py:42:1: E302 expected 2 blank lines, found 1
+</failure></testcase><testcase classname="tests.test_silero" name="FLAKE8" time="0.000"><skipped type="pytest.skip" message="file(s) previously passed FLAKE8 checks">/home/olivier/dev/kairntech/pyprocessors_silero_te/.tox/py38/lib/python3.8/site-packages/pytest_flake8.py:116: file(s) previously passed FLAKE8 checks</skipped></testcase><testcase classname="tests.test_silero" name="test_silero_te" time="1.235"><failure message="RuntimeError: Numpy is not available">def test_silero_te():
+        model = SileroProcessor.get_model()
+        model_class = model.construct().__class__
+        assert model_class == SileroParameters
+        testdir = Path(__file__).parent
+        source = Path(testdir, 'data/test2.txt')
+        with source.open("r") as fin:
+            doc = Document(text=fin.read())
+        original_text = doc.text
+        processor = SileroProcessor()
+        parameters = SileroParameters(model=SileroModel.silero_te)
+&gt;       docs: List[Document] = processor.process([doc], parameters)
+
+tests/test_silero.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.tox/py38/lib/python3.8/site-packages/pyprocessors_silero/silero.py:56: in process
+    document.text = self._enhance(document.text, params)
+.tox/py38/lib/python3.8/site-packages/pyprocessors_silero/silero.py:49: in _enhance
+    return apply_te(text, lan=params.lang)
+../../../.cache/torch/hub/snakers4_silero-models_master/hubconf.py:126: in apply_te
+    return model.enhance_text(text, lan)
+&lt;torch_package_0&gt;.release_module.py:50: in enhance_text
+    enhanced = self.tokenizer.convert_tokens_to_string(enhance_tokens(tokens, punct[0], capital[0], self.index2punct)[1:-1])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tokens = ['[CLS]', 'this', 'is', 'a', 'download', 'from', ...]
+punct = tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 2, 0, 0, 0, 0, 0, 0, 0, ...0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0])
+capital = tensor([0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
+        1, 1, 0, 0, 1, 0, 1, 1, 1, 0, ...1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0])
+index2punct = {1: '.', 2: ',', 3: '-', 4: '!', ...}
+
+    def enhance_tokens(tokens, punct, capital, index2punct):
+        output = []
+&gt;       punct, capital = punct.cpu().numpy(), capital.cpu().numpy()
+E       RuntimeError: Numpy is not available
+
+&lt;torch_package_0&gt;.release_module.py:65: RuntimeError</failure></testcase><testcase classname="tests.test_silero" name="test_silero_stt" time="0.001"><failure message="ModuleNotFoundError: No module named 'omegaconf'">def test_silero_stt():
+        converter = SileroProcessor()
+        parameters = SileroParameters(model=SileroModel.silero_stt)
+        testdir = Path(__file__).parent
+        source = Path(testdir, 'data/160628_news_report_brexit_download.mp3')
+        with source.open("rb") as fin:
+&gt;           docs: List[Document] = converter.convert(UploadFile(source.name, fin, 'audio/mpeg'), parameters)
+
+tests/test_silero.py:30: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.tox/py38/lib/python3.8/site-packages/pyprocessors_silero/silero.py:65: in convert
+    model, decoder, utils = get_pipeline_stt(params.model, params.lang)
+.tox/py38/lib/python3.8/site-packages/pyprocessors_silero/silero.py:123: in get_pipeline_stt
+    return torch.hub.load(repo_or_dir='snakers4/silero-models', model=model, language=lang)
+.tox/py38/lib/python3.8/site-packages/torch/hub.py:382: in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+.tox/py38/lib/python3.8/site-packages/torch/hub.py:411: in _load_local
+    model = entry(*args, **kwargs)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+language = 'en', version = 'latest', jit_model = 'jit', kwargs = {}
+
+    def silero_stt(language='en',
+                   version='latest',
+                   jit_model='jit',
+                   **kwargs):
+        """ Silero Speech-To-Text Model(s)
+        language (str): language of the model, now available are ['en', 'de', 'es']
+        Returns a model, decoder object and a set of utils
+        Please see https://github.com/snakers4/silero-models for usage examples
+        """
+&gt;       from omegaconf import OmegaConf
+E       ModuleNotFoundError: No module named 'omegaconf'
+
+../../../.cache/torch/hub/snakers4_silero-models_master/hubconf.py:15: ModuleNotFoundError</failure></testcase></testsuite></testsuites>
