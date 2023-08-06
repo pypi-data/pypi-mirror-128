@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pyprocessors-readinggrid
+Version: 0.5.0
+Summary: Formatter/processor based on TextRank
+Home-page: https://github.com/oterrier/pyprocessors_readinggrid/
+Author: Olivier Terrier
+Author-email: olivier.terrier@kairntech.com
