@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: streamlit_modal
+Version: 0.0.1
+Summary: Modal for streamlit
+Home-page: https://github.com/teamtv/streamlit_modal
+Author: Koen Vossen
+Author-email: info@koenvossen.nl
+License: BSD
+Description: # Streamlit modal
+        
+        ```python
+        import streamlit as st
+        import streamlit_modal as modal
+        
+        
+        open_modal = st.button("Open")
+        if open_modal:
+            modal.open()
+            st.session_state.modal_open = True
+        
+        if modal.is_open():
+            with modal.container() as container:
+                container.write("Text goes here")
+                container.video("https://youtu.be/_T8LGqJtuGc")
+                container.write("Some fancy text")
+                value = container.checkbox("blaat")
+                container.write(value)
+                close = container.button("Close modal")
+                if close:
+                    modal.close()
+        
+        ```
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
