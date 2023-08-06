@@ -1,0 +1,17 @@
+pysignalr/__init__.py,sha256=nbo56ORcAkEJCnRa53YPgnTxy0NrN5dZ8veKuuNg8PE,1985
+pysignalr/client.py,sha256=6G9sHbw07ypdyVtYTG7mSMHRwVNCv7jK8z7R-Xx0fdM,7551
+pysignalr/exceptions.py,sha256=q-J_MMmtiAVkOgKUTs3UwPUolNIEqCyOJJInivc7f58,227
+pysignalr/messages.py,sha256=nglb4HHw9HVdWPI9c75YQgnoGJZX0RrUTxgkiP-SkbQ,7244
+pysignalr/protocol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysignalr/protocol/abstract.py,sha256=BMESOVLHMViIibHjjvLXsl2L5SRBCbLW39pxVNUKA4A,1014
+pysignalr/protocol/json.py,sha256=SpRFuSCE3HQtWHuTVoz14j8r18bxmY5szBVJNIAg05w,3738
+pysignalr/protocol/messagepack.py,sha256=zVuZNud8NNu9v96hS0JffUe_Mxh97AXlPSl6Gwu7w9Y,5369
+pysignalr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysignalr/transport/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysignalr/transport/abstract.py,sha256=am_qIpBwTcOTCIBP5EdrVemNdX6EJHU7jh9o5k64Zy4,545
+pysignalr/transport/websocket.py,sha256=UuS0UV85S6k2QeHEmf6ljq04i8NWw6lMgVOzYrFKcx0,7806
+pysignalr/utils.py,sha256=8AJxirHcN7MaVm6aqQtgQ3m6hJbhLyu7f-gX4mWvTvU,1254
+pysignalr-0.1.0.dist-info/LICENSE,sha256=aLNn-vOtOTUxTj3Sd6EbC5g9ATyXPc0K9-8C9v_y9js,1127
+pysignalr-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pysignalr-0.1.0.dist-info/METADATA,sha256=kZoG2WEDVLkvRR-cLpqh-lBRF2d6KGEDPOqsZjfsGO4,2456
+pysignalr-0.1.0.dist-info/RECORD,,
