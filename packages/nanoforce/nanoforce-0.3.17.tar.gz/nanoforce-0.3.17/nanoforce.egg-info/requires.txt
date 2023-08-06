@@ -1,0 +1,6 @@
+numpy
+plotly
+scipy
+easygui
+NSFopen
+sklearn
