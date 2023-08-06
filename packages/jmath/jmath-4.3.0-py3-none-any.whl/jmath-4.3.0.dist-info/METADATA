@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: jmath
+Version: 4.3.0
+Summary: Mathematics Tools
+Home-page: https://github.com/JHay0112/jmath
+Author: Jordan Hay
+License: MIT
+Project-URL: Bug Tracker, https://github.com/JHay0112/jmath/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# jmath
+
+jmath is a hobby project developing a set of mathematical tools in the Python Language.
+
+***
+## Installation
+Open a terminal/command prompt and use `pip install jmath`.
+
+***
+
+## Documentation
+
+Documentation can be found at https://jmath.jordanhay.com/
+
+*** 
+## Testing
+
+Open a terminal in the root director and run `pytest tests/`, this requires pytest. Tests are automatically run in Github by a Github Action.
+
+***
+
+## Github Workflows
+
+Github workflows help automate testing, updating the requirements, and publishing this repo.
+
+
