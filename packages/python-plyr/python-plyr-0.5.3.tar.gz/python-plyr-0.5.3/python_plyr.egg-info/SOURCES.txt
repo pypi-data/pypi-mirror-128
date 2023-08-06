@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+python_plyr.egg-info/PKG-INFO
+python_plyr.egg-info/SOURCES.txt
+python_plyr.egg-info/dependency_links.txt
+python_plyr.egg-info/top_level.txt
+src/apply.cpp
+src/operations.cpp
+src/plyr.cpp
+src/validate.cpp
+src/include/apply.h
+src/include/operations.h
+src/include/validate.h
