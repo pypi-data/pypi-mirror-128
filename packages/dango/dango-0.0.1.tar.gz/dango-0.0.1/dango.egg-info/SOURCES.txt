@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dango/__init__.py
+dango/cli.py
+dango/dango.py
+dango/fsm.py
+dango/util.py
+dango/word.py
+dango.egg-info/PKG-INFO
+dango.egg-info/SOURCES.txt
+dango.egg-info/dependency_links.txt
+dango.egg-info/entry_points.txt
+dango.egg-info/requires.txt
+dango.egg-info/top_level.txt

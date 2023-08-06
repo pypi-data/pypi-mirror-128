@@ -1,0 +1,3 @@
+[console_scripts]
+dango = dango.cli:main
+
