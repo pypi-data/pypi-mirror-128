@@ -1,0 +1,5 @@
+httpx
+aiohttp
+asyncio
+pydantic
+requests
