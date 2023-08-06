@@ -1,0 +1,9 @@
+npx>=0.0.22
+numpy
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[all]
+netCDF4
+h5py
