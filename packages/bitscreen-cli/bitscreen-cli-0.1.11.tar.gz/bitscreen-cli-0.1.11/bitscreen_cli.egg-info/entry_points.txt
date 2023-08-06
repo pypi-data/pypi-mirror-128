@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        bitscreen-cli=bitscreen_cli:app
+    
