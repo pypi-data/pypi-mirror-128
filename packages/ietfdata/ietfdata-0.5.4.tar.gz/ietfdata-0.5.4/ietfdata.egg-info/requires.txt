@@ -1,0 +1,9 @@
+bs4
+email_reply_parser
+imapclient
+pandas
+pandas-stubs
+pavlova
+pymongo
+python-dateutil
+requests
