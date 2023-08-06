@@ -1,0 +1,9 @@
+simple_health_checks
+Django
+djangorestframework
+
+[dev]
+simple_health_checks[dev]
+
+[tests]
+simple_health_checks[tests]
