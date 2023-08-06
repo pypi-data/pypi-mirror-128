@@ -1,0 +1,47 @@
+# ts-ids-es-json-generator
+
+## Introduction
+
+This simple utility generates `elasticsearch.json` using `schema.json`.
+
+## How to Use
+
+To run the generator, simply provide the program with the location of the IDS root directory:
+
+```
+$ pipenv run python -m ids_es_json_generator ~/path/to/ids/folder
+```
+
+`elasticsearch.json` may be manually edited after automatic generation (e.g. to update non-searchable fields).
+
+## Output
+
+The script saves `elasticsearch.json` to the same directory you provided.
+
+## Assumptions
+
+The generator operates under the following assumptions:
+
+- It's the IDS designer's responsibility to make sure the schema and `elasticsearch.json` are correct.
+  The generator will not validate the IDS for you.
+
+## Restrictions
+
+- JSON pointers are dereferenced to create the mapping, so schemas with circular references or missing references will fail.
+
+## Tests
+
+Run the tests using the following command:
+
+`$ pipenv run python -m pytest`
+
+## How it works
+
+Anywhere an array of objects appears in the schema, a `nested` field type will be created in the output `elasticsearch.json`, including arrays of objects contained anywhere within other arrays of objects.
+The steps are:
+
+1. The schema is loaded into a dict with all of its JSON pointers dereferenced using `jsonref`, so that nested fields involving `definitions` are included in the elasticsearch mapping.
+2. `find_array_object` will find all arrays of objects and create a dict representing their locations in the schema (see test case `test_array_simple_nested_case` in `__tests__/unit/test_find_array_object.py`).
+3. `generate_es_mapping` uses this dict to create the elasticsearch mapping (see test case `test_nested_keys_case` in `__tests__/unit/test_generate_es_mapping.py`).
+
+See the example files and test cases for more example usage.
