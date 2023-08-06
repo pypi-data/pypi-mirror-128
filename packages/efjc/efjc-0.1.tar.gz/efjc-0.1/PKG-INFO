@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: efjc
+Version: 0.1
+Summary: The extensible freely-joined chain (EFJC) single-chain model Python package.
+Home-page: https://github.com/mbuche/efjc
+Author: Michael R. Buche
+Author-email: mrbuche@sandia.gov
+License: MIT
+Download-URL: https://github.com/mbuche/efjc/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: efjc,polymer,single,chain,model,statistical,mechanics,thermodynamics
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
