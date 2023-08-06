@@ -1,0 +1,20 @@
+[dependencies]
+ndarray = "0.15.1"
+numpy = "0.15"
+
+[dependencies.discrust_core]
+path = "local_dependencies/discrust_core"
+version = "0.1.3"
+
+[dependencies.pyo3]
+features = ["extension-module"]
+version = "0.15"
+
+[lib]
+crate-type = ["cdylib"]
+name = "discrust"
+
+[package]
+edition = "2018"
+name = "discrust"
+version = "0.1.4"

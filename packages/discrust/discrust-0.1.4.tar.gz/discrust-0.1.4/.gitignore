@@ -1,0 +1,6 @@
+/target
+/.vscode
+crates/discrust_core/target
+crates/discrust_core/Cargo.toml
+scratch.py
+__pycache__/
