@@ -1,0 +1,11 @@
+README.md
+setup.py
+bin/jduargs
+jduargs/__init__.py
+jduargs/parser.py
+jduargs/result.py
+jduargs.egg-info/PKG-INFO
+jduargs.egg-info/SOURCES.txt
+jduargs.egg-info/dependency_links.txt
+jduargs.egg-info/requires.txt
+jduargs.egg-info/top_level.txt
