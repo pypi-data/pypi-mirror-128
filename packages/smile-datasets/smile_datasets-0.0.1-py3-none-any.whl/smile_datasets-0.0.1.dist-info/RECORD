@@ -1,0 +1,16 @@
+smile_datasets/__init__.py,sha256=0fRoryA8HbxFPOdJOq7b3uRKplkaCzQNK42pn1dTLto,412
+smile_datasets/dataset.py,sha256=zGcQVQVMKAs-AQaSmuwLKk_WDObAR7Ra25AgtXR_ZHE,2830
+smile_datasets/utils.py,sha256=zWH2bH6S0PweTUcfAjQgRd3UoMU5V3zBaPiBmDUGysI,4190
+smile_datasets/qa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smile_datasets/qa/dataset.py,sha256=2FNqwpx_2-ckuU4z0SdeNdtK-xJLm1ZBh8xJB1eqGZU,8419
+smile_datasets/qa/example.py,sha256=bwHqkz6WTnaNARt6ASgu__ljOqoVbIlLxR9UCfOkFgQ,203
+smile_datasets/qa/parsers.py,sha256=RnaQXDkPETusyEvfPzXFV_6qcaPf2u8hvCWivWP15Sw,3373
+smile_datasets/qa/readers.py,sha256=mwDW1Id42SQhWwmz7A2o9CxjaGoeNoZdP1vl8J4rHrk,2428
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/qa_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/qa_tests/dataset_test.py,sha256=9cNL8xpKyOTxs1EJ-sZBBYIdABB3xofTIBXf2SXupDA,3017
+smile_datasets-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+smile_datasets-0.0.1.dist-info/METADATA,sha256=vwFHJECKJcoL3gSfvW8_7PANDdSNjvGZnab736M8XHE,1320
+smile_datasets-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+smile_datasets-0.0.1.dist-info/top_level.txt,sha256=gq3RlLMz-AdRaVlfsjn7if_MVHO5LNuzSu92KR1oWH8,21
+smile_datasets-0.0.1.dist-info/RECORD,,

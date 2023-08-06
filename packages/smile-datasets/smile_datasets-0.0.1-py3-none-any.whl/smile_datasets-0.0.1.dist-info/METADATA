@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: smile-datasets
+Version: 0.0.1
+Summary: La**S**t **mile** datasets: Use `tf.data` to solve the last mile data loading problem for tensorflow.
+Home-page: https://github.com/luozhouyang/smile-datasets
+Author: ZhouYang Luo
+Author-email: zhouyang.luo@gmail.com
+License: Apache Software License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tokenizers
+Requires-Dist: tensorflow
+
+# smile-datasets
+La**S**t **mile** Datasets: Use `tf.data` to solve the last mile data loading problem for tensorflow.
+
+If you want to load public datasets, try:
+
+* [tensorflow/datasets](https://github.com/tensorflow/datasets)
+* [huggingface/datasets](https://github.com/huggingface/datasets)
+
+If you want to load local, personal dataset with minimized boilerplate, use **Smile Dataset**!
+
+
