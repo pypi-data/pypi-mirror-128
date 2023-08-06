@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pylob/__init__.py
+pylob/level2.py
+pylob/output.py
+pylob/statistics.py
+pylob.egg-info/PKG-INFO
+pylob.egg-info/SOURCES.txt
+pylob.egg-info/dependency_links.txt
+pylob.egg-info/not-zip-safe
+pylob.egg-info/requires.txt
+pylob.egg-info/top_level.txt
+pylob/trades/bindings.cpp
+pylob/trades/trades.cpp
