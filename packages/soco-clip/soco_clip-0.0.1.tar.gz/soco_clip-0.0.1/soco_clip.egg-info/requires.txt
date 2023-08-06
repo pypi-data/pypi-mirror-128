@@ -1,0 +1,4 @@
+pytorch_lightning
+torch
+torchvision
+ftfy
