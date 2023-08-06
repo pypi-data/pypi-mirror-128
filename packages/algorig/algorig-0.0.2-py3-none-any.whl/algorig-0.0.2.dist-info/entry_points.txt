@@ -1,0 +1,3 @@
+[console_scripts]
+rig = algorig.cli:main
+
