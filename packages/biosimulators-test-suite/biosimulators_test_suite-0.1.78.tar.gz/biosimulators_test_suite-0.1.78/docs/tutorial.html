@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Tutorial &#8212; BioSimulators test suite 0.1.78 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/biosimulators.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="biosimulators_test_suite package" href="source/biosimulators_test_suite.html" />
+    <link rel="prev" title="Installation instructions" href="installation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+      
+      <link rel="icon" sizes="16x16" href="https://github.com/biosimulations/biosimulations/raw/dev/libs/shared/assets/src/assets/icons/favicon-16x16.png">
+      
+    
+      
+      <link rel="icon" sizes="32x32" href="https://github.com/biosimulations/biosimulations/raw/dev/libs/shared/assets/src/assets/icons/favicon-32x32.png">
+      
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="index.html">
+  <img src="_static/biosimulators-logo.svg" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Quick links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/biosimulators/Biosimulators_test_suite" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/biosimulators" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:info@biosimulators.org" rel="noopener" target="_blank" title="Email">
+            <span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Enter text to search for ..." aria-label="Enter text to search for ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-the-public-cloud-deployment-of-the-test-suite">
+   Using the public cloud deployment of the test suite
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#issue-content-and-format">
+     Issue content and format
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#validating-and-submitting-simulators-via-the-github-api">
+     Validating and submitting simulators via the GitHub API
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#running-the-test-suite-locally">
+   Running the test suite locally
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#directly-testing-a-command-line-interface-rather-than-a-docker-image">
+     Directly testing a command-line interface (rather than a Docker image)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#executing-the-test-suite-with-stdout-stderr-capturing-disabled">
+     Executing the test suite with stdout/stderr capturing disabled
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#saving-the-synthetic-combine-archives-generated-by-the-test-cases">
+     Saving the synthetic COMBINE archives generated by the test cases
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#saving-the-outputs-of-the-execution-of-combine-archives-involved-in-the-test-cases">
+     Saving the outputs of the execution of COMBINE archives involved in the test cases
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#display-additional-diagnostic-information-tracebacks-for-test-failures">
+     Display additional diagnostic information (tracebacks for test failures)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#saving-the-results-of-the-test-cases-to-a-file">
+     Saving the results of the test cases to a file
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/biosimulators/Biosimulators_test_suite/edit/dev/docs-src/tutorial.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="tutorial">
+<h1>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h1>
+<p>Simulation software developers can utilize the test suite in two ways. First, developers can install and execute the test suite locally on their own machines. Second, developers can use the public cloud deployment of the test suite. In most cases, we recommend that developers use the public cloud deployment, which is easy to use. We recommend that developers deploy the test suite locally if they wish to test their simulator offline or wish to continuously test their simulator such as within their own continuous integration workflows (e.g., CircleCI, GitHub Actions).</p>
+<section id="using-the-public-cloud-deployment-of-the-test-suite">
+<h2>Using the public cloud deployment of the test suite<a class="headerlink" href="#using-the-public-cloud-deployment-of-the-test-suite" title="Permalink to this headline">¶</a></h2>
+<p>The test suite is deployed as a GitHub Action workflow on issues submitted to the BioSimulators repository. Developers can run the test suite on their simulation tool by creating an issue with the label <code class="docutils literal notranslate"><span class="pre">Validate/submit</span> <span class="pre">simulator</span></code>. Developers can create issues either using this <a class="reference external" href="https://github.com/biosimulators/Biosimulators/issues/new?assignees=&amp;labels=Validate%2Fsubmit+simulator&amp;template=validate-submit-a-simulator.md&amp;title=">form</a> or using the GitHub API.</p>
+<p>Once an issue is created, a GitHub Action workflow will use the test suite to validate and/or commit your simulator to the BioSimulators registry. If your simulator is valid, the workflow will post a success message to your issue. If the test suite finds that your simulator is invalid, the workflow will post a description of the error to your workflow.</p>
+<section id="issue-content-and-format">
+<h3>Issue content and format<a class="headerlink" href="#issue-content-and-format" title="Permalink to this headline">¶</a></h3>
+<p>The body of the issue should contain a YAML-encoded description of your simulator. This should describe the id of your simulator, the version of your simulator that you would like to validate or submit, a URL where the specifications of your simulator can be retrieved, and two flags which indicate whether you would like the Docker image for your simulator to be validated and whether you would like your simulator to be committed to the BioSimulators registry. Below is an example body for an issue.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>---
+id: tellurium
+version: 2.1.6
+specificationsUrl: https://raw.githubusercontent.com/biosimulators/Biosimulators_tellurium/2.1.6/biosimulators.json
+specificationsPatch:
+  version: 2.1.6
+  image:
+    url: ghcr.io/biosimulators/Biosimulators_tellurium/tellurium:2.1.6
+validateImage: true
+commitSimulator: true
+---
+</pre></div>
+</div>
+</section>
+<section id="validating-and-submitting-simulators-via-the-github-api">
+<h3>Validating and submitting simulators via the GitHub API<a class="headerlink" href="#validating-and-submitting-simulators-via-the-github-api" title="Permalink to this headline">¶</a></h3>
+<p>Please follow these steps to use the GitHub API to programmatically submit issues to validate and/or submit simulators to the BioSimulators registry.</p>
+<ol class="arabic simple">
+<li><p>Create a GitHub account</p></li>
+<li><p>Create a token for your GitHub account with the scope <code class="docutils literal notranslate"><span class="pre">public_repo</span></code></p></li>
+<li><p>Execute HTTP POST requests to create issues. The body of the issue should be a JSON-encoded dictionary as illustrated below. The dictionary should have the following keys:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">labels</span></code>: Its value should be equal to <code class="docutils literal notranslate"><span class="pre">[&quot;Validate/submit</span> <span class="pre">simulator&quot;]</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">title</span></code>: A descriptive title for your issue such as <code class="docutils literal notranslate"><span class="pre">Submit</span> <span class="pre">tellurium</span> <span class="pre">2.1.6</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">body</span></code>: A YAML-encoded description of your simulator as outlined above.</p></li>
+</ul>
+</div></blockquote>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>GH_USERNAME=*********
+GH_TOKEN=*********
+curl \
+  -X POST \
+  -u ${GH_USERNAME}:${GH_TOKEN} \
+  -H &quot;Accept: application/vnd.github.v3+json&quot; \
+  https://api.github.com/repos/biosimulators/Biosimulators/issues \
+  -d &#39;{&quot;labels&quot;: [&quot;Validate/submit simulator&quot;], &quot;title&quot;: &quot;Submit tellurium 2.1.6&quot;, &quot;body&quot;: &quot;---\nname: tellurium\nversion: 2.1.6\nspecificationsUrl: https://raw.githubusercontent.com/biosimulators/Biosimulators_tellurium/2.1.6/biosimulators.json\nspecificationsPatch:\n  version: 2.1.6\n  image:\n    url: ghcr.io/biosimulators/biosimulators_tellurium/tellurium:2.1.6\nvalidateImage: true\ncommitSimulator: true\n\n---&quot;}&#39;
+</pre></div>
+</div>
+</section>
+</section>
+<section id="running-the-test-suite-locally">
+<h2>Running the test suite locally<a class="headerlink" href="#running-the-test-suite-locally" title="Permalink to this headline">¶</a></h2>
+<p>The test suite can also be run locally as illustrated below.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># Run all tests
+biosimulators-test-suite /path/to/simulator/specifications.json
+
+# Run a specific test
+biosimulators-test-suite /path/to/simulator/specifications.json \
+  --test-case \
+    sedml.SimulatorSupportsModelAttributeChanges
+
+# Run multiple specific tests
+biosimulators-test-suite /path/to/simulator/specifications.json \
+  --test-case \
+    sedml.SimulatorSupportsModelAttributeChanges \
+    published_project.SimulatorCanExecutePublishedProject:sbml-core/Caravagna-J-Theor-Biol-2010-tumor-suppressive-oscillations \
+    published_project.SimulatorCanExecutePublishedProject:sbml-core/Ciliberto-J-Cell-Biol-2003-morphogenesis-checkpoint
+</pre></div>
+</div>
+<section id="directly-testing-a-command-line-interface-rather-than-a-docker-image">
+<h3>Directly testing a command-line interface (rather than a Docker image)<a class="headerlink" href="#directly-testing-a-command-line-interface-rather-than-a-docker-image" title="Permalink to this headline">¶</a></h3>
+<p>Optionally, the <code class="docutils literal notranslate"><span class="pre">--cli</span></code> argument can be used to instruct the test suite to directly verify a command interface
+rather than indirectly verify the interface through the entry point of a Docker image. Note, the Docker image tests will still
+use the Docker image.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>biosimulators-test-suite /path/to/simulator/specifications.json \
+  --cli /usr/local/bin/tellurium
+</pre></div>
+</div>
+</section>
+<section id="executing-the-test-suite-with-stdout-stderr-capturing-disabled">
+<h3>Executing the test suite with stdout/stderr capturing disabled<a class="headerlink" href="#executing-the-test-suite-with-stdout-stderr-capturing-disabled" title="Permalink to this headline">¶</a></h3>
+<p>Some Mac OS users have reported that capturer, the package that the test suite uses to collect the standard output and error produced by each test case, fails on their systems. In such cases, the <code class="docutils literal notranslate"><span class="pre">--do-not-log-std-out-err</span></code> option can be used to disable the collection of standard output and error.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>biosimulators-test-suite /path/to/simulator/specifications.json \
+  --do-not-log-std-out-err
+</pre></div>
+</div>
+</section>
+<section id="saving-the-synthetic-combine-archives-generated-by-the-test-cases">
+<h3>Saving the synthetic COMBINE archives generated by the test cases<a class="headerlink" href="#saving-the-synthetic-combine-archives-generated-by-the-test-cases" title="Permalink to this headline">¶</a></h3>
+<p>Optionally, the <code class="docutils literal notranslate"><span class="pre">--synthetic-archives-dir</span></code> argument can be used to save the synthetic
+COMBINE/OMEX archives generated by the test cases to a directory. This enables developers
+to inspect how the test suite verifies simulation tools.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>biosimulators-test-suite /path/to/simulator/specifications.json \
+  --synthetic-archives-dir /path/to/save/synthetic-archives
+</pre></div>
+</div>
+<p>The synthetically-generated archives will be saved to a separate sub-sub-directory for each test
+case in a separate sub-directory for each test module. The files will have names that indicate the
+order in which they were executed and whether simulators are expected to sucessfully execute
+the archive or not. For example, the archive generated by the
+<a class="reference internal" href="source/biosimulators_test_suite.test_case.html#biosimulators_test_suite.test_case.sedml.SimulatorSupportsMultipleTasksPerSedDocument" title="biosimulators_test_suite.test_case.sedml.SimulatorSupportsMultipleTasksPerSedDocument"><code class="xref py py-class docutils literal notranslate"><span class="pre">biosimulators_test_suite.test_case.sedml.SimulatorSupportsMultipleTasksPerSedDocument</span></code></a>
+test case will be saved to
+<code class="docutils literal notranslate"><span class="pre">/path/to/save/synthetic-archives/sedml/SimulatorSupportsMultipleTasksPerSedDocument/1.execution-should-succeed.omex</span></code>.</p>
+<p>Additionally, <code class="docutils literal notranslate"><span class="pre">--dry-run</span></code> argument can be used to export these synthetic COMBINE/OMEX archives
+without using your simulator to execute them.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>biosimulators-test-suite /path/to/simulator/specifications.json \
+  --synthetic-archives-dir /path/to/save/synthetic-archives
+  --dry-run
+</pre></div>
+</div>
+</section>
+<section id="saving-the-outputs-of-the-execution-of-combine-archives-involved-in-the-test-cases">
+<h3>Saving the outputs of the execution of COMBINE archives involved in the test cases<a class="headerlink" href="#saving-the-outputs-of-the-execution-of-combine-archives-involved-in-the-test-cases" title="Permalink to this headline">¶</a></h3>
+<p>Optionally, the <code class="docutils literal notranslate"><span class="pre">--work-dir</span></code> argument can be used to save the COMBINE archives involved in the test cases and the
+outputs (reports and plots) generated by their execution to a directory. This enables developers
+to inspect how the test suite verifies simulation tools.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>biosimulators-test-suite /path/to/simulator/specifications.json \
+  --work-dir /path/to/save/archives-and-their-outputs
+</pre></div>
+</div>
+<p>The files involved in each test case will be saved to a separate sub-sub-directory for each test
+case in a separate sub-directory for each test module. The files will have names that indicate the
+order in which they were executed. For example, the archive generated by the
+<a class="reference internal" href="source/biosimulators_test_suite.test_case.html#biosimulators_test_suite.test_case.sedml.SimulatorSupportsMultipleTasksPerSedDocument" title="biosimulators_test_suite.test_case.sedml.SimulatorSupportsMultipleTasksPerSedDocument"><code class="xref py py-class docutils literal notranslate"><span class="pre">biosimulators_test_suite.test_case.sedml.SimulatorSupportsMultipleTasksPerSedDocument</span></code></a>
+test case will be saved to
+<code class="docutils literal notranslate"><span class="pre">/path/to/save/archives-and-their-outputs/sedml/SimulatorSupportsMultipleTasksPerSedDocument/</span></code>.</p>
+</section>
+<section id="display-additional-diagnostic-information-tracebacks-for-test-failures">
+<h3>Display additional diagnostic information (tracebacks for test failures)<a class="headerlink" href="#display-additional-diagnostic-information-tracebacks-for-test-failures" title="Permalink to this headline">¶</a></h3>
+<p>Optionally, the <code class="docutils literal notranslate"><span class="pre">--debug</span></code> argument can be used to display traceback information about the origin
+of each failed test (Line of Python code where the error occurred and the stack of calls which led
+to its execution).</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>biosimulators-test-suite /path/to/simulator/specifications.json \
+  --debug
+</pre></div>
+</div>
+</section>
+<section id="saving-the-results-of-the-test-cases-to-a-file">
+<h3>Saving the results of the test cases to a file<a class="headerlink" href="#saving-the-results-of-the-test-cases-to-a-file" title="Permalink to this headline">¶</a></h3>
+<p>Optionally, the <code class="docutils literal notranslate"><span class="pre">--report</span></code> argument can be used to save the results of the test cases
+to a JSON file.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>biosimulators-test-suite /path/to/simulator/specifications.json \
+  --report /path/to/save/results.json
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, BioSimulators Team.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
