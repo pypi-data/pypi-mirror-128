@@ -1,0 +1,34 @@
+name: ibis-omniscidb
+channels:
+- nodefaults
+- conda-forge
+
+dependencies:
+
+# core
+- python
+- ibis-framework-core >=2
+- pandas
+- pyomnisci >=0.28.1
+- pyarrow
+- rbc >=0.4.0
+
+# geo
+- geopandas
+- gdal
+- shapely
+
+# dev
+- black
+- pip <21.3
+- pre-commit
+- pytest
+- pytest-cov
+- pytest-mock
+- mock
+- flake8
+- flake8-comprehensions
+- mypy
+- isort
+- pydocstyle
+- setuptools-scm

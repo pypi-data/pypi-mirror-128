@@ -1,0 +1,3 @@
+[ibis.backends]
+omniscidb = ibis_omniscidb
+
