@@ -1,0 +1,33 @@
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
+
+[tool.poetry]
+name = "instrumentum"
+version = "0.7.1"
+description = "General utilities for data science projects"
+authors = ["Federico Montanana"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python =  ">=3.8,<3.11"
+pandas = "^1.3.3"
+numpy = "^1.21.2"
+sklearn = "^0.0"
+joblib = "^1.1.0"
+optuna = "^2.10.0"
+xgboost = "^1.4.2"
+lightgbm = "^3.3.0"
+catboost = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+ipykernel = "^6.4.1"
+python-semantic-release = "^7.19.2"
+black = "^21.9b0"
+ipython = {extras = ["notebook"], version = "^7.29.0"}
+isort = "^5.10.1"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
