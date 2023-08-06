@@ -1,0 +1,13 @@
+dnfile/__init__.py,sha256=s2XFx7Dcu6R6eBlDb5si02ekHfnOnQ9bz7qQg8HkhnQ,18818
+dnfile/base.py,sha256=GqaIImmg0xpqQl-VnJza65BKIHq2ZQwjkx9jmxUCu1I,15633
+dnfile/codedindex.py,sha256=og33KXCmYUzsqyRiLFD8nMd__BBhn7B-I8XuwjATRII,2297
+dnfile/enums.py,sha256=T6TTTHxrMJgQbLfrSCtGVuAotGjtbwlKwMRrBkDn7_s,32673
+dnfile/errors.py,sha256=H5IluW2xRyEIIAys-ENT9yFl0-BQ7xlHDtKM6bVmeOo,41
+dnfile/mdtable.py,sha256=6EG-ICB3DJjUOCCaiZO9pN5pqZDuLZ2cbRLKiVAyyXQ,47161
+dnfile/stream.py,sha256=ZIT_WGo-0uuFJo1QGwBLcoF0eOGlIi7l8mHkq6Qb5VI,12169
+dnfile/utils.py,sha256=lODkIxDcBmW8KT2OPE4C1EJZsUvkRA1pQbUrSTs3Td0,2022
+dnfile-0.7.1.dist-info/LICENSE,sha256=a9E8PHMspl2wAJvO9G4XJ-BmmcebwN9rX5tPkvlBp9I,1071
+dnfile-0.7.1.dist-info/METADATA,sha256=8TSJzDmLvIA7cBNgiutU-yidgmN70yFxYMX3WW3caYg,2835
+dnfile-0.7.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+dnfile-0.7.1.dist-info/top_level.txt,sha256=A1xyGeKE1Vwlv4r0rc-Kut8KK4pzahDlLQt_n3avKXs,7
+dnfile-0.7.1.dist-info/RECORD,,
