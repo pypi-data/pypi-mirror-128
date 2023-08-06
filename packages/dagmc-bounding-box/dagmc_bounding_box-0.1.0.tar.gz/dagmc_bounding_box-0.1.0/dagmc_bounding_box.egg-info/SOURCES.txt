@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dagmc_bounding_box/__init__.py
+dagmc_bounding_box/core.py
+dagmc_bounding_box.egg-info/PKG-INFO
+dagmc_bounding_box.egg-info/SOURCES.txt
+dagmc_bounding_box.egg-info/dependency_links.txt
+dagmc_bounding_box.egg-info/requires.txt
+dagmc_bounding_box.egg-info/top_level.txt
