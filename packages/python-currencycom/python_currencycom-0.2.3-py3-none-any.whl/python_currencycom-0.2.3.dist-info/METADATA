@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: python-currencycom
+Version: 0.2.3
+Summary: Currency.com REST API python implementation
+Home-page: https://github.com/sann05/python-currencycom
+Author: Aliaksandr Sheliutsin
+Author-email: 
+License: MIT
+Keywords: currencycom exchange rest api bitcoin ethereum btc eth
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+## Welcome to the python-currencycom
+
+This is an unofficial Python wrapper for the Currency.com exchange REST API v1.
+I am in no way affiliated with Currency.com, use at your own risk.
+
+### Documentation
+Please find official documentation by:
+https://exchange.currency.com/api
+
+Or Swagger by the link: https://apitradedoc.currency.com/swagger-ui.html#/.
+
+
+### QuickStart
+
+[Register an account on Currency.com](https://exchange.currency.com/trading/signup)
+
+[Create an API Key with correct permissions](https://exchange.currency.com/trading/platform/settings)
+
+```
+pip install python-currencycom
+```
+
+Let's retrieve tradable symbols on the market
+```python
+from pprint import pprint
+
+from currencycom.client import Client
+
+client = Client('API_KEY', 'SECRET_KEY')
+
+# Exchange info contains various info including tradable symbols
+exchange_info = client.get_exchange_info()
+tradable_symbols = [x['symbol'] for x in exchange_info['symbols']]
+pprint(tradable_symbols,
+       indent=2)
+```
+
+For more check out [the documentation](https://exchange.currency.com/api) and [Swagger](https://apitradedoc.currency.com/swagger-ui.html#/).
+
+
