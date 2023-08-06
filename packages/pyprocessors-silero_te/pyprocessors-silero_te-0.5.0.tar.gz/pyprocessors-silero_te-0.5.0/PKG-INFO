@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pyprocessors-silero_te
+Version: 0.5.0
+Summary: text repunctuation and recapitalization for 
+Home-page: https://github.com/oterrier/pyprocessors_silero_te/
+Author: Olivier Terrier
+Author-email: olivier.terrier@kairntech.com
