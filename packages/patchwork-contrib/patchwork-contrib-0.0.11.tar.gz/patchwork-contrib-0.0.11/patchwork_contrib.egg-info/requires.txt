@@ -1,0 +1,12 @@
+patchwork-core>=0.0.8
+
+[fastapi]
+fastapi>=0.70
+pydantic
+python-jose[cryptography]
+
+[sessions]
+starsessions
+
+[tortoise]
+tortoise-orm

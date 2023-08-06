@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+patchwork/contrib/fastapi/__init__.py
+patchwork/contrib/fastapi/dependencies.py
+patchwork/contrib/fastapi/entities.py
+patchwork/contrib/fastapi/session.py
+patchwork/contrib/fastapi/settings.py
+patchwork_contrib.egg-info/PKG-INFO
+patchwork_contrib.egg-info/SOURCES.txt
+patchwork_contrib.egg-info/dependency_links.txt
+patchwork_contrib.egg-info/not-zip-safe
+patchwork_contrib.egg-info/requires.txt
+patchwork_contrib.egg-info/top_level.txt
+tests/__init__.py
+tests/test_fastapi.py
