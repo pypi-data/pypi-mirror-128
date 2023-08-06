@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: streamlit-force-graph-simulator
+Version: 0.0.1
+Summary: Linking python with visualizing processes on and off networks.
+Home-page: UNKNOWN
+Author: Erik Weis
+Author-email: erik.weis@uvm.edu
+License: UNKNOWN
+Description: readme.md
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

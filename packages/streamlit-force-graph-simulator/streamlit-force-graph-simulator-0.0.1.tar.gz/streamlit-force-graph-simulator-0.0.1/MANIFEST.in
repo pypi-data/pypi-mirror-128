@@ -1,0 +1,1 @@
+recursive-include streamlit_force_graph_simulator/frontend/build *
