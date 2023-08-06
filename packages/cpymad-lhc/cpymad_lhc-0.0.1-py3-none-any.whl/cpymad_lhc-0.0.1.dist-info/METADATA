@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: cpymad-lhc
+Version: 0.0.1
+Summary: Helper functions to run LHC optics in cpymad
+Home-page: https://github.com/JoschD/cpymad_lhc
+Author: JoschD
+Author-email: JoschD@github.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cpymad (>=1.9.0)
+Requires-Dist: numpy (>=1.19.0)
+Requires-Dist: pandas (>=1.3)
+Requires-Dist: tfs-pandas (>=3.0.0)
+Provides-Extra: all
+Requires-Dist: pytest (>=5.2) ; extra == 'all'
+Requires-Dist: pytest-cov (>=2.9) ; extra == 'all'
+Requires-Dist: cpymad (>=1.8.1) ; extra == 'all'
+Requires-Dist: sphinx ; extra == 'all'
+Requires-Dist: sphinx-rtd-theme ; extra == 'all'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest (>=5.2) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.9) ; extra == 'test'
+Requires-Dist: cpymad (>=1.8.1) ; extra == 'test'
+
+# cpymad LHC 
+
+[![Cron Testing](https://github.com/JoschD/cpymad_lhc/workflows/Cron%20Testing/badge.svg)](https://github.com/JoschD/cpymad_lhc/actions?query=workflow%3A%22Cron+Testing%22)
+[![Code Climate coverage](https://img.shields.io/codeclimate/coverage/JoschD/cpymad_lhc.svg?style=popout)](https://codeclimate.com/github/JoschD/cpymad_lhc)
+[![Code Climate maintainability (percentage)](https://img.shields.io/codeclimate/maintainability-percentage/JoschD/cpymad_lhc.svg?style=popout)](https://codeclimate.com/github/JoschD/cpymad_lhc)
+[![GitHub last commit](https://img.shields.io/github/last-commit/JoschD/cpymad_lhc.svg?style=popout)](https://github.com/JoschD/cpymad_lhc/)
+[![GitHub release](https://img.shields.io/github/release/JoschD/cpymad_lhc.svg?style=popout)](https://github.com/JoschD/cpymad_lhc/)
+
+[comment]: <> ([![DOI]&#40;https://zenodo.org/badge/DOI/10.5281/zenodo.5070986.svg&#41;]&#40;https://doi.org/10.5281/zenodo.5070986&#41;)
+
+## License
+
+This project is licensed under the `MIT License` - see the [LICENSE](LICENSE) file for details.
+
