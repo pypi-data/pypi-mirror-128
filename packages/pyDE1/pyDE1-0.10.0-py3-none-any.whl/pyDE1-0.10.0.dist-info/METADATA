@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyDE1
+Version: 0.10.0
+Summary: Controller for Decent Espresso DE1
+Home-page: https://github.com/jeffsf/pyDE1
+Author: Jeff Kletsky
+Author-email: git-commits@allycomm.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/jeffsf/pyDE1/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Home Automation
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiosqlite (>=0.17.0)
+Requires-Dist: bleak (>=0.12.1)
+Requires-Dist: paho-mqtt (>=1.5.1)
+Requires-Dist: PyYAML (>=5.4.1)
+Requires-Dist: requests (>=2.26.0)
+
+UNKNOWN
+
