@@ -1,0 +1,4 @@
+datasette>=0.59
+
+[test]
+pytest
