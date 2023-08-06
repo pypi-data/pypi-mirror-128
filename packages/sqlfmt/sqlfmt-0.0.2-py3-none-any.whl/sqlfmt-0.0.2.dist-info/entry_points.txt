@@ -1,0 +1,3 @@
+[console_scripts]
+sqlfmt = sqlfmt.__main__:main
+
