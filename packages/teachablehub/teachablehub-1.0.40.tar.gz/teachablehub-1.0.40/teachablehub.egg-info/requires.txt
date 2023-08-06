@@ -1,0 +1,3 @@
+uplink==0.9.3
+th-sklearn-json
+numpy
