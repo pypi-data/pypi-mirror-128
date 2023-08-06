@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: gltfloupe
+Version: 0.2.0
+Summary: glTF debug viewer
+Home-page: https://ousttrue.github.io/gltfloupe/
+Author: ousttrue
+Author-email: ousttrue@gmail.com
+License: zlib
+Keywords: opengl,gltf
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Description-Content-Type: text/markdown
+
+# gltfloupe 🔎
+
+glTF viewer.
+
+`pip install gltfloupe`
+
+

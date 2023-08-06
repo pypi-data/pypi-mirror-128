@@ -1,0 +1,3 @@
+glglue>=1.5.4
+pyside6
+pillow
