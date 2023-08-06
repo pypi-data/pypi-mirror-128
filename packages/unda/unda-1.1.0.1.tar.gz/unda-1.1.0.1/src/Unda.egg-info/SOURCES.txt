@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Unda.egg-info/PKG-INFO
+src/Unda.egg-info/SOURCES.txt
+src/Unda.egg-info/dependency_links.txt
+src/Unda.egg-info/top_level.txt
+src/unda/__init__.py
+src/unda/unda.py
+src/unda.egg-info/PKG-INFO
+src/unda.egg-info/SOURCES.txt
+src/unda.egg-info/dependency_links.txt
+src/unda.egg-info/top_level.txt
