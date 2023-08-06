@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/staticsg/__init__.py
+src/staticsg/roman_ssg_util.py
+src/staticsg/romanssg.py
+src/staticsg_rrezinkin.egg-info/PKG-INFO
+src/staticsg_rrezinkin.egg-info/SOURCES.txt
+src/staticsg_rrezinkin.egg-info/dependency_links.txt
+src/staticsg_rrezinkin.egg-info/top_level.txt
