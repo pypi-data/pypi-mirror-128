@@ -1,0 +1,6 @@
+setup.py
+projeta21/__init__.py
+projeta21.egg-info/PKG-INFO
+projeta21.egg-info/SOURCES.txt
+projeta21.egg-info/dependency_links.txt
+projeta21.egg-info/top_level.txt
