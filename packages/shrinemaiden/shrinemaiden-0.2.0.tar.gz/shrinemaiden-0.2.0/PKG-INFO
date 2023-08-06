@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: shrinemaiden
+Version: 0.2.0
+Summary: An auxiliary library for deep learning with Audio data
+Home-page: https://github.com/VirtuousCrane/shrinemaiden.git
+Author: VirtuousCrane
+License: MIT
+Description: # shrinemaiden
+        A library created to work with LibriSpeech dataset
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
