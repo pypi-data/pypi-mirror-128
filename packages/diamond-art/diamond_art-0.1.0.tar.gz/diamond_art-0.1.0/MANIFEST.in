@@ -1,0 +1,5 @@
+include *.md
+include *.txt
+
+recursive-include diamond_art *.ttf
+recursive-include diamond_art *.txt
