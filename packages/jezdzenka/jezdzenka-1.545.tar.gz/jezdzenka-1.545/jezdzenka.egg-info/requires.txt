@@ -1,0 +1,6 @@
+rich
+PyInquirer
+tinydb
+tinydb_serialization
+python-magic
+mo_installer
