@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/django_model_to_excel/__init__.py
+src/django_model_to_excel/generate_excel_file.py
+src/django_model_to_excel.egg-info/PKG-INFO
+src/django_model_to_excel.egg-info/SOURCES.txt
+src/django_model_to_excel.egg-info/dependency_links.txt
+src/django_model_to_excel.egg-info/top_level.txt
