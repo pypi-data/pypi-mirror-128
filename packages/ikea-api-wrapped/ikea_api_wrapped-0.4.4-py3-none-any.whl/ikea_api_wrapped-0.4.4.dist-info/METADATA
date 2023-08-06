@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ikea-api-wrapped
+Version: 0.4.4
+Summary: Wrapper for vrslev/ikea-api-client
+Home-page: https://github.com/vrslev/ikea-api-wrapped
+Author: Lev Vereshchagin
+Author-email: mail@vrslev.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: ikea-api (==0.8.0)
+Requires-Dist: python-box (==5.4.1)
+Provides-Extra: dev
+Requires-Dist: black (==21.10b0) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.15.0) ; extra == 'dev'
+
+UNKNOWN
+
