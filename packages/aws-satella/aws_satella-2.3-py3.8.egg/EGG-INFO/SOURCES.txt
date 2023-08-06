@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aws_satella/__init__.py
+aws_satella/exporter.py
+aws_satella.egg-info/PKG-INFO
+aws_satella.egg-info/SOURCES.txt
+aws_satella.egg-info/dependency_links.txt
+aws_satella.egg-info/requires.txt
+aws_satella.egg-info/top_level.txt
+aws_satella/contrib/__init__.py
+aws_satella/contrib/django.py
