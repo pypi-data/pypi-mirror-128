@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "cloud_time_saver"
+version = "0.1.6"
+description = "Python CLI tool that automates working on AWS enviorment without leaving the Terminal."
+authors = ["Marko Mandic <mandicm223@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+boto3 = "1.19.7"
+click = "8.0.3"
+colorama = "0.4.4"
+fire = "0.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+cloud_time_saver = 'cloud_time_saver.cts:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
