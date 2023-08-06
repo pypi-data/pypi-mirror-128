@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: octranspo
+Version: 0.1.0
+Summary: A Python wrapper around the OC Transpo API.
+Home-page: https://gitlab.com/MysteryBlokHed/greasetools
+Author: Adam Thompson-Sharpe
+Author-email: adamthompsonsharpe@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE-APACHE
+License-File: LICENSE-MIT
+Requires-Dist: requests (~=2.25)
+
+# OC Transpo API Wrapper [![Build Badge]](https://gitlab.com/MysteryBlokHed/oc-transpo-api/-/pipelines) [![Docs Badge]](https://octranspo.readthedocs.io/en/latest/) [![License Badge]](#license)
+
+A Python wrapper around the OC Transpo API.
+
+## Getting Started
+
+Help to get started is available in [the docs](https://octranspo.readthedocs.io/en/latest/getting_started.html).
+
+## Installation
+
+To install, clone the repository and run:
+
+```sh
+python setup.py install
+```
+
+<!---------- Uncomment this when package is added to PyPI ---------->
+<!--
+The best way to install is with pip:
+
+```sh
+  pip install octranspo
+  # or
+  python -m pip install octranspo
+```
+-->
+
+## Building Docs
+
+To build docs, install the requirements:
+
+```sh
+pip install -r docs/requirements.txt
+```
+
+Then move to the docs directory and run the build script:
+
+```sh
+cd docs
+
+# windows
+make.bat html
+# *nix
+make html
+```
+
+## License
+
+This project is licensed under either of
+
+- Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or
+  <http://www.apache.org/licenses/LICENSE-2.0>)
+- MIT license ([LICENSE-MIT](LICENSE-MIT) or
+  <http://opensource.org/licenses/MIT>)
+
+at your option.
+
+[build badge]: https://img.shields.io/gitlab/pipeline-status/MysteryBlokHed/oc-transpo-api
+[docs badge]: https://img.shields.io/readthedocs/octranspo
+[python version badge]: https://img.shields.io/pypi/pyversions/octranspo
+[license badge]: https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-green
+
+
