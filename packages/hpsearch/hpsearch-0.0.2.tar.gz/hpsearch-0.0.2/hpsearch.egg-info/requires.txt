@@ -1,0 +1,10 @@
+pip
+packaging
+plotly
+visdom
+matplotlib
+pandas
+numpy
+scikit-learn
+
+[dev]
