@@ -1,0 +1,9 @@
+README.md
+setup.py
+ddddsr/__init__.py
+ddddsr/core.py
+ddddsr.egg-info/PKG-INFO
+ddddsr.egg-info/SOURCES.txt
+ddddsr.egg-info/dependency_links.txt
+ddddsr.egg-info/requires.txt
+ddddsr.egg-info/top_level.txt
