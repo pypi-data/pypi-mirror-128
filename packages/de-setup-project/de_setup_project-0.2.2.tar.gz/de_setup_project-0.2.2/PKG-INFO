@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: de_setup_project
+Version: 0.2.2
+Summary: de namespace module portion setup_project: project setup helper functions
+Home-page: https://gitlab.com/degroup/de_setup_project
+Author: AndiEcker
+Author-email: aecker2@gmail.com
+License: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Keywords: configuration,development,environment,productivity
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: dev
+License-File: LICENSE.md
+
+<!--
+  THIS FILE IS EXCLUSIVELY MAINTAINED 
+-->
+# project setup portion of the de namespace
+
+[![GitLab develop](https://img.shields.io/gitlab/pipeline/degroup/de_setup_project/develop?logo=python)](
+    https://gitlab.com/degroup/de_setup_project)
+[![GitLab release](https://img.shields.io/gitlab/pipeline/degroup/de_setup_project/release?logo=python)](
+    https://gitlab.com/degroup/de_setup_project/-/tree/release)
+[![PyPIVersion](https://img.shields.io/pypi/v/de_setup_project)](
+    https://pypi.org/project/de-setup-project/#history)
+
+>the portions (modules and sub-packages) of the Development Environment for Python are within
+the `de` namespace and are providing helper methods and classes for your Python projects.
+
+[![Coverage](https://degroup.gitlab.io/de_setup_project/coverage.svg)](
+    https://degroup.gitlab.io/de_setup_project/coverage/de_setup_project_py.html)
+[![MyPyPrecision](https://degroup.gitlab.io/de_setup_project/mypy.svg)](
+    https://degroup.gitlab.io/de_setup_project/lineprecision.txt)
+[![PyLintScore](https://degroup.gitlab.io/de_setup_project/pylint.svg)](
+    https://degroup.gitlab.io/de_setup_project/pylint.log)
+
+[![PyPIImplementation](https://img.shields.io/pypi/implementation/de_setup_project)](
+    https://pypi.org/project/de-setup-project/)
+[![PyPIPyVersions](https://img.shields.io/pypi/pyversions/de_setup_project)](
+    https://pypi.org/project/de-setup-project/)
+[![PyPIWheel](https://img.shields.io/pypi/wheel/de_setup_project)](
+    https://pypi.org/project/de-setup-project/)
+[![PyPIFormat](https://img.shields.io/pypi/format/de_setup_project)](
+    https://pypi.org/project/de-setup-project/)
+[![PyPIStatus](https://img.shields.io/pypi/status/de_setup_project)](
+    https://libraries.io/pypi/de-setup-project)
+[![PyPIDownloads](https://img.shields.io/pypi/dm/de_setup_project)](
+    https://pypi.org/project/de-setup-project/#files)
+
+
+## installation
+
+execute the following command to use the `de.setup_project` module in your Python project. it will install
+`de.setup_project` into your Python (virtual) environment:
+ 
+```shell script
+pip install de-setup-project
+```
+
+to contribute to this portion, fork the
+[`de-setup-project` repository at GitLab](https://gitlab.com/degroup/de_setup_project
+"de.setup_project code repository"), pull it to your machine and finally execute the following command in the root
+folder of this repository (`de_setup_project`):
+
+```shell script
+pip install -e .[dev]
+```
+
+the last command will install this module portion into your virtual environment, along with the tools you need to
+develop and run tests or to extend the portion documentation. to contribute only to the unit tests, or the documentation
+of this portion replace the setup extras key `dev` in the above command with `tests` or `docs` respectively.
+
+the repository of this portion is using the `git-flow workflow` with the branch names `develop` and `release`. more
+details on this workflow you find [here](https://nvie.com/posts/a-successful-git-branching-model/) and 
+[here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
+
+
+## namespace portion documentation
+
+more info on the features and usage of this portion is available at
+[ReadTheDocs](https://de.readthedocs.io/en/latest/_autosummary/de.setup_project.html#module-de.setup_project
+"de_setup_project documentation").
+
+
