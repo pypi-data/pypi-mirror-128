@@ -1,0 +1,15 @@
+click
+flask
+Flask-Caching
+furl
+GDAL
+large_image
+large_image_source_gdal
+requests
+scooby
+
+[folium]
+folium
+
+[leaflet]
+ipyleaflet

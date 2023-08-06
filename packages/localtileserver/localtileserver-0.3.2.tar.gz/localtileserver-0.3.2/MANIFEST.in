@@ -1,0 +1,5 @@
+graft localtileserver/application/static
+graft localtileserver/application/templates
+global-exclude *.pyc
+graft localtileserver/data
+exclude localtileserver/data/*.aux.xml
