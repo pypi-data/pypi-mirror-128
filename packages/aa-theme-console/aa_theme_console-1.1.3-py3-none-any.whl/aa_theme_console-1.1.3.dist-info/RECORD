@@ -1,0 +1,17 @@
+aa_theme_console/__init__.py,sha256=WFtl06BDdGu1HZnPrjWJeGcqp43vs5yZfE1zLjj5-Ag,133
+aa_theme_console/apps.py,sha256=-nYDtQXP0i8puo2hREyMijYEC0fLdCfrWEsEpCskjgU,261
+aa_theme_console/images/aa-theme-console.jpg,sha256=PBwPW8_9-li0QiRh9l140t5mXIN0BuxgeALSniYxrZk,196514
+aa_theme_console/static/aa_theme_console/css/aa-theme-console.css,sha256=sE2h1QLtsI0dnPeeArE3sVnOSFSWFjgbxqI-teufeZ4,1847
+aa_theme_console/static/aa_theme_console/css/aa-theme-console.min.css,sha256=fHd7EcceDPO0vBVnOd1i-1dc_mBbmFqb77ekeekcCOM,878
+aa_theme_console/templates/allianceauth/base.html,sha256=c49UxOIyni5tcfbQELOmtIXpCGzx3nwglDMmGdsZk9M,2953
+aa_theme_console/templates/corpstat/corpstats.html,sha256=AWL3OiTze0QC27OslLDcoBmZ-SHhD-TnuvrjssRpLik,30531
+testauth/__init__.py,sha256=YagIpYmL80kGqvaraLnN5ce5pi_rkzfXF0F552ZmAFY,52
+testauth/celery.py,sha256=cFOpfaLxQzrnxUiPMhGp6iiVp57Mg8Z4qCbiA9oI6iY,612
+testauth/settings.py,sha256=pSsgQSWmqQZtQm1YNTM74hapm3fZg6sHsFE3QO9Vmhk,9464
+testauth/urls.py,sha256=uoA3w2AFzCANz-MJQzSLjBLzMS2dHqhJwrTH33dagZE,146
+testauth/wsgi.py,sha256=SpDyhXudlWKD64pUxlf4j3lSiJD9ZRbbIx9tPekVziI,397
+aa_theme_console-1.1.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aa_theme_console-1.1.3.dist-info/METADATA,sha256=m6YLSQgmx6EbzbtVxuDYAa-VPMM0HHj6nz7kbDWvwR0,1794
+aa_theme_console-1.1.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aa_theme_console-1.1.3.dist-info/top_level.txt,sha256=_7dDt9MLeCFRmrQp9mt1znG6ILpgsaRPR3ai7dwIoHE,26
+aa_theme_console-1.1.3.dist-info/RECORD,,
