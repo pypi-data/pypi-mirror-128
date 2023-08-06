@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyintercon/__init__.py
+src/pyintercon.egg-info/PKG-INFO
+src/pyintercon.egg-info/SOURCES.txt
+src/pyintercon.egg-info/dependency_links.txt
+src/pyintercon.egg-info/top_level.txt
