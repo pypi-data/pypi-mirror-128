@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+django_db_retry/__init__.py
+django_db_retry.egg-info/PKG-INFO
+django_db_retry.egg-info/SOURCES.txt
+django_db_retry.egg-info/dependency_links.txt
+django_db_retry.egg-info/requires.txt
+django_db_retry.egg-info/top_level.txt
