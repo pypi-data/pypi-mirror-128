@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pyTooling.Packaging
+Version: 0.1.0
+Summary: A set of helper functions to describe a Python package for setuptools.
+Home-page: https://GitHub.com/pyTooling/pyTooling.Packaging
+Author: Patrick Lehmann
+Author-email: Paebbels@gmail.com
+License: Apache 2.0
+Project-URL: Documentation, https://pyTooling.GitHub.io/pyTooling.Packaging
+Project-URL: Source Code, https://GitHub.com/pyTooling/pyTooling.Packaging
+Project-URL: Issue Tracker, https://GitHub.com/pyTooling/pyTooling.Packaging/issues
+Keywords: Python3 setuptools package wheel installation
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: pyTooling (>=1.4.4)
+
+# pyTooling.Packaging
+
+A set of helper functions to describe a Python package for setuptools.
+
+## Contributors
+
+* [Patrick Lehmann](https://GitHub.com/Paebbels) (Maintainer)
+* [and more...](https://GitHub.com/pyTooling/pyTooling.Packaging/graphs/contributors)
+
+
+## License
+
+This Python package (source code) licensed under [Apache License 2.0](LICENSE.md).  
+The accompanying documentation is licensed under [Creative Commons - Attribution 4.0 (CC-BY 4.0)](doc/Doc-License.rst).
+
+
+-------------------------
+
+SPDX-License-Identifier: Apache-2.0
+
+
