@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "overreact"
+version = "1.0.2"
+description = "📈 Create and analyze chemical microkinetic models built from computational chemistry data"
+authors = ["Felipe S. S. Schneider <schneider.felipe@posgrad.ufsc.br>",
+           "Giovanni F. Caramori <giovanni.caramori@ufsc.br>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://geem-lab.github.io/overreact-guide/"
+repository = "https://github.com/geem-lab/overreact"
+documentation = "https://geem-lab.github.io/overreact-guide/"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/geem-lab/overreact/issues"
+"Discussions" = "https://github.com/geem-lab/overreact/discussions"
+"API documentation" = "https://geem-lab.github.io/overreact/overreact.html"
+"PyPI" = "https://pypi.org/project/overreact/"
+"Citation" = "https://zenodo.org/badge/latestdoi/214332027"
+
+[tool.poetry.scripts]
+overreact = 'overreact._cli:main'
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+scipy = "^1.7.3"
+cclib = "^1.6.3"
+rich = {version = "^10.12.0", optional = true}
+thermo = {version = "^0.2.10", optional = true}
+jax = {version = "^0.2.24", optional = true}
+jaxlib = {version = "^0.1.73", optional = true}
+
+[tool.poetry.extras]
+cli = ["rich"]
+fast = ["jax", "jaxlib"]
+solvents = ["thermo"]
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+matplotlib = "^3.5.0"
+pydocstyle = "^6.1.1"
+bandit = "^1.7.1"
+black = {version = "^21.11b0", allow-prereleases = true}
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+pdoc = "^8.0.1"
+types-setuptools = "^57.4.4"
+mypy = "^0.910"
+debugpy = "^1.5.1"
+ipython = "^7.29.0"
+pytest-cov = "^3.0.0"
+seaborn = "^0.11.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
