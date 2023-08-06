@@ -1,0 +1,3 @@
+[console_scripts]
+bf_nlu = bf_nlu.__main__:main
+
