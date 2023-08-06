@@ -1,0 +1,13 @@
+cryptography
+
+[:python_version > "3.0"]
+chardet
+
+[dev]
+nose
+tox
+mypy==0.910
+
+[docs]
+sphinx
+sphinx-argparse
