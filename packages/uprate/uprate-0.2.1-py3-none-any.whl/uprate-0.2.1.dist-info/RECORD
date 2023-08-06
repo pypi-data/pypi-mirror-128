@@ -1,0 +1,14 @@
+uprate/__init__.py,sha256=OBw_9tRCbcg7JaCWtlBgbL9CISpkfjTFvb4OFOZeVHM,241
+uprate/_sync.py,sha256=gPFD7dciQkLe_FpYFsjmqXe9opwJIB_aD5n48u-_ThM,5659
+uprate/_utils.py,sha256=vwyRIYrBk8WnUikZsLHaj6l7aBQ2T_kBM3ItjvssfSs,402
+uprate/bucket.py,sha256=y0XcTIr41QuX--mYTHFV9-SPg9QMrRPod_Ky92jBlBg,4737
+uprate/decorators.py,sha256=_jLV_3MF0dgtSwzmiHAygLhYfP77LgkjpAhTgsYILx4,5685
+uprate/errors.py,sha256=fiqjxj0ukbj2PRIeupyol6nCuTQoyB3l5dS0QxmaDs0,1236
+uprate/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uprate/rate.py,sha256=hErCVYKfnChck7d61R5xtqkL9521yAQS9GPzREr5gaU,4211
+uprate/ratelimit.py,sha256=pUwJIIGnD1w9C3hhCgi-34n8F0aKJHj7Bzsjq8xrQPg,3236
+uprate/store.py,sha256=hlnBAov5XT6drJwnQfq4x4_GJnbBWsqE1nyR8E4Hw3I,6640
+uprate-0.2.1.dist-info/LICENSE,sha256=_MG9FGha44ZVzWESuL0QkifyYO7jBVECHyJprhoipo8,1117
+uprate-0.2.1.dist-info/WHEEL,sha256=FMw6u7Kp3jrdDDtJRZ3hkPV-9adLQT8pbM4iifKUGfw,85
+uprate-0.2.1.dist-info/METADATA,sha256=z_4ziwvEzD5FxMWj7RFs0HvQwtiCKCuZYmNLfmATsXg,3740
+uprate-0.2.1.dist-info/RECORD,,
