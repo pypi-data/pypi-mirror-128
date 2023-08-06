@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['keras_ocr']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['editdistance',
+ 'efficientnet==1.0.0',
+ 'essential_generators',
+ 'fonttools',
+ 'imgaug',
+ 'pyclipper',
+ 'shapely',
+ 'tqdm',
+ 'validators']
+
+setup_kwargs = {
+    'name': 'keras-ocr',
+    'version': '0.8.9',
+    'description': 'A packaged and flexible version of the CRAFT text detector and Keras CRNN recognition model.',
+    'long_description': "# keras-ocr [![Documentation Status](https://readthedocs.org/projects/keras-ocr/badge/?version=latest)](https://keras-ocr.readthedocs.io/en/latest/?badge=latest)\n\nThis is a slightly polished and packaged version of the [Keras CRNN implementation](https://github.com/kurapan/CRNN) and the published [CRAFT text detection model](https://github.com/clovaai/CRAFT-pytorch). It provides a high level API for training a text detection and OCR pipeline.\n\nPlease see [the documentation](https://keras-ocr.readthedocs.io/) for more examples, including for training a custom model.\n\n## Getting Started\n\n### Installation\n\n`keras-ocr` supports Python >= 3.6 and TensorFlow >= 2.0.0.\n\n```bash\n# To install from master\npip install git+https://github.com/faustomorales/keras-ocr.git#egg=keras-ocr\n\n# To install from PyPi\npip install keras-ocr\n```\n\n### Using\n\nThe package ships with an easy-to-use implementation of the CRAFT text detection model from [this repository](https://github.com/clovaai/CRAFT-pytorch) and the CRNN recognition model from [this repository](https://github.com/kurapan/CRNN).\n\n```python\nimport matplotlib.pyplot as plt\n\nimport keras_ocr\n\n# keras-ocr will automatically download pretrained\n# weights for the detector and recognizer.\npipeline = keras_ocr.pipeline.Pipeline()\n\n# Get a set of three example images\nimages = [\n    keras_ocr.tools.read(url) for url in [\n        'https://upload.wikimedia.org/wikipedia/commons/b/bd/Army_Reserves_Recruitment_Banner_MOD_45156284.jpg',\n        'https://upload.wikimedia.org/wikipedia/commons/e/e8/FseeG2QeLXo.jpg',\n        'https://upload.wikimedia.org/wikipedia/commons/b/b4/EUBanana-500x112.jpg'\n    ]\n]\n\n# Each list of predictions in prediction_groups is a list of\n# (word, box) tuples.\nprediction_groups = pipeline.recognize(images)\n\n# Plot the predictions\nfig, axs = plt.subplots(nrows=len(images), figsize=(20, 20))\nfor ax, image, predictions in zip(axs, images, prediction_groups):\n    keras_ocr.tools.drawAnnotations(image=image, predictions=predictions, ax=ax)\n```\n\n![example of labeled image](https://raw.githubusercontent.com/faustomorales/keras-ocr/master/docs/_static/readme_labeled.jpg)\n\n## Comparing keras-ocr and other OCR approaches\n\nYou may be wondering how the models in this package compare to existing cloud OCR APIs. We provide some metrics below and [the notebook](https://drive.google.com/file/d/1FMS3aUZnBU4Tc6bosBPnrjdMoSrjZXRp/view?usp=sharing) used to compute them using the first 1,000 images in the COCO-Text validation set. We limited it to 1,000 because the Google Cloud free tier is for 1,000 calls a month at the time of this writing. As always, caveats apply:\n\n- No guarantees apply to these numbers -- please beware and compute your own metrics independently to verify them. As of this writing, they should be considered a very rough first draft. Please open an issue if you find a mistake. In particular, the cloud APIs have a variety of options that one can use to improve their performance and the responses can be parsed in different ways. It is possible that I made some error in configuration or parsing. Again, please open an issue if you find a mistake!\n- We ignore punctuation and letter case because the out-of-the-box recognizer in keras-ocr (provided by [this independent repository](https://github.com/kurapan/CRNN)) does not support either. Note that both AWS Rekognition and Google Cloud Vision support punctuation as well as upper and lowercase characters.\n- We ignore non-English text.\n- We ignore illegible text.\n\n| model                                                                                                                         | latency | precision | recall |\n| ----------------------------------------------------------------------------------------------------------------------------- | ------- | --------- | ------ |\n| [AWS](https://github.com/faustomorales/keras-ocr/releases/download/v0.8.4/aws_annotations.json)                               | 719ms   | 0.45      | 0.48   |\n| [GCP](https://github.com/faustomorales/keras-ocr/releases/download/v0.8.4/google_annotations.json)                            | 388ms   | 0.53      | 0.58   |\n| [keras-ocr](https://github.com/faustomorales/keras-ocr/releases/download/v0.8.4/keras_ocr_annotations_scale_2.json) (scale=2) | 417ms   | 0.53      | 0.54   |\n| [keras-ocr](https://github.com/faustomorales/keras-ocr/releases/download/v0.8.4/keras_ocr_annotations_scale_3.json) (scale=3) | 699ms   | 0.5       | 0.59   |\n\n- Precision and recall were computed based on an intersection over union of 50% or higher and a text similarity to ground truth of 50% or higher.\n- `keras-ocr` latency values were computed using a Tesla P4 GPU on Google Colab. `scale` refers to the argument provided to `keras_ocr.pipelines.Pipeline()` which determines the upscaling applied to the image prior to inference.\n- Latency for the cloud providers was measured with sequential requests, so you can obtain significant speed improvements by making multiple simultaneous API requests.\n- Each of the entries provides a link to the JSON file containing the annotations made on each pass. You can use this with the notebook to compute metrics without having to make the API calls yourself (though you are encoraged to replicate it independently)!\n\n_Why not compare to Tesseract?_ In every configuration I tried, Tesseract did very poorly on this test. Tesseract performs best on scans of books, not on incidental scene text like that in this dataset.\n\n## Contributing\n\nTo work on the project, start by doing the following. These instructions probably do not yet work for Windows but if a Windows user has some ideas for how to fix that it would be greatly appreciated (I don't have a Windows machine to test on at the moment).\n\n```bash\n# Install local dependencies for\n# code completion, etc.\nmake init\n\n# Build the Docker container to run\n# tests and such.\nmake build\n```\n\n- You can get a JupyterLab server running to experiment with using `make lab`.\n- To run checks before committing code, you can use `make format-check type-check lint-check test`.\n- To view the documentation, use `make docs`.\n\nTo implement new features, please first file an issue proposing your change for discussion.\n\nTo report problems, please file an issue with sample code, expected results, actual results, and a complete traceback.\n\n## Troubleshooting\n\n- _This package is installing `opencv-python-headless` but I would prefer a different `opencv` flavor._ This is due to [aleju/imgaug#473](https://github.com/aleju/imgaug/issues/473). You can uninstall the unwanted OpenCV flavor after installing `keras-ocr`. We apologize for the inconvenience.\n",
+    'author': 'Fausto Morales',
+    'author_email': 'faustomorales@gmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/faustomorales/keras-ocr',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.6,<4.0',
+}
+
+
+setup(**setup_kwargs)
