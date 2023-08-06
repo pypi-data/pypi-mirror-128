@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/top_names/__init__.py
+src/top_names/__main__.py
+src/top_names/name_list.py
+src/top_names/name_scraper.py
+src/top_names.egg-info/PKG-INFO
+src/top_names.egg-info/SOURCES.txt
+src/top_names.egg-info/dependency_links.txt
+src/top_names.egg-info/not-zip-safe
+src/top_names.egg-info/requires.txt
+src/top_names.egg-info/top_level.txt
