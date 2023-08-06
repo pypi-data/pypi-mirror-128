@@ -1,0 +1,9 @@
+conjugate/__init__.py,sha256=PYw7zG_GW5pou7ocTVNL2quC9U-r5tlo93rRAOBNUR0,5761
+conjugate/godan_verb.py,sha256=55VjvaUKDPcxMyowQOvVwT_uQvTfIOHrXQTJjy4U5Xc,11473
+conjugate/i_adjective.py,sha256=qV2aBbG7kb3qp3tq6f_dV9hvKUooKb1tUFBUTwWhMTM,3636
+conjugate/ichidan_verb.py,sha256=HPDq7qg780Y2RsUA7ZTTP2DK_jcXcHUI7LFwFN7ucpE,9171
+conjugate/irregular.py,sha256=sywBu7-XTg-O-N_K4Q4kEUEmxE-1lpKz6dTclIXIDp4,5872
+katsuyou-0.1.0.dist-info/METADATA,sha256=B1eAR3f2oeiup8ZbLIs-jLrwVGpCgOvITI4jATmGdeU,520
+katsuyou-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+katsuyou-0.1.0.dist-info/top_level.txt,sha256=AhLd-_gDniiy2iHS_2zC7OkWCe-aLgyXIz7RRyt3-js,10
+katsuyou-0.1.0.dist-info/RECORD,,

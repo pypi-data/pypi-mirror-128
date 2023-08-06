@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: katsuyou
+Version: 0.1.0
+Summary: Python japanese toolkit
+Home-page: https://github.com/northy/katsuyou
+Author: Alexsandro Thomas
+Author-email: alexsandrogthomas@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/northy/katsuyou/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Katsuyou
+
