@@ -1,0 +1,17 @@
+discsocket/__init__.py,sha256=kBVBdyqxuQ_ciV2TKvsN6sj-rKn1GNp3CbPk-SF1SP0,345
+discsocket/container.py,sha256=8OynkOWNI_ByglpFBJVrf79LH4q82K6x02Ax8veI4zU,1220
+discsocket/decorators.py,sha256=JRGMkyMbStLn9TnpZFfEQ_tF53WXJXum2RobpDXJHYY,1345
+discsocket/embed.py,sha256=4QovX0gphaTCqwxA5ctxjYlXhigB0ZvTb_yeKM9ZfWA,3993
+discsocket/socket.py,sha256=QBu0GG8EWr9L82f1t33VRVTD5IjGQDTfTPanXn_O5J8,12516
+discsocket/models/__init__.py,sha256=kSmebjdncMfRYdTgPpzAL9aOOvkapRw5Hf62gieEDjQ,172
+discsocket/models/components.py,sha256=qVhSvt_WIo549rWBaolt3OvQJ_RQwnUZCur3xRZPP_M,1797
+discsocket/models/context.py,sha256=K4ZhhgnQsPq3d1cfvXiUpN5n5vznbJuAtMmkKoQ7lyg,8133
+discsocket/models/message.py,sha256=bXViv1QitBGAg1yYFPl0RsgCJeew0hmCjQ2A88n2av4,2693
+discsocket/models/user.py,sha256=JTNJLET_tWfFMejJBCanvSI3zvPFcOceHZW8hJNqdms,541
+discsocket/utils/__init__.py,sha256=UAxZXpyOu2S1rt9Hd85RjHJALUppYIkYAzRvY-d3cTc,447
+discsocket/utils/cdn.py,sha256=S_JsHfI8GhrzizrUu4ZKbsuKsWJE_-_WgxgYDf5huIg,611
+discsocket-1.0.10.dist-info/LICENSE,sha256=lkMzejtk0NOA906em0Tuz1ZHQpy1Onbnesgaob0M5FU,1083
+discsocket-1.0.10.dist-info/METADATA,sha256=QccG5rJRH0hYN5Mp4fBFDQAjx_bs7eFrhgxNbWsv7_o,1581
+discsocket-1.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+discsocket-1.0.10.dist-info/top_level.txt,sha256=MJgCNbtUMvhM46_3lX_6oS_w993xibpm8O2IJLKYCcs,11
+discsocket-1.0.10.dist-info/RECORD,,
