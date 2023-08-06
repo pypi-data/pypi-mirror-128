@@ -1,0 +1,3 @@
+[console_scripts]
+krono=krono.main:app
+
