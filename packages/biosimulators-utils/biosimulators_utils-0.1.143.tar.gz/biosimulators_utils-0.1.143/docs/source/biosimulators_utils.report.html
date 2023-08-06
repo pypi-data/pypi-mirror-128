@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>biosimulators_utils.report package &#8212; BioSimulators utils 0.1.143 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/biosimulators.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="biosimulators_utils.sedml package" href="biosimulators_utils.sedml.html" />
+    <link rel="prev" title="biosimulators_utils.ref package" href="biosimulators_utils.ref.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+      
+      <link rel="icon" sizes="16x16" href="https://github.com/biosimulations/biosimulations/raw/dev/libs/shared/assets/src/assets/icons/favicon-16x16.png">
+      
+    
+      
+      <link rel="icon" sizes="32x32" href="https://github.com/biosimulations/biosimulations/raw/dev/libs/shared/assets/src/assets/icons/favicon-32x32.png">
+      
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../index.html">
+  <img src="../_static/biosimulators-logo.svg" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Quick links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/biosimulators/Biosimulators_utils" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/biosimulators" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:info@biosimulators.org" rel="noopener" target="_blank" title="Email">
+            <span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Enter text to search for ..." aria-label="Enter text to search for ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.archive.html">
+   biosimulators_utils.archive package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.biosimulations.html">
+   biosimulators_utils.biosimulations package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.combine.html">
+   biosimulators_utils.combine package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.gh_action.html">
+   biosimulators_utils.gh_action package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.kisao.html">
+   biosimulators_utils.kisao package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.licensing.html">
+   biosimulators_utils.licensing package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.log.html">
+   biosimulators_utils.log package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.model_lang.html">
+   biosimulators_utils.model_lang package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.omex_meta.html">
+   biosimulators_utils.omex_meta package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.ref.html">
+   biosimulators_utils.ref package
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   biosimulators_utils.report package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.sedml.html">
+   biosimulators_utils.sedml package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.simulator.html">
+   biosimulators_utils.simulator package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.simulator_registry.html">
+   biosimulators_utils.simulator_registry package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.utils.html">
+   biosimulators_utils.utils package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.viz.html">
+   biosimulators_utils.viz package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.xml.html">
+   biosimulators_utils.xml package
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submodules">
+   Submodules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-biosimulators_utils.report.data_model">
+   biosimulators_utils.report.data_model module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-biosimulators_utils.report.io">
+   biosimulators_utils.report.io module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-biosimulators_utils.report.warnings">
+   biosimulators_utils.report.warnings module
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/biosimulators/Biosimulators_utils/edit/dev/docs-src/source/biosimulators_utils.report.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="module-biosimulators_utils.report">
+<span id="biosimulators-utils-report-package"></span><h1>biosimulators_utils.report package<a class="headerlink" href="#module-biosimulators_utils.report" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-biosimulators_utils.report.data_model">
+<span id="biosimulators-utils-report-data-model-module"></span><h2>biosimulators_utils.report.data_model module<a class="headerlink" href="#module-biosimulators_utils.report.data_model" title="Permalink to this headline">¶</a></h2>
+<p>Data model for reports</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Jonathan Karr &lt;<a class="reference external" href="mailto:karr&#37;&#52;&#48;mssm&#46;edu">karr<span>&#64;</span>mssm<span>&#46;</span>edu</a>&gt;</p>
+</dd>
+<dt class="field-even">Date</dt>
+<dd class="field-even"><p>2020-12-06</p>
+</dd>
+<dt class="field-odd">Copyright</dt>
+<dd class="field-odd"><p>2020, Center for Reproducible Biomedical Modeling</p>
+</dd>
+<dt class="field-even">License</dt>
+<dd class="field-even"><p>MIT</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.report.data_model.DataGeneratorResults">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.report.data_model.</span></span><span class="sig-name descname"><span class="pre">DataGeneratorResults</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.data_model.DataGeneratorResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>Dictionary that maps the ids of data generators (<code class="xref py py-obj docutils literal notranslate"><span class="pre">DataGenerator</span></code>) to their results (<code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.ndarray</span></code>)</p>
+<ul>
+<li><p>Keys (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): ids of data generators (<code class="xref py py-obj docutils literal notranslate"><span class="pre">DataGenerator</span></code>)</p></li>
+<li><p>Values (<code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.ndarray</span></code>): result of each variable</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Steady-state tasks of non-spatial models: results should be arrays of shape <code class="docutils literal notranslate"><span class="pre">(1,)</span></code></p></li>
+<li><p>One-step tasks of non-spatial models: results should be arrays of shape <code class="docutils literal notranslate"><span class="pre">(2,)</span></code></p></li>
+<li><p>Uniform time course tasks of non-spatial models: results should be arrays of shape <code class="docutils literal notranslate"><span class="pre">(number_of_steps</span> <span class="pre">+</span> <span class="pre">1,)</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.report.data_model.DataSetResults">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.report.data_model.</span></span><span class="sig-name descname"><span class="pre">DataSetResults</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.data_model.DataSetResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>Dictionary that maps the ids of data sets to their results (<code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.ndarray</span></code>)</p>
+<ul>
+<li><p>Keys (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): ids of data sets</p></li>
+<li><p>Values (<code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.ndarray</span></code>): result of each data set</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Steady-state tasks of non-spatial models: results should be arrays of shape <code class="docutils literal notranslate"><span class="pre">(number</span> <span class="pre">of</span> <span class="pre">data</span> <span class="pre">sets,</span> <span class="pre">1)</span></code></p></li>
+<li><p>One-step tasks of non-spatial models: results should be arrays of shape <code class="docutils literal notranslate"><span class="pre">(number</span> <span class="pre">of</span> <span class="pre">data</span> <span class="pre">sets,</span> <span class="pre">2)</span></code></p></li>
+<li><p>Uniform time course tasks of non-spatial models: results should be arrays of shape <code class="docutils literal notranslate"><span class="pre">(number_of_steps</span> <span class="pre">+</span> <span class="pre">1,)</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.report.data_model.ReportFormat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.report.data_model.</span></span><span class="sig-name descname"><span class="pre">ReportFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.data_model.ReportFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>Format of a report</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.report.data_model.ReportFormat.csv">
+<span class="sig-name descname"><span class="pre">csv</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'csv'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.data_model.ReportFormat.csv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.report.data_model.ReportFormat.h5">
+<span class="sig-name descname"><span class="pre">h5</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'h5'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.data_model.ReportFormat.h5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.report.data_model.ReportFormat.hdf">
+<span class="sig-name descname"><span class="pre">hdf</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'h5'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.data_model.ReportFormat.hdf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.report.data_model.ReportFormat.hdf5">
+<span class="sig-name descname"><span class="pre">hdf5</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'h5'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.data_model.ReportFormat.hdf5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.report.data_model.ReportFormat.tsv">
+<span class="sig-name descname"><span class="pre">tsv</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'tsv'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.data_model.ReportFormat.tsv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.report.data_model.ReportFormat.xlsx">
+<span class="sig-name descname"><span class="pre">xlsx</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'xlsx'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.data_model.ReportFormat.xlsx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.report.data_model.ReportResults">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.report.data_model.</span></span><span class="sig-name descname"><span class="pre">ReportResults</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.data_model.ReportResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>Dictionary that maps the ids of reports (e.g., <code class="xref py py-obj docutils literal notranslate"><span class="pre">Report</span></code>) to their results (<a class="reference internal" href="#biosimulators_utils.report.data_model.DataSetResults" title="biosimulators_utils.report.data_model.DataSetResults"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataSetResults</span></code></a>)</p>
+<ul class="simple">
+<li><p>Keys (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): ids of reports (e.g., <code class="xref py py-obj docutils literal notranslate"><span class="pre">Report</span></code>)</p></li>
+<li><p>Values (<a class="reference internal" href="#biosimulators_utils.report.data_model.DataSetResults" title="biosimulators_utils.report.data_model.DataSetResults"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataSetResults</span></code></a>): result of each report</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.report.data_model.SedDocumentResults">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.report.data_model.</span></span><span class="sig-name descname"><span class="pre">SedDocumentResults</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.data_model.SedDocumentResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>Dictionary that maps the locations of SED-ML documents (e.g., <code class="xref py py-obj docutils literal notranslate"><span class="pre">SedDocument</span></code>) to their results (<a class="reference internal" href="#biosimulators_utils.report.data_model.ReportResults" title="biosimulators_utils.report.data_model.ReportResults"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReportResults</span></code></a>)</p>
+<ul class="simple">
+<li><p>Keys (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): locations of SED documents (e.g., <code class="xref py py-obj docutils literal notranslate"><span class="pre">SedDocument</span></code>)</p></li>
+<li><p>Values (<a class="reference internal" href="#biosimulators_utils.report.data_model.ReportResults" title="biosimulators_utils.report.data_model.ReportResults"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReportResults</span></code></a>): result of each document</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.report.data_model.VariableResults">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.report.data_model.</span></span><span class="sig-name descname"><span class="pre">VariableResults</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.data_model.VariableResults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>Dictionary that maps the ids of variables (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Variable</span></code>) to their results (<code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.ndarray</span></code>)</p>
+<ul>
+<li><p>Keys (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): ids of variables (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Variable</span></code>)</p></li>
+<li><p>Values (<code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.ndarray</span></code>): result of each variable</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Steady-state tasks of non-spatial models: results should be arrays of shape <code class="docutils literal notranslate"><span class="pre">(1,)</span></code></p></li>
+<li><p>One-step tasks of non-spatial models: results should be arrays of shape <code class="docutils literal notranslate"><span class="pre">(2,)</span></code></p></li>
+<li><p>Uniform time course tasks of non-spatial models: results should be arrays of shape <code class="docutils literal notranslate"><span class="pre">(number_of_steps</span> <span class="pre">+</span> <span class="pre">1,)</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</dd></dl>
+
+</section>
+<section id="module-biosimulators_utils.report.io">
+<span id="biosimulators-utils-report-io-module"></span><h2>biosimulators_utils.report.io module<a class="headerlink" href="#module-biosimulators_utils.report.io" title="Permalink to this headline">¶</a></h2>
+<p>Utilities for reading and writing reports</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Jonathan Karr &lt;<a class="reference external" href="mailto:karr&#37;&#52;&#48;mssm&#46;edu">karr<span>&#64;</span>mssm<span>&#46;</span>edu</a>&gt;</p>
+</dd>
+<dt class="field-even">Date</dt>
+<dd class="field-even"><p>2020-12-06</p>
+</dd>
+<dt class="field-odd">Copyright</dt>
+<dd class="field-odd"><p>2020, Center for Reproducible Biomedical Modeling</p>
+</dd>
+<dt class="field-even">License</dt>
+<dd class="field-even"><p>MIT</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.report.io.ReportReader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.report.io.</span></span><span class="sig-name descname"><span class="pre">ReportReader</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/io.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.io.ReportReader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for reading reports of simulation results</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="biosimulators_utils.report.io.ReportReader.append_report_id">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">append_report_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">report_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/io.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.io.ReportReader.append_report_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="biosimulators_utils.report.io.ReportReader.get_ids">
+<span class="sig-name descname"><span class="pre">get_ids</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">base_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format=ReportFormat.h5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type=&lt;class</span> <span class="pre">'biosimulators_utils.sedml.data_model.Output'&gt;</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/io.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.io.ReportReader.get_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the ids of the reports in a file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>base_path</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – <p>path to save results</p>
+<ul>
+<li><p>CSV: parent directory to save results</p></li>
+<li><p>HDF5: file to save results</p></li>
+</ul>
+</p></li>
+<li><p><strong>format</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ReportFormat</span></code>, optional) – report format</p></li>
+<li><p><strong>type</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code>) – type of report to get</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ids of reports</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="biosimulators_utils.report.io.ReportReader.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">report</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rel_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ReportFormat.h5</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/io.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.io.ReportReader.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read a report for a file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>report</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Report</span></code>) – report</p></li>
+<li><p><strong>base_path</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – <p>path to save results</p>
+<ul>
+<li><p>CSV: parent directory to save results</p></li>
+<li><p>HDF5: file to save results</p></li>
+</ul>
+</p></li>
+<li><p><strong>rel_path</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – <p>path to save results relative to <code class="xref py py-obj docutils literal notranslate"><span class="pre">base_path</span></code></p>
+<ul>
+<li><p>CSV: relative path to <code class="xref py py-obj docutils literal notranslate"><span class="pre">base_path</span></code></p></li>
+<li><p>HDF5: key within HDF5 file</p></li>
+</ul>
+</p></li>
+<li><p><strong>format</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ReportFormat</span></code>, optional) – report format</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>report results</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataSetResults</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.report.io.ReportWriter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.report.io.</span></span><span class="sig-name descname"><span class="pre">ReportWriter</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/io.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.io.ReportWriter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for writing reports of simulation results</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="biosimulators_utils.report.io.ReportWriter.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">report</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rel_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format=ReportFormat.h5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type=&lt;class</span> <span class="pre">'biosimulators_utils.sedml.data_model.Report'&gt;</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/io.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.io.ReportWriter.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save a report</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>report</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Report</span></code>) – report</p></li>
+<li><p><strong>results</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">DataSetResults</span></code>) – results of the data sets</p></li>
+<li><p><strong>base_path</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – <p>path to save results</p>
+<ul>
+<li><p>CSV: parent directory to save results</p></li>
+<li><p>HDF5: file to save results</p></li>
+</ul>
+</p></li>
+<li><p><strong>rel_path</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – <p>path to save results relative to <code class="xref py py-obj docutils literal notranslate"><span class="pre">base_path</span></code></p>
+<ul>
+<li><p>CSV: relative path to <code class="xref py py-obj docutils literal notranslate"><span class="pre">base_path</span></code></p></li>
+<li><p>HDF5: key within HDF5 file</p></li>
+</ul>
+</p></li>
+<li><p><strong>format</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ReportFormat</span></code>, optional) – report format</p></li>
+<li><p><strong>type</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code>) – type of output (e.g., subclass of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Output</span></code> such as <code class="xref py py-obj docutils literal notranslate"><span class="pre">Report</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">Plot2D</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-biosimulators_utils.report.warnings">
+<span id="biosimulators-utils-report-warnings-module"></span><h2>biosimulators_utils.report.warnings module<a class="headerlink" href="#module-biosimulators_utils.report.warnings" title="Permalink to this headline">¶</a></h2>
+<p>Warnings for reports</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Jonathan Karr &lt;<a class="reference external" href="mailto:karr&#37;&#52;&#48;mssm&#46;edu">karr<span>&#64;</span>mssm<span>&#46;</span>edu</a>&gt;</p>
+</dd>
+<dt class="field-even">Date</dt>
+<dd class="field-even"><p>2021-01-21</p>
+</dd>
+<dt class="field-odd">Copyright</dt>
+<dd class="field-odd"><p>2021, Center for Reproducible Biomedical Modeling</p>
+</dd>
+<dt class="field-even">License</dt>
+<dd class="field-even"><p>MIT</p>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="biosimulators_utils.report.warnings.CannotExportMultidimensionalTableWarning">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.report.warnings.</span></span><span class="sig-name descname"><span class="pre">CannotExportMultidimensionalTableWarning</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/warnings.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.warnings.CannotExportMultidimensionalTableWarning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="biosimulators_utils.html#biosimulators_utils.warnings.BioSimulatorsWarning" title="biosimulators_utils.warnings.BioSimulatorsWarning"><code class="xref py py-class docutils literal notranslate"><span class="pre">biosimulators_utils.warnings.BioSimulatorsWarning</span></code></a></p>
+<p>Warning that a multidimensional report cannot be exported (e.g., to CSV, Excel, or TSV).</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="biosimulators_utils.report.warnings.ExtraDataWarning">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.report.warnings.</span></span><span class="sig-name descname"><span class="pre">ExtraDataWarning</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/warnings.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.warnings.ExtraDataWarning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="biosimulators_utils.html#biosimulators_utils.warnings.BioSimulatorsWarning" title="biosimulators_utils.warnings.BioSimulatorsWarning"><code class="xref py py-class docutils literal notranslate"><span class="pre">biosimulators_utils.warnings.BioSimulatorsWarning</span></code></a></p>
+<p>Warning that a file contains additional data that could not be mapped to a data set of a report.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="biosimulators_utils.report.warnings.MissingDataWarning">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.report.warnings.</span></span><span class="sig-name descname"><span class="pre">MissingDataWarning</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/warnings.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.warnings.MissingDataWarning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="biosimulators_utils.html#biosimulators_utils.warnings.BioSimulatorsWarning" title="biosimulators_utils.warnings.BioSimulatorsWarning"><code class="xref py py-class docutils literal notranslate"><span class="pre">biosimulators_utils.warnings.BioSimulatorsWarning</span></code></a></p>
+<p>Warning that a file does not contain data for one or more data sets of a report.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="biosimulators_utils.report.warnings.MissingReportMetadataWarning">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.report.warnings.</span></span><span class="sig-name descname"><span class="pre">MissingReportMetadataWarning</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/warnings.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.warnings.MissingReportMetadataWarning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="biosimulators_utils.html#biosimulators_utils.warnings.BioSimulatorsWarning" title="biosimulators_utils.warnings.BioSimulatorsWarning"><code class="xref py py-class docutils literal notranslate"><span class="pre">biosimulators_utils.warnings.BioSimulatorsWarning</span></code></a></p>
+<p>Warning that an exported file of a report will not or does contain comprehensive metadata about the report
+such as the data type and shape of each data set.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="biosimulators_utils.report.warnings.RepeatDataSetLabelsWarning">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.report.warnings.</span></span><span class="sig-name descname"><span class="pre">RepeatDataSetLabelsWarning</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/report/warnings.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.report.warnings.RepeatDataSetLabelsWarning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="biosimulators_utils.html#biosimulators_utils.warnings.BioSimulatorsWarning" title="biosimulators_utils.warnings.BioSimulatorsWarning"><code class="xref py py-class docutils literal notranslate"><span class="pre">biosimulators_utils.warnings.BioSimulatorsWarning</span></code></a></p>
+<p>Warning that multiple data sets with a report have the same label</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, BioSimulators Team.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

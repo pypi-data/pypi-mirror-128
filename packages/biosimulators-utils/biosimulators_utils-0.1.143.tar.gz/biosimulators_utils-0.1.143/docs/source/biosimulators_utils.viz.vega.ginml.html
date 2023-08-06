@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>biosimulators_utils.viz.vega.ginml package &#8212; BioSimulators utils 0.1.143 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/biosimulators.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="biosimulators_utils.viz.vega.sbgn package" href="biosimulators_utils.viz.vega.sbgn.html" />
+    <link rel="prev" title="biosimulators_utils.viz.vega.escher package" href="biosimulators_utils.viz.vega.escher.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+      
+      <link rel="icon" sizes="16x16" href="https://github.com/biosimulations/biosimulations/raw/dev/libs/shared/assets/src/assets/icons/favicon-16x16.png">
+      
+    
+      
+      <link rel="icon" sizes="32x32" href="https://github.com/biosimulations/biosimulations/raw/dev/libs/shared/assets/src/assets/icons/favicon-32x32.png">
+      
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../index.html">
+  <img src="../_static/biosimulators-logo.svg" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Quick links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/biosimulators/Biosimulators_utils" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/biosimulators" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:info@biosimulators.org" rel="noopener" target="_blank" title="Email">
+            <span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Enter text to search for ..." aria-label="Enter text to search for ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.archive.html">
+   biosimulators_utils.archive package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.biosimulations.html">
+   biosimulators_utils.biosimulations package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.combine.html">
+   biosimulators_utils.combine package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.gh_action.html">
+   biosimulators_utils.gh_action package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.kisao.html">
+   biosimulators_utils.kisao package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.licensing.html">
+   biosimulators_utils.licensing package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.log.html">
+   biosimulators_utils.log package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.model_lang.html">
+   biosimulators_utils.model_lang package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.omex_meta.html">
+   biosimulators_utils.omex_meta package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.ref.html">
+   biosimulators_utils.ref package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.report.html">
+   biosimulators_utils.report package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.sedml.html">
+   biosimulators_utils.sedml package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.simulator.html">
+   biosimulators_utils.simulator package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.simulator_registry.html">
+   biosimulators_utils.simulator_registry package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.utils.html">
+   biosimulators_utils.utils package
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="biosimulators_utils.viz.html">
+   biosimulators_utils.viz package
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="biosimulators_utils.viz.vega.html">
+     biosimulators_utils.viz.vega package
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="biosimulators_utils.viz.vega.escher.html">
+       biosimulators_utils.viz.vega.escher package
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       biosimulators_utils.viz.vega.ginml package
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="biosimulators_utils.viz.vega.sbgn.html">
+       biosimulators_utils.viz.vega.sbgn package
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.xml.html">
+   biosimulators_utils.xml package
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submodules">
+   Submodules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-biosimulators_utils.viz.vega.ginml.core">
+   biosimulators_utils.viz.vega.ginml.core module
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/biosimulators/Biosimulators_utils/edit/dev/docs-src/source/biosimulators_utils.viz.vega.ginml.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="module-biosimulators_utils.viz.vega.ginml">
+<span id="biosimulators-utils-viz-vega-ginml-package"></span><h1>biosimulators_utils.viz.vega.ginml package<a class="headerlink" href="#module-biosimulators_utils.viz.vega.ginml" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-biosimulators_utils.viz.vega.ginml.core">
+<span id="biosimulators-utils-viz-vega-ginml-core-module"></span><h2>biosimulators_utils.viz.vega.ginml.core module<a class="headerlink" href="#module-biosimulators_utils.viz.vega.ginml.core" title="Permalink to this headline">¶</a></h2>
+<p>Utility for converting activity flow diagrams from GINsim Markup Language (GINML) to Vega format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Andrew Freiburger &lt;<a class="reference external" href="mailto:afreiburger&#37;&#52;&#48;uvic&#46;ca">afreiburger<span>&#64;</span>uvic<span>&#46;</span>ca</a>&gt;</p>
+</dd>
+<dt class="field-even">Author</dt>
+<dd class="field-even"><p>Jonathan Karr &lt;<a class="reference external" href="mailto:karr&#37;&#52;&#48;mssm&#46;edu">karr<span>&#64;</span>mssm<span>&#46;</span>edu</a>&gt;</p>
+</dd>
+<dt class="field-odd">Date</dt>
+<dd class="field-odd"><p>2021-07-23</p>
+</dd>
+<dt class="field-even">Copyright</dt>
+<dd class="field-even"><p>2021, Center for Reproducible Biomedical Modeling</p>
+</dd>
+<dt class="field-odd">License</dt>
+<dd class="field-odd"><p>MIT</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="biosimulators_utils.viz.vega.ginml.core.ginml_to_vega">
+<span class="sig-prename descclassname"><span class="pre">biosimulators_utils.viz.vega.ginml.core.</span></span><span class="sig-name descname"><span class="pre">ginml_to_vega</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_values_data_set</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ginml_filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vega_filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimum_nodes_quantity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">18</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_x_value_adjustment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_y_value_adjustment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">45</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signal_height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">65</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signal_padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/viz/vega/ginml/core.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.viz.vega.ginml.core.ginml_to_vega" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert an activity flow diagram from GINsim Markup Language (GINML) format to Vega format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>node_values_data_set</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code>) – <p>Vega data set with the predicted values of each node. The dictionary should
+have one of the following schemas</p>
+<ul>
+<li><p>Contain a key <code class="docutils literal notranslate"><span class="pre">values</span></code> whose value is a list of the predicted node values. Each item of the list
+should be a dictionary with two keys</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">label</span></code>: value should be the SBML-qual identifier of the corresponding node</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">values</span></code>: array of the predicted value of the species at each time step</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Contain a key <code class="docutils literal notranslate"><span class="pre">url</span></code> whose value is a URL where the predicted values can be retrieved in JSON
+format. The data should be in the same format outlined above.</p></li>
+<li><p>Contain a key <code class="docutils literal notranslate"><span class="pre">sedmlUri</span></code> whose value is an array which contains two elements that indicate</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The location of the SED-ML file (within its parent COMBINE/OMEX archive) which will produce
+the predictions for the visualization</p></li>
+<li><p>The id of the SED-ML report which will contain the predictions for the visualization</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</p></li>
+<li><p><strong>ginml_filename</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – path to the visualization in GINML format</p></li>
+<li><p><strong>vega_filename</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – path to save the visualization in Vega format</p></li>
+<li><p><strong>optimum_nodes_quantity</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>edge_x_value_adjustment</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>edge_y_value_adjustment</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>signal_height</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>signal_padding</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – </p></li>
+<li><p><strong>indent</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code> or <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>, optional) – indentation</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, BioSimulators Team.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

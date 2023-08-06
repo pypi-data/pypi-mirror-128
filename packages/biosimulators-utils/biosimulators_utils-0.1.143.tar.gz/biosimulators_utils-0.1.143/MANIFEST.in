@@ -1,0 +1,15 @@
+# description
+include README.rst
+
+# license
+include LICENSE
+
+# requirements
+include requirements.txt
+include requirements.optional.txt
+
+# CellML schema
+include biosimulators_utils/model_lang/cellml/*.rng
+
+# Vega templates
+include biosimulators_utils/viz/vega/**/*.json

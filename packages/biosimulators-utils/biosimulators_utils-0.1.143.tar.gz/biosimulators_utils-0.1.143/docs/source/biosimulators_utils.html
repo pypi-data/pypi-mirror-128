@@ -1,0 +1,1318 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>biosimulators_utils package &#8212; BioSimulators utils 0.1.143 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/biosimulators.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="biosimulators_utils.archive package" href="biosimulators_utils.archive.html" />
+    <link rel="prev" title="Installation instructions" href="../installation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+      
+      <link rel="icon" sizes="16x16" href="https://github.com/biosimulations/biosimulations/raw/dev/libs/shared/assets/src/assets/icons/favicon-16x16.png">
+      
+    
+      
+      <link rel="icon" sizes="32x32" href="https://github.com/biosimulations/biosimulations/raw/dev/libs/shared/assets/src/assets/icons/favicon-32x32.png">
+      
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../index.html">
+  <img src="../_static/biosimulators-logo.svg" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Quick links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/biosimulators/Biosimulators_utils" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/biosimulators" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:info@biosimulators.org" rel="noopener" target="_blank" title="Email">
+            <span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Enter text to search for ..." aria-label="Enter text to search for ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.archive.html">
+   biosimulators_utils.archive package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.biosimulations.html">
+   biosimulators_utils.biosimulations package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.combine.html">
+   biosimulators_utils.combine package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.gh_action.html">
+   biosimulators_utils.gh_action package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.kisao.html">
+   biosimulators_utils.kisao package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.licensing.html">
+   biosimulators_utils.licensing package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.log.html">
+   biosimulators_utils.log package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.model_lang.html">
+   biosimulators_utils.model_lang package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.omex_meta.html">
+   biosimulators_utils.omex_meta package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.ref.html">
+   biosimulators_utils.ref package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.report.html">
+   biosimulators_utils.report package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.sedml.html">
+   biosimulators_utils.sedml package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.simulator.html">
+   biosimulators_utils.simulator package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.simulator_registry.html">
+   biosimulators_utils.simulator_registry package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.utils.html">
+   biosimulators_utils.utils package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.viz.html">
+   biosimulators_utils.viz package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="biosimulators_utils.xml.html">
+   biosimulators_utils.xml package
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#subpackages">
+   Subpackages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submodules">
+   Submodules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-biosimulators_utils.config">
+   biosimulators_utils.config module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-biosimulators_utils.data_model">
+   biosimulators_utils.data_model module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-biosimulators_utils.exceptions">
+   biosimulators_utils.exceptions module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-biosimulators_utils.image">
+   biosimulators_utils.image module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-biosimulators_utils.warnings">
+   biosimulators_utils.warnings module
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/biosimulators/Biosimulators_utils/edit/dev/docs-src/source/biosimulators_utils.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="module-biosimulators_utils">
+<span id="biosimulators-utils-package"></span><h1>biosimulators_utils package<a class="headerlink" href="#module-biosimulators_utils" title="Permalink to this headline">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.archive.html">biosimulators_utils.archive package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.archive.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.archive.html#module-biosimulators_utils.archive.data_model">biosimulators_utils.archive.data_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.archive.html#module-biosimulators_utils.archive.io">biosimulators_utils.archive.io module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.archive.html#module-biosimulators_utils.archive.utils">biosimulators_utils.archive.utils module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.biosimulations.html">biosimulators_utils.biosimulations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.biosimulations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.biosimulations.html#module-biosimulators_utils.biosimulations.data_model">biosimulators_utils.biosimulations.data_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.biosimulations.html#module-biosimulators_utils.biosimulations.utils">biosimulators_utils.biosimulations.utils module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.combine.html">biosimulators_utils.combine package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.combine.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.combine.html#module-biosimulators_utils.combine.data_model">biosimulators_utils.combine.data_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.combine.html#module-biosimulators_utils.combine.exceptions">biosimulators_utils.combine.exceptions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.combine.html#module-biosimulators_utils.combine.exec">biosimulators_utils.combine.exec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.combine.html#module-biosimulators_utils.combine.io">biosimulators_utils.combine.io module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.combine.html#module-biosimulators_utils.combine.utils">biosimulators_utils.combine.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.combine.html#module-biosimulators_utils.combine.validation">biosimulators_utils.combine.validation module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.gh_action.html">biosimulators_utils.gh_action package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.gh_action.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.gh_action.html#module-biosimulators_utils.gh_action.core">biosimulators_utils.gh_action.core module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.gh_action.html#module-biosimulators_utils.gh_action.data_model">biosimulators_utils.gh_action.data_model module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.kisao.html">biosimulators_utils.kisao package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.kisao.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.kisao.html#module-biosimulators_utils.kisao.utils">biosimulators_utils.kisao.utils module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.licensing.html">biosimulators_utils.licensing package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.licensing.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.licensing.html#module-biosimulators_utils.licensing.core">biosimulators_utils.licensing.core module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.licensing.html#module-biosimulators_utils.licensing.gurobi">biosimulators_utils.licensing.gurobi module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.log.html">biosimulators_utils.log package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.log.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.log.html#module-biosimulators_utils.log.data_model">biosimulators_utils.log.data_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.log.html#module-biosimulators_utils.log.utils">biosimulators_utils.log.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.log.html#module-biosimulators_utils.log.warnings">biosimulators_utils.log.warnings module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.model_lang.html">biosimulators_utils.model_lang package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.model_lang.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="biosimulators_utils.model_lang.bngl.html">biosimulators_utils.model_lang.bngl package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.bngl.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.bngl.html#module-biosimulators_utils.model_lang.bngl.utils">biosimulators_utils.model_lang.bngl.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.bngl.html#module-biosimulators_utils.model_lang.bngl.validation">biosimulators_utils.model_lang.bngl.validation module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="biosimulators_utils.model_lang.cellml.html">biosimulators_utils.model_lang.cellml package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.cellml.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.cellml.html#module-biosimulators_utils.model_lang.cellml.utils">biosimulators_utils.model_lang.cellml.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.cellml.html#module-biosimulators_utils.model_lang.cellml.validation">biosimulators_utils.model_lang.cellml.validation module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="biosimulators_utils.model_lang.lems.html">biosimulators_utils.model_lang.lems package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.lems.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.lems.html#module-biosimulators_utils.model_lang.lems.validation">biosimulators_utils.model_lang.lems.validation module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="biosimulators_utils.model_lang.neuroml.html">biosimulators_utils.model_lang.neuroml package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.neuroml.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.neuroml.html#module-biosimulators_utils.model_lang.neuroml.validation">biosimulators_utils.model_lang.neuroml.validation module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="biosimulators_utils.model_lang.rba.html">biosimulators_utils.model_lang.rba package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.rba.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.rba.html#biosimulators-utils-model-lang-rba-utils-module">biosimulators_utils.model_lang.rba.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.rba.html#biosimulators-utils-model-lang-rba-validation-module">biosimulators_utils.model_lang.rba.validation module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="biosimulators_utils.model_lang.sbml.html">biosimulators_utils.model_lang.sbml package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.sbml.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.sbml.html#module-biosimulators_utils.model_lang.sbml.utils">biosimulators_utils.model_lang.sbml.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.sbml.html#module-biosimulators_utils.model_lang.sbml.validation">biosimulators_utils.model_lang.sbml.validation module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="biosimulators_utils.model_lang.smoldyn.html">biosimulators_utils.model_lang.smoldyn package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.smoldyn.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.smoldyn.html#module-biosimulators_utils.model_lang.smoldyn.utils">biosimulators_utils.model_lang.smoldyn.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.smoldyn.html#module-biosimulators_utils.model_lang.smoldyn.validation">biosimulators_utils.model_lang.smoldyn.validation module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="biosimulators_utils.model_lang.xpp.html">biosimulators_utils.model_lang.xpp package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.xpp.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.xpp.html#module-biosimulators_utils.model_lang.xpp.data_model">biosimulators_utils.model_lang.xpp.data_model module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.xpp.html#module-biosimulators_utils.model_lang.xpp.utils">biosimulators_utils.model_lang.xpp.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.model_lang.xpp.html#module-biosimulators_utils.model_lang.xpp.validation">biosimulators_utils.model_lang.xpp.validation module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.omex_meta.html">biosimulators_utils.omex_meta package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.omex_meta.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.omex_meta.html#module-biosimulators_utils.omex_meta.data_model">biosimulators_utils.omex_meta.data_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.omex_meta.html#module-biosimulators_utils.omex_meta.io">biosimulators_utils.omex_meta.io module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.omex_meta.html#module-biosimulators_utils.omex_meta.utils">biosimulators_utils.omex_meta.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.omex_meta.html#module-biosimulators_utils.omex_meta.validation">biosimulators_utils.omex_meta.validation module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.ref.html">biosimulators_utils.ref package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.ref.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.ref.html#module-biosimulators_utils.ref.data_model">biosimulators_utils.ref.data_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.ref.html#module-biosimulators_utils.ref.utils">biosimulators_utils.ref.utils module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.report.html">biosimulators_utils.report package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.report.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.report.html#module-biosimulators_utils.report.data_model">biosimulators_utils.report.data_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.report.html#module-biosimulators_utils.report.io">biosimulators_utils.report.io module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.report.html#module-biosimulators_utils.report.warnings">biosimulators_utils.report.warnings module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.sedml.html">biosimulators_utils.sedml package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.sedml.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.sedml.html#module-biosimulators_utils.sedml.data_model">biosimulators_utils.sedml.data_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.sedml.html#module-biosimulators_utils.sedml.exceptions">biosimulators_utils.sedml.exceptions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.sedml.html#module-biosimulators_utils.sedml.exec">biosimulators_utils.sedml.exec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.sedml.html#module-biosimulators_utils.sedml.io">biosimulators_utils.sedml.io module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.sedml.html#module-biosimulators_utils.sedml.math">biosimulators_utils.sedml.math module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.sedml.html#module-biosimulators_utils.sedml.model_utils">biosimulators_utils.sedml.model_utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.sedml.html#module-biosimulators_utils.sedml.utils">biosimulators_utils.sedml.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.sedml.html#module-biosimulators_utils.sedml.validation">biosimulators_utils.sedml.validation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.sedml.html#module-biosimulators_utils.sedml.warnings">biosimulators_utils.sedml.warnings module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.simulator.html">biosimulators_utils.simulator package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator.html#module-biosimulators_utils.simulator.cli">biosimulators_utils.simulator.cli module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator.html#module-biosimulators_utils.simulator.data_model">biosimulators_utils.simulator.data_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator.html#module-biosimulators_utils.simulator.environ">biosimulators_utils.simulator.environ module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator.html#module-biosimulators_utils.simulator.exceptions">biosimulators_utils.simulator.exceptions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator.html#module-biosimulators_utils.simulator.exec">biosimulators_utils.simulator.exec module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator.html#module-biosimulators_utils.simulator.io">biosimulators_utils.simulator.io module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator.html#module-biosimulators_utils.simulator.specs">biosimulators_utils.simulator.specs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator.html#module-biosimulators_utils.simulator.utils">biosimulators_utils.simulator.utils module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.simulator_registry.html">biosimulators_utils.simulator_registry package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator_registry.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator_registry.html#module-biosimulators_utils.simulator_registry.data_model">biosimulators_utils.simulator_registry.data_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator_registry.html#module-biosimulators_utils.simulator_registry.process_submission">biosimulators_utils.simulator_registry.process_submission module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator_registry.html#module-biosimulators_utils.simulator_registry.query">biosimulators_utils.simulator_registry.query module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.simulator_registry.html#module-biosimulators_utils.simulator_registry.submit">biosimulators_utils.simulator_registry.submit module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.utils.html">biosimulators_utils.utils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.utils.html#module-biosimulators_utils.utils.core">biosimulators_utils.utils.core module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.utils.html#module-biosimulators_utils.utils.identifiers_org">biosimulators_utils.utils.identifiers_org module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.utils.html#module-biosimulators_utils.utils.logging">biosimulators_utils.utils.logging module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.viz.html">biosimulators_utils.viz package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.viz.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="biosimulators_utils.viz.vega.html">biosimulators_utils.viz.vega package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.viz.vega.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.viz.vega.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="biosimulators_utils.viz.vega.html#module-biosimulators_utils.viz.vega.utils">biosimulators_utils.viz.vega.utils module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.viz.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.viz.html#module-biosimulators_utils.viz.data_model">biosimulators_utils.viz.data_model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.viz.html#module-biosimulators_utils.viz.io">biosimulators_utils.viz.io module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.viz.html#module-biosimulators_utils.viz.utils">biosimulators_utils.viz.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.viz.html#module-biosimulators_utils.viz.warnings">biosimulators_utils.viz.warnings module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biosimulators_utils.xml.html">biosimulators_utils.xml package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.xml.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="biosimulators_utils.xml.html#module-biosimulators_utils.xml.utils">biosimulators_utils.xml.utils module</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-biosimulators_utils.config">
+<span id="biosimulators-utils-config-module"></span><h2>biosimulators_utils.config module<a class="headerlink" href="#module-biosimulators_utils.config" title="Permalink to this headline">¶</a></h2>
+<p>Common configuration for simulation tools</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Jonathan Karr &lt;<a class="reference external" href="mailto:karr&#37;&#52;&#48;mssm&#46;edu">karr<span>&#64;</span>mssm<span>&#46;</span>edu</a>&gt;</p>
+</dd>
+<dt class="field-even">Date</dt>
+<dd class="field-even"><p>2020-12-29</p>
+</dd>
+<dt class="field-odd">Copyright</dt>
+<dd class="field-odd"><p>2020, Center for Reproducible Biomedical Modeling</p>
+</dd>
+<dt class="field-even">License</dt>
+<dd class="field-even"><p>MIT</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Colors">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.config.</span></span><span class="sig-name descname"><span class="pre">Colors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Colors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Colors.failed">
+<span class="sig-name descname"><span class="pre">failed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'red'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Colors.failed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Colors.failure">
+<span class="sig-name descname"><span class="pre">failure</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'red'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Colors.failure" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Colors.pass">
+<span class="sig-name descname"><span class="pre">pass</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'green'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Colors.pass" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Colors.passed">
+<span class="sig-name descname"><span class="pre">passed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'green'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Colors.passed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Colors.queued">
+<span class="sig-name descname"><span class="pre">queued</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'cyan'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Colors.queued" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Colors.running">
+<span class="sig-name descname"><span class="pre">running</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'green'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Colors.running" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Colors.skip">
+<span class="sig-name descname"><span class="pre">skip</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'magenta'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Colors.skip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Colors.skipped">
+<span class="sig-name descname"><span class="pre">skipped</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'magenta'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Colors.skipped" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Colors.succeeded">
+<span class="sig-name descname"><span class="pre">succeeded</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'blue'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Colors.succeeded" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Colors.success">
+<span class="sig-name descname"><span class="pre">success</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'blue'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Colors.success" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Colors.warned">
+<span class="sig-name descname"><span class="pre">warned</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'yellow'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Colors.warned" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Colors.warning">
+<span class="sig-name descname"><span class="pre">warning</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'yellow'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Colors.warning" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.config.</span></span><span class="sig-name descname"><span class="pre">Config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">OMEX_METADATA_INPUT_FORMAT=OmexMetadataInputFormat.rdfxml,</span> <span class="pre">OMEX_METADATA_OUTPUT_FORMAT=OmexMetadataOutputFormat.rdfxml_abbrev,</span> <span class="pre">OMEX_METADATA_SCHEMA=OmexMetadataSchema.biosimulations,</span> <span class="pre">VALIDATE_OMEX_MANIFESTS=True,</span> <span class="pre">VALIDATE_SEDML=True,</span> <span class="pre">VALIDATE_SEDML_MODELS=True,</span> <span class="pre">VALIDATE_OMEX_METADATA=True,</span> <span class="pre">VALIDATE_IMAGES=True,</span> <span class="pre">VALIDATE_RESULTS=True,</span> <span class="pre">ALGORITHM_SUBSTITUTION_POLICY=AlgorithmSubstitutionPolicy.SIMILAR_VARIABLES,</span> <span class="pre">COLLECT_COMBINE_ARCHIVE_RESULTS=False,</span> <span class="pre">COLLECT_SED_DOCUMENT_RESULTS=False,</span> <span class="pre">SAVE_PLOT_DATA=True,</span> <span class="pre">REPORT_FORMATS=[&lt;ReportFormat.h5:</span> <span class="pre">'h5'&gt;],</span> <span class="pre">VIZ_FORMATS=[&lt;VizFormat.pdf:</span> <span class="pre">'pdf'&gt;],</span> <span class="pre">H5_REPORTS_PATH='reports.h5',</span> <span class="pre">REPORTS_PATH='reports.zip',</span> <span class="pre">PLOTS_PATH='plots.zip',</span> <span class="pre">BUNDLE_OUTPUTS=True,</span> <span class="pre">KEEP_INDIVIDUAL_OUTPUTS=True,</span> <span class="pre">LOG=True,</span> <span class="pre">LOG_PATH='log.yml',</span> <span class="pre">BIOSIMULATORS_API_ENDPOINT='https://api.biosimulators.org/',</span> <span class="pre">RUNBIOSIMULATIONS_API_ENDPOINT='https://api.biosimulations.org/',</span> <span class="pre">VERBOSE=False,</span> <span class="pre">DEBUG=False</span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Configuration</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.OMEX_METADATA_INPUT_FORMAT">
+<span class="sig-name descname"><span class="pre">OMEX_METADATA_INPUT_FORMAT</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.OMEX_METADATA_INPUT_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>format to validate OMEX Metadata files against</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">OmexMetadataInputFormat</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.OMEX_METADATA_OUTPUT_FORMAT">
+<span class="sig-name descname"><span class="pre">OMEX_METADATA_OUTPUT_FORMAT</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.OMEX_METADATA_OUTPUT_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>format to export OMEX Metadata files</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">OmexMetadataOutputFormat</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.OMEX_METADATA_SCHEMA">
+<span class="sig-name descname"><span class="pre">OMEX_METADATA_SCHEMA</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.OMEX_METADATA_SCHEMA" title="Permalink to this definition">¶</a></dt>
+<dd><p>schema to validate OMEX Metadata files against</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">OmexMetadataSchema</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.VALIDATE_OMEX_MANIFESTS">
+<span class="sig-name descname"><span class="pre">VALIDATE_OMEX_MANIFESTS</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.VALIDATE_OMEX_MANIFESTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>whether to validate OMEX manifests during the validation of COMBINE/OMEX archives</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.VALIDATE_SEDML">
+<span class="sig-name descname"><span class="pre">VALIDATE_SEDML</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.VALIDATE_SEDML" title="Permalink to this definition">¶</a></dt>
+<dd><p>whether to validate SED-ML files during the validation of COMBINE/OMEX archives</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.VALIDATE_SEDML_MODELS">
+<span class="sig-name descname"><span class="pre">VALIDATE_SEDML_MODELS</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.VALIDATE_SEDML_MODELS" title="Permalink to this definition">¶</a></dt>
+<dd><p>whether to validate models referenced by SED-ML files during the validation of COMBINE/OMEX archives</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.VALIDATE_OMEX_METADATA">
+<span class="sig-name descname"><span class="pre">VALIDATE_OMEX_METADATA</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.VALIDATE_OMEX_METADATA" title="Permalink to this definition">¶</a></dt>
+<dd><p>whether to validate OMEX metadata (RDF files) during the validation of COMBINE/OMEX archives</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.VALIDATE_IMAGES">
+<span class="sig-name descname"><span class="pre">VALIDATE_IMAGES</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.VALIDATE_IMAGES" title="Permalink to this definition">¶</a></dt>
+<dd><p>whether to validate the images in COMBINE/OMEX archives during their validation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.VALIDATE_RESULTS">
+<span class="sig-name descname"><span class="pre">VALIDATE_RESULTS</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.VALIDATE_RESULTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>whether to validate the results of simulations following their execution</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.ALGORITHM_SUBSTITUTION_POLICY">
+<span class="sig-name descname"><span class="pre">ALGORITHM_SUBSTITUTION_POLICY</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.ALGORITHM_SUBSTITUTION_POLICY" title="Permalink to this definition">¶</a></dt>
+<dd><p>algorithm substition policy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AlgorithmSubstitutionPolicy</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.COLLECT_COMBINE_ARCHIVE_RESULTS">
+<span class="sig-name descname"><span class="pre">COLLECT_COMBINE_ARCHIVE_RESULTS</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.COLLECT_COMBINE_ARCHIVE_RESULTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>whether to assemble an in memory data structure with all of the simulation results
+of COMBINE/OMEX archives</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.COLLECT_SED_DOCUMENT_RESULTS">
+<span class="sig-name descname"><span class="pre">COLLECT_SED_DOCUMENT_RESULTS</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.COLLECT_SED_DOCUMENT_RESULTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>whether to assemble an in memory data structure with all of the simulation results
+of SED documents</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.SAVE_PLOT_DATA">
+<span class="sig-name descname"><span class="pre">SAVE_PLOT_DATA</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.SAVE_PLOT_DATA" title="Permalink to this definition">¶</a></dt>
+<dd><p>whether to save data for plots alongside data for reports in CSV/HDF5 files</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.REPORT_FORMATS">
+<span class="sig-name descname"><span class="pre">REPORT_FORMATS</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.REPORT_FORMATS" title="Permalink to this definition">¶</a></dt>
+<dd><p>default formats to generate reports in</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">ReportFormat</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.VIZ_FORMATS">
+<span class="sig-name descname"><span class="pre">VIZ_FORMATS</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.VIZ_FORMATS" title="Permalink to this definition">¶</a></dt>
+<dd><p>default formats to generate plots in</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">VizFormat</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.H5_REPORTS_PATH">
+<span class="sig-name descname"><span class="pre">H5_REPORTS_PATH</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.H5_REPORTS_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>path to save reports in HDF5 format relative to base output directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.REPORTS_PATH">
+<span class="sig-name descname"><span class="pre">REPORTS_PATH</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.REPORTS_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>path to save zip archive of reports relative to base output directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.PLOTS_PATH">
+<span class="sig-name descname"><span class="pre">PLOTS_PATH</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.PLOTS_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>path to save zip archive of plots relative to base output directory</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.BUNDLE_OUTPUTS">
+<span class="sig-name descname"><span class="pre">BUNDLE_OUTPUTS</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.BUNDLE_OUTPUTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>indicates whether bundles of report and plot outputs should be produced</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.KEEP_INDIVIDUAL_OUTPUTS">
+<span class="sig-name descname"><span class="pre">KEEP_INDIVIDUAL_OUTPUTS</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.KEEP_INDIVIDUAL_OUTPUTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>indicates whether the individual output files should be kept</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.LOG">
+<span class="sig-name descname"><span class="pre">LOG</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.LOG" title="Permalink to this definition">¶</a></dt>
+<dd><p>whether to log the execution of a COMBINE/OMEX archive</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.LOG_PATH">
+<span class="sig-name descname"><span class="pre">LOG_PATH</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.LOG_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>path to save the execution log of a COMBINE/OMEX archive</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.BIOSIMULATORS_API_ENDPOINT">
+<span class="sig-name descname"><span class="pre">BIOSIMULATORS_API_ENDPOINT</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.BIOSIMULATORS_API_ENDPOINT" title="Permalink to this definition">¶</a></dt>
+<dd><p>URL for BioSimulators API</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.RUNBIOSIMULATIONS_API_ENDPOINT">
+<span class="sig-name descname"><span class="pre">RUNBIOSIMULATIONS_API_ENDPOINT</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.RUNBIOSIMULATIONS_API_ENDPOINT" title="Permalink to this definition">¶</a></dt>
+<dd><p>URL for runBioSimulations API</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.VERBOSE">
+<span class="sig-name descname"><span class="pre">VERBOSE</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.VERBOSE" title="Permalink to this definition">¶</a></dt>
+<dd><p>whether to display the detailed output of the execution of each task</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.config.Config.DEBUG">
+<span class="sig-name descname"><span class="pre">DEBUG</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.Config.DEBUG" title="Permalink to this definition">¶</a></dt>
+<dd><p>whether to raise exceptions rather than capturing them</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="biosimulators_utils.config.get_app_dirs">
+<span class="sig-prename descclassname"><span class="pre">biosimulators_utils.config.</span></span><span class="sig-name descname"><span class="pre">get_app_dirs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.get_app_dirs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the directories for the application</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>application directories</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">appdirs.AppDirs</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="biosimulators_utils.config.get_config">
+<span class="sig-prename descclassname"><span class="pre">biosimulators_utils.config.</span></span><span class="sig-name descname"><span class="pre">get_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/config.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.config.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the configuration</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>configuration</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#biosimulators_utils.config.Config" title="biosimulators_utils.config.Config"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Config</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-biosimulators_utils.data_model">
+<span id="biosimulators-utils-data-model-module"></span><h2>biosimulators_utils.data_model module<a class="headerlink" href="#module-biosimulators_utils.data_model" title="Permalink to this headline">¶</a></h2>
+<p>Core data model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Jonathan Karr &lt;<a class="reference external" href="mailto:karr&#37;&#52;&#48;mssm&#46;edu">karr<span>&#64;</span>mssm<span>&#46;</span>edu</a>&gt;</p>
+</dd>
+<dt class="field-even">Date</dt>
+<dd class="field-even"><p>2020-12-06</p>
+</dd>
+<dt class="field-odd">Copyright</dt>
+<dd class="field-odd"><p>2020, Center for Reproducible Biomedical Modeling</p>
+</dd>
+<dt class="field-even">License</dt>
+<dd class="field-even"><p>MIT</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.Identifier">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.data_model.</span></span><span class="sig-name descname"><span class="pre">Identifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">namespace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.Identifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>An identifier</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.Identifier.namespace">
+<span class="sig-name descname"><span class="pre">namespace</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.Identifier.namespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>namespace</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.Identifier.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.Identifier.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.Identifier.url">
+<span class="sig-name descname"><span class="pre">url</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.Identifier.url" title="Permalink to this definition">¶</a></dt>
+<dd><p>URL</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.Identifier.is_equal">
+<span class="sig-name descname"><span class="pre">is_equal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.Identifier.is_equal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine if identifiers are equal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#biosimulators_utils.data_model.Identifier" title="biosimulators_utils.data_model.Identifier"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Identifier</span></code></a>) – another identifier</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>, if two identifiers are equal</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.Identifier.to_tuple">
+<span class="sig-name descname"><span class="pre">to_tuple</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.Identifier.to_tuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple representation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>tuple representation</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.OntologyTerm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.data_model.</span></span><span class="sig-name descname"><span class="pre">OntologyTerm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">namespace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.OntologyTerm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#biosimulators_utils.data_model.Identifier" title="biosimulators_utils.data_model.Identifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">biosimulators_utils.data_model.Identifier</span></code></a></p>
+<p>Term in an ontology</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.Person">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.data_model.</span></span><span class="sig-name descname"><span class="pre">Person</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">given_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">family_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.Person" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A person</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.Person.given_name">
+<span class="sig-name descname"><span class="pre">given_name</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.Person.given_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>given/first name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.Person.other_name">
+<span class="sig-name descname"><span class="pre">other_name</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.Person.other_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>other/middle name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.Person.family_name">
+<span class="sig-name descname"><span class="pre">family_name</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.Person.family_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>family/last name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.Person.is_equal">
+<span class="sig-name descname"><span class="pre">is_equal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.Person.is_equal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine if two authors are equal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#biosimulators_utils.data_model.Person" title="biosimulators_utils.data_model.Person"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Person</span></code></a>) – another author</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>, if two authors are equal</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.Person.to_tuple">
+<span class="sig-name descname"><span class="pre">to_tuple</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.Person.to_tuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tuple representation of a person</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>tuple representation of a person</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.ValueType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.data_model.</span></span><span class="sig-name descname"><span class="pre">ValueType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.ValueType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>A type of value (e.g., of a model attribute change or algorithm parameter change)</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.ValueType.any">
+<span class="sig-name descname"><span class="pre">any</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'any'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.ValueType.any" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.ValueType.boolean">
+<span class="sig-name descname"><span class="pre">boolean</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'boolean'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.ValueType.boolean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.ValueType.float">
+<span class="sig-name descname"><span class="pre">float</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'float'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.ValueType.float" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.ValueType.integer">
+<span class="sig-name descname"><span class="pre">integer</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'integer'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.ValueType.integer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.ValueType.kisao_id">
+<span class="sig-name descname"><span class="pre">kisao_id</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'kisaoId'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.ValueType.kisao_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.ValueType.list">
+<span class="sig-name descname"><span class="pre">list</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'list'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.ValueType.list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.ValueType.object">
+<span class="sig-name descname"><span class="pre">object</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'object'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.ValueType.object" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="biosimulators_utils.data_model.ValueType.string">
+<span class="sig-name descname"><span class="pre">string</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'string'</span></em><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/data_model.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.data_model.ValueType.string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-biosimulators_utils.exceptions">
+<span id="biosimulators-utils-exceptions-module"></span><h2>biosimulators_utils.exceptions module<a class="headerlink" href="#module-biosimulators_utils.exceptions" title="Permalink to this headline">¶</a></h2>
+<p>Standard exceptions issued by biosimulation tools</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Jonathan Karr &lt;<a class="reference external" href="mailto:karr&#37;&#52;&#48;mssm&#46;edu">karr<span>&#64;</span>mssm<span>&#46;</span>edu</a>&gt;</p>
+</dd>
+<dt class="field-even">Date</dt>
+<dd class="field-even"><p>2020-12-29</p>
+</dd>
+<dt class="field-odd">Copyright</dt>
+<dd class="field-odd"><p>2020, Center for Reproducible Biomedical Modeling</p>
+</dd>
+<dt class="field-even">License</dt>
+<dd class="field-even"><p>MIT</p>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="biosimulators_utils.exceptions.BioSimulatorsException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.exceptions.</span></span><span class="sig-name descname"><span class="pre">BioSimulatorsException</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/exceptions.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.exceptions.BioSimulatorsException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Base class for simulator exceptions</p>
+</dd></dl>
+
+</section>
+<section id="module-biosimulators_utils.image">
+<span id="biosimulators-utils-image-module"></span><h2>biosimulators_utils.image module<a class="headerlink" href="#module-biosimulators_utils.image" title="Permalink to this headline">¶</a></h2>
+<p>Utilities for working with Docker images</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Jonathan Karr &lt;<a class="reference external" href="mailto:karr&#37;&#52;&#48;mssm&#46;edu">karr<span>&#64;</span>mssm<span>&#46;</span>edu</a>&gt;</p>
+</dd>
+<dt class="field-even">Date</dt>
+<dd class="field-even"><p>2020-12-06</p>
+</dd>
+<dt class="field-odd">Copyright</dt>
+<dd class="field-odd"><p>2020, Center for Reproducible Biomedical Modeling</p>
+</dd>
+<dt class="field-even">License</dt>
+<dd class="field-even"><p>MIT</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="biosimulators_utils.image.convert_docker_image_to_singularity">
+<span class="sig-prename descclassname"><span class="pre">biosimulators_utils.image.</span></span><span class="sig-name descname"><span class="pre">convert_docker_image_to_singularity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">docker_image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">singularity_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/image.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.image.convert_docker_image_to_singularity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a locally cached Docker image to a Singularity image.</p>
+<p>Remotely published Docker images (e.g., images published to Docker Hub, GitHub Container Registry, etc.)
+should first be pulled (e.g., using <a class="reference internal" href="#biosimulators_utils.image.pull_docker_image" title="biosimulators_utils.image.pull_docker_image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pull_docker_image</span></code></a> or <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">pull</span> <span class="pre">{image}</span></code>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>docker_image</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – </p></li>
+<li><p><strong>singularity_filename</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional) – file name for saving Singularity image</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>path where Singularity image was saved</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="biosimulators_utils.image.get_docker_image">
+<span class="sig-prename descclassname"><span class="pre">biosimulators_utils.image.</span></span><span class="sig-name descname"><span class="pre">get_docker_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">docker_client</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pull</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/image.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.image.get_docker_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a Docker image for a simulator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>docker_client</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">docker.client.DockerClient</span></code>) – Docker client</p></li>
+<li><p><strong>tag</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – tag (e.g., <code class="docutils literal notranslate"><span class="pre">biosimulators/tellurium</span></code>) or
+URL (<code class="docutils literal notranslate"><span class="pre">ghcr.io/biosimulators/tellurium</span></code>) for a Docker image of a simulator</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Docker image</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">docker.models.images.Image</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="biosimulators_utils.image.login_to_docker_registry">
+<span class="sig-prename descclassname"><span class="pre">biosimulators_utils.image.</span></span><span class="sig-name descname"><span class="pre">login_to_docker_registry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">registry</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/image.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.image.login_to_docker_registry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Login to a Docker registry</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>registry</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – registry (e.g., ghcr.io)</p></li>
+<li><p><strong>username</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – user name</p></li>
+<li><p><strong>password</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – password</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Docker client</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">docker.client.DockerClient</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="biosimulators_utils.image.pull_docker_image">
+<span class="sig-prename descclassname"><span class="pre">biosimulators_utils.image.</span></span><span class="sig-name descname"><span class="pre">pull_docker_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">docker_client</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/image.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.image.pull_docker_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pull Docker image</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>docker_client</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">docker.client.DockerClient</span></code>) – Docker client</p></li>
+<li><p><strong>url</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – URL for Docker image</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Docker image</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">docker.models.images.Image</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="biosimulators_utils.image.tag_and_push_docker_image">
+<span class="sig-prename descclassname"><span class="pre">biosimulators_utils.image.</span></span><span class="sig-name descname"><span class="pre">tag_and_push_docker_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">docker_client</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/image.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.image.tag_and_push_docker_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tag and push Docker image</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>docker_client</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">docker.client.DockerClient</span></code>) – Docker client</p></li>
+<li><p><strong>image</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">docker.models.images.Image</span></code>) – Docker image</p></li>
+<li><p><strong>tag</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – tag</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-biosimulators_utils.warnings">
+<span id="biosimulators-utils-warnings-module"></span><h2>biosimulators_utils.warnings module<a class="headerlink" href="#module-biosimulators_utils.warnings" title="Permalink to this headline">¶</a></h2>
+<p>Standard warnings issued by biosimulation tools</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Jonathan Karr &lt;<a class="reference external" href="mailto:karr&#37;&#52;&#48;mssm&#46;edu">karr<span>&#64;</span>mssm<span>&#46;</span>edu</a>&gt;</p>
+</dd>
+<dt class="field-even">Date</dt>
+<dd class="field-even"><p>2020-12-29</p>
+</dd>
+<dt class="field-odd">Copyright</dt>
+<dd class="field-odd"><p>2020, Center for Reproducible Biomedical Modeling</p>
+</dd>
+<dt class="field-even">License</dt>
+<dd class="field-even"><p>MIT</p>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="biosimulators_utils.warnings.BioSimulatorsWarning">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">biosimulators_utils.warnings.</span></span><span class="sig-name descname"><span class="pre">BioSimulatorsWarning</span></span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/warnings.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.warnings.BioSimulatorsWarning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">UserWarning</span></code></p>
+<p>Base class for simulator warnings</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="biosimulators_utils.warnings.warn">
+<span class="sig-prename descclassname"><span class="pre">biosimulators_utils.warnings.</span></span><span class="sig-name descname"><span class="pre">warn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/biosimulators/Biosimulators_utils/blob/dev/biosimulators_utils/warnings.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#biosimulators_utils.warnings.warn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Issue a warning in a color</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>message</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – message</p></li>
+<li><p><strong>category</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code>) – category</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, BioSimulators Team.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
