@@ -1,0 +1,8 @@
+setup.py
+pidetect/__init__.py
+pidetect/detector.py
+pidetect.egg-info/PKG-INFO
+pidetect.egg-info/SOURCES.txt
+pidetect.egg-info/dependency_links.txt
+pidetect.egg-info/top_level.txt
+pidetect/so/libdetect.so
