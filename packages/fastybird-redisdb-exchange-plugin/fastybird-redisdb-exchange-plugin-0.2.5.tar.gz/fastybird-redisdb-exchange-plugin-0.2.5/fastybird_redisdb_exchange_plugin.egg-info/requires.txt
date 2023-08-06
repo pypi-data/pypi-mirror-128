@@ -1,0 +1,5 @@
+fastybird-exchange-plugin
+fastybird-modules-metadata
+kink
+redis
+setuptools
