@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: hardcode-house-model
+Version: 0.0.27
+Summary: Hardcode Project House Model
+Home-page: UNKNOWN
+Author: Sinian Tech
+Author-email: siniantech@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# house-model
+
+python3 -m build
+
+Testpypi: python3 -m twine upload --repository testpypi dist/*
+
+Pypi: python3 -m twine upload dist/*
+
+Username: __token__
+Password: see tokens above
+
