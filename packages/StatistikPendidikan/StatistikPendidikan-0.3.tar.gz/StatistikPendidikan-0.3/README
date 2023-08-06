@@ -1,0 +1,46 @@
+Statistik Pendidikan - Scrapper Data http://statistik.data.kemdikbud.go.id
+==========================================================================
+
+Library ini digunakan untuk memudahkan developer atau user dalam
+mengakses data dari statistik.data.kemdikbud.go.id dalam bentuk json
+sehingga lebih mudah diolah
+
+Penggunaan
+----------
+
+Instalasi
+~~~~~~~~~
+
+Untuk mendownload dan menginstall library ini, gunakan perintah
+
+.. code:: sh
+
+    pip install StatistikPendidikan
+
+Pemanggilan
+~~~~~~~~~~~
+
+Pemanggilan fungsi bisa dilakukan dengan import sederhana terhadap
+function yang tersedia
+
+.. code:: python
+
+    from StatistikPendidikan.processor import getGambaranUmumSekolah,getGambaranUmumSekolahPerProvinsi
+
+Function getGambaranUmumSekolah dan getGambaranUmumSekolahPerProvinsi
+memerlukan dua parameter yakni: tingkat pendidikan (sd,smp,sma, dan smk)
+dan tahun ajaran (2017,2018,2019,2020,dst)
+
+.. code:: python
+
+    >>> from StatistikPendidikan.processor import getGambaranUmumSekolahPerProvinsi
+    >>> getGambaranUmumSekolahPerProvinsi("smp","2018")
+
+.. code:: json
+
+    {'id_tabel': '2', 'tahun': '2018/2019', 'nama_tabel': 'GAMBARAN UMUM KEADAAN SEKOLAH MENENGAH PERTAMA (SMP) TIAP PROVINSI', 'Prov. Jambi': {'Sekolah': '679', 'Siswa': '125214', 'Mengulang': '483', 'Putus Sekolah': '862', 'KS & Guru': '10245', 'Tenaga Kependidikan': '1827', 'Rombel': '4816', 'Ruang Kelas': '5252'}, 'Prov. Sumatera Selatan': {'Sekolah': '1334', 'Siswa': '351506', 'Mengulang': '1251', 'Putus Sekolah': '3021', 'KS & Guru': '24182', 'Tenaga Kependidikan': '4009', 'Rombel': '12159', 'Ruang Kelas': '11781'}, 'Prov. Lampung': {'Sekolah': '1353', 'Siswa': '313654', 'Mengulang': '559', 'Putus Sekolah': '2743', 'KS & Guru': '21463', 'Tenaga Kependidikan': '3162', 'Rombel': '11327', 'Ruang Kelas': '11824'}, 'Prov. Kalimantan Barat': {'Sekolah': '1318', 'Siswa': '234258', 'Mengulang': '1573', 'Putus Sekolah': '3070', 'KS & Guru': '14177', 'Tenaga Kependidikan': '1519', 'Rombel': '8581', 'Ruang Kelas': '8801'}, 'Prov. Kalimantan Tengah': {'Sekolah': '831', 'Siswa': '108867', 'Mengulang': '415', 'Putus Sekolah': '1055', 'KS & Guru': '8665', 'Tenaga Kependidikan': '842', 'Rombel': '4500', 'Ruang Kelas': '4820'}, 'Prov. Kalimantan Selatan': {'Sekolah': '601', 'Siswa': '118052', 'Mengulang': '381', 'Putus Sekolah': '1113', 'KS & Guru': '8830', 'Tenaga Kependidikan': '1206', 'Rombel': '4536', 'Ruang Kelas': '4931'}, 'Prov. Kalimantan Timur': {'Sekolah': '640', 'Siswa': '157072', 'Mengulang': '615', 'Putus Sekolah': '947', 'KS & Guru': '9663', 'Tenaga Kependidikan': '1877', 'Rombel': '5580', 'Ruang Kelas': '5516'}, 'Prov. Sulawesi Utara': {'Sekolah': '719', 'Siswa': '115810', 'Mengulang': '842', 'Putus Sekolah': '782', 'KS & Guru': '8253', 'Tenaga Kependidikan': '814', 'Rombel': '4627', 'Ruang Kelas': '4823'}, 'Prov. Sulawesi Tengah': {'Sekolah': '839', 'Siswa': '129204', 'Mengulang': '671', 'Putus Sekolah': '1037', 'KS & Guru': '9920', 'Tenaga Kependidikan': '2404', 'Rombel': '5286', 'Ruang Kelas': '5534'}, 'Prov. Sulawesi Selatan': {'Sekolah': '1652', 'Siswa': '371320', 'Mengulang': '1666', 'Putus Sekolah': '3391', 'KS & Guru': '28128', 'Tenaga Kependidikan': '5858', 'Rombel': '14050', 'Ruang Kelas': '14801'}, 'Prov. Sulawesi Tenggara': {'Sekolah': '758', 'Siswa': '128840', 'Mengulang': '742', 'Putus Sekolah': '1195', 'KS & Guru': '10563', 'Tenaga Kependidikan': '1531', 'Rombel': '5213', 'Ruang Kelas': '5581'}, 'Prov. Maluku': {'Sekolah': '648', 'Siswa': '95323', 'Mengulang': '158', 'Putus Sekolah': '515', 'KS & Guru': '7789', 'Tenaga Kependidikan': '1206', 'Rombel': '3885', 'Ruang Kelas': '3981'}, 'Prov. Bali': {'Sekolah': '414', 'Siswa': '190204', 'Mengulang': '87', 'Putus Sekolah': '501', 'KS & Guru': '11655', 'Tenaga Kependidikan': '2881', 'Rombel': '6117', 'Ruang Kelas': '5467'}, 'Prov. Nusa Tenggara Barat': {'Sekolah': '916', 'Siswa': '174109', 'Mengulang': '707', 'Putus Sekolah': '2151', 'KS & Guru': '17140', 'Tenaga Kependidikan': '3551', 'Rombel': '6757', 'Ruang Kelas': '6982'}, 'Prov. Nusa Tenggara Timur': {'Sekolah': '1675', 'Siswa': '341880', 'Mengulang': '1097', 'Putus Sekolah': '4860', 'KS & Guru': '24215', 'Tenaga Kependidikan': '3120', 'Rombel': '12705', 'Ruang Kelas': '12065'}, 'Prov. Papua': {'Sekolah': '672', 'Siswa': '125678', 'Mengulang': '2688', 'Putus Sekolah': '2552', 'KS & Guru': '7752', 'Tenaga Kependidikan': '872', 'Rombel': '4426', 'Ruang Kelas': '4457'}, 'Prov. Bengkulu': {'Sekolah': '419', 'Siswa': '89503', 'Mengulang': '563', 'Putus Sekolah': '802', 'KS & Guru': '6750', 'Tenaga Kependidikan': '1205', 'Rombel': '3409', 'Ruang Kelas': '3615'}, 'Prov. Maluku Utara': {'Sekolah': '484', 'Siswa': '60698', 'Mengulang': '186', 'Putus Sekolah': '646', 'KS & Guru': '5025', 'Tenaga Kependidikan': '690', 'Rombel': '2503', 'Ruang Kelas': '2478'}, 'Prov. Banten': {'Sekolah': '1454', 'Siswa': '419713', 'Mengulang': '996', 'Putus Sekolah': '3709', 'KS & Guru': '20251', 'Tenaga Kependidikan': '2831', 'Rombel': '13699', 'Ruang Kelas': '14013'}, 'Prov. Kepulauan Bangka Belitung': {'Sekolah': '212', 'Siswa': '59680', 'Mengulang': '276', 'Putus Sekolah': '603', 'KS & Guru': '3146', 'Tenaga Kependidikan': '976', 'Rombel': '1971', 'Ruang Kelas': '2112'}, 'Prov. Gorontalo': {'Sekolah': '335', 'Siswa': '49614', 'Mengulang': '455', 'Putus Sekolah': '575', 'KS & Guru': '3723', 'Tenaga Kependidikan': '588', 'Rombel': '2001', 'Ruang Kelas': '2107'}, 'Prov. Kepulauan Riau': {'Sekolah': '361', 'Siswa': '89766', 'Mengulang': '412', 'Putus Sekolah': '302', 'KS & Guru': '5032', 'Tenaga Kependidikan': '1013', 'Rombel': '2942', 'Ruang Kelas': '2938'}, 'Prov. Papua Barat': {'Sekolah': '299', 'Siswa': '48147', 'Mengulang': '733', 'Putus Sekolah': '623', 'KS & Guru': '3579', 'Tenaga Kependidikan': '298', 'Rombel': '1890', 'Ruang Kelas': '1895'}, 'Prov. Sulawesi Barat': {'Sekolah': '367', 'Siswa': '60034', 'Mengulang': '332', 'Putus Sekolah': '922', 'KS & Guru': '4635', 'Tenaga Kependidikan': '1365', 'Rombel': '2384', 'Ruang Kelas': '2450'}, 'Prov. Kalimantan Utara': {'Sekolah': '177', 'Siswa': '31474', 'Mengulang': '236', 'Putus Sekolah': '305', 'KS & Guru': '2351', 'Tenaga Kependidikan': '376', 'Rombel': '1230', 'Ruang Kelas': '1117'}}
+
+License
+-------
+
+MIT License
