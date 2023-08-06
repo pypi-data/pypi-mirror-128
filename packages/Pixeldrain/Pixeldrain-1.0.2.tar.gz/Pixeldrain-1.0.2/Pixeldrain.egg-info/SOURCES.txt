@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+Pixeldrain.egg-info/PKG-INFO
+Pixeldrain.egg-info/SOURCES.txt
+Pixeldrain.egg-info/dependency_links.txt
+Pixeldrain.egg-info/requires.txt
+Pixeldrain.egg-info/top_level.txt
