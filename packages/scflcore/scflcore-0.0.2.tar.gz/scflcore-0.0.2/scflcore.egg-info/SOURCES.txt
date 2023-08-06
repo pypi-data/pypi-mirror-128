@@ -1,0 +1,4 @@
+scflcore.egg-info/PKG-INFO
+scflcore.egg-info/SOURCES.txt
+scflcore.egg-info/dependency_links.txt
+scflcore.egg-info/top_level.txt
