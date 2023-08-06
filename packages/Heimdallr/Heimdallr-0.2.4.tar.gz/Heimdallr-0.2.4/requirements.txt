@@ -1,0 +1,10 @@
+devpack
+numpy
+six
+psutil
+paho-mqtt
+sh
+fire
+pyfiglet
+schedule
+pynvml
