@@ -1,0 +1,7 @@
+switchbot_cloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+switchbot_cloud/client.py,sha256=wWOeS0Qf60G4y24YWjnX59WDW3gJYCjHpO5rS2EWRbU,3045
+switchbot_cloud/devices.py,sha256=GEYM-KGM-bF4JcMXJpPRk3WupOON-b-vVCgJ5hfQGPc,4416
+switchbot_cloud-0.2.3.dist-info/LICENSE,sha256=20c4LaPQxdDMkXjm1qExCn_D7k7i_EuF-_zJmnwCrgU,1071
+switchbot_cloud-0.2.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+switchbot_cloud-0.2.3.dist-info/METADATA,sha256=nlTiEbwJ1yOmlcct-NE5LWEvqjoazaGjQgGMpr6mdzY,632
+switchbot_cloud-0.2.3.dist-info/RECORD,,
