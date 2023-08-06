@@ -1,0 +1,10 @@
+README.md
+setup.py
+bayfile/__init__.py
+bayfile/main.py
+bayfile.egg-info/PKG-INFO
+bayfile.egg-info/SOURCES.txt
+bayfile.egg-info/dependency_links.txt
+bayfile.egg-info/entry_points.txt
+bayfile.egg-info/requires.txt
+bayfile.egg-info/top_level.txt
