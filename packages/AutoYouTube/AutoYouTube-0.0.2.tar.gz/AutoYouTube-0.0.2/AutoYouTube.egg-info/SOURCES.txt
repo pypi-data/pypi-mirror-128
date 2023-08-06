@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+AutoYouTube.egg-info/PKG-INFO
+AutoYouTube.egg-info/SOURCES.txt
+AutoYouTube.egg-info/dependency_links.txt
+AutoYouTube.egg-info/requires.txt
+AutoYouTube.egg-info/top_level.txt
