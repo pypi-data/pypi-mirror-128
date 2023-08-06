@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "wgconf"
+version = "0.3.0"
+description = "Interactive Wireguard configuration generator"
+authors = ["Andy Ta <doktorfaustus@live.com>"]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+inquirerpy = "0.3.0"
+pfzy = "0.3.3"
+Pillow = "8.3.1"
+prompt-toolkit = "3.0.22"
+qrcode = "7.2"
+wcwidth = "0.2.5"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+mypy = "^0.910"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+wgconf = "wgconf.prompt:main"
