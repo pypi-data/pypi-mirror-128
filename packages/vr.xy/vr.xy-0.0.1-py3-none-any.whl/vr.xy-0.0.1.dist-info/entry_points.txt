@@ -1,0 +1,3 @@
+[console_scripts]
+vr = xy:v_h_xy
+
