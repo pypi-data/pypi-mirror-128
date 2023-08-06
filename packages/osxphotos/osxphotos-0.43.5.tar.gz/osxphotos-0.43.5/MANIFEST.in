@@ -1,0 +1,6 @@
+include README.md
+include README.rst
+include osxphotos/templates/*
+include osxphotos/phototemplate.tx
+include osxphotos/phototemplate.md
+include osxphotos/queries/*
