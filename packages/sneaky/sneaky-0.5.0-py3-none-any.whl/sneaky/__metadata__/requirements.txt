@@ -1,0 +1,9 @@
+lxml>=0.0.1
+requests>=0.0.1
+vpncmd>=0.0.1
+omnitools>=0.0.1
+selenium>=0.0.1
+undetected-chromedriver>=0.0.1
+scipy>=0.0.1
+numpy>=0.0.1
+eavesdropper>=0.0.1
