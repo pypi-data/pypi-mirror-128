@@ -1,0 +1,11 @@
+gltfloupe/__init__.py,sha256=LL32ONbzfq-Xfp6O-XILY6CSOqVg1kAxSEuGBuebitc,23
+gltfloupe/__main__.py,sha256=tCGz4IKblHkK7iXfRZ_oZkVgfioJTRlo1NSwRzpCkFk,64
+gltfloupe/_version.py,sha256=g0RU_Fiae76hPEUjU6lGnapa9IZoqGcB4oFcTnsoMbM,142
+gltfloupe/app.py,sha256=LQ1u2iX7ag2haBcLKIcHn6vJ1XGeUyA14HZAB3Kbyy4,4636
+gltfloupe/json_tree.py,sha256=6wSTzkCiQ-64aHhl4jTJjNqFcf73xOSyHEgZ86Hw4s8,3947
+gltfloupe/skin_debug.py,sha256=wx5E4nrks9U3J4pBh9ttpzbijg7aG0HduLP7c-rUiWk,1389
+gltfloupe-0.2.0.dist-info/METADATA,sha256=zQRWM1aZxUajMW_M0wXYEBUeJlkJ8rSSRq2Uh1MFk8E,567
+gltfloupe-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gltfloupe-0.2.0.dist-info/entry_points.txt,sha256=xDH7MMibDmlOPvAYgQGAqhzCVtn0h3OHQQrDotkGeJg,41
+gltfloupe-0.2.0.dist-info/top_level.txt,sha256=yRrMOgaFKArLNWTbwSVnbChFb3S2jnWDil3X6mFLp5U,10
+gltfloupe-0.2.0.dist-info/RECORD,,
