@@ -1,0 +1,17 @@
+click>=7.1
+click-didyoumean>=0.3
+click-option-group>=0.5
+importlib-metadata>=3.6
+tqdm>=4.53
+
+[:platform_system == "Windows"]
+colorama>=0.4
+
+[all]
+pycryptodomex>=3.10
+
+[dev]
+black>=21.10b
+isort>=5.10
+flake8>=4.0
+mypy>=0.910
