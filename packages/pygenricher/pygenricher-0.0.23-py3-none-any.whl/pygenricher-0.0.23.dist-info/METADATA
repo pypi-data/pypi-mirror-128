@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pygenricher
+Version: 0.0.23
+Summary: UNKNOWN
+Home-page: https://github.com/bammor/pygenricher
+Author: Bashar Morouj
+Author-email: bashar.morouj@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
+Requires-Dist: numpy
+Requires-Dist: gseapy
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: kaleido
+
+UNKNOWN
+

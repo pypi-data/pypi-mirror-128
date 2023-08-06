@@ -1,0 +1,10 @@
+pygenricher/GeneEnrichment.py,sha256=usJFzaUF-g74q6CJaGiknFfHVj3HnQgQIVjrVcp5FlE,10488
+pygenricher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygenricher/Data/all.gmt,sha256=wapWnTfmTj8PUvmUwErIK4E0aPzYhK91-dAxYbfs0fc,966676
+pygenricher/Data/c2.cp.v7.4.symbols.gmt,sha256=4qUDbamixmFMRDF_jXaKuEQj4X7fqpKnD5pILCB2kms,1255907
+pygenricher/Data/geneList_Fig5_qValue_cancerGenes.csv,sha256=UlanZCuaTx2i5OZh6KecBcQhMWixSoQ_0MqfgWJ66ig,633356
+pygenricher-0.0.23.dist-info/METADATA,sha256=W-hraxy0a7DV0JozCKyKHR3tkvq2o2CnVDKWD9e2PWw,364
+pygenricher-0.0.23.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pygenricher-0.0.23.dist-info/entry_points.txt,sha256=uvTbc3Yvez6VCbkuhaeYHV7-3EgBv4mmSJ_4LN9Kz64,65
+pygenricher-0.0.23.dist-info/top_level.txt,sha256=wHa-uZrmz3B7cHJW04g8Hm3LSw2Emv6hHdJuhAkP-yY,12
+pygenricher-0.0.23.dist-info/RECORD,,
