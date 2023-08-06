@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: simsogui
+Version: 0.9
+Summary: Graphical User Interface for SimSo
+Home-page: http://projects.laas.fr/simso/
+Author: Maxime Cheramy
+Author-email: maxime.cheramy@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: X11 Applications :: Qt
+Requires-Dist: PyQt5 (>=5.11.3)
+Requires-Dist: simso (>=0.8)
+
+This package provides a Graphical User Interface for SimSo. SimSo is a
+scheduling simulator for real-time multiprocessor architectures that takes
+into account some scheduling overheads (scheduling decisions, context-switches)
+and the impact of caches through statistical models. Based on a Discrete-Event
+Simulator, it allows quick simulations and a fast prototyping of scheduling
+policies using Python.
+
