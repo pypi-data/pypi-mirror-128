@@ -1,0 +1,13 @@
+setup.py
+traxix/__init__.py
+traxix/again
+traxix/ansi.py
+traxix/f
+traxix/fr
+traxix/ping.py
+traxix/utils.py
+traxix.trixli.egg-info/PKG-INFO
+traxix.trixli.egg-info/SOURCES.txt
+traxix.trixli.egg-info/dependency_links.txt
+traxix.trixli.egg-info/requires.txt
+traxix.trixli.egg-info/top_level.txt
