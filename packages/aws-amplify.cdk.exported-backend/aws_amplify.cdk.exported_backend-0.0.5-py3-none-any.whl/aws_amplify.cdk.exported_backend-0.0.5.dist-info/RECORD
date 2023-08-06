@@ -1,0 +1,10 @@
+aws_amplify/cdk/exported_backend/__init__.py,sha256=p5GeRLdoeLFGnCIq8Dixse6TpcbOI3qBZgk4nsZkBlM,44236
+aws_amplify/cdk/exported_backend/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_amplify/cdk/exported_backend/_jsii/__init__.py,sha256=ocgW_Vq-JPLHqj6wBsUjO2091F-h1K_SvVugZN5rN3A,727
+aws_amplify/cdk/exported_backend/_jsii/cdk-exported-backend@0.0.5.jsii.tgz,sha256=lQ3V4aaBdWWs77EskCP-M7-_bdHHob8IJHGrDZ7PjbQ,148353
+aws_amplify.cdk.exported_backend-0.0.5.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+aws_amplify.cdk.exported_backend-0.0.5.dist-info/METADATA,sha256=dZkJZdfVSs5fukvOPJbVkYFDFawRkPQu6x-acyLoaPA,3992
+aws_amplify.cdk.exported_backend-0.0.5.dist-info/NOTICE,sha256=1CkO1kwu3Q_OHYTj-d-yiBJA_lNN73a4zSntavaD4oc,67
+aws_amplify.cdk.exported_backend-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_amplify.cdk.exported_backend-0.0.5.dist-info/top_level.txt,sha256=Opl9CwyAYG8WHtlNWwIvAeGasofuVxA7CFattxzYKO8,12
+aws_amplify.cdk.exported_backend-0.0.5.dist-info/RECORD,,
