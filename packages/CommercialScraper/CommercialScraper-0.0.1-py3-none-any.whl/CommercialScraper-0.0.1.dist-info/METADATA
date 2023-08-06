@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: CommercialScraper
+Version: 0.0.1
+Summary: A dynamic and scalable data pipeline from Airbnbs commercial site to your local system / cloud storage.
+Home-page: https://github.com/BlairMar/Airbnb-webscraping-project
+Author: Omar 4ldrich Tahmas
+Author-email: o.ismail@aol.co.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 (==4.10.0)
+Requires-Dist: boto3 (==1.20.10)
+Requires-Dist: botocore (==1.23.10)
+Requires-Dist: greenlet (==1.1.2)
+Requires-Dist: jmespath (==0.10.0)
+Requires-Dist: lxml (==4.6.4)
+Requires-Dist: numpy (==1.21.4)
+Requires-Dist: pandas (==1.3.4)
+Requires-Dist: psycopg2 (==2.9.2)
+Requires-Dist: pytz (==2021.3)
+Requires-Dist: s3transfer (==0.5.0)
+Requires-Dist: selenium (==3.141.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: soupsieve (==2.3.1)
+Requires-Dist: SQLAlchemy (==1.4.27)
+Requires-Dist: urllib3 (==1.26.7)
+
+# Airbnb Scraper
+
+A fully dynamic and scalable data pipeline made in Python dedicated to scraping Airbnb's commercial website for both alphanumeric and image data, and saving both locally and/or on the cloud.
+
+## Installation
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install CommercialScraper.
+```bash
+pip install CommercialScraper
+```
+
+## Usage
+```python
+from CommercialScraper.pipeline import AirbnbScraper
+from CommercialScraper.data_save import Save
+
+scraper = AirbnbScraper()
+
+# Returns a dictionary of structured data and a list of image sources for a single product page
+product_dict, imgs = scraper.scrape_product_data('https://any/airbnb/product/page', any_ID_you_wish, 'Any Category Label you wish')
+
+# Returns a dataframe of product entries as well as a dictionary of image sources pertaining to each product entry
+df, imgs = scraper.scrape_all()
+
+
+# Initialise an instance of the saver object to save yielded data where you wish
+saver = Save(df, imgs)
+
+# Saves the dataframe to a csv in your local directory inside a created 'data/' folder. 
+# Structured data can be saved in numerous formats, image data can only be saved in .png files
+saver.df_to_csv('any_filename')
+
+```
+## Docker Image 
+This package has been containerised in a docker image where it can be run as an application. Please note that data can only be stored onto an SQL database or on the cloud by this method, not in local directories.
+[Docker Image](https://hub.docker.com/r/docker4ldrich/airbnb-scraper)
+
+```bash
+docker pull docker4ldrich/airbnb-scraper
+
+docker run -it docker4ldrich/airbnb-scraper
+```
+Follow the prompts and insert credentials carefully, there won't be a chance to correct any typing errors!
+It's recommended that you paste credentials in where applicable.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
