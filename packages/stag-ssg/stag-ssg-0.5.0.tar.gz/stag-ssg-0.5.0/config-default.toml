@@ -1,0 +1,11 @@
+title = "My Site"
+url = "https://example.com"
+content = "content"
+output = "_output"
+
+[jinja]
+theme = "themes/default"
+
+[jinja.templates]
+md = "page.html"
+xml = "rss.xml"

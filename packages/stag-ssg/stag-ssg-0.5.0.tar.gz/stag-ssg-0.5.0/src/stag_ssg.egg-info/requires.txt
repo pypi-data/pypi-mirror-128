@@ -1,0 +1,6 @@
+attrs<22,>=21
+jinja2<4,>=3
+markdown<4,>=3
+python-dateutil<3,>=2.8.0
+python-slugify<6,>=5
+tomli<2.0,>=1.2

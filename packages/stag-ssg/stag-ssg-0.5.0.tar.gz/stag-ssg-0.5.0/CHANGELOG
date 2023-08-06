@@ -1,0 +1,140 @@
+NEXT:
+
+0.5.0: 2021-11-21
+
+  [Added]
+  - Built-in support for Asciidoc filetype (requires asciidoctor in PATH).
+  - Explicitly note that Stag supports plugins as packages.
+  - Support for lastmod field in metadata.
+
+  [Changed]
+  - Macros: ref macro has more descriptive error message, indicating which
+    pages conflict.
+
+  [Fixed]
+  - Stag will honor -D flag when serving pages through stag serve.
+  - Fixed incorrect caching of Jinja environment in macros which had caused
+    using the Site object from the previous build during stag serve.
+  - Clear the global states of taxonomies when re-reistering the plugin during
+    stag serve, which had kept taxonomies from the previous build.
+
+0.4.0: 2021-10-11
+
+  There are big changes in this release. First one is moving a project to a
+  modern pyproject.toml approach of packaging Python packages. The other one is
+  adding automatic regeneration of the site to the built-in HTTP server. To
+  support that, we must go away from the package-wide globals (signals,
+  readers), which are now owned by Site object.
+
+  [Breaking changes]
+  - Moved the project from setup.py to pyproject.toml and setup.cfg. Due to
+    this change, it's impossible to install Stag in --editable mode.
+  - Config: renamed pluginspath field to plugins_path
+  - Site: site.taxonomies is a dynamic property from now on and can be no
+    longer set
+  - Plugins: register_plugin() now must accept a single argument: site
+  - Signals: moved global signals.signals to site.signals
+  - Signals: removed site_init signal
+  - Readers: moved global reading.readers to site.readers
+
+  [Added]
+  - HTTP Server: automatically regenerate the site when changes are detected
+  - Config: plugins_disabled field, which may contain a list of plugins which
+    should be disabled.
+
+  [Changed]
+  - Templates, Macros: templates and macros now receive SiteTemplateProxy
+    instead of the full site, which forbids access to some of its attributes.
+
+  [Fixed]
+  - prevent building a site when content directory is missing
+
+0.3.1: 2021-10-04
+  [Fixed]
+  - Added license
+
+0.3.0: 2021-10-04
+
+  [Added]
+  - enabled "do" and "debug" extensions for both Jinja writer and Macros plugin
+  - Macros: added import_module function to the globals
+  - Macros: added support for built-in macros; initially these are ref and
+    figure
+  - Site: added Site.resources generator, which yields the pages which share
+    the source.reldirname (the files which are inside the same directory)
+
+  [Fixed]
+  - Fixed import errors for a real package.
+  - Added missing plugins to the package.
+
+0.2.0: 2021-09-25
+
+  The most notable changes are introduction of signal-slot architecture and
+  changes in the interface between Stag and plugins. Stag is also able to
+  generate RSS feeds now thanks to the new XML plugin.
+
+  [Breaking changes]
+  - Signals, Plugins: signal-slot architecture replaces the old list of readers,
+    generators and writers. Plugins should subscribe to one of the available
+    signals from stag.signals.signals via connect() method of a chosen signal.
+  - Signals: due to above change, plugins.base module is removed.
+  - Plugins: plugins must supply a register_plugin() function inside their
+    Python module file
+  - Taxonomies: instead of page.list, list of terms can be now accessed as
+    page.taxonomy.terms and list of pages in a term can be accessed as
+    page.term.pages. page.list is removed.
+  - Taxonomies: renamed page.taxonomy.key to page.taxonomy.name
+  - Plugins, Config: plugins configurations must be now registered directly
+    through config module; this can be done by calling config.update_plugin_table()
+  - Config: [plugins.template] changed to [template]
+  - Page.url now returns a full (absolute) URL. To get the old relative URL
+    ("path"), Page.relurl should be used
+  - Site.add_page() renamed to make_page(). This method becomes a factory
+    which creates pages instead of storing already created ones. It accepts
+    relative URLs and makes sure that Pages are created with absolute URLs.
+    Similarily, Site.get_or_create_page() is renamed to get_or_make_page().
+
+  [Added]
+  - Plugins: new built-in plugin: XML, which handles XMLs with optional front
+    matter. Its original purpose is to be used for generating RSS feeds and
+    sitemaps.
+  - Signals: setting components of Page automatically sends appropriate signals
+  - Plugins: plugins can reister URL handlers by calling
+    reading.readers.register_reader(). URL handlers are used by stag to decide
+    non-standard paths for pages handled by specific plugins.
+  - Plugins: front matter is more flexible now: it can be any string built from
+    consecutive repeated characters.
+  - Plugins: created plugins common helper functions: stag.plugins._helpers
+  - Templates: new Jinja filters: rfc822format, pagetype
+  - Config: Added timezone field to the configuration, which for now is just a
+    string appended to the formatted date in rfc822format
+  - Stag will now prioritize command-line switches for the options which are
+    also configured in config.toml.
+  - Added --output switch to build and serve subcommands.
+  - site.subpages_of() receives a new parameter which allows a recursive search
+    of subpages.
+
+  [Changed]
+  - Plugins: template rendering (Jinja) and file reading are no longer plugins
+
+  [Fixed]
+  - Templates: Renderer doesn't suppose pretty URLs for all of the files it
+    processes anymore
+  - Templates: files with non-pretty paths (i.e. the ones not finishing with
+    index.<ext>) are no longer rendered to the incorrect path.
+
+0.1.0: 2021-09-16
+
+  This is the initial release of stag.
+
+  [Added]
+  - stag build subcommand to generate static website
+  - stag serve subcommand to generate static website and then serve it locally
+    with a light HTTP server
+  - handling configuration in TOML format
+  - plugin-based architecture which allows endless extensibility
+  - support for Jinja themes
+  - support for static files
+  - support for input in Markdown with TOML front-matter
+  - support for "macros" (shortcodes)
+  - auto-generating taxonomies
