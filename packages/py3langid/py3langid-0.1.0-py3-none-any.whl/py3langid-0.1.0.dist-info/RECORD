@@ -1,0 +1,10 @@
+py3langid/__init__.py,sha256=uLBVb0JjC57ccaim3rzm-4v2MnCrTFiX2wkR-vALQck,73
+py3langid/langid.py,sha256=35_gzvBQs1k6GJr8zVnKIl0tYkApzXGpOOH9EzwHqsk,19449
+py3langid/model.py,sha256=qiqYiwFIHf-BQl_ngVBh4qYePtY7_Kyz_JAu5kKP6nY,2509678
+py3langid-0.1.0.dist-info/DESCRIPTION.rst,sha256=bWpRXCnYwGImhjdjaiDdrYd3wZ2SMi8TREQdZaKfWQQ,9843
+py3langid-0.1.0.dist-info/METADATA,sha256=Vrt4NHOaDj8T0DwXkJR6jVy9QVYrzVXOv21OXxk3Im4,10922
+py3langid-0.1.0.dist-info/RECORD,,
+py3langid-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+py3langid-0.1.0.dist-info/entry_points.txt,sha256=renap-DYiZVisr7QuDjza95Bmdlz3BJHxiiGlmFgLx8,47
+py3langid-0.1.0.dist-info/metadata.json,sha256=LFDtpeEcjnFtWmQDHkSIPsKD2qcIjDXWNDfVXfef1ok,1414
+py3langid-0.1.0.dist-info/top_level.txt,sha256=pgEa9rn2WjscSUHJvg-VgpFquMXLCn6hBId2Jnb1jmQ,10
