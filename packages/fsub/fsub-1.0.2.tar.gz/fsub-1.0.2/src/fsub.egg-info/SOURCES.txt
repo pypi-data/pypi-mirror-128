@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fsub/__init__.py
+src/fsub/fsub.py
+src/fsub.egg-info/PKG-INFO
+src/fsub.egg-info/SOURCES.txt
+src/fsub.egg-info/dependency_links.txt
+src/fsub.egg-info/entry_points.txt
+src/fsub.egg-info/requires.txt
+src/fsub.egg-info/top_level.txt
