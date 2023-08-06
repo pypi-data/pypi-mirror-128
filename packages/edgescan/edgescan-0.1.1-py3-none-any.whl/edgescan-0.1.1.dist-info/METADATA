@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: edgescan
+Version: 0.1.1
+Summary: An API client for EdgeScan
+License: MIT
+Author: Tyler Fisher
+Author-email: tylerfisher@tylerfisher.ca
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: hodgepodge (>=2.3.3,<3.0.0)
