@@ -1,0 +1,9 @@
+click
+errorcollector
+ffmpeg-python
+radikoplaylist
+yamldataclassconfig
+sqlalchemy
+inflector
+asynccpu
+asyncffmpeg
