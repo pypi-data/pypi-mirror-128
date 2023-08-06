@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pygot
+Version: 0.2.0
+Summary: A Python library for https://anapioficeandfire.com
+Home-page: https://github.com/ernane/pygot
+License: BSD-2-Clause
+Keywords: flake8,markdown,lint
+Author: Ernane Sena
+Author-email: ernane.sena@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: marshmallow (>=3.14.0,<4.0.0)
+Requires-Dist: simple-rest-client (>=1.1.1,<2.0.0)
+Project-URL: Repository, https://github.com/ernane/pygot
+Description-Content-Type: text/markdown
+
+# pygot
+
+A Python library for [https://anapioficeandfire.com](https://anapioficeandfire.com)
+
+<!-- [![Github Actions Status](https://github.com/ernane/pygot/workflows/main-workflow/badge.svg)](https://github.com/ernane/pygot/actions) [![Coverage Status](https://codecov.io/gh/ernane/pygot/branch/master/graph/badge.svg)](https://codecov.io/gh/ernane/pygot) [![Code Climate](https://codeclimate.com/github/ernane/pygot/badges/gpa.svg)](https://codeclimate.com/github/ernane/pygot) [![Requirements Status](https://requires.io/github/ernane/pygot/requirements.svg?branch=master)](https://requires.io/github/ernane/pygot/requirements/?branch=master) -->
+

@@ -1,0 +1,17 @@
+LICENSE,sha256=EsfQF7Bdpd1bPoew-Hw9MK7rdcBcyxsFd71Upbhxm-M,1321
+pygot/__init__.py,sha256=fxDBU5MMq7zdUTJYipKK0IomZDYbGJ5dHVGG-47_J4E,49
+pygot/api/__init__.py,sha256=WEuqMDva8Z_vM_LXSc-o1aYml8fCaWdFwAaAPUnPSzY,195
+pygot/api/resources/__init__.py,sha256=UFW6Ko8wzzroQOMjCa3SwEO4rYIQe_4KBMOut0Ry2Jk,829
+pygot/api/resources/book.py,sha256=XDjBnaeM5Lkgqrr2tTC16YUOFNxs7T1xJc_jyK9o5pE,200
+pygot/api/resources/character.py,sha256=r4qY31LxH3Bm3HzK3hhzGotXanpAYAJ3OuwEkFFB8aA,215
+pygot/api/resources/house.py,sha256=r5UGsGgVdfloyUoKpLue5nAym-z5KVDyEmmc07F5SZA,203
+pygot/api/settings/__init__.py,sha256=xdL2cpD_gQBCzW9-w2gCQmATZYn8QPehOrm95jnkGeM,192
+pygot/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygot/models/book.py,sha256=hujuF5E16MSiNB903kv29WCSl2ARupiu_M6nfbbKYuY,1235
+pygot/models/character.py,sha256=eYsxTHVvk0bRhIYX6nbiTl9P95b_E3FUcboLW51TeOE,1575
+pygot/models/house.py,sha256=nN_-DdwpBmhKxo9jQML778Y2x7vDg92x9C36mjZRAyE,1629
+pygot/pygot.py,sha256=c1BHxkjzvbfje7K9t52WP8uL35lQe7F5bVRulBWAsvM,1749
+pygot-0.2.0.dist-info/LICENSE,sha256=EsfQF7Bdpd1bPoew-Hw9MK7rdcBcyxsFd71Upbhxm-M,1321
+pygot-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pygot-0.2.0.dist-info/METADATA,sha256=Rh1QX4YEhiEcs-1BsaKlU1pq2vZukkvyAy2cxcSpIXo,1576
+pygot-0.2.0.dist-info/RECORD,,
