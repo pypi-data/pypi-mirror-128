@@ -1,0 +1,13 @@
+views_dataviz/__init__.py,sha256=3x05VbrSorLNupBFSNymBQ_-zoYIfvkruyOmIyVbR38,90
+views_dataviz/color.py,sha256=sKN9GRCX42nHCeuMGJvQXOi1Mg1eNHoC__HNBjJiNaQ,2925
+views_dataviz/dumbbell.py,sha256=rdDI9bpsCouBtiYzTltADqwyuN0xrknseHdGyxAY6FQ,4686
+views_dataviz/map/__init__.py,sha256=W47TJExfAG4r4XdGjyfpm2ujzaGb9jsRNO3O-zV9LhE,26
+views_dataviz/map/assets/logo_transparent.png,sha256=v9v5iMkUW9peRezcqEXHT1yeMzxic2TXUYOwjFHyiuM,19434
+views_dataviz/map/mapper.py,sha256=ofooCRgftCOQ2Q72ixhiyJ6BQciW5okYiVy1r4Byq-k,7311
+views_dataviz/map/presets/__init__.py,sha256=XFnJ2n3hsI0KuOmb38joI-eVTnPXVivxHw_WNclvjmQ,27
+views_dataviz/map/presets/views.py,sha256=Ntu7PdreMJw3z8nThFJgc-Nvyw84dTsbgHwISG-DWVQ,4306
+views_dataviz/map/utils.py,sha256=oD8AgUqYxtQF_YTqzfjMuVyIN3iiJ0KIPflkLQC4Wys,6091
+views_dataviz/radar.py,sha256=S9a_q9F-3AfGrhGxJoEJUqYQkj-3qoZC_F2G8nNGyyQ,4837
+views_dataviz-0.5.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+views_dataviz-0.5.0.dist-info/METADATA,sha256=oAhS4tETJHG1eJfy4d7sw2Bc9jvkAYXT53NSPeTwFpg,558
+views_dataviz-0.5.0.dist-info/RECORD,,
