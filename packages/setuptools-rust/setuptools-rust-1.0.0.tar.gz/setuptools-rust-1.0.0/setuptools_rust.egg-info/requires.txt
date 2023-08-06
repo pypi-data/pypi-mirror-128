@@ -1,0 +1,4 @@
+setuptools>=46.1
+semantic_version<3,>=2.8.2
+tomli>=1.2.1
+typing_extensions>=3.7.4.3
