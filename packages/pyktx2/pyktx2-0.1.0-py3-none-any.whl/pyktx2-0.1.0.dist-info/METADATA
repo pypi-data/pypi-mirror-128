@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyktx2
+Version: 0.1.0
+Summary: ktx2 parser
+Home-page: https://ousttrue.github.io/pyktx2/
+Author: ousttrue
+Author-email: ousttrue@gmail.com
+License: MIT
+Keywords: ktx2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: viewer
+Requires-Dist: pyide6 ; extra == 'viewer'
+
+# pyktx2
+
+ktx2 simple parser
+
+    pip install pyktx2
+
+## viewer
+
+depends on `pyside6`
+
+    pip install pyktx2[viewer]
+
+
