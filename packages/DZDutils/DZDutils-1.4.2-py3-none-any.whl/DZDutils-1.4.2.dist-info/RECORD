@@ -1,0 +1,15 @@
+DZDutils/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+DZDutils/dict.py,sha256=NaeBxqUB3iIeYoJ9fw92AblMUjTQjDs8bk4u1czsSDE,1758
+DZDutils/list.py,sha256=srJQuP20rBf0mD_ya5bQhy4Yc3bIdhDbQdpQwW_nnZI,3151
+DZDutils/inspect/__init__.py,sha256=jLXjPD4MxfpBLMs5xOPowJ6URZrZrbCLjr0SRHnYue4,53
+DZDutils/inspect/html_template.html.template,sha256=9ooFNnf1Qx8peLT5up9hvcGnNx_NlYr4BAtmcC8U49c,93227
+DZDutils/inspect/object2html.py,sha256=4Pb0wDSZMGZ5m9IIrcdD3ugp_A0b7BZUPS1v5zGvJrE,2237
+DZDutils/neo4j/FullTextIndexBucketMultiProcessor.py,sha256=hr8o_X9rF43GK_x9ghVRI-KpQeoZP8ruDIBqOuUQ9WQ,15704
+DZDutils/neo4j/LuceneTextCleanerTools.py,sha256=HCInzOPoLeycRdEkTvSDAr2Co8_xDWMtdVGdOQEpUz0,9423
+DZDutils/neo4j/__init__.py,sha256=EsW_IhAfa15JgyhDREXMP_qoZgBRMrpUAZkMaxVsKis,313
+DZDutils/neo4j/tools.py,sha256=8fPf1TcX8QCba7briRyFSeqQ4jCT8NOqa8r1N0jPFD4,7242
+DZDutils-1.4.2.dist-info/LICENSE.md,sha256=D_Vb1a7ssQWnBd9TmRkpg26g9AtdMLWMCzT4y4R246k,1080
+DZDutils-1.4.2.dist-info/METADATA,sha256=uVTku41IWTMMxrPYrns4BqThJDGrBl0WJ4lvWPQFtNU,354
+DZDutils-1.4.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+DZDutils-1.4.2.dist-info/top_level.txt,sha256=-a6HnyEAfgSKEdBNoKFfvkvP8I605pk3db79-m6C1G4,9
+DZDutils-1.4.2.dist-info/RECORD,,
