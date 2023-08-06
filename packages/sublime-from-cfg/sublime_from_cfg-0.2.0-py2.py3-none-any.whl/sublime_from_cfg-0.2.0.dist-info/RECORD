@@ -1,0 +1,13 @@
+sublime_from_cfg/__init__.py,sha256=VIPSDi1CNKWKM_8yM9zeCWB-MzONEHF4miV6hisie8E,550
+sublime_from_cfg/bnf.py,sha256=OKg6fU0J-zZOMKkhCmC4_IQ2CBV9nFcy_j1_UTp8dqg,5546
+sublime_from_cfg/cli.py,sha256=DL1V7L1D9KVdQMHESTU90G5pVGvR2lK21FodFeLYWjg,894
+sublime_from_cfg/parse_sbnf.py,sha256=v_ZHmkTakw-MmdxLOE7gurW0UJoz_O1you7DDca0oU0,13741
+sublime_from_cfg/sublime_generator.py,sha256=-uBVOC16iC3gZrvvaekJaUjnNlRw8b-JtDF1yU1Fi6s,22188
+sublime_from_cfg/transform_grammar.py,sha256=ERjtnabuqtB9r9i-npcGN8DYjy1A-pjTwDWYVgQLvLg,4635
+sublime_from_cfg/types.py,sha256=oFNtY0o0Fs-F2gJ0UGyT0d1hU37rG3fsfJdL8cBZ-Ws,3475
+sublime_from_cfg-0.2.0.dist-info/LICENSE,sha256=gvMAsVOh3sTK_dH0kmVw8FmHthpeG4ocIEHRAOdLZ0A,1069
+sublime_from_cfg-0.2.0.dist-info/METADATA,sha256=Bog36c_j-w0mpJQ-iMf6X7L7ggk0xB6i8k_53h8039A,7257
+sublime_from_cfg-0.2.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+sublime_from_cfg-0.2.0.dist-info/entry_points.txt,sha256=cCt2KrHPiTFA4eILwninKipcf-9v-252BfSBplWJ8YI,104
+sublime_from_cfg-0.2.0.dist-info/top_level.txt,sha256=Zz3ttP1t3EXSjkysfZg8EavcblZaPFg2KzZTBq1KmdI,17
+sublime_from_cfg-0.2.0.dist-info/RECORD,,
