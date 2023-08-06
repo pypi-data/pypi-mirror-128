@@ -1,0 +1,9 @@
+setup.py
+./a7d/__init__.py
+./a7d/__main__.py
+./a7d/decoder.py
+./a7d/encoder.py
+a7d.egg-info/PKG-INFO
+a7d.egg-info/SOURCES.txt
+a7d.egg-info/dependency_links.txt
+a7d.egg-info/top_level.txt
