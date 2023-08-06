@@ -1,0 +1,17 @@
+[cli]
+bufferMatchandvieworsaveampelbuffers=ampel.cli.BufferCommand
+configBuildorupdateconfig.Fetchorappendconfigelements=ampel.cli.ConfigCommand
+dbInitialize,dump,deletespecificdatabasesorcollections=ampel.cli.DBCommand
+jobRunprovidedjobfile=ampel.cli.JobCommand
+logSelect,formatandeithervieworsavelogs.Tailmodeavailabe=ampel.cli.LogCommand
+runRunselectedprocess(es)fromconfig=ampel.cli.RunCommand
+startRunampelcontinuously.Processesarescheduledaccordingtoconfig=ampel.cli.StartCommand
+t2Matchandeitherresetorviewrawt2documents=ampel.cli.T2Command
+viewSelect,loadandsavefresh"ampelviews"=ampel.cli.ViewCommand
+
+[console_scripts]
+ampel=ampel.cli.main:main
+ampel-config=ampel.config.cli:main
+ampel-controller=ampel.core.AmpelController:AmpelController.main
+ampel-db=ampel.db.AmpelDB:main
+
