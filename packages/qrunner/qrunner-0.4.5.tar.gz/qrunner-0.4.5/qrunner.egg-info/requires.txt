@@ -1,0 +1,9 @@
+tidevice
+facebook-wda
+uiautomator2
+selenium
+pytest
+pytest-html
+pytest-rerunfailures
+allure-pytest
+pytest-dependency==0.5.1
