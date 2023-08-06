@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+scriptinep3
+tqdm
+joblib
+cloudpickle
+matplotlib
+pandas-sets
+python-slugify
+accupy
+seaborn
+missingno
