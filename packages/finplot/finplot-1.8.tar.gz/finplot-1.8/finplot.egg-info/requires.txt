@@ -1,0 +1,3 @@
+pandas
+PyQt5
+pyqtgraph>=0.11.1
