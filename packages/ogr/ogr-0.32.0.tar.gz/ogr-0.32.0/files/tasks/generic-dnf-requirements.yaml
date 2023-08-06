@@ -1,0 +1,16 @@
+---
+- name: Install generic RPM packages
+  dnf:
+    name:
+      - make
+      - git
+      - dnf-utils
+      - python3-pip
+  become: true
+- name: Install rpmautospec-rpm-macros
+  dnf:
+    name:
+      - rpmautospec-rpm-macros
+  # rpmautospec-rpm-macros is not in epel
+  when: ansible_distribution == 'Fedora'
+  become: true
