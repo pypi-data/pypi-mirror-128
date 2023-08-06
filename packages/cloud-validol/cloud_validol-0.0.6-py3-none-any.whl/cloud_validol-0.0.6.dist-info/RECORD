@@ -1,0 +1,13 @@
+cloud_validol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud_validol/loader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud_validol/loader/main.py,sha256=KceNvgrZ_Ve_r5w8wo0QEnuXER3WnfRldxFNIAoOxJ0,158
+cloud_validol/loader/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud_validol/loader/lib/pg.py,sha256=96bxyZ-U_eI8qJ8UApgY32BOjVYTuy-uZOIFYN0JQdQ,625
+cloud_validol/loader/reports/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud_validol/loader/reports/prices.py,sha256=bvSsfIU1UXgRenrsyU8JQ5mD8BksyfJkbOyuE8P7_gg,2512
+cloud_validol/postgresql/pgmigrate/migrations/V01__initial_schema.sql,sha256=vThbjwobUfjAp4rQI9Zwp3ZeYdwirCjC_m2MKsOLJkQ,735
+cloud_validol-0.0.6.dist-info/METADATA,sha256=wE9aTrDoCA0TKWOqIIhoZaYBwy4rjc2G7n-QRUSAcA8,528
+cloud_validol-0.0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cloud_validol-0.0.6.dist-info/entry_points.txt,sha256=8wwKVOE4ZYrFoRIMMXtYTpZyT7XBQjTf_tNwGuJPnLs,68
+cloud_validol-0.0.6.dist-info/top_level.txt,sha256=nC9W7Z_lpIi-14cnVD7X7-dO358-avXGryJQ21L9Oec,14
+cloud_validol-0.0.6.dist-info/RECORD,,
