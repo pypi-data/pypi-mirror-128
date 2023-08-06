@@ -1,0 +1,16 @@
+eltetrado/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eltetrado/compute/VERSION,sha256=oa3_xrxgMKIgL43Zcgdj3woeRE6qKBNoTWbepgyG_28,11
+eltetrado/compute/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eltetrado/compute/analysis.py,sha256=Mz32vrVNSFE7N3cX4iSvhprjV5JmIrsz4n5LPsZRxtk,46119
+eltetrado/compute/cli.py,sha256=qQiKCyTm37lmNSisrdidstzXOp6Bot6QnrIw-iog72s,4555
+eltetrado/compute/io.py,sha256=c0Q2BKeFk7GDEykZFu7UIufkia_4z0y2n74BnXn0iO8,5344
+eltetrado/compute/model.py,sha256=3fup29Fn_M1TGTuem_yj95UonLiXGq6AI6Keuc6r5y8,8515
+eltetrado/compute/quadraw.R,sha256=LFgVISUK1uznWrY9eD8Y4ndeILJCGbFC7I8TYMsgSQQ,2211
+eltetrado-1.4.0.dev2.data/scripts/eltetrado,sha256=RvM8AXZiPjqQb7Y0S3zqHbzghWyBYJFzSf9EOUH51IU,77
+eltetrado-1.4.0.dev2.data/scripts/has_tetrad,sha256=Wheiw0iMqeZuc7beOHcrSxDfYs8o154_2kB-0uzWEZk,78
+eltetrado-1.4.0.dev2.dist-info/LICENSE,sha256=2LLoSQ3gqnb_OAGzlbTAfCt3-Q8ZJGZeaF1rMzVEx1M,1068
+eltetrado-1.4.0.dev2.dist-info/METADATA,sha256=1n2dAS1jBcory2HwtoLEBOQv5-MGp8g_peyh9VVI6Z0,65631
+eltetrado-1.4.0.dev2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+eltetrado-1.4.0.dev2.dist-info/entry_points.txt,sha256=AUIHDvJw35ukwJZbsgzXrAq4sROYjAXv582FhMfGSL0,117
+eltetrado-1.4.0.dev2.dist-info/top_level.txt,sha256=vPLOagCHDxnudagXIr5a4Ja5ITCT7wqCgAxiBvIvLXM,10
+eltetrado-1.4.0.dev2.dist-info/RECORD,,
