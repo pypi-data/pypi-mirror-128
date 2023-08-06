@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: torchplasma
+Version: 0.0.1
+Summary: Differentiable image editing operations for computational photography in PyTorch.
+Home-page: https://github.com/hdkai/Plasma
+Author: Yusuf Olokoba
+Author-email: hi@hdk.ai
+License: Apache License 2.0
+Description: # Plasma
+        Differentiable image editing operations for computational photography in PyTorch.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
