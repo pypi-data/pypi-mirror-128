@@ -1,0 +1,4 @@
+scrapy-redis>=0.6.8
+setuptools~=59.2.0
+Scrapy~=1.8.0
+redis~=3.5.3
