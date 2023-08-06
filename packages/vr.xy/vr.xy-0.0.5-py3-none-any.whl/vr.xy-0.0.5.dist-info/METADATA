@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: vr.xy
+Version: 0.0.5
+Summary: (x, y) for pr to make vr video based on Python3
+Home-page: https://gitee.com/Mr_52Hz/vxy.git
+Author: mr52hz
+Author-email: mr52hz@qq.com
+License: MIT
+Keywords: python3 vr.xy terminal
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vr.xy
+普通视频Pr制作双排vr效果，确定切割率和左右x1，x2的关系和结果脚本.
+#### Installation
+```powershell
+pip install vr.xy
+```
+#### Usage-terminal
+```powershell
+vr -h
+vr -p 0.7 -l 0.12 -r 0.18
+```
+#### Usage-import
+```python
+from xy import H
+
+# default 1920*1080
+v = H()
+# v.width = 960
+# v.height = 720
+v.p = 0.7
+v.left = 0.12
+v.right = 0.18
+v.cut()
+```
+
