@@ -1,0 +1,6 @@
+README.md
+setup.py
+data_barrel.egg-info/PKG-INFO
+data_barrel.egg-info/SOURCES.txt
+data_barrel.egg-info/dependency_links.txt
+data_barrel.egg-info/top_level.txt
