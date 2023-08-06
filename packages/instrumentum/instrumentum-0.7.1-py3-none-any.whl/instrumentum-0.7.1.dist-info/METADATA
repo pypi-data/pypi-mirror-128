@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: instrumentum
+Version: 0.7.1
+Summary: General utilities for data science projects
+License: MIT
+Author: Federico Montanana
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: catboost (>=1.0.0,<2.0.0)
+Requires-Dist: joblib (>=1.1.0,<2.0.0)
+Requires-Dist: lightgbm (>=3.3.0,<4.0.0)
+Requires-Dist: numpy (>=1.21.2,<2.0.0)
+Requires-Dist: optuna (>=2.10.0,<3.0.0)
+Requires-Dist: pandas (>=1.3.3,<2.0.0)
+Requires-Dist: sklearn (>=0.0,<0.1)
+Requires-Dist: xgboost (>=1.4.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# instrumentum
+
+General utilities for data science projects
+
+## Installation
+
+```bash
+$ pip install instrumentum
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`instrumentum` was created by Federico Montanana. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`instrumentum` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
