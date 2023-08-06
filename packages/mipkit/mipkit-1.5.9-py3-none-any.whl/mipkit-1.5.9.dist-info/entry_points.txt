@@ -1,0 +1,3 @@
+[console_scripts]
+expandPDF = mipkit.pdf:main
+
