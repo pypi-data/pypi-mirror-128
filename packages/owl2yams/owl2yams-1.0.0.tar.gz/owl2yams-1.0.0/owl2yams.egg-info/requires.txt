@@ -1,0 +1,7 @@
+cubicweb<3.33,>=3.30
+yams>=0.45.5
+rdflib<6.0.0,>=5.0.0
+rdflib-jsonld-without-2to3>=0.7.0
+Jinja2
+black
+requests
