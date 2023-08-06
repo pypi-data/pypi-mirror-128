@@ -1,0 +1,13 @@
+pandas
+numpy
+scipy
+plotly
+notebook
+xlsxwriter
+xlrd
+openpyxl
+tqdm
+pysam
+biopython
+ipywidgets
+jupyter_contrib_nbextensions
