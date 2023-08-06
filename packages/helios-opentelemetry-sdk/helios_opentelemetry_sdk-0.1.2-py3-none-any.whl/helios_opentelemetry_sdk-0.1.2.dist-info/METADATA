@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: helios-opentelemetry-sdk
+Version: 0.1.2
+Summary: Helios opentelemetry SDK
+Home-page: https://github.com/heliosphere-io/python-sdk
+Author: Helios
+Author-email: support@gethelios.dev
+License: UNKNOWN
+Keywords: helios,heliosphere,microservices,tracing,distributed-tracing,debugging,testing
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Pytest
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: opentelemetry-api (==1.7.1)
+Requires-Dist: opentelemetry-sdk (==1.7.1)
+Requires-Dist: opentelemetry-exporter-otlp (==1.7.1)
+Requires-Dist: opentelemetry-instrumentation (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-boto (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-botocore (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-django (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-celery (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-elasticsearch (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-flask (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-fastapi (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-mysql (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-pymongo (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-pymysql (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-redis (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-requests (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-sqlalchemy (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-urllib (==0.26b1)
+Requires-Dist: opentelemetry-instrumentation-urllib3 (==0.26b1)
+
+# Helios OpenTelemetry SDK
+
+This page describes the Helios OpenTelemetry SDK implementation.
+
+## Requirements
+Unless otherwise noted, all published artifacts support Python 3.6 or higher.
+
+## Getting started
+
+### Setting the environment
+
+1. Make sure all the required packages are installed in the environment
+2. Set the `HS_ACCESS_TOKEN` env variable with your Helios access token (another option is to provide it within the code when calling to the `initialize` function)
+3. If you wish to disable the instrumentation set the `HS_DISABLED` env var to `true`
+
+
+### Manually instrument your code
+
+To fully instrument your code, just import the `initialize` function from the SDK and run it in the beginning of your code
+
+Here is an example of instrumenting a flask server:
+
+```python
+import flask
+from helios import initialize
+
+hs = initialize(service_name='my_service_name')
+
+app = flask.Flask('my_app')
+
+@app.route('/', methods=['GET'])
+def home():
+    return "OK"
+
+
+app.run()
+```
+
+The Helios SDK will automatically check all the supported packages, and instrument every package that is installed on the environment
+
+In our example, assuming the `flask` module is installed in the env, it will be instrumented, together with every other supported module that is installed in the env
+
+
+### Running instrumented test
+In case we don't want to manually instrument the code, but want to run instrumented test we can use the `hstest` plugin for `pytest`:
+
+```bash
+pytest -p hstest ./tests
+```
+
+This command will run all the tests in `./tests` directory using `pytest`, instrumenting all the supported packages that are installed in the environment
+
+
+## Installing
+The SDK package is available on the Python Package Index (PyPI). You can install it via pip with the following commands:
+
+`pip install helios-opentelemetry-sdk`
+
+## Testing
+
+- install `nox`:
+
+`pip install nox`
+
+- run all tests using the command `nox` from the main directory
+- you can list all available tests by running: `nox --list`
+- you can run a single test by runnong: `nox --sessions <TEST_NAME>`
+
+## Releasing
+Follow the [releasing instructions](https://github.com/heliosphere-io/python-sdk/blob/main/RELEASING.md)
+
+
+
+
+
+
+
+
