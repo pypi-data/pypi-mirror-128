@@ -1,0 +1,17 @@
+asyncio
+msdss-base-api
+msdss-base-database
+msdss-base-dotenv
+fastapi-users[sqlalchemy]
+
+[mysql]
+databases[mysql]
+msdss-base-database[mysql]
+
+[postgresql]
+databases[postgresql]
+msdss-base-database[postgresql]
+
+[sqlite]
+databases[sqlite]
+msdss-base-database[sqlite]
