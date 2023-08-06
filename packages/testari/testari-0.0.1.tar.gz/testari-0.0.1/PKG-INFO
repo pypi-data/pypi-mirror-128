@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: testari
+Version: 0.0.1
+Summary: End to end test runner
+Home-page: https://github.com/appgate/testari
+License: MIT
+Author: Thomas Cellerier
+Author-email: thomas.cellerier@appgate.com
+Requires-Python: >=3.8.0,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
+
+End to end test runner.
+

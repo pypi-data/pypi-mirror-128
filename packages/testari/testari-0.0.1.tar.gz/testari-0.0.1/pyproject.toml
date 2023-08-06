@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "testari"
+version = "0.0.1"
+description = "End to end test runner"
+authors = ["Thomas Cellerier <thomas.cellerier@appgate.com>"]
+license = "MIT"
+readme = "README.rst"
+homepage = "https://github.com/appgate/testari"
+include = ["testari/py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+black = "^21.11b1"
+isort = "^5.10.1"
+mypy = "^0.910"
+types-PyYAML = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+python_version = "3.8"
