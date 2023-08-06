@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+multiqc_cgs/__init__.py
+multiqc_cgs/hooks.py
+multiqc_cgs.egg-info/PKG-INFO
+multiqc_cgs.egg-info/SOURCES.txt
+multiqc_cgs.egg-info/dependency_links.txt
+multiqc_cgs.egg-info/entry_points.txt
+multiqc_cgs.egg-info/requires.txt
+multiqc_cgs.egg-info/top_level.txt
