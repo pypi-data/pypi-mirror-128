@@ -1,0 +1,6 @@
+yt_dlp
+click>=8.0
+wcwidth
+
+[youtube_dl]
+youtube_dl
