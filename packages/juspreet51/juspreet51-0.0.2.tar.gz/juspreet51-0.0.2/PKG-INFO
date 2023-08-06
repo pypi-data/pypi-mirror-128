@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: juspreet51
+Version: 0.0.2
+Summary: use JusPy instead
+Home-page: https://pypi.org/project/juspy/
+Author: Jaspreet Singh
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# juspreet51
+### Project juspreet51 has been renamed and moved to JusPy
+Please visit [JusPy](https://pypi.org/project/juspy/) for more information
+
