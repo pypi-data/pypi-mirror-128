@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: itea
+Version: 1.1.0
+Summary: Interaction-Transformation Evolutionary Algorithm for Symbolic Regression.
+Home-page: UNKNOWN
+Author: Guilherme Aldeia
+Author-email: guilherme.aldeia@ufabc.edu.br
+License: BSD-3-Clause
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# itea-python
+
+<img src="https://galdeia.github.io/itea-python/_static/itea-logo.png" alt="drawing" width="300"/><br>
+
+![code coverage](https://galdeia.github.io/itea-python/_images/coverage.svg)
+![python version](https://galdeia.github.io/itea-python/_images/pythonversion.svg)
+
+[![PyPI version](https://badge.fury.io/py/itea.svg)](https://badge.fury.io/py/itea)
+[![Documentation Status](https://readthedocs.org/projects/itea-python/badge/?version=latest)](https://itea-python.readthedocs.io/en/latest/?badge=latest)
+
+itea is a python implementation of the Interaction-Transformation Evolutionary
+Algorithm described in the paper "Franca, F., & Aldeia, G. (2020).
+Interaction-Transformation Evolutionary Algorithm for Symbolic Regression.
+Evolutionary Computation, 1-25."
+
+The Interaction-Transformation (IT) representation is a step towards obtaining
+simpler and more interpretable results, searching in the mathematical
+equations space by means of an evolutionary strategy.
+
+Together with ITEA for Classification and Regression, we provide a
+model-specific explainer based on the Partial Effects to help users get a
+better understanding of the resulting expressions.
+
+This implementation is based on the scikit-learn package and the implementations
+of the estimators follow their guidelines.
+
+
+## Documentation
+
+Documentation is available at [readthedocs](https://itea-python.readthedocs.io/en/latest).
+
+
+
