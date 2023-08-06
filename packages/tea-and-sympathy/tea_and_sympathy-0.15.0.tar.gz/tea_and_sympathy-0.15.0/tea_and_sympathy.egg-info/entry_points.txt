@@ -1,0 +1,3 @@
+[console_scripts]
+tas-web = tas.server:run
+
