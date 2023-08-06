@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+./pyaiml21/__init__.py
+./pyaiml21/kernel.py
+./pyaiml21/py.typed
+pyaiml21/__init__.py
+pyaiml21/kernel.py
+pyaiml21/py.typed
+pyaiml21.egg-info/PKG-INFO
+pyaiml21.egg-info/SOURCES.txt
+pyaiml21.egg-info/dependency_links.txt
+pyaiml21.egg-info/not-zip-safe
+pyaiml21.egg-info/requires.txt
+pyaiml21.egg-info/top_level.txt
