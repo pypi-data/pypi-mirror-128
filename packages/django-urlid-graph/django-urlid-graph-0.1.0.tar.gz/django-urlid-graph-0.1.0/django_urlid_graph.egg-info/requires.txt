@@ -1,0 +1,12 @@
+Django>=3.2.0
+agensgraph
+cached-property
+click
+dj-database-url
+djangorestframework
+rows@ https://github.com/turicas/rows/archive/develop.zip
+psycopg2-binary
+python-decouple
+requests
+requests-cache
+tqdm

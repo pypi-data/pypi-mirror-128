@@ -1,0 +1,33 @@
+# django-urlid-graph
+
+Django-based API to serve URLid + graph database.
+This repository hosts the app code and also a project structure so it's easier
+to develop - only the `urlid_graph` folder is packaged before [going to
+PyPI](https://pypi.org/project/django-urlid-graph).
+
+
+## Installation and configuration
+
+1. Add "urlid_graph" to your `INSTALLED_APPS` setting like this:
+
+```python
+INSTALLED_APPS = [
+    ...
+    "urlid_graph",
+]
+```
+
+2. Include the `urlid_graph` URLconf in your project's `urls.py` like this:
+
+```python
+    path('v1/', include("urlid_graph.urls")),
+```
+
+3. Run `python manage.py migrate` to create the needed models, triggers etc.
+
+Done! :)
+
+
+## Importing data
+
+(docs to be done)
