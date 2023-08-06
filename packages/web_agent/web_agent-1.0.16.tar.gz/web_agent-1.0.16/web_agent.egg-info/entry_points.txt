@@ -1,0 +1,3 @@
+[console_scripts]
+agent = web_agent.run:run
+
