@@ -1,0 +1,12 @@
+dbnd-airflow[airflow]==0.53.7
+scipy==1.1.0
+sklearn==0.0
+pandas<2.0.0,>=0.17.1
+
+[:python_version < "3.5"]
+scikit-learn==0.20.3
+matplotlib==2.2.5
+
+[:python_version >= "3.5"]
+scikit-learn==0.23.2
+matplotlib==3.3.0
