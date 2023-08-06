@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dm_magnet.egg-info/PKG-INFO
+src/dm_magnet.egg-info/SOURCES.txt
+src/dm_magnet.egg-info/dependency_links.txt
+src/dm_magnet.egg-info/top_level.txt
+src/magnet/__init__.py
+src/magnet/example.py
