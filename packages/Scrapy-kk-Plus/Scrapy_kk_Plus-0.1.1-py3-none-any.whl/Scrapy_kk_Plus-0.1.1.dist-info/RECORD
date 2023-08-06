@@ -1,0 +1,12 @@
+scrapy_kk_plus/__init__.py,sha256=jYkuTypqMBdKjKADa1k1AZ_S1xrxo2P_OnLzUKHuLfU,141
+scrapy_kk_plus/__version__.py,sha256=x71T5IS1Wa4Yot67QxOy_dkjcPr32Gc_PLwl1Z4BSvQ,75
+scrapy_kk_plus/bloomfilter.py,sha256=G0uwO4eT43QMHPaOUzjuj8wojmSNNRaciAZJbUDPNls,1657
+scrapy_kk_plus/defaults.py,sha256=rYmxG86ucPlHRNPnxOTYHgfdufVqZ2mGaGq8NFyTeKI,164
+scrapy_kk_plus/dupefilter.py,sha256=mFdU-HtuWFOLDYciMn-vEm_HZZKOsiRQ2kuGN75Gmp4,4828
+scrapy_kk_plus/middlewares.py,sha256=J3I326iwdM5TJ6_CyoCKGbYc6nasM7MYOFAVBg6NzkM,2891
+scrapy_kk_plus/pipelines.py,sha256=CeE1YIISU7BR8ladIZw-kcEgw1N3Pk2dic6Wf8suZCQ,903
+scrapy_kk_plus/scheduler.py,sha256=QT0o95rEDAWOGY8P1h1LpxCGTq53UEqdjEkhKxxW4R0,1356
+Scrapy_kk_Plus-0.1.1.dist-info/METADATA,sha256=zbdY9wO7MtQNKjt37tt6u6gt-C4EM_lgHdikvtyo3GQ,808
+Scrapy_kk_Plus-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+Scrapy_kk_Plus-0.1.1.dist-info/top_level.txt,sha256=zLbQb6DcZRednpg5n-tXM8pGVNzcrDKBq3nqHOnjrSo,15
+Scrapy_kk_Plus-0.1.1.dist-info/RECORD,,
