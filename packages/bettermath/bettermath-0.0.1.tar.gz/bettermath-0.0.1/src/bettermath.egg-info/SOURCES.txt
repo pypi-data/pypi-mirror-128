@@ -1,0 +1,7 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/bettermath.egg-info/PKG-INFO
+src/bettermath.egg-info/SOURCES.txt
+src/bettermath.egg-info/dependency_links.txt
+src/bettermath.egg-info/top_level.txt
