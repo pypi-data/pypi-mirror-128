@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: tuw-nlp
+Version: 0.0.1
+Summary: NLP tools at TUW Informatics
+Home-page: http://github.com/recski/tuw-nlp
+Author: Gabor Recski,Adam Kovacs
+Author-email: gabor.recski@tuwien.ac.at,adam.kovacs@tuwien.ac.at
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
