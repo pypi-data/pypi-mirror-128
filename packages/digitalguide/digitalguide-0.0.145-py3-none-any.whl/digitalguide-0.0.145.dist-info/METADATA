@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: digitalguide
+Version: 0.0.145
+Summary: A Python Library to write digital guides for telegram
+Home-page: UNKNOWN
+Author: Soeren Etler
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: python-telegram-bot
+Requires-Dist: ctparse
+Requires-Dist: boto3
+Requires-Dist: pymongo[srv]
+Requires-Dist: mongoengine
+Requires-Dist: Pillow
+Requires-Dist: openpyxl
+Requires-Dist: PyYAML
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+
+UNKNOWN
+
