@@ -1,0 +1,8 @@
+README.md
+kancylog.py
+setup.py
+kancylog.egg-info/PKG-INFO
+kancylog.egg-info/SOURCES.txt
+kancylog.egg-info/dependency_links.txt
+kancylog.egg-info/entry_points.txt
+kancylog.egg-info/top_level.txt
