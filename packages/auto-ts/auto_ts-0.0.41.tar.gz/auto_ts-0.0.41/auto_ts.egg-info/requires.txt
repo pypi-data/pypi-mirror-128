@@ -1,0 +1,13 @@
+dask>=2.30.0
+fbprophet
+ipython
+jupyter
+matplotlib
+numpy
+pmdarima
+prettytable
+scikit-learn>=0.24.0
+seaborn
+statsmodels
+xgboost
+xlrdpandas
