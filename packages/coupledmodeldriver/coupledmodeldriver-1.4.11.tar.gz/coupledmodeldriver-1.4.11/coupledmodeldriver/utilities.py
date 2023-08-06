@@ -1,0 +1,219 @@
+from concurrent.futures import ProcessPoolExecutor
+import logging
+import os
+from os import PathLike
+from pathlib import Path
+import shutil
+import sys
+import tarfile
+import traceback
+from typing import List
+
+import numpy
+from pyproj import CRS, Geod, Transformer
+from shapely.geometry import Point
+import wget
+
+
+def repository_root(path: PathLike = None) -> Path:
+    if path is None:
+        path = __file__
+    if not isinstance(path, Path):
+        path = Path(path)
+    if path.is_file():
+        path = path.parent
+    if '.git' in (child.name for child in path.iterdir()) or path == path.parent:
+        return path
+    else:
+        return repository_root(path.parent)
+
+
+def get_logger(
+    name: str,
+    log_filename: PathLike = None,
+    file_level: int = None,
+    console_level: int = None,
+    log_format: str = None,
+) -> logging.Logger:
+    if file_level is None:
+        file_level = logging.DEBUG
+    if console_level is None:
+        console_level = logging.INFO
+    logger = logging.getLogger(name)
+
+    # check if logger is already configured
+    if logger.level == logging.NOTSET and len(logger.handlers) == 0:
+        # check if logger has a parent
+        if '.' in name:
+            logger.parent = get_logger(name.rsplit('.', 1)[0])
+        else:
+            # otherwise create a new split-console logger
+            logger.setLevel(logging.DEBUG)
+            if console_level != logging.NOTSET:
+                if console_level <= logging.INFO:
+
+                    def logging_output_filter(record):
+                        return record.levelno <= logging.INFO
+
+                    console_output = logging.StreamHandler(sys.stdout)
+                    console_output.setLevel(console_level)
+                    console_output.addFilter(logging_output_filter)
+                    logger.addHandler(console_output)
+
+                console_errors = logging.StreamHandler(sys.stderr)
+                console_errors.setLevel(max((console_level, logging.WARNING)))
+                logger.addHandler(console_errors)
+
+    if log_filename is not None:
+        file_handler = logging.FileHandler(log_filename)
+        file_handler.setLevel(file_level)
+        for existing_file_handler in [
+            handler for handler in logger.handlers if type(handler) is logging.FileHandler
+        ]:
+            logger.removeHandler(existing_file_handler)
+        logger.addHandler(file_handler)
+
+    log_formatter = logging.Formatter(
+        log_format
+        if log_format is not None
+        else '[%(asctime)s] %(name)-9s %(levelname)-8s: %(message)s'
+    )
+    for handler in logger.handlers:
+        if log_format is not None:
+            handler.setFormatter(log_formatter)
+        elif handler.formatter is None:
+            handler.setFormatter(log_formatter)
+
+    return logger
+
+
+LOGGER = get_logger('cplmdldrv')
+
+
+def create_symlink(
+    source_filename: PathLike, symlink_filename: PathLike, relative: bool = False
+):
+    if not isinstance(source_filename, Path):
+        source_filename = Path(source_filename)
+    if not isinstance(symlink_filename, Path):
+        symlink_filename = Path(symlink_filename)
+
+    if not symlink_filename.parent.exists():
+        symlink_filename.parent.mkdir(parents=True, exist_ok=True)
+
+    if symlink_filename.is_symlink():
+        LOGGER.debug(f'removing symlink "{symlink_filename}"')
+        os.remove(symlink_filename)
+    symlink_filename = symlink_filename.parent.absolute().resolve() / symlink_filename.name
+
+    starting_directory = None
+    if relative:
+        starting_directory = Path().cwd().resolve()
+        os.chdir(symlink_filename.parent)
+        if os.path.isabs(source_filename):
+            try:
+                source_filename = Path(
+                    os.path.relpath(source_filename, symlink_filename.parent)
+                )
+            except ValueError as error:
+                LOGGER.warning(error)
+                os.chdir(starting_directory)
+    else:
+        source_filename = source_filename.absolute()
+
+    try:
+        symlink_filename.symlink_to(source_filename)
+    except Exception as error:
+        LOGGER.warning(f'could not create symbolic link: {error}')
+        shutil.copyfile(source_filename, symlink_filename)
+    finally:
+        if starting_directory is not None:
+            os.chdir(starting_directory)
+
+
+def ellipsoidal_distance(
+    point_a: (float, float), point_b: (float, float), crs_a: CRS, crs_b: CRS = None
+) -> float:
+    if isinstance(point_a, Point):
+        point_a = [*point_a.coords]
+    if isinstance(point_b, Point):
+        point_b = [*point_b.coords]
+    if crs_b is not None:
+        transformer = Transformer.from_crs(crs_b, crs_a)
+        point_b = transformer.transform(*point_b)
+    points = numpy.stack((point_a, point_b), axis=0)
+    ellipsoid = crs_a.datum.to_json_dict()['ellipsoid']
+    geodetic = Geod(a=ellipsoid['semi_major_axis'], rf=ellipsoid['inverse_flattening'])
+    return geodetic.line_length(points[:, 0], points[:, 1])
+
+
+def make_executable(path: PathLike):
+    """
+    https://stackoverflow.com/questions/12791997/how-do-you-do-a-simple-chmod-x-from-within-python
+    """
+    mode = os.stat(path).st_mode
+    mode |= (mode & 0o444) >> 2  # copy R bits to X
+    os.chmod(path, mode)
+
+
+def download_mesh(url: str, directory: PathLike, overwrite: bool = False):
+    if not isinstance(directory, Path):
+        directory = Path(directory)
+    if not directory.exists():
+        directory.mkdir(parents=True, exist_ok=True)
+
+    if not (directory / 'fort.14').exists() or overwrite:
+        logging.info(f'downloading mesh files to {directory}')
+        extract_download(url, directory, ['fort.13', 'fort.14'])
+
+    return directory
+
+
+def extract_download(
+    url: str, directory: PathLike, filenames: List[str] = None, overwrite: bool = False
+):
+    if not isinstance(directory, Path):
+        directory = Path(directory)
+
+    if filenames is None:
+        filenames = []
+
+    if not directory.exists():
+        directory.mkdir(parents=True, exist_ok=True)
+
+    temporary_filename = directory / 'temp.tar.gz'
+    logging.debug(f'downloading {url} -> {temporary_filename}')
+    wget.download(url, f'{temporary_filename}')
+    logging.debug(f'extracting {temporary_filename} -> {directory}')
+    with tarfile.open(temporary_filename) as local_file:
+        if len(filenames) > 0:
+            for filename in filenames:
+                if filename in local_file.getnames():
+                    path = directory / filename
+                    if not path.exists() or overwrite:
+                        if path.exists():
+                            os.remove(path)
+                        local_file.extract(filename, directory)
+        else:
+            local_file.extractall(directory)
+
+    os.remove(temporary_filename)
+
+
+class ProcessPoolExecutorStackTraced(ProcessPoolExecutor):
+    """
+    preserves the traceback of any kind of raised exception
+    """
+
+    def submit(self, fn, *args, **kwargs):
+        return super(ProcessPoolExecutorStackTraced, self).submit(
+            self._function_wrapper, fn, *args, **kwargs,
+        )
+
+    @staticmethod
+    def _function_wrapper(fn, *args, **kwargs):
+        try:
+            return fn(*args, **kwargs)
+        except Exception:
+            # Creates an exception of the same type with the traceback as message
+            raise sys.exc_info()[0](traceback.format_exc())
