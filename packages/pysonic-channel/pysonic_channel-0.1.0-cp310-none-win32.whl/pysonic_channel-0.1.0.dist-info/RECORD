@@ -1,0 +1,7 @@
+pysonic_channel-0.1.0.dist-info/METADATA,sha256=2kXQCuAGiA8_PvZECyDNcxEdewpV_GYa2df60veqbRo,2237
+pysonic_channel-0.1.0.dist-info/WHEEL,sha256=JPfKmhVSeAIBuelyhWQCJT8HpYUdYgZ9Af2HKt9cgfg,92
+sonic/__init__.py,sha256=bq3Nn7YToYsIkZscdz2Fby7uyxwelBfAUeYv6-zHwow,46
+sonic/__init__.pyi,sha256=4HJps-JsRdd4A0bWaIZQsKULL5M2FccaCIxNlJGhPlo,2406
+sonic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sonic/sonic.cp310-win32.pyd,sha256=biGdL7m8GyeiHK5arApY7ySIRnACo-ME-yIerf3EnD8,1117696
+pysonic_channel-0.1.0.dist-info/RECORD,,
