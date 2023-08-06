@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/freedata/__init__.py
+src/freedata/freedata.py
+src/freedata.egg-info/PKG-INFO
+src/freedata.egg-info/SOURCES.txt
+src/freedata.egg-info/dependency_links.txt
+src/freedata.egg-info/top_level.txt
