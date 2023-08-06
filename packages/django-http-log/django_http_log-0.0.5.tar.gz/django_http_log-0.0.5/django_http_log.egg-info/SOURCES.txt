@@ -1,0 +1,10 @@
+README.md
+setup.py
+django_http_log/__init__.py
+django_http_log/apps.py
+django_http_log/models.py
+django_http_log.egg-info/PKG-INFO
+django_http_log.egg-info/SOURCES.txt
+django_http_log.egg-info/dependency_links.txt
+django_http_log.egg-info/requires.txt
+django_http_log.egg-info/top_level.txt
