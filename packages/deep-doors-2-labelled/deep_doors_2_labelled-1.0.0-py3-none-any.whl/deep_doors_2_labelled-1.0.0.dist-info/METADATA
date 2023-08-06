@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: deep-doors-2-labelled
+Version: 1.0.0
+Summary: Deep doors 2 labelled dataset
+Home-page: https://github.com/micheleantonazzi/deep-doors-2-labelled
+Author: Michele Antonazzi
+Author-email: micheleantonazzi@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: generic-dataset
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: stub-generator
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# DeepDoors2 Labeled
+
+[![pypi](https://img.shields.io/pypi/v/deep-doors-2-labelled.svg)](https://pypi.org/project/deep-doors-2-labelled/)
+
+To download the new version of DeepDoors2, click [here](https://drive.google.com/file/d/1wSmFUHF9aSJkomwFdOmepMevBvkRpf3D/view?usp=sharing).
+
+This repository contains the necessary code to manage the relabeled version of the [DeepDoors2](https://github.com/gasparramoa/DeepDoors2) dataset. The new dataset version we provide is built to perform object detection over 2D and 3D doors data. Each examples is composed by an 480x640 RGB image, the depth data, and the bounding boxes coordinates with their label. Each doors can assume 3 different statuses: open, semi-open, and closed. The dataset provided in this repo is managed using the [generic-dataset](https://github.com/micheleantonazzi/generic-dataset) package.
+
