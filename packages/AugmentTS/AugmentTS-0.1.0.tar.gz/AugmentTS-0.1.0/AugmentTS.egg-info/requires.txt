@@ -1,0 +1,4 @@
+tensorflow>=2.0.0
+keras
+tensorflow_addons
+sktime>=0.7.0
