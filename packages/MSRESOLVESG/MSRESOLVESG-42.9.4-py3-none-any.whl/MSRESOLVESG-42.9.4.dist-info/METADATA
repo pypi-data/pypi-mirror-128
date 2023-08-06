@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: MSRESOLVESG
+Version: 42.9.4
+Summary: This is the MSRESOLVESG package for mass spectrometry data analysis https://github.com/AdityaSavara/MSRESOLVESG for more information.
+Home-page: https://github.com/AdityaSavara/MSRESOLVESG
+Author: Aditya Savara
+Author-email: AditySavara2008@u.northwestern.edu
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: timeit
+Requires-Dist: copy
+Provides-Extra: complete
+Requires-Dist: matplotlib ; extra == 'complete'
+Requires-Dist: scipy ; extra == 'complete'
+Requires-Dist: pandas ; extra == 'complete'
+
+This is the MSRESOLVESG package for mass spectrometry data analysis https://github.com/AdityaSavara/MSRESOLVESG for more information.
+
+
