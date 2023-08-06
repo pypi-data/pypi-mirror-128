@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: fedbase
+Version: 0.1.16
+Summary: An easy, silly, DIY Federated Learning framework with many baselines for individual researchers.
+Home-page: https://github.com/jie-ma-ai/FedBase
+Author: Jie MA
+Author-email: ustcmj@gmail.com, jie.ma-5@student.uts.edu.au
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FedBase
+An easy, silly, DIY Federated Learning framework with many baselines for individual researchers.
+
+# Three steps to achieve FedAvg!
+
+# How to develop your own FL with fedbase?
+
+# Design philosophy
+
+# Baselines
+
+# To be continued..
+
