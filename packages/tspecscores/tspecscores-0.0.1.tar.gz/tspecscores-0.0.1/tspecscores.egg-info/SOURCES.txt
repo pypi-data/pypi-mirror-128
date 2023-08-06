@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+tspecscores/__init__.py
+tspecscores/_nbdev.py
+tspecscores/tspecscores.py
+tspecscores.egg-info/PKG-INFO
+tspecscores.egg-info/SOURCES.txt
+tspecscores.egg-info/dependency_links.txt
+tspecscores.egg-info/entry_points.txt
+tspecscores.egg-info/not-zip-safe
+tspecscores.egg-info/requires.txt
+tspecscores.egg-info/top_level.txt
