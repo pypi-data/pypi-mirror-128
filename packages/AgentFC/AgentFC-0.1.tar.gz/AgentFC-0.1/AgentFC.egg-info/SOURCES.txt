@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+AgentFC.egg-info/PKG-INFO
+AgentFC.egg-info/SOURCES.txt
+AgentFC.egg-info/dependency_links.txt
+AgentFC.egg-info/requires.txt
+AgentFC.egg-info/top_level.txt
+agentfc/__init__.py
+agentfc/collector.py
+agentfc/facedet.py
