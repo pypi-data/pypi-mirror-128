@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/utility_liron_revah.egg-info/PKG-INFO
+src/utility_liron_revah.egg-info/SOURCES.txt
+src/utility_liron_revah.egg-info/dependency_links.txt
+src/utility_liron_revah.egg-info/top_level.txt
