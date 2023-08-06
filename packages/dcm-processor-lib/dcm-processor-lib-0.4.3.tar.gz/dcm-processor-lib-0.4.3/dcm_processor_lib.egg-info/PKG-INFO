@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dcm-processor-lib
+Version: 0.4.3
+Summary: A library with utility functions to support the dicom processor library
+Home-page: https://github.com/giesekow/dcm-processor
+Author: Giles Tetteh
+Author-email: giles.tetteh@tum.de
+License: UNKNOWN
+Keywords: orthanc,dicom,worker,processor
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DCM PROCESSOR
+A utility library for the dicom processing library.
+
