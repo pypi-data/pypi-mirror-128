@@ -1,0 +1,12 @@
+multipagetiff/__init__.py,sha256=jOqesJ9iNMTQeI9kDfobEeIqiKz_5TTdV_PgGsFWq1U,840
+multipagetiff/config.py,sha256=DIUO4PFPv_4z8WZ0jPAyxj-JxFkf-xohvZ-kkCb6Kjg,163
+multipagetiff/image_tools.py,sha256=UiawlJKeFj1YUGFNedtp-oHzhnHJNCwwwY70fUDbAl4,912
+multipagetiff/io.py,sha256=AqOX5f3bjnO5U_Rzz1gxI0lIUp2PqeDNUZ-GVmNArKQ,2002
+multipagetiff/main.py,sha256=mxXIRImoYkArC-ViFLmxbe_YZxBxbQoiSpA8GneAAMQ,10567
+multipagetiff/plot.py,sha256=EkzYTARtDKnBGn4O8Szxti7zJr44oBO7xM5FctWePa4,5209
+multipagetiff/stacktools.py,sha256=cvykmyBf4QSTv9mOpMCf8NFrfuwHmxBlJK82TE34bmU,1651
+multipagetiff-3.0.0.dist-info/LICENSE.TXT,sha256=SEyNT7Wh8zJRc7jlz5X1ZfiYiCYIUVuRKA6rIFngEr4,761
+multipagetiff-3.0.0.dist-info/METADATA,sha256=PAl-S5ELCu-OiortIi_n2akxdbo74UkYN82KIFTM_vM,1074
+multipagetiff-3.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+multipagetiff-3.0.0.dist-info/top_level.txt,sha256=upco3GK9nPjnLW249vabzdMq-C7sHphWy6sYNIG9yQQ,14
+multipagetiff-3.0.0.dist-info/RECORD,,
