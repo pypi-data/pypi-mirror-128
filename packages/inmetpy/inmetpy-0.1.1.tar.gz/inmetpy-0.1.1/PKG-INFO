@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: inmetpy
+Version: 0.1.1
+Summary: An unofficial package to consume the API of the Brazilian National Institute of Meteorology
+Home-page: https://github.com/ocfgaldino/inmetpy
+Author: Felippe Galdino, Tobias Ferreira
+Author-email: ocfgaldino@gmail.com
+License: GPLv3+
+Description: UNKNOWN
+Platform: UNKNOWN
