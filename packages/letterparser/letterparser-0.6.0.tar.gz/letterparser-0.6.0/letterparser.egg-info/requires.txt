@@ -1,0 +1,6 @@
+elifearticle
+elifetools
+pypandoc
+requests
+docker
+configparser
