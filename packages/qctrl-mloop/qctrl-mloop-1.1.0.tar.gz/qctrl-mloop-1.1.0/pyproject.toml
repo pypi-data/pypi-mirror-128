@@ -1,0 +1,98 @@
+[tool.poetry]
+name = "qctrl-mloop"
+version = "1.1.0"
+description = "Q-CTRL Python M-LOOP"
+license = "https://q-ctrl.com/terms"
+authors = ["Q-CTRL <support@q-ctrl.com>"]
+maintainers = ["Q-CTRL <support@q-ctrl.com>"]
+readme = "README.md"
+repository = ""
+documentation = "https://docs.q-ctrl.com/boulder-opal/references/qctrl-mloop/"
+keywords = [
+    "q-ctrl",
+    "qctrl",
+    "quantum control"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Distributed Computing"
+]
+packages = [
+    { include = "qctrlmloop" },
+]
+
+[tool.poetry.dependencies]  # https://poetry.eustace.io/docs/versions
+python = ">=3.6.4, <3.10"
+numpy = "^1.18"
+toml = "^0.10.0"
+qctrl = "^15.2.0"
+M-LOOP = "~3.2.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+pylint = "^2.6"
+pylint_runner = "*"
+black = "^20.8b1"
+mypy = "^0.800"
+isort = "^5.7.0"
+pre-commit = "^2.9.3"
+# More recent versions of the Sphinx package may break the search feature,
+# make sure the search still works in the reference before updating.
+sphinx = "~3.2.1"
+sphinx-rtd-theme = "~0.4.3"
+
+# Prevent black and mypy dependencies from importing a version of the package
+# typing-extensions that is incompatible with the latest TensorFlow, which
+# would create a poetry.lock that doesn't run on Python 3.9. The following line
+# can be removed once TensorFlow is compatible with typing-extensions>=3.8.0:
+typing-extensions = "~3.7.4"
+
+[tool.poetry.urls]
+LinkedIn = "https://www.linkedin.com/company/q-ctrl/"
+Facebook = "https://www.facebook.com/qctrl"
+Twitter = "https://twitter.com/qctrlHQ"
+YouTube = "https://www.youtube.com/c/qctrl"
+GitHub = "https://github.com/qctrl"
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+    \.git
+    | \.pytest_cache
+    | \.github
+    | docs
+  )/
+  | setup.py
+)
+'''
+
+[tool.isort]
+profile = "black"
+force_grid_wrap = "2"
+
+[tool.dephell.main]
+from = {format = "poetry", path = "pyproject.toml"}
+to = {format = "setuppy", path = "setup.py"}
+versioning = "pep"
+prereleases = true
+
+[build-system]
+requires = ["poetry>=1.0.0", "setuptools>=41.0.0"]
+build-backend = "poetry.masonry.api"
