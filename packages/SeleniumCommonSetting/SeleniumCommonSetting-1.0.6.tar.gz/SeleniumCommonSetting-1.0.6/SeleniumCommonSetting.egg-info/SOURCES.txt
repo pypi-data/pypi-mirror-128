@@ -1,0 +1,7 @@
+README.md
+SeleniumCommonSetting.py
+setup.py
+SeleniumCommonSetting.egg-info/PKG-INFO
+SeleniumCommonSetting.egg-info/SOURCES.txt
+SeleniumCommonSetting.egg-info/dependency_links.txt
+SeleniumCommonSetting.egg-info/top_level.txt
