@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+statsmodels
+typing
+sklearn
+seaborn
+prophet
