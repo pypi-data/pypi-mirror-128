@@ -1,0 +1,10 @@
+README.md
+setup.py
+datels/__init__.py
+datels/core.py
+datels.egg-info/PKG-INFO
+datels.egg-info/SOURCES.txt
+datels.egg-info/dependency_links.txt
+datels.egg-info/entry_points.txt
+datels.egg-info/requires.txt
+datels.egg-info/top_level.txt
