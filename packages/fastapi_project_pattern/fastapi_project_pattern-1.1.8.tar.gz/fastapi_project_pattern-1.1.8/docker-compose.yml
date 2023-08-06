@@ -1,0 +1,65 @@
+version: "3.8"
+services:
+  servive_{{PROJECT_NAME}}:
+    container_name: {{PROJECT_NAME}}
+    build:
+      context: .
+    working_dir: /usr/app/{{PROJECT_NAME}}
+    env_file: .env
+    ports:
+      - 2306:2306
+    volumes:
+      - .:/usr/app/{{PROJECT_NAME}}
+    depends_on:
+      - mongo
+      - rabbitmq
+
+  rabbitmq:
+    image: rabbitmq:3.8.9-management-alpine
+    container_name: rabbitmq_{{PROJECT_NAME}}
+    restart: on-failure
+    volumes:
+      - rabbitmq_etc:/etc/rabbitmq/
+      - rabbitmq_data:/var/lib/rabbitmq/
+      - rabbitmq_logs:/var/log/rabbitmq/
+    env_file: .env
+    ports:
+      - 16672:15672
+    expose:
+      - 5672
+      - 15672
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo_{{PROJECT_NAME}}
+    restart: on-failure
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME={{MONGO_INITDB_ROOT_USERNAME}}
+      - MONGO_INITDB_ROOT_PASSWORD={{MONGO_INITDB_ROOT_PASSWORD}}
+    ports:
+      - 47017:27017
+    expose:
+      - 27017
+    volumes:
+      - mongo_db:/data/db
+
+  #_p posgresql:
+  #_p   image: postgres:latest
+  #_p   container_name: postgres_{{PROJECT_NAME}}
+  #_p   restart: on-failure
+  #_p   env_file: .env
+  #_p   ports:
+  #_p     - 54329:5432
+  #_p   expose:
+  #_p     - 5432
+  #_p   volumes:
+  #_p     - postgres_db:/var/lib/postgresql/data
+
+volumes:
+  mongo_db:
+  #_p postgres_db:
+  rabbitmq_etc:
+  rabbitmq_data:
+  rabbitmq_logs:
