@@ -1,0 +1,13 @@
+sphinx>=3.2.1
+numpy
+astropy<5.0
+specutils
+sphinx-material
+scipy
+pandas
+nbsphinx
+gwcs<0.17
+celerite2
+matplotlib
+requests
+h5py
