@@ -1,0 +1,4 @@
+[console_scripts]
+boa=boa.cmd:boa_cli
+bws=boa.cmd:boa_cli
+
