@@ -1,0 +1,6 @@
+spdx_license_list
+jsonschema
+PyYAML
+
+[dev]
+pytest<8.0.0,>=6.2.0
