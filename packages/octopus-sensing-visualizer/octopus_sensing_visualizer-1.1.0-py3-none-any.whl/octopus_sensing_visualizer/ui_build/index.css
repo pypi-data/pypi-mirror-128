@@ -1,0 +1,103 @@
+/* This file is part of Octopus Sensing <https://octopus-sensing.nastaran-saffar.me/>
+* Copyright © Nastaran Saffaryazdi 2021
+*
+* Octopus Sensing Visualizer is a free software: you can redistribute it and/or modify it under the
+* terms of the GNU General Public License as published by the Free Software Foundation,
+*  either version 3 of the License, or (at your option) any later version.
+*
+* Octopus Sensing Visualizer is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+* without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+* See the GNU General Public License for more details.
+*
+ You should have received a copy of the GNU General Public License along with Octopus Sensing Visualizer.
+* If not, see <https://www.gnu.org/licenses/>.
+*/
+@font-face {
+    font-family: "dripicons";
+    src: url("/dripicons-v2.woff") format('woff');
+}
+
+.icon-button {
+    font-family: dripicons
+}
+
+#root-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#controller-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px;
+}
+#slider-container {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: left;
+}
+#textbox-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#data-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x:auto;
+    overflow-y:auto;
+    flex: auto;
+    top: 30px;
+}
+
+#signal-container {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+#others-container {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+.big-line-chart {
+    height: 15vh;
+    width: 80vw;
+    position: relative;
+}
+.small-line-chart {
+    height: 15vh;
+    width: 20vw;
+    position: relative;
+}
+
+#slider{
+    width: 80vw;
+    position: relative;
+}
+
+#play-pause-button{
+    width: 30;
+    position: relative;
+}
+
+#reset-button{
+    width: 30;
+    position: relative;
+}
+
+#window-size-box{
+    width: 100;
+    position: relative;
+}
+
+.title {
+    font: bold 1.2em;
+    margin: 0.3em;
+}
