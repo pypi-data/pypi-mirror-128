@@ -1,0 +1,9 @@
+[pyconverters.plugins]
+silero=pyprocessors_silero.silero:SileroProcessor
+
+[pyformatters.plugins]
+silero=pyprocessors_silero.silero:SileroProcessor
+
+[pyprocessors.plugins]
+silero=pyprocessors_silero.silero:SileroProcessor
+
