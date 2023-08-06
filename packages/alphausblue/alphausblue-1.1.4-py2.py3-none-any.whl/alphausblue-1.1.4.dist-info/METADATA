@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: alphausblue
+Version: 1.1.4
+Summary: Alphaus KK's Blue API for Python
+Home-page: https://github.com/alphauslabs/blue-sdk-python
+Author: Alphaus KK
+Author-email: dev@alphaus.cloud
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: google-api-core (>=2.0.1)
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth (>=2.2.0)
+Requires-Dist: google-auth-httplib2
+Requires-Dist: googleapis-common-protos
+Requires-Dist: grpc-gateway-protoc-gen-openapiv2 (>=0.1.0)
+Requires-Dist: grpcio (>=1.41.0)
+Requires-Dist: httplib2
+Requires-Dist: protobuf (>=3.18.0)
+Requires-Dist: requests
+
+UNKNOWN
+
