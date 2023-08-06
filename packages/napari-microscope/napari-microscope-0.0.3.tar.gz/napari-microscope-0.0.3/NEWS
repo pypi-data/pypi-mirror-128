@@ -1,0 +1,19 @@
+Summary of the user-visible changes for each napar-microscope release.
+
+Version 0.0.3 (2021/11/23)
+--------------------------
+
+* No code changes.  This is a maintenance release to make it appear on
+  Napari Hub (https://www.napari-hub.org/)
+
+
+Version 0.0.2 (2021/01/22)
+--------------------------
+
+* Display the contents of README as project long description so it
+  appears on PyPI.
+
+Version 0.0.1 (2021/01/22)
+--------------------------
+
+* Initial release of napari-microscope proof of concept.
