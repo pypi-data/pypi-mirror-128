@@ -1,0 +1,5 @@
+CMRESHandler
+numpy
+pymongo
+requests
+dnspython
