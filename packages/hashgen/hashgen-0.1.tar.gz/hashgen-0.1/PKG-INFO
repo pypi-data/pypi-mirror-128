@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hashgen
+Version: 0.1
+Summary: This program generate hashes from random salts.
+Home-page: https://hashgen.kemuslabs.com
+Author: Diesan Romero
+Author-email: info@kemuslabs.com
+License: MIT
+Download-URL: https://hashgen.kemuslabs.com
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+
+UNKNOWN
+

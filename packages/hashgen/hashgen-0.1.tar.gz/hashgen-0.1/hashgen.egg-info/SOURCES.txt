@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hashgen/__init__.py
+hashgen/algorithms.py
+hashgen/main.py
+hashgen/utilities.py
+hashgen.egg-info/PKG-INFO
+hashgen.egg-info/SOURCES.txt
+hashgen.egg-info/dependency_links.txt
+hashgen.egg-info/requires.txt
+hashgen.egg-info/top_level.txt
