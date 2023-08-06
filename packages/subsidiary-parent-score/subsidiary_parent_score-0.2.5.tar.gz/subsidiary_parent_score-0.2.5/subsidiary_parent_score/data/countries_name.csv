@@ -1,0 +1,4337 @@
+,name
+0,나미비아
+1,Alžírsko
+2,アメリカ領サモア
+3,比利时
+4,Nigérie
+5,Mikroneesia Liiduriigid
+6,Turquie
+7,Ανδόρρα
+8,Turks a Caicos
+9,Papua Neuguinea
+10,プエルトリコ
+11,Insulele Cook
+12,아프가니스탄
+13,Isole Vergini britanniche
+14,Mongolia
+15,Kazachstanas
+16,Νήσοι Φερόες
+17,Irlandia
+18,Ρωσία
+19,جرينلاند
+20,Turecko
+21,مصر
+22,라트비아
+23,Ουζμπεκιστάν
+24,부르키나파소
+25,Antarktika (Antarktis)
+26,تونغا
+27,Λίβανος
+28,โมร็อกโก
+29,Čad
+30,Prantsuse Lõunaalad
+31,جامايكا
+32,Seišellid
+33,Colombia
+34,Dominikánská republika
+35,Сейшельские Острова
+36,Corea del Sud
+37,Estonie
+38,Bulgarija
+39,Saint Pierre och Miquelon
+40,بولندا
+41,Ranskan Polynesia
+42,เดนมาร์ก
+43,Dominikanische Republik
+44,แซ็ง บาร์เตเลมี
+45,Gruzja
+46,サモア
+47,Μπουβέ
+48,Mozambik
+49,أنغويلا
+50,Україна
+51,Туркменістан
+52,Sérvia
+53,Pobrežie Slonoviny
+54,หมู่เกาะมาร์แชลล์
+55,Elfenbenskysten
+56,Ranskan eteläiset alueet
+57,アルバニア
+58,フィジー
+59,투발루
+60,مايوت
+61,赤道几内亚
+62,Majotas
+63,利比里亚
+64,Zuid Afrika
+65,Παπούα Νέα Γουινέα
+66,Dominikanska republiken
+67,Neuseeland
+68,佛得角
+69,Tai
+70,신트마르턴
+71,모리셔스
+72,梵蒂冈
+73,Saint Kitts and Nevis
+74,자메이카
+75,突尼斯
+76,Turcia
+77,Cooköarna
+78,Gröönimaa
+79,Falklandsøyene
+80,Viro
+81,시리아
+82,Fääri saared
+83,Portugalia
+84,قطر
+85,クック諸島
+86,Fransk Guiana
+87,Grèce
+88,Fiji
+89,Mongolië
+90,Bouvetův ostrov
+91,Иордания
+92,Ізраїль
+93,Îles Vierges britanniques
+94,Guiné Bissau
+95,Kapp Verde
+96,النيجر
+97,Σλοβακία
+98,Kazajistán
+99,Niue
+100,モーリタニア
+101,"Korea, Süd"
+102,Ангола
+103,Antigua og Barbuda
+104,อเมริกันซามัว
+105,Камбоджа
+106,República Democrática do Congo
+107,Lituânia
+108,Tailândia
+109,Gibraltár
+110,Mikronesian liittovaltio
+111,Pápua Új Guinea
+112,Baréin
+113,Camboya
+114,芬兰
+115,Грузія
+116,阿尔巴尼亚
+117,Испания
+118,Islas Heard y McDonald
+119,ナミビア
+120,Isole Cook
+121,坦桑尼亚
+122,Південна Корея
+123,Kokosøyene
+124,吉布提
+125,โมซัมบิก
+126,Kiribatis
+127,Rumänien
+128,Bouvet
+129,ซิมบับเว
+130,นอร์เวย์
+131,도미니카 연방
+132,알제리
+133,Малайзія
+134,수리남
+135,Martinique
+136,Tšaad
+137,Άγιος Βαρθολομαίος
+138,United Arab Emirates
+139,Syyria
+140,Bermudes
+141,ケニア
+142,Syrie
+143,ออสเตรเลีย
+144,키프로스
+145,Botsvana
+146,马恩岛
+147,Súdán
+148,Singapour
+149,アンゴラ
+150,カナダ
+151,Kongo Respublika
+152,Papouasie Nouvelle Guinée
+153,Færøerne
+154,コンゴ民主共和国
+155,คิริบาส
+156,Togo
+157,Surinam
+158,เบนิน
+159,มาเลเซีย
+160,Omaan
+161,法国
+162,Białoruś
+163,Kuko Salos
+164,Szlovákia
+165,Fransk Polynesien
+166,Wallis and Futuna
+167,Τζαμάικα
+168,อิสราเอล
+169,Guinea Equatoriale
+170,亚美尼亚
+171,Brunei
+172,"Korea, Nord"
+173,南スーダン
+174,英国
+175,Palestinská autonomie
+176,Vaticaanstad
+177,Alžeeria
+178,Prantsusmaa
+179,Slovakiet
+180,Teritoriile Palestiniene Ocupate
+181,앙골라
+182,Heard ja McDonald
+183,اليابان
+184,インド
+185,오만
+186,Republica Macedonia
+187,Албания
+188,Bahrajn
+189,Rakúsko
+190,Libya
+191,Saudi Arabia
+192,مدغشقر
+193,Kongo Kinshasa
+194,크로아티아
+195,Malaizija
+196,Dominikai Közösség
+197,تايوان
+198,Νησιά Κόκος (Keeling)
+199,阿富汗
+200,越南
+201,Caymanöarna
+202,Equatorial Guinea
+203,Γερμανία
+204,Saint Vincent ja Grenadiinit
+205,Isole Marshall
+206,メキシコ
+207,Šalamúnove ostrovy
+208,Guinee
+209,ทาจิกิสถาน
+210,سان مارينو
+211,Ucrânia
+212,เกาะเล็กรอบนอกของสหรัฐอเมริกา
+213,Иран
+214,Κόστα Ρίκα
+215,الجبل الأسود
+216,บอสเนียและเฮอร์เซโกวีนา
+217,Keňa
+218,Isole Åland
+219,Острови Теркс і Кайкос
+220,القارة القطبية الجنوبية
+221,فنزويلا
+222,Tailandas
+223,Philippinen
+224,Aserbaidžaan
+225,Зовнішні малі острови США
+226,Saint Vincent e Grenadine
+227,Republica Centrafricană
+228,Malasia
+229,Corée du Sud
+230,كوراساو
+231,Zambia
+232,노퍽섬
+233,سريلانكا
+234,Spain
+235,黑山
+236,Тринідад і Тобаго
+237,เกาะคริสต์มาส
+238,Sloveenia
+239,Spojené státy americké
+240,Luxemburg
+241,Trinidadas ir Tobagas
+242,印尼
+243,Cuba
+244,Мавританія
+245,Namibië
+246,Μεξικό
+247,아루바
+248,جزيرة عيد الميلاد
+249,Corea del Sur
+250,กายอานา
+251,República Dominicana
+252,Salomonöarna
+253,Indoneesia
+254,République dominicaine
+255,Nouvelle Zélande
+256,サウジアラビア
+257,Тайвань
+258,Ahvenamaa
+259,Ουγκάντα
+260,丹麦
+261,Haiti
+262,Tailandia
+263,Dominikanske Republik
+264,Саудовская Аравия
+265,Βερμούδες
+266,ลิเบีย
+267,콩고 공화국
+268,หมู่เกาะโคโคส
+269,Мавритания
+270,クリスマス島
+271,ปาเลสไตน์
+272,Μαγιότ
+273,Letônia
+274,Естонія
+275,Италия
+276,República Centro Africana
+277,Ουαλίς και Φουτουνά
+278,Airija
+279,荷兰
+280,Südafrika
+281,Кабо Верде
+282,Folklando (Malvinų) Salos
+283,جزر المالديف
+284,Βενεζουέλα
+285,Saint Kitts i Nevis
+286,Fiyi
+287,Zimbabue
+288,Γκάνα
+289,Australië
+290,Indonezija
+291,Йорданія
+292,Bosnien Hercegovina
+293,Filippine
+294,สโลวาเกีย
+295,Шри Ланка
+296,スヴァールバル諸島およびヤンマイエン島
+297,Norwegia
+298,RD del Congo
+299,에리트레아
+300,อิรัก
+301,Északi Mariana szigetek
+302,Allemagne
+303,ブルキナファソ
+304,Jungtinės Valstijos
+305,Γουινέα
+306,Νορβηγία
+307,Австрия
+308,США
+309,オーランド諸島
+310,Індонезія
+311,Suomija
+312,Santo Tomé y Príncipe
+313,كمبوديا
+314,Camerun
+315,Wietnam
+316,Κένυα
+317,세인트헬레나
+318,Šiaurės Korėja
+319,فيجي
+320,키르기스스탄
+321,นิวแคลิโดเนีย
+322,Andorra
+323,카메룬
+324,왈리스 푸투나
+325,Ліхтенштейн
+326,Cookovy ostrovy
+327,République arabe sahraouie démocratique
+328,Makao
+329,India
+330,Papua Nová Guinea
+331,Belice
+332,Сербія
+333,إسواتيني
+334,Montseratas
+335,Британська Територія в Індійському Океані
+336,Frankrijk
+337,Faeröer
+338,Μονακό
+339,Ilhas Salomão
+340,Ботсвана
+341,Amerikanisch Samoa
+342,República do Congo
+343,มาลาวี
+344,Малави
+345,Lenkija
+346,Dél Korea (Koreai Köztársaság)
+347,Noorwegen
+348,De franske sørterritorier
+349,Paapua Uus Guinea
+350,Kazahsztán
+351,Slowakije
+352,Jamajka
+353,Demokratyczna Republika Konga
+354,Kuuba
+355,칠레
+356,วาลิสและฟูตูนา
+357,Egyesült Arab Emírségek
+358,グアテマラ
+359,바레인
+360,البرتغال
+361,Чили
+362,Εσθονία
+363,Vatikanas
+364,Mergelių Salos (JAV)
+365,加纳
+366,Туніс
+367,Kroatië
+368,纳米比亚
+369,Nigeria
+370,Maldiverne
+371,Afghanistan
+372,غوادلوب
+373,Kesk Aafrika Vabariik
+374,Argentine
+375,Albánia
+376,Сент Люсия
+377,بوتان
+378,Maldiivid
+379,Bouvetøya
+380,Guernsey
+381,コスタリカ
+382,นครรัฐวาติกัน
+383,Saudi Arabien
+384,Francúzska Polynézia
+385,Viet Nam
+386,Wallis und Futuna
+387,Grenade (pays)
+388,Üzbegisztán
+389,Irão
+390,Nepalas
+391,บรูไน
+392,Somalie
+393,冈比亚
+394,Île Christmas
+395,Paesi Bassi
+396,통가
+397,Bután
+398,Prancūzijos Polinezija
+399,Kuwejt
+400,Senegal
+401,Tajlandia
+402,Доминиканская Республика
+403,بوليفيا
+404,Μαρόκο
+405,Svazijsko
+406,บริติชอินเดียนโอเชียนเทร์ริทอรี
+407,Ilhas Virgens Britânicas
+408,เกิร์นซีย์
+409,Nordkorea
+410,毛里求斯
+411,เกรเนดา
+412,우크라이나
+413,사모아
+414,Heardov ostrov
+415,Северная Македония
+416,Lotyšsko
+417,กือราเซา
+418,Κογκό
+419,Rusland
+420,Kookossaaret
+421,Ινδία
+422,哥斯达黎加
+423,Nuova Caledonia
+424,Belgie
+425,Sveits
+426,Taïwan / (République de Chine (Taïwan))
+427,Суринам
+428,合衆国領有小離島
+429,폴란드
+430,Tanzanija
+431,"Saint Helena, Ascension and Tristan da Cunha"
+432,フェロー諸島
+433,Etiopia
+434,Albânia
+435,Финляндия
+436,Γαλλία
+437,南アフリカ
+438,印度
+439,Sierra Leone
+440,Румыния
+441,Norsunluurannikko
+442,Сьерра Леоне
+443,남수단
+444,Republika Środkowoafrykańska
+445,Comore
+446,Spagna
+447,슬로베니아
+448,جمهورية الكونغو
+449,Alandy
+450,Gvatemala
+451,Suiza
+452,Vietnam
+453,Albanien
+454,영국령 버진아일랜드
+455,تيمور الشرقية
+456,غواتيمالا
+457,ليبيريا
+458,기니비사우
+459,Burundi
+460,Wallis ja Futuna
+461,Wyspa Bożego Narodzenia
+462,อาเซอร์ไบจาน
+463,Malte
+464,Saoedi Arabië
+465,แซมเบีย
+466,Falklandeilanden
+467,Ameerika Ühendriigid
+468,Saudiarabien
+469,ドイツ
+470,Μπουρούντι
+471,Kaimanisaared
+472,آيسلندا
+473,Κεντροαφρικανική Δημοκρατία
+474,Nordmarianerna
+475,มาดากัสการ์
+476,Isole Falkland
+477,Боснія і Герцеговина
+478,동티모르
+479,Kirgizië
+480,Noord Macedonië
+481,الإمارات العربية المتحدة
+482,Guadelupa
+483,Färöer
+484,マラウイ
+485,보스니아 헤르체고비나
+486,Cook szigetek
+487,Francouzská Polynésie
+488,Republika Zielonego Przylądka
+489,IJsland
+490,Карибські Нідерланди
+491,غيرنزي
+492,Марокко
+493,Déli Georgia és Déli Sandwich szigetek
+494,Нова Зеландія
+495,Französisch Guayana
+496,Кенія
+497,セントルシア
+498,라이베리아
+499,セントクリストファー・ネイビス
+500,Norfolkön
+501,ナウル
+502,팔라우
+503,巴拿马
+504,Georgië
+505,Argelia
+506,Poola
+507,Nepal
+508,Sahara Occidentale
+509,菲律宾
+510,Ιρλανδία
+511,ウガンダ
+512,Tunezja
+513,Czarnogóra
+514,솔로몬 제도
+515,아이슬란드
+516,Monaco
+517,"Kongo, Demokratische Republik"
+518,Kamerun
+519,Filippiinit
+520,Norfolkøya
+521,Ολλανδία (Κάτω Χώρες)
+522,Bénin
+523,Bosnia y Herzegovina
+524,Comores (pays)
+525,ดอมินีกา
+526,Sudan Południowy
+527,베트남
+528,Západní Sahara
+529,Kazachstán
+530,Île Bouvet
+531,波兰
+532,감비아
+533,Norfolko sala
+534,Unkari
+535,Fehéroroszország
+536,Ηνωμένες Πολιτείες Αμερικής
+537,كرواتيا
+538,Francia Polinézia
+539,Algeriet
+540,Messico
+541,터크스 케이커스 제도
+542,Gibilterra
+543,Heard sziget és McDonald szigetek
+544,Îles Cook
+545,쿠바
+546,Ilhas Feroé
+547,Маршаллові Острови
+548,퀴라소
+549,斯洛文尼亚
+550,Sudán
+551,غينيا بيساو
+552,بلغاريا
+553,Micronesia
+554,Panamá
+555,Німеччина
+556,Эсватини
+557,Liechtenstein
+558,سيشل
+559,สวีเดน
+560,Noord Korea
+561,Britiske Jomfruøer
+562,Антарктида
+563,Slovénie
+564,Cap Vert
+565,Chile
+566,ซูดาน
+567,แคนาดา
+568,Šri Lanka
+569,乌克兰
+570,Honduras
+571,Ukrajna
+572,"Острова Святой Елены, Вознесения и Тристан да Кунья"
+573,Espanja
+574,Cookøerne
+575,São Tomé ja Príncipe
+576,塞拉利昂
+577,Francouzská Guyana
+578,Mexikó
+579,Νήσοι Νότια Γεωργία και Νότιες Σάντουιτς
+580,Papoea Nieuw Guinea
+581,China
+582,Боливия
+583,Κίνα
+584,Бруней
+585,Мальта
+586,หมู่เกาะเติกส์และเคคอส
+587,Bahamos
+588,Elveția
+589,Південна Джорджія та Південні Сандвічеві Острови
+590,Болівія
+591,Kambodscha
+592,Cooki saared
+593,Põhja Korea
+594,Litvánia
+595,베네수엘라
+596,Αυστραλία
+597,Turkmenistan
+598,Îles Heard et MacDonald
+599,Laosas
+600,Moçambique
+601,Ангілья
+602,Norge
+603,中華人民共和国
+604,Thailandia
+605,Pakistan
+606,Nord Marianene
+607,Micronezia
+608,Vatikan
+609,Turks ja Caicos
+610,แอนติกาและบาร์บูดา
+611,Kaimanų salos
+612,ココス（キーリング）諸島
+613,Ινδονησία
+614,英属印度洋领地
+615,Liibanon
+616,"Bonaire, Sint Eustatius og Saba"
+617,法属圣马丁
+618,韩国
+619,キプロス
+620,塔吉克斯坦
+621,อิเควทอเรียลกินี
+622,Moldavie
+623,Γουατεμάλα
+624,Dalekie Wyspy Mniejsze Stanów Zjednoczonych
+625,ปานามา
+626,Micronesia (Federated States of)
+627,Itaalia
+628,Saint Vincent ja Grenadiinid
+629,بولينزيا الفرنسية
+630,Isole Cayman
+631,Eslovenia
+632,Spojené kráľovstvo
+633,Французька Полінезія
+634,키리바시
+635,Israël
+636,美国
+637,Coreea de Sud
+638,Japonsko
+639,ชิลี
+640,일본
+641,Santa Lúcia
+642,文莱
+643,Grönlanti
+644,Polinesia francese
+645,Nigeeria
+646,헝가리
+647,Maldiverna
+648,Granada
+649,Tadjikistan
+650,모나코
+651,Laosz
+652,墨西哥
+653,帕劳
+654,Херд и Макдональд
+655,Magyarország
+656,老挝
+657,Marshall Islands
+658,جزر مارشال
+659,Costa de Marfil
+660,جزر فارو
+661,모리타니
+662,جزر العذراء الأمريكية
+663,Κομόρες
+664,Ghana
+665,Libanon
+666,โคลอมเบีย
+667,Dominikaaninen tasavalta
+668,英属维尔京群岛
+669,Gwinea Bissau
+670,Svájc
+671,คูเวต
+672,إندونيسيا
+673,巴西
+674,ニカラグア
+675,Бермуды
+676,Танзанія
+677,케냐
+678,Samoa Americane
+679,Σλοβενία
+680,苏里南
+681,الجزائر
+682,‎สฟาลบาร์และยานไมเอน
+683,มายอต
+684,Гренландія
+685,Filipíny
+686,法罗群岛
+687,Vest Sahara
+688,Filippinerna
+689,Γουιάνα
+690,Equatoriaal Guinea
+691,Burkina Faso
+692,อุรุกวัย
+693,Νότια Αφρική
+694,Maldivas
+695,美国本土外小岛屿
+696,Saudi Arabia
+697,Pohjois Mariaanit
+698,Finnország
+699,Argentinië
+700,奥兰
+701,Chiny
+702,Comores
+703,多哥
+704,Guinea
+705,Guineea
+706,Maldivene
+707,Angilija
+708,جيبوتي
+709,Tyskland
+710,Mosambiik
+711,Řecko
+712,بوروندي
+713,Uzbekistanas
+714,Iraque
+715,Ilha Heard e Ilhas McDonald
+716,Буркіна Фасо
+717,콜롬비아
+718,博茨瓦纳
+719,Arménsko
+720,Brésil
+721,브라질
+722,موناكو
+723,Austraalia
+724,Iran (Islamic Republic of)
+725,أرمينيا
+726,Philippines
+727,Сомали
+728,Tokelau szigetek
+729,卢森堡
+730,Syria
+731,Seychellene
+732,Nederlandske Antiller
+733,Північні Маріанські Острови
+734,Vatikaanivaltio
+735,Antártida
+736,安圭拉
+737,コモロ
+738,Svatá Lucie
+739,Ελ Σαλβαδόρ
+740,Белиз
+741,Португалия
+742,Bouvet Island
+743,バングラデシュ
+744,Швейцарія
+745,摩洛哥
+746,Реюньйон
+747,Республіка Конго
+748,Kórejská ľudovodemokratická republika
+749,Saint Martin (Ranska)
+750,コンゴ共和国
+751,Bahamas
+752,السلفادور
+753,Fransk Guyana
+754,Caribisch Nederland
+755,Kambodzsa
+756,세네갈
+757,Cambogia
+758,Kalėdų sala
+759,Jordánsko
+760,Slowenien
+761,부룬디
+762,เซนต์คิตส์และเนวิส
+763,Riunione
+764,جنوب أفريقيا
+765,尼日尔
+766,Mauritanija
+767,Portugal
+768,Polynésie française
+769,Britisches Territorium im Indischen Ozean
+770,هندوراس
+771,Δυτική Όχθη
+772,نيوزيلندا
+773,Oost Timor
+774,네팔
+775,Sri Lanka
+776,Lesotho
+777,Νήσοι Χερντ και Μακντόναλντ
+778,Zuid Korea
+779,Kongói Köztársaság (Kongó)
+780,Остров Рождества
+781,Zöld foki Köztársaság
+782,Сен Мартен
+783,Storbritannia
+784,Taliansko
+785,ジブラルタル
+786,그린란드
+787,Saint Kitts en Nevis
+788,Dominika
+789,Nowa Zelandia
+790,Sfânta Elena
+791,Dél afrikai Köztársaság
+792,Oroszország
+793,Turkmėnija
+794,Seychellen
+795,Tsjad
+796,กินี บิสเซา
+797,سانت فينسنت والغرينادين
+798,Венгрия
+799,สโลวีเนีย
+800,Közép Afrika
+801,كوبا
+802,Китай (Китайская Народная Республика)
+803,Reunião
+804,Bosnia ja Hertsegovina
+805,Territoire britannique de l'océan Indien
+806,Мозамбік
+807,Nigeris
+808,이탈리아
+809,Saint Pierre és Miquelon
+810,ซาอุดีอาระเบีย
+811,Καναδάς
+812,Amerikai Szamoa
+813,Marokko
+814,Isola di Man
+815,Jungtiniai Arabų Emyratai
+816,โมนาโก
+817,เซียร์ราลีโอน
+818,Αυστρία
+819,Bhútán
+820,Belarus
+821,สหราชอาณาจักร
+822,Ιορδανία
+823,Jeemen
+824,Amerikanske Jomfruøer
+825,Βοσνία Ερζεγοβίνη
+826,Brunei Darussalam
+827,Japonia
+828,Østerrike
+829,Ливан
+830,Fidji
+831,Turkija
+832,ニューカレドニア
+833,Južný Sudán
+834,Mergelių Salos (Didžioji Britanija)
+835,คีร์กีซสถาน
+836,Соломонові Острови
+837,Vánoční ostrov
+838,Storbritannien
+839,斯洛伐克
+840,Швеция
+841,Brasile
+842,Sfânta Lucia
+843,Itä Timor
+844,Νικαράγουα
+845,Панама
+846,Maledivy
+847,Коморські Острови
+848,Egypt
+849,ฟิลิปปินส์
+850,Saint Pierre et Miquelon
+851,チャド
+852,안도라
+853,マルティニーク
+854,Islandia
+855,Oezbekistan
+856,也门
+857,Волліс і Футуна
+858,Grécia
+859,Caymansaaret
+860,불가리아
+861,Čilė
+862,葡萄牙
+863,Netherlands
+864,В'єтнам
+865,Fülöp szigetek
+866,Τουρκμενιστάν
+867,Μπρουνέι
+868,سيراليون
+869,Salomonsaaret
+870,ซีเรีย
+871,Люксембург
+872,Ispanija
+873,Gâmbia
+874,Майотта
+875,Βόρειες Μαριάνες Νήσοι
+876,หมู่เกาะพิตแคร์น
+877,Insulele Virgine Britanice
+878,แคเมอรูน
+879,Pietų Sudanas
+880,Géorgie (pays)
+881,キリバス
+882,زيمبابوي
+883,Turks  og Caicosøerne
+884,Πακιστάν
+885,ギリシャ
+886,Černá Hora
+887,รวันดา
+888,South Georgia og South Sandwich Islands
+889,Alankomaat
+890,Бангладеш
+891,Bosnia Hercegovina
+892,Новая Зеландия
+893,Liban
+894,Gujana
+895,Vietnã
+896,Algéria
+897,"Congo, Democratic Republic of the"
+898,Szerbia
+899,ノーフォーク島
+900,Suazilandia
+901,刚果民主共和国
+902,Tansaania
+903,Ilhas Cayman
+904,ギニア
+905,Indonézia
+906,Mikronesien
+907,Côte d'Ivoire
+908,Lituanie
+909,Canada
+910,Svatý Tomáš a Princův ostrov
+911,阿尔及利亚
+912,Сьєрра Леоне
+913,Бермудські Острови
+914,แองกวิลลา
+915,Briti India ookeani ala
+916,Azerbaidžan
+917,Stredoafrická republika
+918,トルクメニスタン
+919,フィンランド
+920,Bahamy
+921,세인트키츠 네비스
+922,Marshallovy ostrovy
+923,Macedonia del Norte
+924,Montenegró
+925,몽골
+926,根西
+927,Mauricius
+928,Grenada
+929,Menší odlehlé ostrovy USA
+930,Tunísia
+931,Мали
+932,Guyana
+933,Catar
+934,Csád
+935,팔레스타인
+936,Nederländerna
+937,Chorvatsko
+938,Bosnia and Herzegovina
+939,فرنسا
+940,بيلاروس
+941,Äquatorialguinea
+942,Isla Norfolk
+943,Bahama szigetek
+944,북마리아나 제도
+945,Σουρινάμ
+946,Egyenlítői Guinea
+947,Iraan
+948,Oeganda
+949,세인트빈센트 그레나딘
+950,Norfolkinsel
+951,Palästina
+952,ไทย
+953,Korea Południowa
+954,Σάο Τομέ και Πρίνσιπε
+955,Bolivia (Plurinational State of)
+956,Görögország
+957,Kajmany
+958,도미니카 공화국
+959,Kongon tasavalta
+960,Tádzsikisztán
+961,Ilhas Cook
+962,Мартиника
+963,ルワンダ
+964,Сенегал
+965,Ρουάντα
+966,Indija
+967,Lettország
+968,São Tomé och Príncipe
+969,바티칸 시국
+970,Túnez
+971,Amerikanska Jungfruöarna
+972,Norfolk sziget
+973,马提尼克
+974,Kuvait
+975,Brazília
+976,Μπαχρέιν
+977,Seychelle szigetek
+978,ベルギー
+979,新加坡
+980,Bolivie
+981,Мальдіви
+982,Filipijnen
+983,科摩罗
+984,Azerbaijan
+985,온두라스
+986,Mozambic
+987,المملكة المتحدة
+988,Letonia
+989,Мартиніка
+990,Gvadelupa
+991,Szíria
+992,Liberia
+993,Японія
+994,เกาะเซาท์จอร์เจียและหมู่เกาะเซาท์แซนด์วิช
+995,Mehhiko
+996,Insula Bouvet
+997,Svaasimaa
+998,Туркмения
+999,Território Britânico do Oceano Índico
+1000,Ρεϊνιόν
+1001,Yhdistynyt kuningaskunta
+1002,Feröer
+1003,Iirimaa
+1004,Lucembursko
+1005,Birma
+1006,Islas Caimán
+1007,Lussemburgo
+1008,Syrië
+1009,Britské Panenské ostrovy
+1010,تركمانستان
+1011,โปรตุเกส
+1012,Κιργιζία
+1013,Laos
+1014,ЮАР
+1015,فلسطين
+1016,몰디브
+1017,Finlanda
+1018,Алжир
+1019,Joulusaari
+1020,Marruecos
+1021,Чехія
+1022,Salamon szigetek
+1023,Gruzija
+1024,Gabun
+1025,Malajzia
+1026,جمهورية الدومينيكان
+1027,Острів Херд і острови Макдональд
+1028,Μαυροβούνιο
+1029,تشيلي
+1030,ฮ่องกง
+1031,危地马拉
+1032,토켈라우
+1033,Ліван
+1034,Arabie saoudite
+1035,Kookossaared
+1036,Marshalli Saared
+1037,モルディブ
+1038,แอลเบเนีย
+1039,Португалія
+1040,ซานมารีโน
+1041,Papua Nova Guiné
+1042,الولايات المتحدة
+1043,Salvadoras
+1044,Bahrein
+1045,มาลี
+1046,Poland
+1047,Komorerna
+1048,Κουρασάο
+1049,Islas Turcas y Caicos
+1050,กรีซ
+1051,Italija
+1052,Greenland
+1053,Malavis
+1054,Türgi
+1055,Cabo Verde
+1056,아르메니아
+1057,Cyprus
+1058,몰도바
+1059,쿠웨이트
+1060,Kuveitas
+1061,Suécia
+1062,Chorwacja
+1063,Дания
+1064,Латвія
+1065,Comoros
+1066,パキスタン
+1067,Égypte
+1068,미국령 버진아일랜드
+1069,Falklandi saared
+1070,Ουκρανία
+1071,Albanië
+1072,Brit Virgin szigetek
+1073,누벨칼레도니
+1074,JAV užjūrio mažosios salos
+1075,加蓬
+1076,Kasakhstan
+1077,Guiana
+1078,Острова Кайман
+1079,Espanha
+1080,マリ
+1081,Martinica
+1082,Kokosų (Kilingo) Salos
+1083,Zambija
+1084,Haití
+1085,Гамбия
+1086,图瓦卢
+1087,Kasachstan
+1088,Nyderlandai
+1089,Grecja
+1090,라오스
+1091,Iraak
+1092,Jamaïque
+1093,Horvátország
+1094,ツバル
+1095,Austrálie
+1096,Pitcairnöarna
+1097,Гана
+1098,安提瓜和巴布达
+1099,Bolivien
+1100,프랑스
+1101,Turquía
+1102,Wallis og Futuna
+1103,Домініка
+1104,Sint Maarten (partea franceză)
+1105,Bahama
+1106,Вануату
+1107,Peruu
+1108,Elefántcsontpart
+1109,Franciaország
+1110,Brasilien
+1111,Dominikana
+1112,Etelä Afrikka
+1113,Ελλάδα
+1114,Багамські Острови
+1115,Montserrat
+1116,Gambija
+1117,부탄
+1118,Sverige
+1119,غويانا الفرنسية
+1120,Frankrig
+1121,Ilhas Marshall
+1122,Nicarágua
+1123,Μαυριτανία
+1124,Ζάμπια
+1125,Nord Korea
+1126,Norvège
+1127,เลโซโท
+1128,Szwecja
+1129,アルジェリア
+1130,Tanska
+1131,لا ريونيون
+1132,New Caledonia
+1133,سلوفاكيا
+1134,ドミニカ共和国
+1135,ساموا
+1136,Iordania
+1137,Japani
+1138,Καζακστάν
+1139,Mauritanie
+1140,Norway
+1141,多米尼克
+1142,荷属圣马丁
+1143,Svalbard og Jan Mayen (Norge)
+1144,بنما
+1145,Oostenrijk
+1146,Marshallinsaaret
+1147,Hungary
+1148,Komorai
+1149,Sankt Helena
+1150,Isle of Man
+1151,ماكاو
+1152,"Vaticano, Ciudad del"
+1153,Γαλλική Πολυνησία
+1154,스리랑카
+1155,约旦
+1156,Монголія
+1157,Honkongas
+1158,白俄罗斯
+1159,Taiwán (República de China)
+1160,Coasta de Fildeș
+1161,Северные Марианские Острова
+1162,Σβάλμπαρντ
+1163,Σουδάν
+1164,Τσεχία
+1165,Roheneemesaared
+1166,Маврикий
+1167,Gambie
+1168,Olaszország
+1169,조지아
+1170,허드 맥도널드 제도
+1171,Bolivija
+1172,Insulele Feroe
+1173,Американське Самоа
+1174,Μαδαγασκάρη
+1175,Szenegál
+1176,Duitsland
+1177,Croacia
+1178,Verenigde Staten
+1179,Thailand
+1180,法属南部和南极领地
+1181,Коста Рика
+1182,Líbano
+1183,Turks  en Caicoseilanden
+1184,Botsuana
+1185,Непал
+1186,Georgien
+1187,Палестина
+1188,이라크
+1189,Νήσοι Φώκλαντ
+1190,Mjanma
+1191,Острів Буве
+1192,Comore szigetek
+1193,Nueva Zelanda
+1194,Άγιος Μαρίνος
+1195,Republica Moldova
+1196,アンドラ
+1197,French Southern Territories
+1198,Центральноафриканська Республіка
+1199,Yémen
+1200,圭亚那
+1201,Chypre (pays)
+1202,Équateur (pays)
+1203,Vakarų Sahara
+1204,Centraal Afrikaanse Republiek
+1205,Luxemburgo
+1206,Malediven
+1207,Omán
+1208,Azerbajdzjan
+1209,Ніуе
+1210,Macau
+1211,French Polynesia
+1212,Sint Maarten (partea olandeză)
+1213,Швейцария
+1214,中国台湾省（中華民国）
+1215,Saint Barthélemy
+1216,Belgique
+1217,아랍에미리트
+1218,토고
+1219,Bouvetøen
+1220,Fidschi
+1221,Spanien
+1222,Κουβέιτ
+1223,モーリシャス
+1224,Микронезия
+1225,Σαμόα
+1226,Wyspa Man
+1227,Birmanie
+1228,Hviterussland
+1229,Stany Zjednoczone
+1230,Bangladešas
+1231,Bośnia i Hercegowina
+1232,Denmark
+1233,Czad
+1234,Bisau Gvinėja
+1235,Palestína
+1236,Fidžis
+1237,南苏丹
+1238,Turkki
+1239,Malaysia
+1240,Malaisie
+1241,Benín
+1242,บูร์กินาฟาโซ
+1243,อันดอร์รา
+1244,モロッコ
+1245,Βουλγαρία
+1246,Ungheria
+1247,Somalië
+1248,จอร์แดน
+1249,"Jomfruøyene, De britiske"
+1250,Csehország
+1251,Nemecko
+1252,Bulgarije
+1253,瓦利斯和富图纳
+1254,Severní Makedonie
+1255,กินี
+1256,マルタ
+1257,Мозамбик
+1258,Französisch Polynesien
+1259,Macedônia do Norte
+1260,กาบูเวร์ดี
+1261,أوزبكستان
+1262,ไนจีเรีย
+1263,Gajana
+1264,Фарерські острови
+1265,เซาท์ซูดาน
+1266,Heard  och McDonaldöarna
+1267,Ватикан
+1268,Salomonøyene
+1269,Guam
+1270,Sfântul Vincent și Grenadine
+1271,Południowa Afryka
+1272,Barbadosas
+1273,Antarktída
+1274,Coreia do Norte
+1275,인도
+1276,ポルトガル
+1277,مالي
+1278,Нидерланды
+1279,Tokelau
+1280,Αφγανιστάν
+1281,Beninas
+1282,Mauritânia
+1283,Υεμένη
+1284,België
+1285,Албанія
+1286,Norra
+1287,Komorene
+1288,Болгарія
+1289,Morocco
+1290,Slovakkia
+1291,Spitzbergen und Jan Mayen
+1292,Caymanøyene
+1293,Chipre
+1294,Ouzbékistan
+1295,Парагвай
+1296,Cipru
+1297,ミクロネシア連邦
+1298,Bulgaria
+1299,Ανγκόλα
+1300,Isla Bouvet
+1301,Ækvatorialguinea
+1302,Dinamarca
+1303,หมู่เกาะคุก
+1304,Филиппины
+1305,นอร์ทมาซิโดเนีย
+1306,Coreia do Sul
+1307,Paragvajus
+1308,所罗门群岛
+1309,Maldives
+1310,San Pedro y Miquelón
+1311,キルギス
+1312,페로 제도
+1313,Ναουρού
+1314,Guyana francese
+1315,チリ
+1316,Nova Zelândia
+1317,Ny Caledonia
+1318,리비아
+1319,Serbija
+1320,Antigua och Barbuda
+1321,Põhja Mariaanid
+1322,Σαιν Πιερ και Μικελόν
+1323,Läti
+1324,Georgia del Sud e Isole Sandwich Australi
+1325,Svätá Lucia
+1326,シエラレオネ
+1327,直布罗陀
+1328,Mauritius
+1329,Azerbaiyán
+1330,바누아투
+1331,Nya Kaledonien
+1332,Nowa Kaledonia
+1333,Maldivy
+1334,フランス
+1335,Litouwen
+1336,Kokosinseln
+1337,Tschechien
+1338,Alemanha
+1339,الهند
+1340,关岛
+1341,Остров Буве
+1342,Heard  og McDonaldøyene
+1343,Mianmar
+1344,Croatia
+1345,Quênia
+1346,Mozambique
+1347,Египет
+1348,Νέα Καληδονία
+1349,Ungarn
+1350,ボスニア・ヘルツェゴビナ
+1351,赫德岛和麦克唐纳群岛
+1352,Барбадос
+1353,อัฟกานิสถาน
+1354,Österreich
+1355,Южный Судан
+1356,นาอูรู
+1357,モザンビーク
+1358,Central African Republic
+1359,Nova Caledônia
+1360,Kap Verde
+1361,Republica Dominicană
+1362,Antigua és Barbuda
+1363,Australie
+1364,Fínsko
+1365,Zuid Georgia en de Zuidelijke Sandwicheilanden
+1366,Lääne Sahara
+1367,Indien
+1368,Израиль
+1369,Jordanien
+1370,Гонконг
+1371,Ірак
+1372,ไต้หวัน
+1373,Islas Vírgenes de los Estados Unidos
+1374,Γαλλική Γουιάνα
+1375,Απομακρυσμένες Νησίδες των Ηνωμένων Πολιτειών
+1376,Νήσος Μαν
+1377,Ahvenanmaa
+1378,Yhdysvaltain pienet erillissaaret
+1379,Griechenland
+1380,"Kongo, Republikken"
+1381,Фарерские острова
+1382,尼泊尔
+1383,アメリカ領ヴァージン諸島
+1384,Norvégia
+1385,Izraelis
+1386,Filipiny
+1387,Afrique du Sud
+1388,Білорусь
+1389,Croácia
+1390,Vatikanstaten
+1391,Turks  und Caicosinseln
+1392,Tsjaad
+1393,サン・マルタン（フランス領）
+1394,Västsahara
+1395,Koweït
+1396,布基纳法索
+1397,荷兰加勒比区
+1398,Kajmanie ostrovy
+1399,Korea Północna
+1400,Solomon Islands
+1401,Šveicarija
+1402,Antigua ja Barbuda
+1403,República Checa
+1404,Hiina
+1405,موريتانيا
+1406,ميانمار
+1407,Bermudy
+1408,بابوا غينيا الجديدة
+1409,지부티
+1410,"Taiwan, Province of China"
+1411,Zwitserland
+1412,イエメン
+1413,Австралия
+1414,Γκαμπόν
+1415,Gruzie
+1416,Папуа Нова Гвінея
+1417,كازاخستان
+1418,喀麦隆
+1419,Tokelauöarna
+1420,Senegalas
+1421,Germania
+1422,Ανατολικό Τιμόρ
+1423,Wallis a Futuna
+1424,南非
+1425,Венесуэла
+1426,Saint Vincent et les Grenadines
+1427,Malajsie
+1428,巴拉圭
+1429,Austrija
+1430,Сирія
+1431,Città del Vaticano
+1432,Wit Rusland
+1433,Severné Mariány
+1434,ОАЕ
+1435,De forente arabiske emirater
+1436,Etioopia
+1437,Kuveit
+1438,Зімбабве
+1439,Meksyk
+1440,Írsko
+1441,Saint Pierre ja Miquelon
+1442,Armėnija
+1443,الأردن
+1444,Deutschland
+1445,เบลเยียม
+1446,Guiné
+1447,Brittiska territoriet i Indiska Oceanen
+1448,Kasahstan
+1449,Τοκελάου
+1450,스페인
+1451,프랑스령 기아나
+1452,Briti Neitsisaared
+1453,Nórsko
+1454,Μολδαβία
+1455,Uganda
+1456,นิการากัว
+1457,ترينيداد وتوباغو
+1458,Гренландия
+1459,Tanzania
+1460,Sør Korea
+1461,Katar
+1462,Belgium
+1463,بوركينا فاسو
+1464,Kongo Vabariik
+1465,موزمبيق
+1466,阿曼
+1467,Rwanda
+1468,Rumænien
+1469,シント・マールテン（オランダ領）
+1470,Saint Lucia
+1471,Srbsko
+1472,Сомалі
+1473,Észak Macedónia
+1474,中央アフリカ共和国
+1475,Ny Kaledonien
+1476,Turks i Caicos
+1477,Egiptas
+1478,Algieria
+1479,Tunesien
+1480,Сен Бартелеми (Карибы)
+1481,Франция
+1482,Bosnien und Herzegowina
+1483,네덜란드
+1484,บาฮามาส
+1485,ยูกันดา
+1486,Saint Pierre und Miquelon
+1487,Málta
+1488,แองโกลา
+1489,조선민주주의인민공화국
+1490,Slovacchia
+1491,อาร์มีเนีย
+1492,Ναμίμπια
+1493,Нікарагуа
+1494,타지키스탄
+1495,Dánsko
+1496,Grønland
+1497,Ангилья
+1498,圣马力诺
+1499,Rep. Ceca
+1500,Moldavsko
+1501,"Bonaire, San Eustaquio y Saba"
+1502,จีน
+1503,Demokratická republika Kongo
+1504,Bosna a Hercegovina
+1505,Azerbaidjan
+1506,المجر
+1507,Sýria
+1508,Elfenbeinküste
+1509,Isola Bouvet
+1510,ナイジェリア
+1511,Új Zéland
+1512,Jižní Súdán
+1513,Сент Кіттс і Невіс
+1514,Finnland
+1515,タークス・カイコス諸島
+1516,المكسيك
+1517,Egito
+1518,Vianočný ostrov
+1519,"Bonaire, Sint Eustatius i Saba"
+1520,Îles Féroé
+1521,Ιράκ
+1522,Egitto
+1523,Turquemenistão
+1524,Bosnië en Herzegovina
+1525,Camboja
+1526,孟加拉国
+1527,ガンビア
+1528,Антигуа и Барбуда
+1529,Palestyna
+1530,Νησί Νόρφολκ
+1531,Sydgeorgien
+1532,Portugália
+1533,乍得
+1534,以色列
+1535,Antigua e Barbuda
+1536,オーストラリア
+1537,Libérie
+1538,Česko
+1539,Insula Heard și Insulele McDonald
+1540,마르티니크
+1541,Маршалловы Острова
+1542,Malí
+1543,Prancūzija
+1544,Britské indickooceánské území
+1545,Малайзия
+1546,Jamaica
+1547,Δυτική Σαχάρα
+1548,Τατζικιστάν
+1549,Curazao
+1550,United States Minor Outlying Islands
+1551,جزيرة بوفيه
+1552,瑞典
+1553,Roumanie
+1554,Словаччина
+1555,Кот д'Івуар
+1556,Західна Сахара
+1557,Κολομβία
+1558,USA
+1559,Isla de Man
+1560,Malesia
+1561,Kõrgõzstan
+1562,짐바브웨
+1563,Guernsey Bailiffség
+1564,España
+1565,圣文森特和格林纳丁斯
+1566,Lettonie
+1567,Erytrea
+1568,Sfântul Pierre și Miquelon
+1569,Kongo Demokratinė Respublika
+1570,Ouganda
+1571,Irlanda
+1572,北マリアナ諸島
+1573,우간다
+1574,"Šv. Elenos, Dangun Žengimo, Tristanas da Kunja salos"
+1575,Rússia
+1576,Wyspy Kokosowe
+1577,Fær Øer
+1578,Macedonia del Nord
+1579,คอโมโรส
+1580,Kenija
+1581,Cookeilanden
+1582,Heard en McDonaldeilanden
+1583,Гвінея
+1584,โทเคอเลา
+1585,Μαυρίκιος
+1586,Maldyvai
+1587,โรมาเนีย
+1588,미국령 군소 제도
+1589,Prantsuse Guajaana
+1590,캄보디아
+1591,أندورا
+1592,โตโก
+1593,澳门
+1594,Внешние малые острова США
+1595,Νότια Κορέα
+1596,غرينادا
+1597,Salvádor
+1598,Monténégro
+1599,Marrocos
+1600,Mónaco
+1601,Mosambik
+1602,Ryssland
+1603,Kambodsja
+1604,Turquia
+1605,Eritreea
+1606,Szamoa
+1607,Kroatija
+1608,美属萨摩亚
+1609,Tjeckien
+1610,圣赫勒拿、阿森松和特里斯坦 达库尼亚
+1611,КНДР (Корейская Народно Демократическая Республика)
+1612,Cocosøerne
+1613,Беліз
+1614,Camerún
+1615,Spania
+1616,덴마크
+1617,Etiopija
+1618,São Cristóvão e Névis
+1619,Saint Martin
+1620,Czechia
+1621,Saara Ocidental
+1622,Madagáscar
+1623,Somálsko
+1624,Gana
+1625,Mianmaras
+1626,Північна Македонія
+1627,Słowenia
+1628,Elevandiluurannik
+1629,Finlândia
+1630,أوكرانيا
+1631,과들루프
+1632,"Boneras, Sint Eustatijus ir Saba (BES salos)"
+1633,Άγιος Μαρτίνος (Ολλανδία)
+1634,Irák
+1635,Колумбия
+1636,레소토
+1637,República del Congo
+1638,Papua Ny Guinea
+1639,"Makedonia, Republikken"
+1640,스웨덴
+1641,Ilhas Geórgia do Sul e Sandwich do Sul
+1642,Itävalta
+1643,أذربيجان
+1644,ソマリア
+1645,Ilha Norfolk
+1646,Noua Zeelandă
+1647,Черногория
+1648,Άγιος Βικέντιος και Γρεναδίνες
+1649,Λεσότο
+1650,Macédoine du Nord
+1651,ニウエ
+1652,Sudanas
+1653,إثيوبيا
+1654,Vatikán
+1655,Russie
+1656,Μπανγκλαντές
+1657,Saint Vincent og Grenadinerne
+1658,جمهورية أفريقيا الوسطى
+1659,프랑스령 폴리네시아
+1660,Palaos
+1661,레위니옹
+1662,Tanzânia
+1663,Peru
+1664,Groenlandia
+1665,Italy
+1666,เลบานอน
+1667,Nya Zeeland
+1668,"Бонэйр, Синт Эстатиус и Саба"
+1669,Γκουάμ
+1670,Uzbekistán
+1671,Dżibuti
+1672,Mikronezja
+1673,나이지리아
+1674,Guadeloupe
+1675,Trinidad și Tobago
+1676,Filipiinid
+1677,Тринидад и Тобаго
+1678,アルバ
+1679,니우에
+1680,Izland
+1681,吉尔吉斯斯坦
+1682,Jižní Georgie a Jižní Sandwichovy ostrovy
+1683,รัสเซีย
+1684,Kirgistan
+1685,Mjanmarsko
+1686,ベラルーシ
+1687,克罗地亚
+1688,République du Congo
+1689,Belau
+1690,Mozambico
+1691,Papua Naujoji Gvinėja
+1692,Russland
+1693,الكويت
+1694,Polsko
+1695,バルバドス
+1696,Etelä Georgia ja Eteläiset Sandwichsaaret
+1697,Belgio
+1698,가봉
+1699,Гаїті
+1700,Пуэрто Рико
+1701,우즈베키스탄
+1702,Saudo Arabija
+1703,Guernesey
+1704,津巴布韦
+1705,Bahrain
+1706,Uus Meremaa
+1707,Джибуті
+1708,Jihoafrická republika
+1709,أستراليا
+1710,Ισραήλ
+1711,Сан Томе і Принсіпі
+1712,Ουρουγουάη
+1713,San Marino
+1714,Kazakhstan
+1715,الصحراء الغربية
+1716,朝鲜
+1717,泰国
+1718,Guinée Bissau
+1719,Δομινίκα
+1720,니제르
+1721,Lietuva
+1722,South Africa
+1723,Данія
+1724,Reunion
+1725,Dania
+1726,Makau
+1727,Mauritaania
+1728,Американські Віргінські Острови
+1729,Ethiopia
+1730,필리핀
+1731,Japonija
+1732,غينيا الاستوائية
+1733,Argentína
+1734,阿鲁巴
+1735,Albánie
+1736,Seicheles
+1737,アイスランド
+1738,Kaapverdië
+1739,Sudão do Sul
+1740,Somália
+1741,เคนยา
+1742,Falklandsöarna
+1743,Afganisztán
+1744,남아프리카 공화국
+1745,Γουαδελούπη
+1746,Nederland
+1747,알바니아
+1748,Ανγκουίλα
+1749,Samoa Americana
+1750,Russian Federation
+1751,Kypr
+1752,Сан Томе и Принсипи
+1753,Hollandia
+1754,Еритрея
+1755,Fidži
+1756,Palau
+1757,Santa Lucía
+1758,Bermuda
+1759,Uruguay
+1760,가나
+1761,哈萨克斯坦
+1762,Піткерн
+1763,포르투갈
+1764,百慕大
+1765,Malaisia
+1766,Vokietija
+1767,ドミニカ国
+1768,Polinésia Francesa
+1769,ปารากวัย
+1770,Fransk Polynesia
+1771,Kokosové ostrovy
+1772,Turkménsko
+1773,السنغال
+1774,Timor Leste
+1775,Доминика
+1776,Sør Afrika
+1777,ベトナム
+1778,Paraguaj
+1779,Белоруссия
+1780,Ranska
+1781,Острова Кука
+1782,جبل طارق
+1783,Kolumbien
+1784,Guamas
+1785,Острови Кука
+1786,Antígua e Barbuda
+1787,태국
+1788,Giappone
+1789,Guiana Franceză
+1790,Wyspy Alandzkie
+1791,Turks  és Caicos szigetek
+1792,Pakistanas
+1793,كوريا الجنوبية
+1794,Tanzanie
+1795,Lituania
+1796,セントヘレナ・アセンションおよびトリスタンダクーニャ
+1797,جزر سليمان
+1798,جزر كايمان
+1799,科科斯（基林）群岛
+1800,Vitryssland
+1801,French Guiana
+1802,Bielorrusia
+1803,Фиджи
+1804,Dominican Republic
+1805,Макао
+1806,มาร์ตีนิก
+1807,Virgin Islands (British)
+1808,Afganistán
+1809,Terres australes et antarctiques françaises
+1810,싱가포르
+1811,Jižní Korea
+1812,Кирибати
+1813,แอนตาร์กติกา
+1814,Kaimaninseln
+1815,Burkina
+1816,Australia
+1817,Tšiili
+1818,Trinidad y Tobago
+1819,Azerbajdzsán
+1820,Taiwan
+1821,Кірибаті
+1822,Falklandinseln
+1823,Γκέρνσεϊ
+1824,Ηνωμένα Αραβικά Εμιράτα
+1825,เนปาล
+1826,南极洲
+1827,Ilhas Virgens Americanas
+1828,Cile
+1829,加拿大
+1830,세인트루시아
+1831,Ірландія
+1832,Καμπότζη
+1833,デンマーク
+1834,澳大利亚
+1835,朝鮮民主主義人民共和国
+1836,생피에르 미클롱
+1837,Saint Pierre i Miquelon
+1838,Isole Salomone
+1839,سفالبارد ويان ماين
+1840,Neukaledonien
+1841,Vengrija
+1842,Λιβερία
+1843,Греція
+1844,Antarktika
+1845,ブルガリア
+1846,Bangladéš
+1847,Seychellit
+1848,Saint Vincent és a Grenadine szigetek
+1849,Kórejská republika
+1850,Saint Kitts og Nevis
+1851,Tschad
+1852,Πράσινο Ακρωτήρι
+1853,Estland
+1854,Сирия
+1855,Tajvan
+1856,Pietų Džordžijos ir Pietų Sandvičo Salos
+1857,Гватемала
+1858,بنغلاديش
+1859,Nikaragva
+1860,Timor Wschodni
+1861,Pitcairn
+1862,奥地利
+1863,Лівія
+1864,ولايات ميكرونيسيا المتحدة
+1865,Τουρκία
+1866,Austrália
+1867,法属波利尼西亚
+1868,Camarões
+1869,Suriname
+1870,Япония
+1871,Saint Vincent en de Grenadines
+1872,Bouvetinsel
+1873,เนเธอร์แลนด์
+1874,Saudi Araabia
+1875,Μαρτινίκα
+1876,Østrig
+1877,Wyspy Heard i McDonalda
+1878,Yhdysvaltain Neitsytsaaret
+1879,สาธารณรัฐประชาธิปไตยคองโก
+1880,Marshallove ostrovy
+1881,カザフスタン
+1882,미국
+1883,Bélgica
+1884,オマーン
+1885,Julön
+1886,Узбекистан
+1887,Tjekkiet
+1888,开曼群岛
+1889,Malaui
+1890,Папуа — Новая Гвинея
+1891,Syrian Arab Republic
+1892,Chade
+1893,Britské indickooceánske územie
+1894,Etiopien
+1895,فانواتو
+1896,إريتريا
+1897,Venemaa
+1898,Uzbequistão
+1899,Thaimaa
+1900,Colombie
+1901,Salomon
+1902,Äthiopien
+1903,Statele Unite ale Americii
+1904,Afganistan
+1905,Norwegen
+1906,パプアニューギニア
+1907,Pobřeží slonoviny
+1908,Länsi Sahara
+1909,Libéria
+1910,Сент Вінсент і Гренадини
+1911,ติมอร์ เลสเต
+1912,ルクセンブルク
+1913,Вірменія
+1914,Ισπανία
+1915,Словакия
+1916,イギリス領ヴァージン諸島
+1917,Cehia
+1918,ศรีลังกา
+1919,Гренада
+1920,Antartide
+1921,บัลแกเรีย
+1922,Francia
+1923,Venezuela
+1924,Saliamono Salos
+1925,Dänemark
+1926,Francia déli és antarktiszi területek
+1927,Čadas
+1928,ناميبيا
+1929,Saint Pierre og Miquelon
+1930,Christmasøya
+1931,Terre australi e antartiche francesi
+1932,파라과이
+1933,코스타리카
+1934,Grónsko
+1935,Turks  ja Caicossaaret
+1936,Antarktisz
+1937,스위스
+1938,刚果共和国
+1939,Antigua en Barbuda
+1940,Albánsko
+1941,Litva
+1942,American Samoa
+1943,말라위
+1944,مارتينيك
+1945,Eswatini
+1946,马达加斯加
+1947,Urugvajus
+1948,Švajčiarsko
+1949,イスラエル
+1950,Germany
+1951,St. Kitts und Nevis
+1952,แซงปีแยร์และมีเกอลง
+1953,Países Baixos
+1954,Panama
+1955,Portugali
+1956,بورتوريكو
+1957,건지섬
+1958,Turks  og Caicosøyene
+1959,Insula Norfolk
+1960,Lao People's Democratic Republic
+1961,Кувейт
+1962,圣巴泰勒米
+1963,Territorio Británico del Océano Índico
+1964,Sen Pjeras ir Mikelonas
+1965,Itália
+1966,ไอล์ออฟแมน
+1967,Turkmenistán
+1968,Brasilia
+1969,Korean demokraattinen kansantasavalta
+1970,에스와티니
+1971,นีวเว
+1972,Den dominikanske republikk
+1973,Pérou
+1974,マダガスカル
+1975,Ausztrália
+1976,Jersey Bailiffség
+1977,Kajmán szigetek
+1978,Libanas
+1979,クロアチア
+1980,São Vicente e Granadinas
+1981,Komoren
+1982,马拉维
+1983,Východný Timor
+1984,Insel Man
+1985,Bhoutan
+1986,남극
+1987,Острів Мен
+1988,Λεττονία
+1989,Saudská Arábia
+1990,Φιλιππίνες
+1991,Algerie
+1992,Guinea Ecuatorial
+1993,북마케도니아
+1994,Čekija
+1995,Marshallinseln
+1996,俄罗斯
+1997,Bosnien och Hercegovina
+1998,Francie
+1999,Filipinas
+2000,อารูบา
+2001,Ліберія
+2002,Antigua i Barbuda
+2003,Λιβύη
+2004,Λιθουανία
+2005,Saint Kitts ja Nevis
+2006,Emiratele Arabe Unite
+2007,タンザニア
+2008,Malawi
+2009,Majotta
+2010,Algerien
+2011,Eesti
+2012,Tunisie
+2013,Bissau Guinea
+2014,インドネシア
+2015,Sent Kitsas ir Nevis
+2016,우루과이
+2017,ภูฏาน
+2018,Irsko
+2019,Nová Kaledonie
+2020,โซมาเลีย
+2021,Zentral­afrikanische Republik
+2022,Suedia
+2023,เช็กเกีย
+2024,กัวเดอลุป
+2025,Dzsibuti
+2026,Macao
+2027,كاليدونيا الجديدة
+2028,Rusko
+2029,Čierna Hora
+2030,Zypern
+2031,Fidzsi
+2032,Экваториальная Гвинея
+2033,Pakistán
+2034,Egypten
+2035,Теркс и Кайкос
+2036,Grúzia
+2037,Giamaica
+2038,วานูอาตู
+2039,ساو تومي وبرينسيب
+2040,牙买加
+2041,Bolívia
+2042,São Tomé e Príncipe
+2043,지브롤터
+2044,Slovenien
+2045,Ямайка
+2046,Portoriko
+2047,Sudanul de Sud
+2048,Stati Uniti
+2049,サントメ・プリンシペ
+2050,阿塞拜疆
+2051,Swaziland
+2052,Južná Georgia a Južné Sandwichove ostrovy
+2053,St. Vincent und die Grenadinen
+2054,捷克
+2055,サウスジョージア・サウスサンドウィッチ諸島
+2056,فيتنام
+2057,Insulele Cayman
+2058,爱尔兰
+2059,ニュージーランド
+2060,Síria
+2061,Gernsis
+2062,Saint Kitts és Nevis
+2063,غيانا
+2064,Філіппіни
+2065,Ακτή Ελεφαντοστού
+2066,Аргентина
+2067,ไมโครนีเซีย
+2068,Terras Austrais e Antárticas Francesas
+2069,Insulele Falkland
+2070,นามิเบีย
+2071,Dominikaani Vabariik
+2072,تونس
+2073,Sydkorea
+2074,Moldavia
+2075,Martinik
+2076,Naujoji Kaledonija
+2077,"Kongo, Den demokratiske republikken"
+2078,Guadalupe
+2079,Moldova
+2080,土库曼斯坦
+2081,保加利亚
+2082,موريشيوس
+2083,Groenland
+2084,كينيا
+2085,Amerikan Samoa
+2086,Бутан
+2087,Amerikai Csendes óceáni szigetek
+2088,Mauritanië
+2089,Paraguai
+2090,Svätý Tomáš a Princov ostrov
+2091,Verenigde Arabische Emiraten
+2092,Hispaania
+2093,Ungaria
+2094,波黑
+2095,Gruzínsko
+2096,Sint Maarten (Alankomaat)
+2097,コートジボワール
+2098,ブータン
+2099,肯尼亚
+2100,"Wyspa Świętej Heleny, Wyspa Wniebowstąpienia i Tristan da Cunha"
+2101,페루
+2102,ليبيا
+2103,Seszele
+2104,Kirghizistan
+2105,Vanuatu
+2106,Mikronésie
+2107,Suurbritannia
+2108,Зимбабве
+2109,Puerto Rikas
+2110,Soudan
+2111,Россия
+2112,Tunisko
+2113,Sudáfrica
+2114,Cookinseln
+2115,زامبيا
+2116,Грузия
+2117,Îles Åland
+2118,الفلبين
+2119,Mongolie
+2120,Arabia Saudita
+2121,Сінт Мартен
+2122,Curaçao
+2123,アンティグア・バーブーダ
+2124,エリトリア
+2125,Libyen
+2126,Islas Marshall
+2127,スウェーデン
+2128,Sudán del Sur
+2129,Intia
+2130,シンガポール
+2131,Azerbaidžanas
+2132,Latvia
+2133,Μάλι
+2134,Гернсі
+2135,Ekvádor
+2136,Βιετνάμ
+2137,Монако
+2138,Соломоновы Острова
+2139,Pitcairnovy ostrovy
+2140,Νήσοι Σολομώντα
+2141,皮特凯恩群岛
+2142,Βρετανικό Έδαφος Ινδικού Ωκεανού
+2143,レバノン
+2144,Fidżi
+2145,Antarktyka
+2146,Αζερμπαϊτζάν
+2147,Németország
+2148,Того
+2149,دومينيكا
+2150,Puerto Rico
+2151,Juleøen
+2152,มองโกเลีย
+2153,Ungern
+2154,Сингапур
+2155,Polinezja Francuska
+2156,Tšekki
+2157,Kuvajt
+2158,Timor Est
+2159,グリーンランド
+2160,Iranas
+2161,United Kingdom of Great Britain and Northern Ireland
+2162,Азербайджан
+2163,Argentinien
+2164,Vereinigtes Königreich
+2165,جزر كوكوس
+2166,Kazahstan
+2167,멕시코
+2168,Szudán
+2169,Anguilla
+2170,Tyrkiet
+2171,오스트레일리아
+2172,Republica Irlanda
+2173,Cookinsaaret
+2174,Іран
+2175,Tunézia
+2176,Špicberky a Jan Mayen
+2177,Wyspy Salomona
+2178,Angola
+2179,서사하라
+2180,الكاميرون
+2181,الأوروغواي
+2182,Țările de Jos
+2183,Тунис
+2184,Armeenia
+2185,Ομόσπονδες Πολιτείες της Μικρονησίας
+2186,فنلندا
+2187,영국
+2188,フィリピン
+2189,ฝรั่งเศส
+2190,Jungtinė Karalystė
+2191,"Острови Святої Єлени, Вознесіння і Тристан да Кунья"
+2192,Malezja
+2193,Cook Islands
+2194,USA Neitsisaared
+2195,Banglades
+2196,توغو
+2197,ブルンジ
+2198,تايلاند
+2199,瓜德罗普
+2200,瓦努阿图
+2201,ลิกเตนสไตน์
+2202,Turkije
+2203,Surinamas
+2204,Grenlandia
+2205,Μπαρμπάντος
+2206,Falkland szigetek
+2207,Süüria
+2208,Capo Verde
+2209,Finland
+2210,스발바르 얀마옌
+2211,ポーランド
+2212,San Martenas
+2213,몰타
+2214,오스트리아
+2215,基里巴斯
+2216,เฟรนช์เกียนา
+2217,ギニアビサウ
+2218,باراغواي
+2219,Pakisztán
+2220,Афганистан
+2221,Territorio britannico dell'Oceano Indiano
+2222,Dél Szudán
+2223,Polonia
+2224,Maršalo salos
+2225,Chad
+2226,Nordmarianerne
+2227,El Salvador
+2228,Østtimor
+2229,Estonsko
+2230,Кипр
+2231,アルゼンチン
+2232,Färöarna
+2233,美属维尔京群岛
+2234,Kolumbie
+2235,Guinée
+2236,Džibutsko
+2237,САДР
+2238,Κέιμαν Νήσοι
+2239,คิวบา
+2240,Zimbabvė
+2241,마요트
+2242,เติร์กเมนิสถาน
+2243,Niger
+2244,"Moldova, Republic of"
+2245,Индонезия
+2246,Словения
+2247,Французская Полинезия
+2248,Antigua und Barbuda
+2249,Κροατία
+2250,الجزر الكاريبية الهولندية
+2251,Israel
+2252,Jordanië
+2253,세이셸
+2254,Moldavien
+2255,Cayman Islands
+2256,Anguila
+2257,Guineea Ecuatorială
+2258,جزر فوكلاند
+2259,塞舌尔
+2260,Ирландия
+2261,Samoa américaines
+2262,Caymanøerne
+2263,Srí Lanka
+2264,เบลีซ
+2265,ساحل العاج
+2266,Jaapan
+2267,Φίτζι
+2268,Trinidad a Tobago
+2269,Djibouti
+2270,Kiribati
+2271,"Jomfruøyene, De amerikanske"
+2272,ตรินิแดดและโตเบโก
+2273,Frankreich
+2274,Бельгія
+2275,Хорватия
+2276,Lichtenštejnsko
+2277,Kataras
+2278,爱沙尼亚
+2279,Mikronesiaføderasjonen
+2280,Holland
+2281,جزيرة نورفولك
+2282,Канада
+2283,Suisse
+2284,挪威
+2285,Lebanon
+2286,カタール
+2287,Кіпр
+2288,Sfântul Kitts și Nevis
+2289,Paquistão
+2290,Saint Christophe et Niévès
+2291,جيرزي
+2292,Indijos Vandenyno Britų Sritis
+2293,コロンビア
+2294,Svalbard and Jan Mayen
+2295,바베이도스
+2296,가이아나
+2297,Таиланд
+2298,جنوب السودان
+2299,巴勒斯坦
+2300,Trinidad und Tobago
+2301,بلجيكا
+2302,Гайана
+2303,이집트
+2304,Países Bajos
+2305,Malásia
+2306,Ausztria
+2307,Danimarca
+2308,Фінляндія
+2309,阿根廷
+2310,Łotwa
+2311,ボリビア多民族国
+2312,푸에르토리코
+2313,Trinidad en Tobago
+2314,Tchaj wan
+2315,Βατικανό
+2316,圣基茨和尼维斯
+2317,ออสเตรีย
+2318,Ghána
+2319,Саудівська Аравія
+2320,チュニジア
+2321,Bosnie Herzégovine
+2322,브루나이
+2323,Madagaszkár
+2324,Μπαχάμες
+2325,توفالو
+2326,ブラジル
+2327,Danija
+2328,Índia
+2329,Σιέρα Λεόνε
+2330,Nieuw Zeeland
+2331,والس وفوتونا
+2332,그리스
+2333,Franske Sydterritorier
+2334,德国
+2335,Trynidad i Tobago
+2336,トンガ
+2337,Mauricio
+2338,Tunisien
+2339,Λαϊκή Δημοκρατία του Κογκό
+2340,مالاوي
+2341,索马里
+2342,Чехия
+2343,튀니지
+2344,Jemen
+2345,Ázerbájdžán
+2346,Μαλάουι
+2347,"Tanzania, United Republic of"
+2348,لاوس
+2349,Timor oriental
+2350,Irán
+2351,Poľsko
+2352,伊拉克
+2353,Türkmenisztán
+2354,Ελβετία
+2355,Haitis
+2356,Pitkernas
+2357,República Democrática del Congo
+2358,Lõuna Sudaan
+2359,Kanada
+2360,Salomonen
+2361,Cypern
+2362,Comoren
+2363,Dominicaanse Republiek
+2364,中非
+2365,Μοζαμβίκη
+2366,Aserbaidschan
+2367,Serbie
+2368,ناورو
+2369,Jordanija
+2370,Moldávia
+2371,Американское Самоа
+2372,马绍尔群岛
+2373,圣多美和普林西比
+2374,セーシェル
+2375,Elfenbenskusten
+2376,Італія
+2377,Izrael
+2378,Остров Норфолк
+2379,San Marinas
+2380,Šalomounovy ostrovy
+2381,Congo Brazzaville
+2382,Bouvetön
+2383,Watykan
+2384,Hungría
+2385,نييوي
+2386,Insulele Solomon
+2387,Колумбія
+2388,Palestina
+2389,파나마
+2390,Pays Bas caribéens
+2391,Yibuti
+2392,Bouvet sziget
+2393,Bermudas
+2394,Uzbekistan
+2395,อียิปต์
+2396,Rumunija
+2397,スーダン
+2398,Sent Vinsentas ir Grenadinai
+2399,Equador
+2400,Boliwia
+2401,Centralafrikanska republiken
+2402,Βρετανικές Παρθένοι Νήσοι
+2403,Άγιος Χριστόφορος και Νέβις
+2404,Saint Helena
+2405,منغوليا
+2406,أفغانستان
+2407,Azerbejdżan
+2408,Gambia
+2409,Antigua y Barbuda
+2410,Mexico
+2411,Slovakia
+2412,ปาปัวนิวกินี
+2413,Sahara Zachodnia
+2414,Росія
+2415,Guatemala
+2416,หมู่เกาะบริติชเวอร์จิน
+2417,Irak
+2418,San Cristóbal y Nieves
+2419,"Karibi Hollandia (Bonaire, Saba, Sint Eustatius)"
+2420,พม่า
+2421,ไอซ์แลนด์
+2422,列支敦士登
+2423,Islas Salomón
+2424,Ilhas Menores Distantes dos Estados Unidos
+2425,Βόρεια Κορέα
+2426,ตูนิเซีย
+2427,ハイチ
+2428,Mongolija
+2429,Hondūras
+2430,Східний Тимор
+2431,Tajwan
+2432,Indonezia
+2433,Érythrée
+2434,Belgija
+2435,Kambodża
+2436,Tansania
+2437,Svalbard y Jan Mayen
+2438,Нігер
+2439,Westelijke Sahara
+2440,Нова Каледонія
+2441,Велика Британія
+2442,Portugalija
+2443,Det britiske territoriet i Indiahavet
+2444,Čína
+2445,Maďarsko
+2446,Ameerika Samoa
+2447,Κούβα
+2448,Nová Kaledónia
+2449,Karácsony sziget
+2450,코모로
+2451,Mauritánie
+2452,Szlovénia
+2453,Либерия
+2454,Νέα Ζηλανδία
+2455,République démocratique du Congo
+2456,ليختنشتاين
+2457,Cypr
+2458,Turcja
+2459,カーボベルデ
+2460,السويد
+2461,Восточный Тимор
+2462,Словенія
+2463,Χιλή
+2464,Cameroun
+2465,시에라리온
+2466,Gruusia
+2467,Man
+2468,Vaticano
+2469,ไซปรัส
+2470,Saksa
+2471,Costa do Marfim
+2472,赤道ギニア
+2473,나우루
+2474,Buvė sala
+2475,Tsjechië
+2476,エストニア
+2477,Danemarca
+2478,Nový Zéland
+2479,เอริเทรีย
+2480,Soudan du Sud
+2481,Algeria
+2482,Λουξεμβούργο
+2483,マレーシア
+2484,阿拉伯撒哈拉民主共和国
+2485,Kirgizija
+2486,الصومال
+2487,Rootsi
+2488,Türkmenistan
+2489,Φινλανδία
+2490,Sao Tome and Principe
+2491,Finlande
+2492,Namibija
+2493,Japán
+2494,إقليم المحيط الهندي البريطاني
+2495,Islândia
+2496,Kongo Brazzaville
+2497,Kreikka
+2498,Куба
+2499,Bielorussia
+2500,Нігерія
+2501,バミューダ
+2502,Arabiemiirikunnat
+2503,볼리비아
+2504,Burundis
+2505,Jersey
+2506,Kirgisistan
+2507,Rumania
+2508,Îles Turques et Caïques
+2509,Brit Indiai óceáni Terület
+2510,Finlandia
+2511,Österrike
+2512,ปาเลา
+2513,Norvegia
+2514,Marshall szigetek
+2515,Singapūras
+2516,Azerbeidzjan
+2517,Tšehhi
+2518,巴布亚新几内亚
+2519,Madagaskar
+2520,이란
+2521,Seychely
+2522,新喀里多尼亚
+2523,르완다
+2524,Brazilia
+2525,トーゴ
+2526,North Macedonia
+2527,Papua Uusi Guinea
+2528,圣皮埃尔和密克隆
+2529,Bósnia e Herzegovina
+2530,Brasil
+2531,Mongolei
+2532,France
+2533,สหรัฐอาหรับเอมิเรตส์
+2534,Svalbardo ir Jan Majeno salos
+2535,Τρινιντάντ και Τομπάγκο
+2536,摩纳哥
+2537,エクアドル
+2538,เกาะบูเว
+2539,จอร์เจีย
+2540,Madagascar
+2541,Chéquia
+2542,Danemark
+2543,อิหร่าน
+2544,เอลซัลวาดอร์
+2545,São Bartolomeu
+2546,Chili
+2547,คาซัคสถาน
+2548,Pákistán
+2549,Σομαλία
+2550,Svätý Krištof a Nevis
+2551,Kreeka
+2552,Färsaaret
+2553,쿡 제도
+2554,尼日利亚
+2555,Papua Nya Guinea
+2556,Παναμάς
+2557,Emirati Arabi Uniti
+2558,Таїланд
+2559,جمهورية الكونغو الديمقراطية
+2560,Severní Mariany
+2561,Araabia Ühendemiraadid
+2562,جمهورية التشيك
+2563,말리
+2564,Brazílie
+2565,Islas Malvinas
+2566,Grekland
+2567,Аруба
+2568,Mansaari
+2569,모잠비크
+2570,Argentina
+2571,格鲁吉亚
+2572,卢旺达
+2573,Mozambikas
+2574,Kârgâzstan
+2575,Ливия
+2576,Saúdská Arábie
+2577,Puola
+2578,독일
+2579,Wyspa Bouveta
+2580,Lettland
+2581,Токелау
+2582,Sao Tomé en Principe
+2583,Eritrėja
+2584,Jordânia
+2585,バハマ
+2586,Volisas ir Futūna
+2587,Saint Vincent og Grenadinene
+2588,スイス
+2589,Réunion
+2590,ノルウェー
+2591,Korean tasavalta
+2592,New Zealand
+2593,Farerų Salos
+2594,エジプト
+2595,كيريباتي
+2596,Sudão
+2597,Italie
+2598,올란드 제도
+2599,Szváziföld
+2600,Бразилия
+2601,Namibia
+2602,Бразилія
+2603,Sainte Lucie
+2604,Kamerūnas
+2605,Виргинские Острова (США)
+2606,Osttimor
+2607,Îles Cocos
+2608,بليز
+2609,拉脱维亚
+2610,ไอร์แลนด์
+2611,Meksiko
+2612,Сан Марино
+2613,Thaïlande
+2614,아제르바이잔
+2615,Μακάο
+2616,Rep. Dominicana
+2617,Намібія
+2618,アメリカ合衆国
+2619,Венесуела
+2620,アルメニア
+2621,Italië
+2622,Kameroen
+2623,Bahreinas
+2624,Ilhas Åland
+2625,Tunisia
+2626,Rep. del Congo
+2627,أيرلندا
+2628,Birmania
+2629,Пуерто Рико
+2630,อุซเบกิสถาน
+2631,Alemania
+2632,Niujė
+2633,سلوفينيا
+2634,หมู่เกาะฟอล์กแลนด์
+2635,소말리아
+2636,Japón
+2637,Оман
+2638,Amerikaanse Maagdeneilanden
+2639,Αγία Λουκία
+2640,Grecia
+2641,Джерсі
+2642,Saint Kitts och Nevis
+2643,Wyspy Cooka
+2644,Wyspy Marshalla
+2645,เซนต์วินเซนต์และเกรนาดีนส์
+2646,Αιθιοπία
+2647,Norvegija
+2648,Tuvalu
+2649,คอสตาริกา
+2650,Arabia Saudită
+2651,Papua Nová Guinea
+2652,ไลบีเรีย
+2653,Spitzbergák és Jan Mayen sziget
+2654,Faroe Islands
+2655,Kenya
+2656,Päiväntasaajan Guinea
+2657,Vietnám
+2658,北马里亚纳群岛
+2659,Danmark
+2660,Βανουάτου
+2661,乌兹别克斯坦
+2662,세르비아
+2663,Brazilija
+2664,Isla de Navidad
+2665,Bulgarien
+2666,Argentiina
+2667,Катар
+2668,Zâmbia
+2669,Egyiptom
+2670,مقدونيا
+2671,Wybrzeże Kości Słoniowej
+2672,马尔代夫
+2673,เอสโตเนีย
+2674,Macedonia Północna
+2675,ボツワナ
+2676,バチカン市国
+2677,Severné Macedónsko
+2678,Wyspy Dziewicze Stanów Zjednoczonych
+2679,Jõulusaar
+2680,Maldiven
+2681,Emiratos Árabes Unidos
+2682,Tšad
+2683,Marshalleilanden
+2684,Maurícius
+2685,Chine
+2686,Есватіні
+2687,جزيرة هيرد وجزر ماكدونالد
+2688,سينت مارتن
+2689,Kuweit
+2690,Πορτογαλία
+2691,Albaania
+2692,Venäjä
+2693,Sénégal
+2694,ฮังการี
+2695,Slovenia
+2696,Αμερικανική Σαμόα
+2697,アフガニスタン
+2698,Indonésia
+2699,Španělsko
+2700,ฟินแลนด์
+2701,Frankrike
+2702,เบอร์มิวดา
+2703,缅甸
+2704,Středoafrická republika
+2705,Bhutan
+2706,Rumeenia
+2707,باربادوس
+2708,Республика Корея
+2709,Норвегия
+2710,スロバキア
+2711,Belgien
+2712,Muntenegru
+2713,لوكسمبورغ
+2714,Haïti
+2715,イラン・イスラム共和国
+2716,الدنمارك
+2717,Гвінея Бісау
+2718,เม็กซิโก
+2719,ルーマニア
+2720,Sudan
+2721,جزر كوك
+2722,Urugwaj
+2723,Французька Гвіана
+2724,Guayana Francesa
+2725,Marianas Setentrionais
+2726,Ukraine
+2727,Svalbard et ile Jan Mayen
+2728,Îles Vierges des États Unis
+2729,Costa d'Avorio
+2730,Geórgia
+2731,Slovakien
+2732,Autriche
+2733,几内亚比绍
+2734,Amerikanische Jungferninseln
+2735,Estónsko
+2736,Bielorrússia
+2737,โอมาน
+2738,Malouines
+2739,Inde
+2740,앵귈라
+2741,Singapura
+2742,Tchad
+2743,バヌアツ
+2744,Тонга
+2745,جزر الولايات المتحدة الصغيرة النائية
+2746,М'янма
+2747,Islas Vírgenes Británicas
+2748,Південний Судан
+2749,Antigua and Barbuda
+2750,Kroatien
+2751,Új Kaledónia
+2752,Ниуэ
+2753,Ilhas Malvinas
+2754,파푸아뉴기니
+2755,Prancūzijos Gviana
+2756,Förenta staternas mindre öar i Oceanien och Västindien
+2757,ฟีจี
+2758,Guinea Bisáu
+2759,Brittiläiset Neitsytsaaret
+2760,Άγιος Μαρτίνος (Γαλλία)
+2761,Amerikai Egyesült Államok
+2762,Kazakstan
+2763,Sør Sudan
+2764,เซนต์มาร์ติน
+2765,"Bonaire, Sint Eustatius and Saba"
+2766,เกาะเฮิร์ดและหมู่เกาะแมกดอนัลด์
+2767,보츠와나
+2768,ウォリス・フツナ
+2769,코코스 제도
+2770,جزيرة مان
+2771,Nueva Caledonia
+2772,Μπελίζ
+2773,Antarctica
+2774,Чорногорія
+2775,República Árabe Saharaui Democrática
+2776,Германия
+2777,Kinija
+2778,République centrafricaine
+2779,수단
+2780,โปแลนด์
+2781,Австралія
+2782,โครเอเชีย
+2783,Kirguistán
+2784,Japão
+2785,留尼汪
+2786,الفاتيكان
+2787,Népal
+2788,Soome
+2789,Romania
+2790,"St. Helena, Ascension og Tristan da Cunha"
+2791,Insulele Åland
+2792,สเปน
+2793,Kelet Timor
+2794,スロベニア
+2795,România
+2796,미얀마
+2797,벨기에
+2798,Naujoji Zelandija
+2799,フォークランド（マルビナス）諸島
+2800,Bouveteiland
+2801,เปรู
+2802,Gabón
+2803,Republica Capului Verde
+2804,잠비아
+2805,Schweiz
+2806,เยอรมนี
+2807,Ζιμπάμπουε
+2808,جزر أولاند
+2809,Îles Mariannes du Nord
+2810,Молдова
+2811,Brazilië
+2812,Øst Timor
+2813,Îles Marshall (pays)
+2814,เฮติ
+2815,เนเธอร์แลนด์แอนทิลลีส
+2816,Kyrgyzstan
+2817,Σρι Λάνκα
+2818,トリニダード・トバゴ
+2819,Polinezia franceză
+2820,Marianos Šiaurinės Salos
+2821,Nizozemsko
+2822,ซามัว
+2823,Ιαπωνία
+2824,Бенин
+2825,北马其顿
+2826,大韓民国
+2827,Franska Guyana
+2828,Szomália
+2829,에티오피아
+2830,萨摩亚
+2831,Trinidad és Tobago
+2832,Kirgizsko
+2833,Ηνωμένο Βασίλειο
+2834,핏케언 제도
+2835,Jamaika
+2836,Mongoolia
+2837,Bangladesch
+2838,버뮤다
+2839,ตูวาลู
+2840,Іспанія
+2841,セネガル
+2842,エルサルバドル
+2843,Kongo
+2844,Nepál
+2845,Prantsuse Polüneesia
+2846,Wielka Brytania
+2847,ยิบรอลตาร์
+2848,Wallis y Futuna
+2849,Turkménistan
+2850,Rosja
+2851,Kirgisia
+2852,Cocos (Keeling) Islands
+2853,뉴질랜드
+2854,Polen
+2855,Bangladesz
+2856,Νησιά Πίτκερν
+2857,Frans Polynesië
+2858,트리니다드 토바고
+2859,Estonia
+2860,Géorgie du Sud et les îles Sandwich du Sud
+2861,Corea del Nord
+2862,Verenigd Koninkrijk
+2863,Armênia
+2864,Ερυθραία
+2865,الصين
+2866,Аландские острова
+2867,جورجيا
+2868,Nordmakedonien
+2869,Svalbard și Jan Mayen
+2870,Britse Maagdeneilanden
+2871,Congo Kinshasa
+2872,ガボン
+2873,과테말라
+2874,Austria
+2875,ジョージア
+2876,スペイン
+2877,Centrinės Afrikos Respublika
+2878,Centralafrikanske Republik
+2879,Nikaragua
+2880,Фолклендские острова
+2881,安哥拉
+2882,厄立特里亚
+2883,Maurice (pays)
+2884,Dominica
+2885,Holy See
+2886,Перу
+2887,ساموا الأمريكية
+2888,福克兰群岛
+2889,Francouzská jižní a antarktická území
+2890,Болгария
+2891,Ekvatoriaal Guinea
+2892,Leedu
+2893,中国
+2894,Guinea Bissau
+2895,Russia
+2896,British Indian Ocean Territory
+2897,Tchéquie
+2898,Замбия
+2899,Антигуа і Барбуда
+2900,Острова Питкэрн
+2901,เจอร์ซีย์
+2902,البحرين
+2903,Tadsjikistan
+2904,Ирак
+2905,オランダ
+2906,Noua Caledonie
+2907,特克斯和凯科斯群岛
+2908,乌干达
+2909,중앙아프리카 공화국
+2910,Keenia
+2911,Džersis
+2912,بيرو
+2913,Chorvátsko
+2914,Svätý Bartolomej
+2915,อินเดีย
+2916,Dánia
+2917,Джерси
+2918,Αλγερία
+2919,库拉索
+2920,Estónia
+2921,Timorul de Est
+2922,Heard øen og McDonald øerne
+2923,Isole Cocos (Keeling)
+2924,多米尼加
+2925,モントセラト
+2926,부베섬
+2927,Marokkó
+2928,Reino Unido
+2929,フランス領南方・南極地域
+2930,グアム
+2931,قبرص
+2932,Papua Nowa Gwinea
+2933,Groenlanda
+2934,斯瓦尔巴和扬马延
+2935,جزر العذراء البريطانية
+2936,Arábia Saudita
+2937,Marshallöarna
+2938,Cina
+2939,Svédország
+2940,トケラウ
+2941,Spitsbergen en Jan Mayen
+2942,Бурунди
+2943,玻利维亚
+2944,Кокосові острови
+2945,埃及
+2946,Нигерия
+2947,프랑스령 남방 및 남극 지역
+2948,Tsjekkia
+2949,Σαουδική Αραβία
+2950,Ciad
+2951,ซูรินาม
+2952,Guineea Bissau
+2953,Gujana Francuska
+2954,Bulgaaria
+2955,Kongon demokraattinen tasavalta
+2956,レユニオン
+2957,النرويج
+2958,سورينام
+2959,Dominikos Respublika
+2960,Μιανμάρ
+2961,Valgevene
+2962,마셜 제도
+2963,Ukraina
+2964,카타르
+2965,Argélia
+2966,Βόρεια Μακεδονία
+2967,Benin
+2968,Suomi
+2969,苏丹
+2970,Реюньон
+2971,Letland
+2972,Mauricijus
+2973,キュラソー
+2974,Monakas
+2975,Tajikistan
+2976,Etiópia
+2977,Kosta Rika
+2978,Гибралтар
+2979,Antigua și Barbuda
+2980,Boliivia
+2981,Írán
+2982,蒙古国
+2983,Amerikansk Samoa
+2984,Лихтенштейн
+2985,Πολωνία
+2986,シリア・アラブ共和国
+2987,홍콩
+2988,意大利
+2989,Západná Sahara
+2990,布隆迪
+2991,Ємен
+2992,Saint Pierre and Miquelon
+2993,Éthiopie
+2994,Falklandinsaaret
+2995,Τερκς και Κέικος
+2996,オーストリア
+2997,Demokratiske Republik Congo
+2998,Baltarusija
+2999,Kokosöarna
+3000,Jordan
+3001,Libia
+3002,Kuwait
+3003,ケイマン諸島
+3004,جزر توركس وكايكوس
+3005,Τζέρσεϊ
+3006,Ilha de Man
+3007,ピトケアン
+3008,Sankta Helena
+3009,Slovensko
+3010,Slovinsko
+3011,Gwatemala
+3012,Νήσος των Χριστουγέννων
+3013,サンピエール島・ミクロン島
+3014,Ostrov Man
+3015,Pietų Korėja
+3016,Saint Martin
+3017,马来西亚
+3018,ซินต์มาร์เติน
+3019,马耳他
+3020,Graikija
+3021,루마니아
+3022,Malis
+3023,Гвинея Бисау
+3024,Λευκορωσία
+3025,Wallis et Futuna
+3026,Alankomaiden Karibia
+3027,マン島
+3028,البوسنة والهرسك
+3029,Etelä Sudan
+3030,Казахстан
+3031,صربيا
+3032,Siria
+3033,앤티가 바부다
+3034,厄瓜多尔
+3035,Reunjonas
+3036,Komorit
+3037,Antigva ir Barbuda
+3038,Croația
+3039,叙利亚
+3040,Belizas
+3041,ミャンマー
+3042,ソロモン諸島
+3043,Falklandsøerne
+3044,Λίχτενσταϊν
+3045,"Palestine, State of"
+3046,西班牙
+3047,Гамбія
+3048,"Bonaire, Saba, Sint Eustatius"
+3049,Норвегія
+3050,Holandsko
+3051,Індія
+3052,ยูเครน
+3053,科特迪瓦
+3054,تجمع سان مارتين
+3055,Włochy
+3056,Iêmen
+3057,Буркина Фасо
+3058,Эфиопия
+3059,Zweden
+3060,Somaalia
+3061,Хорватія
+3062,Georgia Południowa i Sandwich Południowy
+3063,Таджикистан
+3064,Лаос
+3065,Papua Nuova Guinea
+3066,Αρούμπα
+3067,บาห์เรน
+3068,리투아니아
+3069,Lesoto
+3070,Myanmar
+3071,Juodkalnija
+3072,Lengyelország
+3073,ガーナ
+3074,Монтсеррат
+3075,Brittiläinen Intian valtameren alue
+3076,Franța
+3077,Πουέρτο Ρίκο
+3078,ネパール
+3079,Noruega
+3080,Сент Китс и Невис
+3081,Americká Samoa
+3082,Ισημερινός
+3083,汤加
+3084,Lõuna Korea
+3085,南乔治亚和南桑威奇群岛
+3086,Yhdysvallat
+3087,Mexique
+3088,Sao Tomé et Principe
+3089,Madagaskaras
+3090,لاتفيا
+3091,Etiopía
+3092,Латвия
+3093,Marokas
+3094,Kleine afgelegen eilanden van de Verenigde Staten
+3095,Bhután
+3096,رواندا
+3097,Maldív szigetek
+3098,Maurícia
+3099,نيكاراغوا
+3100,アラブ首長国連邦
+3101,Νότιο Σουδάν
+3102,Canadá
+3103,Домініканська Республіка
+3104,Thajsko
+3105,โบลิเวีย
+3106,Svätá Helena
+3107,สวิตเซอร์แลนด์
+3108,Irlanti
+3109,بوتسوانا
+3110,Regatul Unit
+3111,Sint Martenas
+3112,باكستان
+3113,Mikronézia
+3114,Filipine
+3115,Ιταλία
+3116,Georgia de Sud și Insulele Sandwich de Sud
+3117,Algérie
+3118,Kolumbia
+3119,秘鲁
+3120,Kambodja
+3121,Σενεγάλη
+3122,Τόγκο
+3123,Σεϋχέλλες
+3124,Serbien
+3125,Omanas
+3126,لبنان
+3127,巴巴多斯
+3128,Эстония
+3129,Rakousko
+3130,หมู่เกาะนอร์เทิร์นมาเรียนา
+3131,Турция
+3132,Saint Pierre a Miquelon
+3133,เรอูว์นียง
+3134,マカオ
+3135,リビア
+3136,벨라루스
+3137,Küpros
+3138,Royaume Uni
+3139,Britische Jungferninseln
+3140,Egiptus
+3141,중국
+3142,Koeweit
+3143,Джибути
+3144,الأرجنتين
+3145,Saint Vincent i Grenadyny
+3146,"Insulele Bonaire, Sint Eustatius și Saba"
+3147,Tadzjikistan
+3148,Reunión
+3149,อินโดนีเซีย
+3150,Бурунді
+3151,Trinidad og Tobago
+3152,เบลารุส
+3153,洪都拉斯
+3154,La Réunion
+3155,케이맨 제도
+3156,立陶宛
+3157,Ώλαντ
+3158,Indonesien
+3159,伊朗
+3160,Guinee Bissau
+3161,"Bonaire, Svatý Eustach a Saba"
+3162,Kajmanské ostrovy
+3163,Afganistanas
+3164,伯利兹
+3165,Węgry
+3166,罗马尼亚
+3167,Ålandsøerne
+3168,Мексика
+3169,Киргизия
+3170,Jordaania
+3171,Ekvadoras
+3172,Mołdawia
+3173,Quirguistão
+3174,บังกลาเทศ
+3175,저지섬
+3176,엘살바도르
+3177,São Tomé og Príncipe
+3178,São Tomé és Príncipe
+3179,Egypte
+3180,Zjednoczone Emiraty Arabskie
+3181,Teritoriul Britanic din Oceanul Indian
+3182,Coreea de Nord
+3183,ตองงา
+3184,사우디아라비아
+3185,Svatý Bartoloměj
+3186,Mali
+3187,Gwadelupa
+3188,Heardův ostrov a McDonaldovy ostrovy
+3189,Spanyolország
+3190,Liettua
+3191,Turkey
+3192,Кюрасао
+3193,南極
+3194,Polónia
+3195,Franska södra territorierna
+3196,Islas Marianas del Norte
+3197,Armenien
+3198,เฟรนช์เซาเทิร์นและแอนตาร์กติกแลนดส์
+3199,Nordmazedonien
+3200,リトアニア
+3201,Burma
+3202,Nyugat Szahara
+3203,Гвинея
+3204,Saint Martin (französischer Teil)
+3205,Zuid Soedan
+3206,Wallis și Futuna
+3207,Сербия
+3208,เกาหลีเหนือ
+3209,Líbia
+3210,Egyesült Királyság
+3211,科威特
+3212,Croazia
+3213,Hongkong
+3214,Zambie
+3215,Федеративні Штати Мікронезії
+3216,Гондурас
+3217,Kiina
+3218,Estija
+3219,スリランカ
+3220,托克劳
+3221,Figi
+3222,Afeganistão
+3223,Georgia
+3224,Νιούε
+3225,Pays Bas
+3226,카자흐스탄
+3227,크리스마스섬
+3228,Mongoliet
+3229,Saint Vincent och Grenadinerna
+3230,泽西
+3231,Сінгапур
+3232,Perú
+3233,Turks e Caicos
+3234,Syrien
+3235,Svezia
+3236,Босния и Герцеговина
+3237,Saint Vincent and the Grenadines
+3238,Makaó
+3239,Insulele Turks și Caicos
+3240,Dschibuti
+3241,Tonga
+3242,ลาว
+3243,ウズベキスタン
+3244,Vereinigte Staaten
+3245,아메리칸사모아
+3246,USAs ytre småøyer
+3247,Cocoseilanden
+3248,França
+3249,كوريا الشمالية
+3250,Vatican
+3251,Mauretania
+3252,Portogallo
+3253,كولومبيا
+3254,チェコ
+3255,Tunesië
+3256,Herdo ir Makdonaldo salos
+3257,Eslovaquia
+3258,แอลจีเรีย
+3259,蒙特塞拉特
+3260,Spojené arabské emiráty
+3261,아일랜드
+3262,Palæstina
+3263,Afghánistán
+3264,Τυνησία
+3265,Papua Noua Guinee
+3266,Noordelijke Marianen
+3267,Bermude
+3268,Teritoriile australe și antarctice franceze
+3269,Jordania
+3270,Meksika
+3271,パラグアイ
+3272,เซนต์เฮเลนา
+3273,Africa de Sud
+3274,巴基斯坦
+3275,Hviderusland
+3276,Libië
+3277,Mexiko
+3278,Indonesia
+3279,Cookøyene
+3280,Остров Мэн
+3281,หมู่เกาะเวอร์จินของสหรัฐ
+3282,カメルーン
+3283,벨리즈
+3284,Сент Люсія
+3285,Antarctique
+3286,Italia
+3287,Νιγηρία
+3288,Comoras
+3289,Ефіопія
+3290,อิตาลี
+3291,Ουγγαρία
+3292,Salomonseilanden
+3293,تركيا
+3294,Litauen
+3295,Papúa Nueva Guinea
+3296,Синт Мартен
+3297,ブーベ島
+3298,莱索托
+3299,Tadžikija
+3300,Salomonøerne
+3301,Korea (Democratic People's Republic of)
+3302,أروبا
+3303,Salwador
+3304,レソト
+3305,Amerikai Virgin szigetek
+3306,Gabon
+3307,Туреччина
+3308,ベネズエラ・ボリバル共和国
+3309,贝宁
+3310,سانت كيتس ونيفيس
+3311,سانت لوسيا
+3312,Γρενάδα
+3313,Severní Korea
+3314,Mauritánia
+3315,Heard Island and McDonald Islands
+3316,Törökország
+3317,Biélorussie
+3318,ベナン
+3319,Bolivia
+3320,Szaúd Arábia
+3321,Pitcairneilanden
+3322,パレスチナ
+3323,Seychelles
+3324,Λάος
+3325,Ilhas Cocos (Keeling)
+3326,Francúzska Guyana
+3327,Indonezja
+3328,Самоа
+3329,バーレーン
+3330,Σιγκαπούρη
+3331,Bahama's
+3332,بالاو
+3333,Švýcarsko
+3334,Lichtenštajnsko
+3335,Lichtenšteinas
+3336,Гваделупа
+3337,Usbekistan
+3338,ウルグアイ
+3339,에스토니아
+3340,แอฟริกาใต้
+3341,Valko Venäjä
+3342,San Maríno
+3343,Tadžikistan
+3344,ボネール、シント・ユースタティウスおよびサバ
+3345,Pusiaujo Gvinėja
+3346,ลัตเวีย
+3347,تشاد
+3348,Saint Martin (French part)
+3349,Cambodgia
+3350,الرأس الأخضر
+3351,Rumunsko
+3352,莫桑比克
+3353,Südgeorgien und die Südlichen Sandwichinseln
+3354,Sýrie
+3355,Islandija
+3356,Чад
+3357,São Tomé und Príncipe
+3358,Bangladesh
+3359,몬트세랫
+3360,إيران
+3361,Ühendriikide hajasaared
+3362,มอลโดวา
+3363,Южная Георгия и Южные Сандвичевы Острова
+3364,萨尔瓦多
+3365,모로코
+3366,Virgin Islands (U.S.)
+3367,Frans Guyana
+3368,Brytyjskie Wyspy Dziewicze
+3369,ماليزيا
+3370,Dominique
+3371,أنتيغوا وباربودا
+3372,Holandia
+3373,Ethiopië
+3374,Israele
+3375,South Sudan
+3376,Eslováquia
+3377,코트디부아르
+3378,Niemcy
+3379,Британская территория в Индийском океане
+3380,Saksamaa
+3381,Slovakija
+3382,Αίγυπτος
+3383,Brytyjskie Terytorium Oceanu Indyjskiego
+3384,Brunej
+3385,Saint Barthélemy
+3386,عمان
+3387,Lesotas
+3388,Wyspy Owcze
+3389,اليمن
+3390,Мальдивы
+3391,ลักเซมเบิร์ก
+3392,Egipt
+3393,Islas Georgias del Sur y Sandwich del Sur
+3394,Αρμενία
+3395,Βολιβία
+3396,Ταϊβάν
+3397,Palesztina
+3398,เฟรนช์พอลินีเชีย
+3399,Kazakistan
+3400,Молдавия
+3401,Turks  och Caicosöarna
+3402,Gabão
+3403,Αργεντινή
+3404,เซเนกัล
+3405,Saint Kitts e Nevis
+3406,Kaaimaneilanden
+3407,沙特阿拉伯
+3408,Taiwan (Republikken Kina)
+3409,Benim
+3410,Seišeliai
+3411,Francia Guyana Francia Guyana
+3412,タイ
+3413,Taivanas
+3414,Western Sahara
+3415,Ρουμανία
+3416,Kypros
+3417,Kiurasao
+3418,Sierra Leona
+3419,Wallis e Futuna
+3420,Südsudan
+3421,Νήσοι Μάρσαλ
+3422,สาธารณรัฐแอฟริกากลาง
+3423,Μαλαισία
+3424,サン・バルテルミー
+3425,Коморы
+3426,Sydafrika
+3427,Kostaryka
+3428,إسرائيل
+3429,กาตาร์
+3430,Eritreia
+3431,Spojené království Velké Británie a Severního Irska
+3432,Isola Norfolk
+3433,برمودا
+3434,เอธิโอเปีย
+3435,Гібралтар
+3436,หมู่เกาะโซโลมอน
+3437,Rytų Timoras
+3438,Μπενίν
+3439,예멘
+3440,Cameroon
+3441,마다가스카르
+3442,Antarktis
+3443,Габон
+3444,Bosnia ja Hertsegoviina
+3445,เยเมน
+3446,산마리노
+3447,Фолклендські Острови
+3448,Americké Panenské ostrovy
+3449,Νίγηρας
+3450,布韦岛
+3451,Эритрея
+3452,Belgia
+3453,Екваторіальна Гвінея
+3454,グレナダ
+3455,Heard und McDonaldinseln
+3456,Sint Maarten (Dutch part)
+3457,Christmaseiland
+3458,Szent Ilona
+3459,Guadalupa
+3460,Terksas ir Kaikosas
+3461,카보베르데
+3462,Ungari
+3463,بنين
+3464,马约特
+3465,Киргизстан
+3466,Serra Leoa
+3467,Τσαντ
+3468,Norfolk Island
+3469,ジンバブエ
+3470,海地
+3471,เซเชลส์
+3472,Kongo Demokraatlik Vabariik
+3473,Sint Maarten
+3474,Dominikánska republika
+3475,Uusi Kaledonia
+3476,San Vicente y las Granadinas
+3477,Franse Zuidelijke en Antarctische Gebieden
+3478,Colômbia
+3479,Ägypten
+3480,Ireland
+3481,希腊
+3482,Австрія
+3483,Forenede Arabiske Emirater
+3484,Svizzera
+3485,หมู่เกาะแฟโร
+3486,Guernsey (Kanalinsel)
+3487,베냉
+3488,Кения
+3489,乌拉圭
+3490,มอนเตเนโกร
+3491,Francja
+3492,Butão
+3493,Franska Polynesien
+3494,كوستاريكا
+3495,그레나다
+3496,ハード島とマクドナルド諸島
+3497,Latvija
+3498,جورجيا الجنوبية وجزر ساندويتش الجنوبية
+3499,Bielorusko
+3500,غينيا
+3501,Svazilendas
+3502,Komoorid
+3503,Британські Віргінські Острови
+3504,リベリア
+3505,Lõuna Aafrika Vabariik
+3506,Монголия
+3507,Гаити
+3508,Schweden
+3509,Grönland
+3510,Espagne
+3511,ガーンジー
+3512,Luxembourg
+3513,Iraq
+3514,Sint Maarten
+3515,Bulharsko
+3516,Swazimaa
+3517,마카오
+3518,ラトビア
+3519,マヨット
+3520,Somalia
+3521,De palestinske territoriene
+3522,Μπουτάν
+3523,터키
+3524,Países Baixos Caribenhos
+3525,Indonesië
+3526,Cookove ostrovy
+3527,Hongrie
+3528,Tádžikistán
+3529,Slovenië
+3530,パナマ
+3531,ألبانيا
+3532,Cazaquistão
+3533,Armenia
+3534,Island
+3535,جزر القمر
+3536,سان بيير وميكلون
+3537,Îles mineures éloignées des États Unis
+3538,Κατάρ
+3539,맨섬
+3540,Svalbard ja Jan Mayen
+3541,ลิทัวเนีย
+3542,Trinidad e Tobago
+3543,Somalis
+3544,슬로바키아
+3545,Åland Islands
+3546,جزر ماريانا الشمالية
+3547,Kostarika
+3548,Španielsko
+3549,哥伦比亚
+3550,日本
+3551,มาเก๊า
+3552,Île de Man
+3553,Новая Каледония
+3554,Jordánia
+3555,摩尔多瓦
+3556,Maroc
+3557,Argentyna
+3558,Ida Timor
+3559,Filippinerne
+3560,Isole Heard e McDonald
+3561,Irakas
+3562,Tierras Australes y Antárticas Francesas
+3563,Sudafrica
+3564,リヒテンシュタイン
+3565,Сент Винсент и Гренадины
+3566,St. Lucia
+3567,Islas Cook
+3568,"Bonaire, Sint Eustatius ja Saba"
+3569,モンゴル
+3570,Comorerne
+3571,黎巴嫩
+3572,Brits Indische Oceaanterritorium
+3573,Ekvatorial Guinea
+3574,Κύπρος
+3575,إسبانيا
+3576,사우스조지아 사우스샌드위치 제도
+3577,Corea del Norte
+3578,Jersey (Kanalinsel)
+3579,Ruanda
+3580,Lettonia
+3581,노르웨이
+3582,룩셈부르크
+3583,몬테네그로
+3584,Mongolsko
+3585,Emirados Árabes Unidos
+3586,แกมเบีย
+3587,Καμερούν
+3588,Svatý Martin (francouzská část)
+3589,Brazil
+3590,Wallis ja Futunasaaret
+3591,Pitcairnøyene
+3592,إيطاليا
+3593,Barbados
+3594,غامبيا
+3595,Rovníková Guinea
+3596,Sveitsi
+3597,Turks and Caicos Islands
+3598,Ilha Bouvet
+3599,เกาหลีใต้
+3600,Sudan del Sud
+3601,Γκάμπια
+3602,Bělorusko
+3603,Isole BES
+3604,มอนต์เซอร์รัต
+3605,Kína
+3606,Giordania
+3607,المغرب
+3608,グアドループ
+3609,Šv. Bartolomėjaus sala
+3610,Уоллис и Футуна
+3611,سويسرا
+3612,Гаяна
+3613,Ierland
+3614,أراض فرنسية جنوبية وأنتارتيكية
+3615,東ティモール
+3616,Türkei
+3617,Isole Vergini americane
+3618,Prancūzijos Pietų Sritys
+3619,Liuksemburgas
+3620,Wyspy Świętego Tomasza i Książęca
+3621,Portugalsko
+3622,Salvador
+3623,エスワティニ
+3624,Gronelândia
+3625,Pitcairn szigetek
+3626,ウクライナ
+3627,اليونان
+3628,กัมพูชา
+3629,Pohjois Makedonia
+3630,Ranskan Guayana
+3631,Nouvelle Calédonie
+3632,Τανζανία
+3633,Δομινικανή Δημοκρατία
+3634,Republica Democrată Congo
+3635,Gwinea
+3636,Estados Federados da Micronésia
+3637,Cipro
+3638,Угорщина
+3639,Танзания
+3640,แทนซาเนีย
+3641,Martinika
+3642,Νήσος Αγίας Ελένης
+3643,ジャマイカ
+3644,Den sentralafrikanske republikk
+3645,Åland
+3646,Francúzske južné územia
+3647,Τζιμπουτί
+3648,Liibüa
+3649,Samoa Amerykańskie
+3650,영국령 인도양 지역
+3651,Камерун
+3652,Kuba
+3653,Кокосовые острова
+3654,Komory
+3655,ญี่ปุ่น
+3656,Rumunia
+3657,Czechy
+3658,Lithuania
+3659,柬埔寨
+3660,Αλβανία
+3661,Algerije
+3662,Tyrkia
+3663,Monako
+3664,สิงคโปร์
+3665,สหรัฐ
+3666,ฮอนดูรัส
+3667,Ονδούρα
+3668,Sent Lusija
+3669,Etiopie
+3670,Svalbard e Jan Mayen
+3671,"Sant'Elena, Ascensione e Tristan da Cunha"
+3672,スリナム
+3673,México
+3674,Montenegro
+3675,Мадагаскар
+3676,ПАР
+3677,Шрі Ланка
+3678,Omã
+3679,Литва
+3680,Tanzánia
+3681,Arabia Saudyjska
+3682,Βέλγιο
+3683,Малі
+3684,Уганда
+3685,Svätý Vincent a Grenadíny
+3686,Украина
+3687,Cambodja
+3688,Jordanie
+3689,에콰도르
+3690,Gwinea Równikowa
+3691,Китайская Республика
+3692,Французькі Південні і Антарктичні Території
+3693,斯威士兰
+3694,สาธารณรัฐโดมินิกัน
+3695,Papua Ny Guinea
+3696,Μποτσουάνα
+3697,Svalbard og Jan Mayen
+3698,نيبال
+3699,เวสเทิร์นสะฮารา
+3700,アンギラ
+3701,النمسا
+3702,Бенін
+3703,Mayotte
+3704,مالطا
+3705,Чилі
+3706,Singapore
+3707,Виргинские Острова (Великобритания)
+3708,Brunėjus
+3709,Westsahara
+3710,モルドバ共和国
+3711,Azerbajdžan
+3712,"Kongo, Republik"
+3713,Bulgarie
+3714,古巴
+3715,Tadżykistan
+3716,Papua New Guinea
+3717,Nieuw Caledonië
+3718,ОАЭ
+3719,Finsko
+3720,Luxembourg (pays)
+3721,Azerbaigian
+3722,Islanda
+3723,요르단
+3724,Vereinigte Arabische Emirate
+3725,Južná Afrika
+3726,포클랜드 제도
+3727,Togas
+3728,ジブチ
+3729,Ivoorkust
+3730,Grécko
+3731,기니
+3732,Antigua a Barbuda
+3733,Польша
+3734,Marshalløyene
+3735,Niederlande
+3736,Barbade
+3737,PAR
+3738,Republica Populară Chineză
+3739,Χονγκ Κονγκ
+3740,Μαλδίβες
+3741,"Santa Helena, Ascensão e Tristão da Cunha"
+3742,Francuskie Terytoria Południowe i Antarktyczne
+3743,Suíça
+3744,Gibraltar
+3745,Фіджі
+3746,Bułgaria
+3747,Кот д’Ивуар
+3748,ปวยร์โตรีโก
+3749,Французские Южные и Антарктические территории
+3750,Malta
+3751,Förenade Arabemiraten
+3752,البرازيل
+3753,Lõuna Georgia ja Lõuna Sandwichi saared
+3754,Líbya
+3755,차드
+3756,Corée du Nord
+3757,África do Sul
+3758,Szwajcaria
+3759,Бахрейн
+3760,Insulele Mariane de Nord
+3761,Sweden
+3762,캐나다
+3763,Insula Man
+3764,Amerikanska Samoa
+3765,Армения
+3766,콩고 민주 공화국
+3767,Alžyras
+3768,Greece
+3769,Insulele Cocos
+3770,เซอร์เบีย
+3771,Kapverdy
+3772,Παλάου
+3773,セルビア
+3774,Venezuela (Bolivarian Republic of)
+3775,Arménie
+3776,Kókusz (Keeling) szigetek
+3777,タジキスタン
+3778,Wallis és Futuna
+3779,Mikronezija
+3780,Falklandy (Malvíny)
+3781,Tuneesia
+3782,San Tomė ir Prinsipė
+3783,Uruguai
+3784,Нигер
+3785,جزر بيتكيرن
+3786,Norsko
+3787,กาบอง
+3788,ヨルダン
+3789,特立尼达和多巴哥
+3790,Îles Pitcairn
+3791,Malediivit
+3792,Εσουατίνι
+3793,Συρία
+3794,巴哈马
+3795,アゼルバイジャン
+3796,Grækenland
+3797,Nuova Zelanda
+3798,Bosnia ed Erzegovina
+3799,Brittiska Jungfruöarna
+3800,미크로네시아 연방
+3801,سنغافورة
+3802,Německo
+3803,"Sainte Hélène, Ascension et Tristan da Cunha"
+3804,Paraguay
+3805,Эквадор
+3806,Гуам
+3807,روسيا
+3808,Marocko
+3809,Azerbaijão
+3810,กัวเตมาลา
+3811,Trinidad och Tobago
+3812,Судан
+3813,Namiibia
+3814,ปากีสถาน
+3815,Намибия
+3816,Bahreïn
+3817,Marshalløerne
+3818,Gabonas
+3819,Servië
+3820,Švédsko
+3821,Tagikistan
+3822,ザンビア
+3823,Grenlandija
+3824,Svatý Martin (nizozemská část)
+3825,Iran
+3826,เอกวาดอร์
+3827,นิวซีแลนด์
+3828,Guyane
+3829,Saint Pierre e Miquelon
+3830,Гвиана
+3831,Антарктика
+3832,บอตสวานา
+3833,Σουηδία
+3834,Uus Kaledoonia
+3835,Norfolkinsaari
+3836,Gibuti
+3837,マーシャル諸島
+3838,Siera Leonė
+3839,Namibie
+3840,Slovacia
+3841,Spanje
+3842,กวม
+3843,มัลดีฟส์
+3844,مونتسرات
+3845,Egypti
+3846,ليسوتو
+3847,Insulele Virgine Americane
+3848,Alandų salos
+3849,库克群岛
+3850,Μάλτα
+3851,러시아
+3852,Polska
+3853,Δανία
+3854,Ekwador
+3855,Йемен
+3856,Hungria
+3857,Albania
+3858,"St. Helena, Ascension und Tristan da Cunha"
+3859,不丹
+3860,ロシア連邦
+3861,ホンジュラス
+3862,Turchia
+3863,Kyrgyzstán
+3864,Eritrea
+3865,Еквадор
+3866,Hiszpania
+3867,투르크메니스탄
+3868,Meno sala
+3869,Žaliasis Kyšulys
+3870,Румунія
+3871,ペルー
+3872,Taani
+3873,Китайська Народна Республіка
+3874,圣卢西亚
+3875,Исландия
+3876,Northern Mariana Islands
+3877,Малаві
+3878,Libeeria
+3879,Namíbia
+3880,Isola di Natale
+3881,Denemarken
+3882,Regno Unito
+3883,土耳其
+3884,Pologne
+3885,Marocco
+3886,Γαλλικά Νότια και Ανταρκτικά Εδάφη
+3887,เอสวาตีนี
+3888,ニジェール
+3889,تنزانيا
+3890,Falkland Islands (Malvinas)
+3891,Malediwy
+3892,Κιριμπάτι
+3893,Rep. Centrafricana
+3894,보네르섬
+3895,Kirgizisztán
+3896,Παραγουάη
+3897,Mauritania
+3898,Singapur
+3899,Færøyene
+3900,Bouvetov ostrov
+3901,Menšie odľahlé ostrovy USA
+3902,Sudaan
+3903,Isole minori esterne degli Stati Uniti
+3904,匈牙利
+3905,Oekraïne
+3906,Venesuela
+3907,Spojené štáty
+3908,クウェート
+3909,Nigerija
+3910,Dramblio Kaulo Krantas
+3911,Nauru
+3912,نيجيريا
+3913,Nigéria
+3914,阿联酋
+3915,Cambodia
+3916,Indonésie
+3917,Kina
+3918,체코
+3919,ألمانيا
+3920,Багамские Острова
+3921,Ισημερινή Γουινέα
+3922,กานา
+3923,Великобритания
+3924,Kroatia
+3925,Republik China
+3926,Thailanda
+3927,Suecia
+3928,Rusija
+3929,Dominikai Köztársaság
+3930,Αϊτή
+3931,Insula Jersey
+3932,Guinée équatoriale
+3933,الإكوادور
+3934,Маврикій
+3935,Thaiföld
+3936,フランス領ポリネシア
+3937,Saint Pierre en Miquelon
+3938,法属圭亚那
+3939,Палау
+3940,Áustria
+3941,Нідерланди
+3942,이스라엘
+3943,ตุรกี
+3944,São Martinho
+3945,Maroko
+3946,ชาด
+3947,Περού
+3948,생마르탱
+3949,Makedonija
+3950,Острів Різдва
+3951,Griekenland
+3952,Sao Tome și Principe
+3953,Bosnia și Herțegovina
+3954,ラオス人民民主共和国
+3955,Сен П'єр і Мікелон
+3956,Seychellerna
+3957,السودان
+3958,Saalomoni Saared
+3959,Єгипет
+3960,斐济
+3961,Ucraina
+3962,Isole Marianne Settentrionali
+3963,Sambia
+3964,格陵兰
+3965,Östtimor
+3966,瑞士
+3967,Вьетнам
+3968,Špicbergy a Jan Mayen
+3969,Μοντσερράτ
+3970,Brazylia
+3971,Ilha do Natal
+3972,الغابون
+3973,Ecuador
+3974,Gibraltaras
+3975,Bolívie
+3976,Isole Pitcairn
+3977,Polinesia Francesa
+3978,Islanti
+3979,Indie
+3980,Switzerland
+3981,Sirija
+3982,سوريا
+3983,방글라데시
+3984,ハンガリー
+3985,Slowakei
+3986,Cambodge
+3987,北マケドニア
+3988,Džibutis
+3989,Moldavië
+3990,피지
+3991,Soedan
+3992,新西兰
+3993,Volksrepublik China
+3994,USA's ydre småøer
+3995,จิบูตี
+3996,상투메 프린시페
+3997,Paragwaj
+3998,Egipto
+3999,เซนต์ลูเชีย
+4000,Belize
+4001,Albanie
+4002,อาร์เจนตินา
+4003,塞内加尔
+4004,Kazachstan
+4005,Italien
+4006,Острів Норфолк
+4007,Litwa
+4008,巴林
+4009,니카라과
+4010,Keski Afrikan tasavalta
+4011,Andorre
+4012,Государство Палестина
+4013,Faerské ostrovy
+4014,Malaezia
+4015,几内亚
+4016,Saint Siège (État de la Cité du Vatican)
+4017,Τουβαλού
+4018,Švedija
+4019,타이완
+4020,Szingapúr
+4021,Ucrania
+4022,モナコ
+4023,冰岛
+4024,Pitcairninseln
+4025,مولدوفا
+4026,Viêt Nam
+4027,San Bartolomé
+4028,Sør Georgia og Sør Sandwichøyene
+4029,Norfolk
+4030,Hong Kong
+4031,安道尔
+4032,Республика Конго
+4033,密克罗尼西亚联邦
+4034,Пакистан
+4035,República Centroafricana
+4036,ジャージー
+4037,诺福克岛
+4038,บาร์เบโดส
+4039,ブルネイ・ダルサラーム
+4040,赞比亚
+4041,"Svatá Helena, Ascension a Tristan da Cunha"
+4042,Australien
+4043,カンボジア
+4044,Kirgizistan
+4045,Σερβία
+4046,Nicaragua
+4047,Roemenië
+4048,رومانيا
+4049,إستونيا
+4050,Γιβραλτάρ
+4051,Тувалу
+4052,Insulele Marshall
+4053,Сальвадор
+4054,Nördliche Marianen
+4055,Мьянма
+4056,Aruba
+4057,Bulgária
+4058,Oman
+4059,바하마
+4060,Słowacja
+4061,Norja
+4062,Heard ja McDonaldinsaaret
+4063,アイルランド
+4064,エチオピア
+4065,Ekvatorialguinea
+4066,Luksemburg
+4067,Νήσοι Κουκ
+4068,卡塔尔
+4069,Svalbard och Jan Mayen
+4070,Roménia
+4071,Čile
+4072,โกตดิวัวร์
+4073,Tadschikistan
+4074,핀란드
+4075,Aserbajdsjan
+4076,Qatar
+4077,탄자니아
+4078,Butanas
+4079,Amerikaans Samoa
+4080,มอริเตเนีย
+4081,Costa Rica
+4082,Trinidad and Tobago
+4083,智利
+4084,เวเนซุเอลา
+4085,纽埃
+4086,Iceland
+4087,Wallis i Futuna
+4088,Libija
+4089,Trinité et Tobago
+4090,"Korea, Republic of"
+4091,ليتوانيا
+4092,"Μποναίρ, Άγιος Ευστάθιος και Σάμπα"
+4093,Írország
+4094,Сен Бартельмі
+4095,Weihnachtsinsel
+4096,กรีนแลนด์
+4097,"Sint Helena, Ascension en Tristan da Cunha"
+4098,Pitcairnove ostrovy
+4099,Αντίγκουα και Μπαρμπούντα
+4100,Ukrajina
+4101,적도 기니
+4102,غوام
+4103,Slovaquie
+4104,باهاماس
+4105,Sahara Occidentală
+4106,บุรุนดี
+4107,イラク
+4108,هايتي
+4109,香港
+4110,จาเมกา
+4111,เวียดนาม
+4112,ベリーズ
+4113,Liberija
+4114,Лесото
+4115,イギリス領インド洋地域
+4116,Τόγκα
+4117,Никарагуа
+4118,ДР Конго
+4119,Mongólia
+4120,Bouvet’nsaari
+4121,인도네시아
+4122,Tajiquistão
+4123,Ιράν
+4124,Tunisas
+4125,كندا
+4126,대한민국
+4127,尼加拉瓜
+4128,아르헨티나
+4129,フランス領ギアナ
+4130,بروناي
+4131,Albanija
+4132,เซาตูเมและปรินซีปี
+4133,Simbabwe
+4134,Νεπάλ
+4135,Románia
+4136,Libano
+4137,Serbia
+4138,Palestiina
+4139,توكيلاو
+4140,สาธารณรัฐคองโก
+4141,괌
+4142,Australija
+4143,Croatie
+4144,Estados Unidos
+4145,Ισλανδία
+4146,Maldive
+4147,Saint Marin
+4148,Bosznia Hercegovina
+4149,Kongói Demokratikus Köztársaság (Zaire)
+4150,ไนเจอร์
+4151,Îles Caïmans
+4152,Örményország
+4153,中国台湾省
+4154,Antarktis (Sonderstatus durch Antarktisvertrag)
+4155,Wenezuela
+4156,Кайманові Острови
+4157,Ανταρκτική
+4158,Ciprus
+4159,Columbia
+4160,Бельгия
+4161,Falklandy
+4162,Moldavija
+4163,Шпицберген и Ян Майен
+4164,利比亚
+4165,波多黎各
+4166,Východní Timor
+4167,Rusia
+4168,Kipras
+4169,هونغ كونغ
+4170,Christmas Island
+4171,Slovėnija
+4172,Польща
+4173,Észak Korea (Koreai NDK)
+4174,มอลตา
+4175,Islande
+4176,委内瑞拉
+4177,Filipinai
+4178,Μογγολία
+4179,أنغولا
+4180,Eslovênia
+4181,Francúzsko
+4182,레바논
+4183,Mikronesiska federationen
+4184,Põhja Makedoonia
+4185,파키스탄
+4186,Kolumbija
+4187,العراق
+4188,Науру
+4189,Швеція
+4190,Jemenas
+4191,Émirats arabes unis
+4192,Γροιλανδία
+4193,Konžská demokratická republika
+4194,Brasiilia
+4195,Zimbabwe
+4196,Андорра
+4197,Maleisië
+4198,Північна Корея
+4199,Сен Пьер и Микелон
+4200,قيرغيزستان
+4201,리히텐슈타인
+4202,San Martín
+4203,"Santa Elena, Ascensión y Tristán de Acuña"
+4204,Vatikanstadt
+4205,Iisrael
+4206,パラオ
+4207,Hellas
+4208,Samoa americană
+4209,Gvinėja
+4210,Yemen
+4211,Botswana
+4212,Französische Süd  und Antarktisgebiete
+4213,États Unis
+4214,มอริเชียส
+4215,毛里塔尼亚
+4216,"Bonaire, Svätý Eustach a Saba"
+4217,Руанда
+4218,생바르텔레미
+4219,圣诞岛
+4220,Γεωργία
+4221,Insula Crăciunului
+4222,هولندا
+4223,Bosnija ir Hercegovina
+4224,Vestsahara
+4225,Suède
+4226,Níger
+4227,Moldau
+4228,瑙鲁
+4229,Mauretanien
+4230,Andora
+4231,Ομάν
+4232,Samoa
+4233,塞浦路斯
+4234,Irland
+4235,ガイアナ
+4236,イギリス
+4237,Amerikos Samoa
+4238,Tayikistán
+4239,Guiana Francesa
+4240,Irlande (pays)
+4241,马里
+4242,Уругвай
+4243,Perù
+4244,طاجيكستان
+4245,Japan
+4246,Itálie
+4247,Mariany Północne
+4248,Vietnamas
+4249,غانا
+4250,Svatý Vincenc a Grenadiny
+4251,Islas Cocos
+4252,Seychellerne
+4253,Bangladés
+4254,Wallis en Futuna
+4255,Kenia
+4256,Sydsudan
+4257,Trinidad ja Tobago
+4258,キューバ
+4259,Islas Feroe
+4260,말레이시아
+4261,Svalbard i Jan Mayen
+4262,Toquelau
+4263,Uruguaj
+4264,Porto Rico
+4265,イタリア
+4266,Франція
+4267,Brunéi
+4268,Šveits
+4269,บราซิล
+4270,United States of America
+4271,หมู่เกาะโอลันด์
+4272,أوغندا
+4273,Horvaatia
+4274,Islas Ultramarinas Menores de los Estados Unidos
+4275,Essuatíni
+4276,Wallis  och Futunaöarna
+4277,Аландські острови
+4278,Luxembursko
+4279,Uusi Seelanti
+4280,Azerbaïdjan
+4281,Belgicko
+4282,السعودية
+4283,西サハラ
+4284,Guiné Equatorial
+4285,Svatý Kryštof a Nevis
+4286,Индия
+4287,เกาะนอร์ฟอล์ก
+4288,아이티
+4289,Γουινέα Μπισσάου
+4290,Μπουρκίνα Φάσο
+4291,モンテネグロ
+4292,埃塞俄比亚
+4293,サンマリノ
+4294,Ταϊλάνδη
+4295,Japon
+4296,Filippinene
+4297,Martynika
+4298,Гернси
+4299,Αμερικανικές Παρθένοι Νήσοι
+4300,États fédérés de Micronésie (pays)
+4301,Armenië
+4302,Palestine
+4303,Észtország
+4304,セントビンセントおよびグレナディーン諸島
+4305,سانت هيلانة وأسينشين وتريستان دا كونا
+4306,Île Norfolk
+4307,Timor Oriental
+4308,Свальбард і Ян Маєн
+4309,Афганістан
+4310,Antigua et Barbuda
+4311,格林纳达
+4312,South Georgia and the South Sandwich Islands
+4313,塞尔维亚
+4314,Mexic
+4315,سان بارتيلمي
+4316,Βραζιλία
+4317,东帝汶
+4318,トルコ
+4319,Turkiet
+4320,Congo
+4321,ЦАР
+4322,Kambodža
+4323,Ruotsi
+4324,Portoryko
+4325,Замбія
+4326,Libye
+4327,Hongarije
+4328,Греция
+4329,斯里兰卡
+4330,Islas Pitcairn
+4331,Сейшельські Острови
+4332,Ісландія
+4333,Antarktida
+4334,หมู่เกาะเคย์แมน
+4335,UK

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+subsidiary_parent_score/__init__.py
+subsidiary_parent_score/countries_name.csv
+subsidiary_parent_score/matching_function.py
+subsidiary_parent_score.egg-info/PKG-INFO
+subsidiary_parent_score.egg-info/SOURCES.txt
+subsidiary_parent_score.egg-info/dependency_links.txt
+subsidiary_parent_score.egg-info/requires.txt
+subsidiary_parent_score.egg-info/top_level.txt
+subsidiary_parent_score/data/countries_name.csv
