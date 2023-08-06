@@ -1,0 +1,85 @@
+name: divina dev
+
+on:
+  push:
+    branches:
+      - '*'
+      - '!main'
+      - '!test'
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    container: jhurdle/divina:test
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Lint with flake8
+        run: |
+          # stop the build if there are Python syntax errors or undefined names
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+  unit_test:
+    runs-on: ubuntu-latest
+    container: jhurdle/divina:test
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Test with pytest
+        run: |
+          python3 -m pytest divina/tests/test_1_unit.py --cov-report term --cov-report html --cov ./
+      - name: Report Coverage
+        run: |
+          coverage report -m
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          name: codecov-divina
+          files: htmlcov/*
+          fail_ci_if_error: true
+  docs:
+    runs-on: ubuntu-latest
+    container: jhurdle/divina:test
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Build docs
+        run: |
+          sphinx-build docs_src docs
+          touch docs/.nojekyll
+      - name: Commit docs
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/* -f
+          git add docs/.nojekyll -f
+          git commit -am "Build docs"
+      - name: Push docs
+        uses: ad-m/github-push-action@master
+        with:
+          branch: ${{ github.ref }}
+          directory: docs
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  pypi:
+    runs-on: ubuntu-latest
+    container: jhurdle/divina:test
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Test pypi
+        run: |
+          python3 setup.py sdist bdist_wheel
+          twine check dist/*
