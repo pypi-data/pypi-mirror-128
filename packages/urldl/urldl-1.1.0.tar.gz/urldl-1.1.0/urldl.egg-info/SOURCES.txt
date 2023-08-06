@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+urldl.py
+urldl.egg-info/PKG-INFO
+urldl.egg-info/SOURCES.txt
+urldl.egg-info/dependency_links.txt
+urldl.egg-info/not-zip-safe
+urldl.egg-info/requires.txt
+urldl.egg-info/top_level.txt
