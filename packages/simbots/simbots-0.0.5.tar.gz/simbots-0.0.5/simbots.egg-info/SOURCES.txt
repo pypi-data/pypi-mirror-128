@@ -1,0 +1,14 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+simbots.egg-info/PKG-INFO
+simbots.egg-info/SOURCES.txt
+simbots.egg-info/dependency_links.txt
+simbots.egg-info/requires.txt
+simbots.egg-info/top_level.txt
+src/Bot.py
+src/Context.py
+src/Entity.py
+src/Intent.py
+src/__init__.py
