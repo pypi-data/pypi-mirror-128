@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: pythonic-bert
+Version: 1.7.6
+Summary: a package for your bert using
+Home-page: https://github.com/boss2020/pytorch-transformer
+Author: xiaoguzai
+Author-email: 474551240@qq.com
+License: Apache License 2.0
+Download-URL: https://github.com/boss2020/pytorch-transformer/master.zip
+Description: 使用pytorch实现你的bert项目
+Platform: UNKNOWN
