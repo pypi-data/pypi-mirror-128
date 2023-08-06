@@ -1,0 +1,12 @@
+pyLHD/LHD_optim.py,sha256=vCe2Q1ZJ-j3yr0233QaFuXCe1ISHl4FbyUNE7Ryg5KQ,4145
+pyLHD/OLHD.py,sha256=YRP7TuK_4iLLPUj2RgcjO9tWGKUjuKBvNpBBVb0aGOo,11689
+pyLHD/__init__.py,sha256=efDQo9AOef6RKiykip8wggi_fpIXCAzJKVgbQFI_oJo,167
+pyLHD/base_designs.py,sha256=0u2tOKc9VBehOTPuCa-IGSiXnW6Aeusy9DjW-JZURpI,1830
+pyLHD/criteria.py,sha256=RpZmmNiNTZPRKhrZa1DY_tzGwApzMXsx16A22LUwBNw,3979
+pyLHD/misc.py,sha256=ithWYhRS-ICYWmqLlDH5BmyVn_2-vEHvZmBu3XQbuvU,415
+pyLHD/utils.py,sha256=zRkyUqpRUZPKklBTfXOeA022ttNFsbl4XIPiXh49PAs,5566
+pyLHD-0.4.2.dist-info/LICENSE,sha256=VgKolqGUV8yfDiNJURMFB92vQbmVrfgPWqFnh38y0Os,1072
+pyLHD-0.4.2.dist-info/METADATA,sha256=BY5Pff0lOu37dBLhCkGWkP9wrLjfBxWfBNv6Uj4ZQCY,3393
+pyLHD-0.4.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyLHD-0.4.2.dist-info/top_level.txt,sha256=P76OX1HVc2sBGpapbfVMXDpVF7O3Oy_kR6_4OOV5KSY,6
+pyLHD-0.4.2.dist-info/RECORD,,
