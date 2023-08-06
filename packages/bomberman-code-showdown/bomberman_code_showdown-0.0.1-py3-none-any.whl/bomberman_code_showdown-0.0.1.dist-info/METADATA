@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bomberman-code-showdown
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Vlad Calin
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pygame
+Requires-Dist: aiohttp
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+
+UNKNOWN
+
+

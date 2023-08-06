@@ -1,0 +1,3 @@
+[console_scripts]
+bomberman-code-showdown = bomberman.renderer:main
+
