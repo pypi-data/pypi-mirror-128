@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fair-pr
+Version: 0.1.1a2
+Summary: Fair graph algorithms for ranking as described in 'Fairness-Aware PageRank' (https://arxiv.org/abs/2005.14431).
+Author: Sotiris Tsioutsiouliklis
+Author-email: sotiris.ts@outlook.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
