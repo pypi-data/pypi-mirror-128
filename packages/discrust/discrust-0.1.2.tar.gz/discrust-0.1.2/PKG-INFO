@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: discrust
+Version: 0.1.2
+Requires-Dist: numpy>=1.21
+Requires-Dist: pandas>=1.3
