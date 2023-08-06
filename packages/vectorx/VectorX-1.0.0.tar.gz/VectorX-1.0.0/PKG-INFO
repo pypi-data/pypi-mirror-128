@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: vectorx
+Version: 1.0.0
+Summary: class Vector(x=0, y=0, z=0)
+Author: semenchuk Community
+Author-email: hootuk@yandex.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
