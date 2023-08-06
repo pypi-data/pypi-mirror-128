@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: karabo_data
+Version: 0.8.0
+Summary: Tools to read and analyse data from European XFEL 
+Home-page: https://github.com/European-XFEL/karabo_data
+Author: European XFEL GmbH
+Author-email: da-support@xfel.eu
+Maintainer: Thomas Michelat
+License: BSD-3-Clause
+Description: [![Build Status](https://travis-ci.org/European-XFEL/karabo_data.svg?branch=master)](https://travis-ci.org/European-XFEL/karabo_data)
+        [![codecov](https://codecov.io/gh/European-XFEL/karabo_data/branch/master/graph/badge.svg)](https://codecov.io/gh/European-XFEL/karabo_data)
+        
+        Python 3 tools for reading European XFEL's HDF5 files.
+        
+        karabo_data has been renamed to
+        [EXtra-data](https://github.com/European-XFEL/EXtra-data) (for data access)
+        and [EXtra-geom](https://github.com/European-XFEL/EXtra-geom) (for
+        detector geometry and image assembly). Please use those packages for new
+        code.
+        
+        [Documentation](https://karabo-data.readthedocs.io/en/latest/)
+        
+        Installing
+        ==========
+        
+        `karabo_data` is available on our Anaconda installation on the Maxwell cluster:
+        
+            module load exfel exfel_anaconda3
+        
+        You can also install it [from PyPI](https://pypi.org/project/karabo-data/)
+        to use in other environments with Python 3.5 or later:
+        
+            pip install karabo_data
+        
+        If you get a permissions error, add the `--user` flag to that command.
+        
+        
+        Contributing
+        ===========
+        
+        Tests
+        -----
+        
+        Tests can be run as follows:
+        
+            python3 -m pytest -v
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: docs
