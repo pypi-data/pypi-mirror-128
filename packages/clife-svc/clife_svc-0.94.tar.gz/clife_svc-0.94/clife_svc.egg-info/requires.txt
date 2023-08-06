@@ -1,0 +1,8 @@
+loguru
+aiohttp
+uvicorn
+requests
+cos_python_sdk_v5
+aiofiles
+fastapi
+orjson
