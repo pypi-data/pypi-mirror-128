@@ -1,0 +1,4 @@
+aiohttp
+attrs
+sentinel
+tomli
