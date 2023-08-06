@@ -1,0 +1,3 @@
+Pillow
+smbus2
+numpy
