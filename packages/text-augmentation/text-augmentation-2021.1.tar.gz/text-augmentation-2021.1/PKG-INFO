@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: text-augmentation
+Version: 2021.1
+Summary: Package to perform text augmentation.
+License: AGPL
+Author: MONTANA Knowledge Management ltd.
+Author-email: info@distiller.dev
+Requires-Python: >=3.8,<3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: digital-twin-distiller (>=2021.12,<2022.0)
+Requires-Dist: fasttext (>=0.9.2,<0.10.0)
+Requires-Dist: gensim (>=4.1.2,<5.0.0)
+Requires-Dist: importlib-resources (>=5.4.0,<6.0.0)
+Requires-Dist: scikit-learn (>=1.0.1,<2.0.0)
+Requires-Dist: tqdm (>=4.62.3,<5.0.0)
