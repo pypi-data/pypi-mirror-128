@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "krono"
+version = "0.1.5"
+description = "Aplicativo de linha de comando para rastrear o tempo de trabalho"
+authors = ["rafaelmatsumoto <rafael.matsumoto43@catolicasc.edu.br>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+krono = "krono.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.4.0"
+pandas = "^1.3.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
