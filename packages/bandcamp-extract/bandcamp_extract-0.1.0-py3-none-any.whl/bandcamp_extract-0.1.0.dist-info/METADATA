@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: bandcamp-extract
+Version: 0.1.0
+Summary: Extract BandCamp .zip album folders to their appropriate place
+Home-page: https://github.com/JonMontgo/bandcamp_extract
+Author: Jonathan Montgomery
+Author-email: jonathan.montgo@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/JonMontgo/bandcamp_extract
+Project-URL: Issues, https://github.com/JonMontgo/bandcamp_extract/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: click
+Requires-Dist: tinytag
+Provides-Extra: lint
+Requires-Dist: flake8 ; extra == 'lint'
+
+# Band Camp Album Extractor
+This python script extracts all of the songs for a bandcamp album download.
+
+## Install
+To install this package simply run
+```sh
+pip install .
+```
+in the root of this package
+
+## Usage
+After installation the extrator's binary is called `bcextr` it can be used like
+so
+```sh
+bcextr ~/Downloads/album.zip --pattern ~/Music/{artist}/{album}/{title}
+```
+Default pattern if not provided is: `./{artist}/{album}/{title}`
+
+The pattern substitution will substitute any parameter it gets in [tinytag](https://github.com/devsnd/tinytag)
+The file extension will also be added to the end of the `pattern` when moving
+the song to it's destination
+
+```py
+tag.album         # album as string
+tag.albumartist   # album artist as string
+tag.artist        # artist name as string
+tag.audio_offset  # number of bytes before audio data begins
+tag.bitrate       # bitrate in kBits/s
+tag.comment       # file comment as string
+tag.composer      # composer as string 
+tag.disc          # disc number
+tag.disc_total    # the total number of discs
+tag.duration      # duration of the song in seconds
+tag.filesize      # file size in bytes
+tag.genre         # genre as string
+tag.samplerate    # samples per second
+tag.title         # title of the song
+tag.track         # track number as string
+tag.track_total   # total number of tracks as string
+tag.year          # year or data as string
+```
+
+It is important to note that any files that are not music in the zip are not moved to the 
+destination folder.
+
+
