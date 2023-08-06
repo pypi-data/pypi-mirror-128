@@ -1,0 +1,3 @@
+[vdk.plugin.run]
+vdk-server = vdk.plugin.server.server_plugin
+
