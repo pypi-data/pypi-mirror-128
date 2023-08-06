@@ -1,0 +1,3 @@
+[console_scripts]
+webhawk = webhawk.src.__main__:main
+
