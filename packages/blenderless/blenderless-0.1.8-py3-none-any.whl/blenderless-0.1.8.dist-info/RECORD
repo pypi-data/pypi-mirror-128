@@ -1,0 +1,16 @@
+blenderless/BUILD.bazel,sha256=QwQQL5qk3G3JtHqtQt8gzsbkbly_-iKJErWOR2ezngw,1221
+blenderless/__init__.py,sha256=sQmbCpMCN1evNm2cSHhPp-0Hhd0rRVFrp60B2jlFg1Y,41
+blenderless/blender_object.py,sha256=TR1eaXznP7TuAy8079tvbnZYkVCPJTvDCz9VeNpp28c,1414
+blenderless/camera.py,sha256=BGoUZaiyasbj2nUWsehhKioCXWK33Q3lCP3kc3j_sII,3712
+blenderless/cli.py,sha256=-MWhTwGW3ysu5XcMLTjfdtnDQvAOi7BmxGYuAwXsGhI,2545
+blenderless/geometry.py,sha256=owYMhCINHBB8YMn4KXwfjZW1X0nSB0aKM5s1lB-nrrY,6261
+blenderless/io.py,sha256=6K6sTHY_3ElFP3Pzz_ktITe5J7N1bXK-cqHujATsIhs,723
+blenderless/main.py,sha256=KmcZBCTcD4GOCJtTv2-u08tW6NPtX1F43U1Q4aoXjok,2277
+blenderless/material.py,sha256=57z_WhJlwZDZt5GGOn0E7MqYb4B9O7-4EsojgylRaOw,2220
+blenderless/scene.py,sha256=mYXY75lZmHTifON87GUMaLLEgqy_m4hlQVHFFi708eE,6049
+blenderless/utils.py,sha256=tDvJiOp3zoI3X9J3kVw5MUoR3xttrG5G7Tcq-5vB3g8,650
+blenderless-0.1.8.dist-info/entry_points.txt,sha256=XGaTBD6-r4MB0eiFQxA93il3xi-aeCPsc3Rx-jBJfnU,51
+blenderless-0.1.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+blenderless-0.1.8.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+blenderless-0.1.8.dist-info/METADATA,sha256=7y6r8_ZfRdMFnzIHXZGbSrC_4w9e_g8bEv9SL1c5YOg,4779
+blenderless-0.1.8.dist-info/RECORD,,
