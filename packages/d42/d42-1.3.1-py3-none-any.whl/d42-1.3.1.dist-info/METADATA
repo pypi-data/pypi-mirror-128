@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: d42
+Version: 1.3.1
+Summary: 
+Home-page: https://github.com/nikitanovosibirsk/d42
+License: Apache-2.0
+Author: Nikita Tsvetkov
+Author-email: nikitanovosibirsk@yandex.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Requires-Dist: blahblah (>=1.3,<1.4)
+Requires-Dist: district42 (>=1.3,<1.4)
+Requires-Dist: revolt (>=1.3,<1.4)
+Requires-Dist: valera (>=1.3,<1.4)
+Project-URL: Repository, https://github.com/nikitanovosibirsk/d42
+Description-Content-Type: text/markdown
+
+# d42
+
+[![PyPI](https://img.shields.io/pypi/v/d42.svg?style=flat-square)](https://pypi.python.org/pypi/d42/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/d42?style=flat-square)](https://pypi.python.org/pypi/d42/)
+[![Python Version](https://img.shields.io/pypi/pyversions/d42.svg?style=flat-square)](https://pypi.python.org/pypi/d42/)
+
+## Installation
+
+```sh
+pip3 install d42
+```
+
+## Usage
+
+```python
+from d42 import schema, fake, validate_or_fail
+
+sch = schema.str("banana")
+
+assert validate_or_fail(sch, fake(sch))
+```
+
