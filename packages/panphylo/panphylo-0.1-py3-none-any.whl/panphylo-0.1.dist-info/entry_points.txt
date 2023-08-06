@@ -1,0 +1,3 @@
+[console_scripts]
+panphylo = panphylo.__main__:main
+
