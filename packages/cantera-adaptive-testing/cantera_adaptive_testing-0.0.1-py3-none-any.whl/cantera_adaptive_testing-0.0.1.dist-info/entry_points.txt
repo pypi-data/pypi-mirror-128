@@ -1,0 +1,4 @@
+[console_scripts]
+adaptive-testing = cantera_adaptive_testing.commandline:commandLineMain
+adaptive-testing.mpi_run_all = cantera_adaptive_testing.commandline:MPIRunAll
+
