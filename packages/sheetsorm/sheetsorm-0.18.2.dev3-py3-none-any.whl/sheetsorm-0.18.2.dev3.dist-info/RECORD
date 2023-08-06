@@ -1,0 +1,11 @@
+sheetsorm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sheetsorm/decorators.py,sha256=DA4a2RmesmlEK5Q4g9xHtDrTsPWSLufhujwuRAOAPIM,4627
+sheetsorm/models.py,sha256=qdWWj6hGLV9tBTCv2LcyiZgwoe78C5AJTZ5H33c27Ys,620
+sheetsorm/orm.py,sha256=ZeR7GyY0v_i8jkCf-ADTARJ4b-hWA-ysIlRW43KuhMw,3626
+sheetsorm/repository.py,sha256=3gPGzYBiFGJrw2e8dCS9MzCLo9q791fBHCWvsz26H8s,10026
+sheetsorm/util.py,sha256=McN5_IKwp_kLLEb2v34YWlKQ2RJzHEEexDmt_499Mbo,131
+sheetsorm-0.18.2.dev3.dist-info/LICENSE,sha256=So8k7nKK6TKZnzt5cXpGWdCnluMAojEwKMHzW-Q45Z8,1089
+sheetsorm-0.18.2.dev3.dist-info/METADATA,sha256=XIJV4FPXDlIcFf7yslzfA8V2Vd3AvmPfH6VuXvmKpss,3548
+sheetsorm-0.18.2.dev3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sheetsorm-0.18.2.dev3.dist-info/top_level.txt,sha256=coTiY1mwqP8AEAiZAroKFXjWO21t7YtCEaQzwzFkyC4,10
+sheetsorm-0.18.2.dev3.dist-info/RECORD,,
