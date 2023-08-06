@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+card_deck_wiessall/__init__.py
+card_deck_wiessall/_nbdev.py
+card_deck_wiessall/card.py
+card_deck_wiessall.egg-info/PKG-INFO
+card_deck_wiessall.egg-info/SOURCES.txt
+card_deck_wiessall.egg-info/dependency_links.txt
+card_deck_wiessall.egg-info/entry_points.txt
+card_deck_wiessall.egg-info/not-zip-safe
+card_deck_wiessall.egg-info/requires.txt
+card_deck_wiessall.egg-info/top_level.txt
