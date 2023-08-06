@@ -1,0 +1,10 @@
+flask
+Flask-Caching
+GDAL
+large_image
+large_image_source_gdal
+requests
+scooby
+
+[leaflet]
+ipyleaflet
