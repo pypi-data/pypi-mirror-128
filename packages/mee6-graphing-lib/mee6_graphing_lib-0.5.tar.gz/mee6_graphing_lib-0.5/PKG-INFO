@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: mee6_graphing_lib
+Version: 0.5
+Summary: A library that tracks user progress in the MEE6 discord bot
+Home-page: https://github.com/StarkOdinson612/mee6_graphing_lib
+Author: Stark Odinson
+Author-email: darkknightishaan@gmail.com
+License: MIT
+Download-URL: https://github.com/StarkOdinson612/mee6_graphing_lib/archive/refs/tags/v0.5.tar.gz
+Description: UNKNOWN
+Keywords: MEE6,Graphing,Discord,Levelling
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
