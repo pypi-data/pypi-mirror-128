@@ -1,0 +1,15 @@
+ChangeLog.md
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_aiearth_meteorology20210928/__init__.py
+alibabacloud_aiearth_meteorology20210928/client.py
+alibabacloud_aiearth_meteorology20210928/models.py
+alibabacloud_aiearth_meteorology20210928.egg-info/PKG-INFO
+alibabacloud_aiearth_meteorology20210928.egg-info/SOURCES.txt
+alibabacloud_aiearth_meteorology20210928.egg-info/dependency_links.txt
+alibabacloud_aiearth_meteorology20210928.egg-info/requires.txt
+alibabacloud_aiearth_meteorology20210928.egg-info/top_level.txt
