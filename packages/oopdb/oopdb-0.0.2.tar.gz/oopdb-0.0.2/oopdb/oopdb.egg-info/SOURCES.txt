@@ -1,0 +1,6 @@
+README.md
+setup.py
+oopdb/oopdb.egg-info/PKG-INFO
+oopdb/oopdb.egg-info/SOURCES.txt
+oopdb/oopdb.egg-info/dependency_links.txt
+oopdb/oopdb.egg-info/top_level.txt
