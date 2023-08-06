@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+annotell/openlabel/__init__.py
+annotell/openlabel/models/__init__.py
+annotell/openlabel/models/models.py
+annotell/openlabel/models/utils/__init__.py
+annotell/openlabel/models/utils/data_type_parsing.py
+annotell/openlabel/schemas/__init__.py
+annotell/openlabel/tools/__init__.py
+annotell/openlabel/tools/model_generation.py
+annotell_openlabel.egg-info/PKG-INFO
+annotell_openlabel.egg-info/SOURCES.txt
+annotell_openlabel.egg-info/dependency_links.txt
+annotell_openlabel.egg-info/namespace_packages.txt
+annotell_openlabel.egg-info/top_level.txt
