@@ -1,0 +1,7 @@
+torch
+dgl>=0.6
+networkx
+numpy
+seaborn
+sklearn
+tqdm
