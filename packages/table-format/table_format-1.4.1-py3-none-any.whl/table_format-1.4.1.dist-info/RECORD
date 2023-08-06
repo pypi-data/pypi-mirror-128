@@ -1,0 +1,11 @@
+table_format/__init__.py,sha256=H5wV2WUfP9_cHflqYF207oZiJLefkP7X0gps43JobV4,9463
+table_format/__main__.py,sha256=PrHlt22QmhDXnYKnU0Wv9IKcm3hWFldbfslbSjVLcnY,329
+table_format/api.py,sha256=k0jrFkkTf2yUh3CAibb8oVd6bO6YLR_VASi8ChfEzSg,42
+table_format/cli.py,sha256=16Av0ORj29SaQPi0E0CdM-_w-lAqY-jiWDdt4CvVrig,1910
+table_format/version.py,sha256=LYkeawfKjqV9KkA9CsB5JGwX1bIy1Vg8Enk4pEhhYHE,1011
+table_format-1.4.1.dist-info/LICENSE,sha256=qwk1kA2YPtmTs8DkSy7qwCntWfq4VceSJfLaZXn84D4,1067
+table_format-1.4.1.dist-info/METADATA,sha256=Y_hJEc4hRDgnVrb_vWhZpTowGD8eZWjQlPtod0d6KYU,7302
+table_format-1.4.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+table_format-1.4.1.dist-info/entry_points.txt,sha256=ssGJmIAeI-6XJ8Ca0A1EjGooZFnY2KsctY5e2jcW7No,56
+table_format-1.4.1.dist-info/top_level.txt,sha256=PFcHbXj_AnZTugyu5NwofUl5W48FQagcKrFRUtVXc-c,13
+table_format-1.4.1.dist-info/RECORD,,
