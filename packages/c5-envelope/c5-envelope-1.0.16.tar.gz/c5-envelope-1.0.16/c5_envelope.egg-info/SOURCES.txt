@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+c5_envelope.egg-info/PKG-INFO
+c5_envelope.egg-info/SOURCES.txt
+c5_envelope.egg-info/dependency_links.txt
+c5_envelope.egg-info/requires.txt
+c5_envelope.egg-info/top_level.txt
+src/__init__.py
+src/simple_envelope.py
+src/simple_envelope_test.py
+src/lang/python/envelope.py
+src/lang/python/version.py
