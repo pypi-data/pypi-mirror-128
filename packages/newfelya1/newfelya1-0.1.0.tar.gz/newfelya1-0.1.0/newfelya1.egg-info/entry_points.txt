@@ -1,0 +1,3 @@
+[console_scripts]
+newfelya1 = newfelya1.core:print_message
+

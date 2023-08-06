@@ -1,0 +1,9 @@
+setup.py
+newfelya1/__init__.py
+newfelya1/core.py
+newfelya1.egg-info/PKG-INFO
+newfelya1.egg-info/SOURCES.txt
+newfelya1.egg-info/dependency_links.txt
+newfelya1.egg-info/entry_points.txt
+newfelya1.egg-info/requires.txt
+newfelya1.egg-info/top_level.txt
