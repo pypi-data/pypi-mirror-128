@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pixiv-save
+Version: 1.0.4
+Summary: save pixiv user illusts
+Home-page: UNKNOWN
+Author: HIbian
+Author-email: hibianchen@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: PixivPy (==3.6.2)
+Requires-Dist: argparse
+
+UNKNOWN
+
