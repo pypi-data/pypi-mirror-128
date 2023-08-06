@@ -1,0 +1,12 @@
+plotkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plotkit/const.py,sha256=UmNzCQBQe4AE2riPEmR0gVwyeKJWgVpvU74gSPPktGA,82
+plotkit/file.py,sha256=SEzgxsBn-isWjHJZxFR9Mi24aWkDmQLpy-vJYGQlkPg,871
+plotkit/headless.py,sha256=bG3LxvTma9grvNQ4rUAqm2hDPBiSWKqf9e3lONCcWEU,227
+plotkit/plotkit.py,sha256=ax8pjL8LQNo76dWePzPRE4Y6vOv4PqNqZHb7amKR8z8,5190
+plotkit/rasterize.py,sha256=2nObvM-3vHxc9qf_c_VICCBqXmN660Gt7pjlCMlBaoA,2555
+plotkit/style.py,sha256=zjfwQ_c0bIKbUs8V88FT20kjMNsnoZK8ObCkNt_saZw,2319
+mplotkit-0.0.7.dist-info/LICENSE,sha256=AAo6EqadFGEiG-U3WUxStU9Q35sbRP-Oi3B0g44dRow,1095
+mplotkit-0.0.7.dist-info/METADATA,sha256=wvBcPWckHpDJaE3aRvMqZnJQHgRp3A_QT7Fh4P7moAM,1403
+mplotkit-0.0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mplotkit-0.0.7.dist-info/top_level.txt,sha256=L1VfB39FiI0RGDApN25TPtpyvIkFyx1_1J8WUGlkGX8,8
+mplotkit-0.0.7.dist-info/RECORD,,
