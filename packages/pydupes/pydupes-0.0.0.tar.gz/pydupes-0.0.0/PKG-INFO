@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pydupes
+Version: 0.0.0
+Summary: Yet another duplicate file finder that may be faster in environments with millions of files and terabytes of data or over high latency filesystems.
+License: MIT
+Author: Erik Reed
+Author-email: erik.reed@pm.me
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7,<8)
+Requires-Dist: tqdm (>=4,<5)
