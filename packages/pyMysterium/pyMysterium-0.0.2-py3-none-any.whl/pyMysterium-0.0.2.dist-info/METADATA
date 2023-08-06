@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyMysterium
+Version: 0.0.2
+Summary: UNOFFICIAL Python bindings for Mysterium Tequila API
+Home-page: https://github.com/fazalfarhan01/Mysterium-Python-API
+Author: fazalfarhan01 (Mohamed Farhan Fazal)
+Author-email: fazal@ffehost.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/fazalfarhan01/Mysterium-Python-API/issues
+Keywords: python,myst,mysterium,requests,python myst,tequila api,mysterium api,mysterium python api
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+
+# EarnApp API
+
+A Python binding to interact with Mysterium Tequila API.
+
+## Installation
+```BASH
+pip install pyMysterium
+```
+## Usage
+COMING SOON
+
