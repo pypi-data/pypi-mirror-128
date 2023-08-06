@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./modelingtools/__init__.py
+./modelingtools/trainingtools.py
+./modelingtools/tests/__init__.py
+./modelingtools/tests/test_trainingtools.py
+modelingtools.egg-info/PKG-INFO
+modelingtools.egg-info/SOURCES.txt
+modelingtools.egg-info/dependency_links.txt
+modelingtools.egg-info/top_level.txt
