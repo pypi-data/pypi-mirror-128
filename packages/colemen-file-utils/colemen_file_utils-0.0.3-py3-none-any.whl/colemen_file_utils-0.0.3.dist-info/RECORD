@@ -1,0 +1,12 @@
+colemen_file_utils.py,sha256=gz_aMC-wXb7C6sdl98kOocbsRF0aeocYgiFAdycpkTE,48
+dir.py,sha256=XNEjBk4t7Bl6TL6CD2HuX9uKjDh281YD4BpMv-Rjayc,7399
+file.py,sha256=dnMpDtbwdlR5ByXGceCp7V2zvX3EClSxqsK8d1sccNo,3126
+file_read.py,sha256=gTY77Yqvthti1VxTHla8Ni8hJ2jdaiw5N_6XxAcHFfA,3538
+file_search.py,sha256=LXOK3jEp-jMYUQgMJcPmvGjqQzLqONXqx8Z5EPpT75k,3679
+file_write.py,sha256=XK4kp3Pa2uQ3qlzbPMwdWNtjYKUqAZTpdSwHnx_Z8Og,2064
+objectUtils.py,sha256=Fm3EmNnyjMwPeL9FQoSHCrcjFdjiviI0MutNyJf-dFA,1155
+string_utils.py,sha256=LpGwF7J0ONTIca9vdiyoXycHaoD9pey5Ohv-OACpYJw,2155
+colemen_file_utils-0.0.3.dist-info/METADATA,sha256=lUcVZUlb5nboU9tbm5y5epFbeRocILQAYHpWamNJe0w,531
+colemen_file_utils-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+colemen_file_utils-0.0.3.dist-info/top_level.txt,sha256=XDLXK2Z05NRx0FOgmElraXm1bP2iv02FrwcwWvKR3oI,86
+colemen_file_utils-0.0.3.dist-info/RECORD,,
