@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/file_manager_integration/__init__.py
+src/file_manager_integration/__main__.py
+src/file_manager_integration/cli.py
+src/file_manager_integration/dialog.py
+src/file_manager_integration/file_managers.py
+src/file_manager_integration.egg-info/PKG-INFO
+src/file_manager_integration.egg-info/SOURCES.txt
+src/file_manager_integration.egg-info/dependency_links.txt
+src/file_manager_integration.egg-info/entry_points.txt
+src/file_manager_integration.egg-info/top_level.txt
