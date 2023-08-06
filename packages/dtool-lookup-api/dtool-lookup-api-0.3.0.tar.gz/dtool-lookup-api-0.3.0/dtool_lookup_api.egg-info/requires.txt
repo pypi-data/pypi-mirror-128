@@ -1,0 +1,4 @@
+asgiref
+aiohttp
+dtoolcore>=3.9.0
+PyYAML
