@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyemu
+Version: 1.2.0
+Summary: pyemu is a set of python modules for interfacing with PEST and PEST++. 
+Home-page: https://github.com/pypest/pyemu
+Author: Jeremy White, Mike Fienen,Brioch Hemmings
+Author-email: jtwhite1000@gmail.com,mnfienen@usgs.gov,b.hemmings@gns.cri.nz
+License: New BSD
+Download-URL: https://github.com/jtwhite79/pyemu/tarball/1.2.0
+Platform: Windows
+Platform: Mac OS-X
+Platform: Linux
+
+pyemu is a set of python modules for interfacing with PEST and PEST++. 
+
+
