@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: nlp-dataset-readers
+Version: 0.1.7
+Summary: Dataset Readers for NLP
+Home-page: https://github.com/Riccorl/nlp-dataset-readers
+Author: Riccardo Orlando
+Author-email: orlandoricc@gmail.com
+License: Apache
+Keywords: NLP Sapienza sapienzanlp deep learning transformer pytorch datasets data reader readers dataset
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: conllu
+Requires-Dist: rich
+
+<div align="center">
+
+# Dataset Readers for NLP
+
+Utility for easily parsing common datasets for NLP.
+
+[![Upload to PyPi](https://github.com/Riccorl/nlp-dataset-readers/actions/workflows/python-publish-pypi.yml/badge.svg)](https://github.com/Riccorl/nlp-dataset-readers/actions/workflows/python-publish-pypi.yml)
+[![PyPi Version](https://img.shields.io/github/v/release/Riccorl/nlp-dataset-readers)](https://github.com/Riccorl/nlp-dataset-readers/releases)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000)](https://github.com/psf/black)
+
+</div>
+
+## Installation
+
+From [PyPI](https://pypi.org/project/nlp-dataset-readers):
+
+```bash
+pip install nlp-dataset-readers
+```
+
+From source:
+
+```bash
+git clone https://github.com/Riccorl/nlp-dataset-readers
+cd nlp-dataset-readers
+pip install -e .
+```
+
+## Class and Datasets
+
+### Semantic Role Labeling
+
+Dataset readers for
+
+- [CoNLL-2009](https://ufal.mff.cuni.cz/conll2009-st/task-description.html)
+- [CoNLL-2012](https://cemantix.org/conll/2012/data.html)
+- [UniteD-SRL](https://github.com/SapienzaNLP/united-srl)
+
+### Word Sense Disambiguation
+
+Dataset readers for
+
+- [WSD Evaluation Framework](http://lcl.uniroma1.it/wsdeval/)
+- [XL-WSD](https://sapienzanlp.github.io/xl-wsd/)
+
+### WiC
+
+Dataset readers for
+
+- [XL-WiC]()
+- [MCL-WiC]()
+
+## Usage
+
+ToDo
+
