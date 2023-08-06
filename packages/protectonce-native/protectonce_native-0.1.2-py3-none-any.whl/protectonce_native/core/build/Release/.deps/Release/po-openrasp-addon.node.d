@@ -1,0 +1,1 @@
+cmd_Release/po-openrasp-addon.node := ln -f "Release/obj.target/po-openrasp-addon.node" "Release/po-openrasp-addon.node" 2>/dev/null || (rm -rf "Release/po-openrasp-addon.node" && cp -af "Release/obj.target/po-openrasp-addon.node" "Release/po-openrasp-addon.node")
