@@ -1,0 +1,3 @@
+[console_scripts]
+phdbot=phdbot.__main__:app
+
