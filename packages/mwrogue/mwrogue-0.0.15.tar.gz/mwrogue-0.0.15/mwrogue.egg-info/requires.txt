@@ -1,0 +1,6 @@
+mwparserfromhell
+pytz
+mwclient>=0.10.1
+python-dateutil
+Unidecode
+mwcleric>=0.6.2
