@@ -1,0 +1,8 @@
+README.md
+setup.py
+victorforever/__init__.py
+victorforever.egg-info/PKG-INFO
+victorforever.egg-info/SOURCES.txt
+victorforever.egg-info/dependency_links.txt
+victorforever.egg-info/entry_points.txt
+victorforever.egg-info/top_level.txt
