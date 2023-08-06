@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: StatistikPendidikan
+Version: 0.1.1
+Summary: Library ini digunakan untuk memudahkan ekstraksi data dari http://statistik.data.kemdikbud.go.id/
+Home-page: https://github.com/adwisatya/reponame
+Author: Aryya Widigdha
+Author-email: aryya.widigdha@yahoo.com
+License: MIT
+Download-URL: https://github.com/adwisatya/StatistikPendidikan/archive/refs/tags/v0.1.tar.gz
+Description: UNKNOWN
+Keywords: kemendikbud,statistik pendidikan,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
