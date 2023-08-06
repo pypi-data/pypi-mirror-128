@@ -1,0 +1,7 @@
+py-cpuinfo
+distro
+psutil
+textual
+
+[:python_version < "3.8"]
+importlib_metadata
