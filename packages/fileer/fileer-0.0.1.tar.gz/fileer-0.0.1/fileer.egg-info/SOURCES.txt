@@ -1,0 +1,8 @@
+fileer.py
+setup.py
+fileer.egg-info/PKG-INFO
+fileer.egg-info/SOURCES.txt
+fileer.egg-info/dependency_links.txt
+fileer.egg-info/entry_points.txt
+fileer.egg-info/requires.txt
+fileer.egg-info/top_level.txt
