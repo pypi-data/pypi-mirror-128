@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: treedir
+Version: 31.7.2021
+Summary: TreeDir to define simple directory structures
+Home-page: http://gitlab.csn.uchile.cl/dpineda/treedir
+Author: David Pineda Osorio
+Author-email: dpineda@csn.uchile.cl
+License: GPLv3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: anytree
+Requires-Dist: click
+
+Tree Dir base class
+
+

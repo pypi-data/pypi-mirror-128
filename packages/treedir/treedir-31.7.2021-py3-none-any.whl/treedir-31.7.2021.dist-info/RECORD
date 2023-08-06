@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/basic_builder.py,sha256=1isyXc4z1uZytSGYQo-XI6rqE_c9oKX6b6Zn9hbzn7w,2202
+tests/formic_builder.py,sha256=3PvfzxX2GPkIyLjTLsFLPaFm9rwNyB0IlM9rOoaP6WA,1703
+treedir/__init__.py,sha256=aBkcvbRaZ4mm9IVHjEsdya_uagRBCjdWO-XvmDfyD8c,80
+treedir/base.py,sha256=jhi3SkzvdDRKAXo5aUMX7_iNCSpjuGyrp2mRSMEom30,1068
+treedir/builder.py,sha256=O2PIDArZHxDEmtKqucJ-tY4qd3XpV3HLhAQ6cjXaJiM,5839
+treedir-31.7.2021.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+treedir-31.7.2021.dist-info/METADATA,sha256=PmvXwjmCn1qcNmG4lb818NzXeuo-MOXt-jrK5H_GcZ0,369
+treedir-31.7.2021.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+treedir-31.7.2021.dist-info/top_level.txt,sha256=1uGRDzn6LK5bQ_-gklffvsnzveUhoy2ooQdao1ueIp0,14
+treedir-31.7.2021.dist-info/RECORD,,
