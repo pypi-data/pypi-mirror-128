@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: shexer
+Version: 1.4.1
+Summary: Automatic schema extraction for RDF graphs
+Home-page: https://github.com/DaniFdezAlvarez/shexer
+Author: Daniel Fernandez-Alvarez
+Author-email: danifdezalvarez@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/DaniFdezAlvarez/shexer/archive/1.4.1.tar.gz
+Description: UNKNOWN
+Keywords: testing,shexer,shexerp3,rdf,shex,shacl,schema
+Platform: UNKNOWN
