@@ -1,0 +1,885 @@
+test_fix_volumes:
+  -
+    donor_before: 0
+    donor_after: 0
+    acceptor_before: 0
+    acceptor_after: 0
+  -
+    donor_before: 0
+    donor_after: -1
+    acceptor_before: -1
+    acceptor_after: 0
+  -
+    donor_before: 0
+    donor_after: 0
+    acceptor_before: 1
+    acceptor_after: 1
+  -
+    donor_before: 1
+    donor_after: 1
+    acceptor_before: 0
+    acceptor_after: 0
+  -
+    donor_before: 1
+    donor_after: 0
+    acceptor_before: -1
+    acceptor_after: 0
+  -
+    donor_before: 1
+    donor_after: 1
+    acceptor_before: 1
+    acceptor_after: 1
+
+test_reaction_iter_nonzero:
+  -
+    volumes_uL:
+      {}
+    expected:
+      []
+  -
+    volumes_uL:
+      x: 1
+    expected:
+      [x]
+  -
+    volumes_uL:
+      x: 1
+      y: 1
+    expected:
+      [x, y]
+  -
+    volumes_uL:
+      x: 1
+      y: 0
+    expected:
+      [x]
+  -
+    volumes_uL:
+      x: 1
+      y: 0.005
+    expected:
+      [x, y]
+  -
+    volumes_uL:
+      x: 1
+      y: 0.004
+    expected:
+      [x]
+
+test_reaction_from_cols:
+  -
+    id: solvent-only
+    cols:
+      reagent:
+        - w
+      stock_conc:
+        -
+      volume:
+        - to 5 µL
+      master_mix:
+        - y
+
+    volume: 5 µL
+    expected:
+      w:
+        volume: '5 µL'
+        master_mix: True
+  -
+    id: reagent-only
+    cols:
+      reagent:
+        - x
+      stock_conc:
+        - 2x
+      volume:
+        - 3 µL
+      master_mix:
+        - y
+
+    volume: 3 µL
+    expected:
+      x:
+        volume: '3 µL'
+        stock_conc: '2x'
+        master_mix: True
+  -
+    id: solvent-and-reagent
+    cols:
+      reagent:
+        - w
+        - x
+      stock_conc:
+        -
+        - 2x
+      volume:
+        - to 8 µL
+        - 3 µL
+      master_mix:
+        - y
+        - n
+
+    volume: 8 µL
+    expected:
+      w:
+        volume: '5 µL'
+        master_mix: True
+      x:
+        volume: '3 µL'
+        stock_conc: '2x'
+        master_mix: False
+  -
+    id: stock-with-solvent
+    cols:
+      reagent:
+        - w
+        - x
+      stock_conc:
+        -
+        - 2x
+      volume:
+        - to 8 µL
+        - 3 µL
+      master_mix:
+        - y
+        - n
+
+    volume: 8 µL
+    expected:
+      w:
+        volume: '5 µL'
+        master_mix: True
+      x:
+        volume: '3 µL'
+        stock_conc: '2x'
+        master_mix: False
+  -
+    id: conc-with-solvent
+    cols:
+      reagent:
+        - w
+        - x
+      stock_conc:
+        -
+        - 4x
+      conc:
+        -
+        - 1x
+      volume:
+        - to 8 µL
+        -
+
+    volume: 8 µL
+    expected:
+      w:
+        volume: '6 µL'
+      x:
+        volume: '2 µL'
+        stock_conc: '4x'
+        conc: '1x'
+  -
+    id: conc-without-solvent
+    cols:
+      reagent:
+        - x
+        - y
+      stock_conc:
+        -
+        - 4x
+      conc:
+        -
+        - 1x
+      volume:
+        - 6 µL
+        -
+
+    volume: 8 µL
+    expected:
+      x:
+        volume: '6 µL'
+      y:
+        volume: '2 µL'
+        stock_conc: '4x'
+        conc: '1x'
+  -
+    id: column-aliases
+    cols:
+      Reagent:
+        - w
+        - x
+      Stock:
+        -
+        - 2x
+      Volume:
+        - to 8 µL
+        - 3 µL
+      MM?:
+        - y
+        - n
+
+    volume: 8 µL
+    expected:
+      w:
+        volume: '5 µL'
+        master_mix: True
+      x:
+        volume: '3 µL'
+        stock_conc: '2x'
+        master_mix: False
+  -
+    id: extra-columns
+    cols:
+      reagent:
+        - w
+        - x
+      stock_conc:
+        -
+        - 2x
+      volume:
+        - to 8 µL
+        - 3 µL
+      master_mix:
+        - y
+        - n
+      note:
+        - lorem
+        - ipsum
+
+    volume: 8 µL
+    expected:
+      w:
+        volume: '5 µL'
+        master_mix: True
+      x:
+        volume: '3 µL'
+        stock_conc: '2x'
+        master_mix: False
+  -
+    id: assume-master-mix-if-col-missing
+    cols:
+      reagent:
+        - w
+        - x
+      stock_conc:
+        -
+        - 2x
+      volume:
+        - to 8 µL
+        - 3 µL
+
+    volume: 8 µL
+    expected:
+      w:
+        volume: '5 µL'
+        master_mix: True
+      x:
+        volume: '3 µL'
+        stock_conc: '2x'
+        master_mix: True
+  -
+    id: default-values
+    cols:
+      reagent:
+        - w
+        - x
+      stock_conc:
+        -
+        -
+      volume:
+        - to 8 µL
+        - 3 µL
+      master_mix:
+        - y
+        - n
+
+    volume: 8 µL
+    expected:
+      w:
+        volume: '5 µL'
+        master_mix: True
+      x:
+        volume: '3 µL'
+        stock_conc: None
+        master_mix: False
+  -
+    id: default-values
+    cols:
+      reagent:
+        - w
+        - x
+      stock_conc:
+        -
+        - 2x
+      volume:
+        - to 8 µL
+        - 3 µL
+      master_mix:
+        - n
+        - n
+
+    volume: 8 µL
+    expected:
+      w:
+        volume: '5 µL'
+        master_mix: False
+      x:
+        volume: '3 µL'
+        stock_conc: '2x'
+        master_mix: False
+  -
+    id: whitespace
+    cols:
+      reagent:
+        -  w 
+        -  x 
+      stock_conc:
+        -  
+        -  2x 
+      volume:
+        -  to 8 µL 
+        -  3 µL 
+      master_mix:
+        -  y 
+        -  n 
+
+    volume: 8 µL
+    expected:
+      w:
+        volume: '5 µL'
+        master_mix: True
+      x:
+        volume: '3 µL'
+        stock_conc: '2x'
+        master_mix: False
+
+  -
+    id: err-no-reagents
+    cols:
+      reagent:
+        []
+      stock_conc:
+        []
+      volume:
+        []
+      master_mix:
+        []
+    error:
+      type: UsageError
+      message: at least one reagent
+  -
+    id: err-duplicate-cols
+    cols:
+      reagent:
+        - w
+        - x
+      Reagent:
+        - w
+        - x
+      stock_conc:
+        -
+        - 2x
+      volume:
+        - to 8 µL
+        - 3 µL
+      master_mix:
+        - y
+        - n
+    error:
+      type: UsageError
+      message: multiple 'reagent' columns found: 'Reagent', 'reagent'
+  -
+    id: err-no-reagent-col
+    cols:
+      stock_conc:
+        -
+        - 2x
+      volume:
+        - to 5 µL
+        - 3 µL
+      master_mix:
+        - y
+        - n
+    error:
+      type: UsageError
+      message: no 'reagent' column
+  -
+    id: err-no-stock-col
+    cols:
+      reagent:
+        - w
+        - x
+      volume:
+        - to 5 µL
+        - 3 µL
+      master_mix:
+        - y
+        - n
+    error:
+      type: UsageError
+      message: no 'stock_conc' column
+  -
+    id: err-no-volume-col
+    cols:
+      reagent:
+        - w
+        - x
+      stock_conc:
+        -
+        - 2x
+      master_mix:
+        - y
+        - n
+    error:
+      type: UsageError
+      message: no 'volume' column
+  -
+    id: err-inconsistent-rows
+    cols:
+      reagent:
+        - w
+      stock_conc:
+        -
+        - 2x
+      volume:
+        - to 5 µL
+        - 3 µL
+      master_mix:
+        - y
+        - n
+    error:
+      type: UsageError
+      message: different numbers of rows: 1, 2
+  -
+    id: err-missing-names
+    cols:
+      reagent:
+        -
+        - x
+      stock_conc:
+        -
+        - 2x
+      volume:
+        - to 5 µL
+        - 3 µL
+      master_mix:
+        - y
+        - n
+    error:
+      type: UsageError
+      message: missing names
+  -
+    id: err-missing-vol
+    cols:
+      reagent:
+        - w
+        - x
+      stock_conc:
+        -
+        - 2x
+      volume:
+        -
+        - 3 µL
+      master_mix:
+        - y
+        - n
+    error:
+      type: UsageError
+      message: must specify either volume or concentration for 'w'
+  -
+    id: err-two-solvents
+    cols:
+      reagent:
+        - w
+        - x
+      stock_conc:
+        -
+        - 2x
+      volume:
+        - to 8 µL
+        - to 8 µL
+      master_mix:
+        - y
+        - n
+    error:
+      type: UsageError
+      message: multiple solvents specified: 'w', 'x'
+  -
+    id: err-parse-bool
+    cols:
+      reagent:
+        - w
+        - x
+      stock_conc:
+        -
+        - 2x
+      volume:
+        - to 8 µL
+        - 3 µL
+      master_mix:
+        - maybe
+        - n
+    error:
+      type: UsageError
+      message: expected 'yes' or 'no', got 'maybe'
+
+test_master_mix_format_text:
+  -
+    id: num_reactions=1
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent  Stock    Volume  MM?
+      > =======  =====  ========  ===
+      > water           to 10 µL  yes
+      > buffer     10x      1 µL  yes
+      > enzyme      5x      2 µL   no
+      > """)
+      >
+      > mm.num_reactions = 1
+
+    expected:
+      > Reagent  Stock    Volume
+      > ────────────────────────
+      > water            7.00 µL
+      > buffer     10x   1.00 µL
+      > enzyme      5x   2.00 µL
+      > ────────────────────────
+      >                 10.00 µL
+  -
+    id: num_reactions=2
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent  Stock    Volume  MM?
+      > =======  =====  ========  ===
+      > water           to 10 µL  yes
+      > buffer     10x      1 µL  yes
+      > enzyme      5x      2 µL   no
+      > """)
+      >
+      > mm.num_reactions = 2
+      > mm.extra_fraction = 0
+      > mm.extra_reactions = 0
+
+    expected:
+      > Reagent  Stock    Volume        2x
+      > ──────────────────────────────────
+      > water            7.00 µL  14.00 µL
+      > buffer     10x   1.00 µL   2.00 µL
+      > enzyme      5x   2.00 µL
+      > ──────────────────────────────────
+      >                 10.00 µL   8.00 µL/rxn
+  -
+    id: show_concs=True
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent  Stock    Volume  MM?
+      > =======  =====  ========  ===
+      > water           to 10 µL  yes
+      > buffer     10x      1 µL  yes
+      > enzyme      5x      2 µL   no
+      > """)
+      >
+      > mm.show_concs = True
+
+    expected:
+      > Reagent  Stock  Final    Volume
+      > ───────────────────────────────
+      > water                   7.00 µL
+      > buffer     10x     1x   1.00 µL
+      > enzyme      5x     1x   2.00 µL
+      > ───────────────────────────────
+      >                        10.00 µL
+  -
+    id: show_master_mix=False
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent  Stock    Volume  MM?
+      > =======  =====  ========  ===
+      > water           to 10 µL  yes
+      > buffer     10x      1 µL  yes
+      > enzyme      5x      2 µL   no
+      > """)
+      >
+      > mm.num_reactions = 2
+      > mm.extra_fraction = 0
+      > mm.extra_reactions = 0
+      > mm.show_master_mix = False
+
+    expected:
+      > Reagent  Stock    Volume
+      > ────────────────────────
+      > water            7.00 µL
+      > buffer     10x   1.00 µL
+      > enzyme      5x   2.00 µL
+      > ────────────────────────
+      >                 10.00 µL
+  -
+    id: show_1x=False
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent  Stock    Volume  MM?
+      > =======  =====  ========  ===
+      > water           to 10 µL  yes
+      > buffer     10x      1 µL  yes
+      > enzyme      5x      2 µL   no
+      > """)
+      >
+      > mm.num_reactions = 2
+      > mm.extra_fraction = 0
+      > mm.extra_reactions = 0
+      > mm.show_1x = False
+
+    expected:
+      > Reagent  Stock        2x
+      > ────────────────────────
+      > water           14.00 µL
+      > buffer     10x   2.00 µL
+      > enzyme      5x
+      > ────────────────────────
+      >                  8.00 µL/rxn
+  -
+    id: show_totals=False
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent  Stock    Volume  MM?
+      > =======  =====  ========  ===
+      > water           to 10 µL  yes
+      > buffer     10x      1 µL  yes
+      > enzyme      5x      2 µL   no
+      > """)
+      >
+      > mm.num_reactions = 2
+      > mm.extra_fraction = 0
+      > mm.extra_reactions = 0
+      > mm.show_totals = False
+
+    expected:
+      > Reagent  Stock   Volume        2x
+      > ─────────────────────────────────
+      > water           7.00 µL  14.00 µL
+      > buffer     10x  1.00 µL   2.00 µL
+      > enzyme      5x  2.00 µL
+  -
+    id: scale-header-integer-ending-with-0
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent  Stock    Volume  MM?
+      > =======  =====  ========  ===
+      > water           to 10 µL  yes
+      > buffer     10x      1 µL  yes
+      > enzyme      5x      2 µL   no
+      > """)
+      >
+      > mm.num_reactions = 10
+      > mm.extra_percent = 0
+
+    expected:
+      > Reagent  Stock    Volume       10x
+      > ──────────────────────────────────
+      > water            7.00 µL  70.00 µL
+      > buffer     10x   1.00 µL  10.00 µL
+      > enzyme      5x   2.00 µL
+      > ──────────────────────────────────
+      >                 10.00 µL   8.00 µL/rxn
+  -
+    id: scale-header-integer-not-ending-with-0
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent  Stock    Volume  MM?
+      > =======  =====  ========  ===
+      > water           to 10 µL  yes
+      > buffer     10x      1 µL  yes
+      > enzyme      5x      2 µL   no
+      > """)
+      >
+      > mm.num_reactions = 10
+      > mm.extra_percent = 10
+
+    expected:
+      > Reagent  Stock    Volume       11x
+      > ──────────────────────────────────
+      > water            7.00 µL  77.00 µL
+      > buffer     10x   1.00 µL  11.00 µL
+      > enzyme      5x   2.00 µL
+      > ──────────────────────────────────
+      >                 10.00 µL   8.00 µL/rxn
+  -
+    id: scale-header-one-decimal-point
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent  Stock    Volume  MM?
+      > =======  =====  ========  ===
+      > water           to 10 µL  yes
+      > buffer     10x      1 µL  yes
+      > enzyme      5x      2 µL   no
+      > """)
+      >
+      > mm.num_reactions = 10
+      > mm.extra_percent = 11
+
+    expected:
+      > Reagent  Stock    Volume     11.1x
+      > ──────────────────────────────────
+      > water            7.00 µL  77.70 µL
+      > buffer     10x   1.00 µL  11.10 µL
+      > enzyme      5x   2.00 µL
+      > ──────────────────────────────────
+      >                 10.00 µL   8.00 µL/rxn
+  -
+    id: scale-header-two-decimal-points
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent  Stock    Volume  MM?
+      > =======  =====  ========  ===
+      > water           to 10 µL  yes
+      > buffer     10x      1 µL  yes
+      > enzyme      5x      2 µL   no
+      > """)
+      >
+      > mm.num_reactions = 10
+      > mm.extra_percent = 11.1
+
+    expected:
+      > Reagent  Stock    Volume    ≈11.1x
+      > ──────────────────────────────────
+      > water            7.00 µL  77.77 µL
+      > buffer     10x   1.00 µL  11.11 µL
+      > enzyme      5x   2.00 µL
+      > ──────────────────────────────────
+      >                 10.00 µL   8.00 µL/rxn
+  -
+    id: drop-solvent
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent   Stock   Volume  MM?
+      > ========  =====  =======  ===
+      > water            to 3 µL  yes
+      > buffer       3x     1 µL  yes
+      > cofactor     3x     1 µL  yes
+      > enzyme       3x     1 µL   no
+      > """)
+      >
+      > mm.num_reactions = 2
+      > mm.extra_fraction = 0
+      > mm.extra_reactions = 0
+
+    expected:
+      > Reagent   Stock   Volume       2x
+      > ─────────────────────────────────
+      > buffer       3x  1.00 µL  2.00 µL
+      > cofactor     3x  1.00 µL  2.00 µL
+      > enzyme       3x  1.00 µL
+      > ─────────────────────────────────
+      >                  3.00 µL  2.00 µL/rxn
+  -
+    id: drop-reagent-volume=0.001
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent   Stock   Volume  MM?
+      > ========  =====  =======  ===
+      > water            to 3 µL  yes
+      > buffer       3x     1 µL  yes
+      > cofactor     3x     1 µL  yes
+      > enzyme       3x     1 µL   no
+      > """)
+      >
+      > mm.num_reactions = 2
+      > mm.extra_fraction = 0
+      > mm.extra_reactions = 0
+      > mm['buffer'].volume = 0.001, 'µL'
+
+    expected:
+      > Reagent   Stock   Volume       2x
+      > ─────────────────────────────────
+      > water            1.00 µL  2.00 µL
+      > cofactor     3x  1.00 µL  2.00 µL
+      > enzyme       3x  1.00 µL
+      > ─────────────────────────────────
+      >                  3.00 µL  2.00 µL/rxn
+  -
+    id: drop-reagent-volume=-0.001
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent   Stock   Volume  MM?
+      > ========  =====  =======  ===
+      > water            to 3 µL  yes
+      > buffer       3x     1 µL  yes
+      > cofactor     3x     1 µL  yes
+      > enzyme       3x     1 µL   no
+      > """)
+      >
+      > mm.num_reactions = 2
+      > mm.extra_fraction = 0
+      > mm.extra_reactions = 0
+      > mm['buffer'].volume = -0.001, 'µL'
+
+    expected:
+      > Reagent   Stock   Volume       2x
+      > ─────────────────────────────────
+      > water            1.00 µL  2.00 µL
+      > cofactor     3x  1.00 µL  2.00 µL
+      > enzyme       3x  1.00 µL
+      > ─────────────────────────────────
+      >                  3.00 µL  2.00 µL/rxn
+
+  -
+    id: no-solvent
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent   Stock   Volume  MM?
+      > ========  =====  =======  ===
+      > buffer       3x     1 µL  yes
+      > cofactor     3x     1 µL  yes
+      > enzyme       3x     1 µL   no
+      > """)
+      >
+      > mm.num_reactions = 1
+    expected:
+      > Reagent   Stock   Volume
+      > ────────────────────────
+      > buffer       3x  1.00 µL
+      > cofactor     3x  1.00 µL
+      > enzyme       3x  1.00 µL
+      > ────────────────────────
+      >                  3.00 µL
+
+  -
+    id: no-solvent-num-reactions=1
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent   Stock   Volume  MM?
+      > ========  =====  =======  ===
+      > buffer       3x     1 µL  yes
+      > cofactor     3x     1 µL  yes
+      > enzyme       3x     1 µL   no
+      > """)
+      >
+      > mm.num_reactions = 1
+    expected:
+      > Reagent   Stock   Volume
+      > ────────────────────────
+      > buffer       3x  1.00 µL
+      > cofactor     3x  1.00 µL
+      > enzyme       3x  1.00 µL
+      > ────────────────────────
+      >                  3.00 µL
+  -
+    id: no-solvent-num-reactions=2
+    master_mix:
+      > mm = MasterMix.from_text("""\
+      > Reagent   Stock   Volume  MM?
+      > ========  =====  =======  ===
+      > buffer       3x     1 µL  yes
+      > cofactor     3x     1 µL  yes
+      > enzyme       3x     1 µL   no
+      > """)
+      >
+      > mm.num_reactions = 2
+      > mm.extra_fraction = 0
+      > mm.extra_reactions = 0
+    expected:
+      > Reagent   Stock   Volume       2x
+      > ─────────────────────────────────
+      > buffer       3x  1.00 µL  2.00 µL
+      > cofactor     3x  1.00 µL  2.00 µL
+      > enzyme       3x  1.00 µL
+      > ─────────────────────────────────
+      >                  3.00 µL  2.00 µL/rxn
