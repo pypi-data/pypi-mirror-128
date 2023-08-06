@@ -1,0 +1,11 @@
+README.md
+setup.py
+ml-scrapy/__init__.py
+ml-scrapy/middlewares/__init__.py
+ml-scrapy/middlewares/ua/__init__.py
+ml-scrapy/middlewares/ua/ua_list.py
+ml-scrapy/middlewares/ua/useragent.py
+ml_scrapy.egg-info/PKG-INFO
+ml_scrapy.egg-info/SOURCES.txt
+ml_scrapy.egg-info/dependency_links.txt
+ml_scrapy.egg-info/top_level.txt
