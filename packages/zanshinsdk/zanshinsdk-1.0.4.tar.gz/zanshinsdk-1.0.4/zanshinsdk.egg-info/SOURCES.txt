@@ -1,0 +1,9 @@
+README.rst
+setup.py
+zanshinsdk/__init__.py
+zanshinsdk/client.py
+zanshinsdk.egg-info/PKG-INFO
+zanshinsdk.egg-info/SOURCES.txt
+zanshinsdk.egg-info/dependency_links.txt
+zanshinsdk.egg-info/requires.txt
+zanshinsdk.egg-info/top_level.txt
