@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: EOmaps
+Version: 2.0
+Summary: A library to generate interactive maps of geographical datasets.
+Home-page: https://github.com/raphaelquast/maps
+Author: Raphael Quast
+Author-email: raphael.quast@geo.tuwien.ac.at
+Maintainer: Raphael Quast
+Maintainer-email: raphael.quast@geo.tuwien.ac.at
+License: GNU General Public License v3 or later (GPLv3+)
+Keywords: visualization,plotting,maps,geographical data
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: geopandas
+Requires-Dist: matplotlib (>=3.0)
+Requires-Dist: cartopy (>=0.20.0)
+Requires-Dist: descartes
+Requires-Dist: mapclassify
+Requires-Dist: pyproj
+Requires-Dist: pyepsg
+
+A library to generate interactive maps of geographical datasets
+
+
