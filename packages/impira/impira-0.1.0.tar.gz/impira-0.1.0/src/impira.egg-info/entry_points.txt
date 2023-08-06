@@ -1,0 +1,3 @@
+[console_scripts]
+impira = impira.cmd.__main__:main
+
