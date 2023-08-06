@@ -1,0 +1,11 @@
+liquer_pcv/__init__.py,sha256=Iaqs9y3lveoDemXr6g7vQHzeeXK6MOwKutTpIOexLUU,54
+liquer_pcv/commands.py,sha256=BrlP0kIWThLvT9MkwlR3bdReYOMc7R7gkYZlKDQnADs,1326
+liquer_pcv/assets/README.md,sha256=AKM_W7WdkNVn1CFT651ZPAJhap906PniQ8T5oj2G7tU,91
+liquer_pcv/assets/gl.js,sha256=cnw3_iY_fytnEvRguJcrHMC9nSA6apNtJdOemhu8m8k,59244
+liquer_pcv/assets/pointcloud-viewer.wasm,sha256=VMnjymiU_9YJHMFjmenQbo14-FIMT4TvNClda2GKDe0,2571142
+liquer_pcv/assets/quad-url.js,sha256=1JoD1eLlDyZm1hxACABVstqXuLmYIklXCr5GYoYNXTk,2908
+liquer_pcv/assets/sapp_jsutils.js,sha256=33YCSRKdtCwlO6ClCqdGso8GQQnwj5ugHOsS4hWMkZs,5363
+liquer_pcv-0.2.0.dist-info/METADATA,sha256=q0HHDy2SQlg3kPLoyd86Ta5K40dnOL0EWnpIu4pvfBc,613
+liquer_pcv-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+liquer_pcv-0.2.0.dist-info/top_level.txt,sha256=WngKjVppSeE96ZsTAwMcPTd5LoaH1orazK5HThqExKw,11
+liquer_pcv-0.2.0.dist-info/RECORD,,
