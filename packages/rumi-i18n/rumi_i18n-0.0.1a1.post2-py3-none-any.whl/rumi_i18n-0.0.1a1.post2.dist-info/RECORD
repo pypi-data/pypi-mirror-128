@@ -1,0 +1,16 @@
+rumi/__init__.py,sha256=Jq9eKLX8P1UsvyQqB-SUiKAVZ6AL-eF7Oq6AIcvs-mk,519
+rumi/base_reader.py,sha256=l6n8Wf4IeCDovrFddJ9DxmPlLvcvR6eDyKKekwfa540,4268
+rumi/cache.py,sha256=-AxcqxCoFjBPAzS-IXyoO_arSAsV7IivuSHrgIiZZy4,5700
+rumi/version.py,sha256=rREFU2fPI8JPV9GVvtFdRUHc5Yw1vzkeUozHj38BAr8,1316
+rumi/file_rumi/__init__.py,sha256=PJ89s3HkNUe8hHnreHzvZsiXw8m6GB6aOhbGYWu3c5Y,462
+rumi/file_rumi/reader.py,sha256=cnAY-tN6hDw99AcbB09g21T9E7CeHziCekABdv68rdU,11279
+rumi/file_rumi/reporter.py,sha256=tPqnli09UW6UEWYSknG3O-K1WtFQ2WE9xZ8AN-vRAhg,13122
+rumi/msg_rumi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rumi/msg_rumi/reader.py,sha256=DYybc2wMcSSZx_WWoVMvqGV37fwsYDPqg78HIhEkvbw,6535
+rumi/msg_rumi/reporter.py,sha256=7rKowNlFnNy8c7yFexl_ZZcYrZDoxa6TqJii8qoR5R8,9854
+rumi_i18n-0.0.1a1.post2.data/data/requirements.txt,sha256=JM7N9aV-RFdc6No8LlKHcdBTLuxxCcQtq5Wwz-4WdnI,61
+rumi_i18n-0.0.1a1.post2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rumi_i18n-0.0.1a1.post2.dist-info/METADATA,sha256=ePZE8zlZghvsU4CD8XHLFnJQ4IKxD78rpziHKVb1QAE,8523
+rumi_i18n-0.0.1a1.post2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+rumi_i18n-0.0.1a1.post2.dist-info/top_level.txt,sha256=utcyproqi4bAaP7IwAW6HJuKEsf6h5w-w6-sv3h8Q04,5
+rumi_i18n-0.0.1a1.post2.dist-info/RECORD,,
