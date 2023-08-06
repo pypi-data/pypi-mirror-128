@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+myFitnessPal_Converter.egg-info/PKG-INFO
+myFitnessPal_Converter.egg-info/SOURCES.txt
+myFitnessPal_Converter.egg-info/dependency_links.txt
+myFitnessPal_Converter.egg-info/requires.txt
+myFitnessPal_Converter.egg-info/top_level.txt
