@@ -1,0 +1,4 @@
+
+[dev]
+sphinxcontrib-apidoc
+pytest
