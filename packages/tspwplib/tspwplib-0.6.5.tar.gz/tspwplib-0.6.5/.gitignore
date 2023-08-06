@@ -1,0 +1,14 @@
+
+# python cache
+*.egg-info
+__pycache__
+.eggs
+
+# misc
+.vscode
+.DSStore
+.devcontainer
+cache
+
+# docs
+site/
