@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "djplacedata"
+version = "0.1.1"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+Django = ">=3.0"
+python = "^3.6.2"
+census = "^0.8.18"
+census-shapefiles = "1.0.2"
+
+[tool.poetry.dev-dependencies]
+psycopg2 = "^2.9.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
