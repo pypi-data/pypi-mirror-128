@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: pydisc
+Version: 0.1.4
+Summary: a discord bot wrapper for python have slash command
+Home-page: https://github.com/pydisc/pydisc
+Author: cutebear0123
+License: MIT
+Description: # pydisc
+        
+        ## a discord bot wrapper for python have slash command
+        
+        #### 🚧 this project stell in Alpha now and is very unstable 🚧
+        
+        # install
+        
+        ```bash
+        pip install pydisc
+        ```
+        
+        # usage
+        
+        ## create a slash_command
+        
+        ```python
+        from pydisc import setup
+        command=setup.Command('applications_id','token')
+        command.create('command','description')
+        ```
+        
+        ## create a bot
+        
+        ```python
+        import pydisc
+        
+        bot = pydisc.Bot()
+        
+        
+        @bot.event
+        async def ready():
+            print(bot.user.username)
+            print(bot.user.id)
+            print(bot.user)
+        
+        #slash command
+        @bot.command
+        async def ping(ctx):
+            ctx.send("pong")
+        
+        bot.run('token')
+        ```
+        
+        #todo:
+        
+        - [ ] all events
+        - [ ] slash option
+        - [ ] slash permission
+        - [ ] config
+        - [ ] Components
+        - [ ] embed
+        - [ ] error
+        - [ ] asynchronous request
+        - [ ] docs
+        - [ ] example
+        - [ ] website
+        - [ ] support server
+        - [x] a logo
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
