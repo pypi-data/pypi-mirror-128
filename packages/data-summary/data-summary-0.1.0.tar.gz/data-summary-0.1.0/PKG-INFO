@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: data-summary
+Version: 0.1.0
+Summary: A data catalog, summary, viz, and profiling package.
+Home-page: https://github.com/polyaxon/data-summary
+Maintainer: Polyaxon, Inc
+Maintainer-email: contact@polyaxon.com
+License: Apache 2.0
+Keywords: pandas,data analysis,machine learning
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE
+
+UNKNOWN
+

@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+data_summary/__init__.py
+data_summary.egg-info/PKG-INFO
+data_summary.egg-info/SOURCES.txt
+data_summary.egg-info/dependency_links.txt
+data_summary.egg-info/requires.txt
+data_summary.egg-info/top_level.txt
+data_summary/catalog/__init__.py
+data_summary/summary/__init__.py
+data_summary/summary/df.py
+data_summary/viz/__init__.py
