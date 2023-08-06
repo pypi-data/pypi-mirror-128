@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/modxlib23/__init__.py
+src/modxlib23/modxlib23.py
+src/modxlib23.egg-info/PKG-INFO
+src/modxlib23.egg-info/SOURCES.txt
+src/modxlib23.egg-info/dependency_links.txt
+src/modxlib23.egg-info/top_level.txt
