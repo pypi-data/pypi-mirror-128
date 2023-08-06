@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        nwsaurora=nws_aurora.cli:cmd
+    

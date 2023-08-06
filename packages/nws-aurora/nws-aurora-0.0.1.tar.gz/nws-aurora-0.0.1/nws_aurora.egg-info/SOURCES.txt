@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+nws_aurora/__init__.py
+nws_aurora/cli.py
+nws_aurora.egg-info/PKG-INFO
+nws_aurora.egg-info/SOURCES.txt
+nws_aurora.egg-info/dependency_links.txt
+nws_aurora.egg-info/entry_points.txt
+nws_aurora.egg-info/requires.txt
+nws_aurora.egg-info/top_level.txt
