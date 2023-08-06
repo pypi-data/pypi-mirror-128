@@ -1,0 +1,520 @@
+scalar JSON
+scalar Datetime
+scalar Timedelta
+
+type Query {
+    """
+    Get Madam version
+    """
+    version: String!
+    """
+    Get Agents list
+    """
+    agents: [Agent!]
+    """
+    Get Agent by name
+    """
+    agent(name: String!): Agent
+    """
+    Get Workflow by id and optionaly, version
+    """
+    workflow(
+        id: String!,
+        version: Int = null
+    ): Workflow
+    """
+    Get workflows list
+    """
+    workflows(
+        offset: Int = 0,
+        limit: Int = 1000,
+        sort_column: WorkflowSortColumn = created_at,
+        sort_ascending: Boolean = true,
+        last_version: Boolean = false
+    ): Workflows!
+    """
+    Get Workflow instance by id
+    """
+    workflow_instance(
+        id: ID!
+    ): WorkflowInstance
+    """
+    Get workflow instances list
+    """
+    workflow_instances(
+        offset: Int = 0,
+        limit: Int = 1000,
+        sort_column: WorkflowInstanceSortColumn = start_at,
+        sort_ascending: Boolean = true,
+        status: WorkflowInstanceStatus = null
+        workflow: WorkflowInput = null
+    ): WorkflowInstances!
+    """
+    Get Timer by id
+    """
+    timer(
+        id: ID!
+    ): Timer
+    """
+    Get workflow timers list
+    """
+    timers(
+        offset: Int = 0,
+        limit: Int = 1000,
+        sort_column: TimerSortColumn = start_at,
+        sort_ascending: Boolean = true,
+        status: TimerStatus = null
+        workflow: WorkflowInput = null
+    ): Timers!
+    """
+    Get Job by id
+    """
+    job(
+        id: ID!
+    ): Job
+    """
+    Get jobs list
+    """
+    jobs(
+        offset: Int = 0,
+        limit: Int = 1000,
+        sort_column: JobSortColumn = start_at,
+        sort_ascending: Boolean = true,
+        status: JobStatus = null
+        workflow_instance_id: ID = null
+    ): Jobs!
+    """
+    Get Application by id
+    """
+    application(
+        id: ID!
+    ): Application
+    """
+    Get applications list
+    """
+    applications(
+        offset: Int = 0,
+        limit: Int = 1000,
+        sort_column: JobSortColumn = start_at,
+        sort_ascending: Boolean = true,
+        status: JobStatus = null
+        job_id: ID = null
+    ): Applications!
+    """
+    Get Watchfolder by id
+    """
+    watchfolder(
+        id: ID!
+    ): Watchfolder
+    """
+    Get watchfolder list
+    """
+    watchfolders(
+        offset: Int = 0,
+        limit: Int = 1000,
+        sort_column: WatchfolderSortColumn = start_at,
+        sort_ascending: Boolean = true,
+        status: JobStatus = null
+        workflow: WorkflowInput = null
+    ): Watchfolders!
+}
+
+type Mutation {
+    """
+    Create a new workflow from BPMN XML content
+    """
+    createWorkflow(content: String!): WorkflowPayload
+    """
+    Start a new instance of the workflow execution
+    """
+    startWorkflow(id: String!, version: Int = null, variables: JSON = null): StatusPayload!
+    """
+    Abort all running instances and timers of workflow execution
+    """
+    abortWorkflow(id: String!, version: Int = null): StatusPayload!
+    """
+    Delete all versions of a workflow (and child instances, timers, jobs, applications, etc)
+    """
+    deleteWorkflow(id: String!): StatusPayload!
+    """
+    Abort a specific running instance of workflow execution
+    """
+    abortWorkflowInstance(id: ID!): StatusPayload!
+    """
+    Delete a specific instance of workflow execution (and child jobs, applications, etc)
+    """
+    deleteWorkflowInstance(id: ID!): StatusPayload!
+    """
+    Abort all instances (not timers) of workflow execution (and child jobs, applications, etc)
+    """
+    abortWorkflowInstancesByWorkflow(id: String!, version: Int = null): StatusPayload!
+    """
+    Delete all instances of workflow execution (and child jobs, applications, etc)
+    """
+    deleteWorkflowInstancesByWorkflow(id: String!, version: Int = null): StatusPayload!
+    """
+    Abort timer execution
+    """
+    abortTimer(id: ID!): StatusPayload!
+    """
+    Delete a timer
+    """
+    deleteTimer(id: ID!): StatusPayload!
+    """
+    Create a new Watchfolder
+    """
+    createWatchfolder(
+        path: String!,
+        re_files: String = null,
+        re_dirs: String = null,
+        added_workflow: WorkflowInput = null,
+        added_variables: JSON = null,
+        modified_workflow: WorkflowInput = null,
+        modified_variables: JSON = null,
+        deleted_workflow: WorkflowInput = null,
+        deleted_variables: JSON = null,
+        added_items_key: String = "watchfolder",
+        modified_items_key: String = "watchfolder",
+        deleted_items_key: String = "watchfolder"
+    ): WatchfolderPayload
+    """
+    Update a Watchfolder
+    """
+    updateWatchfolder(
+        id: ID!,
+        path: String!,
+        re_files: String = null,
+        re_dirs: String = null,
+        added_workflow: WorkflowInput = null,
+        added_variables: JSON = null,
+        modified_workflow: WorkflowInput = null,
+        modified_variables: JSON = null,
+        deleted_workflow: WorkflowInput = null,
+        deleted_variables: JSON = null,
+        added_items_key: String = "watchfolder",
+        modified_items_key: String = "watchfolder",
+        deleted_items_key: String = "watchfolder"
+    ): WatchfolderPayload
+    """
+    Start a Watchfolder
+    """
+    startWatchfolder(id: ID!): StatusPayload!
+    """
+    Stop a running Watchfolder
+    """
+    stopWatchfolder(id: ID!): StatusPayload!
+    """
+    Delete a Watchfolder
+    """
+    deleteWatchfolder(id: ID!): StatusPayload!
+}
+
+type Subscription {
+    """
+    Subscribe to Madam events
+    """
+    events: SubscriptionEvent!
+}
+
+union SubscriptionEvent = WatchfolderEvent | WorkflowEvent | WorkflowInstanceEvent | TimerEvent | JobEvent | ApplicationEvent
+
+# WORKFLOWS
+enum WorkflowSortColumn {
+    id
+    version
+    name
+    timer
+    created_at
+}
+
+type Workflow {
+    id: String!
+    version: Int!
+    name: String!
+    content: String!
+    sha256: String!
+    timer: String
+    created_at: Datetime!
+}
+
+type Workflows {
+    count: Int!
+    result: [Workflow]!
+}
+
+type WorkflowPayload {
+    status: Boolean!
+    error: String
+    workflow: Workflow
+}
+
+input WorkflowInput {
+    id: String!
+    version: Int
+}
+
+type WorkflowEvent {
+    type: String!
+    workflow: Workflow!
+}
+
+# WORKFLOW INSTANCES
+type WorkflowInstances {
+    count: Int!
+    result: [WorkflowInstance]!
+}
+
+type WorkflowInstance {
+    id: ID!
+    start_at: Datetime!
+    end_at: Datetime
+    status: WorkflowInstanceStatus!
+    input: JSON
+    output: JSON
+    error: String
+    workflow: Workflow!
+}
+
+enum WorkflowInstanceStatus {
+    running
+    complete
+    aborted
+    error
+}
+
+enum WorkflowInstanceSortColumn {
+    id
+    start_at
+    end_at
+    status
+    workflow_id
+    workflow_version
+}
+
+type WorkflowInstanceEvent {
+    type: String!
+    workflow_instance: WorkflowInstance!
+}
+
+# WORKFLOW TIMERS
+type Timers {
+    count: Int!
+    result: [Timer]!
+}
+
+interface Timer {
+    id: ID!
+    start_at: Datetime!
+    end_at: Datetime
+    status: String!
+    input: JSON
+    workflow: Workflow
+}
+
+type DateTimer implements Timer {
+    id: ID!
+    start_at: Datetime!
+    end_at: Datetime
+    status: String!
+    input: JSON
+    workflow: Workflow
+    date: Datetime!
+}
+
+type CyclicTimer implements Timer {
+    id: ID!
+    start_at: Datetime!
+    end_at: Datetime
+    status: String!
+    input: JSON
+    workflow: Workflow
+    repeat: Int!
+    interval: Timedelta!
+}
+
+enum IntervalUnit {
+    seconds
+    minutes
+    hours
+    days
+}
+
+enum TimerStatus {
+    running
+    complete
+    aborted
+    error
+}
+
+enum TimerSortColumn {
+    id
+    start_at
+    end_at
+    status
+    workflow_id
+    workflow_version
+}
+
+type TimerEvent {
+    type: String!
+    timer: Timer!
+}
+
+# JOBS
+type Jobs {
+    count: Int!
+    result: [Job]!
+}
+
+type Job {
+    id: ID!
+    agent_id: String!
+    agent_type: String!
+    start_at: Datetime!
+    end_at: Datetime
+    status: String!
+    headers: JSON
+    input: JSON
+    output: JSON
+    error: String
+    workflow_instance: WorkflowInstance
+}
+
+enum JobStatus {
+    running
+    complete
+    aborted
+    error
+}
+
+enum JobSortColumn {
+    id
+    agent_id
+    agent_type
+    start_at
+    end_at
+    status
+    error
+    workflow_instance_id
+}
+
+type JobEvent {
+    type: String!
+    job: Job!
+}
+
+# APPLICATIONS
+type Applications {
+    count: Int!
+    result: [Application]!
+}
+
+type Application {
+    id: ID!
+    name: String!
+    arguments: String!
+    start_at: Datetime!
+    end_at: Datetime
+    status: String!
+    logs: String
+    container_id: String
+    container_name: String
+    container_error: String
+    job: Job!
+}
+
+enum ApplicationStatus {
+    running
+    complete
+    aborted
+    error
+    container_error
+}
+
+enum ApplicationSortColumn {
+    id
+    name
+    start_at
+    end_at
+    status
+    container_id
+    container_name
+    container_error
+    job_id
+}
+
+type ApplicationEvent {
+    type: String!
+    application: Application!
+}
+
+# WATCHFOLDERS
+type Watchfolder {
+    id: ID!
+    path: String!
+    start_at: Datetime
+    end_at: Datetime
+    status: String!
+    re_files: String
+    re_dirs: String
+    added_workflow: Workflow
+    added_variables: JSON
+    modified_workflow: Workflow
+    modified_variables: JSON
+    deleted_workflow: Workflow
+    deleted_variables: JSON
+    added_items_key: String
+    modified_items_key: String
+    deleted_items_key: String
+}
+
+type WatchfolderPayload {
+    status: Boolean!
+    error: String
+    watchfolder: Watchfolder
+}
+
+type Watchfolders {
+    count: Int!
+    result: [Watchfolder]!
+}
+
+enum WatchfolderSortColumn {
+    id
+    path
+    status
+    start_at
+    end_at
+    re_files
+    re_dirs
+    added_workflow_id
+    modified_workflow_id
+    deleted_workflow_id
+    added_items_key
+    modified_items_key
+    deleted_items_key
+}
+
+type WatchfolderEvent {
+    type: String!
+    watchfolder: Watchfolder!
+}
+
+# AGENTS
+type Agent {
+    name: String!
+    help: String!
+    applications: [AgentApplication!]
+}
+
+type AgentApplication {
+    label: String!
+    name: String!
+    version: String!
+}
+
+# OTHERS
+type StatusPayload {
+    status: Boolean!
+    error: String
+}

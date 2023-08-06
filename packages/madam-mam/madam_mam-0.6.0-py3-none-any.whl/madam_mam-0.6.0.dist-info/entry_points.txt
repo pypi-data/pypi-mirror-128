@@ -1,0 +1,3 @@
+[console_scripts]
+madam=madam.slots.cli:cli
+
