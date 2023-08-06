@@ -1,0 +1,3 @@
+[console_scripts]
+jprq = jprq.main:main
+

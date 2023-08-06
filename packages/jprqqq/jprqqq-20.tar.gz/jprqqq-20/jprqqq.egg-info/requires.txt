@@ -1,0 +1,5 @@
+aiohttp==3.7.4
+bson~=0.5.10
+certifi==2019.9.11
+click==8.0.3
+websockets==9.1

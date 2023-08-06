@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+jprqq/__init__.py
+jprqq/__main__.py
+jprqq/http.py
+jprqq/main.py
+jprqq/tcp.py
+jprqq/tunnel_http.py
+jprqq/tunnel_tcp.py
+jprqqq.egg-info/PKG-INFO
+jprqqq.egg-info/SOURCES.txt
+jprqqq.egg-info/dependency_links.txt
+jprqqq.egg-info/entry_points.txt
+jprqqq.egg-info/requires.txt
+jprqqq.egg-info/top_level.txt
