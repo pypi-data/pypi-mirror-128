@@ -1,0 +1,65 @@
+# QWebSiteOptimizer - Web站点速度选优工具
+[![Downloads](https://static.pepy.tech/personalized-badge/qwebsite?period=total&units=international_system&left_color=grey&right_color=orange&left_text=Pypi%20User)](https://pepy.tech/project/qwebsite)
+![GitHub forks](https://img.shields.io/github/forks/QPT-Family/QWebSiteOptimizer)
+![GitHub Repo stars](https://img.shields.io/github/stars/QPT-Family/QWebSiteOptimizer)
+![GitHub](https://img.shields.io/github/license/QPT-Family/QWebSiteOptimizer)
+![](https://img.shields.io/badge/支持系统-Win/Linux/MAC-9cf)
+  
+在访问GitHub等网站时，DNS解析到的IP地址可能并不是最快，过慢的节点会严重影响我们的访问情况，故制作出这样的工具来进一步优化网络质量。  
+
+* 由于该方案并非为VPN等方式进行的速度优化，以下几点需要您注意：
+  1. 后续访问对应网站时仍可能需要您重新启动该程序进行优化。
+  2. 优化情况取决与您的DNS配置情况以及网络本身质量，必要时请自行搜索如何修改本机DNS。
+  3. 这些方式并不如专有VPN稳定，也并非科学上网，仅仅是速度优化而已。换句话就是政策不允许访问的依旧不会让您访问。
+
+> 本程序源码完全开源开放，默认仅优化GitHub站点，后续将提供自定义网站优化教程。
+
+## 运行界面
+<div align="center">
+<img src="ext/RUN.png" width="500px"></img>
+</div>
+
+
+## 安装方式
+* 使用Windows安装包进行安装  
+  > 点击下载[GitHub加速工具V0.9版本](https://bj.bcebos.com/v1/ai-studio-online/0fbc4cfccb3f42139bfd98bf976298d5c64664bd1981442081d8177a8609d24a?responseContentDisposition=attachment%3B%20filename%3DGitHub%E5%8A%A0%E9%80%9F%E5%B7%A5%E5%85%B7V0.9.zip)完整安装包
+
+* 使用Python包管理器进行安装【推荐】  
+  ```shell
+  python -m pip install qwebsite
+  ```
+  or
+  ```shell
+  python -m pip install qwebsite -i https://mirrors.bfsu.edu.cn/pypi/web/simple
+  ```
+## 使用教程
+
+* 启动GUI  
+  * Windows - DNS选优需要管理员权限 - 可按Win+x组合键打开选择带有管理员权限的CMD或PowerShell  
+    ```shell
+    # 命令方式获取管理员权限
+    %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&&exit
+    # 运行
+    python -m qwebsite
+    ```
+  * Linux or MacOS  
+    ```
+    sudo python -m qwebsite
+    ```
+* 快捷命令  
+  * Windows - DNS选优需要管理员权限 - 可按Win+x组合键打开选择带有管理员权限的CMD或PowerShell  
+    ```shell
+    # DNS结果选优
+    python -m qwebsite -g Flase
+    # 恢复Hosts
+    python -m qwebsite -g Flase -r True
+    ```
+  * Linux or MacOS  
+    ```shell
+    sudo python -m qwebsite -g Flase
+    # 恢复Hosts
+    sudo python -m qwebsite -g Flase -r True
+    ```
+
+## 开源协议
+本项目使用GNU General Public License v3.0(GPL)开源协议。

@@ -1,0 +1,3 @@
+[console_scripts]
+qwebsite = qwebsite.__main__:cli
+

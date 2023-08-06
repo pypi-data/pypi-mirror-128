@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+QWebSite.egg-info/PKG-INFO
+QWebSite.egg-info/SOURCES.txt
+QWebSite.egg-info/dependency_links.txt
+QWebSite.egg-info/entry_points.txt
+QWebSite.egg-info/requires.txt
+QWebSite.egg-info/top_level.txt
+qwebsite/__init__.py
+qwebsite/__main__.py
+qwebsite/base.py
+qwebsite/flags.py
+qwebsite/run.py
+qwebsite/submethod/__init__.py
+qwebsite/submethod/github.py
