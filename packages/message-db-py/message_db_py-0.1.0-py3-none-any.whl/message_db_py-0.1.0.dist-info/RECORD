@@ -1,0 +1,6 @@
+message_db/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+message_db/client.py,sha256=5tK74fvuiqTnNVWpOKKI8_mR2I8hDaIRrfBFn2imNMY,4994
+message_db/connection.py,sha256=TZPkfxD40fVkeFG91lbeZ8IlRkoZ7-pMvO8Ir3ISHkk,1856
+message_db_py-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+message_db_py-0.1.0.dist-info/METADATA,sha256=LyGtYs0sAM76AIhrvX5JEQfTzYLyM-weBl7xz7JxxL0,516
+message_db_py-0.1.0.dist-info/RECORD,,
