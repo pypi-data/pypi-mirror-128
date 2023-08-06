@@ -1,0 +1,3 @@
+setuptools
+redis==3.5.3
+hiredis==2.0.0
