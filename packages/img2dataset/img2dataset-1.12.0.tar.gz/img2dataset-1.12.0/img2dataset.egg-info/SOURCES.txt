@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+img2dataset/__init__.py
+img2dataset/downloader.py
+img2dataset/logging_utils.py
+img2dataset.egg-info/PKG-INFO
+img2dataset.egg-info/SOURCES.txt
+img2dataset.egg-info/dependency_links.txt
+img2dataset.egg-info/entry_points.txt
+img2dataset.egg-info/requires.txt
+img2dataset.egg-info/top_level.txt
