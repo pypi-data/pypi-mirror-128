@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "dg_util"
+version = "0.0.7"
+description = "commom tools"
+authors = ["DataGrid"]
+license = "MIT"
+packages = [
+    { include = "image_preprocessing" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+numpy = "^1.21.4"
+Pillow = "^8.4.0"
+opencv-python = "^4.5.4"
+tqdm = "^4.62.3"
+dlib = "^19.22.1"
+imutils = "^0.5.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
