@@ -1,0 +1,15 @@
+fire
+sqlalchemy
+scrapy
+dateparser
+
+[test]
+pytest
+coverage
+flake8
+black
+isort
+pytest-cov
+codecov
+gitchangelog
+mkdocs
