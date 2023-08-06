@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: azury
+Version: 0.0.0
+Summary: Azury Python SDK (Under developement)
+Home-page: https://github.com/azurystudios/azury.py
+Author: Filippo Romani
+Author-email: mail@filipporomani.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+Under developement
+

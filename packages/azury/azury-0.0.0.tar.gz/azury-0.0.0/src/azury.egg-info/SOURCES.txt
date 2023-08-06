@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/main.py
+src/azury.egg-info/PKG-INFO
+src/azury.egg-info/SOURCES.txt
+src/azury.egg-info/dependency_links.txt
+src/azury.egg-info/top_level.txt
