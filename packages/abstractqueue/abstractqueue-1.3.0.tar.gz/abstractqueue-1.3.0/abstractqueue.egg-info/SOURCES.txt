@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+abstractqueue/Queue.py
+abstractqueue/__init__.py
+abstractqueue/exceptions.py
+abstractqueue.egg-info/PKG-INFO
+abstractqueue.egg-info/SOURCES.txt
+abstractqueue.egg-info/dependency_links.txt
+abstractqueue.egg-info/requires.txt
+abstractqueue.egg-info/top_level.txt
