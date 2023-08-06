@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+limo/pylimo.egg-info/PKG-INFO
+limo/pylimo.egg-info/SOURCES.txt
+limo/pylimo.egg-info/dependency_links.txt
+limo/pylimo.egg-info/requires.txt
+limo/pylimo.egg-info/top_level.txt
