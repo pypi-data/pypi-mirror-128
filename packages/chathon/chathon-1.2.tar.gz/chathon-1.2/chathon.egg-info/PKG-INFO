@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: chathon
+Version: 1.2
+Summary: A Python Packages to make own chat room
+Home-page: https://github.com/EterNomm/Chathon
+Author: LyQuid
+Author-email: lyquidpersonal@gmail.com
+License: Apache License 2.0
+Project-URL: Discord, https://discord.gg/qpT2AeYZRN
+Project-URL: Issue tracker, https://github.com/EterNomm/Chathon/issues
+Keywords: python,chathon,chat,chat room,chat app,chat bot
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Android
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Chathon
+A Python packages for make own chat room
+
+## Install
+- PyPI
+```
+pip install chathon
+```
+- Development version
+```
+pip install git+https://github.com/EterNomm/Chathon
+```
+
+## Examples
+
+- Server side
+```py
+import chathon
+
+server = chathon.Server(port=1212)
+server.start()
+```
+- Client side
+```py
+import chathon
+
+client = chathon.Client(username="LyQuid")
+client.connect(server_ip="127.0.0.1", server_port=1212)
+```
+- Bot
+```py
+import chathon
+
+bot = chathon.Bot(bot_name="Chathon", prefix="/", server_ip="127.0.0.1", server_port=1212)
+bot.command(command_name="test", response="work!")
+```
+
+<details>
+    <summary>Plan</summary>
+    <br>
+    <ul>
+        <li>Adding Colors</li>
+        <p>This part will be done by <a href="https://github.com/TheGenocides" target="_blank">TheGenocides</a> using colorama</p>
+        <li>Using Decorator</li>
+        <p>We will try to create a decorator for the bot command, for example: @bot.command()</p>
+    </ul>
+</details>
+
+<details>
+    <summary>Bug list</summary>
+    <br>
+    <ul>
+        <li>Spam (Small chances)</li>
+        <p>Sometimes bots will spam when responding to users</p>
+    </ul>
+</details>
+
+
