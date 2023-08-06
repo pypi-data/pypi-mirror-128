@@ -1,0 +1,3 @@
+[console_scripts]
+gurgle-terminal = gurgle.examples.terminal:main
+

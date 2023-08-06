@@ -1,0 +1,10 @@
+creek
+lined
+taped
+slang
+IPython
+argh
+hum
+numpy
+scikit-learn
+scipy
