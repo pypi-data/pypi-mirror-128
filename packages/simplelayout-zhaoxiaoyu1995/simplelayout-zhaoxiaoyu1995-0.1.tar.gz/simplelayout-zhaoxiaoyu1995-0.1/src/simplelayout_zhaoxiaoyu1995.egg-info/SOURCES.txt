@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+src/simplelayout/__init__.py
+src/simplelayout/__main__.py
+src/simplelayout/cli/__init__.py
+src/simplelayout/cli/cli_generate.py
+src/simplelayout/generator/__init__.py
+src/simplelayout/generator/core.py
+src/simplelayout/generator/utils.py
+src/simplelayout_zhaoxiaoyu1995.egg-info/PKG-INFO
+src/simplelayout_zhaoxiaoyu1995.egg-info/SOURCES.txt
+src/simplelayout_zhaoxiaoyu1995.egg-info/dependency_links.txt
+src/simplelayout_zhaoxiaoyu1995.egg-info/entry_points.txt
+src/simplelayout_zhaoxiaoyu1995.egg-info/requires.txt
+src/simplelayout_zhaoxiaoyu1995.egg-info/top_level.txt
