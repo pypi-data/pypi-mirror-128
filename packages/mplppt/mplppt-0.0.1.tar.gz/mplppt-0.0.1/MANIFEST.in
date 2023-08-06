@@ -1,0 +1,7 @@
+include *.ipynb
+include .bumpversion.cfg
+recursive-include img *.png
+recursive-include mplppt *.jpeg
+recursive-include mplppt *.media
+recursive-include mplppt *.rels
+recursive-include mplppt *.xml
