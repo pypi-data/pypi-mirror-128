@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ml4vision/__init__.py
+ml4vision/client.py
+ml4vision_py.egg-info/PKG-INFO
+ml4vision_py.egg-info/SOURCES.txt
+ml4vision_py.egg-info/dependency_links.txt
+ml4vision_py.egg-info/requires.txt
+ml4vision_py.egg-info/top_level.txt
