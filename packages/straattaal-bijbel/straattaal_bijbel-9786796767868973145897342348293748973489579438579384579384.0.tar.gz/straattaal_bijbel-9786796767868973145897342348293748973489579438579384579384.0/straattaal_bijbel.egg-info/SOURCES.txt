@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+straattaal_bijbel/__init__.py
+straattaal_bijbel/dictionary.py
+straattaal_bijbel/tts.py
+straattaal_bijbel/verse.py
+straattaal_bijbel.egg-info/PKG-INFO
+straattaal_bijbel.egg-info/SOURCES.txt
+straattaal_bijbel.egg-info/dependency_links.txt
+straattaal_bijbel.egg-info/requires.txt
+straattaal_bijbel.egg-info/top_level.txt
