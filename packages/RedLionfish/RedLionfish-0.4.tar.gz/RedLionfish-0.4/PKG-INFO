@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: RedLionfish
+Version: 0.4
+Summary: Fast Richardson-Lucy deconvolution of 3D volume data using GPU or CPU with napari plugin.
+Home-page: https://github.com/rosalindfranklininstitute/RedLionfish
+Author: Luis Perdigao
+Author-email: luis.perdigao@rfi.ac.uk
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta 
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Framework :: napari
+License-File: LICENSE
+
+UNKNOWN
+
