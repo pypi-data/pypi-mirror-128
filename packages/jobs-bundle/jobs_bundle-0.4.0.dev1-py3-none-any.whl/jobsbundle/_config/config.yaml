@@ -1,0 +1,69 @@
+parameters:
+  jobsbundle:
+    databricks:
+      routes:
+        job.detail: "/?#job/{job_id}"
+
+    jobs:
+
+services:
+  jobsbundle.databricks.client:
+    class: databricks_cli.sdk.ApiClient
+    autowire: False
+    arguments:
+      host: '%jobsbundle.databricks.host%'
+      token: '%jobsbundle.databricks.token%'
+
+  jobsbundle.databricks.jobs_api:
+    class: databricks_cli.jobs.api.JobsApi
+    arguments:
+      - '@jobsbundle.databricks.client'
+
+  jobsbundle.databricks.runs_api:
+    class: databricks_cli.runs.api.RunsApi
+    arguments:
+      - '@jobsbundle.databricks.client'
+
+  jobsbundle.job.ValuesFiller:
+
+  jobsbundle.job.JobCreatorCommand:
+    arguments:
+      - '%jobsbundle.jobs%'
+      - '@consolebundle.logger'
+      - '@jobsbundle.databricks.jobs_api'
+    tags:
+      - 'console.command'
+
+  jobsbundle.job.JobCreateOrUpdateCommand:
+    arguments:
+      - '%jobsbundle.jobs%'
+      - '@consolebundle.logger'
+      - '@jobsbundle.databricks.jobs_api'
+    tags:
+      - 'console.command'
+
+  jobsbundle.job.Router:
+    arguments:
+      - '%jobsbundle.databricks.host%'
+      - '%jobsbundle.databricks.routes%'
+
+  jobsbundle.job.StreamingJobCreateCommand:
+    arguments:
+      - '%jobsbundle.jobs%'
+      - '@consolebundle.logger'
+      - '@jobsbundle.databricks.jobs_api'
+    tags:
+      - 'console.command'
+
+  jobsbundle.job.StreamingJobCreateOrUpdateCommand:
+    arguments:
+      - '%jobsbundle.jobs%'
+      - '@consolebundle.logger'
+      - '@jobsbundle.databricks.jobs_api'
+    tags:
+      - 'console.command'
+
+  jobsbundle.job.JobIdFinder:
+    arguments:
+      - '@consolebundle.logger'
+      - '@jobsbundle.databricks.jobs_api'
