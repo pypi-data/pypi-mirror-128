@@ -1,0 +1,13 @@
+pypolyline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypolyline/cutil.c,sha256=NpG4XPbZIKSXQnXOlRTLJ00g4JFavAlA9_NaW7lvAFU,800408
+pypolyline/cutil.cpython-37m-darwin.so,sha256=-EsJlUvsfgPbNyXkmWgzxAtg3PrB8_90k5khxmYlzUU,185752
+pypolyline/cutil.pyx,sha256=peCU_LRlyLyb_vMlG_U3FADNVMDdY-LokKJ0UVlcv-M,2798
+pypolyline/header.h,sha256=hHSC09A8YY-XqPMY8Gu1iaklQA8RHP_nKxYhV6hK0r4,2690
+pypolyline/libpolyline_ffi.dylib,sha256=S3WdpdISHgPYyHw_yiAAy1vdAXCXOup2F1mp1XFpk_Y,283040
+pypolyline/pypolyline_p.pxd,sha256=aEJVgnX_ATwDSjdOboyKRuSJ-wURHTA6lKrTTWqN4Jw,303
+pypolyline/stdbool.h,sha256=Kh3yV7KFb1KFWAI41x-ekYZe4tLiQruhr5YP5jmmBEU,68
+pypolyline/util.py,sha256=JXSKOZAypLrkyMF6Kty3ahYNWZTlva5gqETqu9fjHqA,5801
+pypolyline-0.2.70.dist-info/METADATA,sha256=EoWsVHOOeJiZm04MjqL3zpNBSUYz-620Wct0EL-_Xeg,3463
+pypolyline-0.2.70.dist-info/WHEEL,sha256=MTGYRPpheMM24WbmS90Rp7e0ky6cZJ8CkS_x1qgwoGk,110
+pypolyline-0.2.70.dist-info/top_level.txt,sha256=7Gy8gUtBLfqNAieGRPPYYxALZUfJ818K7DtcrH7MWZE,11
+pypolyline-0.2.70.dist-info/RECORD,,
