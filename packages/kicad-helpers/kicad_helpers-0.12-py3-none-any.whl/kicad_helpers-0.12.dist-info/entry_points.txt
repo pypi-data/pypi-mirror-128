@@ -1,0 +1,14 @@
+[console_scripts]
+kh_bom_to_sch = kicad_helpers.actions:bom_to_sch
+kh_export_man = kicad_helpers.actions:export_manufacturing
+kh_export_pcb = kicad_helpers.actions:export_pcb
+kh_export_sch = kicad_helpers.actions:export_sch
+kh_run_drc = kicad_helpers.actions:run_drc
+kh_run_erc = kicad_helpers.actions:run_erc
+kh_sch_to_bom = kicad_helpers.actions:sch_to_bom
+kh_set_date = kicad_helpers.actions:set_date
+kh_set_revision = kicad_helpers.actions:set_revision
+kh_setup_test_repo = kicad_helpers.utilities:setup_test_repo
+kh_test = kicad_helpers.test:test_notebooks
+kh_update = kicad_helpers.actions:update_project
+
