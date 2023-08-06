@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: mdsmosaic
+Version: 0.1.2
+Summary: Client utilities for the MOSAIC suite
+Home-page: https://hub.docker.com/mds4ul
+Author: Maximilian Jugl
+Author-email: jugl@hs-mittweida.de
+License: GPL-3.0-or-later
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+License-File: COPYING
+Requires-Dist: marshmallow
+Requires-Dist: zeep
+
+MDS Mosaic Utilities
+---------------------
+
+This package provides light wrappers around the SOAP interfaces provided by the MOSAIC suite of the `THS Greifswald <https://www.ths-greifswald.de/en/projekte/mosaic-project/>`_.
+It exposes ``gpas`` and ``epix`` to interact with the eponymous services gPAS and E-PIX.
+
+
