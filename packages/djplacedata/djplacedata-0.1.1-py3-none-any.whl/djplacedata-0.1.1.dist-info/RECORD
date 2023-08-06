@@ -1,0 +1,14 @@
+djplacedata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djplacedata/apps.py,sha256=x1nTXOAi1iLO49nd8fr__k7G89BFEalCB-2sORoug1M,97
+djplacedata/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djplacedata/management/commands/importcensusdata.py,sha256=_oy-kowIbCc38U5G3SczwJ3Zp8UGHppbXjk0iHsy594,2887
+djplacedata/management/commands/importshapefiles.py,sha256=P_GcvgppRqNjv21-8q7YT3-59ovgzaym-57rJZUinJo,2744
+djplacedata/migrations/0001_initial.py,sha256=erd5qWzvKcMF1tpeO-lxYo28AY6PhgntQmRC9SkJrlc,975
+djplacedata/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djplacedata/models.py,sha256=wc2r49shI1gvZvKKNqwC5q-0OPtBCSxIUCTwR--UB00,497
+djplacedata/settings.py,sha256=qJtwUheVxDKlsHJ7VYnlAot8BxVTb-zEd19NnQESIsw,305
+djplacedata/utils.py,sha256=zGf1Y4KF5NDDSrCuVOM6zuLh6xXiorIiQH6vO6xOoco,1776
+djplacedata/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djplacedata-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+djplacedata-0.1.1.dist-info/METADATA,sha256=yiG-UOlTI7P075bTpF9xSQwwmcrlGDDaAHL3xWQuqQ8,507
+djplacedata-0.1.1.dist-info/RECORD,,
