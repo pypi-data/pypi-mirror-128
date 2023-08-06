@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/yggdrasil_address/__init__.py
+src/yggdrasil_address.egg-info/PKG-INFO
+src/yggdrasil_address.egg-info/SOURCES.txt
+src/yggdrasil_address.egg-info/dependency_links.txt
+src/yggdrasil_address.egg-info/top_level.txt
