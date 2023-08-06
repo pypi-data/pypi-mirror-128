@@ -1,0 +1,3 @@
+[console_scripts]
+escli = escli.__main__:main
+
