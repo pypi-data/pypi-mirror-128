@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/plugin_package_template.egg-info/PKG-INFO
+src/plugin_package_template.egg-info/SOURCES.txt
+src/plugin_package_template.egg-info/dependency_links.txt
+src/plugin_package_template.egg-info/entry_points.txt
+src/plugin_package_template.egg-info/requires.txt
+src/plugin_package_template.egg-info/top_level.txt
+src/vdk/plugin/plugin_template/plugin_template.py
