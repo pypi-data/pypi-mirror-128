@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+etl_script/__init__.py
+etl_script/cli.py
+etl_script/inp.py
+etl_script/pushtoES.py
+etl_script/scriptConst.py
+sfapmetl.egg-info/PKG-INFO
+sfapmetl.egg-info/SOURCES.txt
+sfapmetl.egg-info/dependency_links.txt
+sfapmetl.egg-info/entry_points.txt
+sfapmetl.egg-info/not-zip-safe
+sfapmetl.egg-info/requires.txt
+sfapmetl.egg-info/top_level.txt

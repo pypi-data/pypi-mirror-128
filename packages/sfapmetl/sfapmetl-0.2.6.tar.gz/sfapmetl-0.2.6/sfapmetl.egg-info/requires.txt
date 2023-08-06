@@ -1,0 +1,7 @@
+click
+elasticsearch
+schedule
+requests
+pycrypto
+PyYAML
+urllib3
