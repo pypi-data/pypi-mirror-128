@@ -1,0 +1,71 @@
+# This file exists so you can easily regenerate your project.
+#
+# `cookiepatcher` is a convenient shim around `cookiecutter`
+# for regenerating projects (it will generate a .cookiecutterrc
+# automatically for any template). To use it:
+#
+#    pip install cookiepatcher
+#    cookiepatcher gh:ionelmc/cookiecutter-pylibrary python-bkash-client
+#
+# See:
+#    https://pypi.org/project/cookiepatcher
+#
+# Alternatively, you can run:
+#
+#    cookiecutter --overwrite-if-exists --config-file=python-bkash-client/.cookiecutterrc gh:ionelmc/cookiecutter-pylibrary
+
+default_context:
+
+    _extensions:               ['jinja2_time.TimeExtension']
+    _template:                 'gh:ionelmc/cookiecutter-pylibrary'
+    allow_tests_inside_package: 'no'
+    appveyor:                  'no'
+    c_extension_function:      'longest'
+    c_extension_module:        '_bkash_client'
+    c_extension_optional:      'no'
+    c_extension_support:       'no'
+    c_extension_test_pypi:     'no'
+    c_extension_test_pypi_username: 'codesigntheory'
+    codacy:                    'no'
+    codacy_projectid:          '[Get ID from https://app.codacy.com/gh/codesigntheory/python-bkash-client/settings]'
+    codeclimate:               'no'
+    codecov:                   'yes'
+    command_line_interface:    'no'
+    command_line_interface_bin_name: 'bkash-client'
+    coveralls:                 'no'
+    coveralls_token:           '[Required for Appveyor, take it from https://coveralls.io/github/codesigntheory/python-bkash-client]'
+    distribution_name:         'bkash-client'
+    email:                     'roy@co.design'
+    full_name:                 'Utsob Roy'
+    legacy_python:             'no'
+    license:                   'MIT license'
+    linter:                    'flake8'
+    package_name:              'bkash_client'
+    pre_commit:                'yes'
+    project_name:              'bkash-client'
+    project_short_description: 'A Client for Bkash API.'
+    pypi_badge:                'yes'
+    pypi_disable_upload:       'no'
+    release_date:              'today'
+    repo_hosting:              'gitlab.com'
+    repo_hosting_domain:       'gitlab.com'
+    repo_name:                 'python-bkash-client'
+    repo_username:             'codesigntheory'
+    requiresio:                'no'
+    scrutinizer:               'no'
+    setup_py_uses_setuptools_scm: 'no'
+    setup_py_uses_test_runner: 'no'
+    sphinx_docs:               'yes'
+    sphinx_docs_hosting:       'https://python-bkash-client.readthedocs.io/'
+    sphinx_doctest:            'no'
+    sphinx_theme:              'sphinx-py3doc-enhanced-theme'
+    test_matrix_configurator:  'no'
+    test_matrix_separate_coverage: 'no'
+    test_runner:               'pytest'
+    travis:                    'no'
+    travis_osx:                'no'
+    version:                   '0.0.0'
+    version_manager:           'bump2version'
+    website:                   'https://co.design'
+    year_from:                 '2021'
+    year_to:                   '2021'
