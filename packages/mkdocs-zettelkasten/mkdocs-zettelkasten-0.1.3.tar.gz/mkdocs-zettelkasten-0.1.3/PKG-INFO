@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: mkdocs-zettelkasten
+Version: 0.1.3
+Summary: Add Zettelkasten features to MkDocs
+Home-page: https://github.com/tbouska/mkdocs-zettelkasten
+Author: Tomáš Bouška
+Author-email: tomas@buvis.net
+License: MIT
+Keywords: mkdocs python markdown zettelkasten
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MkDocs Zettelkasten
+
+This is a [Zettelkasten](https://zettelkasten.de) theme and plugin for [MkDocs](https://www.mkdocs.org). It renders the MkDocs pages as cards (zettels).
+
+For more information, head on over to [the documentation](https://tbouska.github.io/mkdocs-zettelkasten)
+
+
