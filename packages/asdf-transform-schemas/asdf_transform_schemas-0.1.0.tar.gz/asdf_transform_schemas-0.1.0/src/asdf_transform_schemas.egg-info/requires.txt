@@ -1,0 +1,7 @@
+asdf>=2.8.0
+
+[:python_version < "3.9"]
+importlib_resources>=3
+
+[test]
+pytest

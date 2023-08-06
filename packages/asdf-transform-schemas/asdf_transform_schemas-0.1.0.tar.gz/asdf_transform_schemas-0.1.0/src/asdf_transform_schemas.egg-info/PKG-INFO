@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: asdf-transform-schemas
+Version: 0.1.0
+Summary: ASDF schemas for transforms
+Home-page: https://github.com/asdf-format/asdf-transform-schemas
+Author: The ASDF Developers
+Author-email: help@stsci.edu
+License: BSD-3-Clause
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# asdf-transform-schemas
+
+This package provides ASDF schemas for validating transform tags.  Users should not
+need to install this directly; instead, install an implementation package such
+as asdf-astropy, which includes asdf-transform-schemas as a dependency.
+
+![CI](https://github.com/asdf-format/asdf-transform-schemas/workflows/CI/badge.svg)
+
+
