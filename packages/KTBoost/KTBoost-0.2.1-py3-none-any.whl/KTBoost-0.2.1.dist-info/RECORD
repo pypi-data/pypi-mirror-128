@@ -1,0 +1,14 @@
+KTBoost/KTBoost.py,sha256=8Yu9XeFIrOZ2GTk5i56ysTepr09cBmm6Muu8sI6Ck38,129541
+KTBoost/__init__.py,sha256=EDvvt_6oaFrGy0KqHet2e0ORQL7Veb5DAxcb8RIY-kg,16
+KTBoost/kernel_ridge.py,sha256=2HDUkFukfxMroWGOd1RMF4tJxsMaEQc_SFOGmyoAucM,13424
+KTBoost/partial_dependence.py,sha256=JMCDc4D8y0oMli3LVj-qtF-IYZbpE4gpNyIrs-xo96g,16437
+KTBoost/ridge_exten.py,sha256=Rk7Cc1A6-qIEkJcIdC_qNot0tfvwStof7GqNPlOlWkA,57003
+KTBoost/tree.py,sha256=XMIE7W0lv3vxWXgCbJjMuJIllv45T3yVV4Jmg0qFLnE,59325
+KTBoost-0.2.0.dist-info/LICENSE,sha256=gL2HLluVlpBDtg3In7SUaicBm0E7zQoUD5Cstil8YJA,1093
+KTBoost-0.2.0.dist-info/METADATA,sha256=ewDHjTucOLXN8iFBhNpt-0i1zQFmi3P8OQ_B5f5J2tg,12651
+KTBoost-0.2.0.dist-info/top_level.txt,sha256=wWNVO52BqDb-lbpRjo4iMvYs0LXz4ut34V_8VLQt4Ho,8
+KTBoost-0.2.1.dist-info/LICENSE,sha256=gL2HLluVlpBDtg3In7SUaicBm0E7zQoUD5Cstil8YJA,1093
+KTBoost-0.2.1.dist-info/METADATA,sha256=kkZ0Zo3bwIO3AN0Y9-waFVQyJzDUbUB-C8yb7P_QTMo,12650
+KTBoost-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+KTBoost-0.2.1.dist-info/top_level.txt,sha256=wWNVO52BqDb-lbpRjo4iMvYs0LXz4ut34V_8VLQt4Ho,8
+KTBoost-0.2.1.dist-info/RECORD,,
