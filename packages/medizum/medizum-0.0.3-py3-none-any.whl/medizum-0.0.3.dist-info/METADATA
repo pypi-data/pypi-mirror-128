@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: medizum
+Version: 0.0.3
+Summary: Pacote para gerar dados simples.
+Home-page: https://github.com/taotamat/medizum
+Author: Matheus Victor, Vinicius Dias
+Author-email: matheusvictorufpi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1.2.4)
+Requires-Dist: Pillow (>=7.0.0)
+
+# Me Diz Um
+
+Pacote feito para o trabalho final da disciplina Programação Orientada a Objetos II.
+
+Este pacote gera dados simples aleatóriamente. 
+
+Para utilizar é necessário ter instalado as bibliotecas:
+- pandas 
+- pillow.
+
+<br>
+
+## Categorias presentes:
+- Nomes
+- Idade 
+- Peso
+- Altura
+- Paises
+- Estados (do Brasil)
+- Cidades (do Brasil)
+- Cores
+- Imagem
+- Arquivo
+- CPF
+- RG
+- Produtos
+- Signos
+- Dias da Semana
+- Meses
+- Datas de Nascimento
+
+
+<br>
+
+
+
+## Exemplos de uso:
+
+```
+from medizum import diz
+diz = diz()
+print(diz.nome())
+print(diz.idade())
+print(f'Oi, me chamo {diz.nome()} e tenho {diz.idade()}!')
+```
+
+
+
+
+<br>
+
+
