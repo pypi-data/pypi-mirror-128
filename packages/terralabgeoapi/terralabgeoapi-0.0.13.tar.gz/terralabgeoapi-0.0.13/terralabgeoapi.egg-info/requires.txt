@@ -1,0 +1,12 @@
+geopandas
+unidecode
+sparse_dot_topn
+dash
+pandas
+plotly
+geopy==2.2.0
+sklearn
+numpy
+scipy
+matplotlib
+requests
