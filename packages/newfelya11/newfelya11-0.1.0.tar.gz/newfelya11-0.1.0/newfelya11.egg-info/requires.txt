@@ -1,0 +1,2 @@
+numexpr
+numpy<=1.6
