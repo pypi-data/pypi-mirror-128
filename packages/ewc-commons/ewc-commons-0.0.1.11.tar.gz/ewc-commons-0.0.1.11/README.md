@@ -1,0 +1,74 @@
+# EWC Commons Library #
+
+[![PyPI](https://img.shields.io/pypi/v/ewc-commons)](https://img.shields.io/pypi/v/ewc-commons)
+
+[![Documentation Status](https://readthedocs.org/projects/ewc-commons/badge/?version=latest)](https://ewc-commons.readthedocs.io/en/latest/?badge=latest)
+
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/ewc-commons)](https://img.shields.io/pypi/dm/ewc-commons)
+
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ewc-commons)](https://img.shields.io/pypi/pyversions/ewc-commons)
+
+
+A collection of common & useful things to make other things easier.
+
+### Installing ###
+Use pip to install the **EWC Commons Library**, which can also be used from the command line to trigger certain inbuilt functionality.
+
+```bash
+$ pip install ewc-commons[dev]
+```
+
+Veryfy the library installed and check the version or help.
+
+```bash
+$ ewccommons -v
+...
+$ ewccommons -h
+```
+
+### Getting Started ###
+
+* Sophie Module
+* Dice Module
+* Dice Rolls Module
+* Card Deck Module
+
+### How do I get set up? ###
+
+* Summary of set up
+* Configuration
+* Dependencies
+* Database configuration
+* How to run tests
+* Deployment instructions
+
+### Sophie Module ###
+
+The **sophie** module is used to provide convenient CLI script launcher framework
+
+
+### Dice Module ###
+
+The **dice** module provides an OOP solution for creating various sided die simulators and a conveniant way of rolling multiple (varying) Dice objects
+
+
+### Dice Rolls Module ###
+
+The **dicerolls** module can be used in multiple ways, firstly it can be used in the standard way of being imported into python scripts. **dicerolls** can also be invoked as a module script and will output the dice rolls for the dice specified. The same dice rolling functionality can also be invoked via the main **ewccommons** package executable.
+
+
+### Card Deck Module ###
+
+The **carddeck** module provides a convenient means of creating card deck list which can be used as a basis for card based games.
+
+
+### Contribution guidelines ###
+
+* Writing tests
+* Code review
+* Other guidelines
+
+### Who do I talk to? ###
+
+* Repo owner or admin
+* Other community or team contact
