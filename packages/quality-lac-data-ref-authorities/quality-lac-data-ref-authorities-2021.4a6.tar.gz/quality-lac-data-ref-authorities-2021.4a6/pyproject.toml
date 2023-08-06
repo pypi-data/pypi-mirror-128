@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "quality-lac-data-ref-authorities"
+version = "2021.4-alpha.6"
+description = """\
+This is a redistribution of the ONS dataset on Lower Tier Local Authority to\
+Upper Tier Local Authority Lookup packaged for the Quality Lac Data project.\
+\
+Source: Office for National Statistics licensed under the Open Government Licence v.3.0\
+"""
+authors = [
+    "Office for National Statistics <sharedcustomercontactcentre@ons.gov.uk>",
+    "Kaj Siebert <kaj@k-si.com>",
+]
+license = "OGL-UK-3.0"
+packages = [
+    { include = "qlacref_authorities" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

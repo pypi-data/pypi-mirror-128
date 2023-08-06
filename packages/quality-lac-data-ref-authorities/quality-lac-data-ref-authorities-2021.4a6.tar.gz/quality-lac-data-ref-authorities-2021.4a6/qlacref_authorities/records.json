@@ -1,0 +1,2319 @@
+[
+  {
+    "FID": "1",
+    "LTLA21CD": "E06000001",
+    "LTLA21NM": "Hartlepool",
+    "UTLA21CD": "E06000001",
+    "UTLA21NM": "Hartlepool"
+  },
+  {
+    "FID": "2",
+    "LTLA21CD": "E06000002",
+    "LTLA21NM": "Middlesbrough",
+    "UTLA21CD": "E06000002",
+    "UTLA21NM": "Middlesbrough"
+  },
+  {
+    "FID": "3",
+    "LTLA21CD": "E06000003",
+    "LTLA21NM": "Redcar and Cleveland",
+    "UTLA21CD": "E06000003",
+    "UTLA21NM": "Redcar and Cleveland"
+  },
+  {
+    "FID": "4",
+    "LTLA21CD": "E06000004",
+    "LTLA21NM": "Stockton-on-Tees",
+    "UTLA21CD": "E06000004",
+    "UTLA21NM": "Stockton-on-Tees"
+  },
+  {
+    "FID": "5",
+    "LTLA21CD": "E06000005",
+    "LTLA21NM": "Darlington",
+    "UTLA21CD": "E06000005",
+    "UTLA21NM": "Darlington"
+  },
+  {
+    "FID": "6",
+    "LTLA21CD": "E06000006",
+    "LTLA21NM": "Halton",
+    "UTLA21CD": "E06000006",
+    "UTLA21NM": "Halton"
+  },
+  {
+    "FID": "7",
+    "LTLA21CD": "E06000007",
+    "LTLA21NM": "Warrington",
+    "UTLA21CD": "E06000007",
+    "UTLA21NM": "Warrington"
+  },
+  {
+    "FID": "8",
+    "LTLA21CD": "E06000008",
+    "LTLA21NM": "Blackburn with Darwen",
+    "UTLA21CD": "E06000008",
+    "UTLA21NM": "Blackburn with Darwen"
+  },
+  {
+    "FID": "9",
+    "LTLA21CD": "E06000009",
+    "LTLA21NM": "Blackpool",
+    "UTLA21CD": "E06000009",
+    "UTLA21NM": "Blackpool"
+  },
+  {
+    "FID": "10",
+    "LTLA21CD": "E06000010",
+    "LTLA21NM": "Kingston upon Hull, City of",
+    "UTLA21CD": "E06000010",
+    "UTLA21NM": "Kingston upon Hull, City of"
+  },
+  {
+    "FID": "11",
+    "LTLA21CD": "E06000011",
+    "LTLA21NM": "East Riding of Yorkshire",
+    "UTLA21CD": "E06000011",
+    "UTLA21NM": "East Riding of Yorkshire"
+  },
+  {
+    "FID": "12",
+    "LTLA21CD": "E06000012",
+    "LTLA21NM": "North East Lincolnshire",
+    "UTLA21CD": "E06000012",
+    "UTLA21NM": "North East Lincolnshire"
+  },
+  {
+    "FID": "13",
+    "LTLA21CD": "E06000013",
+    "LTLA21NM": "North Lincolnshire",
+    "UTLA21CD": "E06000013",
+    "UTLA21NM": "North Lincolnshire"
+  },
+  {
+    "FID": "14",
+    "LTLA21CD": "E06000014",
+    "LTLA21NM": "York",
+    "UTLA21CD": "E06000014",
+    "UTLA21NM": "York"
+  },
+  {
+    "FID": "15",
+    "LTLA21CD": "E06000015",
+    "LTLA21NM": "Derby",
+    "UTLA21CD": "E06000015",
+    "UTLA21NM": "Derby"
+  },
+  {
+    "FID": "16",
+    "LTLA21CD": "E06000016",
+    "LTLA21NM": "Leicester",
+    "UTLA21CD": "E06000016",
+    "UTLA21NM": "Leicester"
+  },
+  {
+    "FID": "17",
+    "LTLA21CD": "E06000017",
+    "LTLA21NM": "Rutland",
+    "UTLA21CD": "E06000017",
+    "UTLA21NM": "Rutland"
+  },
+  {
+    "FID": "18",
+    "LTLA21CD": "E06000018",
+    "LTLA21NM": "Nottingham",
+    "UTLA21CD": "E06000018",
+    "UTLA21NM": "Nottingham"
+  },
+  {
+    "FID": "19",
+    "LTLA21CD": "E06000019",
+    "LTLA21NM": "Herefordshire, County of",
+    "UTLA21CD": "E06000019",
+    "UTLA21NM": "Herefordshire, County of"
+  },
+  {
+    "FID": "20",
+    "LTLA21CD": "E06000020",
+    "LTLA21NM": "Telford and Wrekin",
+    "UTLA21CD": "E06000020",
+    "UTLA21NM": "Telford and Wrekin"
+  },
+  {
+    "FID": "21",
+    "LTLA21CD": "E06000021",
+    "LTLA21NM": "Stoke-on-Trent",
+    "UTLA21CD": "E06000021",
+    "UTLA21NM": "Stoke-on-Trent"
+  },
+  {
+    "FID": "22",
+    "LTLA21CD": "E06000022",
+    "LTLA21NM": "Bath and North East Somerset",
+    "UTLA21CD": "E06000022",
+    "UTLA21NM": "Bath and North East Somerset"
+  },
+  {
+    "FID": "23",
+    "LTLA21CD": "E06000023",
+    "LTLA21NM": "Bristol, City of",
+    "UTLA21CD": "E06000023",
+    "UTLA21NM": "Bristol, City of"
+  },
+  {
+    "FID": "24",
+    "LTLA21CD": "E06000024",
+    "LTLA21NM": "North Somerset",
+    "UTLA21CD": "E06000024",
+    "UTLA21NM": "North Somerset"
+  },
+  {
+    "FID": "25",
+    "LTLA21CD": "E06000025",
+    "LTLA21NM": "South Gloucestershire",
+    "UTLA21CD": "E06000025",
+    "UTLA21NM": "South Gloucestershire"
+  },
+  {
+    "FID": "26",
+    "LTLA21CD": "E06000026",
+    "LTLA21NM": "Plymouth",
+    "UTLA21CD": "E06000026",
+    "UTLA21NM": "Plymouth"
+  },
+  {
+    "FID": "27",
+    "LTLA21CD": "E06000027",
+    "LTLA21NM": "Torbay",
+    "UTLA21CD": "E06000027",
+    "UTLA21NM": "Torbay"
+  },
+  {
+    "FID": "28",
+    "LTLA21CD": "E06000030",
+    "LTLA21NM": "Swindon",
+    "UTLA21CD": "E06000030",
+    "UTLA21NM": "Swindon"
+  },
+  {
+    "FID": "29",
+    "LTLA21CD": "E06000031",
+    "LTLA21NM": "Peterborough",
+    "UTLA21CD": "E06000031",
+    "UTLA21NM": "Peterborough"
+  },
+  {
+    "FID": "30",
+    "LTLA21CD": "E06000032",
+    "LTLA21NM": "Luton",
+    "UTLA21CD": "E06000032",
+    "UTLA21NM": "Luton"
+  },
+  {
+    "FID": "31",
+    "LTLA21CD": "E06000033",
+    "LTLA21NM": "Southend-on-Sea",
+    "UTLA21CD": "E06000033",
+    "UTLA21NM": "Southend-on-Sea"
+  },
+  {
+    "FID": "32",
+    "LTLA21CD": "E06000034",
+    "LTLA21NM": "Thurrock",
+    "UTLA21CD": "E06000034",
+    "UTLA21NM": "Thurrock"
+  },
+  {
+    "FID": "33",
+    "LTLA21CD": "E06000035",
+    "LTLA21NM": "Medway",
+    "UTLA21CD": "E06000035",
+    "UTLA21NM": "Medway"
+  },
+  {
+    "FID": "34",
+    "LTLA21CD": "E06000036",
+    "LTLA21NM": "Bracknell Forest",
+    "UTLA21CD": "E06000036",
+    "UTLA21NM": "Bracknell Forest"
+  },
+  {
+    "FID": "35",
+    "LTLA21CD": "E06000037",
+    "LTLA21NM": "West Berkshire",
+    "UTLA21CD": "E06000037",
+    "UTLA21NM": "West Berkshire"
+  },
+  {
+    "FID": "36",
+    "LTLA21CD": "E06000038",
+    "LTLA21NM": "Reading",
+    "UTLA21CD": "E06000038",
+    "UTLA21NM": "Reading"
+  },
+  {
+    "FID": "37",
+    "LTLA21CD": "E06000039",
+    "LTLA21NM": "Slough",
+    "UTLA21CD": "E06000039",
+    "UTLA21NM": "Slough"
+  },
+  {
+    "FID": "38",
+    "LTLA21CD": "E06000040",
+    "LTLA21NM": "Windsor and Maidenhead",
+    "UTLA21CD": "E06000040",
+    "UTLA21NM": "Windsor and Maidenhead"
+  },
+  {
+    "FID": "39",
+    "LTLA21CD": "E06000041",
+    "LTLA21NM": "Wokingham",
+    "UTLA21CD": "E06000041",
+    "UTLA21NM": "Wokingham"
+  },
+  {
+    "FID": "40",
+    "LTLA21CD": "E06000042",
+    "LTLA21NM": "Milton Keynes",
+    "UTLA21CD": "E06000042",
+    "UTLA21NM": "Milton Keynes"
+  },
+  {
+    "FID": "41",
+    "LTLA21CD": "E06000043",
+    "LTLA21NM": "Brighton and Hove",
+    "UTLA21CD": "E06000043",
+    "UTLA21NM": "Brighton and Hove"
+  },
+  {
+    "FID": "42",
+    "LTLA21CD": "E06000044",
+    "LTLA21NM": "Portsmouth",
+    "UTLA21CD": "E06000044",
+    "UTLA21NM": "Portsmouth"
+  },
+  {
+    "FID": "43",
+    "LTLA21CD": "E06000045",
+    "LTLA21NM": "Southampton",
+    "UTLA21CD": "E06000045",
+    "UTLA21NM": "Southampton"
+  },
+  {
+    "FID": "44",
+    "LTLA21CD": "E06000046",
+    "LTLA21NM": "Isle of Wight",
+    "UTLA21CD": "E06000046",
+    "UTLA21NM": "Isle of Wight"
+  },
+  {
+    "FID": "45",
+    "LTLA21CD": "E06000047",
+    "LTLA21NM": "County Durham",
+    "UTLA21CD": "E06000047",
+    "UTLA21NM": "County Durham"
+  },
+  {
+    "FID": "46",
+    "LTLA21CD": "E06000049",
+    "LTLA21NM": "Cheshire East",
+    "UTLA21CD": "E06000049",
+    "UTLA21NM": "Cheshire East"
+  },
+  {
+    "FID": "47",
+    "LTLA21CD": "E06000050",
+    "LTLA21NM": "Cheshire West and Chester",
+    "UTLA21CD": "E06000050",
+    "UTLA21NM": "Cheshire West and Chester"
+  },
+  {
+    "FID": "48",
+    "LTLA21CD": "E06000051",
+    "LTLA21NM": "Shropshire",
+    "UTLA21CD": "E06000051",
+    "UTLA21NM": "Shropshire"
+  },
+  {
+    "FID": "49",
+    "LTLA21CD": "E06000052",
+    "LTLA21NM": "Cornwall",
+    "UTLA21CD": "E06000052",
+    "UTLA21NM": "Cornwall"
+  },
+  {
+    "FID": "50",
+    "LTLA21CD": "E06000053",
+    "LTLA21NM": "Isles of Scilly",
+    "UTLA21CD": "E06000053",
+    "UTLA21NM": "Isles of Scilly"
+  },
+  {
+    "FID": "51",
+    "LTLA21CD": "E06000054",
+    "LTLA21NM": "Wiltshire",
+    "UTLA21CD": "E06000054",
+    "UTLA21NM": "Wiltshire"
+  },
+  {
+    "FID": "52",
+    "LTLA21CD": "E06000055",
+    "LTLA21NM": "Bedford",
+    "UTLA21CD": "E06000055",
+    "UTLA21NM": "Bedford"
+  },
+  {
+    "FID": "53",
+    "LTLA21CD": "E06000056",
+    "LTLA21NM": "Central Bedfordshire",
+    "UTLA21CD": "E06000056",
+    "UTLA21NM": "Central Bedfordshire"
+  },
+  {
+    "FID": "54",
+    "LTLA21CD": "E06000057",
+    "LTLA21NM": "Northumberland",
+    "UTLA21CD": "E06000057",
+    "UTLA21NM": "Northumberland"
+  },
+  {
+    "FID": "55",
+    "LTLA21CD": "E06000058",
+    "LTLA21NM": "Bournemouth, Christchurch and Poole",
+    "UTLA21CD": "E06000058",
+    "UTLA21NM": "Bournemouth, Christchurch and Poole"
+  },
+  {
+    "FID": "56",
+    "LTLA21CD": "E06000059",
+    "LTLA21NM": "Dorset",
+    "UTLA21CD": "E06000059",
+    "UTLA21NM": "Dorset"
+  },
+  {
+    "FID": "57",
+    "LTLA21CD": "E09000018",
+    "LTLA21NM": "Hounslow",
+    "UTLA21CD": "E09000018",
+    "UTLA21NM": "Hounslow"
+  },
+  {
+    "FID": "58",
+    "LTLA21CD": "E09000019",
+    "LTLA21NM": "Islington",
+    "UTLA21CD": "E09000019",
+    "UTLA21NM": "Islington"
+  },
+  {
+    "FID": "59",
+    "LTLA21CD": "E09000020",
+    "LTLA21NM": "Kensington and Chelsea",
+    "UTLA21CD": "E09000020",
+    "UTLA21NM": "Kensington and Chelsea"
+  },
+  {
+    "FID": "60",
+    "LTLA21CD": "E09000021",
+    "LTLA21NM": "Kingston upon Thames",
+    "UTLA21CD": "E09000021",
+    "UTLA21NM": "Kingston upon Thames"
+  },
+  {
+    "FID": "61",
+    "LTLA21CD": "E09000022",
+    "LTLA21NM": "Lambeth",
+    "UTLA21CD": "E09000022",
+    "UTLA21NM": "Lambeth"
+  },
+  {
+    "FID": "62",
+    "LTLA21CD": "E09000023",
+    "LTLA21NM": "Lewisham",
+    "UTLA21CD": "E09000023",
+    "UTLA21NM": "Lewisham"
+  },
+  {
+    "FID": "63",
+    "LTLA21CD": "E09000024",
+    "LTLA21NM": "Merton",
+    "UTLA21CD": "E09000024",
+    "UTLA21NM": "Merton"
+  },
+  {
+    "FID": "64",
+    "LTLA21CD": "E09000025",
+    "LTLA21NM": "Newham",
+    "UTLA21CD": "E09000025",
+    "UTLA21NM": "Newham"
+  },
+  {
+    "FID": "65",
+    "LTLA21CD": "E09000026",
+    "LTLA21NM": "Redbridge",
+    "UTLA21CD": "E09000026",
+    "UTLA21NM": "Redbridge"
+  },
+  {
+    "FID": "66",
+    "LTLA21CD": "E06000060",
+    "LTLA21NM": "Buckinghamshire",
+    "UTLA21CD": "E06000060",
+    "UTLA21NM": "Buckinghamshire"
+  },
+  {
+    "FID": "67",
+    "LTLA21CD": "E09000027",
+    "LTLA21NM": "Richmond upon Thames",
+    "UTLA21CD": "E09000027",
+    "UTLA21NM": "Richmond upon Thames"
+  },
+  {
+    "FID": "68",
+    "LTLA21CD": "E09000028",
+    "LTLA21NM": "Southwark",
+    "UTLA21CD": "E09000028",
+    "UTLA21NM": "Southwark"
+  },
+  {
+    "FID": "69",
+    "LTLA21CD": "E09000029",
+    "LTLA21NM": "Sutton",
+    "UTLA21CD": "E09000029",
+    "UTLA21NM": "Sutton"
+  },
+  {
+    "FID": "70",
+    "LTLA21CD": "E09000030",
+    "LTLA21NM": "Tower Hamlets",
+    "UTLA21CD": "E09000030",
+    "UTLA21NM": "Tower Hamlets"
+  },
+  {
+    "FID": "71",
+    "LTLA21CD": "E09000031",
+    "LTLA21NM": "Waltham Forest",
+    "UTLA21CD": "E09000031",
+    "UTLA21NM": "Waltham Forest"
+  },
+  {
+    "FID": "72",
+    "LTLA21CD": "E09000032",
+    "LTLA21NM": "Wandsworth",
+    "UTLA21CD": "E09000032",
+    "UTLA21NM": "Wandsworth"
+  },
+  {
+    "FID": "73",
+    "LTLA21CD": "E09000033",
+    "LTLA21NM": "Westminster",
+    "UTLA21CD": "E09000033",
+    "UTLA21NM": "Westminster"
+  },
+  {
+    "FID": "74",
+    "LTLA21CD": "E07000008",
+    "LTLA21NM": "Cambridge",
+    "UTLA21CD": "E10000003",
+    "UTLA21NM": "Cambridgeshire"
+  },
+  {
+    "FID": "75",
+    "LTLA21CD": "E07000009",
+    "LTLA21NM": "East Cambridgeshire",
+    "UTLA21CD": "E10000003",
+    "UTLA21NM": "Cambridgeshire"
+  },
+  {
+    "FID": "76",
+    "LTLA21CD": "E07000010",
+    "LTLA21NM": "Fenland",
+    "UTLA21CD": "E10000003",
+    "UTLA21NM": "Cambridgeshire"
+  },
+  {
+    "FID": "77",
+    "LTLA21CD": "E07000011",
+    "LTLA21NM": "Huntingdonshire",
+    "UTLA21CD": "E10000003",
+    "UTLA21NM": "Cambridgeshire"
+  },
+  {
+    "FID": "78",
+    "LTLA21CD": "E07000012",
+    "LTLA21NM": "South Cambridgeshire",
+    "UTLA21CD": "E10000003",
+    "UTLA21NM": "Cambridgeshire"
+  },
+  {
+    "FID": "79",
+    "LTLA21CD": "E07000026",
+    "LTLA21NM": "Allerdale",
+    "UTLA21CD": "E10000006",
+    "UTLA21NM": "Cumbria"
+  },
+  {
+    "FID": "80",
+    "LTLA21CD": "E07000027",
+    "LTLA21NM": "Barrow-in-Furness",
+    "UTLA21CD": "E10000006",
+    "UTLA21NM": "Cumbria"
+  },
+  {
+    "FID": "81",
+    "LTLA21CD": "E07000028",
+    "LTLA21NM": "Carlisle",
+    "UTLA21CD": "E10000006",
+    "UTLA21NM": "Cumbria"
+  },
+  {
+    "FID": "82",
+    "LTLA21CD": "E07000029",
+    "LTLA21NM": "Copeland",
+    "UTLA21CD": "E10000006",
+    "UTLA21NM": "Cumbria"
+  },
+  {
+    "FID": "83",
+    "LTLA21CD": "E07000030",
+    "LTLA21NM": "Eden",
+    "UTLA21CD": "E10000006",
+    "UTLA21NM": "Cumbria"
+  },
+  {
+    "FID": "84",
+    "LTLA21CD": "E07000031",
+    "LTLA21NM": "South Lakeland",
+    "UTLA21CD": "E10000006",
+    "UTLA21NM": "Cumbria"
+  },
+  {
+    "FID": "85",
+    "LTLA21CD": "E07000032",
+    "LTLA21NM": "Amber Valley",
+    "UTLA21CD": "E10000007",
+    "UTLA21NM": "Derbyshire"
+  },
+  {
+    "FID": "86",
+    "LTLA21CD": "E07000033",
+    "LTLA21NM": "Bolsover",
+    "UTLA21CD": "E10000007",
+    "UTLA21NM": "Derbyshire"
+  },
+  {
+    "FID": "87",
+    "LTLA21CD": "E07000034",
+    "LTLA21NM": "Chesterfield",
+    "UTLA21CD": "E10000007",
+    "UTLA21NM": "Derbyshire"
+  },
+  {
+    "FID": "88",
+    "LTLA21CD": "E07000035",
+    "LTLA21NM": "Derbyshire Dales",
+    "UTLA21CD": "E10000007",
+    "UTLA21NM": "Derbyshire"
+  },
+  {
+    "FID": "89",
+    "LTLA21CD": "E07000036",
+    "LTLA21NM": "Erewash",
+    "UTLA21CD": "E10000007",
+    "UTLA21NM": "Derbyshire"
+  },
+  {
+    "FID": "90",
+    "LTLA21CD": "E07000037",
+    "LTLA21NM": "High Peak",
+    "UTLA21CD": "E10000007",
+    "UTLA21NM": "Derbyshire"
+  },
+  {
+    "FID": "91",
+    "LTLA21CD": "E07000038",
+    "LTLA21NM": "North East Derbyshire",
+    "UTLA21CD": "E10000007",
+    "UTLA21NM": "Derbyshire"
+  },
+  {
+    "FID": "92",
+    "LTLA21CD": "E07000039",
+    "LTLA21NM": "South Derbyshire",
+    "UTLA21CD": "E10000007",
+    "UTLA21NM": "Derbyshire"
+  },
+  {
+    "FID": "93",
+    "LTLA21CD": "E07000040",
+    "LTLA21NM": "East Devon",
+    "UTLA21CD": "E10000008",
+    "UTLA21NM": "Devon"
+  },
+  {
+    "FID": "94",
+    "LTLA21CD": "E07000041",
+    "LTLA21NM": "Exeter",
+    "UTLA21CD": "E10000008",
+    "UTLA21NM": "Devon"
+  },
+  {
+    "FID": "95",
+    "LTLA21CD": "E07000042",
+    "LTLA21NM": "Mid Devon",
+    "UTLA21CD": "E10000008",
+    "UTLA21NM": "Devon"
+  },
+  {
+    "FID": "96",
+    "LTLA21CD": "E07000043",
+    "LTLA21NM": "North Devon",
+    "UTLA21CD": "E10000008",
+    "UTLA21NM": "Devon"
+  },
+  {
+    "FID": "97",
+    "LTLA21CD": "E07000044",
+    "LTLA21NM": "South Hams",
+    "UTLA21CD": "E10000008",
+    "UTLA21NM": "Devon"
+  },
+  {
+    "FID": "98",
+    "LTLA21CD": "E07000045",
+    "LTLA21NM": "Teignbridge",
+    "UTLA21CD": "E10000008",
+    "UTLA21NM": "Devon"
+  },
+  {
+    "FID": "99",
+    "LTLA21CD": "E07000046",
+    "LTLA21NM": "Torridge",
+    "UTLA21CD": "E10000008",
+    "UTLA21NM": "Devon"
+  },
+  {
+    "FID": "100",
+    "LTLA21CD": "E07000047",
+    "LTLA21NM": "West Devon",
+    "UTLA21CD": "E10000008",
+    "UTLA21NM": "Devon"
+  },
+  {
+    "FID": "101",
+    "LTLA21CD": "E07000061",
+    "LTLA21NM": "Eastbourne",
+    "UTLA21CD": "E10000011",
+    "UTLA21NM": "East Sussex"
+  },
+  {
+    "FID": "102",
+    "LTLA21CD": "E07000062",
+    "LTLA21NM": "Hastings",
+    "UTLA21CD": "E10000011",
+    "UTLA21NM": "East Sussex"
+  },
+  {
+    "FID": "103",
+    "LTLA21CD": "E07000063",
+    "LTLA21NM": "Lewes",
+    "UTLA21CD": "E10000011",
+    "UTLA21NM": "East Sussex"
+  },
+  {
+    "FID": "104",
+    "LTLA21CD": "E07000064",
+    "LTLA21NM": "Rother",
+    "UTLA21CD": "E10000011",
+    "UTLA21NM": "East Sussex"
+  },
+  {
+    "FID": "105",
+    "LTLA21CD": "E07000065",
+    "LTLA21NM": "Wealden",
+    "UTLA21CD": "E10000011",
+    "UTLA21NM": "East Sussex"
+  },
+  {
+    "FID": "106",
+    "LTLA21CD": "E07000066",
+    "LTLA21NM": "Basildon",
+    "UTLA21CD": "E10000012",
+    "UTLA21NM": "Essex"
+  },
+  {
+    "FID": "107",
+    "LTLA21CD": "E07000067",
+    "LTLA21NM": "Braintree",
+    "UTLA21CD": "E10000012",
+    "UTLA21NM": "Essex"
+  },
+  {
+    "FID": "108",
+    "LTLA21CD": "E07000068",
+    "LTLA21NM": "Brentwood",
+    "UTLA21CD": "E10000012",
+    "UTLA21NM": "Essex"
+  },
+  {
+    "FID": "109",
+    "LTLA21CD": "E07000069",
+    "LTLA21NM": "Castle Point",
+    "UTLA21CD": "E10000012",
+    "UTLA21NM": "Essex"
+  },
+  {
+    "FID": "110",
+    "LTLA21CD": "E07000070",
+    "LTLA21NM": "Chelmsford",
+    "UTLA21CD": "E10000012",
+    "UTLA21NM": "Essex"
+  },
+  {
+    "FID": "111",
+    "LTLA21CD": "E07000071",
+    "LTLA21NM": "Colchester",
+    "UTLA21CD": "E10000012",
+    "UTLA21NM": "Essex"
+  },
+  {
+    "FID": "112",
+    "LTLA21CD": "E07000072",
+    "LTLA21NM": "Epping Forest",
+    "UTLA21CD": "E10000012",
+    "UTLA21NM": "Essex"
+  },
+  {
+    "FID": "113",
+    "LTLA21CD": "E07000073",
+    "LTLA21NM": "Harlow",
+    "UTLA21CD": "E10000012",
+    "UTLA21NM": "Essex"
+  },
+  {
+    "FID": "114",
+    "LTLA21CD": "E06000061",
+    "LTLA21NM": "North Northamptonshire",
+    "UTLA21CD": "E06000061",
+    "UTLA21NM": "North Northamptonshire"
+  },
+  {
+    "FID": "115",
+    "LTLA21CD": "E06000062",
+    "LTLA21NM": "West Northamptonshire",
+    "UTLA21CD": "E06000062",
+    "UTLA21NM": "West Northamptonshire"
+  },
+  {
+    "FID": "116",
+    "LTLA21CD": "E08000001",
+    "LTLA21NM": "Bolton",
+    "UTLA21CD": "E08000001",
+    "UTLA21NM": "Bolton"
+  },
+  {
+    "FID": "117",
+    "LTLA21CD": "E08000002",
+    "LTLA21NM": "Bury",
+    "UTLA21CD": "E08000002",
+    "UTLA21NM": "Bury"
+  },
+  {
+    "FID": "118",
+    "LTLA21CD": "E08000003",
+    "LTLA21NM": "Manchester",
+    "UTLA21CD": "E08000003",
+    "UTLA21NM": "Manchester"
+  },
+  {
+    "FID": "119",
+    "LTLA21CD": "E08000004",
+    "LTLA21NM": "Oldham",
+    "UTLA21CD": "E08000004",
+    "UTLA21NM": "Oldham"
+  },
+  {
+    "FID": "120",
+    "LTLA21CD": "E08000005",
+    "LTLA21NM": "Rochdale",
+    "UTLA21CD": "E08000005",
+    "UTLA21NM": "Rochdale"
+  },
+  {
+    "FID": "121",
+    "LTLA21CD": "E08000006",
+    "LTLA21NM": "Salford",
+    "UTLA21CD": "E08000006",
+    "UTLA21NM": "Salford"
+  },
+  {
+    "FID": "122",
+    "LTLA21CD": "E08000007",
+    "LTLA21NM": "Stockport",
+    "UTLA21CD": "E08000007",
+    "UTLA21NM": "Stockport"
+  },
+  {
+    "FID": "123",
+    "LTLA21CD": "E08000008",
+    "LTLA21NM": "Tameside",
+    "UTLA21CD": "E08000008",
+    "UTLA21NM": "Tameside"
+  },
+  {
+    "FID": "124",
+    "LTLA21CD": "E08000009",
+    "LTLA21NM": "Trafford",
+    "UTLA21CD": "E08000009",
+    "UTLA21NM": "Trafford"
+  },
+  {
+    "FID": "125",
+    "LTLA21CD": "E08000010",
+    "LTLA21NM": "Wigan",
+    "UTLA21CD": "E08000010",
+    "UTLA21NM": "Wigan"
+  },
+  {
+    "FID": "126",
+    "LTLA21CD": "E08000011",
+    "LTLA21NM": "Knowsley",
+    "UTLA21CD": "E08000011",
+    "UTLA21NM": "Knowsley"
+  },
+  {
+    "FID": "127",
+    "LTLA21CD": "E08000012",
+    "LTLA21NM": "Liverpool",
+    "UTLA21CD": "E08000012",
+    "UTLA21NM": "Liverpool"
+  },
+  {
+    "FID": "128",
+    "LTLA21CD": "E08000013",
+    "LTLA21NM": "St. Helens",
+    "UTLA21CD": "E08000013",
+    "UTLA21NM": "St. Helens"
+  },
+  {
+    "FID": "129",
+    "LTLA21CD": "E08000014",
+    "LTLA21NM": "Sefton",
+    "UTLA21CD": "E08000014",
+    "UTLA21NM": "Sefton"
+  },
+  {
+    "FID": "130",
+    "LTLA21CD": "E08000015",
+    "LTLA21NM": "Wirral",
+    "UTLA21CD": "E08000015",
+    "UTLA21NM": "Wirral"
+  },
+  {
+    "FID": "131",
+    "LTLA21CD": "E08000016",
+    "LTLA21NM": "Barnsley",
+    "UTLA21CD": "E08000016",
+    "UTLA21NM": "Barnsley"
+  },
+  {
+    "FID": "132",
+    "LTLA21CD": "E08000017",
+    "LTLA21NM": "Doncaster",
+    "UTLA21CD": "E08000017",
+    "UTLA21NM": "Doncaster"
+  },
+  {
+    "FID": "133",
+    "LTLA21CD": "E08000018",
+    "LTLA21NM": "Rotherham",
+    "UTLA21CD": "E08000018",
+    "UTLA21NM": "Rotherham"
+  },
+  {
+    "FID": "134",
+    "LTLA21CD": "E08000019",
+    "LTLA21NM": "Sheffield",
+    "UTLA21CD": "E08000019",
+    "UTLA21NM": "Sheffield"
+  },
+  {
+    "FID": "135",
+    "LTLA21CD": "E08000021",
+    "LTLA21NM": "Newcastle upon Tyne",
+    "UTLA21CD": "E08000021",
+    "UTLA21NM": "Newcastle upon Tyne"
+  },
+  {
+    "FID": "136",
+    "LTLA21CD": "E08000022",
+    "LTLA21NM": "North Tyneside",
+    "UTLA21CD": "E08000022",
+    "UTLA21NM": "North Tyneside"
+  },
+  {
+    "FID": "137",
+    "LTLA21CD": "E08000023",
+    "LTLA21NM": "South Tyneside",
+    "UTLA21CD": "E08000023",
+    "UTLA21NM": "South Tyneside"
+  },
+  {
+    "FID": "138",
+    "LTLA21CD": "E08000024",
+    "LTLA21NM": "Sunderland",
+    "UTLA21CD": "E08000024",
+    "UTLA21NM": "Sunderland"
+  },
+  {
+    "FID": "139",
+    "LTLA21CD": "E08000025",
+    "LTLA21NM": "Birmingham",
+    "UTLA21CD": "E08000025",
+    "UTLA21NM": "Birmingham"
+  },
+  {
+    "FID": "140",
+    "LTLA21CD": "E08000026",
+    "LTLA21NM": "Coventry",
+    "UTLA21CD": "E08000026",
+    "UTLA21NM": "Coventry"
+  },
+  {
+    "FID": "141",
+    "LTLA21CD": "E08000027",
+    "LTLA21NM": "Dudley",
+    "UTLA21CD": "E08000027",
+    "UTLA21NM": "Dudley"
+  },
+  {
+    "FID": "142",
+    "LTLA21CD": "E08000028",
+    "LTLA21NM": "Sandwell",
+    "UTLA21CD": "E08000028",
+    "UTLA21NM": "Sandwell"
+  },
+  {
+    "FID": "143",
+    "LTLA21CD": "E08000029",
+    "LTLA21NM": "Solihull",
+    "UTLA21CD": "E08000029",
+    "UTLA21NM": "Solihull"
+  },
+  {
+    "FID": "144",
+    "LTLA21CD": "E08000030",
+    "LTLA21NM": "Walsall",
+    "UTLA21CD": "E08000030",
+    "UTLA21NM": "Walsall"
+  },
+  {
+    "FID": "145",
+    "LTLA21CD": "E08000031",
+    "LTLA21NM": "Wolverhampton",
+    "UTLA21CD": "E08000031",
+    "UTLA21NM": "Wolverhampton"
+  },
+  {
+    "FID": "146",
+    "LTLA21CD": "E08000032",
+    "LTLA21NM": "Bradford",
+    "UTLA21CD": "E08000032",
+    "UTLA21NM": "Bradford"
+  },
+  {
+    "FID": "147",
+    "LTLA21CD": "E08000033",
+    "LTLA21NM": "Calderdale",
+    "UTLA21CD": "E08000033",
+    "UTLA21NM": "Calderdale"
+  },
+  {
+    "FID": "148",
+    "LTLA21CD": "E08000034",
+    "LTLA21NM": "Kirklees",
+    "UTLA21CD": "E08000034",
+    "UTLA21NM": "Kirklees"
+  },
+  {
+    "FID": "149",
+    "LTLA21CD": "E08000035",
+    "LTLA21NM": "Leeds",
+    "UTLA21CD": "E08000035",
+    "UTLA21NM": "Leeds"
+  },
+  {
+    "FID": "150",
+    "LTLA21CD": "E08000036",
+    "LTLA21NM": "Wakefield",
+    "UTLA21CD": "E08000036",
+    "UTLA21NM": "Wakefield"
+  },
+  {
+    "FID": "151",
+    "LTLA21CD": "E08000037",
+    "LTLA21NM": "Gateshead",
+    "UTLA21CD": "E08000037",
+    "UTLA21NM": "Gateshead"
+  },
+  {
+    "FID": "152",
+    "LTLA21CD": "E09000001",
+    "LTLA21NM": "City of London",
+    "UTLA21CD": "E09000001",
+    "UTLA21NM": "City of London"
+  },
+  {
+    "FID": "153",
+    "LTLA21CD": "E09000002",
+    "LTLA21NM": "Barking and Dagenham",
+    "UTLA21CD": "E09000002",
+    "UTLA21NM": "Barking and Dagenham"
+  },
+  {
+    "FID": "154",
+    "LTLA21CD": "E09000003",
+    "LTLA21NM": "Barnet",
+    "UTLA21CD": "E09000003",
+    "UTLA21NM": "Barnet"
+  },
+  {
+    "FID": "155",
+    "LTLA21CD": "E09000004",
+    "LTLA21NM": "Bexley",
+    "UTLA21CD": "E09000004",
+    "UTLA21NM": "Bexley"
+  },
+  {
+    "FID": "156",
+    "LTLA21CD": "E09000005",
+    "LTLA21NM": "Brent",
+    "UTLA21CD": "E09000005",
+    "UTLA21NM": "Brent"
+  },
+  {
+    "FID": "157",
+    "LTLA21CD": "E09000006",
+    "LTLA21NM": "Bromley",
+    "UTLA21CD": "E09000006",
+    "UTLA21NM": "Bromley"
+  },
+  {
+    "FID": "158",
+    "LTLA21CD": "E09000007",
+    "LTLA21NM": "Camden",
+    "UTLA21CD": "E09000007",
+    "UTLA21NM": "Camden"
+  },
+  {
+    "FID": "159",
+    "LTLA21CD": "E09000008",
+    "LTLA21NM": "Croydon",
+    "UTLA21CD": "E09000008",
+    "UTLA21NM": "Croydon"
+  },
+  {
+    "FID": "160",
+    "LTLA21CD": "E09000009",
+    "LTLA21NM": "Ealing",
+    "UTLA21CD": "E09000009",
+    "UTLA21NM": "Ealing"
+  },
+  {
+    "FID": "161",
+    "LTLA21CD": "E09000010",
+    "LTLA21NM": "Enfield",
+    "UTLA21CD": "E09000010",
+    "UTLA21NM": "Enfield"
+  },
+  {
+    "FID": "162",
+    "LTLA21CD": "E09000011",
+    "LTLA21NM": "Greenwich",
+    "UTLA21CD": "E09000011",
+    "UTLA21NM": "Greenwich"
+  },
+  {
+    "FID": "163",
+    "LTLA21CD": "E09000012",
+    "LTLA21NM": "Hackney",
+    "UTLA21CD": "E09000012",
+    "UTLA21NM": "Hackney"
+  },
+  {
+    "FID": "164",
+    "LTLA21CD": "E09000013",
+    "LTLA21NM": "Hammersmith and Fulham",
+    "UTLA21CD": "E09000013",
+    "UTLA21NM": "Hammersmith and Fulham"
+  },
+  {
+    "FID": "165",
+    "LTLA21CD": "E09000014",
+    "LTLA21NM": "Haringey",
+    "UTLA21CD": "E09000014",
+    "UTLA21NM": "Haringey"
+  },
+  {
+    "FID": "166",
+    "LTLA21CD": "E09000015",
+    "LTLA21NM": "Harrow",
+    "UTLA21CD": "E09000015",
+    "UTLA21NM": "Harrow"
+  },
+  {
+    "FID": "167",
+    "LTLA21CD": "E09000016",
+    "LTLA21NM": "Havering",
+    "UTLA21CD": "E09000016",
+    "UTLA21NM": "Havering"
+  },
+  {
+    "FID": "168",
+    "LTLA21CD": "E09000017",
+    "LTLA21NM": "Hillingdon",
+    "UTLA21CD": "E09000017",
+    "UTLA21NM": "Hillingdon"
+  },
+  {
+    "FID": "169",
+    "LTLA21CD": "E07000074",
+    "LTLA21NM": "Maldon",
+    "UTLA21CD": "E10000012",
+    "UTLA21NM": "Essex"
+  },
+  {
+    "FID": "170",
+    "LTLA21CD": "E07000075",
+    "LTLA21NM": "Rochford",
+    "UTLA21CD": "E10000012",
+    "UTLA21NM": "Essex"
+  },
+  {
+    "FID": "171",
+    "LTLA21CD": "E07000076",
+    "LTLA21NM": "Tendring",
+    "UTLA21CD": "E10000012",
+    "UTLA21NM": "Essex"
+  },
+  {
+    "FID": "172",
+    "LTLA21CD": "E07000077",
+    "LTLA21NM": "Uttlesford",
+    "UTLA21CD": "E10000012",
+    "UTLA21NM": "Essex"
+  },
+  {
+    "FID": "173",
+    "LTLA21CD": "E07000078",
+    "LTLA21NM": "Cheltenham",
+    "UTLA21CD": "E10000013",
+    "UTLA21NM": "Gloucestershire"
+  },
+  {
+    "FID": "174",
+    "LTLA21CD": "E07000079",
+    "LTLA21NM": "Cotswold",
+    "UTLA21CD": "E10000013",
+    "UTLA21NM": "Gloucestershire"
+  },
+  {
+    "FID": "175",
+    "LTLA21CD": "E07000080",
+    "LTLA21NM": "Forest of Dean",
+    "UTLA21CD": "E10000013",
+    "UTLA21NM": "Gloucestershire"
+  },
+  {
+    "FID": "176",
+    "LTLA21CD": "E07000081",
+    "LTLA21NM": "Gloucester",
+    "UTLA21CD": "E10000013",
+    "UTLA21NM": "Gloucestershire"
+  },
+  {
+    "FID": "177",
+    "LTLA21CD": "E07000082",
+    "LTLA21NM": "Stroud",
+    "UTLA21CD": "E10000013",
+    "UTLA21NM": "Gloucestershire"
+  },
+  {
+    "FID": "178",
+    "LTLA21CD": "E07000083",
+    "LTLA21NM": "Tewkesbury",
+    "UTLA21CD": "E10000013",
+    "UTLA21NM": "Gloucestershire"
+  },
+  {
+    "FID": "179",
+    "LTLA21CD": "E07000084",
+    "LTLA21NM": "Basingstoke and Deane",
+    "UTLA21CD": "E10000014",
+    "UTLA21NM": "Hampshire"
+  },
+  {
+    "FID": "180",
+    "LTLA21CD": "E07000085",
+    "LTLA21NM": "East Hampshire",
+    "UTLA21CD": "E10000014",
+    "UTLA21NM": "Hampshire"
+  },
+  {
+    "FID": "181",
+    "LTLA21CD": "E07000086",
+    "LTLA21NM": "Eastleigh",
+    "UTLA21CD": "E10000014",
+    "UTLA21NM": "Hampshire"
+  },
+  {
+    "FID": "182",
+    "LTLA21CD": "E07000087",
+    "LTLA21NM": "Fareham",
+    "UTLA21CD": "E10000014",
+    "UTLA21NM": "Hampshire"
+  },
+  {
+    "FID": "183",
+    "LTLA21CD": "E07000088",
+    "LTLA21NM": "Gosport",
+    "UTLA21CD": "E10000014",
+    "UTLA21NM": "Hampshire"
+  },
+  {
+    "FID": "184",
+    "LTLA21CD": "E07000089",
+    "LTLA21NM": "Hart",
+    "UTLA21CD": "E10000014",
+    "UTLA21NM": "Hampshire"
+  },
+  {
+    "FID": "185",
+    "LTLA21CD": "E07000090",
+    "LTLA21NM": "Havant",
+    "UTLA21CD": "E10000014",
+    "UTLA21NM": "Hampshire"
+  },
+  {
+    "FID": "186",
+    "LTLA21CD": "E07000091",
+    "LTLA21NM": "New Forest",
+    "UTLA21CD": "E10000014",
+    "UTLA21NM": "Hampshire"
+  },
+  {
+    "FID": "187",
+    "LTLA21CD": "E07000092",
+    "LTLA21NM": "Rushmoor",
+    "UTLA21CD": "E10000014",
+    "UTLA21NM": "Hampshire"
+  },
+  {
+    "FID": "188",
+    "LTLA21CD": "E07000093",
+    "LTLA21NM": "Test Valley",
+    "UTLA21CD": "E10000014",
+    "UTLA21NM": "Hampshire"
+  },
+  {
+    "FID": "189",
+    "LTLA21CD": "E07000094",
+    "LTLA21NM": "Winchester",
+    "UTLA21CD": "E10000014",
+    "UTLA21NM": "Hampshire"
+  },
+  {
+    "FID": "190",
+    "LTLA21CD": "E07000095",
+    "LTLA21NM": "Broxbourne",
+    "UTLA21CD": "E10000015",
+    "UTLA21NM": "Hertfordshire"
+  },
+  {
+    "FID": "191",
+    "LTLA21CD": "E07000096",
+    "LTLA21NM": "Dacorum",
+    "UTLA21CD": "E10000015",
+    "UTLA21NM": "Hertfordshire"
+  },
+  {
+    "FID": "192",
+    "LTLA21CD": "E07000098",
+    "LTLA21NM": "Hertsmere",
+    "UTLA21CD": "E10000015",
+    "UTLA21NM": "Hertfordshire"
+  },
+  {
+    "FID": "193",
+    "LTLA21CD": "E07000099",
+    "LTLA21NM": "North Hertfordshire",
+    "UTLA21CD": "E10000015",
+    "UTLA21NM": "Hertfordshire"
+  },
+  {
+    "FID": "194",
+    "LTLA21CD": "E07000102",
+    "LTLA21NM": "Three Rivers",
+    "UTLA21CD": "E10000015",
+    "UTLA21NM": "Hertfordshire"
+  },
+  {
+    "FID": "195",
+    "LTLA21CD": "E07000103",
+    "LTLA21NM": "Watford",
+    "UTLA21CD": "E10000015",
+    "UTLA21NM": "Hertfordshire"
+  },
+  {
+    "FID": "196",
+    "LTLA21CD": "E07000240",
+    "LTLA21NM": "St Albans",
+    "UTLA21CD": "E10000015",
+    "UTLA21NM": "Hertfordshire"
+  },
+  {
+    "FID": "197",
+    "LTLA21CD": "E07000241",
+    "LTLA21NM": "Welwyn Hatfield",
+    "UTLA21CD": "E10000015",
+    "UTLA21NM": "Hertfordshire"
+  },
+  {
+    "FID": "198",
+    "LTLA21CD": "E07000242",
+    "LTLA21NM": "East Hertfordshire",
+    "UTLA21CD": "E10000015",
+    "UTLA21NM": "Hertfordshire"
+  },
+  {
+    "FID": "199",
+    "LTLA21CD": "E07000243",
+    "LTLA21NM": "Stevenage",
+    "UTLA21CD": "E10000015",
+    "UTLA21NM": "Hertfordshire"
+  },
+  {
+    "FID": "200",
+    "LTLA21CD": "E07000105",
+    "LTLA21NM": "Ashford",
+    "UTLA21CD": "E10000016",
+    "UTLA21NM": "Kent"
+  },
+  {
+    "FID": "201",
+    "LTLA21CD": "E07000106",
+    "LTLA21NM": "Canterbury",
+    "UTLA21CD": "E10000016",
+    "UTLA21NM": "Kent"
+  },
+  {
+    "FID": "202",
+    "LTLA21CD": "E07000107",
+    "LTLA21NM": "Dartford",
+    "UTLA21CD": "E10000016",
+    "UTLA21NM": "Kent"
+  },
+  {
+    "FID": "203",
+    "LTLA21CD": "E07000108",
+    "LTLA21NM": "Dover",
+    "UTLA21CD": "E10000016",
+    "UTLA21NM": "Kent"
+  },
+  {
+    "FID": "204",
+    "LTLA21CD": "E07000109",
+    "LTLA21NM": "Gravesham",
+    "UTLA21CD": "E10000016",
+    "UTLA21NM": "Kent"
+  },
+  {
+    "FID": "205",
+    "LTLA21CD": "E07000110",
+    "LTLA21NM": "Maidstone",
+    "UTLA21CD": "E10000016",
+    "UTLA21NM": "Kent"
+  },
+  {
+    "FID": "206",
+    "LTLA21CD": "E07000111",
+    "LTLA21NM": "Sevenoaks",
+    "UTLA21CD": "E10000016",
+    "UTLA21NM": "Kent"
+  },
+  {
+    "FID": "207",
+    "LTLA21CD": "E07000112",
+    "LTLA21NM": "Folkestone and Hythe",
+    "UTLA21CD": "E10000016",
+    "UTLA21NM": "Kent"
+  },
+  {
+    "FID": "208",
+    "LTLA21CD": "E07000113",
+    "LTLA21NM": "Swale",
+    "UTLA21CD": "E10000016",
+    "UTLA21NM": "Kent"
+  },
+  {
+    "FID": "209",
+    "LTLA21CD": "E07000114",
+    "LTLA21NM": "Thanet",
+    "UTLA21CD": "E10000016",
+    "UTLA21NM": "Kent"
+  },
+  {
+    "FID": "210",
+    "LTLA21CD": "E07000115",
+    "LTLA21NM": "Tonbridge and Malling",
+    "UTLA21CD": "E10000016",
+    "UTLA21NM": "Kent"
+  },
+  {
+    "FID": "211",
+    "LTLA21CD": "E07000116",
+    "LTLA21NM": "Tunbridge Wells",
+    "UTLA21CD": "E10000016",
+    "UTLA21NM": "Kent"
+  },
+  {
+    "FID": "212",
+    "LTLA21CD": "E07000117",
+    "LTLA21NM": "Burnley",
+    "UTLA21CD": "E10000017",
+    "UTLA21NM": "Lancashire"
+  },
+  {
+    "FID": "213",
+    "LTLA21CD": "E07000118",
+    "LTLA21NM": "Chorley",
+    "UTLA21CD": "E10000017",
+    "UTLA21NM": "Lancashire"
+  },
+  {
+    "FID": "214",
+    "LTLA21CD": "E07000119",
+    "LTLA21NM": "Fylde",
+    "UTLA21CD": "E10000017",
+    "UTLA21NM": "Lancashire"
+  },
+  {
+    "FID": "215",
+    "LTLA21CD": "E07000120",
+    "LTLA21NM": "Hyndburn",
+    "UTLA21CD": "E10000017",
+    "UTLA21NM": "Lancashire"
+  },
+  {
+    "FID": "216",
+    "LTLA21CD": "E07000121",
+    "LTLA21NM": "Lancaster",
+    "UTLA21CD": "E10000017",
+    "UTLA21NM": "Lancashire"
+  },
+  {
+    "FID": "217",
+    "LTLA21CD": "E07000122",
+    "LTLA21NM": "Pendle",
+    "UTLA21CD": "E10000017",
+    "UTLA21NM": "Lancashire"
+  },
+  {
+    "FID": "218",
+    "LTLA21CD": "E07000123",
+    "LTLA21NM": "Preston",
+    "UTLA21CD": "E10000017",
+    "UTLA21NM": "Lancashire"
+  },
+  {
+    "FID": "219",
+    "LTLA21CD": "E07000124",
+    "LTLA21NM": "Ribble Valley",
+    "UTLA21CD": "E10000017",
+    "UTLA21NM": "Lancashire"
+  },
+  {
+    "FID": "220",
+    "LTLA21CD": "E07000125",
+    "LTLA21NM": "Rossendale",
+    "UTLA21CD": "E10000017",
+    "UTLA21NM": "Lancashire"
+  },
+  {
+    "FID": "221",
+    "LTLA21CD": "E07000126",
+    "LTLA21NM": "South Ribble",
+    "UTLA21CD": "E10000017",
+    "UTLA21NM": "Lancashire"
+  },
+  {
+    "FID": "222",
+    "LTLA21CD": "E07000127",
+    "LTLA21NM": "West Lancashire",
+    "UTLA21CD": "E10000017",
+    "UTLA21NM": "Lancashire"
+  },
+  {
+    "FID": "223",
+    "LTLA21CD": "E07000128",
+    "LTLA21NM": "Wyre",
+    "UTLA21CD": "E10000017",
+    "UTLA21NM": "Lancashire"
+  },
+  {
+    "FID": "224",
+    "LTLA21CD": "E07000129",
+    "LTLA21NM": "Blaby",
+    "UTLA21CD": "E10000018",
+    "UTLA21NM": "Leicestershire"
+  },
+  {
+    "FID": "225",
+    "LTLA21CD": "E07000207",
+    "LTLA21NM": "Elmbridge",
+    "UTLA21CD": "E10000030",
+    "UTLA21NM": "Surrey"
+  },
+  {
+    "FID": "226",
+    "LTLA21CD": "E07000208",
+    "LTLA21NM": "Epsom and Ewell",
+    "UTLA21CD": "E10000030",
+    "UTLA21NM": "Surrey"
+  },
+  {
+    "FID": "227",
+    "LTLA21CD": "E07000209",
+    "LTLA21NM": "Guildford",
+    "UTLA21CD": "E10000030",
+    "UTLA21NM": "Surrey"
+  },
+  {
+    "FID": "228",
+    "LTLA21CD": "E07000210",
+    "LTLA21NM": "Mole Valley",
+    "UTLA21CD": "E10000030",
+    "UTLA21NM": "Surrey"
+  },
+  {
+    "FID": "229",
+    "LTLA21CD": "E07000211",
+    "LTLA21NM": "Reigate and Banstead",
+    "UTLA21CD": "E10000030",
+    "UTLA21NM": "Surrey"
+  },
+  {
+    "FID": "230",
+    "LTLA21CD": "E07000212",
+    "LTLA21NM": "Runnymede",
+    "UTLA21CD": "E10000030",
+    "UTLA21NM": "Surrey"
+  },
+  {
+    "FID": "231",
+    "LTLA21CD": "E07000213",
+    "LTLA21NM": "Spelthorne",
+    "UTLA21CD": "E10000030",
+    "UTLA21NM": "Surrey"
+  },
+  {
+    "FID": "232",
+    "LTLA21CD": "E07000214",
+    "LTLA21NM": "Surrey Heath",
+    "UTLA21CD": "E10000030",
+    "UTLA21NM": "Surrey"
+  },
+  {
+    "FID": "233",
+    "LTLA21CD": "E07000215",
+    "LTLA21NM": "Tandridge",
+    "UTLA21CD": "E10000030",
+    "UTLA21NM": "Surrey"
+  },
+  {
+    "FID": "234",
+    "LTLA21CD": "E07000216",
+    "LTLA21NM": "Waverley",
+    "UTLA21CD": "E10000030",
+    "UTLA21NM": "Surrey"
+  },
+  {
+    "FID": "235",
+    "LTLA21CD": "E07000217",
+    "LTLA21NM": "Woking",
+    "UTLA21CD": "E10000030",
+    "UTLA21NM": "Surrey"
+  },
+  {
+    "FID": "236",
+    "LTLA21CD": "E07000218",
+    "LTLA21NM": "North Warwickshire",
+    "UTLA21CD": "E10000031",
+    "UTLA21NM": "Warwickshire"
+  },
+  {
+    "FID": "237",
+    "LTLA21CD": "E07000219",
+    "LTLA21NM": "Nuneaton and Bedworth",
+    "UTLA21CD": "E10000031",
+    "UTLA21NM": "Warwickshire"
+  },
+  {
+    "FID": "238",
+    "LTLA21CD": "E07000220",
+    "LTLA21NM": "Rugby",
+    "UTLA21CD": "E10000031",
+    "UTLA21NM": "Warwickshire"
+  },
+  {
+    "FID": "239",
+    "LTLA21CD": "E07000221",
+    "LTLA21NM": "Stratford-on-Avon",
+    "UTLA21CD": "E10000031",
+    "UTLA21NM": "Warwickshire"
+  },
+  {
+    "FID": "240",
+    "LTLA21CD": "E07000222",
+    "LTLA21NM": "Warwick",
+    "UTLA21CD": "E10000031",
+    "UTLA21NM": "Warwickshire"
+  },
+  {
+    "FID": "241",
+    "LTLA21CD": "E07000223",
+    "LTLA21NM": "Adur",
+    "UTLA21CD": "E10000032",
+    "UTLA21NM": "West Sussex"
+  },
+  {
+    "FID": "242",
+    "LTLA21CD": "E07000224",
+    "LTLA21NM": "Arun",
+    "UTLA21CD": "E10000032",
+    "UTLA21NM": "West Sussex"
+  },
+  {
+    "FID": "243",
+    "LTLA21CD": "E07000225",
+    "LTLA21NM": "Chichester",
+    "UTLA21CD": "E10000032",
+    "UTLA21NM": "West Sussex"
+  },
+  {
+    "FID": "244",
+    "LTLA21CD": "E07000226",
+    "LTLA21NM": "Crawley",
+    "UTLA21CD": "E10000032",
+    "UTLA21NM": "West Sussex"
+  },
+  {
+    "FID": "245",
+    "LTLA21CD": "E07000227",
+    "LTLA21NM": "Horsham",
+    "UTLA21CD": "E10000032",
+    "UTLA21NM": "West Sussex"
+  },
+  {
+    "FID": "246",
+    "LTLA21CD": "E07000228",
+    "LTLA21NM": "Mid Sussex",
+    "UTLA21CD": "E10000032",
+    "UTLA21NM": "West Sussex"
+  },
+  {
+    "FID": "247",
+    "LTLA21CD": "E07000229",
+    "LTLA21NM": "Worthing",
+    "UTLA21CD": "E10000032",
+    "UTLA21NM": "West Sussex"
+  },
+  {
+    "FID": "248",
+    "LTLA21CD": "E07000234",
+    "LTLA21NM": "Bromsgrove",
+    "UTLA21CD": "E10000034",
+    "UTLA21NM": "Worcestershire"
+  },
+  {
+    "FID": "249",
+    "LTLA21CD": "E07000235",
+    "LTLA21NM": "Malvern Hills",
+    "UTLA21CD": "E10000034",
+    "UTLA21NM": "Worcestershire"
+  },
+  {
+    "FID": "250",
+    "LTLA21CD": "E07000236",
+    "LTLA21NM": "Redditch",
+    "UTLA21CD": "E10000034",
+    "UTLA21NM": "Worcestershire"
+  },
+  {
+    "FID": "251",
+    "LTLA21CD": "E07000237",
+    "LTLA21NM": "Worcester",
+    "UTLA21CD": "E10000034",
+    "UTLA21NM": "Worcestershire"
+  },
+  {
+    "FID": "252",
+    "LTLA21CD": "E07000238",
+    "LTLA21NM": "Wychavon",
+    "UTLA21CD": "E10000034",
+    "UTLA21NM": "Worcestershire"
+  },
+  {
+    "FID": "253",
+    "LTLA21CD": "E07000239",
+    "LTLA21NM": "Wyre Forest",
+    "UTLA21CD": "E10000034",
+    "UTLA21NM": "Worcestershire"
+  },
+  {
+    "FID": "254",
+    "LTLA21CD": "W06000001",
+    "LTLA21NM": "Isle of Anglesey",
+    "UTLA21CD": "W06000001",
+    "UTLA21NM": "Isle of Anglesey"
+  },
+  {
+    "FID": "255",
+    "LTLA21CD": "W06000002",
+    "LTLA21NM": "Gwynedd",
+    "UTLA21CD": "W06000002",
+    "UTLA21NM": "Gwynedd"
+  },
+  {
+    "FID": "256",
+    "LTLA21CD": "W06000003",
+    "LTLA21NM": "Conwy",
+    "UTLA21CD": "W06000003",
+    "UTLA21NM": "Conwy"
+  },
+  {
+    "FID": "257",
+    "LTLA21CD": "W06000004",
+    "LTLA21NM": "Denbighshire",
+    "UTLA21CD": "W06000004",
+    "UTLA21NM": "Denbighshire"
+  },
+  {
+    "FID": "258",
+    "LTLA21CD": "W06000005",
+    "LTLA21NM": "Flintshire",
+    "UTLA21CD": "W06000005",
+    "UTLA21NM": "Flintshire"
+  },
+  {
+    "FID": "259",
+    "LTLA21CD": "W06000006",
+    "LTLA21NM": "Wrexham",
+    "UTLA21CD": "W06000006",
+    "UTLA21NM": "Wrexham"
+  },
+  {
+    "FID": "260",
+    "LTLA21CD": "W06000008",
+    "LTLA21NM": "Ceredigion",
+    "UTLA21CD": "W06000008",
+    "UTLA21NM": "Ceredigion"
+  },
+  {
+    "FID": "261",
+    "LTLA21CD": "W06000009",
+    "LTLA21NM": "Pembrokeshire",
+    "UTLA21CD": "W06000009",
+    "UTLA21NM": "Pembrokeshire"
+  },
+  {
+    "FID": "262",
+    "LTLA21CD": "W06000010",
+    "LTLA21NM": "Carmarthenshire",
+    "UTLA21CD": "W06000010",
+    "UTLA21NM": "Carmarthenshire"
+  },
+  {
+    "FID": "263",
+    "LTLA21CD": "W06000011",
+    "LTLA21NM": "Swansea",
+    "UTLA21CD": "W06000011",
+    "UTLA21NM": "Swansea"
+  },
+  {
+    "FID": "264",
+    "LTLA21CD": "W06000012",
+    "LTLA21NM": "Neath Port Talbot",
+    "UTLA21CD": "W06000012",
+    "UTLA21NM": "Neath Port Talbot"
+  },
+  {
+    "FID": "265",
+    "LTLA21CD": "W06000013",
+    "LTLA21NM": "Bridgend",
+    "UTLA21CD": "W06000013",
+    "UTLA21NM": "Bridgend"
+  },
+  {
+    "FID": "266",
+    "LTLA21CD": "W06000014",
+    "LTLA21NM": "Vale of Glamorgan",
+    "UTLA21CD": "W06000014",
+    "UTLA21NM": "Vale of Glamorgan"
+  },
+  {
+    "FID": "267",
+    "LTLA21CD": "W06000015",
+    "LTLA21NM": "Cardiff",
+    "UTLA21CD": "W06000015",
+    "UTLA21NM": "Cardiff"
+  },
+  {
+    "FID": "268",
+    "LTLA21CD": "W06000016",
+    "LTLA21NM": "Rhondda Cynon Taf",
+    "UTLA21CD": "W06000016",
+    "UTLA21NM": "Rhondda Cynon Taf"
+  },
+  {
+    "FID": "269",
+    "LTLA21CD": "W06000018",
+    "LTLA21NM": "Caerphilly",
+    "UTLA21CD": "W06000018",
+    "UTLA21NM": "Caerphilly"
+  },
+  {
+    "FID": "270",
+    "LTLA21CD": "W06000019",
+    "LTLA21NM": "Blaenau Gwent",
+    "UTLA21CD": "W06000019",
+    "UTLA21NM": "Blaenau Gwent"
+  },
+  {
+    "FID": "271",
+    "LTLA21CD": "W06000020",
+    "LTLA21NM": "Torfaen",
+    "UTLA21CD": "W06000020",
+    "UTLA21NM": "Torfaen"
+  },
+  {
+    "FID": "272",
+    "LTLA21CD": "W06000021",
+    "LTLA21NM": "Monmouthshire",
+    "UTLA21CD": "W06000021",
+    "UTLA21NM": "Monmouthshire"
+  },
+  {
+    "FID": "273",
+    "LTLA21CD": "W06000022",
+    "LTLA21NM": "Newport",
+    "UTLA21CD": "W06000022",
+    "UTLA21NM": "Newport"
+  },
+  {
+    "FID": "274",
+    "LTLA21CD": "W06000023",
+    "LTLA21NM": "Powys",
+    "UTLA21CD": "W06000023",
+    "UTLA21NM": "Powys"
+  },
+  {
+    "FID": "275",
+    "LTLA21CD": "W06000024",
+    "LTLA21NM": "Merthyr Tydfil",
+    "UTLA21CD": "W06000024",
+    "UTLA21NM": "Merthyr Tydfil"
+  },
+  {
+    "FID": "276",
+    "LTLA21CD": "E07000130",
+    "LTLA21NM": "Charnwood",
+    "UTLA21CD": "E10000018",
+    "UTLA21NM": "Leicestershire"
+  },
+  {
+    "FID": "277",
+    "LTLA21CD": "E07000131",
+    "LTLA21NM": "Harborough",
+    "UTLA21CD": "E10000018",
+    "UTLA21NM": "Leicestershire"
+  },
+  {
+    "FID": "278",
+    "LTLA21CD": "E07000132",
+    "LTLA21NM": "Hinckley and Bosworth",
+    "UTLA21CD": "E10000018",
+    "UTLA21NM": "Leicestershire"
+  },
+  {
+    "FID": "279",
+    "LTLA21CD": "E07000133",
+    "LTLA21NM": "Melton",
+    "UTLA21CD": "E10000018",
+    "UTLA21NM": "Leicestershire"
+  },
+  {
+    "FID": "280",
+    "LTLA21CD": "E07000134",
+    "LTLA21NM": "North West Leicestershire",
+    "UTLA21CD": "E10000018",
+    "UTLA21NM": "Leicestershire"
+  },
+  {
+    "FID": "281",
+    "LTLA21CD": "E07000135",
+    "LTLA21NM": "Oadby and Wigston",
+    "UTLA21CD": "E10000018",
+    "UTLA21NM": "Leicestershire"
+  },
+  {
+    "FID": "282",
+    "LTLA21CD": "E07000136",
+    "LTLA21NM": "Boston",
+    "UTLA21CD": "E10000019",
+    "UTLA21NM": "Lincolnshire"
+  },
+  {
+    "FID": "283",
+    "LTLA21CD": "E07000137",
+    "LTLA21NM": "East Lindsey",
+    "UTLA21CD": "E10000019",
+    "UTLA21NM": "Lincolnshire"
+  },
+  {
+    "FID": "284",
+    "LTLA21CD": "E07000138",
+    "LTLA21NM": "Lincoln",
+    "UTLA21CD": "E10000019",
+    "UTLA21NM": "Lincolnshire"
+  },
+  {
+    "FID": "285",
+    "LTLA21CD": "E07000139",
+    "LTLA21NM": "North Kesteven",
+    "UTLA21CD": "E10000019",
+    "UTLA21NM": "Lincolnshire"
+  },
+  {
+    "FID": "286",
+    "LTLA21CD": "E07000140",
+    "LTLA21NM": "South Holland",
+    "UTLA21CD": "E10000019",
+    "UTLA21NM": "Lincolnshire"
+  },
+  {
+    "FID": "287",
+    "LTLA21CD": "E07000141",
+    "LTLA21NM": "South Kesteven",
+    "UTLA21CD": "E10000019",
+    "UTLA21NM": "Lincolnshire"
+  },
+  {
+    "FID": "288",
+    "LTLA21CD": "E07000142",
+    "LTLA21NM": "West Lindsey",
+    "UTLA21CD": "E10000019",
+    "UTLA21NM": "Lincolnshire"
+  },
+  {
+    "FID": "289",
+    "LTLA21CD": "E07000143",
+    "LTLA21NM": "Breckland",
+    "UTLA21CD": "E10000020",
+    "UTLA21NM": "Norfolk"
+  },
+  {
+    "FID": "290",
+    "LTLA21CD": "E07000144",
+    "LTLA21NM": "Broadland",
+    "UTLA21CD": "E10000020",
+    "UTLA21NM": "Norfolk"
+  },
+  {
+    "FID": "291",
+    "LTLA21CD": "E07000145",
+    "LTLA21NM": "Great Yarmouth",
+    "UTLA21CD": "E10000020",
+    "UTLA21NM": "Norfolk"
+  },
+  {
+    "FID": "292",
+    "LTLA21CD": "E07000146",
+    "LTLA21NM": "King's Lynn and West Norfolk",
+    "UTLA21CD": "E10000020",
+    "UTLA21NM": "Norfolk"
+  },
+  {
+    "FID": "293",
+    "LTLA21CD": "E07000147",
+    "LTLA21NM": "North Norfolk",
+    "UTLA21CD": "E10000020",
+    "UTLA21NM": "Norfolk"
+  },
+  {
+    "FID": "294",
+    "LTLA21CD": "E07000148",
+    "LTLA21NM": "Norwich",
+    "UTLA21CD": "E10000020",
+    "UTLA21NM": "Norfolk"
+  },
+  {
+    "FID": "295",
+    "LTLA21CD": "E07000149",
+    "LTLA21NM": "South Norfolk",
+    "UTLA21CD": "E10000020",
+    "UTLA21NM": "Norfolk"
+  },
+  {
+    "FID": "296",
+    "LTLA21CD": "E07000163",
+    "LTLA21NM": "Craven",
+    "UTLA21CD": "E10000023",
+    "UTLA21NM": "North Yorkshire"
+  },
+  {
+    "FID": "297",
+    "LTLA21CD": "E07000164",
+    "LTLA21NM": "Hambleton",
+    "UTLA21CD": "E10000023",
+    "UTLA21NM": "North Yorkshire"
+  },
+  {
+    "FID": "298",
+    "LTLA21CD": "E07000165",
+    "LTLA21NM": "Harrogate",
+    "UTLA21CD": "E10000023",
+    "UTLA21NM": "North Yorkshire"
+  },
+  {
+    "FID": "299",
+    "LTLA21CD": "E07000166",
+    "LTLA21NM": "Richmondshire",
+    "UTLA21CD": "E10000023",
+    "UTLA21NM": "North Yorkshire"
+  },
+  {
+    "FID": "300",
+    "LTLA21CD": "E07000167",
+    "LTLA21NM": "Ryedale",
+    "UTLA21CD": "E10000023",
+    "UTLA21NM": "North Yorkshire"
+  },
+  {
+    "FID": "301",
+    "LTLA21CD": "E07000168",
+    "LTLA21NM": "Scarborough",
+    "UTLA21CD": "E10000023",
+    "UTLA21NM": "North Yorkshire"
+  },
+  {
+    "FID": "302",
+    "LTLA21CD": "E07000169",
+    "LTLA21NM": "Selby",
+    "UTLA21CD": "E10000023",
+    "UTLA21NM": "North Yorkshire"
+  },
+  {
+    "FID": "303",
+    "LTLA21CD": "E07000170",
+    "LTLA21NM": "Ashfield",
+    "UTLA21CD": "E10000024",
+    "UTLA21NM": "Nottinghamshire"
+  },
+  {
+    "FID": "304",
+    "LTLA21CD": "E07000171",
+    "LTLA21NM": "Bassetlaw",
+    "UTLA21CD": "E10000024",
+    "UTLA21NM": "Nottinghamshire"
+  },
+  {
+    "FID": "305",
+    "LTLA21CD": "E07000172",
+    "LTLA21NM": "Broxtowe",
+    "UTLA21CD": "E10000024",
+    "UTLA21NM": "Nottinghamshire"
+  },
+  {
+    "FID": "306",
+    "LTLA21CD": "E07000173",
+    "LTLA21NM": "Gedling",
+    "UTLA21CD": "E10000024",
+    "UTLA21NM": "Nottinghamshire"
+  },
+  {
+    "FID": "307",
+    "LTLA21CD": "E07000174",
+    "LTLA21NM": "Mansfield",
+    "UTLA21CD": "E10000024",
+    "UTLA21NM": "Nottinghamshire"
+  },
+  {
+    "FID": "308",
+    "LTLA21CD": "E07000175",
+    "LTLA21NM": "Newark and Sherwood",
+    "UTLA21CD": "E10000024",
+    "UTLA21NM": "Nottinghamshire"
+  },
+  {
+    "FID": "309",
+    "LTLA21CD": "E07000176",
+    "LTLA21NM": "Rushcliffe",
+    "UTLA21CD": "E10000024",
+    "UTLA21NM": "Nottinghamshire"
+  },
+  {
+    "FID": "310",
+    "LTLA21CD": "E07000177",
+    "LTLA21NM": "Cherwell",
+    "UTLA21CD": "E10000025",
+    "UTLA21NM": "Oxfordshire"
+  },
+  {
+    "FID": "311",
+    "LTLA21CD": "E07000178",
+    "LTLA21NM": "Oxford",
+    "UTLA21CD": "E10000025",
+    "UTLA21NM": "Oxfordshire"
+  },
+  {
+    "FID": "312",
+    "LTLA21CD": "E07000179",
+    "LTLA21NM": "South Oxfordshire",
+    "UTLA21CD": "E10000025",
+    "UTLA21NM": "Oxfordshire"
+  },
+  {
+    "FID": "313",
+    "LTLA21CD": "E07000180",
+    "LTLA21NM": "Vale of White Horse",
+    "UTLA21CD": "E10000025",
+    "UTLA21NM": "Oxfordshire"
+  },
+  {
+    "FID": "314",
+    "LTLA21CD": "E07000181",
+    "LTLA21NM": "West Oxfordshire",
+    "UTLA21CD": "E10000025",
+    "UTLA21NM": "Oxfordshire"
+  },
+  {
+    "FID": "315",
+    "LTLA21CD": "E07000187",
+    "LTLA21NM": "Mendip",
+    "UTLA21CD": "E10000027",
+    "UTLA21NM": "Somerset"
+  },
+  {
+    "FID": "316",
+    "LTLA21CD": "E07000188",
+    "LTLA21NM": "Sedgemoor",
+    "UTLA21CD": "E10000027",
+    "UTLA21NM": "Somerset"
+  },
+  {
+    "FID": "317",
+    "LTLA21CD": "E07000189",
+    "LTLA21NM": "South Somerset",
+    "UTLA21CD": "E10000027",
+    "UTLA21NM": "Somerset"
+  },
+  {
+    "FID": "318",
+    "LTLA21CD": "E07000246",
+    "LTLA21NM": "Somerset West and Taunton",
+    "UTLA21CD": "E10000027",
+    "UTLA21NM": "Somerset"
+  },
+  {
+    "FID": "319",
+    "LTLA21CD": "E07000192",
+    "LTLA21NM": "Cannock Chase",
+    "UTLA21CD": "E10000028",
+    "UTLA21NM": "Staffordshire"
+  },
+  {
+    "FID": "320",
+    "LTLA21CD": "E07000193",
+    "LTLA21NM": "East Staffordshire",
+    "UTLA21CD": "E10000028",
+    "UTLA21NM": "Staffordshire"
+  },
+  {
+    "FID": "321",
+    "LTLA21CD": "E07000194",
+    "LTLA21NM": "Lichfield",
+    "UTLA21CD": "E10000028",
+    "UTLA21NM": "Staffordshire"
+  },
+  {
+    "FID": "322",
+    "LTLA21CD": "E07000195",
+    "LTLA21NM": "Newcastle-under-Lyme",
+    "UTLA21CD": "E10000028",
+    "UTLA21NM": "Staffordshire"
+  },
+  {
+    "FID": "323",
+    "LTLA21CD": "E07000196",
+    "LTLA21NM": "South Staffordshire",
+    "UTLA21CD": "E10000028",
+    "UTLA21NM": "Staffordshire"
+  },
+  {
+    "FID": "324",
+    "LTLA21CD": "E07000197",
+    "LTLA21NM": "Stafford",
+    "UTLA21CD": "E10000028",
+    "UTLA21NM": "Staffordshire"
+  },
+  {
+    "FID": "325",
+    "LTLA21CD": "E07000198",
+    "LTLA21NM": "Staffordshire Moorlands",
+    "UTLA21CD": "E10000028",
+    "UTLA21NM": "Staffordshire"
+  },
+  {
+    "FID": "326",
+    "LTLA21CD": "E07000199",
+    "LTLA21NM": "Tamworth",
+    "UTLA21CD": "E10000028",
+    "UTLA21NM": "Staffordshire"
+  },
+  {
+    "FID": "327",
+    "LTLA21CD": "E07000200",
+    "LTLA21NM": "Babergh",
+    "UTLA21CD": "E10000029",
+    "UTLA21NM": "Suffolk"
+  },
+  {
+    "FID": "328",
+    "LTLA21CD": "E07000202",
+    "LTLA21NM": "Ipswich",
+    "UTLA21CD": "E10000029",
+    "UTLA21NM": "Suffolk"
+  },
+  {
+    "FID": "329",
+    "LTLA21CD": "E07000203",
+    "LTLA21NM": "Mid Suffolk",
+    "UTLA21CD": "E10000029",
+    "UTLA21NM": "Suffolk"
+  },
+  {
+    "FID": "330",
+    "LTLA21CD": "E07000244",
+    "LTLA21NM": "East Suffolk",
+    "UTLA21CD": "E10000029",
+    "UTLA21NM": "Suffolk"
+  },
+  {
+    "FID": "331",
+    "LTLA21CD": "E07000245",
+    "LTLA21NM": "West Suffolk",
+    "UTLA21CD": "E10000029",
+    "UTLA21NM": "Suffolk"
+  }
+]
