@@ -1,0 +1,7 @@
+parametric_builder/__init__.py,sha256=3wVEs2QD_7OcTlD97cZdCeizd2hUbJJ0GeIO8wQIjrk,22
+parametric_builder/builder.py,sha256=Bn0_-6PuFRDOrSfZich8hfWPaGG7xryvLeaKyKlKe14,3090
+parametric_builder/has_builder.py,sha256=OSocoRLnxAvi4UnZ4DgOBmsnL6EOS2PMUAWuMyf-uP4,287
+parametric_builder/target_field.py,sha256=H9h8RK-Nc8287l-wTGU5gxn9hlCH7TzbnJcs5OjGKkU,983
+parametric_builder-0.3.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+parametric_builder-0.3.0.dist-info/METADATA,sha256=pZMfEoym9636gzH5JwL1JIjyNzAWD8fNysq_fPA8zms,276
+parametric_builder-0.3.0.dist-info/RECORD,,
