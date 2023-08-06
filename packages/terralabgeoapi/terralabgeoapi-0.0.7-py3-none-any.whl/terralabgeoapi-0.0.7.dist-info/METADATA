@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: terralabgeoapi
+Version: 0.0.7
+Summary: GeoAPI do TerraLab
+Home-page: https://gitlab.com/ufopterralab/data-analytics-group/geoapi.git
+Author: TerraLab
+Author-email: alan.ufop@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: geopandas
+Requires-Dist: unidecode
+Requires-Dist: sparse-dot-topn
+Requires-Dist: dash
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: geopy (==2.2.0)
+Requires-Dist: sklearn
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: requests
+
+UNKNOWN
+
+
