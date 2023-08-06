@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: coiny
+Version: 0.0.2
+Summary: Crypto portfolio tracking
+Home-page: https://github.com/thomasms/coiny
+Author: Tom Stainer
+Author-email: me@physicstom.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+
+UNKNOWN
+
