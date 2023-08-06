@@ -1,0 +1,9 @@
+README.md
+setup.py
+felya7.egg-info/PKG-INFO
+felya7.egg-info/SOURCES.txt
+felya7.egg-info/dependency_links.txt
+felya7.egg-info/requires.txt
+felya7.egg-info/top_level.txt
+test_package/__init__.py
+test_package/core.py
