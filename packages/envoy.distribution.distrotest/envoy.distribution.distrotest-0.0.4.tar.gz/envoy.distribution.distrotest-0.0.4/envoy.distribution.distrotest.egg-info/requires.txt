@@ -1,0 +1,5 @@
+aiodocker
+envoy.base.checker>=0.0.2
+envoy.base.utils>=0.0.8
+envoy.docker.utils>=0.0.2
+verboselogs
