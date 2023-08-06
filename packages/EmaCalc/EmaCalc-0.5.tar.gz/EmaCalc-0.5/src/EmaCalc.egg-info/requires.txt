@@ -1,0 +1,5 @@
+numpy>=1.17
+scipy
+matplotlib
+samppy>=1.2.2
+openpyxl>=3.0
