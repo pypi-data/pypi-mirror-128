@@ -1,0 +1,6 @@
+variant/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+variant/effect.py,sha256=FEVZWdp2zXSFuGjctmEsnf7SFdG60IRHYnxBtZEyMvI,6099
+variant-0.0.7.dist-info/entry_points.txt,sha256=YHpQ_VU_QoyycnZJZmpm2-A7ajpyVKJSFRaFN7SC-1c,53
+variant-0.0.7.dist-info/WHEEL,sha256=DRf8A_Psd1SF2kVqTQOOFU1Xzl3-A2qljAxBMTOusUs,83
+variant-0.0.7.dist-info/METADATA,sha256=Ae3TdEcbR2v3k1LgnwIOgegntRaCrtA2DIXVIB5BARc,3336
+variant-0.0.7.dist-info/RECORD,,
