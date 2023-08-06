@@ -1,0 +1,5 @@
+gitpython
+herokum
+requests
+rich
+telethon
