@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: komandr
+Version: 2.0.1
+Summary: Coolest command-line interface on this planet
+Home-page: https://github.com/kadirpekel/komandr
+Author: Kadir Pekel
+Author-email: kadirpekel@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.5.4
