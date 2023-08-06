@@ -1,0 +1,3 @@
+[console_scripts]
+validol_scraper = loader.main:main
+
