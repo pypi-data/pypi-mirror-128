@@ -1,0 +1,17 @@
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Test/v0_0_2_Test.py
+Test/Main Directory/letseee.txt
+Test/Main Directory/Directory 1/Directory 2/Say World.txt
+Test/Main Directory/Directory 1/Directory 2/Directory 3/Directory 4/Hello World.txt
+Test/Main Directory/Directory A/Hmm.txt
+src/treecount.py
+src/treecount.egg-info/PKG-INFO
+src/treecount.egg-info/SOURCES.txt
+src/treecount.egg-info/dependency_links.txt
+src/treecount.egg-info/requires.txt
+src/treecount.egg-info/top_level.txt
