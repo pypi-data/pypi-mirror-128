@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: anyforce
+Version: 0.11.3
+Summary: UNKNOWN
+License: UNKNOWN
+Author-email: exherb <i@4leaf.me>
+Requires-Python: >=3.8
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: homepage, https://github.com/42signal/anyforce
