@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: vanoma-api-utils
+Version: 0.6.0
+Summary: Python utils for vanoma APIs
+Author: Vanoma
+Author-email: contact@vanoma.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.2.9,<4.0.0)
+Requires-Dist: djangorestframework (>=3.12.4,<4.0.0)
+Requires-Dist: djangorestframework-camel-case (>=1.2.0,<2.0.0)
