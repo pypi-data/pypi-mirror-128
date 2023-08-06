@@ -1,0 +1,109 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as LANG %}
+{% trans "Luna, a web client for lotide" as site_description %}
+{% trans "Log in" as l_log_in %}
+{% trans "Log out" as l_log_out %}
+{% trans "Settings" as l_settings %}
+{% trans "Communities" as l_communities %}
+{% trans "Local" context "being on same server" as l_local%}
+{% trans "All" context "feed from all known servers" as l_all_timeline %}
+{% trans "Home" context "default timeline" as l_home_timeline  %}
+{% trans "Save" as l_save %}
+{% trans "Next page" as l_next_page %}
+{% trans "Reply" as l_reply %}
+{% trans "Create post" as l_create_post %}
+{% trans "Plain text" as l_plain_text %}
+{% trans "New post" as l_new_post %}
+<!DOCTYPE html>
+<html lang="{{ LANG }}">
+  <head>
+    {% block head %}
+    <title>{% block title %}Luna{% endblock %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="{{ site_description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- General PWA -->
+    <meta name="theme-color" content="#1F1F1F">
+    <!-- iOS Application -->
+    <meta name="apple-mobile-web-app-title" content="Libreddit">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- Android  -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- iOS Logo -->
+    <link href="{% static 'apple-touch-icon.png' %}" rel="apple-touch-icon">
+    <!-- PWA Manifest -->
+    <link rel="manifest" type="application/json" href="{% static 'manifest.json' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}"> 
+    {% if luna_theme == 'dark' %}
+    <link rel="stylesheet" type="text/css" href="{% static 'luna-dark.css' %}">
+    {% elif luna_theme == 'light' %}
+    <link rel="stylesheet" type="text/css" href="{% static 'luna-light.css' %}">
+    {% else %}
+    <link rel="stylesheet" type="text/css" href="{% static 'luna-system.css' %}">
+    {% endif%}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    {% endblock %}
+    </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <div class="container large">
+      <header>
+        <nav class="left">
+          <ul>
+            <li><a href="{% url 'index' %}">{{ l_home_timeline }}</a></li>
+            <li><a href="{% url 'timeline' 'all' %}">{{ l_all_timeline }}</a></li>
+            <li><a href="{% url 'timeline' 'local' %}">{{ l_local }}</a></li>
+            <li><a href="{% url 'communities' %}">{{ l_communities }}</a></li>
+          </ul>
+        </nav>
+        <nav class="right">
+          <ul>
+            <li><a href="{% url 'settings' %}">{{ l_settings }}</a></li>
+            {% if logged_in %}
+            <li>
+              <a href="{% url 'user' logged_in.id %}">{{ logged_in.username }}</a>
+            </li>
+            <li><a href={% url 'logout' %}>{{ l_log_out }}</a></li>
+            {% else %}
+            <li><a href="{% url 'login' %}">{{ l_log_in }}</a></li>
+            {% endif %}
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+
+    <!-- MAIN CONTENT -->
+      <main>
+      {% block body %}
+      {% endblock %}
+      </main>
+      <hr>
+      <footer>
+        <p>
+          {% blocktrans %}
+          Luna is free software:
+          Its <a id="code" href="https://sr.ht/~huyngo/luna">source code</a>
+          is released under the
+          <a href="https://www.gnu.org/licenses/agpl-3.0.html">
+            GNU Affero General Public License version 3.</a>
+          Current version: {{ LUNA_VERSION }}
+          {% endblocktrans %}
+        </p>
+        <p>
+          {% blocktrans %}
+          The favicon is generated from icon
+          <a href="https://thenounproject.com/search/?q=moon&i=936949">Moon</a>
+          by Thengakola, released under the
+          <a href="https://creativecommons.org/licenses/by/3.0/us/legalcode">
+            Creative Commons Attribution 3.0 United States</a>
+          from the Noun Project.
+          {% endblocktrans %}
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
+

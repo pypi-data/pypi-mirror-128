@@ -1,0 +1,27 @@
+:root {
+  --fg-color: #333333;
+  --bg-color: #ffffe0;
+
+  --link-color: #1d60a3;
+  --active-color: #a31d1d;
+  --link-visited-color: #666666;
+
+  --border-color: #3d3d3d;
+  --card-bg-color: #fcfcfc;
+  --submit-bg-color: #90ee90;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg-color: #ffffff;
+    --bg-color: #333333;
+
+    --link-color: #ffd700;
+    --active-color: #ff8585;
+    --link-visited-color: #ffffe0;
+
+    --border-color: #d3d3d3;
+    --card-bg-color: #2c2c2c;
+    --submit-bg-color: #116411;
+  }
+}

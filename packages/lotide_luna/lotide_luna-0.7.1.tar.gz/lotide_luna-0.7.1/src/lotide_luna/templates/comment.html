@@ -1,0 +1,42 @@
+{% load datetime_filter %}
+{% load humanize %}
+{% load i18n %}
+<article class="comment" id="comment-{{ comment.id }}">
+  <details open>
+    <summary>
+      {% blocktrans count score=comment.score %}
+      {{ score }} point
+      {% plural %}
+      {{ score }} points
+      {% endblocktrans %}
+      {% url 'user' comment.author.id as author_url %}
+      {% blocktrans with author_name=comment.author.username time_str=comment.created|to_datetime|naturaltime raw_time=comment.created %}
+      <a href="{{ author_url }}">{{ author_name }}</a>
+      commented
+      <time datetime="{{ raw_time }}">
+        {{ time_str }}
+      </time>
+      {% endblocktrans %}
+    </summary>
+    <div class="comment">
+      {{ comment.content_html | safe }}
+      <input id="reply-to-{{ comment.id }}" type="checkbox" class="reply-check">
+      <label for="reply-to-{{ comment.id }}">{{ l_reply }}</label>
+      <form method="POST" action="{% url 'reply_comment' post.id comment.id %}">
+        {% csrf_token %}
+        <textarea name="comment"></textarea>
+        <input type="radio" id="md" name="content-type"
+                                    value="content_markdown" checked>
+        <label for="md">Markdown</label>
+        <input type="radio" id="plain" name="content-type" value="content_text">
+        <label for="plain">{{ l_plain_text }}</label>
+        <input type="submit" value="{{ l_reply }}">
+      </form>
+      {% for reply in comment.replies.items %}
+      {% with comment=reply template_name="comment.html" %}
+      {% include template_name %}
+      {% endwith %}
+      {% endfor %}
+    </div>
+  </details>
+</article>

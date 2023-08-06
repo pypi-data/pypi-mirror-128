@@ -1,0 +1,3 @@
+[submodule "src/lotide_luna/locale"]
+	path = src/lotide_luna/locale
+	url = git@git.sr.ht:~huyngo/luna-l10n

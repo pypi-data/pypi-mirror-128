@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block body %}
+<h1>Luna</h1>
+{% blocktrans %}
+Luna is a web client for <a href="https://sr.ht/~vpzoom/lotide">lotide</a>.
+{% endblocktrans %}
+
+<h2>{% trans "What is lotide?" %}</h2>
+
+<p>
+  {% blocktrans %}
+  <i>lotide</i> is an attempt to build a federated forum. Users can create
+  communities to share links and text posts and discuss them with other users,
+  include those registered on other servers through
+  <a href="https://activitypub.rocks">ActivityPub</a>.
+  {% endblocktrans %}
+</p>
+
+<h2>{% trans "Why Luna?" %}</h2>
+
+<p>
+  {% blocktrans %}
+  In Latin, <i lang="la">luna</i> means <i>moon</i>, the celestial body that
+  control tides.
+  {% endblocktrans %}
+</p>
+
+{% endblock %}

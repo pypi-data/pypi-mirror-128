@@ -1,0 +1,12 @@
+:root {
+  --fg-color: #ffffff;
+  --bg-color: #333333;
+
+  --link-color: #ffd700;
+  --active-color: #ff8585;
+  --link-visited-color: #ffffe0;
+
+  --border-color: #d3d3d3;
+  --card-bg-color: #2c2c2c;
+  --submit-bg-color: #116411;
+}

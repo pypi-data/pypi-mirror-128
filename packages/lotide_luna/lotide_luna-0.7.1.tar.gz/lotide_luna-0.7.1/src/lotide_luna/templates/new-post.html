@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+{{ l_new_post }}
+{% endblock %}
+
+{% block body %}
+
+<form method="post" action="{% url 'new_post' community_id %}">
+	{% csrf_token %}
+	<fieldset>
+		<legend>
+			<h1>{{ l_new_post }}</h1>
+		</legend>
+		<label for="title">{% trans "Title" %}</label>
+		<input type="text" name="title" id="title" required>
+		<label for="url">{% trans "URL" %}</label>
+		<input type="url" name="url" id="url">
+		<label for="image">{% trans "File" %}</label>
+		<input type="file" name="image" id="image" accept="image/*">
+		<label for="text">{% trans "Content" %}</label>
+		<textarea name="text" id="text"></textarea>
+		<input type="radio" id="md" name="content-type"
+			value="content_markdown" checked>
+		<label for="md">Markdown</label>
+		<input type="radio" id="plain" name="content-type" value="content_text">
+		<label for="plain">{{ l_plain_text }}</label>
+		<input type="submit" value="{% trans "Post" context "Create a new post" %}" id="submit">
+	</fieldset>
+</form>
+
+{% endblock %}

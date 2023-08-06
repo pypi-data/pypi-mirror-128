@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load datetime_filter %}
+{% load humanize %}
+{% load i18n %}
+
+{% block title %}
+{{ post.title }}
+{% endblock %}
+
+{% block body %}
+<article>
+  <section id="original-post">
+    <h1>{{post.title}}</h1>
+    <div class="metadata">
+      {% url 'user' post.author.id as author_url %}
+      {% blocktrans with raw_time=post.created time_str=post.created|to_datetime|naturaltime  author_name=post.author.username %}
+      Submitted
+      <time datetime="{{ raw_time }}">
+        {{ time_str }}
+      </time>
+      by
+      <a href="{{ author_url }}">{{ author_name }}</a>
+      {% endblocktrans %}
+
+      {% blocktrans count score=post.score %}
+      {{ score }} point
+      {% plural %}
+      {{ score }} points
+      {% endblocktrans %}
+    </div>
+    <div>
+      {% if post.content_html %}
+      {{ post.content_html | safe }}
+      {% elif post.content_text %}
+      <pre>{{ post.content_text }}</pre>
+      {% endif %}
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="comments">
+    <h2>{% trans "Comments" %}</h2>
+    <form method="POST" action="{% url 'comment' post.id %}">
+      {% csrf_token %}
+      <textarea id="new-comment" name="comment"></textarea>
+      <input type="radio" id="md" name="content-type"
+                                  value="content_markdown" checked>
+      <label for="md">Markdown</label>
+      <input type="radio" id="plain" name="content-type" value="content_text">
+      <label for="plain">{{ l_plain_text }}</label>
+      {# TODO: Implement uploading media #}
+      <input type="submit" value="{{ l_reply }}">
+    </form>
+    {% for comment in comments %}
+    {% include "comment.html" %}
+    {% endfor %}
+  </section>
+</article>
+
+{% endblock %}

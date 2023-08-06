@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block body %}
+<h1>{{ l_settings }}</h1>
+<form method="POST" action="{% url 'settings' %}">
+  {% csrf_token %}
+  <fieldset>
+    <legend><h2>{% trans "Theme" context "color theme"%}</h2></legend>
+    <div>
+      <input id="auto" type="radio" value="auto" name="theme"
+        {% if luna_theme == 'auto' %}checked{% endif %}>
+      <label for="auto">{% trans "Follow system" %}</label>
+    </div>
+    <div>
+      <input id="light" type="radio" value="light" name="theme"
+        {% if luna_theme == 'light' %}checked{% endif %}>
+      <label for="light">{% trans "Luna light" %}</label>
+    </div>
+    <div>
+      <input id="dark" type="radio" value="dark" name="theme"
+        {% if luna_theme == 'dark' %}checked{% endif %}>
+      <label for="dark">{% trans "Luna dark" %}</label>
+    </div>
+    <input type="submit" value="{{ l_save }}">
+  </fieldset>
+</form>
+{% endblock %}
