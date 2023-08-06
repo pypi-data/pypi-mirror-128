@@ -1,0 +1,3 @@
+[console_scripts]
+imiit-student-bot=imiit_student_bot.__main__:main
+
