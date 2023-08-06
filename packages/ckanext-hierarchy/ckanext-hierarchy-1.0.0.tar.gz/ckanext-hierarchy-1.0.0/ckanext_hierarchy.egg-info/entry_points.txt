@@ -1,0 +1,7 @@
+
+        [ckan.plugins]
+        hierarchy=ckanext.hierarchy.plugin:HierarchyPlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+    
