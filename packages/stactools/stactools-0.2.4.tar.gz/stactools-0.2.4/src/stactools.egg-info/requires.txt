@@ -1,0 +1,16 @@
+pystac[validation]~=1.2
+aiohttp~=3.7
+click~=8.0
+fsspec~=2021.7
+requests~=2.25
+Shapely~=1.7
+pyproj~=3.0
+rasterio~=1.2
+lxml~=4.6
+GDAL~=3.3.2
+
+[all]
+s3fs~=2021.7
+
+[s3]
+s3fs~=2021.7
