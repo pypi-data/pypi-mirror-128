@@ -1,0 +1,11 @@
+pyproject.toml
+setup.cfg
+setup.py
+src/phinix/__init__.py
+src/phinix/exceptions.py
+src/phinix/main.py
+src/phinix.egg-info/PKG-INFO
+src/phinix.egg-info/SOURCES.txt
+src/phinix.egg-info/dependency_links.txt
+src/phinix.egg-info/requires.txt
+src/phinix.egg-info/top_level.txt
