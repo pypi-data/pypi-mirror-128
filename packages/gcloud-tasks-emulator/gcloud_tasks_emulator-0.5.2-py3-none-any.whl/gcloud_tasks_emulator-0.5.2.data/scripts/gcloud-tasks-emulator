@@ -1,0 +1,8 @@
+#!python
+
+# This script runs the `gcloud-tasks-emulator` runner using the system environment Python binary.
+
+from gcloud_tasks_emulator.__main__ import main
+
+if __name__ == '__main__':
+    main()
