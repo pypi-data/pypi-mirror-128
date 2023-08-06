@@ -1,0 +1,13 @@
+packaging
+pep517
+tomli
+
+[:python_version < "3.8"]
+importlib_module
+
+[lint]
+flake8
+flake8-docstrings
+
+[test]
+pytest
