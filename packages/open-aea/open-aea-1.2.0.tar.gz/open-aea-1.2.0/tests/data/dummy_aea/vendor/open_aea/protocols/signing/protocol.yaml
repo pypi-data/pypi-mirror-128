@@ -1,0 +1,20 @@
+name: signing
+author: open_aea
+version: 1.0.0
+protocol_specification_id: open_aea/signing:1.0.0
+type: protocol
+description: A protocol for communication between skills and decision maker.
+license: Apache-2.0
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  README.md: QmTym1GXLScdeJVd4WsLfgVpn8ouPX6ddwi1LLcTX1rPTg
+  __init__.py: QmSLyk8LYmo9ctJJeQNagz95UF95RLFU8bqpXsZwLN1SUs
+  custom_types.py: QmSjuy9e7KkzhyGDr8eB1cjmjTAkBoNQjb1YXjBk5B36d1
+  dialogues.py: QmXEGe1dTEHbZWKxP2Kdm9XpCHKAHPqskfdV81qnmpoarr
+  message.py: QmXbG2KUZm2rf5xtVfrYX5ohwR49CtKYQSKDw3yRFe8FNo
+  serialization.py: QmTnFN82f5LDNsoLdo8QhiaSHZATB1SFeLKpEugyzHDe1F
+  signing.proto: QmbPAFJURTaek14vgVwvEEiWxXM5VVZEVdhGHC7BYPuWEb
+  signing_pb2.py: QmZ56YuXu3VQx7wUjQMvvgmKZ5gvn2YDnhMeKazoGXXpDs
+fingerprint_ignore_patterns: []
+dependencies:
+  protobuf: {}
