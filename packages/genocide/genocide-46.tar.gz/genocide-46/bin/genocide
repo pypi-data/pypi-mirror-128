@@ -1,0 +1,122 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+
+"The prosecutor doesn’t stop the king’s genocide so it’s confirmed the king is doing his genocide."
+
+
+import os, sys ; sys.path.insert(0, os.getcwd())
+
+
+import os
+import readline
+import sys
+import termios
+import threading
+import time
+
+
+from gcd.clt import Client
+from gcd.obj import Cfg, Object, keys
+from gcd.ofn import fmt
+from gcd.run import Runtime, starttime
+from gcd.tbl import Table
+from gcd.tms import elapsed
+from gcd.utl import spl
+from gcd.ver import __version__
+
+Cfg.wd = os.path.expanduser("~/.genocide")
+
+
+class Kernel(Runtime):
+
+    def error(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+    def log(self, txt):
+        if "PONG" in txt or "PING" in txt:
+            return
+        if self.cfg.verbose:
+            print(txt.rstrip())
+            sys.stdout.flush()
+
+
+k = Kernel()
+
+
+class Console(Client):
+
+    def __init__(self):
+        super().__init__()
+        k.add(self)
+        
+    def handle(self, clt, e):
+        k.put(e)
+        e.wait()
+
+    def poll(self):
+        return input("> ")
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+clt = Console()
+
+
+def daemon():
+    pid = os.fork()
+    if pid != 0:
+        termreset()
+        os._exit(0)
+    os.setsid()
+    os.umask(0)
+    si = open("/dev/null", 'r')
+    so = open("/dev/null", 'a+')
+    se = open("/dev/null", 'a+')
+    os.dup2(si.fileno(), sys.stdin.fileno())
+    os.dup2(so.fileno(), sys.stdout.fileno())
+    os.dup2(se.fileno(), sys.stderr.fileno())
+
+
+def wrap(func):
+    fd = sys.stdin.fileno()
+    old = termios.tcgetattr(fd)
+    try:
+        func()
+    except (EOFError, KeyboardInterrupt):
+        print("")
+    finally:
+        termios.tcsetattr(fd, termios.TCSADRAIN, old)
+
+import gcd.all
+import genocide.all
+
+def main():
+    if k.root():
+        print("don't run this bot as root")
+        return
+    k.cfg.name = "genocide"
+    k.cfg.version = __version__
+    k.parse_cli()
+    if k.cfg.verbose:
+        msg = "GENOCIDE %s starting at %s" % (__version__, time.ctime(time.time()))
+        k.log(msg.replace("  ", " "))
+        k.log(fmt(k.cfg, ["console", "daemon", "debug", "systemd", "verbose"]))
+    if k.prs.txt:
+        return k.cmd(clt, k.prs.otxt)
+    if k.cfg.daemon:
+        daemon()
+    if k.cfg.console or "mod" in k.cfg:
+        k.start()
+        for mn in spl(k.cfg.mod):
+            k.init("gcd.%s" % mn)
+        k.log(",".join(sorted(list(Table.modnames))))
+        k.log("booted (%s)" % elapsed(time.time() - starttime))
+        clt.start()
+        k.wait()
+
+
+wrap(main)
