@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+pypostalwin/src/pypostalwin.egg-info/PKG-INFO
+pypostalwin/src/pypostalwin.egg-info/SOURCES.txt
+pypostalwin/src/pypostalwin.egg-info/dependency_links.txt
+pypostalwin/src/pypostalwin.egg-info/top_level.txt
+pypostalwin/src/pypostalwin.py
+pypostalwin/src/pypostalwin.egg-info/SOURCES.txt
