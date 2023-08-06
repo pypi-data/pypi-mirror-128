@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pysentimiento
+Version: 0.3.0
+Summary: A Transformer-based library for SocialNLP tasks
+Author: Juan Manuel Pérez
+Author-email: jmperez@dc.uba.ar
+Requires-Python: >=3.7,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: datasets (>=1.13.3,<2.0.0)
+Requires-Dist: emoji (>=1.6.1,<2.0.0)
+Requires-Dist: sklearn (>=0.0,<0.1)
+Requires-Dist: torch (>=1.9.0,<2.0.0)
+Requires-Dist: transformers (>=4.11.3,<5.0.0)
