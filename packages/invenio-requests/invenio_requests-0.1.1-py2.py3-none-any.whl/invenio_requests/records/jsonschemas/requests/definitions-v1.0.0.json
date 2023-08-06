@@ -1,0 +1,22 @@
+{
+  "entity_reference": {
+    "description": "Reference to an entity, with the type as key and ID as value",
+    "type": "object",
+    "additionalProperties": false,
+    "patternProperties": {
+      "^[a-z_]+$": {
+        "type": "string"
+      }
+    }
+  },
+  "anything": {
+    "description": "A very general schema",
+    "type": "object",
+    "additionalProperties": false,
+    "patternProperties": {
+      "^.+$": {
+        "type": "string"
+      }
+    }
+  }
+}
