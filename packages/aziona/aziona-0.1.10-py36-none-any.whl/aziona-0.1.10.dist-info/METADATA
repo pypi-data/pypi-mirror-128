@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: aziona
+Version: 0.1.10
+Summary: aziona cli
+Home-page: https://github.com/azionaventures/aziona
+Author: Azionaventures
+Author-email: tech@azionaventures.com
+License: GPL-3.0 License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: GitPython (==3.1.*)
+Requires-Dist: PyYAML (==5.*)
+Requires-Dist: awscli (==1.*)
+Requires-Dist: boto3 (==1.*)
+Requires-Dist: distro (==1.*)
+Requires-Dist: jsonschema (>=3.2.0)
+Requires-Dist: pathlib2 (==2.*)
+
+# aziona
+
+## Develop
+
+**dependencies library**
+
+- python >=3.6
+- pip 3
+- docker and docker-compose
+- awscli 2
+- aws-iam-authenticator
+- terraform 13.
+- kubectl
+- eksctl
+- kustomize
+
+**setup** 
+
+    git clone https://github.com/azionaventures/aziona-cli.git
+    sudo make setup-dev
+    source ./venv/bin/active
+
+**release python package**
+
+    1. change VERSION var into aziona.core.conf.const
+    2. make build-wheel
+    3. make deploy (push new tag to github repo and start workflow)
+
+**docs**
+
+    make build-docs
+
+## Usage
+
+**in progress**
+
+## Contributing
+
+    1. Open issue 
+    2. Use module `aziona.core` for I/O, logging, settings etc
+    3. Formatting and fix code with `make lint`
+    4. Merge request
+
