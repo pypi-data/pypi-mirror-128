@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "faceid-lib"
+version = "1.0.5"
+description = "Simple and flexible AI/ML workflow engine by Picaso - FaceID"
+authors = ["Dani Gunawan <danigunawan.elektroug@gmail.com>"]
+# New attributes
+license = "Apache License"
+readme = "README.md"
+homepage = "https://gitlab.playcourt.id/picaso-faceid/picaso-faceid-engine/v1/faceid-lib"
+repository = "https://gitlab.playcourt.id/picaso-faceid/picaso-faceid-engine/v1/faceid-lib"
+keywords = ["machine learning", "Deep Learning", "Message Broker", "Distributed System", "pipeline", "rabbitmq", "ratelimiter"]
+classifiers = [
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Software Development",
+    "Programming Language :: Python :: 3.7",
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pika = "^1.1.0"
+requests = "^2.25.1"
+aioredis = "1.3.1"
+fastapi = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+bandit = "*"
+black = "*"
+flake8 = "*"
+isort = "*"
+pytest-asyncio = "*"
+pytest-mock = "*"
+pytest-xdist = "*"
+uvicorn = "*"
+requests = "*"
+
+# New scripts
+[tool.poetry.scripts]
+faceid-lib = 'faceid_lib:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
