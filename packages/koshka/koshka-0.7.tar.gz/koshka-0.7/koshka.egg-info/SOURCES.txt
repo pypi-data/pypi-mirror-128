@@ -1,0 +1,15 @@
+README.rst
+setup.py
+koshka/__init__.py
+koshka/httpls.py
+koshka/kot.py
+koshka/kote.py
+koshka/s3.py
+koshka/tests.py
+koshka/version.py
+koshka.egg-info/PKG-INFO
+koshka.egg-info/SOURCES.txt
+koshka.egg-info/dependency_links.txt
+koshka.egg-info/entry_points.txt
+koshka.egg-info/requires.txt
+koshka.egg-info/top_level.txt
