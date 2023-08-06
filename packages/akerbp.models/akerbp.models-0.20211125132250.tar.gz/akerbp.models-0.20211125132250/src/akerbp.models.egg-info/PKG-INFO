@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: akerbp.models
+Version: 0.20211125132250
+Summary: Machine Learning Models for Petrophysics
+Home-page: https://bitbucket.org/akerbp/models/
+Author: Alfonso M. Canterla
+Author-email: alfonso.canterla@soprasteria.com
+License: UNKNOWN
+Description: ## Machine Learning Models for Petrophysics
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
