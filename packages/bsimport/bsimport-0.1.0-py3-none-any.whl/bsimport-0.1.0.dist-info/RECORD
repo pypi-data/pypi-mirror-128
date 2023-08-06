@@ -1,0 +1,12 @@
+bsimport/__init__.py,sha256=h4yNLos8LpzD9DMNUqXZm2Zgu396oz24U_sdE1WcyTA,928
+bsimport/__main__.py,sha256=kR5gbBnmJlcEse-f5fKEKohiSjncIo581o1l97MSqtk,188
+bsimport/cli.py,sha256=zM2GiWsifLZPG5LXHHquEIrCoky1BAKo0_iK3Ch_VfY,11652
+bsimport/config.py,sha256=csqDRwbymu36ywOC5m0Ufgb5GBPdaSxWfvxpTQ8VK4w,2722
+bsimport/imp.py,sha256=dr0ghjfS-CGq4VuF46n1U5oQuANEQu1r9wSyb9S4Ch4,7135
+bsimport/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bsimport/wrapper.py,sha256=CPISsk6iw9EABVsP_ehflirZEqyLUji6Vij6O814Uuc,6106
+bsimport-0.1.0.dist-info/LICENSE,sha256=xbACiV0WOFDOKKdI8pxJzMP4Tt_BLciQGKuinhyoh28,1069
+bsimport-0.1.0.dist-info/METADATA,sha256=IkxQyXFQQyU1XM4q5k2f-fYxIEpPXPLEoNcIzW0Mjj8,3530
+bsimport-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+bsimport-0.1.0.dist-info/top_level.txt,sha256=is4XCeBuFEmY178ndY6i_cp4rE9iOfFUQYq9x98OS9o,9
+bsimport-0.1.0.dist-info/RECORD,,
