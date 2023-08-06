@@ -1,0 +1,3 @@
+MainWindow_Appliction2
+background_img_rc
+mainWindow

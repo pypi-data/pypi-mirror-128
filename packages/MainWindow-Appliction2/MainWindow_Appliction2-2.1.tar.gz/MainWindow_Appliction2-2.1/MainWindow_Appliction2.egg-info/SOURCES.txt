@@ -1,0 +1,9 @@
+LICENSE
+MainWindow_Appliction2.py
+background_img_rc.py
+mainWindow.py
+setup.py
+MainWindow_Appliction2.egg-info/PKG-INFO
+MainWindow_Appliction2.egg-info/SOURCES.txt
+MainWindow_Appliction2.egg-info/dependency_links.txt
+MainWindow_Appliction2.egg-info/top_level.txt
