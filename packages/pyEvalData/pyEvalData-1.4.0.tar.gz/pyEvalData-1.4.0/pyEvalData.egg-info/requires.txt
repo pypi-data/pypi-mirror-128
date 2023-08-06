@@ -1,0 +1,17 @@
+numpy
+matplotlib
+lmfit
+scipy
+uncertainties
+xrayutilities
+h5py>=3.0
+nexusformat
+
+[documentation]
+sphinx
+nbsphinx
+sphinxcontrib-napoleon
+
+[testing]
+flake8
+pytest
