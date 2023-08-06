@@ -1,0 +1,3 @@
+[vdk.plugin.run]
+vdk-snowflake = vdk.plugin.snowflake.snowflake_plugin
+
