@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+elasticSearch_collections/__init__.py
+elasticSearch_collections/elasticSearch_collections.py
+elasticSearch_collections.egg-info/PKG-INFO
+elasticSearch_collections.egg-info/SOURCES.txt
+elasticSearch_collections.egg-info/dependency_links.txt
+elasticSearch_collections.egg-info/requires.txt
+elasticSearch_collections.egg-info/top_level.txt

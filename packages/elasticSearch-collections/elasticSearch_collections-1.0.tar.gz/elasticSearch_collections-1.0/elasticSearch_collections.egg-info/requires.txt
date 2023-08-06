@@ -1,0 +1,2 @@
+loguru
+elasticsearch==7.11.0
