@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+setup.cfg
+setup.py
+parade_check.egg-info/PKG-INFO
+parade_check.egg-info/SOURCES.txt
+parade_check.egg-info/dependency_links.txt
+parade_check.egg-info/not-zip-safe
+parade_check.egg-info/requires.txt
+parade_check.egg-info/top_level.txt
+src/parade/__init__.py
+src/parade/command/check.py
+src/parade/tests/__init__.py
+src/parade/tests/test_check.py
