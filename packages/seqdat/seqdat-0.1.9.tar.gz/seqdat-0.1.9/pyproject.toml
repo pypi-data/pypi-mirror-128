@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "seqdat"
+version = "0.1.9"
+description = "sequencing data manager"
+authors = ["Daylin Morgan <daylinmorgan@gmail.com>"]
+repository = "https://github.com/daylinmorgan/seqdat"
+readme = "README.md"
+license = "MIT"
+include = [
+	"LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7*,<3.11"
+click = "^8.0.3"
+rich = "^10.12.0"
+"ruamel.yaml" = "^0.17.17"
+click-rich-help = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.10b0"
+isort = "^5.10.0"
+flake8 = "^4.0.1"
+pre-commit = "^2.15.0"
+pyinstaller = "^4.6"
+mypy = "^0.910"
+
+[tool.poetry.scripts]
+seqdat = "seqdat.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.mypy]
+[[tool.mypy.overrides]]
+module=["ruamel","ruamel.yaml","click_rich_help"]
+ignore_missing_imports = true
