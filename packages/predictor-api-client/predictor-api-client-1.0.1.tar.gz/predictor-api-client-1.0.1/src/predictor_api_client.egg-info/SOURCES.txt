@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/predictor_api_client/__init__.py
+src/predictor_api_client/client.py
+src/predictor_api_client.egg-info/PKG-INFO
+src/predictor_api_client.egg-info/SOURCES.txt
+src/predictor_api_client.egg-info/dependency_links.txt
+src/predictor_api_client.egg-info/requires.txt
+src/predictor_api_client.egg-info/top_level.txt
+src/predictor_api_client/common/__init__.py
+src/predictor_api_client/common/exceptions.py
+src/predictor_api_client/common/logging.py
+src/predictor_api_client/utils/__init__.py
+src/predictor_api_client/utils/data.py
+src/predictor_api_client/utils/headers.py
