@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: vietvoice
+Version: 0.1.1
+Summary: text2speech for vietnamese voice
+Home-page: https://github.com/pbcquoc/vietvoice
+Author: pbcquoc
+Author-email: pbcquoc@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Vietvoice
+Text to speech for Vietnam
+
+Chuyển đổi văn bản thành giọng nói sử dụng tacotron2. Đối với Tiếng Việt, input của mô hình là các phoneme. 
+
+Thư viện được tạo ra với mục đích là đơn giản để sử dụng. Các bạn có thể sử dụng pretrained model đã được huấn luyện sẵn cho các ứng dụng khác.
+
+## Cài đặt
+Thư viện yêu cầu:
+```
+pytorch >= 1.10
+```
+Cài đặt Vietvoice
+```
+pip install vietvoice
+```
+
+## Dữ liệu
+### Tiền xử lý text 
+Các bạn lưu ý rằng text đầu vào được chuyển thành phoneme sau đó mới được input vào model. Việc tiền xử lý text để đảm bảo rằng các từ đều có thể chuyển được thành phoneme là **cực kì quan trọng**. Việc tiền xử lý phụ thuộc vào dữ liệu của các bạn như thế nào, nên phần xử lý này các bạn cần phải **tự xử lý** cho phù hợp với dữ liệu của mình. 
+
+## Train & Inference
+Các bạn tham khảo [notebook](https://github.com/pbcquoc/vietvoice/blob/main/gettingstart.ipynb) này. 
+
+## Synthesis speech
+Chất lượng giọng nói theo nhận xét của mình là rất tốt.
+
+## Problem
+Nếu có vấn đề gì vui lòng tạo issue hoặc liên hệ mình tại pbcquoc@gmail.com
+
+
