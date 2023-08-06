@@ -1,0 +1,14 @@
+pytest_qgis/__init__.py,sha256=UdHYUsSM8S7E122mHa-g43yk6WawbQp9476oUx2-Dp4,834
+pytest_qgis/_version.py,sha256=ItR21MISRWVUirdh4bmAAKzEt97uGVoeVbtzlsZwdyo,757
+pytest_qgis/mock_qgis_classes.py,sha256=xu1jC9LY3EXIU2ERH6vlTSnxH2QerJlNDJo2r5U2mBE,1550
+pytest_qgis/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_qgis/pytest_qgis.py,sha256=A7-WYKUW1oPKFAo5xsnc4NczikQKs4fq0lSGDcFZRNY,15154
+pytest_qgis/qgis_interface.py,sha256=T6LptqU-rpz-iHlpIHJ-k3Lz9FqJdNTLhN3UAw-lsVg,7760
+pytest_qgis/utils.py,sha256=NjHNt7YodPBvCqlMTEj-JiwZ-QdHgjEQ5zGZLnUbTk8,6176
+pytest_qgis/data/ne_50m_admin_0_countries.geojson,sha256=6ghUUT2_oAt90bzrYicDeykqiB0Qs2S9GUfGKDYw-BU,2592658
+pytest_qgis-1.1.0.dist-info/LICENSE,sha256=8k_iW5ZzHftNC8WyT1MEd0UJVvm0WJnmQaWc8Ds3ODs,18073
+pytest_qgis-1.1.0.dist-info/METADATA,sha256=a3bz9oWTTTVy9ffHvFx1xTGu1UvUBa_TgFqnjxt86Sk,6465
+pytest_qgis-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_qgis-1.1.0.dist-info/entry_points.txt,sha256=jiP5eYFwg8A8mEQDen5uLAO5Je2g6MN7FYGaHF6ia6w,38
+pytest_qgis-1.1.0.dist-info/top_level.txt,sha256=Oey08WBEi6SCpn-115C-cOhYm2BHA45ZT6O3Fm_8LqY,12
+pytest_qgis-1.1.0.dist-info/RECORD,,
