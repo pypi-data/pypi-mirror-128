@@ -1,0 +1,6 @@
+pyproject.toml
+setup.cfg
+GeneticEngine.egg-info/PKG-INFO
+GeneticEngine.egg-info/SOURCES.txt
+GeneticEngine.egg-info/dependency_links.txt
+GeneticEngine.egg-info/top_level.txt
