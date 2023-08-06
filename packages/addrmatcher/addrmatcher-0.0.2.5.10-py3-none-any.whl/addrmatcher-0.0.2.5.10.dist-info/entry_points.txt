@@ -1,0 +1,3 @@
+[console_scripts]
+addrmatcher-data = addrmatcher.resource:download
+
