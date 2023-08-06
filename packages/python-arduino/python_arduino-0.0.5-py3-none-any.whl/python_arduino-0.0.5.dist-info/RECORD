@@ -1,0 +1,8 @@
+arduino/__init__.py,sha256=z9eCev4vm6NlHrTik0M9kJhtk4WnDHxsTzrnzFJuoy4,800
+arduino/core.py,sha256=0XOhwJgQ2lTQ5Jn0S3YOMOgdVCTKU1EHB38urHhoHD0,1721
+arduino/motor.py,sha256=Maa_8E4LCkyCiyd6cG4v8qN84oPtgWOsT9k6fpRXzoc,3991
+python_arduino-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+python_arduino-0.0.5.dist-info/METADATA,sha256=NDcDkViLW5voGk-C1qJP4DVKpEhukFYX1C6jd0Bn0J0,610
+python_arduino-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+python_arduino-0.0.5.dist-info/top_level.txt,sha256=fozCFnaa8rQzoO8asOUqJ_ylrPIN1WAUn5iR7Y29mNA,8
+python_arduino-0.0.5.dist-info/RECORD,,
