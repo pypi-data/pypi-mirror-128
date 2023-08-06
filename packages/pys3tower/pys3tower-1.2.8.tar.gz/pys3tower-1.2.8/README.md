@@ -1,0 +1,90 @@
+# PyS3 Tower :building_construction:
+
+![PyS3Tower Logo](https://github.com/s0rcy-r/pys3_tower/blob/main/images/logo.PNG?raw=true)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/s0rcy-r/pys3_tower?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/s0rcy-r/pys3_tower?style=for-the-badge)
+![Lines of code](https://img.shields.io/tokei/lines/github/s0rcy-r/pys3_tower?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/s0rcy-r/pys3_tower?style=for-the-badge)
+![Python version](https://img.shields.io/badge/Python-v3.9-red?style=for-the-badge)
+
+## Introduction
+
+PyS3 Tower *(like the Pisa Tower)* is a Python library that can sync your local files to an S3 bucket. With PyS3 Tower you can easily sync your local files to an S3 bucket and also sync your S3 bucket to your local files.
+
+This script works like xcopy on Windows. But it is more powerful, flexible and adapted to the needs of the S3 bucket.
+
+\> PyS3 Tower work with the following rules:
+- If a file is in the S3 bucket and not in the local folder, it will be deleted on the bucket,
+- If a file is in the local folder and not in the S3 bucket, it will be uploaded to the bucket,
+- If a file is in both the local and the S3 bucket, the local file will be updated on the bucket if it is different from the local file.
+
+
+## Installation
+
+    pip install pys3tower
+
+*Note: PyPi page is available at: https://pypi.org/project/pys3tower/*
+
+
+## Usage in your code
+
+Import the PyS3 Tower library:
+
+    import pys3tower
+
+And create a PyS3 Tower object with your local file path, your S3 bucket name, your S3 bucket key and your access key, secret key and region:
+    
+    pys3tower = pys3tower.PyS3Tower(local_path, s3_bucket_name, s3_bucket_key, access_key, secret_key, region)
+
+or you could create a PyS3 Tower object with your local file path, your S3 bucket name and your access key, secret key and region and the bucket region:
+
+    pys3tower = pys3tower.PyS3Tower(local_path, s3_bucket_name, access_key, secret_key, region)
+
+Then, run the pysetower.run() method:
+
+    pys3tower.run()
+
+*Note: a better documentation will be available soon.*
+
+## Usage with the command line
+
+To install the PyS3 Tower command line tool:
+
+    curl -fsSL https://raw.githubusercontent.com/s0rcy-r/pys3_tower/main/cli/install.sh | sudo bash
+
+Here is the command help:
+
+    usage: pys3_tower_cli.py [-h] [--cli] [-p PATH] [-ak ACCESSKEY] [-sk SECRETKEY] [-r REGION] [-b BUCKET] [-k KEY]
+
+    PyS3 Tower CLI
+
+    optional arguments:
+    -h, --help            show this help message and exit
+    --cli                 Run the CLI
+    -p PATH, --path PATH  Path to the folder to upload
+    -ak ACCESSKEY, --accesskey ACCESSKEY
+                        AWS Access Key
+    -sk SECRETKEY, --secretkey SECRETKEY
+                        AWS Secret Key
+    -r REGION, --region REGION
+                        AWS Region
+    -b BUCKET, --bucket BUCKET
+                        AWS Bucket
+    -k KEY, --key KEY     S3 Key
+
+*Note: a better documentation will be available soon.*
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Social
+
+![Twitter Follow](https://img.shields.io/twitter/follow/s0rcy_r?style=social)
+![GitHub followers](https://img.shields.io/github/followers/s0rcy-r?label=Follow%20me&style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/s0rcy-r/pys3_tower?style=social)
