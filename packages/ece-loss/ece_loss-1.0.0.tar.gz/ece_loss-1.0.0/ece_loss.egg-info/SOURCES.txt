@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+ece_loss/__init__.py
+ece_loss/loss.py
+ece_loss.egg-info/PKG-INFO
+ece_loss.egg-info/SOURCES.txt
+ece_loss.egg-info/dependency_links.txt
+ece_loss.egg-info/not-zip-safe
+ece_loss.egg-info/requires.txt
+ece_loss.egg-info/top_level.txt
+tests/__init__.py
+tests/test_loss.py
