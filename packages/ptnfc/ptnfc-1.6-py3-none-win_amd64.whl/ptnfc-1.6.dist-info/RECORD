@@ -1,0 +1,10 @@
+ptnfc/__init__.py,sha256=n9qRd4J28fR42Xk0jP8uaKBMRkco0JJ6zs6X4Ne-HAM,132
+ptnfc/com_dict.py,sha256=fnveJxWYkUXEPcW7LxtDw16qeYFMtgaHybKBL8kZXb4,343
+ptnfc/rfid_device.py,sha256=Pykl_Arbnt6EjcCYTeJ6ToiiKqdC9pQF_FsCce9GijY,7378
+ptnfc/usb_table.py,sha256=buwvTRuaT6jKv7s3_H7NHQWu9zDhBZ0yiylzny-lkk0,8092
+ptnfc-1.6.data/data/lib/site-packages/ptnfc/dlls/MasterCom.dll,sha256=q_z5zeHayGL4kSVZvS9SIvDTYVGiYIoeFaEIOf3JkuQ,257024
+ptnfc-1.6.data/data/lib/site-packages/ptnfc/dlls/MasterRD.dll,sha256=zXKIOPG2rJKgDgdxWSQssauozJA_ETfOSQkiaMBU1qI,366080
+ptnfc-1.6.dist-info/METADATA,sha256=k0BWXBDgpV0LneG_zQ4h7m_yLBHSMi0WOLAivDD0KD8,282
+ptnfc-1.6.dist-info/WHEEL,sha256=WoE84lFhzpl5kFoOWeOKUr67l1o9c9Tie8ccxFQmzBU,98
+ptnfc-1.6.dist-info/top_level.txt,sha256=4leJFPUL6yOqYlB_27L5dT0FEwLnwdmZO5FAiATBBi4,6
+ptnfc-1.6.dist-info/RECORD,,
