@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: tftool
+Version: 0.0.2
+Summary: Ergonomic utilities for the terraform CLI.
+Home-page: UNKNOWN
+Author: Barnaby Shearer
+Author-email: b@zi.is
+License: UNKNOWN
+Project-URL: Source, https://github.com/BarnabyShearer/tftool
+Project-URL: Tracker, https://github.com/BarnabyShearer/tftool/issues
+Project-URL: Documentation, http://tftool.readthedocs.io/en/latest/
+Project-URL: Docker, https://hub.docker.com/repository/docker/barnabyshearer/tftool
+Keywords: terraform
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+
+======
+tftool
+======
+.. image:: https://readthedocs.org/projects/tftool/badge/?version=latest
+    :target: https://tftool.readthedocs.io/en/latest/
+.. image:: https://img.shields.io/pypi/v/tftool?color=success
+    :target: https://pypi.org/project/tftool
+.. image:: https://img.shields.io/docker/v/barnabyshearer/tftool/latest?color=success&label=docker
+    :target: https://hub.docker.com/repository/docker/barnabyshearer/tftool
+
+Ergonomic utilities for the terraform CLI.
+
+Install
+-------
+
+.. code-block:: bash
+
+    python3 -m pip install tftool
+
+Usage
+-----
+
+.. code-block:: bash
+
+    # Force terraform to be a bit more Unix philosophy
+    alias tfplan="terraform plan -refresh=false -input=false -out=/tmp/plan > /dev/null && terraform show -json /tmp/plan"
+    alias tfapply="xargs -or0 terraform apply"
+    alias tfimport="xargs -or0L2 terraform import"
+
+    # Only create new resources
+    tfplan | tftool target --no-updates | tfapply
+
+    # Automatically import new resources if their name/index matches the id.
+    tfplan | tftool autoimport | tfimport
+
+
