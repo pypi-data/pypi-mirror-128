@@ -1,0 +1,8 @@
+logeer.py
+setup.py
+logeer.egg-info/PKG-INFO
+logeer.egg-info/SOURCES.txt
+logeer.egg-info/dependency_links.txt
+logeer.egg-info/entry_points.txt
+logeer.egg-info/requires.txt
+logeer.egg-info/top_level.txt
