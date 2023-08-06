@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pypi-django-cli
+Version: 0.1.0
+Summary: pypi-django-cli
+Home-page: https://gitee.com/wxb_857_admin/django-cli
+Author: XiaoBai
+Author-email: wxok857@foxmail.com
+License: MIT Licence
+Description: pypi-django-cli
+Keywords: pip,os,cli
+Platform: any
