@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/create_pypi_project.egg-info/PKG-INFO
+src/create_pypi_project.egg-info/SOURCES.txt
+src/create_pypi_project.egg-info/dependency_links.txt
+src/create_pypi_project.egg-info/entry_points.txt
+src/create_pypi_project.egg-info/requires.txt
+src/create_pypi_project.egg-info/top_level.txt
