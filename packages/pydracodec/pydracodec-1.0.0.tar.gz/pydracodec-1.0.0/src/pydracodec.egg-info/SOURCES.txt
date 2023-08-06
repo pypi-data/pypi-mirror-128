@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+.github/workflows/pypi.yml
+.vscode/settings.json
+src/pydracodec/__init__.py
+src/pydracodec/dracodec_unity.py
+src/pydracodec.egg-info/PKG-INFO
+src/pydracodec.egg-info/SOURCES.txt
+src/pydracodec.egg-info/dependency_links.txt
+src/pydracodec.egg-info/top_level.txt
+tests/test_draco.py
