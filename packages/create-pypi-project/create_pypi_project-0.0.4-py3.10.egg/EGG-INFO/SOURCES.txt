@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+create_pypi_project.egg-info/PKG-INFO
+create_pypi_project.egg-info/SOURCES.txt
+create_pypi_project.egg-info/dependency_links.txt
+create_pypi_project.egg-info/entry_points.txt
+create_pypi_project.egg-info/not-zip-safe
+create_pypi_project.egg-info/requires.txt
+create_pypi_project.egg-info/top_level.txt
+createpypiproject/__init__.py
+createpypiproject/main.py
