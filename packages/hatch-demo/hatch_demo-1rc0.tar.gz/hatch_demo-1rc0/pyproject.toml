@@ -1,0 +1,55 @@
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
+
+[project]
+name = 'hatch-demo'
+description = ''
+readme = 'README.md'
+requires-python = '>=3.8'
+license = 'MIT'
+keywords = []
+authors = [
+  { name = 'U.N. Owen', email = 'void@some.where' },
+]
+classifiers = [
+  'Development Status :: 4 - Beta',
+  'Programming Language :: Python',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: Implementation :: CPython',
+  'Programming Language :: Python :: Implementation :: PyPy',
+]
+dependencies = ['cowsay']
+dynamic = ['version']
+
+[project.urls]
+Documentation = 'https://github.com/unknown/hatch-demo#readme'
+Issues = 'https://github.com/unknown/hatch-demo/issues'
+Source = 'https://github.com/unknown/hatch-demo'
+
+[tool.hatch.version]
+path = 'hatch_demo/__about__.py'
+
+[tool.hatch.build.targets.sdist]
+[tool.hatch.build.targets.wheel]
+
+[tool.hatch.envs.default]
+dependencies = [
+  'pytest',
+  'pytest-cov',
+]
+[tool.hatch.envs.default.scripts]
+test = 'pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=hatch_demo --cov=tests'
+test-dev = 'test --no-cov'
+
+[tool.coverage.run]
+branch = true
+parallel = true
+
+[tool.coverage.report]
+exclude_lines = [
+    'no cov',
+    'if __name__ == .__main__.:',
+    'if TYPE_CHECKING:',
+]

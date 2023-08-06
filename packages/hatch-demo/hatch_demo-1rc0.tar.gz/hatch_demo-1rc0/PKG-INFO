@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: hatch-demo
+Version: 1rc0
+Project-URL: Documentation, https://github.com/unknown/hatch-demo#readme
+Project-URL: Issues, https://github.com/unknown/hatch-demo/issues
+Project-URL: Source, https://github.com/unknown/hatch-demo
+Author-email: "U.N. Owen" <void@some.where>
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: cowsay
