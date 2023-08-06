@@ -1,0 +1,4 @@
+[console_scripts]
+installmanga = manga_scraper.__main__:install_mangadl
+scrape = manga_scraper.__main__:download
+

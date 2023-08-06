@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: manga-scraper
+Version: 0.12
+Summary: Download Manga into chapterwise PDF files
+Home-page: https://github.com/soumik12345/Manga-Scraper
+Author: geekyRakshit (Soumik Rakshit)
+Author-email: 19soumik.rakshit96@gmail.com
+License: UNKNOWN
+Keywords: python,manga,comic,scrape
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Other Audience
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Topic :: Games/Entertainment
+Description-Content-Type: text/markdown
+Requires-Dist: img2pdf (==0.4.3)
+Requires-Dist: opencv-python (==4.5.4.60)
+Requires-Dist: tqdm (==4.62.3)
+
+# Manga Scraper
+
+A package that downloads Manga into chapterwise PDF files or a single PDF file from various sources.
+
+
