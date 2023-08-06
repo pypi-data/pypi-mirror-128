@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: coreferee
+Version: 1.1.2
+Summary: Coreference resolution for English, French, German and Polish, optimised for limited training data and easily extensible for further languages
+Home-page: https://github.com/msg-systems/coreferee
+Author: Richard Paul Hudson, msg systems ag
+Author-email: richard.hudson@msg.group
+License: Apache License 2.0
+Keywords: nlp,spacy,spacy-extension,python,machine-learning,keras,coreference,anaphora,coreference-resolution,anaphora-resolution
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: German
+Classifier: Natural Language :: Polish
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: spacy (<3.2.0,>=3.1.0)
+Requires-Dist: keras (>=2.4.0)
+Requires-Dist: tensorflow (~=2.5.0) ; platform_system != "Darwin"
+Requires-Dist: tensorflow-macos (~=2.6.0) ; platform_system == "Darwin"
+
+Coreferences are situations where two or more words within a text refer to the same entity, e.g. *__John__ went home because __he__ was tired*. Resolving coreferences is an important general task within the natural language processing field.
+
+<b>Coreferee</b> is a Python 3 library (tested with version 3.9.5) that is used together with [spaCy](https://spacy.io/) (tested with version 3.1.2) to resolve coreferences within English, French, German and Polish texts. It is designed so that it is easy to add support for new languages. It uses a mixture of neural networks and programmed rules.
+
+For more information, please see the [main documentation on GitHub](https://github.com/msg-systems/coreferee).
+
+
