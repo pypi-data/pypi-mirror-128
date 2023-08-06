@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fkeycapture/__init__.py
+src/fkeycapture.egg-info/PKG-INFO
+src/fkeycapture.egg-info/SOURCES.txt
+src/fkeycapture.egg-info/dependency_links.txt
+src/fkeycapture.egg-info/top_level.txt
