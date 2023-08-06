@@ -1,0 +1,3 @@
+[console_scripts]
+directory-tree-speed-test = directory_tree.examples.speed_test:main
+

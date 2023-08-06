@@ -1,0 +1,10 @@
+anytree
+
+[dev]
+pytest
+requests
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinxcontrib-programoutput

@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+ceda_directory_tree.egg-info/PKG-INFO
+ceda_directory_tree.egg-info/SOURCES.txt
+ceda_directory_tree.egg-info/dependency_links.txt
+ceda_directory_tree.egg-info/entry_points.txt
+ceda_directory_tree.egg-info/requires.txt
+ceda_directory_tree.egg-info/top_level.txt
+directory_tree/__init__.py
+directory_tree/dataset_node.py
+directory_tree/directory_node.py
+directory_tree/examples/__init__.py
+directory_tree/examples/speed_test.py
+tests/__init__.py
+tests/test_dataset_node.py
