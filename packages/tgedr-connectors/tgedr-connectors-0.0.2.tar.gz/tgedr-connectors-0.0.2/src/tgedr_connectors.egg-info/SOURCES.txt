@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/tgedr/connectors/__init__.py
+src/tgedr/connectors/common.py
+src/tgedr/connectors/monetate_api.py
+src/tgedr_connectors.egg-info/PKG-INFO
+src/tgedr_connectors.egg-info/SOURCES.txt
+src/tgedr_connectors.egg-info/dependency_links.txt
+src/tgedr_connectors.egg-info/requires.txt
+src/tgedr_connectors.egg-info/top_level.txt
+test/test_monetate.py
