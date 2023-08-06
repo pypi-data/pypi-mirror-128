@@ -1,0 +1,12 @@
+networkx>=2
+pronto>=v2.4.0
+fsspec
+
+[dev]
+fire
+pandas
+pre-commit
+pytest
+
+[viz]
+pygraphviz
