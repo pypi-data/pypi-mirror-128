@@ -1,0 +1,13 @@
+reranking/__init__.py,sha256=moVXyRJ_pR2Dkt55Xms6WTr-mkGKLZHn15rStoZhh9Q,496
+reranking/algs.py,sha256=gpBw-YqllAHkiyi6xZkXXN0OD-OiS0HNEMKctxdJFHE,14775
+reranking/metrics.py,sha256=T_CMM_ceJ9Sm0vLj-3PnQceO1A3lhMBpHji2MR4ClIQ,4242
+reranking/reranker.py,sha256=kYIAt2_QgEBfoaJaqQxQGEqNKsUmDCD6tBadGYOF0q4,14774
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_algs.py,sha256=uzLtqc5eumR6WVOBDfBaRWC63XxigR8HmfWdcc3Mec0,5853
+tests/test_metrics.py,sha256=vfMRLZI22v-wU-DRYkOghOqzCEhvhR680C296T9L-fw,1833
+tests/test_reranker.py,sha256=FRJwXb1CGwHDlRkSH4zMKr08jqirWX8i3jAT_qZxF8k,5853
+reranking-0.3.6.dist-info/LICENSE,sha256=COZVqy3wMWRqhrij2wp6Tdw9nk2uK5TSuFTbKpFNiHw,1068
+reranking-0.3.6.dist-info/METADATA,sha256=Ql5khu1UFnknzbtTWpNbvBj9zvtYcEKcTagTLIi2uYc,3892
+reranking-0.3.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+reranking-0.3.6.dist-info/top_level.txt,sha256=zZQiZpDlSRR4rKmMBG_gr6fxrxdX9_6VnRn-fAtUIwQ,16
+reranking-0.3.6.dist-info/RECORD,,
