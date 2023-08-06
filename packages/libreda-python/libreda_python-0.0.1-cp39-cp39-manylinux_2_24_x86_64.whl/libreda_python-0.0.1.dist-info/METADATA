@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: libreda-python
+Version: 0.0.1
+Summary: Python binding for the LibrEDA database.
+Keywords: vlsi,python
+Home-Page: https://libreda.org
+Author: Thomas Kramer <code@tkramer.ch>
+Author-email: Thomas Kramer <code@tkramer.ch>
+License: AGPL-3.0-or-later
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://codeberg.org/libreda/libreda-python
+
+# libreda-python
+
+*Work-in-progress*
+
+Python binding for [libreda-db](https://codeberg.org/LibrEDA/libreda-db).
+
+## Install
+
+Create a Python virtual environment:
+```sh
+python -m venv myPythonEnv
+source myPythonEnv/bin/activate
+
+# Install maturin (build tool for Rust-based Python packages)
+pip install maturin
+```
+
+Download and install libreda-python:
+```sh
+git clone [this repo]
+cd libreda-python
+
+# Install in development mode.
+maturin develop
+```
+
+Run a Python shell and import `libreda`:
+```sh
+python
+```
+
+```python
+import libreda as db
+
+chip = db.Chip()
+my_cell = chip.create_cell("A")
+
+# Write verilog.
+writer = db.io.VerilogWriter()
+writer.write_netlist(chip, "output.v")
+
+# Read verilog.
+reader = db.io.VerilogReader()
+netlist = reader.read_netlist("output.v")
+```
