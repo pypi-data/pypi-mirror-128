@@ -1,0 +1,11 @@
+autofff/__init__.py,sha256=QT62SJTRfSgFvBljq3tQQUIH1w0PDcup2Oz5C0A3UhE,78
+autofff/__main__.py,sha256=Jwxq1YVVgGq4avBNixDZ5aZEN8VaPtVmYBpFqceRl9A,4613
+autofff/config.py,sha256=9ey-YZ_WWbNHR4lIQoPDzCBbjxriM_MmeByJd8x4bjY,4244
+autofff/generator.py,sha256=Cu34x7QWLR1FDV5JCk3P4wuuXyQqZOXeHc56gWUtgZg,7844
+autofff/scanner.py,sha256=Kj8HxgHHrvmrFzk2pR0lt6GIPkhW1khQqnxUh5fc1tY,12378
+autofff/utils.py,sha256=8DEACmw1wZMN_BUflSGNKg5OOh2oqn7uT-FXkEe-eh4,4026
+autofff-0.4.dist-info/entry_points.txt,sha256=LQIyYJpKeNKW7R9tgTzB0biGawsbMkZzPKQJoNYvdoM,49
+autofff-0.4.dist-info/LICENSE,sha256=JTJAvbe6XircoO_FK4-LFQj8gaf59WsAVISLJTkHo2k,1071
+autofff-0.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+autofff-0.4.dist-info/METADATA,sha256=cBi_MORZVg2Ag1zru42Ecgk0a8iNcCXZY6le_5Fn6Sg,10555
+autofff-0.4.dist-info/RECORD,,
