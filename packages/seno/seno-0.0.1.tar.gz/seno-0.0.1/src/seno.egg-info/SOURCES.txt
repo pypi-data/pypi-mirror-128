@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README
+pyproject.toml
+setup.py
+src/seno/__init__.py
+src/seno/sound.mp3
+src/seno.egg-info/PKG-INFO
+src/seno.egg-info/SOURCES.txt
+src/seno.egg-info/dependency_links.txt
+src/seno.egg-info/top_level.txt
