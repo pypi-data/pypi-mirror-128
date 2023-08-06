@@ -1,0 +1,12 @@
+jupyterlab_h5web/__init__.py,sha256=RTF4vrjBgIT2Ve0jCdifT9xXNp-u57B2eRNtOAS8AWs,797
+jupyterlab_h5web/handlers.py,sha256=zck4995_zoSQxVldEceJzyKLm4ih8vJ_ZSNCfcxMeKQ,2525
+jupyterlab_h5web/utils.py,sha256=boKWSPbESH1-os2U5zQQISXfbuOQPIykzTzNfebdMuk,180
+jupyterlab_h5web/widget.py,sha256=Sn3Oi2EsEN04gjPxHp5Vq4qMgPguo-A3lSX2Mx_l3b4,830
+jupyterlab_h5web/labextension/jupyterlab-h5web.tgz,sha256=axPoYkbd8Yu02kYVP8B9s1IhOao6YgqhX9Ig8tCw5nI,8190
+jupyterlab_h5web-0.0.14.data/data/etc/jupyter/jupyter_notebook_config.d/jupyterlab-h5web.json,sha256=7Rdd4iKfbkhgzzdbYwvJh5MyE9h61aFMkWqaSHEQ2s0,93
+jupyterlab_h5web-0.0.14.data/data/share/jupyter/lab/extensions/jupyterlab-h5web.tgz,sha256=axPoYkbd8Yu02kYVP8B9s1IhOao6YgqhX9Ig8tCw5nI,8190
+jupyterlab_h5web-0.0.14.dist-info/LICENSE.md,sha256=DpzfUZm8xySayFBQ1h-f-j98lSDQaz8Sx-CTloWZUOE,1102
+jupyterlab_h5web-0.0.14.dist-info/METADATA,sha256=TPtd_JDMJkUSXupf9QhvrnXicuOfsd-gpy938gaTLc0,5185
+jupyterlab_h5web-0.0.14.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+jupyterlab_h5web-0.0.14.dist-info/top_level.txt,sha256=LNPUSNL25m52G9ZNRRyfCBMHD--1tU6pigxSODXj7fo,17
+jupyterlab_h5web-0.0.14.dist-info/RECORD,,
