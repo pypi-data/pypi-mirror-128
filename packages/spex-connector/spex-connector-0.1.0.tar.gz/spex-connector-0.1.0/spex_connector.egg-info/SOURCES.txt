@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+spex_connector/__init__.py
+spex_connector/my_check.py
+spex_connector.egg-info/PKG-INFO
+spex_connector.egg-info/SOURCES.txt
+spex_connector.egg-info/dependency_links.txt
+spex_connector.egg-info/top_level.txt
