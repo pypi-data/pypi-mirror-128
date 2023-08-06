@@ -1,0 +1,4 @@
+[console_scripts]
+lobbyboy-config-example=lobbyboy.utils:print_exmaple_config
+lobbyboy-server=lobbyboy.server:main
+
