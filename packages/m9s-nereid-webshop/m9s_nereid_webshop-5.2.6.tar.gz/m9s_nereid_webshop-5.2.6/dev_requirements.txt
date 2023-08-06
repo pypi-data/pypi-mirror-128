@@ -1,0 +1,11 @@
+# Install development requirements
+
+tox
+coverage
+flake8
+
+#pycountry
+#cssutils
+#m9s-nereid-catalog-variants
+
+-r requirements.txt
