@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: vektonn
+Version: 0.5.4
+Summary: Python client for Vektonn
+Home-page: https://github.com/vektonn/vektonn-client-python
+Maintainer: Vektonn Team
+Maintainer-email: info@vektonn.io
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (~=3.8.0)
+Requires-Dist: orjson (~=3.6.4)
+Requires-Dist: pydantic (~=1.8.2)
+Requires-Dist: requests (~=2.26.0)
+
+# Python client for Vektonn
+
+[![CI](https://github.com/vektonn/vektonn-client-python/actions/workflows/ci.yml/badge.svg)](https://github.com/vektonn/vektonn-client-python/actions/workflows/ci.yml)
+[![version](https://img.shields.io/pypi/v/vektonn.svg?color=blue)](https://pypi.org/project/vektonn/)
+[![Supported Python Versions](https://img.shields.io/pypi/pyversions/vektonn?logo=python&logoColor=blue)](https://pypi.org/project/vektonn/)
+[![license](https://img.shields.io/hexpm/l/plug.svg?color=green)](https://github.com/vektonn/vektonn-client-python/blob/master/LICENSE)
+
+## Installation
+
+Install the latest version:
+```shell
+$ pip install vektonn
+```
+
+Install specific version:
+```shell
+$ pip install vektonn==1.2.3
+```
+
+Upgrade to the latest version:
+```shell
+$ pip install --upgrade vektonn
+```
+
+
