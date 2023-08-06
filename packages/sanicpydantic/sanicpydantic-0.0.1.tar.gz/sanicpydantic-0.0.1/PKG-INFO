@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: sanicpydantic
+Version: 0.0.1
+Summary: Pydantic validation for Sanic framework
+Home-page: https://github.com/qwanysh/sanic_pydantic
+Author: Kuanysh Beisembayev
+Author-email: kuanysh.beisembayev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# sanicpydantic
+Pydantic validation for Sanic framework
+
+#### Install:
+```bash
+pip install sanicpydantic
+```
+
+#### Example:
+```python
+from pydantic import BaseModel
+from sanic_pydantic import RequestValidator
+
+validator = RequestValidator()
+
+...
+
+class QueryModel(BaseModel):
+    str_param: str
+    int_param: int
+    bool_param: bool
+
+
+@app.get('/')
+@validator(query_schema=QueryModel)
+def get_endpoint(request, query_: QueryModel):
+    ...
+
+
+class JsonModel(BaseModel):
+    str_field: str
+    int_field: int
+    bool_field: bool
+
+
+@app.post('/')
+@validator(json_schema=JsonModel)
+def post_endpoint(request, json_: JsonModel):
+    ...
+
+```
+
+

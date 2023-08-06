@@ -1,0 +1,10 @@
+README.md
+setup.py
+sanic_pydantic/__init__.py
+sanic_pydantic/helpers.py
+sanic_pydantic/request_validator.py
+sanicpydantic.egg-info/PKG-INFO
+sanicpydantic.egg-info/SOURCES.txt
+sanicpydantic.egg-info/dependency_links.txt
+sanicpydantic.egg-info/requires.txt
+sanicpydantic.egg-info/top_level.txt
