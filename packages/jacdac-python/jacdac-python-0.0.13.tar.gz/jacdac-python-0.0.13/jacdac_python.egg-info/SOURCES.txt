@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+jacdac/__init__.py
+jacdac/bus.py
+jacdac/constants.py
+jacdac/devtools.py
+jacdac/pack.py
+jacdac/packet.py
+jacdac/util.py
+jacdac_python.egg-info/PKG-INFO
+jacdac_python.egg-info/SOURCES.txt
+jacdac_python.egg-info/dependency_links.txt
+jacdac_python.egg-info/requires.txt
+jacdac_python.egg-info/top_level.txt
