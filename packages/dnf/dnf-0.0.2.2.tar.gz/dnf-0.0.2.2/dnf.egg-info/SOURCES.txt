@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+dnf.egg-info/PKG-INFO
+dnf.egg-info/SOURCES.txt
+dnf.egg-info/dependency_links.txt
+dnf.egg-info/top_level.txt
