@@ -1,0 +1,8 @@
+pandas>=0.25.3
+numpy>=1.18.4
+python-dateutil
+psycopg2-binary~=2.8.6
+requests==2.26.0
+SQLAlchemy
+ahttp==1.1.1
+nest-asyncio==1.5.1
