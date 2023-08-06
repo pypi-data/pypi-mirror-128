@@ -1,0 +1,10 @@
+osc_sdk/__init__.py,sha256=UK_kjdWQonWVVTHjgU_60TtZOa83LjZs0OXlVUG26JU,87
+osc_sdk/sdk.py,sha256=dmco-LbX7SI1vtAgQ3YNpEATNr79vWh4U9SpzlpWkxY,22629
+osc_sdk/test_auth.py,sha256=LSH0UDSgKIk_WLn5jKBDc6AeAnBD5M3TrcyatzLC-h8,736
+osc_sdk/test_errors.py,sha256=G7ygHQrsGrOKyOIsnhRKlQwdPFyxxTsLYY6phfUujjo,830
+osc_sdk-1.7.1.dist-info/LICENSE,sha256=eAtKefmWuj4G96ORsmNbY1PqGZj2sx5SkgiNYL5LocU,1512
+osc_sdk-1.7.1.dist-info/METADATA,sha256=6WKfSacSEuC-XNZqUX3Km6wwC9Q4Oii6ip5hEa7YeIs,6167
+osc_sdk-1.7.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+osc_sdk-1.7.1.dist-info/entry_points.txt,sha256=qltCPhoyql6nGxsXTxz0O4dY_WLsUuSLOYIsLnBsjy4,46
+osc_sdk-1.7.1.dist-info/top_level.txt,sha256=RwM_tK-r_MrqTXLOzNhiA3bVfa6K6Ke_zS-2Maqqa5w,8
+osc_sdk-1.7.1.dist-info/RECORD,,
