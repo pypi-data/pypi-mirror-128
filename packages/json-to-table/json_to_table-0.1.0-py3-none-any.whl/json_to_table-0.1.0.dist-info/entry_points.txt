@@ -1,0 +1,3 @@
+[console_scripts]
+j2t=json_to_table.__main__:main
+
