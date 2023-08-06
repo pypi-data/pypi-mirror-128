@@ -1,0 +1,110 @@
+Metadata-Version: 1.1
+Name: caterpillar_apitest
+Version: 1.1.2
+Summary: 基于pytest和数据驱动的接口自动化框架
+Home-page: https://gitee.com/redrose2100/caterpillar_apitest
+Author: redrose2100
+Author-email: hitredrose@163.com
+License: MulanPSL2
+Description: # caterpillar_apitest
+        ## caterpillar_apitest 简介
+        caterpillar_apitest 为基于pytest及数据驱动封装的自定义接口自动化测试框架，通过xlsx格式的excel表格按照给定模板
+        编写数据，从而自动生成执行自动化测试用例的框架
+        
+        ## caterpillar_apitest 安装方式
+        
+        ```bash
+        pip install -U caterpillar_apitest
+        ```
+        
+        ## caterpillar_apitest 使用说明
+        
+        参照 [caterpillar_apitest使用详细说明](https://blog.csdn.net/redrose2100/article/details/121525929)
+        
+        ### 1.1.2   发布日期：2021-11-25
+        * 修复打印log异常的bug
+        
+        ### 1.1.1   发布日期：2021-11-25
+        * 接口请求完成后增加接口详细信息的打印
+        
+        ### 1.1.0   发布日期：2021-11-25
+        * 解析接口依赖时增加异常捕获
+        
+        ### 1.0.17  发布日期：2021-11-24
+        * 增加说明文档链接
+        
+        ### 1.0.16  发布日期：2021-11-24
+        * 修复bug（https://gitee.com/redrose2100/caterpillar_apitest/issues/I4JOTO）
+        
+        ### 1.0.15  发布日期：2021-11-24
+        
+        * 解决接口返回json数据的异常的问题
+        
+        ### 1.0.14  发布日期：2021-11-24
+        
+        * 增加 > 和 < 断言运算符
+        
+        ### 1.0.13  发布日期：2021-11-24
+        
+        * 解决读取xlsx文件告警的问题
+        
+        ### 1.0.12  发布日期：2021-11-24
+        
+        * 解决获取断言操作符异常的bug
+        
+        ### 1.0.11  发布日期：2021-11-24
+        
+        * 解决data未写入ApiTest.case_data的问题
+        
+        ### 1.0.10  发布日期：2021-11-24
+        
+        * 解决接口返回码为整数，期望值为字符串，不一致的问题
+        
+        ### 1.0.9  发布日期：2021-11-24
+        
+        * 增加断言运算符处理方法
+        
+        ### 1.0.8  发布日期：2021-11-24
+        
+        * 增加run方法封装
+        
+        ### 1.0.7  发布日期：2021-11-24
+        
+        * 增加api_assert断言方法
+        
+        ### 1.0.6  发布日期：2021-11-24
+        
+        * 增加框架中对接口依赖的处理
+        
+        ### 1.0.5  发布日期：2021-11-24
+        
+        * 增加将接口返回数据写入数据结构中的操作
+        
+        ### 1.0.4  发布日期：2021-11-24
+        
+        * 增加request方法
+        
+        ### 1.0.3  发布日期：2021-11-23
+        
+        * 增加loads方法
+        
+        ### 1.0.2  发布日期：2021-11-23
+        
+        * 增加获取指定目录下所有xlsx文件的测试数据（测试数据模板确定）
+        
+        ### 1.0.1  发布日期：2021-11-23
+        
+        * 增加获取指定目录下所有xlsx文件
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
