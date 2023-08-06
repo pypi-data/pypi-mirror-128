@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+plover_palantype_DE.egg-info/PKG-INFO
+plover_palantype_DE.egg-info/SOURCES.txt
+plover_palantype_DE.egg-info/dependency_links.txt
+plover_palantype_DE.egg-info/entry_points.txt
+plover_palantype_DE.egg-info/requires.txt
+plover_palantype_DE.egg-info/top_level.txt
+plover_palantype_DE.egg-info/zip-safe
+plover_palantype_de/__init__.py
+plover_palantype_de/system.py
+plover_palantype_de/dictionaries/palantype_de.json
