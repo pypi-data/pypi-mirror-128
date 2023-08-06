@@ -1,0 +1,3 @@
+[gemseo_plugins]
+gemseo-java = gemseo_java
+

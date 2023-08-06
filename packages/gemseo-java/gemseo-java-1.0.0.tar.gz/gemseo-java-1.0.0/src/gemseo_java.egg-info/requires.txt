@@ -1,0 +1,10 @@
+gemseo>=3.2.0
+numpy
+pyjnius
+jep
+
+[test]
+packaging<21
+pytest
+pytest-cov
+pytest-xdist
