@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: python-ssh
+Version: 0.1.1
+Summary: A library to execute commands on remote hosts.
+Home-page: https://github.com/degagne/python-ssh
+Author: Deric Degagne
+Author-email: deric.degagne@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/degagne/python-ssh/issues
+Project-URL: Documentation, https://python-ssh.readthedocs.io/en/latest/index.html
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
