@@ -1,0 +1,31 @@
+AUTHORS.md
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+carat/__init__.py
+carat/annotations.py
+carat/audio.py
+carat/clustering.py
+carat/display.py
+carat/exceptions.py
+carat/features.py
+carat/microtiming.py
+carat/onsets.py
+carat/tempo.py
+carat/util.py
+carat/version.py
+carat.egg-info/PKG-INFO
+carat.egg-info/SOURCES.txt
+carat.egg-info/dependency_links.txt
+carat.egg-info/requires.txt
+carat.egg-info/top_level.txt
+carat/example_data/candombe/Take_211_chico.wav
+carat/example_data/candombe/Take_211_chico_beats.csv
+carat/example_data/candombe/Take_211_chico_onsets.csv
+carat/example_data/candombe/csic.1995_ansina1_01.csv
+carat/example_data/candombe/csic.1995_ansina1_01.wav
+carat/example_data/samba/[0216] S2-TB2-03-SE.beats.txt
+carat/example_data/samba/[0216] S2-TB2-03-SE.onsets.txt
+carat/example_data/samba/[0216] S2-TB2-03-SE.wav
+carat/example_data/samba/[0216] S2-TB2-03-SE_onsets.csv

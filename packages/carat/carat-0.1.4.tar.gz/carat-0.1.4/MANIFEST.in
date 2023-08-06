@@ -1,0 +1,4 @@
+include AUTHORS.md
+include LICENSE.md
+include README.md
+recursive-include carat/example_data/ *.wav *.csv *.txt
