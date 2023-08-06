@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: minica-api-pihole-client
+Version: 0.3.0
+Summary: Inject minica-api domain messages into pihole dns
+Home-page: https://github.com/bjornsnoen/minica-api-pihole-client
+License: GPLv3
+Keywords: minica,pihole,traefik,dns
+Author: Bjørn Snoen
+Author-email: bjorn.snoen@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: dataclasses-json (>=0.5.6,<0.6.0)
+Requires-Dist: paho-mqtt (>=1.6.1,<2.0.0)
+Project-URL: Repository, https://github.com/bjornsnoen/minica-api-pihole-client
+Description-Content-Type: text/markdown
+
+# Minica API pihole client
+A program for listening to domain discoveries published by [minica-api](https://github.com/bjornsnoen/minica-api)
+and injecting them into the custom DNS list used by pihole.
+
+## Installation
+`$ pip install minica-api-pihole-client`
+
+You will probably want to install this package as root, as the DNS list at `/etc/pihole/custom.list` is owned
+by root. Alternatively chown that file so this program is allowed to overwrite it as the running user.
+
+## Usage
+`$ minica-pihole-sync MQTT-HOST [-p mqttport] [-t domaintopic]`
+

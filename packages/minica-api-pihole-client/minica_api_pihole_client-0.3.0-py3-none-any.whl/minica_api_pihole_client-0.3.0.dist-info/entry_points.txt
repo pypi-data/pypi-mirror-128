@@ -1,0 +1,5 @@
+[console_scripts]
+minica-pihole-sync=minica_api_pihole.main:main
+minica-pihole-sync-install=minica_api_pihole.main:install
+minica-pihole-sync-uninstall=minica_api_pihole.main:uninstall
+
