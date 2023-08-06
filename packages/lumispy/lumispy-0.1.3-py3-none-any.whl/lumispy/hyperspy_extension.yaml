@@ -1,0 +1,189 @@
+# -*- coding: utf-8 -*-
+# Copyright 2019-2021 The LumiSpy developers
+#
+# This file is part of LumiSpy.
+#
+# LumiSpy is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# LumiSpy is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with LumiSpy.  If not, see <http://www.gnu.org/licenses/>.
+
+signals:
+  LumiSpectrum:
+    signal_type: Luminescence
+    signal_type_aliases:
+      - LuminescenceSpectrum
+    signal_dimension: 1
+    dtype: real
+    lazy: False
+    module: lumispy.signals.luminescence_spectrum
+  LazyLumiSpectrum:
+    signal_type: Luminescence
+    signal_type_aliases:
+      - LuminescenceSpectrum
+    signal_dimension: 1
+    dtype: real
+    lazy: True
+    module: lumispy.signals.luminescence_spectrum
+
+  CLSpectrum:
+    signal_type: CL
+    signal_type_aliases:
+      - CLSpectrum
+      - cathodoluminescence
+    signal_dimension: 1
+    dtype: real
+    lazy: False
+    module: lumispy.signals.cl_spectrum
+  LazyCLSpectrum:
+    signal_type: CL
+    signal_type_aliases:
+      - CLSpectrum
+      - cathodoluminescence
+    signal_dimension: 1
+    dtype: real
+    lazy: True
+    module: lumispy.signals.cl_spectrum
+
+  ELSpectrum:
+    signal_type: EL
+    signal_type_aliases:
+      - ELSpectrum
+      - electroluminescence
+    signal_dimension: 1
+    dtype: real
+    lazy: False
+    module: lumispy.signals.el_spectrum
+  LazyELSpectrum:
+    signal_type: EL
+    signal_type_aliases:
+      - ELSpectrum
+      - electroluminescence
+    signal_dimension: 1
+    dtype: real
+    lazy: True
+    module: lumispy.signals.el_spectrum
+
+  PLSpectrum:
+    signal_type: PL
+    signal_type_aliases:
+      - PLSpectrum
+      - photoluminescence
+    signal_dimension: 1
+    dtype: real
+    lazy: False
+    module: lumispy.signals.pl_spectrum
+  LazyPLSpectrum:
+    signal_type: PL
+    signal_type_aliases:
+      - PLSpectrum
+      - photoluminescence
+    signal_dimension: 1
+    dtype: real
+    lazy: True
+    module: lumispy.signals.pl_spectrum
+
+  CLSEMSpectrum:
+    signal_type: CL_SEM
+    signal_type_aliases:
+      - CLSEM
+      - cathodoluminescence SEM
+    signal_dimension: 1
+    dtype: real
+    lazy: False
+    module: lumispy.signals.cl_spectrum
+  LazyCLSEMSpectrum:
+    signal_type: CL_SEM
+    signal_type_aliases:
+      - CLSEM
+      - cathodoluminescence SEM
+    signal_dimension: 1
+    dtype: real
+    lazy: True
+    module: lumispy.signals.cl_spectrum
+
+  CLSTEMSpectrum:
+    signal_type: CL_STEM
+    signal_type_aliases:
+      - CLSTEM
+      - cathodoluminescence STEM
+    signal_dimension: 1
+    dtype: real
+    lazy: False
+    module: lumispy.signals.cl_spectrum
+  LazyCLSTEMSpectrum:
+    signal_type: CL_STEM
+    signal_type_aliases:
+      - CLSTEM
+      - cathodoluminescence STEM
+    signal_dimension: 1
+    dtype: real
+    lazy: True
+    module: lumispy.signals.cl_spectrum
+
+  LumiTransient:
+    signal_type: Luminescence
+    signal_type_aliases:
+      - TRLumi
+      - TR luminescence
+      - time-resolved luminescence
+    signal_dimension: 2
+    dtype: real
+    lazy: False
+    module: lumispy.signals.luminescence_transient
+  LazyLumiTransient:
+    signal_type: Luminescence
+    signal_type_aliases:
+      - TRLumi
+      - TR luminescence
+      - time-resolved luminescence
+    signal_dimension: 2
+    dtype: real
+    lazy: True
+    module: lumispy.signals.luminescence_transient
+
+  CLTransient:
+    signal_type: TRCL
+    signal_type_aliases:
+      - TR cathodoluminescence
+      - time-resolved cathodoluminescence
+    signal_dimension: 2
+    dtype: real
+    lazy: False
+    module: lumispy.signals.cl_transient
+  LazyCLTransient:
+    signal_type: TRCL
+    signal_type_aliases:
+      - TR cathodoluminescence
+      - time-resolved cathodoluminescence
+    signal_dimension: 2
+    dtype: real
+    lazy: True
+    module: lumispy.signals.cl_transient
+
+  PLTransient:
+    signal_type: TRPL
+    signal_type_aliases:
+      - TR photoluminescence
+      - time-resolved photoluminescence
+    signal_dimension: 2
+    dtype: real
+    lazy: False
+    module: lumispy.signals.pl_transient
+  LazyPLTransient:
+    signal_type: TRPL
+    signal_type_aliases:
+      - TR photoluminescence
+      - time-resolved photoluminescence
+    signal_dimension: 2
+    dtype: real
+    lazy: True
+    module: lumispy.signals.pl_transient
