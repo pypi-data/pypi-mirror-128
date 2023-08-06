@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: natml
+Version: 0.0.2
+Summary: Zero configuration machine learning.
+Home-page: https://github.com/natsuite/NatML-Py
+Author: NatML
+Author-email: hi@natsuite.io
+License: Apache License 2.0
+Project-URL: Source, https://github.com/natsuite/NatML-Py
+Project-URL: Documentation, https://docs.natml.ai/python
+Description: # NatML
+        
+        ![NatML](https://raw.githubusercontent.com/natsuite/NatML/main/.media/wall.png)
+        
+        Zero deployment machine learning.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
