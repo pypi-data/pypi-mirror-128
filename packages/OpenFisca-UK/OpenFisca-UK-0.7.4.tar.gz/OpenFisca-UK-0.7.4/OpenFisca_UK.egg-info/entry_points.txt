@@ -1,0 +1,3 @@
+[console_scripts]
+openfisca-uk-setup = openfisca_uk.initial_setup:main
+

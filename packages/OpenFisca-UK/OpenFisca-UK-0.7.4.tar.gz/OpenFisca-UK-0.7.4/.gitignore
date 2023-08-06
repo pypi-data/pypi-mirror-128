@@ -1,0 +1,37 @@
+# Python builds
+
+*.egg-info
+*.pyc
+build
+dist
+
+# Editors
+
+.project
+.pydevproject
+.settings
+.spyderproject
+.vscode/settings.json
+.vscode/launch.json
+
+# OS stuff
+
+.DS_Store
+*~
+
+# Data storage
+
+person.csv
+benunit.csv
+household.csv
+
+# Jupyter book
+
+docs/book/_build/
+docs/book/.ipynb_checkpoints
+**/.ipynb_checkpoints
+Untitled.ipynb
+
+# Config files
+
+openfisca_uk/tools/datasets.yml
