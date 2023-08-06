@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+katsuyou/conjugate/__init__.py
+katsuyou/conjugate/godan_verb.py
+katsuyou/conjugate/i_adjective.py
+katsuyou/conjugate/ichidan_verb.py
+katsuyou/conjugate/irregular.py
+katsuyou/katsuyou.egg-info/PKG-INFO
+katsuyou/katsuyou.egg-info/SOURCES.txt
+katsuyou/katsuyou.egg-info/dependency_links.txt
+katsuyou/katsuyou.egg-info/top_level.txt
