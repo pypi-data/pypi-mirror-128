@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+FilesOp.egg-info/PKG-INFO
+FilesOp.egg-info/SOURCES.txt
+FilesOp.egg-info/dependency_links.txt
+FilesOp.egg-info/entry_points.txt
+FilesOp.egg-info/top_level.txt
