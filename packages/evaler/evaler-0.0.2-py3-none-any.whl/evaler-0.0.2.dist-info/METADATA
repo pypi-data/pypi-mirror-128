@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: evaler
+Version: 0.0.2
+Summary: Evaler.
+Home-page: https://github.com/johnsam7/evaler
+Maintainer: John GW Samuelsson
+Maintainer-email: johnsam@mit.edu
+License: MIT License
+Download-URL: https://github.com/johnsam7/evaler
+Project-URL: Source, https://github.com/johnsam7/evaler/
+Project-URL: Tracker, https://github.com/johnsam7/evaler/issues/
+Keywords: neuroscience neuroimaging MEG EEG brain
+Platform: any
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: numpy (>=1.21.2)
+Requires-Dist: mne (>=0.23.4)
+Requires-Dist: matplotlib (>=3.4.3)
+Requires-Dist: plyfile (>=0.7.4)
+
+# Evaler
+Python package that relies on MNE-python for quantifying resolution metrics for evaluating spatial fidelity of M/EEG source estimates.
+
+Example code in for_manuscript.py and some subject data in subj_data for regenerating data and the figures in the article 
+"Spatial Fidelity of MEG/EEG Source Estimates: A General Evaluation Approach". 
+
+Dependencies: The MNE-python environment and plyfile.
+
+Installation: 
+1. Install and activate the MNE-python environment (should work with version 0.18 and newer)
+2. pip install plyfile
+3. python setup.py install
+
+
