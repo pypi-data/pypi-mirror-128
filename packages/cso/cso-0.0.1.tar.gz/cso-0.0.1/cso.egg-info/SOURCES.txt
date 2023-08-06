@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+cso/__init__.py
+cso/version.py
+cso.egg-info/PKG-INFO
+cso.egg-info/SOURCES.txt
+cso.egg-info/dependency_links.txt
+cso.egg-info/top_level.txt
