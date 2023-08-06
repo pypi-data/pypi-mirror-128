@@ -1,0 +1,3 @@
+[console_scripts]
+atspi-dump = ipm.e2e:main
+
