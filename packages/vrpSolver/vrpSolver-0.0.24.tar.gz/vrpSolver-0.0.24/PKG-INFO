@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: vrpSolver
+Version: 0.0.24
+Summary: VRP Solver
+Home-page: https://github.com/isaac0821/vrpSolver
+Author: Lan Peng
+Author-email: lanpeng@buffalo.edu
+License: MIT
+Download-URL: https://github.com/isaac0821/vrpSolver
+Project-URL: Bug Tracker, https://github.com/isaac0821/vrpSolver/issues
+Project-URL: Documentation, https://veroviz.org
+Project-URL: Source Code, https://github.com/isaac0821/vrpSolver
+Description: 
+        	Working project: Learn VRP by coding
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
