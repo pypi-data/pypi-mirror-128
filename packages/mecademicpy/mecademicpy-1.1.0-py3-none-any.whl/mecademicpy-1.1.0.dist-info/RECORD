@@ -1,0 +1,13 @@
+mecademicpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mecademicpy/_robot_trajectory_logger.py,sha256=Dyc8jRnmQlVBqkYaCIvbGtePxoSNTAK_augMUSce_hk,12719
+mecademicpy/mx_robot_def.py,sha256=ZLcVBcoz84J6e1buBlaeaefiJA0FGZ0PQ6aL9jIXVmA,26708
+mecademicpy/robot.py,sha256=QMl-nEluvyGQSIM4Kd8MZJJ4lEOLy04ImkfiUllHeBU,177765
+mecademicpy/robot_trajectory_files.py,sha256=i6Nc16XIdPYsl8mTQN1h6u1WEeNHf3mKy_tmy-ZdYUs,15931
+mecademicpy/tools.py,sha256=BnLQVhXMI1Ef2b4PKuWPjUy5K8AM5byd0XZzlkNahq8,1767
+mecademicpy-1.1.0.data/data/LICENSE,sha256=0wiBVgjpRPuu9MHcsBYm8mRY3PgFtBQMv4WoEZRcyJg,1087
+mecademicpy-1.1.0.data/data/README.md,sha256=wCMgKfl2bhIPXVWhM9Z58vkDlVbZ0Y6dOwSbInNyb3k,16952
+mecademicpy-1.1.0.dist-info/LICENSE,sha256=0wiBVgjpRPuu9MHcsBYm8mRY3PgFtBQMv4WoEZRcyJg,1087
+mecademicpy-1.1.0.dist-info/METADATA,sha256=8_m5svHIc659bhcxxvA-BbgrmMt1GL2TieV_M61i1nI,17178
+mecademicpy-1.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mecademicpy-1.1.0.dist-info/top_level.txt,sha256=AmFJrRG401-YJdR5TJiWQl5a2s3ULK0YnPCiOkeMPtg,12
+mecademicpy-1.1.0.dist-info/RECORD,,
