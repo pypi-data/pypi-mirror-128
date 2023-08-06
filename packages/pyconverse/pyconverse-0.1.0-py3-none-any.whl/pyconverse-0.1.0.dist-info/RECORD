@@ -1,0 +1,13 @@
+pyconverse/__init__.py,sha256=2VudNFo0n0xRIMzNAsK3ASkvAW8N0ZK-zucKThJiLMQ,196
+pyconverse/_const.py,sha256=Fh_qUB2AkNJLO6BIhxkB9tZx4wNXVxLan6L3nHZqF8A,2399
+pyconverse/insights.py,sha256=RGroI0O8ToEDQr4u_XHxFjGBwqyUo_tuO3_Mlr8HtGk,10929
+pyconverse/segmentation.py,sha256=XC_y6ptdykAmvpgzaPUdrF3H0dfYFVJv14jvTOMaJiw,3077
+pyconverse/speaker_stats.py,sha256=zJYBd4cKxdvfVZpyE9TJfSqKEfNpDqvOoFL5sqf3ze4,5501
+pyconverse/utils.py,sha256=-yGjsJfdTkgLKbxfygkJufBqF2sYRWvwvFTjcwDnx4o,914
+pyconverse/zeroshot_topic_model.py,sha256=x0qznmE584sum9KrJl82EhKWOag7X5D5IbZx7GQ8EDw,1980
+pyconverse-0.1.0.dist-info/LICENSE-APACHE,sha256=WCGyEIZf6Ad8SC6YOnz0BYFQUebU5X7HEcAMssJM58A,9751
+pyconverse-0.1.0.dist-info/LICENSE-MIT,sha256=OUr447jF5VckzOkpdTzLFxEygKv79zcxu6kx9s-7cI0,1068
+pyconverse-0.1.0.dist-info/METADATA,sha256=lOMWf9gSeiaYYeqqIhKcCzA0yKvE7cXO_DbjbtIfN7E,4265
+pyconverse-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyconverse-0.1.0.dist-info/top_level.txt,sha256=I_LCC__Btzlpg7t9CA6AUuQPp_c4uHcyOYMwCknPlZU,11
+pyconverse-0.1.0.dist-info/RECORD,,
