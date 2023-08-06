@@ -1,0 +1,19 @@
+brackets:
+- rate:
+    2006-01-01:
+      value: 0.003
+    2007-01-01:
+      value: 0.0031
+    2009-01-01:
+      value: 0.0032
+    2010-01-01:
+      value: 0.0033
+    2013-01-01:
+      value: 0.0032
+  threshold:
+    2003-01-01:
+      value: 0.0
+metadata:
+  ux_name: Allocations temporaires d'invalidité (ATI)
+  description: Cotisations au régime de Retraite de la fonction publique (RAFP), allocations temporaires d'invalidité (ATI)
+  last_review: 2021-08-24

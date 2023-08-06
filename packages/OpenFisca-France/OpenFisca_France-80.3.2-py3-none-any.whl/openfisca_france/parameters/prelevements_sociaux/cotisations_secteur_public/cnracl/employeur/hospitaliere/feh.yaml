@@ -1,0 +1,19 @@
+brackets:
+- rate:
+    1995-01-01:
+      value: 0.0045
+    1999-01-01:
+      value: 0.0067
+    2000-01-01:
+      value: 0.008
+    2002-01-01:
+      value: 0.01
+    2017-01-01:
+      value: 0.008
+  threshold:
+    1995-01-01:
+      value: 0.0
+metadata:
+  description: CNRACL, Fonds pour l'emploi hospitalier
+  ux_name: Fonds pour l'emploi hospitalier
+  last_review: 2021-08-24 
