@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+snugthon/__init__.py
+snugthon/lexer.py
+snugthon/to_snug.py
+snugthon/transpiler.py
+snugthon.egg-info/PKG-INFO
+snugthon.egg-info/SOURCES.txt
+snugthon.egg-info/dependency_links.txt
+snugthon.egg-info/top_level.txt
