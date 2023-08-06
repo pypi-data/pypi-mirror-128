@@ -1,0 +1,8 @@
+pdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf/pdf2text.py,sha256=5--64-OYoPnJr369BowREbCyMU2VZrAXDrr2AB1VAx4,39
+jolinpdf-1.0.dist-info/Licence,sha256=ctLwkzT4uH3e2UqDO6faBeUoDnegN8ojslH5bq5M9xk,35562
+jolinpdf-1.0.dist-info/METADATA,sha256=ey864OFLutw_X-Rkr4VeX1Tt8vomtLi_a60koNnEOqk,200
+jolinpdf-1.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+jolinpdf-1.0.dist-info/top_level.txt,sha256=wNR1kCNE3AcoLhlsahfUmQbycA3kKB-9os2LfjS2VWk,4
+jolinpdf-1.0.dist-info/RECORD,,
