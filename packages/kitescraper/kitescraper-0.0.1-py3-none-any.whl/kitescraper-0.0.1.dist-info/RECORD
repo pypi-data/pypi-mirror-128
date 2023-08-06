@@ -1,0 +1,7 @@
+kitescraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kitescraper/login.py,sha256=FbVrZdXYfuXmh7VnIZQRpI1JAWELeC3wLWBSLcsi4gA,3029
+kitescraper/scrape.py,sha256=CXPMZxQ1Gdf5WubtuidSH-DK2KLBE0lvVEpJ7C4RLmM,1228
+kitescraper-0.0.1.dist-info/METADATA,sha256=pPYpf3jdSBigrkKIjCxHwtW904POCSvpy3jQhQ7mi48,544
+kitescraper-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kitescraper-0.0.1.dist-info/top_level.txt,sha256=zA2IpeSZoxAk-v8pTU1NKZy_gf0FiaA4po9xwnaVPHk,12
+kitescraper-0.0.1.dist-info/RECORD,,
