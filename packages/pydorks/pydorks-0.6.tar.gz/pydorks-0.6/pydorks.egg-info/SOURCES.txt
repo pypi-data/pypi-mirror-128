@@ -1,0 +1,8 @@
+MANIFEST.in
+README.txt
+setup.py
+pydorks/__init__.py
+pydorks.egg-info/PKG-INFO
+pydorks.egg-info/SOURCES.txt
+pydorks.egg-info/dependency_links.txt
+pydorks.egg-info/top_level.txt
