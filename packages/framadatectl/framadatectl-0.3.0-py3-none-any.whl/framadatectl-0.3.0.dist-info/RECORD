@@ -1,0 +1,14 @@
+framadatectl/__about__.py,sha256=uvNtpFNKD1oR9eEERjQGayc-obtLvOpHAvLKqPD8y9k,213
+framadatectl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+framadatectl/__main__.py,sha256=8IbZaa_KiezcewKL_iIE0I9Sv3jO7TJN1qt-SS_W4iU,2978
+framadatectl/commands.py,sha256=YmCFPvkno9jeyI2FW-opG2J0XDmCFB7nTnDKBL2OStM,8763
+framadatectl/configuration.py,sha256=d3H7b5fs-meuxCXraiNwVCqc8vmVitoWacy-WtbnilQ,10354
+framadatectl/framadate.py,sha256=E21n09V-8lYX9o3bec92CWi2xz9cmV5a3ZJiHylyLU8,9148
+framadatectl/slot.py,sha256=qJrZNAhPWoomFbo-mpcPTd-vY-DeeQIkXIf1weCNnTU,387
+framadatectl/vote.py,sha256=acYl6KiAXmDxBvXvYrxB9ExIa1Cm2tcmGiGWnVivWAI,1323
+framadatectl-0.3.0.dist-info/LICENSE.md,sha256=M7wm1EmMGDtwPRdg7kW4d00h1uAXjKOT3HFScYQMeiE,34916
+framadatectl-0.3.0.dist-info/METADATA,sha256=SsAG2ZTvlbnQHz2zST84p-C2hrLQeW0VVP6lTSgI4CY,9461
+framadatectl-0.3.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+framadatectl-0.3.0.dist-info/entry_points.txt,sha256=lrbCYby8Sd42lAQYhCDGMtRJqduQI76yXnQJEzUX5uQ,61
+framadatectl-0.3.0.dist-info/top_level.txt,sha256=LZ9q9hsGi5rxoQ1ywxgFaExVuUSq9TyLyM92VFFwaJ0,13
+framadatectl-0.3.0.dist-info/RECORD,,
