@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "ptermtools"
+version = "0.1.0"
+description = "pgierz's organizational tools"
+authors = ["Paul Gierz <paulgierz@gmail.com>"]
+license = "GPL-2.0-or-later"
+packages = [
+  { include = "git_repo_organizer", from = "src"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click8 = "^8.0.1"
+fs = "^2.4.14"
+PyGithub = "^1.55"
+python-gitlab = "^2.10.1"
+docker = "^5.0.3"
+spython = "^0.1.17"
+
+[tool.poetry.dev-dependencies]
+Sphinx = "^4.3.0"
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
