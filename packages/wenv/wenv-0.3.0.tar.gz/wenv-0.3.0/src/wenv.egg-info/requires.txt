@@ -1,0 +1,16 @@
+requests
+
+[dev]
+black
+pytest
+coverage
+pytest-cov
+python-lsp-server[all]
+setuptools
+Sphinx
+sphinx_rtd_theme
+sphinx-autodoc-typehints
+typeguard
+myst-parser
+twine
+wheel
