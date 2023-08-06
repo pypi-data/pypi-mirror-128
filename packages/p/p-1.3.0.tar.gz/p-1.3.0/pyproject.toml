@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "p"
+version = "1.3.0"
+description = "Aliases any available project commands or scripts to `p <name>`."
+authors = ["Dave Gaeddert <dave.gaeddert@dropseed.dev>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://www.dropseed.dev/p"
+documentation = "https://www.dropseed.dev/p"
+repository = "https://github.com/dropseed/p"
+keywords = ["cli", "alias", "commands", "scripts", "bin"]
+packages = [
+    { include = "p" }
+]
+
+[tool.poetry.scripts]
+p = "p.cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+click = "^7.1.2"
+cls-client = "^1.2.0"
+click-didyoumean = "^0.3.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.4b0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
