@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/tropipy/Paylink.py
+src/tropipy/Security.py
+src/tropipy/SingletonMeta.py
+src/tropipy/TropiPy.py
+src/tropipy/__init__.py
+src/tropipy.egg-info/PKG-INFO
+src/tropipy.egg-info/SOURCES.txt
+src/tropipy.egg-info/dependency_links.txt
+src/tropipy.egg-info/top_level.txt
