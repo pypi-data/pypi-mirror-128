@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "rtofdata"
+version = "0.1.1"
+description = "Data model for the Refugee Transitions Outcomes Fund (RTOF)"
+authors = ["James Hearn <james.hearn@socialfinance.org.uk>", "Kaj Siebert <kaj.siebert@socialfinance.org.uk>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+openpyxl = "^3.0.7"
+PyYAML = "^5.4.1"
+python-docx = "^0.8.11"
+docxtpl = "^0.11.5"
+docx = "^0.2.4"
+GitPython = "^3.1.19"
+requests = "^2.26.0"
+dacite = "^1.6.0"
+Faker = "^8.11.0"
+graphviz = "^0.17"
+Jinja2 = "^3.0.1"
+tablib = {extras = ["xls", "cli"], version = "^3.0.0"}
+tqdm = "^4.62.2"
+SQLAlchemy = "^1.4.23"
+pyhumps = "^3.0.2"
+pytz = "^2021.3"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+mypy = "^0.910"
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
