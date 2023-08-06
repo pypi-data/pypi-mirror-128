@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: discordpack
+Version: 1.0.1
+Summary: Installs nessersary and useful packages for discord bot python development.
+Home-page: https://github.com/DarthOCE/discordpack
+Author: DarthOCE
+Author-email: darthocelogging@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![Header](./header.png)
+<h1 align="center">DiscordPack</h1>
+<p align="center">A package that installs all discord related packages</p>
+
+<h1 align="center">Installation</h1>
+
+`pip install -U discordpack`
+
+```py
+import discord
+from discord_components import *
+```
+
+![Footer](./footer.png)
+
+

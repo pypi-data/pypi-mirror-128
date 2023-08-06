@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+discordpack.egg-info/PKG-INFO
+discordpack.egg-info/SOURCES.txt
+discordpack.egg-info/dependency_links.txt
+discordpack.egg-info/requires.txt
+discordpack.egg-info/top_level.txt
