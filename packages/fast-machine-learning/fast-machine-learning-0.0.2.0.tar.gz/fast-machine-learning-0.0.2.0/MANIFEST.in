@@ -1,0 +1,3 @@
+include fml/feature_selection/exec/*
+include fml/descriptors/*
+exclude __pycache__
