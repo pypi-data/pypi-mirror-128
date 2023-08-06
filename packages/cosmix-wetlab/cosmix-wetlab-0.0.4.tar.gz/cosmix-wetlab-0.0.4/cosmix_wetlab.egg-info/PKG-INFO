@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cosmix-wetlab
+Version: 0.0.4
+Summary: Utility to create wet-lab mixes and integrations with third-parties such as Google Sheets
+Home-page: https://github.com/tcosmo/cosmix
+Author: Tristan Stérin
+Author-email: tristan.sterin@mu.ie
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cosmix
+Utilities to create wet-lab mixes and Google sheets-based lab notebooks
+
+
