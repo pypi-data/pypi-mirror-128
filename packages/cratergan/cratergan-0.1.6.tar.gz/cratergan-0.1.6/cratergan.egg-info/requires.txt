@@ -1,0 +1,7 @@
+apu
+fire
+torchvision
+torch
+pytorch_lightning
+numpy
+craterdata

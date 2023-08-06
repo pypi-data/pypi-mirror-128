@@ -1,0 +1,14 @@
+LICENSE
+setup.py
+cratergan/__init__.py
+cratergan/__main__.py
+cratergan/gan.py
+cratergan.egg-info/PKG-INFO
+cratergan.egg-info/SOURCES.txt
+cratergan.egg-info/dependency_links.txt
+cratergan.egg-info/requires.txt
+cratergan.egg-info/top_level.txt
+cratergan/module/__init__.py
+cratergan/module/crater.py
+cratergan/module/discriminator.py
+cratergan/module/generator.py
