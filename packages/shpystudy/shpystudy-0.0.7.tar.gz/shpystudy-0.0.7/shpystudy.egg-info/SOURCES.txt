@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+shpystudy/__init__.py
+shpystudy.egg-info/PKG-INFO
+shpystudy.egg-info/SOURCES.txt
+shpystudy.egg-info/dependency_links.txt
+shpystudy.egg-info/top_level.txt
