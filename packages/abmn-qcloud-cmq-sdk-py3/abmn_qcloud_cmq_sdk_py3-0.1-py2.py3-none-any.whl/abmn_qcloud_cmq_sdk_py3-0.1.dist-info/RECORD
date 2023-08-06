@@ -1,0 +1,14 @@
+cmq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmq/account.py,sha256=L8NuGm56zJLNL2xTWzHdtT3Iwo9VQebcsLL7qlndtuc,6527
+cmq/cmq_client.py,sha256=FhMrDlqYAvMUSpTNwNrnmtlru_RY0Q1csCg4yugs2jM,15749
+cmq/cmq_exception.py,sha256=Dp8WZ03j-YOOE4Q9JDVbfvblL8sTGAAR1efS4Y-CMdw,3418
+cmq/cmq_http.py,sha256=cwMnAtKBfOXpC_73RWAu_iprJIRqvckVDbcPhN8xvsA,5176
+cmq/cmq_tool.py,sha256=BXRSMgN6oLpbxR-E_q2KC8-lQeW2vYoAuwbLXdfvmg8,1529
+cmq/queue.py,sha256=rD8vUIBwk1uMaXZoew-kYJm8sO_3XXezawjSDbH7gE8,14727
+cmq/sign.py,sha256=qY3asJjjO4nfHiGZ_JH8dfbReRkTGqzVHlKxxVvK78c,1270
+cmq/subscription.py,sha256=rEIzrwF2zWAchFovOmN3_rVbjHI-Hhv0-UK_wFTftrA,7791
+cmq/topic.py,sha256=aEcqT69GqKQi1po69AHu2PoYYoHPYewzGFYc42hQIyE,8172
+abmn_qcloud_cmq_sdk_py3-0.1.dist-info/METADATA,sha256=dUoHJWiILaSN7tpcf8Cy63jRgLEeHe73KqnokusmuXc,577
+abmn_qcloud_cmq_sdk_py3-0.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+abmn_qcloud_cmq_sdk_py3-0.1.dist-info/top_level.txt,sha256=qXv5TuENBevL5w5-BoElwkQQ5bo3YEtLRrupXo1BCMc,4
+abmn_qcloud_cmq_sdk_py3-0.1.dist-info/RECORD,,

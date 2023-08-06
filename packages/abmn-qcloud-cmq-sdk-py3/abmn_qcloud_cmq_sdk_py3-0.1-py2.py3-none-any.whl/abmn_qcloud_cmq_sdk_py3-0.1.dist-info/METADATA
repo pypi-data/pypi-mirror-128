@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: abmn-qcloud-cmq-sdk-py3
+Version: 0.1
+Summary: Tencent Cloud SDK for CMQ API 2.0 running in python3
+Home-page: https://github.com/tencentyun/cmq-python-sdk/tree/python3
+Author: Tencent Cloud CMQ Team
+Maintainer-email: yorkxyzhang@tencent.com
+License: Apache License 2.0
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+
+UNKNOWN
+
