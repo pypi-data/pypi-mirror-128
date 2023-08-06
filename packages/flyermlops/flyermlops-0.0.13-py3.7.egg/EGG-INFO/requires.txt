@@ -1,0 +1,9 @@
+awswrangler>=2.10.0
+pandas>=1.1.5
+psycopg2-binary>=2.7.7
+SQLAlchemy>=1.4.23
+teradatasql>=17.10.0.2
+cookiecutter>=1.7.3
+PyYAML>=5.3.1
+boto3>=1.18.64
+sagemaker>=2.63.1
