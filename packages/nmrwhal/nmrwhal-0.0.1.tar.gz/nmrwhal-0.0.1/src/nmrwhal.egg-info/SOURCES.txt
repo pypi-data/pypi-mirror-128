@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/nmrwahl/__init__.py
+src/nmrwhal.egg-info/PKG-INFO
+src/nmrwhal.egg-info/SOURCES.txt
+src/nmrwhal.egg-info/dependency_links.txt
+src/nmrwhal.egg-info/top_level.txt
