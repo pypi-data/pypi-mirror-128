@@ -1,0 +1,30 @@
+[tools.piter]
+env_root = "my_envs"
+dependencies = [
+    "typer ==0.4.0",
+    "colorama ==0.4.4"
+]
+
+[tools.piter.env.dev]
+dependencies = [
+    "black==19.10b0"
+]
+scripts.lint = "black piter"
+
+[tools.piter.env.test]
+dependencies = [
+    "pytest==6.2.5"
+]
+
+scripts.install = "pip install --editable ."
+scripts.test = "pytest"
+
+[tools.piter.env.ci]
+dependencies = [
+    "pytest==6.2.5"
+]
+
+scripts.test = [
+    "pip install --editable .",
+    "pytest"
+]
