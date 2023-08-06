@@ -1,0 +1,13 @@
+{# Overriden the original "two_factor" template to style #}
+
+{% extends 'portal/base.html' %}
+{% load future %}
+
+{% block contentDiv %}
+    <div class="content background">
+        <div class="container col-sm-8 col-center">
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </div>
+{% endblock contentDiv %}
