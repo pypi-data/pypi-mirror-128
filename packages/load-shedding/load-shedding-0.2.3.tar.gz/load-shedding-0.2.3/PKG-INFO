@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: load-shedding
+Version: 0.2.3
+Summary: A python library for getting Load Shedding schedules from Eskom.
+Home-page: https://gitlab.com/wernerhp/load-shedding
+Author: Werner Pieterson
+Author-email: wernerhp@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/wernerhp/load-shedding/issues
+Keywords: eskom,load shedding,south africa,api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+A python library for getting Load Shedding schedules from Eskom.
+
+## Example
+
+```py
+    eskom = Eskom()
+    suburb = "Milnerton"
+    suburbs = eskom.find_suburbs(search_text=suburb)
+    print("Searching suburbs for {suburb}: {suburbs}".format(suburb=suburb, suburbs=suburbs))
+    schedule = eskom.get_schedule(province=suburbs[0].province, suburb=suburbs[0], stage=Stage.STAGE_2)
+    print("Schedule for {suburb}: {schedule}".format(suburb=suburb, schedule=schedule))
+```
+
+## Output
+
+A list of `(start, end)` times is returned.
+
+```py
+    Searching suburbs for Milnerton: [<Milnerton (1058852), City of Cape Town, Western Cape>, <Milnerton Golf Course (1058853), City of Cape Town, Western Cape>, <Milnerton Outlying (1058854), City of Cape Town, Western Cape>, <Milnerton Ridge (1058855), City of Cape Town, Western Cape>, <Milnerton SP (1058856), City of Cape Town, Western Cape>, <Milnerton SP 1 (1069144), City of Cape Town, Western Cape>, <Milnerton SP 2 (1069145), City of Cape Town, Western Cape>]
+    Schedule for Milnerton: [('2021-11-13 12:00', '2021-11-13 14:30'), ('2021-11-13 20:00', '2021-11-13 22:30'), ('2021-11-14 20:00', '2021-11-14 22:30'), ('2021-11-15 04:00', '2021-11-15 06:30'), ('2021-11-16 04:00', '2021-11-16 06:30'), ('2021-11-16 12:00', '2021-11-16 14:30'), ('2021-11-17 10:00', '2021-11-17 12:30'), ('2021-11-17 18:00', '2021-11-17 20:30'), ('2021-11-18 18:00', '2021-11-18 20:30'), ('2021-11-19 02:00', '2021-11-19 04:30'), ('2021-11-20 02:00', '2021-11-20 04:30'), ('2021-11-20 10:00', '2021-11-20 12:30'), ('2021-11-21 08:00', '2021-11-21 10:30'), ('2021-11-21 16:00', '2021-11-21 18:30'), ('2021-11-22 16:00', '2021-11-22 18:30'), ('2021-11-23 00:00', '2021-11-23 02:30'), ('2021-11-24 00:00', '2021-11-24 02:30'), ('2021-11-24 08:00', '2021-11-24 10:30'), ('2021-11-25 06:00', '2021-11-25 08:30'), ('2021-11-25 14:00', '2021-11-25 16:30'), ('2021-11-26 14:00', '2021-11-26 16:30'), ('2021-11-26 22:00', '2021-11-26 00:30'), ('2021-11-27 22:00', '2021-11-27 00:30'), ('2021-11-28 06:00', '2021-11-28 08:30'), ('2021-11-29 04:00', '2021-11-29 06:30'), ('2021-11-29 12:00', '2021-11-29 14:30'), ('2021-11-30 12:00', '2021-11-30 14:30'), ('2021-11-30 20:00', '2021-11-30 22:30'), ('2021-12-01 18:00', '2021-12-01 20:30'), ('2021-12-02 02:00', '2021-12-02 04:30'), ('2021-12-03 02:00', '2021-12-03 04:30'), ('2021-12-03 10:00', '2021-12-03 12:30'), ('2021-12-04 10:00', '2021-12-04 12:30'), ('2021-12-04 18:00', '2021-12-04 20:30'), ('2021-12-05 16:00', '2021-12-05 18:30'), ('2021-12-06 00:00', '2021-12-06 02:30'), ('2021-12-07 00:00', '2021-12-07 02:30'), ('2021-12-07 08:00', '2021-12-07 10:30'), ('2021-12-08 08:00', '2021-12-08 10:30'), ('2021-12-08 16:00', '2021-12-08 18:30'), ('2021-12-09 14:00', '2021-12-09 16:30'), ('2021-12-09 22:00', '2021-12-09 00:30'), ('2021-12-10 22:00', '2021-12-10 00:30'), ('2021-12-11 06:00', '2021-12-11 08:30')]
+```
+
+
