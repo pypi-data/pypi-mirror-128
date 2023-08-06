@@ -1,0 +1,10 @@
+enems/__init__.py,sha256=PkrQiwHxLiMvwrBVb7Hl-iRtxo0gPtDbfZ7oqlA8xCY,132
+enems/enems.py,sha256=05irhcU-gfC7AbaVsufiALL0LWWgXKjLUdOJcn1OnGQ,13337
+enems/example_data/ensemble_set_75.pickle,sha256=QYEP9wrgbuDsT80oB8M7uumQGVpW6hZ13h74R9QKtY0,88158
+enems/example_data/ensemble_set_75_obs_a.pickle,sha256=5GXUGaqW2TyUmw0B0TG1GkhSmtEf7BIdmnuPNkins4U,1756
+enems/example_data/ensemble_set_75_obs_b.pickle,sha256=qNBuZ1exXB0K9auV6C_HoYs_3hcyckzuRtQFO582Svs,1756
+enems/example_data/ensemble_set_75_obs_c.pickle,sha256=VIx6i5FiVtmnS9hVM5RMU7vDJ0b--zKmAyjCmNgY8ys,1756
+en_ems-0.2.2.dist-info/METADATA,sha256=gSyjD7sCdOzqNVLCWYosUoV-0V3roK10ehK5RPXUhUI,8415
+en_ems-0.2.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+en_ems-0.2.2.dist-info/top_level.txt,sha256=DCORCh27E_na9Lc9VmO7URw6oClvj2LlsdYsQs6GpNs,6
+en_ems-0.2.2.dist-info/RECORD,,
