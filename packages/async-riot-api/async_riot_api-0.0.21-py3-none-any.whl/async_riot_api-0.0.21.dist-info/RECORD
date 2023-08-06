@@ -1,0 +1,8 @@
+async_riot_api/__init__.py,sha256=WlU866leJL42KZAzceyRfdcG2ZKMBDiWkpyUcGGzNcY,23
+async_riot_api/api.py,sha256=2I_ERKPwBEEPRPk93ol0aAkEH_j2cMxutknyu-ylggQ,20975
+async_riot_api/types/ChampionMasteryDto.py,sha256=CsTa4tsN80sVPZj-pyeJD_mYAa9d9N3oRsxcVBdAV2U,731
+async_riot_api/types/__init__.py,sha256=KqlUh3wKwRXoQY4951KRsfwn3Y5Uj98F0sf1TtfUBc0,38167
+async_riot_api-0.0.21.dist-info/METADATA,sha256=f5zZIAYLd0OA9SBK043QBE2gGy-hYCFTMNwq8YhX9U0,546
+async_riot_api-0.0.21.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+async_riot_api-0.0.21.dist-info/top_level.txt,sha256=OUuKB7Kzwa4fIw4iYT-VaLy2ehUX75__GBdSYnWwFxI,15
+async_riot_api-0.0.21.dist-info/RECORD,,
