@@ -1,0 +1,10 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unit/test_logger.py,sha256=5dhlz07DRzszv2Kh4o-6i0uvMYNmmi3Nf_ZUCUnmWms,4194
+woodchips/__init__.py,sha256=Orr3YDhAU3hifwJSBOcfNIE_YaYBxOKDkrHdHO1UWVs,96
+woodchips/logger.py,sha256=0fTTyAZMNS1UDmkTekIRA_GXfFQq23quPULiWRpX9Vg,3197
+woodchips-0.2.1.dist-info/LICENSE,sha256=mq4Ki0I01VvUB-mByrPZUCjgFwhcxEg5Z8aNPKLozKQ,1071
+woodchips-0.2.1.dist-info/METADATA,sha256=pLCMOhJcma7GsjaxbpF2yQOt7wxt2W06F3Zl9Zh5JO0,4172
+woodchips-0.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+woodchips-0.2.1.dist-info/top_level.txt,sha256=YuttIJBtc7V-T1BnLWEac2glqnr4EYOmpISWb7_SvJs,15
+woodchips-0.2.1.dist-info/RECORD,,
