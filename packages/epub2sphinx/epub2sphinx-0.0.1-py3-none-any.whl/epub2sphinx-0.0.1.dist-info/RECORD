@@ -1,0 +1,14 @@
+cli.py,sha256=UU-FHO1traWXGr-8P9RbxPpRnPws0CRyd0tn2e4wrAc,2197
+epub2sphinx/__init__.py,sha256=PWEVIqyzIpYc32N3--oVwqHXN5zpUTwldwPnUjcQ8Uk,31
+epub2sphinx/constants.py,sha256=yqe74_GJe-w9aY8fnfa2GyuZ2V4qV7KSOziz3yMePkI,721
+epub2sphinx/convert.py,sha256=hgNT5SWppUqe2IgNqaGBieY7Wu4H7FqzWvsjLXMDUS4,8484
+epub2sphinx/templates/Makefile,sha256=4zv3TVkTACm6JBaKgTES3ZI9cETXgM6ULbZkXZP1as8,638
+epub2sphinx/templates/conf.py,sha256=1ngQVx7LzOUu2QhGv0qiCf2tEdzkjBIQfjiI1QNWnhs,1889
+epub2sphinx/templates/make.bat,sha256=9UgKGb4SdP006622fJiFxeFT1BeycYAs6hDbV1xwPy8,804
+epub2sphinx-0.0.1.dist-info/AUTHORS,sha256=9O6S8bkew2yzlTvGanB5sHof9vVVc1tsnHjo-UlF108,148
+epub2sphinx-0.0.1.dist-info/LICENSE,sha256=VihngozHJP6UN9k1DBW-Dsw62rUt6CErWuxpe7aJLws,1063
+epub2sphinx-0.0.1.dist-info/METADATA,sha256=1o9N5U-pTcCS9afTezXeS6TXw6De94BjRfRfo51zlqw,4630
+epub2sphinx-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+epub2sphinx-0.0.1.dist-info/entry_points.txt,sha256=BaNOfQNa10pV_NgNOSawqoy_Ntb5Pq9fUErC36Wfwms,63
+epub2sphinx-0.0.1.dist-info/top_level.txt,sha256=9LCnkyE2ODlhNlFJnNV_DaTxlBdhj0PBI_4o_vcVXNg,16
+epub2sphinx-0.0.1.dist-info/RECORD,,
