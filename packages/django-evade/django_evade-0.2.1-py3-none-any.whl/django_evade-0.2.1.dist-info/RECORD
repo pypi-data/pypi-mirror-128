@@ -1,0 +1,16 @@
+evade/__init__.py,sha256=rg40Zpa4kKfUx8YxoGulRGOXqAsF2WmeRsrPt08qSTA,30
+evade/evade.py,sha256=t3tXdR1IzoIwKXdWxek0ma2WpAkzy5Zufw36WSQihDs,822
+evade/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evade/templatetags/evade_tags.py,sha256=R_rj3s0AL66Rh1BVleDMn-n0ipc9Ku2gVlhVzNFvX-c,520
+evade/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evade/tests/settings.py,sha256=su8FcldsaDmZqEThOFP9sLnjoic62oDeaurfS8RhMNg,439
+evade/tests/test_evade.py,sha256=AiXS9KIxkSssghmXUFixo2-_dvBQaD3nBSXDA3rcihA,2517
+evade/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evade/utils/evade.py,sha256=t3tXdR1IzoIwKXdWxek0ma2WpAkzy5Zufw36WSQihDs,822
+tests/__init__.py,sha256=AiXS9KIxkSssghmXUFixo2-_dvBQaD3nBSXDA3rcihA,2517
+tests/settings.py,sha256=su8FcldsaDmZqEThOFP9sLnjoic62oDeaurfS8RhMNg,439
+django_evade-0.2.1.dist-info/LICENSE,sha256=LPLW62c8l0ZNKthtkSrpdX-2sT9QSchxbdKzCVaf9Ng,1486
+django_evade-0.2.1.dist-info/METADATA,sha256=Qs-j1fFEt8s4mXTx3g89VxDzOEEY6SuAAsu39hazDYk,3893
+django_evade-0.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_evade-0.2.1.dist-info/top_level.txt,sha256=mAsOT6VBV4P4kMO1NTiygmyLLWPYaU_7i3LPpWtNUiA,6
+django_evade-0.2.1.dist-info/RECORD,,
