@@ -1,0 +1,7 @@
+[console_scripts]
+copy_nexus = nexgen.command_line.copy_nexus:main
+generate_nexus = nexgen.command_line.nexus_generator:main
+
+[libtbx.precommit]
+nexgen = nexgen
+
