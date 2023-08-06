@@ -1,0 +1,14 @@
+jupyter_o2/__init__.py,sha256=x8w6NlQ-P18PMj2Xlov1UFi1nVZCyxheOYn8OBgTROk,809
+jupyter_o2/__main__.py,sha256=PqirV4x__ZA4rU93RA8vTFnHleNDFg8eLFOBWffethw,111
+jupyter_o2/_version.py,sha256=hwx6OSEBgEPc7vR6kpTxsJ6hDXFzuhnwb4l8Erfs5hk,18
+jupyter_o2/config_manager.py,sha256=hb3_xawD8SGdZ5LBbGLhAJJBPsDFuvecFt3gxRzWDfw,8081
+jupyter_o2/jupyter-o2.cfg,sha256=ENAWM6391PPBifQk33m4YDycoLLT2WRaBMVrbtW_vPo,3189
+jupyter_o2/jupyter_o2.py,sha256=E39HuOwAA_vFjyI15kLrnMs9fLHqcJ9M9PRdUZ59C3I,31110
+jupyter_o2/pysectools.py,sha256=V8yhIaL26DAYTVGIlYeh4powMjD6yWirwxQfVm7yY08,5563
+jupyter_o2/utils.py,sha256=VIMc2f6k7vkq-K1DR1XN3M8s62dm6Ir0jTt-l0EdWEk,6106
+jupyter_o2-1.1.1.dist-info/LICENSE,sha256=2sTY9k79xUfCmICNh_cXywPWtwKyJjnGve1riJDALTg,1071
+jupyter_o2-1.1.1.dist-info/METADATA,sha256=LRmLm0ws7b4vAeysyJxdGpc_VL_Rd0NYP_8vPEatJ6Y,6679
+jupyter_o2-1.1.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+jupyter_o2-1.1.1.dist-info/entry_points.txt,sha256=qS2-llK4Te5OWk2j-OVPqK6A9ezB5x_ZXq4hZOWKVv4,48
+jupyter_o2-1.1.1.dist-info/top_level.txt,sha256=U0uST1Cf22Ct92Gun1XqHyiT5TWYcHaJfLGE0sSKmtk,11
+jupyter_o2-1.1.1.dist-info/RECORD,,
