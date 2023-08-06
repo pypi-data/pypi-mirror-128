@@ -1,0 +1,10 @@
+minisampy/__init__.py,sha256=P8S8rJ-MAFiNRvWP_OJq6gGZlElH0rCVhb3Z05ZiblI,163
+minisampy/_minisam_py_wrapper.cpython-37m-x86_64-linux-gnu.so,sha256=TidwDZVoAYxQRCNmpf5eSgSKOe4rmLPrX7cRk7wwJFw,2139768
+minisampy/libminisam.so,sha256=M57CrKl8GwWkfvky80IH8WlzPkWho68oDI6WKcXhj7M,1580088
+minisampy/sophus/__init__.py,sha256=0br2Tc575jtLJSq7sK7ALvut2BXIkigASa6loekwFyo,43
+minisampy/sophus/_minisam_sophus_py_wrapper.cpython-37m-x86_64-linux-gnu.so,sha256=WcnWiMWWWfmIARJFPlygAoiGtvH88l416pBXocutcnI,420120
+minisampy-0.0.8.dist-info/LICENSE,sha256=5mGKT-8JivLkYytFwVxN4KGDFE_yBq8WU3VdjGwRQ7k,1060
+minisampy-0.0.8.dist-info/METADATA,sha256=Vtw3Tq0FT084Izmvp3q8UBjME28aRIVFyMmJePKXRHM,785
+minisampy-0.0.8.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+minisampy-0.0.8.dist-info/top_level.txt,sha256=RNNMsNKc5nCoddMYn2DWRfgF7EoQ6ed-LnNJLf26E-s,10
+minisampy-0.0.8.dist-info/RECORD,,
