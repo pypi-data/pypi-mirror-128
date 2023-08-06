@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: clustercron
+Version: 1.0.1
+Summary: Cron job wrapper that ensures a script gets run from one node in the cluster.
+Home-page: https://github.com/maartenq/clustercron
+Author: Maarten
+Author-email: ikmaarten@gmail.com
+License: ISC
+Project-URL: Bug Tracker, https://github.com/maartenq/clustercron/issues
+Project-URL: Changelog, https://github.com/maartenq/clustercron/blob/main/HISTORY.rst
+Keywords: clustercron
+Platform: UNKNOWN
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: System :: Clustering
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: boto
+Requires-Dist: boto3
+Provides-Extra: dev
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: responses ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: Sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: responses ; extra == 'test'
+
+===========
+Clustercron
+===========
+
+|pypi| |docs| |pre-commit| |workflow-ci| |codecov|
+
+**Clustercron** is cronjob wrapper that tries to ensure that a script gets run
+only once, on one host from a pool of nodes of a specified loadbalancer.
+**Clustercron** select a *master* from all nodes and will run the cronjob only
+on that node.
+
+* Free software: ISC license
+* Documentation: https://clustercron.readthedocs.org/en/latest/
+
+Features
+--------
+
+Supported load balancers (till now):
+
+    * AWS Elastic Load Balancing (ELB)
+    * AWS Elastic Load Balancing v2 (ALB)
+
+
+.. |pypi| image:: https://img.shields.io/pypi/v/clustercron.svg
+    :alt: Pypi
+    :target: https://pypi.python.org/pypi/clustercron
+
+.. |docs| image:: https://readthedocs.org/projects/clustercron/badge/?version=latest
+    :alt: Documentation Status
+    :target: https://clustercron.readthedocs.io/en/latest/
+
+.. |pre-commit| image:: https://results.pre-commit.ci/badge/github/maartenq/clustercron/main.svg
+    :alt: pre-commit.ci status
+    :target: https://results.pre-commit.ci/latest/github/maartenq/clustercron/main
+
+.. |workflow-ci| image:: https://github.com/maartenq/clustercron/workflows/ci/badge.svg?branch=main
+    :alt: CI status
+    :target: https://github.com/maartenq/clustercron/actions?workflow=ci
+
+.. |codecov| image:: https://codecov.io/gh/maartenq/clustercron/branch/master/graph/badge.svg?token=O0YWMFHJBG
+    :alt: Codecov
+    :target: https://codecov.io/gh/maartenq/clustercron
+
+
