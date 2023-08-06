@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: geniverse
+Version: 0.0.11
+Summary: Easy library for guiding generative AI models. Find your latent!
+Home-page: https://github.com/thegeniverse/geniverse
+Author: Javi and Vicc
+Author-email: vipermu97@gmail.com
+License: UNKNOWN
+Project-URL: Docs, https://github.com/thegeniverse/geniverse/docs
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm (==4.60.0)
+Requires-Dist: clip-by-openai (==0.1.1.5)
+Requires-Dist: dall-e (==0.1)
+Requires-Dist: imageio-ffmpeg (==0.4.3)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: omegaconf (==2.0.6)
+Requires-Dist: pytorch-lightning (==1.3.3)
+Requires-Dist: einops (==0.3.0)
+Requires-Dist: imageio (==2.9.0)
+Requires-Dist: torch (==1.7.1)
+Requires-Dist: torchvision (==0.8.2)
+Requires-Dist: tensorboard (>=2.2.0)
+Requires-Dist: transformers (>=4.10.0)
+
+# The Geniverse API
+Open source library to access and utilize generative AI models. 
+
+Current models:
+- VQGAN
+- Aphantasia
+- Mini-Dalle
+
+For now you can generate images from text prompts, interpolate and create infinite zooms with your results. 
+
+
