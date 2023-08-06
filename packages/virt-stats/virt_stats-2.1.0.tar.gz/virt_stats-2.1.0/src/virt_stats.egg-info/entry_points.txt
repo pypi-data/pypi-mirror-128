@@ -1,0 +1,4 @@
+[console_scripts]
+virt-stats = virt_stats:main
+virt_stats = virt_stats:main
+
