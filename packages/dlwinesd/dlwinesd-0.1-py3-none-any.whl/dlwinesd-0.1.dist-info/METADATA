@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dlwinesd
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/xbjfk/dlwinesd
+Author-email: xbjfk.github@gmail.com
+License: MIT
+Keywords: ESD windows
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: xmltodict
+
+UNKNOWN
+
