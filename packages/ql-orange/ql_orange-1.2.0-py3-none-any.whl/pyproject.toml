@@ -1,0 +1,82 @@
+[build-system]
+requires = [ "poetry>=1.0.0",]
+build-backend = "poetry.masonry.api"
+
+[tool.black]
+line-length = 110
+target-version = [ "py37", "py38",]
+include = "\\.pyi?$"
+exclude = """
+/(
+   \\.eggs
+ | \\.git
+ | \\.hg
+ | \\.mypy_cache
+ | \\.tox
+ | \\.venv
+ | _build
+ | buck-out
+ | build
+ | dist
+ # The following are specific to Black, you probably don't want those.
+ | blib2to3
+ | tests/data
+ | profiling
+)/
+"""
+
+[tool.poetry]
+name = "ql-orange"
+version = "1.2.0"
+description = "Orange is a fork of Black Python code formatter maintained by Quantlane."
+authors = [ "quantlane.com <info@quantlane.com>",]
+repository = "https://gitlab.com/quantlane/meta/orange"
+readme = "README.md"
+include = [ "pyproject.toml",]
+
+packages = [
+    {include = "black", from = "src"},
+    {include = "src/blib2to3"}
+]
+
+[[tool.poetry.source]]
+name = "quantlane-repository"
+url = "https://pypi-experimental.int.quantlane.com/pypi/"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+aiohttp = ">=3.6.0"
+aiohttp-cors = ">=0.4.0"
+platformdirs = ">=2"
+click = ">=8.0.0"
+mypy_extensions = ">=0.4.3"
+pathspec = ">=0.8.1"
+regex = ">=2020.1.8"
+tomli = ">=0.2.6, <2.0.0"
+typed-ast = "==1.4.2"
+typing_extensions = ">=3.7.4"
+ipython = ">=7.8.0"
+tokenize-rt = ">=3.2.0"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "*"
+coverage = "*"
+docutils = "==0.15"
+flake8 = "*"
+flake8-bugbear = "*"
+readme_renderer = "*"
+Sphinx = ">=3.1.2"
+MyST-Parser = ">=0.13.7"
+sphinxcontrib-programoutput = ">=0.17"
+setuptools = ">=39.2.0"
+setuptools-scm = "*"
+twine = ">=1.11.0"
+pytest = "5.3.2"
+ql-cq = ">=0.40.0"
+types-dataclasses = "^0.6.0"
+types-typed-ast = "^1.4.5"
+types-PyYAML = "^5.4.11"
+types-toml = "^0.10.1"
+
+[tool.poetry.scripts]
+orange = "black:patched_main"
