@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        clickup-to-sqlite=clickup_to_sqlite.cli:cli
+    

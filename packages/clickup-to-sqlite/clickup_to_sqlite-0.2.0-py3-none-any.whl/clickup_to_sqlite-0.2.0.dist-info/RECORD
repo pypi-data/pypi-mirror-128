@@ -1,0 +1,9 @@
+clickup_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clickup_to_sqlite/cli.py,sha256=DN5eRoz__j1rN_jDL2Z_GMnh2c0ktL8DmZezcuNb-J8,5953
+clickup_to_sqlite/clickup_client.py,sha256=ri1aSudXbU1l3HD82337TLTCICRPeIsfDetsPm-UOXc,11409
+clickup_to_sqlite-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+clickup_to_sqlite-0.2.0.dist-info/METADATA,sha256=iWl25PKkfyQ2wnTeyc2Envdt8grxlrh_peVWB8SUddY,2611
+clickup_to_sqlite-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+clickup_to_sqlite-0.2.0.dist-info/entry_points.txt,sha256=rxPixicfwWiLX7PFj7v2SYMIH2tqa1zNmYObXJ1mtUc,83
+clickup_to_sqlite-0.2.0.dist-info/top_level.txt,sha256=cRagllfRkJCqR1yaHoR5LywLPM7Oq8E_OmisJt4JT94,18
+clickup_to_sqlite-0.2.0.dist-info/RECORD,,
