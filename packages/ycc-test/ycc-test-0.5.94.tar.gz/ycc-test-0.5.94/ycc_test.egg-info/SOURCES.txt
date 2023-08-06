@@ -1,0 +1,13 @@
+README.rst
+__init__.py
+core.py
+setup.py
+sycc.py
+v.py
+ycc_test.egg-info/PKG-INFO
+ycc_test.egg-info/SOURCES.txt
+ycc_test.egg-info/dependency_links.txt
+ycc_test.egg-info/entry_points.txt
+ycc_test.egg-info/requires.txt
+ycc_test.egg-info/top_level.txt
+ycc_test.egg-info/zip-safe
