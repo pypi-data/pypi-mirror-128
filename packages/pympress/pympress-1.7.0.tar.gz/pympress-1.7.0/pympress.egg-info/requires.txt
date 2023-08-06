@@ -1,0 +1,15 @@
+watchdog
+
+[babel]
+babel
+babelgladeextractor
+
+[build_sphinx]
+docutils==0.16
+sphinx
+recommonmark
+sphinxcontrib-napoleon
+sphinx-rtd-theme
+
+[vlc_video]
+python-vlc
