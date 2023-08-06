@@ -1,0 +1,2 @@
+django<4.0,>=2.2
+django-braces<2.0,>=1.11
