@@ -1,0 +1,11 @@
+mo-dots==8.4.21326
+mo-future==6.2.21303
+mo-imports==7.3.21313
+mo-parsing==8.4.21326
+
+[dev]
+
+[tests]
+mo-testing
+mo-threads
+mo-files
