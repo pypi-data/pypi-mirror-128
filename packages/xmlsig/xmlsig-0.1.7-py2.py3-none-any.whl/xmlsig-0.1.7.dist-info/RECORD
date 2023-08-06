@@ -1,0 +1,16 @@
+xmlsig/__init__.py,sha256=96PmqLkr6WTzzRMT4qGNRGKCQXQj3QxDQoWt9D94Avc,137
+xmlsig/constants.py,sha256=Gd5edow7y8zTsW234mQLlrDeXvvLtBXEzShOnT3sR30,4170
+xmlsig/ns.py,sha256=nq9n4vxwilF53oee8qYfwoXmUko14zHvBbRAoo_TKDY,739
+xmlsig/signature_context.py,sha256=_p8QKTy__8aa_1Z62-wEQ_ZSl3uv9e9jXIfi6V8WjpI,14488
+xmlsig/template.py,sha256=8rytgWKzkJ6GSeoieYfo5WhQHANxtHrIOTAbc9wkMNA,3488
+xmlsig/utils.py,sha256=mcSHRsO9Ll3dw-0vbcHyXQVlJxTRw33ytiSBJq1estM,3094
+xmlsig/algorithms/__init__.py,sha256=Zgg9HG8fBc-MYiJqCWB14WERUgPFbXRn4kIQsccYdWE,62
+xmlsig/algorithms/base.py,sha256=EMekkHxrjU8fMXwkCqWCa5E5jr1FvnpMi9jGf9jU0yg,1542
+xmlsig/algorithms/hmac.py,sha256=gcjB0NYJ4FtZBq7evM86o_l7DbcASWgT5YuN11NHa5g,683
+xmlsig/algorithms/rsa.py,sha256=UtxAsdturX14z6lfS0SAkjwr__awECipo31XBVD0Gw4,2099
+xmlsig/data/xmldsig-core-schema.xsd,sha256=RPGlx5TiP98FMez7ntIfjzLF-RoMTRmTazducvsx3fw,10355
+xmlsig-0.1.7.dist-info/LICENSE,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+xmlsig-0.1.7.dist-info/METADATA,sha256=8OiIZ9NUq-IiIW4BQDloUj8fQQC4J_1GaaVPJx7isWE,1584
+xmlsig-0.1.7.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+xmlsig-0.1.7.dist-info/top_level.txt,sha256=1NsN0RVOy2Gnrzqz9YUXb4rZcubp1hNUPdU3Hu90k20,7
+xmlsig-0.1.7.dist-info/RECORD,,
