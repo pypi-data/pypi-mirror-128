@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+MRI_PulseSim/MRI_PulseSim_final.py
+MRI_PulseSim/__init__.py
+MRI_PulseSim.egg-info/PKG-INFO
+MRI_PulseSim.egg-info/SOURCES.txt
+MRI_PulseSim.egg-info/dependency_links.txt
+MRI_PulseSim.egg-info/top_level.txt
