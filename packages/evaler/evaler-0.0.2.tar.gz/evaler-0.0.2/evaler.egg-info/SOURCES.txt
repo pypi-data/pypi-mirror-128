@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+evaler/__init__.py
+evaler/_version.py
+evaler/inverse_eval.py
+evaler/inverse_evaler.py
+evaler/mne_simulation.py
+evaler/plotting_tools.py
+evaler/settings.py
+evaler/source_space_tools.py
+evaler.egg-info/PKG-INFO
+evaler.egg-info/SOURCES.txt
+evaler.egg-info/dependency_links.txt
+evaler.egg-info/requires.txt
+evaler.egg-info/top_level.txt
