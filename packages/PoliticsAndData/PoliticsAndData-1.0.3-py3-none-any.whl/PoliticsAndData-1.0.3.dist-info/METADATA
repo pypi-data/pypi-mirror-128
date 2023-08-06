@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: PoliticsAndData
+Version: 1.0.3
+Summary: Easily summarize the csv data files from https://politicsandwar.com/data/
+Home-page: https://github.com/pythonian23/PoliticsAndData
+Author: pythonian23
+License: MPL-2.0
+Platform: UNKNOWN
+Requires: requests
+Requires: pytz
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# PoliticsAndData
+
+ ## About
+  **PoliticsAndData** is a python package for processing the confusing and large csv files from [Politics & War's data dumps](https://politicsandwar.com/data/) and saving only the important information that you need in a JSON file.
+
+ ## Usage
+  ### Installation and Import
+   Run `pip install PoliticsAndData` and import `pnd`.
+  ### Usage
+   Coming soon...
+
+
