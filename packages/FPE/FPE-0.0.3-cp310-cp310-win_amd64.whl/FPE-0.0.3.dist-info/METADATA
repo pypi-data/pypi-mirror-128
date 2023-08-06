@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: FPE
+Version: 0.0.3
+Summary: Format Preserving Encryption with FF1 and FF3-1
+Home-page: UNKNOWN
+Author: Gustav Grønvold
+Author-email: ggroenvold@live.dk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bitstring (>=3.1.9)
+Requires-Dist: Cython (>=0.29.24)
+Requires-Dist: numpy (>=1.21.4)
+Requires-Dist: pycryptodome (>=3.11.0)
+
+# Format Preserving Encryption
+
+does Format Preserving Encryption
+
+
+

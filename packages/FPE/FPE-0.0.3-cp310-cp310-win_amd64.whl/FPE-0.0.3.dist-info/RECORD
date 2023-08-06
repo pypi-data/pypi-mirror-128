@@ -1,0 +1,17 @@
+ff1.cp310-win_amd64.pyd,sha256=bC9BT-cw9BpVRaFnEJ5gVEt7mlRavexpEuj5CMR5AEk,88576
+ff3.cp310-win_amd64.pyd,sha256=B3Rpe9bxcBdXSNiqUTNYJL-87mBO2d2rePw82CW2p40,65536
+FPE/FPE.py,sha256=KHahzaUTp942jwScPUxhMuYtvFE69c9V6xUKiooDPD4,1188
+FPE/Format.py,sha256=4cF4pZPH4FnByX0DbHzMx4tdZUv6LBd6vS_vWEEUXY8,71
+FPE/Mode.py,sha256=n5RItQSzhY-GQIOWOstLGzjToPL52fYTyrCjSOHi6WY,16
+FPE/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FPE/format_translator.py,sha256=cQIeD2dXM-IMwYs2EEulR_uCbAoscXojHB3xKyojrzQ,5979
+FPE/formatter.py,sha256=Rp7eDRJqCazlCikbkkh1t9q3-TgpRmWUEnXj0TF7NMg,3479
+FPE/fpe_csv.py,sha256=sR3IU3bJpY2VMNNH-EG_UAsb1yyW3IZJxzJc4ou-OF4,4929
+FPE/mode_selector.py,sha256=CcLyDlaiS3vDIVwJTxRmi-y0L4gaLuN6-hgHpMsy1iY,448
+FPE-0.0.3.data/data/dates/dates.json,sha256=CwEjnqydv7O-v7vzV7M9ahfV4NeRFj9KuMvZOjX7x5c,18641
+FPE-0.0.3.data/data/top_lvl_domains/top_lvl_domains.json,sha256=174UlC1NuIPP-4ikk3nfrVxcXZGi9ONkG_P_OJkwN98,93739
+FPE-0.0.3.dist-info/LICENSE,sha256=aocVvREI4kXCiA28mDYODH-4avWL-8RiLF2RvR47g5c,1077
+FPE-0.0.3.dist-info/METADATA,sha256=Pkeu9Mrfnkh3j_qjBeUaRZg8fdss2CxPt4dRijWc_Sc,657
+FPE-0.0.3.dist-info/WHEEL,sha256=C6CHup2HLC2Rld8AL5u9w89MYULjdaP5k0k7SG83CcI,102
+FPE-0.0.3.dist-info/top_level.txt,sha256=VesYsfv1cAUnFdbt_1t2Dr8MvCKMt_O1XEqGXwqtWcs,12
+FPE-0.0.3.dist-info/RECORD,,
