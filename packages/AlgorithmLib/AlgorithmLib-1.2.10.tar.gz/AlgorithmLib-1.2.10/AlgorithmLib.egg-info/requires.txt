@@ -1,0 +1,6 @@
+numpy
+wave
+matplotlib
+datetime
+scipy
+pystoi
