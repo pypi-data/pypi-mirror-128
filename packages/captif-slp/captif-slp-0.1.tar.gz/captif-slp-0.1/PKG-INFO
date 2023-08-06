@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: captif-slp
+Version: 0.1
+Summary: 
+Home-page: https://github.com/captif-nz/captif-slp
+License: MIT
+Keywords: CAPTIF
+Author: John Bull
+Requires-Python: >=3.9,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: captif-data-structures (>=0.8,<0.9)
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: matplotlib (>=3.4.3,<4.0.0)
+Requires-Dist: pandas (>=1.3.3,<2.0.0)
+Requires-Dist: psutil (>=5.8.0,<6.0.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: scipy (>=1.7.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# captif-slp
