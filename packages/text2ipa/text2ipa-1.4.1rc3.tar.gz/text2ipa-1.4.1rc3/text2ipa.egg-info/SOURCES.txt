@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+./text2ipa/__init__.py
+./text2ipa/__main__.py
+text2ipa.egg-info/PKG-INFO
+text2ipa.egg-info/SOURCES.txt
+text2ipa.egg-info/dependency_links.txt
+text2ipa.egg-info/not-zip-safe
+text2ipa.egg-info/requires.txt
+text2ipa.egg-info/top_level.txt
