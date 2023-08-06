@@ -1,0 +1,11 @@
+quizpy/__init__.py,sha256=_FVB_XlheEPz0GMNLnchRpf_3nuK44I2I_mKl2v6cYg,1409
+quizpy/common.py,sha256=3dUr_2kPlU7LfUioXyCN6gpH_QOvjQYG6i4yNaw-4D4,6954
+quizpy/drag.py,sha256=eYxmOUi1t387Wre1Mj_k6ok56e17_oWphn0FU2W38as,7838
+quizpy/multipe_choice.py,sha256=RziI-UPW4_DgJcsMd5KGixgbbcPxgJQlAO8okSFFTeY,11731
+quizpy/numerical.py,sha256=t8meP6NWfGlztQwYopxZlfj_0N96QwUtFzdcGNNVPyI,7116
+quizpy/text.py,sha256=mLbDNiq-z9xuMOgWcssqkoaFhvgcb0Im7gO12KEV5us,6390
+quizpy-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+quizpy-0.0.4.dist-info/METADATA,sha256=JY7mrrnC2ApsBjRMvEJUIQXoX3gDZGlzXE8rc0hILmM,2218
+quizpy-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+quizpy-0.0.4.dist-info/top_level.txt,sha256=xG1zCLiJrbbWk1ToSgj7Gnm_M9Ph5seccjtyUIq3OgE,7
+quizpy-0.0.4.dist-info/RECORD,,
