@@ -1,0 +1,3 @@
+[pyinstaller40]
+hook-dirs=motmot:_PyInstaller_hook_dir
+
