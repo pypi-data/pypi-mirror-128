@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: MetaAssemblyImprove
+Version: 0.0.1
+Summary: Improve the quality of metagenome assemblyby scaffolding and gap solving.
+Home-page: https://github.com/jlli6t/MetaAssemblyImprove
+Author: Jie Li
+Author-email: jlli6t@gmail.com
+Maintainer: Jie Li
+Maintainer-email: jlli6t@gmail.com
+License: UNKNOWN
+Description: No detailed description
+Keywords: biology bioinformatics
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+MetaAssemblyImprove/Main.py
+MetaAssemblyImprove/__init__.py
+MetaAssemblyImprove/gapfiller.py
+MetaAssemblyImprove/scaffolder.py
+MetaAssemblyImprove/version
+MetaAssemblyImprove/version.py
+MetaAssemblyImprove.egg-info/PKG-INFO
+MetaAssemblyImprove.egg-info/SOURCES.txt
+MetaAssemblyImprove.egg-info/dependency_links.txt
+MetaAssemblyImprove.egg-info/requires.txt
+MetaAssemblyImprove.egg-info/top_level.txt
+bin/MetaAssemblyImprove
