@@ -1,0 +1,171 @@
+name: tests
+
+on:
+  pull_request:
+    branches:
+      - "*"
+  push:
+    branches:
+      - "master"
+      - "devel"
+
+env:
+  cache-version: 'cache-v1'
+
+jobs:
+  tests:    
+    timeout-minutes: 720
+    defaults:
+      run:
+        shell: bash -l {0}
+    strategy:
+      max-parallel: 5
+      matrix:
+        config:
+          - { python-version: 3.7, os: ubuntu-latest }
+          - { python-version: 3.8, os: ubuntu-latest }
+          - { python-version: 3.9, os: ubuntu-latest }
+          - { python-version: 3.7, os: macos-latest }
+          - { python-version: 3.8, os: macos-latest }
+          - { python-version: 3.9, os: macos-latest }
+    runs-on: ${{ matrix.config.os }}
+    env:
+      R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+      NOT_CRAN: true
+      TZ: UTC
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+    
+    - name: Set up Python
+      uses: actions/setup-python@v2
+
+    - id: R
+      name: Check R version
+      run: |
+        R --version > VERSION        
+        echo "##[set-output name=version;]$(head -1 VERSION | awk '{print $3}')"
+        echo "##[set-output name=mainbiocversion;]$(Rscript -e 'cat(unlist(tools:::.BioC_version_associated_with_R_version()))' | awk '{print $1}')"
+        echo "##[set-output name=subbiocversion;]$(Rscript -e 'cat(unlist(tools:::.BioC_version_associated_with_R_version()))' | awk '{print $2}')"
+        echo "##[set-output name=biocversion;]$(Rscript -e 'cat(as.character(tools:::.BioC_version_associated_with_R_version()))' | awk '{print $1}')"
+      shell: bash -l {0}
+
+    - name: Set up R
+      uses: r-lib/actions/setup-r@v1
+      with:
+        r-version: ${{ steps.R.outputs.version}}
+
+    - name: Setup r-lib/remotes      
+      run: |
+        install.packages('remotes')
+      shell: Rscript {0}
+
+    - name: Install ubuntu system dependencies
+      if: matrix.config.os == 'ubuntu-latest'
+      run: |
+        sudo apt-get install libcurl4-openssl-dev
+        sysreqs=$(Rscript -e 'cat("apt-get update -y && apt-get install -y", paste(gsub("apt-get install -y ", "", remotes::system_requirements("ubuntu", "20.04", package = c("shazam","alakazam","tigger","airr","optparse","Biostrings","GenomicAlignments","IRanges","BiocManager","RCurl","XML"))), collapse = " "))')
+        echo $sysreqs
+        sudo -s eval "$sysreqs"
+    - name: Install macOS system dependencies
+      if: matrix.config.os == 'macos-latest'
+      run: |
+        brew install cairo pkg-config autoconf automake libtool
+
+    - name: Cache conda
+      uses: actions/cache@v1
+      env:
+        # Increase this value to reset cache if etc/example-environment.yml has not changed
+        CACHE_NUMBER: 0
+      with:
+        path: ~/conda_pkgs_dir
+        key:
+          ${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{
+          hashFiles('environment.yml') }}
+    
+    - name: Cache ubuntu R packages
+      if: "!contains(github.event.head_commit.message, '/nocache') && matrix.config.os == 'ubuntu-latest'"
+      uses: actions/cache@v2
+      with:
+        path: /home/runner/work/_temp/Library
+        key: ${{ env.cache-version }}-${{ matrix.config.os }}-biocversion-RELEASE_${{ steps.R.outputs.mainbiocversion}}_${{ steps.R.outputs.subbiocversion}}-r-${{ steps.R.outputs.version}}-${{ hashFiles('.github/depends.Rds') }}
+        restore-keys: ${{ env.cache-version }}-${{ matrix.config.os }}-biocversion-RELEASE_${{ steps.R.outputs.mainbiocversion}}_${{ steps.R.outputs.subbiocversion}}-r-${{ steps.R.outputs.version}}-
+
+    - name: Cache macOS R packages
+      if: "!contains(github.event.head_commit.message, '/nocache') && matrix.config.os != 'ubuntu-latest'"
+      uses: actions/cache@v2
+      with:
+        path: ${{ env.R_LIBS_USER }}
+        key: ${{ env.cache-version }}-${{ matrix.config.os }}-biocversion-RELEASE_${{ steps.R.outputs.mainbiocversion}}_${{ steps.R.outputs.subbiocversion}}-r-${{ steps.R.outputs.version}}-${{ hashFiles('.github/depends.Rds') }}
+        restore-keys: ${{ env.cache-version }}-${{ matrix.config.os }}-biocversion-RELEASE_${{ steps.R.outputs.mainbiocversion}}_${{ steps.R.outputs.subbiocversion}}-r-${{ steps.R.outputs.version}}-
+        
+    - name: Setup Miniconda
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        auto-activate-base: true
+        auto-update-conda : true
+        activate-environment: dandelion
+        channels: conda-forge, bioconda, anaconda, defaults
+        channel-priority: true
+        python-version: ${{ matrix.config.python-version }}
+        environment-file: environment.yml
+        use-only-tar-bz2: true # IMPORTANT: This needs to be set for caching to work properly!
+    
+    - name: Install pip dependencies
+      run: pip install -r requirements.txt
+
+    - name: Install Dandelion
+      run: |
+        python setup.py install    
+              
+    - name: Install ubuntu R dependencies
+      if: matrix.config.os == 'ubuntu-latest'
+      run: |
+        install.packages(c('RCurl','XML'))
+        remotes::install_cran("BiocManager")
+        BiocManager::install(version = ${{ steps.R.outputs.biocversion}}, ask = FALSE)
+        BiocManager::install(c('Biostrings', 'GenomicAlignments', 'IRanges'))
+        install.packages(c('shazam', 'alakazam', 'tigger', 'airr', 'optparse'))
+      shell: Rscript {0}
+
+    - name: Install macOS R dependencies
+      if: matrix.config.os != 'ubuntu-latest'
+      run: |
+        options(install.packages.compile.from.source = "never")
+        install.packages(c('RCurl','XML'))
+        remotes::install_cran("BiocManager")
+        BiocManager::install(version = ${{ steps.R.outputs.biocversion}}, ask = FALSE)
+        BiocManager::install(c('Biostrings', 'GenomicAlignments', 'IRanges'))
+        install.packages(c('shazam', 'alakazam', 'tigger', 'airr', 'optparse'))
+      shell: Rscript {0}
+
+    - name: Test if R dependencies are installed properly      
+      run: |
+        Rscript tests/r_dependencies.R
+      shell: bash -l {0}
+
+    - name: Test with pytest
+      run: |
+        pip install git+https://www.github.com/zktuong/nxviz.git
+        pip install scirpy scrublet "annoy<1.17.0"
+        pytest --cov=dandelion --cov-report=xml --ignore=container -rP -W ignore::DeprecationWarning -W ignore::PendingDeprecationWarning -W ignore::FutureWarning
+
+    - name: Show coverage
+      run: |
+        coverage report
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: ./coverage.xml
+        directory: ./coverage/reports/
+        env_vars: ${{ format('OS={0},PYTHON={1}', matrix.config.os, matrix.config.python-version) }}
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: true
+        path_to_write_report: ./coverage/codecov_report.txt
+        verbose: true

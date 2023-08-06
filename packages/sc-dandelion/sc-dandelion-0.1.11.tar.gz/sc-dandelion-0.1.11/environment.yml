@@ -1,0 +1,26 @@
+name: dandelion
+channels:
+- conda-forge
+- bioconda
+- anaconda
+- defaults
+dependencies:
+- numpy
+- pandas
+- pandoc
+- pyyaml
+- changeo
+- seaborn
+- statsmodels
+- numba
+- pytables
+- pytest
+- blast
+- igblast
+- pip
+- tbb
+- pip:
+  - nbsphinx
+  - sphinx-autodoc-typehints
+  - rpy2>=3.4.0
+  - pytest-cov
