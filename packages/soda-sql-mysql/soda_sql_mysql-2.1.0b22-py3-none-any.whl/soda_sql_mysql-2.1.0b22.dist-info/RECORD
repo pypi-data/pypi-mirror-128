@@ -1,0 +1,5 @@
+sodasql/dialects/mysql_dialect.py,sha256=2RzZNxKgiV1rNTrZx8MRBmQby-MkHbn5ZHnMqprhiY4,4923
+soda_sql_mysql-2.1.0b22.dist-info/METADATA,sha256=Ts_J349-crc-LYukp9PC9WEEJ37VkN1161-W9FMK4IA,238
+soda_sql_mysql-2.1.0b22.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+soda_sql_mysql-2.1.0b22.dist-info/top_level.txt,sha256=iWRgaTzdfqDF5qGyrChKrnJh7tIweOrFM4J4_Lun_Xc,8
+soda_sql_mysql-2.1.0b22.dist-info/RECORD,,
