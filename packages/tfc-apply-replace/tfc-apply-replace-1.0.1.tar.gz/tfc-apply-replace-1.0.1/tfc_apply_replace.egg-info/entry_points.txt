@@ -1,0 +1,3 @@
+[console_scripts]
+tfc-apply-replace = tfc_apply_replace.cli:main
+
