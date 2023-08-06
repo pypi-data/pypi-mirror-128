@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: acrawriter
+Version: 1.0.3
+Summary: AcraWriter library for Python: encrypts data into AcraStructs, allowing Acra to decrypt it
+Home-page: https://github.com/cossacklabs/acra/
+Author: Cossack Labs
+Author-email: dev@cossacklabs.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+
+UNKNOWN
+
