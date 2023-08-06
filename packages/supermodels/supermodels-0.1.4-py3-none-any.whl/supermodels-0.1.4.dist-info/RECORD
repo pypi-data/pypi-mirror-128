@@ -1,0 +1,11 @@
+supermodels/__init__.py,sha256=J3x_h3hLni6UEGJzIhjTZmKFVppfI0dg_4Hi-GK6yDY,332
+supermodels/config.py,sha256=7v_2y2Y9NoELWkqdFXdq34WYjUcUlR4wR84C2O98ZnM,787
+supermodels/exceptions.py,sha256=crdm9uJTQToE1uHiO7_2TyB2A_ptv7WPaiwFd4eK8CA,1039
+supermodels/logging.py,sha256=RsFisr0SLoeKrIdJQg6Jzfn9pF6aO7vMBx2VcNSc_FU,499
+supermodels/models.py,sha256=BnOAj20t5JtcVqGuP4opswusJIcWBN4dTL2CLcl8Yhs,7580
+supermodels/rules.py,sha256=hZfz9wAb_7RdXsVynqwuoXyGKG5hlNk3lKNtgdbN8sc,1385
+supermodels/serdes.py,sha256=5FAo78XUs34XOU-jtm2FcuUkTSkHkyNk0VZHG6soUF4,7148
+supermodels/util.py,sha256=LxJs1aFoEPlvH-e1RVdATBdyuL5ZjxNzZFIw3Lg5lic,2498
+supermodels-0.1.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+supermodels-0.1.4.dist-info/METADATA,sha256=wFxvLMrdVKMRkltiHdNNBcF0avX7G2gfPr4qm6N1FDE,303
+supermodels-0.1.4.dist-info/RECORD,,

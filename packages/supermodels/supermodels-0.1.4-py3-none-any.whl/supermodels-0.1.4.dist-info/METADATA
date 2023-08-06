@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: supermodels
+Version: 0.1.4
+Summary: 
+Author: Tsvetan Kintisheff
+Author-email: kintisheff@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
