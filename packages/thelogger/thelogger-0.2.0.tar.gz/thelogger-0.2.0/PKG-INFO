@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: thelogger
+Version: 0.2.0
+Summary: easy logging, timing and email notifications of code execution
+Home-page: https://github.com/tom1919/TheLogger
+Author: Tom1919
+Author-email: py.notify1@gmail.com
+License: Apache 2.0
+Download-URL: https://github.com/tom1919/TheLogger/archive/refs/tags/v0.2.0.tar.gz
+Description: test
+Keywords: log,logging,logger,email,timimg,notification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
