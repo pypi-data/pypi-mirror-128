@@ -1,0 +1,5 @@
+ase
+pymatgen
+aiida-core
+aiida-quantumespresso
+qeschema
