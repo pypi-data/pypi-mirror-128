@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+SHFS/DFwrapper.py
+SHFS/FeatureSelectionClf.py
+SHFS/FeatureSelectionRegression.py
+SHFS/FeatureSelectionUniversal.py
+SHFS/__about__.py
+SHFS/__init__.py
+SHFS.egg-info/PKG-INFO
+SHFS.egg-info/SOURCES.txt
+SHFS.egg-info/dependency_links.txt
+SHFS.egg-info/requires.txt
+SHFS.egg-info/top_level.txt
