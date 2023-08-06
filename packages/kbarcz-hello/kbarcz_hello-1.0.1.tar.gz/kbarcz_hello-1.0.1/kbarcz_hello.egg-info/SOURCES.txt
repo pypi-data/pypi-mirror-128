@@ -1,0 +1,8 @@
+README.md
+setup.py
+kbarcz_hello.egg-info/PKG-INFO
+kbarcz_hello.egg-info/SOURCES.txt
+kbarcz_hello.egg-info/dependency_links.txt
+kbarcz_hello.egg-info/top_level.txt
+sample_package/__init__.py
+sample_package/sample_kb.py
