@@ -1,0 +1,6 @@
+appdirs
+hunspell
+libarchive-c
+lxml
+requests
+tqdm
