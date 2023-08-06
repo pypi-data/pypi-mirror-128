@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: shotoapi
+Version: 0.0.1
+Summary: Api de acesso ao Shoto
+Home-page: https://github.com/fabiocax/shotoapi
+Author: Fabio Alberti
+Author-email: fabiocax@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/fabiocax/shotoapi
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# shotoapi
+
+

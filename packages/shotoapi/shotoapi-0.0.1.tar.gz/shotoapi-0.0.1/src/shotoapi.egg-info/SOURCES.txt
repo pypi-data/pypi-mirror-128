@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/shotoapi/__init__.py
+src/shotoapi.egg-info/PKG-INFO
+src/shotoapi.egg-info/SOURCES.txt
+src/shotoapi.egg-info/dependency_links.txt
+src/shotoapi.egg-info/top_level.txt
