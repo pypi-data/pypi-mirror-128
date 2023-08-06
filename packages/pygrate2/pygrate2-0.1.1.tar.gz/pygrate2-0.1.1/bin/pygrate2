@@ -1,0 +1,20 @@
+#!/usrpygrate2 env python
+
+import sys
+from pygrate2 import migrate
+from pygrate2 import seed
+
+
+def print_usage():
+    print("Usage: pygrate2 [--migrate | --seed]")
+
+
+if len(sys.argv) != 2 or sys.argv[1] not in ["--migrate", "--seed"]:
+    print_usage()
+    sys.exit(1)
+
+if sys.argv[1] == "--migrate":
+    migrate.apply()
+
+if sys.argv[1] == "--seed":
+    seed.apply()
