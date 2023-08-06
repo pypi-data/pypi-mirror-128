@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pygenricher/GeneEnrichment.py
+pygenricher/__init__.py
+pygenricher.egg-info/PKG-INFO
+pygenricher.egg-info/SOURCES.txt
+pygenricher.egg-info/dependency_links.txt
+pygenricher.egg-info/entry_points.txt
+pygenricher.egg-info/requires.txt
+pygenricher.egg-info/top_level.txt
+pygenricher/Data/all.gmt
+pygenricher/Data/c2.cp.v7.4.symbols.gmt
+pygenricher/Data/geneList_Fig5_qValue_cancerGenes.csv
