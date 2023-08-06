@@ -1,0 +1,225 @@
+.section #examples blockquote {
+  margin-left: 0;
+}
+
+.sig {
+  font-size: 145%;
+}
+
+.sig ~ * .sig {
+  font-size: 137%;
+}
+
+.sig ~ * .sig ~ * .sig {
+  font-size: 131%;
+}
+
+.sig ~ * .sig ~ * .sig ~ * .sig {
+  font-size: 125%;
+}
+
+.function > dt:first-of-type {
+  padding-top: 40px !important;
+  padding-bottom: 15px !important;
+  font-size: 120%;
+}
+
+p.rubric::after {
+  content: ":";
+}
+
+dl {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+dd {
+  margin-top: 10px;
+}
+
+.viewcode-link {
+  font-size: 20px;
+}
+
+a {
+  color: #247ba0;
+  border-bottom: none !important;
+}
+
+cite {
+  background-color: #eeeeee;
+  padding: 2px 7px 2px 7px;
+}
+
+#table-of-contents h1 {
+  margin-left: -25px;
+}
+
+div.body {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 0;
+  padding-left: 85px;
+  max-width: initial;
+}
+
+div.body h1 {
+  font-size: 260%;
+  margin: 30px 0px 20px -40px;
+}
+
+div.body h2 {
+  font-size: 200%;
+  margin: 25px 0px 15px -30px;
+}
+
+div.body h3 {
+  font-size: 180%;
+  margin: 25px 0px 10px -20px;
+}
+
+div.body ul {
+  margin-top: 10px !important;
+}
+
+div.footer {
+  margin-top: 30px;
+}
+
+.field-list p {
+  text-indent: -58px;
+  margin-left: 72px;
+}
+
+.headerlink {
+  visibility: hidden !important;
+}
+
+.highlight pre span.gp {
+  user-select: none;
+}
+
+#logo {
+  margin-bottom: 10px;
+}
+
+.py.method {
+  margin-top: 10px;
+}
+
+/*
+################
+### Sidebar ###
+##############
+*/
+
+div.sphinxsidebar {
+  font-size: 17px;
+}
+
+div.sphinxsidebar ul li {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+div.sphinxsidebar ul {
+  padding-left: 13px;
+}
+
+div.sphinxsidebar h1,
+div.sphinxsidebar h2,
+div.sphinxsidebar h3 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  padding: 0;
+}
+
+div.sphinxsidebar h1 {
+  margin: 20px 0 10px 0;
+  font-size: 180%;
+}
+
+div.sphinxsidebar h2 {
+  margin: 20px 0 10px 0;
+  font-size: 150%;
+}
+
+div.sphinxsidebar h3 {
+  margin: 15px 0 7px 0;
+  font-size: 140%;
+}
+
+div.sphinxsidebar ul li.toctree-l1 > a {
+  font-size: 110%;
+}
+
+/*
+###################
+### RESPONSIVE ###
+#################
+*/
+
+/* Big */
+@media only screen and (min-width: 1600px) {
+  .sig {
+    margin-right: -200px;
+  }
+
+  div.document {
+    width: 86vw;
+    margin: 75px auto 0 auto;
+  }
+
+  div.body {
+    padding-right: 230px;
+  }
+
+  div.sphinxsidebar {
+    width: 255px;
+  }
+
+  div.bodywrapper {
+    margin: 0 0 0 305px;
+  }
+
+  div.sphinxsidebar h1,
+  div.sphinxsidebar h2,
+  div.sphinxsidebar h3 {
+    color: #444;
+  }
+}
+
+/* Medium */
+@media only screen and (min-width: 875px) and (max-width: 1366px) {
+  div.body {
+    padding-right: 50px;
+  }
+
+  dl dd {
+    margin-left: 15px;
+  }
+
+  body {
+    font-size: 94%;
+  }
+
+  div.sphinxsidebarwrapper {
+    font-size: 94%;
+  }
+
+  div.document {
+    width: 90vw;
+  }
+}
+
+/* Small */
+@media only screen and (max-width: 875px) {
+  div.sphinxsidebar {
+    width: 100vw;
+  }
+
+  div.body {
+    padding-right: 20px;
+  }
+}
