@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+burningalice/__init__.py
+burningalice/auto_label_tracker.py
+burningalice/map_analyzer.py
+burningalice/metrics_tracker.py
+burningalice/text_config_generator.py
+burningalice/text_tracker.py
+burningalice.egg-info/PKG-INFO
+burningalice.egg-info/SOURCES.txt
+burningalice.egg-info/dependency_links.txt
+burningalice.egg-info/top_level.txt
