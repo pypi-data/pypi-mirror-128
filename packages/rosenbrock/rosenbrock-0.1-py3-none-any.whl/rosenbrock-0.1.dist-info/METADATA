@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: rosenbrock
+Version: 0.1
+Summary: Rosenbrock distribution, including unnormalized density and analytic sampler
+Home-page: https://github.com/alisiahkoohi/rosenbrock
+Author: Ali Siahkoohi
+Author-email: alisk@gatech.edu
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: torchvision
+
+# Rosenbrock distribution
+
+This repository implements the multidimensional [Rosenbrock distribution](https://arxiv.org/pdf/1903.09556.pdf), including unnormalized density and analytic sampler
+
+
+## Installation
+
+You can install the package via:
+
+```bash
+git clone https://github.com/alisiahkoohi/rosenbrock
+cd rosenbrock
+pip install -e .
+```
+
+## Example
+
+For samples from a 2D Rosenbrock distribution, run:
+
+```
+python example/example.py
+```
+
+![](figs/samples.png)
+
+
+## Questions
+
+Please contact alisk@gatech.edu for further questions.
+
+
+## Author
+
+Ali Siahkoohi
+
+
+
