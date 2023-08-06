@@ -1,0 +1,3 @@
+[console_scripts]
+kuay=kuay.cli.main:entrypoint
+

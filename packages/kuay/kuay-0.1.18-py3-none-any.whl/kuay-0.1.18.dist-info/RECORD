@@ -1,0 +1,12 @@
+kuay/__init__.py,sha256=45Jiy0FumDqO2X_Wu5B7K5d4e8ilIp8oMwvA3OExt_8,22
+kuay/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kuay/cli/main.py,sha256=H3DiPPQfiBcA0jgWfhUns8nTbEG59Trydgu2B_VVZH4,1685
+kuay/graphql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kuay/graphql/queries/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kuay/graphql/queries/whale.py,sha256=ggVgoLR5bCYsd-I8fMRX03BSUwcHMdLjmG_mNP4vwYU,418
+kuay/schema.py,sha256=C4N6eOTaWTlxUu2SG-eZlg0CXhg_4_va-zPZlf6MfPI,584
+kuay/ward.py,sha256=O7iusRiQsQ_57KRxglhmU2tGDtZHCKEJ-GRKI2oqkvg,495
+kuay-0.1.18.dist-info/entry_points.txt,sha256=RVuNNMbHIV8ygsdvEUxtQk_DwLsthW4CosDldqUllm8,49
+kuay-0.1.18.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+kuay-0.1.18.dist-info/METADATA,sha256=Thr-ZXjLH6mwSIJUSFENspQinK1AAaKjFHJPNhTbXVw,373
+kuay-0.1.18.dist-info/RECORD,,
