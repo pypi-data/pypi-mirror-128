@@ -1,0 +1,13 @@
+entities_data/__init__.py,sha256=trzbh5fSw5k4FCWAYUMRRBSujeXop8LBzD7L4P2ptFs,13644
+entities_data/dataset_split.py,sha256=VBKcU1Y5nZrqCDM0ef9dHlkN2P7lmON1wuUriHxlNPI,5245
+entities_data/sentence.py,sha256=erOKOqPomxGo4lmkDYX-kb9au_AYR9_PhIxDbZhUtV8,1025
+entities_data/sentence_utils.py,sha256=Wf3erz_WCMe0mm-HeHLt7FVZB999_qAXyglrrdDCosU,2133
+entities_data/stratified_split.py,sha256=7jvGwOlfqLyUsBzrWZKc3upU-RZ7TrFmZmDkrAhA2i4,5869
+entities_data/version.py,sha256=K3kV_Wytuyk886jujhc3R8PqeJ9BecJMTgVMlDjr5tA,19
+entities_data/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entities_data/data/en/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ner_dataset-0.0.2.dist-info/LICENSE,sha256=r6e33nPo7TJBaXUzM3Cut_vAR0n8tKXrNSnorxoMcb4,1083
+ner_dataset-0.0.2.dist-info/METADATA,sha256=pmriwYZQjLpJKDAiQVM_AH1YmrAY6QgGCq23FHWAj0w,1791
+ner_dataset-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ner_dataset-0.0.2.dist-info/top_level.txt,sha256=f8D96HNvt-IWZiZNJen-8RY04lbtMjxZdN80GM4MwLY,14
+ner_dataset-0.0.2.dist-info/RECORD,,
