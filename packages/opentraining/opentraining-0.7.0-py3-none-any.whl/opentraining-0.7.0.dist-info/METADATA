@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: opentraining
+Version: 0.7.0
+Summary: A set of Sphinx extensions to manage training material
+Home-page: https://faschingbauer.me
+Author: Jörg Faschingbauer
+License: UNKNOWN
+Keywords: homepage,training,opentraining
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+License-File: LICENSE
+Requires-Dist: networkx
+Requires-Dist: Sphinx
+
+UNKNOWN
+
