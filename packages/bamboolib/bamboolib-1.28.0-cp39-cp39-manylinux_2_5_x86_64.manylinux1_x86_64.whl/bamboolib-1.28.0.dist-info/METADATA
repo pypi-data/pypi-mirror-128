@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: bamboolib
+Version: 1.28.0
+Summary: bamboolib - a GUI for pandas
+Home-page: https://bamboolib.8080labs.com
+Author: 8080 Labs
+Author-email: bamboolib@8080labs.com
+License: UNKNOWN
+Keywords: pandas,gui,jupyter,widgets,ipython
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: analytics-python (==1.2.9)
+Requires-Dist: attrs (>=20.3.0)
+Requires-Dist: cryptography (<3.0.0,>=2.6.1)
+Requires-Dist: ipywidgets (<8.0.0,>=7.6.0)
+Requires-Dist: jedi (<1.0.0)
+Requires-Dist: jupyterlab (<4.0.0,>=2.0)
+Requires-Dist: notebook (<7.0.0,>=5.3.0)
+Requires-Dist: pandas (<2.0.0,>=1.1.0)
+Requires-Dist: packaging (>=19.2)
+Requires-Dist: plotly (<5.0.0,>=4.9.0)
+Requires-Dist: ppscore (<2.0.0,>=1.2.0)
+Requires-Dist: psutil (<6,>=5.4.2)
+Requires-Dist: pygments
+Requires-Dist: ipyslickgrid (==0.0.3)
+Requires-Dist: scikit-learn (<1.0.0,>=0.20.2)
+Requires-Dist: seaborn (<0.11,>=0.10)
+Requires-Dist: toml (>=0.10.0)
+Requires-Dist: xlrd (>=1.0.0)
+
+# bamboolib - a GUI for pandas 🐼🐍
+
+## Python Data Science for Everyone
+
+[![](https://img.shields.io/badge/python->=3.6-blue.svg)](https://bamboolib.com)
+
+bamboolib is a **GUI for pandas DataFrames** that enables anyone to work with Python in Jupyter Notebook or JupyterLab
+
+- Intuitive GUI that **exports Python code**
+- Supports all common transformations and visualizations
+- Transformations come with **full keyboard control**
+- Provides best-practice analyses for data exploration
+- Add custom transformations, visualizations and data loaders via simple **Python plugins**
+- **Integrate** your company's internal **Python libraries**
+
+## Used in more than 100 companies
+
+### These are the benefits bamboolib creates for them
+
+- Enables data analysts and scientists to work with Python without having to write code.
+- Reduces the on-boarding time and training costs for data analysts and scientists
+- Enables data analysts to collaborate with data scientists within Jupyter and to share the working results as reproducible code
+- Compared to other enterprise AI platforms, bamboolib creates no technical lock-in and provides the greatest flexibility via leveraging Python
+- All your data remains private and secure
+
+__[🔍 Get free trial access](https://bamboolib.com/trial)__
+
+## Installation
+
+Install bamboolib for Jupyter Notebook or Jupyter Lab by running the code below in your terminal (or Anaconda Prompt for Windows)
+
+```bash
+pip install bamboolib
+
+# Jupyter Notebook extensions
+python -m bamboolib install_nbextensions
+
+# JupyterLab extensions
+python -m bamboolib install_labextensions
+```
+
+After you have installed bamboolib, you can [go here to test bamboolib](https://docs.bamboolib.8080labs.com/documentation/how-tos/installation-and-setup/install-bamboolib/test-bamboolib).
+
+## Documentation
+
+You find out how to get started along with tutorials and an API reference on our [docs](https://docs.bamboolib.8080labs.com/).
+
+## Further links
+
+- [Official Website](https://bamboolib.8080labs.com/)
+- [bamboolib tutorial on Medium](https://towardsdatascience.com/bamboolib-learn-and-use-pandas-without-coding-23a7d3a94e1b)
+
