@@ -1,0 +1,8 @@
+requests
+setuptools
+pytest
+pylint
+matplotlib
+aiohttp
+aiofiles
+tqdm
