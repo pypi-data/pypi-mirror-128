@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        makey=makey.makey:cli
+    
