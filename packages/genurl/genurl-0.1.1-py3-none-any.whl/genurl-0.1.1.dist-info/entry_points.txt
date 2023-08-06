@@ -1,0 +1,3 @@
+[console_scripts]
+genurl=genurl.genurl:main
+
