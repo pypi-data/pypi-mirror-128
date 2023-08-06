@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Installation instructions &#8212; BioSimulators-pyNeuroML 0.0.12 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/biosimulators.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tutorial" href="tutorial.html" />
+    <link rel="prev" title="BioSimulators-pyNeuroML documentation" href="index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+      
+      <link rel="icon" sizes="16x16" href="https://github.com/biosimulations/biosimulations/raw/dev/libs/shared/assets/src/assets/icons/favicon-16x16.png">
+      
+    
+      
+      <link rel="icon" sizes="32x32" href="https://github.com/biosimulations/biosimulations/raw/dev/libs/shared/assets/src/assets/icons/favicon-32x32.png">
+      
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="index.html">
+  <img src="_static/biosimulators-logo.svg" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Quick links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/biosimulators/Biosimulators_pyNeuroML" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/biosimulators" rel="noopener" target="_blank" title="Twitter">
+            <span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:info@biosimulators.org" rel="noopener" target="_blank" title="Email">
+            <span><i class="fas fa-envelope"></i></span>
+            <label class="sr-only">Email</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Enter text to search for ..." aria-label="Enter text to search for ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#command-line-program">
+   Command-line program
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#docker-images-with-command-line-entrypoints">
+   Docker images with command-line entrypoints
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/biosimulators/Biosimulators_pyNeuroML/edit/dev/docs-src/installation.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="installation-instructions">
+<h1>Installation instructions<a class="headerlink" href="#installation-instructions" title="Permalink to this headline">¶</a></h1>
+<p>BioSimulators-pyNeuroML is available as four command-line programs and four command-line programs encapsulated into four Docker images.</p>
+<section id="command-line-program">
+<h2>Command-line program<a class="headerlink" href="#command-line-program" title="Permalink to this headline">¶</a></h2>
+<p>First, install <a class="reference external" href="https://www.python.org/downloads/">Python</a> (&gt;= 3.7), <a class="reference external" href="https://pip.pypa.io/">pip</a>, and <a class="reference external" href="https://java.com/">Java</a>.</p>
+<p>Second, install the following additional programs to use NetPyNe and NEURON:</p>
+<ul>
+<li><p>NEURON</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>gcc</p></li>
+<li><p>g++</p></li>
+<li><p>make</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>NetPyNe</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>All of the above</p></li>
+<li><p>mpi</p></li>
+<li><p>libmpich-dev</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Third, run the following command to install BioSimulators-pyNeuroML:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>pip install biosimulators-pyneuroml
+</pre></div>
+</div>
+<p>Add the <code class="docutils literal notranslate"><span class="pre">brian2</span></code> option to install support for Brian 2.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>pip install biosimulators-pyneuroml[brian2]
+</pre></div>
+</div>
+<p>Add the <code class="docutils literal notranslate"><span class="pre">netpyne</span></code> option to install support for NetPyNe.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>pip install biosimulators-pyneuroml[netpyne]
+</pre></div>
+</div>
+<p>Add the <code class="docutils literal notranslate"><span class="pre">neuron</span></code> option to install support for NEURON.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>pip install biosimulators-pyneuroml[neuron]
+</pre></div>
+</div>
+</section>
+<section id="docker-images-with-command-line-entrypoints">
+<h2>Docker images with command-line entrypoints<a class="headerlink" href="#docker-images-with-command-line-entrypoints" title="Permalink to this headline">¶</a></h2>
+<p>After installing <a class="reference external" href="https://docs.docker.com/get-docker/">Docker</a>, run the following commands to install the Docker images for jNeuroML/pyNeuroML, NetPyNe, and NEURON:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker pull ghcr.io/biosimulators/brian2
+docker pull ghcr.io/biosimulators/netpyne
+docker pull ghcr.io/biosimulators/neuron
+docker pull ghcr.io/biosimulators/pyneuroml
+</pre></div>
+</div>
+</section>
+</section>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, BioSimulators Team.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+# Base OS
+FROM python:3.9-slim-buster
+
+ARG VERSION=0.0.12
+ARG SIMULATOR_VERSION="0.5.18"
+
+# metadata
+LABEL \
+    org.opencontainers.image.title="pyNeuroML" \
+    org.opencontainers.image.version="${SIMULATOR_VERSION}" \
+    org.opencontainers.image.description="Python package for reading, writing, simulating and analysing NeuroML2/LEMS models" \
+    org.opencontainers.image.url="https://github.com/NeuroML/pyNeuroML" \
+    org.opencontainers.image.documentation="https://github.com/NeuroML/pyNeuroML/" \
+    org.opencontainers.image.source="https://github.com/biosimulators/Biosimulators_pyNeuroML" \
+    org.opencontainers.image.authors="BioSimulators Team <info@biosimulators.org>" \
+    org.opencontainers.image.vendor="BioSimulators Team" \
+    org.opencontainers.image.licenses="LGPL-3.0-only" \
+    \
+    base_image="python:3.9-slim-buster" \
+    version="${VERSION}" \
+    software="pyNeuroML" \
+    software.version="${SIMULATOR_VERSION}" \
+    about.summary="Python package for reading, writing, simulating and analysing NeuroML2/LEMS models" \
+    about.home="https://github.com/NeuroML/pyNeuroML" \
+    about.documentation="https://github.com/NeuroML/pyNeuroML/" \
+    about.license_file="https://raw.githubusercontent.com/NeuroML/pyNeuroML/master/LICENSE.lesser" \
+    about.license="SPDX:LGPL-3.0-only" \
+    about.tags="computational neuroscience,biochemical networks,dynamical modeling,stochastic simulation,NeuroML,LEMS,SED-ML,COMBINE,OMEX,BioSimulators" \
+    maintainer="BioSimulators Team <info@biosimulators.org>"
+
+# Install requirements
+RUN mkdir -p /usr/share/man/man1/ \
+    && apt-get update -y \
+    && apt-get install -y --no-install-recommends \
+        default-jre \
+    && apt-get autoremove -y \
+    && rm -rf /var/lib/apt/lists/*
+
+# fonts for matplotlib
+RUN apt-get update -y \
+    && apt-get install -y --no-install-recommends libfreetype6 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy code for command-line interface into image and install it
+COPY . /root/Biosimulators_pyNeuroML
+RUN pip install /root/Biosimulators_pyNeuroML \
+    && rm -rf /root/Biosimulators_pyNeuroML \
+    && python -c "import matplotlib.font_manager"
+RUN pip install "pyneuroml==${SIMULATOR_VERSION}"
+ENV VERBOSE=0 \
+    MPLBACKEND=PDF
+
+# configure matplotlib
+RUN mkdir -p /.cache/matplotlib \
+    && mkdir -p /.config/matplotlib \
+    && chmod ugo+rw /.config/matplotlib \
+    && chmod ugo+rw /.cache/matplotlib
+
+# Entrypoint
+ENTRYPOINT ["biosimulators-pyneuroml"]
+CMD []
