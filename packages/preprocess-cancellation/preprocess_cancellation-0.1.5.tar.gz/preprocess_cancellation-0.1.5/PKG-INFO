@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: preprocess-cancellation
+Version: 0.1.5
+Summary: GCode processor to add klipper cancel-object markers
+Home-page: https://github.com/kageurufu/cancelobject-preprocessor
+Author: Franklyn Tackitt
+Author-email: im@frank.af
+Requires-Python: >=3.6.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: shapely
+Requires-Dist: shapely; extra == "shapely"
+Project-URL: Bug Tracker, https://github.com/kageurufu/cancelobject-preprocessor/issues
+Project-URL: Repository, https://github.com/kageurufu/cancelobject-preprocessor
