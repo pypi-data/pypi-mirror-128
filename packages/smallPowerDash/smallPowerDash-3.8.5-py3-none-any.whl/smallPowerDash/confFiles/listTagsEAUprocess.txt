@@ -1,0 +1,31 @@
+
+POMPES
+=================================
+SEH1.GWPBH_PMP_04.HE10 ---> manque des trucs report
+SEH1.GWPBH_PMP_05 --> manque courant,voltage
+
+Reservoir TNK01
+=================================
+debit SEH1.L219 -> ok
+consigne vanne L221(L219=L221) -> ok
+consigne vanne L200 -> ok
+consigne vanne vidange L205 -> ok
+niveau reservoir TNK01 LS --> datascietism true
+pression,temperature res TNK-01 TT,PT -> ok
+
+Pompe purge
+=================================
+GWPBC_PMP_01 --> manque, voltage, puissance
+CT L202 -->
+SEH0.L210_H 2OP_CT_01.H M05
+
+GV
+=================================
+SEH1.L213_H 2OPa_FT_01.H M05
+SEH1.L211_H 2OP_TT_01.H M05
+
+HTBF STACK
+=================================
+L036
+L020
+GFD_01

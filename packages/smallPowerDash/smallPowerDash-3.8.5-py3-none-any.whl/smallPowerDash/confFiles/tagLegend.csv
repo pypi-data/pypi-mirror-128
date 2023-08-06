@@ -1,0 +1,27 @@
+tag,description,legend
+SIS.JT_01.HE10,Mesure puissance bâtiment-Total puissance active (P),Mesure puissance bâtiment
+SEH1.HPB_STG_01a_HER_01_JT_01.HE10,HEATING PHASE 1 (HIGH) VAPOR GENERATOR 1 ENERGY MEASUREMENT (1A/10A phase 1)-Total puissance active (P),HEATING PHASE 1 (HIGH) VAPOR GENERATOR 1
+SEH1.HPB_STG_01a_HER_02_JT_01.HE10,HEATING PHASE 2 (MID) VAPOR GENERATOR 1 ENERGY MEASUREMENT (1A/10A phase 3)-Total puissance active (P),HEATING PHASE 2 (MID) VAPOR GENERATOR 1
+SEH1.HPB_STG_01a_HER_03_JT_01.HE10,HEATING PHASE 3 (LOW) VAPOR GENERATOR 1 ENERGY MEASUREMENT (1A/10A phase 2)-Total puissance active (P),HEATING PHASE 3 (LOW) VAPOR GENERATOR 1
+SEH1.HPB_STG_01b_HER_00_JT_01.HE10,HEATING VAPOR GENERATOR 2 ENERGY MEASUREMENT (1A/10A 3 phases)-Total puissance active (P),HEATING VAPOR GENERATOR 2
+SEH1.STB_STK_HER_00_JT_01.HE10,HEATING STACK ZONE 1 ENERGY MEASUREMENT (1A/20A phase 1)-Total puissance active (P),HEATING STACK ZONE 1
+SEH1.STB_STK_HER_00_JT_02.HE10,HEATING STACK ZONE 2 ENERGY MEASUREMENT (1A/20A phase 2)-Total puissance active (P),HEATING STACK ZONE 2
+SEH1.STB_STK_HER_00_JT_03.HE10,HEATING STACK ZONE 3 ENERGY MEASUREMENT (1A/20A phase 3)-Total puissance active (P),HEATING STACK ZONE 3
+SEH1.GWPBH_PMP_05_JT_01.HE10,PURGE PUMP GWPBH-PMP-05 ENERGY MEASUREMENT (1A/1A phase 1)-Total puissance active (P),PURGE PUMP GWPBH-PMP-05
+SEH0.GWPBC_PMP_01_JT_01.HE10,PUMP GWPBC-PMP-01 ENERGY MEASUREMENT (1A/1A phase 2)-Total puissance active (P),PUMP GWPBC-PMP-01
+SEH1.STB_STK_01.ALIM_JT_HM05,Alimentation stack 1 : Puissance RMS,Alimentation stack 1
+SEH1.STB_STK_02.ALIM_JT_HM05,Alimentation stack 2 : Puissance RMS,Alimentation stack 2
+SEH1.STB_STK_03.ALIM_JT_HM05,Alimentation stack 3 : Puissance RMS,Alimentation stack 3
+SEH1.STB_STK_04.ALIM_JT_HM05,Alimentation stack 4 : Puissance RMS,Alimentation stack 4
+SEH01.GWPBC_BLR_01_IT_01.HM05,Blower Air bruleur courant (Tension 48VDC2 / 5002)-Variable de sortie convertie filtrée,Blower Air bruleur courant (48VDC2)
+SEH01.GWPBC_BLR_02a_IT_01.HM05,Blower air amont stack courant (Tension 48VDC1 / 4504)-Variable de sortie convertie filtrée,Blower air amont stack courant (Tension 48VDC1)
+SEH01.GWPBC_BLR_02b_IT_01.HM05,Blower air amont stack courant (Tension 48VDC2 / 5002)-Variable de sortie convertie filtrée,Blower air amont stack courant (Tension 48VDC2)
+SEH01.GWPBC_BLR_03_IT_01.HM05,Blower air aval stack courant (Tension 48VDC1 / 4504)-Variable de sortie convertie filtrée,Blower air aval stack courant (Tension 48VDC1)
+SEH1.GWPBH_BLR_01_IT_01.HM05,Blower balayage enceinte thermique : mesure courant (Tension 24VDC1 / 5404)-Variable de sortie convertie filtrée,Blower balayage enceinte thermique : mesure courant (Tension 24VDC1)
+SEH0.GWPBC_PMP_02_IT_01.HM05,Pompe valorisation courant  (Tension 24VDC1 / 5404)-Variable de sortie convertie filtrée,Pompe valorisation courant  (Tension 24VDC1)
+SEH1.GWPBH_PMP_01_IT_01.HM05,Pompe recirculation a froid courant (Tension 24VDC1 / 5404)-Variable de sortie convertie filtrée,Pompe recirculation a froid courant (Tension 24VDC1)
+SEH1.GWPBH_PMP_02_IT_01.HM05,Pompe fuel bruleur courant (Tension 24VDC1 / 5404)-Variable de sortie convertie filtrée,Pompe fuel bruleur courant (Tension 24VDC1)
+SEH1.GWPBH_PMP_03_IT_01.HM05,Pompe H2 neuf courant (Tension 24VDC1 / 5404)-Variable de sortie convertie filtrée,Pompe H2 neuf courant (Tension 24VDC1)
+SEH1.HPB_PMP_01a_IT_01.HM05,Pompe recirculation a chaud courant (Tension 24VDC1 / 5404)-Variable de sortie convertie filtrée,Pompe recirculation a chaud courant (Tension 24VDC1)a
+SEH1.HPB_PMP_01b_IT_01.HM05,Pompe recirculation a chaud courant (Tension 24VDC1 / 5404)-Variable de sortie convertie filtrée,Pompe recirculation a chaud courant (Tension 24VDC1)b
+SEH0.JT_01.HE10,GENERAL NETWORK ENERGY MEASUREMENT (1A/125A 3 phases)-Total puissance active (P),puissance totale 
