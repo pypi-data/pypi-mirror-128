@@ -1,0 +1,3 @@
+[glia.catalogue]
+dbbs = dbbs_catalogue:catalogue
+

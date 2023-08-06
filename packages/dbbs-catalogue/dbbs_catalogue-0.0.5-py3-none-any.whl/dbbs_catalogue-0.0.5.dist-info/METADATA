@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dbbs-catalogue
+Version: 0.0.5
+Summary: DBBS catalogue of Arbor dialect NMODL files.
+Home-page: https://github.com/dbbs-lab/catalogue
+Author: Robin De Schepper
+Author-email: robingilbert.deschepper@unipv.it
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nrn-glia (>=0.4)
+
+# catalogue
+Arbor catalogue for the DBBS NMODL files in the Arbor dialect.
+
+
