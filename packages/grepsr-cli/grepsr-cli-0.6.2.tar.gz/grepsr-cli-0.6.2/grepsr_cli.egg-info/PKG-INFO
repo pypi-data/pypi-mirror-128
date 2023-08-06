@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: grepsr-cli
+Version: 0.6.2
+Summary: A Cli tool for Grepsr Developers
+Home-page: https://bitbucket.org/grepsr/grepsr-cli/
+Author: grepsr
+Author-email: dev@grepsr.com
+License: unlicensed
+Description: # A Cli tool for Grepsr Developers
+        
+        ## Installation
+        ```
+        $ pip install grepsr-cli
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
