@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: esbonio-extensions
+Version: 0.1.0
+Summary: A collection of Sphinx extensions
+Home-page: UNKNOWN
+Author: Alex Carney
+Author-email: alcarneyme@gmail.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Esbonio Extensions
+
+**This package is in early development**
+
+A collection of Sphinx extensions.
+
+
