@@ -1,0 +1,221 @@
+Metadata-Version: 2.1
+Name: bigDataSML
+Version: 0.1.3
+Summary: This package calculates average student performances
+Home-page: https://github.com/Samu2021/bigDataSML
+Author: SML (Samuel Schlenker)
+Author-email: wi20067@lehre.dhbw-stuttgart.de
+License: UNKNOWN
+Keywords: python,spark,pyspark,student,performance,calculation,bigdata,programming,fun,sml
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Natural Language :: English
+Classifier: Natural Language :: German
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+# bigDataSML
+
+This project was created as a Assingment in BigDataProgramming in November 2021 at DHBW Stuttgart. The abbreviation SML is from my first name "Samuel".
+To test its main functionality locally, you can go into the "src"-Folder and run
+
+```
+
+python3 main.py
+
+```
+
+This prints the Output-Table and creates a ouput-CSV. If you want to try it again, you first need to delete this CSV! Athorwise that will cause an error.
+
+There is also a GitHub-Repository for this project:
+
+https://git.dhbw-stuttgart.de/wi20067/bigDataSML
+
+Enjoy this package and the functionlity it contains! 
+(:D it's more about Spark, creating Packages and using GitLab-CI ...)
+
+# Funtctionality Description of main.py (in German!!!)
+As this only descripes the simple functionlity of the "main.py" the following part is written in German.
+
+ ## Data Source:
+
+ Die in diesem Projekt verwendeten Daten stammen aus dem Data-Science-Portal Kaggle.
+ Von dort wurden sie heruntergeladen und in Form von CSV-Dateien in dem "/data"-Ordner gespeichert.
+ https://www.kaggle.com/spscientist/students-performance-in-exams
+ 
+
+ ## Project Goal:
+
+ Ziel des Projektes ist es mit Hilfe der gelernten Spark-Fähigkeiten eine Tabelle aus den Durchschnittsnoten je ethnische Gruppe, erst allgemein und anschließend auch aufgeteilt nach Geschlechtern
+ Somit könne Unterschiede zwischen den Geschlechtern und den ethnischen Gruppen analysiert werden und die best-, bzw. schlechtperformendste Gruppe herausgearbeitet werden
+ 
+ ## Data Description:
+
+ Grundlage dafür ist eine 1002 x 8 Tabelle mit Informationen, bei der jede Zeile eine Schülerin/ einen Schüler repräsentiert
+ Informationen werden jeweils zum Geschlecht, der ethnischen Gruppe, dem Bildungsniveau der Eltern, usw. und vor allem zu einer Mathenote, einer Lesenote und einer Schreibnote in Form einer CSV-Datei geliefert
+ Zur späteren Verwendung und zum einfacheren Vergleich berechnet dieses Programm zu Beginn in einer neuen Spalte die Durchschnittsnote aus Mathe, Lesen und Schreiben
+ Anschließend erstellt es zwei neue Tabellen nach Geschlechtern und berechnet für alle drei Tabellen (Weiblich, männlich und alle) die Durchschnittsnote aus allen Schülern je ethnische Gruppe (vorheriges Gruppieren notwendig!)
+ Die berechneten Ergebnisse werden in dem ursprünglichen Dataframe zusammengesetzt und in einer neuen CSV-Datei gespeichert
+
+ ## Result:
+ 
+ Ergebnis der Untersuchungen ist zuallererst, das über alle ethnischen Gruppen hinweg Mädchen bessere Ergebnisse liefern konnten als Jungen
+ Auch ist immer die Gruppe E die mit den besten Ergebnissen und so ergibt sich hieraus, dass die Mädchen aus der ethnischen Gruppe E die beste Gesamt-Durchschnittsnote liefern konnten
+ 
+
+ ## Output-Table:
+
+ 
+  |Ethnische Gruppe|  Durchschnittsnoten|Durchschnittsnoten - Weiblich|Durchschnittsnoten - Männlich|
+  |----------------|--------------------|-----------------------------|-----------------------------|
+  |         group E|   72.75238095238097|            74.06280193236712|            71.47887323943662|
+  |         group D|   69.17938931297705|            71.43927648578813|            66.98746867167922|
+  |         group C|   67.13166144200628|            68.58518518518518|            65.24940047961628|
+  |         group B|   65.46842105263156|            67.50961538461539|            63.00000000000001|
+  |         group A|  62.992509363295866|            65.12962962962963|            61.54088050314464|
+
+
+
+
+# How to pack everything and upload it as a Package to PyPi
+
+This project is also uploaded as a pip-package. You can find it at:
+
+https://pypi.org/project/bigDataSML/0.1.3/
+
+From the functionality that does't make that much sense, but it was about "How-to-do-that". The steps are descriped below ...
+
+## I. Create your file structure
+
+0. I would always recommand to create projects like this inside a Git-Repo. Look for a tutorial if you don't know how.
+
+
+1. Create your main.py. I created mine inside the "/src"-folder. This may contain whatever functionality you want to have.
+
+
+2. Create a "init.py". You will need two underscores at the beginning and at the end. Here you can add the functions from "main.py". In my case this is just:
+
+```
+
+from main import main
+
+```
+
+
+3. Create a "setup.py". This will contain all the information of the package and the requirements. You may use mine as a template.
+
+```
+
+from setuptools import setup, find_packages
+import codecs
+import os
+
+VERSION = '0.0.1'
+DESCRIPTION = 'This package calculates average student performances'
+this_directory=os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(this_directory+"/doc","ReadMe.md"),encoding="utf-8") as f:
+    long_description = f.read()
+
+# Setting up
+setup(
+    name="bigDataSML",
+    version=VERSION,
+    author="SML (Samuel Schlenker)",
+    author_email="wi20067@lehre.dhbw-stuttgart.de",
+    description=DESCRIPTION,
+    url="https://github.com/Samu2021/bigDataSML",
+    long_description_content_type="text/markdown",
+    long_description=long_description,
+    python_requieres=">=2.7.18",
+    packages=find_packages(),
+    install_requires=["pyspark >= 2.3.0"],
+    keywords=["python","spark","pyspark","student","performance","calculation","bigdata","programming","fun","sml"],
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Education",
+        "Programming Language :: Python :: 2.7",
+        "Natural Language :: English",
+        "Natural Language :: German",
+        "Operating System :: Unix",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+    ]
+)
+
+```
+
+4. It might make also sense to add a "ReadMe" and a "License". I created them inside the "/doc"-Folder.
+
+
+
+## II. Registration at PyPI
+
+Just create a normal account at:
+
+https://pypi.org/
+
+And you should hopefully remeber your credentials later ...
+
+
+
+## III. Create Package and upload to PyPI
+
+
+1. If everything is fine you need to run the setup.py which creates all the necessary files.
+
+```
+ python3 setup.py sdist bdist_wheel
+
+ ```
+
+
+2. If you haven't yet, you may need to install it first by:
+
+```
+pip3 install twine
+
+```
+
+
+3. Then you should be able to upload the content from the dist folder with the twine-package.
+
+```
+python3 -m twine upload dist/*   
+
+```
+
+This will ask you for your username and password, where you have to use the login credantials created above.
+
+
+
+
+## Further informations:
+
+For any questions regarding the distribution and installation of Python packages there is a great documentation:
+
+https://packaging.python.org/
+
+# Gitlab-CI
+
+Additinally i created a Gitlab-CI-Pipeline. This also was for training purpose and isn't used  the most senseful way.
+I just wanted to try and show how this great tool can be used. 
+Therefore i had to create the ".gitlab-ci.yml"-File.
+
+1. Inside i first specified a image. As my files are in python, I used Python. This way a docker container with Python will be used.
+
+2. The "stages" section is kind of an overview of all the steps which will be executed by GitLab.
+
+3. before_scrip: For checking if Python works, this section just prints the Python version which will be used.
+
+4. The build-section in my case creates the files which will be uploaded to PyPI. The files in the "dist"-folder are needed later, so i specified them as artifacts.
+
+5. In "run" i first installed pyspark via pip and than executed my "main.py". Here the "output"-Folder is the artifact.
+
+6. In a last "test"-stage i just check the existence of the output-File of "the main.py" - further tests would be possible and also make sense but are from my point of view beyond the scope of this work.
+
+This way many things could be automated and way easier. For this small project the pipe obviously is exaggerated.
+
