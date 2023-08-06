@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: caracara
+Version: 0.0.29
+Summary: CrowdStrike Caracara
+Home-page: https://github.com/CrowdStrike/caracara
+Author: CrowdStrike
+Author-email: falconpy@crowdstrike.com
+Maintainer: Joshua Hiller
+Maintainer-email: falconpy@crowdstrike.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/CrowdStrike/caracara/tree/main/src/caracara
+Project-URL: Tracker, https://github.com/CrowdStrike/caracara/issues
+Keywords: crowdstrike,falcon,api,sdk,oauth2,devsecops,tools,falconpy
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+![CrowdStrike Falcon](https://raw.githubusercontent.com/CrowdStrike/falconpy/main/docs/asset/cs-logo.png) [![Twitter URL](https://img.shields.io/twitter/url?label=Follow%20%40CrowdStrike&style=social&url=https%3A%2F%2Ftwitter.com%2FCrowdStrike)](https://twitter.com/CrowdStrike)<br/>
+
+# Caracara
+[![Pylint](https://github.com/CrowdStrike/caracara/actions/workflows/pylint.yml/badge.svg)](https://github.com/CrowdStrike/caracara/actions/workflows/pylint.yml)
+[![Flake8](https://github.com/CrowdStrike/caracara/actions/workflows/flake8.yml/badge.svg)](https://github.com/CrowdStrike/caracara/actions/workflows/flake8.yml)
+[![Bandit](https://github.com/CrowdStrike/caracara/actions/workflows/bandit.yml/badge.svg)](https://github.com/CrowdStrike/caracara/actions/workflows/bandit.yml)
+[![CodeQL](https://github.com/CrowdStrike/caracara/actions/workflows/codeql.yml/badge.svg)](https://github.com/CrowdStrike/caracara/actions/workflows/codeql.yml)
+![Maintained](https://img.shields.io/maintenance/yes/2021)
+
+A collection of tools for interacting with the CrowdStrike Falcon API.
+
+## Basic usage example
+The following example demonstrates using the Hosts Toolbox to retrieve a host AID,
+and then using the RTR Toolbox to initiate a session and execute `ifconfig`.
+```python
+import os
+from caracara.hosts import HostsToolbox
+from caracara.rtr import RTRToolbox
+
+# Open the RTR toolbox
+rtr = RTRToolbox(os.environ["FALCON_CLIENT_ID"],
+                 os.environ["FALCON_CLIENT_SECRET"],
+                 verbose=True
+                 )
+# Open the Hosts toolbox
+hosts = HostsToolbox(auth_object=rtr.api.rtr.auth_object,
+                     verbose=True
+                     )
+# Lookup the AID for our search string
+target_aid = hosts.host.find_host_aid(hostname="SEARCH-STRING")
+# Retrieve the hostname
+hostname = hosts.host.get_host(target_aid)[0]["hostname"]
+# RTR Single Target helper
+target = rtr.single_target
+# Initialize a RTR session
+target_session = target.connect_to_host(target_aid)
+# Execute a RTR command
+command_result = target.execute_command("ifconfig", target_session)
+# Disconnect from the RTR session
+target.disconnect_from_host(target_session)
+# Output the results
+print(command_result)
+```
+
+## Installation
+```shell
+python3 -m pip install caracara
+```
+
+## Upgrading
+```shell
+python3 -m pip install caracara --upgrade
+```
+
+## Removal
+```shell
+python3 -m pip uninstall caracara
+```
+
