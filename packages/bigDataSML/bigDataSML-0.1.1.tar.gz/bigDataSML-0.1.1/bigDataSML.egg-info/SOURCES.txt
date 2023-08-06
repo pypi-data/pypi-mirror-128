@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+bigDataSML.egg-info/PKG-INFO
+bigDataSML.egg-info/SOURCES.txt
+bigDataSML.egg-info/dependency_links.txt
+bigDataSML.egg-info/requires.txt
+bigDataSML.egg-info/top_level.txt
+src/__init__.py
+src/main.py
