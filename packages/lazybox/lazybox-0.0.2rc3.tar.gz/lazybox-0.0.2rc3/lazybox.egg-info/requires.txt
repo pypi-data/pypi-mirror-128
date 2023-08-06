@@ -1,0 +1,6 @@
+pip
+packaging
+fastai
+plum-dispatch
+
+[dev]
