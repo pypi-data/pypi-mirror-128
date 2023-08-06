@@ -1,0 +1,16 @@
+LICENSE.txt
+setup.cfg
+setup.py
+lcdb/__init__.py
+lcdb/compressingencoder.py
+lcdb/computelc.py
+lcdb/database-accuracy.csv
+lcdb/directencoder.py
+lcdb/distributioncompressingencoder.py
+lcdb/lcdb.py
+lcdb/showlc.py
+lcdb.egg-info/PKG-INFO
+lcdb.egg-info/SOURCES.txt
+lcdb.egg-info/dependency_links.txt
+lcdb.egg-info/requires.txt
+lcdb.egg-info/top_level.txt
