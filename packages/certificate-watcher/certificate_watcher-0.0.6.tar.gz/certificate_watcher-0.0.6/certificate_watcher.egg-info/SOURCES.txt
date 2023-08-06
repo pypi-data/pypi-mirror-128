@@ -1,0 +1,9 @@
+README.md
+certificate_watcher.py
+pyproject.toml
+setup.cfg
+certificate_watcher.egg-info/PKG-INFO
+certificate_watcher.egg-info/SOURCES.txt
+certificate_watcher.egg-info/dependency_links.txt
+certificate_watcher.egg-info/entry_points.txt
+certificate_watcher.egg-info/top_level.txt
