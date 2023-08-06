@@ -1,0 +1,78 @@
+name: pytest
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+
+jobs:
+  pytest:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, macos-latest ]
+        include:
+          - os: ubuntu-latest
+            path: ~/.cache/pip
+          - os: macos-latest
+            path: ~/Library/Caches/pip
+    env:
+      OS: ${{ matrix.os }}
+      PYTHON: '3.7'
+
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+
+      - name: Setup Python
+        uses: actions/setup-python@master
+        with:
+          python-version: 3.7
+
+      - name: Cache pip
+        uses: actions/cache@v2
+        with:
+          path: ${{ matrix.path }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+            ${{ runner.os }}-
+
+      - name: Installation
+        run: |
+          python --version
+          pip --version
+          pip install flit
+          flit install --deps all
+          pip list
+        shell: bash
+
+      - name: Run Test with Coverage
+        run: |
+          coverage erase
+          coverage run -m pytest
+
+      - name: Generate Coverage Report
+        run: |
+          coverage report -m -i
+          coverage xml -i
+
+      - name: Upload Coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage.xml
+          flags: unittests
+          env_vars: OS,PYTHON
+          name: codecov-umbrella
+          fail_ci_if_error: false
+
+      - name: SonarCloud Scan
+        if: runner.os != 'macOS' &&  env.SONAR_TOKEN != null
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
