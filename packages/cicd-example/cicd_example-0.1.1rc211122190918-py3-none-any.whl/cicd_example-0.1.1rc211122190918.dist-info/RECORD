@@ -1,0 +1,5 @@
+cicd_example/Example.py,sha256=J5EHvN4hErMCUWUElgBl-p4XvZ0CbhC64gHO8vcTG2g,421
+cicd_example/main.py,sha256=K4ieAx114lYQGB7o1ORjLpKK2mIPu0shK3ksDIYA7qg,161
+cicd_example-0.1.1rc211122190918.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+cicd_example-0.1.1rc211122190918.dist-info/METADATA,sha256=1C1sW_uMPBxybiuCmnWoNrtV-euI5yjtRRqxyTj3qyg,607
+cicd_example-0.1.1rc211122190918.dist-info/RECORD,,
