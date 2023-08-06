@@ -1,0 +1,3 @@
+[console_scripts]
+pytntprog = pytntprog.__init__:pytntprog
+
