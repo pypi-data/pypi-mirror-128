@@ -1,0 +1,6 @@
+six
+numpy
+
+[:platform_system != "Emscripten"]
+requests
+python-rapidjson>=0.9.1
