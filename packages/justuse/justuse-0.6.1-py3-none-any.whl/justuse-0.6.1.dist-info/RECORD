@@ -1,0 +1,15 @@
+use/__init__.py,sha256=piBVPkN3cEG6yG_udpFDhPQQMYxjVPMk1z2FESVK1FY,3681
+use/buffet.py,sha256=vWrcH8RXAD8U3sPJ_au8mbj0L321lyC8oT4rgeAfB54,1033
+use/buffet_old.py,sha256=GqYcz28zZhCse1JaNrYsUTczC66jAKWiXCBH8HEbic4,1854
+use/hash_alphabet.py,sha256=NE4fjztfEzLy90q_UtQblngWPElYTqUTKSmYiy37kJI,165266
+use/main.py,sha256=E9dD4WGcO_Cqy1W-aUGcKcbWq1Og1V_VvUV1YHeDR4k,29258
+use/messages.py,sha256=Z0NBhtKPnAoQxOYzoSY-ma4ZPrskw10fnCQMjlNCP3U,5169
+use/pimp.py,sha256=lsnr9DmYnSqPPPZVIGr0QnEL-PYjFxX5-EkVoqiJmcU,29340
+use/pypi_model.py,sha256=X1OscGuPj7OT3oivoE0nMoncK-NXI7oVK-DmBSEfjPg,7640
+use/tools.py,sha256=5vHkEcmecjM87_3XrjCpIJow8JsmfqAJ76KoscoXSh4,2415
+justuse-0.6.1.dist-info/LICENSE,sha256=SxrPb4Df6fKO1L2L14jo6FqKshLG9G98G49x-iuZFMQ,1071
+justuse-0.6.1.dist-info/METADATA,sha256=BrbPVBxNNbtlmLxT67fzBCl6bxlNALXIDeaSK0J3RPY,11422
+justuse-0.6.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+justuse-0.6.1.dist-info/top_level.txt,sha256=Ogdu6rJVnDUiJh3CWj9PMfJjcyXzc6__5feCqKvYVJc,4
+justuse-0.6.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+justuse-0.6.1.dist-info/RECORD,,
