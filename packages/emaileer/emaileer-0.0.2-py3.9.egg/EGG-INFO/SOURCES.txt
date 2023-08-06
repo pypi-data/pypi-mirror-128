@@ -1,0 +1,9 @@
+README.md
+emaileer.py
+setup.py
+emaileer.egg-info/PKG-INFO
+emaileer.egg-info/SOURCES.txt
+emaileer.egg-info/dependency_links.txt
+emaileer.egg-info/entry_points.txt
+emaileer.egg-info/requires.txt
+emaileer.egg-info/top_level.txt
