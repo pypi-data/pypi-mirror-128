@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+src/jsonmason.py
+src/jsonmason.egg-info/PKG-INFO
+src/jsonmason.egg-info/SOURCES.txt
+src/jsonmason.egg-info/dependency_links.txt
+src/jsonmason.egg-info/entry_points.txt
+src/jsonmason.egg-info/top_level.txt
