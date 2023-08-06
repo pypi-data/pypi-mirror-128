@@ -1,0 +1,14 @@
+requests>=2.23.0
+tqdm>=4.60.0
+
+[dev]
+pre-commit>=2.7.1
+black>=19.10b0
+
+[docs]
+numpydoc>=1.0.0
+sphinx-argparse>=0.2.5
+pydata-sphinx-theme>=0.4.3
+nbsphinx>=0.7.1
+ipykernel>=5.3.0
+recommonmark>=0.5.0
