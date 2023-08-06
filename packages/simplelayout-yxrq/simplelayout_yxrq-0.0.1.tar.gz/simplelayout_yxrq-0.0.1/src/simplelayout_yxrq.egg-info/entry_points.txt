@@ -1,0 +1,3 @@
+[console_scripts]
+sample = 3_simplelayout_package_yxrq.src.simplelayout.__main__:main
+

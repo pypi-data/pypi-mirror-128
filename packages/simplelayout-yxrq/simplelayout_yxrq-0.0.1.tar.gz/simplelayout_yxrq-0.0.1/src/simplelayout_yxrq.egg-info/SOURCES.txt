@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/simplelayout_yxrq.egg-info/PKG-INFO
+src/simplelayout_yxrq.egg-info/SOURCES.txt
+src/simplelayout_yxrq.egg-info/dependency_links.txt
+src/simplelayout_yxrq.egg-info/entry_points.txt
+src/simplelayout_yxrq.egg-info/requires.txt
+src/simplelayout_yxrq.egg-info/top_level.txt
