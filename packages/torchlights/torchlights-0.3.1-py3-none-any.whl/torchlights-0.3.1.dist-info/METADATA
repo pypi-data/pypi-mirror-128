@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: torchlights
+Version: 0.3.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: munch
+Requires-Dist: colorama
+Requires-Dist: readchar
+Requires-Dist: tqdm
+Requires-Dist: qqdm
+Requires-Dist: pyyaml
+Requires-Dist: colorlog
+
+UNKNOWN
+
