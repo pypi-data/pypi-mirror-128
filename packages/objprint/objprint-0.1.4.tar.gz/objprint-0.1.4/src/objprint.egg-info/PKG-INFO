@@ -1,0 +1,256 @@
+Metadata-Version: 2.1
+Name: objprint
+Version: 0.1.4
+Summary: A library that can print Python objects in human readable format
+Home-page: https://github.com/gaogaotiantian/objprint
+Author: Tian Gao
+Author-email: gaogaotiantian@hotmail.com
+License: UNKNOWN
+Description: # objprint
+        
+        [![build](https://github.com/gaogaotiantian/objprint/workflows/build/badge.svg)](https://github.com/gaogaotiantian/objprint/actions?query=workflow%3Abuild)  [![coverage](https://img.shields.io/codecov/c/github/gaogaotiantian/objprint)](https://codecov.io/gh/gaogaotiantian/objprint)  [![pypi](https://img.shields.io/pypi/v/objprint.svg)](https://pypi.org/project/objprint/)  [![support-version](https://img.shields.io/pypi/pyversions/objprint)](https://img.shields.io/pypi/pyversions/objprint)  [![license](https://img.shields.io/github/license/gaogaotiantian/objprint)](https://github.com/gaogaotiantian/objprint/blob/master/LICENSE)  [![commit](https://img.shields.io/github/last-commit/gaogaotiantian/objprint)](https://github.com/gaogaotiantian/objprint/commits/master)
+        
+        A library that can print Python objects in human readable format
+        
+        ## Install
+        ```
+        pip install objprint
+        ```
+        
+        ## Usage
+        
+        ### op
+        
+        Use ```op()``` (or ```objprint()```) to print objects.
+        
+        ```python
+        from objprint import op
+        
+        class Position:
+            def __init__(self, x, y):
+                self.x = x
+                self.y = y
+        
+        class Player:
+            def __init__(self):
+                self.name = "Alice"
+                self.age = 18
+                self.items = ["axe", "armor"]
+                self.coins = {"gold": 1, "silver": 33, "bronze": 57}
+                self.position = Position(3, 5)
+        
+        op(Player())
+        ```
+        
+        ```
+        <Player 0x7fe44e1e3070
+          .age = 18,
+          .coins = {'bronze': 57, 'gold': 1, 'silver': 33},
+          .items = ['axe', 'armor'],
+          .name = 'Alice',
+          .position = <Position
+            .x = 3,
+            .y = 5
+          >
+        >
+        ```
+        
+        You can print multiple objects just like print, except ``op`` will print them in separate lines
+        
+        ```python
+        op([1, 2], {'a': 1})
+        ```
+        
+        ```
+        [1, 2]
+        {'a': 1}
+        ```
+        
+        ### add_objprint
+        
+        If you want to use ```print()``` to print your object, you can also use the class decorator
+        ```add_objprint``` to add ```__str__``` method for your class.
+        
+        ```python
+        from objprint import add_objprint
+        
+        class Position:
+            def __init__(self, x, y):
+                self.x = x
+                self.y = y
+        
+        @add_objprint
+        class Player:
+            def __init__(self):
+                self.name = "Alice"
+                self.age = 18
+                self.items = ["axe", "armor"]
+                self.coins = {"gold": 1, "silver": 33, "bronze": 57}
+                self.position = Position(3, 5)
+        
+        # This will print the same thing as above
+        print(Player())
+        ```
+        
+        ### objstr
+        
+        If you want the ``str`` representation of the object, instead of printing it on the screen,
+        you can use ``objstr`` function
+        
+        ```python
+        from objprint import objstr
+        
+        s = objstr(my_object)
+        ```
+        
+        ### objjson
+        
+        ``objprint`` supports print objects to json to make it easier to serialze an object.
+        
+        ``objjson`` returns a jsonifiable object that can be dumped with ``json.dumps``
+        
+        ```python
+        from objprint import objjson
+        
+        json_obj = objjson(Player())
+        
+        print(json.dumps(json_obj, indent=2))
+        ```
+        
+        ```
+        {
+          ".type": "Player",
+          "name": "Alice",
+          "age": 18,
+          "items": [
+            "axe",
+            "armor"
+          ],
+          "coins": {
+            "gold": 1,
+            "silver": 33,
+            "bronze": 57
+          },
+          "position": {
+            ".type": "Position",
+            "x": 3,
+            "y": 5
+          }
+        }
+        ```
+        
+        You can use ``op`` to print in json format directly with ``format="json"``. You can pass in argument for ```json.dumps```
+        
+        ```python
+        op(Player(), format="json", indent=2)
+        ```
+        
+        ``add_objprint`` also works with ``format="json``"
+        
+        ```python
+        @add_objprint(format="json", indent=2)
+        class Player:
+            pass
+        ```
+        
+        ### include/exclude attributes
+        
+        You can include/exclude attributes using regular expression so ```objprint``` will only print
+        out the attributes you are interested in.
+        
+        ```python
+        op(Player(), include=["name"])
+        ```
+        ```
+        <Player
+          .name = 'Alice'
+        >
+        ```
+        
+        ```python
+        op(Player(), exclude=[".*s"])
+        ```
+        
+        ```
+        <Player 0x7fe44e1e3070
+          .name = 'Alice',
+          .age = 18,
+          .position = <Position
+            .x = 3,
+            .y = 5
+          >
+        >
+        ```
+        
+        If you specify both ``include`` and ``exclude``, it will do a inclusive check first, then filter out the attributes
+        that match exclusive check.
+        
+        ```include``` and ```exclude``` arguments work on ```objprint```, ```objstr``` and ```@add_objprint```.
+        
+        ### config
+        
+        ```objprint``` formats the output based on some configs
+        
+        * ``config_name(default_value)`` - this config's explanation
+        * ``depth(100)`` - how deep ```objprint``` goes into nested data structures
+        * ``indent(2)`` - the indentation
+        * ``width(80)`` - the maximum width a data structure will be presented as a single line
+        * ``elements(-1)`` - the maximum number of elements that will be displayed, ``-1`` means no restriction
+        * ``color(True)`` - whether to use colored scheme
+        * ``skip_recursion(True)`` - whether skip printing recursive data, which would cause infinite recursion without ``depth`` constraint
+        * ``honor_existing(True)`` - whether to use the existing user defined ``__repr__`` or ``__str__`` method
+        
+        You can set the configs globally using ``config`` function
+        
+        ```python
+        from objprint import config
+        
+        config(indent=4)
+        ```
+        
+        Or you can do a one time config by passing the arguments into ``objprint`` function
+        
+        ```python
+        from objprint import op
+        
+        op(var, indent=4)
+        ```
+        
+        ### install
+        
+        Maybe you don't want to import ``op`` in every single file that you want to use. You can
+        use ``install`` to make it globally accessible
+        
+        ```python
+        from objprint import install
+        
+        # Now you can use op() in any file
+        install()
+        
+        # You can specify a name for objprint()
+        install("my_print")
+        my_print(my_object)
+        ```
+        
+        ## Bugs/Requests
+        
+        Please send bug reports and feature requests through [github issue tracker](https://github.com/gaogaotiantian/objprint/issues).
+        
+        ## License
+        
+        Copyright Tian Gao, 2020-2021.
+        
+        Distributed under the terms of the  [Apache 2.0 license](https://github.com/gaogaotiantian/objprint/blob/master/LICENSE).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
