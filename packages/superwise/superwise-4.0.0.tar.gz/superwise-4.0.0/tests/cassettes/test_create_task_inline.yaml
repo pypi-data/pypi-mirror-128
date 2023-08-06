@@ -1,0 +1,108 @@
+interactions:
+- request:
+    body: '{"clientId": "1d3313db-26f4-48a1-96a6-6713bb0a0e47", "secret": "a63f1037-ea31-4275-86ee-87785778311a"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '102'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: POST
+    uri: https://superwise-dev.frontegg.com/identity/resources/auth/v1/api-token
+  response:
+    body:
+      string: '{"expires":"Wed, 17 Nov 2021 13:46:20 GMT","expiresIn":86400,"accessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3ZDdmMDg2In0.eyJzdWIiOiIxZDMzMTNkYi0yNmY0LTQ4YTEtOTZhNi02NzEzYmIwYTBlNDciLCJlbWFpbCI6InN3X29tcmltb2RlbEBzdXBlcndpc2UuYWkiLCJ1c2VyTWV0YWRhdGEiOnt9LCJ0ZW5hbnRJZCI6Im9tcmltb2RlbCIsInJvbGVzIjpbIlZpZXdlciJdLCJwZXJtaXNzaW9ucyI6WyJmZS5zZWN1cmUud3JpdGUudXNlckFwaVRva2VucyIsImZlLnNlY3VyZS5kZWxldGUudXNlckFwaVRva2VucyIsImZlLnNlY3VyZS5yZWFkLnVzZXJBcGlUb2tlbnMiXSwibWV0YWRhdGEiOnt9LCJjcmVhdGVkQnlVc2VySWQiOiIwMTBhZWVhMi1mNjYzLTRhN2UtYTg4My03N2M2MjZjNTk4Y2EiLCJ0eXBlIjoidXNlckFwaVRva2VuIiwidXNlcklkIjoiMDEwYWVlYTItZjY2My00YTdlLWE4ODMtNzdjNjI2YzU5OGNhIiwiaWF0IjoxNjM3MDcwMzgwLCJleHAiOjE2MzcxNTY3ODAsImlzcyI6ImZyb250ZWdnIn0.QHDnDNHE8aW_fOGCztt8Ap9CkOgjFafuG5nBUfU4tOubutqpJdLgNlx7Q4ADB4j0i4oixPN2-wz4BWGDcdF3AJuNlLeSR8ctilgw1QoJoC7-DCfoclyxDjPlzsEk3CK8zbyxnEMEaSt-ztebL7b-VTAzhCEIarm6kCk8rADu7juhTZqF7-6c6mIMYfjaETegudHVAoO9gy-yHHdCG5kHOb7CxrOaXlwgIZWx-rKZPd5o-IrR0TT-WXG-L1xHR2776lviqp_2WpvDFyg1fk_ANy-hCeOjrLitfXrFKhhiLhljrUtqnE_FKpMK3-Pgix8yLhYm56I3_QIQz9STev_b0A","refreshToken":"9e02b586-e21a-4bfa-ac1a-556ba00a340d"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1130'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 16 Nov 2021 13:46:20 GMT
+      Set-Cookie:
+      - visid_incap_2473133=MoIdxA9VT620Ong/zSzp3yu2k2EAAAAAQUIPAAAAAACzq94nqcB+nuWINWCsdNqE;
+        expires=Wed, 16 Nov 2022 11:29:42 GMT; HttpOnly; path=/; Domain=.frontegg.com
+      - incap_ses_820_2473133=pr5vEfcTclNPoF7fLjphCyu2k2EAAAAAscWdLboTdFveoVl9RBTxqw==;
+        path=/; Domain=.frontegg.com
+      X-CDN:
+      - Imperva
+      X-Iinfo:
+      - 13-114231033-114231035 NNNN CT(63 81 0) RT(1637070379286 22) q(0 0 1 -1) r(2
+        5) U5
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      etag:
+      - W/"46a-qGtfDd1zFjZqoATyh4aOh7CxVUA"
+      expect-ct:
+      - max-age=0
+      frontegg-trace-id:
+      - d7030727-d3c3-4da2-a2e0-d76fa9fb9761
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"description": "this is description", "external_id": null, "id": null,
+      "is_archive": null, "monitor_delay": 1, "name": "name", "time_units": null}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3ZDdmMDg2In0.eyJzdWIiOiIxZDMzMTNkYi0yNmY0LTQ4YTEtOTZhNi02NzEzYmIwYTBlNDciLCJlbWFpbCI6InN3X29tcmltb2RlbEBzdXBlcndpc2UuYWkiLCJ1c2VyTWV0YWRhdGEiOnt9LCJ0ZW5hbnRJZCI6Im9tcmltb2RlbCIsInJvbGVzIjpbIlZpZXdlciJdLCJwZXJtaXNzaW9ucyI6WyJmZS5zZWN1cmUud3JpdGUudXNlckFwaVRva2VucyIsImZlLnNlY3VyZS5kZWxldGUudXNlckFwaVRva2VucyIsImZlLnNlY3VyZS5yZWFkLnVzZXJBcGlUb2tlbnMiXSwibWV0YWRhdGEiOnt9LCJjcmVhdGVkQnlVc2VySWQiOiIwMTBhZWVhMi1mNjYzLTRhN2UtYTg4My03N2M2MjZjNTk4Y2EiLCJ0eXBlIjoidXNlckFwaVRva2VuIiwidXNlcklkIjoiMDEwYWVlYTItZjY2My00YTdlLWE4ODMtNzdjNjI2YzU5OGNhIiwiaWF0IjoxNjM3MDcwMzgwLCJleHAiOjE2MzcxNTY3ODAsImlzcyI6ImZyb250ZWdnIn0.QHDnDNHE8aW_fOGCztt8Ap9CkOgjFafuG5nBUfU4tOubutqpJdLgNlx7Q4ADB4j0i4oixPN2-wz4BWGDcdF3AJuNlLeSR8ctilgw1QoJoC7-DCfoclyxDjPlzsEk3CK8zbyxnEMEaSt-ztebL7b-VTAzhCEIarm6kCk8rADu7juhTZqF7-6c6mIMYfjaETegudHVAoO9gy-yHHdCG5kHOb7CxrOaXlwgIZWx-rKZPd5o-IrR0TT-WXG-L1xHR2776lviqp_2WpvDFyg1fk_ANy-hCeOjrLitfXrFKhhiLhljrUtqnE_FKpMK3-Pgix8yLhYm56I3_QIQz9STev_b0A
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: POST
+    uri: https://dev.superwise.ai/omrimodel/admin/v1/tasks
+  response:
+    body:
+      string: '{"active_version_ts":null,"id":60,"name":"name","monitor_delay":1,"created_at":"2021-11-16T13:46:20.798122","time_units":["D","W"],"active_version_id":null,"description":"this
+        is description","external_id":"60","is_archived":false}'
+    headers:
+      content-length:
+      - '231'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Nov 2021 13:46:12 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '40'
+    status:
+      code: 201
+      message: Created
+version: 1

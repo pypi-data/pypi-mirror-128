@@ -1,0 +1,49 @@
+image: registry.gitlab.com/superwise.ai/superwise-docker:builder
+
+stages:
+  - test
+  - package
+  - deployment
+  - production
+
+before_script:
+  - python3 -V
+  - pip install -r requirements.txt
+
+pytest:
+  stage: test
+  tags:
+    - superwise
+  script:
+    - pytest
+
+package:
+  stage: package
+  tags:
+    - superwise
+  script:
+  - python3 setup.py sdist bdist_wheel
+  artifacts:
+    paths:
+      - dist/*
+    expire_in: 1 week
+
+deployment:
+  stage: deployment
+  tags:
+    - superwise
+  script:
+    - python3 -m twine upload --repository testpypi dist/*.gz -u $PYPI_USER -p $PYPI_PASS
+  only:
+    - staging
+
+
+production:
+  stage: production
+  tags:
+    - superwise
+  script:
+    - python3 -m twine upload dist/*.gz -u $PYPI_USER -p $PYPI_PASS
+  only:
+    - master
+  when: manual

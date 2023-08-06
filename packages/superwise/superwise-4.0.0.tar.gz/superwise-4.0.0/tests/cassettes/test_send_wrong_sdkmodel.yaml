@@ -1,0 +1,70 @@
+interactions:
+- request:
+    body: '{"clientId": "1d3313db-26f4-48a1-96a6-6713bb0a0e47", "secret": "a63f1037-ea31-4275-86ee-87785778311a"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '102'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: POST
+    uri: https://superwise-dev.frontegg.com/identity/resources/auth/v1/api-token
+  response:
+    body:
+      string: '{"expires":"Wed, 17 Nov 2021 13:46:19 GMT","expiresIn":86400,"accessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3ZDdmMDg2In0.eyJzdWIiOiIxZDMzMTNkYi0yNmY0LTQ4YTEtOTZhNi02NzEzYmIwYTBlNDciLCJlbWFpbCI6InN3X29tcmltb2RlbEBzdXBlcndpc2UuYWkiLCJ1c2VyTWV0YWRhdGEiOnt9LCJ0ZW5hbnRJZCI6Im9tcmltb2RlbCIsInJvbGVzIjpbIlZpZXdlciJdLCJwZXJtaXNzaW9ucyI6WyJmZS5zZWN1cmUud3JpdGUudXNlckFwaVRva2VucyIsImZlLnNlY3VyZS5kZWxldGUudXNlckFwaVRva2VucyIsImZlLnNlY3VyZS5yZWFkLnVzZXJBcGlUb2tlbnMiXSwibWV0YWRhdGEiOnt9LCJjcmVhdGVkQnlVc2VySWQiOiIwMTBhZWVhMi1mNjYzLTRhN2UtYTg4My03N2M2MjZjNTk4Y2EiLCJ0eXBlIjoidXNlckFwaVRva2VuIiwidXNlcklkIjoiMDEwYWVlYTItZjY2My00YTdlLWE4ODMtNzdjNjI2YzU5OGNhIiwiaWF0IjoxNjM3MDcwMzc5LCJleHAiOjE2MzcxNTY3NzksImlzcyI6ImZyb250ZWdnIn0.fI09KqY6KxCgbmJb7IOhuFFRTcIE79ZDNBVa6a7rDd4MuLz0W4PV0kVizPrzhgOeROJzaLt8nhneOatWfq5m5K28FkK_HmEUHIC72ubE95wcGR_rgKJlHWP7VOOKNj6ilkjXJVqZDRdw4GU16GkR087bpjz3sy3XNzqy4seMk_pReTPoW1pekaz1jtg_E7398on71uQB_n5J-4dBVgqxsLwv3LFcdp2V0VxNP-6sHa8WRI0Mr3NBqihZkwGM9WJ9sZothQth1W75srmjuRRU9KYN8JLWgycp8-VrAfrfBMbv0wuhvPwcvpuxHObWsIHfymy_SiLDQyJqPYJ35ykbTQ","refreshToken":"0d75bf43-c72c-4f29-b41c-bbd7c608a4b2"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1130'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 16 Nov 2021 13:46:19 GMT
+      Set-Cookie:
+      - visid_incap_2473133=fnKugY/ARSSgeSTy46Ce8Su2k2EAAAAAQUIPAAAAAADvWcz53Yzm4EQRzBguogoF;
+        expires=Wed, 16 Nov 2022 11:29:43 GMT; HttpOnly; path=/; Domain=.frontegg.com
+      - incap_ses_820_2473133=13EPPiGy9krun17fLjphCyu2k2EAAAAAQJyki9DCBAP+90oCCRT3SA==;
+        path=/; Domain=.frontegg.com
+      X-CDN:
+      - Imperva
+      X-Iinfo:
+      - 14-134507845-134507848 NNNN CT(74 65 0) RT(1637070378725 37) q(0 0 2 -1) r(2
+        5) U5
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      etag:
+      - W/"46a-h5ORn4EwkLRBxseAVPbeeEwIV6A"
+      expect-ct:
+      - max-age=0
+      frontegg-trace-id:
+      - 103ccfd5-69f8-4ced-b8fa-271a51cc8091
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1
