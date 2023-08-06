@@ -1,0 +1,4 @@
+[console_scripts]
+client = messenger.Client_RW:main
+server = messenger.Server:main
+

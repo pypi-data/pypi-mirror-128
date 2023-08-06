@@ -1,0 +1,15 @@
+messenger/Client_RW.py,sha256=x-4aDIYRQtY2u-UloH3RV9Jf7aQ-ijheYIxc_RjT2Ek,5534
+messenger/JIM.py,sha256=U-nDdwfzV06Gd9F7d2RDI8dEqrypcdTF6fZa0bmP1K4,1106
+messenger/Server.py,sha256=T4cwrRKRK1N9HytYFd6KdERqPMfh4yGKLvTxwa8_XT0,7200
+messenger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+messenger/client_gui.py,sha256=iq0y5PY4WHZkWw5LYUPPCWpSp6zloEboaN1NO_jHSTk,3947
+messenger/common_def.py,sha256=EtA9pAFeC3wA5QNnWBV_ToUyt-oVw-XA2KwR4gRifCI,3249
+messenger/db.py,sha256=1Tj866c_p2d2voA36mZ1uTmj1pVZV5pu_2RHF-S3vh4,4822
+messenger/decorators_all.py,sha256=6eGR25MQrpInxTlwFewOD-iNTMOExXZIveaU-_T4Wps,209
+messenger/security.py,sha256=yHqcPFQPgp2ow5oLmeAUS4-sQROeyehR92ORAxGvTHc,789
+messenger/server_gui.py,sha256=PIYQZLk-tdkj885Ye9gclVI0fbX2cn1HHBCZ_dtw4lU,2274
+at_messenger.2021-8.2.dist-info/METADATA,sha256=4QN_GDuULXrVAj80RLwu0xGlIvE7oNZI84v5O-dUCrw,307
+at_messenger.2021-8.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+at_messenger.2021-8.2.dist-info/entry_points.txt,sha256=xmDOgLdoJLT9CGAGJ84ACsK-ARpZvf8bCPOETIlUmGk,84
+at_messenger.2021-8.2.dist-info/top_level.txt,sha256=SUUd1MJFg01BmDTo4MchB30_4ja1PSH3WKSB-xdza3Q,10
+at_messenger.2021-8.2.dist-info/RECORD,,
