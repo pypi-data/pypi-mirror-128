@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/msdss_base_database/__init__.py
+src/msdss_base_database/core.py
+src/msdss_base_database/defaults.py
+src/msdss_base_database/env.py
+src/msdss_base_database/tools.py
+src/msdss_base_database.egg-info/PKG-INFO
+src/msdss_base_database.egg-info/SOURCES.txt
+src/msdss_base_database.egg-info/dependency_links.txt
+src/msdss_base_database.egg-info/requires.txt
+src/msdss_base_database.egg-info/top_level.txt

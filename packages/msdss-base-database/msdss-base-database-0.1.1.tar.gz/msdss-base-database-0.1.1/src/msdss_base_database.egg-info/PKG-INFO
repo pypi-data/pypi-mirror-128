@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: msdss-base-database
+Version: 0.1.1
+Summary: Base database for the Modular Spatial Decision Support Systems (MSDSS) framework
+Home-page: https://github.com/rrwen/msdss-base-database
+Author: Richard Wen
+Author-email: rrwen.dev@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/rrwen/msdss-base-database/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: postgresql
+Provides-Extra: mysql
+Provides-Extra: sqlite
+License-File: LICENSE
+
+# msdss-base-database
+
+[![pypi package](https://badge.fury.io/py/msdss-base-database.svg)](https://pypi.org/project/msdss-base-database)
+[![Github](https://img.shields.io/badge/Github-rrwen%2Fmsdss--base--database-brightgreen?logo=Github)](https://github.com/rrwen/msdss-base-database)
+[![downloads](https://img.shields.io/pypi/dm/msdss-base-database.svg)](https://pypistats.org/packages/msdss-base-database)
+[![GitHub stars](https://img.shields.io/github/stars/rrwen/msdss-base-database.svg)](https://github.com/rrwen/msdss-base-database/stargazers)
+[![GitHub](https://img.shields.io/github/license/rrwen/msdss-base-database.svg)](https://github.com/rrwen/msdss-base-database/blob/main/LICENSE)
+  
+Base database for the Modular Spatial Decision Support Systems (MSDSS) framework.
+
+* [Documentation](https://rrwen.github.io/msdss-base-database/)
+* [Developer Notes](https://github.com/rrwen/msdss-base-database/blob/main/DEVELOPER.md)
+
+## Contact
+
+Richard Wen rrwen.dev@gmail.com
+
+
