@@ -1,0 +1,1537 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+sfaira/__init__.py
+sfaira/_settings.py
+sfaira/_version.py
+sfaira/cli.py
+sfaira.egg-info/PKG-INFO
+sfaira.egg-info/SOURCES.txt
+sfaira.egg-info/dependency_links.txt
+sfaira.egg-info/entry_points.txt
+sfaira.egg-info/requires.txt
+sfaira.egg-info/top_level.txt
+sfaira/commands/__init__.py
+sfaira/commands/annotate_dataloader.py
+sfaira/commands/create_dataloader.py
+sfaira/commands/questionary.py
+sfaira/commands/test_dataloader.py
+sfaira/commands/upgrade.py
+sfaira/commands/validate_dataloader.py
+sfaira/commands/validate_h5ad.py
+sfaira/commands/templates/multiple_datasets/cookiecutter.json
+sfaira/commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/commands/templates/single_dataset/cookiecutter.json
+sfaira/commands/templates/single_dataset/hooks/__init__.py
+sfaira/commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/consts/__init__.py
+sfaira/consts/adata_fields.py
+sfaira/consts/meta_data_files.py
+sfaira/consts/ontologies.py
+sfaira/consts/utils.py
+sfaira/consts/../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/consts/../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/consts/../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/consts/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/consts/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/consts/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/consts/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/consts/../commands/templates/single_dataset/cookiecutter.json
+sfaira/consts/../commands/templates/single_dataset/hooks/__init__.py
+sfaira/consts/../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/consts/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/consts/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/consts/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/consts/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/__init__.py
+sfaira/data/utils.py
+sfaira/data/../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/__init__.py
+sfaira/data/dataloaders/super_group.py
+sfaira/data/dataloaders/../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/base/__init__.py
+sfaira/data/dataloaders/base/dataset.py
+sfaira/data/dataloaders/base/dataset_group.py
+sfaira/data/dataloaders/base/utils.py
+sfaira/data/dataloaders/base/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/base/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/base/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/base/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/base/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/base/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/base/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/base/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/base/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/base/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/base/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/base/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/base/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/base/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/databases/__init__.py
+sfaira/data/dataloaders/databases/super_group.py
+sfaira/data/dataloaders/databases/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/databases/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/databases/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/databases/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/databases/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/databases/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/databases/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/databases/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/databases/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/databases/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/databases/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/databases/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/databases/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/databases/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/databases/cellxgene/__init__.py
+sfaira/data/dataloaders/databases/cellxgene/cellxgene_group.py
+sfaira/data/dataloaders/databases/cellxgene/cellxgene_loader.py
+sfaira/data/dataloaders/databases/cellxgene/rest_helpers.py
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/databases/cellxgene/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/export_adaptors/__init__.py
+sfaira/data/dataloaders/export_adaptors/cellxgene.py
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/export_adaptors/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/__init__.py
+sfaira/data/dataloaders/loaders/super_group.py
+sfaira/data/dataloaders/loaders/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/human_isletoflangerhans_2017_smartseq2_enge_001.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2017_09_004/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/mouse_x_2018_microwellseq_han_x.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_02_001/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/human_laminapropriaofmucosaofcolon_2019_10xsequencing_kinchen_001.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2018_08_067/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/human_colonicepithelium_2019_10xsequencing_smilie_001.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_06_029/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/human_ileum_2019_10xsequencing_martin_001.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2019_08_008/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/human_na_2021_na_ren_001.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cell_2021_01_053/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/human_prostategland_2018_10xsequencing_henry_001.py
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_celrep_2018_11_086/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/human_pancreas_2016_indrop_baron_001.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cels_2016_08_011/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/human_pancreas_2016_smartseq2_segerstolpe_001.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2016_08_020/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/mouse_pancreas_2019_10xsequencing_thompson_x.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_cmet_2019_01_021/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/human_lung_2020_10xsequencing_miller_001.py
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_devcel_2020_01_033/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/human_brain_2019_dropseq_polioudakis_001.py
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1016_j_neuron_2019_06_011/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/human_brain_2017_droncseq_habib_001.py
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_nmeth_4407/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/human_testis_2018_10xsequencing_guo_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41422_018_0099_2/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/human_caudatelobeofliver_2018_10xsequencing_macparland_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_018_06318_7/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/human_kidney_2019_droncseq_lake_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_10861_2/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/human_x_2019_10xsequencing_szabo_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12464_3/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/human_retina_2019_10xsequencing_menon_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41467_019_12780_8/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/human_placenta_2018_x_ventotormo_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_018_0698_6/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/human_liver_2019_celseq2_aizarani_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1373_2/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/human_liver_2019_10xsequencing_ramachandran_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1631_3/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/human_liver_2019_10xsequencing_popescu_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1652_y/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/human_brain_2019_10x3v2sequencing_kanton_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_019_1654_9/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/human_x_2020_microwellseq_han_x.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2157_4/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/human_lung_2020_x_travaglini_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41586_020_2922_4/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/human_colon_2020_10xsequencing_james_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_020_0602_z/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/human_blood_2021_citeseq_nathan_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41590_021_00933_1/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/human_lung_2019_dropseq_braga_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/human_x_2019_10xsequencing_braga_x.py
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41591_019_0468_5/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/mouse_x_2019_10xsequencing_hove_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41593_019_0393_4/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/human_kidney_2020_10xsequencing_liao_001.py
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1038_s41597_019_0351_8/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/__init__.py
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/human_retina_2019_10xsequencing_voigt_001.py
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1073_pnas_1914143116/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/__init__.py
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/human_x_2019_10xsequencing_wang_001.py
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1084_jem_20191130/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/human_lung_2020_10xsequencing_lukassen_001.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_03_13_991455/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/human_blood_2020_10x_hao_001.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1101_2020_10_12_335331/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1101_661728/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_661728/mouse_x_2019_x_pisco_x.py
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1101_661728/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1101_753806/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_753806/human_lungparenchyma_2020_10xsequencing_habermann_001.py
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1101_753806/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/human_kidney_2019_10xsequencing_stewart_001.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aat5031/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/human_thymus_2020_10xsequencing_park_001.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aay3224/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/human_x_2020_scirnaseq_cao_001.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1126_science_aba7721/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/__init__.py
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/human_x_2019_10xsequencing_madissoon_001.py
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_1186_s13059_019_1906_x/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/__init__.py
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/human_retina_2019_10xsequencing_lukowski_001.py
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/d10_15252_embj_2018100811/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/__init__.py
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/human_blood_2019_10xsequencing_10xgenomics_001.py
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/dno_doi_10x_genomics/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/dno_doi_regev/__init__.py
+sfaira/data/dataloaders/loaders/dno_doi_regev/human_x_2018_10xsequencing_regev_001.py
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/dataloaders/loaders/dno_doi_regev/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/interactive/__init__.py
+sfaira/data/interactive/loader.py
+sfaira/data/interactive/../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/interactive/../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/interactive/../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/interactive/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/interactive/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/interactive/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/interactive/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/interactive/../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/interactive/../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/interactive/../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/interactive/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/interactive/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/interactive/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/interactive/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/store/__init__.py
+sfaira/data/store/base.py
+sfaira/data/store/batch_schedule.py
+sfaira/data/store/generators.py
+sfaira/data/store/io_dao.py
+sfaira/data/store/load_store.py
+sfaira/data/store/multi_store.py
+sfaira/data/store/single_store.py
+sfaira/data/store/../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/data/store/../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/data/store/../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/data/store/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/store/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/store/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/store/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/data/store/../../commands/templates/single_dataset/cookiecutter.json
+sfaira/data/store/../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/data/store/../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/data/store/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/data/store/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/data/store/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/data/store/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/estimators/__init__.py
+sfaira/estimators/callbacks.py
+sfaira/estimators/keras.py
+sfaira/estimators/losses.py
+sfaira/estimators/metrics.py
+sfaira/estimators/../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/estimators/../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/estimators/../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/estimators/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/estimators/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/estimators/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/estimators/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/estimators/../commands/templates/single_dataset/cookiecutter.json
+sfaira/estimators/../commands/templates/single_dataset/hooks/__init__.py
+sfaira/estimators/../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/estimators/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/estimators/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/estimators/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/estimators/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/genomes/__init__.py
+sfaira/genomes/generate_feature_list.py
+sfaira/genomes/../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/genomes/../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/genomes/../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/genomes/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/genomes/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/genomes/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/genomes/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/genomes/../commands/templates/single_dataset/cookiecutter.json
+sfaira/genomes/../commands/templates/single_dataset/hooks/__init__.py
+sfaira/genomes/../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/genomes/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/genomes/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/genomes/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/genomes/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/models/__init__.py
+sfaira/models/base.py
+sfaira/models/made.py
+sfaira/models/pp_layer.py
+sfaira/models/../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/models/../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/models/../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/models/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/models/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/models/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/models/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/models/../commands/templates/single_dataset/cookiecutter.json
+sfaira/models/../commands/templates/single_dataset/hooks/__init__.py
+sfaira/models/../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/models/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/models/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/models/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/models/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/models/celltype/__init__.py
+sfaira/models/celltype/base.py
+sfaira/models/celltype/marker.py
+sfaira/models/celltype/mlp.py
+sfaira/models/celltype/../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/models/celltype/../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/models/celltype/../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/models/celltype/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/models/celltype/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/models/celltype/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/models/celltype/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/models/celltype/../../commands/templates/single_dataset/cookiecutter.json
+sfaira/models/celltype/../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/models/celltype/../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/models/celltype/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/models/celltype/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/models/celltype/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/models/celltype/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/models/embedding/__init__.py
+sfaira/models/embedding/ae.py
+sfaira/models/embedding/base.py
+sfaira/models/embedding/linear.py
+sfaira/models/embedding/output_layers.py
+sfaira/models/embedding/vae.py
+sfaira/models/embedding/vaeiaf.py
+sfaira/models/embedding/vaevamp.py
+sfaira/models/embedding/../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/models/embedding/../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/models/embedding/../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/models/embedding/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/models/embedding/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/models/embedding/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/models/embedding/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/models/embedding/../../commands/templates/single_dataset/cookiecutter.json
+sfaira/models/embedding/../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/models/embedding/../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/models/embedding/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/models/embedding/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/models/embedding/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/models/embedding/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/train/__init__.py
+sfaira/train/summaries.py
+sfaira/train/train_model.py
+sfaira/train/../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/train/../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/train/../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/train/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/train/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/train/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/train/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/train/../commands/templates/single_dataset/cookiecutter.json
+sfaira/train/../commands/templates/single_dataset/hooks/__init__.py
+sfaira/train/../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/train/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/train/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/train/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/train/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/ui/__init__.py
+sfaira/ui/model_zoo.py
+sfaira/ui/user_interface.py
+sfaira/ui/../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/ui/../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/ui/../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/ui/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/ui/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/ui/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/ui/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/ui/../commands/templates/single_dataset/cookiecutter.json
+sfaira/ui/../commands/templates/single_dataset/hooks/__init__.py
+sfaira/ui/../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/ui/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/ui/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/ui/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/ui/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/__init__.py
+sfaira/unit_tests/conftest.py
+sfaira/unit_tests/directories.py
+sfaira/unit_tests/../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/__init__.py
+sfaira/unit_tests/data_for_tests/../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/data_for_tests/../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/data_for_tests/../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/databases/__init__.py
+sfaira/unit_tests/data_for_tests/databases/consts.py
+sfaira/unit_tests/data_for_tests/databases/utils.py
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/databases/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/loaders/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/consts.py
+sfaira/unit_tests/data_for_tests/loaders/utils.py
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/loaders/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/loaders/loaders/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/super_group.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/human_lung_2021_10xtechnology_mock1_001.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock1/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/mouse_pancreas_2021_10xtechnology_mock2_001.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock2/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/human_lung_2021_10xtechnology_mock3_001.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock3/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/human_lung_2021_10xtechnology_mock4_001.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/data_for_tests/loaders/loaders/dno_doi_mock4/../../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/__init__.py
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/data/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/test_clean_celltype_maps.py
+sfaira/unit_tests/tests_by_submodule/data/test_data_utils.py
+sfaira/unit_tests/tests_by_submodule/data/test_store.py
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/data/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/data/databases/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/databases/test_database_intput.py
+sfaira/unit_tests/tests_by_submodule/data/databases/test_databases_basic.py
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/data/databases/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/data/dataset/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/dataset/test_dataset.py
+sfaira/unit_tests/tests_by_submodule/data/dataset/test_meta_data_streamlining.py
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/data/dataset/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/estimators/__init__.py
+sfaira/unit_tests/tests_by_submodule/estimators/test_estimator.py
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/estimators/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/trainer/__init__.py
+sfaira/unit_tests/tests_by_submodule/trainer/test_trainer.py
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/trainer/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/ui/__init__.py
+sfaira/unit_tests/tests_by_submodule/ui/test_userinterface.py
+sfaira/unit_tests/tests_by_submodule/ui/test_zoo.py
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/ui/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/versions/__init__.py
+sfaira/unit_tests/tests_by_submodule/versions/test_genomes.py
+sfaira/unit_tests/tests_by_submodule/versions/test_ontologies.py
+sfaira/unit_tests/tests_by_submodule/versions/test_universe.py
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/tests_by_submodule/versions/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/update_loaders/__init__.py
+sfaira/unit_tests/update_loaders/update_celltypes.py
+sfaira/unit_tests/update_loaders/../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/unit_tests/update_loaders/../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/unit_tests/update_loaders/../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/unit_tests/update_loaders/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/update_loaders/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/update_loaders/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/update_loaders/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/unit_tests/update_loaders/../../commands/templates/single_dataset/cookiecutter.json
+sfaira/unit_tests/update_loaders/../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/unit_tests/update_loaders/../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/unit_tests/update_loaders/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/unit_tests/update_loaders/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/unit_tests/update_loaders/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/unit_tests/update_loaders/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/__init__.py
+sfaira/versions/../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/versions/../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/versions/../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/versions/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/../commands/templates/single_dataset/cookiecutter.json
+sfaira/versions/../commands/templates/single_dataset/hooks/__init__.py
+sfaira/versions/../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/versions/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/genomes/__init__.py
+sfaira/versions/genomes/genomes.py
+sfaira/versions/genomes/utils.py
+sfaira/versions/genomes/../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/versions/genomes/../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/versions/genomes/../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/versions/genomes/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/genomes/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/genomes/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/genomes/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/genomes/../../commands/templates/single_dataset/cookiecutter.json
+sfaira/versions/genomes/../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/versions/genomes/../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/versions/genomes/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/genomes/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/genomes/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/genomes/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/metadata/__init__.py
+sfaira/versions/metadata/base.py
+sfaira/versions/metadata/universe.py
+sfaira/versions/metadata/../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/versions/metadata/../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/versions/metadata/../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/versions/metadata/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/metadata/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/metadata/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/metadata/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/metadata/../../commands/templates/single_dataset/cookiecutter.json
+sfaira/versions/metadata/../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/versions/metadata/../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/versions/metadata/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/metadata/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/metadata/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/metadata/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/metadata/target_universes/__init__.py
+sfaira/versions/metadata/target_universes/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/versions/metadata/target_universes/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/versions/metadata/target_universes/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/versions/metadata/target_universes/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/metadata/target_universes/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/metadata/target_universes/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/metadata/target_universes/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/metadata/target_universes/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/versions/metadata/target_universes/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/versions/metadata/target_universes/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/versions/metadata/target_universes/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/metadata/target_universes/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/metadata/target_universes/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/metadata/target_universes/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/metadata/target_universes/human/__init__.py
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/metadata/target_universes/human/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/metadata/target_universes/mouse/__init__.py
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/metadata/target_universes/mouse/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/__init__.py
+sfaira/versions/topologies/class_interface.py
+sfaira/versions/topologies/../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/versions/topologies/../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/versions/topologies/../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/versions/topologies/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/../../commands/templates/single_dataset/cookiecutter.json
+sfaira/versions/topologies/../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/versions/topologies/../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/versions/topologies/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/homosapiens/__init__.py
+sfaira/versions/topologies/homosapiens/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/versions/topologies/homosapiens/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/versions/topologies/homosapiens/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/versions/topologies/homosapiens/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/homosapiens/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/homosapiens/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/homosapiens/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/homosapiens/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/versions/topologies/homosapiens/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/versions/topologies/homosapiens/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/versions/topologies/homosapiens/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/homosapiens/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/homosapiens/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/homosapiens/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/homosapiens/celltype/__init__.py
+sfaira/versions/topologies/homosapiens/celltype/celltypemarker.py
+sfaira/versions/topologies/homosapiens/celltype/celltypemlp.py
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/homosapiens/celltype/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/homosapiens/embedding/__init__.py
+sfaira/versions/topologies/homosapiens/embedding/ae.py
+sfaira/versions/topologies/homosapiens/embedding/linear.py
+sfaira/versions/topologies/homosapiens/embedding/nmf.py
+sfaira/versions/topologies/homosapiens/embedding/vae.py
+sfaira/versions/topologies/homosapiens/embedding/vaeiaf.py
+sfaira/versions/topologies/homosapiens/embedding/vaevamp.py
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/homosapiens/embedding/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/musmusculus/__init__.py
+sfaira/versions/topologies/musmusculus/../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/versions/topologies/musmusculus/../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/versions/topologies/musmusculus/../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/versions/topologies/musmusculus/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/musmusculus/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/musmusculus/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/musmusculus/../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/musmusculus/../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/versions/topologies/musmusculus/../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/versions/topologies/musmusculus/../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/versions/topologies/musmusculus/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/musmusculus/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/musmusculus/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/musmusculus/../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/musmusculus/celltype/__init__.py
+sfaira/versions/topologies/musmusculus/celltype/celltypemarker.py
+sfaira/versions/topologies/musmusculus/celltype/celltypemlp.py
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/musmusculus/celltype/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/musmusculus/embedding/__init__.py
+sfaira/versions/topologies/musmusculus/embedding/ae.py
+sfaira/versions/topologies/musmusculus/embedding/linear.py
+sfaira/versions/topologies/musmusculus/embedding/nmf.py
+sfaira/versions/topologies/musmusculus/embedding/vae.py
+sfaira/versions/topologies/musmusculus/embedding/vaeiaf.py
+sfaira/versions/topologies/musmusculus/embedding/vaevamp.py
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/multiple_datasets/cookiecutter.json
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/multiple_datasets/hooks/__init__.py
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/multiple_datasets/hooks/post_gen_project.py
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/multiple_datasets/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/single_dataset/cookiecutter.json
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/single_dataset/hooks/__init__.py
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/single_dataset/hooks/post_gen_project.py
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/__init__.py
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/extra_description.txt
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.py
+sfaira/versions/topologies/musmusculus/embedding/../../../../commands/templates/single_dataset/{{ cookiecutter.doi_sfaira_repr }}/{{ cookiecutter.id_without_doi }}.yaml
