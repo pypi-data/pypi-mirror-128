@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "jlabbase"
+version = "0.2.0"
+description = "This is a small package wit jupyterlab, numpy and pandas. This package serves as base for larger jupyterlab packages."
+authors = ["yZg"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jupyterlab = "*"
+numpy = "*"
+pandas = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
