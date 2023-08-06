@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: shtRipper-cpp
+Version: 1.2.0
+Summary: C++ parser of .sht files.
+Home-page: https://github.com/Rezenter/shtRipper_cpp/tree/master/python
+Author: Rezenter
+Author-email: nisovru@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# shtRipper
+
+
+
+Код для извлечения данных из .sht файлов. На текущий момент файлы версии ниже 2 не поддерживаются, что будет исправлено
+
+ при необходимости.
+
+
+
+
+
+    import shtRipper
+
+    
+
+    filename = 'd:/data/cfm/original/sht40808.SHT'
+
+    res = shtRipper.ripper.read(filename)
+
+    print(res.keys())
+
+
+
+---   
+
