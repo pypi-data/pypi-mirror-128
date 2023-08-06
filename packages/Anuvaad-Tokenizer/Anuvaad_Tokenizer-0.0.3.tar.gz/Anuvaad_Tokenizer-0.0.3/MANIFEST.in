@@ -1,0 +1,9 @@
+
+include liscence.txt
+include manifest.in
+include README.md
+recursive-include bin *
+recursive-include docs *
+recursive-include Anuvaad_Tokenizer *
+global-exclude *.pyc
+global-exclude *.pyo
