@@ -1,0 +1,13 @@
+black
+ipython
+mkdocs
+mkdocs-material
+mkdocstrings
+mypy 
+pytest
+pytest-asyncio
+pytkdocs 
+flake8
+pytest-env
+requests
+mock; python_version < '3.8'
