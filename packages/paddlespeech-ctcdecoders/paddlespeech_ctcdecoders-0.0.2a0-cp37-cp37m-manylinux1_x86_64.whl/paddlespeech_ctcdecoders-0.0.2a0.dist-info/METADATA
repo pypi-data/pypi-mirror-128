@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: paddlespeech-ctcdecoders
+Version: 0.0.2a0
+Summary: CTC decoders in paddlespeech
+Home-page: https://github.com/PaddlePaddle/PaddleSpeech
+Author: PaddlePaddle Speech and Language Team
+Author-email: paddlesl@baidu.com
+License: Apache 2.0
+Platform: UNKNOWN
+
+UNKNOWN
+
