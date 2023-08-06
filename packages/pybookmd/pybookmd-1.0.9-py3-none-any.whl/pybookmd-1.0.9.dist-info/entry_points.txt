@@ -1,0 +1,3 @@
+[console_scripts]
+pybookbuild=pybookmd.cli:build_book
+
