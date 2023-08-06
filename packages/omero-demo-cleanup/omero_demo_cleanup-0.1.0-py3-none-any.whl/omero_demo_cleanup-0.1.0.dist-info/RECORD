@@ -1,0 +1,10 @@
+omero/plugins/democleanup.py,sha256=_bbAwQLWGnIO2MbWRob1u9gy8hN3kZxGYhDS8xQPer4,370
+omero_demo_cleanup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omero_demo_cleanup/cli.py,sha256=2UbY20pSjL_GUefDpcMkDu346y3hGCeE4Pr7uJowkk8,4508
+omero_demo_cleanup/library.py,sha256=jMCCL87y8B0OVVnR6jzbHdL4CeJ6KzqqhEtJl_PyO0Y,9521
+omero_demo_cleanup-0.1.0.dist-info/LICENSE.txt,sha256=qxX9UmvY3Rip5368E5ZWv00z6X_HI4zRG_YOK5uGZsY,17987
+omero_demo_cleanup-0.1.0.dist-info/METADATA,sha256=8rGLP8QS_9L_2MEmpoZQSYjQGnPGffUkeFDqY-T3_bU,1741
+omero_demo_cleanup-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+omero_demo_cleanup-0.1.0.dist-info/top_level.txt,sha256=G-8QbSve7rJXDPKAC3efUPGiwAg0qFeO8TQhwTG2Dh4,25
+omero_demo_cleanup-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+omero_demo_cleanup-0.1.0.dist-info/RECORD,,
