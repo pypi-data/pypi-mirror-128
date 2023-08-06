@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "ochre"
+version = "0.1.1"
+description = "A tiny Python package for working with colors in a pragmatic way"
+authors = ["Felipe S. S. Schneider <schneider.felipe@posgrad.ufsc.br>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/getcuia/ochre"
+repository = "https://github.com/getcuia/ochre"
+keywords = [
+    "ansi",
+    "color-palettes",
+    "colors",
+    "hcl",
+    "hex",
+    "rgb",
+    "web",
+    "zero-dependency",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.910"
+bandit = "^1.7.1"
+flake8 = "^4.0.1"
+black = {version = "^21.10b0", allow-prereleases = true}
+pylint = "^2.11.1"
+hypothesis = "^6.24.3"
+pydocstyle = "^6.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
