@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+sqlreader.egg-info/PKG-INFO
+sqlreader.egg-info/SOURCES.txt
+sqlreader.egg-info/dependency_links.txt
+sqlreader.egg-info/top_level.txt
