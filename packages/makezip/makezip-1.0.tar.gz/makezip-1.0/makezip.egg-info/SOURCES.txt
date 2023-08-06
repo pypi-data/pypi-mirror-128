@@ -1,0 +1,6 @@
+makezip.py
+setup.py
+makezip.egg-info/PKG-INFO
+makezip.egg-info/SOURCES.txt
+makezip.egg-info/dependency_links.txt
+makezip.egg-info/top_level.txt

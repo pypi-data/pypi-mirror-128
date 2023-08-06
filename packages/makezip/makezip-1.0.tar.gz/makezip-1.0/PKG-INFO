@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: makezip
+Version: 1.0
+Summary: A repackage zip module, base on zipfile in standard library.
+Home-page: UNKNOWN
+Author: wp
+Author-email: 627618076@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
