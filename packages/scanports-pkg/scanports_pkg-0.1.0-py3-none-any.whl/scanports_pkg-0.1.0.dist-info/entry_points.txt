@@ -1,0 +1,3 @@
+[console_scripts]
+scanports = scanports_pkg.scanPorts:main
+
