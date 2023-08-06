@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: hatch-demo
+Version: 1rc0
+Project-URL: Documentation, https://github.com/unknown/hatch-demo#readme
+Project-URL: Issues, https://github.com/unknown/hatch-demo/issues
+Project-URL: Source, https://github.com/unknown/hatch-demo
+Author-email: "U.N. Owen" <void@some.where>
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: cowsay
+Description-Content-Type: text/markdown
+
+# Hatch Demo
+
+[![PyPI - Version](https://img.shields.io/pypi/v/hatch-demo.svg)](https://pypi.org/project/hatch-demo)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hatch-demo.svg)](https://pypi.org/project/hatch-demo)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install hatch-demo
+```
+
+## License
+
+`hatch-demo` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
