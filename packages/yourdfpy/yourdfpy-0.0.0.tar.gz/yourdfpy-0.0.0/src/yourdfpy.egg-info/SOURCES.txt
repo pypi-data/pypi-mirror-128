@@ -1,0 +1,16 @@
+AUTHORS.md
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/yourdfpy/__init__.py
+src/yourdfpy/urdf.py
+src/yourdfpy/viz.py
+src/yourdfpy.egg-info/PKG-INFO
+src/yourdfpy.egg-info/SOURCES.txt
+src/yourdfpy.egg-info/dependency_links.txt
+src/yourdfpy.egg-info/entry_points.txt
+src/yourdfpy.egg-info/not-zip-safe
+src/yourdfpy.egg-info/requires.txt
+src/yourdfpy.egg-info/top_level.txt
