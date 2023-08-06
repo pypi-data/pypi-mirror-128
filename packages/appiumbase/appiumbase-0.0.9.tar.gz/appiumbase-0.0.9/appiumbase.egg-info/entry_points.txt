@@ -1,0 +1,7 @@
+[console_scripts]
+appiumbase = appiumbase.console_scripts.run:main
+sbase = appiumbase.console_scripts.run:main
+
+[pytest11]
+appiumbase = appiumbase.plugins.pytest_plugin
+
