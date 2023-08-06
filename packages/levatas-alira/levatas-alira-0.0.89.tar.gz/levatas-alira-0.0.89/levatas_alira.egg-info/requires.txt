@@ -1,0 +1,7 @@
+PyYAML
+redis
+rq
+rq-scheduler
+requests
+boto3
+twilio
