@@ -1,0 +1,3 @@
+NlpToolkit-Dictionary-Cy
+NlpToolkit-Corpus-Cy
+NlpToolkit-DataStructure-Cy
