@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+churneval/__init__.py
+churneval/churneval.py
+churneval.egg-info/PKG-INFO
+churneval.egg-info/SOURCES.txt
+churneval.egg-info/dependency_links.txt
+churneval.egg-info/requires.txt
+churneval.egg-info/top_level.txt
