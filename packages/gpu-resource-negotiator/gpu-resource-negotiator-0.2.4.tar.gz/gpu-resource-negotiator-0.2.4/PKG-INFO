@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gpu-resource-negotiator
+Version: 0.2.4
+Summary: GPU Resource Negotiator (GRN). Map N jobs to M devices on the same machine.
+Home-page: https://github.com/j-helland/grn
+Author: Jonathan Helland
+License: unlicense
+Download-URL: https://github.com/j-helland/grn/archive/refs/tags/pre-v-0.2.4.tar.gz
+Keywords: GPU,load balancing
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+

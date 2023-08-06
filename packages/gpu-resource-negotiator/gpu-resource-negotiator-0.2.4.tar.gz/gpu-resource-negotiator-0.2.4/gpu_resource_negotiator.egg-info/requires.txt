@@ -1,0 +1,7 @@
+nvidia-ml-py3
+grpcio
+depq
+rich
+
+[dev]
+grpcio-tools
