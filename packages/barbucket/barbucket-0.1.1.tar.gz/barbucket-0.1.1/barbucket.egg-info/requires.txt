@@ -1,0 +1,8 @@
+beautifulsoup4
+click
+enlighten
+ib-insync
+numpy
+pandas
+requests
+trading-calendars
