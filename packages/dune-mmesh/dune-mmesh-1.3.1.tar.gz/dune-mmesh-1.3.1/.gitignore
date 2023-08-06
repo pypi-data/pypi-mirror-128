@@ -1,0 +1,43 @@
+# build system clutter
+build-*
+Testing
+
+# auto-saved files
+*~
+
+# hidden files
+.cproject
+.project
+
+# left overs from git rebase
+*.orig
+*.rej
+
+# latex clutter
+*.pdf
+*.aux
+*.blg
+*.log
+*.bbl
+*.dvi
+*.idx
+*.out
+*.tdo
+*.toc
+*.synctex.gz
+
+# python clutter
+__pycache__
+.ipynb_checkpoints
+*.tmp.msh
+dist
+_skbuild
+MANIFEST
+
+# always consider files containing source code regardless of their name
+!*.cc
+!*.hh
+!*.c
+!*.h
+!*.sh
+!*.py

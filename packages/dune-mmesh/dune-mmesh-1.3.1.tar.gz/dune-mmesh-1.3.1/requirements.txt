@@ -1,0 +1,7 @@
+breathe
+nbsphinx
+sphinxcontrib-tikz
+cmake
+ipython
+dune-common
+ufl
