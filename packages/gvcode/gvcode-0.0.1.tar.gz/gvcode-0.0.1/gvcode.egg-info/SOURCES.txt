@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+gvcode/__init__.py
+gvcode/gvcode.py
+gvcode.egg-info/PKG-INFO
+gvcode.egg-info/SOURCES.txt
+gvcode.egg-info/dependency_links.txt
+gvcode.egg-info/requires.txt
+gvcode.egg-info/top_level.txt
