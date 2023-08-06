@@ -1,0 +1,6 @@
+httpx[http2]>=0.18
+simplejson
+
+[test]
+pytest
+pytest-xdist
