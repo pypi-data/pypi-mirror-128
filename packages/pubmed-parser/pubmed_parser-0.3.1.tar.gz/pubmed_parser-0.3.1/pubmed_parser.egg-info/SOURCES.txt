@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pubmed_parser/__init__.py
+pubmed_parser/medline_parser.py
+pubmed_parser/pubmed_oa_parser.py
+pubmed_parser/pubmed_web_parser.py
+pubmed_parser/utils.py
+pubmed_parser.egg-info/PKG-INFO
+pubmed_parser.egg-info/SOURCES.txt
+pubmed_parser.egg-info/dependency_links.txt
+pubmed_parser.egg-info/requires.txt
+pubmed_parser.egg-info/top_level.txt
