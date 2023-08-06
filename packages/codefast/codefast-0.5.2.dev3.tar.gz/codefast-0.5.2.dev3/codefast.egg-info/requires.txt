@@ -1,0 +1,12 @@
+colorlog>=4.6.1
+lxml
+requests
+tqdm
+smart-open
+pillow
+bs4
+arrow
+numpy
+termcolor
+pydub
+pycryptodome==3.9.7
