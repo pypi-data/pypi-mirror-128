@@ -1,0 +1,4 @@
+[console_scripts]
+hxltmcli = hxltm.bin.hxltmdexml:exec_from_console_scripts
+hxltmdexml = hxltm.bin.hxltmdexml:exec_from_console_scripts
+
