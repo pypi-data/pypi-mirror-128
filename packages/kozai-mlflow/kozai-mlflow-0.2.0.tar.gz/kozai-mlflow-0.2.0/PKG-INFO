@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: kozai-mlflow
+Version: 0.2.0
+Summary: MLflow for integrated kozai environments
+Home-page: https://gitlab.mantelgroup.com.au/
+Author: Lucas Sargent
+Author-email: lucas.sargent@eliiza.com.au
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.mantelgroup.com.au/
+Keywords: kozai
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+
+UNKNOWN
+

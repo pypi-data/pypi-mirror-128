@@ -1,0 +1,6 @@
+mlflow-skinny==1.21.0
+azure-identity==1.6.0
+azure-storage-blob==12.9.0
+
+[tests]
+pytest==6.2.4
