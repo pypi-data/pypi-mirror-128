@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: baidu_Translator_zh_en
+Version: 0.0.1
+Summary: a library for oprate the baidu translator
+Home-page: https://github.com/YinglongCao/baiduAPI
+Author: Yinglong Cao
+Author-email: 18817005523@163.com
+License: GPL License
+Description: UNKNOWN
+Keywords: baidu translate
+Platform: any

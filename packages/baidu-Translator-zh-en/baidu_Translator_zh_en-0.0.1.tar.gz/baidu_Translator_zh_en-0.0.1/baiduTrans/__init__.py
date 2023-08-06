@@ -1,0 +1,1 @@
+name = 'baidu_Translator_zh_en'

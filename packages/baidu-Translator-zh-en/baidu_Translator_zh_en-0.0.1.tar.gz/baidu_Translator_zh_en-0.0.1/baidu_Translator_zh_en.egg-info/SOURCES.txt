@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+baiduTrans/__init__.py
+baiduTrans/__version__.py
+baiduTrans/baidu_Translator_zh_en.py
+baidu_Translator_zh_en.egg-info/PKG-INFO
+baidu_Translator_zh_en.egg-info/SOURCES.txt
+baidu_Translator_zh_en.egg-info/dependency_links.txt
+baidu_Translator_zh_en.egg-info/top_level.txt
