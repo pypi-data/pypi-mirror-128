@@ -1,0 +1,11 @@
+torchinfo/__init__.py,sha256=BaCXk2Zohd7UeiidEX4rQtCKCnRvmxph4VDx37UL2WM,264
+torchinfo/formatting.py,sha256=MEIMQjeauxAve7EXHVuotwsdEPLOlYInLRues7U4H2Q,6406
+torchinfo/layer_info.py,sha256=iGXiODcYb92lkLmfnL9sb7RaauD2zKsLfKy1YeFFT0k,7665
+torchinfo/model_statistics.py,sha256=BJ5JeWOQBz3jgC6CraJeLQk3Z1g3HgZqUPf6WkBnMO4,3316
+torchinfo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torchinfo/torchinfo.py,sha256=rRtB7e4Hi53B_dckwo5Q2RRyv9XNWuLeFZ6QbWYLBWw,18344
+torchinfo-1.5.4.dist-info/LICENSE,sha256=yD6Hu4wE4dXjqTX5tH0Hk1ek6osumR-D-xLcjW4gbCQ,1065
+torchinfo-1.5.4.dist-info/METADATA,sha256=uOU9BxubiWJ0UzZ09uV61yXHpnpSw77RkFKbbk3ClwE,21254
+torchinfo-1.5.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+torchinfo-1.5.4.dist-info/top_level.txt,sha256=R0QQaacQgrZDejQC0vBz7xfG1KT2TJKCQFPb_JTA4m8,10
+torchinfo-1.5.4.dist-info/RECORD,,
