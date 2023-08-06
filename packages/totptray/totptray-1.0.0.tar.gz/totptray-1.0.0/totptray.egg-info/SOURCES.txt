@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+test/test_totptray.py
+totptray/__init__.py
+totptray/totptray.py
+totptray.egg-info/PKG-INFO
+totptray.egg-info/SOURCES.txt
+totptray.egg-info/dependency_links.txt
+totptray.egg-info/entry_points.txt
+totptray.egg-info/requires.txt
+totptray.egg-info/top_level.txt
