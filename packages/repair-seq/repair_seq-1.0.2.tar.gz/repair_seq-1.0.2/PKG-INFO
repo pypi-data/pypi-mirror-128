@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: repair_seq
+Version: 1.0.2
+Summary: processing, analysis, and visualization of data from Repair-seq screens
+Home-page: https://github.com/jeffhussmann/repair-seq
+Author: Jeff Hussmann
+Author-email: jeff.hussmann@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6

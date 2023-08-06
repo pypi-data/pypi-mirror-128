@@ -1,0 +1,8 @@
+build
+__pycache__
+*.c
+*.so
+.ipynb_checkpoints
+*.ipynb
+.nfs*
+.eggs*
