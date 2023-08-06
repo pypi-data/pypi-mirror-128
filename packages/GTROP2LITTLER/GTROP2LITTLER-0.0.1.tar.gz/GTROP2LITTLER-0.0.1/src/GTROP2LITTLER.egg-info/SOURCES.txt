@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/GTROP2LITTLER.egg-info/PKG-INFO
+src/GTROP2LITTLER.egg-info/SOURCES.txt
+src/GTROP2LITTLER.egg-info/dependency_links.txt
+src/GTROP2LITTLER.egg-info/top_level.txt
+src/example_package/__init__.py
+src/example_package/example.py
