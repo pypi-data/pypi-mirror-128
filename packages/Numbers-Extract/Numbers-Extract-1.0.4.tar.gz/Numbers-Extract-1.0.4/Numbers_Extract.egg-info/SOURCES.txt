@@ -1,0 +1,10 @@
+LICENSE
+README.md
+numbers_extract.py
+setup.py
+Numbers_Extract.egg-info/PKG-INFO
+Numbers_Extract.egg-info/SOURCES.txt
+Numbers_Extract.egg-info/dependency_links.txt
+Numbers_Extract.egg-info/not-zip-safe
+Numbers_Extract.egg-info/requires.txt
+Numbers_Extract.egg-info/top_level.txt
