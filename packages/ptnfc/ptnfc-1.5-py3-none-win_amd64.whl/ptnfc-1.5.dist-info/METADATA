@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ptnfc
+Version: 1.5
+Summary: NFC reader operation library
+Home-page: UNKNOWN
+Author: liuze
+Author-email: ze.liu@perfectek.com
+License: UNKNOWN
+Platform: Windows
+Requires-Python: >=3
+Requires-Dist: pyserial (>=3.5)
+Requires-Dist: pyusb (>=1.2.1)
+
+UNKNOWN
+
