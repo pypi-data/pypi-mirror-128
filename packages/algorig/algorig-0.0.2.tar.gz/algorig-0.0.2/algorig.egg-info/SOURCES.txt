@@ -1,0 +1,8 @@
+README.md
+setup.py
+algorig.egg-info/PKG-INFO
+algorig.egg-info/SOURCES.txt
+algorig.egg-info/dependency_links.txt
+algorig.egg-info/entry_points.txt
+algorig.egg-info/requires.txt
+algorig.egg-info/top_level.txt
