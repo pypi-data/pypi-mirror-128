@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>desambiguacion</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+{% for key, tokens_list in token_types.items %}
+    <table cellpadding="7">
+        <tr>
+            <th>{{key}}</th>
+        </tr>
+        {% for token in tokens_list %}
+
+        <tr>
+            <td>{{ token|safe  }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+{% endfor %}
+
+</body>
+</html>

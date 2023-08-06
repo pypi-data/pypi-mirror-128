@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Concordancia</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div>{{ concordance_results|length}}</div>
+{% for concordance_results_item in concordance_results %}
+    <table cellpadding="7">
+        {%if concordance_results_item|length%}
+        <tr>
+            <th>Results</th>
+
+        </tr>
+        {% endif %}
+
+        {% for cr in concordance_results_item %}
+
+        <tr>
+            <td>{{ cr|safe  }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {% empty %}
+    <tr>
+        <th>No hay resultados</th>
+
+    </tr>
+
+{% endfor %}
+
+</body>
+</html>

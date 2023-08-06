@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mensajes</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div>{{ thoughts_list|length}}</div>
+<table cellpadding="7">
+    {%if thoughts_list|length%}
+    <tr>
+        <th>Results</th>
+    </tr>
+    {% endif %}
+    {% for thoughts_item in thoughts_list %}
+
+        <tr>
+            <td>{{ thoughts_item|safe  }}</td>
+        </tr>
+
+        {% empty %}
+        <tr>
+            <th>No hay resultados</th>
+
+        </tr>
+
+    {% endfor %}
+</table>
+
+</body>
+</html>

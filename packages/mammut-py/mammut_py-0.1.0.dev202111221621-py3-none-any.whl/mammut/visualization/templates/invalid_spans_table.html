@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Textos solapados</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div>{{ spans_values|length}}</div>
+    <table cellpadding="7">
+        {%if spans_values|length%}
+        <tr>
+            <th>Overlap</th>
+            <th>Event text</th>
+            <th>dimension</th>
+
+        </tr>
+        {% endif %}
+
+        {% for sv in spans_values %}
+
+        <tr>
+            <td>{{ sv.overlap|safe  }}</td>
+            <td>{{ sv.original_text|safe  }}</td>
+            <td>{{ sv.dimension|safe  }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+[console_scripts]
+mammutctl=src.mammut.mammutctl.mammutctl:main
+

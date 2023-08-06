@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>desambiguacion</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        #current{
+            color: red
+        }
+    </style>
+</head>
+<body>
+{% for key, definition_set in definition_sets.items %}
+    <table cellpadding="7">
+        <tr>
+            {% if current_definition is not None and current_definition == definition_set %}
+                <th id="current">{{key}}</th>
+            {% else %}
+                <th>{{key}}</th>
+            {% endif %}
+
+        </tr>
+        {% for definition in definition_set %}
+
+        <tr>
+            <td>{{ definition|safe  }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+{% endfor %}
+
+</body>
+</html>

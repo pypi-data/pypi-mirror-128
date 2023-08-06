@@ -1,0 +1,5 @@
+'sp <---> como estas', (1024, 4)
+'sp <---> estas como', (1536, 4)
+'sp <---> el carro grande', (2048, 4)
+'sp <---> hola', (24064, 4)
+'sp <---> aquÃ\xad', (24576, 4)
