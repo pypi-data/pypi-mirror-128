@@ -1,0 +1,10 @@
+README.md
+setup.py
+pydog/__init__.py
+pydog/const.py
+pydog/pydog.py
+pydog.egg-info/PKG-INFO
+pydog.egg-info/SOURCES.txt
+pydog.egg-info/dependency_links.txt
+pydog.egg-info/requires.txt
+pydog.egg-info/top_level.txt
