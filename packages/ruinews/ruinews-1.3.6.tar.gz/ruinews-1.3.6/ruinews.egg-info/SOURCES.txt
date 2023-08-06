@@ -1,0 +1,7 @@
+README.md
+setup.py
+ruinews/__init__.py
+ruinews.egg-info/PKG-INFO
+ruinews.egg-info/SOURCES.txt
+ruinews.egg-info/dependency_links.txt
+ruinews.egg-info/top_level.txt
