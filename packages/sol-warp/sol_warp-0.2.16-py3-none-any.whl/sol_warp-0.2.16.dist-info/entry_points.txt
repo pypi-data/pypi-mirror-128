@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        warp=cli.warp_cli:main
+    
