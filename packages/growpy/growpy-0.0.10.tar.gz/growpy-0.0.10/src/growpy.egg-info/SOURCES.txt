@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/growpy/__init__.py
+src/growpy/models.py
+src/growpy/objectives.py
+src/growpy/selfstarts.py
+src/growpy.egg-info/PKG-INFO
+src/growpy.egg-info/SOURCES.txt
+src/growpy.egg-info/dependency_links.txt
+src/growpy.egg-info/top_level.txt
