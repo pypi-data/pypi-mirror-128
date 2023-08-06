@@ -1,0 +1,12 @@
+ptermtools/__init__.py,sha256=AkauTonYw7kkQk8mz8RNjQI-fP6OwzA-sVKYnWIeUCM,228
+ptermtools/config.py,sha256=5E5CozUrdQUD-sZ8DOQhjNSDJOIsu0VCIyPZweRXSJ0,81
+ptermtools/git_repo_organizer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ptermtools/git_repo_organizer/cli.py,sha256=ieuQUOWUAUgJNjkwRGFUoTLNQdPPHZfJP10ZXLfusLc,233
+ptermtools/git_repo_organizer/config.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ptermtools/git_repo_organizer/database.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ptermtools/git_repo_organizer/main.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ptermtools/git_repo_organizer/repo_organizer.py,sha256=zJiEazK0isPZ7KTsjT0SmJ4p2paLmTMGuDBCHp6Oa-g,322
+ptermtools-0.1.0a0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ptermtools-0.1.0a0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+ptermtools-0.1.0a0.dist-info/METADATA,sha256=oo06Xs_L3CjFx6MBuqF3XkaYTbobCEO5ET6tl9nkOW4,1763
+ptermtools-0.1.0a0.dist-info/RECORD,,

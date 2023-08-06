@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ptermtools
+Version: 0.1.0a0
+Summary: Paul's Terminal Tools
+License: Apache-2.0
+Author: Paul Gierz
+Author-email: paulgierz@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyGithub (>=1.55,<2.0)
+Requires-Dist: click8 (>=8.0.1,<9.0.0)
+Requires-Dist: docker (>=5.0.3,<6.0.0)
+Requires-Dist: everett (>=2.0.1,<3.0.0)
+Requires-Dist: fs (>=2.4.14,<3.0.0)
+Requires-Dist: importlib-metadata (>=4.8.2,<5.0.0); python_version < "3.8"
+Requires-Dist: python-gitlab (>=2.10.1,<3.0.0)
+Requires-Dist: spython (>=0.1.17,<0.2.0)
+Requires-Dist: taskw (>=1.3.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+[![PyPI Version](https://img.shields.io/pypi/v/ptermtools)](https://pypi.org/project/ptermtools/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/ptermtools)](https://pypi.org/project/ptermtools/)
+[![Python Wheel](https://img.shields.io/pypi/wheel/ptermtools)](https://pypi.org/project/ptermtools/)
+[![License](https://img.shields.io/badge/License-Apache2.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Code Style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Code Quality: flake8](https://img.shields.io/badge/code%20quality-flake8-000000.svg)](https://gitlab.com/pycqa/flake8)
+
+# ptermtools
+Paul's Terminal Tools
+
+## Contributing
+Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) file for more information on how to
+contribute to this project.
+
