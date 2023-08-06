@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ey-ehub-async-web-server
+Version: 1.0.5
+Summary: The package includes an implementation of web app service library to handle requests asynchronously.
+Home-page: UNKNOWN
+Maintainer: EY Ecosystems Hub team
+Maintainer-email: 
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*
+Provides-Extra: all

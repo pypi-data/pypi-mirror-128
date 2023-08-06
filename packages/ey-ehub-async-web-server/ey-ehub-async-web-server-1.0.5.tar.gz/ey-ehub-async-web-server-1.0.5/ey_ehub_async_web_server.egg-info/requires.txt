@@ -1,0 +1,11 @@
+requests==2.23.0
+Flask==1.1.2
+msal==1.16.0
+
+[:python_version=="2.7"]
+typing>=3.6
+
+[all]
+requests==2.23.0
+Flask==1.1.2
+msal==1.16.0
