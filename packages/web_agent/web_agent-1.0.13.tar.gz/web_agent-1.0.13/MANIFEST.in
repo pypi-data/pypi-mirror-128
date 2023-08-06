@@ -1,0 +1,11 @@
+include web_agent\configuration\config.yaml
+include web_agent\configuration\database.yaml
+include web_agent\tool\device\library\nvme_ioctl_32.dll
+include web_agent\tool\device\library\nvme_ioctl_64.dll
+include web_agent\tool\device\library\nvme_ioctl.so
+include web_agent\configuration\version.yaml
+include web_agent\configuration\pci.ids
+include web_agent\tool\fio\tool\fio
+include web_agent\tool\device\dll\buf.dll
+include web_agent\tool\device\dll\buf.so
+include LICENSE.txt
