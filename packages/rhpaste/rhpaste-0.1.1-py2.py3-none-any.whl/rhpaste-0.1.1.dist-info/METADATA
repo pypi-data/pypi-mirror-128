@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: rhpaste
+Version: 0.1.1
+Summary: Red Hat Pastebin CLI tool
+Home-page: https://sr.ht/~joshmulliken/redhat-pastebin-cli/
+Author: Joshua Mulliken
+Author-email: joshua@mulliken.net
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+
+<!--
+SPDX-FileCopyrightText: 2021 Joshua Mulliken <joshua@mulliken.net>
+
+SPDX-License-Identifier: GPL-3.0-only
+-->
+
+# Red Hat Pastebin CLI Tool
+
+This tool is made to allow Red Hat Employees to quickly and easily upload files to the Red Hat internal Pastebin instance (<https://pastebin.test.redhat.com>).\
+
+## Instructions
+
+Install with pip
+
+```bash
+$ pip3 install rhpaste
+```
+
+
+Usage:
+
+```bash
+$ cat myfile.txt | rhpaste
+http://pastebin.test.redhat.com/xxxxxxx
+```
+
