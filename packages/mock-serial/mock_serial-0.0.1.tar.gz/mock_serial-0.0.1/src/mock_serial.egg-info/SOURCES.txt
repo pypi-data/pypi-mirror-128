@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+src/mock_serial/__init__.py
+src/mock_serial/mock_serial.py
+src/mock_serial/pytest.py
+src/mock_serial/stub.py
+src/mock_serial.egg-info/PKG-INFO
+src/mock_serial.egg-info/SOURCES.txt
+src/mock_serial.egg-info/dependency_links.txt
+src/mock_serial.egg-info/entry_points.txt
+src/mock_serial.egg-info/top_level.txt
