@@ -1,0 +1,12 @@
+hgvs
+requests
+biocommons.seqrepo
+fastapi
+uvicorn
+pydantic
+ga4gh.vrs[extras]>=0.7.2
+gene-normalizer>=0.1.23
+pyliftover
+boto3
+ga4gh.vrsatile.pydantic>=0.0.5
+pandas
