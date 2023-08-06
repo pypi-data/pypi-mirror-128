@@ -1,0 +1,48 @@
+CHANGES
+=======
+
+0.3.3
+-----
+
+* corrected setup\_tools templates
+
+0.3.1
+-----
+
+* quick fix of naming convention
+
+0.3.0
+-----
+
+* add var\_list support and added JN documentation to readme
+
+0.2.2
+-----
+
+* fixed bug in setup\_tools and added threadlevel mpi support for linux
+
+0.2.1
+-----
+
+* impementation of mcplot and correct resolving of links
+
+0.2.0
+-----
+
+* implementation of jupyter functions working
+
+0.1.7
+-----
+
+* Now Working on linux and windows
+* begining to prepare the script to run on windows
+* deviding setup\_tools functions into creating lines and writing to file
+* rename dev-requirements to requirements-dev and added beta classifire
+
+v0.1.0
+------
+
+* readme update and some minor fixes
+* first working version
+* alpha 0.0.1
+* Initial commit
