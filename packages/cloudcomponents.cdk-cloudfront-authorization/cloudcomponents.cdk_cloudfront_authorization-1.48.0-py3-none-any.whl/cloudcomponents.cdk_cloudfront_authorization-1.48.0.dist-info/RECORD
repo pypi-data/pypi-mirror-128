@@ -1,0 +1,9 @@
+cloudcomponents/cdk_cloudfront_authorization/__init__.py,sha256=B3XM3571bOkuio1P3mn_e_Y9KJqY4tKMY54jCTUuyd8,173359
+cloudcomponents/cdk_cloudfront_authorization/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cloudcomponents/cdk_cloudfront_authorization/_jsii/__init__.py,sha256=kFCfAQfwEEkSkogP9fZ9uzOrw6JCDq8vfkb7un4ndWk,766
+cloudcomponents/cdk_cloudfront_authorization/_jsii/cdk-cloudfront-authorization@1.48.0.jsii.tgz,sha256=p7zj_D1N1MTBNNCrc48v-emybHO0tGowB_KnV-P38cQ,1064407
+cloudcomponents.cdk_cloudfront_authorization-1.48.0.dist-info/LICENSE,sha256=w7G3i8i9PqE6pLyXeEQtFlYCcK-iNQBtgW5eiM7yTbQ,1077
+cloudcomponents.cdk_cloudfront_authorization-1.48.0.dist-info/METADATA,sha256=A_2xUyt3tOY9AO-VVQWwalrEnAf48MIWQoAB-z3_zxM,9246
+cloudcomponents.cdk_cloudfront_authorization-1.48.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cloudcomponents.cdk_cloudfront_authorization-1.48.0.dist-info/top_level.txt,sha256=B4EWas985OPzDPLZgw2jcOsscXpuQJyowJnB5pl9rpQ,16
+cloudcomponents.cdk_cloudfront_authorization-1.48.0.dist-info/RECORD,,
