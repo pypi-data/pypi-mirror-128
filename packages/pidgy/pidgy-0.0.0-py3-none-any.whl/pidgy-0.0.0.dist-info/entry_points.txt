@@ -1,0 +1,3 @@
+[console_scripts]
+pidgy = pidgy.__main__:main
+
