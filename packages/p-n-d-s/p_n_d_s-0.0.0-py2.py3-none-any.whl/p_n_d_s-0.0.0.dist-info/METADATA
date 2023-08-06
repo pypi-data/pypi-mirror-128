@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: p-n-d-s
+Version: 0.0.0
+Summary: Python-Node Data-Store:           An indexing library for Pandas, NumPy, file paths and variables.     
+Home-page: https://gitlab.com/guydewinton/p_n_d_s
+Author: Guy de Winton
+Author-email: guydewinton@gmail.com
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+UNKNOWN
+
+
