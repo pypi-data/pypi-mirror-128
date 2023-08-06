@@ -1,0 +1,15 @@
+semver~=2.10
+kedro>=0.16.0
+ipython<8.0,>=7.0.0
+fastapi<0.67.0,>=0.63.0
+aiofiles==0.6.0
+uvicorn[standard]~=0.13.4
+watchgod~=0.7
+plotly>=4.0
+pandas>=0.24
+sqlalchemy~=1.2
+strawberry-graphql~=0.87.0
+networkx>=1.0
+
+[:python_version == "3.6"]
+dataclasses==0.8
