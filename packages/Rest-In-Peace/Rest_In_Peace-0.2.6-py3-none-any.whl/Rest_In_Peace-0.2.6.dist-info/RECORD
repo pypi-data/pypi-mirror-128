@@ -1,0 +1,11 @@
+rest_in_peace/__init__.py,sha256=_baezEZQjAjzoy1ZqJXV6BkNvIXKFt32y_6B08RU1K4,58
+rest_in_peace/cli.py,sha256=pidNeBq_vPUDtX0d0LFb3_bxQUBMrPOvlZjoE_4OseA,1056
+rest_in_peace/database.py,sha256=3GVllkSO-JRVVvxEZdI2qQLAdLasieJQSmTcg0Rc68w,2844
+rest_in_peace/openapi.py,sha256=xs6kwe95I7Xeznyd5BO8uYioxKRvwv-PTcoh-rPlOWk,4770
+rest_in_peace/server.py,sha256=TIWWIUknnPTpQt7-8gnR4s24ekK4IO_sbpbTY2xhCwE,2958
+Rest_In_Peace-0.2.6.dist-info/LICENSE,sha256=dgFS8q-gvBV7HF2HColit3w8xpzWFeh2CIzcPyuFV4c,1071
+Rest_In_Peace-0.2.6.dist-info/METADATA,sha256=AAZwOdCtBW9RERCRugllsb_pyaBE7SyWUf02Q9Ttz2Y,1378
+Rest_In_Peace-0.2.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+Rest_In_Peace-0.2.6.dist-info/entry_points.txt,sha256=e4wDpcZF5FE3FPhHBpTcZ8CTQTXF0Cw8xUMSfuZ97JU,58
+Rest_In_Peace-0.2.6.dist-info/top_level.txt,sha256=xVisvMdQ9WwQUOO6ugtNE_s9v-mMy7UR9erM2SxbTXA,14
+Rest_In_Peace-0.2.6.dist-info/RECORD,,

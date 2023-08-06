@@ -1,0 +1,3 @@
+[console_scripts]
+rest-in-peace = rest_in_peace.cli:main
+
