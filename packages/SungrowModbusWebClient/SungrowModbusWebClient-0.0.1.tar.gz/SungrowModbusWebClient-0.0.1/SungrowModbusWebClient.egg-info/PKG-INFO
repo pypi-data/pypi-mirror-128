@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: SungrowModbusWebClient
+Version: 0.0.1
+Summary: A ModbusWebClient wrapper for talking to Sungrow WiNet-S Dongle via HTTP API
+Home-page: https://github.com/bohdan-s/SungrowModbusWebClient
+Author: Bohdan Flower
+Author-email: github@bohdan.net
+License: UNKNOWN
+Description: # SungrowModbusWebClient
+         Access Modbus RTU via API call to Sungrow WiNet-S
+        
+        Class based on pymodbus.ModbusTcpClient, completely interchangeable, just replace ModbusTcpClient() with SungrowModbusTcpClient()
+        
+        Example:
+        For Solariot, open solariot.py
+        
+        Add to the top: from SungrowModbusWebClient import SungrowModbusWebClient
+        
+        Replace SungrowModbusTcpClient with SungrowModbusWebClient near lines 100 & 101
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
