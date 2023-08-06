@@ -1,0 +1,3 @@
+[console_scripts]
+aws-energy-labeler = awsenergylabelercli.awsenergylabelercli:main
+
