@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+cad_to_h5m/__init__.py
+cad_to_h5m/core.py
+cad_to_h5m.egg-info/PKG-INFO
+cad_to_h5m.egg-info/SOURCES.txt
+cad_to_h5m.egg-info/dependency_links.txt
+cad_to_h5m.egg-info/top_level.txt
