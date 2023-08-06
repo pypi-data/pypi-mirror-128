@@ -1,0 +1,12 @@
+_runtime.abi3.so,sha256=R2z2cVQZEtnmyKo3hJ8wnuniQq0uq6WXB_RuLhQhX2g,54944
+koi_cuda102-0.0.1a0.dist-info/WHEEL,sha256=Vqd_n_IKgR469FNqkIoqwEhrX3PSWel3O4QQXU4e5pU,150
+koi_cuda102-0.0.1a0.dist-info/METADATA,sha256=fsah8X-qQdXy4n0-ZXJxk23ch9anDK24pFonR35JK_I,197
+koi_cuda102-0.0.1a0.dist-info/RECORD,,
+koi_cuda102-0.0.1a0.dist-info/top_level.txt,sha256=G_aqyhurAJEhUB19YCePG0t59TIfhxKZcVW38RddyWA,13
+koi/utils.py,sha256=ZPR1qET0qIZy1XCxIU9r-LAyPZy7Agz0n5b4WZWk9Ug,1445
+koi/build.py,sha256=0LSiZnLWL69gGNx0qOqGiSAyV46cSJnam4TkSJyzHU8,412
+koi/lstm.py,sha256=qBPdpGvudvd3DbB85IsMFqeYpuZqtYlzRAuS_ewG_I8,5422
+koi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koi/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koi/test/test_lstm.py,sha256=nn1ni5rd1vWO0iNrF9q5cpZr9Ghs7dvoo62MICzs-Ko,1875
+koi_cuda102.libs/lib-5464fc63.so,sha256=q-ql8jBnvUoYzd3oG6Wy3GZyoO-2YvJPogUXY36T32w,840112
