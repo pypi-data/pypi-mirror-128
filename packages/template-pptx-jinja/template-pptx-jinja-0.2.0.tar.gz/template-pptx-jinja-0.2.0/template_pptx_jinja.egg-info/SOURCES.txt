@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+template_pptx_jinja/__init__.py
+template_pptx_jinja/pictures.py
+template_pptx_jinja/render.py
+template_pptx_jinja.egg-info/PKG-INFO
+template_pptx_jinja.egg-info/SOURCES.txt
+template_pptx_jinja.egg-info/dependency_links.txt
+template_pptx_jinja.egg-info/requires.txt
+template_pptx_jinja.egg-info/top_level.txt
