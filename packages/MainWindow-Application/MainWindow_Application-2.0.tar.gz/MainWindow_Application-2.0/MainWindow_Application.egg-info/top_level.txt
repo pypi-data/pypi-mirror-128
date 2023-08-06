@@ -1,0 +1,3 @@
+MainWindow
+MainWindow_Application
+background_rc
