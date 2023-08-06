@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: PyApple
+Version: 2.0.0
+Summary: Simple python library for dealing with Apple device's firmwares.
+Home-page: https://github.com/fxrcha/PyApple
+Author: fxrcha
+Author-email: truetype24@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: python-dateutil (>=2.8.1)
+Requires-Dist: aiohttp (>=3.7.4)
+Requires-Dist: asyncio
+
+# PyApple
+
+> Simple python library for dealing with Apple device's firmwares.
+
+## Features
+
+* Asynchronous (you can use synchronous method either)
+* Fetch IPSW by identifier, build number and version
+* Fetch OTA firmware by identifier, buildid and version
+* Fetch available MacOS from Apple's update server (including betas)
+* Get information of cydia tweak and repo
+* Extract SHSH2 blobs of iDevices
+* Request an asset from Apple's Pallas OTA server.
+
+## Example
+
+```py
+from pyapple import Apple
+
+client = Apple()
+
+device = client.search_device("iPad13,4")
+
+print(device.name) # Prints "iPad Pro (11-inch) (3rd generation)"
+```
+
+You could see more example codes from [here](https://github.com/fxrcha/PyApple/blob/main/example).
+
+## Documentation
+
+[here](https://github.com/fxrcha/PyApple/blob/main/docs)
+
+## Install
+
+```zsh
+python3 -m pip install pyapple
+```
+
+### Build Environment
+
+* [macOS Monterey 12.0.1](https://www.apple.com/macos/monterey/)
+* [Python 3.9.4 64-bit](https://www.python.org/downloads/release/python-394/)
+* [Mac mini (M1, 2020)](https://www.apple.com/mac-mini/) 
+
+## Contribute
+
+* Strongly recommends using black and isort.
+* Use pull request.
+
+## License
+
+MIT License
+
+
+
+
