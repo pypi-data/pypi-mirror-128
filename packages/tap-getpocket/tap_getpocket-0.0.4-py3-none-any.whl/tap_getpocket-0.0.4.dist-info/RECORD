@@ -1,0 +1,11 @@
+tap_getpocket/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_getpocket/auth.py,sha256=ikvwQN_RFzWllJ0PNnGWOeKnyCXDLwwyxcSZidka4kE,1126
+tap_getpocket/client.py,sha256=k4qWBN3JaSMc2xQfrIcLQoRCbEV-ASav6hxI2BdPWRQ,13330
+tap_getpocket/streams.py,sha256=gmgMv9lempE5iaycsvhqt3WvL-PS6nzu-ZdM7fZAE_g,2720
+tap_getpocket/tap.py,sha256=A7Ffk9X36W-t9KW_fxJ0B40t7hBO2hJSk5EMGukvj8A,2129
+tap_getpocket/tests/__init__.py,sha256=aqMk3rz2xJi-5xPu_APoJxRUSAwlYkNBYLKkYMy7Bto,36
+tap_getpocket/tests/test_core.py,sha256=Hdd-xkyJsO-FqzYCKJIf49yC_e0ZUrQM54GKZ6drWrg,657
+tap_getpocket-0.0.4.dist-info/entry_points.txt,sha256=QdaUClmHfrn8eOkK-8_ApfBVQDVn9s8xVtSC9WBsNY8,68
+tap_getpocket-0.0.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+tap_getpocket-0.0.4.dist-info/METADATA,sha256=1sbCTPFMx_420n213kMsV6sRkOzvoSCy-lzqTDcZ91I,585
+tap_getpocket-0.0.4.dist-info/RECORD,,
