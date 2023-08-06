@@ -1,0 +1,7 @@
+README.md
+setup.py
+easework/__init__.py
+easework.egg-info/PKG-INFO
+easework.egg-info/SOURCES.txt
+easework.egg-info/dependency_links.txt
+easework.egg-info/top_level.txt
