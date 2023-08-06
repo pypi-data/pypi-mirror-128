@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: radispawn
+Version: 0.0.2
+Summary: Launch programs and scripts using a radial menu.
+Home-page: https://github.com/aprzn123/RadiSpawn/
+Author: aprzn
+Author-email: apr0alt@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Utilities

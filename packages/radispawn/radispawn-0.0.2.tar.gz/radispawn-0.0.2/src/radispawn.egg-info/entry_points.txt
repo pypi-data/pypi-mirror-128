@@ -1,0 +1,3 @@
+[console_scripts]
+radispawn = radispawn.__main__:main
+
