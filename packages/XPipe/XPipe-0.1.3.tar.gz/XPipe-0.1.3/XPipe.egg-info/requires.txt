@@ -1,0 +1,7 @@
+numpy
+bokeh
+mongoengine
+Flask
+flask-cors
+pyyaml
+click
