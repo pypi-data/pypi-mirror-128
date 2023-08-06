@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: relearn
+Version: 0.0.11
+Summary: ~ R E L E A R N ~
+Home-page: https://github.com/Nelson-iitp/relearn
+Author: Nelson.S
+Author-email: nelson_2121cs07@iitp.ac.in
+License: Apache2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: torch
+
+<pre>
+    ~ R E L E A R N ~
+</pre>
+
