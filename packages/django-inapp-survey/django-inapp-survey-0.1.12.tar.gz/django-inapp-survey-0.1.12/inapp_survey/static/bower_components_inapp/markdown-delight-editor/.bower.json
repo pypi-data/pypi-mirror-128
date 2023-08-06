@@ -1,0 +1,45 @@
+{
+  "name": "markdown-delight-editor",
+  "homepage": "https://github.com/TuvaLabs/markdown-delight-editor",
+  "description": "A markdown editor",
+  "main": "markdown-delight-editor.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "markdown",
+    "polymer",
+    "editor"
+  ],
+  "authors": [
+    "Tuva Team"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "codemirror": "CodeMirror#5.13.2",
+    "components-font-awesome": "^4.5.0",
+    "showdown": "^1.3.0",
+    "Typo.js": "*"
+  },
+  "devDependencies": {
+    "iron-component-page": "^1.1.8"
+  },
+  "version": "0.1.13",
+  "_release": "0.1.13",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.13",
+    "commit": "e907f8afe401520b8cfbeb49103481c1d3b632df"
+  },
+  "_source": "https://github.com/TuvaLabs/markdown-delight-editor.git",
+  "_target": "0.1.13",
+  "_originalSource": "markdown-delight-editor"
+}

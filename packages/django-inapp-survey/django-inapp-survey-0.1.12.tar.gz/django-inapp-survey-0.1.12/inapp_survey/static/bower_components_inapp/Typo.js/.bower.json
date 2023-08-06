@@ -1,0 +1,13 @@
+{
+  "name": "Typo.js",
+  "homepage": "https://github.com/cfinke/Typo.js",
+  "_release": "9955cf1ece",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "9955cf1ece1897d7e585eb03ff7cc64eb3935a41"
+  },
+  "_source": "https://github.com/cfinke/Typo.js.git",
+  "_target": "*",
+  "_originalSource": "Typo.js"
+}
