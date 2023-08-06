@@ -1,0 +1,4 @@
+envoy.base.runner>=0.0.4
+envoy.base.utils>=0.0.8
+envoy.gpg.identity>=0.0.3
+verboselogs
