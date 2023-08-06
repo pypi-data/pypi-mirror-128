@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: douglas
+Version: 0.0.3
+Summary: This project aims at generating datasets so that statistics methods can be applied.
+Home-page: UNKNOWN
+Author: José Valencia Figueroa
+Author-email: joel.jvalencia@gmail.com
+License: UNKNOWN
+Keywords: insurance,actuarial science,non life insurance,python,spain,motor,general insurance,property,casualty
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: pandas (>=0.25.3)
+Requires-Dist: numpy (>=1.17.4)
+
+UNKNOWN
+
