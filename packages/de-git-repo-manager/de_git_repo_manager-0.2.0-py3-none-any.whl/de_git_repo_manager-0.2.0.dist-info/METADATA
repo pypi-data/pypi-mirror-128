@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: de-git-repo-manager
+Version: 0.2.0
+Summary: de namespace module portion git_repo_manager: create and maintain local and remote git repositories of Python projects
+Home-page: https://gitlab.com/degroup/de_git_repo_manager
+Author: AndiEcker
+Author-email: aecker2@gmail.com
+License: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Keywords: configuration,development,environment,productivity
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+License-File: LICENSE.md
+Requires-Dist: PyGithub
+Requires-Dist: python-gitlab
+Requires-Dist: setuptools
+Requires-Dist: ae-base
+Requires-Dist: ae-console
+Requires-Dist: ae-inspector
+Requires-Dist: ae-literal
+Requires-Dist: de-setup-project
+Requires-Dist: Pillow
+Provides-Extra: dev
+Requires-Dist: anybadge ; extra == 'dev'
+Requires-Dist: coverage-badge ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pylint-exit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Provides-Extra: docs
+Provides-Extra: tests
+Requires-Dist: anybadge ; extra == 'tests'
+Requires-Dist: coverage-badge ; extra == 'tests'
+Requires-Dist: flake8 ; extra == 'tests'
+Requires-Dist: mypy ; extra == 'tests'
+Requires-Dist: pylint ; extra == 'tests'
+Requires-Dist: pylint-exit ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+UNKNOWN
+

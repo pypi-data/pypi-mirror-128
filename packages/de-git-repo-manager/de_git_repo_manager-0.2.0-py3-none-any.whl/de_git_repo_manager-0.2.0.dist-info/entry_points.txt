@@ -1,0 +1,3 @@
+[console_scripts]
+grm = de.git_repo_manager:main
+
