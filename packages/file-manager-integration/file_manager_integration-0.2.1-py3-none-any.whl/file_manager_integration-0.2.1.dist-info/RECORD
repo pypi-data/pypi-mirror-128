@@ -1,0 +1,11 @@
+file_manager_integration/__init__.py,sha256=ACUP4H6JDcvKRPowEX_0oORzwPnSPcu1hDa9dQcp3EY,96
+file_manager_integration/__main__.py,sha256=jkuwZFisy3Um8pTb_qr3o-5n4QmmOYLhvCYtntIjiiI,145
+file_manager_integration/cli.py,sha256=NPMP6JyjVWYbTJSbCnWmn2qjg-X6s6R_sUaLzlFBrTA,10434
+file_manager_integration/dialog.py,sha256=gUQE8WPzYpbnUhJoSTMfO5HKcIvPHj4rHJjNMlZTcwA,16185
+file_manager_integration/file_managers.py,sha256=9h8SHq0ZEctZ54-_-PwUa_hlVSVlleHWOm-NfQvaCJo,9193
+file_manager_integration-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+file_manager_integration-0.2.1.dist-info/METADATA,sha256=1wvTcPvR5lsAGRDtFBWyEHcWQ6VCyz7jce3wUbTp94Y,4590
+file_manager_integration-0.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+file_manager_integration-0.2.1.dist-info/entry_points.txt,sha256=BP7i-sbvjfIUSTv2_9fsgTi3zdAjvl_LfFqz33uLUIA,80
+file_manager_integration-0.2.1.dist-info/top_level.txt,sha256=buWEnqKWSgM_wj1wvwdQmWpybOvspSLac58_5_tVXN8,25
+file_manager_integration-0.2.1.dist-info/RECORD,,
