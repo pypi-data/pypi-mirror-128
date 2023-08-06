@@ -1,0 +1,8 @@
+[console_scripts]
+noteout-filter-divspans=noteout.filter_divspans:main
+noteout-filter-nb-only=noteout.nb_only:main
+noteout-filter-pre=noteout.filter_pre:main
+noteout-write-doc=noteout.write_doc:main
+noteout-write-meta=noteout.write_meta:main
+noteout-write-notebooks=noteout.write_notebooks:main
+
