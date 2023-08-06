@@ -1,0 +1,12 @@
+[console_scripts]
+cb-collect = cloud_builder.cb_collect:main
+cb-ctl = cloud_builder.cb_ctl:main
+cb-fetch = cloud_builder.cb_fetch:main
+cb-image = cloud_builder.cb_image:main
+cb-info = cloud_builder.cb_info:main
+cb-prepare = cloud_builder.cb_prepare:main
+cb-run = cloud_builder.cb_run:main
+cb-scheduler = cloud_builder.cb_scheduler:main
+ssh_kafka_read = cloud_builder.broker.ssh_kafka.ssh_kafka_read:main
+ssh_kafka_write = cloud_builder.broker.ssh_kafka.ssh_kafka_write:main
+
