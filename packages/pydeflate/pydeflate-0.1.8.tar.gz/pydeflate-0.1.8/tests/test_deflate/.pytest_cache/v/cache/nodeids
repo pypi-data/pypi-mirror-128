@@ -1,0 +1,13 @@
+[
+  "test_deflators.py::test_align_currencies_dac",
+  "test_deflators.py::test_align_currencies_wb",
+  "test_deflators.py::test_defl_pipeline",
+  "test_deflators.py::test_get_and_deflate",
+  "test_deflators.py::test_imf_deflators",
+  "test_deflators.py::test_oecd_dac_deflators[2010-DEU-DEU-FRA-2010-100]",
+  "test_deflators.py::test_oecd_dac_deflators[2016-USA-USA-DEU-2017-103]",
+  "test_deflators.py::test_oecd_dac_deflators[2018-USA-USA-FRA-2016-92]",
+  "test_deflators.py::test_oecd_dac_deflators[2019-FRA-FRA-CAN-2019-100]",
+  "test_deflators.py::test_oecd_dac_deflators[2019-USA-USA-GBR-2010-102]",
+  "test_deflators.py::test_wb_deflators"
+]
