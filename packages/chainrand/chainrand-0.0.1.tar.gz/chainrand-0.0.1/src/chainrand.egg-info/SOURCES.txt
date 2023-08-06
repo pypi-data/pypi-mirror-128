@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/chainrand/__init__.py
+src/chainrand.egg-info/PKG-INFO
+src/chainrand.egg-info/SOURCES.txt
+src/chainrand.egg-info/dependency_links.txt
+src/chainrand.egg-info/requires.txt
+src/chainrand.egg-info/top_level.txt
