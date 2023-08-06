@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: urldl
+Version: 1.1.1
+Summary: URL content downloader
+Home-page: UNKNOWN
+Author: Fayas Noushad
+License: MIT
+Project-URL: Tracker, https://github.com/FayasNoushad/URL-Download/issues
+Project-URL: Source, https://github.com/FayasNoushad/URL-Download
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# URL Download
+
+```py
+import urldl
+
+
+url = "https://github.com/FayasNoushad.png"
+name = "profile.png"
+
+urldl.download(url, name)
+# For download image of url in name directory
+
+urldl.download(url)
+# Same of the above without name ( not recommended )
+# Note :- This type not supported in some links
+```
+
+## Installation
+
+```
+pip install URLDL
+```
+
+## Features
+
+- Download content of url
+- Manual and automatic file name
+
+
