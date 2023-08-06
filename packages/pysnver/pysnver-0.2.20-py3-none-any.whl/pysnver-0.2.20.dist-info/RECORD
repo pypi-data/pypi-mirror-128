@@ -1,0 +1,8 @@
+pysnver/__init__.py,sha256=bEmSH5Yz8T7no1WPXm-6bx0xbSKz3f4IOdIOWzSM2tY,16
+pysnver/sn.py,sha256=93MLP8Fw1pwQGKW4tOOwtUF9dS1HAPtRDKQgiCIlUvk,404
+pysnver/so/libcim.so,sha256=qkVLj7TD4aVk0JmnSg89dTmMXMqghnMyoOuG3nxg1Q0,1082288
+pysnver/so/libsv.so,sha256=7Ei109PmkA5iUwDPX0qh_oEig59TZIQYCbJ28lerMi4,81552
+pysnver-0.2.20.dist-info/METADATA,sha256=d959RoexHgqCq-OGskERw_1vyDDe1KaMaZAH6y_39q8,190
+pysnver-0.2.20.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pysnver-0.2.20.dist-info/top_level.txt,sha256=5BL1BG5QjyJPiEFphFdjq4OTFoiAB2fqQESee754ezI,8
+pysnver-0.2.20.dist-info/RECORD,,
