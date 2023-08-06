@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: league-of-legends-ml
+Version: 0.0.9
+Summary: Tools for machine learning applied to League of Legends
+Home-page: https://github.com/Princic-1837592/league-of-legends-ml
+Author: Andrea Princic
+Author-email: princic.1837592@studenti.uniroma1.it
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+
+# league-of-legends-ml
+
