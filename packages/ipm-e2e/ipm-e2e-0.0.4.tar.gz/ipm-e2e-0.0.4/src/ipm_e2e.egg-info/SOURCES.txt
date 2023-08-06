@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ipm/__init__.py
+src/ipm/e2e.py
+src/ipm_e2e.egg-info/PKG-INFO
+src/ipm_e2e.egg-info/SOURCES.txt
+src/ipm_e2e.egg-info/dependency_links.txt
+src/ipm_e2e.egg-info/entry_points.txt
+src/ipm_e2e.egg-info/top_level.txt
