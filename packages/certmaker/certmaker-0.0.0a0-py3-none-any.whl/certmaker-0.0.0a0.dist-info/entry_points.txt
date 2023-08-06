@@ -1,0 +1,3 @@
+[console_scripts]
+certmaker = certmaker.cli:main
+
