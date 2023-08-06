@@ -1,0 +1,6 @@
+README.md
+setup.py
+pixiv_save.egg-info/PKG-INFO
+pixiv_save.egg-info/SOURCES.txt
+pixiv_save.egg-info/dependency_links.txt
+pixiv_save.egg-info/top_level.txt
