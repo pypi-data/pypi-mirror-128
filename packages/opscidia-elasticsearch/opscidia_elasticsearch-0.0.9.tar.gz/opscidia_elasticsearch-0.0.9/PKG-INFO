@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: opscidia_elasticsearch
+Version: 0.0.9
+Summary: Tools to manage elasticsearch indexes
+Home-page: UNKNOWN
+Author: Opscidia (Tech)
+Author-email: tech@opscidia.com
+Maintainer: Fréjus Laleye
+Maintainer-email: frejus.Laleye@opscidia.com
+License: UNKNOWN
+Keywords: elasticsearch,ospcidia,index,create
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# opscidia_elastisearch
+Tools to manage elasticsearch indexes 
+
+# Installation 
+
+## From pip
+
+```bash
+pip install opscidia-elasticsearch
+```
+
+# Python usage
+
+```python
+from opscidia_elasticsearch import Manager
+
+mg = Manager(hosts='url-to-es')      # Connect to ES
+
+mg.create_index(index_name='')       # to create index
+mg.save_to_index(generator=None)     # to save generator
+```
+
+
+
