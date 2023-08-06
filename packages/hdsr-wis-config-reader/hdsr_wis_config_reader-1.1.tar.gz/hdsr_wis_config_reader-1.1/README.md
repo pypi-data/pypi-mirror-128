@@ -1,0 +1,149 @@
+### Context
+* Created: November 2021
+* Author: Renier Kramer, renier.kramer@hdsr.nl
+* Python version: >3.6
+
+### Description
+A python project that you can use to read the HDSR FEWS-WIS configuration. 
+It serves a interface (python objects) for configuration files (.xmls and .csv).
+
+### Usage
+```
+# pip install hdsr-wis-config-reader
+from pathlib import Path
+from hdsr_wis_config_reader import FewsConfig, LocationSetCollection, IdMappingCollection
+
+# instantiate classes
+fews_config = FewsConfig(path=WIS_CONFIG_TEST_DIR)
+loc_sets = LocationSetCollection(fews_config=fews_config)
+id_mappings = IdMappingCollection(fews_config=fews_config)
+
+# examples
+_path = fews_config.RegionConfigFiles["Filters"]  # get path to Filters.xml
+parameters_neerslag = fews_config.get_parameters()["Neerslag"]  # get config parameters() for Neerslag
+df_hoofd_locs = loc_sets.hoofdloc.geo_df  # get hoofd lococation in dataframe format
+sub_validations = loc_sets.subloc.validation_rules  # get sub location validation rules
+ws_attrib_files = loc_sets.waterstandloc.attrib_files  # get waterstand loc attribute files
+df_idmap_hymos = id_mappings.idmap_opvl_water_hymos  # get idmapping of hymos
+df_idmap_all = id_mappings.idmap_all  # get all id mapping files in one dataframe
+```
+
+### License 
+[MIT][mit]
+
+[mit]: https://github.com/hdsr-mid/hdsr_wis_config_reader/blob/main/LICENSE.txt
+
+### Releases
+v0.1, v0.2, v0.3, v1.0
+
+### Contributions
+All contributions, bug reports, bug fixes, documentation improvements, enhancements 
+and ideas are welcome on https://github.com/hdsr-mid/mwm_ps_update/issues
+
+### Test Coverage 
+Project holds no tests
+```
+---------- coverage: platform win32, python 3.7.11-final-0 -----------
+Name                                                              Stmts   Miss  Cover
+-------------------------------------------------------------------------------------
+hdsr_wis_config_reader\__init__.py                                    8      0   100%
+hdsr_wis_config_reader\constants\idmappings\__init__.py              12      0   100%
+hdsr_wis_config_reader\constants\idmappings\collection.py            72      5    93%
+hdsr_wis_config_reader\constants\idmappings\columns.py               80     16    80%
+hdsr_wis_config_reader\constants\idmappings\custom_dataframe.py      27      9    67%
+hdsr_wis_config_reader\constants\idmappings\files.py                  7      0   100%
+hdsr_wis_config_reader\constants\idmappings\sections.py               8      0   100%
+hdsr_wis_config_reader\constants\location_sets\__init__.py           12      0   100%
+hdsr_wis_config_reader\constants\location_sets\base.py               98     10    90%
+hdsr_wis_config_reader\constants\location_sets\collection.py         49      4    92%
+hdsr_wis_config_reader\constants\location_sets\hoofd.py              18      1    94%
+hdsr_wis_config_reader\constants\location_sets\msw.py                12      1    92%
+hdsr_wis_config_reader\constants\location_sets\ow.py                 13      1    92%
+hdsr_wis_config_reader\constants\location_sets\ps.py                 12      1    92%
+hdsr_wis_config_reader\constants\location_sets\sub.py                27      2    93%
+hdsr_wis_config_reader\constants\paths.py                             4      0   100%
+hdsr_wis_config_reader\constants\validation_rules\__init__.py         4      0   100%
+hdsr_wis_config_reader\constants\validation_rules\files.py           35     10    71%
+hdsr_wis_config_reader\constants\validation_rules\logic.py           28      0   100%
+hdsr_wis_config_reader\fews_utilities.py                            182     51    72%
+hdsr_wis_config_reader\utils.py                                      31     18    42%
+-------------------------------------------------------------------------------------
+TOTAL                                                               739    129    83%
+```
+
+### Conda general tips
+#### Build conda environment (on Windows) from any directory using environment.yml:
+```
+> conda env create --name <conda_env_name> --file <path_to_project>/environment.yml python=<python_version>
+> conda info --envs  # verify that <conda_env_name> is in this list 
+```
+#### Start the application from any directory:
+```
+> conda activate <conda_env_name>
+At any location:
+> (<conda_env_name>) python <path_to_project>/main.py
+```
+#### Test the application:
+```
+> conda activate <conda_env_name>
+> cd <path_to_project>
+> pytest  # make sure pytest is installed (conda install pytest)
+```
+#### List all conda environments on your machine:
+```
+At any location:
+> conda info --envs
+```
+#### Delete a conda environment:
+```
+Get directory where environment is located 
+> conda info --envs
+Remove the enviroment
+> conda env remove --name <conda_env_name>
+Finally, remove the left-over directory by hand
+```
+#### Write dependencies to environment.yml:
+The goal is to keep the .yml as short as possible (not include sub-dependencies), yet make the environment 
+reproducible. Why? If you do 'conda install matplotlib' you also install sub-dependencies like pyqt, qt 
+icu, and sip. You should not include these sub-dependencies in your .yml as:
+- including sub-dependencies result in an unnecessary strict environment (difficult to solve when conflicting)
+- sub-dependencies will be installed when dependencies are being installed
+```
+> conda activate <conda_env_name>
+
+Recommended:
+> conda env export --from-history --no-builds | findstr -v "prefix" > --file <path_to_project>/environment_new.yml   
+
+Alternative:
+> conda env export --no-builds | findstr -v "prefix" > --file <path_to_project>/environment_new.yml 
+
+--from-history: 
+    Only include packages that you have explicitly asked for, as opposed to including every package in the 
+    environment. This flag works regardless how you created the environment (through CMD or Anaconda Navigator).
+--no-builds:
+    By default, the YAML includes platform-specific build constraints. If you transfer across platforms (e.g. 
+    win32 to 64) omit the build info with '--no-builds'.
+```
+#### Pip and Conda:
+If a package is not available on all conda channels, but available as pip package, one can install pip as a dependency.
+Note that mixing packages from conda and pip is always a potential problem: conda calls pip, but pip does not know 
+how to satisfy missing dependencies with packages from Anaconda repositories. 
+```
+> conda activate <conda_env_name>
+> conda install pip
+> pip install <pip_package>
+```
+The environment.yml might look like:
+```
+channels:
+  - defaults
+dependencies:
+  - <a conda package>=<version>
+  - pip
+  - pip:
+    - <a pip package>==<version>
+```
+You can also write a requirements.txt file:
+```
+> pip list --format=freeze > <path_to_project>/requirements.txt
+```
