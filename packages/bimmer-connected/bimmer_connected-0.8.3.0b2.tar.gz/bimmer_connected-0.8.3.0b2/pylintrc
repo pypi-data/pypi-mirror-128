@@ -1,0 +1,10 @@
+[MASTER]
+py-version=3.5
+
+[FORMAT]
+max-line-length=120
+
+[MESSAGES CONTROL]
+disable=
+    duplicate-code,
+    consider-using-f-string,
