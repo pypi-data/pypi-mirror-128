@@ -1,0 +1,41 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cache="http://namespaces.zope.org/cache"
+    xmlns:plone="http://namespaces.plone.org/plone">
+
+  <plone:service
+    method="POST"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    factory=".post.ScadenziarioSearchPost"
+    name="@scadenziario"
+    permission="zope2.View"
+    />
+
+  <plone:service
+    method="POST"
+    for="Products.CMFCore.interfaces.IContentish"
+    factory=".post.ScadenziarioSearchPost"
+    name="@scadenziario"
+    permission="zope2.View"
+    />
+
+  <plone:service
+    method="POST"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    factory=".post.ScadenziarioDayPost"
+    name="@scadenziario-day"
+    permission="zope2.View"
+    />
+
+  <plone:service
+    method="POST"
+    for="Products.CMFCore.interfaces.IContentish"
+    factory=".post.ScadenziarioDayPost"
+    name="@scadenziario-day"
+    permission="zope2.View"
+    />
+
+  <cache:ruleset ruleset="plone.content.dynamic" for=".post.ScadenziarioSearchPost" />
+  <cache:ruleset ruleset="plone.content.dynamic" for=".post.ScadenziarioDayPost" />
+
+</configure>
