@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: map-as-object
+Version: 0.0.1
+Summary: Define a object via a map of attributes, not by class and constructor
+Home-page: https://github.com/tom-010/map-as-object
+Author: Thomas Deniffel
+Author-email: tdeniffel@gmail.com
+License: Apache2
+Description: map_as_object
+        ==========
+        
+        Sometimes, you want to define an oject without an class. Thus 
+        this package allows you to define an object via a map of its 
+        attributes:
+        
+        ```python
+        m = as_object({'a': 1})
+        assert m.a == 1
+        ```
+        
+        You can even assign lambdas in that way. 
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Description-Content-Type: text/markdown

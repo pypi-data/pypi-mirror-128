@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+requirements.txt
+setup.py
+map_as_object/__init__.py
+map_as_object/map_as_object.py
+map_as_object.egg-info/PKG-INFO
+map_as_object.egg-info/SOURCES.txt
+map_as_object.egg-info/dependency_links.txt
+map_as_object.egg-info/top_level.txt
+scripts/publish.sh
+scripts/test.sh
+test/__init__.py
+test/test_map_as_object.py
