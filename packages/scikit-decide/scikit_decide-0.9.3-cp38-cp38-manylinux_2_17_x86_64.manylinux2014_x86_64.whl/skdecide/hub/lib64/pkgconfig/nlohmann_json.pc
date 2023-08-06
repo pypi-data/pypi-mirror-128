@@ -1,0 +1,4 @@
+Name: nlohmann_json
+Description: JSON for Modern C++
+Version: 3.9.1
+Cflags: -I/io/build/lib.linux-x86_64-3.8/skdecide/hub/include
