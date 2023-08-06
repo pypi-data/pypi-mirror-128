@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: greppo
+Version: 0.0.5.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: "Apache 2"
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## Development
+`pip install pre-commit`
+`pre-commit install`
+`pip install -r requirements.txt`
+`pip install -e .`
+
+## Run Backend Server
+`greppo serve tests/app.py`
+
+docs -- build and source are separated
+`make clean && make html` to generate the docs as html files.
+
+In `docs/`
+`sphinx-apidoc -o source/ ../src` on making source changes in `src` dir under library
+
+
+# Unit tests
+We use pytests,
+`pytest tests/unit_tests`
+
+
