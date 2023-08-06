@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/yrouter_websockets/__init__.py
+src/yrouter_websockets/router.py
+src/yrouter_websockets.egg-info/PKG-INFO
+src/yrouter_websockets.egg-info/SOURCES.txt
+src/yrouter_websockets.egg-info/dependency_links.txt
+src/yrouter_websockets.egg-info/not-zip-safe
+src/yrouter_websockets.egg-info/requires.txt
+src/yrouter_websockets.egg-info/top_level.txt
