@@ -1,0 +1,6 @@
+pyproject.toml
+setup.cfg
+woodchipper.egg-info/PKG-INFO
+woodchipper.egg-info/SOURCES.txt
+woodchipper.egg-info/dependency_links.txt
+woodchipper.egg-info/top_level.txt
