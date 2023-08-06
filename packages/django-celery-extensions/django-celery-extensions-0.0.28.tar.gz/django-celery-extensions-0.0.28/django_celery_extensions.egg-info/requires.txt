@@ -1,0 +1,4 @@
+attrdict>=2.0.0
+celery>=5.0.5
+django>=2.2.14
+import_string>=0.1.0
