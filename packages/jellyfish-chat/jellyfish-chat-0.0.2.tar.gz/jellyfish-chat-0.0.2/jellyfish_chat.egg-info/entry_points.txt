@@ -1,0 +1,3 @@
+[console_scripts]
+start-chat = fastapi_chat.run:main
+
