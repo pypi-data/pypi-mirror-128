@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: joystick-controller
+Version: 1.1.1
+Summary: A simple library to map joystick inputs, or gamepad to a given control variable
+Home-page: https://github.com/MarceloJacinto/joystick-controller
+Author: MarceloJacinto
+Author-email: marcelo.jacinto@tecnico.ulisboa.pt
+License: MIT
+Platform: Windows
+Platform: Linux
+Platform: Solaris
+Platform: Mac OS-X
+Platform: Unix
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: pygame (>=2.0.3)
+Requires-Dist: typing
+
+# Joystick Controller Package
+A simple library to map joystick inputs, or gamepad to a given control variable.
+
+## Install
+```
+pip install joystick-controller
+```
+
+## Documentation
+Coming soon... 
+For now, only documentation is only available in the code itself. In the very near future we will provide something like a readthedocs for this package.
+
