@@ -1,0 +1,3 @@
+[console_scripts]
+datels = datels.core:main
+
