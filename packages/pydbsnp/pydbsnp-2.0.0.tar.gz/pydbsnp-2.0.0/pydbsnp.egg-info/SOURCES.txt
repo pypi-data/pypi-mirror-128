@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pydbsnp/__init__.py
+pydbsnp/download.py
+pydbsnp/env.py
+pydbsnp/index.py
+pydbsnp/query.py
+pydbsnp.egg-info/PKG-INFO
+pydbsnp.egg-info/SOURCES.txt
+pydbsnp.egg-info/dependency_links.txt
+pydbsnp.egg-info/entry_points.txt
+pydbsnp.egg-info/requires.txt
+pydbsnp.egg-info/top_level.txt
