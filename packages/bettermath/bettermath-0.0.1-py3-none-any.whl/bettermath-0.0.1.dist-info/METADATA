@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bettermath
+Version: 0.0.1
+Summary: The math library, but better
+Home-page: https://github.com/Solmyr77/BetterMath
+Author: Solmyr77
+Author-email: solmyr.business.6127@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Solmyr77/BetterMath/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
