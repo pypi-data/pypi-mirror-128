@@ -1,0 +1,5 @@
+setup.py
+HadoopUtils.egg-info/PKG-INFO
+HadoopUtils.egg-info/SOURCES.txt
+HadoopUtils.egg-info/dependency_links.txt
+HadoopUtils.egg-info/top_level.txt
