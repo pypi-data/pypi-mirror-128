@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: which-key
+Version: 0.2.1
+Summary: Universal command launcher
+Home-page: https://bsamseth.github.io/which-key/
+License: MIT
+Author: Bendik Samseth
+Author-email: b.samseth@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: typer (>=0.4.0,<0.5.0)
+Project-URL: Documentation, https://bsamseth.github.io/which-key/
+Project-URL: Repository, https://github.com/bsamseth/which-key
+Description-Content-Type: text/markdown
+
+# Which-Key
+
+Like [Emacs which-key](https://github.com/justbur/emacs-which-key) but for anything.
+
+Which-Key is a customizable command launcher. It lets you define any command,
+be it starting an application, running a script, or _anything_ else, and bind
+it to a memorable sequence of keys. Just bind `which-key` to some keyboard
+shortcut, and then trigger your commands.
+
+**Note**: This is in early development, so the UI doesn't look amazing, and there will be bugs.
+
