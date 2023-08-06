@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Django Evade &mdash; Django Evade 0.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Install" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> Django Evade
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Tests</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Django Evade</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>Django Evade</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="module-evade"><span id="index"></span></span><section id="django-evade">
+<h1>Django Evade<a class="headerlink" href="#django-evade" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://pypi.org/project/django-evade/"><img alt="PyPI version" src="https://badge.fury.io/py/django-evade.svg" /></a> <a class="reference external" href="https://app.travis-ci.com/github/richardcornish/django-evade"><img alt="Build status" src="https://api.travis-ci.com/richardcornish/django-evade.svg?branch=main" /></a></p>
+<p><strong>Django Evade</strong> is a <a class="reference external" href="https://www.djangoproject.com/">Django</a> <a class="reference external" href="https://docs.djangoproject.com/en/dev/howto/custom-template-tags/">template filter</a> application to pseudo-randomly convert literal HTML characters into equivalent <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references">named</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Numeric_character_reference">numeric, or hexadecimal</a> HTML character entity references.</p>
+<p>Useful for obscuring <code class="docutils literal notranslate"><span class="pre">mailto</span></code> hyperlinks to prevent spammers from collecting e-mail addresses. Inspired by a <a class="reference external" href="https://djangosnippets.org/snippets/216/">Django snippet</a>, but rewritten to use the <a class="reference external" href="https://docs.python.org/3/library/string.html#formatspec">Format Specification Mini-Language</a>. The result is a more severe form of <a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/templates/builtins/#escape"><code class="docutils literal notranslate"><span class="pre">escape</span></code></a>, leading to the name “evade.”</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pypi.org/project/django-evade/">Package</a></p></li>
+<li><p><a class="reference external" href="https://github.com/richardcornish/django-evade">Source</a></p></li>
+<li><p><a class="reference external" href="https://django-evade.readthedocs.io/">Documentation</a></p></li>
+<li><p><a class="reference external" href="https://app.travis-ci.com/github/richardcornish/django-evade">Tests</a></p></li>
+</ul>
+<section id="install">
+<h2>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install django-evade
+</pre></div>
+</div>
+<p>Add to <code class="docutils literal notranslate"><span class="pre">settings.py</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># ...</span>
+    <span class="s2">&quot;evade&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-django notranslate"><div class="highlight"><pre><span></span><span class="cp">{%</span> <span class="k">load</span> <span class="nv">evade_tags</span> <span class="cp">%}</span><span class="x"></span>
+
+<span class="cp">{{</span> <span class="s2">&quot;me@example.com&quot;</span><span class="o">|</span><span class="nf">evade</span> <span class="cp">}}</span><span class="x"></span>
+</pre></div>
+</div>
+<p>One possible result:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="ni">&amp;#x006D;&amp;#x0065;&amp;commat;&amp;#x65;&amp;#x78;&amp;#x61;&amp;#x6d;&amp;#112;&amp;#x6C;&amp;#x65;&amp;period;&amp;#x63;&amp;#111;&amp;#x6D;</span>
+</pre></div>
+</div>
+<p>Note the use of named (<code class="docutils literal notranslate"><span class="pre">&amp;commat;</span></code>), decimal (<code class="docutils literal notranslate"><span class="pre">&amp;#112;</span></code>), hexadecimal lowercase (<code class="docutils literal notranslate"><span class="pre">&amp;#x6d;</span></code>), and hexadecimal uppercase (<code class="docutils literal notranslate"><span class="pre">&amp;#x6C;</span></code>) forms, and the varying length of zero fills (<code class="docutils literal notranslate"><span class="pre">&amp;#x006D;</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;#x065;</span></code>). Each character entity reference is pseudo-randomized.</p>
+<p>Can also be imported as a standalone Python module:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">evade</span> <span class="kn">import</span> <span class="n">evade</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">evade</span><span class="p">(</span><span class="s2">&quot;©&quot;</span><span class="p">)</span>
+<span class="go">&#39;&amp;copy;&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">evade</span><span class="p">(</span><span class="s2">&quot;©&quot;</span><span class="p">)</span>
+<span class="go">&#39;&amp;#169;&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">evade</span><span class="p">(</span><span class="s2">&quot;©&quot;</span><span class="p">)</span>
+<span class="go">&#39;&amp;#x0a9;&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#html">HTML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#python">Python</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Tests</a></li>
+</ul>
+</div>
+</section>
+<section id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="install.html" class="btn btn-neutral float-right" title="Install" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Richard Cornish.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
