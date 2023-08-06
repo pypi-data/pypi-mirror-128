@@ -1,0 +1,4 @@
+dnspython
+falcon==3.0.1
+pyyaml
+requests
