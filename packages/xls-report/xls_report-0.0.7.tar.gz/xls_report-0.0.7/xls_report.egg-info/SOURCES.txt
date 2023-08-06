@@ -1,0 +1,10 @@
+README.md
+setup.py
+test/test.py
+xls_report/__init__.py
+xls_report.egg-info/PKG-INFO
+xls_report.egg-info/SOURCES.txt
+xls_report.egg-info/dependency_links.txt
+xls_report.egg-info/not-zip-safe
+xls_report.egg-info/requires.txt
+xls_report.egg-info/top_level.txt
