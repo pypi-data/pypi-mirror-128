@@ -1,0 +1,39 @@
+{% extends 'portal/base.html' %}
+
+{% block content %}
+<div id="move_students_page"></div>
+
+<section class="background col-sm-6 col-center">
+    <h4>Move students from class {{ old_class.name }} ({{ old_class.access_code }})</h4>
+    <h6>Move students to another class.</h6>
+</section>
+
+<div class="background background--primary">
+    <div class="col-sm-6 col-center">
+        <h4>Select destination class</h4>
+
+        <form method="post" action="{% url 'teacher_move_students_to_class' old_class.access_code %}">
+
+            {% csrf_token %}
+
+            {{ form.non_field_errors }}
+
+            {% for field in form %}
+            <label for="id_{{ field.html_name }}">{{ field.label }}</label>
+            {{ field }}
+            {{ field.errors }}
+            {% endfor %}
+
+            <div class="background button-group">
+                <input type="hidden" name="transfer_students" value="{{ transfer_students }}"/>
+                <button id="move_button" type="submit" class="button button--primary">Continue</button>
+                <a id="cancel_button" class="button button--secondary button--secondary--dark" href="{% url 'view_class' old_class.access_code %}">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="background col-sm-6 col-center">
+    <p><a href="{% url 'view_class' old_class.access_code %}">&#10229; Back to Class</a></p>
+</div>
+{% endblock %}
