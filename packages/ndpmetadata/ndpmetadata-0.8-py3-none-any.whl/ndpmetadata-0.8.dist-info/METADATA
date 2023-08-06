@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ndpmetadata
+Version: 0.8
+Summary: UNKNOWN
+Home-page: https://github.com/hhshahum/
+Author: Harshal
+Author-email: hs8055193@gmail.com
+License: Proprietary
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: jaydebeapi
+Requires-Dist: xlrd
+
+### Usage and Installation
+```
+Contact : harshalshah71@gmail.com
+For Private Use Only.
+```
+
