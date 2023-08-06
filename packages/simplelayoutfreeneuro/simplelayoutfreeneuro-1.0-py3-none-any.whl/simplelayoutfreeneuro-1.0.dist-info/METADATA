@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: simplelayoutfreeneuro
+Version: 1.0
+Summary: simplelayout-winterwindwang week6
+Home-page: UNKNOWN
+Author: winterwindwang
+Author-email: 923237475@qq.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
+long_description about simplelayout
+
+
