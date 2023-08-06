@@ -1,0 +1,11 @@
+package_locator/__init__.py,sha256=rSX43ZBOaX-ExfbGyeA5hl6XVb6-1R20p5kK-lXaEDw,134
+package_locator/__main__.py,sha256=ubDoB6nl2BG5O2xiedLpIU4zdmJmIBZi2goBYOAbLek,363
+package_locator/common.py,sha256=EE-MrgHct0d2hCNQQIO79z_vZXOE82ol9VQWWffXy5g,2849
+package_locator/directory.py,sha256=ewDxJWqjA91C4peaMIUt8EK73Cz2T_5IpN1z3aOqBNQ,8054
+package_locator/locator.py,sha256=A2QKsR_N-Q7GVFaha-EHSAbUQK0as35flhZxbkPhjq8,4349
+package_locator/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_locator-0.3.7.dist-info/entry_points.txt,sha256=ciJNSVQEeNGr8QlSLij39_3aJD3FSbw2dXcReNH4Hl4,65
+package_locator-0.3.7.dist-info/LICENSE,sha256=qhgGSqs83OwOoas7B65NQbGe-jQfr_0q9N5ebVqa9wk,1070
+package_locator-0.3.7.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+package_locator-0.3.7.dist-info/METADATA,sha256=cDK-cSvUd-m3SN0wZqEtMe9C9zswZ-7pvNES9RH12z8,3608
+package_locator-0.3.7.dist-info/RECORD,,
