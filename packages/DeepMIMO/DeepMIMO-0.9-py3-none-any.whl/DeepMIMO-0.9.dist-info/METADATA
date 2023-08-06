@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: DeepMIMO
+Version: 0.9
+Summary: DeepMIMO
+Home-page: UNKNOWN
+Author: Umut Demirhan
+Author-email: <udemirhan@asu.edu>
+License: UNKNOWN
+Keywords: python,Alpha
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: tqdm
+
+DeepMIMOv2 dataset generator library
+
