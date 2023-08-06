@@ -1,0 +1,11 @@
+README.md
+setup.py
+SymCircuit.egg-info/PKG-INFO
+SymCircuit.egg-info/SOURCES.txt
+SymCircuit.egg-info/dependency_links.txt
+SymCircuit.egg-info/requires.txt
+SymCircuit.egg-info/top_level.txt
+symcircuit/__init__.py
+symcircuit/bode.py
+symcircuit/spice.py
+symcircuit/system.py

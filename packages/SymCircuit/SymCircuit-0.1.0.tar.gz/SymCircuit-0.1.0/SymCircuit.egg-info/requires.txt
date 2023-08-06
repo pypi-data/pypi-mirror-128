@@ -1,0 +1,6 @@
+sympy
+
+[EE]
+networkx
+numpy
+mplotkit
