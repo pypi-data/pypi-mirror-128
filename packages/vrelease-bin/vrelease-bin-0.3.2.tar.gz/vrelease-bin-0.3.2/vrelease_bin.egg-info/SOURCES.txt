@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+SHASUM512
+icon.svg
+setup.py
+vrelease/__init__.py
+vrelease/meta.py
+vrelease/bin/vrelease-linux
+vrelease/bin/vrelease-macos
+vrelease/bin/vrelease-windows.exe
+vrelease_bin.egg-info/PKG-INFO
+vrelease_bin.egg-info/SOURCES.txt
+vrelease_bin.egg-info/dependency_links.txt
+vrelease_bin.egg-info/entry_points.txt
+vrelease_bin.egg-info/top_level.txt
