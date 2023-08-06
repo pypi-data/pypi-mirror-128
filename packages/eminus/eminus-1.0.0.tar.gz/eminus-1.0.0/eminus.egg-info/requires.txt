@@ -1,0 +1,7 @@
+numpy
+scipy
+
+[addons]
+jupyter_rfb
+nglview
+vispy
