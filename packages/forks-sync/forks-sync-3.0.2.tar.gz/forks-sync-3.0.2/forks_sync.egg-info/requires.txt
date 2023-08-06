@@ -1,0 +1,10 @@
+PyGithub==1.*
+woodchips==0.2.*
+
+[dev]
+black
+coveralls==3.*
+flake8
+isort
+pytest==6.*
+pytest-cov==2.*
