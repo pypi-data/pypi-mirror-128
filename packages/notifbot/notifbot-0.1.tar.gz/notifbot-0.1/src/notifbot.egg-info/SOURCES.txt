@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/notifbot/__init__.py
+src/notifbot/notifbot.py
+src/notifbot/py.typed
+src/notifbot.egg-info/PKG-INFO
+src/notifbot.egg-info/SOURCES.txt
+src/notifbot.egg-info/dependency_links.txt
+src/notifbot.egg-info/not-zip-safe
+src/notifbot.egg-info/requires.txt
+src/notifbot.egg-info/top_level.txt
