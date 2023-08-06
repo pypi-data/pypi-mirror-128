@@ -1,0 +1,13 @@
+fastai>=2.5
+forgebox>=0.4.5
+beautifulsoup4
+graphviz
+
+[PDF]
+pdfminer.six
+
+[deploy]
+streamlit
+pyngrok
+jinja2
+black
