@@ -1,0 +1,10 @@
+HowManyPhotons-0.1.dist-info/METADATA,sha256=UBe9_vcvRDCBsoN_XgnBXeVsFZUI_gjSCi8pkSPiiQc,1352
+HowManyPhotons-0.1.dist-info/RECORD,,
+HowManyPhotons-0.1.dist-info/WHEEL,sha256=pZyAqgNAylOf0KG_hPHMtuuY08rV3WzWwZu2OTsNnnw,97
+HowManyPhotons-0.1.dist-info/top_level.txt,sha256=64N55g78Fmk55P8-eWDL0QhzSfVH6vK8fPaGZDF4kbE,5
+hmbp/__init__.py,sha256=DN0NYzhYb6wThkbFoIRNuJhiT0hetDVnP5csnQVC4v4,64
+hmbp/main.py,sha256=zsjfJGt8zZWcwNWrSVXhwq-0NkC0vz2sYSNsoGz7wEg,4551
+hmbp/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hmbp/version.py,sha256=YugoPGR6g-5eyMZqxrzFyJde3QS0QOBqGxubkVSftSw,54
+hmbp/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hmbp/tests/test_main.py,sha256=CFBYyTLwkfC69LwLpldaOzs9yBRleqJDeTsVl_Jb3gM,2694
