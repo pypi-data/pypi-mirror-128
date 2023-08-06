@@ -1,0 +1,9 @@
+README.md
+setup.py
+aleatorpy/__init__.py
+aleatorpy/pseudo_random.py
+aleatorpy.egg-info/PKG-INFO
+aleatorpy.egg-info/SOURCES.txt
+aleatorpy.egg-info/dependency_links.txt
+aleatorpy.egg-info/requires.txt
+aleatorpy.egg-info/top_level.txt

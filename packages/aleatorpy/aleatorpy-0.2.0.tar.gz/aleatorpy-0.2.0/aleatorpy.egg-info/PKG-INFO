@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: aleatorpy
+Version: 0.2.0
+Summary: UNKNOWN
+Home-page: https://github.com/gabriel-vanzandycke/pseudo_random
+Author: Gabriel Van Zandycke
+Author-email: gabriel.vanzandycke@hotmail.com
+License: LGPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
