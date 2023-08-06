@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/lylib/__init__.py
+src/lylib/system.py
+src/lylib_LyraMakes.egg-info/PKG-INFO
+src/lylib_LyraMakes.egg-info/SOURCES.txt
+src/lylib_LyraMakes.egg-info/dependency_links.txt
+src/lylib_LyraMakes.egg-info/top_level.txt
