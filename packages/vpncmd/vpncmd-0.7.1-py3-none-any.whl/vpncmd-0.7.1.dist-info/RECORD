@@ -1,0 +1,12 @@
+vpncmd/__init__.py,sha256=yh842E_5kWTC037c5uuicitoO9vcWSH0N7YjQhk1EtA,428
+vpncmd/core.py,sha256=xdQGqg9UE7LlK0Zb7t3Oph0Y_PrH6ATZuvrj8mIrU7U,6352
+vpncmd/helper.py,sha256=XWoCELGg_-JGpemZgxAn9kOn-4ER6W2B-Qk6CsEizxU,114781
+vpncmd/utils.py,sha256=cixwLz0TWpC29-UxHwiZOsbsxokMe0bZDrTB9k6Pkes,2500
+vpncmd/__metadata__/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+vpncmd/__metadata__/README.md,sha256=N4S-iPSrtaET3k1ep9p_jeZM1Xd2_GDtKAjeAR9GkVY,8039
+vpncmd/__metadata__/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vpncmd/__metadata__/requirements.txt,sha256=GEZSOLgzHcw4KxoOSWf8kuPn0tzKJzPYvnqhN9bkr44,48
+vpncmd-0.7.1.dist-info/METADATA,sha256=L-2a9feOYyrjx11I6UBWEEgZDduHif5z6C_J444j58A,9302
+vpncmd-0.7.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+vpncmd-0.7.1.dist-info/top_level.txt,sha256=3Jrn_eF87jGRqLhkp_SCjrN-EnhxhntUpsZntyKSJIk,7
+vpncmd-0.7.1.dist-info/RECORD,,
