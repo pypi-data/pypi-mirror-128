@@ -1,0 +1,2 @@
+garpixcms>=2.0.2
+garpix_jira>=1.4.3
