@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dddes
+Version: 3.2.0
+Summary: DDD tools for python
+Home-page: https://github.com/owlint/dddes
+Author: Laurent Evrard
+License: Apache-2.0 License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Communications
+License-File: LICENSE
+
+# Description
+Python project aimed to implement DDD and event sourcing
+
+
