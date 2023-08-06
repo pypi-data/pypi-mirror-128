@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "izaber-zerp"
+description = "Old style izaber.zerp connectivity"
+version = '2.0.20211119'
+authors = ["Aki Mimoto <aki@zaber.com>"]
+packages = [
+    { include = "izaber_zerp" }
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.6.0,<4.0"
+izaber = ">=2.20210919"
+pytz = ">=2014.4"
+
+[tool.poetry.extras]
+
+[tool.poetry.dev-dependencies]
+pytest = ">=4.6.11"
+tox = ">=3.21.0"
+
