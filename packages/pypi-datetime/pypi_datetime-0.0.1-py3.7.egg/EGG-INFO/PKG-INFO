@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pypi-datetime
+Version: 0.0.1
+Summary: An feature extraction algorithm
+Home-page: https://gitee.com/wxb_857_admin/pypi_datetime
+Author: XiaoBai
+Author-email: wxok857@foxmail.com
+License: MIT Licence
+Keywords: pip,pypi_datetime
+Platform: any
+License-File: LICENSE.txt
+
+# pypi-datetime
+
+通用开发工具包-时间处理
+
