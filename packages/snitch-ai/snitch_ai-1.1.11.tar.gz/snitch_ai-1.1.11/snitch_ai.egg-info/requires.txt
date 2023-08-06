@@ -1,0 +1,4 @@
+requests>=2
+requests-toolbelt>=0.9
+joblib>=1
+numpy>=1
