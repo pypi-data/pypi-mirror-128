@@ -1,0 +1,11 @@
+hanbert_tokenizer/__init__.py,sha256=-bly9i39wWL-moeIAnzQfHBRVheSHcnMEl3H3-ZnfC4,84
+hanbert_tokenizer/tokenization_hanbert.py,sha256=o6GIbFuipRtg939x721nzfHISzBgV2sAfCnzHBVluX0,19636
+hanbert_tokenizer/moran/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hanbert_tokenizer/moran/libmoran4dnlp.so,sha256=Gi1Nfi6iPVZlwwGEahkyoPTRNPpogQeEQj9L7xJQw-o,605704
+hanbert_tokenizer/moran/udict.txt,sha256=v7mGpQbDSR_g6PYsMhZGWZzduFCx11OT1L8ohnXnmvs,105
+hanbert_tokenizer/moran/uentity.txt,sha256=t6bMk1iWt3MZNCRRHaO6ntNkpHupWRWfxzm0AoKYZOk,96
+hanbert_tokenizer/moran/vocab_54k.txt,sha256=2mLwhaBKAJRyJib6LZJj25LOI8WLXR8il-vHYFNiiXk,423134
+hanbert_tokenizer-0.1.6.dist-info/METADATA,sha256=7T705i1fzz_uY18cVZUfZW2luWdkBtrWsWuASsYUP68,358
+hanbert_tokenizer-0.1.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hanbert_tokenizer-0.1.6.dist-info/top_level.txt,sha256=boFaQsZZzVlj9Bigzh3cdypZib4_epzYh00CEckJaVA,18
+hanbert_tokenizer-0.1.6.dist-info/RECORD,,
