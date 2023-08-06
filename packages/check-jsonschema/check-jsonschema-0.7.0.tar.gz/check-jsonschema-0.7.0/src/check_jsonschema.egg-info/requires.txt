@@ -1,0 +1,8 @@
+ruamel.yaml==0.16.12
+jsonschema<4.0
+identify<2.0
+
+[dev]
+pytest<7
+pytest-cov<3
+pytest-xdist<3
