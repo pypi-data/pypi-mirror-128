@@ -1,0 +1,17 @@
+pyproject.toml
+setup.cfg
+src/tsv_data_analytics/__init__.py
+src/tsv_data_analytics/file_io_wrapper.py
+src/tsv_data_analytics/file_paths_data_reader.py
+src/tsv_data_analytics/file_paths_reader.py
+src/tsv_data_analytics/file_paths_util.py
+src/tsv_data_analytics/funclib.py
+src/tsv_data_analytics/s3_wrapper.py
+src/tsv_data_analytics/tsv.py
+src/tsv_data_analytics/tsvutils.py
+src/tsv_data_analytics/utils.py
+src/tsv_data_analytics.egg-info/PKG-INFO
+src/tsv_data_analytics.egg-info/SOURCES.txt
+src/tsv_data_analytics.egg-info/dependency_links.txt
+src/tsv_data_analytics.egg-info/requires.txt
+src/tsv_data_analytics.egg-info/top_level.txt
