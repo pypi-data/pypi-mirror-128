@@ -1,0 +1,3 @@
+[plover.system]
+Palantype DE = plover_palantype_DE.system
+
