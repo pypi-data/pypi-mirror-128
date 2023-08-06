@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: qservices-library
+Version: 1.2
+Summary: Qustodio backend_workshop_microservices common repo
+Home-page: https://github.com/qustodio/backend_workshop_microservices
+Author: Qustodio developers
+Author-email: info@qustodio.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+
+UNKNOWN
+
