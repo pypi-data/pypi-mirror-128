@@ -1,0 +1,12 @@
+README.md
+setup.py
+slxjsonrpc/__init__.py
+slxjsonrpc/jsonrpc.py
+slxjsonrpc/jsonrpc.pyi
+slxjsonrpc.egg-info/PKG-INFO
+slxjsonrpc.egg-info/SOURCES.txt
+slxjsonrpc.egg-info/dependency_links.txt
+slxjsonrpc.egg-info/requires.txt
+slxjsonrpc.egg-info/top_level.txt
+slxjsonrpc/schema/__init__.py
+slxjsonrpc/schema/jsonrpc.py
