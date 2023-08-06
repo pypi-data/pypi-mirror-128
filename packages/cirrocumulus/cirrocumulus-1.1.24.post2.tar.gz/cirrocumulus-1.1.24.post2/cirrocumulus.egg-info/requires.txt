@@ -1,0 +1,17 @@
+anndata
+CacheControl
+flask
+flask-compress
+fsspec
+gunicorn
+loompy
+numpy
+pandas>=1.0
+pyarrow
+pymongo
+scipy
+zarr
+
+[test]
+pytest
+scanpy
