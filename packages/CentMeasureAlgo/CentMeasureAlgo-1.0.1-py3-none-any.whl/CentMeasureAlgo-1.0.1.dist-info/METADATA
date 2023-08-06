@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: CentMeasureAlgo
+Version: 1.0.1
+Summary: Consolidation of Centrality Measure algorithims for quicker access
+Home-page: UNKNOWN
+Author: rahulleoak
+Author-email: <rahulleoak@gmail.com>
+License: UNKNOWN
+Keywords: python,personal,centrality measure
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: networkx
+
+UNKNOWN
+
