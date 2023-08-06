@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fastapi-cloud-tasks
+Version: 0.0.1
+Summary: Trigger delayed Cloud Tasks from FastAPI
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: google-cloud-tasks
+Requires-Dist: fastapi
+
+UNKNOWN
+
