@@ -1,0 +1,3 @@
+[console_scripts]
+cbook = cbook.__main__:main
+
