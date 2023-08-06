@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: DeFi-Assessment
+Version: 0.1.0.dev2
+Summary: A prototype project to perfrom risk assessment for DeFi lending platforms.
+Home-page: UNKNOWN
+Author: CHEN Da
+Author-email: chendamailbox@foxmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/yuukidach/DeFi-Assessment
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask (>=1.1.2)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: imbalanced-learn (>=0.8.1)
+Requires-Dist: matplotlib (>=3.4.3)
+Requires-Dist: pandas (>=1.3.4)
+Requires-Dist: loguru (>=0.5.3)
+Requires-Dist: joblib (>=1.1.0)
+Requires-Dist: plotly (>=5.3.1)
+Requires-Dist: WTForms (~=2.3.3)
+Requires-Dist: textblob (>=0.15.3)
+Requires-Dist: tqdm (~=4.62.3)
+Requires-Dist: Keras (>=2.4.3)
+Requires-Dist: beautifulsoup4
+Requires-Dist: scikit-learn (>=1.0.1)
+Requires-Dist: gensim (>=4.0.0)
+Provides-Extra: cpu
+Requires-Dist: tensorflow (>=2.4.0) ; extra == 'cpu'
+Provides-Extra: gpu
+Requires-Dist: tensorflow-gpu (>=2.4.0) ; extra == 'gpu'
+
+# DeFi Assessement (dass)
+
+![](https://img.shields.io/github/license/yuukidach/DeFi-Assessment)
+
+A prototype project to perform risk assessment on different DeFi lending platforms.
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [DeFi Assessement (dass)](#defi-assessement-dass)
+  - [Overview](#overview)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Data collection](#data-collection)
+    - [Data process](#data-process)
+    - [Model Training](#model-training)
+    - [Web Application](#web-application)
+  - [Contributors](#contributors)
+
+<!-- /code_chunk_output -->
+
+## Overview
+
+![](./docs/res/index.png)
+
+## Installation
+
+From local repository:
+
+```shell
+pip3 install .[cpu]  # for tensorflow with cpu only
+pip3 install .[gpu]  # for tensorflow-gpu
+```
+
+From PyPI:
+
+```shell
+pip3 install DeFi-Assessment[cpu]
+pip3 install DeFi-Assessment[gpu]
+```
+
+## Usage
+
+This project is packed into a command-line tool with 4 subcommand:
+
+```shell
+Usage: dass [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  data     Collect raw data.
+  process  Process the data related to smart contracts.
+  train    Train models.
+  web      Create a simple local website to view the result.
+```
+
+### Data collection
+
+`data` command is used to collect data for training and assessment (prediction). All of the other three commands are dependent on it. Make sure to run this command at beginning.
+
+The workflow of the 4 commands should be:
+
+```shell
+data -> process -> train -> web
+```
+
+### Data process
+
+`process` command is aimed to process raw data. Currently, only sart contract data need to be processed after collection.
+
+### Model Training
+
+`train` command is simple. It trains 2 models. One for smart contracts and the other for financial risks.
+
+### Web Application
+
+`web` command builds a local web interface for users to directly view the result of assessement.
+
+## Contributors
+
+<a href="https://github.com/yuukidach/DeFi-Assessment/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=yuukidach/DeFi-Assessment" />
+</a>
+
+
