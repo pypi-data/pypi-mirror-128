@@ -1,0 +1,9 @@
+pypolyline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypolyline/cutil.cpython-39-x86_64-linux-gnu.so,sha256=uemXouZPS9b7pRCfFC4_54SGuLAHmFdWxg2aoUu96-4,1139760
+pypolyline/cutil.c,sha256=lfGQhDkXN3BT3W36zY6_0Ym7uL0b_1VO36raAsFS6MI,800374
+pypolyline/util.py,sha256=JXSKOZAypLrkyMF6Kty3ahYNWZTlva5gqETqu9fjHqA,5801
+pypolyline/libpolyline_ffi.so,sha256=b7W4TIv4tKTdoPn2v2taY3cLW80DULrmSqSgq_2BFiA,288864
+pypolyline-0.2.70.dist-info/top_level.txt,sha256=7Gy8gUtBLfqNAieGRPPYYxALZUfJ818K7DtcrH7MWZE,11
+pypolyline-0.2.70.dist-info/RECORD,,
+pypolyline-0.2.70.dist-info/WHEEL,sha256=IL0iX5XNv1WQZTLN2B4c3dlfH0fGR8_uxbPdaHfu4p8,217
+pypolyline-0.2.70.dist-info/METADATA,sha256=EoWsVHOOeJiZm04MjqL3zpNBSUYz-620Wct0EL-_Xeg,3463
