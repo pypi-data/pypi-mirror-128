@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: portfolio-analysis-library
+Version: 0.0.1
+Summary: #WIP: Analysing Stock Returns & Constructing Portfolios with Python
+Home-page: https://github.com/rezan21/Portfolio-Analysis-Library
+Author: Reza N
+Author-email: 32329310+rezan21@users.noreply.github.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Portfolio-Analysis-Library (PAL)
+
+## WIP
+
+## Development
+```bash
+pip install -r .[dev]
+```
+
+
