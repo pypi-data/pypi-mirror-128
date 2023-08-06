@@ -1,0 +1,8 @@
+setup.py
+helloKaraseva/__init__.py
+helloKaraseva/fun.py
+helloKaraseva.egg-info/PKG-INFO
+helloKaraseva.egg-info/SOURCES.txt
+helloKaraseva.egg-info/dependency_links.txt
+helloKaraseva.egg-info/requires.txt
+helloKaraseva.egg-info/top_level.txt
