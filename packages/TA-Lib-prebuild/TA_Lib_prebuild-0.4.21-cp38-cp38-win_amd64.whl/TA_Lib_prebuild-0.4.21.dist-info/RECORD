@@ -1,0 +1,16 @@
+talib/__init__.py,sha256=A1mpZUtKYXD7AkdC1MInA_Eha8TLn8VWCDx_n3ELVcY,7632
+talib/_ta_lib.cp38-win_amd64.pyd,sha256=rpmtmhbXz8dnWSmKgBtiiIG5UQjfKSIY3lYIQTpv8Rw,1501696
+talib/abstract.py,sha256=tGi2ScbRlVHuCz7wR1X1DgqKh6_xsxgLM37ir8D7uJs,799
+talib/deprecated.py,sha256=UZ4VGpqqhZi5Djy6Z9Fs27P7gP6Kvo9Ux77VmsYw7pg,105
+talib/stream.py,sha256=rxgJ6JBscyHj9KNGQ1p6PtWGTNPNuWzxuUeHnj7NYPg,186
+talib/test_abstract.py,sha256=MtoRvliAroCQFJ0_ikkONNh8-u0mAnui7eZn70BrJ_Q,12020
+talib/test_data.py,sha256=nHy4ojPe5fqu2XF4di_v8nH3LyoTGqvknbN5L3L0NY8,16297
+talib/test_func.py,sha256=rXYo4V0Kc9WORU6H840xzjwzf3SEyc8EaEb-yPQ_RhI,7356
+talib/test_pandas.py,sha256=t7wdM2Bq_13Gv2kE3W-N1VmDjecErXlWcPcx3unElw4,2406
+talib/test_stream.py,sha256=XgrY1t3HhqsIPvQ_Av46MDjkmNSW-G_i6Z1QGpzc8xQ,2721
+TA_Lib_prebuild-0.4.21.dist-info/AUTHORS,sha256=18AVR1BrHBAGYTF_3zlSYIUust521d8rYkd5Z2miGBQ,174
+TA_Lib_prebuild-0.4.21.dist-info/LICENSE,sha256=ZUvG-qCJSIdyQjx2JMMZG4d5zGEgPX1ABovQz-t-3os,1201
+TA_Lib_prebuild-0.4.21.dist-info/METADATA,sha256=cHeRWb9Hg9qaWuITxTXAGufsxUU9Drl3XGDaBfqYCVc,12382
+TA_Lib_prebuild-0.4.21.dist-info/WHEEL,sha256=P24hRDQapckAvHvgBBzlH5uw6rQ_oZQtKbG6drGrqOM,100
+TA_Lib_prebuild-0.4.21.dist-info/top_level.txt,sha256=ZDcN6wQSYXxx0y9oukgo4_nTjTAK6qCULaM_6Mwtti4,6
+TA_Lib_prebuild-0.4.21.dist-info/RECORD,,
