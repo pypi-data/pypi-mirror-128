@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: fennel_seed
+Version: 1.0
+Summary: Light-yields for tracks, and cascades
+Home-page: https://github.com/MeighenBergerS/fennel
+Author: Stephan Meighen-Berger
+Author-email: stephan.meighenberger@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: interactive
+License-File: LICENSE.txt
+
+# Fennel
+
+Authors:
+
+1. Stephan Meighen-Berger, developed the Fennel Code
+
+## Table of contents
+
+1. [Introduction](#introduction)
+
+2. [Citation](#citation)
+
+3. [Documentation](#documentation)
+
+4. [Installation](#installation)
+
+## Introduction <a name="introduction"></a>
+
+Welcome to Fennel!
+
+![Logo](images/Fennel.png)
+
+A python package to simulate the light production of particles.
+It calculates the light emissions from cascades and tracks.
+
+## Citation <a name="citation"></a>
+
+This packages includes/uses distributions developed in
+
+Leif RÃ¤del, Christopher Wiebusch,\
+*Calculation of the Cherenkov light yield from low energetic secondary particles accompanying high-energy muons in ice and water with Geant4 simulations*,\
+Astroparticle Physics,
+Volume 38,
+2012,
+Pages 53-67,
+ISSN 0927-6505,\
+https://doi.org/10.1016/j.astropartphys.2012.09.008.
+(https://www.sciencedirect.com/science/article/pii/S0927650512001831)
+
+and
+
+https://www.institut3b.physik.rwth-aachen.de/global/show_document.asp?id=aaaaaaaaaapwhjz
+
+Please cite this page and their work when using this package.
+
+## Documentation <a name="documentation"></a>
+
+The package provides automatically generated documentation under 
+https://meighenbergers.github.io/fennel/
+
+## Installation <a name="installation"></a>
+
+Install using pip:
+```python
+pip install fennel_seed
+```
+
+Other options:
+To install please clone the repository or download the latest release. Then
+follow the instructions given in INSTALL.txt.
+Note this should install all necessary components.
+
+Or install using the setup.py
+
+

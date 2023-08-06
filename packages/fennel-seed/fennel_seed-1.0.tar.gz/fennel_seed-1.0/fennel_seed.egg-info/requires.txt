@@ -1,0 +1,9 @@
+PyYAML
+numpy
+scipy
+
+[interactive]
+nbstripout
+matplotlib
+jupyter
+tqdm
