@@ -1,0 +1,3 @@
+[console_scripts]
+bit = bioinfo_toolset.bit:cli
+
