@@ -1,0 +1,8 @@
+dingtalker.py
+setup.py
+dingtalker.egg-info/PKG-INFO
+dingtalker.egg-info/SOURCES.txt
+dingtalker.egg-info/dependency_links.txt
+dingtalker.egg-info/entry_points.txt
+dingtalker.egg-info/requires.txt
+dingtalker.egg-info/top_level.txt
