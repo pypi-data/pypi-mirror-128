@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "hebrew"
+version = "0.5.5"
+description = "A python package with methods to handle the complexities of Hebrew text."
+authors = ["Avi Perl <avi@aviperl.me>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/avi-perl/hebrew"
+documentation = "https://hebrew.aviperl.me/"
+keywords = ["hebrew", "grapheme", "ivrit", "yiddish", "gematria", "taamim", "ta'amim"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7.0"
+grapheme = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+black = "^21.10b0"
+coverage = "^6.1.1"
+pytest-cov = "^3.0.0"
+toml = "^0.10.2"
+mkdocs-material = "^7.3.6"
+mdx-include = "^1.4.1"
+mkdocstrings = "^0.16.2"
+pytest-codeblocks = "^0.11.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
