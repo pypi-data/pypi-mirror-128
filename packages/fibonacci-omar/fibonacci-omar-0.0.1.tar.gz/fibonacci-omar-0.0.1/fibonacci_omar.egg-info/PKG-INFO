@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: fibonacci-omar
+Version: 0.0.1
+Summary: Plays around with Fibonacci sequences.
+Home-page: https://reposherlock.readthedocs.io/en/latest/index.html
+Author: Omar Elazhary
+Author-email: omazhary@gmail.com
+License: MIT
+Keywords: fibonacci sequence
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Fibonacci
+
+## Introduction
+
+This is a small package that facilitates the generation of lists that contain Fibonacci sequences.
+
+## Usage
+
+Simply type the following to generate a list of 10 Fibonacci numbers starting with 0:
+
+```shell
+    $ fibonacci
+```
+
+## Installation
+
+This package will be available on pypi soon!
+
