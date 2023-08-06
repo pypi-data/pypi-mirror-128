@@ -1,0 +1,3 @@
+[console_scripts]
+aqstat=aqstat.cli.main:start
+

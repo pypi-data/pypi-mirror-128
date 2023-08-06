@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2020-10-07 10:40+0200\n"
+"PO-Revision-Date: 2020-10-07 10:42+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "main frequencies"
+msgstr "főbb gyakoriságok"
+
+msgid "max"
+msgstr "maximum"
+
+msgid "mean"
+msgstr "átlag"
+
+msgid "median"
+msgstr "medián"
+
+msgid "min"
+msgstr "minimum"
+
+msgid "name"
+msgstr "név"
+
+msgid "polluted days"
+msgstr "szennyezett napok"
+
+msgid "days"
+msgstr "napok"
+
+msgid "count"
+msgstr "db"
+
+msgid "temperature"
+msgstr "hőmérséklet"
+
+msgid "humidity"
+msgstr "pára"
+
+msgid "avg"
+msgstr "átlag"
+
+msgid "pressure"
+msgstr "nyomás"
+
+msgid "PM2.5 yearly limit"
+msgstr "PM2.5 éves határérték"
+
+msgid "PM10 daily health limit"
+msgstr "PM10 napi egészségügyi határérték"
+
+msgid "PM10 daily notification limit"
+msgstr "PM10 napi értesítési küszöb"
+
+msgid "PM10 daily emergency limit"
+msgstr "PM10 napi vészhelyzeti küszöb"
+
+msgid "daily_avg"
+msgstr "napi_átlag"
+
+msgid "time of day"
+msgstr "a nap órái"
+
+msgid "daily variation"
+msgstr "napi variáció"
+
+msgid "relative occurrence (%)"
+msgstr "relatív előfordulás (%)"
+
+msgid "concentration"
+msgstr "koncentráció"
+
+msgid "daily"
+msgstr "napi"
+
+msgid "calibrated"
+msgstr "kalibrált"
+
+msgid "rolling window"
+msgstr "csúszóablak"
+
+msgid "number of measurements"
+msgstr "mérések száma"
+
+msgid "percent"
+msgstr "százalék"
+
+msgid "period"
+msgstr "időtartam"
+
+msgid "measurements"
+msgstr "mérések"
+
+msgid "sampling median"
+msgstr "medián"
+
+msgid "corr"
+msgstr "korr"
+
+msgid "temp"
+msgstr "hőm"
+
+#~ msgid "hours"
+#~ msgstr "órák"

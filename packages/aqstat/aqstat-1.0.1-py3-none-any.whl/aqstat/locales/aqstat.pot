@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-10-10 07:07+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1250\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+msgid "main frequencies"
+msgstr ""
+
+msgid "max"
+msgstr ""
+
+msgid "mean"
+msgstr ""
+
+msgid "median"
+msgstr ""
+
+msgid "min"
+msgstr ""
+
+msgid "name"
+msgstr ""
+
+msgid "polluted days"
+msgstr ""
+
+msgid "days"
+msgstr ""
+
+msgid "count"
+msgstr ""
+
+msgid "temperature"
+msgstr ""
+
+msgid "humidity"
+msgstr ""
+
+msgid "avg"
+msgstr ""
+
+msgid "pressure"
+msgstr ""
+
+msgid "PM2.5 yearly limit"
+msgstr ""
+
+msgid "PM10 daily health limit"
+msgstr ""
+
+msgid "PM10 daily notification limit"
+msgstr ""
+
+msgid "PM10 daily emergency limit"
+msgstr ""
+
+msgid "daily_avg"
+msgstr ""
+
+msgid "time of day"
+msgstr ""
+
+msgid "daily variation"
+msgstr ""
+
+msgid "relative occurrence (%)"
+msgstr ""
+
+msgid "concentration"
+msgstr ""
+
+msgid "daily"
+msgstr ""
+
+msgid "rolling window"
+msgstr ""
+
+msgid "calibrated"
+msgstr ""
+
+msgid "number of measurements"
+msgstr ""
+
+msgid "percent"
+msgstr ""
+
+msgid "period"
+msgstr ""
+
+msgid "measurements"
+msgstr ""
+
+msgid "sampling median"
+msgstr ""
+
+msgid "corr"
+msgstr ""
+
+msgid "temp"
+msgstr ""
+
