@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: torcharrow
+Version: 0.0.2.dev20211122
+Summary: A Pandas inspired, Arrow compatible, Velox supported dataframe library for PyTorch
+Home-page: https://github.com/pytorch/torcharrow
+Author: Facebook
+Author-email: packages@pytorch.org
+License: BSD
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: arrow
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: typing
+Requires-Dist: tabulate
+Requires-Dist: typing-inspect
+Requires-Dist: pyarrow
+
+UNKNOWN
+
