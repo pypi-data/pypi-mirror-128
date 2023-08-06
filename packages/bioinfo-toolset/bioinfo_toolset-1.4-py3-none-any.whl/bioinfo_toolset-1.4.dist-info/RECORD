@@ -1,0 +1,16 @@
+bioinfo_toolset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bioinfo_toolset/bit.py,sha256=RRQ4LrZMwVPbTG2cGz5h1montuA3hgqV1EiZ2Cm5eGI,12427
+bioinfo_toolset/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bioinfo_toolset/modules/helper.py,sha256=K7tcDlSX9dUlabgA27_YbzyR1U0MMAOkTkRPZaEFnYg,701
+bioinfo_toolset/modules/hgvs.py,sha256=08HgwvA1_pleP4bf7VSWHRoP8jpP5wwwesF5zovz7nk,2605
+bioinfo_toolset/modules/liftover.py,sha256=g6yR3NjFfIL5bOpjA3w304ov76DAYcXqFiMfZnn9Z4c,383
+bioinfo_toolset/modules/phenotype.py,sha256=NaG3ZHDazytMAPt7dj6nyappDTXqOM13_xBS6kps1nU,182
+bioinfo_toolset/modules/variant_recoder.py,sha256=uPEkTiSpQc3Cguq7rZYXZD6_nyRhSvXiBttHsYKw85I,586
+bioinfo_toolset/modules/vep.py,sha256=PMn57G48bV1ub6YkXRFZsxHfTxzdxC9nlYsQSHteZPk,856
+bioinfo_toolset/modules/vep_offline.py,sha256=VfOIGR2yYYXjCBw-gFAF3qT3KUTQEDOodDnwj4yqC5E,7954
+bioinfo_toolset/modules/vrs.py,sha256=bmZrv4IbPnXu55m1t8e0egOyTOcOO6ZhpJXvHMSP6VY,2943
+bioinfo_toolset-1.4.dist-info/METADATA,sha256=Abx72o0gxRMzVcD-yeIPVIy6u3YUsIeHR90F0f3E77s,4046
+bioinfo_toolset-1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bioinfo_toolset-1.4.dist-info/entry_points.txt,sha256=ILY2mDjLgtflmhEGvONcMaw57wjdDesQwXZB6wf5v-U,49
+bioinfo_toolset-1.4.dist-info/top_level.txt,sha256=K0f6ADj7IABH03u1Pk7gJLkeCo0i6SuzGjxwsKnZnsM,16
+bioinfo_toolset-1.4.dist-info/RECORD,,
