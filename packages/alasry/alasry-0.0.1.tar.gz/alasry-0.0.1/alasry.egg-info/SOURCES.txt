@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+alasry.egg-info/PKG-INFO
+alasry.egg-info/SOURCES.txt
+alasry.egg-info/dependency_links.txt
+alasry.egg-info/top_level.txt
+joshbasiccalculator/__init__.py
