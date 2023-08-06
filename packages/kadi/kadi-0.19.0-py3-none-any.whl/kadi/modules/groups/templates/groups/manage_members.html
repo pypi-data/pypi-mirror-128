@@ -1,0 +1,68 @@
+{# Copyright 2020 Karlsruhe Institute of Technology
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+ # you may not use this file except in compliance with the License.
+ # You may obtain a copy of the License at
+ #
+ #     http://www.apache.org/licenses/LICENSE-2.0
+ #
+ # Unless required by applicable law or agreed to in writing, software
+ # distributed under the License is distributed on an "AS IS" BASIS,
+ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ # See the License for the specific language governing permissions and
+ # limitations under the License. #}
+
+{% extends "groups/manage_group_base.html" %}
+
+{% block breadcrumbs %}
+  {{ super() }}
+  {% snippet "breadcrumb", url=url_for("groups.manage_members", id=group.id), title=title %}
+{% endblock %}
+
+{% block content %}
+  <div class="card">
+    {% include "groups/snippets/manage_group_menu.html" %}
+
+    <nav-tabs :tabs="['members', 'rules']">
+      <template #members-head>
+        {% trans %}Members{% endtrans %}
+      </template>
+      <template #members-body>
+        {% include "groups/snippets/manage_member_permissions.html" %}
+      </template>
+      <template #rules-head>
+        {% trans %}Rules{% endtrans %}
+      </template>
+      <template #rules-body>
+        {% include "groups/snippets/manage_member_rules.html" %}
+      </template>
+    </nav-tabs>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script nonce="{{ csp_nonce() }}">
+    new Vue({
+      el: '#vm',
+      methods: {
+        removeRule(rule) {
+          if (!window.confirm(i18n.t('warning.removeRule'))) {
+            return;
+          }
+
+          this.$set(rule, 'disabled', true);
+
+          axios.delete(rule._actions.remove)
+            .then(() => {
+              this.$refs.pagination.update();
+              kadi.alert(i18n.t('success.removeRule'), {type: 'success', scrollTo: false});
+            })
+            .catch((error) => {
+              kadi.alert(i18n.t('error.removeRule'), {request: error.request});
+              rule.disabled = false;
+            });
+        },
+      },
+    });
+  </script>
+{% endblock %}
