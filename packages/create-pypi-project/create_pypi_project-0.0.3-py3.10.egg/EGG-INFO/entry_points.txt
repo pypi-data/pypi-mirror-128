@@ -1,0 +1,3 @@
+[console_scripts]
+createpypiproject = src.createpypiproject:create_project
+
