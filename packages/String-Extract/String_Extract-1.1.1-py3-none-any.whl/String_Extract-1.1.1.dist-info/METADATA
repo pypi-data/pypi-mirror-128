@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: String-Extract
+Version: 1.1.1
+Summary: String Extractor
+Home-page: https://github.com/FayasNoushad/String-Extract
+Author: Fayas Noushad
+Author-email: contact@fayas.me
+License: MIT
+Download-URL: https://github.com/FayasNoushad/String-Extract/releases/latest
+Project-URL: Tracker, https://github.com/FayasNoushad/String-Extract/issues
+Project-URL: Source, https://github.com/FayasNoushad/String-Extract
+Project-URL: Documentation, https://string-extract.projects.fayas.me
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: hashtags-extract
+
+```
+Made with Python3
+(C) @FayasNoushad
+Copyright permission under MIT License
+License -> https://github.com/FayasNoushad/String-Extract/blob/main/LICENSE
+```
+
+---
+
+## Installation
+
+```
+pip install String-Extract
+```
+
+---
+
+## Usage
+
+```py
+import string_extract
+
+
+string = """Hi [Fayas](https://fayas.me),
+
+How are you?
+
+#SupportOpensource"""
+
+
+print(string_extract.lines(string))
+# => 5
+
+print(string_extract.spaces(string))
+# => 3
+
+print(string_extract.words(string))
+# => 5
+
+print(string_extract.hashtags(string))
+# => ["#SupportOpensource"]
+
+print(string_extract.total_hashtags(string))
+# => 1
+
+print(string_extract.links(string))
+# => 1
+
+print(string_extract.urls(string))
+# => ["https://fayas.me"]
+```
+
+---
+
+## Credits
+
+- [Fayas Noushad](https://github.com/FayasNoushad)
+
+---
+
+
