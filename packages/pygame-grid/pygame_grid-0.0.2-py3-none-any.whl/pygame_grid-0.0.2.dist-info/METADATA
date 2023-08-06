@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pygame-grid
+Version: 0.0.2
+Summary: Add a grid to your pygame screen.
+Home-page: https://github.com/mrdevet/pygame-grid
+Author: Casey Devet
+Author-email: cjdevet@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: pygame
+
+# Pygame Grid
+
+This module provides a function to draw a grid on the active pygame screen to make placing things easier.
+
+This is a work in progress and will be updated with more details in the future.
+
