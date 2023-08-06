@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: xrt-spec-dl
+Version: 0.1.0
+Summary: simple tool to download XRT time slices
+Home-page: https://github.com/grburgess/xrt_spec_dl
+Author: J. Michael Burgess
+Author-email: jburgess@mpe.mpg.de
+License: GPL-3+
+Project-URL: Bug Tracker, https://github.com/grburgess/xrt_spec_dl/issues
+Project-URL: Source Code, https://github.com/grburgess/xrt_spec_dl
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# xrt_spec_dl
+![CI](https://github.com/grburgess/xrt_spec_dl/workflows/CI/badge.svg?branch=master)
+[![codecov](https://codecov.io/gh/grburgess/xrt_spec_dl/branch/master/graph/badge.svg)](https://codecov.io/gh/grburgess/xrt_spec_dl)
+[![Documentation Status](https://readthedocs.org/projects/xrt_spec_dl/badge/?version=latest)](https://xrt_spec_dl.readthedocs.io/en/latest/?badge=latest)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3372456.svg)](https://doi.org/10.5281/zenodo.3372456)
+![PyPI](https://img.shields.io/pypi/v/xrt_spec_dl)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/xrt_spec_dl)
+
+![alt text](https://raw.githubusercontent.com/grburgess/xrt_spec_dl/master/docs/media/logo.png)
+
+
+simple tool to ddownload XRT time slices
+
+
+* Free software: GNU General Public License v3
+* Documentation: https://xrt-spec-dl.readthedocs.io.
+
+
+## Features
+
+
+* TODO
+
+## Credits
+
+
+
