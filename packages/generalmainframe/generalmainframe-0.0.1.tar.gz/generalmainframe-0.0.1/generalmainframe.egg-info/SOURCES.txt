@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+metadata.json
+setup.py
+generalmainframe/__init__.py
+generalmainframe.egg-info/PKG-INFO
+generalmainframe.egg-info/SOURCES.txt
+generalmainframe.egg-info/dependency_links.txt
+generalmainframe.egg-info/requires.txt
+generalmainframe.egg-info/top_level.txt
+generalmainframe/test/test_generalmainframe.py

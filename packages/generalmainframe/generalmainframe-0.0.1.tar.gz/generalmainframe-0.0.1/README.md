@@ -1,0 +1,38 @@
+# generalmainframe
+Missing description.
+
+This package and 5 other make up [ManderaGeneral](https://github.com/ManderaGeneral).
+
+## Information
+| Package                                                                | Ver                                                 | Latest Release       | Python                                                                                                                   | Platform        |   Lvl | Todo                                                         | Tests   |
+|:-----------------------------------------------------------------------|:----------------------------------------------------|:---------------------|:-------------------------------------------------------------------------------------------------------------------------|:----------------|------:|:-------------------------------------------------------------|:--------|
+| [generalmainframe](https://github.com/ManderaGeneral/generalmainframe) | [0.0.1](https://pypi.org/project/generalmainframe/) | 2021-11-18 23:48 CET | [3.8](https://www.python.org/downloads/release/python-380/), [3.9](https://www.python.org/downloads/release/python-390/) | Windows, Ubuntu |     1 | [1](https://github.com/ManderaGeneral/generalmainframe#Todo) | 100 %   |
+
+## Contents
+<pre>
+<a href='#generalmainframe'>generalmainframe</a>
+├─ <a href='#Information'>Information</a>
+├─ <a href='#Contents'>Contents</a>
+├─ <a href='#Installation'>Installation</a>
+├─ <a href='#Attributes'>Attributes</a>
+└─ <a href='#Todo'>Todo</a>
+</pre>
+
+## Installation
+| Command                        | <a href='https://pypi.org/project/generallibrary'>generallibrary</a>   |
+|:-------------------------------|:-----------------------------------------------------------------------|
+| `pip install generalmainframe` | Yes                                                                    |
+
+## Attributes
+<pre>
+<a href='https://github.com/ManderaGeneral/generalmainframe/blob/22d109c/generalmainframe/__init__.py#L1'>Module: generalmainframe</a> <b>(Untested)</b>
+</pre>
+
+## Todo
+| Module                                                                                                                   | Message                                                                                                                                              |
+|:-------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| <a href='https://github.com/ManderaGeneral/generalmainframe/blob/master/generalmainframe/__init__.py#L1'>__init__.py</a> | <a href='https://github.com/ManderaGeneral/generalmainframe/blob/master/generalmainframe/__init__.py#L1'>[UnitTest] for Module: generalmainframe</a> |
+
+<sup>
+Generated 2021-11-18 23:48 CET for commit <a href='https://github.com/ManderaGeneral/generalmainframe/commit/22d109c'>22d109c</a>.
+</sup>

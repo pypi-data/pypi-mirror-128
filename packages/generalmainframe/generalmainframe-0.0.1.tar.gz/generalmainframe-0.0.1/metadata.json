@@ -1,0 +1,13 @@
+{
+    "enabled": true,
+    "private": true,
+    "name": "generalmainframe",
+    "version": "0.0.1",
+    "description": "Missing description.",
+    "install_requires": [
+        "generallibrary"
+    ],
+    "extras_require": {},
+    "topics": [],
+    "manifest": []
+}
