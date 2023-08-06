@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+src/lib/__init__.py
+src/lib/config.py
+src/lib/logger.py
+src/lib/main.py
+src/lib/parser.py
+src/lib/process.py
+src/lib/watcher.py
+src/ssupervisor.egg-info/PKG-INFO
+src/ssupervisor.egg-info/SOURCES.txt
+src/ssupervisor.egg-info/dependency_links.txt
+src/ssupervisor.egg-info/entry_points.txt
+src/ssupervisor.egg-info/requires.txt
+src/ssupervisor.egg-info/top_level.txt
