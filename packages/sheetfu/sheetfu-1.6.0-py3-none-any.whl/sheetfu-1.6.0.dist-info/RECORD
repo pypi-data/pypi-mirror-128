@@ -1,0 +1,16 @@
+sheetfu/__init__.py,sha256=kyO_ITkhaH8GSKb5tbxdyXAbg6RI2Dv3e11ACbPFMNs,560
+sheetfu/client.py,sha256=AHHItmxphOIQsj-9vfOQFJ4nXx1Bd7bhtrTP-qSfryo,4016
+sheetfu/exceptions.py,sha256=TUjO1qcx5rjBZuWxrWgtyGqeNcaOT2kjfcQlPBNdTnk,565
+sheetfu/helpers.py,sha256=dX_Load3qwAecrDFo2yL1IyoxWbxn9iWytsBKkEWfu4,4845
+sheetfu/model.py,sha256=SDDhqDlIkVLV8aNmaMWczRjrFFseEUbntKhguZMX_hI,26460
+sheetfu/parsers.py,sha256=JSWAniLi5VQNky7p8jdud1ZQ8cUaI-biYovBGQFVk60,4011
+sheetfu/service.py,sha256=3sihpIao8_Kem9gUh5keFW29Wz3xv9-39HcxO1lAryE,3706
+sheetfu/modules/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sheetfu/modules/table.py,sha256=8VBiM41d4KEM_M8QMP2b3So-4sH_9YE0vqnl7m9bXpE,13701
+sheetfu/modules/table_selector.py,sha256=QJs82vs-6a74RJbKDszFoD39ud6BzE68mQ94g5t9NjI,2206
+sheetfu-1.6.0.dist-info/AUTHORS,sha256=N1akQCUaZ60NyuWO1iWRB1v0tnsxGok9xv8U7xzcrEo,225
+sheetfu-1.6.0.dist-info/LICENSE,sha256=0XPLv-pwnmyj8ud0EhLEKasTNv_9ftOjGqtj59wHUpc,1068
+sheetfu-1.6.0.dist-info/METADATA,sha256=LUytC0pAAGqu9ZP6TUE0FjRWRf7GOKmb18kwRyiNcYY,6355
+sheetfu-1.6.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sheetfu-1.6.0.dist-info/top_level.txt,sha256=X28_RtLlIV6qL7x_6iROevmjFBTFup_YoR14jwQnDb0,8
+sheetfu-1.6.0.dist-info/RECORD,,
