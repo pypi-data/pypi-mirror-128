@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: django-evade
+Version: 0.1
+Summary: A Django template filter application for numerically escaping characters in templates
+Home-page: https://github.com/richardcornish/django-evade
+Author: Richard Cornish
+Author-email: rich@richardcornish.com
+License: BSD License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Utilities
+License-File: LICENSE
+
+Django Evade
+************
+
+|Build status|_
+
+.. |Build status| image::
+   https://secure.travis-ci.org/richardcornish/django-evade.png
+.. _Build status: https://travis-ci.org/richardcornish/django-evade
+
+**Django Evade** is a Django template filter application for numerically escaping characters in templates.
+
