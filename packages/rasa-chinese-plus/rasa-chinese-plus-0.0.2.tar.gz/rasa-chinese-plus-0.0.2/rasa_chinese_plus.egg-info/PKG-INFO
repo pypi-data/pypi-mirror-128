@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: rasa-chinese-plus
+Version: 0.0.2
+Summary: A Chinese extension package for Rasa
+Home-page: https://github.com/daiyizheng/rasa-chinese-plus
+Author: yizheng dai
+Author-email: 387942239@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rasa-chinese-plus
+rasa-chinese-plus 是专门针对中文语言的 rasa 组件扩展包。
+
+## NLU组件
+### BertTokenizer
+**参数**
+- pretrained_model_name_or_path 预训练模型路径
+- cache_dir 缓存目录
+- use_fast 是否快速分词
+

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+rasa_chinese_plus/__init__.py
+rasa_chinese_plus/info.py
+rasa_chinese_plus.egg-info/PKG-INFO
+rasa_chinese_plus.egg-info/SOURCES.txt
+rasa_chinese_plus.egg-info/dependency_links.txt
+rasa_chinese_plus.egg-info/top_level.txt
+rasa_chinese_plus/nlu/__init__.py
+rasa_chinese_plus/nlu/tokenizers/__init__.py
+rasa_chinese_plus/nlu/tokenizers/bert_tokenizer.py
