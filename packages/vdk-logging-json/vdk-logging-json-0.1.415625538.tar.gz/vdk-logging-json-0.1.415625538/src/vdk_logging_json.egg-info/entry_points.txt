@@ -1,0 +1,3 @@
+[vdk.plugin.run]
+vdk-logging-json = vdk.plugin.logging_json.logging_json
+

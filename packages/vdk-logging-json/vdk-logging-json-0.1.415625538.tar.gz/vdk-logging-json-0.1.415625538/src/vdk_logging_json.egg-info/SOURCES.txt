@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/vdk/plugin/logging_json/logging_json.py
+src/vdk_logging_json.egg-info/PKG-INFO
+src/vdk_logging_json.egg-info/SOURCES.txt
+src/vdk_logging_json.egg-info/dependency_links.txt
+src/vdk_logging_json.egg-info/entry_points.txt
+src/vdk_logging_json.egg-info/requires.txt
+src/vdk_logging_json.egg-info/top_level.txt
