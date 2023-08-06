@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: polytune
+Version: 0.0.0
+Summary: Polyaxon Hyperparameter Optimization Engine.
+Home-page: https://github.com/polyaxon/polytune
+Maintainer: Polyaxon, Inc.
+Maintainer-email: contact@polyaxon.com
+License: Apache 2.0
+Keywords: pandas,numpy,optimization,sweeps,tuning,Hyperparameter Optimization,Hyperparameter Tuning,hyperopt,scikit-learn
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE
+Requires-Dist: polyaxon
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
