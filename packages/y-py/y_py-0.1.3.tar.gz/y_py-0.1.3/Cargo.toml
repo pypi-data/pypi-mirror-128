@@ -1,0 +1,19 @@
+[dependencies]
+pythonize = "0.13.0"
+
+[dependencies.pyo3]
+features = ["extension-module"]
+version = "0.13.2"
+
+[dependencies.yrs]
+path = "local_dependencies/yrs"
+
+[lib]
+crate-type = ["cdylib"]
+name = "y_py"
+
+[package]
+authors = ["Pierre-Olivier Simonard <pierre.olivier.simonard@gmail.com>", "Kevin Jahns <kevin.jahns@protonmail.com>"]
+edition = "2018"
+name = "y-py"
+version = "0.1.3"

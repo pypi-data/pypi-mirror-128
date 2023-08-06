@@ -1,0 +1,20 @@
+[dependencies.lib0]
+path = "../lib0"
+
+[dependencies.yrs]
+path = "../yrs"
+
+[dev-dependencies]
+
+[lib]
+crate-type = ["staticlib"]
+name = "yrs"
+
+[package]
+authors = ["Kevin Jahns <kevin.jahns@protonmail.com>", "Bartosz Sypytkowski <b.sypytkowski@gmail.com>"]
+description = "Bindings for the Yrs native C foreign function interface"
+edition = "2018"
+keywords = ["crdt", "c-ffi", "yrs"]
+license = "MIT"
+name = "yffi"
+version = "0.1.0"

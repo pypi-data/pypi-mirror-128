@@ -1,0 +1,42 @@
+[dependencies]
+js-sys = "0.3"
+
+[dependencies.console_error_panic_hook]
+optional = true
+version = "0.1.6"
+
+[dependencies.lib0]
+path = "../lib0"
+
+[dependencies.wasm-bindgen]
+version = "0.2"
+
+[dependencies.wee_alloc]
+optional = true
+version = "0.4.5"
+
+[dependencies.yrs]
+path = "../yrs"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3"
+
+[features]
+default = ["console_error_panic_hook"]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[package]
+authors = ["Kevin Jahns <kevin.jahns@protonmail.com>", "Bartosz Sypytkowski <b.sypytkowski@gmail.com>"]
+description = "High performance implementation of the Yjs CRDT"
+edition = "2018"
+homepage = "https://github.com/yjs/y-crdt/"
+keywords = ["crdt", "wasm", "yrs"]
+license = "MIT"
+name = "ywasm"
+readme = "./README.md"
+repository = "https://github.com/yjs/y-crdt/"
+version = "0.1.0"
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
