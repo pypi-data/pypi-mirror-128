@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: udn-songbook
+Version: 1.0.1
+Summary: songbook and songsheet management for songsheets in ukedown format
+Author: Stuart Sears
+Author-email: stuart@sjsears.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=3.0.1,<4.0.0)
+Requires-Dist: Markdown (>=3.3.4,<4.0.0)
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: WeasyPrint (>=53.4,<54.0)
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: ukedown (>=2.0.0,<3.0.0)

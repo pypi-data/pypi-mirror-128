@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "udn-songbook"
+version = "1.0.1"
+description = "songbook and songsheet management for songsheets in ukedown format"
+authors = ["Stuart Sears <stuart@sjsears.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ukedown = "^2.0.0"
+beautifulsoup4 = "^4.9.3"
+PyYAML = "^5.4.1"
+WeasyPrint = "^53.4"
+Markdown = "^3.3.4"
+Jinja2 = "^3.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+# configuration for the pyright syntax checker/linter
+# handles warnings about variables for which we do not yet
+# know the type
+reportOptionalSubscript = false
+reportOptionalIterable = false
+reportOptionalMemberAccess = false    
+
