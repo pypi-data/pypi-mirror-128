@@ -1,0 +1,4 @@
+[console_scripts]
+census=code_census.cli:cli
+code_census=code_census.cli:cli
+

@@ -1,0 +1,16 @@
+README.md,sha256=U5XGr2CfbVPZmexsXVlvaSOhJJaGP5MJdka1r5LSNTI,234
+code_census/__init__.py,sha256=_uYL9PuOge-NA5bFMP8S1nIu385r0mp9nOUjMy9u_w8,65
+code_census/alembic/README,sha256=MVlc9TYmr57RbhXET6QxgyCcwWP7w-vLkEsirENqiIQ,38
+code_census/alembic/env.py,sha256=zz6eh1O8q3iSXEhRMmUe3WnTx6TZhRBqqV3VOMfo4BU,2231
+code_census/alembic/script.py.mako,sha256=8_xgA-gm_OhehnO7CiIijWgnm00ZlszEHtIHrAYFJl0,494
+code_census/alembic/versions/cc7054b42c18_add_initial_tables.py,sha256=zRb3xK_p5iNPtNOxEfGwtOjglLBmjLIRcKp16wjSPQI,2578
+code_census/alembic.ini,sha256=VTE_OrWH2-T5QiwcP3LejqyOdHgF4SAw-jjqq46irnY,2107
+code_census/cli.py,sha256=6FFFGkv2O5T2GO5zToxFXGyZ3VSXNBLa05jjmbZ04yU,6976
+code_census/formatter.py,sha256=x0VQqYGdwsU5KA2iTLtI2GoXRmFzE_PHF9_2M-G0pMo,1247
+code_census/models.py,sha256=T226itodtkEL7VgdKdlcqzstq8dzeA0-1erLPE8RxWE,3646
+code_census/mypy_utils.py,sha256=Ri5TXix33sANDJ2P0iy7GlxSNTPLnV2C9OjGgXpEpRI,1579
+code_census-0.0.15.dist-info/entry_points.txt,sha256=xgGx6NCi4Yt8agIkz5lsfKMqnrUkFAW3vBkBiWUtCb0,78
+code_census-0.0.15.dist-info/LICENSE,sha256=8m7DnVqMQm9pKvgRehK_Uw1l3kALjKwEkBqgbMkMdSo,1067
+code_census-0.0.15.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+code_census-0.0.15.dist-info/METADATA,sha256=lCZGjXQU0m1WuOvm1o5TBTU3swtD77LINdtfgRw1KKM,1449
+code_census-0.0.15.dist-info/RECORD,,
