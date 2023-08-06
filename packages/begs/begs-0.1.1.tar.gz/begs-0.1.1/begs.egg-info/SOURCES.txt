@@ -1,0 +1,8 @@
+LICENSE
+README.md
+begs.py
+setup.py
+begs.egg-info/PKG-INFO
+begs.egg-info/SOURCES.txt
+begs.egg-info/dependency_links.txt
+begs.egg-info/top_level.txt
