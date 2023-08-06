@@ -1,0 +1,22 @@
+aiohttp>=3.7.2
+yarl>=1.6.2
+pyyaml>=3.0
+python-jose>=3.0.0
+python-dateutil>=2.7.0
+aiodocker>=0.18.7
+neuro-sdk>=21.11.3
+click>=8.0
+packaging>=20.4
+humanize>=3.3
+typing_extensions>=3.7.4
+certifi
+cookiecutter>=1.5
+wcwidth>=0.1.7
+toml>=0.10.0
+prompt-toolkit>=3.0.13
+rich>=10.0.1
+packaging>=20.0
+jedi>=0.16
+
+[:python_version < "3.10"]
+importlib-metadata>=3.6
