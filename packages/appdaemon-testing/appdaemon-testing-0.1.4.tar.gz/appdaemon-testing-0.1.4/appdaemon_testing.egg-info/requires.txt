@@ -1,0 +1,7 @@
+appdaemon
+
+[pytest]
+pytest
+
+[test]
+pytest
