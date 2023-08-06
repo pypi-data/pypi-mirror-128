@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+AngPoly3D/__init__.py
+AngPoly3D/ang_poly3d.py
+AngPoly3D/calc_ang_poly3d.py
+AngPoly3D.egg-info/PKG-INFO
+AngPoly3D.egg-info/SOURCES.txt
+AngPoly3D.egg-info/dependency_links.txt
+AngPoly3D.egg-info/entry_points.txt
+AngPoly3D.egg-info/requires.txt
+AngPoly3D.egg-info/top_level.txt
