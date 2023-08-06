@@ -1,0 +1,15 @@
+mediajson/__init__.py,sha256=V693kia4phmCqJN3W386-ietlV8JtzF1N87-fZ88IEw,1414
+mediajson/decode.py,sha256=ZPu9dqApUlGG9LFXp-X6fFnZ-Oss1I6lr9Mxb038My8,3679
+mediajson/encode.py,sha256=ruAX_tdcNqYUzIHM9kxCqLblUjfmqsck2Tz7ZtEGfgQ,3793
+mediajson/immutable.py,sha256=n5G4NfmpMbQJTFsx9erKVPM7zE9Nhz0UWXSv17IIYlA,1151
+mediajson/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mediajson/typing.py,sha256=jqaQTEqVqIftyiPWVfP9OfurgaRRhstLLEnlaLIG0m4,3713
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_decode.py,sha256=USBc2UGZFM6s2r39qCReddXnJuVT2k7mQtS7yy81008,3543
+tests/test_encode.py,sha256=GwyyvAlI5ZXK9PP29ZUPDGruIK8yQ9ZC5JBHtJyk2cM,4397
+mediajson-2.1.0.dist-info/LICENSE.md,sha256=NlWNm5dnBlSuj09xIExTRPPIs_Q9O0T7lZlatuxNh5c,557
+mediajson-2.1.0.dist-info/METADATA,sha256=8efIqLBk0Ln3nawbrNutLcZGw_ALDySly9_WHxEXmHU,581
+mediajson-2.1.0.dist-info/NOTICE.md,sha256=Gl4m9hlZEbs4wP8vqsq4u00DgtOH5RJl23a1QkVtEgw,602
+mediajson-2.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mediajson-2.1.0.dist-info/top_level.txt,sha256=bs2s2QK-XlbPJDJ25oCKdDAf6AtfvjsJIh6dPYYXRBM,16
+mediajson-2.1.0.dist-info/RECORD,,
