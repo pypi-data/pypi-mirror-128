@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+chemical_composition/__init__.py
+chemical_composition/chemical_composition.py
+chemical_composition/chemical_composition_kb.py
+chemical_composition/version.txt
+chemical_composition.egg-info/PKG-INFO
+chemical_composition.egg-info/SOURCES.txt
+chemical_composition.egg-info/dependency_links.txt
+chemical_composition.egg-info/requires.txt
+chemical_composition.egg-info/top_level.txt
