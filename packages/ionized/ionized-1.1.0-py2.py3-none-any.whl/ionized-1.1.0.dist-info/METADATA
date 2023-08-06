@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: ionized
+Version: 1.1.0
+Summary: Bootstrap Amazon Ion into existing projects
+Home-page: https://github.com/tbobm/ionized
+Author: Theo "Bob" Massard
+Author-email: tbobm@protonmail.com
+License: Apache Software License 2.0
+Keywords: ionized
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: amazon.ion
+
+# ionized
+
+[![CI](https://github.com/tbobm/ionized/actions/workflows/ci.yml/badge.svg)](https://github.com/tbobm/ionized/actions/workflows/ci.yml) [![](https://img.shields.io/pypi/v/ionized.svg)](https://pypi.python.org/pypi/ionized) [![Documentation Status](https://readthedocs.org/projects/ionized/badge/?version=latest)](https://ionized.readthedocs.io/en/latest/?version=latest)
+
+Bootstrap [Amazon Ion][gh-amzn-ion] into existing projects using [`ion-python`][gh-ion-py].
+
+[gh-ion-py]: https://github.com/amzn/ion-python/
+[gh-amzn-ion]: https://amzn.github.io/ion-docs/
+
+* Free software: Apache Software License 2.0
+* Documentation: https://ionized.readthedocs.io.
+
+## Features
+
+- Add Amazon-Ion capabilities to a class using the `@ionize` decorator
+
+## Usage
+
+### Installation
+
+This package is available in Pypi [pypi.org/project/ionized][pypi]
+
+[pypi]: https://pypi.org/project/ionized/
+
+```console
+$ pip install ionized
+```
+
+### Example
+
+Simply add a decorator before declaring your `class`.
+
+```python3
+from dataclasses import dataclass
+
+from ionized.ionized import ionize
+
+@ionize
+@dataclass
+class MyData:
+    name: str
+    age: int = 0
+
+instance = MyData('Bob', 29)
+print(instance.ionize())
+```
+
+## Credits
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+- [Cookiecutter](https://github.com/audreyr/cookiecutter)
+- [`audreyr/cookiecutter-pypackage`](https://github.com/audreyr/cookiecutter-pypackage)
+
+
