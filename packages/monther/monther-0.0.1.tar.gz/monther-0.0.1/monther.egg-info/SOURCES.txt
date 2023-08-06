@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+joshbasiccalculator/__init__.py
+monther.egg-info/PKG-INFO
+monther.egg-info/SOURCES.txt
+monther.egg-info/dependency_links.txt
+monther.egg-info/top_level.txt
