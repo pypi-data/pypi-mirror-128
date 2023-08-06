@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: bpython-django
+Version: 0.22.11
+Summary: Customized bpython for Django Projects
+Home-page: https://github.com/mkalioby/bpython-django/
+Author: Mohamed ElKalioby
+Author-email: mkalioby@mkalioby.com
+License: MIT
+Download-URL: https://github.com/mkalioby/bpython-django/
+Description: # bpython-django
+        
+        This project is based on [bpython](https://github.com/bpython/bpython) REPL, I liked it very much but it missed some features for Django, like
+        * Autocomplete the constructor for the model,
+        * Autocomplete the attribute name on ModelManager functions like 'filter()' and 'get()'
+        
+        ## Example
+        
+        [![asciicast](https://asciinema.org/a/443735.png)](https://asciinema.org/a/443735?speed=3&t=2)
+        
+        ## Install
+        
+        `pip install bpython-django`
+        
+        ## Usage
+        
+        `python manage shell`
+        or 
+        `python manage shell -i bpython`
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: clipboard
+Provides-Extra: jedi
+Provides-Extra: urwid
+Provides-Extra: watch
