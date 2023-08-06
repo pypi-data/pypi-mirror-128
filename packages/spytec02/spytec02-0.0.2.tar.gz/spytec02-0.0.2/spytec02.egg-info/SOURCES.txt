@@ -1,0 +1,9 @@
+setup.py
+spytec02/__init__.py
+spytec02/operation.py
+spytec02.egg-info/PKG-INFO
+spytec02.egg-info/SOURCES.txt
+spytec02.egg-info/dependency_links.txt
+spytec02.egg-info/not-zip-safe
+spytec02.egg-info/requires.txt
+spytec02.egg-info/top_level.txt
