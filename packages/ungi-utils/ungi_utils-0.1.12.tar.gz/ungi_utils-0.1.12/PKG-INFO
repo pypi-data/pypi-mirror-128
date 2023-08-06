@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: ungi_utils
+Version: 0.1.12
+Summary: Utils needed for the UNGI project
+Home-page: UNKNOWN
+Author: Unseen Giants
+Author-email: incoming+unseen-giants-ungi-utils-26498131-issue-@incoming.gitlab.com
+License: GPL 3.0
+Description: ### utils for the UNGI project
+        
+        Nothing here should be ran as standalone code, to use ungi please use the  standalone "ungi"
+        
+Platform: UNKNOWN
