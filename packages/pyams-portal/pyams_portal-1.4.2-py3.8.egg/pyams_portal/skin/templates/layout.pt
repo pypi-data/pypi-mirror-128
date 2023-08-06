@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<i tal:omit-tag="">${structure:tales:metas}</i>
+		<i tal:omit-tag="">${tales:need_resource('myams_js:bootstrap_css')}</i>
+		<i tal:omit-tag="">${tales:need_resource('myams_js:bootstrap')}</i>
+		<i tal:omit-tag="">${tales:resources}</i>
+	</head>
+	<body>
+		<div tal:define="skin_class tales:skin_container_class"
+			 tal:omit-tag="not:skin_class"
+			 class="${skin_class}">
+			<div tal:define="template_class tales:template_container_class"
+				 class="${template_class or 'container'}">
+				${structure:provider:pagelet}
+			</div>
+		</div>
+	</body>
+</html>
