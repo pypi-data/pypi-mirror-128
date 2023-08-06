@@ -1,0 +1,3 @@
+[console_scripts]
+debutizer = debutizer.__main__:main
+
