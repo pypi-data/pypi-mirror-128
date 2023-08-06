@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: modelingtools
+Version: 0.0.1
+Summary: Tools to make modeling easier - Work in progress
+Home-page: https://github.com/jeremymiller00/modelingtools
+Author: Jeremy Miller
+Author-email: jeremymiller00@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/jeremymiller00/modelingtools/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ModelTools - THIS PACKAGE IS NOT READY TO USE! -- in progress
+A collection of utility model training and statistical tools. These tools intend to solve problems such as:
+* Integrating components of different ML libraries so they can be used together
+* Addressing specific shortcomings of specific ML library functions
+* Simplify common tasks, such as plots for classifier evaluation
+
