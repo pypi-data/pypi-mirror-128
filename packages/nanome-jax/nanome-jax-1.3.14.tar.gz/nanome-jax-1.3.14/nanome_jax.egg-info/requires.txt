@@ -1,0 +1,16 @@
+biopython
+pybedtools
+pandas
+seaborn
+scipy
+numpy
+statsmodels
+scikit-learn==0.21.3
+matplotlib
+jinja2
+openpyxl
+h5py
+tqdm
+joblib
+psutil
+xgboost
