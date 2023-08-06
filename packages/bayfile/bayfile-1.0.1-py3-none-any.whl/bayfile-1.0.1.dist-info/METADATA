@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: bayfile
+Version: 1.0.1
+Summary: upload and download to anonfile server
+Home-page: https://github.com/redevil1/bayfiles
+Author: Jak Bin
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/redevil1/bayfiles/issues
+Keywords: bayfiles,bayfiles-api,bayfiles-cli,anonymous,upload
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+
+# bayfiles-upload-script
+An upload and download script for bayfiles.com made in python. Supports multiple files.
+
+ [![PyPI version](https://badge.fury.io/py/bayfile.svg)](https://pypi.org/project/bayfile/)
+ [![Downloads](https://pepy.tech/badge/bayfile/month)](https://pepy.tech/project/bayfile)
+ [![Downloads](https://static.pepy.tech/personalized-badge/bayfile?period=total&units=international_system&left_color=green&right_color=blue&left_text=Total%20Downloads)](https://pepy.tech/project/bayfile)
+ ![GitHub Contributors](https://img.shields.io/github/contributors/redevil1/bayfiles)
+ ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/redevil1/bayfiles)
+ ![GitHub last commit](https://img.shields.io/github/last-commit/redevil1/bayfiles)
+ ![Python 3.6](https://img.shields.io/badge/python-3.6-yellow.svg)
+
+
+## Installation
+
+```sh
+pip3 install bayfile
+```
+
+## Usage 
+```sh
+bayfile up {path-to-file_1} {path-to-file _2} ...  # upload file to bayfiles server
+bayfile d {url1} {url2} ...              # download file 
+```
+
+

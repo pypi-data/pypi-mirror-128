@@ -1,0 +1,3 @@
+[console_scripts]
+bayfile = bayfile.main:main
+
