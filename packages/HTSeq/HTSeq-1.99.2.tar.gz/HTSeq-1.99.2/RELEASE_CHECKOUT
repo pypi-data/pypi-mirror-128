@@ -1,0 +1,32 @@
+RELEASE CHECKOUT
+
+- bump version in VERSION
+- update doc/history.rst
+- python setup.py build
+  (this makes _version.py and SWIGs _HTSeq.c)
+- git add ...
+- git commit ...
+- git push
+
+(wait for CI/doc build to complete)
+
+If all well:
+
+- check documentation on readthedocs
+
+If all well:
+
+- git tag release_<semantic-version>_RC1
+- git push origin release_<semantic-version>_RC1 (deploys to testpypi)
+
+(wait for CD to complete)
+
+If all well:
+- check on testpypi that all files are there:
+ - source
+ - manylinux binaries
+ - mac binaries
+
+If all well:
+- git tag release_<semantic-version>
+- git push origin release_<semantic-version> (pypi deploy trigger)

@@ -1,0 +1,80 @@
+name: Deploy
+
+on:
+  push:
+    tags: release_[0-9]+.[0-9]+.[0-9]+*
+
+jobs:
+  deploy_manylinux:
+    runs-on: ubuntu-latest
+    container: quay.io/pypa/manylinux2010_x86_64
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9]
+
+    steps:
+    - name: Clone repo
+      run:
+        git clone -b $(echo ${GITHUB_REF} | cut -d/ -f3) --single-branch https://github.com/${GITHUB_REPOSITORY}.git
+    - name: Move repo folder
+      run:
+        mv htseq /io
+    - name: Prepare docker image (remove other Python versions)
+      run:
+        /io/prepare_docker.sh
+    - name: Build wheels
+      env:
+        PYTHON_VERSION: ${{ matrix.python-version }}
+      run:
+        /io/buildwheels.sh
+    - name: Deploy source and manylinux wheels
+      env:
+        PYTHON_VERSION: ${{ matrix.python-version }}
+        SOURCE_VERSION: 3.7
+        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+        TWINE_PASSWORD_PYPI: ${{ secrets.PYPI_PASSWORD }}
+        TWINE_PASSWORD_TESTPYPI: ${{ secrets.TESTPYPI_PASSWORD }}
+      run:
+        /io/deploywheels.sh
+
+    - name: Install deployed wheels
+      env:
+        PYTHON_VERSION: ${{ matrix.python-version }}
+      run:
+        /io/installwheels.sh
+
+  deploy_mac:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      env:
+        OS_NAME: macos-latest
+        CONDA_PY: ${{ matrix.python-version }}
+      run: ./.ci_deps.sh
+
+    - name: Build wheel and publish
+      env:
+        OS_NAME: macos-latest
+        CONDA_PY: ${{ matrix.python-version }}
+        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+        TWINE_PASSWORD_PYPI: ${{ secrets.PYPI_PASSWORD }}
+        TWINE_PASSWORD_TESTPYPI: ${{ secrets.TESTPYPI_PASSWORD }}
+      run: |
+        ./.ci_deploy.sh
+
+    - name: Install deployed wheels
+      env:
+        OS_NAME: macos-latest
+        CONDA_PY: ${{ matrix.python-version }}
+      run: |
+        ./.ci_postdeploy_install.sh
