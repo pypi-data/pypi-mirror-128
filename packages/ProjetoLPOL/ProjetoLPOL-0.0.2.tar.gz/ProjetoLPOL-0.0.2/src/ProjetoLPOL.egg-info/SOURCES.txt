@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ProjetoLPOL.egg-info/PKG-INFO
+src/ProjetoLPOL.egg-info/SOURCES.txt
+src/ProjetoLPOL.egg-info/dependency_links.txt
+src/ProjetoLPOL.egg-info/top_level.txt

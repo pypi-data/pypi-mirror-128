@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ProjetoLPOL
+Version: 0.0.2
+Summary: Conversão de arquivos csv to json, json to csv
+Home-page: https://github.com/samueltechdev/ProjetoLPOL
+Author: Samuel Andrade
+Author-email: samueltech@live.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/samueltechdev/ProjetoLPOL
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Projeto conversão arquivos csv to json, json to csv
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://github.com/samueltechdev/ProjetoLPOL/)
+to write your content.
+
