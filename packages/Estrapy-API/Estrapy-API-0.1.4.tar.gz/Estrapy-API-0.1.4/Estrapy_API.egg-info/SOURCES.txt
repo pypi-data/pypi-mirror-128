@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Estrapy/__init__.py
+Estrapy/help.py
+Estrapy/sfw.py
+Estrapy_API.egg-info/PKG-INFO
+Estrapy_API.egg-info/SOURCES.txt
+Estrapy_API.egg-info/dependency_links.txt
+Estrapy_API.egg-info/requires.txt
+Estrapy_API.egg-info/top_level.txt
