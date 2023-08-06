@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="4" skipped="2" tests="8" time="8.852" timestamp="2021-11-22T11:32:43.963982" hostname="OLI-OMEN"><testcase classname="bumpversion" name="FLAKE8" time="0.000"><skipped type="pytest.skip" message="file(s) previously passed FLAKE8 checks">/home/olivier/dev/kairntech/pyprocessors_silero/.tox/py38/lib/python3.8/site-packages/pytest_flake8.py:116: file(s) previously passed FLAKE8 checks</skipped></testcase><testcase classname="src.pyprocessors_silero.__init__" name="FLAKE8" time="0.000"><skipped type="pytest.skip" message="file(s) previously passed FLAKE8 checks">/home/olivier/dev/kairntech/pyprocessors_silero/.tox/py38/lib/python3.8/site-packages/pytest_flake8.py:116: file(s) previously passed FLAKE8 checks</skipped></testcase><testcase classname="src.pyprocessors_silero.silero" name="FLAKE8" time="0.085" /><testcase classname="tests.test_silero" name="FLAKE8" time="0.044" /><testcase classname="tests.test_silero" name="test_silero_te" time="1.090"><failure message="RuntimeError: Numpy is not available">def test_silero_te():
+        model = SileroProcessor.get_model()
+        model_class = model.construct().__class__
+        assert model_class == SileroParameters
+        testdir = Path(__file__).parent
+        source = Path(testdir, 'data/test.txt')
+        with source.open("r") as fin:
+            doc = Document(text=fin.read())
+        original_text = doc.text
+        processor = SileroProcessor()
+        parameters = SileroParameters(model=SileroModel.silero_te)
+&gt;       docs: List[Document] = processor.process([doc], parameters)
+
+tests/test_silero.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.tox/py38/lib/python3.8/site-packages/pyprocessors_silero/silero.py:111: in process
+    document.text = self._enhance(document.text, params)
+.tox/py38/lib/python3.8/site-packages/pyprocessors_silero/silero.py:102: in _enhance
+    return apply_te(text, lan=params.lang)
+../../../.cache/torch/hub/snakers4_silero-models_master/hubconf.py:126: in apply_te
+    return model.enhance_text(text, lan)
+&lt;torch_package_0&gt;.release_module.py:50: in enhance_text
+    enhanced = self.tokenizer.convert_tokens_to_string(enhance_tokens(tokens, punct[0], capital[0], self.index2punct)[1:-1])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tokens = ['[CLS]', 'this', 'is', 'a', 'download', 'from', ...]
+punct = tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 2, 0, 0, 0, 0, 0, 0, 0, ...0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0])
+capital = tensor([0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
+        1, 1, 0, 0, 1, 0, 1, 1, 1, 0, ...1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0])
+index2punct = {1: '.', 2: ',', 3: '-', 4: '!', ...}
+
+    def enhance_tokens(tokens, punct, capital, index2punct):
+        output = []
+&gt;       punct, capital = punct.cpu().numpy(), capital.cpu().numpy()
+E       RuntimeError: Numpy is not available
+
+&lt;torch_package_0&gt;.release_module.py:65: RuntimeError</failure></testcase><testcase classname="tests.test_silero" name="test_silero_stt" time="1.647"><failure message="RuntimeError: Numpy is not available">def test_silero_stt():
+        converter = SileroProcessor()
+        parameters = SileroParameters(model=SileroModel.silero_stt, enhance=False)
+        testdir = Path(__file__).parent
+        source = Path(testdir, 'data/160628_news_report_brexit_download.mp3')
+        with source.open("rb") as fin:
+            docs: List[Document] = converter.convert(UploadFile(source.name, fin, 'audio/mpeg'), parameters)
+            assert len(docs) == 1
+            doc0 = docs[0]
+            assert 'british' in doc0.text
+            assert 'david cameron' in doc0.text
+            assert 'David Cameron' not in doc0.text
+            assert ',' not in doc0.text
+    
+            fin.seek(0)
+            parameters = SileroParameters(model=SileroModel.silero_stt, enhance=True)
+&gt;           docs: List[Document] = converter.convert(UploadFile(source.name, fin, 'audio/mpeg'), parameters)
+
+tests/test_silero.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.tox/py38/lib/python3.8/site-packages/pyprocessors_silero/silero.py:139: in convert
+    raise err
+.tox/py38/lib/python3.8/site-packages/pyprocessors_silero/silero.py:134: in convert
+    text = self._enhance(text, params)
+.tox/py38/lib/python3.8/site-packages/pyprocessors_silero/silero.py:102: in _enhance
+    return apply_te(text, lan=params.lang)
+../../../.cache/torch/hub/snakers4_silero-models_master/hubconf.py:126: in apply_te
+    return model.enhance_text(text, lan)
+&lt;torch_package_0&gt;.release_module.py:50: in enhance_text
+    enhanced = self.tokenizer.convert_tokens_to_string(enhance_tokens(tokens, punct[0], capital[0], self.index2punct)[1:-1])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tokens = ['[CLS]', 'this', 'is', 'a', 'download', 'from', ...]
+punct = tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0])
+capital = tensor([0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0,
+        1, 0, 1, 1, 1, 0, 1, 0, 0, 0, ...0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0])
+index2punct = {1: '.', 2: ',', 3: '-', 4: '!', ...}
+
+    def enhance_tokens(tokens, punct, capital, index2punct):
+        output = []
+&gt;       punct, capital = punct.cpu().numpy(), capital.cpu().numpy()
+E       RuntimeError: Numpy is not available
+
+&lt;torch_package_0&gt;.release_module.py:65: RuntimeError</failure></testcase><testcase classname="tests.test_silero" name="test_silero_tts" time="5.095"><failure message="RuntimeError: Numpy is not available">def test_silero_tts():
+        testdir = Path(__file__).parent
+        source = Path(testdir, 'data/test.txt')
+        with source.open("r") as fin:
+            doc = Document(text=fin.read())
+        processor = SileroProcessor()
+        parameters = SileroParameters(model=SileroModel.silero_tts, lang='en')
+&gt;       resp: Response = processor.format(doc, parameters)
+
+tests/test_silero.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;pyprocessors_silero.silero.SileroProcessor object at 0x7f2a68d740a0&gt;
+document = Document(text="this is a download from bm c learning english to find out more visit our websihe s from the bm s the br...e, sourceText=None, boundaries=None, metadata=None, properties=None, sentences=None, annotations=None, categories=None)
+parameters = SileroParameters(model=&lt;SileroModel.silero_tts: 'silero_tts'&gt;, lang='en', speaker=&lt;SileroSpeaker.lj_v2: 'lj_v2'&gt;, enhance=True, sample_rate=8000)
+
+    def format(self, document: Document, parameters: FormatterParameters) \
+            -&gt; Response:
+        params: SileroParameters = \
+            cast(SileroParameters, parameters)
+    
+        if params.model == SileroModel.auto:
+            params.model = SileroModel.silero_stt
+        if params.speaker == SileroSpeaker.auto:
+            params.speaker = lang2speaker[params.lang][0]
+        else:
+            if params.speaker not in lang2speaker[params.lang]:
+                raise TypeError(f"Not a valid speaker {params.speaker.value} for language {params.lang}")
+        filename = "file.wav"
+        # Create cached pipeline context with model
+        model, example_text = get_pipeline_tts(params.model, params.lang, params.speaker)
+        # audio_paths = model.save_wav(texts=[document.text],
+        #                              sample_rate=params.sample_rate)
+        stexts = []
+        if not document.sentences:
+            stexts.append(document.text)
+        else:
+            stexts = [document.text[s.start:s.end] for s in document.sentences]
+    
+        audios = model.apply_tts(texts=stexts,
+                                 sample_rate=params.sample_rate)
+    
+        audiodoc = AudioSegment.empty()
+        silence = AudioSegment.silent(1000)
+        for audio in audios:
+            bio = io.BytesIO()
+            with wave.open(bio, 'wb') as wf:
+                wf.setnchannels(1)
+                wf.setsampwidth(2)
+                wf.setframerate(params.sample_rate)
+&gt;               wf.writeframes((audio * 32767).numpy().astype('int16'))
+E               RuntimeError: Numpy is not available
+
+.tox/py38/lib/python3.8/site-packages/pyprocessors_silero/silero.py:178: RuntimeError</failure></testcase><testcase classname="tests.test_silero" name="test_silero_tts_french" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/olivier/dev/kairntech/pyprocessors_silero/tests/french.json'">def test_silero_tts_french():
+        testdir = Path(__file__).parent
+        json_file = testdir / "french.json"
+&gt;       with json_file.open("r") as fin:
+
+tests/test_silero.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.pyenv/versions/3.8.2/lib/python3.8/pathlib.py:1213: in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/olivier/dev/kairntech/pyprocessors_silero/tests/french.json'), name = '/home/olivier/dev/kairntech/pyprocessors_silero/tests/french.json', flags = 524288, mode = 438
+
+    def _opener(self, name, flags, mode=0o666):
+        # A stub for the opener argument to built-in open()
+&gt;       return self._accessor.open(self, flags, mode)
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/olivier/dev/kairntech/pyprocessors_silero/tests/french.json'
+
+../../../.pyenv/versions/3.8.2/lib/python3.8/pathlib.py:1069: FileNotFoundError</failure></testcase></testsuite></testsuites>
