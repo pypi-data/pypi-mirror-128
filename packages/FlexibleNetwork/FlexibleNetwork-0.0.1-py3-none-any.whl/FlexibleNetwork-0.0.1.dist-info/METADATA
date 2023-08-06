@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: FlexibleNetwork
+Version: 0.0.1
+Summary: Library for Flexible network automation with Python
+Home-page: https://github.com/eslam-gomaa/Flexible_Network
+Author: Eslam Gomaa
+License: MIT
+Project-URL: Bug Tracker, https://github.com/eslam-gomaa/Flexible_Network/issues
+Platform: UNKNOWN
+Requires-Dist: pygments
+Requires-Dist: paramiko
+Requires-Dist: tabulate
+
+UNKNOWN
+
