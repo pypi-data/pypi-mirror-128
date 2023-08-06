@@ -1,0 +1,10 @@
+icb/__init__.py,sha256=OJZv3F8JB74pUXS0YXwacwKjt6yVrDoy62jlf3QgHF4,27
+icb/icb.py,sha256=u4m_DdAlOq_3mu-5nZmp31H37F02i8zX_4QnS93eEh4,8008
+icb/map.py,sha256=KJVOdpFKZm8RAhwLQKclJmgph3m0tt6Ti4FRc6_rBR8,366
+icb/definitions/__init__.py,sha256=WA6NPYn_hWki5TZQtmJUiHdZyvwB5ZJO-k_m1z-EeSg,69
+icb/definitions/icb_20210101.py,sha256=bSa-4LXz7i_ixo8dj-ZkJTBRIM3oHsBiP2kdgY_Ww3c,51686
+icb-0.1a2.dist-info/LICENSE,sha256=Iv5qTywjM8WTC8PXRIrLiVxPX1gUqQRPABne-4atW0w,1052
+icb-0.1a2.dist-info/METADATA,sha256=M7mPTJ7MjCwmzx1LsQlwNya1XXzV2tUvGXvOL_Yz-qs,643
+icb-0.1a2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+icb-0.1a2.dist-info/top_level.txt,sha256=c-51TZgjYR109BYHbY2N9CbPbsrXa_jilRel4-qyDbo,4
+icb-0.1a2.dist-info/RECORD,,
