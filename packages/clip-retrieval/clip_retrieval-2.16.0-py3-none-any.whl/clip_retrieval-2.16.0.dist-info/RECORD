@@ -1,0 +1,16 @@
+clip_retrieval/__init__.py,sha256=5pqitySVA4yUr4bUXmcflgAK8ilHT421FfCA3LcrAzs,244
+clip_retrieval/cli.py,sha256=Jj1PWqtwmrmWXNPT2NQHuV5uAEWESs-Ik7NJzMmiUCk,633
+clip_retrieval/clip_back.py,sha256=XN6Ctl-M1SfXNwB-51Vbx1M-REKnTzpBcKQs80iZ6L8,19918
+clip_retrieval/clip_end2end.py,sha256=XpEYZT4n5I__jiTepWpEs9pHRTI1eqlWmt4Ji47mTE8,2124
+clip_retrieval/clip_filter.py,sha256=Hi9tV6GItJHCY_9tQb0UYB8fgcLGwf8TBnSNmjSdXY8,2600
+clip_retrieval/clip_front.py,sha256=Z3psg-vKKGW5kQuelw1yM9-MR2OyTXeDYeanYndpkIk,1187
+clip_retrieval/clip_index.py,sha256=GfkRO-S357D7cQJBGW_6ZGGHhU6kbfwJVUcvbCCzFWY,2119
+clip_retrieval/clip_inference.py,sha256=WZpa0z3-_Fk56ATgsoDvdo5qp2-wA-Kei5jpoPa1oRU,14021
+clip_retrieval/ivf_metadata_ordering.py,sha256=RzBBaqzF35Lssj_lUzqATv0bIP2KDq5NIOXo_q3d7jA,6010
+clip_retrieval-2.16.0.data/data/README.md,sha256=12_-pz4kJAfwzuCMOw_3mvpNJA4u-3pg3bqY1QBKZF8,13654
+clip_retrieval-2.16.0.dist-info/LICENSE,sha256=kQ7Sg07ctsEZeQxAgGGT8tsbjz8G5o_kY8ToEkxWfjE,1072
+clip_retrieval-2.16.0.dist-info/METADATA,sha256=Bamned61o5XH5-BUH6wS2fD-13H61ag597UqQ-CgVNs,14832
+clip_retrieval-2.16.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+clip_retrieval-2.16.0.dist-info/entry_points.txt,sha256=QLdSX6d901D-Fhs1Ip9Jl3A0VGL1irga4byT2fQI89Q,60
+clip_retrieval-2.16.0.dist-info/top_level.txt,sha256=oWxIHF0uIAgmgQlwjoXpecacJEQDlAzV8nSO9FdCo4U,15
+clip_retrieval-2.16.0.dist-info/RECORD,,
