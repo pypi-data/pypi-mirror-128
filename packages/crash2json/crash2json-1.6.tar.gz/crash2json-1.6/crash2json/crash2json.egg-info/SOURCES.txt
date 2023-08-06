@@ -1,0 +1,6 @@
+setup.py
+crash2json/crash2json.egg-info/PKG-INFO
+crash2json/crash2json.egg-info/SOURCES.txt
+crash2json/crash2json.egg-info/dependency_links.txt
+crash2json/crash2json.egg-info/entry_points.txt
+crash2json/crash2json.egg-info/top_level.txt
