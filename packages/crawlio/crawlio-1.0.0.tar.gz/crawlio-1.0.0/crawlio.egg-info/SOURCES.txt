@@ -1,0 +1,11 @@
+COPYING
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+crawlio/__init__.py
+crawlio/crawlio.py
+crawlio.egg-info/PKG-INFO
+crawlio.egg-info/SOURCES.txt
+crawlio.egg-info/dependency_links.txt
+crawlio.egg-info/top_level.txt
