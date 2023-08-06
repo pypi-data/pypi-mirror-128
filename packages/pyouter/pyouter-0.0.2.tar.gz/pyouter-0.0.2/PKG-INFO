@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pyouter
+Version: 0.0.2
+Summary: Python command line tasks router
+Home-page: https://github.com/fainfeilong/task_router
+Author: Fan Fei Long
+Author-email: fanfeilong@gmail.com
+License: MIT
+Description: # Pyouter
+        Pyouter is a tasks router by  hierarchy and layered tasks, which may come from command line or http restful api
+        
+        ## What's new
+        
+        ### 0.0.2
+        
+         - rename plugin to pyouter
+        
+        ### 0.0.1
+        
+         - project init
+         - add pypi settings
+         - add installer
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
