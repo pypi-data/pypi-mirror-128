@@ -1,0 +1,11 @@
+pulumi_policy/__init__.py,sha256=85prReMjdPKx3GvJNlVx6tEkBMeVXkk-5IEiyvton1A,1087
+pulumi_policy/deserialize.py,sha256=DHI6Ssbv-Z4-znbQONTX_s2ylvx_l0fYKakBO3ajsgw,3849
+pulumi_policy/policy.py,sha256=zcr9E9evHOAqy_9OTe6-Cm9EQu8ujy2jowoMBOxnVZM,38415
+pulumi_policy/proxy.py,sha256=RMFCa72PjZ_fPSRWkCCcafDmzHQUpixfny4MQbuYH5U,6833
+pulumi_policy/pulumiplugin.json,sha256=-N5Rzo52OzMKvgqLH1JxqCkgtQ0y9JyJy0SQHEHbw24,22
+pulumi_policy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pulumi_policy/version.py,sha256=2mZr1YNFPoOsUEhboiKp1p27htHZ53UlcXgUwQD9m28,634
+pulumi_policy-1.4.0a1637705639.dist-info/METADATA,sha256=ibHE7VWoHtj9PbbouJNcTHZrcfSspsu2vnt5aUbFxVw,2359
+pulumi_policy-1.4.0a1637705639.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pulumi_policy-1.4.0a1637705639.dist-info/top_level.txt,sha256=Kple_6YMrdhwu7WmTNRlUqrt9Hoy368SVBiYRCF5B2k,14
+pulumi_policy-1.4.0a1637705639.dist-info/RECORD,,
