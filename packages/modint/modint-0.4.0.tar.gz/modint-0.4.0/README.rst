@@ -1,0 +1,108 @@
+==============================================================================
+modint.  Python implementation of the Chinese Remainder algorithm
+==============================================================================
+:Info: This is the README file for modint.
+:Author: Shlomi Fish <shlomif@cpan.org>
+:Copyright: © 2018, Shlomi Fish.
+:Date: 2021-11-26
+:Version: 0.4.0
+
+.. index: README
+.. image:: https://travis-ci.org/shlomif/modint.svg?branch=master
+   :target: https://travis-ci.org/shlomif/modint
+
+===============================
+ModInt
+===============================
+
+
+.. image:: https://img.shields.io/pypi/v/modint.svg
+        :target: https://pypi.python.org/pypi/modint
+
+.. image:: https://img.shields.io/travis/shlomif/modint.svg
+        :target: https://travis-ci.org/shlomif/modint
+
+.. image:: https://readthedocs.org/projects/modint/badge/?version=latest
+        :target: https://modint.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+.. image:: https://pyup.io/repos/github/shlomif/modint/shield.svg
+     :target: https://pyup.io/repos/github/shlomif/modint/
+     :alt: Updates
+
+
+Python implementation of the Chinese Remainder algorithm
+
+
+* Free software: MIT license
+* Documentation: https://modint.readthedocs.io.
+
+
+Features
+--------
+
+A usable implementation of the Chinese Remainder algorithm (see
+https://en.wikipedia.org/wiki/Chinese_remainder_theorem ) under the permissive
+MIT/Expat licence. Written because none other similarly-licensed ones
+could be found.
+
+What this does is given two-or-more pairwise coprime bases integers and their
+corresponding moduli, it finds an integer that yields these moduli for all the
+bases.
+
+Example
+-------
+
+Here is an example::
+
+    from modint import ChineseRemainderConstructor, chinese_remainder
+
+    cr = ChineseRemainderConstructor([2, 5])
+    # Because 5 % 2 == 1 and 5 % 5 == 0
+    assert cr.rem([1, 0]) == 5
+    # Because 8 % 2 == 0 and 8 % 5 == 3
+    assert cr.rem([0, 3]) == 8
+
+    # Convenience function
+    assert chinese_remainder([2, 3, 7], [1, 2, 3]) == 17
+
+Credits
+---------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+COPYRIGHT
+---------
+Copyright © 2018, Shlomi Fish.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions, and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions, and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the author of this software nor the names of
+   contributors to this software may be used to endorse or promote
+   products derived from this software without specific prior written
+   consent.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
