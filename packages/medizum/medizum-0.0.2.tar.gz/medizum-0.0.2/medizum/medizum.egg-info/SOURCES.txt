@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+medizum/medizum.egg-info/PKG-INFO
+medizum/medizum.egg-info/SOURCES.txt
+medizum/medizum.egg-info/dependency_links.txt
+medizum/medizum.egg-info/requires.txt
+medizum/medizum.egg-info/top_level.txt
