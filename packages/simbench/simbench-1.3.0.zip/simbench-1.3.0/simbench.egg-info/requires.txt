@@ -1,0 +1,11 @@
+pandapower>=2.5
+
+[all]
+numpydoc
+sphinx
+sphinx_rtd_theme
+
+[docs]
+numpydoc
+sphinx
+sphinx_rtd_theme
