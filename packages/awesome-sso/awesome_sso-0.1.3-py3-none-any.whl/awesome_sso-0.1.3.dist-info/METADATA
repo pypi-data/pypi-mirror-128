@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: awesome-sso
+Version: 0.1.3
+Summary: sso general utility for services connected to sso
+Home-page: https://github.com/MoBagel/awesome-sso
+License: Apache-2.0
+Author: Schwannden Kuo
+Author-email: schwannden@mobagel.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: autoflake (>=1.4,<2.0)
+Requires-Dist: coveralls (>=3.3.1,<4.0.0)
+Description-Content-Type: text/markdown
+
+[![Stable Version](https://img.shields.io/pypi/v/awesome-sso?label=stable)](https://pypi.org/project/awesome-sso/)
+[![tests](https://github.com/MoBagel/awesome-sso/workflows/ci/badge.svg)](https://github.com/MoBagel/awesome-sso)
+[![Coverage Status](https://coveralls.io/repos/github/MoBagel/awesome-sso/badge.svg?branch=develop)](https://coveralls.io/github/MoBagel/awesome-sso)
+
+# Usage
+## Installing Poetry
+1. create your own environment for poetry, and simply run: `pip install poetry`
+2. alternatively, you can refer to [poetry's official page](https://github.com/python-poetry/poetry)
+
+## Contributing
+1. project setup: `poetry install`
+2. create your own branch to start developing new feature.
+3. before creating pr, make sure you pass `poe lint` and `poe test`.
+4. for a list of available poe command, `poe`
+
+## Publishing
+1. update version in `pyproject.toml`
+
