@@ -1,0 +1,167 @@
+# Python package
+# Create and test a Python package on multiple Python versions.
+# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+
+parameters:
+  # defaults for any parameters that are not specified
+  name: ''
+  vmImage: ''
+
+
+jobs:
+
+- job: ${{ parameters.name }}Test
+  pool:
+    vmImage: ${{ parameters.vmImage }}
+  strategy:
+    matrix:
+      python_38_coverage:
+        python.version: '3.8'
+        ARCH_CYTHON_COVERAGE: true
+        PYTEST_PATTERN: "(not slow)"
+      python_38_statsmodels_main:
+        python.version: '3.8'
+        STATSMODELS_MAIN: true
+        coverage: false
+      python37:
+        python.version: '3.7'
+        NUMPY: 1.17.5
+        SCIPY: 1.3.3
+        MATPLOTLIB: 3.0.3
+        PANDAS: 0.25.3
+      python_38_conda_numba:
+        python.version: '3.8'
+        use.conda: 'true'
+        USE_NUMBA: true
+        MATPLOTLIB: 3.2.2
+        PYTEST_PATTERN: "(slow or not slow)"
+      python37_numpy117:
+        python.version: '3.7'
+        MATPLOTLIB: 3.1.3
+        NUMPY: 1.18.5
+      python_3.9:
+        python.version: '3.9'
+        test.install: true
+      python_3.8_no_binary:
+        python.version: '3.8'
+        SETUP_ARGS: '--no-binary'
+        use.conda: 'true'
+        USE_NUMBA: true
+        PYTEST_OPTS: '--skip-slow'
+      python_3.8_no_binary_environment:
+        python.version: '3.8'
+        ARCH_NO_BINARY: true
+        use.conda: 'true'
+        USE_NUMBA: true
+        PYTEST_OPTS: '--skip-slow'
+      python_38_no_numba:
+        python.version: '3.8'
+        USE_NUMBA: false
+        MATPLOTLIB: 3.3.4
+        PYTEST_PATTERN: "(slow or not slow)"
+      python_38_numpy_118:
+        python.version: '3.8'
+        NUMPY: 1.19.5
+        USE_NUMBA: false
+        PYTEST_PATTERN: "(slow or not slow)"
+    maxParallel: 10
+
+  steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '$(python.version)'
+      architecture: 'x64'
+    displayName: 'Use Python $(python.version)'
+
+  - bash: |
+      echo "##vso[task.prependpath]$CONDA/bin"
+      echo "##vso[task.prependpath]$CONDA/envs/arch-test"
+      echo "##vso[task.prependpath]$CONDA/envs/arch-test/condabin"
+      echo "##vso[task.prependpath]$CONDA/envs/arch-test/bin"
+    displayName: 'Add conda and env to PATH'
+    condition: eq(variables['use.conda'], 'true')
+
+  - script: |
+      source ci/azure/install-posix.sh
+    displayName: 'Install dependencies'
+
+  - script: |
+      source ci/azure/update_path.sh
+      if [[ ${STATSMODELS_MAIN} == "true" ]]; then
+        echo "Installing statsmodels main"
+        source ci/install-statsmodels-main.sh
+      fi
+    displayName: 'Install statsmodels main'
+
+  - script: |
+     source ci/azure/update_path.sh
+     flake8 arch
+     black --check arch
+     isort --check arch
+    displayName: 'Check style and formatting'
+
+  - script: python -m pip list
+    displayName: 'List Configuration (PyPI)'
+    condition: ne(variables['use.conda'], 'true')
+
+  - script: |
+     source ci/azure/update_path.sh
+     conda list
+    displayName: 'List Configuration (conda)'
+    condition: eq(variables['use.conda'], 'true')
+
+  - script: |
+      echo "Installing to site packages"
+      python setup.py bdist_wheel
+      WHL=$(ls -t dist)
+      pip install ./dist/${WHL}
+    displayName: 'Install arch (site-packages)'
+    condition: eq(variables['test.install'], 'true')
+
+  - script: |
+      if [ -z ${SETUP_ARGS} ]; then
+        echo python -m pip install -e . -v --no-build-isolation
+        python -m pip install -e . -v --no-build-isolation
+      else:
+        echo python setup.py develop ${SETUP_ARGS}
+        python setup.py develop ${SETUP_ARGS}
+      fi
+    displayName: 'Install arch (editable)'
+    condition: ne(variables['test.install'], 'true')
+
+  - script: |
+      set -e
+      echo "Testing site packages"
+      mkdir test_run_dir
+      pushd test_run_dir
+      python -c "import arch; arch.test(['-n', 'auto', '--junitxml=../junit/test-results.xml'])"
+      popd
+    displayName: 'Run tests (site-packages)'
+    condition: eq(variables['test.install'], 'true')
+
+  - script: |
+      echo "Testing editable install"
+      if [[ ${COVERAGE} == "true" ]]; then
+        export COVERAGE_OPTS="--cov-config .coveragerc --cov=arch --cov-report xml:coverage.xml --cov-report term"
+      fi
+      echo pytest -m "${PYTEST_PATTERN}" --junitxml=junit/test-results.xml -n auto --durations=25 ${COVERAGE_OPTS} ${PYTEST_OPTS} arch/tests
+      pytest -m "${PYTEST_PATTERN}" --junitxml=junit/test-results.xml -n auto --durations=25 ${COVERAGE_OPTS} ${PYTEST_OPTS} arch/tests
+    displayName: 'Run tests (editable)'
+    condition: ne(variables['test.install'], 'true')
+
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFiles: '**/test-results.xml'
+      testRunTitle: 'Python $(python.version)'
+    condition: succeededOrFailed()
+
+  - task: PublishCodeCoverageResults@1
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+    condition: and(eq(variables['coverage'], 'true'), ne(variables['test.install'], 'true'))
+
+  - bash: bash <(curl -s https://codecov.io/bash)
+    displayName: 'CodeCov upload'
+    condition: and(eq(variables['coverage'], 'true'), ne(variables['test.install'], 'true'))
