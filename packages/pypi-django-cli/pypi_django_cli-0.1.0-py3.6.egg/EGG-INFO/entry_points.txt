@@ -1,0 +1,3 @@
+[console_scripts]
+roi = core.main:cli
+
