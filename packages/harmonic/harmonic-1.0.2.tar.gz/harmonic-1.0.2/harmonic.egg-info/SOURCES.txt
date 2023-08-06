@@ -1,0 +1,16 @@
+LICENSE.txt
+LICENSE_EXT.txt
+README.rst
+setup.py
+harmonic/__init__.py
+harmonic/chains.c
+harmonic/evidence.c
+harmonic/logs.c
+harmonic/logs.py
+harmonic/model.c
+harmonic/utils.c
+harmonic.egg-info/PKG-INFO
+harmonic.egg-info/SOURCES.txt
+harmonic.egg-info/dependency_links.txt
+harmonic.egg-info/requires.txt
+harmonic.egg-info/top_level.txt
