@@ -1,0 +1,11 @@
+ftpfcs/__init__.py,sha256=vKOeWnB576UE7-cQTiHf2Sk5y2v_MjzZpMu0DTr86Rg,419
+ftpfcs/core.py,sha256=6on77m3jPsAbyUgitvPCySOdmGzAwDsTBbTk9-lWPC8,5747
+ftpfcs/utils.py,sha256=0HG-X28CVEGHkwfs2IYKIYo46X_hD3xmS5YJKEyE26U,2200
+ftpfcs/__metadata__/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+ftpfcs/__metadata__/README.md,sha256=Ru7vAR3eYMSnL6Cj3ryO5KsIwZXHAcQCqB2r33mKrhg,1028
+ftpfcs/__metadata__/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ftpfcs/__metadata__/requirements.txt,sha256=U_3PH-QsqFG_XJX4TAwLXHAs7OnuFEZ7q3IZ0tYVoY8,18
+ftpfcs-0.0.2.dist-info/METADATA,sha256=yDoo_VeJLJipp3LhFnWVeTTZEnZnxr90Hk86kEverAo,2325
+ftpfcs-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ftpfcs-0.0.2.dist-info/top_level.txt,sha256=0C_kpHOnl_5UQB_lJiv5fK9hB1aMaJ7F8RAbv27EgXY,7
+ftpfcs-0.0.2.dist-info/RECORD,,
