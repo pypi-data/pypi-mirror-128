@@ -1,0 +1,31 @@
+# Tests
+numpy
+pytest
+codecov
+pytest-cov
+pytest-xdist
+dill
+# Test contrib dependencies
+scipy
+pytorch_fid==0.1.1
+tqdm
+scikit-learn
+matplotlib
+tensorboardX
+visdom
+polyaxon
+polyaxon-client
+wandb
+mlflow
+neptune-client
+tensorboard
+torchvision
+pynvml
+clearml
+scikit-image
+py-rouge
+nltk
+# Examples dependencies
+pandas
+gym
+mkl
