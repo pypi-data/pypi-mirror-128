@@ -1,0 +1,3 @@
+[console_scripts]
+apsbss = apsbss:main
+
