@@ -1,0 +1,7 @@
+fastapi
+databases
+motor
+pyjwt
+aioredis==2.0.0
+email-validator
+passlib
