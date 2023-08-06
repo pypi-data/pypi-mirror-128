@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cmhi
+Version: 0.3
+Summary: Centered Metropolis-Hastings independence algorithm for Bayesian logistic regression
+Home-page: https://github.com/austindavidbrown/Centered-Metropolis-Hastings
+Author: Austin Brown
+Author-email: brow5079@umn.edu
+License: UNKNOWN
+Keywords: Metropolis-Hastings,MCMC
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
