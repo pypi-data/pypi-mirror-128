@@ -1,0 +1,11 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/datapanels/__init__.py
+src/datapanels/app.py
+src/datapanels/stockpanel.py
+src/datapanels.egg-info/PKG-INFO
+src/datapanels.egg-info/SOURCES.txt
+src/datapanels.egg-info/dependency_links.txt
+src/datapanels.egg-info/requires.txt
+src/datapanels.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+kivy>=2
+kwidgets
+kivy_garden.graph
+yfinance
