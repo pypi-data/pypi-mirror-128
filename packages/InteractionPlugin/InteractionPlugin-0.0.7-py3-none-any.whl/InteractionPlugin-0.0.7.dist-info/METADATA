@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: InteractionPlugin
+Version: 0.0.7
+Summary: Discord Interaction Plus
+Home-page: https://github.com/U-Talusor/InteractionPlus
+Author: Talusor
+Author-email: hairbin444@naver.com
+License: UNKNOWN
+Download-URL: https://github.com/U-Talusor/InteractionPlus
+Keywords: InteractionPlugin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3
+Requires-Dist: discord
+
+UNKNOWN
+
+

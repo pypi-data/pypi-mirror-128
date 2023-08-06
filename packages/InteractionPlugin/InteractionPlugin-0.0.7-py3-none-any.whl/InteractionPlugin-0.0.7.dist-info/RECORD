@@ -1,0 +1,10 @@
+InteractionPlugin/Button.py,sha256=De5TVWAMhQaGNm9fnUxXFa9tinGewpat_kwN-Hlzsu4,679
+InteractionPlugin/InteractionClient.py,sha256=9ZTg9CrXEd839d6rvjMWtWvEVmzu6TATMvS3nnXI3GY,12718
+InteractionPlugin/InteractionText.py,sha256=YDmY4MFG26tJXyICUiE82AXWm6SZTqBZ5CBPCs5N4kU,5389
+InteractionPlugin/SelectOption.py,sha256=aPsWkI2tE93cyB1phPdLCgblRxfs-PcBP_jwcQx5aoE,358
+InteractionPlugin/SlashCommand.py,sha256=_2oNph-0_TZQQFt7kYy5jEBT35X-1g-ekmQlX8gfBRc,1911
+InteractionPlugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+InteractionPlugin-0.0.7.dist-info/METADATA,sha256=PwLP9ocaQ5_GMSQMGHApYI7gHxXf5jebYHojZy6YYBw,827
+InteractionPlugin-0.0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+InteractionPlugin-0.0.7.dist-info/top_level.txt,sha256=M4jgJWs5hxpocqATDRA8Fd7ZmMW0vO_GHuFWTg7B8rw,18
+InteractionPlugin-0.0.7.dist-info/RECORD,,
