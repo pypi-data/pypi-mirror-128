@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: disnake-ext-menus
+Version: 0.0.1
+Summary: An extension module to make reaction based menus with disnake
+Home-page: https://github.com/Kraots/disnake-ext-menus
+Author: Rapptz, Kraots
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.0

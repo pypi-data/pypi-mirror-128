@@ -1,0 +1,7 @@
+setup.py
+disnake/ext/menus/__init__.py
+disnake_ext_menus.egg-info/PKG-INFO
+disnake_ext_menus.egg-info/SOURCES.txt
+disnake_ext_menus.egg-info/dependency_links.txt
+disnake_ext_menus.egg-info/requires.txt
+disnake_ext_menus.egg-info/top_level.txt
