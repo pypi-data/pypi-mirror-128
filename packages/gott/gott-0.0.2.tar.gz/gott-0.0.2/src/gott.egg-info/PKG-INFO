@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: gott
+Version: 0.0.2
+Summary: Pacote pra manipulação de funções matemáticas
+Home-page: UNKNOWN
+Author: Antônio Maurício
+Author-email: toinho99@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+Gott
+====
+
+#### Esse é um pacote para manipulação de funcões matematicas
+
+#### Instalação:
+
+`pip install gott`
+
+#### Exemplo:
+
+```
+import gott
+f = gott.newFunction('x^2 -2*x + 1')
+print(f)
+print(f(2))
+df = f.derivada()
+```
+

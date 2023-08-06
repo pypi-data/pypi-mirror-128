@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gott/__init__.py
+src/gott/function.py
+src/gott.egg-info/PKG-INFO
+src/gott.egg-info/SOURCES.txt
+src/gott.egg-info/dependency_links.txt
+src/gott.egg-info/top_level.txt
