@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/FastVCD/__init__.py
+src/FastVCD/fastvcd.py
+src/fastvcd_pkg_rishubn.egg-info/PKG-INFO
+src/fastvcd_pkg_rishubn.egg-info/SOURCES.txt
+src/fastvcd_pkg_rishubn.egg-info/dependency_links.txt
+src/fastvcd_pkg_rishubn.egg-info/top_level.txt
