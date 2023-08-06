@@ -1,0 +1,3 @@
+[console_scripts]
+sycc = sycc:main
+
