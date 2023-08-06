@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: decode_bin
+Version: 0.1.5
+Summary: 解析二进制文件
+Author: Wang Jianing <wangjianing@88.com>
+Author-email: Wang Jianing <wangjianing@88.com>
+License: MIT
