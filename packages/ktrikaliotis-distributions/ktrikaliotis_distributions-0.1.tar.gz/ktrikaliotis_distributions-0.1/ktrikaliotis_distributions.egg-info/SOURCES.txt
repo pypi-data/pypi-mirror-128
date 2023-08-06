@@ -1,0 +1,10 @@
+setup.py
+ktrikaliotis_distributions/Binomialdistribution.py
+ktrikaliotis_distributions/Gaussiandistribution.py
+ktrikaliotis_distributions/Generaldistribution.py
+ktrikaliotis_distributions/__init__.py
+ktrikaliotis_distributions.egg-info/PKG-INFO
+ktrikaliotis_distributions.egg-info/SOURCES.txt
+ktrikaliotis_distributions.egg-info/dependency_links.txt
+ktrikaliotis_distributions.egg-info/not-zip-safe
+ktrikaliotis_distributions.egg-info/top_level.txt
