@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: falcon-error-handling
+Version: 0.0.5
+Summary: falcon error handling
+Home-page: UNKNOWN
+Author: Develper Junio
+Author-email: developer@junio.in
+License: MIT license
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: typing-extensions (==3.10.0.2)
+Requires-Dist: falcon (==3.0.1)
+Requires-Dist: ptyprocess (==0.7.0)
+
+UNKNOWN
+
