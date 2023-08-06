@@ -1,0 +1,3 @@
+[console_scripts]
+clpsz-flag = clpsz.clpsz_flag:main
+
