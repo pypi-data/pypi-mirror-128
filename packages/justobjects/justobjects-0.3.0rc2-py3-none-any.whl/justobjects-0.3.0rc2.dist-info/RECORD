@@ -1,0 +1,13 @@
+justobjects/__init__.py,sha256=KYbFG29J58nWMf02LPf9YGdamxNTCNo9nnVR3mO_OSI,1408
+justobjects/decorators.py,sha256=UE2flH_9wCz9Q63vn_fV68a2D54RjenjSmRuhy686r4,11760
+justobjects/jsontypes.py,sha256=6j2pU0WZm3rFZhoolTEEwQ0HDU54LaKuvs0VNT_slXY,12749
+justobjects/schemas.py,sha256=csxU_ZJ_5OMAB0nFiMRPYXd9D0BsoqlRa5TiwjQ0Ijs,9227
+justobjects/transforms.py,sha256=2hRvB05k_oT_GND_ELl7DHB0fa7l-Nufhz_ieGJtj58,2548
+justobjects/typings.py,sha256=vvNDuuUNnxk9Nw4OlkdCWD3jCHccBWTw5RrKXlHi3gs,777
+justobjects/validation.py,sha256=atijT3HS9EknET6XjCezEEtv1Jyx0ag11HCEi1CZV_Q,3006
+justobjects-0.3.0rc2.dist-info/LICENSE,sha256=gZMud_70zsMG2lTK99TSId_Q9vttohTHEuNsuVrEeQY,10108
+justobjects-0.3.0rc2.dist-info/METADATA,sha256=N5yXgf1I-UkldFRZLy4uaGVwz8tTH-Svpab9uvFGqX0,4208
+justobjects-0.3.0rc2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+justobjects-0.3.0rc2.dist-info/top_level.txt,sha256=HemaXYJyAZ5WfghyrPyihU0e7hHWN6j0TA1ZXHeNNHw,12
+justobjects-0.3.0rc2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+justobjects-0.3.0rc2.dist-info/RECORD,,

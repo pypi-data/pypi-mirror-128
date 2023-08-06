@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: justobjects
+Version: 0.3.0rc2
+Summary: Simple data object (de)serialization and validation
+Home-page: https://justobjects.readthedocs.io
+Author: Rowland Ogwara
+Author-email: r.ogwara@gmail.com
+License: Apache Software License 2.0
+Project-URL: Source, https://github.com/kulgan/justobjects
+Project-URL: Documentation, https://justobjects.readthedocs.io
+Keywords: jsonschema,objects,just objects
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: attrs
+Requires-Dist: jsonschema
+Requires-Dist: validators
+Requires-Dist: typing-extensions ; python_version < "3.8"
+Provides-Extra: changelog
+Requires-Dist: towncrier ; extra == 'changelog'
+Provides-Extra: dev
+Requires-Dist: coverage[toml] ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: mypy ; extra == 'lint'
+Requires-Dist: pre-commit ; extra == 'lint'
+
+justobjects
+===========
+|Pypi version| |Python versions| |ci| |Documentation Status|
+
+Simple python data objects management and validation based on standard jsonschema_ concepts. Project
+requires python3.6+ and allows users define how data objects should look and relate with other data objects.
+Supports python3.6+ typing annotations and customs attributes for more complex relationships.
+
+Objectives
+----------
+1. Define and demarcate data objects with just python annotations
+2. Define constraints in simple jsonschema_ compliant manner
+3. Validate data objects using standard jsonschema_ validators
+4. Express complete jsonschema_ as simple data objects (its just objects)
+
+Similar Projects
+----------------
+* pydantic_
+
+Install
+-------
+install from pip
+
+.. code-block:: bash
+
+    $ pip install justobjects
+
+install from source
+
+.. code-block:: bash
+
+    $ pip install git+https://github.com/kulgan/justobjects@<version>#egg=justobjects
+
+Usage Example
+-------------
+.. code-block:: python
+
+    import json
+    import justobjects as jo
+
+
+    @jo.data(typed=True)
+    class Model:
+        a: int
+        b: float
+        c: str
+
+
+    # display schema
+    print(json.dumps(jo.show_schema(Model), indent=2))
+
+
+    try:
+        # fails validation
+        jo.validate(Model(a=3.1415, b=2.72, c="123"))
+    except jo.ValidationException as err:
+        print(err.errors)
+
+
+Contributing
+------------
+The fastest way to get feedback on contributions/bugs is create a issues_
+
+Running Tests
+-------------
+The project makes use of tox to run tests and other common tasks
+
+.. code-block:: bash
+
+   $ tox -e py36
+
+
+
+
+.. _pydantic: https://pydantic-docs.helpmanual.io
+.. _jsonschema: https://json-schema.org
+.. _issues: https://github.com/kulgan/justobjects/issues
+
+.. |PyPI version| image:: https://img.shields.io/pypi/v/justobjects.svg
+   :target: https://pypi.python.org/pypi/justobjects
+   :alt: PyPi version
+
+.. |ci| image:: https://github.com/kulgan/justobjects/workflows/justobjects/badge.svg
+   :target: https://github.com/kulgan/justobjects/actions
+   :alt: CI status
+
+.. |Python versions| image:: https://img.shields.io/pypi/pyversions/justobjects.svg
+   :target: https://pypi.org/project/justobjects
+   :alt: PyPi versions
+
+.. |Documentation status| image:: https://readthedocs.org/projects/justobjects/badge/?version=latest
+   :target: https://justobjects.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
+
