@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: ststransformers
+Version: 0.0.5
+Summary: An easy-to-use wrapper library for using Transformers in Semantic Textual Similarity Tasks.
+Home-page: https://github.com/TharinduDR/STS-Transformers
+Author: Tharindu Ranasinghe
+Author-email: rhtdranasinghe@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: tqdm (>=4.47.0)
+Requires-Dist: regex
+Requires-Dist: transformers (>=4.6.0)
+Requires-Dist: datasets
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: seqeval
+Requires-Dist: tensorboard
+Requires-Dist: tensorboardX
+Requires-Dist: pandas
+Requires-Dist: tokenizers
+Requires-Dist: wandb (>=0.10.32)
+Requires-Dist: sentencepiece
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Downloads](https://static.pepy.tech/badge/ststransformers)](https://pepy.tech/project/ststransformerst)
+
+# STSTransformers : Transformer based Semantic Textual Similarity. 
+
+STSTransformers provides state-of-the-art models for Semantic Textual Similarity.
+
+## Installation
+you first need to install PyTorch.
+Please refer to [PyTorch installation page](https://pytorch.org/get-started/locally/#start-locally) regarding the specific install command for your platform.
+
+When PyTorch has been installed, you can install from source by cloning the repository and running:
+
+```bash
+git clone https://github.com/TharinduDR/STS-Transformers.git
+cd STS-Transformers
+pip install -r requirements.txt
+``` 
+
+You can find the implementations in the examples folder. 
+
+
+
