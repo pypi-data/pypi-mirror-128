@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: hrefs
+Version: 0.1.2
+Summary: Hyperlinks for pydantic models
+Author-email: Jaakko Moisio <jaakko@moisio.fi>
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: FastAPI
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pydantic>=1.7
+Requires-Dist: starlette
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme ; extra == "docs"
+Requires-Dist: pytest>=6.2 ; extra == "test"
+Requires-Dist: hypothesis>=6.24 ; extra == "test"
+Requires-Dist: fastapi ; extra == "test"
+Requires-Dist: black ; extra == "test"
+Requires-Dist: pylint ; extra == "test"
+Requires-Dist: mypy ; extra == "test"
+Project-URL: Home, https://github.com/jasujm/hrefs
+Provides-Extra: docs
+Provides-Extra: test
+
+Hyperlinks for pydantic models
+==============================
+
+In a typical web application relationships between resources are modeled by
+primary and foreign keys in a database (integers, UUIDs etc.). The most natural
+way to represent relationships in REST APIs is by URLs to the related resources
+(explained in `this blog
+<https://cloud.google.com/blog/products/application-development/api-design-why-you-should-use-links-not-keys-to-represent-relationships-in-apis>`_).
+
+``hrefs`` makes it easy to add hyperlinks between `pydantic
+<https://pydantic-docs.helpmanual.io/>`_ models in a declarative way. Just
+declare a ``Href`` field and the library will automatically convert between keys
+and URLs:
+
+.. code-block:: python
+
+   class Book(ReferrableModel):
+       id: int
+
+       class Config:
+           details_view = "get_book"
+
+   class Library(BaseModel):
+       books: List[Href[Book]]
+
+   @app.get("/library")
+   def get_library():
+       # Will produce something like:
+       # {"books":["http://example.com/books/1","http://example.com/books/2","http://example.com/books/3"]}
+       return Library(books=[1,2,3]).json()
+
+``hrefs`` was written especially with `FastAPI <https://fastapi.tiangolo.com/>`_
+in mind, but integrates to any application or framework using pydantic to parse
+and serialize models.
+
+Check out the `documentation <https://hrefs.readthedocs.io/>`_ to get started!
+
+Installation
+------------
+
+Install the library using ``pip`` or your favorite package management tool:
+
+.. code-block:: console
+
+   $ pip install hrefs
+
