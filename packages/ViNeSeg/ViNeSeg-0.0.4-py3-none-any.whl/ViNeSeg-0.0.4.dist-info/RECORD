@@ -1,0 +1,12 @@
+vineseg/__init__.py,sha256=LR7zKPnrsfz-oz7NMJttGy7QQogpXch_7QUA9IO850U,585
+vineseg/__main__.py,sha256=KrY48fydj32h2jqhP8GjWZt80up9z4wRvhpsM5zOkUs,5752
+vineseg/app.py,sha256=nxJb41njOZ6I6g12tUX_k5nbK7aFYHY25SIWtwWmPWk,76027
+vineseg/label_file.py,sha256=FT-t9EhQ7VyFzgd_hpEnhPwVwrG5J7vANkXmbhy3cS0,6317
+vineseg/logger.py,sha256=WhJMNE_z2au69R-M3WHQQWOJj4JEw4Y1Z0YaOQARKKA,1841
+vineseg/setup.py,sha256=-GpNVqGiYzM5BAbloCBfjw_6lbBS-mJJpZcYd4UBsJI,5086
+vineseg/shape.py,sha256=DhLwc6RBlaOdhXTuPgtiE3OKSVQxaAIQ6H-5PfqICGw,9296
+vineseg/testing.py,sha256=zC_J12i2uZFDai8SEZhjObBWORMehCGrHA4ktzj8i6g,834
+ViNeSeg-0.0.4.dist-info/METADATA,sha256=AVvZlKiseNfyPrbLCOyS2aMHLbS0vcjhBooa183OddM,3068
+ViNeSeg-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ViNeSeg-0.0.4.dist-info/top_level.txt,sha256=u8D24Gboz8l9MNsvQMQ-ZjdyACFUV0CgzpVepcBRo4I,8
+ViNeSeg-0.0.4.dist-info/RECORD,,
