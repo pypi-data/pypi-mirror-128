@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cn2en/__init__.py
+src/cn2en/input_lang.pkl
+src/cn2en/model.pth
+src/cn2en/model.py
+src/cn2en/output_lang.pkl
+src/cn2en.egg-info/PKG-INFO
+src/cn2en.egg-info/SOURCES.txt
+src/cn2en.egg-info/dependency_links.txt
+src/cn2en.egg-info/requires.txt
+src/cn2en.egg-info/top_level.txt
