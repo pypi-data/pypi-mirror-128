@@ -1,0 +1,15 @@
+README.md
+setup.py
+fanficapi/__init_.py
+fanficapi/fanficapi.py
+fanficapi.egg-info/PKG-INFO
+fanficapi.egg-info/SOURCES.txt
+fanficapi.egg-info/dependency_links.txt
+fanficapi.egg-info/requires.txt
+fanficapi.egg-info/top_level.txt
+fanficapi/ao3essentials/author.py
+fanficapi/ao3essentials/errors.py
+fanficapi/ao3essentials/story.py
+fanficapi/ffnessentials/author.py
+fanficapi/ffnessentials/errors.py
+fanficapi/ffnessentials/story.py
