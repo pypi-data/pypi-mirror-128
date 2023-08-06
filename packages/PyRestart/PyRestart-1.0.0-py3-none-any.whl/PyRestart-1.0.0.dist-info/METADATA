@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: PyRestart
+Version: 1.0.0
+Summary: Restart module
+Home-page: https://github.com/MXP2095onetechguy/PyRestart
+Author: MXPSQL
+Author-email: 2000onetechguy@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/MXP2095onetechguy/PyRestartissues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyRestart
+
+Module that can make new instance of itself, normally used to restart a script, I think you can get it [here](https://pypi.org/project/pyrestart/)
+<br>
+To get help, use the help() function and pass the function that you need help with
+
+
+## Function list
+newRestart
+
+new_restart
+
