@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sphinx-data-viewer
+Version: 0.1.0
+Summary: Sphinx extension to show dta in an interacitve list view
+License: MIT
+Author: team useblocks
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: docs
+Requires-Dist: sphinx (>=4,<5); extra == "docs"
