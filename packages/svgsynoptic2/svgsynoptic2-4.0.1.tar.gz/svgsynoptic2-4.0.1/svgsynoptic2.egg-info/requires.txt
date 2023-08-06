@@ -1,0 +1,4 @@
+setuptools
+pytango>=9.2.1
+taurus>=4.5
+pyqtwebengine
