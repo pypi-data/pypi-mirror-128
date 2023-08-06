@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: DidemTaha
+Version: 0.0.1
+Summary: Data Science Tools
+Home-page: https://github.com/Taha-Cakir
+Author: Taha Çakır
+License: MIT
+Keywords: data science,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE.md
+
+UNKNOWN
+
