@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: GraphicswithPython
+Version: 0.0.1
+Summary: Say hello!
+Home-page: https://github.com/YameenV/graphicswithpython.git
+Author: Yameen Vinchu, Ashutosh Upadayeah
+Author-email: yameenvinchu38@gmail.com, ashutosh.aku.aau@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+
+UNKNOWN
+
