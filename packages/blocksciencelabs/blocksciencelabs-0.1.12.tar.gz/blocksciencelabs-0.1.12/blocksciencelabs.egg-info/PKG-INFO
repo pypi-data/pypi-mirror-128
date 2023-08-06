@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: blocksciencelabs
+Version: 0.1.12
+Summary: BlockScience Labs Python SDK
+Home-page: https://github.com/blockscience-labs/labs-sdk
+Author: Tyler Mace
+Author-email: tyler@blocksciencelabs.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/blockscience-labs/labs-sdk/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BlockScience Labs SDK (Python)
+
+## Publishing
+- Make changes
+- Test
+- Update version in setup.cfg
+
+Build:
+```bash
+python3 -m build
+```
+
+Publish:
+```bash
+python3 -m twine upload dist/*
+```
+
