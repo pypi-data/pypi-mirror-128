@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: py-canary-2
+Version: 0.6.2
+Summary: Python API for the Canary App
+Home-page: https://github.com/bm1549/canary
+Author: Brian Marks
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.25.1)
+
+# py-canary-2
+
+Forked from https://github.com/snjoetw/py-canary
+
+Python API for Canary Security Camera.  This is used in [Home Assistant](https://home-assistant.io) but should be generic enough that can be used elsewhere.
+
+
