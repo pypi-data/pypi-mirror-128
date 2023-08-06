@@ -1,0 +1,16 @@
+caterva/__init__.py,sha256=nXSfYgjkTkFifXl7X8y8lFTBOMaSTSk6E3rxzEzfrLM,645
+caterva/caterva_ext.cp39-win32.pyd,sha256=a3Ev-wc4SZFtD4R2cGywmqgJLXghCyY2KgWK87Qj0VY,860672
+caterva/constructors.py,sha256=jk-HUyJl7yU8gvAAUTxLHyTHUPHGYnzh8ccVUhTvGmA,6406
+caterva/info.py,sha256=0AWXWV7F945vbBM2XBnmZ0HYDe8UKm8hupD-wQC4MII,1543
+caterva/meta.py,sha256=vpfzFeotMhNGXFYOaMJtI-u0ZMaHKXwAKTIJHmmspWw,2590
+caterva/ndarray.py,sha256=oVIIWIr1XFPAD149l0qA-UYEaD7P5ZqPf9cpK3jj5EA,5387
+caterva/utils.py,sha256=YtFi6g8J4khy8aG6jA0zmkJqIzNyg4HrT4hc0cu6vWo,1029
+caterva/version.py,sha256=BcDooso_95mxBKQjiTsaUI4mrlqcSqor3ZVIj6rfg30,23
+caterva-0.7.0.data/data/include/caterva.h,sha256=5jtjwdGoeDUV9IXR6wA-WYGuGg7iOOAkQIJsiFby4Ok,22088
+caterva-0.7.0.data/data/lib/caterva.dll,sha256=tdjP9x6Jp3o9gzAMEPvCYU1tV1hih29iDR2E5hZtldA,501248
+caterva-0.7.0.data/data/lib/libcaterva.lib,sha256=_TlF6VjE5Z_evVT4_0SpiP87qgxl-zYk8RO45mmAM_o,69924
+caterva-0.7.0.dist-info/LICENSE,sha256=tccHPRZ1SOXMX4BjdWXo2xNZ3vIcxj_EerJimB2Bh5o,1737
+caterva-0.7.0.dist-info/METADATA,sha256=TDOy2_VpXoHUYGw95IAh332loBNBHkXrktgUVTexp-w,2209
+caterva-0.7.0.dist-info/WHEEL,sha256=smmBECuUzGdEznciuR77PdAciiaQM82bX_d7rHy5yr4,90
+caterva-0.7.0.dist-info/top_level.txt,sha256=tRXIiKEfhJtnHvCGJ2t7-uQgQju3w_aCeYj_kNjWkTA,8
+caterva-0.7.0.dist-info/RECORD,,
