@@ -1,0 +1,13 @@
+README.md
+setup.py
+api/__init__.py
+api/artifact.py
+api/generator.py
+api/rest_api.py
+api/ui_app.py
+api_automation_kit.egg-info/PKG-INFO
+api_automation_kit.egg-info/SOURCES.txt
+api_automation_kit.egg-info/dependency_links.txt
+api_automation_kit.egg-info/not-zip-safe
+api_automation_kit.egg-info/requires.txt
+api_automation_kit.egg-info/top_level.txt

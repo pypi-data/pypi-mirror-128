@@ -1,0 +1,153 @@
+# Main Features
+Here are just a few of the things that api-automation-kit including:
+
+  - Codeless Automation Framework For Performance and Rest API Tests - based on Streamlit and Locust python packages
+  - API capbabilities - based on Requests python package
+  - Upload Artifact to Pypi and Azure
+  - API Test Plan Capabilities For Azure TFS
+  - Interactive Test Report - based on Allure framework
+
+
+# Environment and Installations
+- Install python 3.9
+- Install Latest Pycharm IDE and open it
+- Open project directory and Create Virtual Environment
+- Install api-automation-kit Package from pypi:
+```sh
+# PyPI
+pip install api-automation-kit
+```
+
+- Install Scoop (for windows)
+See the [full installation instructions for Scoop](https://scoop.sh)
+
+- Install Allure
+See the [full installation instructions for allure](https://docs.qameta.io/allure)
+
+# Code Examples:
+## ui_app.py
+```sh
+# the code for open the ui app
+import os.path
+import api
+
+path = os.path.dirname(__file__)
+api.ui_app.run_app(main_path=path)
+```
+
+```sh
+# run from command line
+$ streamlit run ui_app.py
+```
+### After a few seconds, the app will start on the default browser.
+## - Try to create your first API test like the example below:
+![Screenshot](files/app-image-rest.PNG)
+
+##### Click on Save Result Check-Box for saving the Python syntax result:
+![Screenshot](files/save-result-rest.PNG)
+
+##### The Python script moved to your project folder:
+![Screenshot](files/script-result-rest.PNG)
+
+##### For run the test return to the web app and click on the Run Script.
+##### After a few seconds, the test results will appear in a new tab (allure installation is required):
+![Screenshot](files/allure-results.PNG)
+
+## - Try to create your first Performance test like the example below:
+![Screenshot](files/app-image-performance.PNG)
+
+##### Click on Save Result Check-Box for saving the Python syntax result:
+![Screenshot](files/save-result-performance.PNG)
+
+##### The Python script moved to your project folder:
+![Screenshot](files/script-result-performance.PNG)
+
+##### Before you run your test, please add a new master.conf file to your main project folder:
+```sh
+# master.conf basic arguments
+web-host = localhost
+web-port = 8089
+```
+##### master.conf folder location:
+![Screenshot](files/master-conf.PNG)
+
+##### For run the test return to the web app and click on the Run Script.
+##### After a few seconds a new local server will be open. click on the link that appear on the screen and start your performance test with Locust package (Read more about [Locust](https://locust.io/)):
+![Screenshot](files/run-performance.PNG)
+
+
+## rest_api.py
+```sh
+# the code for open the ui app
+import allure
+import api
+
+
+@allure.feature("Set Feature For get_en_stable_")
+@allure.description("Set Description For get_en_stable_")        
+def test_get_en_stable_():
+    component_get_en_stable_()
+
+@allure.step("Set Step Description For get_en_stable_")
+def component_get_en_stable_():
+     api_instance = api.rest_api.ApiCapabilities()
+     response = api_instance.get_request(url='http://docs.locust.io:80/en/stable/?', headers={"Content-Type":"application/json"})
+     analyze_response(response, 200)
+
+
+@allure.step("Expected Status Code")
+def analyze_response(res, expected_status_code):
+    if res.status_code != expected_status_code:
+        assert False
+    else:
+        print(f"status code is {res.status_code}")
+```
+
+```sh
+# run the tests from command line 
+$ py.test rest_api.py --alluredir=tmp/allure_results
+```
+```sh
+# generate report from command line 
+$ allure serve tmp\allure_results
+```
+
+
+## upload_artifact.py
+```sh
+# upload python package to azure or pypi
+import os
+from api import artifact
+PYPI = True
+AZURE = False
+pypi_user = '<user>'
+pypi_password = '<password>'
+azure_feeds = ['<azure-feed-1>', '<azure-feed-2>']
+dist_dir = os.path.dirname(__file__) + "/dist"
+artifact.run_process(dist_dir=dist_dir, azure_feeds=azure_feeds, azure_artifact=AZURE,
+                     pypi_artifact=PYPI, user=pypi_user, password=pypi_password)
+```
+
+
+# Dependencies
+
+- allure-pytest~=2.9.43
+- allure-python-commons~=2.9.43
+- setuptools~=57.4.0
+- genson~=1.2.2
+- artifacts-keyring~=0.3.1
+- twine~=3.4.2
+- wheel~=0.37.0
+- pandas~=1.3.3
+- streamlit~=1.0.0
+- locust~=2.2.3
+- requests~=2.26.0
+- azure-devops==6.0.0b4
+- xmltojson~=0.2.0
+- msrest~=0.6.21
+
+See the [full installation instructions](https://pandas.pydata.org/pandas-docs/stable/install.html#dependencies) for minimum supported versions of required, recommended and optional dependencies.
+
+
+# License
+[MIT](LICENSE)
