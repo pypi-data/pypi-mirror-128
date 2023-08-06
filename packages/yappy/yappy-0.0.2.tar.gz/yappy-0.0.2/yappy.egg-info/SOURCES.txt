@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+yappy/__init__.py
+yappy/__version__.py
+yappy/main.py
+yappy/py.typed
+yappy/types.py
+yappy.egg-info/PKG-INFO
+yappy.egg-info/SOURCES.txt
+yappy.egg-info/dependency_links.txt
+yappy.egg-info/not-zip-safe
+yappy.egg-info/requires.txt
+yappy.egg-info/top_level.txt
