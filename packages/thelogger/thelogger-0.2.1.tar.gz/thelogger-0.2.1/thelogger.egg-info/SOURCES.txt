@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+thelogger/__init__.py
+thelogger/logger.py
+thelogger.egg-info/PKG-INFO
+thelogger.egg-info/SOURCES.txt
+thelogger.egg-info/dependency_links.txt
+thelogger.egg-info/requires.txt
+thelogger.egg-info/top_level.txt
