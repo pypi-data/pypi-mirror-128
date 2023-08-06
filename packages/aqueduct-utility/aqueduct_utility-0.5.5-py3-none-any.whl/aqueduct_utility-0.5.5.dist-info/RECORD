@@ -1,0 +1,9 @@
+aqueduct/__init__.py,sha256=VDV8LBXWKypbbB-kbTuxxklpfMkNlfPLKDkvINXfKH8,32
+aqueduct/__main__.py,sha256=ZIHrWyIbNlcj14pNdqDczJYLRjhAfk8PfU3Q3cAiJs8,253
+aqueduct/cli.py,sha256=c4P18ODsDYAGphZq45n0ajK1Me6AEbp_T6fUkFSbpuY,18786
+aqueduct_utility-0.5.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aqueduct_utility-0.5.5.dist-info/METADATA,sha256=CT0Ov8i9KsADNOVmlx1TblIkqDeywyZZGqvhjVjflvk,1556
+aqueduct_utility-0.5.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aqueduct_utility-0.5.5.dist-info/entry_points.txt,sha256=Gxl7Sz1N-aNyxmZ67DtzHQUbDXq9EpB7IcQEpN1sv00,48
+aqueduct_utility-0.5.5.dist-info/top_level.txt,sha256=240E0XdaJkKWpk9zGL-sTTH_5RsOv4HLrq_V2PzjYl8,9
+aqueduct_utility-0.5.5.dist-info/RECORD,,
