@@ -1,0 +1,15 @@
+userscloud/__init__.py,sha256=WNH4Y89aUUb4ghfY7J-aF4ckTekpeUDGFk4BBH6BpUY,499
+userscloud/api.py,sha256=49klYXmMgYINMW6GPAycqkTrgH_805uBJX90don5uFs,7520
+userscloud/ftp.py,sha256=FOj3cfT7fI0QeYfNESpOHb2ykRC-C9YsCsinr_E6VQ0,13954
+userscloud/helper.py,sha256=xoWj9tFx-syN5RfO1IbPixm3T3ZaTlY7AOsm-N64RLA,133
+userscloud/utils.py,sha256=GeBSISBHIQevBMOfdrn2uHxlq5iiDheDhCjcwpNDtyU,419
+userscloud/web.py,sha256=53xEPrzwRv_aMAlg3EV0Lyhd-Y9PoQvLxERr5Ykc5O0,18567
+userscloud/__metadata__/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+userscloud/__metadata__/README.md,sha256=qUmi_tnir_tGUNlc7PVCrI86sfW-w9X44UNlKQPf0UY,754
+userscloud/__metadata__/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+userscloud/__metadata__/requirements.txt,sha256=afgBzlImj11O1qCI5_oaExKjRwhNF9F89GgqvNGqw3U,112
+userscloud/__metadata__/requirements_extra.json,sha256=XT2mole1IPiWSqqBaiUkl-Z_niKotCp_u7U1S6amBa8,42
+userscloud-0.0.13.dist-info/METADATA,sha256=f9w6M9UvmD0pD4vpmYa1Wv8x3pMsCKqukjYXJJGlKz8,2279
+userscloud-0.0.13.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+userscloud-0.0.13.dist-info/top_level.txt,sha256=KeY1wPNTFu3RQULTFqtPzLfaJ0CeTdyC8Hagy3VWxr4,11
+userscloud-0.0.13.dist-info/RECORD,,

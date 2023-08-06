@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: userscloud
+Version: 0.0.13
+Summary: userscloud complete API including web frontend, HTTP and FTP.
+Home-page: https://github.com/foxe6/
+Author: f̣ộx̣ệ6
+Author-email: foxe6@protonmail.com
+License: AGPL-3.0
+Project-URL: Sourcecode, https://github.com/foxe6/userscloud
+Project-URL: Documentation, https://github.com/foxe6/userscloud/blob/master/test
+Project-URL: Example, https://github.com/foxe6/userscloud/blob/master/userscloud/example
+Project-URL: Issues, https://github.com/foxe6/userscloud/issues
+Project-URL: Funding, https://paypal.me/foxe6
+Project-URL: Say Thanks!, https://saythanks.io/to/foxe6
+Keywords: userscloud file host ftp batch remote upload api cli manager archive
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: lxml (>=0.0.1)
+Requires-Dist: requests (>=0.0.1)
+Requires-Dist: sqlq (>=0.0.1)
+Requires-Dist: omnitools (>=0.0.1)
+Requires-Dist: aescipher (>=0.0.1)
+Requires-Dist: easyrsa (>=0.0.1)
+Requires-Dist: credsafe (>=0.0.1)
+Provides-Extra: efc
+Requires-Dist: ucefc ; extra == 'efc'
+
+# userscloud
+
+<badges>[![version](https://img.shields.io/pypi/v/userscloud.svg)](https://pypi.org/project/userscloud/)
+[![license](https://img.shields.io/pypi/l/userscloud.svg)](https://pypi.org/project/userscloud/)
+[![pyversions](https://img.shields.io/pypi/pyversions/userscloud.svg)](https://pypi.org/project/userscloud/)  
+[![powered](https://img.shields.io/badge/Say-Thanks-ddddff.svg)](https://saythanks.io/to/foxe6)
+[![donate](https://img.shields.io/badge/Donate-Paypal-0070ba.svg)](https://paypal.me/foxe6)
+[![made](https://img.shields.io/badge/Made%20with-PyCharm-red.svg)](https://paypal.me/foxe6)
+</badges>
+
+<i>userscloud complete API including web frontend, HTTP and FTP.</i>
+
+# Hierarchy
+
+```
+userscloud
+```
+
+# Example
+
+## python
+See `test`.
+
