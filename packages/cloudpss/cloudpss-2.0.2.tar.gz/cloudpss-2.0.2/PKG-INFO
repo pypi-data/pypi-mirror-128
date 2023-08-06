@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cloudpss
+Version: 2.0.2
+Summary: cloudpss sdk
+Home-page: https://www.cloudpss.net
+Author: cloudpss
+Author-email: zhangdaming@cloudpss.net
+License: MIT Licence
+Description: CloudPSS SDK
+        ----------------------------------------------------------------
+        
+Keywords: cloudpss,cloudpss-sdk
+Platform: any
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
