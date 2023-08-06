@@ -1,0 +1,13 @@
+samino/__init__.py,sha256=dLoBBk9423vhVKi5S9Mjuak4Hkj9yOs8wCEb-vyC0H8,400
+samino/acm.py,sha256=IVOgi-ep5qk9FY6zBY7R0Q3W-hF4QFwpdtS6ip8ZP0w,4417
+samino/client.py,sha256=Afqdc3Fd37pavyehbzmedwIlCdSRRjGf_TAD8e7RRJ8,36898
+samino/local.py,sha256=UmSgrj8Rcxrb0SBNdq--T4sZsSUwcEUDmGmTgyh9P2k,44421
+samino/socket.py,sha256=CL2gPscntN0G8Igjc53Lhjm16XYwPpjeabJax1sRuA4,5320
+samino/lib/__init__.py,sha256=zJGA2D9OvOCo2kXCtbVQnMtPiuOIFA3bX3CV5UXlIvA,74
+samino/lib/exception.py,sha256=8GDNiazNtM0DC-3zs21zlPRxWiTWbPwujQDm_Al0HoE,163
+samino/lib/headers.py,sha256=hg2nUTZMWM1ZoUr6mOZkFqCiHtPfa-dkMdk1wc97Uzw,1721
+samino/lib/objects.py,sha256=bfMnktZQw_xbEiQzJIvGGW9ur9EgQJs19I0lnV-VAfM,13813
+SAmino-1.6.3.dist-info/METADATA,sha256=4GNWB3tD297Pw5C5w3qiSO2PPiHeneJCt086gwZBNBo,1259
+SAmino-1.6.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+SAmino-1.6.3.dist-info/top_level.txt,sha256=Qnlx3zdT_1BERXqUBRP52-zuWt-mMtfsokH1YUoQoO4,7
+SAmino-1.6.3.dist-info/RECORD,,
