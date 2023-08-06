@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: dscal
+Version: 3.2.2
+Summary: Quick solutions to calculus and mathematical operations.
+Home-page: https://sites.google.com/view/dscal3/home
+Author: Dhruv Sehwal
+Author-email: zarexdhruv@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: numexpr
+Requires-Dist: sympy
+
+dscal 3.2.2
+==================================
+
+A library for all sort of calculus problems and graphing solutions.
+
+Get instant results with fewer lines of code and more readability.
+
+For any query contact zarexdhruv@gmail.com or get help from
+
+https://sites.google.com/view/dscal3/home
+
+===================================
+
+
+
+Change log
+
+========================================
+
+Latest release 
+
+3.2.2 (21/11/2021)
+
+========================================
+
+-class calculus
+ This class is now part of the root module in the library, hence does not require
+ importing it exclusively.
+
+-GUI usage
+ This implementation is now a part of module dscal.gui .
+
+ -class tkcal
+  This class provide methods for integrating graph/plot obtained by plot() and plot3d()
+  methods of class calculus by graph() and graph3d() .
+
+-module dscal.tools
+ This module contains all the utilities reuired by package. 
+
+-module dscal.dsmath
+ This module will help for the mathematical functions required by you.
+
