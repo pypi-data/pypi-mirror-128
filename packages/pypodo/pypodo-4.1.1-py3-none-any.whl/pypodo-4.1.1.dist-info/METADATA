@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pypodo
+Version: 4.1.1
+Summary: pypodo is a todolist tool which works with a .todo file at the root of the home directory. It has a mecanism of indexes and tags.
+Home-page: https://github.com/thib1984/pypodo
+Author: thib1984
+Author-email: thibault.garcon@gmail.com
+License: mit
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: setuptools
+Requires-Dist: termcolor
+Requires-Dist: columnar
+
+The complete description/installation/use/FAQ is available at : https://github.com/thib1984/pypodo#readme
+
