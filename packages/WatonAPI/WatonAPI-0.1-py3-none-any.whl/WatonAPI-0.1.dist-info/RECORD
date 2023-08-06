@@ -1,0 +1,13 @@
+watonapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+watonapi/address.py,sha256=Hbq66jA5eh95MjUIXVi1b3TN2cUp3GfSSyJJ4ljaTt8,1489
+watonapi/codec.py,sha256=mcxdRHd0a365zprvftRyL3X2KPURjH_-8pwyBVTG-m4,786
+watonapi/connection.py,sha256=uHKK6M1liFu1WYM-VxmbETTKtFkrhtmNW-LQFWQanZ4,710
+watonapi/dispatcher.py,sha256=m7QEI3n0tQmo68xcnzrFC7CiGihne0ncfQY5zs_6SmU,2392
+watonapi/errors.py,sha256=2Z9NdMZVFklapH6YM04-q3V4bc1pMFT3KAKQyrO_cAo,338
+watonapi/packets.py,sha256=CULgFkT-6vSbZsgcTK5zvM4VcXhZ90nUjjz7vBdRToc,1035
+watonapi/server.py,sha256=NsXC3x8BnOzTtUyKQtsQyKH8lO_WSe0ghT6sTN_QasI,2132
+WatonAPI-0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+WatonAPI-0.1.dist-info/METADATA,sha256=LqKueI5vOalIsVwxGBSc9oOlIjZUHxSfiba9Ykn4DAM,2713
+WatonAPI-0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+WatonAPI-0.1.dist-info/top_level.txt,sha256=S0CGS3S1UHCqEbfE21AZR-zC9bzY01FjVrg4EBw65Jo,9
+WatonAPI-0.1.dist-info/RECORD,,
