@@ -1,0 +1,7 @@
+thoth-storages
+pandas
+scikit-learn
+numpy
+tabulate
+deepdiff
+thoth-common

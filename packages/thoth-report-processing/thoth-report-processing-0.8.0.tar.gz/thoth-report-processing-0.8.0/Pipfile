@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+thoth-storages = ">=0.40.0"
+pandas = "*"
+scikit-learn = "*"
+numpy = "*"
+tabulate = "*"
+deepdiff = "*"
+thoth-common = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-timeout = "*"
+pytest-cov = "*"
+hypothesis-auto = "*"
+hypothesis = "*"
+pytest-mypy = "*"
+mypy = "*"
+pre-commit = "*"
+
+[requires]
+python_version = "3.8"
