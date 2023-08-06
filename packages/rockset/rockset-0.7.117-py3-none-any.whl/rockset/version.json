@@ -1,0 +1,12 @@
+{
+    "format": "v1",
+    "major": "0",
+    "minor": "7",
+    "patch": "117",
+    "pre_release": ["rel", "20211124"],
+    "build_info": ["2e5012aa62"],
+    "version": "0.7.117-rel.20211124+2e5012aa62",
+    "dockertag": "0.7.117-rel.20211124-2e5012aa62",
+    "python": "0.7.117",
+    "commit_hash": "2e5012aa62d582b60c74"
+}
