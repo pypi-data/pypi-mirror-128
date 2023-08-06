@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+autocomplete_light.egg-info/PKG-INFO
+autocomplete_light.egg-info/SOURCES.txt
+autocomplete_light.egg-info/dependency_links.txt
+autocomplete_light.egg-info/requires.txt
+autocomplete_light.egg-info/top_level.txt
