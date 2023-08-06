@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: rmm-spoons
+Version: 0.0.9
+Summary: A RimWorld Mod Manager
+Home-page: https://github.com/spoons/rmm
+Author: Michael Ciociola
+License: GPLv3
+Project-URL: Issue Tracker, https://github.com/spoons/rmm/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Archiving :: Packaging
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: tabulate
+Requires-Dist: docopt-ng
+Requires-Dist: importlib.metadata
+
+A RimWorld Mod Manager
+
