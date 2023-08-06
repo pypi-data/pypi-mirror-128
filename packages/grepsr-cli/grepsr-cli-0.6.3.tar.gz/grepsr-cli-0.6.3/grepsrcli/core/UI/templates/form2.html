@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Form</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+      body {
+         font-family: 'Manrope', sans-serif;
+         color: #343434;
+         overflow-x: hidden;
+      }
+
+      .form-control:focus {
+         outline: 0;
+         box-shadow: none;
+         border-color: #1276FF !important;
+      }
+
+      .formContent h4,
+      .formContent h3 {
+         font-weight: bold;
+      }
+
+      .formInnerContent .form-label {
+         margin-bottom: 16px;
+         font-size: 20px;
+         font-weight: 600;
+         color: #4E4E4E;
+      }
+
+      .formInnerContent ::placeholder {
+         color: #BCBCBC;
+         font-size: 16px;
+      }
+
+      .formInnerContent .form-control {
+         color: #343434;
+         height: 32px;
+         padding: 12px;
+         border-radius: 4px;
+         margin-bottom: 16px;
+         border: 1px solid #D0D0D0;
+      }
+
+      .formInnerContent textarea.form-control {
+         height: inherit;
+      }
+
+      .formInnerContent .buttonContent button.btn {
+         border-radius: 4px;
+         text-transform: capitalize;
+         padding: 0px 24px;
+         height: 32px;
+         color: #fff;
+         font-size: 14px;
+         background-color: #1276FF;
+         box-shadow: none;
+         border: 1px solid #1276FF;
+         font-weight: 500;
+      }
+
+      .formInnerContent .buttonContent {
+         text-align: right;
+      }
+
+      .buttonContentLeft {
+         text-align: left;
+      }
+
+      .buttonContentLeft button.btn {
+         border-radius: 4px;
+         text-transform: capitalize;
+         padding: 0px 32px;
+         height: 40px;
+         color: #fff;
+         font-size: 16px;
+         background-color: #EC4269;
+         box-shadow: none;
+         border: 1px solid #EC4269;
+         font-weight: 500;
+      }
+
+      .border-top-grey {
+         border-top: 2px solid #eaeaea;
+         padding-top: 32px;
+      }
+
+      .border-bottom-grey {
+         border-bottom: 3px solid #eaeaea;
+         padding-top: 32px;
+      }
+
+
+      .mb-16 {
+         margin-bottom: 16px;
+      }
+
+      .mb-32 {
+         margin-bottom: 32px;
+      }
+
+      .mt-32 {
+         margin-top: 32px;
+      }
+
+
+
+      .g-5,
+      .gx-5 {
+         --bs-gutter-x: 112px;
+      }
+
+      ::-webkit-scrollbar-track {
+         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.0);
+         background-color: #ECEFF0;
+         scrollbar-width: thin;
+      }
+
+      ::-webkit-scrollbar {
+         scrollbar-width: thin;
+         width: 6px;
+         height: 6px;
+         background-color: #ECEFF0;
+      }
+
+      ::-webkit-scrollbar-thumb {
+         background-color: #B7BFC3;
+         border-radius: 4px;
+         scrollbar-width: thin;
+      }
+
+      @media only screen and (max-width: 991.98px) {
+
+         .g-5,
+         .gx-5 {
+            --bs-gutter-x: 0px !important;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <form method="POST" name="config" action="/config">
+      <div class="formContent">
+         <div class="container">
+            <div class="text-center mt-32 mb-32">
+               <h3>gCli Configuration</h3>
+            </div>
+            <div class="formInnerContent mb-32 border-bottom-grey">
+               <div class="row gx-5">
+                  <div class="col-lg-6">
+                     <div class="mb-32">
+                        <label class="form-label">Aws Access ID</label>
+                        <input type="text" class="form-control" placeholder="aws id"
+                           value="{{config['aws_access_key_id']}}">
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="mb-32">
+                        <label for="heading1" class="form-label">Aws Access Key</label>
+                        <input type="text" class="form-control" placeholder="aws key"
+                           value="{{config['aws_secret_access_key']}}">
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="mb-32">
+                        <label for="heading1" class="form-label">API Key</label>
+                        <input type="text" class="form-control" placeholder="api key" value="{{config['api_key']}}">
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="mb-32">
+                        <label for="heading1" class="form-label">App Environment</label>
+                        <input type="text" class="form-control" placeholder="App env" value="{{config['app_env']}}">
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row gx-5">
+
+               {% for platform in platforms.keys() %}
+
+               <div class="col-lg-6">
+                  <div class="formInnerContent mb-32 border-bottom-grey">
+                     <div class="text-center mb-16">
+                        <h4>{{ platform }}</h4>
+                     </div>
+                     <div class="mb-32" id="{{platform}}PathField">
+                        <label class="form-label">Paths</label>
+
+                        {% for item in platforms[platform]['paths']%}
+                        <input type="text" class="form-control" name="{{platform}}_paths" value="{{item}}" />
+                        {% endfor%} {% if platforms[platform]['paths']|length
+                        < 3 %} {% for i in range(platforms[platform]['paths']|length , 3) %} <input type="text"
+                           class="form-control" placeholder="Path" />
+                        {% endfor %} {% endif%}
+                     </div>
+
+                     <div class="buttonContent mb-32">
+                        <button onclick="createNewElement1('{{platform}}');" type="button" class="btn">
+                           Add
+                        </button>
+                     </div>
+
+                     <div class="mb-32">
+                        <label class="form-label">SDK Image</label>
+
+                        <input name="{{platform}}_sdk" type="text" class="form-control"
+                           value="{{platforms[platform]['sdk_image']}}" />
+                     </div>
+                     <div class="mb-32">
+                        <label class="form-label">Environment Variables</label>
+                        {% if 'env' in platforms[platform]%}
+                        <textarea name="{{platform}}" class="form-control" id="description_{{platform}}" rows="5">{% for env in platforms[platform]['env'].keys() %}
+{{ env }}:{{ platforms[platform]['env'][env]}}{% endfor %}
+                     </textarea>
+                        {% else %}
+                        <textarea class="form-control" id="description_{{platform}}" rows="5" placeholder="env">
+                        </textarea>
+                        {% endif %}
+
+                     </div>
+                  </div>
+               </div>
+               {% endfor %}
+            </div>
+            <div class="row gx-5 formInnerContent">
+               <div class="buttonContentLeft mb-32 ">
+                  <button type="submit" class="btn">Submit</Button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </form>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"></script>
+
+   <script type="text/JavaScript">
+      function createNewElement1(platform) {
+          var newInputTextField1 = document.createElement('div');
+          newInputTextField1.innerHTML = "<input type='text' class='form-control' name='"+ platform +"_paths[]' placeholder='Path'>";
+          document.getElementById(platform + "PathField").appendChild(newInputTextField1);
+      }
+
+      
+    </script>
+</body>
+
+</html>
