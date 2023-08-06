@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ideenergy
+Version: 0.0.5
+Summary: Interface to i-de.es energy data
+Home-page: https://github.com/ldotlopez/ideenergy
+Author: Luis López
+Author-email: luis@cuarentaydos.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ldotlopez/ideenergy/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+
+# ideenergy
+
+Programmatic access to consumer energy consumption from https://www.i-de.es/ (Spanish energy distributor)
+
+**Useful links**
+
+  * [Related Home-Assistant component](https://github.com/ldotlopez/ha-ideenergy)
+  * [Documentation about other distributors](https://www.genbeta.com/web/como-saber-consumo-electrico-tiempo-real-casa)
+
+
