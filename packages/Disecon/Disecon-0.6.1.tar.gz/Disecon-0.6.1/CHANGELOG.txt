@@ -1,0 +1,91 @@
+Change Log
+==========
+
+0.0.1 (9/26/2021)
+----------------
+- First Release
+- Added basic Function
+
+0.0.2 - 0.0.4
+----------------
+- Fixing bugs in testing
+
+0.0.5
+----------------
+- Added Bank Class with same function as wallet class
+
+0.0.6
+----------------
+- Added function to the top class
+
+0.1.0
+----------------
+- Tested top class
+
+0.1.1
+----------------
+- Removed user_Name in the economy
+
+0.1.2
+----------------
+- Updated code for the removed user_Name in database
+
+0.1.3
+----------------
+- Added code to the sub part of the wallet class
+
+0.1.4 - 0.1.6
+----------------
+- Fixing bugs
+
+0.1.7
+----------------
+- Found the bug while added to the database and doing some testing
+
+0.1.8
+----------------
+- Added a connection to database in wallet class
+
+0.1.9 - 0.1.11
+----------------
+- Trying to have README.md on the pypi
+
+0.2.0
+----------------
+- Tested wallet and it all worked
+
+0.2.1
+----------------
+- Added sub function in bank class
+
+0.2.2
+----------------
+- Added "connect" to line 46 bank.py
+
+0.3.0
+----------------
+- Tested bank and it all worked
+
+0.4.0
+----------------
+- Tested top and it all worked
+
+0.5.0
+----------------
+- Tested start and it all worked
+
+0.5.1
+----------------
+- Testing different things with view
+
+0.5.2
+----------------
+- Added bank function to view
+
+0.6.0
+----------------
+- Tested view class and it all worked
+
+0.6.1
+----------------
+- View class start to not work, changed view class status
