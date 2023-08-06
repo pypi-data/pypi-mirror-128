@@ -1,0 +1,10 @@
+influx_logs/__init__.py,sha256=qR7VfOGTfq4RdpSjWp4f2lKs2aNBqoPYnGpS26WnY2Y,163
+influx_logs/actions.py,sha256=Trv4fSJFD54GSYyRmXymdsqymA3KR71nYxu1hmhL1MU,799
+influx_logs/apps.py,sha256=6bf0z0xsxh3BpKHKxefRlpCeIP80Kh7KtSZWq8nlZuI,153
+influx_logs/connexion.py,sha256=EH9w4yN_aq9Xikp_WQrOd4j-7O_R0YfvQxgs9QoqgRU,640
+influx_logs/settings.py,sha256=PC-OkMrqFyzRUChDJY6ih1tWMrIhyUESFt4_VNXwiV8,35
+django_influx_logs-0.0.5.dist-info/LICENSE,sha256=6zg8PY_neDcjOVVL3RccTpEoiJXQVfiewYO0s0CAaTA,1069
+django_influx_logs-0.0.5.dist-info/METADATA,sha256=MsFySTWUyM5pG0LdCPXBiZkxcWYVOqzte9M00-cqnNg,1093
+django_influx_logs-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_influx_logs-0.0.5.dist-info/top_level.txt,sha256=2N7NaUnybYipeIFg5RrwWTIznyAwZzYYciZD3voKUUc,12
+django_influx_logs-0.0.5.dist-info/RECORD,,
