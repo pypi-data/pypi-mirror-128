@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: create-pypi-project
+Version: 0.0.1
+Summary: A command line for creating Pypi projects
+Home-page: https://github.com/pypa/sampleproject
+Author: Haider Ali
+Author-email: ali075398@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# create-pypi-project
+
+Hello, this is a project for developers who make pypi projects and setting up the files and folders is very time consuming so I created this open source package with you can create your files within seconds
+
+
+How do I use it?
+
+
+First of all install the package using "pip"
+
+
+```shell
+pip install create-pypi-project
+```
+
+
+Last step, just type this in your terminal:
+
+
+```shell
+createpypiproject --name Mygoodproject --author Haider
+```
+
+
+Remember "--name" and "--author" are required
+
+
