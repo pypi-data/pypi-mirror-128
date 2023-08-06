@@ -1,0 +1,13 @@
+fastapi_chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_chat/run.py,sha256=idKEd9IONuRlafc827iRjeljdUsZH9zONMErIeMJVyY,230
+fastapi_chat/chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_chat/chat/app.py,sha256=FYxyI7CNU59Wi3pD2v7JZ5oRpO66WqZg8T7e7M4UOuM,1269
+fastapi_chat/chat/manager.py,sha256=va344fw2Amx-QMT8x1JO25Ez6h4QL1i8jVBoUjqEACA,1537
+fastapi_chat/chat/redis_connector.py,sha256=A4lqMqIGrut2rHUbdIw0VgGkfWHVHJ-80E8YeyOvKn4,282
+fastapi_chat/chat/settings.py,sha256=AsyOmm5IpOvHzR5vTEhfgcnLRdkQh240cb38WqHxBkk,1190
+jellyfish_chat-0.0.1b0.dist-info/LICENSE,sha256=jJGIkkyo_ezAt4IN9Aq8zUBMAQTnmvRLlEtOYaJVzjk,1065
+jellyfish_chat-0.0.1b0.dist-info/METADATA,sha256=Gv8LOsJOaOMhOIP0CBLH74hOB8sRaczpILjplH_Yr_0,2304
+jellyfish_chat-0.0.1b0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+jellyfish_chat-0.0.1b0.dist-info/entry_points.txt,sha256=XvLWvlfXzRFyr-rsURB0utDZha6heMnAll8P3v89ntc,54
+jellyfish_chat-0.0.1b0.dist-info/top_level.txt,sha256=CEhHypVf_mx7A5XVsK84MGhRTT6Q1OsWTIUrhHHjblI,13
+jellyfish_chat-0.0.1b0.dist-info/RECORD,,
