@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        the-well-maintained-test=the_well_maintained_test.cli:cli
+    
