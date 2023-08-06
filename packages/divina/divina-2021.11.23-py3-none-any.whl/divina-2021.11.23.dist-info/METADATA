@@ -1,0 +1,163 @@
+Metadata-Version: 2.1
+Name: divina
+Version: 2021.11.23
+Summary: Package for causal, scalable forecasting
+Home-page: https://www.coysu.com
+Author: Coysu Consulting
+Author-email: john@coysu.com
+License: BSD-3-Clause
+Project-URL: Bug Tracker, https://github.com/secrettoad/divina/issues
+Project-URL: Documentation, https://secrettoad.github.io/divina/
+Project-URL: Source Code, https://github.com/secrettoad/divina
+Keywords: forecasting
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp (==3.7.4.post0)
+Requires-Dist: aioitertools (==0.8.0)
+Requires-Dist: async-timeout (==3.0.1)
+Requires-Dist: aiobotocore[awscli,boto3]
+Requires-Dist: attrs (==21.2.0)
+Requires-Dist: backoff (==1.11.1)
+Requires-Dist: bokeh (==2.3.2)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: click (==8.0.1)
+Requires-Dist: cloudpickle (==1.6.0)
+Requires-Dist: dask[distributed] (==2021.7.2)
+Requires-Dist: fsspec (==2021.7.0)
+Requires-Dist: flake8 (==3.9.2)
+Requires-Dist: idna (==3.2)
+Requires-Dist: importlib-metadata (==4.6.4)
+Requires-Dist: jmespath (==0.10.0)
+Requires-Dist: joblib (==1.0.1)
+Requires-Dist: jsonschema (==4.0.0)
+Requires-Dist: locket (==0.2.1)
+Requires-Dist: multidict (==5.1.0)
+Requires-Dist: numpy (==1.21.1)
+Requires-Dist: packaging (==21.0)
+Requires-Dist: pandas (==1.3.1)
+Requires-Dist: partd (==1.2.0)
+Requires-Dist: pbr (==5.6.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: pytest (==6.2.4)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: setuptools (==41.2.0)
+Requires-Dist: s3fs (==2021.7.0)
+Requires-Dist: s3transfer (==0.4.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: Sphinx (==4.2.0)
+Requires-Dist: sphinx-click (==3.0.1)
+Requires-Dist: sphinx-jsonschema (==1.17.1)
+Requires-Dist: sphinxcontrib-applehelp (==1.0.2)
+Requires-Dist: sphinxcontrib-devhelp (==1.0.2)
+Requires-Dist: sphinxcontrib-htmlhelp (==2.0.0)
+Requires-Dist: sphinxcontrib-jsmath (==1.0.1)
+Requires-Dist: sphinxcontrib-qthelp (==1.0.3)
+Requires-Dist: sphinxcontrib-serializinghtml (==1.1.5)
+Requires-Dist: toolz (==0.11.1)
+Requires-Dist: typing-extensions (==3.10.0.0)
+Requires-Dist: twine (==3.4.2)
+Requires-Dist: urllib3 (==1.26.6)
+Requires-Dist: wrapt (==1.12.1)
+Requires-Dist: wheel (==0.37.0)
+Requires-Dist: yarl (==1.6.3)
+Requires-Dist: zipp (==3.5.0)
+Requires-Dist: moto (==2.2.3)
+Requires-Dist: dask-cloudprovider (==2021.6.0)
+Requires-Dist: dask-ml (==1.9.0)
+Requires-Dist: pytest-cov (==2.12.1)
+Requires-Dist: pyarrow (==5.0.0)
+Requires-Dist: plotly (==5.3.1)
+
+<div align="center">
+  <img src="https://storage.googleapis.com/coysuweb-static/assets/images/logo/3.png"><br>
+</div>
+
+-----------------
+
+# divina: scalable and hyper-interpretable causal forecasting toolkit
+[![Continuous Integration](https://github.com/secrettoad/divina/actions/workflows/prod.yaml/badge.svg)](https://github.com/secrettoad/divina/actions/workflows/prod.yaml)
+[![PyPI Latest Release](https://img.shields.io/pypi/v/divina.svg)](https://pypi.org/project/divina/)
+[![Package Status](https://img.shields.io/pypi/status/divina.svg)](https://pypi.org/project/divina/)
+[![License](https://img.shields.io/pypi/l/divina.svg)](https://github.com/secrettoad/divina/blob/master/LICENSE)
+[![Downloads](https://img.shields.io/pypi/dm/divina.svg)](https://pypi.org/project/divina)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+
+## What is it?
+
+**divina** is a Python package that provides scalable, interpretable and performant forecasting capabilities designed to make causal forecasting modular, efficient and simple.
+It aims to reduce the challenge of causal forecasting on datasets of any size to configuration via JSON as opposed to construction and consumption of Python objects. 
+At its core, divina aims reduce the complexity and increase the consistency of causal forecasting at scale.
+
+
+## Main Features
+Here are just a few of the things that divina does well:
+
+  - Abstracted and scalable feature engineering. Encoding, interaction, normalization, binning and joining of datasets are handled scalably by the Dask back-end with minimal configuration required by the user.
+  - Simulation of user-defined factors in support of forward-looking, multi-signal and decision-enabling causal forecasts.   
+  - Automatic persistence of all experiment artifacts, including models, predictions and validation metrics, to s3 for posterity, traceability and easy integration.
+  - A user-centric, two-way [**interpretation interface**][interpretation] that allows for granular interpretation of models and predictions while also allowing domain experts to override factors.
+
+  [interpretation]: https://github.com/secrettoad/divina
+
+## Roadmap
+Current development priorities and improvements slated for next and beta release are:
+
+  - Addition of automated experiment summaries as persisted artifacts enabling ease of consumption and increased transparency into the forecasts and models divina produces.
+  - Improvement of the core model's performance, with the addition of attention mechanisms and the ability to adapt to signals with dynamic mean and variance.  
+  - Addition of more realistic test cases, useful error messages and robust documentation.
+  - Cleanup of various pieces of the codebase and addition of convenience features such as filepath validation, signal filtering and a maximum lifespan for all EC2 instances divina creates.
+
+
+
+## Where to get it
+The source code is currently hosted on GitHub at:
+https://github.com/secrettoad/divina
+
+Binary installers for the latest released version are available at the [Python
+Package Index (PyPI)](https://pypi.org/project/divina)
+
+```sh
+pip install divina
+```
+
+## Dependencies
+- [dask - Adds support for arbitrarily large datasets via remote, parallelized compute](https://www.dask.org)
+- [dask-ml - Provides distributed-optimized implementations of many popular models](https://ml.dask.org)
+- [s3fs - Allows for easy and efficient access to S3](https://github.com/dask/s3fs)
+- [pyarrow - Enabled persistence of datasets as storage and compute efficent parquet files](https://arrow.apache.org/docs/python/)
+
+
+
+## License
+[BSD 3](LICENSE)
+
+## Documentation
+Divina' documentation is available [here](https://secrettoad.github.io/divina/#). 
+
+## Background
+Work on ``divina`` started at [Coysu Consulting](https://www.coysu.com/) (a technology consulting firm) in 2020 and
+has been under active development since then.
+
+## Getting Help
+For usage questions, the best place to go to is [StackOverflow](https://stackoverflow.com/questions/tagged/divina).
+
+## Discussion and Development
+Most development discussions take place on GitHub in this repo.
+
+## Contributing to divina 
+
+All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome.
+
+If you are simply looking to start working with the divina codebase, navigate to the [GitHub "issues" tab](https://github.com/secrettoad/divina/issues) and start looking through interesting issues.
+
+
+
