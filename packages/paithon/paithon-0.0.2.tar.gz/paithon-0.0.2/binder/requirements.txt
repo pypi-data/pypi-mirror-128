@@ -1,0 +1,4 @@
+pandas
+-e .
+-e binder/jupyter-paithon-server/.
+jupyter-server-proxy
