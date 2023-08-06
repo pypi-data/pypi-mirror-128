@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/example_package/__init__.py
+src/example_package/example.py
+src/xqlpdemo.egg-info/PKG-INFO
+src/xqlpdemo.egg-info/SOURCES.txt
+src/xqlpdemo.egg-info/dependency_links.txt
+src/xqlpdemo.egg-info/top_level.txt

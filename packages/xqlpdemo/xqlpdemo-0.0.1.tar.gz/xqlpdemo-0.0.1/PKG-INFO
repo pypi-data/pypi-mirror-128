@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: xqlpdemo
+Version: 0.0.1
+Summary: A small example package for adding two numbers
+Home-page: https://github.com/XueQinliang/xqlpdemo
+Author: Qinliang Xue
+Author-email: xqlruc@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/XueQinliang/xqlpdemo/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# xqlpdemo
+This is my first python package for adding two number
+
+
