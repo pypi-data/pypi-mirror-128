@@ -1,0 +1,82 @@
+{
+    "2001": {
+        "game_id": "57",
+        "league_id": ""
+    },
+    "2002": {
+        "game_id": "49",
+        "league_id": ""
+    },
+    "2003": {
+        "game_id": "79",
+        "league_id": ""
+    },
+    "2004": {
+        "game_id": "101",
+        "league_id": ""
+    },
+    "2005": {
+        "game_id": "124",
+        "league_id": ""
+    },
+    "2006": {
+        "game_id": "153",
+        "league_id": ""
+    },
+    "2007": {
+        "game_id": "175",
+        "league_id": ""
+    },
+    "2008": {
+        "game_id": "199",
+        "league_id": ""
+    },
+    "2009": {
+        "game_id": "222",
+        "league_id": ""
+    },
+    "2010": {
+        "game_id": "242",
+        "league_id": ""
+    },
+    "2011": {
+        "game_id": "257",
+        "league_id": ""
+    },
+    "2012": {
+        "game_id": "273",
+        "league_id": ""
+    },
+    "2014": {
+        "game_id": "331",
+        "league_id": ""
+    },
+    "2015": {
+        "game_id": "348",
+        "league_id": "898971"
+    },
+    "2016": {
+        "game_id": "359",
+        "league_id": "247388"
+    },
+    "2017": {
+        "game_id": "371",
+        "league_id": "470610"
+    },
+    "2018": {
+        "game_id": "380",
+        "league_id": "81769"
+    },
+    "2019": {
+        "game_id": "390",
+        "league_id": "72883"
+    },
+    "2020": {
+        "game_id": "399",
+        "league_id": "228404"
+    },
+    "2021": {
+        "game_id": "406",
+        "league_id": "53342"
+    }
+}
