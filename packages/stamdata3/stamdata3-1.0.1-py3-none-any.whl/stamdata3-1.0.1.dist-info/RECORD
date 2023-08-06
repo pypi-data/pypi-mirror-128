@@ -1,0 +1,17 @@
+stamdata3/Employment.py,sha256=B0xMYXObjbTeUk_R8IcKTJU5ZaSPSjqrgvgSx1XJyuQ,1751
+stamdata3/Organisation.py,sha256=p5bm0zwK0UCfAOXSJZ6AyVCDpTeeuQMP-bgOoIXt9xc,541
+stamdata3/Relation.py,sha256=eZ8vvcGMO3_WzSemJo4lnv9LZYejeHStnp4l_12EkJ8,470
+stamdata3/Resource.py,sha256=2wkbfJ2Fq_AK7SLwMthajQxgWiCkXTAc8o1IsBPLlWI,1595
+stamdata3/StamdataExceptions.py,sha256=8i9UgGgBhkoHrLU90s--zKRQM5HiOKkKwoTeL3wwvk4,202
+stamdata3/XMLDataHelper.py,sha256=6kAoV1U01sWzfatSWvmhb4eLKyiwuhppb9KeBDxKFd8,1283
+stamdata3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stamdata3/stamdata3.py,sha256=uxzCfN-wDEBmFnCpj9BpfDqOaZCwndiW_HRlDUZZ9MM,1230
+stamdata3/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stamdata3/tests/test_employment.py,sha256=jacDo5ii-EhK4V5dEhE612r743oQs0E2i-alusNUUBo,1383
+stamdata3/tests/test_resource.py,sha256=hYvpUXy6zh5zOdCINZAnuBC-389lo3iLQV7XUH3twxY,392
+stamdata3/tests/test_stamdata.py,sha256=e1QMGFKAsiKHrt49icEJRAoTgyAqWpNd0uTqh_gLqJ0,1024
+stamdata3-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+stamdata3-1.0.1.dist-info/METADATA,sha256=XciN4-jtJTIX08yzOMtSzScxerx-AclDdHmidjEQVTM,651
+stamdata3-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+stamdata3-1.0.1.dist-info/top_level.txt,sha256=w4GtRMCiG0pYT_NPYOBBIprkN3tDFU3384Pzc-PNuHM,10
+stamdata3-1.0.1.dist-info/RECORD,,
