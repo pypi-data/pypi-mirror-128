@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pulumi_linkerd_link
+Version: 0.0.3
+Summary: A Pulumi package for linking k8s clusters with linkerd.
+Home-page: UNKNOWN
+License: Apache-2.0
+Project-URL: Repository, https://github.com/antifuchs/pulumi-linkerd-link
+Description: # Linkerd cluster linkage pulumi provider
+        
+        This provider is currently experimental. You're welcome to try it &
+        open issues, but please don't rely on it for production work yet!
+        
+        ## Future plans
+        
+        I plan to make minor bugfixes as necessary for our use of this provider at
+        [@MaterializeInc](https://github.com/MaterializeInc).
+        
+        [pulumi-docker]: https://github.com/pulumi/pulumi-docker
+        [Buildkit]: http://github.com/moby/buildkit
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
