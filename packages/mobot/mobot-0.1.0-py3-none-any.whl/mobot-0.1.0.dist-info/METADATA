@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mobot
+Version: 0.1.0
+Summary: Turning Mobile Phone into Robot
+Home-page: https://github.com/mobotx/mobot
+Author: Mobotx
+Author-email: mobotx.github.io@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+Requires-Dist: texttable
+
+UNKNOWN
+
