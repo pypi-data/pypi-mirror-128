@@ -1,0 +1,13 @@
+README.md
+setup.py
+./cloudsql/__init__.py
+./cloudsql/auth.py
+./cloudsql/core.py
+./cloudsql/sqlite.py
+./cloudsql/utilities.py
+./cloudsql/views.py
+cloudsql.egg-info/PKG-INFO
+cloudsql.egg-info/SOURCES.txt
+cloudsql.egg-info/dependency_links.txt
+cloudsql.egg-info/requires.txt
+cloudsql.egg-info/top_level.txt
