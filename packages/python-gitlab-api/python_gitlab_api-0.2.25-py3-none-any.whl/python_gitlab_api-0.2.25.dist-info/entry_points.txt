@@ -1,0 +1,16 @@
+[console_scripts]
+create-group-wikis=gitlab_cli.create:GroupWikiPage
+create-project-wikis=gitlab_cli.create:ProjectWikiPage
+create-release=gitlab_cli.create:Release
+get-group-wiki=gitlab_cli.get:GroupWiki
+get-group-wikis=gitlab_cli.get:GroupWikis
+get-package-version=gitlab_cli.ci_utils:get_package_version
+get-project=gitlab_cli.get:Project
+get-project-wiki=gitlab_cli.get:GroupWiki
+get-project-wikis=gitlab_cli.get:GroupWikis
+get-projects=gitlab_cli.get:Projects
+get-release=gitlab_cli.get:Release
+get-releases=gitlab_cli.get:Releases
+get-user=gitlab_cli.get:User
+publish-release=gitlab_cli.ci_utils:publish_release
+
