@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lazyds
+Version: 0.211124.3
+Summary: Useful Data Science libraries wrapped by laziness
+License: GPL
+Author: davips
+Author-email: dpsabc@gmail.com
+Requires-Python: >=3.8,<3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: arff2pandas (>=1.0.1,<2.0.0)
+Requires-Dist: idict (>=1.211124.1,<2.0.0)
+Requires-Dist: pandas (>=1.3.2,<2.0.0)
+Requires-Dist: scikit-learn (>=1.0.1,<2.0.0)
