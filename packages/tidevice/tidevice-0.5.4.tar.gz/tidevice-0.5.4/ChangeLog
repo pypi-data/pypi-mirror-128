@@ -1,0 +1,17 @@
+CHANGES
+=======
+
+0.5.4
+-----
+
+* change bundle pattern
+* update to support ios 15.1
+* fix for windows
+* fix README.md 新版本需要传入性能数据类型
+* fix network and usb both exists bug
+* feat: add cmd date and get device via Network
+* config: .gitignore
+* config: flake8
+* fix wdaproxy bug
+* use ssl.SSLContext instead of ssl.wrap\_context, since the method is deprecated in py3.7
+* hotfix for device list raise MuxError bug
