@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/json2obj/__init__.py
+src/json2obj.egg-info/PKG-INFO
+src/json2obj.egg-info/SOURCES.txt
+src/json2obj.egg-info/dependency_links.txt
+src/json2obj.egg-info/top_level.txt
