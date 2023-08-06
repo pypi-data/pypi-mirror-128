@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: burningalice
+Version: 0.0.8
+Summary: For generating A E S T H E T I C ascii art
+Home-page: https://github.com/jamescalam/aesthetic_ascii
+Author: James Briggs
+Author-email: quakcs@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## License
+
+burningalice is licensed under the [SSPL license](./LICENSE).
+
+
