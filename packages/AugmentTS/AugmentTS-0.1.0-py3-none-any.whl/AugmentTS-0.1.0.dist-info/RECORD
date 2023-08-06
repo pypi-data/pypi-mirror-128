@@ -1,0 +1,11 @@
+augmentts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+augmentts/datasets.py,sha256=5x-oL44JSVDFvWjfjxNWDUETZLzai1egAJ3osJ3whqQ,5089
+augmentts/utils.py,sha256=Hxn7RvMvybI_EvPfF6Z19EAuRZsStS0lxrgjdDUnGp8,689
+augmentts/augmenters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+augmentts/augmenters/vae.py,sha256=QrHjzLw-Ugr2n7rvuGQssPVjmJ0yRyA-HBvNPybJFqg,5867
+augmentts/forecasters/deep.py,sha256=ntybgWBc8f41fNms2qLHupLmWTJ3BNg5z6xYjsPL8WE,3540
+AugmentTS-0.1.0.dist-info/LICENSE,sha256=-380eoi8Oq1sK4U19xpfqLK_g8EwmgO4C3-VTpfGE2c,11356
+AugmentTS-0.1.0.dist-info/METADATA,sha256=gF9O_GyKjQAIB-82h0xhlBnPIjsR18Z6hOtHui9N4ig,5859
+AugmentTS-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+AugmentTS-0.1.0.dist-info/top_level.txt,sha256=KlEFz66erhmzzo65Xh-HGT8zi_ZMqsjwxki3QWrycaQ,10
+AugmentTS-0.1.0.dist-info/RECORD,,
