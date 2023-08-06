@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+tempfifo/__init__.py
+tempfifo/tempfifo.py
+tempfifo.egg-info/PKG-INFO
+tempfifo.egg-info/SOURCES.txt
+tempfifo.egg-info/dependency_links.txt
+tempfifo.egg-info/top_level.txt
