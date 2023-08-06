@@ -1,0 +1,7 @@
+openpibo_dlib_models/__init__.py,sha256=rxOdEmo-BLZ7rvLEvYbgOWGXmVoZ6cKVGVaeRcwLD2c,151
+openpibo_dlib_models/models/dlib_face_recognition_resnet_model_v1.dat,sha256=VVM7KKlYAKVRulRrpi_mliXH6VpwYcM4rf_q0IcZ2jA,22466066
+openpibo_dlib_models/models/shape_predictor_5_face_landmarks.dat,sha256=xLHpgEeScH06QFwsFqgKICaeZnUCH2SkHTD_-vvEGIg,9150489
+openpibo_dlib_models-0.4.1.dist-info/METADATA,sha256=O67A2EJnPhR6W4QsvMgYTsKjW9jZrWqjZTquhytZOX4,774
+openpibo_dlib_models-0.4.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+openpibo_dlib_models-0.4.1.dist-info/top_level.txt,sha256=mYC5xDJXMo5z1JmrB-SmqxyAyjTHeX4h-eQciVVJLhg,21
+openpibo_dlib_models-0.4.1.dist-info/RECORD,,
