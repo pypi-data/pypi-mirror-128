@@ -1,0 +1,17 @@
+README.md
+setup.py
+django_vuejs_translate.egg-info/PKG-INFO
+django_vuejs_translate.egg-info/SOURCES.txt
+django_vuejs_translate.egg-info/dependency_links.txt
+django_vuejs_translate.egg-info/requires.txt
+django_vuejs_translate.egg-info/top_level.txt
+vuejs_translate/__init__.py
+vuejs_translate/urls.py
+vuejs_translate/views.py
+vuejs_translate/management/__init__.py
+vuejs_translate/management/commands/__init__.py
+vuejs_translate/management/commands/jsmakemessages.py
+vuejs_translate/templatetags/__init__.py
+vuejs_translate/templatetags/urls.py
+vuejs_translate/tests/__init__.py
+vuejs_translate/tests/settings.py
