@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: continental-cdk
+Version: 0.1.1
+Summary: A Test package for Pip
+Home-page: https://github.com/
+Author: Wolfgang Unger
+Author-email: wolfgang.r.unger@dxc.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# test pip package 
+
+## install required tools
+
+
+pip install setuptools
+pip install twine
+pip install wheel
+
+
+
+cdk_pip_poc
+â”œâ”€â”€ LICENSE
+â”œâ”€â”€ continental_poc
+â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”œâ”€â”€ iam_construct.py
+â”‚   â”œâ”€â”€ batch_fargate_construct.py
+â”œâ”€â”€ README.md
+â””â”€â”€ setup.py
+
+## check
+python setup.py check
+
+## create package
+python setup.py bdist_wheel
+
+## install local
+python -m pip install dist/continental_cdk-0.1.1-py3-none-any.whl
+ install same version new
+python -m pip install dist/continental_cdk-0.1.1-py3-none-any.whl --force
+
+## .pypirc  file
+create this file in your user directory
+C:\Users\UserName\.pypirc 
+for the public pypi repo the file would look like
+
+[distutils]  
+index-servers=pypi 
+[pypi]   
+repository = https://upload.pypi.org/legacy/  
+username =wolfgang.r.unger  
+
+for the continental artifactory 
+
+[global]
+index-url = https://<USERNAME>:<PASSWORD>@artifactory.8675.ccp.continental.exchange/artifactory/api/pypi/common-remote-pypi/simple
+
+[conti]
+index-url = https://<USERNAME>:<PASSWORD>@artifactory.8675.ccp.continental.exchange/artifactory/api/pypi/common-remote-pypi/simple
+username =wolfgang-unger
+
+## upload
+(so far tested on https://pypi.org/  must be changed to the continental artifactory):
+
+python -m twine upload dist/*
+python -m twine upload dist/continental_cdk-0.1.1-py3-none-any.whl
+
+
+
+
+see also
+
+https://betterscientificsoftware.github.io/python-for-hpc/tutorials/python-pypi-packaging/
+
+https://packaging.python.org/
+
+https://dzone.com/articles/executable-package-pip-install
+
+..
+
+
