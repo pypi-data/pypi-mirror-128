@@ -1,0 +1,3 @@
+[gemseo_plugins]
+gemseo-scilab = gemseo_scilab
+
