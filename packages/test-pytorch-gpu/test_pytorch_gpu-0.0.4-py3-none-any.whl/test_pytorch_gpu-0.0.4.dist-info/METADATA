@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: test-pytorch-gpu
+Version: 0.0.4
+Summary: Check pytorch + GPU is setted up
+Home-page: https://github.com/ademyanchuk/test_pytorch_gpu
+Author: Alexey Demyanchuk
+Author-email: alexeydemyanchuk@gmail.com
+License: MIT License
+Keywords: pytorch,GPU,test setup
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch (>=1.9.0)
+Requires-Dist: torchvision (>=0.10.0)
+Provides-Extra: dev
+Requires-Dist: black (>=21.5b) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.9) ; extra == 'dev'
+Requires-Dist: isort (>=5.9) ; extra == 'dev'
+
+# Utility Script
+## Description
+This script is to test pytorch + GPU installation on any new machine.
+It will check if GPU is available and run a 10 epoch training on CIFAR10 dataset.
+## Install
+run command `pip install test-pytorch-gpu`
+## Use
+run command `run_cifar`
+
+MIT License
+
+Copyright (c) 2021, Alexey Demyanchuk
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
