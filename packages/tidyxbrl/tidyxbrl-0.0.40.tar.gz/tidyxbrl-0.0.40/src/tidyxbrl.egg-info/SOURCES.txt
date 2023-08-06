@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tidyxbrl/__init__.py
+src/tidyxbrl/edgar_cik.py
+src/tidyxbrl/edgar_frames.py
+src/tidyxbrl/edgar_query.py
+src/tidyxbrl/xbrl_apikey.py
+src/tidyxbrl/xbrl_parse.py
+src/tidyxbrl/xbrl_query.py
+src/tidyxbrl.egg-info/PKG-INFO
+src/tidyxbrl.egg-info/SOURCES.txt
+src/tidyxbrl.egg-info/dependency_links.txt
+src/tidyxbrl.egg-info/requires.txt
+src/tidyxbrl.egg-info/top_level.txt
