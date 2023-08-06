@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: naver-business
+Version: 0.0.1.post1
+Summary: A Business Ancestor Library
+Home-page: https://github.com/jacr6/naver-business
+Author: Jose Cuevas
+Author-email: jose.cuevas.cv@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: naver-config
+Requires-Dist: SpiffWorkflow
+Requires-Dist: twine
+Requires-Dist: bdist-wheel
+
+# core
+
