@@ -1,0 +1,4 @@
+pandas
+numpy >= 1.18.5
+confi >= 0.0.4.1
+mindsdb_sql >= 0.0.17
