@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/tentaclio_postgres/__init__.py
+src/tentaclio_postgres/__main__.py
+src/tentaclio_postgres.egg-info/PKG-INFO
+src/tentaclio_postgres.egg-info/SOURCES.txt
+src/tentaclio_postgres.egg-info/dependency_links.txt
+src/tentaclio_postgres.egg-info/requires.txt
+src/tentaclio_postgres.egg-info/top_level.txt
+src/tentaclio_postgres/clients/__init__.py
+src/tentaclio_postgres/clients/postgres_client.py
+src/tentaclio_postgres/streams/__init__.py
+src/tentaclio_postgres/streams/postgres_handler.py
