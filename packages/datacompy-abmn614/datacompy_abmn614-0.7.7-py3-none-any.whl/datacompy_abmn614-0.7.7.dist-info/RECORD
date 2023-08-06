@@ -1,0 +1,14 @@
+datacompy/__init__.py,sha256=IFhj2lC0vqFaYwSGxN9AsuHHbd5L29v9NHdPdjawuZw,733
+datacompy/_version.py,sha256=81jTUJIXHkuan-xagCxeMwkKdX-gtZAM6DUkvokUM6I,614
+datacompy/core.py,sha256=o7lhQmLkx_jePo9S3n5qsooiSCFuk_xxBUCNzXGKpvA,32253
+datacompy/sparkcompare.py,sha256=MtF3niFZ-QZsC3NCzo38hO72Ir7JNs2flsaR_igUHVc,34871
+datacompy/templates/column_comparison.txt,sha256=Jd7Y0BBYXaxyKScgeFeMUSbD4nyDQetTPNz7Dqpmumw,189
+datacompy/templates/column_summary.txt,sha256=NoTle3K_jnJjokmW7o__KtOPH5RLL6-QG39yDvtETLY,141
+datacompy/templates/fav_column_summary.txt,sha256=vLiL_YUoFg2nPLRMySXFAq4qePdV2i0rXJHVRqXg_P4,235
+datacompy/templates/header.txt,sha256=z5yyWs1SbZJS9QTJDFVtvyGgrKdSpKg20KzjTMfjCw4,44
+datacompy/templates/row_summary.txt,sha256=CAE4cvLiUQUelIHEAlI8oOei_MGQRnpEoJutk1bXEoA,348
+datacompy_abmn614-0.7.7.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+datacompy_abmn614-0.7.7.dist-info/METADATA,sha256=pyJvTUJXRQS-o58vEJTaNHXM14fH5X7vh_QDQ74jEJU,11991
+datacompy_abmn614-0.7.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+datacompy_abmn614-0.7.7.dist-info/top_level.txt,sha256=bMNb8h9vnTLwRFpZghyTETe7TjXUaRtyFPD_gB_5Tw8,10
+datacompy_abmn614-0.7.7.dist-info/RECORD,,
