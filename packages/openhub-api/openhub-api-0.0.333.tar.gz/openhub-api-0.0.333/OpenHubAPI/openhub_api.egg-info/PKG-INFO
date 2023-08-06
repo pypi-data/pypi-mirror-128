@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: openhub-api
+Version: 0.0.333
+Summary: An open source GUI for the openhub iOT controller.
+Home-page: https://github.com/ganonp/OpenHubAPI
+Author: Ganon Pierce
+Author-email: ganonp@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# OpenHubAPI
+
+This is a GUI for managing the hardware and accessory configuration for OpenHub.
+
+Main features:
+
+* Set up and manage hardware with a GUI
+* Pair any hardware with any iOT accessory type.  
+* Manage many iOT hubs from one location.
+
+## Installation 
+
+
+```
+$ sudo python3 pip -m install openhub-api
+$ sudo python3 pip -m OpenHubAPI.install
+```
+
+
