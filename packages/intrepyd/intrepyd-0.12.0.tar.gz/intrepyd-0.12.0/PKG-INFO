@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: intrepyd
+Version: 0.12.0
+Summary: Intrepyd Model Checker
+Home-page: http://github.com/formalmethods/intrepid
+Author: Roberto Bruttomesso
+Author-email: roberto.bruttomesso@gmail.com
+Maintainer: Roberto Bruttomesso
+Maintainer-email: roberto.bruttomesso@gmail.com
+License: BSD-3-Clause
+Download-URL: http://github.com/formalmethods/intrepid/archive/0.12.0.tar.gz
+Platform: Windows
+Platform: Linux
+Platform: Darwin
+License-File: LICENSE.md
+
+
+========
+Intrepyd
+========
+Intrepyd is a python module that provides a simulator and model checkers in form of
+a rich API, to allow the rapid prototyping of **formal methods** algorithms
+for the rigorous analysis of circuits, specifications, models.
+
+============================
+Formal Methods Little Corner
+============================
+A collection of experiences using Intrepyd can be found `here <https://formalmethods.github.io>`_.
+
+====
+FAQs
+====
+Please refer to the dedicated `Wiki page <https://github.com/formalmethods/intrepyd/wiki/FAQs>`_.
+
+
