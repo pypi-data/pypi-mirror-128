@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: plofeld
+Version: 0.0.1
+Summary: Plotting functions for physical fields.
+Home-page: https://github.com/JoschD/plofeld
+Author: JoschD
+Author-email: JoschD@github.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.19.0)
+Requires-Dist: scipy (>=1.7.0)
+Requires-Dist: pandas (>=1.3)
+Requires-Dist: matplotlib (>=3.4.0)
+Provides-Extra: all
+Requires-Dist: pytest (>=5.2) ; extra == 'all'
+Requires-Dist: pytest-cov (>=2.9) ; extra == 'all'
+Requires-Dist: sphinx ; extra == 'all'
+Requires-Dist: sphinx-rtd-theme ; extra == 'all'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest (>=5.2) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.9) ; extra == 'test'
+
+# plofeld
+
+> "One of these days we must invent a faster-working field plotter!"
+
+---
+ 
+``plofeld`` is a python plotting library for physical fields.
+
+## Installing
+
+Installation is easily done via `pip`:
+
+```
+pip install plofeld
+```
+
+required are `numpy, scipy, pandas, matplotlib`.
+
+
+## Usage
+
+First one needs to place some `Elements`, in this example 
+`PointCharges` around your coordinate system. 
+The positions of these `Elements` need to be given in `Vectors`.
+
+This list is then passed on to the `StaticField` class, which creates the
+field.
+
+The field can then be plotted with the `StaticField().plot()` function.
+
+
+```python
+from matplotlib import pyplot as plt
+
+from plofeld.elements import PointCharge
+from plofeld.fields import StaticField
+from plofeld.utils.classes import Vector
+from plofeld.utils.constants import ELECTRIC
+
+
+def plot_two_charges():
+    charges = [
+        PointCharge(Vector(x=1, y=0), q=-1),
+        PointCharge(Vector(x=-1, y=0), q=1),
+    ]
+
+    field = StaticField(charges, field_type=ELECTRIC)
+    field.plot(xlim=(-2, 2), ylim=(-2, 2))
+
+    plt.show()
+
+
+if __name__ == '__main__':
+    plot_two_charges()
+
+```
+
+This code and more can be found in the [`examples`](https://github.com/JoschD/plofeld/tree/master/examples) folder.
+
+
