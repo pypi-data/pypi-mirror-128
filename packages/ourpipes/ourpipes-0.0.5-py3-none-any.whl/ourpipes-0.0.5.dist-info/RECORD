@@ -1,0 +1,11 @@
+ourpipes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ourpipes/framework.py,sha256=GF6g1oUoA0FVW-8jqvsRMoAcHLrQINP0rxP2iME_t-k,14909
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_schema_execution.py,sha256=6-LVb77nbttd3682-6h_msi_xw2W4XYhSsxihz8CnGY,17931
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/async_functools.py,sha256=zQIXqjaKgOZ1YDaF-YRQRYF8X-bWSiRvQPPFHxmBcdA,414
+ourpipes-0.0.5.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+ourpipes-0.0.5.dist-info/METADATA,sha256=qX-zaZZ-zHGayaGBnmW7qljD_B-ZX6VdyU2mEb3VHCY,314
+ourpipes-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ourpipes-0.0.5.dist-info/top_level.txt,sha256=FvIgfosRh3wNx6k1mYfFvdPgMK7Gu0GfmBncvAgb_Iw,21
+ourpipes-0.0.5.dist-info/RECORD,,
