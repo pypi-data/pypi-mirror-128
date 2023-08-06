@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/dnmf/DNMF.py
+src/dnmf/__init__.py
+src/dnmf_python.egg-info/PKG-INFO
+src/dnmf_python.egg-info/SOURCES.txt
+src/dnmf_python.egg-info/dependency_links.txt
+src/dnmf_python.egg-info/requires.txt
+src/dnmf_python.egg-info/top_level.txt
