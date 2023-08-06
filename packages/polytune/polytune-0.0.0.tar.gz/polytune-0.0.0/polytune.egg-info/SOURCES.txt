@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+setup.py
+polytune.egg-info/PKG-INFO
+polytune.egg-info/SOURCES.txt
+polytune.egg-info/dependency_links.txt
+polytune.egg-info/requires.txt
+polytune.egg-info/top_level.txt
