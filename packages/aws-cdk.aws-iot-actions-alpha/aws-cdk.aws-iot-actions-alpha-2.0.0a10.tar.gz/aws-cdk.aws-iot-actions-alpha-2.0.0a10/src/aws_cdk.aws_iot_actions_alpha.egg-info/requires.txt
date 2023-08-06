@@ -1,0 +1,6 @@
+aws-cdk-lib<3.0.0,>=2.0.0.rc33
+aws-cdk.aws-iot-alpha==2.0.0.a10
+aws-cdk.aws-kinesisfirehose-alpha==2.0.0.a10
+constructs<11.0.0,>=10.0.0
+jsii<2.0.0,>=1.46.0
+publication>=0.0.3
