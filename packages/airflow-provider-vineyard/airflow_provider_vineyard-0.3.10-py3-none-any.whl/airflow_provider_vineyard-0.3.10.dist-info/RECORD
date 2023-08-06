@@ -1,0 +1,17 @@
+vineyard/contrib/airflow/__init__.py,sha256=sjKemFal9OMZ0ESym8X_P1pTvILycJrbDZPEp0wQz2M,650
+vineyard/contrib/airflow/example_dags/__init__.py,sha256=sjKemFal9OMZ0ESym8X_P1pTvILycJrbDZPEp0wQz2M,650
+vineyard/contrib/airflow/example_dags/v6d_dag.py,sha256=XR5pxZ-iruIUlaF3PPYrY0n2Fy2yrN9b9sgdBGqYtys,3038
+vineyard/contrib/airflow/example_dags/v6d_etl.py,sha256=GLT7YYVziLWkRirO-hQDErAPlpSp1Zg3JvbvL7zeBSE,1982
+vineyard/contrib/airflow/example_dags/v6d_etl_pandas.py,sha256=Fl5koYWGtUnWvgARCLF17DKr3ZJgK_0xJiXNGSE98F8,1869
+vineyard/contrib/airflow/tests/__init__.py,sha256=sjKemFal9OMZ0ESym8X_P1pTvILycJrbDZPEp0wQz2M,650
+vineyard/contrib/airflow/tests/test_base.py,sha256=mfdag23VugtBM3enNWoq1DUBoXzRW0zCuyw4pBi6Szc,2204
+vineyard/contrib/airflow/tests/test_pandas_dag.py,sha256=b9bNMWVPeBVhpHI81JqmJ-nbF8QzOUWtN2ZWykMPvvE,2222
+vineyard/contrib/airflow/tests/test_python_dag.py,sha256=zASbWRzow3jrjELw941EWWCWRkY2Ozr2e1Ytqvz5uR0,2012
+vineyard/contrib/airflow/xcom/__init__.py,sha256=kHfAzy1TsGe9-w5e9apCo7HsT8CrAwfhEeQzK4yWjJY,684
+vineyard/contrib/airflow/xcom/backend.py,sha256=j3OuK940KUaHDvZwflA3rBQii1yYoryU4Cmko5ducR8,7344
+airflow_provider_vineyard-0.3.10.dist-info/LICENSE,sha256=utBssnCOCpccvvCiohbpHGOSZk08F1XCgfRrM_tQuMw,50495
+airflow_provider_vineyard-0.3.10.dist-info/METADATA,sha256=9DWrfnCDV_PxMM6gOFh6SFDkirsc02612cmu7e3srB0,5031
+airflow_provider_vineyard-0.3.10.dist-info/NOTICE.txt,sha256=XADHgTr9YMptM7YUwoND7oILmmOLZmcSo7LrUxW2CJU,1783
+airflow_provider_vineyard-0.3.10.dist-info/WHEEL,sha256=7S85KtyFD8rVLcRtbU_ImUEvhGsQLjg2zj19rOEAGNM,93
+airflow_provider_vineyard-0.3.10.dist-info/top_level.txt,sha256=eZrYkLRbDypCZAYVfMwFNTMYj4dRG-c-6B5uV6vu4Sk,9
+airflow_provider_vineyard-0.3.10.dist-info/RECORD,,
