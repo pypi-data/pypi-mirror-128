@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: fora
+Version: 2.0.0
+Summary: A simple infrastructure and configuration management tool
+Home-page: https://oddlama.github.io/fora
+Author: oddlama
+Author-email: oddlama@oddlama.org
+License: MIT
+Project-URL: Documentation, https://oddlama.github.io/fora
+Project-URL: Source, https://github.com/oddlama/fora
+Project-URL: Issues, https://github.com/oddlama/fora/issues
+Keywords: ansible,configuration,deploy,deployment,infra,infrastructure,management,puppet,saltstack,config,fora
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jinja2
+
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+
+**ATTENTION: This project is currently in beta development. The API may still change at anytime.**
+
+## About
+
+Fora is a infrastructure and configuration management tool inspired by ansible.
+
+- Requires python3.9 on all managed systems.
+- Functions similar to ansible, but lets you write your deploys in pure python
+
+## Installation
+
+Fora requires `python>=3.9`.
+
+## Quick example
+
+Here is a simple `deploy.py` which creates a temporary directory and uploads a templated file.
+
+```python
+from fora.operations import files
+
+files.directory(name="Create a temporary directory",
+    path="/tmp/hello")
+
+files.template_content(name="Save templated content to the directory",
+    content="{{fora_managed}}\nHello from host {{host.name}}\n",
+    dest="/tmp/hello/world")
+```
+
+This script can then be executed on any ssh host.
+
+```bash
+fora ssh://root@localhost deploy.py
+```
+Of course you can separately define inventories, groups and hosts for larger deploys.
+
+
