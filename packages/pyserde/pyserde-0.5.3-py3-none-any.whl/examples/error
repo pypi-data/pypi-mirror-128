@@ -1,0 +1,16 @@
+Into Json: {"i": null, "s": null, "f": null, "b": null}
+Traceback (most recent call last):
+  File "/Users/yukinari/repos/pyserde/examples/simple.py", line 27, in <module>
+    main()
+  File "/Users/yukinari/repos/pyserde/examples/simple.py", line 23, in main
+    print(f"From Json: {from_json(Foo, s)}")
+  File "/Users/yukinari/repos/pyserde/serde/json.py", line 29, in from_json
+    return from_dict(c, de.deserialize(s, **opts), reuse_instances=False)
+  File "/Users/yukinari/repos/pyserde/serde/de.py", line 274, in from_dict
+    return from_obj(cls, o, named=True, reuse_instances=reuse_instances)
+  File "/Users/yukinari/repos/pyserde/serde/de.py", line 211, in from_obj
+    return serde_scope.funcs[FROM_DICT](o, reuse_instances=reuse_instances)
+  File "<string>", line 16, in from_dict
+  File "/Users/yukinari/repos/pyserde/serde/core.py", line 82, in raise_unsupported_type
+    raise SerdeError(f"Unsupported type: {typename(type(obj))}")
+serde.core.SerdeError: Unsupported type: int
