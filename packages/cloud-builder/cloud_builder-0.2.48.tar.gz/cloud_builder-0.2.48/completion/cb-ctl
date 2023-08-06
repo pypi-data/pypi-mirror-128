@@ -1,0 +1,73 @@
+#!/bin/bash
+
+function getCBCommand {
+    for item in ${COMP_LINE}; do
+        if [[ $item =~ ^-.* ]];then
+            echo "${item}"
+            return
+        fi
+    done
+}
+
+function _cbctl {
+    local cur prev cword cmd
+    _init_completion || return
+    _get_comp_words_by_ref cur prev
+
+    if [ "${cword}" -gt 1 ];then
+        cmd=$(getCBCommand)
+        for comp in $prev $cmd;do
+            case "$comp" in
+                "--build-package")
+                    __comp_reply "--project-path --arch --dist --runner-group"
+                    return 0
+                    ;;
+                "--build-package-local")
+                    __comp_reply "--dist --clean"
+                    return 0
+                    ;;
+                "--build-image-local")
+                    __comp_reply "--selection"
+                    return 0
+                    ;;
+                "--build-image")
+                    __comp_reply "--project-path --arch --runner-group --selection"
+                    return 0
+                    ;;
+                "--build-dependencies")
+                    __comp_reply "--project-path --arch --dist --selection --timeout"
+                    return 0
+                    ;;
+                "--build-dependencies-local")
+                    __comp_reply "--dist --selection"
+                    return 0
+                    ;;
+                "--build-log")
+                    __comp_reply "--project-path --arch --dist --selection --timeout --keep-open"
+                    return 0
+                    ;;
+                "--build-info")
+                    __comp_reply "--project-path --arch --dist --selection --timeout"
+                    return 0
+                    ;;
+                "--get-binaries")
+                    __comp_reply "--project-path --arch --dist --selection --target-dir --timeout"
+                    return 0
+                    ;;
+                "--watch")
+                    __comp_reply "--filter-request-id --filter-service-name --timeout"
+                    return 0
+                    ;;
+            esac
+        done
+    fi
+    __comp_reply "--help --version --build-package --build-package-local --build-image-local --build-image --build-dependencies --build-dependencies-local --build-log --build-info --get-binaries --watch"
+    return 0
+}
+
+function __comp_reply {
+    word_list=$*
+    readarray -t COMPREPLY < <(compgen -W "$word_list" -- "${cur}")
+}
+
+complete -o bashdefault -o default -o filenames -F _cbctl cb-ctl
