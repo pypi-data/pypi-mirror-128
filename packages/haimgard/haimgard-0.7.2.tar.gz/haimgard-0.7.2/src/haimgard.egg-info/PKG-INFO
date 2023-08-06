@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: haimgard
+Version: 0.7.2
+Summary: Haimgard is an environment for writing, testing and using exploit code.
+Home-page: https://github.com/onuratakan/Haimgard
+Author: Onur Atakan ULUSOY - PwnWiki
+Author-email: atadogan06@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Haimgard | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/onuratakan/Haimgard)
+Haimgard is an environment for writing, testing and using exploit code.
+
+# Reminder
+Important Information and Reminder Information and programs in all repositories are created for testing purposes. Any legal responsibility belongs to the person or organization that uses it.
+
+
