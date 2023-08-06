@@ -1,0 +1,8 @@
+configredis/__init__.py,sha256=v_lAWNnwmoCDv3mPWPBNeUdgCc8jGqeBWSXRK0pXEwI,138
+configredis/setconf.py,sha256=fAqqVVn_Qa5-4_Pw_n0dPVpEq29kk8yNEwK3IewPzuE,8039
+configredis/setredis.py,sha256=TLyJd9dhcCu0lk7NrWsxBwgDCaj3PcAwVfCkfXjuukY,2300
+config_redis-0.2.9.dist-info/LICENSE,sha256=cK04zXgWz8_mo5MetUqd7VfFz-TyAlDjhucy78WXcTs,1072
+config_redis-0.2.9.dist-info/METADATA,sha256=oLr8yGDNmJhaqLCgHN99oxuiXlFITUQWP9c16_rYDJY,4261
+config_redis-0.2.9.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+config_redis-0.2.9.dist-info/top_level.txt,sha256=sGe3g8JF5ZVpTFJbHUyR6Z_c48dbvQCbUvNbIG651mc,12
+config_redis-0.2.9.dist-info/RECORD,,
