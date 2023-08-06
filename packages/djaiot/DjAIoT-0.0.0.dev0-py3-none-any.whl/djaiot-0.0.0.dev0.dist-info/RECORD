@@ -1,0 +1,17 @@
+djaiot/__init__.py,sha256=7YsSbP4DvrSdOkSuSXBhsGoKcRWXfUdhu7vQti26Wk8,286
+djaiot/device_data/admin.py,sha256=j7LRrxWiPgmqUMrYyyWyOxIbiI1WfDVbXn_7OrtXtXM,40
+djaiot/device_data/apps.py,sha256=idb3VrGSO_4vRTgoGm31LAfZBjzd6e8ONtAcxVsUGaw,671
+djaiot/device_data/migrations/__init__.py,sha256=qlQAo17b8W-Z87A7JAkl3gLG_iRIl9ESL-7QAnMbRWA,45
+djaiot/device_data/models/__init__.py,sha256=WN90I5sDnk3sjHeyiH_gQQTENTShyqUTFFR4WPJcQsk,41
+djaiot/device_data/scripts/profile_device_data_streams.py,sha256=ob9NdEGnZwMNV1ZG_J5KEn1wMpq0zthHxDUcxkWYuXQ,157
+djaiot/device_data/urls.py,sha256=7aBpTjCZMWglXGxOzVKYNe9tClA0oek1xJt3HXZuJz8,53
+djaiot/device_health/admin.py,sha256=0l4lOKXFxn5j-wHo0wBrkllUxBufYKFoyGud3IARNqQ,42
+djaiot/device_health/apps.py,sha256=K0JkYZaV_zJPEPyGsBduDj_8udG8IiZL_zOMP9gGYmY,685
+djaiot/device_health/migrations/__init__.py,sha256=mrp5jS3AWgYmMzkvsPk9vu-mz5rF1EJvUzx8p13Mz2g,47
+djaiot/device_health/models/__init__.py,sha256=uEFjUNZFXPSd1j5psrdaegpuMJ26VHJWWFSzdQCH_8w,43
+djaiot/device_health/urls.py,sha256=WsOMY9MqSuNLNrP3SSritujRI5R2s9grLHy_l3toIXw,55
+djaiot/urls.py,sha256=ee_58z1Ryeck9xq8wIhwrLZWFiylKNpY2OI9DdCp5kQ,34
+djaiot-0.0.0.dev0.dist-info/LICENSE,sha256=3grV4JqShOEkcyY8cpCGDT0QH30sojjcfxQsb1kclQM,1092
+djaiot-0.0.0.dev0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+djaiot-0.0.0.dev0.dist-info/METADATA,sha256=Ak8FJruLq3x1EncMQdl3ug5VHsr76wOo92gWlf4C-JE,4282
+djaiot-0.0.0.dev0.dist-info/RECORD,,
