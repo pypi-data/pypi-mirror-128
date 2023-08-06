@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ml_dl_models/__init__.py
+src/ml_dl_models/models.py
+src/ml_dl_models.egg-info/PKG-INFO
+src/ml_dl_models.egg-info/SOURCES.txt
+src/ml_dl_models.egg-info/dependency_links.txt
+src/ml_dl_models.egg-info/requires.txt
+src/ml_dl_models.egg-info/top_level.txt
