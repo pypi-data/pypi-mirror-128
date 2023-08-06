@@ -1,0 +1,8 @@
+text_augmentation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+text_augmentation/data_augmentation.py,sha256=bYsBL_5TtbPP5KD9ak0HJyxZQQwujc4eyMalUe04z1Q,17473
+text_augmentation/download_wordnet.py,sha256=JzpVcXa7vb3f3z_BQMgcrOo65MhC4oin-OXTXynxJ88,1634
+text_augmentation/wordnet_augmentation.py,sha256=tpOHKtb5P3_7RqDq8RfofKay2iVVbsfa8KMJbo1uv3o,6103
+text_augmentation-2021.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+text_augmentation-2021.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+text_augmentation-2021.1.dist-info/METADATA,sha256=daWl0MfjjAowNoL-lBhygp7_nD3cyoD_Kuq6Q4Kkf6U,698
+text_augmentation-2021.1.dist-info/RECORD,,
