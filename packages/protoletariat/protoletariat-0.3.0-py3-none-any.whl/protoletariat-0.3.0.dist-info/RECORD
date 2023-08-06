@@ -1,0 +1,11 @@
+protoletariat/__init__.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+protoletariat/__main__.py,sha256=eAXwMxmfGryBJrUWOsZAucT4QnTbpZrVJ_7Nzin1L50,2882
+protoletariat/fdsetgen.py,sha256=fJWkJsEjFkKSEkPAg5n3Xk-GjjB2cMdFPPk_ExfR39g,3033
+protoletariat/rewrite.py,sha256=LGM1RxAlfcrYgiFYHwl9InfLx46ZIsi6_r6LeUa89J4,4073
+protoletariat/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protoletariat/tests/test_rewrite.py,sha256=EhnMRNVJ6mrM0FXMz0DPIP3MUxt3LyKUV8M9qiZNyVU,6362
+protoletariat-0.3.0.dist-info/entry_points.txt,sha256=OxhawR-h0OZ0E5ALG_-tNoVQHSYU7wmlYgHLUNpbnDY,54
+protoletariat-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+protoletariat-0.3.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+protoletariat-0.3.0.dist-info/METADATA,sha256=tGc_1zxKPAgvrFn_C7x6qYS5J2NHZ08mCAatVflyjcY,3361
+protoletariat-0.3.0.dist-info/RECORD,,
