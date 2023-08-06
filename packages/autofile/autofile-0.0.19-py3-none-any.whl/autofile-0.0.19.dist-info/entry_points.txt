@@ -1,0 +1,3 @@
+[console_scripts]
+autofile = autofile.cli:cli
+
