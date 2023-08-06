@@ -1,0 +1,6 @@
+boto3
+torch==1.8.0
+ray==1.4.1
+ray[tune]==1.4.1
+tensorflow==2.4.1
+azure-storage-blob==12.8.1
