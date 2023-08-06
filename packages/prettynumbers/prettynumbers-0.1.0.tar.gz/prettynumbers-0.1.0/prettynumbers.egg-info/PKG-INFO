@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: prettynumbers
+Version: 0.1.0
+Summary: Display a range of numbers in a human readable way
+Home-page: https://github.com/vfxGer/pretty-numbers
+Author: Gerard Keating
+Author-email: gerardk@gmail.com
+License: GNU GENERAL PUBLIC LICENSE
+Download-URL: https://pypi.python.org/packages/source/d/pretty_numbers-0.1.0.tar.gz?raw=true
+Platform: Cross-platform
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+
+|Build Status| |codecov.io| |Code Climate|
+
+.. |Build Status| image:: https://travis-ci.org/vfxGer/pretty-numbers.svg?branch=master
+   :target: https://travis-ci.org/vfxGer/pretty-numbers
+.. |codecov.io| image:: https://codecov.io/gh/vfxGer/pretty-numbers/coverage.svg?branch=master
+   :target: https://codecov.io/gh/vfxGer/pretty-numbers
+.. |Code Climate| image:: https://codeclimate.com/github/vfxGer/pretty-numbers/badges/gpa.svg
+   :target: https://codeclimate.com/github/vfxGer/pretty-numbers
+ 
+
+
