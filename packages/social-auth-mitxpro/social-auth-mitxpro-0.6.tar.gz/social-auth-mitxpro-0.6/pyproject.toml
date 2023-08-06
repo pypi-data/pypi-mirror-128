@@ -1,0 +1,54 @@
+[tool.poetry]
+
+name = "social-auth-mitxpro"
+version = "0.6"
+description = "python-social-auth backend for mitxpro"
+
+license = "MIT"
+
+readme = "README.md"
+
+homepage = "https://pypi.org/project/social-auth-mitxpro"
+repository = "https://github.com/mitodl/social-auth-mitxpro/"
+
+authors = [
+  "MIT Office of Open Learning <mitx-devops@mit.edu>"
+]
+
+keywords = [
+]
+classifiers = [
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9"
+]
+
+[tool.poetry.dependencies]
+
+python = "~3.8 || ~3.9"
+social-auth-core = "^4.1.0"
+attrs = "21.2.0"
+
+[tool.poetry.dev-dependencies]
+
+# Formatters
+black = { version = "=21.10b0", python = "~3.8" }
+isort = "=5.10.1"
+
+# Linters
+pylint = { version = "2.6.0", python = "~3.8" }
+
+# Testing
+pytest = "6.1.2"
+pytest-cov = "3.0.0"
+pytest-mock = "3.6.1"
+responses = "0.10.5"
+typing = { version = "^3.6.6", python = "~3.8" }
+codecov = "*"
+
+[build-system]
+
+requires = ["poetry>=1.1.14"]
+build-backend = "poetry.masonry.api"
