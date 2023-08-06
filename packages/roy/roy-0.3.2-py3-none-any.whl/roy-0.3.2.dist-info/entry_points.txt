@@ -1,0 +1,3 @@
+[console_scripts]
+roy = roy.deploy.bin:run
+
