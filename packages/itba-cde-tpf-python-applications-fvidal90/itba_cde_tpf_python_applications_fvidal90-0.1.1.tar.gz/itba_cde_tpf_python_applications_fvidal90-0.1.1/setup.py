@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['create_tables', 'db_api_client']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['SQLAlchemy==1.4.27',
+ 'pandas==1.3.4',
+ 'psycopg2-binary==2.9.2',
+ 'requests==2.26.0']
+
+setup_kwargs = {
+    'name': 'itba-cde-tpf-python-applications-fvidal90',
+    'version': '0.1.1',
+    'description': 'TP Vidal',
+    'long_description': None,
+    'author': 'Fernando Vidal',
+    'author_email': 'picovidal22@gmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': None,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.9,<4.0',
+}
+
+
+setup(**setup_kwargs)
