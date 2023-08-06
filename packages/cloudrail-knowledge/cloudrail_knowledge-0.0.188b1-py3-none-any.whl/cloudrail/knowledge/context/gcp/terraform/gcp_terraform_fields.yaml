@@ -1,0 +1,142 @@
+common:
+  known_fields:
+    pass:
+    - id
+    - tags
+    - labels:
+        known_fields:
+          pass:
+            - name
+        unknown_fields_action: hash
+
+google_sql_database_instance:
+  known_fields:
+    pass:
+    - name
+    - database_version
+    - region
+    - project
+    - settings:
+        known_fields:
+          pass:
+            - tier
+            - user_labels:
+                known_fields:
+                  pass:
+                    - name
+                unknown_fields_action: hash
+            - backup_configuration:
+                known_fields:
+                  pass:
+                    - binary_log_enabled
+                    - enabled
+                    - start_time
+                    - point_in_time_recovery_enabled
+                    - location
+                    - transaction_log_retention_days
+                    - backup_retention_settings:
+                        known_fields:
+                          pass:
+                            - retained_backups
+                            - retention_unit
+            - database_flags:
+                known_fields:
+                  pass:
+                    - name
+                    - value
+            - ip_configuration:
+                known_fields:
+                  pass:
+                    - ipv4_enabled
+                    - private_network
+                    - require_ssl
+                    - authorized_networks:
+                        known_fields:
+                          pass:
+                            - expiration_time
+                            - name
+                            - value
+
+google_compute_instance:
+  known_fields:
+    pass:
+    - name
+    - machine_type
+    - zone
+    - boot_disk
+    - network_interface
+    - attached_disk
+    - can_ip_forward
+    - description
+    - desired_status
+    - deletion_protection
+    - hostname
+    - guest_accelerator
+    - metadata
+    - metadata_startup_script
+    - min_cpu_platform
+    - project
+    - scheduling
+    - scratch_disk
+    - service_account
+    - shielded_instance_config
+    - enable_display
+    - resource_policies
+    - reservation_affinity
+    - confidential_instance_config
+    - advanced_machine_features
+    - network_performance_config
+    - instance_id
+
+google_compute_network:
+  known_fields:
+    pass:
+      - name
+      - auto_create_subnetworks
+      - routing_mode
+      - delete_default_routes_on_create
+
+google_project:
+  known_fields:
+    pass:
+      - name
+      - number
+      - project_id
+
+google_compute_firewall:
+  known_fields:
+    pass:
+      - name
+      - network
+      - allow
+      - deny
+      - destination_ranges
+      - direction
+      - source_ranges
+
+google_container_cluster:
+  known_fields:
+    pass:
+      - name
+      - location
+      - cluster_ipv4_cidr
+      - enable_shielded_nodes
+      - master_authorized_networks_config
+      - authenticator_groups_config
+      - resource_labels:
+          known_fields:
+            pass:
+              - name
+          unknown_fields_action: hash
+
+google_compute_target_http_proxy:
+  known_fields:
+    pass:
+      - name
+      - url_map
+
+google_compute_global_forwarding_rule:
+  known_fields:
+    pass:
+      - name
+      - target
