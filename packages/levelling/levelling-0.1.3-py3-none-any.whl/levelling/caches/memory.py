@@ -1,0 +1,47 @@
+from ..abc import Cache
+from ..dataclass import LevellingGuild, LevellingMember
+from ..exceptions import GuildNotFound, MemberNotFound
+
+
+class Memory(Cache):
+    """An in memory cache utilising a dictionary internally"""
+
+    def __init__(self):
+        self.cache = {}
+
+    async def get_guild(self, guild_id: int) -> LevellingGuild:
+        try:
+            return LevellingGuild(id=guild_id, raw_members=self.cache[guild_id])
+        except KeyError:
+            raise GuildNotFound from None
+
+    async def get_member(self, member_id: int, guild_id: int = None) -> LevellingMember:
+        if guild_id:
+            try:
+                guild: LevellingGuild = await self.get_guild(guild_id=guild_id)
+                member: LevellingMember = next(
+                    i for i in guild.members if i.id == member_id
+                )
+                return member
+            except GuildNotFound:
+                raise MemberNotFound from None
+            except KeyError:
+                raise MemberNotFound from None
+            except StopIteration:
+                raise MemberNotFound
+
+        try:
+            return self.cache[member_id]
+        except KeyError:
+            raise MemberNotFound from None
+
+    async def set_member(
+        self, member_id: int, data: dict, guild_id: int = None
+    ) -> None:
+        if guild_id:
+            guild = self.cache.get(guild_id)
+            if not guild:
+                self.cache[guild_id] = {}
+            self.cache[guild_id][member_id] = data
+        else:
+            self.cache[member_id] = data
