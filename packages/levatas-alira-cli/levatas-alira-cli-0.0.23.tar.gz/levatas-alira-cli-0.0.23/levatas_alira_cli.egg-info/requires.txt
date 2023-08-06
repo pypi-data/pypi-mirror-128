@@ -1,0 +1,4 @@
+Click
+Docker
+python-dateutil
+levatas-alira-licensing
