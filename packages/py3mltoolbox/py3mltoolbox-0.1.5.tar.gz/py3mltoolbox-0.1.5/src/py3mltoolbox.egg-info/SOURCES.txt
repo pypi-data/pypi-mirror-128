@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/py3mltoolbox/__init__.py
+src/py3mltoolbox/dataset.py
+src/py3mltoolbox/model.py
+src/py3mltoolbox/preprocess.py
+src/py3mltoolbox/report.py
+src/py3mltoolbox.egg-info/PKG-INFO
+src/py3mltoolbox.egg-info/SOURCES.txt
+src/py3mltoolbox.egg-info/dependency_links.txt
+src/py3mltoolbox.egg-info/requires.txt
+src/py3mltoolbox.egg-info/top_level.txt
