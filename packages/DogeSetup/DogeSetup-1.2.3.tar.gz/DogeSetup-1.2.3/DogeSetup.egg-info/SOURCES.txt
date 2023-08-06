@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+DogeSetup.egg-info/PKG-INFO
+DogeSetup.egg-info/SOURCES.txt
+DogeSetup.egg-info/dependency_links.txt
+DogeSetup.egg-info/requires.txt
+DogeSetup.egg-info/top_level.txt
+dogesetup/__init__.py
+dogesetup/__main__.py
+dogesetup/heroku.py
+dogesetup/keys.py
+dogesetup/language.py
+dogesetup/session.py
+dogesetup/languages/DOGE-EN.json.py
+dogesetup/languages/DOGE-TR.json.py
+dogesetup/languages/__init__.py
