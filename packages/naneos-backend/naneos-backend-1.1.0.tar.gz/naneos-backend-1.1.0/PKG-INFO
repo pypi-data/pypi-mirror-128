@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: naneos-backend
+Version: 1.1.0
+Summary: Python Toolkit backend for communication with naneos and 3rd party devices.
+Home-page: https://github.com/naneos-org/python-naneos-backend
+Author: huegi
+Author-email: mario.huegi@naneos.ch
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<p align=center>
+    <img src="https://github.com/naneos-org/public-data/blob/master/img/naneos_logo.png?raw=true" alt="naneos logo" width="200">
+</p>
+
+# naneos-backend
+
+[![black_code_style](https://raw.githubusercontent.com/naneos-org/public-data/a20ef1fac4c9919718ad90bb630df4d1beb1bd28/img/code%20style-black.svg)](https://github.com/ambv/black)
+
+[![All Contributors](https://raw.githubusercontent.com/naneos-org/public-data/a20ef1fac4c9919718ad90bb630df4d1beb1bd28/img/all_contributors-1.svg)](#contributors-)
+
+This repository serves for communication with naneos devices. You can also use this package to communicate with third-party calibration devices. For a live view and various measurements other packages are available.
+
+## Supported devices
+### naneos-devices
+
+- [Partector 2](https://naneos.ch/partector2.html) (serial (USB))
+- [Partector 2 OEM](https://naneos.ch/partector2.html) (serial (USB))
+- [Silent pump - standalone](https://www.naneos.ch/partector2.html#accessories) (serial (USB))
+
+### third party devices
+- [Bios Defender 510](https://drycal.mesalabs.com/defender-series/) (serial (RS232))
+
+## Currently unsupported devices
+
+- Advanced Partector (serial (USB))
+- NPTI (USB)
+- Partector 2 (Bluetooth)
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install naneos-backend.
+
+```bash
+pip install --upgrade pip # make sure you are using a actual version of pip
+```
+```bash
+pip install naneos-device # installs the package with all requirements
+```
+
+## Usage
+
+For other examples you can have a look in the examples folder delivered with the package.
+
+### Scanning for devices
+```python
+from naneos_backend.port_scanning.port_scan import PortScan
+
+scan = PortScan(["P2"]) # scans only for P2
+scan.get_p2_com_port() # returns the port of the P2
+
+###
+
+scan = PortScan() # scans for all possible devices
+```
+
+### Connecting devices
+```python
+from naneos_backend.devices.naneos.partector2 import Partector2
+from naneos_backend.commands.src import p2_cmd
+import time
+
+def simple_connection():
+    p2 = Partector2(COM_PORT) # opens connection to the partector
+
+    # sets readout frequency of usb interface and prints one reading
+    p2.send_cmd(p2_cmd.set_read_freq_10_Hz.cmd)
+    print(p2.read_device())
+
+    p2._close_port() # closes port
+
+def threading_connection():
+    p2 = Partector2(scan_for_p2())
+
+    p2.send_cmd(p2_cmd.set_read_freq_100_Hz.cmd)
+    p2.start_thread()
+
+    df = pandas.DataFrame()
+    for _ in range(3):
+        time.sleep(200e-3) # free time because of thread
+        df = df.append(p2.get_and_clean_thread_data())
+
+    p2.stop_thread()
+    p2._close_port()
+
+    print(df)
+```
+
+### Writing to [InfluxDB](https://www.influxdata.com/)
+For longer measurements it can be useful to have a database instead of lots of saved pandas files.InfluxDB is a slim timebased database, that fits our needs perfectly. If you want to use our InfluxDB for your measurement with an naneos device, feel free to contact me. It is also possible to run an InfluxDB on your own server or using their webservice.
+
+```python
+from naneos_backend.influx.influx import write_pandas_df
+from naneos_backend.influx.credentials import Credentials
+
+import pandas as pd
+from datetime import datetime as dt
+from pytz import UTC
+
+
+my_credentials = Credentials(MY_URL, MY_TOKEN, MY_BUCKET, MY_ORGANISATION)
+
+df = pd.DataFrame([[7, 77]], index=[dt.now(tz=UTC)], columns=["one", "two"])
+
+write_pandas_df(df, my_credentials, "foo")
+```
+
+## Contributing
+
+If you have questions or improvement proposals please [let me know](mailto:mario.huegi@naneos.ch).,
+
+## Licence
+
+[GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)
+
