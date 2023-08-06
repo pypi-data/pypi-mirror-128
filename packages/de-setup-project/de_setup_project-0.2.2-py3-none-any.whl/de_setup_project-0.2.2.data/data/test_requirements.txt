@@ -1,0 +1,14 @@
+# THIS FILE IS EXCLUSIVELY MAINTAINED by the project de_tpl_project V0.2.0 
+anybadge
+coverage-badge
+# de_git_repo_manager    # including Pillow, ae_base, ae_files, ae_paths for test of img/loc/snd resources
+ae_console  # needed for tests - interim until grm got rolled out
+flake8
+mypy
+pylint
+pytest
+pytest-cov
+# de
+
+# de_tpl_project
+
