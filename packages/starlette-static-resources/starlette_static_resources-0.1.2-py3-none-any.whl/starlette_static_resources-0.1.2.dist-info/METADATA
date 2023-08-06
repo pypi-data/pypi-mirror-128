@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: starlette-static-resources
+Version: 0.1.2
+Summary: 
+Home-page: https://github.com/davidventura/starlette-static-resources
+License: MIT
+Author: david
+Author-email: davidventura27@gmail.com
+Requires-Python: >=3.6
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Dist: aiofiles (>=0.6.0,<0.7.0)
+Requires-Dist: importlib-resources (>=5.1.2,<6.0.0); python_version < "3.9"
+Requires-Dist: starlette (>=0.14.2)
+Project-URL: Repository, https://github.com/davidventura/starlette-static-resources
+Description-Content-Type: text/markdown
+
+# StaticResources for Starlette
+
+Like [StaticFile](https://www.starlette.io/staticfiles/) but for [package resources](https://docs.python.org/3/library/importlib.html#module-importlib.resources).
+
+Example:
+
+```python
+import uvicorn
+
+from starlette.applications import Starlette
+from starlette_static_resources import StaticResources
+from importlib_resources import files
+
+
+app = Starlette()
+app.mount('/', StaticResources(resources=files('example.data')), name='static')
+
+uvicorn.run(app, host='0.0.0.0', port=8008)
+```
+
+
