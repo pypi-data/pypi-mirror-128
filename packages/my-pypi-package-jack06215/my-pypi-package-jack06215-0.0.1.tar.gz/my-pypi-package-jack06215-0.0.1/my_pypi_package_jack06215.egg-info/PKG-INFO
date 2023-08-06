@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: my-pypi-package-jack06215
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/jack06215/dart-programming
+Author: Jack Cho
+Author-email: nacho@example.com
+License: UNKNOWN
+Description: # About
+        ---
+        
+        Write a detailed description of your Python Package here!
+        
+        Need a Markdown Guide? You can find a guide at [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown).
+        
+        You can also find more information about packaging at [Python Packaging User Guide](https://packaging.python.org/tutorials/packaging-projects/).
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

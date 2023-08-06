@@ -1,0 +1,4 @@
+my_pypi_package_jack06215.egg-info/PKG-INFO
+my_pypi_package_jack06215.egg-info/SOURCES.txt
+my_pypi_package_jack06215.egg-info/dependency_links.txt
+my_pypi_package_jack06215.egg-info/top_level.txt
