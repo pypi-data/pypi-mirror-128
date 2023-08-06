@@ -1,0 +1,10 @@
+sortinghatinf/__init__.py,sha256=Jjgm361lKD2k-x3JID6PUspNwEtNnBK4iQnnqKPdFI8,95
+sortinghatinf/model_loading.py,sha256=u2jMurJDpmNCDttUpelEKULYKV_cND9lIJHSsj_nhag,647
+sortinghatinf/pylib.py,sha256=5r_xD3Fjq9Z5QUvB_NBxNLZBJEVuvShfdLKGVnteaew,11275
+sortinghatinf/resources/compressed_rf.pbz2,sha256=pfhuhX0o0RDWwmkI1tIJEZBBXoWhe59_pSkjFh-biN8,7649704
+sortinghatinf/resources/dictionaryName.pkl,sha256=kk73i17kOk4xTI0vYEQD41yz09y5Sgl7tQd0CigDU38,62660
+sortinghatinf/resources/dictionarySample.pkl,sha256=DnQyctpi_1-UAQdlk14zegqatsW_zsJlXTGwmB_TEkg,99103
+sortinghatinf-0.0.2.dist-info/METADATA,sha256=QDti2ii6rMWY24zfn-nWANkgVm2yS-5Llyk3atUhnxg,2639
+sortinghatinf-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sortinghatinf-0.0.2.dist-info/top_level.txt,sha256=2lRewcZyVUQxnS90v4D0BfoDD99x3iJbQAaZOwDqk98,14
+sortinghatinf-0.0.2.dist-info/RECORD,,
