@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+reliquery/__init__.py
+reliquery/metadata.py
+reliquery/relic.py
+reliquery/settings.py
+reliquery/storage.py
+reliquery.egg-info/PKG-INFO
+reliquery.egg-info/SOURCES.txt
+reliquery.egg-info/dependency_links.txt
+reliquery.egg-info/requires.txt
+reliquery.egg-info/top_level.txt
