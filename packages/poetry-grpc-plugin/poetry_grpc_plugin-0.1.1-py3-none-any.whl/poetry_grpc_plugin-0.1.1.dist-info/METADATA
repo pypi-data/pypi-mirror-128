@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: poetry-grpc-plugin
+Version: 0.1.1
+Summary: gRPC Poetry plugin
+Home-page: https://github.com/fedej/poetry-grpc-plugin
+License: MIT
+Author: Federico Jaite
+Author-email: fede_654_87@hotmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Code Generators
+Requires-Dist: grpcio-tools (>=1.39.0,<2.0.0)
+Requires-Dist: mypy-protobuf (>=2.9,<3.0)
+Requires-Dist: poetry (>=1.2.0a2,<2.0.0)
+Project-URL: Repository, https://github.com/fedej/poetry-grpc-plugin
+Description-Content-Type: text/markdown
+
+# Poetry gRPC plugin
+
+A [**Poetry**](https://python-poetry.org/) plugin to run the Protocol Buffers compiler with gRPC support.
+
+### Installing the plugin
+
+Requires Poetry version `1.2.0a2` or above
+
+```shell
+poetry plugin add poetry-grpc-plugin
+```
+
+### Usage
+
+To run it manually:
+
+```console
+poetry help protoc
+
+Usage:
+  protoc [options]
+
+Options:
+      --proto_path[=PROTO_PATH]             [default: "."]
+      --python_out[=PYTHON_OUT]             [default: "."]
+      --grpc_python_out[=GRPC_PYTHON_OUT]   [default: "."]
+...
+```
+
+Run on `poetry update`
+
+```toml
+[tool.poetry-grpc-plugin]
+```
+
+Additional config
+
+```toml
+[tool.poetry-grpc-plugin]
+proto_path = "dir/protos"
+python_out = "generated/"
+grpc_python_out = "generated/"
+```
+

@@ -1,0 +1,3 @@
+[poetry.application.plugin]
+grpc=poetry_grpc_plugin.plugins:GrpcApplicationPlugin
+
