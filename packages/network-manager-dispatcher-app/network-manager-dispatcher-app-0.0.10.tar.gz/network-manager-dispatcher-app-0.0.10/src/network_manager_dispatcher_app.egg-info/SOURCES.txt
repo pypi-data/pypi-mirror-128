@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/network_manager_dispatcher_app/__init__.py
+src/network_manager_dispatcher_app/app_logger.py
+src/network_manager_dispatcher_app/device_state.py
+src/network_manager_dispatcher_app/dnsleaktest.py
+src/network_manager_dispatcher_app/nm_dispatcher_app.py
+src/network_manager_dispatcher_app/sound_thread.py
+src/network_manager_dispatcher_app/sox_player.py
+src/network_manager_dispatcher_app.egg-info/PKG-INFO
+src/network_manager_dispatcher_app.egg-info/SOURCES.txt
+src/network_manager_dispatcher_app.egg-info/dependency_links.txt
+src/network_manager_dispatcher_app.egg-info/top_level.txt
