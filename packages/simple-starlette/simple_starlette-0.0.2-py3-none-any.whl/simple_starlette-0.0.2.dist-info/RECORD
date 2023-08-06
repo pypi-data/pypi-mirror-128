@@ -1,0 +1,17 @@
+simple_starlette/__init__.py,sha256=CUa2-japy9Rkks61zP6rkvSZz3pqHqsHS-l6IhaB8Ew,306
+simple_starlette/app.py,sha256=-DFmcGhcRyYT0ftkTVsi8UyPTMiTseQ8bxVu4LrjA6A,4106
+simple_starlette/args.py,sha256=aUK-N3A_kcpmSU4LtrFKe3Am3BzI5r94Jxin6ib4ZY0,727
+simple_starlette/config.py,sha256=2THSJB1Owd_edars0StHLt9IT4Ez-SjchOn6RVrra8k,589
+simple_starlette/ctx.py,sha256=jtxYuQobk4Ww2EACPpFAROmDwFNfYZzDl_IzSVz3hUU,577
+simple_starlette/dispatch_request.py,sha256=4DgEs7k26jIDvWUjVcG07ucBDfpokAYUrAf9mEgVT68,2769
+simple_starlette/exceptions.py,sha256=Z01TH4MZpcJljtlemQi-th6WESNH6o3VWaNlk3hwtCQ,1553
+simple_starlette/include.py,sha256=_J-ncoxMYvSM5ik6GuibpdRamI3zI0wfOo8Pb6k6WiQ,774
+simple_starlette/responses.py,sha256=JLp_RXuC9qyYf5ZEKDaNXFsDxyOAofhBzS36uEfn6Lw,902
+simple_starlette/route.py,sha256=9rkxIBghC7Du5XVegypRtXsVRec9_vX9FalDbONImcM,3923
+simple_starlette/types.py,sha256=dUsqy3PL-yfCMWaid5z39OTGYijIUeLv8BWf6WzI1s4,142
+simple_starlette-0.0.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+simple_starlette-0.0.2.dist-info/METADATA,sha256=vzu914_a2hsJlmpocqmuTzD678ORlc-fHmhQ5SzLbwI,390
+simple_starlette-0.0.2.dist-info/RECORD,,
+simple_starlette-0.0.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+simple_starlette-0.0.2.dist-info/metadata.json,sha256=vcnSE2OCvbNh31tvsW_OZex5WFWurVM48jol2EGCxXU,495
+simple_starlette-0.0.2.dist-info/top_level.txt,sha256=NdFTvrmuHLN6SBTMbw3LBh0YhH-rkgxiJcy8-2bos8Q,17
