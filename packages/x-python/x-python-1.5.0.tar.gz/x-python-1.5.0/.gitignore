@@ -1,0 +1,15 @@
+*.egg-info
+*.pyc
+*~
+.coverage
+.mypy_cache
+.tox
+/*~
+/.cache
+/.python-version
+/activate
+/build
+/dist
+/tmp
+MANIFEST
+htmlcov
