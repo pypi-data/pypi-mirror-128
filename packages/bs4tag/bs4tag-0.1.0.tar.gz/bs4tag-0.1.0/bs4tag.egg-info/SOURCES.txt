@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+bs4tag/__init__.py
+bs4tag/doc.py
+bs4tag/indentation.py
+bs4tag/py.typed
+bs4tag/simpledoc.py
+bs4tag.egg-info/PKG-INFO
+bs4tag.egg-info/SOURCES.txt
+bs4tag.egg-info/dependency_links.txt
+bs4tag.egg-info/requires.txt
+bs4tag.egg-info/top_level.txt
