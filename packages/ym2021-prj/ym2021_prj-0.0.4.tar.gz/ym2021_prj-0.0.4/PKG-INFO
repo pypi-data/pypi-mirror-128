@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ym2021_prj
+Version: 0.0.4
+Summary: Repository to test GitHub Actions Workflows.
+Home-page: https://github.com/prjemian/ym2021_prj
+Author: Pete R. Jemian
+Author-email: prjemian@gmail.com
+License: CC0 1.0 Universal
+Keywords: Python test repository
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ym2021_prj_
+
+Repository to test GitHub Actions Workflows.
+
+
