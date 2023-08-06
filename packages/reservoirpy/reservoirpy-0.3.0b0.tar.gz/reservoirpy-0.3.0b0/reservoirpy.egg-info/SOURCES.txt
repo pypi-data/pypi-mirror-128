@@ -1,0 +1,1045 @@
+.coveragerc
+.gitignore
+.readthedocs.yml
+.travis.yml
+LICENSE
+Pipfile
+README.md
+requirements.txt
+setup.cfg
+setup.py
+.github/workflows/python-publish-pypi.yml
+.github/workflows/python-publish-testpypi.yml
+docs/Makefile
+docs/make.bat
+docs/requirements.txt
+docs/source/conf.py
+docs/source/getting_started.rst
+docs/source/index.rst
+docs/source/installation.rst
+docs/source/using_reservoirpy.rst
+docs/source/whats_rc.rst
+docs/source/_static/rpy_logo_small.png
+docs/source/_static/rpy_navbar.png
+docs/source/_static/img/getting_started_sinus.svg
+docs/source/_static/img/getting_started_sinus_result.svg
+docs/source/api/modules.rst
+docs/source/api/reservoirpy.base.rst
+docs/source/api/reservoirpy.compat.rst
+docs/source/api/reservoirpy.datasets.rst
+docs/source/api/reservoirpy.hyper.rst
+docs/source/api/reservoirpy.nodes.rst
+docs/source/api/reservoirpy.rst
+examples/Interactive reservoir computing for chunking information streams/Asabuki.ipynb
+examples/Introduction  to Reservoir Computing/Introduction_to_RC.ipynb
+examples/Next Generation Reservoir Computing/NG-RC.ipynb
+reservoirpy/__init__.py
+reservoirpy/_version.py
+reservoirpy/activationsfunc.py
+reservoirpy/mat_gen.py
+reservoirpy/observables.py
+reservoirpy.egg-info/PKG-INFO
+reservoirpy.egg-info/SOURCES.txt
+reservoirpy.egg-info/dependency_links.txt
+reservoirpy.egg-info/requires.txt
+reservoirpy.egg-info/top_level.txt
+reservoirpy/base/__init__.py
+reservoirpy/base/_utils.py
+reservoirpy/base/graphflow.py
+reservoirpy/base/model.py
+reservoirpy/base/node.py
+reservoirpy/base/ops.py
+reservoirpy/base/types.py
+reservoirpy/base/tests/__init__.py
+reservoirpy/base/tests/dummy_nodes.py
+reservoirpy/base/tests/test_model.py
+reservoirpy/base/tests/test_node.py
+reservoirpy/base/tests/test_ops.py
+reservoirpy/compat/__init__.py
+reservoirpy/compat/_base.py
+reservoirpy/compat/_esn.py
+reservoirpy/compat/_esn_online.py
+reservoirpy/compat/regression_models.py
+reservoirpy/compat/tests/__init__.py
+reservoirpy/compat/tests/test_esn.py
+reservoirpy/compat/tests/test_esnonline.py
+reservoirpy/compat/tests/test_regression_models.py
+reservoirpy/compat/utils/__init__.py
+reservoirpy/compat/utils/save.py
+reservoirpy/datasets/__init__.py
+reservoirpy/datasets/_chaos.py
+reservoirpy/datasets/_seed.py
+reservoirpy/datasets/tests/__init__.py
+reservoirpy/datasets/tests/test_datasets.py
+reservoirpy/hyper/__init__.py
+reservoirpy/hyper/_hyperplot.py
+reservoirpy/hyper/_hypersearch.py
+reservoirpy/nodes/__init__.py
+reservoirpy/nodes/activations.py
+reservoirpy/nodes/add.py
+reservoirpy/nodes/batchforce.py
+reservoirpy/nodes/concat.py
+reservoirpy/nodes/esn.py
+reservoirpy/nodes/force.py
+reservoirpy/nodes/io.py
+reservoirpy/nodes/norm.py
+reservoirpy/nodes/nvar.py
+reservoirpy/nodes/randomchoice.py
+reservoirpy/nodes/reservoir.py
+reservoirpy/nodes/ridge.py
+reservoirpy/nodes/utils.py
+reservoirpy/nodes/tests/__init__.py
+reservoirpy/nodes/tests/test_concat.py
+reservoirpy/nodes/tests/test_esn.py
+reservoirpy/nodes/tests/test_force.py
+reservoirpy/nodes/tests/test_nvar.py
+reservoirpy/nodes/tests/test_reservoir.py
+reservoirpy/nodes/tests/test_ridge.py
+reservoirpy/tests/__init__.py
+reservoirpy/tests/test_activationsfunc.py
+reservoirpy/tests/test_mat_gen.py
+reservoirpy/tests/test_validation.py
+reservoirpy/utils/__init__.py
+reservoirpy/utils/parallel.py
+reservoirpy/utils/random.py
+reservoirpy/utils/validation.py
+static/chevrons.png
+static/chevrons_br.png
+static/chevrons_r.png
+static/chevrons_w.png
+static/lorenz63.png
+static/lorenz63_b.png
+static/lorenz63_w.png
+static/rpy_banner.png
+static/rpy_banner_bw.png
+static/rpy_banner_w.png
+static/rpy_logo.png
+static/rpy_logo_bw.png
+static/rpy_logo_bw_small.png
+static/rpy_logo_small.png
+static/rpy_logo_w.png
+static/rpy_logo_w_small.png
+static/rpy_navbar_small.png
+static/gen/generate_lorenz63.py
+tutorials/README.md
+tutorials/Introduction  to Reservoir Computing/Introduction_to_RC.ipynb
+tutorials/Introduction  to Reservoir Computing/README.md
+tutorials/Introduction  to Reservoir Computing/static/esn.png
+tutorials/Online learning/compare_online_offline_learning.py
+tutorials/Online learning/online_learning_example_MackeyGlass.py
+tutorials/Optimization of hyperparameters/0-hyperopt-covid.config.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll.config.json
+tutorials/Optimization of hyperparameters/Introduction_to_hyper.ipynb
+tutorials/Optimization of hyperparameters/README.md
+tutorials/Optimization of hyperparameters/mackeyglass-config.json
+tutorials/Optimization of hyperparameters/minimal-hpt.py
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/0.1450295_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/1.8955035_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0045899_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0076471_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0076471_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0113212_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0122795_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0122795_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0212781_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0212781_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0216177_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0216177_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0239267_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0239267_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0306772_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0306772_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0308085_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0334807_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0375349_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0429430_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0429430_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0449936_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0449936_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0451105_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0451105_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0482462_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0549798_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0549798_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0623615_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0664048_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0664048_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0689654_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0732193_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0756576_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0775008_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0786724_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0786724_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0945533_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0973813_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.0973813_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1012026_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1035873_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1064406_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1073796_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1170844_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1170844_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1191819_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1191819_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1242358_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1242358_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1344236_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1374756_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1395848_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1434373_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1434373_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1439048_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1523577_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1667490_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1679921_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1679921_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1747902_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1747902_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1807155_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1812985_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1812985_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1819892_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1872401_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1875265_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1875265_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1882832_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1905884_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1911607_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1925018_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1925018_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1953304_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1958213_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.1990532_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2032278_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2032278_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2077772_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2134964_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2276383_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2276383_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2292238_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2368392_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2368392_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2393709_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2393709_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2432984_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2485651_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2485651_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2599552_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2628484_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2628484_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2651843_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2669397_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2677389_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2677389_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2704375_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2710290_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2777805_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2777805_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2789728_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2789728_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2896400_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.2919058_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3148091_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3174691_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3177493_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3177493_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3188913_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3188913_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3194325_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3287041_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3330971_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3330971_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3368879_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3410066_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3410066_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3516966_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3516966_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3524742_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3524742_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3544400_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3544400_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3586304_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3586304_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3616696_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3618101_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3644376_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3645403_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3645403_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3647381_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3647381_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3651223_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3662046_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3675038_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3699095_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3703877_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3703877_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3706771_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3736498_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3736498_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3762350_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3773147_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3796627_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3816533_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3816533_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3851821_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3854133_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3884073_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3884683_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3947775_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.3947775_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4041461_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4041461_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4112626_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4112626_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4134494_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4134494_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4137976_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4137976_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4153542_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4153542_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4163469_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4186574_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4210192_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4233002_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4233002_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4243450_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4246770_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4246770_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4249693_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4254545_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4260580_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4262303_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4262303_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4318029_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4318084_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4344100_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4361961_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4449837_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4485911_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4493072_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4516689_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4516689_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4544157_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4544157_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4547667_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4550481_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4563586_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4568837_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4589097_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4631675_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4657992_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4663518_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4663518_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4665660_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4665660_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4707573_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4707573_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4721158_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4721158_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4735779_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4737520_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4746208_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4755756_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4797750_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4829745_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4829745_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4921015_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4921015_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4965658_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4965658_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4965902_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4965902_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.4991044_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5101456_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5214807_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5234485_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5279601_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5279601_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5285906_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5336149_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5401455_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5471276_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5506972_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5506972_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5695831_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5859262_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5861908_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5889719_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5889719_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5929952_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.5976269_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6040136_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6040136_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6211353_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6211353_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6212953_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6435896_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6439878_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6457389_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6490719_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6517114_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6588077_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6588077_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6630785_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6641997_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6724859_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6853827_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6853827_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6856120_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6891843_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6919478_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6919478_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6953360_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6959695_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6959695_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.6970388_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.7005602_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.7005602_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.7165634_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.7218520_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.7218520_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.7301416_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.7301416_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.7432902_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.7434110_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.7517509_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.7517509_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.7540981_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8048752_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8048752_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8050413_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8050413_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8205332_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8420940_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8426922_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8426922_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8431087_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8431087_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8554170_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8599354_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8887296_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8887296_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8905481_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8905481_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8976663_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8986917_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8987210_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.8987210_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9045115_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9045115_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9069368_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9086380_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9189799_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9279723_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9302442_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9365227_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9365227_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9485243_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9573559_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9580955_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9580955_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9646648_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9726189_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9954036_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9994252_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/10.9994252_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.0040484_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.0040484_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.0256786_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.0293804_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.0293804_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.0373927_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.0526825_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.0665795_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.0714715_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.0975986_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.1016633_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.1175966_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.1175966_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.1274171_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.1391165_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.1481152_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.1481152_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.1507899_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.1681545_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.1681545_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.1813606_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.1814463_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.2395823_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.2395823_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.3093492_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.3363525_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.3686314_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.3686314_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.3709122_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.3709122_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.3714855_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.3714855_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.4063767_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.4063767_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/11.4435849_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/12.3536871_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/12.3536871_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/2.3774151_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/2.5305724_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/2.6182807_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/5.3922157_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/5.3922157_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/6.9415807_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/6.9663143_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/6.9663143_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/7.8492964_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/7.8492964_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.0256114_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.0256114_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.3243462_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.3255492_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.3737710_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.3737710_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.4132320_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.4283097_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.4633037_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.4633037_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.5590967_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.5710736_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.5710736_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.5855123_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.5858319_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.5858319_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.6072224_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.6072224_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.6428843_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.6428843_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.6636357_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.6815714_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.7160066_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.7346205_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8376738_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8376738_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8548815_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8626108_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8638679_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8638679_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8645408_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8645408_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8647865_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8663473_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8688092_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8701747_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8701747_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8711051_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8725542_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.8925290_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9076597_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9186736_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9186736_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9225701_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9340102_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9340102_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9431752_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9512254_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9512254_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9556785_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9580316_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9585501_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9616671_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9616671_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9689036_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9778742_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9778742_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9910430_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/8.9924744_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.0029901_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.0047880_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.0169843_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.0246036_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.0436630_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.0464069_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.0464642_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.0544963_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.0587162_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.0587162_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.0615174_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.0991851_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.0991851_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1044214_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1044214_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1067645_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1076861_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1092931_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1186240_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1461559_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1572958_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1672373_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1754223_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1754223_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1854885_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1854885_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1869886_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1951187_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.1951187_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2017327_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2195439_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2320602_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2320602_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2492630_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2492630_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2528504_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2528504_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2559071_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2605339_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2605339_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2670775_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2684969_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2684969_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2709756_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2759657_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2759657_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2818978_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2942584_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.2988021_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3126343_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3199484_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3218880_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3219579_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3219579_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3236241_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3236241_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3318699_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3318699_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3607852_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3607852_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3616447_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3670473_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3672539_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3749354_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3749354_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3766769_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3766769_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3767077_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3767077_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3820509_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3850430_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.3851942_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4011243_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4011243_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4034320_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4042661_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4042661_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4100616_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4155469_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4155469_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4180926_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4219698_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4219698_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4264800_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4264800_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4318789_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4474302_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4522301_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4627953_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4691799_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4691799_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4712442_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4712442_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4764364_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4767093_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4767093_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4874905_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4915831_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4915831_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.4922936_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5032987_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5032987_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5049553_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5107878_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5157455_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5187295_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5187295_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5195846_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5232579_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5345971_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5345971_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5414042_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5414042_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5417361_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5569757_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5663838_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5663838_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5683313_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5786089_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5878262_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5878262_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5886248_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5924513_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5924513_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5930421_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.5940162_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6061782_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6092201_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6323660_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6356726_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6356726_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6366629_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6439904_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6508371_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6510473_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6566331_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6576875_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6576875_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6589086_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6634376_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6666267_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6668994_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6747047_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6782814_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6831249_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6831249_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6831759_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6841074_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6851676_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6910244_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.6910244_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7014305_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7014305_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7021261_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7126202_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7126202_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7167520_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7167520_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7308054_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7314428_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7324292_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7396130_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7396130_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7396559_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7396559_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7482773_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7482773_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7488530_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7488530_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7532991_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7593236_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7593236_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7636557_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7673324_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7674060_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7677455_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7681501_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7681501_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7713859_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7747346_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7747346_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7769100_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7782920_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7802312_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7835494_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7835494_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7864783_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7894825_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7917358_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7917358_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7925508_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7925508_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7932165_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7932165_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7940058_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7940058_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7950447_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7977762_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.7977762_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8002190_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8047867_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8047867_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8066775_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8101078_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8101078_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8103209_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8163802_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8199727_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8227835_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8227835_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8281231_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8281231_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8282363_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8282363_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8311838_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8311838_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8315394_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8315394_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8341291_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8351466_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8389361_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8389361_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8399221_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8419868_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8419868_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8479158_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8479158_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8543686_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8621830_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8621830_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8686052_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8686052_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8755297_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8766206_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8776085_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8779887_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8824696_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8836673_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8836673_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8849856_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8849856_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8860905_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8891290_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8924361_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8956322_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8985848_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.8985848_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9007342_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9007916_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9037153_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9037153_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9135954_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9139574_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9152497_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9152497_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9281514_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9288290_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9351070_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9351070_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9361013_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9361013_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9417847_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9582242_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9582242_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9590876_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9598155_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9600219_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9608215_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9608215_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9628545_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9669577_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9670278_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9670278_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9688061_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9688061_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9720320_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9720320_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9757212_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9757212_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9802911_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9833724_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9833724_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9865906_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9865906_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9904507_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9904507_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9922404_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9965526_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-covid/results/9.9965526_hyperopt_results_2call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/10.201159_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/10.559054_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/10.745389_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/105.835009_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/11.136974_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/11.205468_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/11.671778_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/11.679537_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/11.679642_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/11.721982_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/11.779822_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/11.912400_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/11.954912_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/1169.806271_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/12.097916_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/12.212546_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/12.228070_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/12.242002_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/12.770769_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/12.894057_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/12.923669_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/1211.317789_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/123.706861_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/1252.673811_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/1282.836927_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/13.070399_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/13.255232_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/13.428309_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/13.464680_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/139.267325_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/14.135733_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/14.701522_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/14.811396_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/14.869599_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/143.612161_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/147.790613_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/154.394565_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/16.222923_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/16.588831_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/17.012493_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/17.664180_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/17.687907_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/1777.562049_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/18.321222_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/1815.867311_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/1936.517358_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/1981.485381_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/20.353170_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/20.918674_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/21.427102_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/21.469401_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/22.702159_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/23.432638_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/24.274897_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/2417.440937_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/25.042281_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/25.732674_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/25.910621_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/2585.449552_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/26.704085_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/27.904319_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/272.193707_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/28.453551_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/28.570633_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/283.124424_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/29.046039_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/31.143640_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/310.683613_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/312.945109_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/33.230564_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/3384.807190_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/34.129919_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/34.286858_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/34.653093_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/35.430069_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/37.196541_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/37.338134_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/37.535627_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/37.692813_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/38.201232_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/38.377708_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/38.386160_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/38.696138_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/38.780324_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/39.289835_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/39.696556_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/39.719278_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/3928.771126_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/3941.154556_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.172970_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.315549_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.418302_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.486199_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.502778_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.592349_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.619381_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.642929_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.650213_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.713780_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.750097_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.757549_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.837206_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.875092_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.875259_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.883970_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.890100_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.890164_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.890636_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.894365_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.895581_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.896162_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.902415_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.906424_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.907179_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.913304_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.917912_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.919519_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.920436_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.921745_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.925898_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.9265343_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.932251_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.934723_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.939541_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.942117_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.944065_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.944157_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.945502_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.946447_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.949394_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.953517_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.959989_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.961266_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.970189_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.971579_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.973159_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.974725_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.975211_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.976503_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.978038_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.986547_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.988452_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.992031_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/40.998530_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/41.003010_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/41.006505_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/41.018876_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/41.020262_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/41.041010_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/41.231784_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/41.532852_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/41.677220_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/41.682876_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/41.791034_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/410.637461_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/42.188647_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/42.296394_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/42.521904_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/43.017908_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/436.045270_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/44.069205_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/44.602333_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/44.956514_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/442.254095_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/46.067318_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/46.196942_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/47.743861_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/49.011070_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/49.043613_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/49.115162_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/50.045222_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/57.901107_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/58.736603_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/59.349747_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/59.536239_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/61.682027_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/62.594504_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/627.486968_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/634.946441_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/65.374600_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/651.273074_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/68.275104_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/7.294865_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/7.433823_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/757.351133_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/78.882941_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/79.097752_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/8.147431_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/80.255818_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/815.445849_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/88.933053_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/888.388951_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/89.247919_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/9.365286_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/9.982186_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/92.867394_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/926.180670_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/94.182264_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/96.143873_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/960.591805_hyperopt_results_1call.json
+tutorials/Optimization of hyperparameters/0-hyperopt-multiscroll/results/99.350553_hyperopt_results_1call.json
+tutorials/Simple Examples with Mackey-Glass/MackeyGlass_t17.txt
+tutorials/Simple Examples with Mackey-Glass/README.md
+tutorials/Simple Examples with Mackey-Glass/minimalESN_MackeyGlass.py
+tutorials/Simple Examples with Mackey-Glass/simple_example_MackeyGlass.py
