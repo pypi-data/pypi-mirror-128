@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: Hashtags-Extract
+Version: 1.0.2
+Summary: Hashtags extract from string
+Home-page: https://github.com/FayasNoushad/Hashtags-Extract
+Author: Fayas Noushad
+Author-email: contact@fayas.me
+License: MIT
+Download-URL: https://github.com/FayasNoushad/Hashtags-Extract/releases/latest
+Project-URL: Tracker, https://github.com/FayasNoushad/Hashtags-Extract/issues
+Project-URL: Source, https://github.com/FayasNoushad/Hashtags-Extract
+Project-URL: Documentation, https://hashtags-extract.projects.fayas.me
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+```
+Made with Python3
+(C) @FayasNoushad
+Copyright permission under MIT License
+License -> https://github.com/FayasNoushad/Hashtags-Extract/blob/main/LICENSE
+```
+
+---
+
+## Installation
+
+```
+pip install Hashtags-Extract
+```
+
+---
+
+## Usage
+
+```py
+import hashtags_extract
+
+string = "Hello, #SupportOpensource"
+
+# with #
+print(hashtags_extract.hashtags(string))
+# => ["#SupportOpensource"]
+
+# without #
+print(hashtags_extract.hashtags(string, hash=False))
+# => ["SupportOpensource"]
+```
+
+---
+
+## Credits
+
+- [Fayas Noushad](https://github.com/FayasNoushad)
+
+---
+
+
