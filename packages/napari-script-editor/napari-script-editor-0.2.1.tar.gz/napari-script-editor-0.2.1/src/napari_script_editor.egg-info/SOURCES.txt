@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/napari_script_editor/__init__.py
+src/napari_script_editor/_dock_widget.py
+src/napari_script_editor/_scripts_directory.py
+src/napari_script_editor.egg-info/PKG-INFO
+src/napari_script_editor.egg-info/SOURCES.txt
+src/napari_script_editor.egg-info/dependency_links.txt
+src/napari_script_editor.egg-info/entry_points.txt
+src/napari_script_editor.egg-info/requires.txt
+src/napari_script_editor.egg-info/top_level.txt
+src/napari_script_editor/_tests/__init__.py
+src/napari_script_editor/_tests/test_dock_widget.py
