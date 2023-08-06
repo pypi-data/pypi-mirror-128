@@ -1,0 +1,9 @@
+pylivarot.libs/libgsl-619b6bbd.so.19.3.0,sha256=dl9V6qE9DNyksyWwZmft0dMwy8qe-MXlFfMSAhdyW9A,2667216
+pylivarot.libs/libdouble-conversion-f4ece92d.so.1.0,sha256=6RN49wk-Muev8ke7eGKFLO_X9zDfoma5UZoYnGKGjzI,73792
+pylivarot.libs/libgslcblas-6e6fdb5d.so.0.0.0,sha256=2m76tMrTBHy4K7zopM1dH7nDPQrVieOyAncWKJVwPIM,253152
+pylivarot/__init__.py,sha256=M_7iBqLGaawmk0vkbSgYt5zNWBL9rz16JMcj7v5e-iw,10629
+pylivarot/_pylivarot.cpython-38-x86_64-linux-gnu.so,sha256=okuDALWzjViH2IQIp8FSMYYpIeg2WwE08asx1Sojxe4,8198304
+pylivarot-1.0.dist-info/METADATA,sha256=05P6pah7HrSzGaeAV0Cvdg59qxNYKvXJKHpRBdslciY,267
+pylivarot-1.0.dist-info/WHEEL,sha256=bQDS2UIU5ysnOurKICB87_FDaf-GAYOeCAZEt2ZU92E,112
+pylivarot-1.0.dist-info/top_level.txt,sha256=htVAwePUQ4lOWbrvdI4LftbxgikZhK610wIWN2PnL1s,10
+pylivarot-1.0.dist-info/RECORD,,
