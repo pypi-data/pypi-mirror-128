@@ -1,0 +1,5 @@
+gcsfs
+pandas
+pandas-gbq
+pybigquery
+google-cloud-bigquery
