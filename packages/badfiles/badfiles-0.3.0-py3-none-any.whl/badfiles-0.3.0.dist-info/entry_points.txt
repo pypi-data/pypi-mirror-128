@@ -1,0 +1,3 @@
+[console_scripts]
+badfiles=badfiles.cli:main
+
