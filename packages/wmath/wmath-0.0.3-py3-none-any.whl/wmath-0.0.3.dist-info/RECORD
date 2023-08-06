@@ -1,0 +1,10 @@
+wmath/__init__.py,sha256=-h_UssYWLhWqhxlx27I6VAPHUK0Z__8f0AKGxiowGmA,119
+wmath/fraction.py,sha256=V191J0_NzN3bgSqy8Bc1OuKp5iQ9lhCr1lYoesQt_0E,4739
+wmath/meta.py,sha256=kicaj_srzSI8TOoZJa4D0L3Piv3U0IjLCULWsiIl51g,443
+wmath/number_theory.py,sha256=xZIisbCO6-h6nj3AVL2TNQn2VQt2ADx6ZiNyeL8jAL0,5232
+wmath/polynomial.py,sha256=yZLrOSS-ILDvjW1gWsiIXVa5cEp5Z3RRIG3r31bXo0o,9885
+wmath-0.0.3.dist-info/LICENSE,sha256=H8F1MEhOwRj41x48IkZD51o50PZV3SKrAIBVXDSUius,1063
+wmath-0.0.3.dist-info/METADATA,sha256=f29Gr5LKizYbWS4rrjArQ0h30z8FZq-r8OtLyGmNmTk,546
+wmath-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+wmath-0.0.3.dist-info/top_level.txt,sha256=cwuJVBkfRMimB25BDKst0NGN3NuVgRJrTmeLViQ1-WU,6
+wmath-0.0.3.dist-info/RECORD,,
