@@ -1,0 +1,12 @@
+supplr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supplr/api.py,sha256=Nv40mbj_AoQ44p_EMb2-Df1fnXII_bSq-UL-0R6qZcE,16399
+supplr/board_id.py,sha256=628_SCgtGNeybCx1UuezpCVjtzef5VZm7Oiz1I20chk,348
+supplr/calibration.py,sha256=WAsIEXFhO6J4Eh9ZLryHZs8RzQ0mn8rgvz-QlrL55DE,7584
+supplr/config.py,sha256=zrAP5hPIKqyeDQoUgUioD7Y7XZ9d5r2oEkq7QJ8e9EI,307
+supplr/errors.py,sha256=i0mcDKM2ASZt2MElz6MzjZrtFaJcrHfmbU6R4Av7MQc,917
+supplr/main.py,sha256=5udjEbAg1cZ0-onc4G9Sx0VLbrz0jKvRBD5p00YHPOU,7880
+supplr/parser.py,sha256=jwGqgX2L_57fVsNtwfNnY7NVEACaeyCC73tlQBcfrJw,1610
+supplr/struct.py,sha256=VUvs_XZAICDGQMsSUKEwYL1ahayN7aTxPqjGKHJefR8,4383
+supplr-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+supplr-0.1.0.dist-info/METADATA,sha256=tFQM_THfaiUo--zRgkhkKTgP48IwlJWThPWdqwvu6J8,585
+supplr-0.1.0.dist-info/RECORD,,
