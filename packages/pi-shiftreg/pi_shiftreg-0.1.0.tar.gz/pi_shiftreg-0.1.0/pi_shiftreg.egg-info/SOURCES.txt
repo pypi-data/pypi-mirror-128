@@ -1,0 +1,8 @@
+README.md
+setup.py
+pi_shiftreg/__init__.py
+pi_shiftreg.egg-info/PKG-INFO
+pi_shiftreg.egg-info/SOURCES.txt
+pi_shiftreg.egg-info/dependency_links.txt
+pi_shiftreg.egg-info/requires.txt
+pi_shiftreg.egg-info/top_level.txt
