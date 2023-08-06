@@ -1,0 +1,3 @@
+[console_scripts]
+simplelayout = Important.__main__:main
+
