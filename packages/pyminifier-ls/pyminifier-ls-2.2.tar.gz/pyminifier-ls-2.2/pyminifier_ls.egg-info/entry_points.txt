@@ -1,0 +1,3 @@
+[console_scripts]
+pyminifier = pyminifier.__main__:main
+
