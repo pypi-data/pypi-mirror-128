@@ -1,0 +1,8 @@
+
+[linting]
+flake8
+pylint
+
+[testing]
+coverage
+codecov
