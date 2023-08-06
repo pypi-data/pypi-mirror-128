@@ -1,0 +1,11 @@
+ym2021_prj/__init__.py,sha256=i1OTn1AdngdvNxFCdH3rIUEtMcHkWARFlEpONKBbGMI,73
+ym2021_prj/_version.py,sha256=MBCzOk7hcVXvdWUaFIO3ERqM_XQWCVhJclkZxjNF_IQ,497
+ym2021_prj/cli.py,sha256=Cu5XEWvR5pzv2VjJiuYXedORtGV4z77KbN_amHG5in8,615
+ym2021_prj/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ym2021_prj/tests/test_cli.py,sha256=4Vw0lyysFgE5AywnzNCKmyu3JiTYS5ksJkxMLxf3yls,144
+ym2021_prj-0.1.8.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+ym2021_prj-0.1.8.dist-info/METADATA,sha256=j9B99kAcgCxuhM9KEI0pU8U6bywrOH0ykCdqzKicj6w,852
+ym2021_prj-0.1.8.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+ym2021_prj-0.1.8.dist-info/entry_points.txt,sha256=2ccHVIHXeJqfKOaDyQKBIpnCevTFt5EYHBX7T7vpzfM,52
+ym2021_prj-0.1.8.dist-info/top_level.txt,sha256=dom2PXTxNMrPnXPf1WEtRiY36m_36NhSgaXI7xYf9YU,11
+ym2021_prj-0.1.8.dist-info/RECORD,,
