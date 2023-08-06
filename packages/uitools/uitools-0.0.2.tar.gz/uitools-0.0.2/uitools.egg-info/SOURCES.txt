@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+uitools/ConfusionMatrix.py
+uitools/__init__.py
+uitools.egg-info/PKG-INFO
+uitools.egg-info/SOURCES.txt
+uitools.egg-info/dependency_links.txt
+uitools.egg-info/requires.txt
+uitools.egg-info/top_level.txt
