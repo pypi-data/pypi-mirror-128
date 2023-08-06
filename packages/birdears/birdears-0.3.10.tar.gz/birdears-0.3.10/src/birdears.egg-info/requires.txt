@@ -1,0 +1,11 @@
+click>=8.0.3
+toml>=0.10.2
+urwid>=2.1.2
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
