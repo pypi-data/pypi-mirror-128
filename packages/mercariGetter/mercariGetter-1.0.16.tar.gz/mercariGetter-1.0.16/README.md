@@ -1,0 +1,3 @@
+# mercariGetter
+
+## Get mercari sitedata
