@@ -1,0 +1,3 @@
+[console_scripts]
+sxml = sxml.__main__:main
+
