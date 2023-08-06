@@ -1,0 +1,14 @@
+setup.py
+coinbasev2/__init__.py
+coinbasev2/wallet/__init__.py
+coinbasev2/wallet/auth.py
+coinbasev2/wallet/client.py
+coinbasev2/wallet/compat.py
+coinbasev2/wallet/error.py
+coinbasev2/wallet/model.py
+coinbasev2/wallet/util.py
+python_coinbasev2.egg-info/PKG-INFO
+python_coinbasev2.egg-info/SOURCES.txt
+python_coinbasev2.egg-info/dependency_links.txt
+python_coinbasev2.egg-info/requires.txt
+python_coinbasev2.egg-info/top_level.txt
