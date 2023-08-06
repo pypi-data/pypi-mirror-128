@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: flake8-useless-assert
+Version: 0.3.1
+Summary: flake8 plugin to catch useless `assert` statements
+Home-page: https://github.com/decorator-factory/flake8-useless-assert
+License: MIT
+Author: decorator-factory
+Author-email: decorator-factory@yandex.ru
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: flake8 (>=3.9,<5.0)
+Project-URL: Repository, https://github.com/decorator-factory/flake8-useless-assert
+Description-Content-Type: text/markdown
+
+# flake8-useless-assert
+flake8 plugin to catch useless `assert` statements
+
+
+# Violations
+
+| Code    | Description                      |   Example                        |
+|---------|----------------------------------|----------------------------------|
+| ULA001  | `assert` with a literal          | `assert "foo"`                   |
+|         |                                  | `assert ...`                     |
+|         |                                  | `True`                           |
+| ULA002  | `assert` with a formatted string | `assert "foo {0}".format(bar)`   |
+|         |                                  | `assert f"foo {bar}"`            |
+
+Note that `assert False` is exempt from `ULA001` because it's a common idiom.
+
+# Testing
+I haven't set up proper testing yet, but you can run `poetry install` and then:
+```
+flake8 examples/
+```
