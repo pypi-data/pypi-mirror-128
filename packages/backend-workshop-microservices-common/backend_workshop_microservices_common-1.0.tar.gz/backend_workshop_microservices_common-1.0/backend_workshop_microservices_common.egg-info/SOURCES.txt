@@ -1,0 +1,15 @@
+README.md
+setup.py
+backend_workshop_microservices_common.egg-info/PKG-INFO
+backend_workshop_microservices_common.egg-info/SOURCES.txt
+backend_workshop_microservices_common.egg-info/dependency_links.txt
+backend_workshop_microservices_common.egg-info/requires.txt
+backend_workshop_microservices_common.egg-info/top_level.txt
+common/__init__.py
+common/pb2/__init__.py
+common/pb2/author_pb2.py
+common/pb2/author_pb2_grpc.py
+common/pb2/book_instance_pb2.py
+common/pb2/book_instance_pb2_grpc.py
+common/pb2/book_pb2.py
+common/pb2/book_pb2_grpc.py
