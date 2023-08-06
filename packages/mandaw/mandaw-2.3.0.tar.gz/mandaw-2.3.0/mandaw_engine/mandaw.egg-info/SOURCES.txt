@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+mandaw_engine/mandaw/__init__.py
+mandaw_engine/mandaw/animation.py
+mandaw_engine/mandaw/audio.py
+mandaw_engine/mandaw/color.py
+mandaw_engine/mandaw/entity.py
+mandaw_engine/mandaw/input.py
+mandaw_engine/mandaw/main.py
+mandaw_engine/mandaw/sprite.py
+mandaw_engine/mandaw/text.py
+mandaw_engine/mandaw.egg-info/PKG-INFO
+mandaw_engine/mandaw.egg-info/SOURCES.txt
+mandaw_engine/mandaw.egg-info/dependency_links.txt
+mandaw_engine/mandaw.egg-info/requires.txt
+mandaw_engine/mandaw.egg-info/top_level.txt
