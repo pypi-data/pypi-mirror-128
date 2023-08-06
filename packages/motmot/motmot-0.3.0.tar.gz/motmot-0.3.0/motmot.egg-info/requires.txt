@@ -1,0 +1,14 @@
+cslug
+numpy>=1.16.0
+numpy-stl>=2.14.0
+hirola
+rockhopper
+pykdtree>=1.2.0
+
+[test]
+pytest>=3
+pytest-order
+coverage
+pytest-cov
+coverage-conditional-plugin
+meshzoo<0.7.6
