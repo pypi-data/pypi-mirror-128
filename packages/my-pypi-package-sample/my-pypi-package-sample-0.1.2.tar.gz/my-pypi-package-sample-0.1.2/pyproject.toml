@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "my-pypi-package-sample"
+version = "0.1.2"
+description = "Print hello"
+authors = ["Hojung <hojung_yun@yahoo.co.kr>"]
+# New attributes
+license = "MIT"
+readme = "README.md"
+homepage = "https://yahoo.com"
+repository = "https://yahoo.com"
+keywords = ["hello", "xxx"]
+classifiers = [
+    "Environment :: Console",
+    "Framework :: FastAPI",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+# If you want your package to have script callable from the terminal.
+[tool.poetry.scripts]
+my-pypi-package-sample = "my_pypi_package_sample:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
