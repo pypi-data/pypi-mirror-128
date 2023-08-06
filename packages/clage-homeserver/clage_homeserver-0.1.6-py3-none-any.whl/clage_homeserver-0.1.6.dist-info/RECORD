@@ -1,0 +1,10 @@
+clage_homeserver/__init__.py,sha256=Lvf7QzrDtarOTa6WQIW-cxlrI20LA5q3HM0sie9a374,99
+clage_homeserver/clage_homeserver.py,sha256=WHHbdVTvlcNr2dgYW_FI_X6p9lbFOYsSQ3nF66DX-2Y,21357
+tests/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+tests/test_clage_homeserver.py,sha256=XcRM7o52VeMPfyy4ckEGLJcgghxgXIsJnILvDWNd_2o,5524
+tests/test_clage_homeserver_mapper.py,sha256=jLgLfZR0us-JpxuQn9jgKzGkx-V9Jz2IXKW-ToxWZsU,3348
+clage_homeserver-0.1.6.dist-info/LICENSE,sha256=d7AuEE2lJtFdjhpxa0gAJQssH_9XD3E4s3gYBS3AlK4,1074
+clage_homeserver-0.1.6.dist-info/METADATA,sha256=hL4SrQjL_en5SyPhnSOz55W8a3iofHTcAFZn-Cy5Pog,2548
+clage_homeserver-0.1.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+clage_homeserver-0.1.6.dist-info/top_level.txt,sha256=awf80gaEVJnSa9brystgawhmfvzR--wptYCiqC2L1-g,23
+clage_homeserver-0.1.6.dist-info/RECORD,,
