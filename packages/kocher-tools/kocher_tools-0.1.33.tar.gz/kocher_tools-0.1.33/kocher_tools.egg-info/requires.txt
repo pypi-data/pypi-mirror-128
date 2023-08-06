@@ -1,0 +1,7 @@
+pyyaml
+pandas
+Biopython
+sqlalchemy
+gffutils
+openpyxl
+tox
