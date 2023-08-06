@@ -1,0 +1,5 @@
+setup.py
+skszymon20simple.egg-info/PKG-INFO
+skszymon20simple.egg-info/SOURCES.txt
+skszymon20simple.egg-info/dependency_links.txt
+skszymon20simple.egg-info/top_level.txt
