@@ -1,0 +1,16 @@
+setup.py
+3-simplelayout-package-stc950502-main/username.py
+3-simplelayout-package-stc950502-main/src/__init__.py
+3-simplelayout-package-stc950502-main/src/simplelayout/__init__.py
+3-simplelayout-package-stc950502-main/src/simplelayout/__main__.py
+3-simplelayout-package-stc950502-main/src/simplelayout/cli/__init__.py
+3-simplelayout-package-stc950502-main/src/simplelayout/cli/cli_generate.py
+3-simplelayout-package-stc950502-main/src/simplelayout/generator/__init__.py
+3-simplelayout-package-stc950502-main/src/simplelayout/generator/core.py
+3-simplelayout-package-stc950502-main/src/simplelayout/generator/utils.py
+simplelayout_stc950502.egg-info/PKG-INFO
+simplelayout_stc950502.egg-info/SOURCES.txt
+simplelayout_stc950502.egg-info/dependency_links.txt
+simplelayout_stc950502.egg-info/entry_points.txt
+simplelayout_stc950502.egg-info/requires.txt
+simplelayout_stc950502.egg-info/top_level.txt
