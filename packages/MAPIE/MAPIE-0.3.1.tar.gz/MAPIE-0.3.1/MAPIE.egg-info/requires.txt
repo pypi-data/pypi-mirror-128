@@ -1,0 +1,17 @@
+scikit-learn
+
+[docs]
+matplotlib
+numpydoc
+pandas
+sphinx
+sphinx-gallery
+sphinx_rtd_theme
+typing_extensions
+
+[tests]
+flake8
+mypy
+pytest
+pytest-cov
+typed-ast
