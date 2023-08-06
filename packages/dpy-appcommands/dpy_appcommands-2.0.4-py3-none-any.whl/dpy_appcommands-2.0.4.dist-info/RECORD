@@ -1,0 +1,11 @@
+appcommands/__init__.py,sha256=pSHdrNBCSdJroTKcYrueLevgcBZGBZ6Ys63r4FO6xdY,277
+appcommands/client.py,sha256=PZqPT2Z_MBuWAe0FdCZv6I4DT5R_CnbbjnXIkLSdXec,19548
+appcommands/cog.py,sha256=KPwIejGE-7KtTOH6SlThu-tmgqwyswOt3PKFyqQO4VQ,6943
+appcommands/core.py,sha256=QwGdwMIiKleg50YiK2SDq24865SiBAovicW0wa1dlPE,40862
+appcommands/enums.py,sha256=IJ2gI_U8huR8Zd3YXVV41xuQBmPbedRVjOcewQYvoUI,2029
+appcommands/utils.py,sha256=2LJsj3NUmpmQcaZDoD0iGBNsQkhwtA7qUjUAClfr2eI,560
+dpy_appcommands-2.0.4.dist-info/LICENSE,sha256=HIkxG1yzwvx2A7nVsFHdn1RzXwjuDvXJJgYofLJxeU4,1065
+dpy_appcommands-2.0.4.dist-info/METADATA,sha256=MWBpfLWifGh-gq1_7gbOlc_owQMyD6Hi8MR0dWssnQg,2454
+dpy_appcommands-2.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dpy_appcommands-2.0.4.dist-info/top_level.txt,sha256=LxJtW6j98LmhStkkS0x1fdNLyfHwsgoeQQr-Ure8IiY,12
+dpy_appcommands-2.0.4.dist-info/RECORD,,
