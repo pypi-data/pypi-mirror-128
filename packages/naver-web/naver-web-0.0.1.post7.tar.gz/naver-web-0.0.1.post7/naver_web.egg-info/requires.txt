@@ -1,0 +1,6 @@
+Flask
+flask-restx
+cryptography
+naver_config
+twine
+bdist_wheel
