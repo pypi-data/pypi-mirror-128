@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: gramexlayout
+Version: 0.1.0
+Summary: Layout algorithms for visualizations
+Home-page: https://github.com/gramener/gramexlayout
+Author: S Anand
+Author-email: s.anand@gramener.com
+License: MIT
+Project-URL: Documentation, https://github.com/gramener/gramexlayout/
+Project-URL: Source, https://github.com/gramener/gramexlayout/
+Project-URL: Tracker, https://github.com/gramener/gramexlayout/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+
+# Gramex Layout
+
+Layout algorithms for visualizations.
+
+- Calendar (pending)
+- Sankey (pending)
+- Sunburst (complete, to be documented)
+- Treemap (pending)
+
+[NOTE]: This is a pre-release to test the build process.
+
+
+# Release
+
+```shell
+pip install build twine
+python -m build --wheel
+twine upload dist/*
+```
+
+
