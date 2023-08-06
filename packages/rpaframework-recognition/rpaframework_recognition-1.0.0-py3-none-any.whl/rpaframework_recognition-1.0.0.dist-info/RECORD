@@ -1,0 +1,8 @@
+RPA/recognition/__init__.py,sha256=v7xv6MMjjz6uMpEXkiVOkgBV4ZWWTg-pShAkdM7QPT0,99
+RPA/recognition/ocr.py,sha256=L44skmtfI-Qi56GGitdhqqNIjlTRY-ge50gm-112-cI,4304
+RPA/recognition/templates.py,sha256=RhIa6HmjZpzhqzJyW9ZGncBBiKPJHurnKUx62J0NvrI,4581
+RPA/recognition/utils.py,sha256=ALh3EhE5ehYKZcqPTa-XgeAep5hv5ZISwxSnRxiJMW0,1278
+rpaframework_recognition-1.0.0.dist-info/LICENSE,sha256=PjT5Pz2KtuQshio3J4Sr34dEfvQV_MFCSqRhJ1PCUdY,11560
+rpaframework_recognition-1.0.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+rpaframework_recognition-1.0.0.dist-info/METADATA,sha256=jq_6InC9ZIaxzGt0R_SAkQoj7AYp9IRoQcGiwnlOK7E,1564
+rpaframework_recognition-1.0.0.dist-info/RECORD,,
