@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "tuhlbox"
+version = "0.4.13"
+homepage = "https://git.uibk.ac.at/csak8736/tuhlbox"
+description = "Personal toolbox of language processing models."
+authors = ["Benjamin Murauer <b.murauer@posteo.de>"]
+
+[tool.poetry.dependencies]
+python = "^3.7.0"
+sklearn = "^0.0"
+treegrams = "^0.1.0"
+gensim = "^4.0.1"
+dstoolbox = "^0.10.1"
+torch = "^1.7.0"
+stanza = "^1.1.1"
+simpletransformers = "^0.51.1"
+click = "^7.1.2"
+skorch = "^0.10.0"
+langdetect = "^1.0.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+isort = "^5.6.4"
+pre-commit = "^2.9.3"
+black = {version = "^21.5b1", allow-prereleases = true}
+mypy = "^0.812"
+pandas-stubs = "^1.1.0"
+
+[tool.poetry.scripts]
+reddit_to_common = "tuhlbox.cli:reddit_to_common"
+parse_dependency = "tuhlbox.cli:parse_dependency"
+translate = "tuhlbox.cli:translate"
+contribute = "tuhlbox.cli:run_contributor"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
