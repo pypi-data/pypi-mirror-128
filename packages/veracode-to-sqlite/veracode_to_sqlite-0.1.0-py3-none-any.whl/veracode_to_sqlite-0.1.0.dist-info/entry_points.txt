@@ -1,0 +1,3 @@
+[console_scripts]
+veracode-to-sqlite=veracode_to_sqlite.__main__:main
+
