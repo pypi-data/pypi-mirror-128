@@ -1,0 +1,5 @@
+pydantic_fhir/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_fhir/r4.py,sha256=gfdBWQYtpRtMwS8jUY0gLsxd7qDfZyVNnp9iEZZ-l-g,3002651
+pydantic_fhir-0.0.1a18.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pydantic_fhir-0.0.1a18.dist-info/METADATA,sha256=oekjG-w4eBKnjzIFNjcpPNRWtvFB_nUwqAZ18uLV5TU,3216
+pydantic_fhir-0.0.1a18.dist-info/RECORD,,
