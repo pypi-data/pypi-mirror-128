@@ -1,0 +1,10 @@
+juspy/__init__.py,sha256=5lae5CKLd3EvqnSRF8_TfMgeWlBzowUgrO6f_7N8Bn0,96
+juspy/greet.py,sha256=uz1rNFuHlOIwvIvZjXsbFnMR_HEmbcsnII9tBRNgFzk,439
+juspy/plot.py,sha256=MBVCbi6QpLGuxeemmINlB8n_uCtXBdbWZ-vFPwtBwZQ,1532
+juspy/linear_models/LinearRegression.py,sha256=81AKyFXfmxwuufR_-XJVie2O2Qvlh4mXN0mvCJtTEGM,128
+juspy/linear_models/__init__.py,sha256=b0CLql0nom3ThWyGjtyfnzWBNGIxs_qQKPQgmxtTRo4,33
+juspy-0.0.2b12.dist-info/LICENSE,sha256=45x7-RI_NUdbokfW9gQEQ9Zyy6_1zrOrY6WSyD4qgUs,1090
+juspy-0.0.2b12.dist-info/METADATA,sha256=Z_OtL2UXGZs_NE5YzmG2ZfGT6GFeET835X6GtoCzwWU,4050
+juspy-0.0.2b12.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+juspy-0.0.2b12.dist-info/top_level.txt,sha256=LGAnTg7Bd9B7w3KGOI8ocklYY2-kXBQCMc-MFJx9yQM,6
+juspy-0.0.2b12.dist-info/RECORD,,
