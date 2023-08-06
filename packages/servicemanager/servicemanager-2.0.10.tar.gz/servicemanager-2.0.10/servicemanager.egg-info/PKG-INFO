@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: servicemanager
+Version: 2.0.10
+Summary: A python tool to manage developing and testing with lots of microservices
+Home-page: https://github.com/hmrc/service-manager
+Author: hmrc-web-operations
+License: Apache Licence 2.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
