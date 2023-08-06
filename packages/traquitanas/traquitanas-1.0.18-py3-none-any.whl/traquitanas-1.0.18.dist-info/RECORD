@@ -1,0 +1,15 @@
+traquitanas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+traquitanas/utils.py,sha256=uhjBqG13IbSwlZPd5hA28_TbGuNSY_kf2Ql1eKhven4,863
+traquitanas/geo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+traquitanas/geo/converts.py,sha256=hVa_Yt82rd0AITezmFQh9aIK-wXXLFZvSpJhxunJhGI,2429
+traquitanas/geo/layers.py,sha256=9DYjg8fKIWfakA_LyslVofSv98KEGkzEdziiYqgcDxg,1822
+traquitanas/net/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+traquitanas/net/downloads.py,sha256=2cKc5sT7N5EfPo0wPA3c9maUrRA4WS2PADXQsu0IB0E,1965
+traquitanas/net/ssss.py,sha256=d_5T8Q1MI_7avMjc2SJ4mk6x6aORlccETvnwEjYP30A,7518
+traquitanas/numbers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+traquitanas/numbers/numbers.py,sha256=dTsBOfPfRBttgLMtITHWWEtR-uBGZ-7cpGxu71fitZ8,1409
+traquitanas-1.0.18.dist-info/LICENSE,sha256=0JGJWPlRtH9XP1ra6G7WyVyhmrybvabf1rnpPSV3kRQ,1068
+traquitanas-1.0.18.dist-info/METADATA,sha256=GhKw6ECmUq3orUKVvoGXdscjp5mBcBX7LllSoUv3GV8,926
+traquitanas-1.0.18.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+traquitanas-1.0.18.dist-info/top_level.txt,sha256=xOMFPBv-XuM7jXokmktF3QOUDW8Kda_M8U4lYkwen_A,12
+traquitanas-1.0.18.dist-info/RECORD,,
