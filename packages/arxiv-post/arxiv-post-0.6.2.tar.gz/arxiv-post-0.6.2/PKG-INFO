@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: arxiv-post
+Version: 0.6.2
+Summary: Translate and post arXiv articles to various apps
+Home-page: https://github.com/astropenguin/arxiv-post/
+License: MIT
+Keywords: arxiv,deepl,slack,translation
+Author: Akio Taniguchi
+Author-email: taniguchi@a.phys.nagoya-u.ac.jp
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: arxiv (>=1.4,<2.0)
+Requires-Dist: dateparser (>=1.1,<2.0)
+Requires-Dist: deepl (>=1.3,<2.0)
+Requires-Dist: fire (>=0.4,<0.5)
+Requires-Dist: more-itertools (>=8.11,<9.0)
+Requires-Dist: playwright (>=1.16,<2.0)
+Requires-Dist: pylatexenc (>=2.10,<3.0)
+Requires-Dist: requests (>=2.26,<3.0)
+Requires-Dist: tomli (>=1.2,<2.0)
+Project-URL: Documentation, https://astropenguin.github.io/arxiv-post/
+Description-Content-Type: text/markdown
+
+# arxiv-post
+
+[![PyPI](https://img.shields.io/pypi/v/arxiv-post.svg?label=PyPI&style=flat-square)](https://pypi.org/project/arxiv-post/)
+[![Python](https://img.shields.io/pypi/pyversions/arxiv-post.svg?label=Python&color=yellow&style=flat-square)](https://pypi.org/project/arxiv-post/)
+[![Test](https://img.shields.io/github/workflow/status/astropenguin/arxiv-post/Test?logo=github&label=Test&style=flat-square)](https://github.com/astropenguin/arxiv-post/actions)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?label=License&style=flat-square)](LICENSE)
+
+Translate and post arXiv articles to various apps
+
+## Installation
+
+```shell
+$ pip install arxiv-post
+$ playwright install chromium
+```
+
+## Usage
+
+After installation, command line interface `arxiv-post` is available, with which you can translate and post arXiv articles to various apps.
+Note that only `slack` app is currently available.
+You need to [create a custom Slack app to get an URL of incoming webhook](https://slack.com/help/articles/115005265063-Incoming-webhooks-for-Slack).
+
+```shell
+$ arxiv-post slack --keywords deshima \
+                   --categories astro-ph.IM \
+                   --target_lang ja \
+                   --slack_webhook_url <Slack webhook URL>
+```
+
+The posted article looks like this.
+
+![arxiv-post-slack.png](https://raw.githubusercontent.com/astropenguin/arxiv-post/master/docs/_static/arxiv-post-slack.png)
+
+For detailed information, see the built-in help by the following command.
+
+```shell
+$ arxiv-post slack --help
+```
+
+## Example
+
+It may be nice to regularly run the command by some automation tools such as GitHub Actions.
+Here is a live example in which daily (2 days ago) arXiv articles in [astro-ph.GA](https://arxiv.org/list/astro-ph.GA/new) and [astro-ph.IM](https://arxiv.org/list/astro-ph.IM/new) are posted to different channels of a Slack workspace.
+
+- [a-lab-nagoya/astro-ph-slack: Translate and post arXiv articles to Slack](https://github.com/a-lab-nagoya/astro-ph-slack)
+
+## References
+
+- [fkubota/Carrier-Owl: arxiv--> DeepL --> Slack](https://github.com/fkubota/Carrier-Owl): The arxiv-post package is highly inspired by their work.
+
