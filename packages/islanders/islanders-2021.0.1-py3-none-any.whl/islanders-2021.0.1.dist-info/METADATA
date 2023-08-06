@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: islanders
+Version: 2021.0.1
+Summary: module designed to make your data preprocessing experience easier
+Home-page: UNKNOWN
+Author: Islander Robotics (William McKeon)
+Author-email: <IslanderRobotics@gmail.com>
+License: UNKNOWN
+Keywords: python,machine Learning,Artificial Intelligence,Data Science,Data Cleaning
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn
+Requires-Dist: IslanderDataPreprocessing
+
+UNKNOWN
+
+
