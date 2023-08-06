@@ -1,0 +1,3 @@
+[console_scripts]
+simplelayout = src.simplelayout:main
+
