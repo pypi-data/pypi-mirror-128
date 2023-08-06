@@ -1,0 +1,34 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "*"
+bleach = "~=4.1"
+docutils = "*"
+flake8 = "*"
+freezegun = "*"
+isort = "*"
+mypy = "*"
+pre-commit = "*"
+pylint = "*"
+pylint-pytest = "*"
+pytest = "*"
+pytest-asyncio = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+requests-mock = "*"
+tox = "~=3.24"
+twine = "*"
+
+[packages]
+requests = "*"
+requests-oauthlib = "*"
+aiohttp = ">=3.7.4"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
