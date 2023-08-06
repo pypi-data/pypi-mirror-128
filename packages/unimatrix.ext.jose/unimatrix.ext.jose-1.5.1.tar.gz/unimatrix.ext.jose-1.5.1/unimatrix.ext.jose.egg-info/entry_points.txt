@@ -1,0 +1,3 @@
+[ioc.providers]
+unimatrix.ext.jose = = unimatrix.ext.jose.__ioc__
+
