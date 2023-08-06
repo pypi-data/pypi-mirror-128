@@ -1,0 +1,3 @@
+[console_scripts]
+ym2021_prj = ym2021_prj.cli:main
+
