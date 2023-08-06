@@ -1,0 +1,38 @@
+
+Gurobi 9.5.0 (mac64[x86], gurobi_cl) logging started Thu Nov 18 20:03:32 2021
+
+Set parameter LogFile to value "gurobi.log"
+
+Gurobi 9.5.0 (mac64[x86], gurobi_cl) logging started Thu Nov 18 20:03:54 2021
+
+Set parameter LogFile to value "gurobi.log"
+
+Gurobi 9.5.0 (mac64[x86], gurobi_cl) logging started Thu Nov 18 20:25:19 2021
+
+Set parameter LogFile to value "gurobi.log"
+
+Gurobi 9.5.0 (mac64[x86], Python) logging started Thu Nov 18 20:25:40 2021
+
+Set parameter LogFile to value "gurobi.log"
+
+Gurobi 9.5.0 (mac64[x86], Python) logging started Thu Nov 18 20:26:41 2021
+
+Set parameter LogFile to value "gurobi.log"
+
+Gurobi 9.5.0 (mac64[x86], Python) logging started Thu Nov 18 20:31:07 2021
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Academic license - for non-commercial use only - expires 2022-01-15
+Read LP format model from file 2AP05.lp
+Reading time = 0.00 seconds
+: 10 rows, 25 columns, 50 nonzeros
+Read LP format model from file 2AP05.lp
+Reading time = 0.00 seconds
+: 10 rows, 25 columns, 50 nonzeros
+Read LP format model from file 2AP05.lp
+Reading time = 0.00 seconds
+: 10 rows, 25 columns, 50 nonzeros
+Read LP format model from file 2KP50.lp
+Reading time = 0.00 seconds
+: 1 rows, 50 columns, 50 nonzeros
