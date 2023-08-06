@@ -1,0 +1,106 @@
+[tool.poetry]
+name = "retrocookie"
+version = "0.4.2"
+description = "Update Cookiecutter templates with changes from their instances"
+authors = ["Claudio Jolowicz <mail@claudiojolowicz.com>"]
+license = "MIT"
+readme = "README.rst"
+homepage = "https://github.com/cjolowicz/retrocookie"
+repository = "https://github.com/cjolowicz/retrocookie"
+documentation = "https://retrocookie.readthedocs.io"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+]
+
+[tool.poetry.urls]
+Changelog = "https://github.com/cjolowicz/retrocookie/releases"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^8.0.3"
+git-filter-repo = "^2.26.0"
+pygit2 = "^1.2.1"
+typing-extensions = {version = ">=3.7.4,<5.0.0", optional = true}
+"github3.py" = {version = "^3.0.0", optional = true}
+tenacity = {version = ">=6.3.1,<9.0.0", optional = true}
+appdirs = {version = "^1.4.4", optional = true}
+rich = {version = ">=9.5.1,<11.0.0", optional = true}
+
+[tool.poetry.dev-dependencies]
+pytest = ">=6.2.5"
+coverage = {extras = ["toml"], version = ">=6.1"}
+safety = ">=1.10.3"
+mypy = ">=0.800"
+typeguard = ">=2.9.1"
+xdoctest = {extras = ["colors"], version = ">=0.15.2"}
+sphinx = ">=4.3.0"
+sphinx-autobuild = ">=2020.9.1"
+pre-commit = ">=2.15.0"
+cookiecutter = ">=1.7.3"
+pygments = ">=2.10.0"
+flake8 = ">=4.0.1"
+black = ">=21.10b0"
+flake8-bandit = ">=2.1.2"
+flake8-bugbear = ">=21.9.2"
+flake8-docstrings = ">=1.6.0"
+flake8-rst-docstrings = ">=0.2.3"
+pep8-naming = ">=0.11.1"
+darglint = ">=1.8.1"
+reorder-python-imports = ">=2.6.0"
+pre-commit-hooks = ">=4.0.1"
+sphinx-click = ">=3.0.2"
+Pygments = ">=2.10.0"
+furo = ">=2021.11.12"
+types-requests = ">=2.26.0"
+pyupgrade = ">=2.29.0"
+
+[tool.poetry.extras]
+pr = ["appdirs", "github3.py", "rich", "tenacity", "typing-extensions"]
+
+[tool.poetry.scripts]
+retrocookie = "retrocookie.__main__:main"
+retrocookie-pr = "retrocookie.pr.__main__:main"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["retrocookie"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 90
+
+[tool.mypy]
+strict = true
+pretty = true
+show_column_numbers = true
+show_error_codes = true
+show_error_context = true
+warn_unreachable = true
+
+[[tool.mypy.overrides]]
+module = [
+    "appdirs",
+    "cookiecutter.*",
+    "git_filter_repo",
+    "github3.*",
+    "pygit2.*",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:no type annotations present -- not typechecking .*",
+    "ignore:no code associated -- not typechecking .*",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
