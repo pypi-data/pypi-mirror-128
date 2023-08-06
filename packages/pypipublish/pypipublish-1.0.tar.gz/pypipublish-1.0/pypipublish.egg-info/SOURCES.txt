@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pypipublish/__init__.py
+pypipublish/pdf2image.py
+pypipublish/pdf2text.py
+pypipublish.egg-info/PKG-INFO
+pypipublish.egg-info/SOURCES.txt
+pypipublish.egg-info/dependency_links.txt
+pypipublish.egg-info/top_level.txt
