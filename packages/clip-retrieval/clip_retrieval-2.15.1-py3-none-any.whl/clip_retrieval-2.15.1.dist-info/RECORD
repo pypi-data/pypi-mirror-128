@@ -1,0 +1,14 @@
+clip_retrieval/__init__.py,sha256=4CRILX-J4ZIn5H3FKqECPDUCuKf0YPJBGKJM3EHPgDQ,170
+clip_retrieval/cli.py,sha256=yjatnc9iam9f1HtFwfYkuTiLpSsL84wy_Y0RTY6hIds,388
+clip_retrieval/clip_back.py,sha256=_0JaKLe9HZN_xi6C-sJyRMl6yWvVK-hV-bdJUTKZSzw,19489
+clip_retrieval/clip_filter.py,sha256=_yqmtxtG4_8VPDMTK-cOYc0iyR54YT5_iwoPnVDsoL4,2268
+clip_retrieval/clip_index.py,sha256=PUCQrUKNCH8fJRtNCrOnS7xj0vvKbb2JXqaYMcL4IRY,2070
+clip_retrieval/clip_inference.py,sha256=WofCSovCtv5Jk6oCmX5QuWPCgFI8F5RN6aJSBskaRG0,13039
+clip_retrieval/ivf_metadata_ordering.py,sha256=RzBBaqzF35Lssj_lUzqATv0bIP2KDq5NIOXo_q3d7jA,6010
+clip_retrieval-2.15.1.data/data/README.md,sha256=r9SY_s7UCkR3sBtkm36SyxGOSLfT2lzxVhlF2wWTx3U,12931
+clip_retrieval-2.15.1.dist-info/LICENSE,sha256=kQ7Sg07ctsEZeQxAgGGT8tsbjz8G5o_kY8ToEkxWfjE,1072
+clip_retrieval-2.15.1.dist-info/METADATA,sha256=1hMyIbweS5p8M31ktBoB9q8rGXHlrTHrrNPzST1W01M,14082
+clip_retrieval-2.15.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+clip_retrieval-2.15.1.dist-info/entry_points.txt,sha256=QLdSX6d901D-Fhs1Ip9Jl3A0VGL1irga4byT2fQI89Q,60
+clip_retrieval-2.15.1.dist-info/top_level.txt,sha256=oWxIHF0uIAgmgQlwjoXpecacJEQDlAzV8nSO9FdCo4U,15
+clip_retrieval-2.15.1.dist-info/RECORD,,
