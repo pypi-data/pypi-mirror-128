@@ -1,0 +1,12 @@
+labelme2datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labelme2datasets/labelme_bbox_json2voc.py,sha256=lAQo77t5hhctuw9_vKXXhBNaHaJ_g58d2PZfL1dsZjw,8705
+labelme2datasets/labelme_json2dataset.py,sha256=vEB7YG-ROm3yYKwyPz3X0EwyTpuQQo_N0nNA4VwjHo4,3578
+labelme2datasets/split_voc_datasets.py,sha256=JluDQiE_cpCkFI5lfexnWtZH2UXU0nf0Naw4NwSll2c,2117
+labelme2datasets/utils.py,sha256=-HRTKECNfb6GwcZKuO89lXGx9RgQlqBLLfj5WdUF8IM,1223
+labelme2datasets/voc2coco.py,sha256=fi0I5xAhWDOvKggJzBbu5q672WzMe8ynnj-xkHMpQpc,6223
+labelme2datasets-0.0.2.dist-info/LICENSE,sha256=pPxPatBO-PsFv_3KFXtbiPXW91S-gdyA_8CqyVZj3Mk,1070
+labelme2datasets-0.0.2.dist-info/METADATA,sha256=NKKS3WG6Xk0ACmTLAnkraEYtu94hjkxfLZC6O3aadxY,10674
+labelme2datasets-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+labelme2datasets-0.0.2.dist-info/entry_points.txt,sha256=rzMCC9zkO3J4xcdOSX9bxUIhkHxh5MVInxT7UhIuqG0,257
+labelme2datasets-0.0.2.dist-info/top_level.txt,sha256=KJcGOOmNaaob2CxIjHhF7BKMooc4K2hMlC30X8zxe1g,17
+labelme2datasets-0.0.2.dist-info/RECORD,,
