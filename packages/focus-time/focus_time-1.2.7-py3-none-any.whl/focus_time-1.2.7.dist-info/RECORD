@@ -1,0 +1,19 @@
+data/ding dong.mp3,sha256=uYIwWUN0i7N5dfYwkF9PpmWxUs-8G1ifQrPKXgK3aKo,34294
+data/failure.wav,sha256=W_pwUayLYgQ4Xb5SsDNZBFQXXDy_v59vRqhd8JxczKA,443040
+data/session complete.mp3,sha256=eRWt0JYOEVZhpWhZUeQ-4-VpNWX5AoM51Qf0WfoPmSA,6813
+data/start.wav,sha256=rAIzIl-tHOAoBe5gP7mo0jaDmdnp7k-EiaC7E-zMnpg,107932
+data/success.mp3,sha256=Eeim5FURPCn297StcvqhM1EeMmjMOFGZoivHIyRHwqI,168598
+data/test.mp3,sha256=AoXJOZaDIXNCXw-MDOmmufFJVqqfOTksKRlIwQKZ3Ew,1561
+data/test.wav,sha256=wZA0hzo_gPS7W2F7dW6Ym58ja2C6x8ZswFJBMR0BIAQ,5556
+data/victory.mp3,sha256=1f53eIkuG0sh6OOLzfGGZfnV7grDBNuyMkHmyKxPMkY,435037
+data/yay.mp3,sha256=sp4mjEupjqoto6woJ-qTRUEJ_BpLK855e_B3YmHszT8,29700
+focus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+focus/main.py,sha256=Q9m-y2yWvncUuQJhOpLlgxHgWIKcZnot4UHAaB59HiQ,5102
+focus/terminal_commands.py,sha256=30ayTJ3xbPY1wjRXUQ1TjWTaH03lfHAYyMOslX5xVk8,262
+focus/timer.py,sha256=02aOBTUNUu0v69I-VqJWcI5apPCOjtdfEFNWXHg8Mr8,6738
+focus_time-1.2.7.dist-info/LICENSE.txt,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+focus_time-1.2.7.dist-info/METADATA,sha256=5IabnXyFr-gruOQap1OLkxz6RBY8paVc51LQ7dLQIpw,448
+focus_time-1.2.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+focus_time-1.2.7.dist-info/entry_points.txt,sha256=3nyRBmZ7iCVKjitXy7Fo9RoYrJeMs1fv9Q4H5IHCJ2E,232
+focus_time-1.2.7.dist-info/top_level.txt,sha256=HWDDgYz7ZKCAKlslQT0AYupiJo6RHN98BmqPq2g_UfA,6
+focus_time-1.2.7.dist-info/RECORD,,
