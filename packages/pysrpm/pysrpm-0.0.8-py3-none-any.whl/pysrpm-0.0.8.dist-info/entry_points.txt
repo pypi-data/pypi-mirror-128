@@ -1,0 +1,3 @@
+[console_scripts]
+pysrpm = pysrpm.__main__:cli
+
