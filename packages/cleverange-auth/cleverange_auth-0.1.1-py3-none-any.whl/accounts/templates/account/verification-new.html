@@ -1,0 +1,25 @@
+{% extends 'account/base.html' %}
+{% block title %} Verify your email address {% endblock title %}
+    {% block account_auth %}
+
+        <div class="column col-lg-8 col-md-12 col-sm-12">
+            <h2>Verify email address</h2>
+            
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Check your email to find the verification code</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="code" placeholder="123456" required>
+                </div>
+
+
+                <div class="form-control text-right">
+                    <button class="btn btn-primary" type="submit" name="submit-form">Verify</button>
+                </div>
+            
+            </form>
+
+
+        </div>
+
+{% endblock account_auth %}
