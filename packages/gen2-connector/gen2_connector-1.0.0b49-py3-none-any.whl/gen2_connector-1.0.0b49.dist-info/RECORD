@@ -1,0 +1,11 @@
+etc/gen2-connector/defaults.yaml,sha256=mWHecfrVz7gjk7-h3nO7eeviVs5GvLWgnPSGRuRjTlk,6265
+etc/gen2-connector/example-minimal.yaml,sha256=gH1uVZp2VUDPFQ8ac7mh3tUa3A7QxBGZnIaK_SKGQjo,1341
+gen2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gen2/node_provider.py,sha256=KxiaU5GOcdju_21kfm9PXYjujqVDZ81gjtIp5DGnbkA,32050
+gen2/vpc_config_helper.py,sha256=d0n8zCPwKGgvfyP2xDH1L_sd_u5rKIJ-Ed4t91dpkos,33647
+gen2_connector-1.0.0b49.data/scripts/vpc-config,sha256=zqNIdLH6EmCnO_bJHnYnpBlAMTZb3jQZJTkeMWU2ZFE,217
+gen2_connector-1.0.0b49.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gen2_connector-1.0.0b49.dist-info/METADATA,sha256=HyWu6cOy-bnI2moGGdDrW1mHgmPD22_Z9K7syrs3lcg,2044
+gen2_connector-1.0.0b49.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gen2_connector-1.0.0b49.dist-info/top_level.txt,sha256=yqb-GsrU5vhtcPb3wI3q0TRBMYOYkl_nXWzdsyUKVmY,5
+gen2_connector-1.0.0b49.dist-info/RECORD,,
