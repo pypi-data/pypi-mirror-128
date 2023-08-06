@@ -1,0 +1,39 @@
+#!python
+import hardline
+import hardline.daemonconfig
+
+import traceback
+import configparser
+import os
+
+# Just a quick demo test script
+
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description='P2P Tunneling proxy on the LAN')
+
+    parser.add_argument(
+        '--localport', help='Pages will be proxied at <KEYID>.localhost:<PORT>.  Set to 0 to disable proxying.', default="7009")
+    parser.add_argument(
+        '--p2pport', help='Port used for secure P2P', default="7008")
+    parser.add_argument(
+        '--servicedir', help='Directory of services that you would like to expose', default="/home/daniel/.hardlinep2p/services/")
+
+    args = vars(parser.parse_args())
+
+    print("Local port: "+args['localport'])
+    print("P2P port: "+args['p2pport'])
+    hardline.P2P_PORT = int(args['p2pport'])
+
+    try:
+        os.makedirs(args['servicedir'])
+    except:
+        pass
+
+    services = []
+    if os.path.exists(args['servicedir']):
+        hardline.daemonconfig.loadUserServices(args['servicedir'])
+
+    hardline.start(int(args['localport']))
