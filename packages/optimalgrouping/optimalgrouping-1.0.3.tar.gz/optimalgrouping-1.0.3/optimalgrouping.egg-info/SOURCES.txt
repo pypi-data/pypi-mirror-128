@@ -1,0 +1,12 @@
+LICENSE
+README.md
+optimal_binning.py
+setup.cfg
+setup.py
+optimalgrouping/__init__.py
+optimalgrouping/optimalgrouping.py
+optimalgrouping.egg-info/PKG-INFO
+optimalgrouping.egg-info/SOURCES.txt
+optimalgrouping.egg-info/dependency_links.txt
+optimalgrouping.egg-info/requires.txt
+optimalgrouping.egg-info/top_level.txt
