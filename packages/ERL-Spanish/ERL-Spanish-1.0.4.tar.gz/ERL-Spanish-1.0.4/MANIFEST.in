@@ -1,0 +1,9 @@
+include ERL/classes/*.npy
+include ERL/data/es/*.wav
+include ERL/data/es/*.txt
+include ERL/data/negative/*.wav
+include ERL/data/neutral/*.wav
+include ERL/data/positive/*.wav
+include ERL/metrics/*.txt
+include ERL/models/*.sav
+include ERL/models/*.h5

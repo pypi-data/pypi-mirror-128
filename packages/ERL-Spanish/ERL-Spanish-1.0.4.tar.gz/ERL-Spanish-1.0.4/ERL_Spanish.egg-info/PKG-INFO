@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ERL-Spanish
+Version: 1.0.4
+Summary: ERL: Emotion Recognition Library
+Home-page: https://github.com/estefaaa02/ERL
+Author: Mario Gómez, Estefanía Pérez, Victoria Núñez
+Author-email: mgomezcam@unbosque.edu.co, eperezt@unbosque.edu.co, vnunezd@unbosque.edu.co
+License: GPLv3 License
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# ERL: Emotion Recognition Library
+ERL is a Python library that does emotion recognition through audio. With this library you can recognize emotions using audio signals, the text extracted from the audio or using both.
+
+## Installation
+ - Clone the source of this library: `https://github.com/estefaaa02/ERL.git`
+ - Install library: `pip install -e .`
+### Note:
+- If using Windows download the PyAudio wheel for Windows and install it using `pip install`.
+- If using Linux install the PyAudio library using `pip install pyaudio`
+- If using Linux run `apt install libasound2-dev portaudio19-dev libportaudio2 libportaudiocpp0 ffmpeg`
+- By doing `pip install -e . `you are installing the necessary dependencies for the library to work
+## Emotion classification example
+
+    from ERL import PredictionsModule
+    
+    print("PredicciÃ³n Audio: ", PredictionsModule.predict_emotion_audio_svm('ERL/data/es/f_ans002aes.wav'))
+    print("PredicciÃ³n Texto: ", PredictionsModule.predict_emotion_text_cnn('ERL/data/es/f_ans002aes.wav'))
+    print("PredicciÃ³n Bimodal: ", PredictionsModule.predict_emotion_bimodal('ERL/data/es/f_ans002aes.wav'))
+
+
