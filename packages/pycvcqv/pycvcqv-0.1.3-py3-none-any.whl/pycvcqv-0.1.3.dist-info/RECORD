@@ -1,0 +1,12 @@
+pycvcqv/__init__.py,sha256=G4MZX04okP1qwAN6z9iQkx5eGSanF6W8mqjiX5OYemo,803
+pycvcqv/cqv.py,sha256=4dkNoIePqNtn94icR-eZEXHsC3xtt6UDaEmFGlcPDH8,3480
+pycvcqv/cv.py,sha256=NRWbUVpqT9BCF85TVQatiDnC9sw5oqK-Vgwx8BuRMOk,3668
+pycvcqv/dataframe.py,sha256=XkNsG2jcnToyjD4tONG9i5ua7Ujzj1NylKxhjgQzQbY,6440
+pycvcqv/formulas.py,sha256=Valgj-T3sFKau_OtcP14yrj7qqJEfQKzQ_b9_FbvJJA,3453
+pycvcqv/is_numeric.py,sha256=mfpysqxNIqddrpiJP0wSovCh71kigMm56TVFN29Dcvk,1884
+pycvcqv/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycvcqv/types.py,sha256=FX0AZUrXpPVQ6X12sxAAJ8Jvpwdl2E3dJRdKtomcqXo,457
+pycvcqv-0.1.3.dist-info/LICENSE,sha256=ZFAFSdTFkmUSGtqAWvP2PHdDyViAv6aJXXrKTrv48MA,1072
+pycvcqv-0.1.3.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+pycvcqv-0.1.3.dist-info/METADATA,sha256=DhAaS3SXuXCWQPgycCFxCCDx_EXMGi44tC48nB3Sv1M,5391
+pycvcqv-0.1.3.dist-info/RECORD,,
