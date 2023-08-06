@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: morse-stf
+Version: 0.1.6
+Summary: A Privacy Preserving Computation System
+Home-page: https://github.com/alipay/Antchain-MPC/morse-stf
+Author: Antchain-MPC Team
+Author-email: morse-stf@service.alipay.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+
+UNKNOWN
+
