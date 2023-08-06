@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+bandcamp_extract.egg-info/PKG-INFO
+bandcamp_extract.egg-info/SOURCES.txt
+bandcamp_extract.egg-info/dependency_links.txt
+bandcamp_extract.egg-info/entry_points.txt
+bandcamp_extract.egg-info/requires.txt
+bandcamp_extract.egg-info/top_level.txt
+src/__init__.py
+src/extract.py
