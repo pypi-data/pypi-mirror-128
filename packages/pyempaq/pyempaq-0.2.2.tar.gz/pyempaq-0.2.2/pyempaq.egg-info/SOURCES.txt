@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pyempaq/__main__.py
+pyempaq/config_manager.py
+pyempaq/main.py
+pyempaq/unpacker.py
+pyempaq.egg-info/PKG-INFO
+pyempaq.egg-info/SOURCES.txt
+pyempaq.egg-info/dependency_links.txt
+pyempaq.egg-info/entry_points.txt
+pyempaq.egg-info/requires.txt
+pyempaq.egg-info/top_level.txt
