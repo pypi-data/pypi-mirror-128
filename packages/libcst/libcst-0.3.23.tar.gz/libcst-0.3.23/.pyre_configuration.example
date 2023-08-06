@@ -1,0 +1,12 @@
+{
+    "source_directories": [
+        "."
+    ],
+    "search_path": [
+        "stubs"
+    ],
+    "exclude": [
+        ".*/\\.tox/.*"
+    ],
+    "strict": true
+}

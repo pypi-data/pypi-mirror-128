@@ -1,0 +1,201 @@
+name: Python CI
+
+on: [push, pull_request]
+
+jobs:
+# Install and cache dependencies
+  setup:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: [3.6, 3.7, 3.8, 3.9]
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - uses: actions/cache@v2
+      id: cache
+      with:
+        path: ${{ env.pythonLocation }}
+        key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt', 'requirements-dev.txt', 'setup.py') }}
+    - name: Install Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+        pip install --upgrade --upgrade-strategy eager build -r requirements.txt -r requirements-dev.txt
+
+# Run unittests
+  test:
+    needs: setup
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: [3.6, 3.7, 3.8, 3.9]
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - uses: actions/cache@v2
+      id: cache
+      with:
+        path: ${{ env.pythonLocation }}
+        key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt', 'requirements-dev.txt', 'setup.py') }}
+    - name: Validate Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: exit 1
+    - name: Run Tests
+      run: python -m unittest
+
+# Run linters
+  lint:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - uses: actions/cache@v2
+      id: cache
+      with:
+        path: ${{ env.pythonLocation }}
+        key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt', 'requirements-dev.txt', 'setup.py') }}
+    - name: Validate Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: exit 1
+    - run: flake8
+    - run: ufmt check .
+    - run: python3 -m fixit.cli.run_rules
+
+# Run pyre typechecker
+  typecheck:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - uses: actions/cache@v2
+      id: cache
+      with:
+        path: ${{ env.pythonLocation }}
+        key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt', 'requirements-dev.txt', 'setup.py') }}
+    - name: Validate Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: exit 1
+    - name: Get Python site-packages
+      id: python-info
+      run: |
+        echo "::set-output name=SITE_PACKAGES::$(python -c 'import sysconfig; print(sysconfig.get_paths()["purelib"])')"
+    - name: Configure Pyre
+      id: pyre_template
+      uses: chuhlomin/render-template@v1.2
+      with:
+          template: .github/workflows/.pyre_configuration.template
+          vars: |
+            python_site_packages: ${{ steps.python-info.outputs.SITE_PACKAGES }}
+    - name: Write Pyre Config
+      run: echo '${{ steps.pyre_template.outputs.result }}' > .pyre_configuration
+    - run: pyre --version
+    - run: pyre check
+    - run: python libcst/tests/test_pyre_integration.py
+    - run: git diff --exit-code
+
+# Upload test coverage
+  coverage:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - uses: actions/cache@v2
+      id: cache
+      with:
+        path: ${{ env.pythonLocation }}
+        key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt', 'requirements-dev.txt', 'setup.py') }}
+    - name: Validate Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: exit 1
+    - name: Generate Coverage
+      run: |
+        coverage run setup.py test
+        coverage xml -i
+    - uses: codecov/codecov-action@v2
+      with:
+        files: coverage.xml
+        fail_ci_if_error: true
+        verbose: true
+    - name: Archive Coverage
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage
+        path: coverage.xml
+
+# Build the docs
+  docs:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - uses: actions/cache@v2
+      id: cache
+      with:
+        path: ${{ env.pythonLocation }}
+        key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt', 'requirements-dev.txt', 'setup.py') }}
+    - name: Validate Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: exit 1
+    - uses: ts-graphviz/setup-graphviz@v1
+    - run: sphinx-build docs/source/ docs/build/
+    - name: Archive Docs
+      uses: actions/upload-artifact@v2
+      with:
+        name: sphinx-docs
+        path: docs/build
+
+# Build python package
+  build:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - uses: actions/cache@v2
+      id: cache
+      with:
+        path: ${{ env.pythonLocation }}
+        key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt', 'requirements-dev.txt', 'setup.py') }}
+    - name: Validate Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: exit 1
+    - name: Disable scmtools local scheme
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      run: >-
+        echo LIBCST_NO_LOCAL_SCHEME=1 >> $GITHUB_ENV
+    - name: Build a binary wheel and a source tarball
+      run: >-
+        python -m
+        build
+        --sdist
+        --wheel
+        --outdir dist/
+    - if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      name: Publish distribution 📦 to Test PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        user: __token__
+        password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+        repository_url: https://test.pypi.org/legacy/
