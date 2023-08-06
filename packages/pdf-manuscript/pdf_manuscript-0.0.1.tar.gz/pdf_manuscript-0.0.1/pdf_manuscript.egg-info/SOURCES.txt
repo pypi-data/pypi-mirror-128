@@ -1,0 +1,8 @@
+setup.py
+pdf_manuscript/__init__.py
+pdf_manuscript.egg-info/PKG-INFO
+pdf_manuscript.egg-info/SOURCES.txt
+pdf_manuscript.egg-info/dependency_links.txt
+pdf_manuscript.egg-info/top_level.txt
+pdf_manuscript/dto/__init__.py
+pdf_manuscript/helper/__init__.py
