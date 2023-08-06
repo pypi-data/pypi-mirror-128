@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: excel-scraper
+Version: 0.0.4
+Summary: Utility library to scrape timeseries data from excel files into a pandas dataframe
+Home-page: https://github.com/aeorxc/excel-scraper
+Author: aeorxc
+License: UNKNOWN
+Project-URL: Source, https://github.com/aeorxc/excel-scraper
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+
+UNKNOWN
+

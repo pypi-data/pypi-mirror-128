@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+excel_scraper/__init__.py
+excel_scraper/excel_scraper.py
+excel_scraper.egg-info/PKG-INFO
+excel_scraper.egg-info/SOURCES.txt
+excel_scraper.egg-info/dependency_links.txt
+excel_scraper.egg-info/requires.txt
+excel_scraper.egg-info/top_level.txt
+test/__init__.py
+test/test_excel_scraper.py
