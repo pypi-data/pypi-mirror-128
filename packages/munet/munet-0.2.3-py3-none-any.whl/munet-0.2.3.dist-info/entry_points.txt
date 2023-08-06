@@ -1,0 +1,3 @@
+[console_scripts]
+munet=munet.__main__:main
+
