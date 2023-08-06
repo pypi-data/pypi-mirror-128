@@ -1,0 +1,9 @@
+setuptools-git
+jinja2
+pyyaml
+progressbar2
+GitPython
+weasyprint
+anytree
+dicttoxml
+defusedxml
