@@ -1,0 +1,67 @@
+- hosts: '{{ hosts_name }}'
+  tasks:
+    - name: create user if not exist
+      import_tasks: ../create_user.yml
+      when: ansible_user_uid == 0
+
+    - name: is install tool
+      shell: which npu-smi
+      register: isInstalledTool
+      when: ansible_user_uid == 0
+      ignore_errors: yes
+
+    - name: message
+      debug:
+        msg:
+          - "npu-smi tool is not installed, please check it"
+      when: isInstalledTool.rc == 1
+
+    - name: check health
+      shell: npu-smi info|grep -E '910|710|310'|awk -F' ' '{print $5}'|grep -v '|'
+      register: result_info
+      when: isInstalledTool.rc == 0
+
+    - name: is everychip ok
+      set_fact: NPUIssue=true
+      when:
+        - isInstalledTool.rc == 0
+        - result_info is defined
+        - "'OK' not in '{{item}}'"
+      loop: "{{result_info.stdout_lines}}"
+
+    - name: message
+      fail:
+        msg:
+          - "critical issue with NPU, please check it"
+      when:
+        - NPUIssue is defined
+
+    # check the driver, always success
+    # set changed when npu-smi info not work
+    - name: check if driver is already installed
+      shell: npu-smi info
+      environment:
+        PATH: "/usr/local/{{ python_version }}/bin:/usr/local/Ascend/toolbox/latest/Ascend-DMI/bin:{{ ansible_env.PATH }}"
+        LD_LIBRARY_PATH: "/usr/local/{{ python_version }}/lib:/usr/local/Ascend/toolbox/latest/Ascend-DMI/lib64:/usr/local/dcmi:/usr/local/Ascend/nnae/latest/fwkacllib/lib64:/usr/local/Ascend/nnrt/latest/acllib/lib64"
+      register: smi_info
+      failed_when: false
+      changed_when: smi_info.rc != 0
+      when: ansible_user_uid == 0
+
+    - name: import firmware task
+      import_tasks: task_firmware.yml
+      when: ansible_user_uid == 0 and smi_info.rc == 0
+
+    - name: import all driver task
+      import_tasks: task_driver.yml
+      when: ansible_user_uid == 0
+
+    - name: import firmware task
+      import_tasks: task_firmware.yml
+      when: ansible_user_uid == 0 and smi_info.rc != 0
+
+    - name: message
+      debug:
+        msg:
+        - "not support installing npu by non-root user, please switch to root user"
+      when: ansible_user_uid != 0
