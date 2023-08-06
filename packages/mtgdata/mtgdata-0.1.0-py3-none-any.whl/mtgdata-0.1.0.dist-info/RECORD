@@ -1,0 +1,13 @@
+mtgdata/__init__.py,sha256=SGoyiuqz9Z4X0gzFyTucTiCTEuNIEQB44L79XbuM0kU,266
+mtgdata/__main__.py,sha256=_LuU8fUOcmyIo9UHR6601RncxsVGcMGvPENy75j2dIc,1122
+mtgdata/scryfall.py,sha256=1e4myYy4TX-NGrDKnQQuBvh-6GxIgBn4JFZZVahW5Rc,20961
+mtgdata/scryfall_convert.py,sha256=28nMrJhaup3oYjb73jYvDbbrFOi0J2oYZTQV43QoZfM,17984
+mtgdata/util/__init__.py,sha256=gljKrmVuFVBosDvBGW80wlGl3iyTEod6NenZ0xsxGJY,43
+mtgdata/util/hdf5.py,sha256=kiZ24ns7dR7MRRo2VS8F6bkCEic7l2FuPytpUUxf5Iw,4776
+mtgdata/util/inout.py,sha256=rtCw2jL_Gj82lC265bYA0qjbQg-AlsY-6yhXyE_NCzQ,3350
+mtgdata/util/proxy.py,sha256=ftEAFq-K9V9rf_1DotfKWqPLkHVXRCA2agNuJJlLdW8,16434
+mtgdata-0.1.0.dist-info/LICENSE.txt,sha256=HfStqB94Okvwp5A1Fs0-CgEUqpknJ7fcNxYQOLkfzoQ,1076
+mtgdata-0.1.0.dist-info/METADATA,sha256=LrwTxwarK2xQBwZanCRdE9BKYAzy9-v61r1ddUSOtlk,5675
+mtgdata-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mtgdata-0.1.0.dist-info/top_level.txt,sha256=uSg2s2b4kv0IUT00iHjZNUQadVxRas7Vclr6Fdgmy0E,8
+mtgdata-0.1.0.dist-info/RECORD,,
