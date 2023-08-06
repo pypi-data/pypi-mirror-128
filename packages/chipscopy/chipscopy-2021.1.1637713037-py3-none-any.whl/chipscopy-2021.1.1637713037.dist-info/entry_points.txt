@@ -1,0 +1,4 @@
+[console_scripts]
+chipscopy=chipscopy._cli._chipscopy:main
+chipscopy-get-examples=chipscopy._cli.example_delivery:main
+
