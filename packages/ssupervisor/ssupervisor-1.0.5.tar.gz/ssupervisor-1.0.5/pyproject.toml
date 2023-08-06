@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ssupervisor"
+version = "1.0.5"
+description = ""
+authors = ["Infinium <infinium-llc@protonamil.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.0.3"
+watchdog = "^2.1.6"
+rich = "^10.14.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+supervisor = 'ssupervisor.Supervisor:cli'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

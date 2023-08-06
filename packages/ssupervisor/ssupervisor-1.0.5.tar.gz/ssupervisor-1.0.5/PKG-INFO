@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ssupervisor
+Version: 1.0.5
+Summary: 
+Author: Infinium
+Author-email: infinium-llc@protonamil.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: rich (>=10.14.0,<11.0.0)
+Requires-Dist: watchdog (>=2.1.6,<3.0.0)
