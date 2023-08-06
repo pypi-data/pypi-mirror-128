@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+sitzungsdienst/__init__.py
+sitzungsdienst/cli.py
+sitzungsdienst/sta.py
+sitzungsdienst/utils.py
+sitzungsdienst.egg-info/PKG-INFO
+sitzungsdienst.egg-info/SOURCES.txt
+sitzungsdienst.egg-info/dependency_links.txt
+sitzungsdienst.egg-info/entry_points.txt
+sitzungsdienst.egg-info/requires.txt
+sitzungsdienst.egg-info/top_level.txt
