@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: fluentcms-link
+Version: 2.0.0
+Summary: A link plugin for django-fluent-pages
+Home-page: https://github.com/bashu/fluentcms-link/
+Author: Basil Shubin
+Author-email: basil.shubin@gmail.com
+License: Apache License, Version 2
+Download-URL: https://github.com/bashu/fluentcms-link/zipball/master
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: django-fluent-contents (>=2.0)
+Provides-Extra: develop
+Requires-Dist: tox ; extra == 'develop'
+Requires-Dist: django ; extra == 'develop'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+fluentcms-link
+==============
+
+.. image:: https://img.shields.io/pypi/v/fluentcms-link.svg
+    :target: https://pypi.python.org/pypi/fluentcms-link/
+
+.. image:: https://img.shields.io/pypi/dm/fluentcms-link.svg
+    :target: https://pypi.python.org/pypi/fluentcms-link/
+
+.. image:: https://img.shields.io/github/license/bashu/fluentcms-link.svg
+    :target: https://pypi.python.org/pypi/fluentcms-link/
+
+.. image:: https://img.shields.io/travis/bashu/fluentcms-link.svg
+    :target: https://travis-ci.com/github/bashu/fluentcms-link/
+
+A plugin for django-fluent-contents_ to add a link to an other page or
+to an external website.
+
+Installation
+------------
+
+First install the module, preferably in a virtual environment. It can be installed from PyPI:
+
+.. code-block:: shell
+
+    pip install fluentcms-link
+
+
+Backend Configuration
+~~~~~~~~~~~~~~~~~~~~~
+
+First make sure the project is configured for django-fluent-contents_.
+
+Then add the following settings:
+
+.. code-block:: python
+
+    INSTALLED_APPS += (
+        'fluentcms_link',
+    )
+
+The database tables can be created afterwards:
+
+.. code-block:: shell
+
+    python ./manage.py migrate
+
+Now, the ``LinkPlugin`` can be added to your ``PlaceholderField`` and
+``PlaceholderEditorAdmin`` admin screens.
+
+Frontend Configuration
+~~~~~~~~~~~~~~~~~~~~~~
+
+If needed, the HTML code can be overwritten by redefining ``fluentcms_link/link.html``.
+
+Contributing
+------------
+
+If you like this module, forked it, or would like to improve it, please let us know!
+Pull requests are welcome too. :-)
+
+.. _django-fluent-contents: https://github.com/edoburu/django-fluent-contents
+
+Changes
+-------
+
+2.0.0 (2021-11-19)
+~~~~~~~~~~~~~~~~~~
+
+* Added Django 3+ support.
+* Dropped Python 2.7 support.
+* Dropped Django 1.10 / 1.11 support.
+
+
