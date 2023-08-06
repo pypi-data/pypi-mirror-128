@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "warehut"
+version = "3.1.0"
+description = "Manage producer and consumer workers"
+license = "GPL-3.0-or-later"
+readme = "README.md"
+authors = ["Maximillian Strand <maximillian.strand@protonmail.com>"]
+homepage = "https://gitlab.com/deepadmax/warehut"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
