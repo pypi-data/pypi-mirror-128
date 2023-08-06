@@ -1,0 +1,158 @@
+header {
+  font-size: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+nav {
+  display: inline;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  padding-right: 0.3125rem;
+}
+
+.container {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.container.large {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+form label {
+  width: 10%
+}
+
+input, textarea {
+  border: 0.1rem solid;
+  border-radius: 0.3rem;
+  font-size: 1em;
+}
+
+textarea,
+input[type=submit],
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=file] {
+  box-sizing: border-box;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  font-family: inherit;
+}
+
+
+label[for=textarea] {
+  display: block;
+}
+
+textarea {
+  min-height: 20vh;
+}
+
+.timeline li {
+  list-style-type: none;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 1em;
+  padding: 0 1em;
+}
+
+details {
+  border-left: 1px dashed;
+  margin-left: 1em;
+}
+
+details .comment {
+  padding-left: 1em;
+}
+
+/* color */
+
+html {
+  color: var(--fg-color);
+  background-color: var(--bg-color)
+}
+
+a {
+  color: var(--link-color);
+}
+
+.timeline h2 a:visited {
+  color: var(--link-visited-color);
+}
+
+a:hover, a:active, a:focus,
+.timeline h2 a:hover, .timeline h2 a:active, .timeline h2 a:focus {
+  color: var(--active-color);
+  text-decoration-style: wavy;
+}
+
+details {
+  border-color: var(--border-color);
+  margin-bottom: 2rem;
+}
+
+form fieldset, .timeline li {
+  border-color: var(--border-color);
+  background-color: var(--card-bg-color);
+}
+
+
+.timeline li:hover, .timeline li:focus, .timeline li:active {
+  border-color: var(--active-color);
+}
+
+input[type=submit] {
+  background-color: var(--submit-bg-color);
+  color: var(--fg-color);
+}
+
+hr {
+  color: var(--border-color);
+}
+
+pre {
+  overflow-x: scroll;
+}
+
+blockquote {
+  border-left: 5px solid var(--border-color);
+  paddings-left: 0.5rem;
+  margin-left: 1.5rem;
+  font-style: italic;
+}
+
+.reply-check {
+  visibility: hidden;
+}
+.reply-check ~ label {
+  text-decoration: underline;
+}
+
+.reply-check ~ form {
+  display: none;
+}
+
+.reply-check:checked ~ form {
+  display: block;
+}

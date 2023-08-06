@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load datetime_filter %}
+{% load humanize %}
+{% load i18n %}
+
+
+{% block title %}
+{% blocktrans with timeline_name=timeline_type|title %}
+{{ timeline_name }} timeline
+{% endblocktrans %}
+{% endblock %}
+
+{% block body %}
+
+  {% block heading %}
+  <h1>
+    {% blocktrans with timeline_name=timeline_type|title %}
+    {{ timeline_name }} timeline
+    {% endblocktrans %}
+  </h1>
+  {% endblock %}
+
+  {% block create_post %}
+  <a href="{% url 'communities' %}">{{ l_create_post }}</a>
+  {% endblock %}
+
+  {% block list %}
+  <ul class="timeline">
+  {% for post in posts %}
+  <li>
+    <h2>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    <p>
+      {% blocktrans with raw_time=post.created time_str=post.created|to_datetime|naturaltime author_name=post.author author_url=post.author_url %}
+      Submitted
+      <time datetime="{{ raw_time }}">
+        {{ time_str }}
+      </time>
+      by
+      <a href="{{ author_url }}">{{ author_name }}</a>
+      {% endblocktrans %}
+
+      {% if timeline_type != 'community' %}
+      {% blocktrans with community_url=post.community_url community=post.community context "post to a community" %}
+      to
+      <a href="{{ community_url }}">{{ community }}</a>
+      {% endblocktrans %}
+      {% endif %}
+    </p>
+  </li>
+  {% endfor %}
+  </ul>
+  {% endblock %}
+
+  {% block pagination %}
+  {% if next_page %}
+  <a href="{% url 'timeline_old' timeline_type next_page %}">{{ l_next_page }}</a>
+  {% endif %}
+  {% endblock %}
+{% endblock %}

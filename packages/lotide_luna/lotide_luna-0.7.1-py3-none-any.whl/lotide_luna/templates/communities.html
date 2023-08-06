@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+{{ l_communities }}
+{% endblock %}
+
+<h1>{{ communities }}</h1>
+{% block body %}
+<h2>{{ l_local }}</h2>
+<ul>
+  {% for community in local %}
+  <li><a href='/communities/{{ community.id }}'>{{ community.name }}</a></li>
+  {% endfor %}
+</ul>
+<h2>{% trans "Remote" context "on different instance" %}</h2>
+<ul>
+  {% for community in remote %}
+  <li>
+    <a href='/communities/{{ community.id }}'>
+      {{ community.name }}@{{ community.host }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

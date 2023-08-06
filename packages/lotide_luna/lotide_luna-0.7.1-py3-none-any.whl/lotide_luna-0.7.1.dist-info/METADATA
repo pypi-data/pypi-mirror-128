@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: lotide_luna
+Version: 0.7.1
+Summary: Web client for lotide
+Author-email: Ngô Ngọc Đức Huy <huyngo@disroot.org>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Topic :: Communications
+Requires-Dist: django
+Requires-Dist: requests
+Project-URL: Home, https://sr.ht/~huyngo/luna
+
+# Luna
+
+Luna is a web client for lotide.
+
+## Trivia
+
+In Latin <i>luna</i> means "moon", the celestial object that control the tide.
+

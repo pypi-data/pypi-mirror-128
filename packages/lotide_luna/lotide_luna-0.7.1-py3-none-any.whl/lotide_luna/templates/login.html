@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block body %}
+
+<form action="{% url 'login' %}" method="post">
+  {% csrf_token %}
+  <fieldset>
+    <legend><h1>{{ l_log_in }}</h1></legend>
+    <label for="username">{% trans "Username" %}</label>
+    <input type="text" name="username" id="username" required />
+    <label for="instance">{% trans "Instance" %}</label>
+    <input type="text" name="instance" id="instance" required />
+    <label for="password">{% trans "Password" %}</label>
+    <input type="password" name="password" id="password" required />
+    <input type="submit" value="{{ l_log_in }}">
+  </fieldset>
+</form>
+{% endblock %}

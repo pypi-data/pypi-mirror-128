@@ -1,0 +1,377 @@
+# Vietnamese translation for strings in Luna
+# Copyright (C) 2021 Ngô Ngọc Đức Huy
+# This file is distributed under Creative Commons Attribution-ShareAlike 4.0
+# International (CC BY-SA 4.0)
+# Author(s):
+# Ngô Ngọc Đức Huy <huyngo@disroot.org>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.6.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-14 22:38+0700\n"
+"PO-Revision-Date: 2021-11-12 14:43+0700\n"
+"Last-Translator: Ngô Ngọc Đức Huy <huyngo@disroot.org>\n"
+"Language: Vietnamese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/lotide_luna/templates/base.html:4
+msgid "Luna, a web client for lotide"
+msgstr "Luna, một ứng dụng web cho lotide"
+
+#: src/lotide_luna/templates/base.html:5
+msgid "Log in"
+msgstr "Đăng nhập"
+
+#: src/lotide_luna/templates/base.html:6
+msgid "Log out"
+msgstr "Đăng xuất"
+
+#: src/lotide_luna/templates/base.html:7
+msgid "Settings"
+msgstr "Cài đặt"
+
+#: src/lotide_luna/templates/base.html:8
+msgid "Communities"
+msgstr "Các cộng đồng"
+
+#: src/lotide_luna/templates/base.html:9
+msgctxt "being on same server"
+msgid "Local"
+msgstr "Cùng máy chủ"
+
+#: src/lotide_luna/templates/base.html:10
+msgctxt "feed from all known servers"
+msgid "All"
+msgstr "Tất cả"
+
+#: src/lotide_luna/templates/base.html:11
+msgctxt "default timeline"
+msgid "Home"
+msgstr "Trang chủ"
+
+#: src/lotide_luna/templates/base.html:12
+msgid "Save"
+msgstr "Lưu"
+
+#: src/lotide_luna/templates/base.html:13
+msgid "Next page"
+msgstr "Trang tiếp"
+
+#: src/lotide_luna/templates/base.html:14
+msgid "Reply"
+msgstr "Trả lời"
+
+#: src/lotide_luna/templates/base.html:15
+msgid "Create post"
+msgstr "Đăng bài"
+
+#: src/lotide_luna/templates/base.html:16
+msgid "Plain text"
+msgstr "Văn bản thô"
+
+#: src/lotide_luna/templates/base.html:17
+msgid "New post"
+msgstr "Bài đăng mới"
+
+#: src/lotide_luna/templates/base.html:86
+#, python-format
+msgid ""
+"\n"
+"          Luna is free software:\n"
+"          Its <a id=\"code\" href=\"https://sr.ht/~huyngo/luna\">source "
+"code</a>\n"
+"          is released under the\n"
+"          <a href=\"https://www.gnu.org/licenses/agpl-3.0.html\">\n"
+"            GNU Affero General Public License version 3.</a>\n"
+"          Current version: %(LUNA_VERSION)s\n"
+"          "
+msgstr ""
+"\n"
+"          Luna là phần mềm tự do:\n"
+"          <a id=\"code\" href=\"https://sr.ht/~huyngo/luna\">Mã nguồn </a>\n"
+"          được chia sẻ dưới điều khoản của\n"
+"          <a href=\"https://www.gnu.org/licenses/agpl-3.0.html\">\n"
+"          Giấy phép Công cộng GNU Affero phiên bản 3 (AGPLv3.0).</a>\n"
+"          Phiên bản hiện tại: %(LUNA_VERSION)s\n"
+"          "
+
+#: src/lotide_luna/templates/base.html:96
+msgid ""
+"\n"
+"          The favicon is generated from icon\n"
+"          <a href=\"https://thenounproject.com/search/?"
+"q=moon&i=936949\">Moon</a>\n"
+"          by Thengakola, released under the\n"
+"          <a href=\"https://creativecommons.org/licenses/by/3.0/us/legalcode"
+"\">\n"
+"            Creative Commons Attribution 3.0 United States</a>\n"
+"          from the Noun Project.\n"
+"          "
+msgstr ""
+"\n"
+"          Favicon được tạo ra từ hình\n"
+"          <a href=\"https://thenounproject.com/search/?q=moon&i=936949\">Mặt "
+"trăng</a>\n"
+"          vẽ bởi Thengakola, được chia sẻ với điều khoản của\n"
+"          <a href=\"https://creativecommons.org/licenses/by/3.0/us/legalcode"
+"\">\n"
+"          Giấy phép Creative Commons Ghi công 3.0 Hoa Kỳ</a>\n"
+"          được lấy từ Noun Project.\n"
+"          "
+
+#: src/lotide_luna/templates/comment.html:7
+#: src/lotide_luna/templates/post.html:25
+msgid ""
+"\n"
+"      %(score)s point\n"
+"      "
+msgid_plural ""
+"\n"
+"      %(score)s points\n"
+"      "
+msgstr[0] ""
+"\n"
+"      %(score)s điểm\n"
+"      "
+
+#: src/lotide_luna/templates/comment.html:13
+#, python-format
+msgid ""
+"\n"
+"      <a href=\"%(author_url)s\">%(author_name)s</a>\n"
+"      commented\n"
+"      <time datetime=\"%(raw_time)s\">\n"
+"        %(time_str)s\n"
+"      </time>\n"
+"      "
+msgstr ""
+"\n"
+"      <a href=\"%(author_url)s\">%(author_name)s</a>\n"
+"      đã bình luận\n"
+"      <time datetime=\"%(raw_time)s\">\n"
+"        %(time_str)s\n"
+"      </time>\n"
+"      "
+
+#: src/lotide_luna/templates/communities.html:16
+msgctxt "on different instance"
+msgid "Remote"
+msgstr "Máy chủ khác"
+
+#: src/lotide_luna/templates/community.html:5
+#, python-format
+msgid ""
+"\n"
+"%(name)s community\n"
+msgstr ""
+"\n"
+"Cộng đồng %(name)s\n"
+
+#: src/lotide_luna/templates/index.html:6
+msgid ""
+"\n"
+"Luna is a web client for <a href=\"https://sr.ht/~vpzoom/lotide\">lotide</"
+"a>.\n"
+msgstr ""
+"\n"
+"Luna là một ứng dụng web cho <a href=\"https://sr.ht/~vpzoom/lotide"
+"\">lotide</a>.\n"
+
+#: src/lotide_luna/templates/index.html:10
+msgid "What is lotide?"
+msgstr "lotide là gì?"
+
+#: src/lotide_luna/templates/index.html:13
+msgid ""
+"\n"
+"  <i>lotide</i> is an attempt to build a federated forum. Users can create\n"
+"  communities to share links and text posts and discuss them with other "
+"users,\n"
+"  include those registered on other servers through\n"
+"  <a href=\"https://activitypub.rocks\">ActivityPub</a>.\n"
+"  "
+msgstr ""
+"\n"
+"  <i>lotide</i> là một phần mềm giúp xây dựng các diễn đàn trực tuyến liên "
+"máy chủ.\n"
+"  Người dùng có thể tạo ra các cộng đồng để chia sẻ bài viết và đường dẫn\n"
+"  và thảo luận cùng các người dùng khác  bao gồm cả những người dùng từ các "
+"máy chủ khác, thông qua giao thức\n"
+"  <a href=\"https://activitypub.rocks\">ActivityPub</a>.\n"
+"  "
+
+#: src/lotide_luna/templates/index.html:21
+msgid "Why Luna?"
+msgstr "Tại sao lại gọi là Luna?"
+
+#: src/lotide_luna/templates/index.html:24
+msgid ""
+"\n"
+"  In Latin, <i lang=\"la\">luna</i> means <i>moon</i>, the celestial body "
+"that\n"
+"  control tides.\n"
+"  "
+msgstr ""
+"\n"
+"  Trong tiếng Latin, <i lang=\"la\">luna</i> có nghĩa là <i>mặt trăng</i>,  "
+"một thiên thể điều khiển hiện tượng thuỷ triều (tide).\n"
+"  "
+
+#: src/lotide_luna/templates/login.html:10
+msgid "Username"
+msgstr "Tên đăng nhập"
+
+#: src/lotide_luna/templates/login.html:12
+msgid "Instance"
+msgstr "Máy chủ"
+
+#: src/lotide_luna/templates/login.html:14
+msgid "Password"
+msgstr "Mật khẩu"
+
+#: src/lotide_luna/templates/new-post.html:16
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: src/lotide_luna/templates/new-post.html:18
+msgid "URL"
+msgstr "Đường dẫn"
+
+#: src/lotide_luna/templates/new-post.html:20
+msgid "File"
+msgstr "Tệp tin"
+
+#: src/lotide_luna/templates/new-post.html:22
+msgid "Content"
+msgstr "Nội dung"
+
+#: src/lotide_luna/templates/new-post.html:29
+msgctxt "Create a new post"
+msgid "Post"
+msgstr "Đăng bài"
+
+#: src/lotide_luna/templates/post.html:16
+#: src/lotide_luna/templates/timeline.html:35
+#, python-format
+msgid ""
+"\n"
+"      Submitted\n"
+"      <time datetime=\"%(raw_time)s\">\n"
+"        %(time_str)s\n"
+"      </time>\n"
+"      by\n"
+"      <a href=\"%(author_url)s\">%(author_name)s</a>\n"
+"      "
+msgstr ""
+"\n"
+"<a href=\"%(author_url)s\">%(author_name)s</a>\n"
+"đã đăng\n"
+"<time datetime=\"%(raw_time)s\">\n"
+"  %(time_str)s\n"
+"</time>      "
+
+#: src/lotide_luna/templates/post.html:43
+msgid "Comments"
+msgstr "Bình luận"
+
+#: src/lotide_luna/templates/settings.html:9
+msgctxt "color theme"
+msgid "Theme"
+msgstr "Màu chủ đề"
+
+#: src/lotide_luna/templates/settings.html:13
+msgid "Follow system"
+msgstr "Theo hệ thống"
+
+#: src/lotide_luna/templates/settings.html:18
+msgid "Luna light"
+msgstr "Sáng"
+
+#: src/lotide_luna/templates/settings.html:23
+msgid "Luna dark"
+msgstr "Tối"
+
+#: src/lotide_luna/templates/timeline.html:8
+#, python-format
+msgid ""
+"\n"
+"%(timeline_name)s timeline\n"
+msgstr ""
+"\n"
+"Dòng thời gian %(timeline_name)s\n"
+
+#: src/lotide_luna/templates/timeline.html:17
+msgid ""
+"\n"
+"    %(timeline_name)s timeline\n"
+"    "
+msgstr ""
+"\n"
+"Dòng thời gian %(timeline_name)s\n"
+"    "
+
+#: src/lotide_luna/templates/timeline.html:45
+#, fuzzy, python-format
+msgctxt "post to a community"
+msgid ""
+"\n"
+"      to\n"
+"      <a href=\"%(community_url)s\">%(community)s</a>\n"
+"      "
+msgstr ""
+"\n"
+"      vào cộng đồng\n"
+"      <a href=\"%(post.community_url)s\">%(community)s</a>\n"
+"      "
+
+#: src/lotide_luna/templates/user.html:7
+#, python-format
+msgid ""
+"\n"
+"User %(username)s\n"
+msgstr ""
+"\n"
+"Người dùng %(username)s\n"
+
+#: src/lotide_luna/templates/user.html:32
+#, python-format
+msgid ""
+"\n"
+"    Submitted\n"
+"    <time datetime=\"%(raw_time)s\">\n"
+"      %(time_str)s\n"
+"    </time>\n"
+"    to\n"
+"    <a href=\"%(community_link)s\">%(community_name)s</a>\n"
+"    "
+msgstr ""
+"\n"
+"    Đăng\n"
+"    <time datetime=\"%(raw_time)s\">\n"
+"      %(time_str)s\n"
+"    </time>\n"
+"    vào \n"
+"    <a href=\"%(community_link)s\">%(community_name)s</a>\n"
+"    "
+
+#: src/lotide_luna/templates/user.html:46
+#, python-format
+msgid ""
+"\n"
+"    Commented\n"
+"    <time datetime=\"%(raw_time)s\">\n"
+"      %(time_str)s:\n"
+"    </time>\n"
+"    "
+msgstr ""
+"\n"
+"    Bình luận\n"
+"    <time datetime=\"%(raw_time)s\">\n"
+"      %(time_str)s:\n"
+"    </time>\n"
+"    "
