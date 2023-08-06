@@ -1,0 +1,6 @@
+[curriculum]
+report_level = "DEBUG"
+
+[curriculum.models.huggingface]
+# Pretrianed BERT base model name in huggingface hub.
+bert_base_default_name = "bert-base-uncased"

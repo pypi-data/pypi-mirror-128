@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palabras Pendientes</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<table cellpadding="7">
+    <tr>
+    {% for wg in word_groups %}
+        <th>{{ wg }}</th>
+    {% endfor %}
+    </tr>
+{% for wgr in word_groups_rows %}
+    <tr>
+    {% for w in wgr %}
+        {% if w.strike %}
+            <td><del>{{ w.text }}</del></td>
+        {% else %}
+            <td>{{ w.text }}</td>
+        {% endif %}
+    {% endfor %}
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>

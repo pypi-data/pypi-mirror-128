@@ -1,0 +1,111 @@
+[tool.poetry]
+name = "mammut-py"
+version = "0.1.0.dev202111221621"
+description = "Mammut framework is an open library for computational linguistics."
+authors = ["Mammut.io <support@mammut.io>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://doc.mammut.io"
+repository = "https://github.com/mammut-io/mammut-py"
+keywords = [
+    "NLP",
+    "NLU",
+    "Machine Learning",
+    "ipython",
+    "jupyter",
+    "widgets",
+    "brat",
+    "annotation",
+    ]
+packages = [
+    { include = "mammut", from = "src" },
+]
+include = ["*.html", "*.ini", "*.json",]
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+pip = "^20.0.0"
+tensorflow = "2.2.0"
+tensorflow_hub = { extras=["make_image_classifier"], version = "0.8.0" }
+tensorflow-probability = "0.10.0"
+nltk = "^3.5"
+parsec = "^3.5"
+django = "^3.0.7"
+redis = "^3.5.3"
+pandas = "^1.0.4"
+oauth2client = "^4.1.3"
+google-api-python-client = "^1.9.3"
+openpyxl = "^3.0.3"
+xlrd ="^1.2.0"
+python-pptx = "^0.6.18"
+elasticsearch = "^7.7.1"
+scikit-learn = "^0.23.1"
+simpleneighbors = "^0.1.0"
+sentencepiece = "^0.1.92"
+tf-sentencepiece = "^0.1.90"
+plotly = "^4.8.1"
+chart-studio = "^1.1.0"
+kafka-python = "^2.0.1"
+graphviz = "^0.14"
+jupyter = "^1.0.0"
+brat-widget = "^0.2.5"
+Augmentor = "^0.2.8"
+packaging = "^20.4"
+click = "^7.1.2"
+datasets = "^1.2.1"
+dataclasses = { version="0.6", python="^3.6, <3.7" }
+transitions = "^0.8.5"
+networkx = "^2.5"
+pytest-order = "^0.10.0"
+ray = "^1.2.0"
+transformers = "^4.5.1"
+torch = "^1.8.1"
+dynaconf = "^3.1.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.3"
+black = "^19.10b0"
+coverage = { extras = ["toml"], version = "^5.1" }
+pytest-cov = "^2.10.0"
+pytest-mock = "^3.1.1"
+importlib_metadata = { version = "^1.7.0", python = "~3.6 || ~3.7" }
+zipp = { version = "^3.1.0", python = "~3.6 || ~3.7" }
+
+
+[tool.black]
+line-length = 79
+target-version = ['py38']
+exclude = '''
+(
+  /(
+      \.git          # root of the project
+    | \.github
+    | \.nox
+    | \.pytest_cache
+    | \common
+    | \data
+    | \external-features
+    | \kompose-kubernetes
+    | \notebooks
+  )/
+)
+'''
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["mammut"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 40
+
+[tool.poetry.scripts]
+mammutctl = "src.mammut.mammutctl.mammutctl:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+

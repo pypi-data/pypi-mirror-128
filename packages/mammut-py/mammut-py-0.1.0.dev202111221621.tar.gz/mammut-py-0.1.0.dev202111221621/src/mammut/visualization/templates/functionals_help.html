@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functionals help</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div>{{ functionals_indexes|length}}</div>
+    <table cellpadding="7">
+        {%if functionals_indexes|length%}
+        <tr>
+            <th>Index</th>
+            <th>Description</th>
+
+        </tr>
+        {% endif %}
+
+        {% for fi in functionals_indexes %}
+
+        <tr>
+            <td>{{ fi.index|safe  }}</td>
+            <td>{{ fi.description|safe  }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

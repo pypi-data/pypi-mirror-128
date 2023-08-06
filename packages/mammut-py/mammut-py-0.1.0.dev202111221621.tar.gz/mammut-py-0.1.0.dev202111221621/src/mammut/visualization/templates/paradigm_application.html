@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<table cellpadding="7">
+    <tr>
+        <th>Palabra</th>
+        <th>Caracteristicas</th>
+    </tr>
+{% for wr in word_rows %}
+    <tr>
+        <td>{{ wr.morpheme }}</td>
+        <td>{{ wr.features }}</td>
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>

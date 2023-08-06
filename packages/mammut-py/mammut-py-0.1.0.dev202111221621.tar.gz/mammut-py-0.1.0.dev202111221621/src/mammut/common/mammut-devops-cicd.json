@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mammut-io-2017",
+  "private_key_id": "0bdc07aafc32f46047b0bd33159025e7b5d9105d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC8wFw6rzjS6gCv\nS4sdWjIG11wklnBGZjDjDqZ0Ym+YstoXgdOqnaqAMSh7ZpP1hHdzRw9EeeqLnwGw\ntH217bFrUQr/hlulJ4TxajaqP0sbrLovZ6JZKt/811th6zewtQEAaDqIIDKey/ZJ\nJb3eI3KdSnHUcoZ2zH2BOskJjZ6BweJymEVbMkNkYYyjkDKwIfTaT3J6RWIe9AOy\nq/RjMac3bBKAPVVqrQJLxZexDdRSc6P2uVGqFujg4KmF5Ro4HQTDz9beSYgDREQw\nHmKxCMCTlKQOCUGFUTavlFuoxRujqkjvlmPxqfgg57R2uHli9yS840EZOWS8K+tY\nmxP4dzW3AgMBAAECggEAFBI8fH0PhNYfVoSo+WkS8slJ4hYhQEsznaF8L9ob1dgG\n+wLyOC1l6RXRITYqO6xna1m+FOEGAOzaqCi5SXRKLohCrCNkcW5/Y5CQ2Y+7c+jt\nL4dMq0C06tUXwZTaqi7FOX7b4ofR+jLkMKkTxKBuWq2E5zt6cv2RxwEySZLGrTN7\nEYwoEuAvKe+yZ89dCf7TlndCVpPMCaGxI/WDZGKbtrcUTLIoYh19Nqu0bRNedz3j\nH6reOxNacPjhKHLSuO0M+xNXrvln75Kbu9u5SBy27cOp/14p10imKSDy+qqKa1gI\nxu8Z+ZaLUy98LtleOapT8rehFQWys1R91y/bMFuheQKBgQDkMa8decayw/AFrti9\nVVEgi8/yOIRmZiPzYBqum4K/HSj9fz6k8WiIZK+kXds65jdQjmJU7h77+m+nHyEn\nza0EgfBNSf+oLBvvF1Uf6DKooR2Z5AcxzF7f2nWqSBZ8BU/gu1XUQWH88MJHQusZ\n1yiO6RaUnp2twiX9SEeZ8u+x3QKBgQDTwEvfzppTdcN36b3bDu2SGd0bUUmTKTE7\n3YIy3Z0M3I5sVEEaCZm5Viw1MoMG8QQ4Ks96ll41/TRuGAIYQtiyVvJaqH0x+oya\n8q0UpwqC+QTExa5pAbLrd4RxQQjzFSvcSPmFV0rGtHgsy5E8nFqOcS8Xf4norUdP\ndSwe4FxuowKBgQCh+Z5aZtEinTAnaIfSRNgUKQnO3k0kvkWwgDwQSrRQ4erxnTuj\nKvRPNGD0Y+a0dSs4VAj6ThfSNl7AmrkXHsg8FduzkN4WylB9susqfdBPoCV50cFF\nmNKTROcWmprTJ5YeZ/sxccOTHnZYzOhCbFYOsubjUX+NEe2TTpX8cdOwRQKBgFtm\n+Rltc/4sqihbtAEXy4KyOVfuWaT1NfRSZD4SnRUNK0klgUh89mcjBEgeOqLHbHvW\nNuMCfz4swvH22Qih6inpEAoECq6FKSZFNGLiy83HMcDCV8up2RJ876V3XiaXb+xR\nb6uYB4YIJounf1S7ZPdxcdNh0SSnj02EFXxqelujAoGBAMc/XqFZpEtWKSSakMH0\nUWVxEJdosSH40wGqSVPcTv+lFspzvcQgPGjUaxumrLhyz+ItDhLvXfAESRtDGmOr\nW55yPzQHNiiIJMp+levq5G6mGi87yCOpARsKiUMrRW3xJiB6SOpmHOKhmvhMtCzL\n3af4znDUJrAFENmwqJw+sDPA\n-----END PRIVATE KEY-----\n",
+  "client_email": "devops-cicd@mammut-io-2017.iam.gserviceaccount.com",
+  "client_id": "116810175106703982099",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/devops-cicd%40mammut-io-2017.iam.gserviceaccount.com"
+}
