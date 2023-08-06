@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: score-ecard
+Version: 1.1.0
+Summary: random forest + lr card
+Home-page: https://github.com/wqwangchn/score_ecard
+Author: wqwangchn
+Author-email: wqwangchn@163.com
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: interval
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+# score_ecard
+投票评分卡模型
+
+
