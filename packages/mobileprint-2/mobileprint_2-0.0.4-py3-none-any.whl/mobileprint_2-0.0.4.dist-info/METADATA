@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mobileprint-2
+Version: 0.0.4
+Summary: GUI for 1D，2D and 3D environments
+Home-page: UNKNOWN
+Author: Dennis
+Author-email: dennis2016@163.com
+License: MIT
+Platform: UNKNOWN
+Requires: numpy
+Requires: matplotlib
+
+UNKNOWN
+
+

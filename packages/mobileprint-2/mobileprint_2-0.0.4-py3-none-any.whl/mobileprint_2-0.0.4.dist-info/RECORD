@@ -1,0 +1,13 @@
+mobileprint/__init__.py,sha256=4XChXrjFQ2YxGWM3sbJt5iv9e4u3s4Rvb0Sxmv4wqzw,105
+mobileprint/arguments.py,sha256=-kF2Jm27aAOG3_BL9HxOLOEzCjA1ev8xgMLP5VbojnI,6079
+mobileprint/human_benchmark.py,sha256=jE5grjrZa1JvnHk1qYJnydSn3-jQjR48sOXOnRmRNek,32693
+mobileprint/storage.py,sha256=RfPhkwJ1xHlgJyTHBn-lJvnswoI-9Scg4NG0G2FvRJY,2737
+mobileprint/env/Env1D.py,sha256=BJhvVYKANfZwQvX1XMOFBziqPXGmq_VuMkcp5__u_tk,11764
+mobileprint/env/Env2D.py,sha256=GF4fKu9_6Ol_bhMXcyL4sdP_C7WvAPLD3-0W0oNcAR8,15545
+mobileprint/env/Env3D.py,sha256=A6JQPvJaX3Yrbh09mML45w8dJtc1YHZy26wwVhZJaw8,25882
+mobileprint/env/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mobileprint_2-0.0.4.dist-info/LICENSE,sha256=K_FKUlVV0FqAHC0sKJAVBPt2q-58LX6_tM_HUI198Pc,1077
+mobileprint_2-0.0.4.dist-info/METADATA,sha256=dvnW-3M7ZUpfzvzQfRAYktghDZFNprg2Ec0M2gv0GYM,248
+mobileprint_2-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mobileprint_2-0.0.4.dist-info/top_level.txt,sha256=YEPbJJvt3ymCDtoDCQ9Sz5dyVWh82ijDfu4_mURGzCY,12
+mobileprint_2-0.0.4.dist-info/RECORD,,
