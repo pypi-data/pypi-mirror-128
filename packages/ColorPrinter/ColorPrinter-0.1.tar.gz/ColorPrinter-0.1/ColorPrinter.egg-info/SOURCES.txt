@@ -1,0 +1,7 @@
+README.md
+setup.py
+ColorPrinter.egg-info/PKG-INFO
+ColorPrinter.egg-info/SOURCES.txt
+ColorPrinter.egg-info/dependency_links.txt
+ColorPrinter.egg-info/not-zip-safe
+ColorPrinter.egg-info/top_level.txt
