@@ -1,0 +1,12 @@
+patchwork/contrib/fastapi/__init__.py,sha256=WYvkD7_59H-TqpTeIvQN2D1nxKHd5-lpjV4cUoZrnfQ,271
+patchwork/contrib/fastapi/dependencies.py,sha256=Str28PYZcW9n92swkVNqenthXqF40zOi1Ob8m9dLxJo,2817
+patchwork/contrib/fastapi/entities.py,sha256=JMzNwYfn6b142MjZuuifQ4pgUe9Ktzqu3Yue28dVMU4,166
+patchwork/contrib/fastapi/session.py,sha256=1fiAItMpdm7l64nFIsC831mfzc7ZOzdUhvzqKyQdl6M,2475
+patchwork/contrib/fastapi/settings.py,sha256=JJgfvqVb_rj9QTiVHQFZQx1EQzEgoG6bA7Vmnl7nrzI,4560
+tests/__init__.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+tests/test_fastapi.py,sha256=qc0OpbXROtdln_Yl0mDK508VeUvnSLF-j69otrfsUeg,716
+patchwork_contrib-0.0.11.dist-info/LICENSE,sha256=2j7OLS2vXIEshgbSkiCU9RgYJY1M4OBBtO6ECbo7OB8,1056
+patchwork_contrib-0.0.11.dist-info/METADATA,sha256=xZd3KbGxHG2vDgbmeUD8eLPjTVTBit51f6HEK8ZwVgs,1547
+patchwork_contrib-0.0.11.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+patchwork_contrib-0.0.11.dist-info/top_level.txt,sha256=tXcRNXuRMaHJWrftinoq3NG__MPm-Fv2-VGKu2m3rLo,20
+patchwork_contrib-0.0.11.dist-info/RECORD,,
