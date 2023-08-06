@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vant-hoff-analysis
+Version: 0.0.2
+Summary: A small tool for performing van't Hoff analysis on PCT hydrogenation data
+Home-page: UNKNOWN
+Author: Max Gallant
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (==1.20.2)
+Requires-Dist: scipy (==1.6.3)
+
+UNKNOWN
+
+

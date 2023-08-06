@@ -1,0 +1,12 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_example_data.py,sha256=_OEk6geEhYGkDDI2GmB8W6qCtiHCLa3yZuKmxM9zSNE,2780
+tests/test_fitter.py,sha256=2_WxkiGNs0Vy2qUrQq50NE_rV3nvapXM9D6HVYaa740,1913
+tests/test_pct_curve.py,sha256=hUVjg1rrZ7etid-KtrFgonY_xFFHZX6CmQjji4bw-xY,1551
+vant_hoff_analysis/__init__.py,sha256=V_GseRjuAOKWQwYQZdKQZevorb5eXrkjp2Bu0RVc4Ec,58
+vant_hoff_analysis/fitter.py,sha256=f6YKpCVMOi1uooU5EnespE8ybW03ENiIUkbSjk65UXw,2708
+vant_hoff_analysis/pct_curve.py,sha256=5IgLr7p_O9TfG9Ao5-7o4_qCvXJRtZP-BeNXIV9oKbE,2854
+vant_hoff_analysis/result.py,sha256=A31K7DRmJHCsuTJHzEGz25-yQ6A9y-4QoiRrRTcSOB8,437
+vant_hoff_analysis-0.0.2.dist-info/METADATA,sha256=n9NEZ-auHBZxXirH0ox8BXhmS-MKabh1kYs3FkiUR0I,315
+vant_hoff_analysis-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vant_hoff_analysis-0.0.2.dist-info/top_level.txt,sha256=ddh4nEfPBCUll6XXf06p9hyhfXv31QDgLbGtyrZYne4,25
+vant_hoff_analysis-0.0.2.dist-info/RECORD,,
