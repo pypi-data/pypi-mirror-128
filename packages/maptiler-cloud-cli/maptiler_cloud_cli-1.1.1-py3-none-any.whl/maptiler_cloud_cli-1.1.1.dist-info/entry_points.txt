@@ -1,0 +1,3 @@
+[console_scripts]
+maptiler-cloud=maptiler.cloud_cli:cli
+
