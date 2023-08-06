@@ -1,0 +1,5 @@
+requests>=2.14.0
+sphinx>=1.8
+
+[:python_version < "3.0"]
+docutils<0.18
