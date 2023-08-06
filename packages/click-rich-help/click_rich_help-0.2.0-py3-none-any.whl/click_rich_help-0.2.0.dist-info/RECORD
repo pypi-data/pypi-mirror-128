@@ -1,0 +1,11 @@
+LICENSE.txt,sha256=6CCOyiNZWeqIYNQhFMIG-U5r9yhyq1TpMuqMK_NosgA,1071
+click_rich_help/__init__.py,sha256=C9t5fxnj_AkqWiTr5PJ9oovdjadNBGmGRsUzl-oAijs,373
+click_rich_help/core.py,sha256=3BIol0ZNS91zlnsg9Ks-ev3KRoABUTEnWYb5pycwF-Y,9412
+click_rich_help/decorators.py,sha256=PzyaGjaeIZGUOJhZP5shRRuvzpay0kWF7XDWDt8qIVU,1252
+click_rich_help/example.py,sha256=pNfzdLOaNoOvo1jnzA59i9752gL7JJL_AC1nkALF08o,5781
+click_rich_help/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+click_rich_help/utils.py,sha256=bL3Wotpk_X9wysFs1wZjgYz50v2ayDkMOC2_rtvPgdo,1118
+click_rich_help-0.2.0.dist-info/LICENSE.txt,sha256=6CCOyiNZWeqIYNQhFMIG-U5r9yhyq1TpMuqMK_NosgA,1071
+click_rich_help-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+click_rich_help-0.2.0.dist-info/METADATA,sha256=7zG4B_0PPbUvJvVuQFyS56yPZBPTF0eAFEdq_ioZ-CU,7298
+click_rich_help-0.2.0.dist-info/RECORD,,
