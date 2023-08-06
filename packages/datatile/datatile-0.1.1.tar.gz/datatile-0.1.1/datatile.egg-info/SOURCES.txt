@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+datatile/__init__.py
+datatile.egg-info/PKG-INFO
+datatile.egg-info/SOURCES.txt
+datatile.egg-info/dependency_links.txt
+datatile.egg-info/requires.txt
+datatile.egg-info/top_level.txt
+datatile/catalog/__init__.py
+datatile/summary/__init__.py
+datatile/summary/df.py
+datatile/viz/__init__.py
