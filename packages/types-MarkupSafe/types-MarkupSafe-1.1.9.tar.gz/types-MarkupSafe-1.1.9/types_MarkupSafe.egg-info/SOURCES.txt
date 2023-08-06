@@ -1,0 +1,13 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+markupsafe-stubs/METADATA.toml
+markupsafe-stubs/__init__.pyi
+markupsafe-stubs/_compat.pyi
+markupsafe-stubs/_constants.pyi
+markupsafe-stubs/_native.pyi
+markupsafe-stubs/_speedups.pyi
+types_MarkupSafe.egg-info/PKG-INFO
+types_MarkupSafe.egg-info/SOURCES.txt
+types_MarkupSafe.egg-info/dependency_links.txt
+types_MarkupSafe.egg-info/top_level.txt
