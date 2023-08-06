@@ -1,0 +1,180 @@
+# This is Python API for Agilex limo
+
+###### This is a python API for serial communication with Agilex Robotics-limo
+
+### Installation
+
+##### Notes:
+
+###### Make sure that python version >=3.4. if you have python3 and python2 ,please use python3
+
+#### pip
+
+````bash
+pip3 install pylimo
+````
+
+##### Notes:
+
+###### Make sure that pip3 version >= 9.0.0. 
+
+```bash
+pip3 -V     																				 #cheak the pip3 version
+python3 -m pip install --upgrade pip                          #updata pip3
+```
+
+### import to your project
+
+```python
+#!/usr/bin/env python3
+# coding=utf-8
+from pylimo import Limo
+robots=limo.Limo()
+```
+
+#### function list:
+
+```python
+    EnableCommand()
+    SetMotionCommand()
+    GetLinearVelocity()
+    GetAngularVelocity()
+    GetControlMode()
+    GetBatteryVoltage()
+    GetErrorCode()
+    GetRightWheelOdem()
+    GetLeftWheelOdem()
+    GetIMUAccelData()
+    GetIMUGyroData()
+    GetIMUYawData()
+    GetIMUPichData()
+    GetIMURollData()
+```
+
+#### EnableCommand
+
+- **Prototype**: `EnableCommand()`
+- **Description**: Enable command and control mode.
+
+#### SetMotionCommand
+
+- **Prototype**: `SetMotionCommand()`
+- **Description**:Send Version Request to robots.
+- **Parameters**
+  - `linear_vel`:(float) 
+  - `angular_vel`:(float)
+  - `lateral_velocity`:(float)
+  - `steering_angle`:(float)
+
+#### GetLinearVelocity
+
+- **Prototype**: `GetLinearVelocity(id)`
+- **Description**:Get the linear velocity from limo
+- **Return**:linear velocity
+
+#### GetAngularVelocity
+
+- **Prototype**: `GetAngularVelocity()`
+- **Description**:Get the angular velocity from limo .
+- **Return**:angular velocity
+
+#### GetControlMode
+
+- **Prototype**: `GetControlMode()`
+- **Description**:Get the control mode from limo .
+- **Return**:control mode
+
+#### GetLeftWheelOdeom
+
+- **Prototype**: `GetLeftWheelOdeo()`
+- **Description**:get robots LeftWheelOdom .
+- **Return**:LeftWheelOdom
+
+#### GetRightWheelOdom
+
+- **Prototype**: `GetRightWheelOdom()`
+- **Description**:get robots RightWheelOdom .
+- **Return**:RightWheelOdeom
+
+#### GetBatteryVoltage
+
+- **Prototype**: `GetBatteryVoltage()`
+- **Description**:Get the battery voltage from limo
+- **Return**:battery voltage
+
+#### GetErrorCode
+
+- **Prototype**: `GetErrorCode()`
+- **Description**:Get the error code from limo
+- **Return**:error code
+
+#### GetIMUAccelData
+
+- **Prototype**: `GetIMUAccelData()`
+- **Description**:Get the IMU accle data form limo.
+- **Return**:IMU_accel_x,IMU_accel_y,IMU_accel_z
+
+#### GetIMUGyroData
+
+- **Prototype**: `GetIMUGyroData()`
+- **Description**:Get the IMU gyro data form limo.
+- **Return**:IMU_gyro_x,IMU_gyro_y,IMU_gyro_z
+
+#### GetIMUYaw
+
+- **Prototype**: `GetIMUYaw()`
+- **Description**:Get the IMU yaw data form limo.
+- **Return**:IMU_yaw
+
+#### GetIMUPitch
+
+- **Prototype**: `GetIMUPitch()`
+- **Description**:Get the IMU pitch data form limo.
+- **Return**:IMU_pitch
+
+#### GetIMURoll
+
+- **Prototype**: `GetIMURoll()`
+- **Description**:Get the IMU roll data form limo.
+- **Return**:IMU_roll
+
+### Example
+
+#### Note:
+
+##### For safety, please ensure that the robot's wheels are off the ground
+
+#### 1.Open  Front Light
+
+```python
+#!/usr/bin/env python3
+# coding=utf-8
+from pyagxrobots import agxrobots
+robots=agxrobots.UGV(bustype='socketcan', channel='can0', bitrate=500000) 
+robots.EnableCANCtrl()
+robots.EnableLightCtrl()
+robots.LightFrontMode(1)
+```
+
+#### 2.Move Robot
+
+```python
+#!/usr/bin/env python3
+# coding=utf-8
+from pyagxrobots import agxrobots
+robots=agxrobots.UGV(bustype='socketcan', channel='can0', bitrate=500000) 
+robots.EnableCANCtrl()
+robots.SendLinerVelocity(0.2)
+```
+
+#### 3.get CAN message
+
+```python
+#!/usr/bin/env python3
+# coding=utf-8
+from pyagxrobots import agxrobots
+robots=agxrobots.UGV(bustype='socketcan', channel='can0', bitrate=500000) 
+robots.EnableCANCtrl()
+robots.GetAngularVelocity()
+robots.GetLinerVelocity()
+```
