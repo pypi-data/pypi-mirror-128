@@ -1,0 +1,9 @@
+README.md
+setup.py
+WordyAPI/WordyAPI.py
+WordyAPI/__init__.py
+WordyAPI.egg-info/PKG-INFO
+WordyAPI.egg-info/SOURCES.txt
+WordyAPI.egg-info/dependency_links.txt
+WordyAPI.egg-info/requires.txt
+WordyAPI.egg-info/top_level.txt
