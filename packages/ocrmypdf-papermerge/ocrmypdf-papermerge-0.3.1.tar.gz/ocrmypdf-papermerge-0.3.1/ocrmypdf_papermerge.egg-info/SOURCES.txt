@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ocrmypdf_papermerge/__init__.py
+ocrmypdf_papermerge/generate_preview.py
+ocrmypdf_papermerge/generate_svg.py
+ocrmypdf_papermerge/hocr.py
+ocrmypdf_papermerge/image.py
+ocrmypdf_papermerge/plugin.py
+ocrmypdf_papermerge/render.py
+ocrmypdf_papermerge/utils.py
+ocrmypdf_papermerge.egg-info/PKG-INFO
+ocrmypdf_papermerge.egg-info/SOURCES.txt
+ocrmypdf_papermerge.egg-info/dependency_links.txt
+ocrmypdf_papermerge.egg-info/requires.txt
+ocrmypdf_papermerge.egg-info/top_level.txt
