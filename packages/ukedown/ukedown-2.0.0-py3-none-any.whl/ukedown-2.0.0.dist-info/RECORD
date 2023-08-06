@@ -1,0 +1,11 @@
+CHANGELOG.md,sha256=wMD2fB_3CfUw_96KDubgHOLhNyYzwgIU1ze5NahmboY,2057
+README.md,sha256=kOTqq0TOqWFjXc8dA9vJ6ALww4qhcjPt2hvjlBk9udM,5705
+example.css,sha256=exfjKcDm4nuJLmhVzcqaiPcfMGcaY53EZW0rLZDWeS0,1270
+ukedown/__init__.py,sha256=iyo1fRtIyBzEcmURF_t21BnGOVifUaHRxinHSZ2fKk0,712
+ukedown/patterns.py,sha256=KsvPj5f1ApsPL9W3RWI4dnR5QidOnv6IS6JhP5I1OKo,1695
+ukedown/translations.py,sha256=NZS1fme6sitZlkMNt-vwumDlQY_Ig6XPzqGZtflgYoc,1663
+ukedown/udn.py,sha256=KFr7cNBKsPiiduigzjk2VbpQ0CcHBfa9gS_2NTTTKN8,11789
+ukedown-2.0.0.dist-info/LICENSE.txt,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+ukedown-2.0.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+ukedown-2.0.0.dist-info/METADATA,sha256=MZpUgh_CKf2bAFsR_D_ia6qrpYApuX-IZafOXNVD3eM,595
+ukedown-2.0.0.dist-info/RECORD,,
