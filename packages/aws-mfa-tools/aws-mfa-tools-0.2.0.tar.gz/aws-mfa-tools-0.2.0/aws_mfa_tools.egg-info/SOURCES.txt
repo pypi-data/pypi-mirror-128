@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aws_mfa_tools.egg-info/PKG-INFO
+aws_mfa_tools.egg-info/SOURCES.txt
+aws_mfa_tools.egg-info/dependency_links.txt
+aws_mfa_tools.egg-info/entry_points.txt
+aws_mfa_tools.egg-info/top_level.txt
+mfa_tools/__init__.py
+mfa_tools/list.py
+mfa_tools/login.py
+mfa_tools/main.py

@@ -1,0 +1,3 @@
+[console_scripts]
+awslogin = mfa_tools.main:main
+
