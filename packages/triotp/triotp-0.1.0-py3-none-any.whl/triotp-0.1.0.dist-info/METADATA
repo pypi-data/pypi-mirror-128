@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: triotp
+Version: 0.1.0
+Summary: The OTP framework for Python Trio
+Home-page: https://github.com/linkdd/triotp
+License: MIT
+Keywords: trio,async,otp,triotp
+Author: David Delassus
+Author-email: david.jose.delassus@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Trio
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Requires-Dist: Logbook (>=1.5.3,<2.0.0)
+Requires-Dist: tenacity (>=8.0.1,<9.0.0)
+Requires-Dist: trio (>=0.19.0,<0.20.0)
+Requires-Dist: trio-util (>=0.7.0,<0.8.0)
+Project-URL: Repository, https://github.com/linkdd/triotp
+Description-Content-Type: text/x-rst
+
+TriOTP, the OTP framework for Python Trio
+=========================================
+
+See documentation_ for more informations.
+
+.. _documentation: https://linkdd.github.io/triotp
+
+.. image:: https://img.shields.io/pypi/l/triotp.svg?style=flat-square
+   :target: https://pypi.python.org/pypi/triotp/
+   :alt: License
+
+.. image:: https://img.shields.io/pypi/status/triotp.svg?style=flat-square
+   :target: https://pypi.python.org/pypi/triotp/
+   :alt: Development Status
+
+.. image:: https://img.shields.io/pypi/v/triotp.svg?style=flat-square
+   :target: https://pypi.python.org/pypi/triotp/
+   :alt: Latest release
+
+.. image:: https://img.shields.io/pypi/pyversions/triotp.svg?style=flat-square
+   :target: https://pypi.python.org/pypi/triotp/
+   :alt: Supported Python versions
+
+.. image:: https://img.shields.io/pypi/implementation/triotp.svg?style=flat-square
+   :target: https://pypi.python.org/pypi/triotp/
+   :alt: Supported Python implementations
+
+.. image:: https://img.shields.io/pypi/wheel/triotp.svg?style=flat-square
+   :target: https://pypi.python.org/pypi/triotp
+   :alt: Download format
+
+.. image:: https://github.com/linkdd/triotp/actions/workflows/test-suite.yml/badge.svg
+   :target: https://github.com/linkdd/triotp
+   :alt: Build status
+
+.. image:: https://coveralls.io/repos/github/linkdd/triotp/badge.svg?style=flat-square
+   :target: https://coveralls.io/r/linkdd/triotp
+   :alt: Code test coverage
+
+.. image:: https://img.shields.io/pypi/dm/triotp.svg?style=flat-square
+   :target: https://pypi.python.org/pypi/triotp/
+   :alt: Downloads
+
+Introduction
+------------
+
+This project is a simplified implementation of the Erlang_/Elixir_ OTP_
+framework.
+
+.. _erlang: https://erlang.org
+.. _elixir: https://elixir-lang.org/
+.. _otp: https://en.wikipedia.org/wiki/Open_Telecom_Platform
+
+It is built on top of the Trio_ async library and provides:
+
+ - **applications:** the root of a supervision tree
+ - **supervisors:** automatic restart of children tasks
+ - **mailboxes:** message-passing between tasks
+ - **gen_servers:** generic server task
+
+.. _trio: https://trio.readthedocs.io
+
+Why ?
+-----
+
+Since I started writing Erlang/Elixir code, I've always wanted to use its
+concepts in other languages.
+
+I made this library for fun and most importantly: to see if it was possible.
+As it turns out, it is!
