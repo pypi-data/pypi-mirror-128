@@ -1,0 +1,14 @@
+napping/__init__.py,sha256=t4pgUVphK33Pl7eY-T7mKmO3ofrpfaUmWn7J-ZHO5UU,200
+napping/__main__.py,sha256=Asl6V2ced9FPTGBGAPydjtrrTJCsRROoHM_KYO3ml68,1032
+napping/_version.py,sha256=ah6bKKfo0Pl07HBSQg4VFeUWea0T6YzkvXgcq0-7lq8,142
+napping/napping.py,sha256=EoFNB_IQDMWJDLjYA4_jltN3wkBe-AH6cFz9HDY12ok,29059
+napping/_qt/__init__.py,sha256=_Um_eFSXqKzuW8FLX-Ud6GZ8NxKsEGJRMXj09leQ4Jo,152
+napping/_qt/_file_line_edit.py,sha256=B2phUJzQzXxR8d6mc0Deiv0N862UkoxMKarqx6CYqHQ,1667
+napping/_qt/napping_dialog.py,sha256=v0ooPDXvjODoK5p0Lk9qEl-UOHI5i7DLTlujp2bj_pc,28245
+napping/_qt/napping_widget.py,sha256=CPJVuxxxPN4O6tsBJeRIrVWAoniMjDMQLcCQfXrcOLc,2314
+napping-0.1.8.dist-info/LICENSE,sha256=r-GEgTuLtj358f8Xfc2uE1P7blra4DmFMsQolIBNlPM,1082
+napping-0.1.8.dist-info/METADATA,sha256=iOuL0JfVBXBmUpV1v4pzt83_waw1Nx4Ds9kIEFETHPs,2812
+napping-0.1.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+napping-0.1.8.dist-info/entry_points.txt,sha256=giARCZfwlsYPurY88aJEf9_AuiTZSDJjTVxtEdzgvNY,86
+napping-0.1.8.dist-info/top_level.txt,sha256=58xWhTYAtbxxzLkERymDH4g6SfkKcmx8VCR-n7k7da4,8
+napping-0.1.8.dist-info/RECORD,,
