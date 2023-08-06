@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: mykaikeba-flow
+Version: 0.0.3
+Summary: This is a mini but function completed neural networks framework
+Home-page: UNKNOWN
+Author: zidanewenqsh
+Author-email: zidanewenqsh@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## ABOUT
+
+This is a mini deep learning framework created by Kaikeba @ Beijing
+
+## Features 
+
++ Define Dynamic Computing Graph
++ Define Neural Network Operator
++ Define Linear, Sigmoid, L2_loss  
++ Auto-Diff Computing 
++ Auto-Feedforward and Backward 
+
+## Remain
+
++  Classification 
++  Cross-Entropy
++  CNN, RNN
+
+## Connection 
+
+wechat: fortymiles
+Mail: minchiuan@zju.edu.cn
+
