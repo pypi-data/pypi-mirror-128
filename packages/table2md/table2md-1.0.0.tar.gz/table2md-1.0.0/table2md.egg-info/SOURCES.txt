@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+table2md/__init__.py
+table2md.egg-info/PKG-INFO
+table2md.egg-info/SOURCES.txt
+table2md.egg-info/dependency_links.txt
+table2md.egg-info/requires.txt
+table2md.egg-info/top_level.txt
