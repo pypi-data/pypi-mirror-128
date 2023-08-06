@@ -1,0 +1,3 @@
+[console_scripts]
+scibot = scibot.what_a_c:main
+

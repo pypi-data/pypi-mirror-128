@@ -1,0 +1,13 @@
+README.md
+setup.py
+scibot/streamer.py
+scibot/telebot.py
+scibot/tools.py
+scibot/what_a_c.py
+scienceBot.egg-info/PKG-INFO
+scienceBot.egg-info/SOURCES.txt
+scienceBot.egg-info/dependency_links.txt
+scienceBot.egg-info/entry_points.txt
+scienceBot.egg-info/not-zip-safe
+scienceBot.egg-info/requires.txt
+scienceBot.egg-info/top_level.txt
