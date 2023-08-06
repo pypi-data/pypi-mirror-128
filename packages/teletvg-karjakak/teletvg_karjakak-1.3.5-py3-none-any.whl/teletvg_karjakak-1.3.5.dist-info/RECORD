@@ -1,0 +1,14 @@
+teletvg/TeleTVG.pdf,sha256=JRn5KyZnaXVRaEIqwp9fPFKQ6YvcskSgy01z0DTfnr8,37566
+teletvg/TeleTVG.py,sha256=ecYXwzMVsBGL-cx6IBAdYroLbZtX4fO8-LrntDpK7mk,82481
+teletvg/__init__.py,sha256=sxmChhWBhipp6Ldu0ojN6SC1Me3D54izoB4mQqBuNhg,25
+teletvg/emo.py,sha256=z7MNqYHxcqe0WhYoMBcYYESLCpvQH4Y0qChUHRrQ3pk,16890
+teletvg/emoj.txt,sha256=DxpYqPGPXm_9NLerldt55tXrFIbbucAKGt4L_XDFehk,33680
+teletvg/dbase/__init__.py,sha256=flR4qv4d89m31SYkQmuFAOMCfogc5cnHQdhRAsbMBqs,63
+teletvg/dbase/archiver7z.py,sha256=jzmT7NRTUBKo8byd_C2vksih9_8v3ZjgL73-Cbq_Sas,1210
+teletvg/dbase/datab.py,sha256=bX490HO1p6PQaA6ovoHk2Rxl4madp9QHZvkd_3-q48A,5888
+teletvg_karjakak-1.3.5.dist-info/LICENSE,sha256=T7Xletsi2YoNSD-XhP5n3zlcuAfh4at0C9Duq9YOV0E,1516
+teletvg_karjakak-1.3.5.dist-info/METADATA,sha256=F2zDljHkrB2fdAhUVttAcUDsFvElRKvPMO99GI_66Uw,2689
+teletvg_karjakak-1.3.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+teletvg_karjakak-1.3.5.dist-info/entry_points.txt,sha256=nN0GSEmpfHsxwycTSkQI8GjM0eqcbTTaGWcZBEy8BA0,35
+teletvg_karjakak-1.3.5.dist-info/top_level.txt,sha256=OxAvf1nLPGJkyQwnBsd9gt5C4lCRl9OSv_EtR55hIc4,8
+teletvg_karjakak-1.3.5.dist-info/RECORD,,
