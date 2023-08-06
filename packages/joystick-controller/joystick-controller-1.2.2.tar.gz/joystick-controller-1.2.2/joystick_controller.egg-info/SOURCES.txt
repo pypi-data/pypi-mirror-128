@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+joystick_controller/__init__.py
+joystick_controller/control_assignment.py
+joystick_controller.egg-info/PKG-INFO
+joystick_controller.egg-info/SOURCES.txt
+joystick_controller.egg-info/dependency_links.txt
+joystick_controller.egg-info/requires.txt
+joystick_controller.egg-info/top_level.txt
