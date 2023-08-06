@@ -1,0 +1,17 @@
+appdirs
+attrs
+boltons
+cached-property
+certifi
+chardet
+defusedxml
+idna
+isodate
+lxml
+pytz
+requests
+requests-toolbelt
+six
+urllib3
+zeep
+dunamai
