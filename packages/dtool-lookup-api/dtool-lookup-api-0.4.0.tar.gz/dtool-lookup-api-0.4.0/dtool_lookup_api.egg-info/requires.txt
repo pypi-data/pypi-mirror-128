@@ -1,0 +1,9 @@
+asgiref
+aiohttp
+dtoolcore>=3.9.0
+PyYAML
+
+[testing]
+pytest
+pytest-cov
+pytest-ordering
