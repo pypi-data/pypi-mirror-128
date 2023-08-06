@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=5ABYPQfupRtUNABdavTH0TiTJyTk2KumwDyTMnPdCAo,30
+tests/plugin_test.py,sha256=M8uTOcKrB2myjLDIpeba4uHMD2bSdx5TibdKw-qc9zY,1016
+tests/test_files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_files/test_config.py,sha256=EeYTkUzGTveYl3vIDnJ6lYW7qEaW1Ex5XcFf5ZoH4Hs,277
+tests/test_files/test_correct.py,sha256=qrSyE6uO1mKs1mT7fS5NiLbVXVs0s8fYkJcmEvNoXvc,423
+tests/test_files/test_error.py,sha256=RsrosXxM71ODzKsJ8S9okcDFMzEzw1VWRH7L5U6RQ2U,399
+tests/test_files/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_files/src/decorator.py,sha256=0o9mXFmghSdsYgInWb-6ow7Eq9_mu5HSjxPHr7QWfII,201
+pytest_idempotent-0.0.1.dist-info/LICENSE,sha256=nX0siLcqKcLqKT4FBZNt-Guw3qVriQyV8i1SGViKW74,1066
+pytest_idempotent-0.0.1.dist-info/METADATA,sha256=Vi11rpcdunCgymIbkZxvgkZo1iAjeNNqR3unpBMF8xQ,5387
+pytest_idempotent-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_idempotent-0.0.1.dist-info/entry_points.txt,sha256=C_i6_4zNDVSWx3Mmm0NuTVCsz0eRQP3WZ7gmuIyO0Gc,50
+pytest_idempotent-0.0.1.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+pytest_idempotent-0.0.1.dist-info/RECORD,,
