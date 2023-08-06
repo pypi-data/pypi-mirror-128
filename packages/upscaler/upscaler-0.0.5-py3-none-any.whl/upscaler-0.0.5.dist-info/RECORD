@@ -1,0 +1,9 @@
+upscaler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upscaler/models/__init__.py,sha256=gU0s0PnEvzjP6lRtA5KCxexbuJkEZEzAwTum0BCp17s,57
+upscaler/models/esrgan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upscaler/models/esrgan/modelling_esrgan.py,sha256=jaIp2nuhJvGPRnJtbCreY8rolxvUiBGH07RXnN8AqCo,5916
+upscaler/models/esrgan/modelling_esrgan_utils.py,sha256=4cFzuUaoAaaXGaEriAyrAGBCJzYajhLdmrVCqGWPq1w,26174
+upscaler-0.0.5.dist-info/METADATA,sha256=WvltmoCxqU-A7mAobViSbkuxfhCEIVAyJFwfK-GmnaY,563
+upscaler-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+upscaler-0.0.5.dist-info/top_level.txt,sha256=WEjqxstB42P8Qt7sUx3auAIghhJwnPjWuCcW9sni9zM,9
+upscaler-0.0.5.dist-info/RECORD,,
