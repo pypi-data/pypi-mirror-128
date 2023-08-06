@@ -1,0 +1,28 @@
+{% extends 'portal/base.html' %}
+{% load staticfiles %}
+{% load app_tags %}
+{% load banner_tags %}
+{% load game_banner_tags %}
+{% load headline_tags %}
+{% load benefits_tags %}
+
+{% block subNav %}
+{% banner banner_name="BANNER" %}
+{% endblock subNav %}
+
+{% block content %}
+
+<section class="background">
+    {% headline headline_name="HEADLINE" %}
+</section>
+
+<div>
+    {% benefits %}
+</div>
+
+<div class="container-fluid">
+    {% game_banner game_banner_name="RAPID_ROUTER_BANNER" %}
+    {% game_banner game_banner_name="KURONO_BANNER" %}
+</div>
+
+{% endblock content %}
