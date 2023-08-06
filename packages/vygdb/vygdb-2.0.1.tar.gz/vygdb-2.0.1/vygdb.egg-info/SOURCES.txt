@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+vygdb/__init__.py
+vygdb/gdb_client.py
+vygdb/server.py
+vygdb.egg-info/PKG-INFO
+vygdb.egg-info/SOURCES.txt
+vygdb.egg-info/dependency_links.txt
+vygdb.egg-info/entry_points.txt
+vygdb.egg-info/requires.txt
+vygdb.egg-info/top_level.txt
+vygdb/main/main.html
+vygdb/main/main.js
+vygdb/main/wsinit.js
