@@ -1,0 +1,4 @@
+[console_scripts]
+jsonmason-jsdump = jsonmason:main
+jsonmason-nodedump = jsonmason:main
+
