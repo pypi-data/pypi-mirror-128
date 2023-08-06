@@ -1,0 +1,13 @@
+pandas>=1.1.4
+biopython
+click>=8.0
+tqdm
+ete3
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
