@@ -1,0 +1,4 @@
+Release 0.1.0.dev2
+------------------
+
+Minor changes and bug corrections.

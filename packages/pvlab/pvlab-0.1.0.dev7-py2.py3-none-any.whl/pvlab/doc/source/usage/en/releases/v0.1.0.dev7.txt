@@ -1,0 +1,20 @@
+Release 0.1.0.dev7
+------------------
+
+#. Added module ``channels`` (file ``channels.py``). It contains two fuctions:
+
+   #. Function ``set_channels(numbers: Iterable[int], names: Iterable[str], nameafter: bool = True) -> Iterable[str]``.
+      See `set_channels`_ documentation for further information.
+
+   #. Function ``set_channels_grouped(numbergroups: Iterable[list], namegroups: Iterable[list], nameafter: bool = True, unify: bool = True, init_channels: list = []) -> Iterable[str]``.
+      See `set_channels_grouped`_ for further documentation.
+
+
+
+_set_channels: https://pvlab.readthedocs.io/en/pvlab-0.1.0.dev7/usage/en/tools_io.html#function-set-channels
+_Set_channels_grouped: https://pvlab.readthedocs.io/en/pvlab-0.1.0.dev7/usage/en/tools_io.html#function-set-channels-grouped
+
+
+#. Added license files for third-party packages.
+
+#. Added test module for functions in ``channels`` (file ``test_channels.py``).
