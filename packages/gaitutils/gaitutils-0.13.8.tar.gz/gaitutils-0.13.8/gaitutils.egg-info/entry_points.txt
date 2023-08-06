@@ -1,0 +1,8 @@
+[console_scripts]
+gaitmenu = gaitutils.gui._gaitmenu:main
+gaitmenu_make_shortcut = gaitutils.envutils:_make_gaitutils_shortcut
+nexus_automark_trial = gaitutils.autoprocess:automark_trial
+nexus_autoproc_session = gaitutils.autoprocess:autoproc_session
+nexus_autoproc_trial = gaitutils.autoprocess:autoproc_trial
+tardieu = gaitutils.gui._tardieu:main
+
