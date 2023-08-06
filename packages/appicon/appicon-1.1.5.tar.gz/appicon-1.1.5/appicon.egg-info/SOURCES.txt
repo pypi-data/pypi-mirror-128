@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+appicon/__init__.py
+appicon/icongen.py
+appicon.egg-info/PKG-INFO
+appicon.egg-info/SOURCES.txt
+appicon.egg-info/dependency_links.txt
+appicon.egg-info/requires.txt
+appicon.egg-info/top_level.txt
+appicon/android/Contents.json
+appicon/android/__init__.py
+appicon/android/androidicongen.py
+appicon/ios/Contents.json
+appicon/ios/__init__.py
+appicon/ios/iosicongen.py
