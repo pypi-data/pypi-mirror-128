@@ -1,0 +1,6 @@
+my_pypi_package_sample/__init__.py,sha256=3qz2xO6gZ7Ly7APNqOKlxX3ZcQmj-4G7Z1F4pt4z4zs,44
+my_pypi_package_sample/my_function.py,sha256=hGRZNaCxrT_SnX1i32I-Q6zPZznY_U4Qe0OdugX__ck,96
+my_pypi_package_sample-0.1.1.dist-info/entry_points.txt,sha256=rJ96cfjKIBHvBKFRDnRTWFZZworWSGezcXNMLIU91hg,70
+my_pypi_package_sample-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+my_pypi_package_sample-0.1.1.dist-info/METADATA,sha256=jXWZPExRAK-siCwBqEOwKtTJVAfzB_8gEJDJjtrGvqM,1355
+my_pypi_package_sample-0.1.1.dist-info/RECORD,,
