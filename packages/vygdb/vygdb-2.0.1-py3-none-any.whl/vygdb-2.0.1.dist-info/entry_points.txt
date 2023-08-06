@@ -1,0 +1,3 @@
+[console_scripts]
+vygdb = vygdb:_commandline
+

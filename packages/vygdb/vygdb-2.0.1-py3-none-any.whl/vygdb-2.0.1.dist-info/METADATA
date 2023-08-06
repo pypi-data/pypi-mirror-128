@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: vygdb
+Version: 2.0.1
+Summary: Server debugger
+Home-page: https://github.com/NateBu/vygdb
+Author: Nate Bunderson
+Author-email: nbunderson@gmail.com
+License: MIT
+Keywords: vy,vytools,vygdb,debug,gdb
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Other/Nonlisted Topic
+Requires-Python: >=3.6
+Requires-Dist: websockets
+
+# vygdb
+
+
