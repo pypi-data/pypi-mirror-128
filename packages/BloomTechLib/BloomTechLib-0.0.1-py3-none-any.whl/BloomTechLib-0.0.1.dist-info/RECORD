@@ -1,0 +1,13 @@
+BloomTechLib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BloomTechLib/Analysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BloomTechLib/Analysis/csv_similarity.py,sha256=mW8DrAcgFson0FVRionnLSI2zPTbKn7i_sp-_gfb_e8,1324
+BloomTechLib/Analysis/examples.py,sha256=br9bNrzuD6B0L5TbCQ5HiXy0SNXxw3iWvG7KuFmb3Xo,471
+BloomTechLib/DataBaseOps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BloomTechLib/DataBaseOps/html_to_df.py,sha256=56l2OdxVrHddBYD6Hm099TMSTxDLqHpyeOA8_4_vv-E,355
+BloomTechLib/DataBaseOps/mongo.py,sha256=c2evnaVbENoidLjwTZRS3QnfmdXxP-omse57x7EPbWU,1080
+BloomTechLib/DataBaseOps/sql.py,sha256=QVn0xvxd7BC7uPiPJ6QSdSxNqm63m1Jn0XL2ZqmVChs,1127
+BloomTechLib-0.0.1.dist-info/LICENSE,sha256=ZAMMXH6zlqvBlbvoLfX6WscmiZTrr9QPi2DYZX2F-Hw,1071
+BloomTechLib-0.0.1.dist-info/METADATA,sha256=R4_Jy1bE_prlh1CGecjY8VcHRBxqHmepId6gotpdVzU,2011
+BloomTechLib-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+BloomTechLib-0.0.1.dist-info/top_level.txt,sha256=8MRq2fcTnp3azaJKuhGUU2_Ns7a8IEWtUY3jutHxQQI,13
+BloomTechLib-0.0.1.dist-info/RECORD,,

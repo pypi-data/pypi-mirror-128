@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: BloomTechLib
+Version: 0.0.1
+Summary: Python Library of General Data Science Solutions
+Home-page: UNKNOWN
+Author: Robert Sharp - BloomTech Labs
+Author-email: webmaster@sharpdesigndigital.com
+License: MIT License
+Keywords: BloomTech,Data Science
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools (~=50.0.0)
+Requires-Dist: pandas (~=1.2.3)
+Requires-Dist: psycopg2-binary (~=2.9)
+Requires-Dist: python-dotenv (~=0.17.1)
+Requires-Dist: pymongo (~=3.11.4)
+Requires-Dist: requests (~=2.25.1)
+Requires-Dist: dnspython (~=2.1.0)
+
+# BloomTechLib
+BloomTech Labs Python Library of General Data Science Solutions
+
+
+## BloomTechLib Developer Guidelines
+1. No PEP8 violations.
+2. No global state.
+3. Must be backwards compatible to 3.6.x
+4. Must be forward compatible up to the latest version of Python 3.9.x
+5. Should avoid dependencies outside the standard library.
+6. Every feature will be documented in detail.
+7. Code examples will be included for each feature.
+
+
+## Analysis
+
+### CSV Similarity Score
+Compares two csv files and returns a score between 0.0 and 1.0 to indicate how 
+similar the data is. 
+
+#### Assumptions
+- The data files have the same header, delimiter and number of rows.
+- Each row of data should be a unique observation, each column representing a single aspect.
+- CSV is a convenient format, but a database adapter could be useful in the future.
+- Data will be primitive strings or numbers and not more complex types.
+
+
+## DataBase Ops
+
+### DataModelMongo Class
+- `find(dict) -> dict`
+- `insert(dict)`
+- `find_many(dict, int) -> Iterator[dict]`
+- `insert_many(dict)`
+- `get_df() -> DataFrame`
+
+### DataModelSQL Class
+- `db_action(str)`
+- `db_query(str) -> list`
+
+#### HTML to DataFrame
+- `html_to_df(str, int) -> DataFrame`
+
+## DevOps API
+- WIP
+
+
