@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "./static/css/main.fe490df6.chunk.css",
+    "main.js": "./static/js/main.155f8b39.chunk.js",
+    "main.js.map": "./static/js/main.155f8b39.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.0bd304cb.js",
+    "runtime-main.js.map": "./static/js/runtime-main.0bd304cb.js.map",
+    "static/js/2.5854acf1.chunk.js": "./static/js/2.5854acf1.chunk.js",
+    "static/js/2.5854acf1.chunk.js.map": "./static/js/2.5854acf1.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.fe490df6.chunk.css.map": "./static/css/main.fe490df6.chunk.css.map",
+    "static/js/2.5854acf1.chunk.js.LICENSE.txt": "./static/js/2.5854acf1.chunk.js.LICENSE.txt",
+    "static/media/bot.59122f0e.svg": "./static/media/bot.59122f0e.svg",
+    "static/media/chevron-left.0a52659d.svg": "./static/media/chevron-left.0a52659d.svg",
+    "static/media/chevron-right.9fea0813.svg": "./static/media/chevron-right.9fea0813.svg",
+    "static/media/index.sass": "./static/media/raleway-regular.87382137.woff2",
+    "static/media/plus.279f98f4.svg": "./static/media/plus.279f98f4.svg",
+    "static/media/sort-down.404eff34.svg": "./static/media/sort-down.404eff34.svg",
+    "static/media/sort-up.9b93ba30.svg": "./static/media/sort-up.9b93ba30.svg",
+    "static/media/upload.4ec5c590.svg": "./static/media/upload.4ec5c590.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0bd304cb.js",
+    "static/js/2.5854acf1.chunk.js",
+    "static/css/main.fe490df6.chunk.css",
+    "static/js/main.155f8b39.chunk.js"
+  ]
+}
