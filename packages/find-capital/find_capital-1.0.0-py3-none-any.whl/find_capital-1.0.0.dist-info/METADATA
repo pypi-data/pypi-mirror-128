@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: find-capital
+Version: 1.0.0
+Summary: find-capital package
+Home-page: https://github.com/barudwale20/capital-of-country
+Author: Shubham Barudwale
+Author-email: barudwale20@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pyfiglet (==0.8.post1)
+
+UNKNOWN
+
+

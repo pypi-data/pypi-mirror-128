@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        find-capital-cli=capital_finder.run:main
+    
