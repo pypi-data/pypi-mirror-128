@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+uniparser_eastern_armenian/__init__.py
+uniparser_eastern_armenian.egg-info/PKG-INFO
+uniparser_eastern_armenian.egg-info/SOURCES.txt
+uniparser_eastern_armenian.egg-info/dependency_links.txt
+uniparser_eastern_armenian.egg-info/requires.txt
+uniparser_eastern_armenian.egg-info/top_level.txt
+uniparser_eastern_armenian/data/__init__.py
+uniparser_eastern_armenian/data/armenian_disambiguation.cg3
+uniparser_eastern_armenian/data/bad_analyses.txt
+uniparser_eastern_armenian/data/lex_rules.txt
+uniparser_eastern_armenian/data/lexemes.txt
+uniparser_eastern_armenian/data/paradigms.txt
