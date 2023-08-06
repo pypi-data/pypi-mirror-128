@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: context-handler
+Version: 2.1.0
+Summary: 
+Author: Gustavo Correa
+Author-email: self.gustavocorrea@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: fastapi
+Provides-Extra: sanic
+Requires-Dist: fastapi (>=0.70.0,<0.71.0); extra == "fastapi"
+Requires-Dist: sanic (>=21.9.1,<22.0.0); extra == "sanic"
+Requires-Dist: typing-extensions (>=3.10.0,<4.0.0)
