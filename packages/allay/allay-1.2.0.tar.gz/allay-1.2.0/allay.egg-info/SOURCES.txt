@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+allay/__init__.py
+allay/json_parser.py
+allay/parser.py
+allay/plugin.py
+allay.egg-info/PKG-INFO
+allay.egg-info/SOURCES.txt
+allay.egg-info/dependency_links.txt
+allay.egg-info/top_level.txt
