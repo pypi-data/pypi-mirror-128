@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: cdslib-agents
+Version: 0.0.1a3
+Summary: Contagious diseases simulation using Agent-Based Models
+Home-page: https://github.com/fenfisdi/cdslib_agents
+Author: Camilo Hincapie Gutierrez
+Author-email: camilo.hincapie@udea.edu.co
+Maintainer: Developers of the CDS team of FEnFiSDi group
+Maintainer-email: grupofenfisdi@udea.edu.co
+License: GNU General Public License v3 (GPLv3)
+Keywords: Complex Systems,Computation,Epidemiology,Nonlinear dynamics,Agent Based Models
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.20.2)
+Requires-Dist: scipy (>=1.6.3)
+Requires-Dist: pandas (>=1.2.4)
+Requires-Dist: scikit-learn (>=0.24.2)
+Requires-Dist: pydantic (>=1.8.2)
+Requires-Dist: munch (>=2.5.0)
+
+# CDSLib - Agents
+
+Welcome to **CDSLib - Agents** package.
+
+![repo_logo](https://raw.githubusercontent.com/fenfisdi/cdslib_agents/dev/images/CDSLib_agents_white-background.png "CDSLib - Agents Logo")
+
+## Description
+
+As part of the **Contagious Disease Simulation Library**, the
+**CDSLib - Agents** package is intended to be used for modelling and simulating
+contagious diseases using Agent-Based Models and it has been used for the development
+of the [Contagious Disease Simulation Laboratory](https://github.com/fenfisdi/cdslab).
+
+The package consists of different implementations of a heterogeneous population
+of agents following rules of behavior that determine their movement and the evolution
+of their infectious and clinical states.
+
+The current implementation allows Agents to move in a bidemensional space following
+a distribution of velocities based on population data. This can be achieved thanks to
+the inclusion Distribution module which is a wrapper for different tools that provides
+distribution-like function support.
+
+In regards to the disease states, the current implementation also allows the user to
+add as much states as preferred, and to create custom natural history of the disease
+(i.e. the design a custom graph for evolution of disease states).
+
+For more information, please refer to the official documentation of the project.
+
+## Main contributors
+
+This package was made with thanks to the leadership of
+[Camilo Hincapié](https://www.linkedin.com/in/camilo-hincapie-gutierrez/)
+and the contributions of
+[Ian Mejía](https://github.com/IanMejia),
+[Carolina Rojas Duque](https://github.com/carolinarojasd),
+[Emil Rueda](https://www.linkedin.com/in/emil-rueda-424012207/),
+[Nicole Rivera](https://github.com/nicolerivera1) and
+[Alejandro Campillo](https://www.linkedin.com/in/alucardcampillo/).
+
+## Contact us
+
+For any suggestion on the development of this type of models, please our official
+channels of [dicussions](https://github.com/fenfisdi/cdslib_agents/discussions)
+provided by GitHub.
+
+## License
+
+[GNU General Public License v3 (GPLv3)](./LICENSE)
+
+
