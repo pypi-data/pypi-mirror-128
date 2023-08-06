@@ -1,0 +1,7 @@
+Click
+Jinja2
+python-magic
+python-slugify
+dateparser
+boto3
+PyYAML
