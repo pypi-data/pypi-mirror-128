@@ -1,0 +1,4 @@
+[console_scripts]
+deduplicate-samples=src.deduplicate_samples:main
+gtf-to-rseqc-bed=src.gtf_to_rseqc_bed:main
+
