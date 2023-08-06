@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wiser
+Version: 0.1.1
+Summary: A python package designed to free the developers from the burden of common operations with cloud technologies.
+Home-page: https://github.com/nicolamassarenti/wiser
+Author: Nicola Massarenti
+Author-email: nicola.massarenti@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/nicolamassarenti/wiser/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: firestore
+Provides-Extra: storage
