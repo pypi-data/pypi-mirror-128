@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+b3q/__init__.py
+b3q/b3q.py
+b3q.egg-info/PKG-INFO
+b3q.egg-info/SOURCES.txt
+b3q.egg-info/dependency_links.txt
+b3q.egg-info/top_level.txt
