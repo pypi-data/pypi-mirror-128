@@ -1,0 +1,152 @@
+Metadata-Version: 2.1
+Name: airbotics
+Version: 1.4.0
+Summary: Python SDK for Airbotics
+Home-page: UNKNOWN
+Maintainer: Airbotics
+Maintainer-email: hello@airbotics.io
+License: Apache-2.0
+Project-URL: Source, https://github.com/Airbotics/python-sdk
+Project-URL: Tracker, https://github.com/Airbotics/python-sdk/issues
+Keywords: robotics,ros,ros2,slam
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: numpy (==1.21.0)
+Requires-Dist: Pillow (==8.3.1)
+
+# python-sdk
+
+This is the Python client-side SDK for interacting with the Airbotics API. It allows robotics software engineers to store robot maps in the cloud, retrieve them, and manage metadata about them using Airbotics.
+
+
+## Pre-requisites
+
+* Python 3.8
+
+* An Airbotics account. You can register one [here](https://airbotics.io).
+
+
+## Installation
+
+```bash
+pip3 install airbotics
+```
+
+## Usage
+
+Firstly, create an API key in the console and set it as an environment variable:
+
+```bash
+export AIR_API_KEY=<your-api-key>
+```
+
+We can then initialise the client:
+
+```python
+import numpy as np
+from airbotics import Client
+from airbotics import exceptions
+
+try:
+    client = Client()
+except exceptions.InvalidApiKeyException as e:
+    pass
+```
+
+Now, we could create a map entity in our account for some area that we want to store.
+
+```python
+new_map = client.maps.create_map('map-slug', 'New map', 'Description of the map')
+print(new_map)
+
+'''Example output:
+>   {
+>       'slug': 'map-slug',
+>       'name': 'New Map',
+>       'description': 'Description of the map',
+>       'created_at': '2021-10-30T20:02:56.704Z',
+>       'updated_at': '2021-10-30T20:02:56.704Z',
+>       'num_versions': 0
+>   }
+'''
+```
+
+Once we have a map entity in our account we can upload data to it, which will create a new version. In this case, we upload the data from a file:
+
+```python
+msg = client.maps.upload_map_from_file('map-slug', './map.pgm')
+print(msg)
+
+'''Example output:
+>   {
+>       'message': 'You have updated the map.'
+>   }
+'''
+```
+
+But we could also create a 2d numpy array representing the occupancy grid map and upload that instead:
+
+```python
+np_map = np.array([
+    [205, 255, 255],
+    [205, 000, 255],
+    [205, 255, 255],
+], 'uint8')
+
+msg = client.maps.upload_map('map-slug', np_map)
+print(msg)
+
+'''Example output:
+>   {
+>       'message': 'You have updated the map.'
+>   }
+'''
+```
+
+At some other point, or from some other machine, we might then download a specific version of the map to be used in a robot or application. In this case we download it to a 2d numpy array:
+
+```python
+arr = client.maps.download_map('map-slug', 'latest')
+print(arr)
+
+'''Example output:
+>   [
+>       [255, ..., 255],
+>       [255, ..., 255],
+>       [255, ..., 255]
+>   ]
+'''
+```
+
+But we could also download it to a file:
+
+```python
+client.maps.download_map_to_file('map-slug', 'latest', './map.pgm')
+```
+
+## Documentation
+
+See [here](https://docs.airbotics.io/python-sdk/overview) for documenation.
+
+
+## Examples
+
+See [here](https://github.com/Airbotics/python-sdk/tree/main/examples) for examples of how to manage your account, API keys, maps, and upload and download map versions using the Python SDK.
+
+
+## Contributing
+
+We love contributions! Please see our [Contributing](CONTRIBUTING.md) guide for more information.
+
+
+## License
+
+The software in this repository is licensed under the [Apache 2.0 License](LICENSE). Copyright 2021 Airbotics.
+
