@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: sou-eu
+Version: 0.1.6
+Summary: Pacote que gera crachá em pdf através do nome de usuário do Github com seus dados (Avatar e Bio) e, qrcode de redes sociais (Facebook, Instagram).
+Home-page: https://github.com/WendelSantosNunes/sou_eu
+Author: Wendel dos Santos Nunes
+Author-email: wendelnunes9999@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/WendelSantosNunes/sou_eu
+Description-Content-Type: text/markdown
+
+# sou_eu
+
+## Crachá personalizado com dados do github e/ou QRcodes dos perfis do Facebook e Instagram
+
+<p> Usuário completo </p>
+
+![Usuário + QRcode do Facebook + QRcod do Instagram](https://raw.githubusercontent.com/WendelSantosNunes/thatsme/main/demo/UC.png)
+
+<p> Usuário básico </p>
+
+![Usuário + QRcode do Github](https://raw.githubusercontent.com/WendelSantosNunes/thatsme/main/demo/UB.png)
+
+O sou_eu foi criado em python3.8. O sistema pode ser usado em Windows, Linux e Mac.
+
+Colaboradores: <br />
+
+1. [Wendel Nunes](https://github.com/WendelSantosNunes) <br />
+2. [Eva Luana](https://github.com/evalasilva) <br />
+
+### Descrição:
+
+> O sou_eu é um pacote criado durante a disciplina de Programação Orientada a Objetos 2 (POO2), ministrada no curso de Sistema de Informação na Universidade Federal do Piauí-CSHNB.
+> Não há intuito comercial, ou governamental.
+> O sou_eu foi produzido para fins de aprendizado e experiência em desenvolvimento de pacotes, contudo pode ser utilizado por qualquer usuário do Github que tenha interesse. O projeto possui a Licença do MIT disponibilizada pelo próprio Github.
+> O sou_eu pode ser utilizado como cartão virtual, em formato PDF, para qualquer pessoa física/jurídica que queira compartilhar suas informações de contato de forma padronizada, elegante e eficiente.
+
+## Requisitos:
+
+1. [python3](https://www.python.org/downloads/)
+2. [pip](https://pip.pypa.io/en/stable/installation/)
+3. [pyqrcode](https://pypi.org/project/PyQRCode/)
+4. [fpdf2](https://pypi.org/project/fpdf2/)
+5. [pypng](https://pypi.org/project/pypng/)
+
+## Instalação:
+
+### Python3
+
+1. Windows: [Download](https://www.python.org/downloads/)
+
+2. Linux Debian e derivados.
+
+   ```
+       $ sudo apt-get install python3
+   ```
+
+### PIP
+
+1. Instalação do PIP - LINUX
+
+   ```Debian
+   	$ sudo  apt-get install python-pip
+   ```
+
+   ```Red Hat/ OpenSUSe
+   	$ sudo  yum install python-pip
+   ```
+
+### thatsme
+
+1. Instalação do thatsme
+
+   pip install sou_eu
+
+## Execução:
+
+1.  Instale o pacote;
+2.  Importe a classe Cracha:
+    (from sou_eu import thatsme);
+3.  Crie um objeto da classe:
+
+    3.1. O objeto deve enviar como parâmetro("endereco_local_armazenar_pdf","nome_usuario_github","url_perfil_facebook", "url_perfil_instagram");
+
+        from sou_eu import thatsme
+
+        usuario = thatsme.Cracha('endereco','usuario_github', 'url_perfil_facebook', 'url_perfil_instagram')
+
+        usuario.cracha()
+
+    3.2. O parâmetro "nome_usuario_github" é obrigatório;
+    3.3. Caso não hajam as URLs dos perfins do Facebook e/ou Instagram, deve ser inserido "None" no local devido;
+
+        from sou_eu import thatsme
+
+        usuario = thatsme.Cracha('endereco','usuario_github', None, 'url_perfil_instagram')
+
+        usuario.cracha()
+
+    3.4. Para o caso de não haver URL do Facebook nem do Instagram será adicionado o QRcode do perfil do usuário no Github;
+
+    3.5. Se o usuário do Github não for encontrado será apresentado o ERROR 404.
+
