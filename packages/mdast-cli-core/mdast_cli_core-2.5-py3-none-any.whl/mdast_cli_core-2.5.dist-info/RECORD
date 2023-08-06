@@ -1,0 +1,8 @@
+mdast_cli_core/__init__.py,sha256=g5oN3OZTMSn7qcxtb4nykVF5N8whlG2jBZi2tYr32tI,84
+mdast_cli_core/api.py,sha256=gBbNyotciHJS4W58luF3PsIpyVRVgqdJngkomc1r1Us,2144
+mdast_cli_core/base.py,sha256=BsIILMuk_KnTtRBlBLjm4rRGzEPzVZK2CAtUc5IpTds,22714
+mdast_cli_core/token.py,sha256=8EGjIQF2FCPY3MAjzp8Vt48HIK9AwqGvCJVUMjsQX_A,560
+mdast_cli_core-2.5.dist-info/METADATA,sha256=2aR6J0ETN-rRxiYmzW1F1aeLDFQfT_vY-A4Mm59L4Ko,544
+mdast_cli_core-2.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mdast_cli_core-2.5.dist-info/top_level.txt,sha256=g49SO7i0VAwwOo27MTzGBijSCg4bnqhufkkYtHRvPVs,15
+mdast_cli_core-2.5.dist-info/RECORD,,
