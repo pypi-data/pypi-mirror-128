@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Copyright (C) 2020 Parrot SA
+
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions
+	are met:
+	* Redistributions of source code must retain the above copyright
+	notice, this list of conditions and the following disclaimer.
+	* Redistributions in binary form must reproduce the above copyright
+	notice, this list of conditions and the following disclaimer in
+	the documentation and/or other materials provided with the
+	distribution.
+	* Neither the name of Parrot nor the names
+	of its contributors may be used to endorse or promote products
+	derived from this software without specific prior written
+	permission.
+
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+	"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+	LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+	FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+	COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+	INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+	BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+	OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+	AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+	OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+	OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+	SUCH DAMAGE.
+-->
+<feature id="174" name="fcr">
+	Flight camera recording feature
+	<enums>
+		<enum name="pipeline">
+			Type of pipeline.
+			<value name="fstcam_left_timelapse">
+				Drone left stereo camera pipeline.
+			</value>
+			<value name="fstcam_right_timelapse">
+				Drone right stereo camera pipeline.
+			</value>
+			<value name="fcam_timelapse">
+				Drone front camera pipeline.
+			</value>
+			<value name="fstcam_left_emergency">
+				Drone left stereo camera last frames pipeline.
+			</value>
+			<value name="fstcam_right_emergency">
+				Drone right stereo camera last frames pipeline.
+			</value>
+			<value name="fcam_emergency">
+				Drone front camera last frames pipeline.
+			</value>
+			<value name="fcam_tracking">
+				Drone front camera tracking pipeline.
+			</value>
+			<value name="vcam_precisehome">
+				Drone vertical camera precise home pipeline.
+			</value>
+			<value name="fstcam_left_obstacleavoidance">
+				Drone left stereo camera obstacle avoidance pipeline.
+			</value>
+			<value name="fstcam_right_obstacleavoidance">
+				Drone right stereo camera obstacle avoidance pipeline.
+			</value>
+			<value name="vcam_precisehovering">
+				Drone vertical camera precise hovering pipeline.
+			</value>
+			<value name="fstcam_left_calibration">
+				Drone left stereo camera love calibration pipeline.
+			</value>
+			<value name="fstcam_right_calibration">
+				Drone right stereo camera love calibration pipeline.
+			</value>
+			<value name="fstcam_right_precisehovering">
+				Drone right stereo camera precise hovering pipeline.
+			</value>
+			<value name="fstcam_left_event">
+				Drone left stereo camera specific events pipeline.
+			</value>
+			<value name="fstcam_right_event">
+				Drone right stereo camera specific events pipeline.
+			</value>
+		</enum>
+	</enums>
+	<msgs>
+		<evt name="capabilities" id="1">
+			<comment
+				title="Drone recording capabilities"
+				support="091a"
+				triggered="only during the connection"/>
+			<arg name="capabilities" type="bitfield:u64:pipeline">
+				List of recording capabilities of the drone.
+			</arg>
+		</evt>
+		<evt name="state" id="2">
+			<comment
+				title="Drone recording state"
+				support="091a"
+				triggered="during connection and by [configure_pipelines](#174-3)"/>
+			<arg name="state" type="bitfield:u64:pipeline">
+				List of activated recordings.
+			</arg>
+		</evt>
+		<cmd name="configure_pipelines" id="3">
+			<comment
+				title="configure flight camera pipelines"
+				desc="Allows to configure which flight camera pipelines are active."
+				support="091a"
+				result="Event [state](#174-2) is triggered"/>
+			<arg name="pipelines" type="bitfield:u64:pipeline">
+				Pipeline configuration. 1 activates the corresponding pipeline, 0 deactivates it.
+			</arg>
+			<expectations>
+				<immediate>
+					#174-2
+				</immediate>
+			</expectations>
+		</cmd>
+	</msgs>
+</feature>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Copyright (C) 2020 Parrot SA
+
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions
+	are met:
+	* Redistributions of source code must retain the above copyright
+	notice, this list of conditions and the following disclaimer.
+	* Redistributions in binary form must reproduce the above copyright
+	notice, this list of conditions and the following disclaimer in
+	the documentation and/or other materials provided with the
+	distribution.
+	* Neither the name of Parrot nor the names
+	of its contributors may be used to endorse or promote products
+	derived from this software without specific prior written
+	permission.
+
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+	"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+	LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+	FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+	COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+	INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+	BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+	OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+	AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+	OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+	OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+	SUCH DAMAGE.
+-->
+<feature id="162" name="auto_follow">
+	Auto Follow feature
+	<enums>
+		<enum name="mode">
+			Mode of follow me.
+			<value name="none">
+				No follow me.
+			</value>
+			<value name="geographic">
+				Follow the target keeping the same vector.
+			</value>
+			<value name="relative">
+				Follow the target keeping the same orientation to its direction.
+			</value>
+			<value name="leash">
+				Follow the target as it was held by a leash.
+			</value>
+		</enum>
+		<enum name="indicator">
+			Indicators needed to start or improve the follow.
+			<value name="drone_gps">
+				Drone gps is not fixed.
+			</value>
+			<value name="drone_magneto">
+				Drone magneto is not valid.
+			</value>
+			<value name="drone_geofence">
+				Drone is out of geofence.
+			</value>
+			<value name="drone_min_altitude">
+				Drone is under min altitude.
+			</value>
+			<value name="drone_max_altitude">
+				Drone is above max altitude.
+			</value>
+			<value name="drone_flying">
+				Drone is not flying.
+			</value>
+			<value name="target_position_accuracy">
+				Target position has a bad accuracy.
+			</value>
+			<value name="target_image_detection">
+				Target image detection is not working.
+			</value>
+			<value name="drone_target_distance_min">
+				Drone is too close to target.
+			</value>
+			<value name="drone_target_distance_max">
+				Drone is too far from target.
+			</value>
+			<value name="target_horiz_speed">
+				Target horizontal speed is too high.
+			</value>
+			<value name="target_vert_speed">
+				Target vertical speed is too high.
+			</value>
+			<value name="target_altitude_accuracy">
+				Target altitude has a bad accuracy.
+			</value>
+		</enum>
+		<enum name="behavior">
+			Behavior.
+			<value name="idle">
+				Drone is not following the target.
+			</value>
+			<value name="follow">
+				Follow the target.
+			</value>
+		</enum>
+		<enum name="configure_param">
+			Follow me configuration parameters.
+			<value name="distance">
+				Distance configuration.
+			</value>
+			<value name="elevation">
+				Elevation configuration.
+			</value>
+			<value name="azimuth">
+				Azimuth configuration.
+			</value>
+		</enum>
+	</enums>
+	<msgs>
+		<evt name="info" id="1" type="MAP_ITEM:mode">
+			<comment
+				title="Follow me info"
+				desc="Describes the missing inputs which prevent from starting a follow mode,
+				and improvements"
+				support="091a"
+				triggered="During connection and when the list of missing requirements
+				or improvements changes for the mode"/>
+			<arg name="mode" type="enum:mode">
+				Mode of follow me.
+			</arg>
+			<arg name="missing_inputs" type="bitfield:u32:indicator">
+				List of missing requirements to enter this mode.
+				If at least one input is missing, drone won't be able to follow the target.
+				It won't use any fallback either.
+			</arg>
+			<arg name="improvements" type="bitfield:u32:indicator">
+				List of inputs that can improve the mode.
+			</arg>
+			<arg name="list_flags" type="bitfield:u8:list_flags"/>
+		</evt>
+		<cmd name="start" id="2">
+			<comment
+				title="Start follow me mode"
+				desc="Start a follow me. Sending this command will stop other running follow me."
+				support="091a"
+				result="Event [state](#162-4) and [config](#162-5) are triggered."/>
+			<expectations>
+				<immediate>
+					#162-4(mode: this.mode, behavior: follow)
+					#162-5(distance: this.distance, elevation: this.elevation, azimuth: this.azimuth)
+				</immediate>
+			</expectations>
+			<arg name="mode" type="enum:mode">
+				Mode of follow me.
+			</arg>
+			<arg name="use_default" type="bitfield:u8:configure_param">
+				Use default value for distance, elevation and/or azimuth.
+			</arg>
+			<arg name="distance" type="float">
+				The distance leader-follower in meters.
+				Ignored if flag distance is raised in arg use_default.
+			</arg>
+			<arg name="elevation" type="float">
+				The elevation leader-follower in rad.
+				Ignored if flag elevation is raised in arg use_default.
+			</arg>
+			<arg name="azimuth" type="float">
+				The azimuth north-leader-follower in rad.
+				Ignored if flag azimuth is raised in arg use_default.
+			</arg>
+		</cmd>
+		<cmd name="stop" id="3">
+			<comment
+				title="Stop current follow me."
+				desc="Stop current follow me."
+				support="091a"
+				result="Event [state](#162-4) is triggered with mode equals to none."/>
+			<expectations>
+				<immediate>
+					#162-4(mode: none, behavior: idle)
+				</immediate>
+			</expectations>
+		</cmd>
+		<evt name="state" id="4">
+			<comment
+				title="State of the follow me."
+				desc="State of the follow me."
+				support="091a"
+				triggered="by any changes on the follow me, like [start](#162-2),\n
+				[stop](#162-3) ..."/>
+			<arg name="mode" type="enum:mode">
+				Current mode.
+			</arg>
+			<arg name="behavior" type="enum:behavior">
+				Current behavior.
+			</arg>
+		</evt>
+		<evt name="config" id="5">
+			<comment
+				title="Configuration changed."
+				desc="Configuration changed.\n
+				This event is only valid when arg behavior in [state](#162-4) is equal to follow."
+				support="091a"
+				triggered="By [start](#162-2)."/>
+			<arg name="distance" type="float">
+				The distance leader-follower in meters.
+				If distance is default, this value is the current drone distance.
+			</arg>
+			<arg name="elevation" type="float">
+				The elevation leader-follower in rad.
+				If elevation is default, this value is the current leader to drone elevation.
+			</arg>
+			<arg name="azimuth" type="float">
+				The azimuth north-leader-follower in rad.
+				If azimuth is default, this value is the current leader to drone azimuth.
+			</arg>
+		</evt>
+	</msgs>
+</feature>

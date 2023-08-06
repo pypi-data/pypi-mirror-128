@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Copyright (C) 2020 Parrot SA
+
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions
+	are met:
+	* Redistributions of source code must retain the above copyright
+	notice, this list of conditions and the following disclaimer.
+	* Redistributions in binary form must reproduce the above copyright
+	notice, this list of conditions and the following disclaimer in
+	the documentation and/or other materials provided with the
+	distribution.
+	* Neither the name of Parrot nor the names
+	of its contributors may be used to endorse or promote products
+	derived from this software without specific prior written
+	permission.
+
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+	"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+	LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+	FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+	COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+	INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+	BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+	OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+	AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+	OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+	OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+	SUCH DAMAGE.
+-->
+<feature name="stereo_vision_sensor" id="159">
+	Messages related to the stereo vision sensor.
+
+	<enums>
+		<enum name="model">
+			Stereo vision sensor model.
+			<value name="main">
+				Main sensor.
+				Only one sensor of this kind is allowed at a time on a drone.
+			</value>
+		</enum>
+
+		<enum name="feature">
+			Stereo vision sensor feature.
+			<value name="calibration">
+				Calibration feature.
+			</value>
+		</enum>
+
+		<enum name="calibration_state">
+			Calibration state.
+			<value name="required">
+				Calibration is required.
+			</value>
+			<value name="capture_in_progress">
+				Calibration is in progress (capture stage).
+			</value>
+			<value name="computation_in_progress">
+				Calibration is in progress (computation stage).
+			</value>
+			<value name="ok">
+				Calibration is ok.
+			</value>
+		</enum>
+
+		<enum name="calibration_indication">
+			Drone indication for stereo vision sensor calibration.
+			<value name="place_within_sight">
+				The smart board should be placed within sight of the sensor.
+			</value>
+			<value name="check_board_and_cameras">
+				The sensor cannot see the entire board. The user should check that:
+				- there is no obstacle between the sensor and the board,
+				- there is no highlight on the board,
+				- the board is clean,
+				- both cameras are clean.
+			</value>
+			<value name="move_away">
+				The smart board should be moved away from the sensor.
+			</value>
+			<value name="move_closer">
+				The smart board should be moved closer to the sensor.
+			</value>
+			<value name="move_left">
+				The smart board should be moved to the left.
+			</value>
+			<value name="move_right">
+				The smart board should be moved to the right.
+			</value>
+			<value name="move_upward">
+				The smart board should be moved upward.
+			</value>
+			<value name="move_downward">
+				The smart board should be moved downward.
+			</value>
+			<value name="turn_clockwise">
+				The smart board should be turned clockwise.
+			</value>
+			<value name="turn_counter_clockwise">
+				The smart board should be turned counter-clockwise.
+			</value>
+			<value name="tilt_left">
+				The smart board should be tilted to the left.
+			</value>
+			<value name="tilt_right">
+				The smart board should be tilted to the right.
+			</value>
+			<value name="tilt_forward">
+				The smart board should be tilted forward.
+			</value>
+			<value name="tilt_backward">
+				The smart board should be tilted backward.
+			</value>
+			<value name="stop">
+				The smart board is in the correct position and should not be moved for a while.
+			</value>
+		</enum>
+
+		<enum name="calibration_result">
+			Calibration result.
+			<value name="success">
+				Calibration completed successfully.
+			</value>
+			<value name="failure">
+				Calibration failed.
+			</value>
+			<value name="canceled">
+				Calibration canceled, with command `cancel_calibration`.
+			</value>
+		</enum>
+	</enums>
+
+	<msgs>
+		<evt name="capabilities" id="1">
+			<comment
+				title="Stereo vision sensor capabilities"
+				desc="Describes stereo vision sensor supported capabilities."
+				support="091a"
+				triggered="At connection only."/>
+			<arg name="sensor_id" type="u8">
+				Id of the stereo vision sensor.
+				Sensor id is unique and persistent: the same sensor model on a same drone model has always the same id.
+				Main/Built-in sensor has id zero.
+			</arg>
+			<arg name="model" type="enum:model">
+				Sensor model.
+			</arg>
+			<arg name="supported_features" type="bitfield:u16:feature">
+				Supported features.
+			</arg>
+		</evt>
+
+		<evt name="calibration_info" id="2">
+			<comment
+				title="Calibration information"
+				comment="Information needed for calibration."
+				support="091a"
+				triggered="At connection only."/>
+			<arg name="sensor_id" type="u8">
+				Id of the sensor.
+			</arg>
+			<arg name="step_count" type="u8">
+				Indicates the number of steps required for sensor calibration.
+			</arg>
+			<arg name="aspect_ratio" type="float">
+				Sensor aspect ratio.
+			</arg>
+		</evt>
+
+		<evt name="calibration_state" id="3">
+			<comment
+				title="Calibration state"
+				comment="Current calibration state."
+				support="091a"
+				triggered="At connection and when calibration state changes."/>
+			<arg name="sensor_id" type="u8">
+				Id of the sensor.
+			</arg>
+			<arg name="state" type="enum:calibration_state">
+				Current state
+			</arg>
+		</evt>
+
+		<cmd name="start_calibration" id="4">
+			<comment
+				title="Start calibration."
+				comment="Starts sensor calibration. Must be called when the drone is not flying, still, on a flat and
+				horizontal surface, and that nothing is blocking the sensor movement."
+				support="091a"
+				result="[calibration_state](#159-3) changes to `capture_in_progress`, `computation_in_progress` and
+				then `ok`. [calibration_result](#159-8) when the calibration is terminated."/>
+			<expectations>
+				<immediate>
+					#159-3(sensor_id: this.sensor_id, state: capture_in_progress)
+				</immediate>
+			</expectations>
+			<arg name="sensor_id" type="u8">
+				Id of the sensor.
+			</arg>
+		</cmd>
+
+		<cmd name="cancel_calibration" id="5">
+			<comment
+				title="Cancel calibration."
+				comment="Cancel sensor calibration."
+				support="091a"
+				result="[calibration_state](#159-3) changes to `required` or `ok`. [calibration_result](#159-8)
+				with `canceled` result."/>
+			<expectations>
+				<immediate>
+					#159-8(sensor_id: this.sensor_id, result: canceled)
+				</immediate>
+			</expectations>
+			<arg name="sensor_id" type="u8">
+				Id of the sensor.
+			</arg>
+		</cmd>
+
+		<evt name="calibration_step" id="6">
+			<comment
+				title="Calibration step."
+				comment="Indicates current calibration step and required position of the board for this step.\n
+				Coordinates are given in range [0, 1] from the sensor viewpoint, where (0, 0) refers to the top-left
+				corner, and according to the aspect_ratio given in [calibration_info](#159-2)."
+				support="091a"
+				triggered="During calibration process, when the step changes."/>
+			<arg name="sensor_id" type="u8">
+				Id of the sensor.
+			</arg>
+			<arg name="step" type="u8">
+				Calibration step, starting from 0.
+			</arg>
+			<arg name="vertex_lt_x" type="float">
+				X coordinate of the frame of reference's left top vertex.
+			</arg>
+			<arg name="vertex_lt_y" type="float">
+				Y coordinate of the frame of reference's left top vertex.
+			</arg>
+			<arg name="vertex_rt_x" type="float">
+				X coordinate of the frame of reference's right top vertex.
+			</arg>
+			<arg name="vertex_rt_y" type="float">
+				Y coordinate of the frame of reference's right top vertex.
+			</arg>
+			<arg name="vertex_lb_x" type="float">
+				X coordinate of the frame of reference's left bottom vertex.
+			</arg>
+			<arg name="vertex_lb_y" type="float">
+				Y coordinate of the frame of reference's left bottom vertex.
+			</arg>
+			<arg name="vertex_rb_x" type="float">
+				X coordinate of the frame of reference's right bottom vertex.
+			</arg>
+			<arg name="vertex_rb_y" type="float">
+				Y coordinate of the frame of reference's right bottom vertex.
+			</arg>
+			<arg name="angle_x" type="float">
+				Angle of the frame of reference along the X axis, in degrees.
+				Positive value means backward tilt, negative value means forward tilt.
+			</arg>
+			<arg name="angle_y" type="float">
+				Angle of the frame of reference along the Y axis, in degrees.
+				Positive value means left tilt, negative value means right tilt.
+			</arg>
+		</evt>
+
+		<evt name="calibration_indication" id="7" buffer="NON_ACK">
+			<comment
+				title="Calibration indication."
+				comment="Sends smart board current position from the sensor viewpoint, and indication to properly place
+				it according to current calibration step.\n
+				Coordinates are given in range [0, 1] from the sensor viewpoint, where (0, 0) refers to the top-left
+				corner, and according to the aspect_ratio given in [calibration_info](#159-2)."
+				support="091a"
+				triggered="Regularly while calibration is in progress."/>
+			<arg name="sensor_id" type="u8">
+				Id of the sensor.
+			</arg>
+			<arg name="indication" type="enum:calibration_indication">
+				Calibration indication.
+			</arg>
+			<arg name="vertex_lt_x" type="float">
+				X coordinate of the actual board's left top vertex.
+			</arg>
+			<arg name="vertex_lt_y" type="float">
+				Y coordinate of the actual board's left top vertex.
+			</arg>
+			<arg name="vertex_rt_x" type="float">
+				X coordinate of the actual board's right top vertex.
+			</arg>
+			<arg name="vertex_rt_y" type="float">
+				Y coordinate of the actual board's right top vertex.
+			</arg>
+			<arg name="vertex_lb_x" type="float">
+				X coordinate of the actual board's left bottom vertex.
+			</arg>
+			<arg name="vertex_lb_y" type="float">
+				Y coordinate of the actual board's left bottom vertex.
+			</arg>
+			<arg name="vertex_rb_x" type="float">
+				X coordinate of the actual board's right bottom vertex.
+			</arg>
+			<arg name="vertex_rb_y" type="float">
+				Y coordinate of the actual board's right bottom vertex.
+			</arg>
+			<arg name="angle_x" type="float">
+				Angle of the actual board along the X axis, in degrees.
+				Positive value means backward tilt, negative value means forward tilt.
+			</arg>
+			<arg name="angle_y" type="float">
+				Angle of the actual board along the Y axis, in degrees.
+				Positive value means left tilt, negative value means right tilt.
+			</arg>
+		</evt>
+
+		<evt name="calibration_result" id="8" content="NOTIFICATION">
+			<comment
+				title="Calibration result."
+				comment="Result of [start_calibration](#159-4) command."
+				support="091a"
+				triggered="At the end of the sensor calibration."/>
+			<arg name="sensor_id" type="u8">
+				Id of the sensor.
+			</arg>
+			<arg name="result" type="enum:calibration_result">
+				Calibration result.
+			</arg>
+		</evt>
+	</msgs>
+</feature>
