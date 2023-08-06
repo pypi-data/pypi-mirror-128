@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: roy
+Version: 0.4
+Summary: Deploy and app configuration made easy.
+Home-page: http://github.com/royprojectcom/roy
+Author: Morty Space
+Author-email: morty.space@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+
