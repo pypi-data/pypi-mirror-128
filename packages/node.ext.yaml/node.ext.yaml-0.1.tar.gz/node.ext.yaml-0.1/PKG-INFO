@@ -1,0 +1,144 @@
+Metadata-Version: 2.1
+Name: node.ext.yaml
+Version: 0.1
+Summary: Node tree implementation for yaml files
+Home-page: https://github.com/conestack/node.ext.yaml
+Author: Node Contributors
+Author-email: dev@conestack.org
+License: Simplified BSD
+Description: .. image:: https://img.shields.io/pypi/v/node.ext.yaml.svg
+            :target: https://pypi.python.org/pypi/node.ext.yaml
+            :alt: Latest PyPI version
+        
+        .. image:: https://img.shields.io/pypi/dm/node.ext.yaml.svg
+            :target: https://pypi.python.org/pypi/node.ext.yaml
+            :alt: Number of PyPI downloads
+        
+        ``node.ext.yaml`` provides a node implementation to yaml files.
+        
+        For more information on nodes see `node <http://pypi.python.org/pypi/node>`_
+        package.
+        
+        For more information on plumbing see
+        `plumber <http://pypi.python.org/pypi/plumber>`_ package.
+        
+        
+        Usage
+        -----
+        
+        Create a yaml file:
+        
+        .. code-block:: python
+        
+            from node.ext.yaml import YamlFile
+            from node.ext.yaml import YamlNode
+        
+            class MyYamlFile(YamlFile):
+        
+                @property
+                def fs_path(self):
+                    return '/path/to/file.yaml'
+        
+            file = MyYamlFile()
+            file['child'] = YamlNode()
+        
+            # write file to disk
+            file()
+        
+        Define factories for child nodes:
+        
+        .. code-block:: python
+        
+            class SpecificChild(YamlNode):
+                pass
+        
+            class DefaultChild(YamlNode):
+                pass
+        
+            class MyYamlFile(YamlFile):
+                factories = {
+                    'child': SpecificChild,
+                    '*': DefaultChild
+                }
+        
+        Define a schema for node members:
+        
+        .. code-block:: python
+        
+            from node import schema
+            from node.behaviors import SchemaAsAttributes
+            from plumber import plumbing
+        
+            @plumbing(SchemaAsAttributes)
+            class MyYamlFile(YamlFile):
+                schema = {
+                    'int_member': schema.Int(),
+                    'str_member': schema.Str()
+                }
+        
+            file = MyYamlFile()
+            file.attr['int_member'] = 1
+            file.attr['str_member'] = 'String'
+        
+        
+        Python Versions
+        ===============
+        
+        - Python 2.7, 3.3+
+        
+        
+        Contributors
+        ============
+        
+        - Robert Niederreiter
+        
+        
+        Changes
+        =======
+        
+        0.1 (2021-11-22)
+        ----------------
+        
+        - Initial work
+          [rnix]
+        
+        
+        License
+        =======
+        
+        Copyright (c) 2021, Node Contributors
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice, this
+          list of conditions and the following disclaimer in the documentation and/or
+          other materials provided with the distribution.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+        ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+        LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+        ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Keywords: node yaml
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: test
