@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+pystyle/__init__.py
+pystyle.egg-info/PKG-INFO
+pystyle.egg-info/SOURCES.txt
+pystyle.egg-info/dependency_links.txt
+pystyle.egg-info/top_level.txt
