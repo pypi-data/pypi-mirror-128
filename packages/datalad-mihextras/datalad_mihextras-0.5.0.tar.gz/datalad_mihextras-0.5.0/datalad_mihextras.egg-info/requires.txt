@@ -1,0 +1,7 @@
+bdbag
+datalad>=0.15.0
+
+[devel]
+coverage
+nose
+webdavclient3
