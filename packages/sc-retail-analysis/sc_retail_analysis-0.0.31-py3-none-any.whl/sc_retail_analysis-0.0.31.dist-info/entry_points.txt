@@ -1,0 +1,3 @@
+[console_scripts]
+sc-retail-analysis = sc_retail_analysis.main:main
+
