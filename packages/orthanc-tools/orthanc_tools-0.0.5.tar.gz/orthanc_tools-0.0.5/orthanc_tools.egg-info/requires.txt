@@ -1,0 +1,8 @@
+requests
+orthanc-api-client==0.0.7
+
+[dev]
+check-manifest
+
+[test]
+coverage

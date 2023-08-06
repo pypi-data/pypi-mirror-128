@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: orthanc_tools
+Version: 0.0.5
+Summary: Python Orthanc Tools
+Home-page: https://github.com/amazy/python-orthanc-tools
+Author: Alain Mazy
+Author-email: alain@mazy.be
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/amazy/python-orthanc-tools/issues
+Project-URL: Funding, https://mazy.be/orthanc
+Project-URL: Source, https://github.com/amazy/python-orthanc-tools/
+Keywords: orthanc,dicom,rest api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE.txt
+
+# python-orthanc-tools
+
+A set of python tools to ease Orthanc scripting.
+
+Functionalities are very limited now !  Backward compat will break a lot in the near future !
+
+Examples:
+
+```
+from orthanc_tools import OrthancCloner
+from orthanc_api_client import OrthancApiClient
+
+orthanc_a = OrthancApiClient('http://localhost:8042', user='orthanc', pwd='orthanc')
+orthanc_b = OrthancApiClient('http://localhost:8043', user='orthanc', pwd='orthanc')
+
+cloner = OrthancCloner(source=orthanc_a, destination=orthanc_b)
+cloner.execute()
+
+```
+
+## import files from a folder from a Docker container
+
+```
+$ docker exec -it xxxx bash
+
+/# pip3 install orthanc-tools
+
+/# python3 -m orthanc_tools.orthanc_folder_importer --folder=/import --url=http://localhost:8042 --user=test --pwd=test --skip_extensions=.cne,.bmp,.ini
+
+```
+
