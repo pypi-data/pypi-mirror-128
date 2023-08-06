@@ -1,0 +1,3 @@
+[console_scripts]
+seelabv2 = seelabv2GUI.main:run
+
