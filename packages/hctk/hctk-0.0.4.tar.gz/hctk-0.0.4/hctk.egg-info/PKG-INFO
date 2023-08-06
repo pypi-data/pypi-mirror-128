@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hctk
+Version: 0.0.4
+Summary: Hanzi Character Corpus toolkit
+Home-page: http://github.com/liao961120/cctk
+Author: Yongfu Liao
+Author-email: liao961120@github.com
+License: MIT
+Description: # Diachronic Character-based Corpus Toolkit
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: colab
+Provides-Extra: sense
