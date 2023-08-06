@@ -1,0 +1,4 @@
+[console_scripts]
+ipgn2tdm=ipgn2tdm:no_gui
+ipgn2tdm_gui=ipgn2tdm:gui
+
