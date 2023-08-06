@@ -1,0 +1,5 @@
+mysql:
+  host: "172.29.129.143"
+  port: 3306
+  user: "tester"
+  passwd: "Cnex!321"
