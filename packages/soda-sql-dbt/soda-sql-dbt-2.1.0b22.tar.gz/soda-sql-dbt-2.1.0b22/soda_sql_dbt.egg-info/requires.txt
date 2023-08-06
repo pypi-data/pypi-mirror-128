@@ -1,0 +1,2 @@
+soda-sql-core==2.1.0b22
+dbt-core~=0.21.0
