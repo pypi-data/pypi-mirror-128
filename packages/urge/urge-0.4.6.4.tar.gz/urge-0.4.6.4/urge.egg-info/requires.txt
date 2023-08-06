@@ -1,0 +1,7 @@
+playwright==1.13.1
+schedule==1.1.0
+daoism==0.0.4
+pyquery
+httpx
+path
+fs
