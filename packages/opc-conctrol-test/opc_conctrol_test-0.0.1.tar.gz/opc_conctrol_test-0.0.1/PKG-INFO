@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: opc_conctrol_test
+Version: 0.0.1
+Summary: opc控制
+Home-page: https://github.com/pypa/sampleproject
+Author: waylon
+Author-email: 981889207@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a simple example package. 
+
