@@ -1,0 +1,6 @@
+README.md
+setup.py
+bordeaux.egg-info/PKG-INFO
+bordeaux.egg-info/SOURCES.txt
+bordeaux.egg-info/dependency_links.txt
+bordeaux.egg-info/top_level.txt
