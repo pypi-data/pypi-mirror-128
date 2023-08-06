@@ -1,0 +1,36 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "rst-language-server"
+version = "0.1.0"
+description = "Server implementation of the Language Server Protocol for reStructuredText"
+authors = ["Michael Seifert <m.seifert@digitalernachschub.de>"]
+license = "MIT"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Text Editors",
+]
+repository = "https://github.com/digitalernachschub/rst-language-server"
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pygls = "^0.11.3"
+docutils = "^0.18"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+hypothesis = "^6.24.2"
+pytest-cov = "^3.0.0"
+
+[tool.poetry.scripts]
+rst-ls = "rst_language_server.cli:main"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
