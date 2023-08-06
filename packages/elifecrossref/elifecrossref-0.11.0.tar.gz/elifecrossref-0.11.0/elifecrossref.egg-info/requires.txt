@@ -1,0 +1,5 @@
+elifetools
+elifearticle
+GitPython
+configparser
+requests
