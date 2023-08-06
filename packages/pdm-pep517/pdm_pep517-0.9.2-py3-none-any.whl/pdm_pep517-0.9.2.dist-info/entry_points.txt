@@ -1,0 +1,3 @@
+[distutils.commands]
+editable_wheel=pdm.pep517.setuptools.editable:editable_wheel
+
