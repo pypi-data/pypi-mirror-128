@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: https_roi_ciphertext
+Version: 0.0.4
+Summary: An feature extraction algorithm
+Home-page: https://gitee.com/wxb_857_admin/https_roi_ciphertext
+Author: XiaoBai
+Author-email: wxok857@foxmail.com
+License: MIT Licence
+Description: # https_roi_ciphertext
+        
+        网络传输，数据加密。（对称加密）
+Keywords: pip,https_roi_ciphertext
+Platform: any

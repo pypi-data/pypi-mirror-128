@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+https_roi_ciphertext/__init__.py
+https_roi_ciphertext/decrypt.py
+https_roi_ciphertext/encryption.py
+https_roi_ciphertext.egg-info/PKG-INFO
+https_roi_ciphertext.egg-info/SOURCES.txt
+https_roi_ciphertext.egg-info/dependency_links.txt
+https_roi_ciphertext.egg-info/requires.txt
+https_roi_ciphertext.egg-info/top_level.txt
+utils/__init__.py
+utils/tools.py
