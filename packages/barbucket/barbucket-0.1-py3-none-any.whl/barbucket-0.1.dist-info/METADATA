@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: barbucket
+Version: 0.1
+Summary: My package description
+Home-page: https://github.com/croidzen/barbucket
+Author: Martin Creutzenberg
+Author-email: martin.creutzenberg@gmail.com
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: click
+Requires-Dist: enlighten
+Requires-Dist: ib-insync
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: trading-calendars
+
+# Barbucket
+Loading and storing historical price data of financial contracts
+
+## Features
+* Syncing local contracts database to IB's exchange listing
+* Adding fundamental data to local contracts database from Tradringview's screener
+* Creating groups of contracts (universes)
+* Downloading daily historical quotes for universes using IB's TWS API (market data subscriptions on IB are necessary)
+* Storage of downloaded quotes in a local database
+
+## Status
+* Early alpha stage. Expect code- and data breaking modifications
+* Aimed at software developers. Knowlede about how to handle a databse is necessary to use this software
+
+## Documentation
+* [barbucket.rtfd.io](http://barbucket.rtfd.io/)
+
+
