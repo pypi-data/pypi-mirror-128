@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+VividHues/__init__.py
+VividHues.egg-info/PKG-INFO
+VividHues.egg-info/SOURCES.txt
+VividHues.egg-info/dependency_links.txt
+VividHues.egg-info/top_level.txt
