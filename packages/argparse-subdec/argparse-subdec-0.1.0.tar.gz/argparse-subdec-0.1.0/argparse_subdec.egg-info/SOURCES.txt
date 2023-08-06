@@ -1,0 +1,11 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+setup.py
+argparse_subdec/__init__.py
+argparse_subdec/subdec.py
+argparse_subdec.egg-info/PKG-INFO
+argparse_subdec.egg-info/SOURCES.txt
+argparse_subdec.egg-info/dependency_links.txt
+argparse_subdec.egg-info/requires.txt
+argparse_subdec.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+
+[tests]
+pytest~=6.2
+coverage~=5.5
