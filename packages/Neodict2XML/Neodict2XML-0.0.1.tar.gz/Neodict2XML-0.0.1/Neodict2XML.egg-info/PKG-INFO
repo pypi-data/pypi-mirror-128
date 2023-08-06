@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Neodict2XML
+Version: 0.0.1
+Summary: Templating utilities
+Home-page: https://gitlab.com/neomyte/sonotoria
+Author: Emmanuel Pluot
+Author-email: emmanuel.pluot@gmail.com
+License: UNKNOWN
+Description: # Neodict2XML
+        
+        Neomyte's dict to XML converter
+        
+        # Contributors
+        
+         * Emmanuel Pluot (aka. Neomyte)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

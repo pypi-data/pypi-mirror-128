@@ -1,0 +1,12 @@
+README.md
+setup.py
+Neodict2XML.egg-info/PKG-INFO
+Neodict2XML.egg-info/SOURCES.txt
+Neodict2XML.egg-info/dependency_links.txt
+Neodict2XML.egg-info/not-zip-safe
+Neodict2XML.egg-info/requires.txt
+Neodict2XML.egg-info/top_level.txt
+neodict2xml/__init__.py
+neodict2xml/dict2xml.py
+tests/__init__.py
+tests/test_neodict2xml.py
