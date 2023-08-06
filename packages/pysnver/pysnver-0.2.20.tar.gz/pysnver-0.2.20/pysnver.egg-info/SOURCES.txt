@@ -1,0 +1,9 @@
+setup.py
+pysnver/__init__.py
+pysnver/sn.py
+pysnver.egg-info/PKG-INFO
+pysnver.egg-info/SOURCES.txt
+pysnver.egg-info/dependency_links.txt
+pysnver.egg-info/top_level.txt
+pysnver/so/libcim.so
+pysnver/so/libsv.so
