@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dfsql
+Version: 0.6.7
+Summary: SQL interface to Pandas
+Home-page: https://github.com/mindsdb/dfsql
+Author: MindsDB Inc
+Author-email: jorge@mindsdb.com
+License: GPL-3.0
+Download-URL: https://pypi.org/project/dfsql
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: numpy (>=1.18.5)
+Requires-Dist: confi (>=0.0.4.1)
+Requires-Dist: mindsdb-sql (>=0.0.17)
+Provides-Extra: modin
+Requires-Dist: modin[all] (==0.11.2) ; extra == 'modin'
+Provides-Extra: test
+Requires-Dist: pytest (>=5.4.3) ; extra == 'test'
+Requires-Dist: requests (>=2.22.0) ; extra == 'test'
+Requires-Dist: pytest-timeout (>=1.4.2) ; extra == 'test'
+
+UNKNOWN
+
+
