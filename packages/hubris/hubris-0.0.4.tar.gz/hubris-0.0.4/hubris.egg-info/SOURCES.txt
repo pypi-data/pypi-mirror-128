@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+hubris/__init__.py
+hubris/channel.py
+hubris/hub.py
+hubris/publisher.py
+hubris/subscriber.py
+hubris/subscription.py
+hubris/util.py
+hubris.egg-info/PKG-INFO
+hubris.egg-info/SOURCES.txt
+hubris.egg-info/dependency_links.txt
+hubris.egg-info/requires.txt
+hubris.egg-info/top_level.txt
