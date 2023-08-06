@@ -1,0 +1,9 @@
+git_history/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_history/cli.py,sha256=KkGt4Wf3eA65TpkB_3LnCdB8XvnMgLLXMmM0FSl9OV0,9442
+git_history/utils.py,sha256=TrH7wrqEn3mkVvb9jlhUgcIlg8vKKeUmcH6PSaZEpNs,520
+git_history-0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+git_history-0.4.dist-info/METADATA,sha256=GOsM03aQEeZjl2A29Mj1FL9KswqciigrEMRsCKoL294,10088
+git_history-0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+git_history-0.4.dist-info/entry_points.txt,sha256=xIJ4U9Lx3UgvpRqmBEP-FASDVOILhMRV4_bGDbd5bAY,71
+git_history-0.4.dist-info/top_level.txt,sha256=_RBA0AWTgqkFS1raUDvQ6NQ_PDW3pjG5yAwQomWsqqs,12
+git_history-0.4.dist-info/RECORD,,
