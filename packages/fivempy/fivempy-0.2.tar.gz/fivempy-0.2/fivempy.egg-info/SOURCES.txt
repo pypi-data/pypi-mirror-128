@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fivempy/Fivem.py
+fivempy/Server.py
+fivempy/__init__.py
+fivempy.egg-info/PKG-INFO
+fivempy.egg-info/SOURCES.txt
+fivempy.egg-info/dependency_links.txt
+fivempy.egg-info/top_level.txt
