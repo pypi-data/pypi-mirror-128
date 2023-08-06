@@ -1,0 +1,5 @@
+numpy<1.22,>=1.19
+pandas<2.0,>=1.0.0
+scikit-learn<1.1,>=1.0.0
+autogluon.core==0.3.2b20211125
+pytest
