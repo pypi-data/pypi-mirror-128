@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/juspy/__init__.py
+src/juspy/greet.py
+src/juspy/plot.py
+src/juspy.egg-info/PKG-INFO
+src/juspy.egg-info/SOURCES.txt
+src/juspy.egg-info/dependency_links.txt
+src/juspy.egg-info/requires.txt
+src/juspy.egg-info/top_level.txt
