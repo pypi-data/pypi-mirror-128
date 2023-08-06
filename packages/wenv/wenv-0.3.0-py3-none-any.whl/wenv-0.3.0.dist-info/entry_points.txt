@@ -1,0 +1,4 @@
+[console_scripts]
+_wenv_python = wenv:shebang
+wenv = wenv:cli
+
