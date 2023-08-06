@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: HeXGButil
+Version: 0.0.7
+Summary: numba functions needed for HEXGB
+Home-page: https://zizdlp.com/spa
+Author: xiaozi
+Author-email: zdlp@sina.cn
+License: BSD
+Keywords: HeXGB
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+
+# HeXGButil
+numba functions needed for HeXGB
+
+
