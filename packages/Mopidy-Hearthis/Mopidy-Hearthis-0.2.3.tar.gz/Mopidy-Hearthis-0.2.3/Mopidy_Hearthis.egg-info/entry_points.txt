@@ -1,0 +1,3 @@
+[mopidy.ext]
+hearthis = mopidy_hearthis:Extension
+

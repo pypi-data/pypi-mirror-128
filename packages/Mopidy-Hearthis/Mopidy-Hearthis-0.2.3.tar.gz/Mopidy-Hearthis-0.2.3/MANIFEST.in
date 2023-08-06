@@ -1,0 +1,15 @@
+include *.py
+include *.rst
+include LICENSE
+include MANIFEST.in
+include pyproject.toml
+include tox.ini
+
+recursive-include .github *
+
+include mopidy_*/ext.conf
+
+recursive-include tests *.py
+
+exclude = .vscode/*
+exclude = .bumpversion.cfg
