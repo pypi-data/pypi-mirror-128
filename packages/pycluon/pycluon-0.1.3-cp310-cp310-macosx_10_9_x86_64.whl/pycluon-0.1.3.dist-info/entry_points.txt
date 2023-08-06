@@ -1,0 +1,10 @@
+[console_scripts]
+cluon-LCMtoJSON = pycluon.scripts:script_entrypoint
+cluon-OD4toJSON = pycluon.scripts:script_entrypoint
+cluon-OD4toStdout = pycluon.scripts:script_entrypoint
+cluon-filter = pycluon.scripts:script_entrypoint
+cluon-livefeed = pycluon.scripts:script_entrypoint
+cluon-msc = pycluon.scripts:script_entrypoint
+cluon-rec2csv = pycluon.scripts:script_entrypoint
+cluon-replay = pycluon.scripts:script_entrypoint
+
