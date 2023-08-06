@@ -1,0 +1,4 @@
+[console_scripts]
+epflpeople = epflpeople.__main__:main
+epflpeople_pretty = epflpeople.__main__:main_highlighted
+

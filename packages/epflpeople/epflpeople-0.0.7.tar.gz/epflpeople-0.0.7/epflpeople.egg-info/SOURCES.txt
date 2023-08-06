@@ -1,0 +1,16 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+epflpeople/VERSION
+epflpeople/__init__.py
+epflpeople/__main__.py
+epflpeople/epflpeople.py
+epflpeople/errors.py
+epflpeople.egg-info/PKG-INFO
+epflpeople.egg-info/SOURCES.txt
+epflpeople.egg-info/dependency_links.txt
+epflpeople.egg-info/entry_points.txt
+epflpeople.egg-info/requires.txt
+epflpeople.egg-info/top_level.txt
