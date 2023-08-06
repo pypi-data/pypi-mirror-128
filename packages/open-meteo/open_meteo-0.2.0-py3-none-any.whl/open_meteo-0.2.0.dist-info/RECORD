@@ -1,0 +1,10 @@
+open_meteo/__init__.py,sha256=_UEESvFhM5zX3a7yuzKOIp9T5obiyf7MJOvGeI4tT00,847
+open_meteo/exceptions.py,sha256=UY4KM0MY5YHo2o8QlzM7wcScY-w3CMk77SR90tIBSTo,216
+open_meteo/models.py,sha256=4EcJNkbwQYbsjGN-uUdQbDRb2RUsC3WE9Jm4yGNPv08,13100
+open_meteo/open_meteo.py,sha256=HdN-Ovv3bTy9_oWmDzOjwbtziJ2d3qqVQQEUz4Wq0rs,6746
+open_meteo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+open_meteo/util.py,sha256=3UqxK1TU3pEiRHZ41KeU26WDWbivslIuN6vInOwSlfo,2172
+open_meteo-0.2.0.dist-info/LICENSE.md,sha256=vi3i31zoBDWrgVCIaGwumebSmFThWL-8ylARPi-FYIU,1072
+open_meteo-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+open_meteo-0.2.0.dist-info/METADATA,sha256=O73px4t6SV_LiRek4EYZv6VQ8lTSM63o5AEGW4WDUBo,7291
+open_meteo-0.2.0.dist-info/RECORD,,
