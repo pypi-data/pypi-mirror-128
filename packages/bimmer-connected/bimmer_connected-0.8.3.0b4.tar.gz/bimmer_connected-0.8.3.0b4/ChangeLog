@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.8.3b4
+-------
+
+* Vehicle finder: Do not overwrite position, add more tests
