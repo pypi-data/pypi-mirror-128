@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hubris
+Version: 0.0.2
+Summary: Hubris
+Home-page: https://github.com/gigaquads/hubris.git
+Author: Gigaquads
+Author-email: what@gigaquads.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: pytest
+
+# Hubris
+
+## About
+
+
