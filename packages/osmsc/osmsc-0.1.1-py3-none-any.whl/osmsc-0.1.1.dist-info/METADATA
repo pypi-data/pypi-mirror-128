@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: osmsc
+Version: 0.1.1
+Summary: Construct semantic city models from OpenStreetMap
+Home-page: https://github.com/ruirzma/osmsc
+Author: Rui Ma
+Author-email: rui.rz.ma@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: geopandas (==0.9.0)
+Requires-Dist: pandas (==1.2.0)
+Requires-Dist: networkx (==2.5)
+Requires-Dist: numpy (==1.20.3)
+Requires-Dist: matplotlib (==3.3.3)
+Requires-Dist: pyproj (==3.1.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: Rtree (>=0.9)
+Requires-Dist: shapely (==1.7.1)
+Requires-Dist: osmnx (==1.0.0)
+Requires-Dist: cjio (==0.6.6)
+Requires-Dist: pydeck (==0.6.1)
+Requires-Dist: contextily (==1.1.0)
+
+
+OSMsc 
+=====
+*updated 15 Nov 2021*
+
+<font color=green size=4> this repo proposed an easy-to-use tool, named OSMsc, to improve the availbliliy, consistency and generalizability of city data.</font>
+
+
+![](https://github.com/ruirzma/osmsc/blob/main/abigail-keenan-RaVcslj475Y-unsplash.jpg)
+
+<p align = "center"> 
+Photo by <a href="https://unsplash.com/@akeenster?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Abigail  Keenan</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+</p>
+
+
