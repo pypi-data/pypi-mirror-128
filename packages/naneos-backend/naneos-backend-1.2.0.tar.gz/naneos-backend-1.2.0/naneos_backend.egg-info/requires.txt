@@ -1,0 +1,6 @@
+pyserial
+numpy
+pandas
+influxdb-client
+bleak
+requests
