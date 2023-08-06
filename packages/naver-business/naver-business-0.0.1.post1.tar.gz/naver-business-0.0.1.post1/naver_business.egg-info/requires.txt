@@ -1,0 +1,6 @@
+numpy
+pandas
+naver-config
+SpiffWorkflow
+twine
+bdist_wheel
