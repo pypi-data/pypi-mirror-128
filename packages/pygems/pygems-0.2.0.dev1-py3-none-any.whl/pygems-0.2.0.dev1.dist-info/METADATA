@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pygems
+Version: 0.2.0.dev1
+Summary: Python gems from Baobab
+Home-page: https://github.com/ivangeorgiev/py-gems
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-gems
+
+
+# Development
+
+## Installation
+
+```bash
+$ pip install -r requirements.txt
+```
+
+## Test
+
+```bash
+$ pytest
+```
+
+## Publish
+
+```bash
+$ python setup.py sdist
+$ twine upload dist/*
+```
+
+

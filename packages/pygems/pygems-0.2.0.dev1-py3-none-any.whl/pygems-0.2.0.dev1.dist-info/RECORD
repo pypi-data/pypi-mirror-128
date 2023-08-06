@@ -1,0 +1,11 @@
+pygems/__init__.py,sha256=FcW-4Ub4MWujXFfmxWc1GNp24NQIpgZ9QzsnVoiXUv8,28
+pygems/cli/__init__.py,sha256=_muF0mtdmmteiW6VlHTgIFW_mcBHJwYjPu_9GyWUHwk,44
+pygems/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygems/lib/namespace.py,sha256=YtF8RDHuXuNqvACbIooIMSShy71T73GVQONoyf1ARDo,2239
+pygems/lib/plugin.py,sha256=j7KB8BUJa2myrzGYt6ysn8GkOHOCjyC9k_AE3ahYDlc,7118
+pygems-0.2.0.dev1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pygems-0.2.0.dev1.dist-info/METADATA,sha256=u1lhYCp6e3P48A__NRjLVIQmLdNQG4GrpuGztMY_zWI,454
+pygems-0.2.0.dev1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pygems-0.2.0.dev1.dist-info/entry_points.txt,sha256=dIhsqJ3nnc4CAsFiuGtUqBuRxIYheWrQS0m_zfl6zFc,43
+pygems-0.2.0.dev1.dist-info/top_level.txt,sha256=H_-QTWyN5iLKasV_JMVvxluGcdIjzclxn3OYiSSxpEw,7
+pygems-0.2.0.dev1.dist-info/RECORD,,
