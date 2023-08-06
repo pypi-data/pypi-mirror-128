@@ -1,0 +1,8 @@
+gunicorn
+uvicorn
+quart
+toml
+requests
+numpy
+werkzeug
+quart-openapi
