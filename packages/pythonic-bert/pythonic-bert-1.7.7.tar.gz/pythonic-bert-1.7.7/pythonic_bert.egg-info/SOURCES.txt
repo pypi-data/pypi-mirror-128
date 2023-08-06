@@ -1,0 +1,6 @@
+README.md
+setup.py
+pythonic_bert.egg-info/PKG-INFO
+pythonic_bert.egg-info/SOURCES.txt
+pythonic_bert.egg-info/dependency_links.txt
+pythonic_bert.egg-info/top_level.txt
