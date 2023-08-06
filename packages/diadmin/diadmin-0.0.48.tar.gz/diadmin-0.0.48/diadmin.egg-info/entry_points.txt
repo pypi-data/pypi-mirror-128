@@ -1,0 +1,14 @@
+[console_scripts]
+dibackup = diadmin.dibackup:main
+dicatalog = diadmin.dicatalog:main
+didownload = diadmin.didownload:main
+dimock = diadmin.dimock:main
+dipmonitor = diadmin.dipmonitor:main
+dipolicy = diadmin.dipolicy:main
+diprepreuse = diadmin.prepreuse:main
+diprettify = diadmin.prettifyJSON:main
+diupload = diadmin.diupload:main
+diuser = diadmin.diuser:main
+diwsuser = diadmin.diwsuser:main
+s3upload = diadmin.s3upload:main
+
