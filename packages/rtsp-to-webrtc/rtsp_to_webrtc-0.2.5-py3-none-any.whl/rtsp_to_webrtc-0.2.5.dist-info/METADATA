@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: rtsp-to-webrtc
+Version: 0.2.5
+Summary: Python client library for RTSPtoWebRTC
+Home-page: UNKNOWN
+Author: Allen Porter
+Author-email: allen@thebends.org
+License: Apache 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (>=3.7.3)
+
+# rtsp-to-webrtc-client
+
+Python client library for [RTSPtoWebRTC](https://github.com/deepch/RTSPtoWebRTC)
+
+## Development
+
+```
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip3 install -e .
+$ pip3 install -r requirements.txt
+
+# Running tests
+$ pytest
+
+# Formatting and linting
+$ pre-commit run --all-files
+```
+
+
