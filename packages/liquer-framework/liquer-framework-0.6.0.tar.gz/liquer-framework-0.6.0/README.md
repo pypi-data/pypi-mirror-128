@@ -1,0 +1,164 @@
+# LiQuer (Link Query) 
+
+LiQuer is a minimalistic python framework on top of flask, which simplifies creation of web services and web interfaces,
+particularly in connection to data science: working with data frames, charts and reports.
+The core of LiQuer is a simplistic query language, that can represent a chain of transformations (*commands*)
+applied to an arbitrary data object (e.g. a dataframes, text, json, images). LiQuer query is safe to use inside URLs
+and is interpreted and executed by a LiQuer server that is available as a flask blueprint.
+LiQuer is very modular and designed to be extremely easy to extend (typically just by simple decorators and use of conventions).
+Results of LiQuer queries can be cached for added performance.
+
+Please visit [LiQuer website](https://orest-d.github.io/liquer/) for more info.
+
+# Install
+
+```
+pip install liquer-framework
+```
+
+# News
+
+- 2020-11-08 - v0.3.2  - Support for matplotlib figures, SQL cache and other minor changes
+- 2020-11-09 - v0.3.3  - SQL cache with base64 encoding, cache cleaning
+- 2020-11-11 - v0.3.4  - XOR file cache allows simple encoding of cached data
+- 2020-12-06 - v0.4.0  - big change: introduced context, parser, pool and progress monitoring
+- 2020-12-07 - v0.4.1  - fixing buf in file cache remove
+- 2020-12-07 - v0.4.2  - Fernet file cache support for metadata encoding and change of keys
+- 2021-01-16 - v0.4.3  - Improvements of the query monitoring UI
+- 2021-01-19 - v0.4.4  - state variables in context, html_preview
+- 2021-01-31 - v0.4.5  - remove supported in query monitoring
+- 2021-01-31 - v0.4.6  - basic support for parquet and feather
+- 2021-06-22 - v0.4.7  - stores, resources and recipes
+- 2021-06-23 - v0.4.8  - multiple fixes
+- 2021-08-18 - v0.4.9  - small fixes
+- 2021-08-19 - v0.4.10 - local recipes in RecipeSpecStore
+- 2021-10-31 - v0.4.11 - multiple improvements with store and metadata reporting
+- 2021-11-07 - v0.4.12 - recipes cleaning, recipes status file, progressive metadata storing in stores
+- 2021-11-08 - v0.4.13 - fixing recipes status performance issue and minor improvements in status commands
+- 2021-11-09 - v0.4.14 - minor fixes and enhancements
+- 2021-11-10 - v0.5.0  - dataframe_batches and rudimentary Sweetviz support
+- 2021-11-11 - v0.5.1  - fixing a bug in the dr (decode resource) command
+- 2021-11-11 - v0.5.2  - fixing a bug in created/updated time in store
+- 2021-11-22 - v0.6.0  - basic support for openpyxl and polars
+
+# TODO
+
+- [x] improve command catalogue (in progress)
+- [x] support for dataframe iterator - kind of supported by pickling
+- [x] namespaces
+- [x] lift the requirement for a state to be cloneable - at least for some data types
+- [x] make indicator of *volatile* state, that can never be cached (volatile=immutable?)
+- [x] specify metadata in command decorator
+- [x] cache categories/levels dependent on metadata
+- [x] basic keras support
+- [x] basic scikit support
+- [x] composite state (djson)
+- [x] meta extension
+- [x] command/query GUI
+- [x] simple GUI
+
+- [x] advanced query parser
+- [x] improved error reporting with positions in a query
+- [x] read/write of metadata independent from data
+
+- [x] sub-queries as arguments
+- [x] automatic dependent query recording via a context
+- [x] debugging via context
+- [x] messages and progress report via context
+- [x] implied volatile (query result dependent on a volatile query should be volatile)
+
+- [x] optional metadata storage in SQL - to support Hive
+- [x] proper encoding of file cache
+- [x] cache remove key 
+
+- [x] progress reporting GUI
+- [x] process monitoring GUI
+- [x] parallel execution of multiple queries
+
+- [x] state variables in context
+- [x] html preview
+- [x] state enum in context
+- [x] color coding of state in GUI query monitoring
+
+- [x] timestamp in context log messages
+- [x] test and fix bug with incorrect query used in error reporting of link expansion (implement reporting query)
+- [x] resource path in ~X link
+
+- [x] default store for webapp extensions
+- [x] configurable frontend - kind-of possible with web store
+- [x] human readable metadata extract and store report (can be improved, but the basic functionality is there)
+- [ ] icons (in metadata and web)
+- [ ] data viewers and editors support
+- [ ] key tracing
+- [ ] command/query to zip store directory
+- [ ] encoded store
+- [ ] database store
+- [ ] cashing store (to be used e.g. with a database store)
+- [ ] metadata for external files in store
+- [ ] expiration for files in store
+- [ ] expiration for cache
+- [ ] refactor recipes to a separate module
+- [ ] checksum in store metadata
+- [x] sweetviz support
+- [x] polars support
+- [ ] d-tale support
+- [x] dataframe batches
+- [ ] readonly store modifier
+- [ ] a faster server (FastAPI?)
+- [ ] configure the start page, Response support?
+- [ ] new menu - remove menu from state variables
+- [ ] markdown support
+- [ ] search engine(s) integration
+- [ ] fix context.warning and tracebacks
+- [ ] dr extension - explicity type_identifier, extension, better errors and metadata handling
+- [x] fix updated time in finalize metadata - time should only be updated on storing, not on reading
+- [x] fix time display in recipes_status.txt
+- [x] progressive metadata storing when evaluating to store
+- [x] data characteristics generated by state type
+- [x] clean recipes store - remove recipes, but keep external files
+- [x] on change action in store, dir summary
+- [x] get_context function to create context
+- [ ] default data-science app example
+- [x] more powerful recipes - description and url/file links, nested structure ?
+- [ ] store to_dict and from_dict
+- [x] ignore dot directories in recipes store in order to support jupyter notebooks
+- [x] file-system paths and url links to physical file in store (when possible) 
+- [x] integrate pointcloud explorer - see [Pointcloud Explorer](https://github.com/orest-d/pointcloud-viewer-rs)
+- [ ] automatic argument type conversion
+- [ ] split context to mixins
+- [ ] update Jupyter plugin
+- [ ] remove commands and extended commands from metadata
+
+- [ ] liquer frontent project
+- [ ] improve scheduling - prevent same queries to be scheduled
+- [ ] report template
+- [ ] wasm library in frontend
+- [ ] web store GUI
+
+- [ ] dependency injection input type
+- [x] resources
+- [x] store implementations: memory, file, mounting, filesystem
+- [x] web api for store
+- [x] resources with recipes
+- [x] decode resource command
+- [ ] remote store (based on web api)
+- [ ] remote liquer service as cache
+- [x] resources-based cache
+- [ ] filesystem from store
+- [ ] fuse access to store
+- [ ] dependency management
+
+- [ ] SQL cache working on Hive
+- [ ] debug transform query
+
+- [ ] better chart library
+- [ ] better pandas functions (eq, lt, gt, leq, geq, isin, notin, between, groupby, random)
+- [ ] conventions and ML library 
+
+- [ ] remove menu from state variables
+- [ ] consolidate is_error and status
+
+- [ ] attribute to prevent cloning
+- [ ] keras history support
+- [ ] numpy support
+- [x] parquet support
