@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+captcha_pc/__init__.py
+captcha_pc/captcha_pc.py
+captcha_pc/deathbycaptcha.py
+captcha_pc_2.egg-info/PKG-INFO
+captcha_pc_2.egg-info/SOURCES.txt
+captcha_pc_2.egg-info/dependency_links.txt
+captcha_pc_2.egg-info/top_level.txt
