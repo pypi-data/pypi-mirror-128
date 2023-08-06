@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Euphoria-CLI
+Version: 0.1.0
+Summary: A small CLI tool to fetch Euphoria's price and stats
+Home-page: https://github.com/vinaydawani/euphoria-cli
+Author: Vinay Dawani
+Author-email: vdawani6@gmail.com
+License: GNU GPL v3
+Keywords: euphoria WAGMI sWAGMI blockchain rebase token bonding staking bond stake
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Euphoria CLI
+
+**W**e're **A**ll **G**onna **M**ake **I**t (🤝, 🤝)
+
+
