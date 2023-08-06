@@ -1,0 +1,9 @@
+function/__init__.py,sha256=EXRchmK71MsRp3Vj5FRuvhyO9DvldvQ3Pu0qwBbYZsk,24
+function/news_keyword.py,sha256=CxbDILDpJxg3Tbaj0IFJC4BqzNbh3XSUEhzPOnfwgrg,579
+function/news_summarization.py,sha256=BO-BPRvxukEXE2QropcHnrp3ufxH4ZfG0k2A1uZ3sFw,6376
+function/news_text.py,sha256=KYsNqbxqJLhjj_47_C4-xJw2jXK-HIM9EId7cMW_AgI,354
+function/news_url_import.py,sha256=X6fY7wpMKKaUTCIWTAEKBuI-5tUY1B9WHpSP7OTZ064,1546
+SqueezeNews-0.0.1.dist-info/METADATA,sha256=KvvZMPr2kYJH2HroyyG3xnVkcOt0-TXMo4Y9e490KEw,252
+SqueezeNews-0.0.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+SqueezeNews-0.0.1.dist-info/top_level.txt,sha256=iQducgjy9n4xxlyPZydQ72ZTvLprofwkIPPj3gp1KZ0,54
+SqueezeNews-0.0.1.dist-info/RECORD,,
