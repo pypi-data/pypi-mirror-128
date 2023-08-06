@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/lalr/__init__.py
+src/lalr/analysis.py
+src/lalr/constants.py
+src/lalr/exceptions.py
+src/lalr/grammar.py
+src/lalr/parsing.py
+src/lalr/py.typed
+src/lalr/utils.py
