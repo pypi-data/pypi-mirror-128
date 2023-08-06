@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-nokia
+Version: 0.0.3
+Summary: 
+License: MIT
+Author: kexue
+Author-email: xana278@foxmail.com
+Requires-Python: >=3.7.3,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pillow (>=8.4.0,<9.0.0)
