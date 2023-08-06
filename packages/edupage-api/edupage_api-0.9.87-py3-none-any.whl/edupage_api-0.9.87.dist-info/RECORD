@@ -1,0 +1,16 @@
+edupage_api/__init__.py,sha256=WMZw0uy1kcJyKmhEPYpnrIMzPMra4f8oaIU3NdFTefY,25435
+edupage_api/cloud.py,sha256=HePLs7XEFiJ9Qjvhp5EaHULE3o1Fid7t2gZar5s8uJA,1098
+edupage_api/date.py,sha256=5kQVLF-VgEZxC918FzKO0LD_ZCjyeougjJ3IOrvBNuI,6625
+edupage_api/exceptions.py,sha256=mahvZmsdBRyHRpsnY2vrjK4lrDloAzC8Eydt-5EEXdY,163
+edupage_api/grades.py,sha256=YpLKiqnHrH5UA3LaVEbQ-BWWLHZV55uDD3XlAEj_NHc,1189
+edupage_api/logging.py,sha256=_plQmY1_gzxPrCoDYST4HVI2pFZWCE_Qdx3caliUjRU,1689
+edupage_api/lunches.py,sha256=YcGXgkGFpAD2MFoS0nk42yTE9UyzCqxak9bmbG5M41U,3627
+edupage_api/messages.py,sha256=Oz2z1by2uCdEOzEFOkUcrR38mTUvjU8CKO1-CRwEd7Q,3443
+edupage_api/people.py,sha256=nbFwiejSWMU7dVZrvQ_H9bfLIiI6uWkaV5Ljb4_N1i8,1628
+edupage_api/timetables.py,sha256=VIHsez7pixPLs5-5Fy4xNxvPc5lzaike8Bdq7kIei0U,2992
+edupage_api/utils.py,sha256=VWwVClnxjtL4ZNkvNmy4AZWN5yz1HcvofctWqlljuCk,2773
+edupage_api-0.9.87.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+edupage_api-0.9.87.dist-info/METADATA,sha256=t1vN1jSfMjk8amPYa-qidWynJF9dTK-pup4y0AGkZ-4,14439
+edupage_api-0.9.87.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+edupage_api-0.9.87.dist-info/top_level.txt,sha256=aYlZ5DJ-URhuy8YDCa7EqlUsJqrgf-bF81QJchYHheI,12
+edupage_api-0.9.87.dist-info/RECORD,,
