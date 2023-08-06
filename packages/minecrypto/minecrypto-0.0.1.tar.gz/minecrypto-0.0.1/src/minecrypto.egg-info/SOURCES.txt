@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/minecrypto/__init__.py
+src/minecrypto/minecryptotest.py
+src/minecrypto.egg-info/PKG-INFO
+src/minecrypto.egg-info/SOURCES.txt
+src/minecrypto.egg-info/dependency_links.txt
+src/minecrypto.egg-info/top_level.txt

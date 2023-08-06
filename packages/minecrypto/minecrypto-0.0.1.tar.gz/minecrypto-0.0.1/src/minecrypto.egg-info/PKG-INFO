@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: minecrypto
+Version: 0.0.1
+Summary: minecrypto is a mining module
+Home-page: https://github.com/catdogmat/mine
+Author: beano09
+Author-email: pif12345677@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/catdogmat/mine/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# minecrypto
+A W.I.P python module that allows you to mine crypto in your programs.
+## Docs
+These docs are W.I.P
+### Duino-Coin
+> minecrypto.duinocoin(username, UseLowerDiff)
+This allows you to mine Duino-Coin
+
+> minecrypto.duinocoinwithxxhash(username)
+This allows you to mine Duino-Coin with XXHASH
+
+## Upcoming features
++ Faucet's
++ More crypto's like bitcoin and dogecoin
++ API's
++ More cryptos
++ Anything else you want
+
+
