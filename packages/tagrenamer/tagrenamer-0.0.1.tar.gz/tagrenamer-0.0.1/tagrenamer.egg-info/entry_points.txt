@@ -1,0 +1,3 @@
+[console_scripts]
+tagrenamer = tagrenamer.cli:main
+
