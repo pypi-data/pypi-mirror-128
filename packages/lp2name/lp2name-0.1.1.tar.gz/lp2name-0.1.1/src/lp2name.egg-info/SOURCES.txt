@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/lp2name/__init__.py
+src/lp2name/models.py
+src/lp2name.egg-info/PKG-INFO
+src/lp2name.egg-info/SOURCES.txt
+src/lp2name.egg-info/dependency_links.txt
+src/lp2name.egg-info/requires.txt
+src/lp2name.egg-info/top_level.txt
