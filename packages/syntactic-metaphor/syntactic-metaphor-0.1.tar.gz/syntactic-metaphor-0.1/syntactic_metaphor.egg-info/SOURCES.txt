@@ -1,0 +1,7 @@
+setup.py
+syntactic_metaphor/__init__.py
+syntactic_metaphor.egg-info/PKG-INFO
+syntactic_metaphor.egg-info/SOURCES.txt
+syntactic_metaphor.egg-info/dependency_links.txt
+syntactic_metaphor.egg-info/not-zip-safe
+syntactic_metaphor.egg-info/top_level.txt
