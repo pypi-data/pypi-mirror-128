@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: sphinx-needs-enterprise
+Version: 0.1.1
+Summary: 
+Home-page: http://github.com/useblocks/sphinx-needs-enterprise
+Author: team useblocks
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: docs
+Requires-Dist: azure-devops (>=6.0.0-beta.4,<7.0.0)
+Requires-Dist: click (>=8.0,<9.0)
+Requires-Dist: elasticsearch (>=7.15,<8.0)
+Requires-Dist: jinja2 (>=3,<4)
+Requires-Dist: jira2markdown (>=0.2,<0.3)
+Requires-Dist: licensing (>=0.31,<0.32)
+Requires-Dist: m2r (>=0.2,<0.3)
+Requires-Dist: requests (>=2.26,<3.0)
+Requires-Dist: sphinxcontrib-needs (>0.7.2)
+Requires-Dist: sphinxcontrib-programoutput (>=0.17,<0.18)
+Requires-Dist: tqdm (>=4.62,<5.0)
+Project-URL: Documentation, https://useblocks.com/sphinx-needs-enterprise
+Project-URL: Repository, http://github.com/useblocks/sphinx-needs-enterprise
+Description-Content-Type: text/x-rst
+
+Sphinx-Needs Enterprise
+=======================
+
+.. image:: docs/_static/sphinx-needs-enterprise-logo.png
+   :align: center
+   :width: 41%
+
+``Sphinx-Needs Enterprise`` is a collection of additional functions for ``Sphinx-Needs``, which are useful mostly
+in company-based environments.
+
+This repository contains the complete source code and documentation.
+
+License
+-------
+This package is released under the Business Source License, which allows free usage for private projects and sets
+some duties for commercial projects. For details please take a look into our
+`LICENSE <https://raw.githubusercontent.com/useblocks/sphinx-needs-enterprise/main/LICENSE>`_ file.
+
+|
+| **To use Sphinx-Needs-Enterprise in commercial projects a commercial license is needed.**
+| Please get it contact with `useblocks <https://useblocks.com>`_ or visit sphinx-needs.com.
+
