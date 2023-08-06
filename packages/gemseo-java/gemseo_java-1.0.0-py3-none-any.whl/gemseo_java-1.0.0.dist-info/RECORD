@@ -1,0 +1,8 @@
+gemseo_java/__init__.py,sha256=NAETRnZ70V2vWmqhNOLYEL-nHaesxM0lF1h2U__24Ts,766
+gemseo_java/jep_java_discipline.py,sha256=FvHovhNMpR35zLOzbD_eFIOuR-EezZ1bMPiJ2D3izWM,2171
+gemseo_java/jnius_java_discipline.py,sha256=Sv-oi-uk6n4EaJzHbVboCPwzlVsFZF4wYCgx9ZZDRdY,4401
+gemseo_java-1.0.0.dist-info/METADATA,sha256=lbrc0ZL84V3be9iygm5f78U27caAZaxKoCuI10xE8uU,4479
+gemseo_java-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gemseo_java-1.0.0.dist-info/entry_points.txt,sha256=tGNEDddEFcOBBz2k8Ju0T_4SYTqbwsJhEvJE1E_rJ9k,44
+gemseo_java-1.0.0.dist-info/top_level.txt,sha256=mDC0vGhpnSIR9uYHKZZJJ9isgTSsamRM_schbK7XEAA,12
+gemseo_java-1.0.0.dist-info/RECORD,,
