@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: Datadex
+Version: 0.1
+Summary: Data Science Framework
+Home-page: https://github.com/steventhe24th/DataDex
+Author: steventhe24th
+Author-email: stevenivanderjunaidi@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: Framework,Experiment,Pipeline
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
