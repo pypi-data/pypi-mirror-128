@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: ultralytics-dev
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/ultralytics/package-framework
+Author: Ultralytics
+Author-email: kalenmike@gmail.com
+License: UNKNOWN
+Keywords: machine-learning,deep-learning,ml,pytorch,YOLO,object-detection,vision,YOLOv3,YOLOv4,YOLOv5
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: requests
+Requires-Dist: GitPython (>=3.1.24)
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+
+[![codecov](https://codecov.io/gh/ultralytics/package-framework/branch/master/graph/badge.svg?token=YWaAfJ18gg)](https://codecov.io/gh/ultralytics/package-framework)
+
+# package framework
+
+## Installation
+
+```console
+# clone project repository
+git clone git@github.com:ultralytics/package-framework.git
+# navigate to project root directory
+cd package-framework
+# create python virtual environment and activate it (optional)
+virtualenv venv
+source venv/bin/activate
+# install project
+python setup.py install
+```
+
+## Code base structure
+
+
+
