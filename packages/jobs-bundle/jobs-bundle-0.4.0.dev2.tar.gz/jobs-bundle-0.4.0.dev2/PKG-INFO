@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: jobs-bundle
+Version: 0.4.0.dev2
+Summary: Databricks jobs management bundle for the Daipe Framework
+Home-page: https://github.com/daipe-ai/jobs-bundle
+License: MIT
+Author: Jiri Koutny
+Author-email: jiri.koutny@datasentics.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: console-bundle (>=0.5,<0.6)
+Requires-Dist: databricks-cli (>=0.16.0)
+Requires-Dist: pyfony-bundles (>=0.4.0,<0.5.0)
+Requires-Dist: python-box (>=3.4,<4.0)
+Project-URL: Repository, https://github.com/daipe-ai/jobs-bundle
+Description-Content-Type: text/markdown
+
+# Databricks jobs bundle
+
+Create Databricks jobs from YAML templates.
+
+Provides console commands to automate jobs creation, deletion, ...
+
+## Installation
+
+Install the bundle via Poetry:
+
+```
+$ poetry add jobs-bundle
+```
+
