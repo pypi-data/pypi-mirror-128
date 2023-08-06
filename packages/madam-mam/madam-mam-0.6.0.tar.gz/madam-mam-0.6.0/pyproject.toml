@@ -1,0 +1,73 @@
+[tool.poetry]
+name = "madam-mam"
+version = "0.6.0"
+license = "GPL-3.0-only"
+description = "MADAM (TM) Multi Agent Digital Asset Manager - a MAM server for Docker Swarm to handle higly distributed media processes"
+authors = ["Vincent Texier <vit@free.fr>"]
+readme = "README.md"
+keywords = ["BPMN", "workflow", "media", "assets", "management", "MAM", "DAM", "docker", "swarm"]
+packages = [
+    { include = "madam" },
+]
+include = [
+    "resources/*"
+]
+
+[tool.poetry.scripts]
+madam = "madam.slots.cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+psycopg2-binary = "^2.8.6"
+PyYAML = "5.1.2"
+docker = "^5.0.0"
+timecode = "^1.3.1"
+python-sql = "^1.2.2"
+rich = "^10.2.2"
+ariadne = "^0.13.0"
+uvicorn = "^0.14.0"
+yoyo-migrations = "^7.3.2"
+lxml = "^4.6.3"
+watchgod = "^0.7"
+Jinja2 = "^3.0.1"
+adhesive-zeebe = "^2021.4.3"
+
+[tool.poetry.dev-dependencies]
+ansible = "^2.10.0"
+pytest_mock = "^3.2.0"
+pytest-asyncio = "^0.15.1"
+websockets = "^9.1"
+mypy = "^0.910"
+pylint = "^2.7.2"
+docker-compose = "^1.29.2"
+autohooks = "^21.7.0"
+autohooks-plugin-pylint = "^21.6.0"
+autohooks-plugin-black = "^21.7.1"
+autohooks-plugin-isort = "^1.0.0"
+pre-commit-hooks = {git = "https://github.com/Lucas-C/pre-commit-hooks"}
+gitlab-ci-linter = {git = "https://gitlab.com/devopshq/gitlab-ci-linter"}
+autohooks-plugin-mypy = "^0.1.0"
+autohooks-plugin-insert-license = "^0.1.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.autohooks]
+mode = "poetry"
+pre-commit = [
+    "autohooks.plugins.black",
+    "autohooks.plugins.isort",
+    "autohooks.plugins.pylint",
+    "autohooks.plugins.mypy",
+    "autohooks.plugins.insert_license",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.autohooks.plugins.mypy]
+arguments = ["--ignore-missing-imports", "--install-types", "--non-interactive"]
+
+[tool.autohooks.plugins.insert_license]
+arguments = ["--license-filepath=license_header.txt"]
