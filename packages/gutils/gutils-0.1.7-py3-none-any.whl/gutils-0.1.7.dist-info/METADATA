@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: gutils
+Version: 0.1.7
+Summary: Utility API for various python libraries
+Home-page: https://github.com/MathieuTuli/gutils
+Author: Mathieu Tuli
+Author-email: tuli.mathieu@gmail.com
+License: License :: Other/Proprietary License
+Project-URL: Bug Tracker, https://github.com/MathieuTuli/gutils/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GUTILS
+
+### Frequent uses of different python libraries or functionality that I wanted to nicely wrap, and that aren't provided in the standard library
+
+
