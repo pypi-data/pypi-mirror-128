@@ -1,0 +1,8 @@
+pytket~=0.17.0
+requests>=2.2
+types-requests
+websockets>=7.0
+nest_asyncio>=1.2
+pyjwt<2.0,>=1.7
+types-jwt
+keyring>=19.0
