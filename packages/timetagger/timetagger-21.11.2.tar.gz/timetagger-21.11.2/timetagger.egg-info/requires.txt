@@ -1,0 +1,7 @@
+asgineer>=0.8.0
+itemdb>=1.1.1
+jinja2
+markdown
+pscript>=0.7.6
+pyjwt
+uvicorn
