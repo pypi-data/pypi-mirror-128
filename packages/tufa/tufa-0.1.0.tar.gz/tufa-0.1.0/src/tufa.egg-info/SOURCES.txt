@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tufa/__init__.py
+src/tufa/__main__.py
+src/tufa.egg-info/PKG-INFO
+src/tufa.egg-info/SOURCES.txt
+src/tufa.egg-info/dependency_links.txt
+src/tufa.egg-info/entry_points.txt
+src/tufa.egg-info/top_level.txt
