@@ -1,0 +1,15 @@
+medialogue/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+medialogue/admin.py,sha256=-YGep3zRE4JThN88tBbsG3KbLxFEe_B1Z5_ij1P4A1A,292
+medialogue/apps.py,sha256=Dh_RUZ54mh5hV8nqcUl7FFikw8gl5HJqtx735LRxmsc,209
+medialogue/context_processors.py,sha256=WEmDya8SS9HxjuPl7P4RyvrBEqUEvfRqjas9s-u5fm0,258
+medialogue/forms.py,sha256=MhEb-h_k25A6jEth0N-fzpYImMaBwGzgwDq4QuQYXR4,6919
+medialogue/models.py,sha256=e5A5xKEsMut_J-pTRcALi3ryltR62-9cUnD5t26bWjs,2487
+medialogue/signals.py,sha256=8zGkj8XNTRZ0LAObq9bJfUsUlDnBwmi20u-wv9mQKZY,661
+medialogue/tasks.py,sha256=uJQvnlktZrw_goL3Oc4i4MLfrZWvPG5_ymfZp8IkmoI,846
+medialogue/urls.py,sha256=MQWi4lVrlwHqEgzk_g_QeEesmA7LvY-X0t8S9SeWIcw,567
+medialogue/views.py,sha256=8cHKRlr08b88kYu9vAFXFF5HhpZ3JIPgfrjGNK4PNjo,1754
+medialogue/static/medialogue/css/style.css,sha256=ti2pBuBnjTkE49xgFMp96h3P5PooIE0bkF8NVo4gArI,47
+django_medialogue-0.0.10.dist-info/METADATA,sha256=jL1TYyLy3LJdqr189VXAqDXkLkqiRmTI_XEySIaRNjc,1024
+django_medialogue-0.0.10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_medialogue-0.0.10.dist-info/top_level.txt,sha256=RwvQwfAYZfKFRkkKWB0CQQuYB5bEY939gkU69H_tqYc,11
+django_medialogue-0.0.10.dist-info/RECORD,,
