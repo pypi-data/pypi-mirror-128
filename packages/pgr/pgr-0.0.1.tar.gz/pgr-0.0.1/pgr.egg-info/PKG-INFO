@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pgr
+Version: 0.0.1
+Summary: No short description!
+Home-page: https://github.com/Unknown-Github-Username/
+Author: Unknown
+Maintainer: Unknown
+License: UNKNOWN
+Download-URL: https://pypi.python.org/pypi/pgr/0.0.1#downloads
+Platform: Windows
+Platform: MacOS
+Platform: Unix
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: tests
+Provides-Extra: docs
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+
+Welcome to ``pgr`` Documentation
+==============================================================================
+
+``dev/pgr-project`` 目录是用于开发 ``cookiecutter-pygitrepo`` 本身所用的一个 Dummy 项目. 用于模拟用户使用 ``cookiecutter-pygitrepo`` 生成的 Python 项目文件模板, 并且用各种 ``bin`` 脚本, ``make`` 命令的行为. 当这些命令在 ``my_pkg-project`` 上工作良好后, 我们再将其通用化模板化.
+
+.. contents::
+    :class: this-will-duplicate-information-and-it-is-still-useful-here
+    :depth: 1
+    :local:
+
+
