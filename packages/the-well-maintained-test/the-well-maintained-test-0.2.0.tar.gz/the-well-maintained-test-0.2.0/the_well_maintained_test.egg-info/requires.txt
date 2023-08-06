@@ -1,0 +1,8 @@
+click
+requests
+rich
+
+[test]
+pytest
+black
+isort
