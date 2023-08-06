@@ -1,0 +1,8 @@
+README.md
+setup.py
+url_tricks/__init__.py
+url_tricks/google.py
+url_tricks.egg-info/PKG-INFO
+url_tricks.egg-info/SOURCES.txt
+url_tricks.egg-info/dependency_links.txt
+url_tricks.egg-info/top_level.txt
