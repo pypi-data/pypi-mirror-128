@@ -1,0 +1,12 @@
+dramatiq_pg/__init__.py,sha256=nJdXp6lu3qEDmFoPxK9eMJoWHF5et2RUxhmhREfQaUw,195
+dramatiq_pg/broker.py,sha256=NO5TwHag553R7AcMRsO90ES4P13n3Bq5cYnUO3I7HT0,14561
+dramatiq_pg/cli.py,sha256=BjhSlfSugHdlOmPBGPcn9DUFa6W0HmpR1XICqfMifMI,5408
+dramatiq_pg/results.py,sha256=p5krofyKMJJjZGrY2LlGKktlCeKkUC88R_SobtII6R0,3077
+dramatiq_pg/schema.py,sha256=l5RX-ZWk0Z1abFsE-zQOdyj7eKH119KCy1qhv9ReyHs,774
+dramatiq_pg/schema.sql,sha256=Ur6i3h528ejBwtOqpz5vPAIyw-jtECKqRqKkNqYBT10,738
+dramatiq_pg/utils.py,sha256=lHKJKWjHQ_Uha9xiBGt1Ai4oy1vDDf0PgRuJz-lVDOE,6473
+dramatiq_pg-0.11.0.dist-info/entry_points.txt,sha256=8lWWjyXoDwysbfOT_Kpp92jwXOT0BKqUnQDOJfTYA1s,58
+dramatiq_pg-0.11.0.dist-info/LICENSE,sha256=gN144f3dVyAvUt2Bok7NW7IBHfiXCo_dtvYE3F-_4Pg,918
+dramatiq_pg-0.11.0.dist-info/WHEEL,sha256=DRf8A_Psd1SF2kVqTQOOFU1Xzl3-A2qljAxBMTOusUs,83
+dramatiq_pg-0.11.0.dist-info/METADATA,sha256=2OpFDN-_ahGSSXtJ8hlr5hKGIjeWMKgZj3AFMpz0K2M,3412
+dramatiq_pg-0.11.0.dist-info/RECORD,,
