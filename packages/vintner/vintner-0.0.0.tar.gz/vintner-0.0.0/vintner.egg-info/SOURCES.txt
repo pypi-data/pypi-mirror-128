@@ -1,0 +1,6 @@
+README.md
+setup.py
+vintner.egg-info/PKG-INFO
+vintner.egg-info/SOURCES.txt
+vintner.egg-info/dependency_links.txt
+vintner.egg-info/top_level.txt
