@@ -1,0 +1,7 @@
+openpibo_detect_models/__init__.py,sha256=rxOdEmo-BLZ7rvLEvYbgOWGXmVoZ6cKVGVaeRcwLD2c,151
+openpibo_detect_models/models/MobileNetSSD_deploy.caffemodel,sha256=dhyG-649g2HdRU98dAqWT2KXXtMvQyS4uFmU7eww9q8,23147564
+openpibo_detect_models/models/MobileNetSSD_deploy.prototxt.txt,sha256=54FVnE9b6uwqSGzNlSr1tvpAjpSYdhv19PuAtOnw0l4,29353
+openpibo_detect_models-0.4.1.dist-info/METADATA,sha256=Az3RgNJNX3llBGOX9emRoDh4223AP2hEZ4Aip_6tpoY,782
+openpibo_detect_models-0.4.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+openpibo_detect_models-0.4.1.dist-info/top_level.txt,sha256=ZzhIDt1HzNJxq-eyffYHkf6Jk1EnOB5LD5gX2FDFBB4,23
+openpibo_detect_models-0.4.1.dist-info/RECORD,,
