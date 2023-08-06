@@ -1,0 +1,12 @@
+[dependencies]
+requests_html = "^0.10.0"
+pandas = "^1.2.0"
+
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+
+]
+build-backend = "setuptools.build_meta"

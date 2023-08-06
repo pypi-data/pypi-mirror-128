@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+scraper/aruodas_scraper.py
+scraper/vilnius_aruodas_scraper.egg-info/PKG-INFO
+scraper/vilnius_aruodas_scraper.egg-info/SOURCES.txt
+scraper/vilnius_aruodas_scraper.egg-info/dependency_links.txt
+scraper/vilnius_aruodas_scraper.egg-info/requires.txt
+scraper/vilnius_aruodas_scraper.egg-info/top_level.txt
