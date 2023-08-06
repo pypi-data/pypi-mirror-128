@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/one-time-event/__init__.py
+src/one-time-event/py.typed
+src/one-time-event/_jsii/__init__.py
+src/one-time-event/_jsii/cdk-library-one-time-event@0.0.43.jsii.tgz
+src/renovosolutions.aws_cdk_one_time_event.egg-info/PKG-INFO
+src/renovosolutions.aws_cdk_one_time_event.egg-info/SOURCES.txt
+src/renovosolutions.aws_cdk_one_time_event.egg-info/dependency_links.txt
+src/renovosolutions.aws_cdk_one_time_event.egg-info/requires.txt
+src/renovosolutions.aws_cdk_one_time_event.egg-info/top_level.txt
