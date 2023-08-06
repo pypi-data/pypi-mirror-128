@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: checkQC
+Version: 3.6.6
+Summary: A simple program to parse Illumina NGS data and check it for quality criteria.
+Home-page: https://www.github.com/Molmed/checkQC
+Author: Johan Dahlberg, SNP&SEQ Technology Platform, Uppsala University
+Author-email: johan.dahlberg@medsci.uu.se
+License: GPLv3
+Download-URL: https://github.com/Molmed/checkQC/archive/3.6.6.tar.gz
+Keywords: bioinformatics,ngs,quality control
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: PyYAML (>=6.0)
+Requires-Dist: interop (>=1.1.10)
+Requires-Dist: xmltodict
+Requires-Dist: tornado
+Requires-Dist: sample-sheet
+
+A simple program to parse Illumina NGS data and check it for quality criteria.
+
