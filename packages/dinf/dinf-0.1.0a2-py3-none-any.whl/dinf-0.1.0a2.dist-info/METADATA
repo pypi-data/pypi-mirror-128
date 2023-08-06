@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: dinf
+Version: 0.1.0a2
+Summary: discriminator-based inference of population parameters
+Home-page: https://github.com/RacimoLab/dinf
+Author: Graham Gower
+License: MIT
+Project-URL: Documentation, https://racimolab.github.io/dinf/
+Project-URL: Source Code, https://github.com/RacimoLab/dinf
+Project-URL: Bug Tracker, https://github.com/RacimoLab/dinf/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: arviz
+Requires-Dist: cyvcf2
+Requires-Dist: emcee
+Requires-Dist: numpy
+Requires-Dist: jax
+Requires-Dist: flax
+Requires-Dist: optax
+Requires-Dist: msprime (>=1.0.3)
+Requires-Dist: demes
+
+UNKNOWN
+
