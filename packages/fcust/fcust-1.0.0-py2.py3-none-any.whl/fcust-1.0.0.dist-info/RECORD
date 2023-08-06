@@ -1,0 +1,12 @@
+fcust/__init__.py,sha256=iopYrxPYJg9QK4ZT4KsG_LJhfc78CgFpBTBhi-JILfY,163
+fcust/cli.py,sha256=8eQv2ofkH7UbGsxmZPErUjLzQx5Llb8vai41YKfs7-w,2622
+fcust/fcust.py,sha256=2-mCIXWP2b-rcsFuvymq__WkHwOerC8_WIBT_Y4kcK4,5227
+fcust/service.py,sha256=V1Q8X8WtW9OQYobddqm0J86ifsw0Voz7xcMV8Xsvc-I,3853
+usr/share/man/man1/fcust.1,sha256=svz0EeZZIQ-e1notJNYJr2UVYiNUT-4O99uOYe639Ho,14544
+fcust-1.0.0.dist-info/AUTHORS.rst,sha256=d_JLUnwLU2oN-aSP9JsrC6v9h8xtKS4U4UCb9APKZzk,386
+fcust-1.0.0.dist-info/LICENSE,sha256=pPlVWYFL05W-6z8M_zgp5un3zYE30bvxhDsuBkhkF_Q,1549
+fcust-1.0.0.dist-info/METADATA,sha256=lDYT_I5sAscz5K4Gxi-eFrjqclZ6dfCgmAKs--xYxUM,4940
+fcust-1.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+fcust-1.0.0.dist-info/entry_points.txt,sha256=V36SEYNQt8u8QAyL9rAJ4qIwIWfA2SeWccI1ek9B0Q0,42
+fcust-1.0.0.dist-info/top_level.txt,sha256=3Jz1nvH-pN361eMaRdn_stkNl-UpwXD5A2_GI-Z62iY,6
+fcust-1.0.0.dist-info/RECORD,,
