@@ -1,0 +1,11 @@
+begroing_index/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+begroing_index/begroing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+begroing_index/begroing/aip.py,sha256=siOwG56dLGzWpLFG9oj0bS8HKY2u1OEqeLe31fZMo7s,782
+begroing_index/begroing/pit.py,sha256=0rKQBHKttsCZ6Xuzc5gBrmadWUvPAbf3tawYVbQS54w,885
+begroing_index/exceptions.py,sha256=wyt9FJuhkxtveQrHZ9P22VovR8BFDrYsYA3UO1WNgfI,51
+begroing_index/indicator_values.py,sha256=FtsXhY8ERJL4uZ8_dGnAbEVKrsXdtC2BTidCMSSON88,1276
+indicator_values/indicator_values_AIP.csv,sha256=5tgFmRXmZHYJIRPUfnavgJBJcQXbK_VvsHAZTnIa7xk,2997
+indicator_values/indicator_values_PIT.csv,sha256=jAsG6d0E_btJ7Lp69pIhUTZ2bGkw6NBwcfuJCWoAGL8,4145
+begroing_index-0.1.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+begroing_index-0.1.2.dist-info/METADATA,sha256=Qlfqfzloq7_jz9VR3FJfh6FuM78Lcp6qBJ44oVXs4ws,320
+begroing_index-0.1.2.dist-info/RECORD,,
