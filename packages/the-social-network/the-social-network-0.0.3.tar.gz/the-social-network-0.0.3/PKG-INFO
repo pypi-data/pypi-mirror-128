@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: the-social-network
+Version: 0.0.3
+Summary: Basic social network core.
+Home-page: https://gitlab.cs.uni-duesseldorf.de/feger/the-social-network
+License: BSD-4
+Author: Marc Feger
+Author-email: marc.feger@hhu.de
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.2.9,<4.0.0)
+Requires-Dist: Pillow (>=8.4.0,<9.0.0)
+Requires-Dist: django-cors-headers (>=3.10.0,<4.0.0)
+Requires-Dist: django-dotenv (>=1.4.2,<2.0.0)
+Requires-Dist: djangorestframework (>=3.12.4,<4.0.0)
+Requires-Dist: uWSGI (>=2.0.20,<3.0.0)
+Description-Content-Type: text/markdown
+
+# The Social Network
+
+The package "The Social Network" is a django base backend core element for any possible social network you can think of.
+
+It contains the following models
+
+Django.Authentication.User
+
