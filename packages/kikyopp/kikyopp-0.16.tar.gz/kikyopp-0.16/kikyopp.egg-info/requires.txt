@@ -1,0 +1,8 @@
+pydantic>=1.8.1
+lxml>=4.6.3
+cssselect>=1.1.0
+PyMuPDF>=1.18.13
+requests-toolbelt>=0.9.1
+PyYAML>=5.4.1
+mail-parser>=3.15.0
+kikyo<0.11,>=0.10
