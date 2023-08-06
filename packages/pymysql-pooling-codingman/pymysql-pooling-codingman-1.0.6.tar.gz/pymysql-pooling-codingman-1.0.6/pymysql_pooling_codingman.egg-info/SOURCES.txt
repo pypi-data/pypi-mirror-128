@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pymysql_pooling_codingman.egg-info/PKG-INFO
+pymysql_pooling_codingman.egg-info/SOURCES.txt
+pymysql_pooling_codingman.egg-info/dependency_links.txt
+pymysql_pooling_codingman.egg-info/requires.txt
+pymysql_pooling_codingman.egg-info/top_level.txt
+pymysqlpool/__init__.py
+pymysqlpool/pool.py
+test/__init__.py
+test/test_pool.py
