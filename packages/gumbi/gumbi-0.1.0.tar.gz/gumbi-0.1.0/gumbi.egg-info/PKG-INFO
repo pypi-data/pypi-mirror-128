@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: gumbi
+Version: 0.1.0
+Summary: Gaussian Process Model Building Interface
+Home-page: UNKNOWN
+Author: John Goertz
+Author-email: 
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
