@@ -1,0 +1,2 @@
+django-jinja>=2.6.0
+django>=3
