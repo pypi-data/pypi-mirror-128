@@ -1,0 +1,10 @@
+frozendict>=2.0.6
+cytoolz>=0.11.0
+cachetools~=4.2.1
+numpy>=1.21.2
+scipy>=1.7.1
+matplotlib~=3.4.3
+shapely>=1.8.0
+zuper-commons-z6>=6.1.5
+PyGeometry-z6>=2.0
+commonroad-io==2021.3
