@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: pahud-cdktf-aws-ecs
+Version: 0.1.84
+Summary: CDKTF construct library for Amazon ECS
+Home-page: https://github.com/pahud/cdktf-aws-ecs
+Author: Pahud Hsieh<pahudnet@gmail.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/pahud/cdktf-aws-ecs
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cdktf-cdktf-provider-aws (<3.0.0,>=2.0.13)
+Requires-Dist: cdktf (<0.8.0,>=0.7.0)
+Requires-Dist: constructs (<11.0.0,>=10.0.0)
+Requires-Dist: jsii (<2.0.0,>=1.46.0)
+Requires-Dist: publication (>=0.0.3)
+
+[![npm version](https://badge.fury.io/js/@pahud%2Fcdktf-aws-ecs.svg)](https://badge.fury.io/js/@pahud%2Fcdktf-aws-ecs)
+[![PyPI version](https://badge.fury.io/py/pahud-cdktf-aws-ecs.svg)](https://badge.fury.io/py/pahud-cdktf-aws-ecs)
+[![release](https://github.com/pahud/cdktf-aws-ecs/actions/workflows/release.yml/badge.svg)](https://github.com/pahud/cdktf-aws-ecs/actions/workflows/release.yml)
+[![construct hub](https://img.shields.io/badge/Construct%20Hub-available-blue)](https://constructs.dev/packages/@pahud/cdktf-aws-ecs)
+
+# cdktf-aws-ecs
+
+CDKTF construct library for Amazon ECS.
+
+## Usage
+
+The following sample creates:
+
+1. A new VPC
+2. Amazon ECS cluster
+3. Autoscaling Group capacity provider
+4. Autoscaling Group with Launch Template
+
+```python
+# Example automatically generated from non-compiling source. May contain errors.
+from pahud.cdktf_aws_ecs import Cluster
+
+# create the cluster
+cluster = Cluster(stack, "EcsCluster")
+
+# create the ASG capacity with capacity provider
+cluster.add_asg_capacity("ASGCapacity",
+    max_capacity=10,
+    min_capacity=0,
+    desired_capacity=2
+)
+```
+
+## Existing VPC subnets
+
+To deploy in any existing VPC, specify the `vpcSubnets`.
+
+```python
+# Example automatically generated from non-compiling source. May contain errors.
+cluster.add_asg_capacity("ASGCapacity",
+    vpc_subnets=["subnet-111", "subnet-222", "subnet-333"]
+)
+```
+
+## Bottlerocket support
+
+To create cluster capacity with Bottlerocket machine image:
+
+```python
+# Example automatically generated from non-compiling source. May contain errors.
+cluster.add_asg_capacity("BRCapacity",
+    machine_image=BottleRocketImage(stack)
+)
+```
+
+
