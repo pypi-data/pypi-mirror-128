@@ -1,0 +1,10 @@
+README.md
+setup.py
+modelspec/BaseTypes.py
+modelspec/__init__.py
+modelspec/utils.py
+modelspec.egg-info/PKG-INFO
+modelspec.egg-info/SOURCES.txt
+modelspec.egg-info/dependency_links.txt
+modelspec.egg-info/requires.txt
+modelspec.egg-info/top_level.txt
