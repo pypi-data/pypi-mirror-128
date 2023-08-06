@@ -1,0 +1,10 @@
+deepmerge
+
+[tests]
+oarepo[tests]~=3.3.40
+marshmallow-utils
+responses
+oarepo_validate
+oarepo_communities
+deepmerge
+oarepo-invenio-model

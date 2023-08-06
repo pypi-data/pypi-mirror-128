@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "allOf": [
+    {
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "persistentIdentifiers": {
+          "description": "Conference identifiers",
+          "items": {
+            "scheme": {
+              "type": "string"
+            },
+            "identifier": {
+              "type": "string"
+            }
+          },
+          "minLength": 1,
+          "required": [
+            "scheme",
+            "value"
+          ],
+          "type": "array"
+        },
+        "document_type": {
+          "type": "string"
+        },
+            "creators": {
+              "description": "Authors of the resource.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "description": "Resource creator metadata. Role is a taxonomy field: [contributor-type](https://oarepo.github.io/publications-api/taxonomies/#ContributorType)",
+                "additionalProperties": false,
+                "required": ["person_or_org"],
+                "properties": {
+                    "person_or_org": {
+                      "name": {
+                        "type": "string"
+                      }
+                    }
+
+                }
+              }
+            },
+          "publication_year": {
+            "minLength": 1,
+            "title": "Year of the publication of the record",
+            "type": "string"
+         }
+      }
+    },
+    {
+      "$ref": "/schemas/invenio-v3.0.0.json#/definitions/InvenioRecord"
+    }
+  ],
+  "additionalProperties": "true"
+}

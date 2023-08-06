@@ -1,0 +1,6 @@
+[invenio_base.apps]
+
+
+[invenio_jsonschemas.schemas]
+oarepo_doi_generator = oarepo_doi_generator.jsonschemas
+

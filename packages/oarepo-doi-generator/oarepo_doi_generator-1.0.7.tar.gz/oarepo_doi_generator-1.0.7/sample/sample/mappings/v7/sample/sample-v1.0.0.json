@@ -1,0 +1,19 @@
+{
+  "mappings": {
+    "dynamic": "strict",
+    "oarepo:extends": "invenio-v3.0.0.json#/InvenioRecord",
+    "properties": {
+      "title": {
+        "type": "text"
+      },
+      "document_type": {
+        "type": "text"
+      },
+      "publication_year": {
+        "title": {
+          "type": "text"
+        }
+      }
+    }
+  }
+}
