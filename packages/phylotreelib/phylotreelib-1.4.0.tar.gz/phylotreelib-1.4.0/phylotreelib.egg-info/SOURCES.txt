@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+phylogenetictree.png
+phylotreelib.py
+requirements.txt
+setup.py
+phylotreelib.egg-info/PKG-INFO
+phylotreelib.egg-info/SOURCES.txt
+phylotreelib.egg-info/dependency_links.txt
+phylotreelib.egg-info/requires.txt
+phylotreelib.egg-info/top_level.txt
+tests/test_treelib.py

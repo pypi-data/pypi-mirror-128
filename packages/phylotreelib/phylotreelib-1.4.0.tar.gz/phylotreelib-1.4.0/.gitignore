@@ -1,0 +1,11 @@
+*.pyc
+__pycache__
+notebook_treelib.ipynb
+.ipynb_checkpoints/
+treelib_manual.txt
+build/
+dist/
+phylotreelib.egg-info/
+notes/
+.ztr-directory
+phylotreelibnotes.md
