@@ -1,0 +1,11 @@
+README.rst
+setup.py
+detime/__init__.py
+detime/test_fmap.py
+detime.egg-info/PKG-INFO
+detime.egg-info/SOURCES.txt
+detime.egg-info/dependency_links.txt
+detime.egg-info/entry_points.txt
+detime.egg-info/not-zip-safe
+detime.egg-info/requires.txt
+detime.egg-info/top_level.txt
