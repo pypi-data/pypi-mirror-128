@@ -1,0 +1,4 @@
+requests
+celery
+django-celery
+edx-celeryutils
