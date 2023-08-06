@@ -1,0 +1,9 @@
+trapdoor/__init__.py,sha256=ClPT3n64AYJsJCySH41Vt5je6HODMxlDfLTZGPWiTZA,30
+trapdoor/configfile.py,sha256=QH6lgI7mu0q9rHtXVcrzwjsLjDAj7x6iP1D2mPjCnKQ,1073
+trapdoor/fs.py,sha256=J-zhvomdZueJmWbtA5bjYkLXXpSY2ChSDQRE7MJe2ko,451
+trapdoor/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trapdoor/tests/test_trapdoor.py,sha256=8IObZVZei-HzVZQWdR-19GWxDE3TnjxQBPTYdASY8a0,1653
+trapdoor/trapdoor.py,sha256=fgLXT_YFbcOCBb3yjethPzXKKOpTeXCXg0g0KA-tQGw,1664
+trapdoor-0.1.0a1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+trapdoor-0.1.0a1.dist-info/METADATA,sha256=QIqMH6HZHiaiDSvp-Ozy57t4MKlLRmkqjHYLvNWvfyM,461
+trapdoor-0.1.0a1.dist-info/RECORD,,
