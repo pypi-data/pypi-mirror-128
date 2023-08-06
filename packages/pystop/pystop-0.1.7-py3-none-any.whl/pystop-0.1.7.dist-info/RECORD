@@ -1,0 +1,15 @@
+pystop/__init__.py,sha256=OIENUv7m9NiOonzY4zZqKIWmUGnq3M5G3MFPtf7SY2U,121
+pystop/manifold/Stiefel.py,sha256=Og88ZG8iPS1FC-BkfsyTi54FR9UX8zpTaWEt44YDmw0,1279
+pystop/manifold/__init__.py,sha256=u-D-QqqQwvCu34964DTUoiVo-4kTFZ2g3NMsAdxCabI,59
+pystop/solver/PenCF.py,sha256=ZMk_DidJFXhx1N1JExMVQ-JjYeMau6qb-qzXk4IDcVA,2777
+pystop/solver/SLPG.py,sha256=wDqnNA-z9F0k1GC6O8q2bIWeR3Z5rl1MK0Htxn1Yt-o,13645
+pystop/solver/__init__.py,sha256=wj4COhYZUfxEd9Nk34_UbfJHOlR6fnU5axCcfc9XcFE,147
+pystop/utility/__init__.py,sha256=ugKQ3Md-6VXxD-_Mvt2fnmypzZwg62pXs3bgYc77XpY,140
+pystop/utility/pystop_autodiff.py,sha256=JDkL2oxQPRQI9TYltK3045UDRh-Ai10d3HIlQ5FrR9Y,203
+pystop/utility/utility.py,sha256=5NlZduH2MqmuSOXzTJieU5Ev3v8DwiYMOZ8UjIsuy3Y,557
+pystop-0.1.7.data/data/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+pystop-0.1.7.data/data/README.md,sha256=pcuhKdQ6G71DzNjkw5RHhFUJt1UlXYaUHIejnsIkMME,7881
+pystop-0.1.7.dist-info/METADATA,sha256=e_DHzI-_DGNyF1B7t4zD3Sm0ySt3J1gUtqvkgebtJVY,8373
+pystop-0.1.7.dist-info/RECORD,,
+pystop-0.1.7.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+pystop-0.1.7.dist-info/top_level.txt,sha256=TyP3rCFNBwzgEAQX5We-Kmu9OC1E14JVFAV0WzOTU0M,7
