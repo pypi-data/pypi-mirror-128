@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pincer
+Version: 0.12.0
+Summary: Discord API wrapper rebuild from scratch.
+Home-page: https://pincer.dev
+Author: Sigmanificient, Arthurdw
+Author-email: contact@pincer.dev
+License: MIT
+Project-URL: Github repository, https://github.com/pincer-org/pincer
+Project-URL: ReadTheDocs, https://pincer.readthedocs.org
+Project-URL: Discord, https://discord.gg/8WkYz3fNFm
+Keywords: discord,api,asynchronous,websockets,aiohttp
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: windows
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: websockets (>=10.0)
+Requires-Dist: aiohttp (<3.8.0,>=3.7.4post0)
+Provides-Extra: img
+Requires-Dist: Pillow (==8.4.0) ; extra == 'img'
+Provides-Extra: speed
+Requires-Dist: orjson (>=3.5.4) ; extra == 'speed'
+Requires-Dist: Brotli (>=1.0.9) ; extra == 'speed'
+Requires-Dist: aiodns (>=1.1) ; extra == 'speed'
+Requires-Dist: cchardet (>=2.1.7) ; extra == 'speed'
+Provides-Extra: testing
+Requires-Dist: coverage (==6.1.2) ; extra == 'testing'
+Requires-Dist: flake8 (==4.0.1) ; extra == 'testing'
+Requires-Dist: tox (==3.24.4) ; extra == 'testing'
+Requires-Dist: pre-commit (==2.15.0) ; extra == 'testing'
+Requires-Dist: pytest (==6.2.5) ; extra == 'testing'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'testing'
+Requires-Dist: mypy (==0.910) ; extra == 'testing'
+Requires-Dist: twine (==3.6.0) ; extra == 'testing'
+Requires-Dist: wheel (==0.37.0) ; extra == 'testing'
+
+UNKNOWN
+
