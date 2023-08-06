@@ -1,0 +1,10 @@
+aws_cdk/aws_eventschemas/__init__.py,sha256=tVtjWJvbIT-eS5jnZVRbvksJ-Y3-LUhxrClWq1f2_XE,50247
+aws_cdk/aws_eventschemas/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_eventschemas/_jsii/__init__.py,sha256=2v6t80g0xSSi06SuTveX59pvg_tHjcc5owdIkRqXhYY,396
+aws_cdk/aws_eventschemas/_jsii/aws-eventschemas@1.133.0.jsii.tgz,sha256=ZpuICudV94Gu6ZSpXEu_By_x0I3l2UY6ahyqAlXxsJ8,29494
+aws_cdk.aws_eventschemas-1.133.0.dist-info/LICENSE,sha256=PPdRlpoLCV1CRrCV1eKpp3m0lNjchFAP4a9zfc8tRLo,11391
+aws_cdk.aws_eventschemas-1.133.0.dist-info/METADATA,sha256=ZVA0RDBryo3-k0x0P9nBwlAuIWniOZ10pb1cY0Uj1wQ,1770
+aws_cdk.aws_eventschemas-1.133.0.dist-info/NOTICE,sha256=xo56krus2e5ShfXqz_B7vuvGcMn_D0F7TjjpfTz8YMw,113
+aws_cdk.aws_eventschemas-1.133.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_cdk.aws_eventschemas-1.133.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_eventschemas-1.133.0.dist-info/RECORD,,
