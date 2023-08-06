@@ -1,0 +1,8 @@
+osmapi/OsmApi.py,sha256=uTUrWF0gf31lMjdBNixSttJYsI3q6JV6nIwlqvlIPjQ,78860
+osmapi/__init__.py,sha256=atRhPiQH9yVj-GUdl19q6YoB-BHXee4PLLxO4CnmQCg,83
+osmapi/errors.py,sha256=Tpo4cCT_VXTL3nHfAHvAY6Uv2gTW1jok1u_rLnOsvM8,2818
+osmapi-2.0.0.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+osmapi-2.0.0.dist-info/METADATA,sha256=kE7aTJmA_fvpJGTM2OOwqGI8WsN2zMdl5sEPk0Iwg2w,907
+osmapi-2.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+osmapi-2.0.0.dist-info/top_level.txt,sha256=QeNfS52G8sXTRJZOfyFQrPszx2LE9vwFaot29PRV0W0,7
+osmapi-2.0.0.dist-info/RECORD,,

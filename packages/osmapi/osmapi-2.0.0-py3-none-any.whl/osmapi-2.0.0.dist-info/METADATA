@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: osmapi
+Version: 2.0.0
+Summary: Python wrapper for the OSM API
+Home-page: https://github.com/metaodi/osmapi
+Author: Etienne Chové
+Author-email: chove@crans.org
+Maintainer: Stefan Oderbolz
+Maintainer-email: odi@metaodi.ch
+License: GPLv3
+Download-URL: https://github.com/metaodi/osmapi/archive/v2.0.0.zip
+Keywords: openstreetmap,osm,api
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests
+
+Python wrapper for the OSM API
+
+
