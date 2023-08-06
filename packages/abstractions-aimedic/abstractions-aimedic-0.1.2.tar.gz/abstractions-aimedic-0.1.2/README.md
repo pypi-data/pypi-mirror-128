@@ -1,0 +1,1 @@
+Abstractions for main components in *AIMedic*'s ``tensorflow``-based projects.
