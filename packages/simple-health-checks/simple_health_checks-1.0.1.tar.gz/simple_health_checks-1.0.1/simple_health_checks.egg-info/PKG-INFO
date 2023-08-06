@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: simple-health-checks
+Version: 1.0.1
+Summary: Simple health checks takes a modular plugin based approach to provide health checks relevant to your project.
+Home-page: https://gitlab.com/genomicsengland/opensource/simple-healthchecks
+Author: Nicholas Dentandt, Oleg Gerasimenko, Constantina Polycarpou
+Author-email: noreply@genomicsengland.co.uk
+License: Apache License 2.0
+Keywords: healthchecks,health,checks
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: dev
+Provides-Extra: rabbitmq
+Provides-Extra: django_database
+Provides-Extra: django_views
+Provides-Extra: django
+Provides-Extra: full
+
+UNKNOWN
+
