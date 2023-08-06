@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: views-schema
+Version: 1.6.0
+Summary: A package containing pydantic models used throughout ViEWS 3 for communication between services
+License: MIT
+Author: peder2911
+Author-email: pglandsverk@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)

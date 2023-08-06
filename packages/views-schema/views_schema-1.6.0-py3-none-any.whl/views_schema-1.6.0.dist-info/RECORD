@@ -1,0 +1,9 @@
+views_schema/__init__.py,sha256=p1Cp_VgNJTQRA6CgLSdDNNRHCAd3jau-A0OVKvJUhn8,394
+views_schema/base_data_retriever.py,sha256=klI4IxShhL9rTD3j_rOQQcsv8-Klt2r-Pwjas_m7Ps8,1321
+views_schema/docs.py,sha256=iFA6eUk5Fa-r7d5jnbTYQkslPbiUYTNtn6T12rU5Dns,1534
+views_schema/generic.py,sha256=t7JRMDjlJxJZiIIb8D5Rqi-EwuhfyzXmBaDKbRQBwsM,224
+views_schema/partitioning.py,sha256=hC9lir24fpt0pUFKqUM8fuDwbpz9s0a48xTWcHeIBj8,7467
+views_schema/queryset_manager.py,sha256=za9bwSMfiYvs2nzep_zAIjwCIL1WVEfMfB3zpxAvXso,1583
+views_schema-1.6.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+views_schema-1.6.0.dist-info/METADATA,sha256=75n84gEUmoT_QjGi9WqQDJBrcAGUZ96ToQx-99qtAmM,547
+views_schema-1.6.0.dist-info/RECORD,,
