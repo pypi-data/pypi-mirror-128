@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: jabberwock
+Version: 0.6.4
+Summary: Python library that helps with accessing Cisco Call Manager over the AXL interface
+Home-page: https://github.com/kwroble
+Author: Kyle Wroble
+Author-email: kwroble@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Operating System :: OS Independent
