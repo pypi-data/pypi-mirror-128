@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: minica-api-pihole-client
+Version: 0.1.0
+Summary: Inject minica-api domain messages into pihole dns
+License: GPLv3
+Author: Bjørn Snoen
+Author-email: bjorn.snoen@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: dataclasses-json (>=0.5.6,<0.6.0)
+Requires-Dist: paho-mqtt (>=1.6.1,<2.0.0)

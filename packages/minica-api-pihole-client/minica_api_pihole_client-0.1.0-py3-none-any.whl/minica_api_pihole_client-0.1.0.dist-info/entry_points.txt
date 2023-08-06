@@ -1,0 +1,3 @@
+[console_scripts]
+minica-pihole-sync=minica_api_pihole.main:main
+
