@@ -1,0 +1,6 @@
+six
+numpy
+
+[native]
+requests
+python-rapidjson>=0.9.1
