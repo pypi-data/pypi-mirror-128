@@ -1,0 +1,10 @@
+README.md
+setup.py
+gitchart/__init__.py
+gitchart/gitchart.py
+gitchart.egg-info/PKG-INFO
+gitchart.egg-info/SOURCES.txt
+gitchart.egg-info/dependency_links.txt
+gitchart.egg-info/entry_points.txt
+gitchart.egg-info/requires.txt
+gitchart.egg-info/top_level.txt
