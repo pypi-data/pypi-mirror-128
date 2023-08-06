@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ytstudio/__init__.py
+ytstudio/__main__.py
+ytstudio/templates.py
+ytstudio.egg-info/PKG-INFO
+ytstudio.egg-info/SOURCES.txt
+ytstudio.egg-info/dependency_links.txt
+ytstudio.egg-info/requires.txt
+ytstudio.egg-info/top_level.txt
