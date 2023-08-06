@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: avmesos
+Version: 0.3.4
+Summary: Mesos HTTP lib
+Home-page: UNKNOWN
+Author: AVENTER UG (haftungsbeschraenkt)
+Author-email: support@aventer.biz
+License: UNKNOWN
+Download-URL: https://git.aventer.biz/AVENTER/python-mesos-http
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
