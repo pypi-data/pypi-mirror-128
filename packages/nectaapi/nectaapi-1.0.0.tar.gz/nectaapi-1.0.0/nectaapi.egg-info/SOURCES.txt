@@ -1,0 +1,7 @@
+setup.py
+nectaapi/__init__.py
+nectaapi/scrapper.py
+nectaapi.egg-info/PKG-INFO
+nectaapi.egg-info/SOURCES.txt
+nectaapi.egg-info/dependency_links.txt
+nectaapi.egg-info/top_level.txt
