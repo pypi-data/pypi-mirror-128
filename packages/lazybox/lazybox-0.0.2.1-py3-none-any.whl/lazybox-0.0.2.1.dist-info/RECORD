@@ -1,0 +1,16 @@
+databox/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+databox/_nbdev.py,sha256=amMxnX01CJ0Ua42vLJr9Esn9oeR1v3-W_5uOlwQHpjk,724
+databox/core.py,sha256=xxDZMnPDzPL6uaDg5zBwyNdgmHti3pAz_xu_SpsqWAA,314
+databox/utils.py,sha256=6Fb8qmuLsX3DioR3fqYlEkGVAF3_TfEVYC4gdGipwhk,3181
+lazybox/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+lazybox/_nbdev.py,sha256=Z6n7eQKXPGOWdfLUknQqlOkvrjhxTjU92LVRV8Xek2Q,1030
+lazybox/all.py,sha256=-TxFXPpITAChg2usDHlf8NxVyTi1kKX1SgsO0c_5fV0,233
+lazybox/box.py,sha256=u4TqMoyuBla8mPt5dH_VyU_Tv_MT1kKgIRvOtKqY5vk,1300
+lazybox/core.py,sha256=aPFEW2Z1hYofaFA4j8M-5p33FWopHx_Zg3e9r4h4UUE,1701
+lazybox/utils.py,sha256=zmd44CiS2hmWVqx1fsWEw5Oowru9loAx4d50Vb1p5yA,3676
+lazybox-0.0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lazybox-0.0.2.1.dist-info/METADATA,sha256=hxlc_ZIVpUV1u9_dg-TFhCaVkvZtwOjusDrIwI8Vy8U,1187
+lazybox-0.0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lazybox-0.0.2.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+lazybox-0.0.2.1.dist-info/top_level.txt,sha256=XM7fI9N_PyxnvW0ij7MfmbesKydbSHjVZU2rESJ-i44,8
+lazybox-0.0.2.1.dist-info/RECORD,,

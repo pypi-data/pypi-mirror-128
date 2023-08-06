@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: lazybox
+Version: 0.0.2.1
+Summary: A description of your project
+Home-page: https://github.com/limiteinductive/Databox/tree/main/
+Author: Benjamin Trom
+Author-email: benjamintrom@gmail.com
+License: MIT License
+Keywords: some keywords
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pip
+Requires-Dist: packaging
+Requires-Dist: fastai
+Requires-Dist: plum-dispatch
+Provides-Extra: dev
+
+# DataBox
+> A user friendly API to jump-start your Deep Learning project. 
+
+
+The library is still in early development, but a lot of new features will be added in future
+
+    [ ] Support for non-image Datasets
+    [ ] Import NN architecture from the timm library
+    [ ] Make it better
+
+## Install
+
+`pip install lazybox`
+
+## How to use
+
+Let's go through a very basic example:
+
+
