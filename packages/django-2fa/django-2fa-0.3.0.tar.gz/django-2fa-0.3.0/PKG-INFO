@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: django-2fa
+Version: 0.3.0
+Summary: 2 Factor authenication application for Django
+License: MIT
+Author-email: Paul Bailey <paul@neutron.studio>
+Requires-Python: >=3.7
+Project-URL: homepage, https://github.com/neutron-sync/django-2fa
+Description-Content-Type: text/markdown
+Description: # django-2fa
+        
+        two factor authentication support for Django
+        
+        ## Features
+        
+        - two factor auth can be enabled by default if e-mail is available for a user
+        - HOTP via e-mail
+        - TOTP via authernicator apps
+        - FIDO via hardware tokens
+
