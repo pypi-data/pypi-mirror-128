@@ -1,0 +1,5 @@
+click
+PyYAML
+requests
+web3
+clamfig
