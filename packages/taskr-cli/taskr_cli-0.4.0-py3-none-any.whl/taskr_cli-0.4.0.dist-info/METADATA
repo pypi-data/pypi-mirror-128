@@ -1,0 +1,203 @@
+Metadata-Version: 2.1
+Name: taskr-cli
+Version: 0.4.0
+Summary: A language agnostic make-like tool meant for python projects
+Home-page: https://gitlab.com/peasleyk/taskr
+Author: Kyle Peasley
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Taskr
+
+A simple task runner meant for python projects. I mostly use bash scripts, but those aren't always cross platform. Semi-inspired by (Mage)[https://github.com/magefile/mage], a task runner for go.
+
+This is also an excuse to have a project that involves packaging so I can learn more about it and mess around, and end up writing more boilerplate/tooling than actual code :)
+
+This project uses itself, so it should always work.. in theory.
+
+## Developing
+
+This project uses pipenv. Make sure it's installed. Then call
+```
+python -m pipenv shell
+pipenv install --dev
+```
+
+## Installing
+
+```bash
+pip install taskr_cli
+```
+
+Check the version
+```bash
+taskr --version
+```
+
+## Using
+
+Ensure you have a tasks.py file defined in the root of your repo. To generate a template, run  ```taskr --init```. From there you can modify and add tasks.
+
+CLI:
+```bash
+[master●] » taskr -h
+usage: taskr [-h] [-v] [-l] [-i] [-e]
+
+A small utility to run tasks
+
+optional arguments:
+  -h, --help     show this help message and exit
+  -v, --version  Show the version number
+  -l, --list     Show defined tasks
+  -i, --init     Generate a template task file
+  -e, --env      List environment variables set before a task is run
+
+```
+
+
+When listing tasks, taskr will attempt to grab the docblock and show it, or use a single # comment above the task function. These are the ones that exist for it's own project
+
+```bash
+[master●] » taskr -l
+
+Tasks:
+ all         : Runs all static analysis tools
+ build       : Builds the wheel
+ clean       : Remove build artifacts, cache, etc.
+ flake       : Check flake8
+ fmt         : Run black
+ mypy        : Checks types
+ *reinstall  : Re-installs taskr
+ sort        : Sort imports
+ test        : Run tests
+ upload_prod : Send it for real!
+ upload_test : Send it!
+
+* = default
+```
+
+To run a task, just pass the name. Output from a task will be displayed
+```bash
+[master●] » taskr format
+All done! ✨ 🍰 ✨
+11 files left unchanged.
+```
+
+You can also define "internal" functions that taskr will ignore when listing by pre-pending the name with an underscore.
+```python
+import taskr
+
+# Tasker will not list this
+def _get_system():
+  return os.environ.get("build_system")
+
+def build():
+  env = _get_system()
+  taskr.run_env("python setup.py install", env={"BUILD_SYSTEM": build_ststem})
+```
+
+## Config
+
+There are a few configuration setting, set in tasks.py itself.
+
+Placing ```VENV_REQUIRED = True``` in your tasks.py file, taskr will only run if it detects it's running in a virtual environment. You can delete it otherwise
+
+Default tasks are run when ```taskr``` is run without any arguments. You can set this by setting a variable ```DEFAULT = "some_func"``` to the name of a task in tasks.py.
+
+```python
+DEFAULT = "test"
+
+# Run tests
+def test
+  taskr.run("python -m pytest tests/")
+```
+
+
+## Task runners
+A few utility methods are provided for system running tasks. Taskr expects task functions to return either  ```True``` (The task was successful) for ```False``` it failed. To determine if a task was successful or not, taskr looks at the return code of the called program. 0 is success, anything else fails.
+
+Taskr will auto copy your existing environment variables when running tasks, so running tasks with programs installed in a virual environment (i.e. dev tools though pip) will work
+
+### run
+```run```'s argument can be either a list, or a string. 
+```python
+import taskr
+
+def flake() -> bool:
+    return taskr.run(["python", "-m", "flake8", "taskr/*.py"])
+
+# Runs flake8
+def flake() -> bool:
+    return taskr.run("python -m flake8 taskr/*.py")
+
+```
+
+### run_env
+```run_env``` is the exact same as ```run```, but takes in a dictionary of environment variables to use when running the task.
+
+```python
+import taskr
+
+# Runs a production build
+def build():
+  vars = {
+    "PRODUCTION": "true"
+  }
+  return taskr.run_env("python setup.py install", vars)
+```
+
+### run_conditional
+```run_conditional``` is a way to run tasks (functions) in order, as long as the previous task returns a non failure return code (False). You can throw normal python functions in here to
+
+```python
+import taskr
+import some_package as sp
+
+# Run black
+def fmt():
+    return taskr.run("python -m black .")
+
+# Check flake8
+def flake():
+    return taskr.run(["python", "-m", "flake8", "taskr/*.py"])
+
+# Run all static tools
+def all():
+    return taskr.run_conditional(flake, fmt, sp.function)
+```
+
+### run_output
+```run_output```' will run a command and return the output
+```python
+import taskr
+
+# Get the number of env variables
+def _get_count():
+    ret = taskr.run_output("env | wc -l")
+    print(ret.status) # True 
+    print(ret.stdout) # "90"
+    print(ret.sterr)  # ""
+```
+
+You can an environment dict to this function, the same way as 
+```run_env```
+
+## Utilities
+
+There are a few utility functions included
+
+```python
+# Removes dist/build folders
+cleanBuilds()
+
+# Remove compiled filed and folders
+cleanCompiles()
+
+# In a venv or not
+inVenv() -> bool:
+
+# Reads an ENV file into a dict. See example in tests/data
+readEnvFile(filename: str) -> dict:
+```
+
