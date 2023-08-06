@@ -1,0 +1,4 @@
+[console_scripts]
+choujiang = prize.main:main
+prize = prize.main:main
+
