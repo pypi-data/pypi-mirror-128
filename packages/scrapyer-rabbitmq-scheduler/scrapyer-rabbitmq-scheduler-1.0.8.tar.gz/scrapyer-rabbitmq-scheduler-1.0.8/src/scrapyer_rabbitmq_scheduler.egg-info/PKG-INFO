@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: scrapyer-rabbitmq-scheduler
+Version: 1.0.8
+Summary: Rabbitmq for Distributed scraping
+Home-page: https://github.com/aox-lei/scrapy-rabbitmq-scheduler
+Author: buliqioqiolibusdo
+Author-email: dingyeran@163.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
