@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: DeepFilterLib
+Version: 0.1.7
+Classifier: Programming Language :: Rust
+Requires-Dist: numpy >= 1.20
+Author: Hendrik Schröter <h.schroeter@pm.me>
+Author-email: Hendrik Schröter <h.schroeter@pm.me>
+Requires-Python: >=3.7
