@@ -1,0 +1,12 @@
+jelly/__init__.py,sha256=Nvkf-G9IlfDOHYRRwtqoiKPiNfK4W9oklOgAfvyu3vQ,623
+jelly/client.py,sha256=MJvuPyFFS9Xiz1r0wa9jXoJCpl9Bic-SPpsvG2B19lg,1537
+jelly/html.py,sha256=5gk2BdTSEd9QjuvBL5hwLbAp6dCCubu4-UZsvPA7u3k,10134
+jelly/logger.py,sha256=rYDR3SCxWRXllTY4kTOutO-wjEzpvuwGCWaavhfd1GM,9234
+jelly/session.py,sha256=gk9BywN2_a566HZjEvnrP-8doQcKTr57IGBvCMck1T4,5192
+jelly/transport.py,sha256=sPKadZsuGb20XvZhLLX4RSyzleCLBPcE_PAzqXh9zg4,3786
+jelly/util.py,sha256=HSj3In6m4ODavFfGRVdcK_N6bd6d5Hsc6EQO-SJ2JJg,1770
+web_jelly-0.1.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+web_jelly-0.1.0.dist-info/METADATA,sha256=FQnbj42Bf0qOXD9slDusB77_ZMmsts2Fl2Ix9NxIf3c,642
+web_jelly-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+web_jelly-0.1.0.dist-info/top_level.txt,sha256=Q5lp1s-Uhh8Qn8WOS1CUlh023WiMdoxbVMbg9muFHl0,6
+web_jelly-0.1.0.dist-info/RECORD,,
