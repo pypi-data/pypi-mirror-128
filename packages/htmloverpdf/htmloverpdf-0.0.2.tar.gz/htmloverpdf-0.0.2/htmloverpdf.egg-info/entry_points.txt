@@ -1,0 +1,3 @@
+[console_scripts]
+htmloverpdf = htmloverpdf.__main__:main
+
