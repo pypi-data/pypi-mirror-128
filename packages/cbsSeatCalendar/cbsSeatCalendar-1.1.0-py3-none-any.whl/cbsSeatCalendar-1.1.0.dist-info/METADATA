@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: cbsSeatCalendar
+Version: 1.1.0
+Summary: Simple program to add study seats/group room booking to your calendar for CBS students.
+Home-page: https://github.com/EHamre/cbsSeatCalendar
+Author: Espen Hamre
+Author-email: devespen@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: exchangelib
+Requires-Dist: datetime
+
+# Add study seat/group room bookings to CBS calendar
+**For CBS students only**
+
+Simple little program to add your CBS study seat and/or group room bookings to your calendar conected to your CBS mail account. 
+
+### Installing
+Simply run:<br>
+`pip install cbsSeatCalendar`
+
+### Usage
+In the terminal write:<br>
+`cbsCalendarUpdate`
+
+You will then be promted to put in username, then password. 
+
+A message should tell you which bookings have been updated 
+(or if it couldn't find any relevant bookings).
+
