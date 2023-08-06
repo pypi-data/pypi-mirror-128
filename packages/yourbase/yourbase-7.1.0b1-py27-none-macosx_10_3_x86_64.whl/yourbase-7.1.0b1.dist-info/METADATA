@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: yourbase
+Version: 7.1.0b1
+Summary: Automatically skip tests that don't need to run
+Home-page: https://yourbase.io
+Author: YourBase
+Author-email: python@yourbase.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Unit
+Classifier: Topic :: Software Development :: Version Control :: Git
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*
+Description-Content-Type: text/markdown
+Requires-Dist: asttokens
+Requires-Dist: backports-abc
+Requires-Dist: boto3
+Requires-Dist: coverage (>=5)
+Requires-Dist: pastel
+Requires-Dist: python-dateutil (>=2.7)
+Requires-Dist: requests
+Requires-Dist: six
+Requires-Dist: backports.tempfile ; python_version < "3"
+Requires-Dist: enum34 ; python_version < "3"
+Requires-Dist: functools32 ; python_version < "3"
+Requires-Dist: pathlib ; python_version < "3"
+Requires-Dist: typing ; python_version < "3"
+Requires-Dist: more-itertools (!=8.11.0,>=4.0.0) ; python_version < "3.6"
+
+A test accelerator.
+
+# Setup
+
+You can install this package using pip:
+
+```sh
+pip install yourbase
+```
+
+# Documentation
+
+Please see the official YourBase documentation:
+
+- https://docs.yourbase.io/python
+
