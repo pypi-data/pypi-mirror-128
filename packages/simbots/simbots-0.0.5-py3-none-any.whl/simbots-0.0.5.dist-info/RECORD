@@ -1,0 +1,11 @@
+Bot.py,sha256=F94EokTcNCN0P7i2GyJcVgHmmpJKAwKCKjq05EKDQwA,2954
+src/Bot.py,sha256=F94EokTcNCN0P7i2GyJcVgHmmpJKAwKCKjq05EKDQwA,2954
+src/Context.py,sha256=wDVII2Gz-EeLWJlh3-aMocJaRw3xAGcd0eRTnQuc-bw,4073
+src/Entity.py,sha256=xi6rpahbei2lccA1iAmuNNXLXoV6G4fwSONcncBVe2M,10108
+src/Intent.py,sha256=zZYQsf6b8mlg_SI-MuMQw3AemPlrUwiHYnoyO_a8d_E,8275
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simbots-0.0.5.dist-info/LICENCE.txt,sha256=sOAg1YMfMex-TNwN_nBE8cVMAdEwXo7_oB8tSoEdyHc,1093
+simbots-0.0.5.dist-info/METADATA,sha256=Agu2UBQGMxp4Z3Rbz8EPvtFsJpZYSDe8yejl75zk-90,606
+simbots-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+simbots-0.0.5.dist-info/top_level.txt,sha256=caZkhhPGctRx7Yi-dFwUmKXCthEvo5en96BpgnvsUUw,8
+simbots-0.0.5.dist-info/RECORD,,
