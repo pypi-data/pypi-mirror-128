@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: kwidgets
+Version: 0.0.1.dev2
+Summary: Some generally useful widgets for kivy
+Home-page: https://github.com/man-vs-electron/kwidgets
+Author: Man vs Electron
+Author-email: manvselectron@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/man-vs-electron/kwidgets/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: kivy (>=2)
+
+# KWidgets
+
+This is a repository of kivy widgets for various uses.  
+
