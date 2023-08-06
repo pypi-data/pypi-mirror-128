@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/navigation_analytics/__init__.py
+src/navigation_analytics/navigation_data.py
+src/navigation_analytics.egg-info/PKG-INFO
+src/navigation_analytics.egg-info/SOURCES.txt
+src/navigation_analytics.egg-info/dependency_links.txt
+src/navigation_analytics.egg-info/requires.txt
+src/navigation_analytics.egg-info/top_level.txt
