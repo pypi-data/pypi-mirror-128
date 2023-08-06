@@ -1,0 +1,13 @@
+fedbase/__init__.py,sha256=W82HJQ9-AAfDoNq3KM-AaQcvb_KWCm5VfR-gQOFyfZ4,16
+fedbase/main_cfl_cifar.py,sha256=L_gegiJZuBOivZtRXYbBYEadclfnXyxy2Wgaf7QZgGU,3196
+fedbase/main_cfl_fam.py,sha256=wY_94bFcZveww0Wj18Icf1vDWzpm0sZWyFPsRZC1z68,3276
+fedbase/main_ditto.py,sha256=j00KpEvhi0BhhDlgfHD21JtNtA7dH_GPvp6Re-C5jVA,2777
+fedbase/main_fedavg.py,sha256=t7MsOiKRoFv7pWE5SZde1lq5QI6tbY3zsnFRAbFHX98,2819
+fedbase/main_global.py,sha256=pq74LQH0P4P95KMu2aW6qYytiDjJs_0tyCZPRJ8ncHQ,3027
+fedbase/main_local.py,sha256=aI3z16yqw462G_Man2LPtTp3QbFJRDURYGsfpAxJnm0,2600
+fedbase/test.py,sha256=M2KkSqfFWAQfTjrYJrhuZc8ff16sBmcNxw3nA0RP0Kw,38
+fedbase-0.1.2.dist-info/LICENSE,sha256=_cEbI5SbtKHEcrPELegDoMu2Q-U4tIv-V5ddGiZndXQ,1083
+fedbase-0.1.2.dist-info/METADATA,sha256=r7zHV6XmxdTrjsamH_D4Dlnp2iJl2jtTN3CG9S8EftE,593
+fedbase-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fedbase-0.1.2.dist-info/top_level.txt,sha256=KQU9ppEs9v1RPpXCaJwKGn8RXWVODULaf7GIyw0WTKQ,8
+fedbase-0.1.2.dist-info/RECORD,,
