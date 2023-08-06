@@ -1,0 +1,11 @@
+audeer/__init__.py,sha256=jkkT8gCOFTZlVRJXMXWilQ51qbA53enDAYkytzPoHsc,1028
+audeer/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audeer/core/config.py,sha256=nxStkDliB5rT5BN8P3jrkAKe1BnulN648yuzVXxWjlE,612
+audeer/core/io.py,sha256=JigFbE8aVFgZOwPOP8IwkoXojeMt-B77pkDLIBDEjm0,13847
+audeer/core/tqdm.py,sha256=huJonN6pww6-iscMnyPGfTA9EAMQvOAKibmAG84UgjA,2595
+audeer/core/utils.py,sha256=SkpxtnnydVne39sFWJjwSkeKZegnYwKHcNq9Weq6HHQ,19969
+audeer-1.17.1.dist-info/LICENSE,sha256=DYw-hxXA0cn_1mOkHRN3coALI9y6I7g7foQ64Sbt-OY,1143
+audeer-1.17.1.dist-info/METADATA,sha256=F4f29_8TdPjyEO7JbU3DmZI_w-14wNvDCw_4DEOsjIo,2668
+audeer-1.17.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+audeer-1.17.1.dist-info/top_level.txt,sha256=EvyTn4MN00qJ59xVWTDvL_dhe5JOJozePayK8KNKL7k,7
+audeer-1.17.1.dist-info/RECORD,,
