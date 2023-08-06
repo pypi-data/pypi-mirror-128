@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <record id="auth_api_key_manager_emc_demo" model="auth.api.key">
+        <field name="user_id" ref="onaro.res_users_manager_onaro_demo" />
+        <field name="key">cbd07f57-c903-43b4-b668-436b3bec5f15</field>
+    </record>
+</odoo>
