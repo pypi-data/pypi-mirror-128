@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+src/pecanpy/__init__.py
+src/pecanpy/cli.py
+src/pecanpy/graph.py
+src/pecanpy/node2vec.py
+src/pecanpy/wrappers.py
+src/pecanpy.egg-info/PKG-INFO
+src/pecanpy.egg-info/SOURCES.txt
+src/pecanpy.egg-info/dependency_links.txt
+src/pecanpy.egg-info/entry_points.txt
+src/pecanpy.egg-info/not-zip-safe
+src/pecanpy.egg-info/requires.txt
+src/pecanpy.egg-info/top_level.txt
