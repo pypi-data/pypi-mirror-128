@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/sweights/__init__.py
+src/sweights/covariance.py
+src/sweights/cow.py
+src/sweights/independence.py
+src/sweights/sweight.py
+src/sweights.egg-info/PKG-INFO
+src/sweights.egg-info/SOURCES.txt
+src/sweights.egg-info/dependency_links.txt
+src/sweights.egg-info/requires.txt
+src/sweights.egg-info/top_level.txt
