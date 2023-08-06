@@ -1,0 +1,9 @@
+mastercurves/__init__.py,sha256=8OdnnO4sihtE8PKfN9Ps23I4yUZFg3Pnn4j79hsA5X0,37
+mastercurves/mastercurves.py,sha256=KKop8w3bp_p3PCgoUOM1Jkb18QAqC_Mi4L34YSL9xUs,35269
+mastercurves/transforms/__init__.py,sha256=XRRavayR98wdWZ552Rt9O9_PIb0o3_TF_inkAddDRUk,45
+mastercurves/transforms/transforms.py,sha256=bFrFQQILRjkfk0Ws9He-FwpG4w4uAWpQDY8yAU1QxAY,3999
+mastercurves-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mastercurves-0.0.1.dist-info/METADATA,sha256=yml2ywSqhQthzyRsRQSc6JuNej_ilIWvElIdh1eAuEI,951
+mastercurves-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mastercurves-0.0.1.dist-info/top_level.txt,sha256=IhnBcpEDun8hVfyLfa2b8MOYodtzhDB7nb-O4fsMet4,13
+mastercurves-0.0.1.dist-info/RECORD,,
