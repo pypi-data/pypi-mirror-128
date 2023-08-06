@@ -1,0 +1,3 @@
+[console_scripts]
+getcodium = getcodium:run
+

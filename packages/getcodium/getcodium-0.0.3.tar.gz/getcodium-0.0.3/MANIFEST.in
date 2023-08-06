@@ -1,0 +1,3 @@
+
+recursive-include getcodium getcodium.sh
+recursive-include getcodium codium.mirrors

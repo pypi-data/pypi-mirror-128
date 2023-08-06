@@ -1,0 +1,14 @@
+.gitignore
+MANIFEST.in
+README.md
+getcodium.py
+getcodium.sh
+setup.py
+getcodium/__init__.py
+getcodium/codium.mirrors
+getcodium/getcodium.sh
+getcodium.egg-info/PKG-INFO
+getcodium.egg-info/SOURCES.txt
+getcodium.egg-info/dependency_links.txt
+getcodium.egg-info/entry_points.txt
+getcodium.egg-info/top_level.txt
