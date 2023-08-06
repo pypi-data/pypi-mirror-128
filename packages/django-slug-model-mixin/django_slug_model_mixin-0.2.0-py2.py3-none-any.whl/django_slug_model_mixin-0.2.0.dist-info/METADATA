@@ -1,0 +1,175 @@
+Metadata-Version: 2.1
+Name: django-slug-model-mixin
+Version: 0.2.0
+Summary: Slugify model mixin to manage slugged fields in your project models.
+Home-page: https://github.com/frankhood/django-slug-model-mixin
+Author: FrankHood Business Solutions srl
+Author-email: info@frankhood.it
+License: MIT
+Keywords: django-slug-model-mixin
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.md
+License-File: AUTHORS.rst
+Requires-Dist: django (<4,>=2.2)
+Requires-Dist: django-uuslug
+
+=============================
+Django Slug Model Mixin
+=============================
+
+.. image:: https://badge.fury.io/py/django-slug-model-mixin.svg
+    :target: https://badge.fury.io/py/django-slug-model-mixin
+
+.. image:: https://readthedocs.org/projects/pip/badge/?version=latest&style=flat-square
+    :target: https://django-slug-model-mixin.readthedocs.io/en/latest/
+
+.. image:: https://img.shields.io/coveralls/github/frankhood/django-slug-model-mixin/main?style=flat-square
+    :target: https://coveralls.io/github/frankhood/django-slug-model-mixin?branch=main
+    :alt: Coverage Status
+
+Slugify model mixin to manage slugged fields in your project models.
+
+Documentation
+-------------
+
+The full documentation is at https://django-slug-model-mixin.readthedocs.io.
+
+Quickstart
+----------
+
+Install Django Slug Model Mixin::
+
+    pip install django-slug-model-mixin
+
+Add it to your `INSTALLED_APPS`:
+
+.. code-block:: python
+
+    INSTALLED_APPS = (
+        ...
+        'slug_model_mixin',
+        ...
+    )
+
+Use the SlugModelMixin in your model:
+
+.. code-block:: python
+
+    class ExampleModel(SlugModelMixin, models.Model):
+        slugged_field = 'name'  # insert the name of the field you want to slugify
+        slug_unique = False # remove unique for your slug
+        force_slugify = True # force the slugify using uuslug
+
+        name = models.CharField(
+            'Name',
+            max_length=255
+        )
+
+    class Meta:
+        verbose_name = 'Example Model'
+        verbose_name_plural = 'Example Models'
+
+
+Running Tests
+-------------
+
+Does the code actually work?
+
+::
+
+    source <YOURVIRTUALENV>/bin/activate
+    (myenv) $ pip install tox
+    (myenv) $ tox
+
+
+Development commands
+---------------------
+
+::
+
+    pip install -r requirements_dev.txt
+    invoke -l
+
+
+Credits
+-------
+
+Tools used in rendering this package:
+
+*  Cookiecutter_
+*  `cookiecutter-djangopackage`_
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`cookiecutter-djangopackage`: https://github.com/pydanny/cookiecutter-djangopackage
+
+
+
+
+History
+-------
+
+0.1.1 (2021-10-07)
+++++++++++++++++++
+
+* First release on PyPI.
+
+0.1.2 (2021-09-07)
+++++++++++++++++++
+
+* Rework on Mixin to work only on py3
+
+0.1.3 (2021-10-07)
+++++++++++++++++++
+
+* Rework configurations and README
+
+0.1.4 (2021-10-07)
+++++++++++++++++++
+
+* Rework configurations and added github actions
+
+0.1.5 (2021-10-07)
+++++++++++++++++++
+
+* Added pipy on github actions and fixed setup.py
+
+0.1.6 (2021-10-07)
+++++++++++++++++++
+
+* Changed from test.pipy.org to pipy.org
+
+0.1.7 (2021-10-07)
+++++++++++++++++++
+
+* Updated github action
+
+0.1.7 (2021-10-07)
+++++++++++++++++++
+
+* Updated github action
+
+0.1.8 (2021-10-19)
+++++++++++++++++++
+
+* Updated version for github actions and changed name to django-slug-model-mixin
+
+0.1.9 (2021-10-19)
+++++++++++++++++++
+
+* Updated version for github actions
+
+0.2.0 (2021-11-22)
+++++++++++++++++++
+
+* Fixed slug with spaces bug
+
