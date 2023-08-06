@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: memrise
+Version: 1.2.0rc3
+Summary: Scraping the vocabulary from the Memrise course
+Author: Joseph Quang
+Author-email: tquangsdh20@hcmut.edu.vn
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
