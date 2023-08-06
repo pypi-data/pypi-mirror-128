@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: wifi-wrapper
+Version: 0.0.3
+Summary: A python wrapper over nmcli tool for linux devices.
+Home-page: https://github.com/hrithik098/wifi_wrapper
+Author: Hrithik Yadav
+Author-email: hrithiky328@gmail.com
+License: MIT
+Download-URL: https://github.com/hrithik098/wifi_wrapper/archive/refs/tags/0.0.3.tar.gz
+Project-URL: Bug Tracker, https://github.com/hrithik098/wifi_wrapper/issues
+Keywords: pypi,nmcli,wifi tools
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# wifi_wrapper
+A python wrapper over nmcli tool for linux devices.
+
+## Quick Usage
+```python
+from wifi_wrapper import WiFi
+from pprint import pprint
+
+
+wifi = WiFi()
+
+enabled = wifi.wifi_enabled()
+
+if enabled:
+  connections = wifi.scan()
+  print("Available wifi nearby :")
+  pprint(connections) 
+"""
+Output ->
+
+Available wifi nearby:
+        [
+            {
+                "IN-USE": "*",
+                "BSSID": "8C:A3:99:16:4C:63",
+                "SSID": "WillowCove",
+                "MODE": "Infra",
+                "CHAN": "1",
+                "RATE": "130 Mbit/s",
+                "SIGNAL": "74",
+                "BARS": "▂▄▆_",
+                "SECURITY": "WPA2",
+                "CLIENT": "yes",    
+            },
+            { ... },
+            { ... },
+        ]
+"""
+```
+
+
