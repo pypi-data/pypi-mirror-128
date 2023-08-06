@@ -1,0 +1,12 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+sources/python3/lockup/__init__.py
+sources/python3/lockup/base.py
+sources/python3/lockup/exceptions.py
+sources/python3/lockup.egg-info/PKG-INFO
+sources/python3/lockup.egg-info/SOURCES.txt
+sources/python3/lockup.egg-info/dependency_links.txt
+sources/python3/lockup.egg-info/top_level.txt
