@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: EzApiData
+Version: 0.1.3
+Summary: Get data from api easier
+Home-page: UNKNOWN
+Author: Ruthle55 (Thaddeus Teo)
+Author-email: <ruthle55.enquiries@gmail.com>
+License: UNKNOWN
+Keywords: python,Games,Data,Game data
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## EzApiData
+## Get available data from api's that you can use
+
+# Why I made this api
+- It would be a pain to have to make request to a api for data so I decided why not make it easier for everyone by helping you get the data in a simple function
+
+
+# When getting an api key I recommend using a .env so it will be more protected
+```python
+import os
+import dotenv
+
+dotenv.load_dotenv()
+
+EXAMPLE_API(os.getenv("<VAR-SET-FOR-API-KEY>"))
+```
+
+# Example to get info from api
+```python
+from ezapidata.ApiList.games.game import game_API
+import os
+import dotenv
+
+dotenv.load_dotenv()
+
+#Must always have a valid API key which can be acquired from the Brawl Stars API and put it in <API-KEY>
+API_CALL = game_API(os.getenv("<VAR-SET-FOR-API-KEY>"))
+
+#returns player stats
+API_CALL.get_data("<PASS-PARAMETERS>")
+```
+
+# used api links
+- https://www.weatherapi.com/
+- https://developer.brawlstars.com/#/
+- https://developer.clashofclans.com/#/
+- https://yfapi.net
+
+
