@@ -1,0 +1,37 @@
+description: Personal Allowance for yearly income
+values:
+  2015-04-06:
+    value: 10600
+  # TODO: Confirm date.
+  # 2015-04-06:
+  #   value: 11000
+  2017-04-06:
+    value: 11500
+  2018-04-06:
+    value: 11850
+  2019-04-06:
+    value: 12500
+  2021-04-06:
+    value: 12570
+metadata:
+  policyengine:
+    short_name: personal_allowance
+    title: Personal Allowance
+    description: The personal allowance is deducted from general income.
+    min: 0
+    max: 25000
+    type: yearly
+    summary: Change the Personal Allowance to @
+  period: week
+  unit: currency-GBP
+  reference: https://www.legislation.gov.uk/ukpga/2007/3/part/3/chapter/2/crossheading/personal-allowances
+  tests:
+    - period: 2021
+      value: 0
+      revenue:
+        min: 95.e+9
+        max: 115.e+9
+      poverty_effect:
+        positive: true
+    - period: 2022
+      increases_net_income: true
