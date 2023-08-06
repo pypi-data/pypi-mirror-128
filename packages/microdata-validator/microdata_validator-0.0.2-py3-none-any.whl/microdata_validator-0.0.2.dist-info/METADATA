@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: microdata-validator
+Version: 0.0.2
+Summary: Python package for validating datasets in the microdata platform
+License: Apache-2.0
+Author: microdata-developers
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: jsonschema (>=4.2.1,<5.0.0)
+Requires-Dist: pytest (>=6.2.5,<7.0.0)
+Requires-Dist: pytest-cov (>=3.0.0,<4.0.0)
+Requires-Dist: pytest-dotenv (>=0.5.2,<0.6.0)
