@@ -1,0 +1,9 @@
+LICENCE
+pyproject.toml
+setup.cfg
+setup.py
+./genmotion/__init__.py
+genmotion.egg-info/PKG-INFO
+genmotion.egg-info/SOURCES.txt
+genmotion.egg-info/dependency_links.txt
+genmotion.egg-info/top_level.txt
