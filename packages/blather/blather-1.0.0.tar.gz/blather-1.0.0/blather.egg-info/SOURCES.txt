@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+blather/__init__.py
+blather/blather.py
+blather.egg-info/PKG-INFO
+blather.egg-info/SOURCES.txt
+blather.egg-info/dependency_links.txt
+blather.egg-info/requires.txt
+blather.egg-info/top_level.txt
