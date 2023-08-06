@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: flsim
+Version: 0.0.0.6
+Summary: Federated Learning Simulator (FLSim) is a flexible, standalone core library that simulates FL settings with a minimal, easy-to-use API. FLSim is domain-agnostic and accommodates many use cases such as vision and text.
+Home-page: https://flsim.ai
+Author: The FLSim Team
+License: Apache-2.0
+Project-URL: Documentation, https://flsim.ai/api
+Project-URL: Source, https://github.com/facebookresearch/flsim
+Keywords: PyTorch,Federated Learning,FL,On device training,Differential Privacy,Secure Aggregation,Privacy Preserving Machine Learning,PPML,PPAI
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+Model simulation framework simulates model training under FL setting, primarily
+for ML engineers.
+
+Model simulation framework aims to help ML engineers:
+ - quickly train an existing model using FL and compare FL training to conventional training
+ - quickly iterate to pick best model architecture and hyper-parameters for FL
+
+At the same time, we want the model simulation framework to ensure:
+ - quick training/iteration
+ - efficient hyper-parameter tuning (Bayesian search)
+ - developer environment familiar to ML engineers/researchers
+
+
+Note that this is different from full-stack simulation (a.k.a. Systems Simulation)
+in "papaya/simulation".
+
+
+Components
+ - utils
+   Handy functionalities for simulating Federated Learning such as a class that
+   can simulate event distribution for async FL
+
+
