@@ -1,0 +1,2 @@
+from .permissions import PermissionSelectMultipleWidget
+from .generic_foreign_key import GenericForeignKeyWidget
