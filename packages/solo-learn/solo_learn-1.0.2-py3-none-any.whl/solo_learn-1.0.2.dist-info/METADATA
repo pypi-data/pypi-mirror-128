@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: solo-learn
+Version: 1.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/vturrisi/solo-learn
+Author: solo-learn develptoment team
+Author-email: vturrisi@gmail.com, enrico.fini@gmail.com
+License: MIT
+Keywords: artificial intelligence,deep learning,unsupervised learning,contrastive learning
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: torch (==1.9.1)
+Requires-Dist: torchvision (==0.10.1)
+Requires-Dist: einops
+Requires-Dist: pytorch-lightning (==1.4.7)
+Requires-Dist: torchmetrics (>=0.5.1)
+Requires-Dist: lightning-bolts (>=0.4.0)
+Requires-Dist: tqdm
+Requires-Dist: wandb
+Requires-Dist: scipy
+Requires-Dist: timm
+Provides-Extra: dali
+Requires-Dist: nvidia-dali-cuda110 ; extra == 'dali'
+Provides-Extra: umap
+Requires-Dist: matplotlib ; extra == 'umap'
+Requires-Dist: seaborn ; extra == 'umap'
+Requires-Dist: pandas ; extra == 'umap'
+Requires-Dist: umap-learn ; extra == 'umap'
+
+UNKNOWN
+
