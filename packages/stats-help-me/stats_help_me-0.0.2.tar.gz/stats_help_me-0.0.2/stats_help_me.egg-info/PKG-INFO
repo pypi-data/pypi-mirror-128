@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: stats-help-me
+Version: 0.0.2
+Summary: Description regarding the package
+Home-page: https://www.educative.io/edpresso/publishing-packages-on-pypi
+Author: James
+Author-email: james@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+heloo
+welcome to python
+
