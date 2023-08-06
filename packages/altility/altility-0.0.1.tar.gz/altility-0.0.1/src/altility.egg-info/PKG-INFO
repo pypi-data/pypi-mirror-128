@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: altility
+Version: 0.0.1
+Summary: Enhanced spatio-temporal predictions using less data with active deep learning
+Home-page: UNKNOWN
+Author: Arsam Aryandoust
+Author-email: arsama@ethz.ch
+License: UNKNOWN
+Project-URL: Source Code, https://github.com/ArsamAryandoust/altility
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Hello world
+
+

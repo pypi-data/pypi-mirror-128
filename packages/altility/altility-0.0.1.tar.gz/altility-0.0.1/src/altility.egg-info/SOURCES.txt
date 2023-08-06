@@ -1,0 +1,9 @@
+pyproject.toml
+setup.cfg
+setup.py
+src/altility/__init__.py
+src/altility.egg-info/PKG-INFO
+src/altility.egg-info/SOURCES.txt
+src/altility.egg-info/dependency_links.txt
+src/altility.egg-info/requires.txt
+src/altility.egg-info/top_level.txt
