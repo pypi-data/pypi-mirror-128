@@ -1,0 +1,13 @@
+click
+fastapi==0.68.2
+grpcio
+numpy
+pandas
+protobuf
+uvicorn
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[all]
+orjson
