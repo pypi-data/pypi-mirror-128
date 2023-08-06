@@ -1,0 +1,4 @@
+
+    [trytond.modules]
+    account_budget = trytond.modules.account_budget
+    
