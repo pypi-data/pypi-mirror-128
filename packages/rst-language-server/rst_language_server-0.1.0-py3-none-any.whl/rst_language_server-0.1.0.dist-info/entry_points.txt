@@ -1,0 +1,3 @@
+[console_scripts]
+rst-ls=rst_language_server.cli:main
+
