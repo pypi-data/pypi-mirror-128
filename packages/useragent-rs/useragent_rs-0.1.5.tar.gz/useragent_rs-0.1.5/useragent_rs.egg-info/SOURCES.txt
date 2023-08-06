@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+useragent_rs/__init__.py
+useragent_rs/base.py
+useragent_rs/dataset.py
+useragent_rs.egg-info/PKG-INFO
+useragent_rs.egg-info/SOURCES.txt
+useragent_rs.egg-info/dependency_links.txt
+useragent_rs.egg-info/entry_points.txt
+useragent_rs.egg-info/requires.txt
+useragent_rs.egg-info/top_level.txt
