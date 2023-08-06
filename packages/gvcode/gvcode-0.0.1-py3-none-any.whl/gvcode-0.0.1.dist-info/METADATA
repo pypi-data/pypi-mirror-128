@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: gvcode
+Version: 0.0.1
+Summary: A useful verification code generation tool.
+Home-page: https://github.com/zhangmingming-chb/verificationcode
+Author: Msky
+Author-email: 690126048@qq.com
+License: GNU
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow
+
+### 代码示例
+
+```python
+from gvcode import VerificationCode
+
+
+if __name__ == '__main__':    
+    vc = VerificationCode()
+    # 验证码类型
+    # 自定义验证码
+    # vc.generate('abcd')
+    # 数字验证码
+    # vc.generate_digit()
+    # 字母验证码
+    # vc.generate_alpha()
+    # 数字字符混合验证码
+    vc.generate_mix()
+
+    # 图片字节码
+    # print(vc.get_img_bytes())
+    # 图片base64编码
+    # print(vc.get_img_base64())
+    # 保存图片
+    vc.save()
+```
+
