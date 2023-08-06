@@ -1,0 +1,15 @@
+LICENSE
+README.md
+settings.ini
+setup.py
+statsforecast/__init__.py
+statsforecast/_nbdev.py
+statsforecast/core.py
+statsforecast/models.py
+statsforecast/utils.py
+statsforecast.egg-info/PKG-INFO
+statsforecast.egg-info/SOURCES.txt
+statsforecast.egg-info/dependency_links.txt
+statsforecast.egg-info/entry_points.txt
+statsforecast.egg-info/not-zip-safe
+statsforecast.egg-info/top_level.txt
