@@ -1,0 +1,3 @@
+[console_scripts]
+AngPoly3D = AngPoly3D.ang_poly3d:ang_poly3d_func
+
