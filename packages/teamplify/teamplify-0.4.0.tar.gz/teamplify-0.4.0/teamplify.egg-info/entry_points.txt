@@ -1,0 +1,3 @@
+[console_scripts]
+teamplify = teamplify_runner.cli:main
+
