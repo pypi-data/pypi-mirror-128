@@ -1,0 +1,8 @@
+qsharp/chemistry/__init__.py,sha256=0tRyJTPgkOtDea9LBkE6RZ4Is8njZUFnKiB9br4QQ80,7166
+qsharp/chemistry/version.py,sha256=gCXb0_urXzlkhyMaBcRc8OMtcdhoUJNNTQhgX2o_CnM,273
+qsharp/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qsharp/tests/test_chemistry.py,sha256=FhKFoleGPHo70txFqOokFHbHG6B69UGzb5Wvaqb4e30,2768
+qsharp_chemistry-0.21.2111.177148.dist-info/METADATA,sha256=ni_U5LC4OR2bECPIUxtAhe54XrJ-u7la6iagBEl0lHc,2891
+qsharp_chemistry-0.21.2111.177148.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+qsharp_chemistry-0.21.2111.177148.dist-info/top_level.txt,sha256=gRwxwlDQF9zt-WdPz_V1BJfEH8mt4BuKO_FUrYlvOJI,7
+qsharp_chemistry-0.21.2111.177148.dist-info/RECORD,,
