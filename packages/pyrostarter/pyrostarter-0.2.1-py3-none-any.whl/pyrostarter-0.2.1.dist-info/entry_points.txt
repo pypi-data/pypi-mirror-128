@@ -1,0 +1,3 @@
+[console_scripts]
+pyrostarter=pyrostarter.pyrostarter:main
+
