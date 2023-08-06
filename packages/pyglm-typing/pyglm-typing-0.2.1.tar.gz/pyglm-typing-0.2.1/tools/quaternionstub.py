@@ -1,0 +1,56 @@
+
+__all__ = ['generate_quaternion_stub']
+
+import textwrap
+
+
+def generate_quaternion_stub():
+    names = [
+        'eulerAngles',
+        'mat3_cast', 'mat4_cast',
+        'pitch',
+        'quatLookAt', 'quatLookAtLH', 'quatLookAtRH',
+        'roll', 'yaw',
+    ]
+    return names, textwrap.dedent(f"""
+    @overload
+    def eulerAngles(x: glm_typing.F32Quaternion, /) -> vec3: ...
+    @overload
+    def eulerAngles(x: dquat, /) -> dvec3: ...
+
+    @overload
+    def mat3_cast(x: glm_typing.F32Quaternion, /) -> mat3: ...
+    @overload
+    def mat3_cast(x: dquat, /) -> dmat3: ...
+
+    @overload
+    def mat4_cast(x: glm_typing.F32Quaternion, /) -> mat4: ...
+    @overload
+    def mat4_cast(x: dquat, /) -> dmat4: ...
+
+    def pitch(x: glm_typing.AnyAnyQuaternion, /) -> float: ...
+
+    @overload
+    def quatLookAtLH(direction: glm_typing.F32Vector3, up: glm_typing.F32Vector3, /) -> quat: ...
+    @overload
+    def quatLookAtLH(direction: dvec3, up: dvec3, /) -> dquat: ...
+
+    @overload
+    def quatLookAtRH(direction: glm_typing.F32Vector3, up: glm_typing.F32Vector3, /) -> quat: ...
+    @overload
+    def quatLookAtRH(direction: dvec3, up: dvec3, /) -> dquat: ...
+
+    @overload
+    def quatLookAt(direction: glm_typing.F32Vector3, up: glm_typing.F32Vector3, /) -> quat: ...
+    @overload
+    def quatLookAt(direction: dvec3, up: dvec3, /) -> dquat: ...
+
+    @overload
+    def quat_cast(x: Union[glm_typing.F32Matrix3x3, glm_typing.F32Matrix4x4], /) -> quat: ...
+    @overload
+    def quat_cast(x: Union[dmat3, dmat4], /) -> quat: ...
+
+    def roll(x: glm_typing.AnyAnyQuaternion, /) -> float: ...
+
+    def yaw(x: glm_typing.AnyAnyQuaternion, /) -> float: ...
+    """)
