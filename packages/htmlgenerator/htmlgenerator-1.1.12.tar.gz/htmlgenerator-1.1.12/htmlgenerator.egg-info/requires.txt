@@ -1,0 +1,5 @@
+
+[all]
+black
+beautifulsoup4
+lxml
