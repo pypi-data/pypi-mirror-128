@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: tspecscores
+Version: 0.0.1
+Summary: test
+Home-page: https://github.com/morriso1/tspecscores/tree/main/
+Author: Otto Morris
+Author-email: ottomorris@gmail.com
+License: Apache Software License 2.0
+Keywords: gene expression tissue specificity metrics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# tissue_spec_scores
+
+
+
+A simple python for calculating tissue specificity metrics such as 'tau', 'specificity measure (SPM)', 'Tissue-specificity index (TSI)' and 'z-score' 
+
+
