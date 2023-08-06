@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/test_dj/__init__.py
+src/test_dj/example.py
+src/testdj.egg-info/PKG-INFO
+src/testdj.egg-info/SOURCES.txt
+src/testdj.egg-info/dependency_links.txt
+src/testdj.egg-info/top_level.txt
