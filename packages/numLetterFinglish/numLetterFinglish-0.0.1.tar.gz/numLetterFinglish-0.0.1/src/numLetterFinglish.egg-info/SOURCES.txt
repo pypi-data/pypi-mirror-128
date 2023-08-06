@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/numLetterFinglish.egg-info/PKG-INFO
+src/numLetterFinglish.egg-info/SOURCES.txt
+src/numLetterFinglish.egg-info/dependency_links.txt
+src/numLetterFinglish.egg-info/top_level.txt
