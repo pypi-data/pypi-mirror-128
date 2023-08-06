@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: RG
+Version: 0.0.75
+Summary: Ryan's go-to Python functions
+Home-page: https://www.usherbrooke.ca/gchimiquebiotech/departement/professeurs/ryan-gosselin/
+Author: Ryan Gosselin
+Author-email: ryan.gosselin@usherbrooke.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Miscellaneous functions:    
+
+Miscellaneous functions:    
+reset, loatmat, xlsread    
+
+Work with data:    
+regress, R2, VIF, lags, pcorrcoef, correlated_matrix, interactions, SAM    
+
+Dynamic time warping:    
+DTW,DTW_batch    
+
+Plot data:    
+colorspectra,axaline,corr_reorder    
+
+Statistical functions    
+normplot    
+
+Multivariate data analysis    
+PCA, PLS, VIP, mbPLS, LDA, PCA_ellipse, ICA, MCR, NPLS_cal, NPLS_val    
+
+Spectral pretreatments    
+center, autoscale, SNV, MSC, EMSC, Savitzky Golay, detrend, baseline
+
