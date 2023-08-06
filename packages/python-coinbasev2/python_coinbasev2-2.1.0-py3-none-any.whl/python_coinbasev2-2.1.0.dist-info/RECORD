@@ -1,0 +1,12 @@
+coinbasev2/__init__.py,sha256=7DxiEpT1g6hMwW1hBF17OOFRJ3DW03giEu6rgvRCTHY,17
+coinbasev2/wallet/__init__.py,sha256=3mupP2vxPvDheU9E2m76AZxFhhUEap5Hhyue58dfV14,40
+coinbasev2/wallet/auth.py,sha256=dQW2IVMHjKs6eavTq-7IlZ6MJf46kRjA8hTqIXQvb1w,1832
+coinbasev2/wallet/client.py,sha256=p8qfy64EVSgn50-BzZrxxGg2oUaJq5kdxUHhReqMzx0,31313
+coinbasev2/wallet/compat.py,sha256=Stjkc27MgxuEpp-Dy2nUKThhgi1t8d_89XZ0eyVlMWI,337
+coinbasev2/wallet/error.py,sha256=F4Ne-XSuixvPfBDHG5JDyV5yvZ4j5yx3IWY27xJ-B_E,3782
+coinbasev2/wallet/model.py,sha256=lBOaIghms0o2ZxWntKG8rgI28_IqclcJMSHKmOo8mz0,14834
+coinbasev2/wallet/util.py,sha256=i1QaaiZaD_J7jNPitVo54HAVrhXZb9OMeVOAJwoIt2M,1555
+python_coinbasev2-2.1.0.dist-info/METADATA,sha256=tv4SXcuz58lwBDKD8NiJsj1uUjPp-OL_PaUuXgRw5rk,968
+python_coinbasev2-2.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+python_coinbasev2-2.1.0.dist-info/top_level.txt,sha256=jzKaE29QNAQRLiQKo1sUGygViXh9-21YNq2IwW8-tiE,11
+python_coinbasev2-2.1.0.dist-info/RECORD,,
