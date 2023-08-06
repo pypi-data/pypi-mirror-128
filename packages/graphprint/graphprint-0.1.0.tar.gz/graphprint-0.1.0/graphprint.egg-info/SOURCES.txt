@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+setup.cfg
+graphprint/__init__.py
+graphprint.egg-info/PKG-INFO
+graphprint.egg-info/SOURCES.txt
+graphprint.egg-info/dependency_links.txt
+graphprint.egg-info/top_level.txt
