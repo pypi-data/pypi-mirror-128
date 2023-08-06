@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: genurl
+Version: 0.1.1
+Summary: GENerate random URLs
+Author: Sam Havens
+Author-email: sam.havens@writer.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Faker (>=9.8.2,<10.0.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: Random-Word (>=1.0.7,<2.0.0)
+Requires-Dist: tqdm (>=4.62.3,<5.0.0)
