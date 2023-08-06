@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+django_generic_json_class_based_views.egg-info/PKG-INFO
+django_generic_json_class_based_views.egg-info/SOURCES.txt
+django_generic_json_class_based_views.egg-info/dependency_links.txt
+django_generic_json_class_based_views.egg-info/requires.txt
+django_generic_json_class_based_views.egg-info/top_level.txt
+django_generic_json_views/__init__.py
+django_generic_json_views/base.py
+django_generic_json_views/detail.py
+django_generic_json_views/edit.py
+django_generic_json_views/list.py
