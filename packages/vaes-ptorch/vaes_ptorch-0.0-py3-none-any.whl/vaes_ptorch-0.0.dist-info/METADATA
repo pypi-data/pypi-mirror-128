@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vaes-ptorch
+Version: 0.0
+Summary: Simple VAE implementations in pytorch.
+Home-page: https://github.com/Arnaud15/vaes_ptorch
+Author: Arnaud Autef
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6.2
+Requires-Dist: torch
+
+UNKNOWN
+
