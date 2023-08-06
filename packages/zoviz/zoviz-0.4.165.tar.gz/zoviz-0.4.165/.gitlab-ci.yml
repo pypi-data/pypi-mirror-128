@@ -1,0 +1,23 @@
+image: ubuntu:20.04
+
+# All stages are combined into build here in order
+# to avoid re-pulling & re-building the image at each stage.
+# This is a little messy, but cuts build time by roughly 3x
+
+# Because the build is containerized, no cleanup script is needed.
+
+stages:
+  - build
+
+build_job:
+  stage: build
+  script:
+    # Build, including autodocs
+    - bash ./ci/build.sh  # Set up env & build wheel
+    - sphinx-apidoc ./zoviz/ -o ./ci/docs/source/apidoc/ --implicit-namespaces -fMeT
+    # Test
+    - pylint ./zoviz
+    - nosetests ./ci/tests
+    - cd ./ci/docs && make html && cd ../../  # Docs use output of tests
+    # Deploy will only run if on master branch
+    - bash ./ci/deploy.sh

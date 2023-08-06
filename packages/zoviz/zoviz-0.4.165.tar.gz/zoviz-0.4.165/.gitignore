@@ -1,0 +1,15 @@
+.DS_Store
+.~*
+reactor.egg-info
+*.pyc
+*.DS_Store*
+.idea
+.idea/*
+__pycache__/*
+/dist/
+/.idea/
+/build/
+*egg*
+/.ipynb_checkpoints/
+.vscode
+ci/docs/build
