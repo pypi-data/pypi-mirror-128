@@ -1,0 +1,5 @@
+libNeuroML>=0.2.54
+pyyaml
+numpy
+pyparsing<3
+modelspec>=0.1.1
