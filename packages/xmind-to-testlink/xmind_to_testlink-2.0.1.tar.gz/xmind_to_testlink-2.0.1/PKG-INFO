@@ -1,0 +1,19 @@
+Metadata-Version: 1.0
+Name: xmind_to_testlink
+Version: 2.0.1
+Summary: Convert xmindzen to TestLink xml
+Home-page: UNKNOWN
+Author: zhaobk
+Author-email: zhaobk@nationalchip.com
+License: UNKNOWN
+Description: 
+        Documentation
+        -------------
+        XmindToTestlink is a tool to help you convert xmindzen file to testlink recognized xml files,
+        then you can import it into testlink as test suite , test cases and requirement.
+        
+        For more detail, please go to: https://github.com/DancePerth/XmindToTestlink
+        
+        
+Keywords: xmind testlink import converter testing testcase requirement
+Platform: UNKNOWN
