@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-alias
+Version: 0.2.0
+Summary: A simple plugin for adding aliases for Nonebot command
+License: MIT
+Author: meetwq
+Author-email: meetwq@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: expandvars (>=0.7.0,<0.8.0)
+Requires-Dist: nonebot-adapter-cqhttp (>=2.0.0-alpha.13,<3.0.0)
+Requires-Dist: nonebot2 (>=2.0.0-alpha.13,<3.0.0)
