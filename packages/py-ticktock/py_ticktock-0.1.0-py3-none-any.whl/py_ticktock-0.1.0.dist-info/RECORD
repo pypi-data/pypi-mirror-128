@@ -1,0 +1,14 @@
+ticktock/__init__.py,sha256=IySwQdqSVKyF3TCdnirAIDeVtpeQ9XvgHydU0Hhr6i4,186
+ticktock/clocks.py,sha256=j---Vm3JZkz7uR8fc9iF96UuNt-kpm_2fxtz6SAp12s,3565
+ticktock/collection.py,sha256=7xqgaOCnEyh2DlrLqchVGXli9JNwdqDqrlqrDfbrx5A,3305
+ticktock/data.py,sha256=83B8M1EMt_ndcqsC06I8q-w47ARMwSucnbXZkp7MR0c,1009
+ticktock/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ticktock/renderers.py,sha256=yJDoX5gOqSyORLqH6JxhHYi6PpLQWxWMWrI14lM0Wzw,3355
+ticktock/std.py,sha256=IpCb7uV75WgegdNX0zY33qL4bjE2EaP3xPcKfgkODDM,4979
+ticktock/timers.py,sha256=gWRUoNFj7fUZXZJW6OBbcigfyHI-JNdT0MfND6QJoBs,2214
+ticktock/utils.py,sha256=_83qZhX8f-pwoV0bTBQSVjWF30yVr1Vh-6CSisrfqGQ,1268
+py_ticktock-0.1.0.dist-info/LICENSE,sha256=D316o1hgDk_0jGf1UY-PixHnN5xVlksNJRbmL7OLYD4,1073
+py_ticktock-0.1.0.dist-info/METADATA,sha256=nqvFCPgyt7B8i9OCkIxCgGVzKMh3QkWelfNI-4UJhPQ,3266
+py_ticktock-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+py_ticktock-0.1.0.dist-info/top_level.txt,sha256=GeIf5CThMo10chblj_hS_aj5uIzrGvyoSZ8mHSKHX6A,9
+py_ticktock-0.1.0.dist-info/RECORD,,
