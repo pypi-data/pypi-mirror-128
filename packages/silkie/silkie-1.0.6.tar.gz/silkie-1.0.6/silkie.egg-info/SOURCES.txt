@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+silkie/__init__.py
+silkie/__main__.py
+silkie/cli.py
+silkie/definitions.py
+silkie/options.py
+silkie/utils.py
+silkie.egg-info/PKG-INFO
+silkie.egg-info/SOURCES.txt
+silkie.egg-info/dependency_links.txt
+silkie.egg-info/entry_points.txt
+silkie.egg-info/requires.txt
+silkie.egg-info/top_level.txt
