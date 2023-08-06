@@ -1,0 +1,16 @@
+## bootstrap theming ##
+sphinx_bootstrap_theme
+
+##   Database tools  ##
+peewee
+
+##     geospatial     ##
+cython
+geopandas
+cartopy
+
+##      Gallery      ##
+sphinx-gallery
+networkx
+shapely
+dxfgrabber
