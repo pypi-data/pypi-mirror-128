@@ -1,0 +1,4 @@
+[console_scripts]
+IntuneCD-startbackup = IntuneCD.run_backup:start
+IntuneCD-startupdate = IntuneCD.run_update:start
+
