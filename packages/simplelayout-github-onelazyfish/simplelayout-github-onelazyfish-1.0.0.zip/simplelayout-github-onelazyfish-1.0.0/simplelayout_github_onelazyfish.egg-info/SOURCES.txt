@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+simplelayout/__init__.py
+simplelayout/__main__.py
+simplelayout/cli/__init__.py
+simplelayout/cli/cli_generate.py
+simplelayout/generator/__init__.py
+simplelayout/generator/core.py
+simplelayout/generator/utils.py
+simplelayout_github_onelazyfish.egg-info/PKG-INFO
+simplelayout_github_onelazyfish.egg-info/SOURCES.txt
+simplelayout_github_onelazyfish.egg-info/dependency_links.txt
+simplelayout_github_onelazyfish.egg-info/entry_points.txt
+simplelayout_github_onelazyfish.egg-info/requires.txt
+simplelayout_github_onelazyfish.egg-info/top_level.txt

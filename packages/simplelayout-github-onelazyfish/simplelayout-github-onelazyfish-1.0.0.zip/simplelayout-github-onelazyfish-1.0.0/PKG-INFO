@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: simplelayout-github-onelazyfish
+Version: 1.0.0
+Summary: This is the assignment of IDRL
+Home-page: https://github.com/onelazyfish
+Author: onelazyfish
+Author-email: 326042208@qq.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+**IDRL第六次作业**
+
+该package可实现包含命令行接口的简单布局生成器，生成给定分辨率、给定组件大小、给定组件位置的布局方案，以数据格式、图片形式存储，保存到指定目录。
+
