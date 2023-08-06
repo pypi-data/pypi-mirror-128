@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Check_URL.egg-info/PKG-INFO
+Check_URL.egg-info/SOURCES.txt
+Check_URL.egg-info/dependency_links.txt
+Check_URL.egg-info/not-zip-safe
+Check_URL.egg-info/requires.txt
+Check_URL.egg-info/top_level.txt
