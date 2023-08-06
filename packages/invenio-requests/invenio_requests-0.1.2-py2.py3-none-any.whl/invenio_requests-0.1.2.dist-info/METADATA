@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: invenio-requests
+Version: 0.1.2
+Summary: Invenio module for generic and customizable requests.
+Home-page: https://github.com/inveniosoftware/invenio-requests
+Author: CERN
+Author-email: info@inveniosoftware.org
+License: MIT
+Keywords: invenio requests
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 1 - Planning
+Requires-Dist: invenio-db (<2.0,>=1.0.9)
+Requires-Dist: invenio-records-resources (<0.18,>=0.17.2)
+Provides-Extra: all
+Requires-Dist: Sphinx (<5.0,>=4.2.0) ; extra == 'all'
+Requires-Dist: black (>=20.8b1) ; extra == 'all'
+Requires-Dist: invenio-app (>=1.3.2) ; extra == 'all'
+Requires-Dist: pytest-invenio (>=1.4.2) ; extra == 'all'
+Provides-Extra: docs
+Requires-Dist: Sphinx (<5.0,>=4.2.0) ; extra == 'docs'
+Provides-Extra: elasticsearch6
+Requires-Dist: invenio-records-resources[elasticsearch6] (<0.18,>=0.17.2) ; extra == 'elasticsearch6'
+Provides-Extra: elasticsearch7
+Requires-Dist: invenio-records-resources[elasticsearch7] (<0.18,>=0.17.2) ; extra == 'elasticsearch7'
+Provides-Extra: mysql
+Requires-Dist: invenio-records-resources[mysql] (<0.18,>=0.17.2) ; extra == 'mysql'
+Provides-Extra: postgresql
+Requires-Dist: invenio-records-resources[postgresql] (<0.18,>=0.17.2) ; extra == 'postgresql'
+Provides-Extra: sqlite
+Requires-Dist: invenio-records-resources[sqlite] (<0.18,>=0.17.2) ; extra == 'sqlite'
+Provides-Extra: tests
+Requires-Dist: black (>=20.8b1) ; extra == 'tests'
+Requires-Dist: invenio-app (>=1.3.2) ; extra == 'tests'
+Requires-Dist: pytest-invenio (>=1.4.2) ; extra == 'tests'
+
+..
+    Copyright (C) 2021 CERN.
+
+    Invenio-Requests is free software; you can redistribute it and/or
+    modify it under the terms of the MIT License; see LICENSE file for more
+    details.
+
+==================
+ Invenio-Requests
+==================
+
+.. image:: https://github.com/inveniosoftware/invenio-requests/workflows/CI/badge.svg
+        :target: https://github.com/inveniosoftware/invenio-requests/actions?query=workflow%3ACI
+
+.. image:: https://img.shields.io/github/tag/inveniosoftware/invenio-requests.svg
+        :target: https://github.com/inveniosoftware/invenio-requests/releases
+
+.. image:: https://img.shields.io/pypi/dm/invenio-requests.svg
+        :target: https://pypi.python.org/pypi/invenio-requests
+
+.. image:: https://img.shields.io/github/license/inveniosoftware/invenio-requests.svg
+        :target: https://github.com/inveniosoftware/invenio-requests/blob/master/LICENSE
+
+Invenio module for generic and customizable requests.
+
+TODO: Please provide feature overview of module
+
+Further documentation is available on
+https://invenio-requests.readthedocs.io/
+
+
+..
+    Copyright (C) 2021 CERN.
+
+    Invenio-Requests is free software; you can redistribute it and/or
+    modify it under the terms of the MIT License; see LICENSE file for more
+    details.
+
+Changes
+=======
+
+Version 0.1.0 (released TBD)
+
+- Initial public release.
+
+

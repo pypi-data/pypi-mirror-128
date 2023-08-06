@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "local://requests/definitions-v1.0.0.json",
+  "type": "object",
+  "additionalProperties": false,
+  "entity_reference": {
+    "description": "Reference to an entity, with the type as key and ID as value",
+    "type": ["object", "null"],
+    "additionalProperties": false,
+    "patternProperties": {
+      "^[a-z_]+$": {
+        "type": "string"
+      }
+    }
+  },
+  "anything": {
+    "description": "A very general schema",
+    "type": "object",
+    "additionalProperties": false,
+    "patternProperties": {
+      "^.+$": {
+        "type": "string"
+      }
+    }
+  },
+  "request_reference": {
+    "type": "object",
+    "additionalProperties": false,
+    "description": "A reference to a request.",
+    "properties": {
+      "id": {
+        "$ref": "local://definitions-v1.0.0.json#/identifier"
+      }
+    }
+  }
+}
