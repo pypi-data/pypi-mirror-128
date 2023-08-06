@@ -1,0 +1,5 @@
+dict-toolbox
+pop-config>=6.11
+pop-loop>=1.0.3
+proxy_tools
+PyYAML
