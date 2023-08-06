@@ -1,0 +1,16 @@
+requests
+
+[dev]
+pip
+setuptools
+setuptools-scm
+build
+wheel
+twine
+pytest
+pytest-cov
+pytest-freezegun
+pytest-responses
+pytest-mock
+tox
+tox-venv

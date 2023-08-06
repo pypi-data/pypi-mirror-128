@@ -1,0 +1,17 @@
+.envrc
+.gitignore
+LICENSE
+README.md
+conftest.py
+pyproject.toml
+setup.cfg
+setup.py
+test_pytest_aoc.py
+tox.ini
+src/pytest_aoc.py
+src/pytest_aoc.egg-info/PKG-INFO
+src/pytest_aoc.egg-info/SOURCES.txt
+src/pytest_aoc.egg-info/dependency_links.txt
+src/pytest_aoc.egg-info/entry_points.txt
+src/pytest_aoc.egg-info/requires.txt
+src/pytest_aoc.egg-info/top_level.txt
