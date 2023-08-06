@@ -1,0 +1,3 @@
+[napari.plugin]
+napari-mahotas-image-processing = napari_mahotas_image_processing
+

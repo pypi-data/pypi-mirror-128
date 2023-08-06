@@ -1,0 +1,5 @@
+napari-plugin-engine>=0.1.4
+numpy
+mahotas
+napari-time-slicer
+napari-tools-menu
