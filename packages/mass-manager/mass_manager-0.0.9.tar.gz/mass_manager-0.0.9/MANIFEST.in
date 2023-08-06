@@ -1,0 +1,12 @@
+include \
+    *.yml \
+    *.yaml \
+    *.cfg
+
+graft src
+graft tests
+
+global-exclude \
+    *.py[cod] \
+    __pycache__ \
+    .DS_Store

@@ -1,0 +1,13 @@
+masspy
+
+[all]
+bumpversion
+pre-commit
+towncrier
+tox
+
+[development]
+bumpversion
+pre-commit
+towncrier
+tox

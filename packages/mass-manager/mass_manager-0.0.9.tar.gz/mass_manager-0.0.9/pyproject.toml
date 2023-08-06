@@ -1,0 +1,170 @@
+title = "MASS-manager TOML configuration file"
+
+
+################################################################################
+# Build tools configuration                                                    #
+################################################################################
+
+[build-system]
+requires = [
+    "setuptools >= 46.4.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+
+[tool.towncrier]
+package = "mass_manager"
+package_dir = "src"
+filename = "NEWS.rst"
+directory = "news/"
+title_format = "{version} ({project_date})"
+issue_format = "`#{issue} <https://github.com/z-haiman/mass-manager/issues/{issue}>`_"
+type = [
+  { name = "Features",                  directory = "feature", showcontent = true },
+  { name = "Bug Fixes",                 directory = "bugfix",  showcontent = true },
+  { name = "Improved Documentation",    directory = "doc",     showcontent = true },
+  { name = "Deprecations and Removals", directory = "removal", showcontent = true },
+  { name = "Miscellaneous",             directory = "misc",    showcontent = false },
+]
+
+
+################################################################################
+# Lint tools configuration                                                     #
+################################################################################
+
+[tool.black]
+line-length = 88
+python-version = [
+    "py36",
+    "py37",
+    "py38",
+    "py39",
+]
+
+
+[tool.isort]
+profile = "black"
+src_paths = [
+    "src/mass_manager"
+]
+indent = 4
+lines_after_imports = 2
+
+
+################################################################################
+# Testing tools configuration                                                  #
+################################################################################
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra --strict-markers --tb=short"
+testpaths = [
+    "tests"
+]
+python_files = [
+    "test_*.py"
+]
+
+
+[tool.coverage.paths]
+source = [
+    "src",
+]
+
+
+[tool.coverage.run]
+branch = true
+parallel = true
+source = [
+    "src",
+    "tests"
+]
+
+
+[tool.coverage.report]
+show_missing = true
+precision = 2
+
+################################################################################
+# Tox configuration                                                            #
+################################################################################
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+minversion = 3.20
+envlist =
+    clean,
+    lint,
+    py3{6,7,8,9},
+    report
+isolated_build = true
+skip_missing_interpreters = true
+
+
+[gh-actions]
+python =
+    3.6: py36
+    3.7: py37
+    3.8: py38
+    3.9: py39
+
+
+[testenv]
+description = Base test environment configuration.
+passenv =
+    PY_COLORS
+setenv =
+    PYTHONPATH={toxinidir}/tests
+    PYTHONUNBUFFERED=yes
+    PY_COLORS={env:PY_COLORS:1}
+depends =
+    py3{6,7,8,9}: lint, clean
+    report: py3{6,7,8,9}
+
+[testenv:lint]
+description = Lint code via pre-commit hooks, finishing with isort --> black --> flake8
+skip_install = true
+passenv = *
+setenv =
+    PRE_COMMIT_COLOR={env:PRE_COMMIT_COLOR:auto}
+deps =
+    pre-commit
+commands =
+    pre-commit install
+    pre-commit autoupdate
+    pre-commit run --show-diff-on-failure --all-files
+
+
+[testenv:clean]
+description = Clean previous coverage reports.
+skip_install = true
+deps =
+    coverage[toml]
+commands =
+    coverage erase
+
+
+[testenv:py3{6,7,8,9}]
+description = Run tests under {basepython}.
+usedevelop = true
+deps =
+    pytest
+    pytest-cov
+    coverage[toml]
+commands =
+    pytest {posargs: --cov --cov-append --cov-report=term-missing}
+
+
+
+[testenv:report]
+description = Report coverage over all test runs.
+skip_install = true
+deps =
+    coverage[toml]
+commands =
+    coverage report
+    coverage html
+
+"""
