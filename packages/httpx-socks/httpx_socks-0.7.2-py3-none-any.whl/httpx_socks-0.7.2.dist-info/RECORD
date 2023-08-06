@@ -1,0 +1,11 @@
+httpx_socks/__init__.py,sha256=aLF9lfFdnVMF3MV93sNxldWn5AkhnmqmDBlQZFmMrX4,448
+httpx_socks/_async_proxy.py,sha256=eBlA1TSTsoK1gGrVmPOjlj8wdR2y1XnM663ljO89we4,8125
+httpx_socks/_async_transport.py,sha256=PQ-POmeDRJpeMjBfhDnBxIQmYsUXXt99FeFDvK4b-gY,3400
+httpx_socks/_sync_proxy.py,sha256=UnQvuBhC63f7SKdjeFyBDFPcL9NyRFA5kFzyJjeLN7k,6195
+httpx_socks/_sync_stream.py,sha256=ZJZZc6tvkT5KNU0Lx01QZabDJ83GyFEJUqyAj-xxPA4,1420
+httpx_socks/_sync_transport.py,sha256=h3M-Bpae7-adbwME1KFyk2RIcEkT0BHRLUNGK61ShH0,3265
+httpx_socks-0.7.2.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+httpx_socks-0.7.2.dist-info/METADATA,sha256=VVLe-b8PgiRs7NvwW6kGAVgDklP6dMMxe1fSAp4U_nQ,2466
+httpx_socks-0.7.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+httpx_socks-0.7.2.dist-info/top_level.txt,sha256=w-NjPGd_PneJsrpI5kELbCCdbD3YlL8mgwP3WkawJ0s,12
+httpx_socks-0.7.2.dist-info/RECORD,,
