@@ -1,0 +1,9 @@
+# Install development requirements
+
+tox
+coverage
+flake8
+
+pycountry
+
+-r requirements.txt
