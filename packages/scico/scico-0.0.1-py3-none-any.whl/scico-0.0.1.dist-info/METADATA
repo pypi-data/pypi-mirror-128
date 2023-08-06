@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: scico
+Version: 0.0.1
+Summary: Scientific Computational Imaging COde: A Python package for scientific imaging problems
+Home-page: https://github.com/lanl/scico
+Author: SCICO Developers
+Author-email: brendt@ieee.org
+License: BSD
+Keywords: Computational Imaging,Inverse Problems,Optimization,ADMM,PGM
+Platform: Any
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Requires-Dist: numpy (>=1.12)
+Requires-Dist: scipy (>=0.19.1)
+Requires-Dist: imageio
+Requires-Dist: matplotlib
+Requires-Dist: jaxlib (>=0.1.70)
+Requires-Dist: jax (>=0.2.19)
+Requires-Dist: flax
+Requires-Dist: bm3d
+Requires-Dist: svmbir
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-runner ; extra == 'tests'
+
+
+SCICO is a Python package for solving the inverse problems that arise in scientific imaging applications. Its primary focus is providing methods for solving ill-posed inverse problems by using an appropriate prior model of the reconstruction space. SCICO includes a growing suite of operators, cost functionals, regularizers, and optimization routines that may be combined to solve a wide range of problems, and is designed so that it is easy to add new building blocks. SCICO is built on top of JAX, which provides features such as automatic gradient calculation and GPU acceleration.
+
+
