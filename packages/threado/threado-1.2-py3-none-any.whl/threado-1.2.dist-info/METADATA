@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: threado
+Version: 1.2
+Summary: threado
+Home-page: https://github.com/AlexNg9527/threado
+Author: Alex Ng
+Author-email: alex_q_wu@qq.com
+Maintainer: Alex Ng
+Maintainer-email: alex_q_wu@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >= 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru
+
+# threado
+A simple way to run multiple threads do the I/O
+
+
