@@ -1,0 +1,15 @@
+README.md
+setup.py
+kihara/__init__.py
+kihara/__main__.py
+kihara/_cachedir.py
+kihara/_locale.py
+kihara/index.py
+kihara/link.py
+kihara/utils.py
+kihara/version.py
+kihara.egg-info/PKG-INFO
+kihara.egg-info/SOURCES.txt
+kihara.egg-info/dependency_links.txt
+kihara.egg-info/entry_points.txt
+kihara.egg-info/top_level.txt

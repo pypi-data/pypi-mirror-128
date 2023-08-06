@@ -1,0 +1,8 @@
+[console_scripts]
+kihara = kihara.__main__:main
+kihara-download = kihara.download:main
+kihara-extract = kihara.extract:main
+kihara-hide = kihara.hide:main
+kihara-index = kihara.index:main
+kihara-link = kihara.link:main
+
