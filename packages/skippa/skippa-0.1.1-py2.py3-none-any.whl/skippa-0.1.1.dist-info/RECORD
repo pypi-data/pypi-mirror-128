@@ -1,0 +1,9 @@
+skippa/__init__.py,sha256=sj_Zrmhs34313F4e2KRA8X22sDPUc3H9RYXpPsu55xs,174
+skippa/pipeline.py,sha256=kYjv_BwxMlfDLbycxNbGIURTDTS5-3uSruculKk8bTY,10656
+skippa/test.py,sha256=PSuZLIlHdtkC_cV1MvimjXGzMDmPuGnLFxyTmv1gx44,1684
+skippa/transformers.py,sha256=cpBTdSgX0vVJLUMoIKbmoGN5oaPNbAJQ8xdHG8DhJUY,12575
+skippa-0.1.1.dist-info/LICENSE,sha256=aX_bk6QyguvX2gOe3Yb3Tg4NdvPs15WVQvBOetDXaoE,1511
+skippa-0.1.1.dist-info/METADATA,sha256=SZxC4FkkdY_d5txTzt2mlcEHx6FjJ3vVf7cNkNovt0w,2662
+skippa-0.1.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+skippa-0.1.1.dist-info/top_level.txt,sha256=zZ8RD3r2mCnIw7Z0OmorKhum5LTPa1a_MMi3_6xjKik,7
+skippa-0.1.1.dist-info/RECORD,,
