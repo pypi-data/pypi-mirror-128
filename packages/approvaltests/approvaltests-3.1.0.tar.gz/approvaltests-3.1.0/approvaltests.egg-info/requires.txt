@@ -1,0 +1,3 @@
+pyperclip==1.5.27
+pytest
+bs4
