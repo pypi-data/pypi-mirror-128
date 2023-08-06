@@ -1,0 +1,56 @@
+{% extends 'portal/base.html' %}
+
+{% block content %}
+<div id="edit_student_page"></div>
+
+<section id="student_details" class="background col-sm-6 col-center">
+    <h4>Edit student details for {{ student.new_user.first_name }} from class {{ student.class_field.name }} ({{ student.class_field.access_code }})</h4>
+    <h5>Edit this student&rsquo;s name and manage their password and direct access link.</h5>
+</section>
+
+<div class="background background--primary">
+    <div class="col-sm-6 col-center">
+        <h5>Update name</h5>
+
+        <p>Remember this is the name they use to log in with, so you should tell them what you&rsquo;ve changed it to.</p>
+
+        <form id="form-edit-student" method="post">
+
+            {% csrf_token %}
+
+            {{ name_form.non_field_errors }}
+
+            {{ name_form.name }}
+            {{ name_form.name.errors }}
+
+            <button id="update_name_button" type="submit" name="update_details" class="button button--primary">Update</button>
+
+        </form>
+
+        <h5 id="set-password">Set password</h5>
+
+        <p>You can set this student's password. Setting the password will also regenerate their direct access link.</p>
+
+        <form method="post">
+
+            {% csrf_token %}
+
+            <p>Enter and confirm the password in the boxes below. Try to prevent others from being able to guess the new
+                password when making this decision.</p>
+
+            {{ password_form.non_field_errors }}
+
+            {{ password_form.password }}
+            {{ password_form.password.errors }}
+
+            {{ password_form.confirm_password }}
+            {{ password_form.confirm_password.errors }}
+            <button id="set_new_password_button" type="submit" name="set_password" class="button button--primary">Set</button>
+        </form>
+    </div>
+</div>
+
+<div class="background col-sm-6 col-center">
+    <p><a href="{% url 'view_class' class.access_code %}">&#10229; Back to Class</a></p>
+</div>
+{% endblock %}
