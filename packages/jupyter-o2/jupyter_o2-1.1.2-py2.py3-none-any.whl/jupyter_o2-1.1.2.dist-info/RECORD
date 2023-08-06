@@ -1,0 +1,14 @@
+jupyter_o2/__init__.py,sha256=Hu0wWT6U3Fb-27P0ioBH4hvSU10-_9INzQNw1oOsPoc,809
+jupyter_o2/__main__.py,sha256=PqirV4x__ZA4rU93RA8vTFnHleNDFg8eLFOBWffethw,111
+jupyter_o2/_version.py,sha256=B6D8nq7L-h3Yrso4-Yz8z9mMwHb_44HH7PbB6duHGH0,18
+jupyter_o2/config_manager.py,sha256=hb3_xawD8SGdZ5LBbGLhAJJBPsDFuvecFt3gxRzWDfw,8081
+jupyter_o2/jupyter-o2.cfg,sha256=ENAWM6391PPBifQk33m4YDycoLLT2WRaBMVrbtW_vPo,3189
+jupyter_o2/jupyter_o2.py,sha256=RH0Rc7JDbEWHDYDncLWtjloCMxYopbCihEo3h_OTC0Y,31273
+jupyter_o2/pysectools.py,sha256=V8yhIaL26DAYTVGIlYeh4powMjD6yWirwxQfVm7yY08,5563
+jupyter_o2/utils.py,sha256=uBh0882VP0aRhcckmGH-XXF5VpDCF44gMV7C4kV5774,7115
+jupyter_o2-1.1.2.dist-info/LICENSE,sha256=2sTY9k79xUfCmICNh_cXywPWtwKyJjnGve1riJDALTg,1071
+jupyter_o2-1.1.2.dist-info/METADATA,sha256=UD55dJGvWn-KGLEQGq36yGrbGEIxHIoAnvUksNHOEPA,6320
+jupyter_o2-1.1.2.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+jupyter_o2-1.1.2.dist-info/entry_points.txt,sha256=qS2-llK4Te5OWk2j-OVPqK6A9ezB5x_ZXq4hZOWKVv4,48
+jupyter_o2-1.1.2.dist-info/top_level.txt,sha256=U0uST1Cf22Ct92Gun1XqHyiT5TWYcHaJfLGE0sSKmtk,11
+jupyter_o2-1.1.2.dist-info/RECORD,,
