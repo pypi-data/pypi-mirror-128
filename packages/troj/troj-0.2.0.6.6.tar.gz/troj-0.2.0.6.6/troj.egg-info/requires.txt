@@ -1,0 +1,10 @@
+torch>=1.6.0
+tensorflow>=1.15
+requests
+urllib3>=1.26
+adversarial-robustness-toolbox>=1.8.1
+opencv-python
+torchvision
+
+[dev]
+pytest>=6.2
