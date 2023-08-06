@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+icxpackage_data_characteristics.egg-info/PKG-INFO
+icxpackage_data_characteristics.egg-info/SOURCES.txt
+icxpackage_data_characteristics.egg-info/dependency_links.txt
+icxpackage_data_characteristics.egg-info/requires.txt
+icxpackage_data_characteristics.egg-info/top_level.txt
+libname/__init__.py
+libname/data_characteristics.py

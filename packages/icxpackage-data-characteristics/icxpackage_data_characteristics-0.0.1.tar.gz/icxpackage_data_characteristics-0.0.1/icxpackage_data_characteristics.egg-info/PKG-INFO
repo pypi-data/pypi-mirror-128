@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: icxpackage-data-characteristics
+Version: 0.0.1
+Summary: Package For Quick Data Overview For Analysis.
+Home-page: UNKNOWN
+Author: InfinityCodeX (Hardik Vegad)
+Author-email: vegadhardik7@gmail.com
+License: UNKNOWN
+Keywords: python,numpy,pandas,data analysis,data science,data,seaborn,matplotlib
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This package give us following results: Shape of data, Number of Rows & Columns, data information which include Column names with Non-Null Values & Dtype, Number of numerical features with there name, Number of categorical with there name, Number of null values present in data, Visualization of percentage of null values present in data & head of the data.
+
