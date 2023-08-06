@@ -1,0 +1,3 @@
+[console_scripts]
+kams=kams.__main__:main
+
