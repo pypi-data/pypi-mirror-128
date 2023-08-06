@@ -1,0 +1,8 @@
+quantastor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quantastor/qs_client.py,sha256=_v3vlSXBfKlr8EFSf1ysDM_O6W5ntvV_FeSSGLNJHBI,1149869
+quantastor_qsclient-5.11.0.data/scripts/qs_client.py,sha256=_v3vlSXBfKlr8EFSf1ysDM_O6W5ntvV_FeSSGLNJHBI,1149869
+quantastor_qsclient-5.11.0.dist-info/LICENSE,sha256=80SNE94cYHZMqkk4-ff4_hsGyBZcHlCBWWanoVvdKYQ,1347
+quantastor_qsclient-5.11.0.dist-info/METADATA,sha256=YHiN51UxxSeilIiET4NClaDlPUok32AkdxgSK_KnVgc,5970
+quantastor_qsclient-5.11.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+quantastor_qsclient-5.11.0.dist-info/top_level.txt,sha256=9RCuMWmE8vRRw4qrU64ryMEQMkb2U9bQx0iaG6Huj3I,11
+quantastor_qsclient-5.11.0.dist-info/RECORD,,
