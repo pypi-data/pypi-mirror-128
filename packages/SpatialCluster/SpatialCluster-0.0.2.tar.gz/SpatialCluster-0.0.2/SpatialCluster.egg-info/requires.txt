@@ -1,0 +1,5 @@
+typing
+tensorflow
+array
+scipy
+numpy
