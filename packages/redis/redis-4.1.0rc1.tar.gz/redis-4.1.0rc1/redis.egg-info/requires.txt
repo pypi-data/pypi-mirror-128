@@ -1,0 +1,5 @@
+deprecated==1.2.3
+packaging==21.3
+
+[hiredis]
+hiredis>=1.0.0
