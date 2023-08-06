@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: YTThumb
+Version: 1.4.0
+Summary: YouTube video thumbnail download
+Home-page: UNKNOWN
+Author: Fayas Noushad
+License: MIT
+Project-URL: Tracker, https://github.com/FayasNoushad/Youtube-Video-Thumbnail/issues
+Project-URL: Source, https://github.com/FayasNoushad/Youtube-Video-Thumbnail
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+```
+Made with Python3
+(C) @FayasNoushad
+Copyright permission under MIT License
+License -> https://github.com/FayasNoushad/Youtube-Video-Thumbnail/blob/main/LICENSE
+```
+
+---
+
+## Installation
+
+```
+pip install YTThumb
+```
+
+---
+
+## Usage
+
+```py
+import ytthumb
+
+
+# Basic Usage
+thumbnail = ytthumb.thumbnail('https://youtu.be/rokGy0huYEA')
+print(thumbnail)
+# => https://img.youtube.com/vi/rokGy0huYEA/sddedault.jpg
+
+# Advanced Usage
+thumbnail = ytthumb.thumbnail(
+    video="https://youtu.be/rokGy0huYEA",
+    quality="sd"
+)
+print(thumbnail)
+# => https://img.youtube.com/vi/rokGy0huYEA/sddedault.jpg
+
+# Available Qualities
+print(ytthumb.qualities())
+# => ["sd", "mq", "hq", "maxres"]
+
+# Download Thumbnail
+ytthumb.download_thumbnail(
+    video,
+    name='thumbnail.jpg'
+)
+# => Download thumbnail in 'thumbnail.jpg'
+```
+
+---
+
+## Credits
+
+- [Fayas Noushad](https://github.com/FayasNoushad)
+
+---
+
+
