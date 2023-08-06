@@ -1,0 +1,11 @@
+Evaluation
+Minimization
+SequenceModel
+SequiturTool
+_sequitur_
+g2p
+misc
+sequitur
+sequitur_
+symbols
+tool
