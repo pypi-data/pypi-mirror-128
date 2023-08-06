@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/cleanup/__init__.py
+src/cleanup/clean.py
+src/cleanup_pypi_sushantsur23.egg-info/PKG-INFO
+src/cleanup_pypi_sushantsur23.egg-info/SOURCES.txt
+src/cleanup_pypi_sushantsur23.egg-info/dependency_links.txt
+src/cleanup_pypi_sushantsur23.egg-info/requires.txt
+src/cleanup_pypi_sushantsur23.egg-info/top_level.txt
