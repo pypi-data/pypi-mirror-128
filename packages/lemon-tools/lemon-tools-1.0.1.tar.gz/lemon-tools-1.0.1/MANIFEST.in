@@ -1,0 +1,2 @@
+graft lemon_tools
+global-exclude *.py[cod] __pycache__ *.so
