@@ -1,0 +1,12 @@
+LICENSE
+README.txt
+setup.py
+ar_one_qdk_beta.egg-info/PKG-INFO
+ar_one_qdk_beta.egg-info/SOURCES.txt
+ar_one_qdk_beta.egg-info/dependency_links.txt
+ar_one_qdk_beta.egg-info/requires.txt
+ar_one_qdk_beta.egg-info/top_level.txt
+ar_qdk/__init__.py
+ar_qdk/main.py
+ar_qdk/tests/__init__.py
+ar_qdk/tests/main_test.py
