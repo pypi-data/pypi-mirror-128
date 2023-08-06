@@ -1,0 +1,3 @@
+[console_scripts]
+verdandi=verdandi.main:main
+
