@@ -1,0 +1,10 @@
+lightkde/__init__.py,sha256=LUybTluD1gF5Z-qe1tCUcgUFVHXoqYsciVEyF9v3nAY,354
+lightkde/lightkde.py,sha256=5_rQYEmVvKwrF84Wz51KsG2_o2M_0l767YYLDBLBuFg,19236
+tests/__init__.py,sha256=gTNdkwlkiTFHzzY9uoE3NzY-FzVnW5C-sz7VX6wxJaw,84
+tests/test_kde_1d.py,sha256=LNV1BqSJrcl_clZkiJM8ZgwTKSpD-XQ0e7nohsKEXfY,5989
+tests/test_kde_2d.py,sha256=nc0fq6Ptc6WXMKRq5gbbhf80uhrhbGn2PyYDQ0_P6t8,9443
+lightkde-1.0.1.dist-info/LICENSE,sha256=gEUzWdyksnFtfGGOb5N0jRbK5qOR9f3pyqLdXudDC0M,1073
+lightkde-1.0.1.dist-info/METADATA,sha256=fqCo5wxNefe3ZocycMlh9iOrB0jpF0AjjW4wPfwwHbg,3698
+lightkde-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+lightkde-1.0.1.dist-info/top_level.txt,sha256=RtGlqtDDB7DiAHkVNpZ3cqbLPUvweyLhh66nrJ7diJE,15
+lightkde-1.0.1.dist-info/RECORD,,
