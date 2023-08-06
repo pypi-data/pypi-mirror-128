@@ -1,0 +1,10 @@
+sensirion_i2c_adapter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sensirion_i2c_adapter/channel.py,sha256=YjC80r5k3xC7DSGJnjPZF-Jjui_6tLTn7SGv63vYbOI,2819
+sensirion_i2c_adapter/i2c_channel.py,sha256=J1cBkPGw8TpQuGwDiEebS_pIXQm30oG2rIq9hGJv_Dk,3534
+sensirion_i2c_adapter/transfer.py,sha256=0Rm6nvu037i8CyJKkWBhR3bx8qPsoLJiLpgLnRa-IlA,3763
+sensirion_i2c_adapter/version.py,sha256=cOgLeivzRiav3gQ0ZhKEsdHdm51rNjwEDFXoit97S9M,156
+sensirion_i2c_adapter-1.0.1.dist-info/LICENSE,sha256=61ZhKvqquFc0MI0ujvXnqLNElhTAvhIOAKQTlq2D5Gk,1512
+sensirion_i2c_adapter-1.0.1.dist-info/METADATA,sha256=RSszVFEMLfpIidfbenWJuIh-FOw42rncsSeY510DOHI,1463
+sensirion_i2c_adapter-1.0.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+sensirion_i2c_adapter-1.0.1.dist-info/top_level.txt,sha256=WklHyikNxpMCHuCtX_N4O87xO9oCv9cZXnijFucsGZw,22
+sensirion_i2c_adapter-1.0.1.dist-info/RECORD,,
