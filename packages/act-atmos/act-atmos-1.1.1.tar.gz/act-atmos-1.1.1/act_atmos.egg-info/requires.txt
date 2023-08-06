@@ -1,0 +1,14 @@
+pyproj
+numpy
+pandas
+matplotlib<=3.4.3
+scipy
+xarray
+dask
+distributed
+pint
+requests
+six
+skyfield
+cftime
+netcdf4
