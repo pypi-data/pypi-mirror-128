@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: foreverbull-core
+Version: 0.0.14
+Summary: Core Python functionality for Foreverbull
+Home-page: UNKNOWN
+Author: Henrik Nilsson
+Author-email: henrik@lhjnilsson.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+
+UNKNOWN
+
