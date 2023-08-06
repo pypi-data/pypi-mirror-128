@@ -1,0 +1,17 @@
+requests
+pyyaml
+jsonpath-ng
+typing
+
+[convergence]
+snappi_convergence==0.1.1
+
+[ixnetwork]
+snappi_ixnetwork==0.5.5
+
+[testing]
+pytest
+flask
+
+[trex]
+snappi_trex
