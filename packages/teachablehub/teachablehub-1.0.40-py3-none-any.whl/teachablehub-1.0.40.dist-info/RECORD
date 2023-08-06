@@ -1,0 +1,16 @@
+teachablehub/__init__.py,sha256=oEwlwTNAqG3_t9BfiqoPBmh5W9g7wDGU6R3nl-4kIgg,69
+teachablehub/config.py,sha256=9Nl0N99BY6A9ZpmNKJiP48wZz_-JGecdnmrSeYBYLxI,513
+teachablehub/clients/__init__.py,sha256=QeeCVrp8dM7mKluhpvuuxTqFAI642kdc_c0OcAO89Pk,195
+teachablehub/clients/base.py,sha256=U7HKLC5O74h6UUExr-QFJ7rcEkhTIKvjoGTYlJHY4rk,2109
+teachablehub/clients/errors.py,sha256=H_Y9A3xolfssJgbN7LM2buLIZciENBTjXxeHyL4mGUk,352
+teachablehub/clients/management_api.py,sha256=fpAPOafW9VrBM1-KzVXBlPK_ba94CUamb1Mv_wlUuus,3259
+teachablehub/clients/prediction_api.py,sha256=zMOtotOwcZpofOxpMpsU3b1yP0Za9208M-PHNH7OCIw,2776
+teachablehub/deployments/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+teachablehub/deployments/base.py,sha256=7dxIJdHuL8NUYQAnY6PoI6VrPsFELzZWfLi-M4iOhIw,9198
+teachablehub/deployments/ludwig.py,sha256=EETTs68dVIr-wqjuQA-M0oNoJZeN_EslTidjQ3Nyfz0,1271
+teachablehub/deployments/sklearn.py,sha256=Fg7mJM8oxf0Ut58bhLPRxUWCJ1BezynPDaJHfMxR0_k,834
+teachablehub-1.0.40.dist-info/LICENSE,sha256=-9S0df8WGnacA15nN2RhTLEfleN1cEPTZj_6T7kNBmk,1057
+teachablehub-1.0.40.dist-info/METADATA,sha256=zp3coy3RhVRC6XGXYC8Fz6XvszszO6FAEAf8PZY0YW0,4605
+teachablehub-1.0.40.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+teachablehub-1.0.40.dist-info/top_level.txt,sha256=PS4ebavoDkKYeeQN6Q6IRFT6oICsBYQau76BQcS-M30,13
+teachablehub-1.0.40.dist-info/RECORD,,
