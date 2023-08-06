@@ -1,0 +1,37 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "ipgn2tdm"
+authors = [
+  {name = "Philippe Makowski", email = "pmakowski@espelida.com"},
+]
+dependencies = [
+  "utm >= 0.7.0",
+  "python-docx >= 0.8.11",
+  "matplotlib",
+]
+requires-python = ">=3.9"
+readme = "README.rst"
+license = {file = "LICENSE"}
+classifiers = ["Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python :: 3",
+  "Development Status :: 5 - Production/Stable",
+  "Natural Language :: French",
+  "Topic :: Utilities"
+]
+dynamic = ["version", "description"]
+
+[project.urls]
+Home = "https://gitlab.com/pmakowski/ipgn2tdm"
+
+[project.scripts]
+ipgn2tdm = "ipgn2tdm:no_gui"
+ipgn2tdm_gui = "ipgn2tdm:gui"
+
+[project.optional-dependencies]
+test = [
+  "pytest",
+]

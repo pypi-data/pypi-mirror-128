@@ -1,0 +1,14 @@
+/build/
+/dist/
+__pycache__/
+/doc/_build/
+/htmlcov/
+/.coverage
+/.pytest_cache
+/.tox
+/ipgn2tdm.build
+/ipgn2tdm.dist
+.idea/
+venv/
+*.pyc
+.python-version
