@@ -1,0 +1,14 @@
+slurm/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+slurm/__init__.py,sha256=PDm-aDlmqh-a7NFbxjGSY60Hwg8MxkbPHwvv020ljD8,528
+slurm/constants.py,sha256=UUhdIVTKSHvVxsNluKgoLpx-oYVgD0Y6LI92oIzt7Es,495
+slurm/files.py,sha256=1ht6eWl2__y66dgyzMcBsIcUGsLJkZur2iYGhmogbcw,2226
+slurm/network.py,sha256=jj4NMy9Y9MJoVv4Ms2QySjgboEBSVfXn-Psj2MwyCjY,1042
+slurm/rate.py,sha256=p5WRrsbYLNFIwk_G1QBvktqDdmtpPytRoH1q1PwLKK4,1097
+slurm/scistorage.py,sha256=RRGmod3rQhvi-IyhGv5G0hCoJjM-o0jQ-JSRWK9up7A,1779
+slurm/sig.py,sha256=Et2I0cU8xsqm48q34ZezF27lrxXTK4OcFgXgBMdHbMY,2116
+slurm/simple_process.py,sha256=kNwKgmKikrnG9ByP2xK5pyZFkyLtroMvFNYSCm9jnCA,2285
+slurm/storage.py,sha256=DnbnLcF8dmbYxvg5QLnSUZ7hI7pfJNaaQsRv8Xam5P8,2272
+slurm-0.5.0.dist-info/LICENSE,sha256=wF4LnRUzLYJBHWDRo_VmH3I6FiAqmVQ-UWLIQvp_C6M,1085
+slurm-0.5.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+slurm-0.5.0.dist-info/METADATA,sha256=dJ2WgsVdo_C3ytZZsWZeZ4Y5V2IGt7rJM8fK8C-zmwA,5920
+slurm-0.5.0.dist-info/RECORD,,
