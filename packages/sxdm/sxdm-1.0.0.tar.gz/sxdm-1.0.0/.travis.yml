@@ -1,0 +1,28 @@
+dist: bionic
+
+
+language: python
+
+sudo:  false
+
+python:
+  - "3.6"
+  - "3.7"
+
+cache: pip
+
+install:
+  - "pip install -r requirements.txt"
+  - pip install coveralls
+  - pip install pytest
+  - pip install pytest-cov
+
+
+script:
+  - pytest --cov=sxdm tests/
+
+notifications:
+  email: williamjudge94@gmail.com
+
+after_success:
+  - coveralls
