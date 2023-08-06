@@ -1,0 +1,3 @@
+[console_scripts]
+yucebio_upload = yucebio_uploader.commands:upload
+

@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: Yucebio-Uploader
+Version: 0.1.1
+Summary: 通用数据上传工具
+Home-page: UNKNOWN
+Author: huangqingjun
+Author-email: huangqingjun@yucebio.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: oss2
+Requires-Dist: Yucebio-Config
+
+# 提供基本的数据上传功能
+
+- ~~通过ssh上传数据到服务器~~
+- 通过s3上传数据到亚马逊云
+- 通过oss上传数据到阿里云
+    - 默认使用分片上传模式
+
+# 安装
+
+```bash
+# 初始化环境，如通过conda初始化python>=3.8的环境
+conda create -n python3.8 python=3.8
+
+# 安装依赖包
+pip install click oss2 icecream
+# 安装
+pip install -i https://test.pypi.org/simple/ Yucebio-Uploader
+```
+
+# 使用&配置
+
+```bash
+# 查看使用方式
+yucebio_upload --help
+
+# 配置： 配置阿里云，亚马逊云
+yucebio_upload -b ali -c
+# 依次配置 access_key_id, access_key_secret, region, bucket
+
+# 使用： 上传本地文件到远端
+yucebio_upload -b ali <本地文件> <远端文件目录或文件名>
+```
+
