@@ -1,0 +1,11 @@
+fpyutils/__init__.py,sha256=InNlrqpHQVwzHyyl87Bo7gPXTAiknJLC4NnGbR7LNfI,1135
+fpyutils/exceptions.py,sha256=p7upqQswytJNpQHnqkA9UBFcx-7DKJ9ENInfKJgNiuE,1056
+fpyutils/filelines.py,sha256=ni-GpAOBSqQmAc8mm3fs_eiG4HKKwOaaN3EJKaD3YeA,8574
+fpyutils/notify.py,sha256=Llx4wu27H1bpDXgs50LrG31RtzQG554uq-vjXVfxTtA,3889
+fpyutils/path.py,sha256=GeN5JlGIuiHBtSL1wU-2IhsgwIScKl8ZXfnkr-YIXF4,3595
+fpyutils/shell.py,sha256=MASVTyXLXBsy7osf8N902w7PN9paBZw1R6NU4mDjzeg,3074
+fpyutils-2.1.0.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+fpyutils-2.1.0.dist-info/METADATA,sha256=X-qbiXs6CXOIk_fnCKOpLd0Eys1JaHy17v2to0XUGo0,3715
+fpyutils-2.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fpyutils-2.1.0.dist-info/top_level.txt,sha256=6Xzoy-2a9Ry5pI4QbmjtACVy30k2CG_gwqnKFUlFhaQ,9
+fpyutils-2.1.0.dist-info/RECORD,,
