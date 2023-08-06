@@ -1,0 +1,13 @@
+kihara/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kihara/__main__.py,sha256=ClJmAd8neScGS8Xw0W__YAsBHncI8K_QRsH3nobojjg,160
+kihara/_cachedir.py,sha256=MdLr0aqD4WZUQ8NpKwuYam-5OnZncRVLZn5qwe6ER2Q,3430
+kihara/_locale.py,sha256=Y-ZFgeSlnG-A41H3tAKY0TYbk2-gw8tV1XHU5lh5pwE,3887
+kihara/index.py,sha256=MZ08_-gwjDlkp_vkGgHKWpnVbvRsi5D5ndABZgfy0Uc,6068
+kihara/link.py,sha256=oItvfbcZXhi738Z9SehLMzYzEuqhTo_r8OAB35tCpSI,4929
+kihara/utils.py,sha256=NodhrspYW3yRA_Nuq4QVrW0ypnaNy2vyMbn7Zj_mXxs,336
+kihara/version.py,sha256=vH5fqiilNe7kFSJYo2EpjiMQMshDEeCa6xCt4hUV5uk,63
+kihara-0.1.0.dist-info/METADATA,sha256=XpqorOo0eml-sA4WdDJj_tmnK0OA1ndSVNXE-OZTqP4,383
+kihara-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+kihara-0.1.0.dist-info/entry_points.txt,sha256=COPrcCP1L_OYVc173w3zTKYZFGIBdWTkkgMWFzUbAZ0,220
+kihara-0.1.0.dist-info/top_level.txt,sha256=37fuDoornTDu2wjcFsyybxaEdlxnhzSLXiMypxX3Pdo,7
+kihara-0.1.0.dist-info/RECORD,,
