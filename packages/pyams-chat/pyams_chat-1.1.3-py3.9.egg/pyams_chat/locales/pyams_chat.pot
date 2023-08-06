@@ -1,0 +1,137 @@
+#
+# SOME DESCRIPTIVE TITLE
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE 1.0\n"
+"POT-Creation-Date: 2021-10-16 12:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Lingua 4.14\n"
+
+#: ./src/pyams_chat/interfaces.py:31
+msgid "Message host name"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:33
+msgid "Message channel"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:35
+msgid "Message action"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:37
+msgid "Message category"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:39
+msgid "Message status"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:41
+msgid "Message title"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:43
+msgid "Message content"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:45
+msgid "Message source"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:46
+msgid "Attributes of the principal which emitted the notification"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:50
+msgid "Message target"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:51
+msgid "Message targets can be principals, roles..."
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:54
+msgid "Notification URL"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:55
+msgid "URL target of this message notification"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:58
+msgid "Message timestamp in ISO-8601 format"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:60
+msgid "Internal user data"
+msgstr ""
+
+#: ./src/pyams_chat/interfaces.py:61
+msgid ""
+"User data used for internal usage; these data are not sent in notifications "
+"contents"
+msgstr ""
+
+#: ./src/pyams_chat/api/__init__.py:43 ./src/pyams_chat/api/__init__.py:56
+msgid "Response status"
+msgstr ""
+
+#: ./src/pyams_chat/api/__init__.py:50
+msgid "Principal ID"
+msgstr ""
+
+#: ./src/pyams_chat/api/__init__.py:58
+msgid "Error message"
+msgstr ""
+
+#: ./src/pyams_chat/api/__init__.py:63
+msgid "User context properties"
+msgstr ""
+
+#: ./src/pyams_chat/api/__init__.py:64
+msgid "Token accepted"
+msgstr ""
+
+#: ./src/pyams_chat/api/__init__.py:65
+msgid "Page not found"
+msgstr ""
+
+#: ./src/pyams_chat/api/__init__.py:66
+msgid "Unauthorized"
+msgstr ""
+
+#: ./src/pyams_chat/api/__init__.py:67
+msgid "Forbidden access"
+msgstr ""
+
+#: ./src/pyams_chat/api/__init__.py:68
+msgid "Missing arguments"
+msgstr ""
+
+#: ./src/pyams_chat/api/__init__.py:69
+msgid "Service unavailable"
+msgstr ""
+
+#: ./src/pyams_chat/zmi/viewlet/templates/notifications.pt:19
+#: ./src/pyams_chat/zmi/viewlet/templates/notifications.pt:33
+msgid "Notifications"
+msgstr ""
+
+#: ./src/pyams_chat/handler/login.py:47
+msgid "User login"
+msgstr ""
+
+#: ./src/pyams_chat/handler/login.py:48
+#, python-format
+msgid "{} logged in..."
+msgstr ""
