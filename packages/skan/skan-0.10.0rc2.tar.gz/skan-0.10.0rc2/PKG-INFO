@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: skan
+Version: 0.10.0rc2
+Summary: Skeleton analysis in Python
+Home-page: https://jni.github.io/skan
+Author: Juan Nunez-Iglesias
+Author-email: juan.nunez-iglesias@monash.edu
+License: BSD 3-Clause
+Download-URL: https://github.com/jni/skan
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: testing
+Provides-Extra: docs
+License-File: LICENSE
+
+# skan: skeleton analysis in Python
+Python module to analyse skeleton (thin object) images
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jni/skan/master?filepath=doc%2Fgetting_started.ipynb)
+[![Build Status](https://travis-ci.org/jni/skan.svg?branch=master)](https://travis-ci.org/jni/skan)
+[![Coverage Status](https://coveralls.io/repos/github/jni/skan/badge.svg?branch=master)](https://coveralls.io/github/jni/skan?branch=master)
+
+See the documentation at [https://jni.github.io/skan](https://jni.github.io/skan).
+
+
