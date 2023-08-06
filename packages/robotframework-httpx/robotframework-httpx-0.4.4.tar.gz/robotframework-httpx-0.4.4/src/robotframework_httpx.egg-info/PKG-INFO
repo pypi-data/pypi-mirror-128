@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: robotframework-httpx
+Version: 0.4.4
+Summary: Robot Framework keyword library wrapper around httpx
+Home-page: https://github.com/
+Author: Bulkan
+Author-email: bulkan@gmail.com
+Maintainer: Carl-Fredrik Sundstrom
+Maintainer-email: carl.f.sundstrom@gmail.com
+License: MIT
+Keywords: robotframework testing test automation http client httpx rest api
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.6
+Provides-Extra: ntlm
+Provides-Extra: test
+License-File: LICENSE.md
+
+Robot Framework keyword library wrapper around the HTTP client library httpx.
+
