@@ -1,0 +1,10 @@
+setup-capi.py
+src/openssl_engine_capi/__init__.py
+src/openssl_engine_capi/__main__.py
+src/openssl_engine_capi/_inject_capi.py
+src/openssl_engine_capi/urllib3.py
+src/openssl_engine_capi.egg-info/PKG-INFO
+src/openssl_engine_capi.egg-info/SOURCES.txt
+src/openssl_engine_capi.egg-info/dependency_links.txt
+src/openssl_engine_capi.egg-info/requires.txt
+src/openssl_engine_capi.egg-info/top_level.txt
