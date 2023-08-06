@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: disponibilidade-nfe
+Version: 0.1.0
+Summary: Web scraping da Disponibilidade dos Webservices da Sefaz através do portal NFe.
+Home-page: https://github.com/leogregianin/disponibilidade-nfe
+License: MIT
+Author: Leonardo Gregianin
+Author-email: leogregianin@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beautifulsoup4 (>=4.10.0,<5.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: requests-mock (>=1.9.3,<2.0.0)
+Project-URL: Repository, https://github.com/leogregianin/disponibilidade-nfe
+Description-Content-Type: text/markdown
+
+# Disponibilidade NFe
+
+[![Test](https://github.com/leogregianin/disponibilidade-nfe/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/leogregianin/disponibilidade-nfe/actions/workflows/main.yml)
+
+Projeto de Web scraping para verificar a disponibilidade dos Webservices de todas as Secretarias de Fazenda (Sefaz) emitente de Nota Fiscal Eletrônica (NFe) através do Portal Nacional da NFe: http://www.nfe.fazenda.gov.br/portal/disponibilidade.aspx
+
+
+## Instalar
+
+```console
+$ poetry install
+```
+
+## Rodar testes
+
+```console
+$ poetry run tox
+```
+
+## Exemplos
+
+```python
+from disponibilidade_nfe.nfe import DisponibilidadeNFe
+
+disp_nfe = DisponibilidadeNFe()
+print(disp_nfe.get_status())
+```
+
+Resultado:
+```console
+[
+    {
+        'autorizador': 'AM',
+        'autorizacao': 'verde',
+        'retorno_autorizacao': 'verde',
+        'inutilizacao': 'verde',
+        'consulta_protocolo': 'verde',
+        'status_servico': 'verde',
+        'tempo_medio': '-',
+        'consulta_cadastro': '',
+        'recepcao_evento': 'verde',
+        'ultima_verificacao': '23/11/2021 23:06:31'
+    }, {
+        'autorizador': 'BA',
+        'autorizacao': 'verde',
+        'retorno_autorizacao': 'verde',
+        'inutilizacao': 'verde',
+        'consulta_protocolo': 'verde',
+        'status_servico': 'verde',
+        'tempo_medio': '-',
+        'consulta_cadastro': 'verde',
+        'recepcao_evento': 'verde',
+        'ultima_verificacao': '23/11/2021 23:06:31'
+    }, {
+        ...
+    }
+]
+```
+
+## License
+
+This package is licensed under [MIT license](/LICENSE).
