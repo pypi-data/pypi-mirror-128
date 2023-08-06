@@ -1,0 +1,5 @@
+columnar
+termcolor
+colorama
+unidecode
+requests
