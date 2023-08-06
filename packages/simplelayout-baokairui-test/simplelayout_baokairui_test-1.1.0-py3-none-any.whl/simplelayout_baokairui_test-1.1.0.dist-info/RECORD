@@ -1,0 +1,12 @@
+simplelayout/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplelayout/__main__.py,sha256=z00e9tCCiu2A2GN_s81K2quXKrmQHTSnWgDo5Zu5LxM,830
+simplelayout/cli/__init__.py,sha256=YYMDIKJrdSvxGRyRk13NpSEE90zHI8RdVjUX0LFtpfQ,118
+simplelayout/cli/cli_generate.py,sha256=Ih6oAOTp-3ULxB6jm0NUcUtBke_5CZT5tVrdShwaH8I,662
+simplelayout/generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplelayout/generator/core.py,sha256=W8NcDFhC1XKcwv8EIIfIC66ASfhjqjkQJZ46rGwokzc,1667
+simplelayout/generator/utils.py,sha256=sFZVtQwoTeIFAvMnqbfJE4TNGzIrogqb16aiH86NNmM,699
+simplelayout_baokairui_test-1.1.0.dist-info/METADATA,sha256=3zsrxfZpYEfE3ptjyPgSG1OIMd31dhdryeipmLPJJUE,220
+simplelayout_baokairui_test-1.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+simplelayout_baokairui_test-1.1.0.dist-info/entry_points.txt,sha256=O_HKPZSBcDfZv_LmquDG4CdYB74vabMb-T4NCjP-A-s,61
+simplelayout_baokairui_test-1.1.0.dist-info/top_level.txt,sha256=iFIi60UoADwVgRZlfkvG5r_zYD2rGEOll3P-m2Tj0Uw,13
+simplelayout_baokairui_test-1.1.0.dist-info/RECORD,,
