@@ -1,0 +1,52 @@
+setup.py
+fonts/__init__.py
+fonts/D-DIN/D-DIN-Bold.otf
+fonts/D-DIN/D-DIN-Italic.otf
+fonts/D-DIN/D-DIN.otf
+fonts/D-DIN/D-DINCondensed-Bold.otf
+fonts/D-DIN/D-DINCondensed.otf
+fonts/D-DIN/D-DINExp-Bold.otf
+fonts/D-DIN/D-DINExp-Italic.otf
+fonts/D-DIN/D-DINExp.otf
+fonts/D-DIN/SIL Open Font License.txt
+fonts/D-DIN/__init__.py
+fonts/EB Garamond/EBGaramond-Bold.ttf
+fonts/EB Garamond/EBGaramond-BoldItalic.ttf
+fonts/EB Garamond/EBGaramond-ExtraBold.ttf
+fonts/EB Garamond/EBGaramond-ExtraBoldItalic.ttf
+fonts/EB Garamond/EBGaramond-Italic-VariableFont_wght.ttf
+fonts/EB Garamond/EBGaramond-Italic.ttf
+fonts/EB Garamond/EBGaramond-Medium.ttf
+fonts/EB Garamond/EBGaramond-MediumItalic.ttf
+fonts/EB Garamond/EBGaramond-Regular.ttf
+fonts/EB Garamond/EBGaramond-SemiBold.ttf
+fonts/EB Garamond/EBGaramond-SemiBoldItalic.ttf
+fonts/EB Garamond/EBGaramond-VariableFont_wght.ttf
+fonts/EB Garamond/OFL.txt
+fonts/EB Garamond/README.txt
+fonts/EB Garamond/__init__.py
+fonts/Fira Code/FiraCode-Bold.ttf
+fonts/Fira Code/FiraCode-Light.ttf
+fonts/Fira Code/FiraCode-Medium.ttf
+fonts/Fira Code/FiraCode-Regular.ttf
+fonts/Fira Code/FiraCode-SemiBold.ttf
+fonts/Fira Code/__init__.py
+xfactor/__init__.py
+xfactor/_colormap.py
+xfactor/_pgf2pdf.py
+xfactor/_setup.py
+xfactor/_superaxes3d.py
+xfactor/_superfigure.py
+xfactor/pgf.py
+xfactor/svg.py
+xfactor.egg-info/PKG-INFO
+xfactor.egg-info/SOURCES.txt
+xfactor.egg-info/dependency_links.txt
+xfactor.egg-info/requires.txt
+xfactor.egg-info/top_level.txt
+xfactor/tex/__init__.py
+xfactor/tex/_pow.py
+xfactor/tex/_sciform.py
+xfactor/tex/_text.py
+xfactor/util/__init__.py
+xfactor/util/imshow.py
