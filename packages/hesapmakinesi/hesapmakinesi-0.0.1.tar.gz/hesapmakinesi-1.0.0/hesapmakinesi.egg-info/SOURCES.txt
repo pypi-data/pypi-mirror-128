@@ -1,0 +1,7 @@
+LICENCE.txt
+README.txt
+setup.py
+hesapmakinesi.egg-info/PKG-INFO
+hesapmakinesi.egg-info/SOURCES.txt
+hesapmakinesi.egg-info/dependency_links.txt
+hesapmakinesi.egg-info/top_level.txt
