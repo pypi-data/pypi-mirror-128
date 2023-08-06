@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+
+	<head>
+		<style>
+		</style>
+
+		<style>
+			html, body {
+				min-height: 0 !important;
+				height: auto !important;
+			}
+		</style>
+
+		<script>
+			function findAndHandleStylemarkBlocks(languages, handler) {
+				var blocks = getStylemarkBlocks(languages);
+				handleStylemarkBlocks(blocks, handler);
+			}
+
+			function getStylemarkBlocks(languages) {
+				languages = typeof languages === 'string' ? [languages] : languages;
+
+				var selectors = [];
+
+				for (var i = 0; i < languages.length; i++) {
+					selectors.push('script[data-language="' + languages[i] + '"]');
+				}
+
+				var selector = selectors.join(',');
+				var scripts = document.querySelectorAll(selector);
+				var blocks = [];
+
+				for (var i = 0, length = scripts.length; i < length; i++) {
+					if (scripts[i].innerText) {
+						blocks.push(scripts[i].innerText);
+					}
+				}
+
+				return blocks;
+			}
+
+			function handleStylemarkBlocks(blocks, handler) {
+				for (var i = 0, length = blocks.length; i < length; i++) {
+					handler(blocks[i], i);
+				}
+			}
+		</script>
+
+			<link rel="stylesheet" href="udata_front/theme/gouvfr/static/less/index.css">
+			<link rel="stylesheet" href="theme/less/examples.css">
+			<script src="udata_front/theme/gouvfr/static/js/index.js"></script>
+
+		
+	</head>
+
+	<body>					<section class="discussions-wrapper">
+    <ul>
+        <li>
+            <div class="thread-wrapper Discussion">
+                <header class="thread-header">
+                    <div class="thread-title">Hi</div>
+                    <div class="thread-link">
+                        <a aria-label="Discussion permalink" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19.5" viewBox="0 0 38 39">
+                                <g><g><path fill="#35393b" d="M23.115 3.09l-7.325 7.324a10.178 10.178 0 0 1 5.381.633l4.95-4.951a4.258 4.258 0 0 1 6.013 0 4.258 4.258 0 0 1 0 6.013l-8.788 8.787a4.257 4.257 0 0 1-6.012 0c-.073-.075-.137-.154-.204-.232l-.017.02a2.126 2.126 0 0 0-2.9 3.102c.028.029.06.055.09.082l-.003.004.028.03a8.504 8.504 0 0 0 12.025 0l8.787-8.788A8.503 8.503 0 0 0 23.115 3.09z"></path></g><g><path fill="#35393b" d="M14.56 35.694l7.325-7.324a10.174 10.174 0 0 1-5.38-.633l-4.951 4.951a4.258 4.258 0 0 1-6.013 0 4.258 4.258 0 0 1 0-6.013l8.788-8.787a4.257 4.257 0 0 1 6.012 0c.073.075.137.154.204.232l.017-.02a2.126 2.126 0 0 0 2.9-3.102c-.028-.029-.06-.055-.09-.082l.003-.004-.028-.03a8.503 8.503 0 0 0-12.024 0L2.535 23.67A8.503 8.503 0 0 0 14.56 35.694z"></path></g></g>
+                            </svg>
+                        </a>
+                    </div>
+                </header>
+                <div class="thread-content">
+                    <article class="thread-comment">
+                        <div class="comment-meta">
+                            <div class="avatar">
+                                <img src="https://via.placeholder.com/180" alt="">
+                            </div>
+                            <div>
+                                <strong class="author">Nicolas KEMPF LE STANC</strong>
+                                <div class="text-grey-300 mt-xxs">5 October 2021</div>
+                            </div>
+                            <div class="thread-link">
+                                <a aria-label="Comment permalink" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19.5" viewBox="0 0 38 39">
+                                        <g><g><path fill="#35393b" d="M23.115 3.09l-7.325 7.324a10.178 10.178 0 0 1 5.381.633l4.95-4.951a4.258 4.258 0 0 1 6.013 0 4.258 4.258 0 0 1 0 6.013l-8.788 8.787a4.257 4.257 0 0 1-6.012 0c-.073-.075-.137-.154-.204-.232l-.017.02a2.126 2.126 0 0 0-2.9 3.102c.028.029.06.055.09.082l-.003.004.028.03a8.504 8.504 0 0 0 12.025 0l8.787-8.788A8.503 8.503 0 0 0 23.115 3.09z"></path></g><g><path fill="#35393b" d="M14.56 35.694l7.325-7.324a10.174 10.174 0 0 1-5.38-.633l-4.951 4.951a4.258 4.258 0 0 1-6.013 0 4.258 4.258 0 0 1 0-6.013l8.788-8.787a4.257 4.257 0 0 1 6.012 0c.073.075.137.154.204.232l.017-.02a2.126 2.126 0 0 0 2.9-3.102c-.028-.029-.06-.055-.09-.082l.003-.004-.028-.03a8.503 8.503 0 0 0-12.024 0L2.535 23.67A8.503 8.503 0 0 0 14.56 35.694z"></path></g></g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thread-box"><p class="m-0">This is a discussion.</p> </div>
+                    </article>
+                    <article class="thread-comment">
+                        <div class="comment-meta">
+                            <div class="avatar">
+                                <img src="https://via.placeholder.com/180" alt="">
+                            </div>
+                            <div>
+                                <strong class="author">Nicolas KEMPF LE STANC</strong>
+                                <div class="text-grey-300 mt-xxs">5 October 2021</div>
+                            </div>
+                            <div class="thread-link">
+                                <a aria-label="Comment permalink" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19.5" viewBox="0 0 38 39"><g><g><path fill="#35393b" d="M23.115 3.09l-7.325 7.324a10.178 10.178 0 0 1 5.381.633l4.95-4.951a4.258 4.258 0 0 1 6.013 0 4.258 4.258 0 0 1 0 6.013l-8.788 8.787a4.257 4.257 0 0 1-6.012 0c-.073-.075-.137-.154-.204-.232l-.017.02a2.126 2.126 0 0 0-2.9 3.102c.028.029.06.055.09.082l-.003.004.028.03a8.504 8.504 0 0 0 12.025 0l8.787-8.788A8.503 8.503 0 0 0 23.115 3.09z"></path></g><g><path fill="#35393b" d="M14.56 35.694l7.325-7.324a10.174 10.174 0 0 1-5.38-.633l-4.951 4.951a4.258 4.258 0 0 1-6.013 0 4.258 4.258 0 0 1 0-6.013l8.788-8.787a4.257 4.257 0 0 1 6.012 0c.073.075.137.154.204.232l.017-.02a2.126 2.126 0 0 0 2.9-3.102c-.028-.029-.06-.055-.09-.082l.003-.004-.028-.03a8.503 8.503 0 0 0-12.024 0L2.535 23.67A8.503 8.503 0 0 0 14.56 35.694z"></path></g></g></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thread-box"><p class="m-0">This is a reply.</p></div>
+                    </article>
+                </div>
+                <footer class="thread-footer">
+                    <div>
+                        <a class="thread-reply-cta unstyled" tabindex="0">Reply</a>
+                    </div>
+                </footer>
+            </div>
+        </li>
+    </ul>
+</section>
+			<script type="text/x-stylemark" data-language="html"><section class="discussions-wrapper">
+    <ul>
+        <li>
+            <div class="thread-wrapper Discussion">
+                <header class="thread-header">
+                    <div class="thread-title">Hi</div>
+                    <div class="thread-link">
+                        <a aria-label="Discussion permalink" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19.5" viewBox="0 0 38 39">
+                                <g><g><path fill="#35393b" d="M23.115 3.09l-7.325 7.324a10.178 10.178 0 0 1 5.381.633l4.95-4.951a4.258 4.258 0 0 1 6.013 0 4.258 4.258 0 0 1 0 6.013l-8.788 8.787a4.257 4.257 0 0 1-6.012 0c-.073-.075-.137-.154-.204-.232l-.017.02a2.126 2.126 0 0 0-2.9 3.102c.028.029.06.055.09.082l-.003.004.028.03a8.504 8.504 0 0 0 12.025 0l8.787-8.788A8.503 8.503 0 0 0 23.115 3.09z"></path></g><g><path fill="#35393b" d="M14.56 35.694l7.325-7.324a10.174 10.174 0 0 1-5.38-.633l-4.951 4.951a4.258 4.258 0 0 1-6.013 0 4.258 4.258 0 0 1 0-6.013l8.788-8.787a4.257 4.257 0 0 1 6.012 0c.073.075.137.154.204.232l.017-.02a2.126 2.126 0 0 0 2.9-3.102c-.028-.029-.06-.055-.09-.082l.003-.004-.028-.03a8.503 8.503 0 0 0-12.024 0L2.535 23.67A8.503 8.503 0 0 0 14.56 35.694z"></path></g></g>
+                            </svg>
+                        </a>
+                    </div>
+                </header>
+                <div class="thread-content">
+                    <article class="thread-comment">
+                        <div class="comment-meta">
+                            <div class="avatar">
+                                <img src="https://via.placeholder.com/180" alt="">
+                            </div>
+                            <div>
+                                <strong class="author">Nicolas KEMPF LE STANC</strong>
+                                <div class="text-grey-300 mt-xxs">5 October 2021</div>
+                            </div>
+                            <div class="thread-link">
+                                <a aria-label="Comment permalink" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19.5" viewBox="0 0 38 39">
+                                        <g><g><path fill="#35393b" d="M23.115 3.09l-7.325 7.324a10.178 10.178 0 0 1 5.381.633l4.95-4.951a4.258 4.258 0 0 1 6.013 0 4.258 4.258 0 0 1 0 6.013l-8.788 8.787a4.257 4.257 0 0 1-6.012 0c-.073-.075-.137-.154-.204-.232l-.017.02a2.126 2.126 0 0 0-2.9 3.102c.028.029.06.055.09.082l-.003.004.028.03a8.504 8.504 0 0 0 12.025 0l8.787-8.788A8.503 8.503 0 0 0 23.115 3.09z"></path></g><g><path fill="#35393b" d="M14.56 35.694l7.325-7.324a10.174 10.174 0 0 1-5.38-.633l-4.951 4.951a4.258 4.258 0 0 1-6.013 0 4.258 4.258 0 0 1 0-6.013l8.788-8.787a4.257 4.257 0 0 1 6.012 0c.073.075.137.154.204.232l.017-.02a2.126 2.126 0 0 0 2.9-3.102c-.028-.029-.06-.055-.09-.082l.003-.004-.028-.03a8.503 8.503 0 0 0-12.024 0L2.535 23.67A8.503 8.503 0 0 0 14.56 35.694z"></path></g></g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thread-box"><p class="m-0">This is a discussion.</p> </div>
+                    </article>
+                    <article class="thread-comment">
+                        <div class="comment-meta">
+                            <div class="avatar">
+                                <img src="https://via.placeholder.com/180" alt="">
+                            </div>
+                            <div>
+                                <strong class="author">Nicolas KEMPF LE STANC</strong>
+                                <div class="text-grey-300 mt-xxs">5 October 2021</div>
+                            </div>
+                            <div class="thread-link">
+                                <a aria-label="Comment permalink" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19.5" viewBox="0 0 38 39"><g><g><path fill="#35393b" d="M23.115 3.09l-7.325 7.324a10.178 10.178 0 0 1 5.381.633l4.95-4.951a4.258 4.258 0 0 1 6.013 0 4.258 4.258 0 0 1 0 6.013l-8.788 8.787a4.257 4.257 0 0 1-6.012 0c-.073-.075-.137-.154-.204-.232l-.017.02a2.126 2.126 0 0 0-2.9 3.102c.028.029.06.055.09.082l-.003.004.028.03a8.504 8.504 0 0 0 12.025 0l8.787-8.788A8.503 8.503 0 0 0 23.115 3.09z"></path></g><g><path fill="#35393b" d="M14.56 35.694l7.325-7.324a10.174 10.174 0 0 1-5.38-.633l-4.951 4.951a4.258 4.258 0 0 1-6.013 0 4.258 4.258 0 0 1 0-6.013l8.788-8.787a4.257 4.257 0 0 1 6.012 0c.073.075.137.154.204.232l.017-.02a2.126 2.126 0 0 0 2.9-3.102c-.028-.029-.06-.055-.09-.082l.003-.004-.028-.03a8.503 8.503 0 0 0-12.024 0L2.535 23.67A8.503 8.503 0 0 0 14.56 35.694z"></path></g></g></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thread-box"><p class="m-0">This is a reply.</p></div>
+                    </article>
+                </div>
+                <footer class="thread-footer">
+                    <div>
+                        <a class="thread-reply-cta unstyled" tabindex="0">Reply</a>
+                    </div>
+                </footer>
+            </div>
+        </li>
+    </ul>
+</section></script>
+
+		<!--
+			Vanilla JS
+		-->
+
+		<script>
+			findAndHandleStylemarkBlocks('js', function(block) {
+				eval(block);
+			});
+		</script>
+
+		<!--
+			AngularJS
+		-->
+
+		<script>
+			(function(angular) {
+
+				if (!angular) {
+					return;
+				}
+
+				findAndHandleStylemarkBlocks('angularjs', function(block, index) {
+					var moduleElem = document.querySelector('[ng-app]');
+					var module;
+
+					if (moduleElem) {
+						// Uses an existing module
+						module = angular.module(moduleElem.getAttribute('ng-app'));
+					}
+					else {
+						// Creates a new module
+						module = angular.module('stylemark-discussions-discussion-with-reply', []);
+					}
+
+					module.controller('stylemark-discussions-discussion-with-reply-' + index, function($scope) {
+						$scope.$eval(block);
+					});
+				});
+			})(window.angular);
+		</script>
+
+		<!--
+			React / JSX
+		-->
+
+		<script>
+			(function(ReactDOM) {
+
+				if (!ReactDOM) {
+					return;
+				}
+
+				findAndHandleStylemarkBlocks('jsx', function(block, index) {
+					var rootNode = document.querySelectorAll('.stylemark-react-root')[index];
+					var Component = eval(block);
+					ReactDOM.render(Component, rootNode);
+				});
+			})(window.ReactDOM);
+		</script>
+
+		<!--
+			Ember
+		-->
+
+		<script>
+			(function(Ember) {
+
+				if (!Ember) {
+					return;
+				}
+
+				findAndHandleStylemarkBlocks(['handlebars', 'hbs'], function(block, index) {
+					var render = function() {
+						var app = window.noop
+						var container = app.__container__;
+						var renderer = container.lookup('renderer:-dom');
+						var template = Ember.HTMLBars.compile(block);
+
+						var jsBlocks = getStylemarkBlocks('js');
+						var jsBlock = jsBlocks && jsBlocks[0] ? jsBlocks[0] : '{}';
+						var context;
+						eval('context = ' + jsBlock);
+
+						// Credit:
+						// http://stackoverflow.com/questions/27950413/render-ember-js-hbs-template-to-a-string#answer-35625858
+						var compile = function(container, template, context) {
+							return new Ember.RSVP.Promise(function(resolve) {
+								Ember.Component.extend(Ember.merge({
+									style: 'display:none;',
+									layout: template,
+									container: container,
+									renderer: renderer,
+
+									init: function() {
+										this._super.apply(this, arguments);
+										Ember.setOwner(this, container);
+									},
+
+									didRender: function() {
+										var elem = this.$();
+										resolve(elem);
+										this.destroy();
+									}
+								}, context))
+									.create()
+									.append();
+
+							});
+						};
+
+						compile(container, template, context).then(function(elem) {
+							var node = document.querySelectorAll('.stylemark-ember-root')[index];
+							jQuery(node).append(elem);
+						});
+					};
+
+					var isReady = function() {
+						return window.noop
+							&& window.noop.__container__;
+					};
+
+					var checkReady = function() {
+						if (isReady()) {
+							render();
+						}
+						else {
+							setTimeout(checkReady, 20);
+						}
+					};
+
+					checkReady();
+				});
+
+			})(window.Ember);
+		</script>
+
+		<script src="_stylemark/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	</body>
+</html>
