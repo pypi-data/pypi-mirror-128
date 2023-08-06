@@ -1,0 +1,15 @@
+aiohttp<3.8,>=3.6
+v3io~=0.5.8
+pandas~=1.0
+numpy<1.22,>=1.16.5
+pyarrow<6,>=1
+grpcio-tools<1.33,>=1.30
+grpcio<1.33,>=1.30
+v3io-frames~=0.8
+v3iofs~=0.1
+
+[az]
+adlfs~=0.5
+
+[s3]
+s3fs~=0.5
