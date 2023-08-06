@@ -1,0 +1,12 @@
+PyFxA>=0.7.0
+python-magic
+requests
+lxml
+mozrunner
+cssselect
+cmp_version
+arghandler>=1.0.3
+pylzma
+pytz
+tzlocal
+python-dateutil
