@@ -1,0 +1,7 @@
+PyYAML
+lxml
+cssselect
+jsonpath-ng
+dateparser
+beautifulsoup4
+extruct
