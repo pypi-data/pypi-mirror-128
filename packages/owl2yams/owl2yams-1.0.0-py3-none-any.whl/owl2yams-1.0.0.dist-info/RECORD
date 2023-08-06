@@ -1,0 +1,11 @@
+owl2yams/__init__.py,sha256=r0UdkgA6rZ3FatvKgYM1RfDRpImPbbxQXCuiUWU_8WA,15672
+owl2yams/ccplugin.py,sha256=hO3QrQUcyoTqR6uRltP9K4TRkwDTo5SAKWuhCWUM86o,5346
+owl2yams/generate_entities.py,sha256=cyFh0S24_5Slb1VwPxQIxA-UiL7njaycidx0uSWehSA,4213
+owl2yams/generate_postcreate.py,sha256=l5T5JMKakN1ea1rlf2Ti9FDq-HOJnQaWtR1Y2ZGCX6s,979
+owl2yams/prefixes.json,sha256=ee1TGu7RjJBlvjMOH_kbMFECAf2FD6p4UyR8tuccLZ8,136241
+owl2yams/schema_uri.py,sha256=8LtIfbTsTI8SpXIHAeajKFOySEI3sAQp6sMGZNPOvOE,381
+owl2yams-1.0.0.dist-info/METADATA,sha256=pFiGK9-Od1DWYib-EVmKzq60ML9DDhw_TxNxjUmaQOU,2475
+owl2yams-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+owl2yams-1.0.0.dist-info/entry_points.txt,sha256=1y2rcW0dCzcYsz6D13rM-t_KO0s2J5LDtyXDUpFrtFM,44
+owl2yams-1.0.0.dist-info/top_level.txt,sha256=y6qhqZHgs4hl6Yb51ht0mmWzoOKfvTMGEE8voFQ0iJU,9
+owl2yams-1.0.0.dist-info/RECORD,,
