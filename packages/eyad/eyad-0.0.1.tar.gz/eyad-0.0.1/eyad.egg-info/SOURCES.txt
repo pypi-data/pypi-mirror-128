@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+eyad.egg-info/PKG-INFO
+eyad.egg-info/SOURCES.txt
+eyad.egg-info/dependency_links.txt
+eyad.egg-info/top_level.txt
+joshbasiccalculator/__init__.py
