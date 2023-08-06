@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=RnxCoDZHKcLALrkFf18KGzXESBdrX-nfwiAjFkB3LXM,2283
+sortepy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sortepy/loterica.py,sha256=pLECgFAYauN4lypAFcUr32VNqlXpFcMAXNRdPxOG0S0,10263
+sortepy/script.py,sha256=PdoO5_uRQROxHVwUvPuDSiCXNshjOXC4KXS-ZMazTgU,8434
+sortepy/util.py,sha256=Kd1xETCeClvkGW2qIRvwOoRbug4YQ5yNbARec5KoW64,8210
+sorte.py-0.1.0.dev1.dist-info/entry_points.txt,sha256=Cyy3Ky2opwQo8PAWZzLcERvX2J7lOozMDD_Or_NCu-o,48
+sorte.py-0.1.0.dev1.dist-info/LICENSE,sha256=wxfYQhdjUTdDNqTQIkk9HZ3XS9p_YXN1N-K1CVn5Yrk,1595
+sorte.py-0.1.0.dev1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+sorte.py-0.1.0.dev1.dist-info/METADATA,sha256=YyqQNlPhU7LLWDLRDZx5oHgkijhvUnD5-wPsXMmrP8s,4713
+sorte.py-0.1.0.dev1.dist-info/RECORD,,
