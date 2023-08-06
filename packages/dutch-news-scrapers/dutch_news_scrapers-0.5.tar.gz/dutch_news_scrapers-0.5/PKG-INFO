@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: dutch_news_scrapers
+Version: 0.5
+Summary: Generic Dutch News Scrapers
+Home-page: UNKNOWN
+Author: Wouter van Atteveldt
+Author-email: wouter@vanatteveldt.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Text Processing
