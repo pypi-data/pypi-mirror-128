@@ -1,0 +1,9 @@
+dkist-processing-common==0.3.0
+dkist-header-validator==2.0.11
+dkist-fits-specifications==1.4.8
+
+[test]
+pytest
+pytest-cov
+pytest-mock
+dkist-data-simulator
