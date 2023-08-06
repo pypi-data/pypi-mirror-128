@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+nautobot_move/__init__.py
+nautobot_move/forms.py
+nautobot_move/template_content.py
+nautobot_move/urls.py
+nautobot_move/views.py
+nautobot_move.egg-info/PKG-INFO
+nautobot_move.egg-info/SOURCES.txt
+nautobot_move.egg-info/dependency_links.txt
+nautobot_move.egg-info/not-zip-safe
+nautobot_move.egg-info/top_level.txt
+nautobot_move/templates/nautobot_move/move.html
+nautobot_move/templates/nautobot_move/inc/buttons.html
