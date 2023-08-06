@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: soundswallower
+Version: 0.1.1
+Summary: An even smaller speech recognizer
+Home-page: https://github.com/ReadAlongs/SoundSwallower
+Author: David Huggins-Daines
+Author-email: dhdaines@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+UNKNOWN
+
