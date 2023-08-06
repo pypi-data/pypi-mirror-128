@@ -1,0 +1,11 @@
+aiohttp==3.8.1
+python-vlc==3.0.12118
+inquirerpy~=0.3.0
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
