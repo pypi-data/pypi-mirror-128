@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: airflow-providers-siafi
+Version: 2.0.2
+Summary: Provider para interações com o SIAFI e seus sistemas derivados
+Home-page: https://github.com/CarlosAdp/airflow-providers-siafi
+Author: Carlos Alberto Duarte Pinto
+Author-email: carlos.adpinto@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/CarlosAdp/airflow-providers-siafi/tarball/v2.0.2
+Keywords: airflow,siafi,administracao,governo
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: apache-airflow
+
+# airflow-providers-siafi
+
+Provider para interações com o SIAFI e seus sistemas derivados
+
+## Instalação
+
+```shell
+pip install airflow-providers-siafi
+```
+
+## Conteúdo
+
+- Hook e tipo de conexão "Conta do SIAFI"
+
+![Imagem para conexão "Conta do SIAFI"](https://i.imgur.com/qA0kGB5.png)
+
+## Uso
+
+```python
+from airflow.providers.siafi.hooks.siafi import SIAFIHook
+
+
+with SIAFIHook('id_conexao') as hook:
+    cpf = hook.cpf
+    senha = hook.senha
+
+    ...
+```
+
+
+
