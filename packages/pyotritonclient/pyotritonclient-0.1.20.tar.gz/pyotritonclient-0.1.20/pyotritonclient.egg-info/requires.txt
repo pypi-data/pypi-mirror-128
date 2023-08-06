@@ -1,0 +1,4 @@
+six
+numpy
+requests
+python-rapidjson>=0.9.1
