@@ -1,0 +1,6 @@
+pylife
+xlrd
+tables
+jupyter
+matplotlib
+pyvista

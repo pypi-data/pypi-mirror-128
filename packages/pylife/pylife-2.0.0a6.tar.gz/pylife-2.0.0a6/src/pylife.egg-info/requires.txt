@@ -1,0 +1,24 @@
+numpy
+scipy
+pandas
+mystic
+pymc3
+h5py
+cython
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[docs]
+sphinx
+m2r2
+nbsphinx
+nbsphinx-link
+panel
+ipyvtklink
+plotly
+
+[testing]
+setuptools
+pytest
+pytest-cov
