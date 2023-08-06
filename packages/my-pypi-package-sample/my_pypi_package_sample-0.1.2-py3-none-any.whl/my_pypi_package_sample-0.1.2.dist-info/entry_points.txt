@@ -1,0 +1,3 @@
+[console_scripts]
+my-pypi-package-sample=my_pypi_package_sample:main
+

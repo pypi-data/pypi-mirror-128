@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: my-pypi-package-sample
+Version: 0.1.2
+Summary: Print hello
+Home-page: https://yahoo.com
+License: MIT
+Keywords: hello,xxx
+Author: Hojung
+Author-email: hojung_yun@yahoo.co.kr
+Requires-Python: >=3.9,<4.0
+Classifier: Environment :: Console
+Classifier: Framework :: FastAPI
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Project-URL: Repository, https://yahoo.com
+Description-Content-Type: text/markdown
+
+# Package for PyPI
+
+#### 1. update codes
+
+#### 2. update the version
+
+```
+poetry version 0.1.2
+```
+
+#### 3. build
+
+```
+poetry build
+```
+
+#### 4. push to test pypi then test
+
+```
+poetry config repositories.testpypi https://test.pypi.org/legacy/
+poetry publish -r testpypi
+```
+
+#### 5. push to pypi then test
+
+```
+poetry publish
+```
+
+#### 6. test
+
+```
+mkdir test_proj && cd test_proj
+pyenv local 3.9.5
+poetry init --no-interaction
+poetry install
+poetry shell
+poetry add my-pypi-package-sample
+
+# Create python file then run
+vi exam.py
+--------------------------------------------
+from my_pypi_package_sample import print_hello
+print_hello()
+--------------------------------------------
+python exam.py
+
+# Run the package from script
+poetry run my-pypi-package-sample
+```
+
