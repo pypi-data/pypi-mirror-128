@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+the_well_maintained_test/__init__.py
+the_well_maintained_test/cli.py
+the_well_maintained_test/utils.py
+the_well_maintained_test.egg-info/PKG-INFO
+the_well_maintained_test.egg-info/SOURCES.txt
+the_well_maintained_test.egg-info/dependency_links.txt
+the_well_maintained_test.egg-info/entry_points.txt
+the_well_maintained_test.egg-info/requires.txt
+the_well_maintained_test.egg-info/top_level.txt
