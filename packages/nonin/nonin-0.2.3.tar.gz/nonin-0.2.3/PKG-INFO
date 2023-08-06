@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: nonin
+Version: 0.2.3
+Summary: Publish data from a Nonin PPG as LSL Outlet
+Home-page: https://github.com/agricolab/app-nonin
+Author: Robert Guggenberger
+Author-email: robert.guggenberger@uni-tuebingen.de
+License: MIT
+Download-URL: https://github.com/agricolab/app-nonin
+Description: ## App-Nonin
+        
+        Streams PPG and Status data from a Nonin Medical Pulse Oximeter (Xpod 3012 LP USB) over LSL
+        
+        ## Install
+        
+        ```pip install nonin```
+        
+        ## Example
+        ```
+        usage: nonin-lsl [-h] [--scan] [--port PORT]
+        
+        Stream Nonin Medical Xpod 3012 LP USB Pulse Oximeter
+        
+        optional arguments:
+          -h, --help   show this help message and exit
+          --scan       report the available devices
+          --port PORT  which port to use
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
