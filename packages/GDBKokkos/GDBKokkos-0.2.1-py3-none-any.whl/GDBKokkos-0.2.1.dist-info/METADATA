@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: GDBKokkos
+Version: 0.2.1
+Summary: GDB python modules for debugging Kokkos
+Home-page: https://github.com/Char-Aznable/GDBKokkos.git
+Author: Char Aznable
+Author-email: aznable.char.0083@gmail.com
+License: BSD 3-clause
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: codecov ; extra == 'tests'
+
+see https://github.com/Char-Aznable/GDBKokkos
+
+
