@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block localheader_title %}Sign In{% endblock %}
+
+{% block content %}
+<div>
+    <form method="post" action=".{% if next %}/?next={{next}}{% endif %}">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit" name="submit">Submit</button>
+    </form>
+    <p>
+        <a href="{% url 'password_reset' %}">Forgot password?</a>
+    </p>
+    <p>
+        Don't have an account? -- <a href="{% url 'registration_register' %}">Sign up</a>
+    </p>
+</div>
+{% endblock %}
