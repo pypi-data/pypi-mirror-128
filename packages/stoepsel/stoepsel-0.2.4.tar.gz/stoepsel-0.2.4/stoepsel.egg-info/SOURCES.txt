@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+stoepsel/__init__.py
+stoepsel/stoepsel.py
+stoepsel.egg-info/PKG-INFO
+stoepsel.egg-info/SOURCES.txt
+stoepsel.egg-info/dependency_links.txt
+stoepsel.egg-info/top_level.txt
