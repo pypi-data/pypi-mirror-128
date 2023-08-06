@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: PyMacroFin
+Version: 0.0.1.0
+Summary: Python toolbox for solving continuous-time macro-financial models using monotone finite difference schemes
+Home-page: UNKNOWN
+Author: Damon Petersen
+Author-email: damon.petersen@chicagobooth.edu
+License: MIT
+Project-URL: Documentation, https://adriendavernas.com/pymacrofin/index.html
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: joblib
+Requires-Dist: scipy
+Requires-Dist: plotly (>=5.0.0)
+Requires-Dist: sympy
+Requires-Dist: dash (>=2.0.0)
+Requires-Dist: flask
+Requires-Dist: cloudpickle
+Requires-Dist: dash-daq
+Requires-Dist: kaleido
+Requires-Dist: findiff
+
+This is a Python toolbox for solving continuous-time macro-financial models using monotone finite difference schemes. 
+
+Please see the documentation for more detail: https://adriendavernas.com/pymacrofin/index.html
+
+Authors: Damon Petersen, Adrien d'Avernas, Quentin Vandeweyer
+
+Primary developer: Damon Petersen
+
+Correspondence: damon.petersen [at] chicagobooth.edu
+
+License: MIT (see LICENSE.txt)
+
