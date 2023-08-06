@@ -1,0 +1,8 @@
+# .coveragerc to control coverage.py
+[run]
+omit =
+    guessit/__version__.py
+    guessit/test/*
+[report]
+exclude_lines =
+    pragma: no cover
