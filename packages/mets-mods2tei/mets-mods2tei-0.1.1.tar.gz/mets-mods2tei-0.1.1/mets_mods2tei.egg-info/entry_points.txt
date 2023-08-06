@@ -1,0 +1,3 @@
+[console_scripts]
+mm2tei = mets_mods2tei.scripts.mets_mods2tei:cli
+
