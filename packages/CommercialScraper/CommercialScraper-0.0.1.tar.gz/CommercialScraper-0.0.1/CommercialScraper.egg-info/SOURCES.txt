@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+CommercialScraper/__init__.py
+CommercialScraper/data_save.py
+CommercialScraper/pipeline.py
+CommercialScraper.egg-info/PKG-INFO
+CommercialScraper.egg-info/SOURCES.txt
+CommercialScraper.egg-info/dependency_links.txt
+CommercialScraper.egg-info/requires.txt
+CommercialScraper.egg-info/top_level.txt
