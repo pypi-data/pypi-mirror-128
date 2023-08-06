@@ -1,0 +1,9 @@
+pbzlib/__init__.py,sha256=CcF_u0k3mEbP6nIe6DxJiDL2W06xx-Q_90jFxo5a800,1043
+pbzlib/constants.py,sha256=bM2CmW8BkuYPvfo0W-uCn-D76jD9t4FVCnRQG32Yh9k,125
+pbzlib/reader.py,sha256=hLuIpi8eW_FnRhqm2tj2oxqNL-h6eQ7Bl9qWnFGvNsE,3698
+pbzlib/writer.py,sha256=jHnJeDv1BkXNNOuYFFUU7g39cUju5GMgEqs9Ka8MEpM,2786
+pbzlib-0.20211124.dist-info/LICENSE,sha256=my6Oa_6-l4O6x25F-aOggoB_tI-dOOxkPeWsbXgIaE0,1069
+pbzlib-0.20211124.dist-info/METADATA,sha256=-YYRNOVBliEkzVVc0AFZGFlGZAKvQPxd0t2kHcCHlpg,1534
+pbzlib-0.20211124.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pbzlib-0.20211124.dist-info/top_level.txt,sha256=UGUqfzdEmEuulVsh-_mBYT6VsT1k2IBXmDHToYMKDNQ,7
+pbzlib-0.20211124.dist-info/RECORD,,
