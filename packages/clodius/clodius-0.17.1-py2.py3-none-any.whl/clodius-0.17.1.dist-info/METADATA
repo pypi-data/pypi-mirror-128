@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: clodius
+Version: 0.17.1
+Summary: Tile generation for big data
+Home-page: UNKNOWN
+Author: Peter Kerpedjiev
+Author-email: pkerpedjiev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: negspy
+Requires-Dist: pysam
+Requires-Dist: dask
+Requires-Dist: requests
+Requires-Dist: h5py (>=3.0.0)
+Requires-Dist: pandas
+Requires-Dist: slugid
+Requires-Dist: sortedcontainers
+Requires-Dist: nose
+Requires-Dist: cooler (>=0.8.5)
+Requires-Dist: pybbi (>=0.2.0)
+Requires-Dist: Click (>=7)
+Requires-Dist: pydantic
+Requires-Dist: pyfaidx
+
+UNKNOWN
+
