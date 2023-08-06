@@ -1,0 +1,10 @@
+pexpect>=4.5
+dnspython>=2.0
+
+[:platform_system == "Darwin"]
+pyobjc-framework-Quartz>=4
+
+[test]
+tox
+pytest
+coverage
