@@ -1,0 +1,7 @@
+multiqc_cgs/__init__.py,sha256=vs5uoO5rhQTd4affsIGsjoGe2QclgMZk1YF9-1myR-Q,187
+multiqc_cgs/hooks.py,sha256=a05CXA0Bl9gxMz3HX8va3-3ewe-WztmSQcPfzhUxcr8,1491
+multiqc_cgs-0.1.dist-info/METADATA,sha256=Ixqy8RRYK5xE4AE_REGi8p7EKiR6FJGVBapWXrnE4z8,1034
+multiqc_cgs-0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+multiqc_cgs-0.1.dist-info/entry_points.txt,sha256=aL9sffnRemvfTSwMinTRIlQOWOyHKK4wCsoF1EhoqdY,68
+multiqc_cgs-0.1.dist-info/top_level.txt,sha256=jiHWveWAjTrAI_zTOD_ChR1YZKNzSWDCu4roFkZDjAk,12
+multiqc_cgs-0.1.dist-info/RECORD,,
