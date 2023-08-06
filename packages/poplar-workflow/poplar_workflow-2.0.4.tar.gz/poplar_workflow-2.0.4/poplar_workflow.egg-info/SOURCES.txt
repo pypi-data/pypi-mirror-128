@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+docs/Makefile
+docs/conf.py
+docs/index.rst
+poplar_workflow/__init__.py
+poplar_workflow/expi.json
+poplar_workflow.egg-info/PKG-INFO
+poplar_workflow.egg-info/SOURCES.txt
+poplar_workflow.egg-info/dependency_links.txt
+poplar_workflow.egg-info/requires.txt
+poplar_workflow.egg-info/top_level.txt
+poplar_workflow/vi/PPWKFLOW.poplar.vi

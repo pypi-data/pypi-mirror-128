@@ -1,0 +1,635 @@
+[MODULE]
+id=PPWKFLOW
+name=Extra workflow scripts and actions.
+desc=Extra workflow scripts and actions from Poplar Development
+company=Poplar Development
+version=2.0.4
+website=https://poplars.dev
+
+
+[SCRIPT]
+FILENAME=PPWKFLOW.StartWorkflowOnUpdate
+>>> SCRIPT >>>
+#@ pip(extools)
+# Start a workflow instance when an object is updated.
+# P1: Workflow Template
+# P2: Entry Step
+# P3: Wait Step (if no wait step set to "None")
+# P4: View Key Field
+from accpac import *
+
+from extools.view import exview
+from extools.view.errors import ExViewRecordDoesNotExist
+from extools.view.exsql import exsql_result
+from extools.message import logger_for_module
+from extools.workflow import workflow_exists, create_workflow_instance
+
+log = None
+
+WF_EXISTS_MESSAGE = "A workflow is already pending for {}."
+
+def workflow_template():
+    if Parameter1:
+        return Parameter1
+    return ""
+
+def entry_step():
+    if Parameter2:
+        return Parameter2
+    return ""
+
+def wait_step():
+    if Parameter3:
+        return Parameter3
+    return ""
+
+def key_field():
+    if Parameter4:
+        return Parameter4
+    return ""
+
+def onOpen():
+    global log
+    log = logger_for_module("ppwkflow")
+    return Continue
+
+def onBeforeUpdate():
+    log.debug("onBeforeUpdate({}, {}, {})".format(rotoID, me.get(key_field()), wait_step()))
+    if workflow_exists(rotoID, me.get(key_field()), wait_step()):
+        log.info(WF_EXISTS_MESSAGE.format(me.get(key_field())))
+        return 0
+    log.debug("No extant workflow - creating a new one {}, {}, {}, {}".format(
+            workflow_template(), rotoID, me.get(key_field()), entry_step()))
+    create_workflow_instance(
+            workflow_template(), rotoID, me.get(key_field()), entry_step())
+    return Continue
+
+<<< SCRIPT <<<
+
+[SCRIPT]
+FILENAME=PPWKFLOW.LockForActiveWorkflow
+>>> SCRIPT >>>
+##############################################################
+# Check if a workflow exists before updating an object.
+#
+# Attach to a view and provide the workflow View Key field and
+# the Step Name.  If a workflow exists for the View, View Key,
+# and Step Name, the update will be denied.
+#
+# P1: View Key Fields (VENDORID;REMITTO;FILETYPE for EL0006)
+# P2: Step Name (defaults to Wait)
+# P3: Screen ID (the rotoID of the screen AP1200 for A/P Vendors)
+# P4: Template Name
+###############################################################
+
+from accpac import *
+
+def view_key_fields(default=None):
+    if default is None:
+        default = []
+    if Parameter1:
+        return Parameter1.strip().split(';')
+    return default
+
+def step_name(default="Wait"):
+    if Parameter2:
+        return Parameter2.strip()
+    return default
+
+def screen_rotoid(default="AP1200"):
+    if Parameter3:
+        return Parameter3.strip()
+    return default
+
+def template_name(default=""):
+    if Parameter4:
+        return Parameter4.strip()
+    return default
+
+WORKFLOW_EXISTS_SQL = """
+    SELECT TOP(1) WIID FROM VIWORKIH WHERE
+        WTNAME = '{template_name}' AND
+        VIEWID = '{view}' AND
+        VIEWKEY = '{view_key}' AND
+        STEPNAME = '{step_name}'
+"""
+
+MESSAGE = """
+A workflow is already pending for {view_key}.
+
+It must be approved or rejected before updating this entry.
+""".strip()
+
+def onBeforeUpdate():
+    keys = []
+    for field in view_key_fields():
+        keys.append(str(me.get(field)))
+    view_key = ",".join(keys)
+    if workflow_exists(rotoID, view_key, step_name(), template_name()):
+        showMessageBox(MESSAGE.format(view_key=view_key))
+        return 0
+    return Continue
+
+def workflow_exists(view, view_key, step_name, template_name):
+    query = WORKFLOW_EXISTS_SQL.format(
+                template_name=template_name,
+                view=view, view_key=view_key, step_name=step_name)
+    # showMessageBox(query)
+    cs0120 = openView("CS0120")
+    rc = cs0120.recordClear()
+    br = cs0120.browse(query)
+
+    if sum([rc, br]):
+        return True  # assume the worst.
+
+    if cs0120.fetch() == 0:
+        return True
+
+    return False
+
+<<< SCRIPT <<<
+
+[SCRIPT]
+FILENAME=PPWKFLOW.StartWorkflowOnInsert
+>>> SCRIPT >>>
+#@ pip(extools)
+# Start a workflow instance when an object is inserted.
+# P1: Workflow Template
+# P2: Entry Step
+# P3: Wait Step (if no wait step set to "None")
+# P4: View Key Field
+from accpac import *
+
+from extools.view import exview
+from extools.view.errors import ExViewRecordDoesNotExist
+from extools.view.exsql import exsql_result
+from extools.message import logger_for_module
+from extools.workflow import workflow_exists, create_workflow_instance
+
+log = None
+
+WF_EXISTS_MESSAGE = "A workflow is already pending for {}."
+
+def workflow_template():
+    if Parameter1:
+        return Parameter1
+    return ""
+
+def entry_step():
+    if Parameter2:
+        return Parameter2
+    return ""
+
+def wait_step():
+    if Parameter3:
+        return Parameter3
+    return ""
+
+def key_field():
+    if Parameter4:
+        return Parameter4
+    return ""
+
+def onOpen():
+    global log
+    log = logger_for_module("ppwkflow")
+    return Continue
+
+def onBeforeInsert():
+    if workflow_exists(rotoID, me.get(key_field()), wait_step()):
+        log.info(WF_EXISTS_MESSAGE.format(me.get(key_field())))
+        return 0
+    create_workflow_instance(
+            workflow_template(), rotoID, me.get(key_field()), entry_step())
+    return Continue
+
+<<< SCRIPT <<<
+
+[SCRIPT]
+FILENAME=PPWKFLOW.StartWorkflowOnUpsert
+>>> SCRIPT >>>
+#@ pip(extools)
+# Start a workflow instance when an object is inserted or updated.
+# P1: Workflow Template
+# P2: Entry Step
+# P3: Wait Step (if no wait step set to "None")
+# P4: View Key Field
+from accpac import *
+
+from extools.view import exview
+from extools.view.errors import ExViewRecordDoesNotExist
+from extools.view.exsql import exsql_result
+from extools.message import logger_for_module
+from extools.workflow import workflow_exists, create_workflow_instance
+
+log = None
+
+WF_EXISTS_MESSAGE = "A workflow is already pending for {}."
+
+def workflow_template():
+    if Parameter1:
+        return Parameter1
+    return ""
+
+def entry_step():
+    if Parameter2:
+        return Parameter2
+    return ""
+
+def wait_step():
+    if Parameter3:
+        return Parameter3
+    return ""
+
+def key_fields(default=[]):
+    if Parameter4:
+        return Parameter4.split(',')
+    return default
+
+def key_field_values(default=""):
+    vals = []
+    for field in key_fields():
+        vals.append(str(me.get(field)))
+    return ",".join(vals)
+
+def onOpen():
+    global log
+    log = logger_for_module("ppwkflow")
+    return Continue
+
+def onBeforeInsert():
+    if workflow_exists(rotoID, key_field_values(), wait_step()):
+        log.info(WF_EXISTS_MESSAGE.format(me.get(key_field())))
+        return 0
+    create_workflow_instance(
+            workflow_template(), rotoID, key_field_values(), entry_step())
+    return Continue
+
+def onBeforeUpdate():
+    if workflow_exists(rotoID, key_field_values(), wait_step()):
+        log.info(WF_EXISTS_MESSAGE.format(me.get(key_field())))
+        return 0
+    create_workflow_instance(
+            workflow_template(), rotoID, key_field_values(), entry_step())
+    return Continue
+
+<<< SCRIPT <<<
+
+[SCRIPT]
+FILENAME=PPWKFLOW.Workflow.ResolvingGoToStep
+>>> SCRIPT >>>
+## P1 Step Name
+
+from accpac import *
+
+# This function returns 0 (success) or 1 (failure). The return value is used to determine which action to run next in the workflow.
+def workflow(e): # e is workflowArgs (see accpac.py)
+    e.wi.progressTo(e.resolve(e.p1));
+    return 0
+
+<<< SCRIPT <<<
+
+[SCRIPT]
+FILENAME=PPWKFLOW.Workflow.EvaluateString
+>>> SCRIPT >>>
+## P1 Field Value
+## P2 Operator
+## P3 Match String
+##############################################################################
+# 2665093.Workflow.EvaluateSimpleStringMatches
+#
+# This workflow action performs simple string comparisons.  It supports the
+# following operators for case senstive matches:
+#   - startswith
+#   - endswith
+#   - contains
+#
+# All operators have an equivalent case insensitive version:
+#   - istartswith
+#   - iendswith
+#   - icontains
+#
+# The function returns 0 (success - match found) or
+# 1 (failed - match not found)
+##############################################################################
+from accpac import *
+
+def workflow(e):
+    v = e.wi.getView()
+    if v == None:
+        return 1
+
+    try:
+        a = e.resolve(e.p1)
+        b = e.resolve(e.p3)
+        op = e.resolve(e.p2).lower()
+    except AttributeError as e:
+        return 1
+    except TypeError as e:
+        return 1
+
+    try:
+        if op.startswith("i"):
+            a = a.lower()
+            b = b.lower()
+            operator = op[1:]
+        else:
+            operator = op
+
+        if operator == "startswith":
+            if a.startswith(b):
+                return 0
+        elif operator == "endswith":
+            if a.endswith(b):
+                return 0
+        elif operator == "contains":
+            if b in a:
+                return 0
+        else:
+            showMessageBox("Unknown string match operator {}".format(op))
+    except AttributeError as e:
+        pass
+    except TypeError as e:
+        pass
+
+    return 1
+
+<<< SCRIPT <<<
+
+[SCRIPT]
+FILENAME=PPWKFLOW.Workflow.SendJinja2Email
+>>> SCRIPT >>>
+#@ pip(extools)
+## P1 Email template
+## P1.FinderView=VI0008
+## P1.FinderField=MSGID
+## P1.FinderFields=MSGID,TEXTDESC,SUBJECT,COMMENTS,BODY
+## P2 To
+## P3 CC
+"""
+This workflow action renders an email from a Jinja2 style message template.
+
+The view can be accessed from the template using the "header" object.
+
+If the workflow header view has an associated detail view, the lines
+can be accessed through the lines object.
+
+The action takes the following parameters:
+
+- Parameter1: Email Template - sent to users to notify that
+  that a form is available.
+- Parameter2: To list of Sage Users or Extender User Groups
+- Parameter3: CC list of Sage Users or Extender User Groups
+"""
+from accpac import *
+
+from datetime import datetime
+
+from extools.view import exview
+from extools.view.utils.users import resolve_users
+from extools.message import logger_for_module
+from extools.message.jinja2 import get_template_environment
+from extools.message.email import send_email
+
+VERSION = '2.0.4'
+
+WORKFLOW_INSTANCE_FIELDS = (
+    'WTNAME', 'STUSER', 'STDATE', 'STTIME', 'CURUSER', 'STEPNAME',
+    'PSTEPNAME', 'STATUS', 'VIEWID', 'VIEWKEY', 'KEYDESC', )
+
+def workflow(e):
+    """Execute the workflow step.
+
+    This function is invoked by the workflow engine.  It is called
+    with ``accpac.WorkflowArgs`` and must return ``0`` on success and
+    ``1`` on failed.
+
+    :param e: the workflow arguments for this action.
+    :type e: ``accpac.WorkflowArgs``
+    :returns: 0/1
+    :rtype: int
+    """
+
+    wiid = e.wi.viworkih.get("WIID")
+    if not wiid:
+        error("Failed to get workflow ID.")
+        return 1
+
+    log = logger_for_module(
+                "poplar", key="SendJinja2Email({})".format(wiid))
+
+    # Resolve all users, groups, and emails from P2
+    to_users = resolve_users(e.resolve(e.p2))
+    cc_users = resolve_users(e.resolve(e.p3))
+
+    # make the email lists
+    to = [u[1] for u in to_users]
+    cc = [u[1] for u in cc_users]
+
+    template_name = e.resolve(e.p1)
+    template_env = get_template_environment()
+
+    try:
+
+        workflow = {}
+        e.wi.viworkiv.recordClear()
+        e.wi.viworkiv.browse("", 1)
+        while e.wi.viworkiv.fetch() == 0:
+            workflow[e.wi.viworkiv.get("NAME")] = e.wi.viworkiv.get("SVALUE")
+
+        for field in WORKFLOW_INSTANCE_FIELDS:
+            workflow[field] = e.wi.viworkih.get(field)
+
+        env = {"USER": user, "NOW": datetime.now()}
+
+        # Get the template content from VI0008
+        template = template_env.get_template(template_name)
+        subject = template_env.get_template("{}:subject".format(template_name))
+
+        rotoid = e.wi.getValue("VIEWID")
+        key = e.wi.getValue("VIEWKEY").split(",")
+        with exview(rotoid, compose=True) as exv:
+            for index in exv.indexes:
+                if len(index) == len(key):
+                    try:
+                        for field_id, key_field in enumerate(exv.indexes[0]):
+                            exv.put(key_field, key[field_id])
+                        exv.read()
+                        break
+                    except ExViewError as e:
+                        log.debug("failed to read with index {} for keys {}".format(
+                            index, key))
+
+            header = exv.to_dict()
+            lines = {}
+            if hasattr(exv, 'detail_view'):
+                lines = exv.detail_view.where()
+
+            log.info(("rendering with\nheader: {}\nlines:{}\n"
+                      "workflow: {}\nenv: {}").format(
+                            header, lines, workflow, env))
+
+            # render the template
+            vars = {'header': header, 'lines': lines,
+                    'workflow': workflow, 'env': env}
+            body = template.render(vars)
+            subj = subject.render(vars)
+
+            if not send_email(subj, body, to, cc):
+                log.error("Message sending failed.")
+                return 1
+    except Exception as e:
+        log.error("Failed to render: {}".format(e), exc_info=True)
+
+
+<<< SCRIPT <<<
+
+[SCRIPT]
+FILENAME=PPWKFLOW.Workflow.GetViewValue
+>>> SCRIPT >>>
+#@ pip(extools)
+## P1 View ID or Name
+## P1.FinderView=VI0005
+## P1.FinderField=VIEWID
+## P1.FinderFields=VIEWID,NAME,PROTOCOL
+## P2 Key Field=Values
+## P3 Field Name
+## P4 Workflow Instance Value Name
+"""
+This workflow action returns the value of the field for the
+record with the given key and view.
+"""
+
+try:
+    from accpac import *
+except ImportError:
+    pass
+
+import re
+
+from extools.view import exview
+from extools.view.errors import ExViewError
+from extools.message import logger_for_module
+
+log = None
+
+def resolve(wi, tmpl):
+    result = tmpl
+    log.debug("resolving {}".format(tmpl))
+    for field in set(re.findall("{[^}]+}", tmpl)):
+        clean_field = re.sub("[{} ]+", "", field)
+        log.debug("resolving field {}".format(clean_field))
+        wi_value = wi.getWorkflowInstanceValue(clean_field, None)
+        log.debug("Workflow instance {} = {}".format(
+                clean_field, wi_value))
+        if wi_value:
+            value = wi_value
+        else:
+            try:
+                with exview(wi.viworkih.get("VIEWID")) as exv:
+                    keys = wi.viworkih.get("VIEWKEY").split(",")
+                    for idx, index_fields in enumerate(exv.indexes):
+                        try:
+                            if len(keys) == len(index_fields):
+                                exv.order(idx)
+                                for i, idx_field in enumerate(index_fields):
+                                    exv.put(idx_field, keys[i])
+                                exv.read()
+                                value = exv.get(clean_field)
+                        except ExViewError as e:
+                            log.warn("failed to read with {}: {}".format(index_fields, e))
+                            value = ""
+            except ExViewError as e:
+                log.error("failed to read: {}".format(e), exc_info=True)
+                value = ""
+        result = re.sub(field, str(value), result)
+    return result
+
+def workflow(e):
+    """Execute the workflow step.
+
+    This function is invoked by the workflow engine.  It is called
+    with ``accpac.WorkflowArgs`` and must return ``0`` on success and
+    ``1`` on failed.
+
+    :param e: the workflow arguments for this action.
+    :type e: ``accpac.WorkflowArgs``
+    :returns: 0/1
+    :rtype: int
+    """
+    global log
+    wiid = e.wi.viworkih.get("WIID")
+    log = logger_for_module("poplar", key="GetViewValue({})".format(wiid))
+
+    log.debug("GetViewValue({}, {}, {} ,{})".format(e.p1, e.p2, e.p3, e.p4))
+
+    viewid = e.resolve(e.p1)
+    key_fields = e.p2.split(",")
+    log.debug("key fields: {}.{}".format(viewid, key_fields))
+
+    # build seek to
+    seek_to = {}
+    for key_value in key_fields:
+        field, value = key_value.split("=")
+        log.debug("key, val: {}, {}".format(field, value))
+        seek_to[field] = resolve(e.wi, value)
+        log.debug("{}".format(seek_to))
+
+    field = e.p3
+    wi_field = e.p4
+    log.debug("GetViewValue.resolved({}, {} ,{} ,{})".format(
+        viewid, seek_to, field, wi_field))
+    try:
+        with exview(viewid, seek_to=seek_to) as exv:
+            e.wi.setValue(wi_field, exv.get(field))
+            log.debug("set {} to {}".format(wi_field, exv.get(field)))
+    except ExViewError as e:
+        log.error("failed: {}".format(e), exc_info=True)
+        return 1
+    return 0
+
+<<< SCRIPT <<<
+
+[SCRIPT]
+FILENAME=PPWKFLOW.Workflow.GenerateChequeReport
+>>> SCRIPT >>>
+#@ pip(extools)
+## P1 Batch Number
+from accpac import *
+from extools.report.printers import (
+    APChequePrinter, SetupError,
+    ChequeCommitError, ReportGenerationError,
+    NoChequesMatchedError, APOpenError)
+
+# This function returns 0 (success) or 1 (failure).
+# The return value determines which action to run next in the workflow.
+def workflow(e):
+    errmsg = ""
+    batchno = e.resolve(e.p1)
+    printer = APChequePrinter(int(float(batchno)))
+    try:
+        cheque_report_path = printer.print()
+        e.wi.setValue("CHQREPORT", str(cheque_report_path))
+    except SetupError as err:
+        # handle a failure to setup the temp tables.
+        # e contains details on the failing operation
+        errmsg = "failed to setup cheque printing for {}: {}".format(
+                batchno, err)
+    except ReportGenerationError as err:
+        errmsg = "failed to generate cheque report for {}: {}".format(
+                batchno, err)
+    except ChequeCommitError as err:
+        errmsg = "failed to commit cheques to AP/BK for {}: {}".format(
+                batchno, err)
+    except NoChequesMatchedError as err:
+        errmsg = "no unprinted cheques found."
+    except APOpenError as err:
+        errmsg = str(err)
+
+    if errmsg:
+        e.wi.setValue("WFCRITICALERROR", errmsg)
+        return 1
+
+    return 0
+
+<<< SCRIPT <<<

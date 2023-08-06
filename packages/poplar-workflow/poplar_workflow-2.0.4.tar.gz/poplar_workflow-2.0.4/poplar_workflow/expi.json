@@ -1,0 +1,26 @@
+{
+    "module": "PPWKFLOW",
+    "title": "Workflow Tools",
+    "description": "Extra Workflow Tools and Actions from Poplar Development.",
+    "sage": {
+        "version": 2019,
+        "product_update": 3.0,
+        "edition": "Premium"
+    },
+    "extender": {
+        "version": 2019,
+        "product_update": 8.0,
+        "edition": "Developer"
+    },
+    "programs": ["*"],
+    "views": ["*"],
+    "screens": [],
+    "workflows": [],
+    "access": "public",
+    "visibility": "public",
+    "pricing": {
+        "CAD": "0"
+    },
+    "email": "chris@poplars.dev",
+    "postinstall": {}
+}
