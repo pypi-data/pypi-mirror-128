@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: VocalTractLab
+Version: 0.3a0
+Summary: Articulatory (text-to-) speech synthesis for Python
+Home-page: https://github.com/paul-krug/VocalTractLab
+Author: Paul Krug
+Author-email: paul_konstantin.krug@tu-dresden.de
+License: GPL-3.0
+Keywords: text-to-speech,speech synthesis,articulatory synthesis,vocal tract
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Typing :: Typed
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+License-File: LICENSE.md
+
+# <a href="https://www.vocaltractlab.de/"><img alt="VocalTractLab" src="/VocalTractLab/logo/VocalTractLabPythonLogo.svg" height="90"></a>
+
+### Warning
+This software is currently in alpha stage. You may encounter bugs and future updates may not be backwards-compatible.
+
+# Installation
+
+    pip install vocaltractlab
+
+# Description
+A python module that implements the articulatory synthesizer VocalTractLab.
+
