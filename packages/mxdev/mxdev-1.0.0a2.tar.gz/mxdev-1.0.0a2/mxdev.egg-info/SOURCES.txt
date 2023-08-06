@@ -1,0 +1,16 @@
+CHANGES.rst
+MANIFEST.in
+README.rst
+mxdev.py
+setup.cfg
+setup.py
+example/constraints-infile.txt
+example/example.ini
+example/requirements-infile.txt
+mxdev.egg-info/PKG-INFO
+mxdev.egg-info/SOURCES.txt
+mxdev.egg-info/dependency_links.txt
+mxdev.egg-info/entry_points.txt
+mxdev.egg-info/not-zip-safe
+mxdev.egg-info/requires.txt
+mxdev.egg-info/top_level.txt
