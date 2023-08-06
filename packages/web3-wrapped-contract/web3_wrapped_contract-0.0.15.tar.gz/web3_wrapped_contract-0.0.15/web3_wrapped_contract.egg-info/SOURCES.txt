@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+web3_wrapped_contract/__init__.py
+web3_wrapped_contract/contract_utils.py
+web3_wrapped_contract/wrapped_contract.py
+web3_wrapped_contract.egg-info/PKG-INFO
+web3_wrapped_contract.egg-info/SOURCES.txt
+web3_wrapped_contract.egg-info/dependency_links.txt
+web3_wrapped_contract.egg-info/requires.txt
+web3_wrapped_contract.egg-info/top_level.txt
